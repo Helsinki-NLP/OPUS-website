@@ -1,0 +1,303 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# en/Rtp50LMB4e7Z.xml.gz<br>
+# ve/Rtp50LMB4e7Z.xml.gz
+
+<p><hr>
+(src)="2"> In the previous lecture we talked about kind of a fun model , where students could be alert or bored . <br>
+(trg)="1"> Sẽ có một số trạng thái , trong trường hợp đã nêu là tập trung hay nhàm chán . <br>
+<hr>
+(src)="3"> Remember , it was a Markov model . <br>
+(trg)="2"> Và sau đó , sẽ có một số xác suất hoán chuyển , nó sẽ cho bạn một xác suất của sự chuyển đổi tập trung sang nhàm chán hay ngược lại . <br>
+<hr>
+(src)="4"> And in these Markov models , there 's a set of states , in that case alert or bored . <br>
+(trg)="3"> Tôi muốn đưa bài học này đến với một mô hình phức tạp hơn một chút <br>
+<hr>
+(src)="5"> And then there 's these transition probabilities , that give you the probability of moving from alert to bored . <br>
+(trg)="4"> Nó sẽ là một mô hình mà liên quan đến nhiều quốc gia . <br>
+<hr>
+(src)="6"> I want to move in this lecture to a slightly more complicated model . <br>
+(trg)="5"> Và các quốc gia này có thể được tự do hoặc nửa tự do hoặc bị cai trị độc tài . <br>
+<hr>
+(src)="7"> And it 's going to be a model that involves countries . <br>
+(src)="8"> And these countries can either be free , partly free or not at all free and being run by dictators . <br>
+(trg)="6"> Và giờ , tôi sẽ xem sự linh động trong trường hợp này , nó sẽ giúp ích cho chúng ta , tổng hợp lại những kiến thức đã học và biết nhiều hơn một chút về cách vận hành của quá trình Markov . <br>
+<hr>
+(src)="9"> Now I 'm gonna <br>
+(src)="10"> look at the dynamics of that situation and it 'll help us , sort of maybe learn a <br>
+(trg)="7"> Chúng ta có thể xem xét chúng với nhiều khía cạnh hơn và cũng phải đối mặt với những kết quả có vẻ khác thường . <br>
+<hr>
+(src)="11"> little bit more about how these Markov processes work , see how we can extend them to more dimensions and also cope with a somewhat counter- intuitive finding . <br>
+(trg)="8"> Chúng ta sẽ bắt đầu với một mô hình dân chủ 2 trạng thá . <br>
+(trg)="9"> Chúng ta hãy tưởng tượng rằng có 2 kiểu quốc gia : một là dân chủ , hai là không dân chủ . <br>
+<hr>
+(src)="12"> Okay , so , let 's start simply with even a , just a two- state democracy model . <br>
+(trg)="10"> Và giả định rằng 5 % số quốc gia dân chủ sẽ chuyển sang chế độ độc tài qua mỗi thập kỷ . và 20 % quốc gia có chế độ độc tài trở thành quốc gia dân chủ . <br>
+<hr>
+(src)="13"> So we can imagine there 's two types of countries : there 's democracies and there 's non- democracies , and assume that five percent of democracies switch into dictatorships every decade , and that twenty percent of dictatorships become democracies . <br>
+(trg)="11"> Đây sẽ là giả thuyết của tôi . <br>
+(trg)="12"> Và sau đó , hay suy nghĩ một cách logic . <br>
+(trg)="13"> Chúng ta sẽ làm việc đó như thế nào đây ? <br>
+<hr>
+(src)="14"> So that 'll be my assumption . <br>
+(src)="15"> And then , let 's just walk through the <br>
+(src)="16"> logic . <br>
+(trg)="15"> Chúng ta giả sử ban đầu 30 % số quốc gia là dân chủ và 70 % là độc tài . <br>
+<hr>
+(src)="18"> Well , we 're gonna write down a Markov transition matrix . <br>
+(trg)="16"> Và trong số 30 % dân chủ kia có 95 % là vẫn sẽ tiếp tục dân chủ . <br>
+<hr>
+(src)="19"> So let 's , let 's start off by assuming we have 30 percent of countries that are in democracies , and 70 percent are dictatorships . <br>
+(trg)="17"> Và trong 70 % độc tài , sẽ có và chỉ có 20 % là sẽ trở thành dân chủ . <br>
+<hr>
+(src)="20"> So , of this 30 percent that are democracies , we know that 95 percent will stay democracies . <br>
+(trg)="20"> Và phép tính trở thành 0 . 285 + 0 . 14 <br>
+<hr>
+(src)="21"> Of the 70 percent that are dictatorships , we know that twenty , only twenty percent will become democracies . <br>
+(trg)="22"> Và ta đã biết được có khoảng 43 % số quốc gia trở thành dân chủ trong thập kỷ tới . <br>
+<hr>
+(src)="22"> So to figure out how many new democracy 's next time , we just take this row and multiply it by this column , so we get . 95 times . 3 plus . 2 . <br>
+(trg)="23"> Và chúng ta có thể làm điều này thêm một lần nữa . <br>
+(trg)="24"> Với 43 % hay 42 . 5 % dân chủ <br>
+<hr>
+(src)="23"> Right ? <br>
+(src)="24"> Times . 7 . <br>
+(src)="25"> Put , make sure , parentheses around here . <br>
+(trg)="25"> Chúng ta sẽ nhân hàng này với cột này <br>
+<hr>
+(src)="27"> And this is going to be . 14 . <br>
+(src)="28"> And this gives us . 425 . <br>
+(trg)="26"> Ta sẽ có được kết quả 52 % là dân chủ trong thập kỉ tiếp theo . <br>
+<hr>
+(src)="29"> So we 're going to get 43 percent of countries , in the next decade , are going to be democracies . <br>
+(trg)="28"> Nếu nhìn vào xu hướng này , bạn sẽ nói chúng ta ban đầu có 30 % dân chủ , và sau đó con số đó tăng lên 42 % <br>
+<hr>
+(src)="30"> And we could do this one more time , and say , well if we have 43 percent or 42 . 5 percent democracies , we multiply this row by the column , we 're going to get that 52 percent are democracies next time . <br>
+(trg)="29"> Rồi lại tăng từ 42 % lên 52 % . <br>
+(trg)="30"> Có thể chúng ta sẽ suy luận ra rằng <br>
+(trg)="31"> Nó giống như một xu hướng tuyến tính . <br>
+<hr>
+(src)="31"> Now , if you looked at this trend , you say we start out with 30 percent democracies , and we go to 42 % . <br>
+(trg)="33"> Điều đó có đúng không ? <br>
+(trg)="34"> Chúng ta có thể tìm ra tỷ lệ cân bằng <br>
+<hr>
+(src)="32"> Then we go from 42 percent to 52 % , well , you might just sort of extrapolate , <br>
+(trg)="35"> Chúng ta sẽ làm thế nào đây ? <br>
+(trg)="36"> Hãy nhớ lúc trước <br>
+<hr>
+(src)="33"> like , that looks like a linear trend . <br>
+(src)="34"> And eventually , we 're gonna end up with everybody being a democracy . <br>
+(src)="35"> Yet we know that that 's not true , right ? <br>
+(trg)="37"> Chúng ta muốn nhân hàng này với cột này . sau khi thực hiện phép nhân , từ p sẽ trả về kết quả cũng là p . <br>
+<hr>
+(src)="36"> We know that we can solve for the equilibrium , and that it 's probably gonna involve some churn . <br>
+(trg)="38"> Điều đó có nghĩa là 0 . 95 x p +0 . 2 x ( 1 - p ) = p <br>
+<hr>
+(src)="37"> So how do we solve for the equilibrium ? <br>
+(src)="38"> Remember from the last statement , we just wanna take this row , times this column . <br>
+(trg)="39"> Nhân cả 2 vế với 100 , ta sẽ có 95 x p + 20 - 20 x p = 100 x p . <br>
+<hr>
+(src)="39"> We 're now , instead of putting down a specific problem , we put p and 1- p , we want , after we multiply that through that we get the p , the same p back . <br>
+(trg)="40"> Rút gọn 2 vế , ta sẽ có : <br>
+(trg)="41"> 20 = 25 x p . <br>
+(trg)="42"> Vậy là p = 4/ 5 . <br>
+<hr>
+(src)="40"> So that means that 's gonna be . 95 times p , plus . 2 , times one minus p , should equal p . <br>
+(src)="41"> Alright , we 've got a bunch of stuff and let 's just multiply this by a 100 to get rid of everything . <br>
+(trg)="43"> Và thật ngạc nhiên , chúng ta kết thúc với con số 80 % dân chủ , và tất nhiên, chỉ 95 % dân chủ sẽ vẫn là dân chủ và 20 % độc tài sẽ trở thành dân chủ sau mỗi thập kỷ <br>
+<hr>
+(src)="42"> So we get 95 p plus 20 minus 20 p equals 100 p . <br>
+(src)="43"> Right ? <br>
+(trg)="44"> Chúng ta sẽ chỉ dừng lại với 80 % dân chủ . <br>
+<hr>
+(src)="44"> I just multiplied both sides by 100 . <br>
+(src)="45"> Now if I bring everything over there I 'm gonna get : <br>
+(src)="46"> 20 equals 25 p . <br>
+(trg)="45"> Kết quả khác thường này cho thấy tại sao mô hình Markov lại có thể thật sự hữu dụng như vậy . <br>
+<hr>
+(src)="47"> So that means p equals four fifths . <br>
+(trg)="46"> Bởi vì , nó giúp chúng ta tìm thấy điều gì sẽ xảy ra , trái ngược với sự suy luận rằng sẽ có một xu hướng lớn tiến tới dân chủ . <br>
+<hr>
+(src)="48"> So here 's sort of the surprising thing , we only end up with 80 percent democracies , even though , right , 95 percent of democracies stay democracies and 20 percent of dictatorships become democracies in each decade , we still end up with only 80 percent democracies . <br>
+(trg)="47"> Nếu cứ tiếp tục như vậy , tất cả các quốc gia sẽ trở thành dân chủ hết . <br>
+(trg)="48"> Và giờ , chúng ta sẽ chuyển sang một mô hình phức tạp hơn . <br>
+(trg)="49"> Và hãy giả sử rằng chúng ta sẽ phân loại các quốc gia <br>
+<hr>
+(src)="49"> That 's what 's counter- intuitive , and that 's why having this Markov model can be really useful , because it helps us , you know really figure out what 's going to happen as opposed to just maybe extrapolating and thinking , boy , there 's this big trend toward democratization . <br>
+(trg)="50"> Vừa dân chủ vừa độc tài . <br>
+(trg)="51"> Chúng ta sẽ có 3 loại . <br>
+(trg)="52"> Tự do , nửa tự do và không tự do . <br>
+<hr>
+(src)="50"> If things continue as they are , everything going to be a democracy . <br>
+(trg)="54"> là sự gia tăng số quốc gia tự do , giảm số quốc gia không tự do và có sự giảm nhẹ ở số quốc gia nửa tự do . <br>
+<hr>
+(src)="51"> Well , now let 's move to a more sophisticated model . <br>
+(trg)="55"> Và có thể chúng ta sẽ hỏi điều gì sẽ xảy ra ? <br>
+(trg)="56"> Chúng ta có thể làm gì ? <br>
+<hr>
+(src)="52"> Now , let 's suppose that we classify countries not as just democracies or dictatorships , we have three categories . <br>
+(trg)="57"> Nếu tôi đưa vào đó , xét trên chu kì tăng 5 năm một theo ma trận thay đổi xác suất , <br>
+(trg)="58"> Làm một số ước tính đơn giản , bạn đại loại có được những điều sau đây . . <br>
+<hr>
+(src)="53"> Free , partly free , and not free . <br>
+(src)="54"> And this is some data , actually , from Freedom House , that I , you know , just plugged in to Excel , and plotted out . <br>
+(trg)="59"> Tôi nhận thấy sau mỗi thập kỷ , 5 % số quốc gia tự do , và khoảng 15 % quốc gia không tự do trở thành nửa tự do . <br>
+<hr>
+(src)="55"> And what we see is an increase in free countries , and a decrease in not free countries , and a slight decrease in partly free countries . <br>
+(trg)="60"> Vậy nên , đó là sự thay đổi xác suất . <br>
+(trg)="61"> Và 5 % quốc gia không tự do , 10 % quốc gia nửa tự do sẽ trở thành tự do . <br>
+(trg)="62"> 10 % quốc gia nửa tự do sẽ trở thành không tự do . <br>
+<hr>
+(src)="56"> And we could ask , what 's likely to happen ? <br>
+(trg)="63"> Những xác suất chuyển dịch này có phần phức tạp . <br>
+<hr>
+(src)="57"> Well , what you can do , if I plug in , sort of , in five year increments , the transition probabilities , and do some crude estimates , you sort of get the following . <br>
+(trg)="64"> Ma trận sẽ trở nên hữu dụng hơn . <br>
+(trg)="65"> Vậy tôi có thể đặt quốc gia tự do , nửa tự do và không tự do ở đây và sau đó , tôi cũng sẽ đặt tự do , nửa tự do và không tự do ở đây nữa <br>
+<hr>
+(src)="58"> I get that each decade , five percent of free , and about fifteen percent of not free become partly free . <br>
+(trg)="66"> Giờ tôi chỉ có 3 trạng thái , giống như tôi đã làm lúc trước <br>
+<hr>
+(src)="59"> So , those are those transition probabilities , And five percent of not free , and ten percent of partly free become free . <br>
+(trg)="67"> Nhưng thay vì ma trận 2 x 2 sẽ là ma trận 3 x 3 . <br>
+<hr>
+(src)="60"> And ten percent of partly free become not free . <br>
+(src)="61"> So , all sorts of transition probabilities are kinda complicated . <br>
+(trg)="68"> Trước khi có máy tính , khi bạn làm việc với ma trận 3 x 3 hay ma trận 4 x 4 thì đó chính là một vấn đề thật sự <br>
+<hr>
+(src)="62"> The matrix is more useful . <br>
+(src)="63"> So , I can put free , partly free , and not free . <br>
+(trg)="69"> Nhưng khi có máy tính , vấn đề sẽ trở nên dễ dàng hơn . <br>
+<hr>
+(src)="64"> Right here and then I can put free , partially free and not free here , and now I 've just got three states , just like I had before except for instead of a two by two matrix , I 've got a three by three matrix , same thing goes . <br>
+(trg)="70"> Bạn đã biết cách tạo một ma trận lớn và đưa ra một phương trình cho trạng thái cân bằng , không có gì phức tạp cả . <br>
+(trg)="71"> Và phương trình đó sẽ như thế nào ? <br>
+(trg)="72"> Ta sẽ nhân từng hàng với cột này . <br>
+<hr>
+(src)="65"> Now it used to be , before we had computers , when you went to three by three and four by four matrices you 'd just go , " oh no , it 's going to be a lot of math , lot of algebra " . <br>
+(trg)="73"> Lúc này ở cột sẽ có p , q và 1 - p - q thay vì p và 1 - p như trước . <br>
+(trg)="74"> Ta nhân hàng này với cột này , cho kết quả là p <br>
+<hr>
+(src)="66"> And it was , but now that you 've got , you know computers , it 's very easy to just , you know make a huge matrix and solve for the equilibrium , there 's nothing complicated about it . <br>
+(trg)="75"> Và nhân hàng này với cột này , kết quả là q <br>
+(trg)="76"> Lại nhân hàng này với hàng này cho kết quả là 1 - p - q . <br>
+(trg)="77"> Rất nhiều tính toán ở đây . <br>
+<hr>
+(src)="67"> So what does that equilibrium look like ? <br>
+(trg)="78"> Nhưng bạn vẫn có thể làm được , khi làm xong , bạn sẽ có đáp án như sau : <br>
+<hr>
+(src)="68"> Well , all we do is take each one of these rows , and multiply by the columns . <br>
+(src)="69"> But now , the column has a p , a q , and a one minus p minus q , instead of just a p and a one minus p , and <br>
+(trg)="79"> 62 . 5 % số quốc gia là tự do , 25 % là nửa tự do và 12 . 5 % là không tự do . <br>
+<hr>
+(src)="70"> I want it to be the case so when I multiply this row times this column I get p . <br>
+(trg)="81"> Bạn sẽ có một số suy luận , đó là xu hướng của vùng tự do . <br>
+(trg)="82"> Chúng ta tưởng rằng tất cả rồi sẽ tự do <br>
+<hr>
+(src)="71"> And when I multiply this row , by the column I get q . <br>
+(trg)="83"> Nhưng thực tế , khi các xác suất chuyển dịch là cố định , sẽ có ít hơn 2/ 3 số quốc gia là tự do <br>
+<hr>
+(src)="72"> And when I multiply this row by this column , I get one minus p minus q . <br>
+(src)="73"> So a lot of algebra here . <br>
+(src)="74"> You can do it . <br>
+(trg)="84"> Và cũng thật ngạc nhiên , nếu bạn nhìn vào xu hướng này <br>
+<hr>
+(src)="75"> And if you do it you get the following answer . <br>
+(trg)="85"> Bạn có thể đoán rằng , nó tăng từ 25 % lên đến 45 % . <br>
+<hr>
+(src)="76"> You get that 62 . 5 percent of countries will be free , 25 percent will be partly free , and 12 . 5 percent will be not free . <br>
+(trg)="86"> Có vẻ như sẽ rất nhanh thôi , tất cả đều sẽ tự do <br>
+(trg)="87"> Nhưng thực tế , giả định tất cả các xác suất chuyển dịch đều như cũ , thì thì rốt cuộc , chỉ có 62 . 5 % là tự do , Và đây chính là những gì mà mô hình này cho ta thấy <br>
+<hr>
+(src)="78"> There 's this trend towards freedom . <br>
+(src)="79"> We 're all gonna be free , <br>
+(trg)="88"> Mô hình không phải là khá tốt , nó cho thấy xu hướng chung chung , như thế này <br>
+<hr>
+(src)="80"> But in fact if transition probabilities stay fixed , well fewer than two thirds of countries will be free . <br>
+(src)="81"> Again that 's sort of surprising , 'cause if you look at this trend , you might guess , you come from 25 % up to 45 % . <br>
+(trg)="89"> Với một điều kiện ban đầu như vậy và theo mô hình này , ta sẽ có kết quả như hình trên nó có vẻ không giống như hình kia , nhưng không phải là nó sai <br>
+<hr>
+(src)="82"> It looks like very soon we 'll all be free . <br>
+(src)="83"> But in fact , assuming those transition probabilities stay the same , you end up with about 62 and a half percent being free . <br>
+(trg)="90"> Nhìn theo một phương diện khác để nói , với những xác suất và các điều kiện xuất phát ban đầu , nó sẽ cho ra kết quả gần đến mức nào ? <br>
+<hr>
+(src)="84"> Here 's what our model shows . <br>
+(trg)="91"> Những gì bạn thấy , đó là mô hình được đưa ra ở cuối giai đoạn 40 năm <br>
+<hr>
+(src)="85"> Our model 's not quite as good . <br>
+(trg)="92"> Thật sự khá giống những gì chúng ta thấy trong thực tế . <br>
+<hr>
+(src)="86"> Model sort of shows these general trends , like this . <br>
+(trg)="93"> Chúng rất thực tế , gần gũi như vậy là vì tôi đã ước lượng bởi xác suất chuyển dịch lấy từ dữ liệu thực tế . <br>
+<hr>
+(src)="87"> So if I plugged in that same initial condition and ran my model , I get this sort of picture . <br>
+(trg)="94"> Do đó nó mới gần với thực tế như vậy . <br>
+<hr>
+(src)="88"> It doesn 't look exactly the same as that picture , but it doesn 't <br>
+(trg)="95"> Nhưng thú vị hơn ở chỗ , các mô hình này trông có vẻ khá giống nhau . <br>
+<hr>
+(src)="89"> look bad . <br>
+(src)="90"> Another way to look at it is to say , if I feed those probabilities in and start at the initial case , how close does it get ? <br>
+(trg)="96"> Điều đó có nghĩa là con số 62 . 5 % kia đã là chắc chắn chưa ? <br>
+<hr>
+(src)="91"> And what you can see is the model comes up at the end of the 40 year period with values that are really close to what we saw in the real world . <br>
+(trg)="98"> Nó không có nghĩa là con số kia chính xác hoàn toàn <br>
+(trg)="99"> Nhưng nó có nghĩa là , trừ phi có sự thay đổi lớn trong xác suất chuyển dịch <br>
+(trg)="100"> Chúng ta không thể có 100 % các quốc gia đều tự do . <br>
+<hr>
+(src)="92"> Now , the reason they 're so close is because I estimated by transition probabilities from the actual data . <br>
+(trg)="101"> Chúng ta thực sự thấy rõ ràng hơn mọi thứ đều theo kiểu 2/ 3 . <br>
+<hr>
+(src)="93"> So it 's likely it would be really close like this . <br>
+(src)="94"> But what 's more interesting is that the patterns look fairly similar , as well . <br>
+(trg)="102"> Tổng kết lại : bắt đầu với một mô hình tập trung / nhàm chán . <br>
+<hr>
+(src)="95"> Now does that mean we can buy into the 62 . 5 percent for sure ? <br>
+(trg)="103"> Đó là một mô hình ví dụ mà thôi . <br>
+<hr>
+(src)="96"> Probably not . <br>
+(trg)="104"> Chúng ta thường làm việc đó khi xây dựng mô hình . <br>
+<hr>
+(src)="97"> You know , it doesn 't mean it 's going to be exactly right . <br>
+(trg)="105"> Chúng ta chọn một số thứ đơn giản , dễ hiểu và xem quá trình diễn ra như thế nào . <br>
+<hr>
+(src)="98"> But it does mean , unless those transition probabilities change in a very serious way , we 're not going to get to 100 percent free countries . <br>
+(trg)="106"> Một khi chúng ta hiểu được mô hình , thì ta có thể dùng nó để giải quyết những bài toán thực tế <br>
+(trg)="107"> Và mở rộng phạm vi bài toán , thậm chí đưa dữ liệu thực tế vào nó và hiểu biết sâu sắc hơn . <br>
+<hr>
+(src)="100"> likely to see something like two thirds . <br>
+(src)="101"> So , what have we done ? <br>
+(trg)="108"> Ở một vài trường hợp , ta lại có được những giải pháp đáng ngạc nhiên . <br>
+<hr>
+(src)="102"> All we 've done in this lecture is shown : we started out with that simple alert/ bored model . <br>
+(src)="103"> That was a toy model . <br>
+(trg)="109"> Ở đây , thật ngạc nhiên với kết quả có được , thậm chí có một xu hướng tăng tỷ lệ số quốc gia tự do , <br>
+<hr>
+(src)="104"> We often do that when constructing a model . <br>
+(src)="105"> We take something very simple , it 's kind of fun , we can all understand it , and see how the process works . <br>
+(trg)="110"> Nếu xác suất chuyển dịch ở trong phạm vi chúng ta có , chúng ta không nên mong đợi mọi người đều tự do , mà chỉ nên mong đợi 2/ 3 số quốc gia được tự do mà thôi <br>
+<hr>
+(src)="106"> Once we understand the model , then we can take it to real problems , with more dimensions , and even tie it into real data , and get a deeper understanding of how the model works , and , in some cases , get fairly surprising solutions . <br>
+(trg)="111"> Giờ hãy xem tại sao nó lại hội tụ về 62 . 5 % ? <br>
+(trg)="112"> Điều gì dẫn đến trạng thái cân bằng trong mô hình Markov ? <br>
+(trg)="113"> Và chúng ta sẽ học kỹ hơn về định lý hội tụ Markov . <br>
+<hr>
+(src)="107"> Right , so here , the surprising result was , that even though there 's a trend towards more free countries , if transition probably stay in the range we 're in , we shouldn 't expect to see everyone be free . <br>
+(trg)="114"> Xin cảm ơn ! <br>
+<hr>
+<p>
+
+# en/n3EtyIaFgp0N.xml.gz<br>
+# ve/n3EtyIaFgp0N.xml.gz
+
+<p><hr>
+</body>
+</html>
