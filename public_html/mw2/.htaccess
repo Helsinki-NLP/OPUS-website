@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteCond %{QUERY_STRING} ^q=
+RewriteRule . dispatcher.php
+RewriteCond %{QUERY_STRING} ^=
+RewriteRule . dispatcher.php?q%{QUERY_STRING}

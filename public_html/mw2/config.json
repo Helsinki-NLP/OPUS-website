@@ -1,0 +1,70 @@
+{
+  "defaultCorpus": "rf",
+  "corpora": {
+    "rf": {
+      "name": "Regeringsforklaringen",
+      "logo": "logos/samplecorpus.png",
+      "description": "Declarations of Government Policy by the Swedish Government",
+      "link": "http://opus.nlpl.eu/RF.php",
+      "db": {
+        "host": "192.168.1.22",
+        "dbname": "mlw",
+        "user": "mlw",
+        "password": "opus"
+      },
+      "dbschema": "rf"
+    },
+    "wmtnews": {
+      "name": "WMT News Test Sets",
+      "logo": "logos/samplecorpus.png",
+      "description": "Translated news texts from WMT",
+      "link": "http://opus.nlpl.eu/WMT-News.php",
+      "db": {
+        "host": "192.168.1.22",
+        "dbname": "mlw",
+        "user": "mlw",
+        "password": "opus"
+      },
+      "dbschema": "wmtnews"
+    },
+    "infopankki": {
+      "name": "Infopankki",
+      "logo": "logos/samplecorpus.png",
+      "description": "Infopankki / InfoFinland is a multi-language website providing vital information to people planning to move to Finland and to immigrants already living in the country.",
+      "link": "http://opus.nlpl.eu/infopankki.php",
+      "db": {
+        "host": "192.168.1.22",
+        "dbname": "mlw",
+        "user": "mlw",
+        "password": "opus"
+      },
+      "dbschema": "infopankki"
+    },
+    "books": {
+      "name": "Books",
+      "logo": "logos/samplecorpus.png",
+      "description": "This is a collection of copyright free books aligned by Andras Farkas, which are available from http://www.farkastranslations.com/bilingual_books.php",
+      "link": "http://opus.nlpl.eu/Books.php",
+      "db": {
+        "host": "192.168.1.22",
+        "dbname": "mlw",
+        "user": "mlw",
+        "password": "opus"
+      },
+      "dbschema": "books"
+    },
+    "bible": {
+      "name": "The University of Edinburg Bible Corpus",
+      "logo": "logos/samplecorpus.png",
+      "description": "This is a multilingual parallel corpus created from translations of the Bible compiled by Christos Christodoulopoulos and Mark Steedman.",
+      "link": "http://opus.nlpl.eu/bible-uedin.php",
+      "db": {
+        "host": "192.168.1.22",
+        "dbname": "mlw",
+        "user": "mlw",
+        "password": "opus"
+      },
+      "dbschema": "bible"
+    }
+  }
+}

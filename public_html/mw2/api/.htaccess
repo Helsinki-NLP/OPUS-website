@@ -1,0 +1,4 @@
+<IfModule mod_deflate.c>
+  # Compress JSON output from endpoints
+  AddOutputFilterByType DEFLATE application/json
+</IfModule>
