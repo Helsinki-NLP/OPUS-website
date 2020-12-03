@@ -1,0 +1,328 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# eu/account-plugins.xml.gz<br>
+# zh_TW/account-plugins.xml.gz
+
+<p><hr>
+(src)="s1"> Gmail , Google Docs , Google + , YouTube eta Picasa <br>
+(trg)="s1"> 包含 Gmail 、 Google 文件 、 Google + 、 YouTube 和Picasa 網路相簿 <br>
+<hr>
+<p>
+
+# eu/acl.xml.gz<br>
+# zh_TW/acl.xml.gz
+
+<p><hr>
+(src)="s1"> Erabilera : <br>
+(trg)="s1"> 用法 ： <br>
+<hr>
+(src)="s2"> \ t % s acl bide-izena ... <br>
+(trg)="s2"> \ t % s acl 路徑名稱 ... <br>
+<hr>
+(src)="s3"> \ t % s -b acl dacl bide-izena ... <br>
+(trg)="s3"> \ t % s -b acl dacl 路徑名稱 ... <br>
+<hr>
+(src)="s4"> \ t % s -d dacl bide-izena ... <br>
+(trg)="s4"> \ t % s -d dacl 路徑名稱 ... <br>
+<hr>
+(src)="s5"> \ t % s -R bide-izena ... <br>
+(trg)="s5"> \ t % s -R 路徑名稱 ... <br>
+<hr>
+(src)="s6"> \ t % s -D bide-izena ... <br>
+(trg)="s6"> \ t % s -D 路徑名稱 ... <br>
+<hr>
+(src)="s7"> \ t % s -B bide-izena ... <br>
+(trg)="s7"> \ t % s -B 路徑名稱 ... <br>
+<hr>
+(src)="s8"> \ t % s -l bide-izena ... \ t [ ez da IRIX bateragarria ] <br>
+(trg)="s8"> \ t % s -l 路徑名稱 ... \ t [ 非 IRIX 兼容 ] <br>
+<hr>
+(src)="s9"> \ t % s -r bide-izena ... \ t [ ez da IRIX bateragarria ] <br>
+(trg)="s9"> \ t % s -r 路徑名稱 ... \ t [ 非 IRIX 兼容 ] <br>
+<hr>
+(src)="s10"> % s : errorea acl sarbidea kentzean " % s " : % s <br>
+(trg)="s10"> % s : 移除 " % s " : % s 之存取 acl 時發生錯誤 <br>
+<hr>
+(src)="s11"> % s : errorea lehenetsitako acl kentzean " % s " : % s <br>
+(trg)="s11"> % s : 移除 " % s " : % s 之預設 acl 時發生錯誤 <br>
+<hr>
+(src)="s12"> % s : ACL sarbidea ' % s ' : % s , % d sarreran <br>
+(trg)="s12"> % s : 存取 ACL ' % s ' : % s 於項目 % d <br>
+<hr>
+(src)="s13"> % s : ezin da eskuratu sarbide ACL-a ' % s ' : % s <br>
+(trg)="s13"> % s : 無法於 ' % s ' 取得存取 ACL : % s <br>
+<hr>
+(src)="s14"> % s : ezin da eskuratu lehenetsitako ACL-a ' % s ' : % s <br>
+(trg)="s14"> % s : 無法於 ' % s ' 取得預設 ACL : % s <br>
+<hr>
+(src)="s15"> % s : ezin da eskuratu sarbide ACL-aren testua ' % s ' : % s <br>
+(trg)="s15"> % s : 無法於 ' % s ' 取得存取 ACL 文本 : % s <br>
+<hr>
+(src)="s16"> % s : ezin da eskuratu lehenetsitako ACL-aren testua ' % s ' : % s <br>
+(trg)="s16"> % s : 無法於 ' % s ' 取得預設 ACL 文本 : % s <br>
+<hr>
+(src)="s17"> % s : ezin da ezarri sarbide ACL-a ' % s ' : % s <br>
+(trg)="s17"> % s : 無法於 " % s " 設定存取 acl : % s <br>
+<hr>
+(src)="s18"> % s : ezin da ezarri lehenetsitako ACL-a ' % s ' : % s <br>
+(trg)="s18"> % s : 無法於 " % s " 設定預設 acl : % s <br>
+<hr>
+(src)="s19"> % s : opendir aginduak huts egin du : % s <br>
+(trg)="s19"> % s : 目錄打開失敗 : % s <br>
+<hr>
+(src)="s20"> % s : malloc aginduak huts egin du : % s <br>
+(trg)="s20"> % s : malloc 失敗 : % s <br>
+<hr>
+(src)="s21"> % s : % s : sarbide ACL oker osatua `%s ': % s , %d sarreran <br>
+(trg)="s21"> % s : % s : 存取 ACL `%s ' 異常: % s 於項目 %d <br>
+<hr>
+(src)="s22"> % s : % s : lehenitsitako sarbide ACL oker osatua `%s ': % s , %d sarreran <br>
+(trg)="s22"> % s : % s : 預設 ACL `%s ' 異常: % s 於項目%d <br>
+<hr>
+(src)="s23"> % s : % s : Direktorioek soilik izan ditzaketelehenetsitako ACL-ak <br>
+(trg)="s23"> % s : % s : 只有目錄可有預設 ACL <br>
+<hr>
+(src)="s24"> % s : % s : Ez da fitxategi izenik aurkitu % d lerroan , bertan behera uzten <br>
+(trg)="s24"> % s : % s : 在第 % d行找不到檔名 ， 中止 <br>
+<hr>
+(src)="s25"> % s : Ez da fitxategi-izenik aurkitu sarrera estandarraren % d lerroan , bertan behera uzten <br>
+(trg)="s25"> % s : 在標準輸入的第 % d行找不到檔案名 ， 中止 <br>
+<hr>
+(src)="s27"> % s : % s : Ezin da jabea / taldea aldatu : % s <br>
+(trg)="s27"> % s : % s : 無法變更所有者 / 群組 : % s <br>
+<hr>
+(src)="s28"> % s : % s : Ezin da modua aldatu : % s <br>
+(trg)="s28"> % s : % s : 無法變更模式 : % s <br>
+<hr>
+(src)="s29"> % s % s -- fitxategietara sarbide zerrendak ( ACL ) ezarri <br>
+(trg)="s29"> % s % s --設定檔案存取控制列表 <br>
+<hr>
+(src)="s30"> Erabilera : % s % s <br>
+(trg)="s30"> 用法 ： % s % s <br>
+<hr>
+(src)="s31"> -m , --modify = acl fitxategien oraingo ACL-ak aldatu -M , --modify-file = file fitxategiaren ACL sarrerak irakurri , aldatzeko -x , --remove = acl fitxategien ACL sarrerak kendu -X , --remove-file = file fitxategiaren ACL sarrerak irakurri , kentzeko -b , --remove-all ACL sarrera hedatu guztiak kendu -k , --remove-default lehenetsitako ACL-a kendu <br>
+(trg)="s31"> -m , --modify = acl 修改檔案的存取控制列表 -M , --modify-file = file 從檔案讀取存取控制列表項目到修改 -x , --remove = acl 根據檔案中存取控制列表移除項目 -X , --remove-file = file 從檔案讀取存取控制列表項目並刪除 -b , --remove-all 刪除所有擴展存取控制列表項目 -k , --remove-default 移除預設存取控制列表 <br>
+<hr>
+(src)="s32"> --set = acl fitxategien ACL-ak ezarri , oraingoa ordezkatuz --set-file = file fitxategi batetik irakurri ezarriko diren ACL sarrerak --mask baimen maskara berriro kalkulatu <br>
+(trg)="s32"> --set = acl 設定替換當前的檔案存取控制列表 --set-file = file 從檔案中讀取存取控制列表項目設定 --mask 重新計算有效權限掩碼 <br>
+<hr>
+(src)="s33"> -n , --no-mask baimen maskara ez berriro kalkulatu -d , --default lehenetsitako ACL-ari ezarri aukerak <br>
+(trg)="s33"> -n , --no-mask 不重新計算有效權限掩碼 -d , --default 應用到預設存取控制列表的操作 <br>
+<hr>
+(src)="s34"> -R , --recursive azpidirektorioetan ere eragin -L , --logical esteka logikoak jarraitu -P , --physical esteka logikoak ez jarraitu --restore = file ACL-ak leheneratu (`getfacl -R ' aginduaren kontrakoa) --test probatarako modua (ACL-ak ez dira aldatzen) <br>
+(trg)="s34"> -R , --recursive 遞歸操作子目錄 -L , --logical 依照系統邏輯 ， 跟隨符號鏈接 -P , --physical 依照物理邏輯 ， 不跟隨符號鏈接 --restore = file 恢復存取控制列表 ， 和`getfacl -R'作用相反 --test 測試模式，並不是真正修改存取控制列表屬性 <br>
+<hr>
+(src)="s36"> % s : Sarrera estandarra : % s <br>
+(trg)="s36"> % s : 標準輸入 : % s <br>
+<hr>
+(src)="s37"> % s : - % c agindu osatugabea <br>
+(trg)="s37"> % s : 選項 - % c 不完整 <br>
+<hr>
+(src)="s38"> % s : - % c : % s aukera % d karakterearen inguruan <br>
+(trg)="s38"> % s : 選項 - % c : % s 靠近字符 % d <br>
+<hr>
+(src)="s39"> % s : % s , % d lerroan , % s fitxategian <br>
+(trg)="s39"> % s : % s在 % d行 , 於文件 % s <br>
+<hr>
+(src)="s40"> % s : % s , % d lerroan , sarrera estandarrean <br>
+(trg)="s40"> % s : % s 在標準輸出的第 % d 行 <br>
+<hr>
+(src)="s41"> Probatu `%s --help ' informazio gehiago eskuratzeko. <br>
+(trg)="s41"> 如欲獲取額外資訊 ， 請執行 「 % s --help 」 。 <br>
+<hr>
+(src)="s42"> % s : Bide-izen absolutoen ' / ' aurrizkia kentzen <br>
+(trg)="s42"> % s : 從絕對路徑名尾部去除 “ / ” 字符 <br>
+<hr>
+(src)="s43"> % s % s -- fitxategi sarrera kontrol zerrendak ( ACL ) eskuratu <br>
+(trg)="s43"> % s % s --獲取檔案存取控制列表 <br>
+<hr>
+(src)="s44"> Erabilera : % s [ - % s ] fitxategia ... <br>
+(trg)="s44"> 用法 ： % s [ - % s ] 檔案 ... <br>
+<hr>
+(src)="s45"> -d , --default lehenetsitako sarrera kontrol zerrenda bistaratu <br>
+(trg)="s45"> -d , --default 顯示預設存取控制列表 <br>
+<hr>
+(src)="s47"> Mota bereko sarrera ugari <br>
+(trg)="s47"> 出現同類型的多個項目 <br>
+<hr>
+(src)="s48"> Sarrera bikoiztuak <br>
+(trg)="s48"> 製作項目複本 <br>
+<hr>
+(src)="s49"> Sarrera falta da , edo okerra da <br>
+(trg)="s49"> 項目丟失或錯誤 <br>
+<hr>
+(src)="s50"> Sarrera mota baliogabea <br>
+(trg)="s50"> 項目類型無效 <br>
+<hr>
+(src)="s51"> baimenak eartzen % s -rentzat <br>
+(trg)="s51"> 正在為 % s 設定權限 <br>
+<hr>
+(src)="s52"> baimenak gordetzen % s -rentzat <br>
+(trg)="s52"> 正在為 % s 保存權限 <br>
+<hr>
+<p>
+
+# eu/activity-log-manager.xml.gz<br>
+# zh_TW/activity-log-manager.xml.gz
+
+<p><hr>
+(src)="s1"> Jarduera-egunkariaren kudeatzailea <br>
+(trg)="s1"> 活動記錄管理員 <br>
+<hr>
+(src)="s2"> Konfiguratu zer grabatzen den Zeitgeist jarduera-egutegian <br>
+(trg)="s2"> 設定要將什麼內容紀錄在 Zeitgeist 活動記錄中 <br>
+<hr>
+(src)="s3"> Jarduera eta pribatutasuna kudeatzeko tresna <br>
+(trg)="s3"> 活動及隱私管理員工具 <br>
+<hr>
+(src)="s4"> Segurtasuna eta pribatutasuna <br>
+(trg)="s4"> 安全與隱私 <br>
+<hr>
+(src)="s5"> Pribatutasun eta jarduera kudeatzailea <br>
+(trg)="s5"> 隱私及活動管理員 <br>
+<hr>
+(src)="s6"> pribatutasuna ; jarduera ; egunkaria ; zeitgeist ; diagnosiak ; errore-txostenak ; <br>
+(trg)="s6"> privacy ; activity ; log ; zeitgeist ; diagnostics ; error reports ; <br>
+<hr>
+(src)="s7"> Fitxategi eta aplikazioak <br>
+(trg)="s7"> 檔案和應用程式 <br>
+<hr>
+(src)="s8"> Segurtasuna <br>
+(trg)="s8"> 安全 <br>
+<hr>
+(src)="s9"> Bilatu <br>
+(trg)="s9"> 搜尋 <br>
+<hr>
+(src)="s10"> Diagnostikoak <br>
+(trg)="s10"> 診斷 <br>
+<hr>
+(src)="s11"> Abio-leihoan bilatzean : <br>
+(trg)="s11"> 在 Dash 搜尋時 ： <br>
+<hr>
+(src)="s12"> Bilatu emaitzak linean ere <br>
+(trg)="s12"> 包含線上搜尋結果 <br>
+<hr>
+(src)="s13"> Eskatu pasahitza : <br>
+(trg)="s13"> 需要密碼的時候 ： <br>
+<hr>
+(src)="s14"> _ Eseki ondoren iratzartzean <br>
+(trg)="s14"> 在睡眠狀態喚醒 ( _ W ) <br>
+<hr>
+(src)="s15"> _ Pantaila beltzetik itzultzean <br>
+(trg)="s15"> 在空白畫面返回 ( _ R ) <br>
+<hr>
+(src)="s16"> Pantaila _ beltz egon bada tarte batez <br>
+(trg)="s16"> 如畫面已空白 ( _ I ) ： <br>
+<hr>
+(src)="s17"> Pasahitzaren ezarpenak <br>
+(trg)="s17"> 密碼設定 <br>
+<hr>
+(src)="s18"> Energia-ezarpenak <br>
+(trg)="s18"> 電源設定 <br>
+<hr>
+(src)="s19"> Izena <br>
+(trg)="s19"> 名稱 <br>
+<hr>
+(src)="s20"> Ez dago deskribapenik <br>
+(trg)="s20"> 沒有可用的描述 <br>
+<hr>
+(src)="s21"> Azkenekoz erabilia <br>
+(trg)="s21"> 上次使用 <br>
+<hr>
+(src)="s22"> Jarduera <br>
+(trg)="s22"> 活動 <br>
+<hr>
+(src)="s23"> Hautatu aplikazioa <br>
+(trg)="s23"> 選取應用程式 <br>
+<hr>
+(src)="s24"> Gaur , % H : % M <br>
+(trg)="s24"> 今日 % H : % M <br>
+<hr>
+(src)="s25"> Atzo , % H : % M <br>
+(trg)="s25"> 昨日 % H : % M <br>
+<hr>
+(src)="s26"> % Y ( e ) ko % Bren % e ( e ) an , % H : % M <br>
+(trg)="s26"> Y年 % b % -e日 % p % -l : % M <br>
+<hr>
+(src)="s27"> Inoiz ez <br>
+(trg)="s27"> 永不 <br>
+<hr>
+(src)="s28"> Noiztik : <br>
+(trg)="s28"> 寄件者 ： <br>
+<hr>
+(src)="s29"> Noiz arte : <br>
+(trg)="s29"> 收件者 ： <br>
+<hr>
+(src)="s30"> Denbora-tarte baliogabea <br>
+(trg)="s30"> 無效的時間範圍 <br>
+<hr>
+(src)="s31"> % Y ( e ) ko % Bren % d ( e ) an <br>
+(trg)="s31"> % Y年 % b % -d日 <br>
+<hr>
+(src)="s32"> Musika <br>
+(trg)="s32"> 音樂 <br>
+<hr>
+(src)="s33"> Bideoak <br>
+(trg)="s33"> 影片 <br>
+<hr>
+(src)="s34"> Irudiak <br>
+(trg)="s34"> 圖片 <br>
+<hr>
+(src)="s35"> Dokumentuak <br>
+(trg)="s35"> 文件 <br>
+<hr>
+(src)="s36"> Aurkezpenak <br>
+(trg)="s36"> 簡報 <br>
+<hr>
+(src)="s37"> Kalkulu-orriak <br>
+(trg)="s37"> 試算表 <br>
+<hr>
+(src)="s38"> Elkarrizketa-erregistroak <br>
+(trg)="s38"> 聊天記錄 <br>
+<hr>
+(src)="s39"> Orain gutxi erabilitako fitxategi eta aplikazioak abio-leihoan eta beste edonon bistara daitezke . Beste norbaitek ikus badezake , edo zure kontura sar badaiteke , agian zein elementu grabatzen diren kontrolatu nahiko duzu . <br>
+(trg)="s39"> 您最近使用的檔案與應用程式會顯示在 Dash 以及其他地方 ， 若別人能夠看見或存取您的使用者帳戶 ， 您可能會想要限制哪些項目可以被紀錄 。 <br>
+<hr>
+(src)="s40"> Grabatu fitxategi eta aplikazioen erabilera <br>
+(trg)="s40"> 紀錄檔案和應用程式使用情況 <br>
+<hr>
+(src)="s41"> Garbitu erabilera-datuak ... <br>
+(trg)="s41"> 清除使用情況資料 … <br>
+<hr>
+(src)="s42"> Sartu : <br>
+(trg)="s42"> 包含 ： <br>
+<hr>
+(src)="s43"> Baztertu : <br>
+(trg)="s43"> 排除 ： <br>
+<hr>
+(src)="s44"> Kendu elementua <br>
+(trg)="s44"> 移除項目 <br>
+<hr>
+(src)="s45"> Hautatu karpeta bat zerrenda beltzera gehitzeko <br>
+(trg)="s45"> 選取要加入黑名單的資料夾 <br>
+<hr>
+(src)="s46"> Hautatu fitxategi bat zerrenda beltzera gehitzeko <br>
+(trg)="s46"> 選取要加入黑名單的檔案 <br>
+<hr>
+(src)="s47"> Garbitu erabilera-datuak <br>
+(trg)="s47"> 清除使用情況資料 <br>
+<hr>
+(src)="s48"> Ezabatu erabilitako fitxategi eta aplikazioen erregistroa : <br>
+(trg)="s48"> 刪除檔案和應用程式使用紀錄 ： <br>
+<hr>
+(src)="s49"> Azken ordukoak <br>
+(trg)="s49"> 上一小時 <br>
+<hr>
+(src)="s50"> Azken egunekoak <br>
+(trg)="s50"> 上一日 <br>
+<hr>
+</body>
+</html>

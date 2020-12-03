@@ -1,0 +1,328 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# eu/account-plugins.xml.gz<br>
+# zh_CN/account-plugins.xml.gz
+
+<p><hr>
+(src)="s1"> Gmail , Google Docs , Google + , YouTube eta Picasa <br>
+(trg)="s1"> 包括 Gmail 、 Google 文档 、 Google + 、 YouTube 和 Picasa <br>
+<hr>
+<p>
+
+# eu/acl.xml.gz<br>
+# zh_CN/acl.xml.gz
+
+<p><hr>
+(src)="s1"> Erabilera : <br>
+(trg)="s1"> 用法 ： <br>
+<hr>
+(src)="s2"> \ t % s acl bide-izena ... <br>
+(trg)="s2"> \ t % s acl 路径名 ... <br>
+<hr>
+(src)="s3"> \ t % s -b acl dacl bide-izena ... <br>
+(trg)="s3"> \ t % s -b acl dacl 路径名 ... <br>
+<hr>
+(src)="s4"> \ t % s -d dacl bide-izena ... <br>
+(trg)="s4"> \ t % s -d dacl 路径名 ... <br>
+<hr>
+(src)="s5"> \ t % s -R bide-izena ... <br>
+(trg)="s5"> \ t % s -R 路径名 ... <br>
+<hr>
+(src)="s6"> \ t % s -D bide-izena ... <br>
+(trg)="s6"> \ t % s -D 路径名 ... <br>
+<hr>
+(src)="s7"> \ t % s -B bide-izena ... <br>
+(trg)="s7"> \ t % s -B 路径名 ... <br>
+<hr>
+(src)="s8"> \ t % s -l bide-izena ... \ t [ ez da IRIX bateragarria ] <br>
+(trg)="s8"> \ t % s -l 路径名 ... \ t [ 与 IRIX 不兼容 ] <br>
+<hr>
+(src)="s9"> \ t % s -r bide-izena ... \ t [ ez da IRIX bateragarria ] <br>
+(trg)="s9"> \ t % s -r 路径名 ... \ t [ 与 IRIX 不兼容 ] <br>
+<hr>
+(src)="s10"> % s : errorea acl sarbidea kentzean " % s " : % s <br>
+(trg)="s10"> % s ： 移除 “ % s ” 上的ACL出现错误 ： % s <br>
+<hr>
+(src)="s11"> % s : errorea lehenetsitako acl kentzean " % s " : % s <br>
+(trg)="s11"> % s ： 移除 “ % s ” 上默认ACLU出现错误 ： % s <br>
+<hr>
+(src)="s12"> % s : ACL sarbidea ' % s ' : % s , % d sarreran <br>
+(trg)="s12"> % s : 访问控制列表 ' % s ' : % s 于条目 % d <br>
+<hr>
+(src)="s13"> % s : ezin da eskuratu sarbide ACL-a ' % s ' : % s <br>
+(trg)="s13"> % s : 无法获取访问控制列表于 ' % s ' : % s <br>
+<hr>
+(src)="s14"> % s : ezin da eskuratu lehenetsitako ACL-a ' % s ' : % s <br>
+(trg)="s14"> % s : 无法获取默认访问控制列表于 ' % s ' : % s <br>
+<hr>
+(src)="s15"> % s : ezin da eskuratu sarbide ACL-aren testua ' % s ' : % s <br>
+(trg)="s15"> % s : 无法获取访问控制列表文本于 ' % s ' : % s <br>
+<hr>
+(src)="s16"> % s : ezin da eskuratu lehenetsitako ACL-aren testua ' % s ' : % s <br>
+(trg)="s16"> % s : 无法获取默认访问控制列表文本于 ' % s ' : % s <br>
+<hr>
+(src)="s17"> % s : ezin da ezarri sarbide ACL-a ' % s ' : % s <br>
+(trg)="s17"> % s : 无法设定访问控制列表于 " % s " : % s <br>
+<hr>
+(src)="s18"> % s : ezin da ezarri lehenetsitako ACL-a ' % s ' : % s <br>
+(trg)="s18"> % s : 无法设定默认访问控制列表于 " % s " : % s <br>
+<hr>
+(src)="s19"> % s : opendir aginduak huts egin du : % s <br>
+(trg)="s19"> % s ： 打开目录失败 ： % s <br>
+<hr>
+(src)="s20"> % s : malloc aginduak huts egin du : % s <br>
+(trg)="s20"> % s ： 内存分配失败 ： % s <br>
+<hr>
+(src)="s21"> % s : % s : sarbide ACL oker osatua `%s ': % s , %d sarreran <br>
+(trg)="s21"> % s : % s : 异常的访问控制列表 " % s " : % s 位于 % d <br>
+<hr>
+(src)="s22"> % s : % s : lehenitsitako sarbide ACL oker osatua `%s ': % s , %d sarreran <br>
+(trg)="s22"> % s : % s : 异常的默认访问控制列表 " % s " : % s 位于 % d <br>
+<hr>
+(src)="s23"> % s : % s : Direktorioek soilik izan ditzaketelehenetsitako ACL-ak <br>
+(trg)="s23"> % s : % s : 只有目录有默认访问控制列表属性 <br>
+<hr>
+(src)="s24"> % s : % s : Ez da fitxategi izenik aurkitu % d lerroan , bertan behera uzten <br>
+(trg)="s24"> % s : % s : 在行 % d 没有发现文件名 , 退出 <br>
+<hr>
+(src)="s25"> % s : Ez da fitxategi-izenik aurkitu sarrera estandarraren % d lerroan , bertan behera uzten <br>
+(trg)="s25"> % s : 在标准输入的 % d 行没有发现文件名 , 退出 <br>
+<hr>
+(src)="s26"> % s : % s : % s , % d lerroan <br>
+(trg)="s26"> % s : % s : % s 于行 % d <br>
+<hr>
+(src)="s27"> % s : % s : Ezin da jabea / taldea aldatu : % s <br>
+(trg)="s27"> % s : % s : 无法更改所有者 / 组 : % s <br>
+<hr>
+(src)="s28"> % s : % s : Ezin da modua aldatu : % s <br>
+(trg)="s28"> % s ： % s ： 无法改变模式 ： % s <br>
+<hr>
+(src)="s29"> % s % s -- fitxategietara sarbide zerrendak ( ACL ) ezarri <br>
+(trg)="s29"> % s % s -- 设定文件访问控制列表 <br>
+<hr>
+(src)="s30"> Erabilera : % s % s <br>
+(trg)="s30"> 用法 : % s % s <br>
+<hr>
+(src)="s31"> -m , --modify = acl fitxategien oraingo ACL-ak aldatu -M , --modify-file = file fitxategiaren ACL sarrerak irakurri , aldatzeko -x , --remove = acl fitxategien ACL sarrerak kendu -X , --remove-file = file fitxategiaren ACL sarrerak irakurri , kentzeko -b , --remove-all ACL sarrera hedatu guztiak kendu -k , --remove-default lehenetsitako ACL-a kendu <br>
+(trg)="s31"> -m , --modify = acl 更改文件的访问控制列表 -M , --modify-file = file 从文件读取访问控制列表条目更改 -x , --remove = acl 根据文件中访问控制列表移除条目 -X , --remove-file = file 从文件读取访问控制列表条目并删除 -b , --remove-all 删除所有扩展访问控制列表条目 -k , --remove-default 移除默认访问控制列表 <br>
+<hr>
+(src)="s32"> --set = acl fitxategien ACL-ak ezarri , oraingoa ordezkatuz --set-file = file fitxategi batetik irakurri ezarriko diren ACL sarrerak --mask baimen maskara berriro kalkulatu <br>
+(trg)="s32"> --set = acl 设定替换当前的文件访问控制列表 --set-file = file 从文件中读取访问控制列表条目设定 --mask 重新计算有效权限掩码 <br>
+<hr>
+(src)="s33"> -n , --no-mask baimen maskara ez berriro kalkulatu -d , --default lehenetsitako ACL-ari ezarri aukerak <br>
+(trg)="s33"> -n , --no-mask 不重新计算有效权限掩码 -d , --default 应用到默认访问控制列表的操作 <br>
+<hr>
+(src)="s34"> -R , --recursive azpidirektorioetan ere eragin -L , --logical esteka logikoak jarraitu -P , --physical esteka logikoak ez jarraitu --restore = file ACL-ak leheneratu (`getfacl -R ' aginduaren kontrakoa) --test probatarako modua (ACL-ak ez dira aldatzen) <br>
+(trg)="s34"> -R , --recursive 递归操作子目录 -L , --logical 依照系统逻辑 ， 跟随符号链接 -P , --physical 依照自然逻辑 ， 不跟随符号链接 --restore = file 恢复访问控制列表 ， 和 “ getfacl -R ” 作用相反 --test 测试模式 ， 并不真正修改访问控制列表属性 <br>
+<hr>
+(src)="s35"> -v , --version inprimatu bertsioa eta irten -h , --help erakutsi laguntzarako testu hau <br>
+(trg)="s35"> -v , --version 显示版本并退出 -h , --help 显示本帮助信息 <br>
+<hr>
+(src)="s36"> % s : Sarrera estandarra : % s <br>
+(trg)="s36"> % s : 标准输入 : % s <br>
+<hr>
+(src)="s37"> % s : - % c agindu osatugabea <br>
+(trg)="s37"> % s : 选项 - % c 尚未实现 <br>
+<hr>
+(src)="s38"> % s : - % c : % s aukera % d karakterearen inguruan <br>
+(trg)="s38"> % s : 选项 - % c : % s 靠近字符 % d <br>
+<hr>
+(src)="s39"> % s : % s , % d lerroan , % s fitxategian <br>
+(trg)="s39"> % s : % s 在 % d 行 , 于文件 % s <br>
+<hr>
+(src)="s40"> % s : % s , % d lerroan , sarrera estandarrean <br>
+(trg)="s40"> % s : % s 在 % d 行于标准输出 <br>
+<hr>
+(src)="s41"> Probatu `%s --help ' informazio gehiago eskuratzeko. <br>
+(trg)="s41"> 尝试 “ % s --help ” 命令获取更多信息 。 <br>
+<hr>
+(src)="s42"> % s : Bide-izen absolutoen ' / ' aurrizkia kentzen <br>
+(trg)="s42"> % s : 从绝对路径名尾部去除 " / " 字符 。 <br>
+<hr>
+(src)="s43"> % s % s -- fitxategi sarrera kontrol zerrendak ( ACL ) eskuratu <br>
+(trg)="s43"> % s % s -- 获取文件访问控制列表 <br>
+<hr>
+(src)="s44"> Erabilera : % s [ - % s ] fitxategia ... <br>
+(trg)="s44"> 使用方法 : % s [ - % s ] 文件 ... <br>
+<hr>
+(src)="s45"> -d , --default lehenetsitako sarrera kontrol zerrenda bistaratu <br>
+(trg)="s45"> -d , --default 显示默认访问控制列表 <br>
+<hr>
+(src)="s46"> -a , --access erakutsi fitxategia atzitzeko kontrol-zerrenda soilik -d , --default erakutsi atzitzeko kontrol-zerrenda lehenetsia soilik -c , --omit-header ez erakutsi iruzkinaren goiburua -e , --all-effective inprimatu baimen efektibo guztiak -E , --no-effective ez inprimatu baimen efektiboak -s , --skip-base ezikusi oinarrizko erregistroak soilik dituzten fitxategiak -R , --recursive errekurtsiboa azpi-direktorio guztientzat -L , --logical ibilaldi logikoa , jarraitu esteka sinbolikoak -P , --physical ibilaldi fisikoa , ez jarraitu esteka sinbolikoak -t , --tabular irteerarentzat erabili tabulaziodun formatua -n , --numeric inprimatu zenbakizko erabiltzaile / taldeen identifikatzaileak -p , --absolute-names ez kendu hasierako ' / ' ikurra bide-izenetan <br>
+(trg)="s46"> -a , --access 仅显示文件访问控制列表 -d , --default 仅显示默认的访问控制列表 -c , --omit-header 不显示注释表头 -e , --all-effective 显示所有的有效权限 -E , --no-effective 显示无效权限 -s , --skip-base 跳过只有基条目 ( base entries ) 的文件 -R , --recursive 递归显示子目录 -L , --logical 逻辑遍历 ( 跟随符号链接 ) -P , --physical 物理遍历 ( 不跟随符号链接 ) -t , --tabular 使用制表符分隔的输出格式 -n , --numeric 显示数字的用户 / 组标识 -p , --absolute-names 不去除路径前的 ' / ' 符号 <br>
+<hr>
+(src)="s47"> Mota bereko sarrera ugari <br>
+(trg)="s47"> 出现同类型的多个条目 <br>
+<hr>
+(src)="s48"> Sarrera bikoiztuak <br>
+(trg)="s48"> 重复条目 <br>
+<hr>
+(src)="s49"> Sarrera falta da , edo okerra da <br>
+(trg)="s49"> 条目丢失或错误 <br>
+<hr>
+(src)="s50"> Sarrera mota baliogabea <br>
+(trg)="s50"> 无效的条目类型 <br>
+<hr>
+(src)="s51"> baimenak eartzen % s -rentzat <br>
+(trg)="s51"> 设定 % s 的权限 <br>
+<hr>
+(src)="s52"> baimenak gordetzen % s -rentzat <br>
+(trg)="s52"> 正在保存 % s 的权限 <br>
+<hr>
+<p>
+
+# eu/activity-log-manager.xml.gz<br>
+# zh_CN/activity-log-manager.xml.gz
+
+<p><hr>
+(src)="s1"> Jarduera-egunkariaren kudeatzailea <br>
+(trg)="s1"> 活动日志管理器 <br>
+<hr>
+(src)="s2"> Konfiguratu zer grabatzen den Zeitgeist jarduera-egutegian <br>
+(trg)="s2"> 配置在 Zeitgeist 活动日志中记录的内容 <br>
+<hr>
+(src)="s3"> Jarduera eta pribatutasuna kudeatzeko tresna <br>
+(trg)="s3"> 活动与隐私管理工具 <br>
+<hr>
+(src)="s4"> Segurtasuna eta pribatutasuna <br>
+(trg)="s4"> 安全和隐私 <br>
+<hr>
+(src)="s5"> Pribatutasun eta jarduera kudeatzailea <br>
+(trg)="s5"> 隐私与活动管理器 <br>
+<hr>
+(src)="s6"> pribatutasuna ; jarduera ; egunkaria ; zeitgeist ; diagnosiak ; errore-txostenak ; <br>
+(trg)="s6"> privacy ; activity ; log ; zeitgeist ; diagnostics ; error reports ; 安全和隐私 ; 活动 ; 记录 ; 错误报告 ; 诊断 ; <br>
+<hr>
+(src)="s7"> Fitxategi eta aplikazioak <br>
+(trg)="s7"> 文件和应用 <br>
+<hr>
+(src)="s8"> Segurtasuna <br>
+(trg)="s8"> 安全 <br>
+<hr>
+(src)="s9"> Bilatu <br>
+(trg)="s9"> 搜索 <br>
+<hr>
+(src)="s10"> Diagnostikoak <br>
+(trg)="s10"> 诊断 <br>
+<hr>
+(src)="s11"> Abio-leihoan bilatzean : <br>
+(trg)="s11"> 在 Dash 中搜索时 ： <br>
+<hr>
+(src)="s12"> Bilatu emaitzak linean ere <br>
+(trg)="s12"> 包含在线搜索结果 <br>
+<hr>
+(src)="s13"> Eskatu pasahitza : <br>
+(trg)="s13"> 需要输入密码 ： <br>
+<hr>
+(src)="s14"> _ Eseki ondoren iratzartzean <br>
+(trg)="s14"> 从挂起状态唤醒 ( _ W ) <br>
+<hr>
+(src)="s15"> _ Pantaila beltzetik itzultzean <br>
+(trg)="s15"> 从黑屏恢复 ( _ R ) <br>
+<hr>
+(src)="s16"> Pantaila _ beltz egon bada tarte batez <br>
+(trg)="s16"> 如果屏幕一直是空白 ( _ I ) <br>
+<hr>
+(src)="s17"> Pasahitzaren ezarpenak <br>
+(trg)="s17"> 密码设置 <br>
+<hr>
+(src)="s18"> Energia-ezarpenak <br>
+(trg)="s18"> 电源设置 <br>
+<hr>
+(src)="s19"> Izena <br>
+(trg)="s19"> 名称 <br>
+<hr>
+(src)="s20"> Ez dago deskribapenik <br>
+(trg)="s20"> 无可用描述 <br>
+<hr>
+(src)="s21"> Azkenekoz erabilia <br>
+(trg)="s21"> 最近使用 <br>
+<hr>
+(src)="s22"> Jarduera <br>
+(trg)="s22"> 活动 <br>
+<hr>
+(src)="s23"> Hautatu aplikazioa <br>
+(trg)="s23"> 选择应用程序 <br>
+<hr>
+(src)="s24"> Gaur , % H : % M <br>
+(trg)="s24"> 今天 ， % H : % M <br>
+<hr>
+(src)="s25"> Atzo , % H : % M <br>
+(trg)="s25"> 昨天 ， % H : % M <br>
+<hr>
+(src)="s26"> % Y ( e ) ko % Bren % e ( e ) an , % H : % M <br>
+(trg)="s26"> % Y- % m- % d , % H : % M <br>
+<hr>
+(src)="s27"> Inoiz ez <br>
+(trg)="s27"> 绝不 <br>
+<hr>
+(src)="s28"> Noiztik : <br>
+(trg)="s28"> 发送方 ： <br>
+<hr>
+(src)="s29"> Noiz arte : <br>
+(trg)="s29"> 接收方 ： <br>
+<hr>
+(src)="s30"> Denbora-tarte baliogabea <br>
+(trg)="s30"> 无效的时间范围 <br>
+<hr>
+(src)="s31"> % Y ( e ) ko % Bren % d ( e ) an <br>
+(trg)="s31"> % Y- % m- % d <br>
+<hr>
+(src)="s32"> Musika <br>
+(trg)="s32"> 音乐 <br>
+<hr>
+(src)="s33"> Bideoak <br>
+(trg)="s33"> 视频 <br>
+<hr>
+(src)="s34"> Irudiak <br>
+(trg)="s34"> 图片 <br>
+<hr>
+(src)="s35"> Dokumentuak <br>
+(trg)="s35"> 文档 <br>
+<hr>
+(src)="s36"> Aurkezpenak <br>
+(trg)="s36"> 演示文稿 <br>
+<hr>
+(src)="s37"> Kalkulu-orriak <br>
+(trg)="s37"> 电子表格 <br>
+<hr>
+(src)="s38"> Elkarrizketa-erregistroak <br>
+(trg)="s38"> 聊天记录 <br>
+<hr>
+(src)="s39"> Orain gutxi erabilitako fitxategi eta aplikazioak abio-leihoan eta beste edonon bistara daitezke . Beste norbaitek ikus badezake , edo zure kontura sar badaiteke , agian zein elementu grabatzen diren kontrolatu nahiko duzu . <br>
+(trg)="s39"> 在 Dash 和其他地方能够显示您最近使用过的文件和应用程序 。 如果其他人能够看到或者访问您的用户帐号 ， 您可能希望限制某些记录内容 。 <br>
+<hr>
+(src)="s40"> Grabatu fitxategi eta aplikazioen erabilera <br>
+(trg)="s40"> 记录文件和应用的使用情况 <br>
+<hr>
+(src)="s41"> Garbitu erabilera-datuak ... <br>
+(trg)="s41"> 清除使用数据 ... <br>
+<hr>
+(src)="s42"> Sartu : <br>
+(trg)="s42"> 包括 ： <br>
+<hr>
+(src)="s43"> Baztertu : <br>
+(trg)="s43"> 排除 ： <br>
+<hr>
+(src)="s44"> Kendu elementua <br>
+(trg)="s44"> 删除项目 <br>
+<hr>
+(src)="s45"> Hautatu karpeta bat zerrenda beltzera gehitzeko <br>
+(trg)="s45"> 选择要加入黑名单的文件夹 <br>
+<hr>
+(src)="s46"> Hautatu fitxategi bat zerrenda beltzera gehitzeko <br>
+(trg)="s46"> 选择要加入黑名单的文件 <br>
+<hr>
+(src)="s47"> Garbitu erabilera-datuak <br>
+(trg)="s47"> 清除使用记录 <br>
+<hr>
+</body>
+</html>

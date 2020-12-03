@@ -1,0 +1,328 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# ko/account-plugins.xml.gz<br>
+# nb/account-plugins.xml.gz
+
+<p><hr>
+(src)="s1"> 지메일 , 구글 독스 , 구글 플러스 , 유튜브 . 피카사를 포함합니다 . <br>
+(trg)="s1"> Inkluderer Gmail , Google Drive , Google + , Youtube og Picasa <br>
+<hr>
+<p>
+
+# ko/acl.xml.gz<br>
+# nb/acl.xml.gz
+
+<p><hr>
+(src)="s1"> 사용법 : <br>
+(trg)="s1"> Bruk : <br>
+<hr>
+(src)="s2"> \ t % s acl 경로명 ... <br>
+(trg)="s2"> \ t % s acl stinavn ... <br>
+<hr>
+(src)="s3"> \ t % s -b acl dacl 경로명 ... <br>
+(trg)="s3"> \ t % s -b acl dacl stinavn ... <br>
+<hr>
+(src)="s4"> \ t % s -d dacl 경로명 ... <br>
+(trg)="s4"> \ t % s -d dacl stinavn ... <br>
+<hr>
+(src)="s5"> \ t % s -R 경로명 ... <br>
+(trg)="s5"> \ t % s -R stinavn ... <br>
+<hr>
+(src)="s6"> \ t % s -D 경로명 ... <br>
+(trg)="s6"> \ t % s -D stinavn ... <br>
+<hr>
+(src)="s7"> \ t % s -B 경로명 ... <br>
+(trg)="s7"> \ t % s -B stinavn ... <br>
+<hr>
+(src)="s8"> \ t % s -l 경로명 ... \ t [ IRIX 호환이 아닐 때 ] <br>
+(trg)="s8"> \ t % s -l stinavn ... \ t [ ikke kompatibel med IRIX ] <br>
+<hr>
+(src)="s9"> \ t % s -r 경로명 ... \ t [ IRIX 호환이 아닐 때 ] <br>
+(trg)="s9"> \ t % s -r stinavn ... \ t [ ikke kompatibel med IRIX ] <br>
+<hr>
+(src)="s10"> % s : % s의 접근 acl의 오류 제거 중 : % s <br>
+(trg)="s10"> % s : feil ved fjerning av tilgang på " % s " : % s <br>
+<hr>
+(src)="s11"> % s : " % s " 에 대한 기본 ACL 제거 오류 : % s <br>
+(trg)="s11"> % s : feil ved fjerning av standard acl på " % s " : % s <br>
+<hr>
+(src)="s12"> % s : ' % s ' 접근 ACL : % s , % d 엔트리의 <br>
+(trg)="s12"> % s : tilgang ACL % s ' : % s på innlagt verdi % d <br>
+<hr>
+(src)="s13"> % s : ' % s '에 있는 접근 ACL을 가져올 수 없음 : % s <br>
+(trg)="s13"> % s : kan ikke skaffe tilgang ACL for % s ' : % s <br>
+<hr>
+(src)="s14"> % s : ' % s '에 있는 기본 ACL을 가져올 수 없음 : % s <br>
+(trg)="s14"> % s : kan ikke skaffe standard ACL for % s ' : % s <br>
+<hr>
+(src)="s15"> % s : ' % s '에 있는 접근 ACL 텍스트를 가져올 수 없음 : % s <br>
+(trg)="s15"> % s : kan ikke skaffe tilgang ACL tekst for % s ' : % s <br>
+<hr>
+(src)="s16"> % s : ' % s '에 있는 기본 ACL 텍스트를 가져올 수 없음 : % s <br>
+(trg)="s16"> % s : kan ikke skaffe standard ACL tekst for % s ' : % s <br>
+<hr>
+(src)="s17"> % s : " % s " 에 있는 접근 acl을 설정할 수 없음 : % s <br>
+(trg)="s17"> % s : kan ikke sette tilgang acl for " % s " : % s <br>
+<hr>
+(src)="s18"> % s : " % s " 에 있는 기본 acl을 설정할 수 없음 : % s <br>
+(trg)="s18"> % s kan ikke sette standard acl for " % s " : % s <br>
+<hr>
+(src)="s19"> % s : opendir 실패 : % s <br>
+(trg)="s19"> % s : opendir feilet : % s <br>
+<hr>
+(src)="s20"> % s : malloc 실패 : % s <br>
+(trg)="s20"> % s malloc feilet : % s <br>
+<hr>
+(src)="s21"> % s : % s : 잘못된 형식의 접근 ACL ' % s ' : % s , % d 엔트리의 <br>
+(trg)="s21"> % s : % s : Feilskapt tilgang ACL `%s ': % s på innlagt verdi %d <br>
+<hr>
+(src)="s22"> % s : % s : 잘못된 형식의 접근 ACL ' % s ' : % s , % d 엔트리의 <br>
+(trg)="s22"> % s : % s : Ugyldig standard ACL `%s ': % s i oppføring %d <br>
+<hr>
+(src)="s23"> % s : % s : 디렉터리들만 기본 ACL들을 가질 수 있음 <br>
+(trg)="s23"> % s : % s : Bare mapper kan ha standardariste ACLer <br>
+<hr>
+(src)="s24"> % s : % s : % d번째 줄에서 파일명을 찾을 수 없음 , 중단됨 <br>
+(trg)="s24"> % s : % s : Intet filnavn funnet i linje % d , avbryter <br>
+<hr>
+(src)="s25"> % s : 표준 입력 % d번째 줄에서 파일명을 찾을 수 없음 , 중단됨 <br>
+(trg)="s25"> % s : Intet filnavn funnet i linje % d av standard inndata , avbryter <br>
+<hr>
+(src)="s26"> % s : % s : % s , % d번째 줄 <br>
+(trg)="s26"> % s : % s : % s i linje % d <br>
+<hr>
+(src)="s27"> % s : % s : 소유자 / 그룹을 변경할 수 없음 : % s <br>
+(trg)="s27"> % s : % s : Kan ikke endre eier / gruppe : % s <br>
+<hr>
+(src)="s29"> % s % s -- 파일 접근 제어 목록 설정 <br>
+(trg)="s29"> % s % s -- set filens tilgangskontroll-liste ( ACL ) <br>
+<hr>
+(src)="s30"> 사용법 : % s % s <br>
+(trg)="s30"> Bruk : % s % s <br>
+<hr>
+(src)="s36"> % s : 표준 입력 : % s <br>
+(trg)="s36"> % s : Standard input : % s <br>
+<hr>
+(src)="s37"> % s : 옵션 - % c 가 완전하지 않음 <br>
+(trg)="s37"> % s : Alternativ - % c ikke fullstendig <br>
+<hr>
+(src)="s38"> % s : 옵션 - % c : % s , % d 문자 가까이에 <br>
+(trg)="s38"> % s : Alternativ - % c : % s nær bokstav % d <br>
+<hr>
+(src)="s39"> % s : % s , % d 번째 줄 , % s 파일의 <br>
+(trg)="s39"> % s : % s i linje % d av fil % s <br>
+<hr>
+(src)="s40"> % s : % s , 표준 입력의 % d 번째 줄 <br>
+(trg)="s40"> % s : % s i linje % d av standard inndata <br>
+<hr>
+(src)="s41"> 더 많은 정보는 ' % s --help ' 해보세요 . <br>
+(trg)="s41"> Prøv `%s --help ' for mer informasjon. <br>
+<hr>
+(src)="s44"> 사용법 : % s [ - % s ] 파일 ... <br>
+(trg)="s44"> Bruk : % s [ - % s ] fil ... <br>
+<hr>
+(src)="s48"> 중복 항목들 <br>
+(trg)="s48"> Like oppføringer <br>
+<hr>
+(src)="s49"> 누락되거나 잘못된 항목 <br>
+(trg)="s49"> Manglende eller feil oppføring <br>
+<hr>
+(src)="s50"> 잘못된 항목 형식 <br>
+(trg)="s50"> Ugydlig oppføringstype <br>
+<hr>
+(src)="s51"> % s의 권한을 설정 <br>
+(trg)="s51"> setter rettigheter for % s <br>
+<hr>
+(src)="s52"> % s의 권한을 보존 <br>
+(trg)="s52"> bevarer rettigheter for % s <br>
+<hr>
+<p>
+
+# ko/activity-log-manager.xml.gz<br>
+# nb/activity-log-manager.xml.gz
+
+<p><hr>
+(src)="s1"> 활동 기록 관리자 <br>
+(trg)="s1"> Aktivitetslogg-behandler <br>
+<hr>
+(src)="s2"> Zeitgeit 활동 로그에 무엇을 기록할 지 설정합니다 . <br>
+(trg)="s2"> Velg hva som skal lagres i din Zeitgeist-aktivitetslogg <br>
+<hr>
+(src)="s3"> 활동 기록과 정책 관리 도구 <br>
+(trg)="s3"> Aktivitets- og personvernshåndtering <br>
+<hr>
+(src)="s4"> 보안 &amp; 사생활 보호 <br>
+(trg)="s4"> Sikkerhet og personvern <br>
+<hr>
+(src)="s5"> 사생활과 활동 기록 관리자 <br>
+(trg)="s5"> Personvern- og aktivitetsbehandling <br>
+<hr>
+(src)="s6"> privacy ; 사생활 보호 ; activity ; 활동 ; log ; 기록 ; zeitgeist ; 자이트가이스트 ; diagnostics ; 분석 ; error reports ; 오류 보고 ; <br>
+(trg)="s6"> personvern ; aktivitet ; zeitgeist ; diagnostikk ; feilrapporter ; <br>
+<hr>
+(src)="s7"> 파일 &amp; 프로그램 <br>
+(trg)="s7"> Filer og programmer <br>
+<hr>
+(src)="s8"> 보안 <br>
+(trg)="s8"> Sikkerhet <br>
+<hr>
+(src)="s9"> 검색 <br>
+(trg)="s9"> Søk <br>
+<hr>
+(src)="s10"> 진단 <br>
+(trg)="s10"> Diagnostikk <br>
+<hr>
+(src)="s11"> 대시에서 검색할 때 : <br>
+(trg)="s11"> Ved søking på dashbordet : <br>
+<hr>
+(src)="s12"> 온라인 검색 결과 포함 <br>
+(trg)="s12"> Inkluder søkeresultater på nett <br>
+<hr>
+(src)="s13"> 다음 상황에는 암호 요구 : <br>
+(trg)="s13"> Krev passord når maskinen : <br>
+<hr>
+(src)="s14"> 절전 모드에서 복귀할 때 ( _ W ) <br>
+(trg)="s14"> _ Våkner opp fra hvilemodus <br>
+<hr>
+(src)="s15"> 화면 잠금에서 복귀할 때 ( _ R ) <br>
+(trg)="s15"> _ Viser blank skjerm <br>
+<hr>
+(src)="s16"> 일정 시간 동안 화면이 비었을 때 ( _ I ) <br>
+(trg)="s16"> _ når skjermen har vært blank i <br>
+<hr>
+(src)="s17"> 암호 설정 <br>
+(trg)="s17"> Passord-innstillinger : <br>
+<hr>
+(src)="s18"> 전원 설정 <br>
+(trg)="s18"> Strøminnstillinger <br>
+<hr>
+(src)="s19"> 이름 <br>
+(trg)="s19"> Navn <br>
+<hr>
+(src)="s20"> 설명이 없습니다 <br>
+(trg)="s20"> Ingen beskrivelse tilgjengelig <br>
+<hr>
+(src)="s21"> 마지막으로 사용함 <br>
+(trg)="s21"> Sist brukt <br>
+<hr>
+(src)="s22"> 활동 상황 <br>
+(trg)="s22"> Aktivitet <br>
+<hr>
+(src)="s23"> 프로그램 선택 <br>
+(trg)="s23"> Velg program <br>
+<hr>
+(src)="s24"> 오늘 , % H : % M <br>
+(trg)="s24"> I dag , % H : % M <br>
+<hr>
+(src)="s25"> 어제 , % H : % M <br>
+(trg)="s25"> I går , % H : % M <br>
+<hr>
+(src)="s26"> % Y년 % B % e일 , % H : % M <br>
+(trg)="s26"> % e % B % Y , % H : % M <br>
+<hr>
+(src)="s27"> 사용 안 함 <br>
+(trg)="s27"> Aldri <br>
+<hr>
+(src)="s28"> 원본 : <br>
+(trg)="s28"> Fra : <br>
+<hr>
+(src)="s29"> 대상 : <br>
+(trg)="s29"> Til : <br>
+<hr>
+(src)="s30"> 시간 범위가 잘못되었습니다 . <br>
+(trg)="s30"> Ugyldig tidsrom <br>
+<hr>
+(src)="s31"> % Y년 % B % d일 <br>
+(trg)="s31"> % d % B % Y <br>
+<hr>
+(src)="s32"> 음악 <br>
+(trg)="s32"> Musikk <br>
+<hr>
+(src)="s33"> 동영상 <br>
+(trg)="s33"> Videoer <br>
+<hr>
+(src)="s34"> 사진 <br>
+(trg)="s34"> Bilder <br>
+<hr>
+(src)="s35"> 문서 <br>
+(trg)="s35"> Dokumenter <br>
+<hr>
+(src)="s36"> 발표 <br>
+(trg)="s36"> Presentasjoner <br>
+<hr>
+(src)="s37"> 스프레드시트 <br>
+(trg)="s37"> Regneark <br>
+<hr>
+(src)="s38"> 대화 기록 <br>
+(trg)="s38"> Nettprat-logg <br>
+<hr>
+(src)="s39"> 사용한 파일과 프로그램은 대시에 나타납니다 . 다른 사람이 사용자의 계정에 접근하거나 내용을 볼 수 있다면 기록할 항목을 제한하는 것이 좋을 것입니다 . <br>
+(trg)="s39"> Dashbordet og andre programmer kan vise hvilke filer og programmer du har brukt nylig . Hvis andre enn deg selv har tilgang til brukerkontoen din , bør du vurdere å begrense hva som skal loggføres . <br>
+<hr>
+(src)="s40"> 사용한 파일과 프로그램 기록 <br>
+(trg)="s40"> Loggfør bruk av filer og programmer <br>
+<hr>
+(src)="s41"> 사용 데이터 지우기 ... <br>
+(trg)="s41"> Slett bruksdata … <br>
+<hr>
+(src)="s42"> 포함할 항목 : <br>
+(trg)="s42"> Inkluder : <br>
+<hr>
+(src)="s43"> 제외할 항목 : <br>
+(trg)="s43"> Ekskluder : <br>
+<hr>
+(src)="s44"> 항목 제거 <br>
+(trg)="s44"> Fjern element <br>
+<hr>
+(src)="s45"> 기록을 금지할 폴더 선택 <br>
+(trg)="s45"> Velg en mappe som skal svartelistes <br>
+<hr>
+(src)="s46"> 기록을 금지할 파일 선택 <br>
+(trg)="s46"> Velg en fil som skal svartelistes <br>
+<hr>
+(src)="s47"> 사용 데이터 지우기 <br>
+(trg)="s47"> Fjern bruksdata <br>
+<hr>
+(src)="s48"> 파일과 프로그램을 사용 기록을 삭제합니다 : <br>
+(trg)="s48"> Slett loggen som viser hvilke filer og programmer som har vært i bruk : <br>
+<hr>
+(src)="s49"> 이전 한 시간 <br>
+(trg)="s49"> Den siste timen <br>
+<hr>
+(src)="s50"> 이전 날 <br>
+(trg)="s50"> Det siste døgnet <br>
+<hr>
+(src)="s51"> 이전 주 <br>
+(trg)="s51"> Den siste uka <br>
+<hr>
+(src)="s52"> 모든 기록 <br>
+(trg)="s52"> Siden tidenes morgen <br>
+<hr>
+(src)="s53"> 이 작업은 실행 취소할 수 없습니다 . 정말 삭제하시겠습니까 ? <br>
+(trg)="s53"> Denne handlingen kan ikke angres . Er du sikker på at du vil slette denne aktiviteten ? <br>
+<hr>
+(src)="s54"> 우분투는 개발자들이 우분투를 향상 시키는데 도움이 되도록 익명 정보를 수집할 수 있습니다 . 수집한 정보는 개인 정보 보호 정책에 의해 보호됩니다 . <br>
+(trg)="s54"> Ubuntu kan samle inn anonym informasjon som hjelper utviklerne med å forbedre systemet . All informasjon som samles inn er underlagt våre retningslinjer for personvern . <br>
+<hr>
+(src)="s55"> 개인 정보 보호 정책 <br>
+(trg)="s55"> Retningslinjer for personvern <br>
+<hr>
+(src)="s56"> 이 컴퓨터의 사용자가 할 수 있는 일 : <br>
+(trg)="s56"> Personer som bruker denne datamaskinen kan : <br>
+<hr>
+(src)="s57"> 캐노니컬 에 오류 보고를 보냅니다 . <br>
+(trg)="s57"> Send feilrapporter til Canonical <br>
+<hr>
+(src)="s58"> 오류 보고에는 문제가 발생했을 때 실행한 프로그램 정보가 포함되어 있습니다 . 언제나 문제 보고를 보낼지 보내지 않을지 결정할 수 있습니다 <br>
+(trg)="s58"> Feilrapporter inneholder informasjon om hva et program gjorde da feilen oppstod . Du vil alltid få valget mellom å sende eller avbryte rapporteringen . <br>
+<hr>
+</body>
+</html>

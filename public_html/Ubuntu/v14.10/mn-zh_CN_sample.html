@@ -1,0 +1,322 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# mn/adduser.xml.gz<br>
+# zh_CN/adduser.xml.gz
+
+<p><hr>
+(src)="s1"> Зөвхөн root системийн хэрэглэгч болон группыг нэмнэ . <br>
+(trg)="s1"> 只有 root 才能将用户或组添加到系统 。 <br>
+<hr>
+(src)="s2"> Зөвхөн нэг эсвэл хоёр зөвшөөрсөн . <br>
+(trg)="s2"> 只允许一个或者两个名字 。 <br>
+<hr>
+(src)="s11"> GID `%s ' ашиглагдаж байна. <br>
+(trg)="s11"> GID " % s " 已被占用 。 <br>
+<hr>
+(src)="s13">`%s ' групп үүссэнгүй. <br>
+(trg)="s13"> 组 " % s " 没有被创建 。 <br>
+<hr>
+(src)="s15"> Дууслаа . <br>
+(trg)="s15"> 完成 。 <br>
+<hr>
+(src)="s16">`%s ' групп өмнө нь үүссэн байна. <br>
+(trg)="s16"> " % s " 组已经存在 。 <br>
+<hr>
+(src)="s18">`%s ' хэрэглэгч алга. <br>
+(trg)="s18"> 用户 " % s " 不存在 。 <br>
+<hr>
+(src)="s19">`%s ' групп үүссэнгүй. <br>
+(trg)="s19"> " % s " 组不存在 。 <br>
+<hr>
+(src)="s20">`%s ' хэрэглэгч ` % s '-д үүссэн байна <br>
+(trg)="s20"> 用户 " % s " 已经属于 " % s " 组 。 <br>
+<hr>
+(src)="s26">`%s ' хэрэглэгчийг үүсгэж чадсангүй. <br>
+(trg)="s26"> 用户 " % s " 未创建成功 。 <br>
+<hr>
+(src)="s28"> Дотоод алдаа <br>
+(trg)="s28"> 内部错误 <br>
+<hr>
+(src)="s40"> Хандах эрх боломжгүй <br>
+(trg)="s40"> 权限不足 <br>
+<hr>
+(src)="s41"> тохирохгүй тохиргоо <br>
+(trg)="s41"> 选项组合无效 <br>
+<hr>
+(src)="s42"> юу ч биелсэнгүй . <br>
+(trg)="s42"> 未知错误 ， 操作取消 <br>
+<hr>
+(src)="s43"> нууц үгийн файлын алдаа <br>
+(trg)="s43"> 未知错误 ， passwd 文件遗失 <br>
+<hr>
+(src)="s44"> Нууц үгийн файл завгүй байна. дахин оролдоно уу . <br>
+(trg)="s44"> passwd 文件忙 ， 请再试 <br>
+<hr>
+(src)="s45"> тохирохгүй аргумент locale noexpr <br>
+(trg)="s45"> 无效的参数 locale noexpr <br>
+<hr>
+(src)="s46"> locale yesexpr <br>
+(trg)="s46"> 再试一次 ？ [ y / N ] locale yesexpr <br>
+<hr>
+(src)="s50">`%s ' хэрэглэгчийн санг үүсгэж чадсангүй. <br>
+(trg)="s50"> 无法创建主目录 " % s " <br>
+<hr>
+(src)="s58">`%s ' хэрэглэгч үүссэн байна, системийн хэрэглэгч биш. <br>
+(trg)="s58"> 用户 " % s " 已存在 ， 但不是系统用户 。 <br>
+<hr>
+(src)="s59">`%s ' хэрэглэгч үүссэн байна.. <br>
+(trg)="s59"> 用户 " % s " 已经存在 。 <br>
+<hr>
+(src)="s65"> Сэжигтэй нэрийг зөвшөөрч ашиглах . <br>
+(trg)="s65"> 允许使用可疑的用户名 . <br>
+<hr>
+(src)="s77"> --help " and " --version <br>
+(trg)="s77"> adduser [ --home 用户主文件夹 ] [ --shell SHELL ] [ --no-create-home （ 无主文件夹 ） ] [ --uid 用户ID ] [ --firstuid ID ] [ --lastuid ID ] [ --gecos GECOS ] [ --ingroup 用户组 | --gid 组ID ] [ --disabled-password （ 禁用密码 ） ] [ --disabled-login （ 禁止登录 ） ] [ --encrypt-home ] 用户名 添加一个普通用户 adduser --system [ --home 用户主文件夹 ] [ --shell SHELL ] [ --no-create-home （ 无主文件夹 ） ] [ --uid 用户ID ] [ --gecos GECOS ] [ --group | --ingroup 用户组 | --gid 组ID ] [ --disabled-password （ 禁用密码 ） ] [ --disabled-login （ 禁止登录 ） ] 用户名 添加一个管理员 adduser --group [ --gid 组ID ] 用户组名 addgroup [ --gid ID ] 用户组名 添加一个用户组 addgroup --system [ --gid 组ID ] 用户组名 添加一个管理员用户组 adduser 用户名 用户组名 将一已存在的用户移至一已存在的用户组 常规设置 : --quiet | -q 不要在标准输出中给出进度信息 --force-badname 允许用户名不匹配 ： NAME _ REGEX [ _ SYSTEM ] 配置变量 --help | -h 给出本命令用法 --version | -v 版本号和版权 --conf | -c 文件 使用文件中的配置 --help " and " --version <br>
+<hr>
+(src)="s78"> Зөвхөн root системийн групп болон хэрэглэгчийг устгана . <br>
+(trg)="s78"> 只有 root 才能从系统中删除用户或组 。 <br>
+<hr>
+(src)="s80"> Устгах группын нэр : <br>
+(trg)="s80"> 请输入要删除的组名 ： <br>
+<hr>
+(src)="s81"> Устгах хэрэглэгчний нэр : <br>
+(trg)="s81"> 请输入要删除的用户名 ： <br>
+<hr>
+(src)="s101">`%s ' групп хоосон биш байна. <br>
+(trg)="s101"> " % s " 组不为空 ！ <br>
+<hr>
+(src)="s104">`%s ' хэрэглэгч ` % s ' группын хэрэглэгч биш байна. <br>
+(trg)="s104"> " % s " 不是 " % s " 组成员 。 <br>
+<hr>
+<p>
+
+# mn/aisleriot.xml.gz<br>
+# zh_CN/aisleriot.xml.gz
+
+<p><hr>
+(src)="s1"> АйслеРойт хөзөр <br>
+(trg)="s1"> AisleRiot 接龙游戏 <br>
+<hr>
+(src)="s2"> Өөр олон хөзрийн тоглоомууд тоглох <br>
+(trg)="s2"> 玩各种纸牌游戏 <br>
+<hr>
+(src)="s6"> Багаж самбар харуулах эсэх <br>
+(trg)="s6"> 是否显示工具栏 <br>
+<hr>
+(src)="s10"> Дуу <br>
+(trg)="s10"> 音效 <br>
+<hr>
+(src)="s11"> Дуу тоглуулах эсэх <br>
+(trg)="s11"> 是否播放事件声音 。 <br>
+<hr>
+(src)="s14"> Хэрэглэх тоглоомын файл <br>
+(trg)="s14"> 要使用的游戏文件 <br>
+<hr>
+(src)="s16"> Тоглосон тоглоомын статистик <br>
+(trg)="s16"> 所玩游戏的统计 <br>
+<hr>
+(src)="s20"> Шинэ тоглоом <br>
+(trg)="s20"> 新游戏 <br>
+<hr>
+(src)="s22"> Статистикууд <br>
+(trg)="s22"> 统计 <br>
+<hr>
+(src)="s27"> Тоглоомоо сонго <br>
+(trg)="s27"> 选择游戏 <br>
+<hr>
+(src)="s31"> _ New " is for the menu item ' Game- &gt; New ' , implies " New Game <br>
+(trg)="s31"> 提示 ( _ H ) _ New " is for the menu item ' Game- &gt; New ' , implies " New Game <br>
+<hr>
+(src)="s32"> _ New Game <br>
+(trg)="s32"> 新建 ( _ N ) _ New Game <br>
+<hr>
+(src)="s34"> Reset <br>
+(trg)="s34"> 重做移动 ( _ R ) Reset <br>
+<hr>
+(src)="s35"> _ Дахин эхлэх _ Restart " is the menu item ' Game- &gt; Restart ' , implies " Restart Game <br>
+(trg)="s35"> 重置 ( _ R ) _ Restart " is the menu item ' Game- &gt; Restart ' , implies " Restart Game <br>
+<hr>
+(src)="s43"> slot type <br>
+(trg)="s43"> 您应该在收到该程序的同时收到了 GNU GPL 协议的副本 。 如果没有的话 ， 请参见 <br>
+<hr>
+(src)="s44"> slot type <br>
+(trg)="s44">收牌区slot type<br>
+<hr>
+(src)="s45"> slot type <br>
+(trg)="s45">ä¿çåºslot type<br>
+<hr>
+(src)="s46"> slot type <br>
+(trg)="s46">发牌区slot type<br>
+<hr>
+(src)="s47"> slot type <br>
+(trg)="s47">ç©ºä½slot type<br>
+<hr>
+(src)="s48"> foundationslot hint <br>
+(trg)="s48">废牌堆foundationslot hint<br>
+<hr>
+(src)="s49"> reserveslot hint <br>
+(trg)="s49">æ¶çåºç %sreserveslot hint<br>
+<hr>
+(src)="s50"> stockslot hint <br>
+(trg)="s50">保留区的 %sstockslot hint<br>
+<hr>
+(src)="s51"> tableauslot hint <br>
+(trg)="s51">åçåºç %stableauslot hint<br>
+<hr>
+(src)="s52"> wasteslot hint <br>
+(trg)="s52">空位中的 %swasteslot hint<br>
+<hr>
+(src)="s54"> Энэ тоглоомын зөвлөмж тодорхойлогдоогүй байна . <br>
+(trg)="s54">该游戏尚不支持提示功能。<br>
+<hr>
+(src)="s55"> % s -г % s рүү зөөх . <br>
+(trg)="s55">å° %s ç§»å¨å° %s ä¸ã<br>
+<hr>
+(src)="s56"> Энэ тоглоом зөвлөмж өгөхөд боломжгүй . <br>
+(trg)="s56">该游戏无法提供提示。<br>
+<hr>
+(src)="s58"> Агнес <br>
+(trg)="s58">爱格妮思<br>
+<hr>
+(src)="s68"> Бристоль <br>
+(trg)="s68">布里斯托尔<br>
+<hr>
+(src)="s69"> Камелот <br>
+(trg)="s69">å¡ç±³æ´ç¹<br>
+<hr>
+(src)="s70"> Хурд <br>
+(trg)="s70">甘菲德<br>
+<hr>
+(src)="s72"> Шатрын хөлөг <br>
+(trg)="s72">棋盘<br>
+<hr>
+(src)="s73"> Цаг <br>
+(trg)="s73">éè¡¨<br>
+<hr>
+(src)="s74"> Дугтуй <br>
+(trg)="s74">封面<br>
+<hr>
+(src)="s77"> Хуулбар <br>
+(trg)="s77">åå³°<br>
+<hr>
+(src)="s79"> Дорнын боомт <br>
+(trg)="s79">ä¸æ¸¯<br>
+<hr>
+(src)="s81"> Цахилгаан шат <br>
+(trg)="s81">çµæ¢¯<br>
+<hr>
+(src)="s83"> Гүйдэг шат <br>
+(trg)="s83">èªå¨æ¶æ¢¯<br>
+<hr>
+(src)="s85"> Цайз <br>
+(trg)="s85">è¦å¡<br>
+<hr>
+(src)="s86"> Аз <br>
+(trg)="s86">财富<br>
+<hr>
+(src)="s88"> Арван дөрөв <br>
+(trg)="s88">十四<br>
+<hr>
+(src)="s89"> Нүд чөлөөлөх <br>
+(trg)="s89">ç©ºå½æ¥é¾<br>
+<hr>
+(src)="s93"> Хавцал <br>
+(trg)="s93">æ ¼ä¼¦ä¼å¾·<br>
+<hr>
+(src)="s95"> Гольф <br>
+(trg)="s95">é«å°å¤«<br>
+<hr>
+(src)="s96"> Цыганууд <br>
+(trg)="s96">吉普赛<br>
+<hr>
+(src)="s97"> Хельсинк <br>
+(trg)="s97">èµ«å°è¾åº<br>
+<hr>
+(src)="s98"> Тэмтэг <br>
+(trg)="s98">跳房子<br>
+<hr>
+(src)="s99"> Изабель <br>
+(trg)="s99">ä¾èè´å°<br>
+<hr>
+(src)="s100"> Jamestown <br>
+(trg)="s100">詹姆斯敦<br>
+<hr>
+(src)="s101"> Жумбо <br>
+(trg)="s101">å¼ºä¼¯<br>
+<hr>
+(src)="s102"> Канзас <br>
+(trg)="s102">堪萨斯<br>
+<hr>
+(src)="s105"> Клондайк <br>
+(trg)="s105">åæä»£å<br>
+<hr>
+(src)="s107"> Лабиринт <br>
+(trg)="s107">è¿·å®«<br>
+<hr>
+(src)="s109"> Мазе <br>
+(trg)="s109">è¿·é­éµ<br>
+<hr>
+(src)="s112"> Хөрш <br>
+(trg)="s112">邻国<br>
+<hr>
+(src)="s113"> Одесса <br>
+(trg)="s113">æå¾·è¨<br>
+<hr>
+(src)="s114"> Осмос <br>
+(trg)="s114">渗透<br>
+<hr>
+(src)="s115"> Peek <br>
+(trg)="s115">ç®å<br>
+<hr>
+(src)="s116"> Pileon <br>
+(trg)="s116">根冠<br>
+<hr>
+(src)="s117"> Хуниас <br>
+(trg)="s117">è¾«å­<br>
+<hr>
+(src)="s118"> Покер <br>
+(trg)="s118">纸牌戏<br>
+<hr>
+(src)="s119"> Quatorze <br>
+(trg)="s119">å¤¸æå°æ³½<br>
+<hr>
+(src)="s122"> Хилэнцэт <br>
+(trg)="s122">黑心人<br>
+<hr>
+(src)="s123"> Зодоон <br>
+(trg)="s123">æ··æ<br>
+<hr>
+(src)="s124"> Seahaven <br>
+(trg)="s124">海港<br>
+<hr>
+(src)="s127"> Аалз <br>
+(trg)="s127">èèçº¸ç<br>
+<hr>
+(src)="s129"> Аалзхан <br>
+(trg)="s129">èèçº¸ç(ä¸å¯)<br>
+<hr>
+(src)="s132"> Цоолтуур <br>
+(trg)="s132">模板<br>
+<hr>
+(src)="s135"> Хулгайч <br>
+(trg)="s135">å°å·<br>
+<hr>
+(src)="s136"> Арвангурав <br>
+(trg)="s136">十三<br>
+<hr>
+(src)="s138"> Treize <br>
+(trg)="s138">特睿兹<br>
+<hr>
+(src)="s141"> Валентин <br>
+(trg)="s141">æäººè<br>
+<hr>
+</body>
+</html>

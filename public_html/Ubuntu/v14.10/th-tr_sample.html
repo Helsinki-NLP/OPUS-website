@@ -1,0 +1,328 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# th/account-plugins.xml.gz<br>
+# tr/account-plugins.xml.gz
+
+<p><hr>
+<p>
+
+# th/adduser.xml.gz<br>
+# tr/adduser.xml.gz
+
+<p><hr>
+(src)="s1"> ผู ้ ดูแลระบบ ( รูท ) เท ่ านั ้ นที ่ สามารถเพิ ่ มรายชื ่ อผู ้ ใช ้ หรือกลุ ่ มผู ้ ใช ้ <br>
+(trg)="s1"> Sisteme sadece yönetici tarafından bir kullanıcı ya da grup eklenebilir . <br>
+<hr>
+(src)="s2"> อนุญาต 1 หรือ 2 ชื ่ อเท ่ านั ้ น <br>
+(trg)="s2"> Sadece bir veya iki isme izin var . <br>
+<hr>
+(src)="s3"> ให ้ กำหนดเพียงชื ่ อเดียวในโหมดนี ้ <br>
+(trg)="s3"> Bu kipte sadece bir isim belirtin . <br>
+<hr>
+(src)="s4"> ออปชั ่ น --group , --ingroup , และ --gid มีความเกี ่ ยวเนื ่ องถึงกัน <br>
+(trg)="s4"> --group , --ingroup ve --gid seçeneklerinden sadece biri seçilebilir . <br>
+<hr>
+(src)="s5"> ไดเร ็ คทอรี ่ home จะต ้ องระบุในแบบ absolute path <br>
+(trg)="s5"> Başlangıç dizini gerçek bir dizin olmalı . <br>
+<hr>
+(src)="s11"> GID ' % s ' กำลังถูกใช ้ งานอยู ่ แล ้ ว <br>
+(trg)="s11"> GID " ' % s " zaten kullanımda . <br>
+<hr>
+(src)="s12"> ไม ่ มี GID ปรากฏในช ่ วง % d ถึง % d ( FIRST _ SYS _ GID - LAST _ SYS _ GID ) . <br>
+(trg)="s12"> % d ile % d arasında hiç GID mevcut değil ( FIRST _ SYS _ GID - LAST _ SYS _ GID ) . <br>
+<hr>
+(src)="s13"> กรุ ๊ ป ' % s ' ยังไม ่ ได ้ ถูกสร ้ างขึ ้ น <br>
+(trg)="s13">`%s ' grubu oluşturulamadı. <br>
+<hr>
+(src)="s15"> เสร ็ จเรียบร ้ อย <br>
+(trg)="s15"> Tamamlandı . <br>
+<hr>
+(src)="s16"> กรุ ๊ ป ' % s ' มีอยู ่ แล ้ ว <br>
+(trg)="s16"> " % s " grubu zaten mevcut . <br>
+<hr>
+(src)="s17"> ไม ่ มี GID ปรากฏในช ่ วง % d ถึง % d ( FIRST _ GID - LAST _ GID ) . <br>
+(trg)="s17"> % d ile % d arasında hiç GID mevcut değil ( FIRST _ GID - LAST _ GID ) . <br>
+<hr>
+(src)="s18"> ผู ้ ใช ้ ' % s ' ไม ่ ปรากฏมีอยู ่ <br>
+(trg)="s18"> " % s " kullanıcısı mevcut değil . <br>
+<hr>
+(src)="s20"> ผู ้ ใช ้ `%s ' ได้เป็นสมาชิกของกลุ่ม ` % s ' นี้แล้ว <br>
+(trg)="s20"> " % s " kullanıcısı zaten " % s " grubuna üye . <br>
+<hr>
+(src)="s26"> ผู ้ ใช ้ `%s ' ยังไม่ได้สร้าง <br>
+(trg)="s26">`%s ' kullanıcısı oluşturulamadı. <br>
+<hr>
+(src)="s28"> เกิดข ้ อผิดพลาดภายใน <br>
+(trg)="s28"> Dahili hata <br>
+<hr>
+(src)="s45"> locale noexpr <br>
+(trg)="s45"> Hata argüman locale noexpr <br>
+<hr>
+(src)="s46"> locale yesexpr <br>
+(trg)="s46"> Tekrar dene ? [ e / H ] locale yesexpr <br>
+<hr>
+(src)="s59"> ผู ้ ใช ้ `%s ' มีอยู่แล้ว <br>
+(trg)="s59"> " % s " kullanıcısı zaten mevcut . <br>
+<hr>
+(src)="s77"> --help " and " --version <br>
+(trg)="s77"> adduser [ --home DIR ] [ --shell SHELL ] [ --no-create-home ] [ --uid ID ] [ --firstuid ID ] [ --lastuid ID ] [ --gecos GECOS ] [ --ingroup GROUP | --gid ID ] [ --disabled-password ] [ --disabled-login ] [ --encrypt-home ] USER Normal kullanıcı ekle adduser --system [ --home DIR ] [ --shell SHELL ] [ --no-create-home ] [ --uid ID ] [ --gecos GECOS ] [ --group | --ingroup GROUP | --gid ID ] [ --disabled-password ] [ --disabled-login ] USER Sistem kullanıcısı ekle adduser --group [ --gid ID ] GROUP addgroup [ --gid ID ] GROUP Kullanıcı grubu ekle addgroup --system [ --gid ID ] GROUP Sistem grubu ekle adduser USER GROUP Varolan bir kullanıcıyı varolan bir gruba ekle Genel seçenekler : --quiet | -q işlem bilgisini stdout ' a ( standart çıktıya ) verme --force-badname NAME _ REGEX [ _ SYSTEM ] yapılandırma değişkeni ile eşleşmeyen kullanıcı adlarına izin ver --help | -h kullanma talimatı --version | -v sürüm numarası ve telif hakkı --conf | -c DOSYA ayar dosyası olarak DOSYA yı kullan --help " and " --version <br>
+<hr>
+<p>
+
+# th/aisleriot.xml.gz<br>
+# tr/aisleriot.xml.gz
+
+<p><hr>
+(src)="s1"> ถอดไพ ่ AisleRiot <br>
+(trg)="s1"> AisleRiot İskambil Falı <br>
+<hr>
+(src)="s2"> เล ่ นเกมถอดไพ ่ สารพัดแบบ <br>
+(trg)="s2"> Farklı iskambil falı oyunlarını oynayın <br>
+<hr>
+(src)="s4"> ชื ่ อแฟ ้ มชุดตกแต ่ ง <br>
+(trg)="s4"> Tema dosyasının ismi <br>
+<hr>
+(src)="s5"> ชื ่ อของแฟ ้ มที ่ เก ็ บรูปภาพสำรับไพ ่ <br>
+(trg)="s5"> Kartlar için grafikleri içeren dosyanın adı . <br>
+<hr>
+(src)="s6"> จะแสดงแถบเครื ่ องมือหรือไม ่ <br>
+(trg)="s6"> Araç çubuğunu göster veya gizle <br>
+<hr>
+(src)="s7"> จะแสดงแถบสถานะหรือไม ่ <br>
+(trg)="s7"> Durum çubuğunu göster veya gizle <br>
+<hr>
+(src)="s8"> รูปแบบการควบคุม <br>
+(trg)="s8"> Kontrol biçimini seçin <br>
+<hr>
+(src)="s9"> เลือกว ่ าจะใช ้ การลากไพ ่ หรือจะคลิกต ้ นทางและปลายทาง <br>
+(trg)="s9"> Kartları sürüklemeyi veya önce kaynağa sonra hedefe tıklamayı seçin . <br>
+<hr>
+(src)="s10"> เสียง <br>
+(trg)="s10"> Ses <br>
+<hr>
+(src)="s11"> กำหนดว ่ าจะเล ่ นเสียงของเหตุการณ ์ ต ่ างๆ หรือไม ่ <br>
+(trg)="s11"> Olay seslerinin çalınıp çalınmayacağı . <br>
+<hr>
+(src)="s12"> ภาพเคลื ่ อนไหว <br>
+(trg)="s12"> Canlandırmalar <br>
+<hr>
+(src)="s13"> กำหนดว ่ าจะใช ้ ภาพเคลื ่ อนไหวขณะย ้ ายไพ ่ หรือไม ่ <br>
+(trg)="s13"> Kart hareketlerinin canlandırmalı olup olmayacağı <br>
+<hr>
+(src)="s14"> แฟ ้ มเกมที ่ จะใช ้ <br>
+(trg)="s14"> Kullanılacak oyun dosyası <br>
+<hr>
+(src)="s15"> ชื ่ อของแฟ ้ ม scheme ที ่ เก ็ บเกมถอดไพ ่ ที ่ จะเล ่ น <br>
+(trg)="s15"> Oynanılacak iskambil falı oyununu içeren şema dosyasının ismi . <br>
+<hr>
+(src)="s16"> สถิติของการเล ่ นเกม <br>
+(trg)="s16"> Oynanan oyun hakkındali istatistikler <br>
+<hr>
+(src)="s17"> รายการสตริงในรูปของระเบียน : ชื ่ อ , จำนวนเกมชนะ , จำนวนเกมที ่ เล ่ นทั ้ งหมด , เวลาที ่ ดีที ่ สุด ( เป ็ นวินาที ) และเวลาที ่ แย ่ ที ่ สุด ( เป ็ นวินาทีเช ่ นกัน ) เกมที ่ ไม ่ ได ้ เล ่ นไม ่ จำเป ็ นต ้ องเก ็ บ <br>
+(trg)="s17"> Beşli olarak gelen dizgilerin anlamları : isim , kazandığı , toplam oynanan oyun , en iyi zaman ( saniye ) ve en kötü zaman ( saniye ) . Oynanmayan oyunları belirtme ihtiyacı duyulmadı . <br>
+<hr>
+(src)="s18"> เกมที ่ เล ่ นก ่ อนหน ้ านี ้ <br>
+(trg)="s18"> Yakınlarda oynanmış oyunlar <br>
+<hr>
+(src)="s19"> รายการเกมที ่ เล ่ นก ่ อนหน ้ านี ้ <br>
+(trg)="s19"> Yakınlarda oynanmış oyunların bir listesi . <br>
+<hr>
+(src)="s22"> สถิติ <br>
+(trg)="s22"> İstatistikler <br>
+<hr>
+(src)="s27"> เลือกเกม <br>
+(trg)="s27"> Oyun Seç <br>
+<hr>
+(src)="s28"> เ _ ลือก <br>
+(trg)="s28"> _ Seç <br>
+<hr>
+(src)="s29"> เ _ นื ้ อหา <br>
+(trg)="s29"> İ _ çindekiler <br>
+<hr>
+(src)="s30"> เ _ ต ็ มจอ <br>
+(trg)="s30"> Tam ekran <br>
+<hr>
+(src)="s31"> บอกใ _ บ ้ _ New " is for the menu item ' Game- &gt; New ' , implies " New Game <br>
+(trg)="s31"> _ İpucu _ New " is for the menu item ' Game- &gt; New ' , implies " New Game <br>
+<hr>
+(src)="s32"> ใ _ หม ่ _ New Game <br>
+(trg)="s32"> _ Yeni _ New Game <br>
+<hr>
+(src)="s33"> เกมใ _ หม ่ <br>
+(trg)="s33"> Yeni _ Oyun <br>
+<hr>
+(src)="s34"> เ _ ล ่ นตาซ ้ ำReset <br>
+(trg)="s34"> _ Yeniden OynaReset <br>
+<hr>
+(src)="s35"> _ ล ้ าง _ Restart " is the menu item ' Game- &gt; Restart ' , implies " Restart Game <br>
+(trg)="s35"> _ Sıfırla _ Restart " is the menu item ' Game- &gt; Restart ' , implies " Restart Game <br>
+<hr>
+(src)="s36"> _ ตั ้ งต ้ นใหม ่ <br>
+(trg)="s36"> _ Tekrar Başla <br>
+<hr>
+(src)="s37"> _ ย ้ อนตากลับ <br>
+(trg)="s37"> G _ eriye Oyna <br>
+<hr>
+(src)="s38"> จั ่ วไ _ พ ่ <br>
+(trg)="s38"> _ Dağıt <br>
+<hr>
+(src)="s39"> เ _ ลิกแสดงเต ็ มจอ <br>
+(trg)="s39"> _ Tam Ekranı Terket <br>
+<hr>
+(src)="s40"> _ พัก <br>
+(trg)="s40"> _ Duraklat <br>
+<hr>
+(src)="s41"> % s เป ็ นซอฟต ์ แวร ์ เสรี คุณสามารถแจกจ ่ ายต ่ อ และ / หรือ แก ้ ไขโปรแกรมได ้ ภายใต ้ เงื ่ อนไขของ GNU General Public License ที ่ เผยแพร ่ โดยมูลนิธิซอฟต ์ แวร ์ เสรี ไม ่ ว ่ าจะเป ็ นสัญญาอนุญาตรุ ่ นที ่ % d หรือรุ ่ นถัดมา ( ตามแต ่ คุณจะเลือก ) <br>
+(trg)="s41"> % s özgür bir yazılımdır ; yeniden dağıtabilir ve / veya Özgür Yazılım Vakfı tarafından yayınlanan GNU Genel Kamu Lisansının sürüm % d veya ( sizin seçiminiz ) daha sonraki sürümlerinin şartları içerisinde değiştirebilirsiniz . <br>
+<hr>
+(src)="s42"> % s เผยแพร ่ ด ้ วยความหวังว ่ าโปรแกรมจะมีประโยชน ์ แต ่ * ไม ่ มีการรับประกันใดๆ * ไม ่ มีแม ้ การรับประกัน * อรรถประโยชน ์ เชิงพาณิชย ์ * หรือ * ความเหมาะสมสำหรับวัตถุประสงค ์ เฉพาะกิจใดๆ * กรุณาอ ่ าน GNU General Public License เพื ่ อดูรายละเอียดเพิ ่ มเติม <br>
+(trg)="s42"> % s faydalı olması umuduyla fakat HERHANGİ BİR GARANTİ OLMADAN ; hatta ORTALAMA kalite garantisi veya BELLİ BİR AMACA UYGUNLUK ima etmeden dağıtılmaktadır . Detaylar için GNU Genel Kamu Lisansı ' na bakınız . <br>
+<hr>
+(src)="s43"> คุณควรจะได ้ รับสำเนาของ GNU General Public License มาพร ้ อมกับโปรแกรมนี ้ ถ ้ าคุณไม ่ ได ้ รับ กรุณาดูได ้ ที ่ <br>
+(trg)="s43"> Bu programla birlikte GNU Genel Kamu Lisansının bir kopyasını almış olmalısınız . Almadıysanız , <br>
+<hr>
+(src)="s44">กองเรียงslot type<br>
+(trg)="s44">vakıfslot type<br>
+<hr>
+(src)="s45">à¸à¸­à¸à¸ªà¸³à¸£à¸­à¸slot type<br>
+(trg)="s45">yedekslot type<br>
+<hr>
+(src)="s46">กองจั่วslot type<br>
+(trg)="s46">eldeki kağıtlarslot type<br>
+<hr>
+(src)="s47">à¸à¸£à¸°à¸à¸²à¸à¹à¸¥à¹à¸slot type<br>
+(trg)="s47">tabloslot type<br>
+<hr>
+(src)="s48">กองทิ้งfoundationslot hint<br>
+(trg)="s48">atıkfoundationslot hint<br>
+<hr>
+(src)="s49">%s à¹à¸à¸à¸­à¸à¹à¸£à¸µà¸¢à¸reserveslot hint<br>
+(trg)="s49">%s sÄ±ralama yerindereserveslot hint<br>
+<hr>
+(src)="s50">%s ในกองสำรองstockslot hint<br>
+(trg)="s50">%s yedektestockslot hint<br>
+<hr>
+(src)="s51">%s à¹à¸à¸à¸­à¸à¸à¸±à¹à¸§tableauslot hint<br>
+(trg)="s51">%s destedetableauslot hint<br>
+<hr>
+(src)="s52">%s ในกระดานเล่นwasteslot hint<br>
+(trg)="s52">%s tablodawasteslot hint<br>
+<hr>
+(src)="s53">%s à¹à¸à¸à¸­à¸à¸à¸´à¹à¸<br>
+(trg)="s53">%s atÄ±kta<br>
+<hr>
+(src)="s54">เกมนี้ยังไม่รองรับการบอกใบ้<br>
+(trg)="s54">Bu oyunun şimdilik ipucu desteği yok.<br>
+<hr>
+(src)="s55">à¸¢à¹à¸²à¸¢%sà¹à¸à¸¢à¸±à¸%s<br>
+(trg)="s55">%s'Ä± %s Ã¼zerine taÅÄ±.<br>
+<hr>
+(src)="s56">เกมนี้ไม่สามารถบอกใบ้ได้<br>
+(trg)="s56">Oyun ipucu veremiyor.<br>
+<hr>
+(src)="s57">à¸«à¸µà¸à¹à¸à¸¥à¸<br>
+(trg)="s57">Akordeon<br>
+<hr>
+(src)="s58">แอกนีส<br>
+(trg)="s58">Piramit<br>
+<hr>
+(src)="s59">à¸­à¸°à¸à¸µà¸à¸²<br>
+(trg)="s59">Atina<br>
+<hr>
+(src)="s60">ออลด์ แลง ไซน์<br>
+(trg)="s60">Eski Güzel Günler<br>
+<hr>
+(src)="s61">à¸à¹à¸²à¸¡à¸²à¸£à¸µ<br>
+(trg)="s61">Mary Hala<br>
+<hr>
+(src)="s62">สันหลัง<br>
+(trg)="s62">Omurga<br>
+<hr>
+(src)="s63">à¹à¸«à¸¥à¹à¸à¸¡à¸«à¸à¸¶à¹à¸<br>
+(trg)="s63">FÄ±rÄ±ncÄ±nÄ±n DÃ¼zÃ¼nesi<br>
+<hr>
+(src)="s64">เกมร้านขนมอบ<br>
+(trg)="s64">Fırıncının Oyunu<br>
+<hr>
+(src)="s65">à¹à¸¡à¹à¸à¹à¸³à¹à¸à¸£à¹<br>
+(trg)="s65">AyÄ± Nehri<br>
+<hr>
+(src)="s66">ล้อมปราสาท<br>
+(trg)="s66">Kuşatılmış Kale<br>
+<hr>
+(src)="s67">à¸à¸¥à¹à¸­à¸à¸ªà¸´à¸<br>
+(trg)="s67">On BloÄu<br>
+<hr>
+(src)="s68">บริสตอล<br>
+(trg)="s68">İstanbul<br>
+<hr>
+(src)="s69">à¸à¸²à¹à¸¡à¸¥à¹à¸­à¸<br>
+(trg)="s69">Saray<br>
+<hr>
+(src)="s70">แคนฟิลด์<br>
+(trg)="s70">Cankurtaran<br>
+<hr>
+(src)="s71">à¸à¸£à¸¡<br>
+(trg)="s71">HalÄ±<br>
+<hr>
+(src)="s72">กระดานหมากรุก<br>
+(trg)="s72">Satranç tahtası<br>
+<hr>
+(src)="s73">à¸à¸²à¸¬à¸´à¸à¸²<br>
+(trg)="s73">Saat<br>
+<hr>
+(src)="s74">คลุม<br>
+(trg)="s74">Tepegöz<br>
+<hr>
+(src)="s75">à¹à¸«à¸à¸£à¹à¸²à¸¢<br>
+(trg)="s75">Cruel<br>
+<hr>
+(src)="s76">เหมืองเพชร<br>
+(trg)="s76">Elmas Madeni<br>
+<hr>
+(src)="s77">à¸à¸§à¸µà¸à¸¹à¸<br>
+(trg)="s77">ÅÄ±k<br>
+<hr>
+(src)="s78">ปีกอินทรี<br>
+(trg)="s78">Kartal Kanadı<br>
+<hr>
+(src)="s79">à¸­à¸µà¸ªà¸à¹à¹à¸®à¹à¸§à¸<br>
+(trg)="s79">DoÄu limanÄ±<br>
+<hr>
+(src)="s80">พักแปด<br>
+(trg)="s80">Sekizli<br>
+<hr>
+(src)="s81">à¸¥à¸´à¸à¸à¹<br>
+(trg)="s81">AsansÃ¶r<br>
+<hr>
+(src)="s82">กำจัด<br>
+(trg)="s82">Eleyici<br>
+<hr>
+(src)="s83">à¸à¸±à¸à¹à¸à¹à¸¥à¸·à¹à¸­à¸<br>
+(trg)="s83">Merdiven<br>
+<hr>
+(src)="s84">กฎข้อแรก<br>
+(trg)="s84">Birinci Kural<br>
+<hr>
+(src)="s85">à¸à¸£à¸²à¸à¸²à¸£<br>
+(trg)="s85">Kule<br>
+<hr>
+(src)="s86">โชคชะตา<br>
+(trg)="s86">Hazine<br>
+<hr>
+(src)="s87">à¸ªà¸µà¹à¸ªà¸´à¸à¹à¸à¸£<br>
+(trg)="s87">KÄ±rk Haramiler<br>
+<hr>
+(src)="s88">สิบสี่<br>
+(trg)="s88">Ondört<br>
+<hr>
+</body>
+</html>

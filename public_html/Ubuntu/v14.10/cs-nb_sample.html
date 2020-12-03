@@ -1,0 +1,328 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# cs/account-plugins.xml.gz<br>
+# nb/account-plugins.xml.gz
+
+<p><hr>
+(src)="s1"> Obashuje Gmail , Google Docs , Google + , YouTube a Picasu <br>
+(trg)="s1"> Inkluderer Gmail , Google Drive , Google + , Youtube og Picasa <br>
+<hr>
+<p>
+
+# cs/acl.xml.gz<br>
+# nb/acl.xml.gz
+
+<p><hr>
+(src)="s1"> Použití : <br>
+(trg)="s1"> Bruk : <br>
+<hr>
+(src)="s2"> \ t % s acl pathname ... <br>
+(trg)="s2"> \ t % s acl stinavn ... <br>
+<hr>
+(src)="s3"> \ t % s -b acl dacl cesta ... <br>
+(trg)="s3"> \ t % s -b acl dacl stinavn ... <br>
+<hr>
+(src)="s4"> \ t % s -d dacl cesta ... <br>
+(trg)="s4"> \ t % s -d dacl stinavn ... <br>
+<hr>
+(src)="s5"> \ t % s -R cesta ... <br>
+(trg)="s5"> \ t % s -R stinavn ... <br>
+<hr>
+(src)="s6"> \ t % s -D cesta ... <br>
+(trg)="s6"> \ t % s -D stinavn ... <br>
+<hr>
+(src)="s7"> \ t % s -B cesta ... <br>
+(trg)="s7"> \ t % s -B stinavn ... <br>
+<hr>
+(src)="s8"> \ t % s -l cesta ... \ t [ není kompatibilní s IRIXem ] <br>
+(trg)="s8"> \ t % s -l stinavn ... \ t [ ikke kompatibel med IRIX ] <br>
+<hr>
+(src)="s9"> \ t % s -r cesta ... \ t [ není kompatibilní s IRIXem ] <br>
+(trg)="s9"> \ t % s -r stinavn ... \ t [ ikke kompatibel med IRIX ] <br>
+<hr>
+(src)="s10"> % s : chyba při odstraňování přístupového ACL na " % s " : % s <br>
+(trg)="s10"> % s : feil ved fjerning av tilgang på " % s " : % s <br>
+<hr>
+(src)="s11"> % s : chyba při odstraňování výchozího ACL na " % s " : % s <br>
+(trg)="s11"> % s : feil ved fjerning av standard acl på " % s " : % s <br>
+<hr>
+(src)="s12"> % s : přístupový ACL " % s " : % s v položce % d <br>
+(trg)="s12"> % s : tilgang ACL % s ' : % s på innlagt verdi % d <br>
+<hr>
+(src)="s13"> % s : nelze získat přístupový ACL na " % s " : % s <br>
+(trg)="s13"> % s : kan ikke skaffe tilgang ACL for % s ' : % s <br>
+<hr>
+(src)="s14"> % s : nelze zjistit výchozí ACL na " % s " : % s <br>
+(trg)="s14"> % s : kan ikke skaffe standard ACL for % s ' : % s <br>
+<hr>
+(src)="s15"> % s : nelze získat text přístupového ACL na " % s " : % s <br>
+(trg)="s15"> % s : kan ikke skaffe tilgang ACL tekst for % s ' : % s <br>
+<hr>
+(src)="s16"> % s : nelze získat výchozí text ACL na " % s " : % s <br>
+(trg)="s16"> % s : kan ikke skaffe standard ACL tekst for % s ' : % s <br>
+<hr>
+(src)="s17"> % s : nelze nastavit přístupový ACL na " % s " : % s <br>
+(trg)="s17"> % s : kan ikke sette tilgang acl for " % s " : % s <br>
+<hr>
+(src)="s18"> % s : nelze nastavit výchozí ACL na " % s " : % s <br>
+(trg)="s18"> % s kan ikke sette standard acl for " % s " : % s <br>
+<hr>
+(src)="s19"> % s : funkce opendir ( otevření složky ) selhala : % s <br>
+(trg)="s19"> % s : opendir feilet : % s <br>
+<hr>
+(src)="s20"> % s : funkce malloc ( přidělení paměti ) selhala : % s <br>
+(trg)="s20"> % s malloc feilet : % s <br>
+<hr>
+(src)="s21"> % s : % s : Poškozený přístupový ACL " % s " : % s v položce % d <br>
+(trg)="s21"> % s : % s : Feilskapt tilgang ACL `%s ': % s på innlagt verdi %d <br>
+<hr>
+(src)="s22"> % s : % s : Poškozený výchozí ACL " % s " : % s v položce % d <br>
+(trg)="s22"> % s : % s : Ugyldig standard ACL `%s ': % s i oppføring %d <br>
+<hr>
+(src)="s23"> % s : % s : Pouze složka může mít nastavená výchozí ACL <br>
+(trg)="s23"> % s : % s : Bare mapper kan ha standardariste ACLer <br>
+<hr>
+(src)="s24"> % s : % s : Na řádku % d nebyl nalezen žádný název souboru , přerušuji <br>
+(trg)="s24"> % s : % s : Intet filnavn funnet i linje % d , avbryter <br>
+<hr>
+(src)="s25"> % s : Na řádku % d standardního vstupu nebyl nalezen žádný název souboru , přerušuji <br>
+(trg)="s25"> % s : Intet filnavn funnet i linje % d av standard inndata , avbryter <br>
+<hr>
+(src)="s26"> % s : % s : % s na řádku % d <br>
+(trg)="s26"> % s : % s : % s i linje % d <br>
+<hr>
+(src)="s27"> % s : % s : Nelze změnit vlastníka / skupinu : % s <br>
+(trg)="s27"> % s : % s : Kan ikke endre eier / gruppe : % s <br>
+<hr>
+(src)="s29"> % s % s -- nastavit seznam řízení přístupu ( ACL ) <br>
+(trg)="s29"> % s % s -- set filens tilgangskontroll-liste ( ACL ) <br>
+<hr>
+(src)="s30"> Použití : % s % s <br>
+(trg)="s30"> Bruk : % s % s <br>
+<hr>
+(src)="s36"> % s : Standardní vstup : % s <br>
+(trg)="s36"> % s : Standard input : % s <br>
+<hr>
+(src)="s37"> % s : Volba - % c není úplná <br>
+(trg)="s37"> % s : Alternativ - % c ikke fullstendig <br>
+<hr>
+(src)="s38"> % s : Volba - % c : % s u znaku % d <br>
+(trg)="s38"> % s : Alternativ - % c : % s nær bokstav % d <br>
+<hr>
+(src)="s39"> % s : % s na řádku % d souboru % s <br>
+(trg)="s39"> % s : % s i linje % d av fil % s <br>
+<hr>
+(src)="s40"> % s : % s na řádku % d standardního vstupu <br>
+(trg)="s40"> % s : % s i linje % d av standard inndata <br>
+<hr>
+(src)="s41"> Zkuste zadat " % s --help " pro více informací . <br>
+(trg)="s41"> Prøv `%s --help ' for mer informasjon. <br>
+<hr>
+(src)="s44"> Použití : % s [ - % s ] soubor ... <br>
+(trg)="s44"> Bruk : % s [ - % s ] fil ... <br>
+<hr>
+(src)="s48"> Duplicitní vstupy <br>
+(trg)="s48"> Like oppføringer <br>
+<hr>
+(src)="s49"> Chybějící nebo nesprávný vstup <br>
+(trg)="s49"> Manglende eller feil oppføring <br>
+<hr>
+(src)="s50"> Neplatný typ vstupu <br>
+(trg)="s50"> Ugydlig oppføringstype <br>
+<hr>
+(src)="s51"> nastavování oprávnění pro % s <br>
+(trg)="s51"> setter rettigheter for % s <br>
+<hr>
+(src)="s52"> zahování opravnění pro % s <br>
+(trg)="s52"> bevarer rettigheter for % s <br>
+<hr>
+<p>
+
+# cs/activity-log-manager.xml.gz<br>
+# nb/activity-log-manager.xml.gz
+
+<p><hr>
+(src)="s1"> Správce záznamu činností <br>
+(trg)="s1"> Aktivitetslogg-behandler <br>
+<hr>
+(src)="s2"> Nastavení , co se bude zaznamenávat do vašeho záznamu činností Zeitgeist <br>
+(trg)="s2"> Velg hva som skal lagres i din Zeitgeist-aktivitetslogg <br>
+<hr>
+(src)="s3"> Nástroje Správce soukromí a činností <br>
+(trg)="s3"> Aktivitets- og personvernshåndtering <br>
+<hr>
+(src)="s4"> Bezpečnost &amp; Soukromí <br>
+(trg)="s4"> Sikkerhet og personvern <br>
+<hr>
+(src)="s5"> Správce soukromí a činností <br>
+(trg)="s5"> Personvern- og aktivitetsbehandling <br>
+<hr>
+(src)="s6"> soukromí ; aktivita ; log ; zeitgeist ; diagnostika ; chybové zprávy ; <br>
+(trg)="s6"> personvern ; aktivitet ; zeitgeist ; diagnostikk ; feilrapporter ; <br>
+<hr>
+(src)="s7"> Soubory &amp; Aplikace <br>
+(trg)="s7"> Filer og programmer <br>
+<hr>
+(src)="s8"> Bezpečnost <br>
+(trg)="s8"> Sikkerhet <br>
+<hr>
+(src)="s9"> Hledat <br>
+(trg)="s9"> Søk <br>
+<hr>
+(src)="s10"> Diagnostika <br>
+(trg)="s10"> Diagnostikk <br>
+<hr>
+(src)="s11"> Při vyhledávání v Dash : <br>
+(trg)="s11"> Ved søking på dashbordet : <br>
+<hr>
+(src)="s12"> Zahrnout výsledky online vyhledávání <br>
+(trg)="s12"> Inkluder søkeresultater på nett <br>
+<hr>
+(src)="s13"> Vyžadovat mé heslo když : <br>
+(trg)="s13"> Krev passord når maskinen : <br>
+<hr>
+(src)="s14"> _ Probouzím z režimu spánku <br>
+(trg)="s14"> _ Våkner opp fra hvilemodus <br>
+<hr>
+(src)="s15"> _ Vrátit se zpět z prázdné obrazovky <br>
+(trg)="s15"> _ Viser blank skjerm <br>
+<hr>
+(src)="s16"> _ jestliže obrazovka byla prázdná <br>
+(trg)="s16"> _ når skjermen har vært blank i <br>
+<hr>
+(src)="s17"> Nastavení hesla <br>
+(trg)="s17"> Passord-innstillinger : <br>
+<hr>
+(src)="s18"> Nastavení napájení <br>
+(trg)="s18"> Strøminnstillinger <br>
+<hr>
+(src)="s19"> Název <br>
+(trg)="s19"> Navn <br>
+<hr>
+(src)="s20"> Popis není dostupný <br>
+(trg)="s20"> Ingen beskrivelse tilgjengelig <br>
+<hr>
+(src)="s21"> Naposledy použito <br>
+(trg)="s21"> Sist brukt <br>
+<hr>
+(src)="s22"> Činnosti <br>
+(trg)="s22"> Aktivitet <br>
+<hr>
+(src)="s23"> Vybrat aplikaci <br>
+(trg)="s23"> Velg program <br>
+<hr>
+(src)="s24"> Dnes , % H : % M <br>
+(trg)="s24"> I dag , % H : % M <br>
+<hr>
+(src)="s25"> Včera , % H : % M <br>
+(trg)="s25"> I går , % H : % M <br>
+<hr>
+(src)="s26"> % e % B % Y , % H : % M <br>
+(trg)="s26"> % e % B % Y , % H : % M <br>
+<hr>
+(src)="s27"> Nikdy <br>
+(trg)="s27"> Aldri <br>
+<hr>
+(src)="s28"> Od : <br>
+(trg)="s28"> Fra : <br>
+<hr>
+(src)="s29"> Do : <br>
+(trg)="s29"> Til : <br>
+<hr>
+(src)="s30"> Neplatný časový rozsah <br>
+(trg)="s30"> Ugyldig tidsrom <br>
+<hr>
+(src)="s31"> % d . % B % Y <br>
+(trg)="s31"> % d % B % Y <br>
+<hr>
+(src)="s32"> Hudba <br>
+(trg)="s32"> Musikk <br>
+<hr>
+(src)="s33"> Videa <br>
+(trg)="s33"> Videoer <br>
+<hr>
+(src)="s34"> Obrázky <br>
+(trg)="s34"> Bilder <br>
+<hr>
+(src)="s35"> Dokumenty <br>
+(trg)="s35"> Dokumenter <br>
+<hr>
+(src)="s36"> Prezentace <br>
+(trg)="s36"> Presentasjoner <br>
+<hr>
+(src)="s37"> Tabulky <br>
+(trg)="s37"> Regneark <br>
+<hr>
+(src)="s38"> Záznamy konverzací <br>
+(trg)="s38"> Nettprat-logg <br>
+<hr>
+(src)="s39"> V Dashi a na jiných místech se zobrazují naposledy otevřené soubory a použité aplikace . Pokud má k vašemu uživatelskému účtu někdo jiný , je vhodné tuto funkci omezit . <br>
+(trg)="s39"> Dashbordet og andre programmer kan vise hvilke filer og programmer du har brukt nylig . Hvis andre enn deg selv har tilgang til brukerkontoen din , bør du vurdere å begrense hva som skal loggføres . <br>
+<hr>
+(src)="s40"> Zaznamenávat použití souborů a aplikací <br>
+(trg)="s40"> Loggfør bruk av filer og programmer <br>
+<hr>
+(src)="s41"> Vymazat historii použití ... <br>
+(trg)="s41"> Slett bruksdata … <br>
+<hr>
+(src)="s42"> Zahrnout : <br>
+(trg)="s42"> Inkluder : <br>
+<hr>
+(src)="s43"> Vyloučit : <br>
+(trg)="s43"> Ekskluder : <br>
+<hr>
+(src)="s44"> Odstranit položku <br>
+(trg)="s44"> Fjern element <br>
+<hr>
+(src)="s45"> Přidat složku do blacklistu <br>
+(trg)="s45"> Velg en mappe som skal svartelistes <br>
+<hr>
+(src)="s46"> Přidat soubor do blacklistu <br>
+(trg)="s46"> Velg en fil som skal svartelistes <br>
+<hr>
+(src)="s47"> Vymazat historii použití <br>
+(trg)="s47"> Fjern bruksdata <br>
+<hr>
+(src)="s48"> Smazat záznamy o použitých souborech a aplikacích : <br>
+(trg)="s48"> Slett loggen som viser hvilke filer og programmer som har vært i bruk : <br>
+<hr>
+(src)="s49"> V předešlé hodině <br>
+(trg)="s49"> Den siste timen <br>
+<hr>
+(src)="s50"> Za poslední den <br>
+(trg)="s50"> Det siste døgnet <br>
+<hr>
+(src)="s51"> Za poslední týden <br>
+(trg)="s51"> Den siste uka <br>
+<hr>
+(src)="s52"> Za celou dobu <br>
+(trg)="s52"> Siden tidenes morgen <br>
+<hr>
+(src)="s53"> Tuto operaci nelze vrátit zpět , jste si jistý , že chcete tuto činnost smazat ? <br>
+(trg)="s53"> Denne handlingen kan ikke angres . Er du sikker på at du vil slette denne aktiviteten ? <br>
+<hr>
+(src)="s54"> Ubuntu může anonymně shromažďovat informace , které pomáhají vývojářům k jeho vylepšení . Se všemi takto získanými informacemi je nakládáno podle našich Zásad pro ochranu osobních údajů . <br>
+(trg)="s54"> Ubuntu kan samle inn anonym informasjon som hjelper utviklerne med å forbedre systemet . All informasjon som samles inn er underlagt våre retningslinjer for personvern . <br>
+<hr>
+(src)="s55"> Zásady pro ochranu osobních údajů <br>
+(trg)="s55"> Retningslinjer for personvern <br>
+<hr>
+(src)="s56"> Uživatelé na tomto počítači mohou : <br>
+(trg)="s56"> Personer som bruker denne datamaskinen kan : <br>
+<hr>
+(src)="s57"> Posílat hlášení o chybách Canonicalu <br>
+(trg)="s57"> Send feilrapporter til Canonical <br>
+<hr>
+(src)="s58"> Zprávy o chybě obsahují informace o tom , co program dělal , když selhal . Vždy si můžete vybrat , zda zprávu odešlete nebo ne . <br>
+(trg)="s58"> Feilrapporter inneholder informasjon om hva et program gjorde da feilen oppstod . Du vil alltid få valget mellom å sende eller avbryte rapporteringen . <br>
+<hr>
+</body>
+</html>

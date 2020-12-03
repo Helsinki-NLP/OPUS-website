@@ -1,0 +1,346 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# da/account-plugins.xml.gz<br>
+# en/account-plugins.xml.gz
+
+<p><hr>
+(src)="s1"> Inkluderer Gmail , Google Docs , Google + , YouTube og Picasa <br>
+(trg)="s1"> Includes Gmail , Google Docs , Google + , YouTube and Picasa <br>
+<hr>
+<p>
+
+# da/accounts-service.xml.gz<br>
+# en/accounts-service.xml.gz
+
+<p><hr>
+<p>
+
+# da/acl.xml.gz<br>
+# en/acl.xml.gz
+
+<p><hr>
+(src)="s1"> Brug : <br>
+(trg)="s1"> Usage : <br>
+<hr>
+(src)="s2"> \ t % s acl stinavn ... <br>
+(trg)="s2"> \ t % s acl pathname ... <br>
+<hr>
+(src)="s3"> \ t % s -b acl dacl stinavn ... <br>
+(trg)="s3"> \ t % s -b acl dacl pathname ... <br>
+<hr>
+(src)="s4"> \ t % s -d dacl stinavn ... <br>
+(trg)="s4"> \ t % s -d dacl pathname ... <br>
+<hr>
+(src)="s5"> \ t % s -R stinavn ... <br>
+(trg)="s5"> \ t % s -R pathname ... <br>
+<hr>
+(src)="s6"> \ t % s -D stinavn ... <br>
+(trg)="s6"> \ t % s -D pathname ... <br>
+<hr>
+(src)="s7"> \ t % s -B stinavn ... <br>
+(trg)="s7"> \ t % s -B pathname ... <br>
+<hr>
+(src)="s8"> \ t % s -l stinavn ... \ t [ ikke IRIX kombatibel ] <br>
+(trg)="s8"> \ t % s -l pathname ... \ t [ not IRIX compatible ] <br>
+<hr>
+(src)="s9"> \ t % s -r stinavn ... \ t [ ikke IRIX kombatibel ] <br>
+(trg)="s9"> \ t % s -r pathname ... \ t [ not IRIX compatible ] <br>
+<hr>
+(src)="s10"> % s : fejl ved fjernelse af adgangs acl på " % s " : % s <br>
+(trg)="s10"> % s : error removing access acl on " % s " : % s <br>
+<hr>
+(src)="s11"> % s : fejl ved fjernelse af standard-acl på " % s " : % s <br>
+(trg)="s11"> % s : error removing default acl on " % s " : % s <br>
+<hr>
+(src)="s12"> % s : adgangs-ACL ' % s ' : % s ved indgang % d <br>
+(trg)="s12"> % s : access ACL ' % s ' : % s at entry % d <br>
+<hr>
+(src)="s13"> % s : kan ikke hente adgangs-ACL på ' % s ' : % s <br>
+(trg)="s13"> % s : cannot get access ACL on ' % s ' : % s <br>
+<hr>
+(src)="s14"> % s : kan ikke hente standard-ACL på ' % s ' : % s <br>
+(trg)="s14"> % s : cannot get default ACL on ' % s ' : % s <br>
+<hr>
+(src)="s15"> % s : kan ikke hente adgangs-ACL-tekst på ' % s ' : % s <br>
+(trg)="s15"> % s : cannot get access ACL text on ' % s ' : % s <br>
+<hr>
+(src)="s16"> % s : kan ikke hente standard-ACL-tekst på ' % s ' : % s <br>
+(trg)="s16"> % s : cannot get default ACL text on ' % s ' : % s <br>
+<hr>
+(src)="s17"> % s : kan ikke sætte adgangs-acl på ' % s ' : % s <br>
+(trg)="s17"> % s : cannot set access acl on " % s " : % s <br>
+<hr>
+(src)="s18"> % s : kan ikke sætte standard-acl på ' % s ' : % s <br>
+(trg)="s18"> % s : cannot set default acl on " % s " : % s <br>
+<hr>
+(src)="s19"> % s : opendir mislykkedes : % s <br>
+(trg)="s19"> % s : opendir failed : % s <br>
+<hr>
+(src)="s20"> % s : malloc mislykkedes : % s <br>
+(trg)="s20"> % s : malloc failed : % s <br>
+<hr>
+(src)="s21"> % s : % s Forkert udformet adgangs-ACL ' % s ' : % s ved indgang % d <br>
+(trg)="s21"> % s : % s : Malformed access ACL `%s ': % s at entry %d <br>
+<hr>
+(src)="s22"> % s : % s : Forkert udformet ACL ' % s ' : % s ved indgang % d <br>
+(trg)="s22"> % s : % s : Malformed default ACL `%s ': % s at entry %d <br>
+<hr>
+(src)="s23"> % s : % s : Kun mapper kan have standard-ACL ' er <br>
+(trg)="s23"> % s : % s : Only directories can have default ACLs <br>
+<hr>
+(src)="s24"> % s : % s : Intet filnavn fundet i linje % d , afbryder <br>
+(trg)="s24"> % s : % s : No filename found in line % d , aborting <br>
+<hr>
+(src)="s25"> % s : Intet filnavn fundet i linje % d af standardinddata , afbryder <br>
+(trg)="s25"> % s : No filename found in line % d of standard input , aborting <br>
+<hr>
+(src)="s26"> % s : % s : % s i linje % d <br>
+(trg)="s26"> % s : % s : % s in line % d <br>
+<hr>
+(src)="s27"> % s : % s : Kan ikke ændre ejer / gruppe : % s <br>
+(trg)="s27"> % s : % s : Cannot change owner / group : % s <br>
+<hr>
+(src)="s29"> % s % s -- sæt filadgangskontrolliste <br>
+(trg)="s29"> % s % s -- set file access control lists <br>
+<hr>
+(src)="s30"> Brug : % s % s <br>
+(trg)="s30"> Usage : % s % s <br>
+<hr>
+(src)="s31"> -m , --modify = acl ændre de ( n ) aktuelle ACL ( er ) for fil ( er ) -M , --modify-file = fil læse ACL-indgange som ændres for filen -x , --remove = acl fjerne indgange fra ACL ( er ) for fil ( er ) -X , --remove-file = fil læse ACL-indgange som fjernes fra filen -b , --remove-all fjern alle udvidede ACL-indgange -k , --remove-default fjern standard-ACL <br>
+(trg)="s31"> -m , --modify = acl modify the current ACL ( s ) of file ( s ) -M , --modify-file = file read ACL entries to modify from file -x , --remove = acl remove entries from the ACL ( s ) of file ( s ) -X , --remove-file = file read ACL entries to remove from file -b , --remove-all remove all extended ACL entries -k , --remove-default remove the default ACL <br>
+<hr>
+(src)="s41"> Prøv `%s --help ' for at få vist mere information. <br>
+(trg)="s41"> Try `%s --help ' for more information. <br>
+<hr>
+(src)="s44"> Brug : % s [ - % s ] filnavn ... <br>
+(trg)="s44"> Usage : % s [ - % s ] file ... <br>
+<hr>
+<p>
+
+# da/activity-log-manager.xml.gz<br>
+# en/activity-log-manager.xml.gz
+
+<p><hr>
+(src)="s1"> Aktivitetsloghåndtering <br>
+(trg)="s1"> Activity Log Manager <br>
+<hr>
+(src)="s2"> Indstil hvad som registreres i din Zeitgeist-aktivitetslog <br>
+(trg)="s2"> Configure what gets logged in your Zeitgeist activity log <br>
+<hr>
+(src)="s3"> Værktøj til håndtering af aktiviteter og privatliv <br>
+(trg)="s3"> Activities and Privacy Manager Tool <br>
+<hr>
+(src)="s4"> Sikkerhed &amp; privatliv <br>
+(trg)="s4"> Security &amp; Privacy <br>
+<hr>
+(src)="s5"> Privatlivs- og aktivitetshåndtering <br>
+(trg)="s5"> Privacy and Activity Manager <br>
+<hr>
+(src)="s6"> privatliv ; hændelser ; aktivitet ; logregistrering ; log ; zeitgeist ; diagnose ; diagnostik ; diagnosticering ; fejlrapporter ; fejlmeldinger ; <br>
+(trg)="s6"> privacy ; activity ; log ; zeitgeist ; diagnostics ; error reports ; <br>
+<hr>
+(src)="s7"> Filer og programmer <br>
+(trg)="s7"> Files &amp; Applications <br>
+<hr>
+(src)="s8"> Sikkerhed <br>
+(trg)="s8"> Security <br>
+<hr>
+(src)="s9"> Søg <br>
+(trg)="s9"> Search <br>
+<hr>
+(src)="s10"> Diagnostik <br>
+(trg)="s10"> Diagnostics <br>
+<hr>
+(src)="s11"> Når der søges i panelet : <br>
+(trg)="s11"> When searching in the Dash : <br>
+<hr>
+(src)="s12"> Medtag søgeresultater fra nettet <br>
+(trg)="s12"> Include online search results <br>
+<hr>
+(src)="s13"> Bed om min adgangskode når computeren : <br>
+(trg)="s13"> Require my password when : <br>
+<hr>
+(src)="s14"> _ Vågner fra hvile <br>
+(trg)="s14"> _ Waking from suspend <br>
+<hr>
+(src)="s15"> _ Kommer tilbage fra blank skærm <br>
+(trg)="s15"> _ Returning from blank screen <br>
+<hr>
+(src)="s16"> _ hvis skærmen har været slukket i <br>
+(trg)="s16"> _ if screen has been blank for <br>
+<hr>
+(src)="s17"> Adgangskodeindstillinger <br>
+(trg)="s17"> Password Settings <br>
+<hr>
+(src)="s18"> Strømindstillinger <br>
+(trg)="s18"> Power Settings <br>
+<hr>
+(src)="s19"> Navn <br>
+(trg)="s19"> Name <br>
+<hr>
+(src)="s20"> Ingen beskrivelse tilgængelig <br>
+(trg)="s20"> No description available <br>
+<hr>
+(src)="s21"> Sidst brugt <br>
+(trg)="s21"> Last Used <br>
+<hr>
+(src)="s22"> Aktivitet <br>
+(trg)="s22"> Activity <br>
+<hr>
+(src)="s23"> Vælg program <br>
+(trg)="s23"> Select Application <br>
+<hr>
+(src)="s24"> I dag , % H : % M <br>
+(trg)="s24"> Today , % H : % M <br>
+<hr>
+(src)="s25"> I går , % H : % M <br>
+(trg)="s25"> Yesterday , % H : % M <br>
+<hr>
+(src)="s26"> % e % B % Y , % H : % M <br>
+(trg)="s26"> % e % B % Y , % H : % M <br>
+<hr>
+(src)="s27"> Aldrig <br>
+(trg)="s27"> Never <br>
+<hr>
+(src)="s28"> Fra : <br>
+(trg)="s28"> From : <br>
+<hr>
+(src)="s29"> Til : <br>
+(trg)="s29"> To : <br>
+<hr>
+(src)="s30"> Ugyldigt tidsinterval <br>
+(trg)="s30"> Invalid Timerange <br>
+<hr>
+(src)="s31"> % d % B % Y <br>
+(trg)="s31"> % d % B % Y <br>
+<hr>
+(src)="s32"> Musik <br>
+(trg)="s32"> Music <br>
+<hr>
+(src)="s33"> Videoer <br>
+(trg)="s33"> Videos <br>
+<hr>
+(src)="s34"> Billeder <br>
+(trg)="s34"> Pictures <br>
+<hr>
+(src)="s35"> Dokumenter <br>
+(trg)="s35"> Documents <br>
+<hr>
+(src)="s36"> Præsentationer <br>
+(trg)="s36"> Presentations <br>
+<hr>
+(src)="s37"> Regneark <br>
+(trg)="s37"> Spreadsheets <br>
+<hr>
+(src)="s38"> Chatlogge <br>
+(trg)="s38"> Chat Logs <br>
+<hr>
+(src)="s39"> Filer og programmer som du har anvendt for nylig kan vises i instrumentbrættet og andre steder . Hvis andre personer kan se eller tilgå din brugerkonto , så bør du evt. begrænse hvilke elementer som registreres . <br>
+(trg)="s39"> Files and applications you ’ ve used recently can be shown in the Dash and elsewhere . If other people can see or access your user account , you may wish to limit which items are recorded . <br>
+<hr>
+(src)="s40"> Registrér anvendelsen af filer og programmer <br>
+(trg)="s40"> Record file and application usage <br>
+<hr>
+(src)="s41"> Ryd brugshistorik ... <br>
+(trg)="s41"> Clear Usage Data … <br>
+<hr>
+(src)="s42"> Inkludér : <br>
+(trg)="s42"> Include : <br>
+<hr>
+(src)="s43"> Ekskludér : <br>
+(trg)="s43"> Exclude : <br>
+<hr>
+(src)="s44"> Fjern element <br>
+(trg)="s44"> Remove Item <br>
+<hr>
+(src)="s45"> Vælg en mappe som skal sortlistes <br>
+(trg)="s45"> Select a folder to blacklist <br>
+<hr>
+(src)="s46"> Vælg en fil som skal sortlistes <br>
+(trg)="s46"> Select a file to blacklist <br>
+<hr>
+(src)="s47"> Ryd brugsdata <br>
+(trg)="s47"> Clear Usage Data <br>
+<hr>
+(src)="s48"> Slet data om hvilke filer og programmer har været brugt : <br>
+(trg)="s48"> Delete records of which files and applications were used : <br>
+<hr>
+(src)="s49"> For den seneste time <br>
+(trg)="s49"> In the past hour <br>
+<hr>
+(src)="s50"> For den seneste dag <br>
+(trg)="s50"> In the past day <br>
+<hr>
+(src)="s51"> For den seneste uge <br>
+(trg)="s51"> In the past week <br>
+<hr>
+(src)="s52"> Fra alle tidsperioder <br>
+(trg)="s52"> From all time <br>
+<hr>
+(src)="s53"> Denne operation kan ikke fortrydes . Er du sikker på at du vil slette denne aktivitet ? <br>
+(trg)="s53"> This operation cannot be undone , are you sure you want to delete this activity ? <br>
+<hr>
+(src)="s54"> Ubuntu kan indsamle anonyme oplysninger , der hjælper udviklerne med at forbedre systemet . Alle indsamlede oplysninger omfattes af vores privatlivspolitik . <br>
+(trg)="s54"> Ubuntu can collect anonymous information that helps developers improve it . All information collected is covered by our privacy policy . <br>
+<hr>
+(src)="s55"> Privatlivspolitik <br>
+(trg)="s55"> Privacy Policy <br>
+<hr>
+(src)="s56"> Folk , der bruger denne computer , kan : <br>
+(trg)="s56"> People using this computer can : <br>
+<hr>
+(src)="s57"> Sende fejlrapporter til Canonical <br>
+(trg)="s57"> Send error reports to Canonical <br>
+<hr>
+(src)="s58"> Fejlrapporter inkluderer oplysninger om hvad et program gjorde , da det brød ned . Du får altid valget mellem at sende eller annullere en fejlrapport . <br>
+(trg)="s58"> Error reports include information about what a program was doing when it failed . You always have the choice to send or cancel an error report . <br>
+<hr>
+(src)="s59"> Vis tidligere rapporter <br>
+(trg)="s59"> Show Previous Reports <br>
+<hr>
+(src)="s60"> Send lejlighedsvis systemoplysninger til Canonical <br>
+(trg)="s60"> Send occasional system information to Canonical <br>
+<hr>
+(src)="s61"> Dette omfatter ting som , hvor mange programmer kører , hvor meget diskplads computeren har , og hvilke enheder er tilsluttet . <br>
+(trg)="s61"> This includes things like how many programs are running , how much disk space the computer has , and what devices are connected . <br>
+<hr>
+<p>
+
+# da/adduser.xml.gz<br>
+# en/adduser.xml.gz
+
+<p><hr>
+(src)="s45"> ugyldigt argument for tilvalg locale noexpr <br>
+(trg)="s45"> locale noexpr <br>
+<hr>
+(src)="s46"> Forsøg igen ? [ j / N ] locale yesexpr <br>
+(trg)="s46"> locale yesexpr <br>
+<hr>
+(src)="s77"> adduser [ --home MAPPE ] [ --shell SKAL ] [ --no-create-home ] [ --uid ID ] [ --firstuid ID ] [ --lastuid ID ] [ --gecos GECOS ] [ --ingroup GRUPPE | --gid ID ] [ --disabled-password ] [ --disabled-login ] BRUGER Tilføj en normal bruger adduser --system [ --home MAPPE ] [ --shell SKAL ] [ --no-create-home ] [ --uid ID ] [ --gecos GECOS ] [ --group | --ingroup GRUPPE | --gid ID ] [ --disabled-password ] [ --disabled-login ] BRUGER Tilføj en systembruger adduser --group [ --gid ID ] GRUPPE addgroup [ --gid ID ] GRUPPE Tilføj en brugergruppe adduser --group --system [ --gid ID ] gruppe addgroup --system [ --gid ID ] gruppe Tilføj en systemgruppe adduser BRUGER GRUPPE Tilføj en eksisterende bruger til en eksisterende gruppe Generelle tilvalg : --quiet | -q giv ikke procesinformation til stdout --force-badname tillad brugernavne som ikke matcher konfigurationsvariablen NAME _ REGEX --help | -h hjælpetekst --version | -v versionnummer og ophavsret --conf | -c FIL brug FIL som konfigurationsfil --help " and " --version <br>
+(trg)="s77"> --help " and " --version <br>
+<hr>
+<p>
+
+# da/aisleriot.xml.gz<br>
+# en/aisleriot.xml.gz
+
+<p><hr>
+(src)="s1"> Kabale <br>
+(trg)="s1"> AisleRiot Solitaire <br>
+<hr>
+(src)="s2"> Spil mange forskellige kortspil <br>
+(trg)="s2"> Play many different solitaire games <br>
+<hr>
+(src)="s3"> kabale ; kort ; syvkabale ; edderkop ; napoleon ; huskespil ; <br>
+(trg)="s3"> solitaire ; cards ; klondike ; spider ; freecell ; patience ; <br>
+<hr>
+</body>
+</html>

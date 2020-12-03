@@ -1,0 +1,322 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# mn/adduser.xml.gz<br>
+# sv/adduser.xml.gz
+
+<p><hr>
+(src)="s1"> Зөвхөн root системийн хэрэглэгч болон группыг нэмнэ . <br>
+(trg)="s1"> Endast root får lägga till användare eller grupper i systemet . <br>
+<hr>
+(src)="s2"> Зөвхөн нэг эсвэл хоёр зөвшөөрсөн . <br>
+(trg)="s2"> Endast ett eller två namn tillåts . <br>
+<hr>
+(src)="s11"> GID `%s ' ашиглагдаж байна. <br>
+(trg)="s11"> Gid " % s " används redan . <br>
+<hr>
+(src)="s13">`%s ' групп үүссэнгүй. <br>
+(trg)="s13"> Gruppen " % s " skapades inte . <br>
+<hr>
+(src)="s15"> Дууслаа . <br>
+(trg)="s15"> Klar . <br>
+<hr>
+(src)="s16">`%s ' групп өмнө нь үүссэн байна. <br>
+(trg)="s16"> Gruppen " % s " finns redan . <br>
+<hr>
+(src)="s18">`%s ' хэрэглэгч алга. <br>
+(trg)="s18"> Användaren " % s " finns inte . <br>
+<hr>
+(src)="s19">`%s ' групп үүссэнгүй. <br>
+(trg)="s19"> Gruppen " % s " finns inte . <br>
+<hr>
+(src)="s20">`%s ' хэрэглэгч ` % s '-д үүссэн байна <br>
+(trg)="s20"> Användaren " % s " är redan medlem av " % s " . <br>
+<hr>
+(src)="s26">`%s ' хэрэглэгчийг үүсгэж чадсангүй. <br>
+(trg)="s26"> Användaren " % s " skapades inte . <br>
+<hr>
+(src)="s28"> Дотоод алдаа <br>
+(trg)="s28"> Internt fel <br>
+<hr>
+(src)="s40"> Хандах эрх боломжгүй <br>
+(trg)="s40"> Åtkomst nekad <br>
+<hr>
+(src)="s41"> тохирохгүй тохиргоо <br>
+(trg)="s41"> ogiltig kombination av flaggor <br>
+<hr>
+(src)="s42"> юу ч биелсэнгүй . <br>
+(trg)="s42"> oväntat fel , ingenting genomfört <br>
+<hr>
+(src)="s43"> нууц үгийн файлын алдаа <br>
+(trg)="s43"> oväntat fel , filen passwd-filen saknas <br>
+<hr>
+(src)="s44"> Нууц үгийн файл завгүй байна. дахин оролдоно уу . <br>
+(trg)="s44"> filen passwd är upptagen , försök igen <br>
+<hr>
+(src)="s45"> тохирохгүй аргумент locale noexpr <br>
+(trg)="s45"> ogiltigt argument till flagga locale noexpr <br>
+<hr>
+(src)="s46"> locale yesexpr <br>
+(trg)="s46"> Försök igen ? [ j / N ] locale yesexpr <br>
+<hr>
+(src)="s50">`%s ' хэрэглэгчийн санг үүсгэж чадсангүй. <br>
+(trg)="s50"> Skapar inte hemkatalogen " % s " . <br>
+<hr>
+(src)="s58">`%s ' хэрэглэгч үүссэн байна, системийн хэрэглэгч биш. <br>
+(trg)="s58"> Användaren " % s " finns redan och är inte en systemanvändare . <br>
+<hr>
+(src)="s59">`%s ' хэрэглэгч үүссэн байна.. <br>
+(trg)="s59"> Användaren " % s " finns redan . <br>
+<hr>
+(src)="s65"> Сэжигтэй нэрийг зөвшөөрч ашиглах . <br>
+(trg)="s65"> Tillåter användning av tvivelaktiga användarnamn . <br>
+<hr>
+(src)="s77"> --help " and " --version <br>
+(trg)="s77"> adduser [ --home KAT ] [ --shell SKAL ] [ --no-create-home ] [ --uid ID ] [ --firstuid ID ] [ --lastuid ID ] [ --gecos GECOS ] [ --ingroup GRUPP | --gid ID ] [ --disabled-password ] [ --disabled-login ] [ --encrypt-home ] ANVÄNDARE Lägg till en vanlig användare adduser --system [ --home KAT ] [ --shell SKAL ] [ --no-create-home ] [ --uid ID ] [ --gecos GECOS ] [ --group | --ingroup GRUPP | --gid ID ] [ --disabled-password ] [ --disabled-login ] ANVÄNDARE Lägg till en systemanvändare adduser --group [ --gid ID ] GRUPP addgroup [ --gid ID ] GRUPP Lägg till en användargrupp addgroup --system [ --gid ID ] GRUPP Lägg till en systemgrupp adduser ANVÄNDARE GRUPP Lägg till en befintlig användare till en befintlig grupp allmänna flaggor : --quiet | -q skriv inte ut processinformation till standard ut --force-badname tillåt användarnamn som inte matchar konfigurationsvariabeln NAME _ REGEX [ _ SYSTEM ] --help | -h skriv ut användningsinformation --version | -v versionsnummer och upphovsrätt --conf | -c FIL använd FIL som konfigurationsfil --help " and " --version <br>
+<hr>
+(src)="s78"> Зөвхөн root системийн групп болон хэрэглэгчийг устгана . <br>
+(trg)="s78"> Endast root kan ta bort en användare eller grupp från systemet . <br>
+<hr>
+(src)="s80"> Устгах группын нэр : <br>
+(trg)="s80"> Ange ett gruppnamn att ta bort : <br>
+<hr>
+(src)="s81"> Устгах хэрэглэгчний нэр : <br>
+(trg)="s81"> Ange ett användarnamn att ta bort : <br>
+<hr>
+(src)="s101">`%s ' групп хоосон биш байна. <br>
+(trg)="s101"> Gruppen " % s " är inte tom ! <br>
+<hr>
+(src)="s104">`%s ' хэрэглэгч ` % s ' группын хэрэглэгч биш байна. <br>
+(trg)="s104"> Användaren " % s " är inte medlem av gruppen " % s " . <br>
+<hr>
+<p>
+
+# mn/aisleriot.xml.gz<br>
+# sv/aisleriot.xml.gz
+
+<p><hr>
+(src)="s1"> АйслеРойт хөзөр <br>
+(trg)="s1"> AisleRiot-patiens <br>
+<hr>
+(src)="s2"> Өөр олон хөзрийн тоглоомууд тоглох <br>
+(trg)="s2"> Spela många olika patiensspel <br>
+<hr>
+(src)="s6"> Багаж самбар харуулах эсэх <br>
+(trg)="s6"> Huruvida verktygsraden ska visas eller inte <br>
+<hr>
+(src)="s10"> Дуу <br>
+(trg)="s10"> Ljud <br>
+<hr>
+(src)="s11"> Дуу тоглуулах эсэх <br>
+(trg)="s11"> Huruvida händelseljud ska spelas eller inte . <br>
+<hr>
+(src)="s14"> Хэрэглэх тоглоомын файл <br>
+(trg)="s14"> Spelfilen att använda <br>
+<hr>
+(src)="s16"> Тоглосон тоглоомын статистик <br>
+(trg)="s16"> Statistik för spelade spel <br>
+<hr>
+(src)="s20"> Шинэ тоглоом <br>
+(trg)="s20"> Nytt spel <br>
+<hr>
+(src)="s22"> Статистикууд <br>
+(trg)="s22"> Statistik <br>
+<hr>
+(src)="s27"> Тоглоомоо сонго <br>
+(trg)="s27"> Välj spel <br>
+<hr>
+(src)="s31"> _ New " is for the menu item ' Game- &gt; New ' , implies " New Game <br>
+(trg)="s31"> _ Tips _ New " is for the menu item ' Game- &gt; New ' , implies " New Game <br>
+<hr>
+(src)="s32"> _ New Game <br>
+(trg)="s32"> _ Nytt _ New Game <br>
+<hr>
+(src)="s34"> Reset <br>
+(trg)="s34"> _ Gör om dragReset <br>
+<hr>
+(src)="s35"> _ Дахин эхлэх _ Restart " is the menu item ' Game- &gt; Restart ' , implies " Restart Game <br>
+(trg)="s35"> N _ ollställ _ Restart " is the menu item ' Game- &gt; Restart ' , implies " Restart Game <br>
+<hr>
+(src)="s43"> slot type <br>
+(trg)="s43"> Du bör ha fått en kopia av GNU General Public License tillsammans med detta program . Om inte , se <br>
+<hr>
+(src)="s44"> slot type <br>
+(trg)="s44">grundhögslot type<br>
+<hr>
+(src)="s45"> slot type <br>
+(trg)="s45">reservhÃÂ¶gslot type<br>
+<hr>
+(src)="s46"> slot type <br>
+(trg)="s46">högslot type<br>
+<hr>
+(src)="s47"> slot type <br>
+(trg)="s47">bordshÃÂ¶gslot type<br>
+<hr>
+(src)="s48"> foundationslot hint <br>
+(trg)="s48">kasthögfoundationslot hint<br>
+<hr>
+(src)="s49"> reserveslot hint <br>
+(trg)="s49">%s i grundhÃÂ¶genreserveslot hint<br>
+<hr>
+(src)="s50"> stockslot hint <br>
+(trg)="s50">%s i reservhögenstockslot hint<br>
+<hr>
+(src)="s51"> tableauslot hint <br>
+(trg)="s51">%s i hÃÂ¶gentableauslot hint<br>
+<hr>
+(src)="s52"> wasteslot hint <br>
+(trg)="s52">%s i bordshögenwasteslot hint<br>
+<hr>
+(src)="s54"> Энэ тоглоомын зөвлөмж тодорхойлогдоогүй байна . <br>
+(trg)="s54">Det här spelet stöder inte ledtrådar ännu.<br>
+<hr>
+(src)="s55"> % s -г % s рүү зөөх . <br>
+(trg)="s55">Flytta %s till %s.<br>
+<hr>
+(src)="s56"> Энэ тоглоом зөвлөмж өгөхөд боломжгүй . <br>
+(trg)="s56">Det här spelet kan inte ge dig några tips.<br>
+<hr>
+(src)="s58"> Агнес <br>
+(trg)="s58">Agnes<br>
+<hr>
+(src)="s68"> Бристоль <br>
+(trg)="s68">Bristol<br>
+<hr>
+(src)="s69"> Камелот <br>
+(trg)="s69">Camelot<br>
+<hr>
+(src)="s70"> Хурд <br>
+(trg)="s70">Varvet runt<br>
+<hr>
+(src)="s72"> Шатрын хөлөг <br>
+(trg)="s72">Schackbräde<br>
+<hr>
+(src)="s73"> Цаг <br>
+(trg)="s73">Klockan<br>
+<hr>
+(src)="s74"> Дугтуй <br>
+(trg)="s74">Täck<br>
+<hr>
+(src)="s77"> Хуулбар <br>
+(trg)="s77">Dubletter<br>
+<hr>
+(src)="s79"> Дорнын боомт <br>
+(trg)="s79">ÃÂsterhamn<br>
+<hr>
+(src)="s81"> Цахилгаан шат <br>
+(trg)="s81">Hissen<br>
+<hr>
+(src)="s83"> Гүйдэг шат <br>
+(trg)="s83">Rulltrappan<br>
+<hr>
+(src)="s85"> Цайз <br>
+(trg)="s85">Fortet<br>
+<hr>
+(src)="s86"> Аз <br>
+(trg)="s86">Idioten<br>
+<hr>
+(src)="s88"> Арван дөрөв <br>
+(trg)="s88">Fjorton<br>
+<hr>
+(src)="s89"> Нүд чөлөөлөх <br>
+(trg)="s89">Napoleon pÃÂ¥ S:t Helena<br>
+<hr>
+(src)="s93"> Хавцал <br>
+(trg)="s93">Glenwood<br>
+<hr>
+(src)="s95"> Гольф <br>
+(trg)="s95">Golf<br>
+<hr>
+(src)="s96"> Цыганууд <br>
+(trg)="s96">Zigenare<br>
+<hr>
+(src)="s97"> Хельсинк <br>
+(trg)="s97">Helsingfors<br>
+<hr>
+(src)="s98"> Тэмтэг <br>
+(trg)="s98">Hoppa hage<br>
+<hr>
+(src)="s99"> Изабель <br>
+(trg)="s99">Isabelle<br>
+<hr>
+(src)="s100"> Jamestown <br>
+(trg)="s100">Jamestown<br>
+<hr>
+(src)="s101"> Жумбо <br>
+(trg)="s101">Jumbo<br>
+<hr>
+(src)="s102"> Канзас <br>
+(trg)="s102">Kansas<br>
+<hr>
+(src)="s105"> Клондайк <br>
+(trg)="s105">Klondyke<br>
+<hr>
+(src)="s107"> Лабиринт <br>
+(trg)="s107">Labyrint<br>
+<hr>
+(src)="s109"> Мазе <br>
+(trg)="s109">Virrvarr<br>
+<hr>
+(src)="s112"> Хөрш <br>
+(trg)="s112">Granne<br>
+<hr>
+(src)="s113"> Одесса <br>
+(trg)="s113">Odessa<br>
+<hr>
+(src)="s114"> Осмос <br>
+(trg)="s114">Osmos<br>
+<hr>
+(src)="s115"> Peek <br>
+(trg)="s115">Titt<br>
+<hr>
+(src)="s116"> Pileon <br>
+(trg)="s116">Pileon<br>
+<hr>
+(src)="s117"> Хуниас <br>
+(trg)="s117">FlÃÂ¤ta<br>
+<hr>
+(src)="s118"> Покер <br>
+(trg)="s118">Poker<br>
+<hr>
+(src)="s119"> Quatorze <br>
+(trg)="s119">Quatorze<br>
+<hr>
+(src)="s122"> Хилэнцэт <br>
+(trg)="s122">Skorpionen<br>
+<hr>
+(src)="s123"> Зодоон <br>
+(trg)="s123">Blanda<br>
+<hr>
+(src)="s124"> Seahaven <br>
+(trg)="s124">Sjöhamn<br>
+<hr>
+(src)="s127"> Аалз <br>
+(trg)="s127">Spindeln<br>
+<hr>
+(src)="s129"> Аалзхан <br>
+(trg)="s129">Lillspindel<br>
+<hr>
+(src)="s132"> Цоолтуур <br>
+(trg)="s132">Mall<br>
+<hr>
+(src)="s135"> Хулгайч <br>
+(trg)="s135">RÃÂ¶vare<br>
+<hr>
+(src)="s136"> Арвангурав <br>
+(trg)="s136">Trettonpyramiden<br>
+<hr>
+(src)="s138"> Treize <br>
+(trg)="s138">Treize<br>
+<hr>
+(src)="s141"> Валентин <br>
+(trg)="s141">Valentin<br>
+<hr>
+</body>
+</html>

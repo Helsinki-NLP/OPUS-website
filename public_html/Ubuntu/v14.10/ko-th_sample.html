@@ -1,0 +1,328 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# ko/account-plugins.xml.gz<br>
+# th/account-plugins.xml.gz
+
+<p><hr>
+<p>
+
+# ko/adduser.xml.gz<br>
+# th/adduser.xml.gz
+
+<p><hr>
+(src)="s1"> 루트만이 사용자나 그룹을 시스템에 추가할 수 있습니다 . <br>
+(trg)="s1"> ผู ้ ดูแลระบบ ( รูท ) เท ่ านั ้ นที ่ สามารถเพิ ่ มรายชื ่ อผู ้ ใช ้ หรือกลุ ่ มผู ้ ใช ้ <br>
+<hr>
+(src)="s2"> 하나 혹은 두 개의 이름만 지정할 수 있습니다 . <br>
+(trg)="s2"> อนุญาต 1 หรือ 2 ชื ่ อเท ่ านั ้ น <br>
+<hr>
+(src)="s3"> 이 경우에는 한 개의 이름만 지정할 수 있습니다 . <br>
+(trg)="s3"> ให ้ กำหนดเพียงชื ่ อเดียวในโหมดนี ้ <br>
+<hr>
+(src)="s4"> --group , --ingroup , 그리고 --gid 옵션은 한 번에 한 개만 쓸 수 있습니다 . <br>
+(trg)="s4"> ออปชั ่ น --group , --ingroup , และ --gid มีความเกี ่ ยวเนื ่ องถึงกัน <br>
+<hr>
+(src)="s5"> 홈 디렉토리는 절대 경로를 써야 합니다 . <br>
+(trg)="s5"> ไดเร ็ คทอรี ่ home จะต ้ องระบุในแบบ absolute path <br>
+<hr>
+(src)="s11"> ' % s ' GID는 이미 사용하고 있습니다 . <br>
+(trg)="s11"> GID ' % s ' กำลังถูกใช ้ งานอยู ่ แล ้ ว <br>
+<hr>
+(src)="s12"> 범위 % d- % d ( FIRST _ SYS _ GID - LAST _ SYS _ GID ) 내에 남아 있는 GID가 없습니다 . <br>
+(trg)="s12"> ไม ่ มี GID ปรากฏในช ่ วง % d ถึง % d ( FIRST _ SYS _ GID - LAST _ SYS _ GID ) . <br>
+<hr>
+(src)="s13">`%s ' 그룹이 만들어지지 않았습니다. <br>
+(trg)="s13"> กรุ ๊ ป ' % s ' ยังไม ่ ได ้ ถูกสร ้ างขึ ้ น <br>
+<hr>
+(src)="s15"> 완료 . <br>
+(trg)="s15"> เสร ็ จเรียบร ้ อย <br>
+<hr>
+(src)="s16">`%s ' 그룹은 이미 존재합니다. <br>
+(trg)="s16"> กรุ ๊ ป ' % s ' มีอยู ่ แล ้ ว <br>
+<hr>
+(src)="s17"> 범위 % d- % d ( FIRST _ GID - LAST _ GID ) 내에 남아 있는 GID가 없습니다 . <br>
+(trg)="s17"> ไม ่ มี GID ปรากฏในช ่ วง % d ถึง % d ( FIRST _ GID - LAST _ GID ) . <br>
+<hr>
+(src)="s18">`%s ' 사용자가 없습니다. <br>
+(trg)="s18"> ผู ้ ใช ้ ' % s ' ไม ่ ปรากฏมีอยู ่ <br>
+<hr>
+(src)="s20">`%s ' 사용자는 이미 % s의 일원입니다. <br>
+(trg)="s20"> ผู ้ ใช ้ `%s ' ได้เป็นสมาชิกของกลุ่ม ` % s ' นี้แล้ว <br>
+<hr>
+(src)="s26">`%s ' 사용자가 만들어지지 않았습니다. <br>
+(trg)="s26"> ผู ้ ใช ้ `%s ' ยังไม่ได้สร้าง <br>
+<hr>
+(src)="s28"> 내부 오류 <br>
+(trg)="s28"> เกิดข ้ อผิดพลาดภายใน <br>
+<hr>
+(src)="s45"> 옵션에 잘못된 매개변수 locale noexpr <br>
+(trg)="s45"> locale noexpr <br>
+<hr>
+(src)="s46"> 다시 할까요 ? [ y / N ] locale yesexpr <br>
+(trg)="s46"> locale yesexpr <br>
+<hr>
+(src)="s59"> ' % s ' 사용자는 이미 존재합니다 . <br>
+(trg)="s59"> ผู ้ ใช ้ `%s ' มีอยู่แล้ว <br>
+<hr>
+(src)="s77"> adduser [ --home DIR ] [ --shell SHELL ] [ --no-create-home ] [ --uid ID ] [ --firstuid ID ] [ --lastuid ID ] [ --gecos GECOS ] [ --ingroup GROUP | --gid ID ] [ --disabled-password ] [ --disabled-login ] [ --encrypt-home ] USER 일반 사용자 추가 adduser --system [ --home DIR ] [ --shell SHELL ] [ --no-create-home ] [ --uid ID ] [ --gecos GECOS ] [ --group | --ingroup GROUP | --gid ID ] [ --disabled-password ] [ --disabled-login ] USER 시스템 사용자 추가 adduser --group [ --gid ID ] GROUP addgroup [ --gid ID ] GROUP 사용자 그룹 추가 addgroup --system [ --gid ID ] GROUP 시스템 그룹 추가 adduser USER GROUP 기존 사용자를 기존 그룹에 추가 일반 옵션 : --quiet | -q 표준 출력으로 처리 상황을 표시 안 함 --force-badname NAME _ REGEX [ _ SYSTEM ] 구성 변수에 부합되지 않는 사용자 이름도 허용 --help | -h 사용법 메시지 --version | -v 버전 넘버와 저작권 --conf | -c FILE 구성 파일로 FILE을 사용 --help " and " --version <br>
+(trg)="s77"> --help " and " --version <br>
+<hr>
+<p>
+
+# ko/aisleriot.xml.gz<br>
+# th/aisleriot.xml.gz
+
+<p><hr>
+(src)="s1"> 아일라이어트 솔리테어 <br>
+(trg)="s1"> ถอดไพ ่ AisleRiot <br>
+<hr>
+(src)="s2"> 여러가지 솔리테어 게임을 플레이합니다 <br>
+(trg)="s2"> เล ่ นเกมถอดไพ ่ สารพัดแบบ <br>
+<hr>
+(src)="s4"> 테마 파일 이름 <br>
+(trg)="s4"> ชื ่ อแฟ ้ มชุดตกแต ่ ง <br>
+<hr>
+(src)="s5"> 카드의 그래픽이 들어 있는 파일의 이름 . <br>
+(trg)="s5"> ชื ่ อของแฟ ้ มที ่ เก ็ บรูปภาพสำรับไพ ่ <br>
+<hr>
+(src)="s6"> 도구 모음을 표시합니다 <br>
+(trg)="s6"> จะแสดงแถบเครื ่ องมือหรือไม ่ <br>
+<hr>
+(src)="s7"> 상태 표시줄을 표시합니다 <br>
+(trg)="s7"> จะแสดงแถบสถานะหรือไม ่ <br>
+<hr>
+(src)="s8"> 컨트롤 방식을 고르십시오 <br>
+(trg)="s8"> รูปแบบการควบคุม <br>
+<hr>
+(src)="s9"> 카드를 옮길 때 원래 위치에서 옮길 위치까지 드래그할 지 누를 지 고르십시오 . <br>
+(trg)="s9"> เลือกว ่ าจะใช ้ การลากไพ ่ หรือจะคลิกต ้ นทางและปลายทาง <br>
+<hr>
+(src)="s10"> 소리 <br>
+(trg)="s10"> เสียง <br>
+<hr>
+(src)="s11"> 이벤트 사운드를 재생합니다 . <br>
+(trg)="s11"> กำหนดว ่ าจะเล ่ นเสียงของเหตุการณ ์ ต ่ างๆ หรือไม ่ <br>
+<hr>
+(src)="s12"> 애니메이션 <br>
+(trg)="s12"> ภาพเคลื ่ อนไหว <br>
+<hr>
+(src)="s13"> 카드 움직임에 애니메이션을 사용합니다 . <br>
+(trg)="s13"> กำหนดว ่ าจะใช ้ ภาพเคลื ่ อนไหวขณะย ้ ายไพ ่ หรือไม ่ <br>
+<hr>
+(src)="s14"> 사용할 게임 파일 <br>
+(trg)="s14"> แฟ ้ มเกมที ่ จะใช ้ <br>
+<hr>
+(src)="s15"> 플레이할 솔리테어 게임이 들어 있는 Scheme 파일의 이름 . <br>
+(trg)="s15"> ชื ่ อของแฟ ้ ม scheme ที ่ เก ็ บเกมถอดไพ ่ ที ่ จะเล ่ น <br>
+<hr>
+(src)="s16"> 플레이한 게임의 통계 <br>
+(trg)="s16"> สถิติของการเล ่ นเกม <br>
+<hr>
+(src)="s17"> 5개 데이터 튜플 형태의 문자열 목록 : 이름 , 이긴 회수 , 전체 게임 수 , 최고 시간 ( 초 단위 ) 그리고 최저 시간 ( 역시 초 단위 ) . 플레이하지 않은 게임은 해당 없습니다 . <br>
+(trg)="s17"> รายการสตริงในรูปของระเบียน : ชื ่ อ , จำนวนเกมชนะ , จำนวนเกมที ่ เล ่ นทั ้ งหมด , เวลาที ่ ดีที ่ สุด ( เป ็ นวินาที ) และเวลาที ่ แย ่ ที ่ สุด ( เป ็ นวินาทีเช ่ นกัน ) เกมที ่ ไม ่ ได ้ เล ่ นไม ่ จำเป ็ นต ้ องเก ็ บ <br>
+<hr>
+(src)="s18"> 최근 플레이한 게임 <br>
+(trg)="s18"> เกมที ่ เล ่ นก ่ อนหน ้ านี ้ <br>
+<hr>
+(src)="s19"> 최근 플레이한 게임의 목록 . <br>
+(trg)="s19"> รายการเกมที ่ เล ่ นก ่ อนหน ้ านี ้ <br>
+<hr>
+(src)="s22"> 통계 <br>
+(trg)="s22"> สถิติ <br>
+<hr>
+(src)="s27"> 게임 선택 <br>
+(trg)="s27"> เลือกเกม <br>
+<hr>
+(src)="s28"> 선택 ( _ S ) <br>
+(trg)="s28"> เ _ ลือก <br>
+<hr>
+(src)="s29"> 차례 ( _ C ) <br>
+(trg)="s29"> เ _ นื ้ อหา <br>
+<hr>
+(src)="s30"> 전체 화면 ( _ F ) <br>
+(trg)="s30"> เ _ ต ็ มจอ <br>
+<hr>
+(src)="s31"> 힌트 ( _ H ) _ New " is for the menu item ' Game- &gt; New ' , implies " New Game <br>
+(trg)="s31"> บอกใ _ บ ้ _ New " is for the menu item ' Game- &gt; New ' , implies " New Game <br>
+<hr>
+(src)="s32"> 새 게임 ( _ N ) _ New Game <br>
+(trg)="s32"> ใ _ หม ่ _ New Game <br>
+<hr>
+(src)="s33"> 새 게임 ( _ N ) <br>
+(trg)="s33"> เกมใ _ หม ่ <br>
+<hr>
+(src)="s34"> 다시 이동 ( _ R ) Reset <br>
+(trg)="s34"> เ _ ล ่ นตาซ ้ ำReset <br>
+<hr>
+(src)="s35"> 리셋 ( _ R ) _ Restart " is the menu item ' Game- &gt; Restart ' , implies " Restart Game <br>
+(trg)="s35"> _ ล ้ าง _ Restart " is the menu item ' Game- &gt; Restart ' , implies " Restart Game <br>
+<hr>
+(src)="s36"> 게임 다시 ( _ R ) <br>
+(trg)="s36"> _ ตั ้ งต ้ นใหม ่ <br>
+<hr>
+(src)="s37"> 이동 취소 ( _ U ) <br>
+(trg)="s37"> _ ย ้ อนตากลับ <br>
+<hr>
+(src)="s38"> 패 돌리기 ( _ D ) <br>
+(trg)="s38"> จั ่ วไ _ พ ่ <br>
+<hr>
+(src)="s39"> 전체 화면 나가기 ( _ L ) <br>
+(trg)="s39"> เ _ ลิกแสดงเต ็ มจอ <br>
+<hr>
+(src)="s40"> 일시 중지 ( _ P ) <br>
+(trg)="s40"> _ พัก <br>
+<hr>
+(src)="s41"> % s은 ( 는 ) 자유 소프트웨어 입니다 . 자유 소프트웨어가 공표한 버전 GNU 일반 공중 사용허가서 버전 % d 또는 ( 선택에 따라 ) 이후 버전의 조항에 따라 재배포 또는 수정할 수 있습니다 . <br>
+(trg)="s41"> % s เป ็ นซอฟต ์ แวร ์ เสรี คุณสามารถแจกจ ่ ายต ่ อ และ / หรือ แก ้ ไขโปรแกรมได ้ ภายใต ้ เงื ่ อนไขของ GNU General Public License ที ่ เผยแพร ่ โดยมูลนิธิซอฟต ์ แวร ์ เสรี ไม ่ ว ่ าจะเป ็ นสัญญาอนุญาตรุ ่ นที ่ % d หรือรุ ่ นถัดมา ( ตามแต ่ คุณจะเลือก ) <br>
+<hr>
+(src)="s42"> % s은 ( 는 ) 유용해지길 바라며 배포하지만 그 어떤 보증도 하지 않으며 심지어는 상업성 , 특정 목적의 적합성에 대한 암묵적 보증도 하지 않습니다 . 자세한 내용은 GNU 일반 공중 사용허가서를 참조하십시오 . <br>
+(trg)="s42"> % s เผยแพร ่ ด ้ วยความหวังว ่ าโปรแกรมจะมีประโยชน ์ แต ่ * ไม ่ มีการรับประกันใดๆ * ไม ่ มีแม ้ การรับประกัน * อรรถประโยชน ์ เชิงพาณิชย ์ * หรือ * ความเหมาะสมสำหรับวัตถุประสงค ์ เฉพาะกิจใดๆ * กรุณาอ ่ าน GNU General Public License เพื ่ อดูรายละเอียดเพิ ่ มเติม <br>
+<hr>
+(src)="s43"> GNU 일반 공중 사용허가서의 사본을 이 프로그램과 함께 받아야 합니다 . 만약 없다면 <br>
+(trg)="s43"> คุณควรจะได ้ รับสำเนาของ GNU General Public License มาพร ้ อมกับโปรแกรมนี ้ ถ ้ าคุณไม ่ ได ้ รับ กรุณาดูได ้ ที ่ <br>
+<hr>
+(src)="s44">파운데이션slot type<br>
+(trg)="s44">กองเรียงslot type<br>
+<hr>
+(src)="s45">ìì½slot type<br>
+(trg)="s45">à¸à¸­à¸à¸ªà¸³à¸£à¸­à¸slot type<br>
+<hr>
+(src)="s46">스톡slot type<br>
+(trg)="s46">กองจั่วslot type<br>
+<hr>
+(src)="s47">íë¸ë¡slot type<br>
+(trg)="s47">à¸à¸£à¸°à¸à¸²à¸à¹à¸¥à¹à¸slot type<br>
+<hr>
+(src)="s48">버린 카드foundationslot hint<br>
+(trg)="s48">กองทิ้งfoundationslot hint<br>
+<hr>
+(src)="s49">íì´ë°ì´ìì %sreserveslot hint<br>
+(trg)="s49">%s à¹à¸à¸à¸­à¸à¹à¸£à¸µà¸¢à¸reserveslot hint<br>
+<hr>
+(src)="s50">예약의 %sstockslot hint<br>
+(trg)="s50">%s ในกองสำรองstockslot hint<br>
+<hr>
+(src)="s51">ì¤í¡ì %stableauslot hint<br>
+(trg)="s51">%s à¹à¸à¸à¸­à¸à¸à¸±à¹à¸§tableauslot hint<br>
+<hr>
+(src)="s52">타블로의 %swasteslot hint<br>
+(trg)="s52">%s ในกระดานเล่นwasteslot hint<br>
+<hr>
+(src)="s53">ë²ë¦° ì¹´ëì %s<br>
+(trg)="s53">%s à¹à¸à¸à¸­à¸à¸à¸´à¹à¸<br>
+<hr>
+(src)="s54">이 게임은 아직 힌트가 지원되지 않습니다.<br>
+(trg)="s54">เกมนี้ยังไม่รองรับการบอกใบ้<br>
+<hr>
+(src)="s55">%2$sì ìë %1$sì(ë¥¼) ìì§ì´ì­ìì¤.<br>
+(trg)="s55">à¸¢à¹à¸²à¸¢%sà¹à¸à¸¢à¸±à¸%s<br>
+<hr>
+(src)="s56">이 게임은 힌트를 제공할 수 없습니다.<br>
+(trg)="s56">เกมนี้ไม่สามารถบอกใบ้ได้<br>
+<hr>
+(src)="s57">ìì½ëì¸<br>
+(trg)="s57">à¸«à¸µà¸à¹à¸à¸¥à¸<br>
+<hr>
+(src)="s58">아그네스<br>
+(trg)="s58">แอกนีส<br>
+<hr>
+(src)="s59">ìíë<br>
+(trg)="s59">à¸­à¸°à¸à¸µà¸à¸²<br>
+<hr>
+(src)="s60">올드 랭 사인<br>
+(trg)="s60">ออลด์ แลง ไซน์<br>
+<hr>
+(src)="s61">ì¤í¸ ë©ë¦¬<br>
+(trg)="s61">à¸à¹à¸²à¸¡à¸²à¸£à¸µ<br>
+<hr>
+(src)="s62">백본<br>
+(trg)="s62">สันหลัง<br>
+<hr>
+(src)="s63">ë² ì´ì»¤ì¦ ëì¦<br>
+(trg)="s63">à¹à¸«à¸¥à¹à¸à¸¡à¸«à¸à¸¶à¹à¸<br>
+<hr>
+(src)="s64">베이커즈 게임<br>
+(trg)="s64">เกมร้านขนมอบ<br>
+<hr>
+(src)="s65">ë² ì´ ë¦¬ë²<br>
+(trg)="s65">à¹à¸¡à¹à¸à¹à¸³à¹à¸à¸£à¹<br>
+<hr>
+(src)="s66">빌리거드 캐슬<br>
+(trg)="s66">ล้อมปราสาท<br>
+<hr>
+(src)="s67">ë¸ë¡ í<br>
+(trg)="s67">à¸à¸¥à¹à¸­à¸à¸ªà¸´à¸<br>
+<hr>
+(src)="s68">브리스톨<br>
+(trg)="s68">บริสตอล<br>
+<hr>
+(src)="s69">ì¹´ë©ë¡¯<br>
+(trg)="s69">à¸à¸²à¹à¸¡à¸¥à¹à¸­à¸<br>
+<hr>
+(src)="s70">캔필드<br>
+(trg)="s70">แคนฟิลด์<br>
+<hr>
+(src)="s71">ì¹´íí¸<br>
+(trg)="s71">à¸à¸£à¸¡<br>
+<hr>
+(src)="s72">체스보드<br>
+(trg)="s72">กระดานหมากรุก<br>
+<hr>
+(src)="s73">í´ë¡<br>
+(trg)="s73">à¸à¸²à¸¬à¸´à¸à¸²<br>
+<hr>
+(src)="s74">커버<br>
+(trg)="s74">คลุม<br>
+<hr>
+(src)="s75">í¬ë£¨ì¼<br>
+(trg)="s75">à¹à¸«à¸à¸£à¹à¸²à¸¢<br>
+<hr>
+(src)="s76">다이아몬드 마인<br>
+(trg)="s76">เหมืองเพชร<br>
+<hr>
+(src)="s77">ëë¸ë¦¿<br>
+(trg)="s77">à¸à¸§à¸µà¸à¸¹à¸<br>
+<hr>
+(src)="s78">이글 윙<br>
+(trg)="s78">ปีกอินทรี<br>
+<hr>
+(src)="s79">ì´ì¤í¸ í¤ì´ë¸<br>
+(trg)="s79">à¸­à¸µà¸ªà¸à¹à¹à¸®à¹à¸§à¸<br>
+<hr>
+(src)="s80">에이트 오프<br>
+(trg)="s80">พักแปด<br>
+<hr>
+(src)="s81">ìë¦¬ë² ì´í°<br>
+(trg)="s81">à¸¥à¸´à¸à¸à¹<br>
+<hr>
+(src)="s82">엘리미네이터<br>
+(trg)="s82">กำจัด<br>
+<hr>
+(src)="s83">ìì¤ì»¬ë ì´í°<br>
+(trg)="s83">à¸à¸±à¸à¹à¸à¹à¸¥à¸·à¹à¸­à¸<br>
+<hr>
+(src)="s84">퍼스트 로우<br>
+(trg)="s84">กฎข้อแรก<br>
+<hr>
+(src)="s85">í¬í¸ë¦¬ì¤<br>
+(trg)="s85">à¸à¸£à¸²à¸à¸²à¸£<br>
+<hr>
+(src)="s86">포츈<br>
+(trg)="s86">โชคชะตา<br>
+<hr>
+(src)="s87">40ì¸ì ëì <br>
+(trg)="s87">à¸ªà¸µà¹à¸ªà¸´à¸à¹à¸à¸£<br>
+<hr>
+(src)="s88">포틴<br>
+(trg)="s88">สิบสี่<br>
+<hr>
+</body>
+</html>

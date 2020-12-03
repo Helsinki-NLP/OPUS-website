@@ -1,0 +1,328 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# hu/account-plugins.xml.gz<br>
+# th/account-plugins.xml.gz
+
+<p><hr>
+<p>
+
+# hu/adduser.xml.gz<br>
+# th/adduser.xml.gz
+
+<p><hr>
+(src)="s1"> Csak root joggal lehet új felhasználót és csoportot létrehozni . <br>
+(trg)="s1"> ผู ้ ดูแลระบบ ( รูท ) เท ่ านั ้ นที ่ สามารถเพิ ่ มรายชื ่ อผู ้ ใช ้ หรือกลุ ่ มผู ้ ใช ้ <br>
+<hr>
+(src)="s2"> Csak egy vagy két név engedélyezett . <br>
+(trg)="s2"> อนุญาต 1 หรือ 2 ชื ่ อเท ่ านั ้ น <br>
+<hr>
+(src)="s3"> Csak 1 nevet adj meg e módban . <br>
+(trg)="s3"> ให ้ กำหนดเพียงชื ่ อเดียวในโหมดนี ้ <br>
+<hr>
+(src)="s4"> A --group , --ingroup és --gid lehetőségek kizárják egymást . <br>
+(trg)="s4"> ออปชั ่ น --group , --ingroup , และ --gid มีความเกี ่ ยวเนื ่ องถึงกัน <br>
+<hr>
+(src)="s5"> A saját könyvtárat a teljes elérési úttal kell megadni . <br>
+(trg)="s5"> ไดเร ็ คทอรี ่ home จะต ้ องระบุในแบบ absolute path <br>
+<hr>
+(src)="s11"> A csoport-azonosító ( % s ) már foglalt . <br>
+(trg)="s11"> GID ' % s ' กำลังถูกใช ้ งานอยู ่ แล ้ ว <br>
+<hr>
+(src)="s12"> Nincs szabad csoport-azonosító e tartományban : % d- % d ( FIRST _ SYS _ GID - LAST _ SYS _ GID ) . <br>
+(trg)="s12"> ไม ่ มี GID ปรากฏในช ่ วง % d ถึง % d ( FIRST _ SYS _ GID - LAST _ SYS _ GID ) . <br>
+<hr>
+(src)="s13"> A megadott csoport ( % s ) nem jött létre . <br>
+(trg)="s13"> กรุ ๊ ป ' % s ' ยังไม ่ ได ้ ถูกสร ้ างขึ ้ น <br>
+<hr>
+(src)="s15"> Kész . <br>
+(trg)="s15"> เสร ็ จเรียบร ้ อย <br>
+<hr>
+(src)="s16">`%s ' csoport már létezik. <br>
+(trg)="s16"> กรุ ๊ ป ' % s ' มีอยู ่ แล ้ ว <br>
+<hr>
+(src)="s17"> Nincs szabad csoport-azonosító e tartományban : % d- % d ( FIRST _ GID - LAST _ GID ) . <br>
+(trg)="s17"> ไม ่ มี GID ปรากฏในช ่ วง % d ถึง % d ( FIRST _ GID - LAST _ GID ) . <br>
+<hr>
+(src)="s18">`%s ' felhasználó nem létezik. <br>
+(trg)="s18"> ผู ้ ใช ้ ' % s ' ไม ่ ปรากฏมีอยู ่ <br>
+<hr>
+(src)="s20">`%s ' felhasználó már tagja a e csoportnak: % s. <br>
+(trg)="s20"> ผู ้ ใช ้ `%s ' ได้เป็นสมาชิกของกลุ่ม ` % s ' นี้แล้ว <br>
+<hr>
+(src)="s26"> % s felhasználó nem jött létre . <br>
+(trg)="s26"> ผู ้ ใช ้ `%s ' ยังไม่ได้สร้าง <br>
+<hr>
+(src)="s28"> Belső hiba <br>
+(trg)="s28"> เกิดข ้ อผิดพลาดภายใน <br>
+<hr>
+(src)="s45"> a kapcsoló argumentuma helytelen locale noexpr <br>
+(trg)="s45"> locale noexpr <br>
+<hr>
+(src)="s46"> Újrapróbálja ? [ i / N ] locale yesexpr <br>
+(trg)="s46"> locale yesexpr <br>
+<hr>
+(src)="s59">`%s ' felhasználó már létezik. <br>
+(trg)="s59"> ผู ้ ใช ้ `%s ' มีอยู่แล้ว <br>
+<hr>
+(src)="s77"> adduser [ --home KVT ] [ --shell PAR.ÉRT ] [ --no-create-home ] [ --uid AZ ] [ --firstuid AZ ] [ --lastuid AZ ] [ --gecos GECOS ] [ --ingroup CSOPORT | --gid AZ ] [ --disabled-password ] [ --disabled-login ] [ --encrypt-home ] FELHASZNÁLÓ Normál felhasználó hozzáadása adduser --system [ --home KVT ] [ --shell PAR.ÉRT ] [ --no-create-home ] [ --uid AZ ] [ --gecos GECOS ] [ --group | --ingroup CSOPORT | --gid AZ ] [ --disabled-password ] [ --disabled-login ] FELHASZNÁLÓ Rendszer felhasználó hozzáadása adduser --group [ --gid AZ ] CSOPORT addgroup [ --gid AZ ] CSOPORT Felhasználói csoport hozzáadása addgroup --system [ --gid AZ ] CSOPORT Rendszercsoport hozzáadása adduser FELHASZNÁLÓ CSOPORT Egy létező felhasználó hozzáadása egy meglévő csoporthoz általános beállítások : --quiet | -q csendes mód , nem küld előrehaladási információt --force-badname elfogadja azon felhasználóneveket , amelyek nem felelnek meg a NAME _ REGEX [ _ SYSTEM ] konfigurációs változóban foglaltaknak --help | -h segítség a használathoz --version | -v verziószám és szerzői jog --conf | -c FILE konfigurációs fájl megadása --help " and " --version <br>
+(trg)="s77"> --help " and " --version <br>
+<hr>
+<p>
+
+# hu/aisleriot.xml.gz<br>
+# th/aisleriot.xml.gz
+
+<p><hr>
+(src)="s1"> AisleRiot pasziánsz <br>
+(trg)="s1"> ถอดไพ ่ AisleRiot <br>
+<hr>
+(src)="s2"> Sok különféle pasziánszjáték <br>
+(trg)="s2"> เล ่ นเกมถอดไพ ่ สารพัดแบบ <br>
+<hr>
+(src)="s4"> Témafájl neve <br>
+(trg)="s4"> ชื ่ อแฟ ้ มชุดตกแต ่ ง <br>
+<hr>
+(src)="s5"> A kártyákhoz használt grafika fájlneve . <br>
+(trg)="s5"> ชื ่ อของแฟ ้ มที ่ เก ็ บรูปภาพสำรับไพ ่ <br>
+<hr>
+(src)="s6"> Megjelenjen-e az eszköztár <br>
+(trg)="s6"> จะแสดงแถบเครื ่ องมือหรือไม ่ <br>
+<hr>
+(src)="s7"> Megjelenjen-e az eszköztár <br>
+(trg)="s7"> จะแสดงแถบสถานะหรือไม ่ <br>
+<hr>
+(src)="s8"> Válassza ki a vezérlés stílusát <br>
+(trg)="s8"> รูปแบบการควบคุม <br>
+<hr>
+(src)="s9"> Válassza ki , hogy húzni kívánja a kártyákat vagy kattintani szeretne a forrásra és aztán a célra . <br>
+(trg)="s9"> เลือกว ่ าจะใช ้ การลากไพ ่ หรือจะคลิกต ้ นทางและปลายทาง <br>
+<hr>
+(src)="s10"> Hang <br>
+(trg)="s10"> เสียง <br>
+<hr>
+(src)="s11"> Legyen-e az eseményeknek hangjuk . <br>
+(trg)="s11"> กำหนดว ่ าจะเล ่ นเสียงของเหตุการณ ์ ต ่ างๆ หรือไม ่ <br>
+<hr>
+(src)="s12"> Animációk <br>
+(trg)="s12"> ภาพเคลื ่ อนไหว <br>
+<hr>
+(src)="s13"> A lapmozgások animáltak legyenek-e ? <br>
+(trg)="s13"> กำหนดว ่ าจะใช ้ ภาพเคลื ่ อนไหวขณะย ้ ายไพ ่ หรือไม ่ <br>
+<hr>
+(src)="s14"> A használandó játékfájl <br>
+(trg)="s14"> แฟ ้ มเกมที ่ จะใช ้ <br>
+<hr>
+(src)="s15"> A játszandó pasziánszjátékot tartalmazó scheme fájl neve . <br>
+(trg)="s15"> ชื ่ อของแฟ ้ ม scheme ที ่ เก ็ บเกมถอดไพ ่ ที ่ จะเล ่ น <br>
+<hr>
+(src)="s16"> Lejátszott játékok statisztikája <br>
+(trg)="s16"> สถิติของการเล ่ นเกม <br>
+<hr>
+(src)="s17"> Karaktersorozatok ötös csoportosítású listája : név , győzelmek , összes lejátszott játék , legjobb idő ( másodpercben ) és legrosszabb idő ( szintén másodpercben . A le nem játszott játékoknak nem kell megjelenniük . <br>
+(trg)="s17"> รายการสตริงในรูปของระเบียน : ชื ่ อ , จำนวนเกมชนะ , จำนวนเกมที ่ เล ่ นทั ้ งหมด , เวลาที ่ ดีที ่ สุด ( เป ็ นวินาที ) และเวลาที ่ แย ่ ที ่ สุด ( เป ็ นวินาทีเช ่ นกัน ) เกมที ่ ไม ่ ได ้ เล ่ นไม ่ จำเป ็ นต ้ องเก ็ บ <br>
+<hr>
+(src)="s18"> Legutóbb játszott játékok <br>
+(trg)="s18"> เกมที ่ เล ่ นก ่ อนหน ้ านี ้ <br>
+<hr>
+(src)="s19"> Legutóbb játszott játékok listája . <br>
+(trg)="s19"> รายการเกมที ่ เล ่ นก ่ อนหน ้ านี ้ <br>
+<hr>
+(src)="s22"> Statisztika <br>
+(trg)="s22"> สถิติ <br>
+<hr>
+(src)="s27"> Játék kiválasztása <br>
+(trg)="s27"> เลือกเกม <br>
+<hr>
+(src)="s28"> _ Kiválasztás <br>
+(trg)="s28"> เ _ ลือก <br>
+<hr>
+(src)="s29"> _ Tartalom <br>
+(trg)="s29"> เ _ นื ้ อหา <br>
+<hr>
+(src)="s30"> _ Teljes képernyő <br>
+(trg)="s30"> เ _ ต ็ มจอ <br>
+<hr>
+(src)="s31"> _ Javaslat _ New " is for the menu item ' Game- &gt; New ' , implies " New Game <br>
+(trg)="s31"> บอกใ _ บ ้ _ New " is for the menu item ' Game- &gt; New ' , implies " New Game <br>
+<hr>
+(src)="s32"> Ú _ j _ New Game <br>
+(trg)="s32"> ใ _ หม ่ _ New Game <br>
+<hr>
+(src)="s33"> Ú _ j játék <br>
+(trg)="s33"> เกมใ _ หม ่ <br>
+<hr>
+(src)="s34"> _ Mégis a lépéstReset <br>
+(trg)="s34"> เ _ ล ่ นตาซ ้ ำReset <br>
+<hr>
+(src)="s35"> _ Visszaállítás _ Restart " is the menu item ' Game- &gt; Restart ' , implies " Restart Game <br>
+(trg)="s35"> _ ล ้ าง _ Restart " is the menu item ' Game- &gt; Restart ' , implies " Restart Game <br>
+<hr>
+(src)="s36"> Ú _ jraindítás <br>
+(trg)="s36"> _ ตั ้ งต ้ นใหม ่ <br>
+<hr>
+(src)="s37"> Mozgatás _ visszavonása <br>
+(trg)="s37"> _ ย ้ อนตากลับ <br>
+<hr>
+(src)="s38"> _ Osztás <br>
+(trg)="s38"> จั ่ วไ _ พ ่ <br>
+<hr>
+(src)="s39"> T _ eljes képernyő elhagyása <br>
+(trg)="s39"> เ _ ลิกแสดงเต ็ มจอ <br>
+<hr>
+(src)="s40"> _ Szünet <br>
+(trg)="s40"> _ พัก <br>
+<hr>
+(src)="s41"> A ( z ) % s szabad szoftver , terjesztheti és / vagy módosíthatja a Free Software Foundation által kiadott GNU General Public License % d . ( vagy bármely későbbi ) változatában foglaltak alapján . <br>
+(trg)="s41"> % s เป ็ นซอฟต ์ แวร ์ เสรี คุณสามารถแจกจ ่ ายต ่ อ และ / หรือ แก ้ ไขโปรแกรมได ้ ภายใต ้ เงื ่ อนไขของ GNU General Public License ที ่ เผยแพร ่ โดยมูลนิธิซอฟต ์ แวร ์ เสรี ไม ่ ว ่ าจะเป ็ นสัญญาอนุญาตรุ ่ นที ่ % d หรือรุ ่ นถัดมา ( ตามแต ่ คุณจะเลือก ) <br>
+<hr>
+(src)="s42"> A ( z ) % s programot abban a reményben terjesztjük , hogy hasznos lesz , de nem vállalunk SEMMIFÉLE GARANCIÁT , még olyan értelemben sem , hogy a program alkalmas-e a KÖZREADÁSRA vagy EGY BIZONYOS FELADAT ELVÉGZÉSÉRE . További részletekért tanulmányozza a GNU GPL licencet . <br>
+(trg)="s42"> % s เผยแพร ่ ด ้ วยความหวังว ่ าโปรแกรมจะมีประโยชน ์ แต ่ * ไม ่ มีการรับประกันใดๆ * ไม ่ มีแม ้ การรับประกัน * อรรถประโยชน ์ เชิงพาณิชย ์ * หรือ * ความเหมาะสมสำหรับวัตถุประสงค ์ เฉพาะกิจใดๆ * กรุณาอ ่ าน GNU General Public License เพื ่ อดูรายละเอียดเพิ ่ มเติม <br>
+<hr>
+(src)="s43"> A ( z ) % s programhoz a GNU General Public License egy példánya is jár , ha nem kapta meg , a <br>
+(trg)="s43"> คุณควรจะได ้ รับสำเนาของ GNU General Public License มาพร ้ อมกับโปรแกรมนี ้ ถ ้ าคุณไม ่ ได ้ รับ กรุณาดูได ้ ที ่ <br>
+<hr>
+(src)="s44">alapslot type<br>
+(trg)="s44">กองเรียงslot type<br>
+<hr>
+(src)="s45">tartalÃÂ©kslot type<br>
+(trg)="s45">à¸à¸­à¸à¸ªà¸³à¸£à¸­à¸slot type<br>
+<hr>
+(src)="s46">paklislot type<br>
+(trg)="s46">กองจั่วslot type<br>
+<hr>
+(src)="s47">tablÃÂ³slot type<br>
+(trg)="s47">à¸à¸£à¸°à¸à¸²à¸à¹à¸¥à¹à¸slot type<br>
+<hr>
+(src)="s48">szemétdombfoundationslot hint<br>
+(trg)="s48">กองทิ้งfoundationslot hint<br>
+<hr>
+(src)="s49">%s az alaponreserveslot hint<br>
+(trg)="s49">%s à¹à¸à¸à¸­à¸à¹à¸£à¸µà¸¢à¸reserveslot hint<br>
+<hr>
+(src)="s50">%s a tartalékonstockslot hint<br>
+(trg)="s50">%s ในกองสำรองstockslot hint<br>
+<hr>
+(src)="s51">a pakliban %stableauslot hint<br>
+(trg)="s51">%s à¹à¸à¸à¸­à¸à¸à¸±à¹à¸§tableauslot hint<br>
+<hr>
+(src)="s52">%s a tablónwasteslot hint<br>
+(trg)="s52">%s ในกระดานเล่นwasteslot hint<br>
+<hr>
+(src)="s53">%s a szemÃÂ©tdombon<br>
+(trg)="s53">%s à¹à¸à¸à¸­à¸à¸à¸´à¹à¸<br>
+<hr>
+(src)="s54">Ebben a játékban nincs javaslat. Egyelőre.<br>
+(trg)="s54">เกมนี้ยังไม่รองรับการบอกใบ้<br>
+<hr>
+(src)="s55">Rakja a(z) %s lapot a kÃÂ¶vetkezÃÂre: %s.<br>
+(trg)="s55">à¸¢à¹à¸²à¸¢%sà¹à¸à¸¢à¸±à¸%s<br>
+<hr>
+(src)="s56">Ebben a játékban nincs javaslat.<br>
+(trg)="s56">เกมนี้ไม่สามารถบอกใบ้ได้<br>
+<hr>
+(src)="s57">Accordion<br>
+(trg)="s57">à¸«à¸µà¸à¹à¸à¸¥à¸<br>
+<hr>
+(src)="s58">Agnes<br>
+(trg)="s58">แอกนีส<br>
+<hr>
+(src)="s59">Athena<br>
+(trg)="s59">à¸­à¸°à¸à¸µà¸à¸²<br>
+<hr>
+(src)="s60">Régi szép idők<br>
+(trg)="s60">ออลด์ แลง ไซน์<br>
+<hr>
+(src)="s61">Mary nÃÂ©ni<br>
+(trg)="s61">à¸à¹à¸²à¸¡à¸²à¸£à¸µ<br>
+<hr>
+(src)="s62">Backbone<br>
+(trg)="s62">สันหลัง<br>
+<hr>
+(src)="s63">Bakers Dozen<br>
+(trg)="s63">à¹à¸«à¸¥à¹à¸à¸¡à¸«à¸à¸¶à¹à¸<br>
+<hr>
+(src)="s64">Bakers Game<br>
+(trg)="s64">เกมร้านขนมอบ<br>
+<hr>
+(src)="s65">Medve folyÃÂ³<br>
+(trg)="s65">à¹à¸¡à¹à¸à¹à¸³à¹à¸à¸£à¹<br>
+<hr>
+(src)="s66">Beleaguered Castle<br>
+(trg)="s66">ล้อมปราสาท<br>
+<hr>
+(src)="s67">Block Ten<br>
+(trg)="s67">à¸à¸¥à¹à¸­à¸à¸ªà¸´à¸<br>
+<hr>
+(src)="s68">Bristol<br>
+(trg)="s68">บริสตอล<br>
+<hr>
+(src)="s69">Camelot<br>
+(trg)="s69">à¸à¸²à¹à¸¡à¸¥à¹à¸­à¸<br>
+<hr>
+(src)="s70">Canfield<br>
+(trg)="s70">แคนฟิลด์<br>
+<hr>
+(src)="s71">SzÃÂnyeg<br>
+(trg)="s71">à¸à¸£à¸¡<br>
+<hr>
+(src)="s72">Sakktábla<br>
+(trg)="s72">กระดานหมากรุก<br>
+<hr>
+(src)="s73">ÃÂra<br>
+(trg)="s73">à¸à¸²à¸¬à¸´à¸à¸²<br>
+<hr>
+(src)="s74">Borító<br>
+(trg)="s74">คลุม<br>
+<hr>
+(src)="s75">Cruel<br>
+(trg)="s75">à¹à¸«à¸à¸£à¹à¸²à¸¢<br>
+<hr>
+(src)="s76">Gyémántbánya<br>
+(trg)="s76">เหมืองเพชร<br>
+<hr>
+(src)="s77">Doublets<br>
+(trg)="s77">à¸à¸§à¸µà¸à¸¹à¸<br>
+<hr>
+(src)="s78">Sasszárny<br>
+(trg)="s78">ปีกอินทรี<br>
+<hr>
+(src)="s79">Easthaven<br>
+(trg)="s79">à¸­à¸µà¸ªà¸à¹à¹à¸®à¹à¸§à¸<br>
+<hr>
+(src)="s80">Eight off<br>
+(trg)="s80">พักแปด<br>
+<hr>
+(src)="s81">Lift<br>
+(trg)="s81">à¸¥à¸´à¸à¸à¹<br>
+<hr>
+(src)="s82">Eliminátor<br>
+(trg)="s82">กำจัด<br>
+<hr>
+(src)="s83">MozgÃÂ³lÃÂ©pcsÃÂ<br>
+(trg)="s83">à¸à¸±à¸à¹à¸à¹à¸¥à¸·à¹à¸­à¸<br>
+<hr>
+(src)="s84">Első törvény<br>
+(trg)="s84">กฎข้อแรก<br>
+<hr>
+(src)="s85">ErÃÂd<br>
+(trg)="s85">à¸à¸£à¸²à¸à¸²à¸£<br>
+<hr>
+(src)="s86">Fortunes<br>
+(trg)="s86">โชคชะตา<br>
+<hr>
+(src)="s87">Negyven tolvaj<br>
+(trg)="s87">à¸ªà¸µà¹à¸ªà¸´à¸à¹à¸à¸£<br>
+<hr>
+(src)="s88">Tizennégy<br>
+(trg)="s88">สิบสี่<br>
+<hr>
+</body>
+</html>

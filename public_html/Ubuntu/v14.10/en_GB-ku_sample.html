@@ -1,0 +1,334 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# en_GB/account-plugins.xml.gz<br>
+# ku/account-plugins.xml.gz
+
+<p><hr>
+<p>
+
+# en_GB/acl.xml.gz<br>
+# ku/acl.xml.gz
+
+<p><hr>
+(src)="s1"> Usage : <br>
+(trg)="s1"> Bikaranîn : <br>
+<hr>
+(src)="s2"> \ t % s acl pathname ... <br>
+(trg)="s2"> \ t % s acl Riya dosyeyê ... <br>
+<hr>
+(src)="s3"> \ t % s -b acl dacl pathname ... <br>
+(trg)="s3"> \ t % s -b acl dacl Riya dosyeyê ... <br>
+<hr>
+(src)="s4"> \ t % s -d dacl dacl pathname ... <br>
+(trg)="s4"> \ t % s -d dacl Riya dosyeyê ... <br>
+<hr>
+(src)="s5"> \ t % s -R pathname ... <br>
+(trg)="s5"> \ t % s -R navê dosya ... <br>
+<hr>
+(src)="s6"> \ t % s -D pathname ... <br>
+(trg)="s6"> \ t % s -D Riya dosyeyê ... <br>
+<hr>
+(src)="s7"> \ t % s -B pathname ... <br>
+(trg)="s7"> \ t % s -B Riya dosyeyê ... <br>
+<hr>
+(src)="s8"> \ t % s -l pathname ... \ t [ not IRIX compatible ] <br>
+(trg)="s8"> \ t % s -l Rêya dosya ... [ IRIX lihev nake ] <br>
+<hr>
+(src)="s9"> \ t % s -r pathname ... \ t [ not IRIX compatible ] <br>
+(trg)="s9"> \ t % s -r Rêya dosya ... [ IRIX lihev nake ] <br>
+<hr>
+(src)="s10"> % s : error removing access acl on " % s " : % s <br>
+(trg)="s10"> dema % s : li ser acl destûr dida rakirin çewtiya ku tê diyarkirin çêbû . " % s " : % s <br>
+<hr>
+(src)="s11"> % s : error removing default acl on " % s " : % s <br>
+(trg)="s11"> % s : Çewtî jiêbirina " % s " : % s de <br>
+<hr>
+(src)="s12"> % s : access ACL ' % s ' : % s at entry % d <br>
+(trg)="s12"> % s : Zêdekirina ACL ' % s ' : % s di têketana % d de <br>
+<hr>
+(src)="s13"> % s : cannot get access ACL on ' % s ' : % s <br>
+(trg)="s13"> % s : Nikare zêdekera ACL bîne ' % s ' : % s <br>
+<hr>
+(src)="s14"> % s : cannot get default ACL on ' % s ' : % s <br>
+(trg)="s14"> % s : nikare ACL a çewt bîne ' % s ' : % s <br>
+<hr>
+(src)="s15"> % s : cannot get access ACL text on ' % s ' : % s <br>
+(trg)="s15"> % s : Nikare nivîsa zêdekirinê ya ACL bîne ' % s ' : % s <br>
+<hr>
+(src)="s16"> % s : cannot get default ACL text on ' % s ' : % s <br>
+(trg)="s16"> % s : cannot get default ACL text on ' % s ' : % s <br>
+<hr>
+(src)="s17"> % s : cannot set access acl on " % s " : % s <br>
+(trg)="s17"> % s : Nikare nivîsa zêdekirina ACL a çewt bîne " % s " : % s <br>
+<hr>
+(src)="s18"> % s : cannot set default acl on " % s " : % s <br>
+(trg)="s18"> % s : Nikare acl a çewt bîne " % s " : % s <br>
+<hr>
+(src)="s19"> % s : opendir failed : % s <br>
+(trg)="s19"> % s : opendir biserneket : % s <br>
+<hr>
+(src)="s20"> % s : malloc failed : % s <br>
+(trg)="s20"> % s : malloc biserneket : % s <br>
+<hr>
+(src)="s21"> % s : % s : Malformed access ACL `%s ': % s at entry %d <br>
+(trg)="s21"> % s : % s : Zêdekên biqisûr ên ACL `%s ': % s Di têketana %d de <br>
+<hr>
+(src)="s22"> % s : % s : Malformed default ACL `%s ': % s at entry %d <br>
+(trg)="s22"> % s : % s : Çewtiya ACL a biqisûr`%s ': % s Di têketana %d de <br>
+<hr>
+(src)="s23"> % s : % s : Only directories can have default ACLs <br>
+(trg)="s23"> % s : % s : Bi tenê pêrist dikarin bibin xwedî ACL ên çewt <br>
+<hr>
+(src)="s24"> % s : % s : No filename found in line % d , aborting <br>
+(trg)="s24"> % s : % s : Dosya nayê dîtin di % d , a têkçûyî de <br>
+<hr>
+(src)="s25"> % s : No filename found in line % d of standard input , aborting <br>
+(trg)="s25"> % s : Dosya nayê dîtin di % d di têketana standart de , a têkçûyî <br>
+<hr>
+(src)="s26"> % s : % s : % s in line % d <br>
+(trg)="s26"> % s : % s : % s di rêzika % d de <br>
+<hr>
+(src)="s27"> % s : % s : Cannot change owner / group : % s <br>
+(trg)="s27"> % s : % s : nikare xwedî / komê biguherîne : % s <br>
+<hr>
+(src)="s29"> % s % s -- set file access control lists <br>
+(trg)="s29"> % s % s -- dosya zêde ya kontrola lîsteyan dixebitîne <br>
+<hr>
+(src)="s30"> Usage : % s % s <br>
+(trg)="s30"> Bikarhêner : % s % s <br>
+<hr>
+(src)="s31"> -m , --modify = acl modify the current ACL ( s ) of file ( s ) -M , --modify-file = file read ACL entries to modify from file -x , --remove = acl remove entries from the ACL ( s ) of file ( s ) -X , --remove-file = file read ACL entries to remove from file -b , --remove-all remove all extended ACL entries -k , --remove-default remove the default ACL <br>
+(trg)="s31"> -m , --modify = acl ACL ( ên ) heyî yên dosyan biguherîne -M , --modify-file = file têketanên ACL bixwîne da ku ji dosya guhertinê bike -x , --remove = acl têketanan ji ACL ( ên ) dosyan dibe -X , --remove-file = file têketanên ACL bixwîne da ku ji dosya guhertinê bike -b , --remove-all Jêbirina hemû berfirehkirinên têketanên ACL -k , ----remove-default ACLên têkçûyî jêbibe <br>
+<hr>
+(src)="s32"> --set = acl set the ACL of file ( s ) , replacing the current ACL --set-file = file read ACL entries to set from file --mask do recalculate the effective rights mask <br>
+(trg)="s32"> --set = acl ACLên dosyan çalak dike , ACLên heyî li şûna wan bicih dike --set-dosya = dosya têketanên ACL dixwîne da ku çalak bike --maske masketên çalak ji nû hesab dike <br>
+<hr>
+(src)="s33"> -n , --no-mask don 't recalculate the effective rights mask -d , --default operations apply to the default ACL <br>
+(trg)="s33"> -n , --na-maske masketên çalak ji nû hesab nake -d , --karên çewt ACL yê çewt dixebitînede <br>
+<hr>
+(src)="s34"> -R , --recursive recurse into subdirectories -L , --logical logical walk , follow symbolic links -P , --physical physical walk , do not follow symbolic links --restore = file restore ACLs ( inverse of `getfacl -R ') --test test mode (ACLs are not modified) <br>
+(trg)="s34"> -R , --guhertin di pêrista cîgir de nabe -L , --meşa aqilane , li pey lînkên sembolî tê -P , --meşa bedenî , li pey lînkên sembolî naçe --ji nû avakirin = dosya ACL ji nû ava dike --test ( ACL nayên guhertin ) <br>
+<hr>
+(src)="s36"> % s : Standard input : % s <br>
+(trg)="s36"> % s : Têketana standart : % s <br>
+<hr>
+(src)="s37"> % s : Option - % c incomplete <br>
+(trg)="s37"> % s : Vebijark - % c Kême <br>
+<hr>
+(src)="s38"> % s : Option - % c : % s near character % d <br>
+(trg)="s38"> % s : Vebijark - % c : % s nêzî karekter % d <br>
+<hr>
+(src)="s39"> % s : % s in line % d of file % s <br>
+(trg)="s39"> % s : % s Di rêza % d de ya dosya % s de <br>
+<hr>
+(src)="s40"> % s : % s in line % d of standard input <br>
+(trg)="s40"> % s : % s di rêza % d a t3eketana standart de <br>
+<hr>
+(src)="s41"> Try `%s --help ' for more information. <br>
+(trg)="s41"> Hewlbide `%s --alîkarî ' bo agahiyên berfirehtir. <br>
+<hr>
+(src)="s42"> % s : Removing leading ' / ' from absolute path names <br>
+(trg)="s42"> % s : Jêbirina rêvebiriyê ' / ' Ji navê rêyên bêqisûr <br>
+<hr>
+(src)="s43"> % s % s -- get file access control lists <br>
+(trg)="s43"> % s % s -- Lîsteya kontrola lîsteyên zêde bîne <br>
+<hr>
+(src)="s44"> Usage : % s [ - % s ] file ... <br>
+(trg)="s44"> Bikarhêner : % s [ - % s ] dosya ... <br>
+<hr>
+(src)="s45"> -d , --default display the default access control list <br>
+(trg)="s45"> -d , --xebitandina çewt a lîsteya kontrola zêdekeran <br>
+<hr>
+(src)="s47"> Multiple entries of same type <br>
+(trg)="s47"> Pirtêketanên ji heman cureyê <br>
+<hr>
+(src)="s48"> Duplicate entries <br>
+(trg)="s48"> Têketana wekhev <br>
+<hr>
+(src)="s49"> Missing or wrong entry <br>
+(trg)="s49"> Têketana çewt <br>
+<hr>
+(src)="s50"> Invalid entry type <br>
+(trg)="s50"> Cureyê têketana çewt <br>
+<hr>
+(src)="s51"> setting permissions for % s <br>
+(trg)="s51"> Beşa destûran a % s <br>
+<hr>
+(src)="s52"> preserving permissions for % s <br>
+(trg)="s52"> Ewlekariya Destûran bo % s <br>
+<hr>
+<p>
+
+# en_GB/activity-log-manager.xml.gz<br>
+# ku/activity-log-manager.xml.gz
+
+<p><hr>
+(src)="s1"> Activity Log Manager <br>
+(trg)="s1"> Midurê rojane ê çalak <br>
+<hr>
+(src)="s2"> Configure what gets logged in your Zeitgeist activity log <br>
+(trg)="s2"> Avakirina rêketinên rojane ê çalak jibo zeitgeist <br>
+<hr>
+(src)="s3"> Activities and Privacy Manager Tool <br>
+(trg)="s3"> Çalakî û nevbeynkarê rêvebir ê ewlehîyê <br>
+<hr>
+(src)="s5"> Privacy and Activity Manager <br>
+(trg)="s5"> Ewlehî û rêberê çalak <br>
+<hr>
+(src)="s10"> Diagnostics <br>
+(trg)="s10"> Teşhîs <br>
+<hr>
+(src)="s19"> Name <br>
+(trg)="s19"> Nav <br>
+<hr>
+(src)="s20"> No description available <br>
+(trg)="s20"> Daxûyanî tine <br>
+<hr>
+(src)="s21"> Last Used <br>
+(trg)="s21"> Bikar anîna dawî <br>
+<hr>
+(src)="s22"> Activity <br>
+(trg)="s22"> Çalakî <br>
+<hr>
+(src)="s23"> Select Application <br>
+(trg)="s23"> Sepan hilbijêre <br>
+<hr>
+(src)="s24"> Today , % H : % M <br>
+(trg)="s24"> Îro , % H : % M <br>
+<hr>
+(src)="s25"> Yesterday , % H : % M <br>
+(trg)="s25"> Diho , % H : % M <br>
+<hr>
+(src)="s26"> % e % B % Y , % H : % M <br>
+(trg)="s26"> % e % B % Y , % H : % M <br>
+<hr>
+(src)="s27"> Never <br>
+(trg)="s27"> Qe ti wext <br>
+<hr>
+(src)="s28"> From : <br>
+(trg)="s28"> Ji kê hatiye : <br>
+<hr>
+(src)="s29"> To : <br>
+(trg)="s29"> Ji bo : <br>
+<hr>
+(src)="s30"> Invalid Timerange <br>
+(trg)="s30"> Derbasbuna navbera zeman <br>
+<hr>
+(src)="s31"> % d % B % Y <br>
+(trg)="s31"> % d % B % Y <br>
+<hr>
+(src)="s53"> This operation cannot be undone , are you sure you want to delete this activity ? <br>
+(trg)="s53"> Va kirarî paşva nay girtin.ti emînî sîlkirina vê çalakîyêra ? <br>
+<hr>
+(src)="s54"> Ubuntu can collect anonymous information that helps developers improve it . All information collected is covered by our privacy policy . <br>
+(trg)="s54"> Pêşketinên Ubuntu ' yê jibo pêşketinê alîkarî bune agahîyên anonîm dibe tomar bike. tomar kirina hemu agahîyan dibin pirensîbê ewlehî meda tê parastin . <br>
+<hr>
+(src)="s55"> Privacy Policy <br>
+(trg)="s55"> Ewlehîya polîkayê <br>
+<hr>
+(src)="s56"> People using this computer can : <br>
+(trg)="s56"> Yêkû vê kompîtoyê bi kartînin dikarin vana pêk bînin : <br>
+<hr>
+(src)="s57"> Send error reports to Canonical <br>
+(trg)="s57"> Ragîhandina xetan bişîne Canonical ê <br>
+<hr>
+(src)="s58"> Error reports include information about what a program was doing when it failed . You always have the choice to send or cancel an error report . <br>
+(trg)="s58"> xeta ragîhandinê , sepanan gava xeta dan çidike eleqederîya agahîya naveroke. jibo herdem xetakî ragîhandinê şandinêra yanjî betalkirinêra hun xudî hilbijartinê ne . <br>
+<hr>
+<p>
+
+# en_GB/adduser.xml.gz<br>
+# ku/adduser.xml.gz
+
+<p><hr>
+(src)="s1"> Only root may add a user or group to the system . <br>
+(trg)="s1"> Bitenê bingeh dikare bikarhiner an jî komeke li pergalê zêde bike <br>
+<hr>
+(src)="s2"> Only one or two names allowed . <br>
+(trg)="s2"> Bi tenê navek an du nav derbasbare . <br>
+<hr>
+(src)="s3"> Specify only one name in this mode . <br>
+(trg)="s3"> Di vê rewşê de tenê navek tê taybetkirin . <br>
+<hr>
+(src)="s4"> The --group , --ingroup , and --gid options are mutually exclusive . <br>
+(trg)="s4"> --kom , --di komê de , û --bijarekên gid taybetin . <br>
+<hr>
+(src)="s5"> The home dir must be an absolute path . <br>
+(trg)="s5"> Pêwiste ku ji lênûşa cih re rêyekê sabît hebe . <br>
+<hr>
+(src)="s11"> The GID `%s ' is already in use. <br>
+(trg)="s11"> GID a`%s ' berê dixebite. <br>
+<hr>
+(src)="s12"> No GID is available in the range % d- % d ( FIRST _ SYS _ GID - LAST _ SYS _ GID ) . <br>
+(trg)="s12"> Ti GID di vê rêjeyê de % d- % d ( FIRST _ SYS _ GID - LAST _ SYS _ GID ) ne derbasbare . <br>
+<hr>
+(src)="s13"> The group `%s ' was not created. <br>
+(trg)="s13"> Koma `%s ' nehatiye avakirin. <br>
+<hr>
+(src)="s15"> Done . <br>
+(trg)="s15"> Pêkhat . <br>
+<hr>
+(src)="s16"> The group `%s ' already exists. <br>
+(trg)="s16"> Koma`%s ' berê heye. <br>
+<hr>
+(src)="s17"> No GID is available in the range % d- % d ( FIRST _ GID - LAST _ GID ) . <br>
+(trg)="s17"> GID di van rêjeyan de ne derbasbare % d- % d ( _ GID ê yekem- _ GID ê dawî ) . <br>
+<hr>
+(src)="s18"> The user `%s ' does not exist. <br>
+(trg)="s18"> Bikarhiner`%s ' tuneye. <br>
+<hr>
+(src)="s19"> The group `%s ' does not exist. <br>
+(trg)="s19"> Koma `%s ' tuneye. <br>
+<hr>
+(src)="s20"> The user `%s ' is already a member of ` % s '. <br>
+(trg)="s20"> Bikarhiner`%s ' berê eindamê ` % s ' ye. <br>
+<hr>
+(src)="s25"> No UID / GID pair is available in the range % d- % d ( FIRST _ SYS _ UID - LAST _ SYS _ UID ) . <br>
+(trg)="s25"> UID / GID ne derbasbarin di rêje % d- % d ( yekemîn _ UID ê _ pergalê - UID _ pergalê _ yê dawî ) . <br>
+<hr>
+(src)="s26"> The user `%s ' was not created. <br>
+(trg)="s26"> Bikarhêner `%s ' nehatiye avakirin <br>
+<hr>
+(src)="s27"> No UID is available in the range % d- % d ( FIRST _ SYS _ UID - LAST _ SYS _ UID ) . <br>
+(trg)="s27"> UID derbasbare di rêjeya % d- % d ( YEKEMÎN _ PERGALa _ UID - PERGALa _ DAWÎ _ ya UID ) . <br>
+<hr>
+(src)="s28"> Internal error <br>
+(trg)="s28"> Çewtiyeke hundirîn <br>
+<hr>
+(src)="s34"> % s failed with return code 15 , shadow not enabled , password aging cannot be set . Continuing . <br>
+(trg)="s34"> % s di guhertina kod 15 biserneket , sîtav ne çalake , şîfre ne derbasbare. berdewamî . <br>
+<hr>
+(src)="s36"> No UID / GID pair is available in the range % d- % d ( FIRST _ UID - LAST _ UID ) . <br>
+(trg)="s36"> UID / GID derbasbarin di rêjeya % d- % d ( YEKEMÎN _ UID -UID _ a DAWÎ ) . <br>
+<hr>
+(src)="s37"> No UID is available in the range % d- % d ( FIRST _ UID - LAST _ UID ) . <br>
+(trg)="s37"> UID derbasbare di rêjeya % d- % d ( YEKEMÎN _ UID -UID _ a DAWÎ ) . <br>
+<hr>
+(src)="s40"> Permission denied <br>
+(trg)="s40"> Destûr tuneye <br>
+<hr>
+(src)="s41"> invalid combination of options <br>
+(trg)="s41"> Têkçûna lihevcivandina bijarekan <br>
+<hr>
+(src)="s42"> unexpected failure , nothing done <br>
+(trg)="s42"> Çewtiyek ne texmînkirî. tiştek nebû <br>
+<hr>
+(src)="s43"> unexpected failure , passwd file missing <br>
+(trg)="s43"> Çewtiyek ne texmînkirî , Windakirina şîfreya dosya <br>
+<hr>
+(src)="s44"> passwd file busy , try again <br>
+(trg)="s44"> Şifreya dosya mijûle , careke din hewl bide <br>
+<hr>
+(src)="s45"> invalid argument to option locale noexpr <br>
+(trg)="s45"> Sepana çewt bo bijarekê locale noexpr <br>
+<hr>
+</body>
+</html>

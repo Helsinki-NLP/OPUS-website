@@ -1,0 +1,334 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# sq/account-plugins.xml.gz<br>
+# sr/account-plugins.xml.gz
+
+<p><hr>
+(src)="s1"> Përfshin Gmail , Google Docs , Google + , YouTube dhe Picasa <br>
+(trg)="s1"> Укључујући Gmail , Гугл Документе , Гугл + , Јутјуб и Пикасу <br>
+<hr>
+<p>
+
+# sq/accounts-service.xml.gz<br>
+# sr/accounts-service.xml.gz
+
+<p><hr>
+<p>
+
+# sq/acl.xml.gz<br>
+# sr/acl.xml.gz
+
+<p><hr>
+(src)="s1"> Përdorimi : <br>
+(trg)="s1"> Употреба : <br>
+<hr>
+(src)="s2"> \ t % s acl pathname ... <br>
+(trg)="s2"> \ t % s acl путања ... <br>
+<hr>
+(src)="s3"> \ t % s -b acl dacl pathname ... <br>
+(trg)="s3"> \ t % s -b acl dacl путања ... <br>
+<hr>
+(src)="s4"> \ t % s -d dacl pathname ... <br>
+(trg)="s4"> \ t % s -d dacl путања ... <br>
+<hr>
+(src)="s5"> \ t % s -R pathname ... <br>
+(trg)="s5"> \ t % s -R путања ... <br>
+<hr>
+(src)="s6"> \ t % s -D pathname ... <br>
+(trg)="s6"> \ t % s -D путања ... <br>
+<hr>
+(src)="s7"> \ t % s -B pathname ... <br>
+(trg)="s7"> \ t % s -B путања ... <br>
+<hr>
+(src)="s8"> \ t % s -l pathname ... \ t [ not IRIX compatible ] <br>
+(trg)="s8"> \ t % s -l путања ... \ t [ није сагласна са IRIX-ом ] <br>
+<hr>
+(src)="s9"> \ t % s -r pathname ... \ t [ not IRIX compatible ] <br>
+(trg)="s9"> \ t % s -r путања ... \ t [ није сагласна са IRIX-ом ] <br>
+<hr>
+(src)="s10"> % s : gabim në heqjen e hyrjes acl në " % s " : % s <br>
+(trg)="s10"> % s : грешка у уклањању приступа acl на „ % s “ : % s <br>
+<hr>
+(src)="s11"> % s : gabim në heqjen e hyrjes së parazgjedhur acl në " % s " : % s <br>
+(trg)="s11"> % s : грешка у уклањању подразумеваог acl на „ % s “ : % s <br>
+<hr>
+(src)="s12"> % s : hyrje ACL ' % s ' : % s në hyrjen % d <br>
+(trg)="s12"> % s : приступ ACL-у „ % s “ : % s на улазу % d <br>
+<hr>
+(src)="s13"> % s : nuk mund të hyjmë në ACL në ' % s ' : % s <br>
+(trg)="s13"> % s : не могу да добијем приступ ACL-у на „ % s “ : % s <br>
+<hr>
+(src)="s14"> % s : nuk mund të marrim ACL e parazgjedhur në ' % s ' : % s <br>
+(trg)="s14"> % s : не могу да добијем подразумевани ACL на „ % s “ : % s <br>
+<hr>
+(src)="s15"> % s : nuk mund të vendosim tekstin ACL në ' % s ' : % s <br>
+(trg)="s15"> % s : не могу да добијем приступни текст ACL-a на „ % s “ : % s <br>
+<hr>
+(src)="s16"> % s : nuk mund të marrim tekstin e parazgjedhur ACL në ' % s ' : % s <br>
+(trg)="s16"> % s : не могу да добијем подразумевани ACL текст на „ % s “ : % s <br>
+<hr>
+(src)="s17"> % s : nuk mund të vendosim aktin e hyrjes në " % s " : % s <br>
+(trg)="s17"> % s : не могу да подесим приступ за ACL на „ % s “ : % s <br>
+<hr>
+(src)="s18"> % s : nuk mund të vendosim acl të parazgjedhur në " % s " : % s <br>
+(trg)="s18"> % s : не могу да подесим подразумевани ACL на „ % s “ : % s <br>
+<hr>
+(src)="s19"> % s : opendir dështoi : % s <br>
+(trg)="s19"> % s : функција opendir није успела : % s <br>
+<hr>
+(src)="s20"> % s : malloc dështoi : % s <br>
+(trg)="s20"> % s : функција malloc није успела : % s <br>
+<hr>
+(src)="s21"> % s : % s : Hyrje ACL e keqformuar `%s ': % s n hyrjen %d <br>
+(trg)="s21"> % s : % s : Неисправна контролна приступна листа „ % s “ : % s у ставци % d <br>
+<hr>
+(src)="s22"> % s : % s : Parazgjedhje e keqformar ACL `%s ': % s në hyrjen %d <br>
+(trg)="s22"> % s : % s : Неисправна подразумевана контролна приступна листа „ % s “ : % s у ставци % d <br>
+<hr>
+(src)="s23"> % s : % s : Vetëm direktoritë mund të kenë ACL të parazgjedhur <br>
+(trg)="s23"> % s : % s : Само директоријуми могу да имају подразумеване ACL-ове <br>
+<hr>
+(src)="s24"> % s : % s : Nuk u gjet emër skedari në rreshtin % d , duke abortuar <br>
+(trg)="s24"> % s : % s : Нисам пронашао име фајла у линији % d , прекидам <br>
+<hr>
+(src)="s25"> % s : Nuk u gjet një emër skedari në rreshtin % d të hyrjes standarte , duke abortuar <br>
+(trg)="s25"> % s : Нисам пронашао име фајла у линији бр . % d стандардог улаза , прекидам <br>
+<hr>
+(src)="s26"> % s : % s : % s në rreshtin % d <br>
+(trg)="s26"> % s : % s : % s у линији % d <br>
+<hr>
+(src)="s27"> % s : % s : Nuk mund të ndryshojmë poseduesin / grupin : % s <br>
+(trg)="s27"> % s : % s : Не могу да променим власника / групу : % s <br>
+<hr>
+(src)="s29"> % s % s -- vendos listat e kontrollit të hyrjes së skedarëve <br>
+(trg)="s29"> % s % s -- постави ACL фајла <br>
+<hr>
+(src)="s30"> Përdorimi : % s % s <br>
+(trg)="s30"> Употреба : % s % s <br>
+<hr>
+(src)="s31"> -m , --modify = acl modify the current ACL ( s ) of file ( s ) -M , --modify-file = file read ACL entries to modify from file -x , --remove = acl remove entries from the ACL ( s ) of file ( s ) -X , --remove-file = file read ACL entries to remove from file -b , --remove-all remove all extended ACL entries -k , --remove-default remove the default ACL <br>
+(trg)="s31"> -m , --modify = acl промени тренутни ACL ( ове ) фајла / ова -M , --modify-file = ФАЈЛ прочитај ACL уносе да би променио из наведеног фајла -x , --remove = acl уклони уносе из ACL ( ова ) фајла / ова -X , --remove-file = ФАЈЛ прочитај ACL уносе да би уклонио из наведеног фајла -b , --remove-all уклони све продужене ACL уносе -k , --remove-default уклони подразумевани ACL <br>
+<hr>
+(src)="s32"> --set = acl set the ACL of file ( s ) , replacing the current ACL --set-file = file read ACL entries to set from file --mask do recalculate the effective rights mask <br>
+(trg)="s32"> --set = acl подеси ACL фајла / ова и замени тренутни ACL --set-file = ФАЈЛ прочитај ACL уносе за подешавање из наведеног фајла --mask прерачунај маску ефективних права <br>
+<hr>
+(src)="s33"> -n , --no-mask don 't recalculate the effective rights mask -d , --default operations apply to the default ACL <br>
+(trg)="s33"> -n , --no-mask немој израчунавати маску ефективних права -d , --default ради се са подразумеваним ACL-ом <br>
+<hr>
+(src)="s34"> -R , --recursive recurse into subdirectories -L , --logical logical walk , follow symbolic links -P , --physical physical walk , do not follow symbolic links --restore = file restore ACLs ( inverse of `getfacl -R ') --test test mode (ACLs are not modified) <br>
+(trg)="s34"> -R , --recursive ради рекурзивно у поддиректоријумима -L , --logical логична шетња , прати симболичке везе -P , --physical физичка шетња , не прати симболичке везе --restore = file врати ACL-ове ( обрнуто од „ getfacl -R “ ) --test мод тестирања ( ACL-ови нису промењени ) <br>
+<hr>
+(src)="s36"> % s : Hyrje standarte : % s <br>
+(trg)="s36"> % s : Стандардни улаз : % s <br>
+<hr>
+(src)="s37"> % s : Opsioni - % c i pa plotësuar <br>
+(trg)="s37"> % s : Опција - % c је непотпуна <br>
+<hr>
+(src)="s38"> % s : Opsioni - % c : % s afër gërmës % d <br>
+(trg)="s38"> % s : Опција - % c : % s близу слова % d <br>
+<hr>
+(src)="s39"> % s : % s në rreshtin % d të skearit % s <br>
+(trg)="s39"> % s : % s у линији бр . % d фајла % s <br>
+<hr>
+(src)="s40"> % s : % s në rreshtin % d të hyrjes standarte <br>
+(trg)="s40"> % s : % s у линији бр . % d стандардног улаза <br>
+<hr>
+(src)="s41"> Provo `%s --help ' për më tepër informacion. <br>
+(trg)="s41"> Покушајте „ % s --help “ за више информција . <br>
+<hr>
+(src)="s42"> % s : Removing leading ' / ' from absolute path names <br>
+(trg)="s42"> % s : Уклањам пратећи знак „ / “ из имена апсолуних путања <br>
+<hr>
+(src)="s43"> % s % s -- get file access control lists <br>
+(trg)="s43"> % s % s -- прибави ACL <br>
+<hr>
+(src)="s44"> Përdorimi : % s [ - % s ] skedari ... <br>
+(trg)="s44"> Употреба : % s [ - % s ] фајла ... <br>
+<hr>
+(src)="s45"> -d , --default shfaq listën e kontrolleve të hyrjes së parazgjedhur <br>
+(trg)="s45"> -d , --default приказује подразумевани списак приступних контрола <br>
+<hr>
+(src)="s47"> Shumë hyrje të të njëjtiti lloj <br>
+(trg)="s47"> Вишеструки уноси истог типа <br>
+<hr>
+(src)="s48"> Hyrje të dyfishta <br>
+(trg)="s48"> Дупли уноси <br>
+<hr>
+(src)="s49"> Harje që mungon ose e gabuar <br>
+(trg)="s49"> Празан или погрешан унос <br>
+<hr>
+(src)="s50"> Lloj i pavlefshëm hyrjeje <br>
+(trg)="s50"> Неисправан улазни тип <br>
+<hr>
+(src)="s51"> vendosim lejet për % s <br>
+(trg)="s51"> постављам дозволе за % s <br>
+<hr>
+(src)="s52"> ruajmë lejet për % s <br>
+(trg)="s52"> памтим дозволе за % s <br>
+<hr>
+<p>
+
+# sq/activity-log-manager.xml.gz<br>
+# sr/activity-log-manager.xml.gz
+
+<p><hr>
+(src)="s1"> Menaxhuesi i Mesazheve të Veprimtarisë <br>
+(trg)="s1"> Управник дневника активности <br>
+<hr>
+(src)="s2"> Konfiguro çfarë mbahet shënim në ditarin e veprimtarive Zeitgeist <br>
+(trg)="s2"> Подесите шта ће бити записивано у вашем дневнику активности Цајтгајста <br>
+<hr>
+(src)="s3"> Mjeti i Veprimtarive dhe Menaxhues i Intimitetit <br>
+(trg)="s3"> Алат за управљање активношћу и приватношћу <br>
+<hr>
+(src)="s4"> Siguria Dhe Intimiteti <br>
+(trg)="s4"> Безбедност и приватност <br>
+<hr>
+(src)="s5"> Menaxhuesi i Intimitetit dhe Aktiviteteve <br>
+(trg)="s5"> Управник приватности и активности <br>
+<hr>
+(src)="s6"> intimiteti ; veprimtaria ; gjurmët ; zeitgeist ; diagnostika ; raportet e gabimit ; <br>
+(trg)="s6"> приватност ; активност ; рад ; дневник ; цајтгајст ; дијагнозе ; извештаји грешака ; <br>
+<hr>
+(src)="s7"> Skedarët dhe Programet <br>
+(trg)="s7"> Датотеке и програми <br>
+<hr>
+(src)="s8"> Siguria <br>
+(trg)="s8"> Безбедност <br>
+<hr>
+(src)="s9"> Kërko <br>
+(trg)="s9"> Потражи <br>
+<hr>
+(src)="s10"> Diagnostikimet <br>
+(trg)="s10"> Дијагностика <br>
+<hr>
+(src)="s11"> Kur kërkon tek Dash : <br>
+(trg)="s11"> Током претраге у Полетнику : <br>
+<hr>
+(src)="s12"> Përfshi rezultatet e kërkimit online <br>
+(trg)="s12"> Укључи и резултате претраге на мрежи <br>
+<hr>
+(src)="s13"> Kërko fjalëkalimin tim kur : <br>
+(trg)="s13"> Захтевај моју лозинку : <br>
+<hr>
+(src)="s14"> _ Del nga pezullimi <br>
+(trg)="s14"> Када се _ будим из обуставе <br>
+<hr>
+(src)="s15"> _ Kthehesh nga ekrani i zi <br>
+(trg)="s15"> Када се _ враћам са празног екрана <br>
+<hr>
+(src)="s16"> _ nëse ekrani ka qenë i zi për <br>
+(trg)="s16"> _ ако је екран био празан за <br>
+<hr>
+(src)="s17"> Përcaktimi i Fjalëkalimeve <br>
+(trg)="s17"> Подешавања лозинке <br>
+<hr>
+(src)="s18"> Parametrat e Tensionit <br>
+(trg)="s18"> Подешавања напајања <br>
+<hr>
+(src)="s19"> Emri <br>
+(trg)="s19"> Име <br>
+<hr>
+(src)="s20"> Asnjë përshkrim në dispozicion <br>
+(trg)="s20"> Нема доступног описа <br>
+<hr>
+(src)="s21"> I Përdorur së Fundmi <br>
+(trg)="s21"> Последње <br>
+<hr>
+(src)="s22"> Aktiviteti <br>
+(trg)="s22"> Активност <br>
+<hr>
+(src)="s23"> Zgjidh Programin <br>
+(trg)="s23"> Изабери програм <br>
+<hr>
+(src)="s24"> Sot , % H : % M <br>
+(trg)="s24"> Данас , у % H : % M <br>
+<hr>
+(src)="s25"> Dje , % H : % M <br>
+(trg)="s25"> Јуче , у % H : % M <br>
+<hr>
+(src)="s26"> % e % B % Y , % H : % M <br>
+(trg)="s26"> % e . % B % Y. у % H : % M <br>
+<hr>
+(src)="s27"> Asnjëherë <br>
+(trg)="s27"> Никада <br>
+<hr>
+(src)="s28"> Nga : <br>
+(trg)="s28"> Од : <br>
+<hr>
+(src)="s29"> Tek : <br>
+(trg)="s29"> До : <br>
+<hr>
+(src)="s30"> Vlerë kohore e pavlefshme <br>
+(trg)="s30"> Неисправан временски опсег <br>
+<hr>
+(src)="s31"> % d % B % Y <br>
+(trg)="s31"> % d . % B % Y. <br>
+<hr>
+(src)="s32"> Muzika <br>
+(trg)="s32"> Музика <br>
+<hr>
+(src)="s33"> Videot <br>
+(trg)="s33"> Снимци <br>
+<hr>
+(src)="s34"> Fotot <br>
+(trg)="s34"> Слике <br>
+<hr>
+(src)="s35"> Dokumentet <br>
+(trg)="s35"> Документи <br>
+<hr>
+(src)="s36"> Prezantimet <br>
+(trg)="s36"> Излагања <br>
+<hr>
+(src)="s37"> Fletët e Llogarive <br>
+(trg)="s37"> Табеле <br>
+<hr>
+(src)="s38"> Gjurmët e Bisedës <br>
+(trg)="s38"> Дневници ћаскања <br>
+<hr>
+(src)="s39"> Skedarët dhe programet që keni përdorur së fundmi mund të shfaqen në Dash dhe gjetkë . Nëse njerëz të tjerë mund ta shohin apo hyjnë në llogarinë tuaj të përdoruesit , ju mund të doni të kufizoni temat që regjistrohen . <br>
+(trg)="s39"> Датотеке и програми које сте недавно користили могу бити приказани у Полетнику и другде . Ако друге особе могу да виде или да приступе вашем корисничком налогу , можете пожелети да ограничите које ставке ће бивати забележене . <br>
+<hr>
+(src)="s40"> Regjistro përdorimin e skedarëve dhe programeve <br>
+(trg)="s40"> Забележи коришћење датотека и програма <br>
+<hr>
+(src)="s41"> Pastro të Dhënat e Përdorimit ... <br>
+(trg)="s41"> Очисти податке коришћења … <br>
+<hr>
+(src)="s42"> Përfshi : <br>
+(trg)="s42"> Укључи : <br>
+<hr>
+(src)="s43"> Përjashto : <br>
+(trg)="s43"> Искључи : <br>
+<hr>
+(src)="s44"> Hiq Element <br>
+(trg)="s44"> Уклони ставку <br>
+<hr>
+(src)="s45"> Zgjidh një dosje për në listën e zezë <br>
+(trg)="s45"> Изаберите фасциклу за списак забрана <br>
+<hr>
+(src)="s46"> Zgjidh një skedar për në listën e zezë <br>
+(trg)="s46"> Изаберите датотеку за списак забрана <br>
+<hr>
+(src)="s47"> Pastro të Dhënat e Përdorimit <br>
+(trg)="s47"> Очистите податке коришћења <br>
+<hr>
+(src)="s48"> Fshini regjistrimin e skedarëve dhe programeve që janë përdorur : <br>
+(trg)="s48"> Обриши записе датотека и програма који су коришћени : <br>
+<hr>
+(src)="s49"> Gjatë orës së kaluar <br>
+(trg)="s49"> Прошлог сата <br>
+<hr>
+(src)="s50"> Të ditës së shkuar <br>
+(trg)="s50"> Прошлог дана <br>
+<hr>
+</body>
+</html>

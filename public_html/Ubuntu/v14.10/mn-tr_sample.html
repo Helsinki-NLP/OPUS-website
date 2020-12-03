@@ -1,0 +1,322 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# mn/adduser.xml.gz<br>
+# tr/adduser.xml.gz
+
+<p><hr>
+(src)="s1"> Зөвхөн root системийн хэрэглэгч болон группыг нэмнэ . <br>
+(trg)="s1"> Sisteme sadece yönetici tarafından bir kullanıcı ya da grup eklenebilir . <br>
+<hr>
+(src)="s2"> Зөвхөн нэг эсвэл хоёр зөвшөөрсөн . <br>
+(trg)="s2"> Sadece bir veya iki isme izin var . <br>
+<hr>
+(src)="s11"> GID `%s ' ашиглагдаж байна. <br>
+(trg)="s11"> GID " ' % s " zaten kullanımda . <br>
+<hr>
+(src)="s13">`%s ' групп үүссэнгүй. <br>
+(trg)="s13">`%s ' grubu oluşturulamadı. <br>
+<hr>
+(src)="s15"> Дууслаа . <br>
+(trg)="s15"> Tamamlandı . <br>
+<hr>
+(src)="s16">`%s ' групп өмнө нь үүссэн байна. <br>
+(trg)="s16"> " % s " grubu zaten mevcut . <br>
+<hr>
+(src)="s18">`%s ' хэрэглэгч алга. <br>
+(trg)="s18"> " % s " kullanıcısı mevcut değil . <br>
+<hr>
+(src)="s19">`%s ' групп үүссэнгүй. <br>
+(trg)="s19"> " % s " grubu mevcut değil . <br>
+<hr>
+(src)="s20">`%s ' хэрэглэгч ` % s '-д үүссэн байна <br>
+(trg)="s20"> " % s " kullanıcısı zaten " % s " grubuna üye . <br>
+<hr>
+(src)="s26">`%s ' хэрэглэгчийг үүсгэж чадсангүй. <br>
+(trg)="s26">`%s ' kullanıcısı oluşturulamadı. <br>
+<hr>
+(src)="s28"> Дотоод алдаа <br>
+(trg)="s28"> Dahili hata <br>
+<hr>
+(src)="s40"> Хандах эрх боломжгүй <br>
+(trg)="s40"> İzin verilmedi <br>
+<hr>
+(src)="s41"> тохирохгүй тохиргоо <br>
+(trg)="s41"> Geçersiz seçenek kombinasyonu <br>
+<hr>
+(src)="s42"> юу ч биелсэнгүй . <br>
+(trg)="s42"> Beklenmeyen hata , hiçbirşey yapılamadı <br>
+<hr>
+(src)="s43"> нууц үгийн файлын алдаа <br>
+(trg)="s43"> Beklenmeyen hata , passwd dosyası kayıp <br>
+<hr>
+(src)="s44"> Нууц үгийн файл завгүй байна. дахин оролдоно уу . <br>
+(trg)="s44"> passwd dosyası meşgul , tekrar deneyin <br>
+<hr>
+(src)="s45"> тохирохгүй аргумент locale noexpr <br>
+(trg)="s45"> Hata argüman locale noexpr <br>
+<hr>
+(src)="s46"> locale yesexpr <br>
+(trg)="s46"> Tekrar dene ? [ e / H ] locale yesexpr <br>
+<hr>
+(src)="s50">`%s ' хэрэглэгчийн санг үүсгэж чадсангүй. <br>
+(trg)="s50"> " % s " başlangıç dizini oluşturulmuyor . <br>
+<hr>
+(src)="s58">`%s ' хэрэглэгч үүссэн байна, системийн хэрэглэгч биш. <br>
+(trg)="s58"> " % s " kullanıcısı zaten mevcut ve bir sistem kullanıcısı değil . <br>
+<hr>
+(src)="s59">`%s ' хэрэглэгч үүссэн байна.. <br>
+(trg)="s59"> " % s " kullanıcısı zaten mevcut . <br>
+<hr>
+(src)="s65"> Сэжигтэй нэрийг зөвшөөрч ашиглах . <br>
+(trg)="s65"> Şüpheli kullanıcı adı kullanılıyor . <br>
+<hr>
+(src)="s77"> --help " and " --version <br>
+(trg)="s77"> adduser [ --home DIR ] [ --shell SHELL ] [ --no-create-home ] [ --uid ID ] [ --firstuid ID ] [ --lastuid ID ] [ --gecos GECOS ] [ --ingroup GROUP | --gid ID ] [ --disabled-password ] [ --disabled-login ] [ --encrypt-home ] USER Normal kullanıcı ekle adduser --system [ --home DIR ] [ --shell SHELL ] [ --no-create-home ] [ --uid ID ] [ --gecos GECOS ] [ --group | --ingroup GROUP | --gid ID ] [ --disabled-password ] [ --disabled-login ] USER Sistem kullanıcısı ekle adduser --group [ --gid ID ] GROUP addgroup [ --gid ID ] GROUP Kullanıcı grubu ekle addgroup --system [ --gid ID ] GROUP Sistem grubu ekle adduser USER GROUP Varolan bir kullanıcıyı varolan bir gruba ekle Genel seçenekler : --quiet | -q işlem bilgisini stdout ' a ( standart çıktıya ) verme --force-badname NAME _ REGEX [ _ SYSTEM ] yapılandırma değişkeni ile eşleşmeyen kullanıcı adlarına izin ver --help | -h kullanma talimatı --version | -v sürüm numarası ve telif hakkı --conf | -c DOSYA ayar dosyası olarak DOSYA yı kullan --help " and " --version <br>
+<hr>
+(src)="s78"> Зөвхөн root системийн групп болон хэрэглэгчийг устгана . <br>
+(trg)="s78"> Sadece root sistemden bir kullanıcı ya da grup silebilir . <br>
+<hr>
+(src)="s80"> Устгах группын нэр : <br>
+(trg)="s80"> Kaldırılacak grup adını girin : <br>
+<hr>
+(src)="s81"> Устгах хэрэглэгчний нэр : <br>
+(trg)="s81"> Kaldırılacak kullanıcı adını girin : <br>
+<hr>
+(src)="s101">`%s ' групп хоосон биш байна. <br>
+(trg)="s101"> " % s " grubu boş değil ! <br>
+<hr>
+(src)="s104">`%s ' хэрэглэгч ` % s ' группын хэрэглэгч биш байна. <br>
+(trg)="s104"> " % s " kullanıcısı , " % s " grubunun bir üyesi değil . <br>
+<hr>
+<p>
+
+# mn/aisleriot.xml.gz<br>
+# tr/aisleriot.xml.gz
+
+<p><hr>
+(src)="s1"> АйслеРойт хөзөр <br>
+(trg)="s1"> AisleRiot İskambil Falı <br>
+<hr>
+(src)="s2"> Өөр олон хөзрийн тоглоомууд тоглох <br>
+(trg)="s2"> Farklı iskambil falı oyunlarını oynayın <br>
+<hr>
+(src)="s6"> Багаж самбар харуулах эсэх <br>
+(trg)="s6"> Araç çubuğunu göster veya gizle <br>
+<hr>
+(src)="s10"> Дуу <br>
+(trg)="s10"> Ses <br>
+<hr>
+(src)="s11"> Дуу тоглуулах эсэх <br>
+(trg)="s11"> Olay seslerinin çalınıp çalınmayacağı . <br>
+<hr>
+(src)="s14"> Хэрэглэх тоглоомын файл <br>
+(trg)="s14"> Kullanılacak oyun dosyası <br>
+<hr>
+(src)="s16"> Тоглосон тоглоомын статистик <br>
+(trg)="s16"> Oynanan oyun hakkındali istatistikler <br>
+<hr>
+(src)="s20"> Шинэ тоглоом <br>
+(trg)="s20"> Yeni Oyun <br>
+<hr>
+(src)="s22"> Статистикууд <br>
+(trg)="s22"> İstatistikler <br>
+<hr>
+(src)="s27"> Тоглоомоо сонго <br>
+(trg)="s27"> Oyun Seç <br>
+<hr>
+(src)="s31"> _ New " is for the menu item ' Game- &gt; New ' , implies " New Game <br>
+(trg)="s31"> _ İpucu _ New " is for the menu item ' Game- &gt; New ' , implies " New Game <br>
+<hr>
+(src)="s32"> _ New Game <br>
+(trg)="s32"> _ Yeni _ New Game <br>
+<hr>
+(src)="s34"> Reset <br>
+(trg)="s34"> _ Yeniden OynaReset <br>
+<hr>
+(src)="s35"> _ Дахин эхлэх _ Restart " is the menu item ' Game- &gt; Restart ' , implies " Restart Game <br>
+(trg)="s35"> _ Sıfırla _ Restart " is the menu item ' Game- &gt; Restart ' , implies " Restart Game <br>
+<hr>
+(src)="s43"> slot type <br>
+(trg)="s43"> Bu programla birlikte GNU Genel Kamu Lisansının bir kopyasını almış olmalısınız . Almadıysanız , <br>
+<hr>
+(src)="s44"> slot type <br>
+(trg)="s44">vakıfslot type<br>
+<hr>
+(src)="s45"> slot type <br>
+(trg)="s45">yedekslot type<br>
+<hr>
+(src)="s46"> slot type <br>
+(trg)="s46">eldeki kağıtlarslot type<br>
+<hr>
+(src)="s47"> slot type <br>
+(trg)="s47">tabloslot type<br>
+<hr>
+(src)="s48"> foundationslot hint <br>
+(trg)="s48">atıkfoundationslot hint<br>
+<hr>
+(src)="s49"> reserveslot hint <br>
+(trg)="s49">%s sÄ±ralama yerindereserveslot hint<br>
+<hr>
+(src)="s50"> stockslot hint <br>
+(trg)="s50">%s yedektestockslot hint<br>
+<hr>
+(src)="s51"> tableauslot hint <br>
+(trg)="s51">%s destedetableauslot hint<br>
+<hr>
+(src)="s52"> wasteslot hint <br>
+(trg)="s52">%s tablodawasteslot hint<br>
+<hr>
+(src)="s54"> Энэ тоглоомын зөвлөмж тодорхойлогдоогүй байна . <br>
+(trg)="s54">Bu oyunun şimdilik ipucu desteği yok.<br>
+<hr>
+(src)="s55"> % s -г % s рүү зөөх . <br>
+(trg)="s55">%s'Ä± %s Ã¼zerine taÅÄ±.<br>
+<hr>
+(src)="s56"> Энэ тоглоом зөвлөмж өгөхөд боломжгүй . <br>
+(trg)="s56">Oyun ipucu veremiyor.<br>
+<hr>
+(src)="s58"> Агнес <br>
+(trg)="s58">Piramit<br>
+<hr>
+(src)="s68"> Бристоль <br>
+(trg)="s68">İstanbul<br>
+<hr>
+(src)="s69"> Камелот <br>
+(trg)="s69">Saray<br>
+<hr>
+(src)="s70"> Хурд <br>
+(trg)="s70">Cankurtaran<br>
+<hr>
+(src)="s72"> Шатрын хөлөг <br>
+(trg)="s72">Satranç tahtası<br>
+<hr>
+(src)="s73"> Цаг <br>
+(trg)="s73">Saat<br>
+<hr>
+(src)="s74"> Дугтуй <br>
+(trg)="s74">Tepegöz<br>
+<hr>
+(src)="s77"> Хуулбар <br>
+(trg)="s77">ÅÄ±k<br>
+<hr>
+(src)="s79"> Дорнын боомт <br>
+(trg)="s79">DoÄu limanÄ±<br>
+<hr>
+(src)="s81"> Цахилгаан шат <br>
+(trg)="s81">AsansÃ¶r<br>
+<hr>
+(src)="s83"> Гүйдэг шат <br>
+(trg)="s83">Merdiven<br>
+<hr>
+(src)="s85"> Цайз <br>
+(trg)="s85">Kule<br>
+<hr>
+(src)="s86"> Аз <br>
+(trg)="s86">Hazine<br>
+<hr>
+(src)="s88"> Арван дөрөв <br>
+(trg)="s88">Ondört<br>
+<hr>
+(src)="s89"> Нүд чөлөөлөх <br>
+(trg)="s89">Yedekli<br>
+<hr>
+(src)="s93"> Хавцал <br>
+(trg)="s93">AtÄ±lÄ±m<br>
+<hr>
+(src)="s95"> Гольф <br>
+(trg)="s95">Golf<br>
+<hr>
+(src)="s96"> Цыганууд <br>
+(trg)="s96">Çingene<br>
+<hr>
+(src)="s97"> Хельсинк <br>
+(trg)="s97">Efes<br>
+<hr>
+(src)="s98"> Тэмтэг <br>
+(trg)="s98">Seksek<br>
+<hr>
+(src)="s99"> Изабель <br>
+(trg)="s99">Eminem<br>
+<hr>
+(src)="s100"> Jamestown <br>
+(trg)="s100">Jamestown<br>
+<hr>
+(src)="s101"> Жумбо <br>
+(trg)="s101">Kocaman<br>
+<hr>
+(src)="s102"> Канзас <br>
+(trg)="s102">Kansas<br>
+<hr>
+(src)="s105"> Клондайк <br>
+(trg)="s105">Klondike<br>
+<hr>
+(src)="s107"> Лабиринт <br>
+(trg)="s107">Labirent<br>
+<hr>
+(src)="s109"> Мазе <br>
+(trg)="s109">KarmaÅÄ±k<br>
+<hr>
+(src)="s112"> Хөрш <br>
+(trg)="s112">Komşu<br>
+<hr>
+(src)="s113"> Одесса <br>
+(trg)="s113">Ä°lyada<br>
+<hr>
+(src)="s114"> Осмос <br>
+(trg)="s114">Hücre<br>
+<hr>
+(src)="s115"> Peek <br>
+(trg)="s115">GÃ¶rÃ¼ntÃ¼<br>
+<hr>
+(src)="s116"> Pileon <br>
+(trg)="s116">Güvercin<br>
+<hr>
+(src)="s117"> Хуниас <br>
+(trg)="s117">KÄ±vrak<br>
+<hr>
+(src)="s118"> Покер <br>
+(trg)="s118">Poker<br>
+<hr>
+(src)="s119"> Quatorze <br>
+(trg)="s119">TÄ±pa<br>
+<hr>
+(src)="s122"> Хилэнцэт <br>
+(trg)="s122">Akrep<br>
+<hr>
+(src)="s123"> Зодоон <br>
+(trg)="s123">Anafor<br>
+<hr>
+(src)="s124"> Seahaven <br>
+(trg)="s124">Cennet<br>
+<hr>
+(src)="s127"> Аалз <br>
+(trg)="s127">ÃrÃ¼mcek<br>
+<hr>
+(src)="s129"> Аалзхан <br>
+(trg)="s129">GÃ¼neÅ tanrÄ±sÄ±<br>
+<hr>
+(src)="s132"> Цоолтуур <br>
+(trg)="s132">Tapınak<br>
+<hr>
+(src)="s135"> Хулгайч <br>
+(trg)="s135">HÄ±rsÄ±zlar<br>
+<hr>
+(src)="s136"> Арвангурав <br>
+(trg)="s136">Onüçüncü cuma<br>
+<hr>
+(src)="s138"> Treize <br>
+(trg)="s138">Treize<br>
+<hr>
+(src)="s141"> Валентин <br>
+(trg)="s141">Burcu<br>
+<hr>
+</body>
+</html>

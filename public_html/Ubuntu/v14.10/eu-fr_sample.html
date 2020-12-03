@@ -1,0 +1,328 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# eu/account-plugins.xml.gz<br>
+# fr/account-plugins.xml.gz
+
+<p><hr>
+(src)="s1"> Gmail , Google Docs , Google + , YouTube eta Picasa <br>
+(trg)="s1"> Inclut Gmail , Google Docs , Google+ , YouTube et Picasa <br>
+<hr>
+<p>
+
+# eu/acl.xml.gz<br>
+# fr/acl.xml.gz
+
+<p><hr>
+(src)="s1"> Erabilera : <br>
+(trg)="s1"> Utilisation : <br>
+<hr>
+(src)="s2"> \ t % s acl bide-izena ... <br>
+(trg)="s2"> \t%s répertoire acl ... <br>
+<hr>
+(src)="s3"> \ t % s -b acl dacl bide-izena ... <br>
+(trg)="s3"> \t%s -b acl dacl répertoire ... <br>
+<hr>
+(src)="s4"> \ t % s -d dacl bide-izena ... <br>
+(trg)="s4"> \t%s -d dacl répertoire ... <br>
+<hr>
+(src)="s5"> \ t % s -R bide-izena ... <br>
+(trg)="s5"> \t%s -R répertoire ... <br>
+<hr>
+(src)="s6"> \ t % s -D bide-izena ... <br>
+(trg)="s6"> \t%s -D répertoire ... <br>
+<hr>
+(src)="s7"> \ t % s -B bide-izena ... <br>
+(trg)="s7"> \t%s -B répertoire ... <br>
+<hr>
+(src)="s8"> \ t % s -l bide-izena ... \ t [ ez da IRIX bateragarria ] <br>
+(trg)="s8"> \t%s -l répertoire ... \t[pas compatible IRIX ] <br>
+<hr>
+(src)="s9"> \ t % s -r bide-izena ... \ t [ ez da IRIX bateragarria ] <br>
+(trg)="s9"> \t%s -r répertoire ... \t[pas compatible IRIX ] <br>
+<hr>
+(src)="s10"> % s : errorea acl sarbidea kentzean " % s " : % s <br>
+(trg)="s10"> %s : erreur de suppression de l' accès acl de « %s » : %s <br>
+<hr>
+(src)="s11"> % s : errorea lehenetsitako acl kentzean " % s " : % s <br>
+(trg)="s11"> %s : erreur de suppression de l' accès acl par défaut de « %s » : %s <br>
+<hr>
+(src)="s12"> % s : ACL sarbidea ' % s ' : % s , % d sarreran <br>
+(trg)="s12"> %s : accès ACL « %s » : %s à l' entrée %d <br>
+<hr>
+(src)="s13"> % s : ezin da eskuratu sarbide ACL-a ' % s ' : % s <br>
+(trg)="s13"> %s : impossible d' obtenir l' accès ACL de « %s » : %s <br>
+<hr>
+(src)="s14"> % s : ezin da eskuratu lehenetsitako ACL-a ' % s ' : % s <br>
+(trg)="s14"> %s : impossible d' obtenir l' accès ACL par défaut de « %s » : %s <br>
+<hr>
+(src)="s15"> % s : ezin da eskuratu sarbide ACL-aren testua ' % s ' : % s <br>
+(trg)="s15"> %s : impossible d' obtenir l' accès texte ACL de « %s » : %s <br>
+<hr>
+(src)="s16"> % s : ezin da eskuratu lehenetsitako ACL-aren testua ' % s ' : % s <br>
+(trg)="s16"> %s : impossible d' obtenir le texte ACL par défaut de « %s » : %s <br>
+<hr>
+(src)="s17"> % s : ezin da ezarri sarbide ACL-a ' % s ' : % s <br>
+(trg)="s17"> %s : impossible de modifier l' accès ACL de « %s » : %s <br>
+<hr>
+(src)="s18"> % s : ezin da ezarri lehenetsitako ACL-a ' % s ' : % s <br>
+(trg)="s18"> %s : impossible de définir l' ACL par défaut de « %s » : %s <br>
+<hr>
+(src)="s19"> % s : opendir aginduak huts egin du : % s <br>
+(trg)="s19"> %s : échec d' opendir : %s <br>
+<hr>
+(src)="s20"> % s : malloc aginduak huts egin du : % s <br>
+(trg)="s20"> %s : échec de malloc : %s <br>
+<hr>
+(src)="s21"> % s : % s : sarbide ACL oker osatua `%s ': % s , %d sarreran <br>
+(trg)="s21"> %s : %s : ACL d' accès mal formulé « %s » : %s à l' entrée %d <br>
+<hr>
+(src)="s22"> % s : % s : lehenitsitako sarbide ACL oker osatua `%s ': % s , %d sarreran <br>
+(trg)="s22"> %s : %s : entrée ACL par défaut mal formulée « %s » : %s à l' entrée·%d <br>
+<hr>
+(src)="s23"> % s : % s : Direktorioek soilik izan ditzaketelehenetsitako ACL-ak <br>
+(trg)="s23"> %s : %s : seuls les répertoires peuvent avoir une entrée ACL par défaut <br>
+<hr>
+(src)="s24"> % s : % s : Ez da fitxategi izenik aurkitu % d lerroan , bertan behera uzten <br>
+(trg)="s24"> %s : %s : nom de fichier manquant à la ligne %d , annulation <br>
+<hr>
+(src)="s25"> % s : Ez da fitxategi-izenik aurkitu sarrera estandarraren % d lerroan , bertan behera uzten <br>
+(trg)="s25"> %s : nom de fichier manquant à la ligne %d de la sortie standard , annulation <br>
+<hr>
+(src)="s26"> % s : % s : % s , % d lerroan <br>
+(trg)="s26"> %s : %s : %s à la ligne %d <br>
+<hr>
+(src)="s27"> % s : % s : Ezin da jabea / taldea aldatu : % s <br>
+(trg)="s27"> %s : %s : impossible de changer de propriétaire/ groupe : %s <br>
+<hr>
+(src)="s28"> % s : % s : Ezin da modua aldatu : % s <br>
+(trg)="s28"> %s : %s : Impossible de changer le mode : %s <br>
+<hr>
+(src)="s29"> % s % s -- fitxategietara sarbide zerrendak ( ACL ) ezarri <br>
+(trg)="s29"> %s %s -- définir les listes de contrôle d' accès des fichiers ( ACL ) <br>
+<hr>
+(src)="s30"> Erabilera : % s % s <br>
+(trg)="s30"> Utilisation : %s %s <br>
+<hr>
+(src)="s31"> -m , --modify = acl fitxategien oraingo ACL-ak aldatu -M , --modify-file = file fitxategiaren ACL sarrerak irakurri , aldatzeko -x , --remove = acl fitxategien ACL sarrerak kendu -X , --remove-file = file fitxategiaren ACL sarrerak irakurri , kentzeko -b , --remove-all ACL sarrera hedatu guztiak kendu -k , --remove-default lehenetsitako ACL-a kendu <br>
+(trg)="s31"> -m , --modify=acl modifier l' ACL(s ) actuel de fichier(s ) -M , --modify-file=fichier lire l' entrée ACL à modifier du fichier -x , --remove=acl supprimer les entrées de l' ACL des fichier -X , --remove-file=fichier lire les entrées ACL à supprimer du fichier -b , --remove-all supprimer toutes les entrées ACL étendues -k , --remove-default supprimer l' ACL par défaut <br>
+<hr>
+(src)="s32"> --set = acl fitxategien ACL-ak ezarri , oraingoa ordezkatuz --set-file = file fitxategi batetik irakurri ezarriko diren ACL sarrerak --mask baimen maskara berriro kalkulatu <br>
+(trg)="s32"> --set=acl définit l' ACL du ( des ) fichier(s ) , remplaçant ainsi l' ACL courant --set-file=file lit les entrées ACL à définir depuis un fichier --mask recalcule les masques de droits en vigueur <br>
+<hr>
+(src)="s33"> -n , --no-mask baimen maskara ez berriro kalkulatu -d , --default lehenetsitako ACL-ari ezarri aukerak <br>
+(trg)="s33"> -n , --no-mask ne pas recalculer les masques de droits en vigueur -d , --default les opérations s' appliquent à l' ACL par défaut <br>
+<hr>
+(src)="s34"> -R , --recursive azpidirektorioetan ere eragin -L , --logical esteka logikoak jarraitu -P , --physical esteka logikoak ez jarraitu --restore = file ACL-ak leheneratu (`getfacl -R ' aginduaren kontrakoa) --test probatarako modua (ACL-ak ez dira aldatzen) <br>
+(trg)="s34"> -R , --recursive parcourir récursivement les sous-répertoires -L , --logical suivre les liens symboliques -P , --physical ne pas suivre les liens symboliques --restore=fichier restaurer les ACL ( inverse de « getfacl -R » ) --test mode test ( les ACL ne sont pas modifiés ) <br>
+<hr>
+(src)="s35"> -v , --version inprimatu bertsioa eta irten -h , --help erakutsi laguntzarako testu hau <br>
+(trg)="s35"> -v , --version affiche la version et quitte -h , --help affiche ce texte d' aide <br>
+<hr>
+(src)="s36"> % s : Sarrera estandarra : % s <br>
+(trg)="s36"> %s : Sortie standard : %s <br>
+<hr>
+(src)="s37"> % s : - % c agindu osatugabea <br>
+(trg)="s37"> %s : Option -%c incomplète <br>
+<hr>
+(src)="s38"> % s : - % c : % s aukera % d karakterearen inguruan <br>
+(trg)="s38"> %s : Option -%c : %s près du caractère %d <br>
+<hr>
+(src)="s39"> % s : % s , % d lerroan , % s fitxategian <br>
+(trg)="s39"> %s : %s à la ligne %d du fichier %s <br>
+<hr>
+(src)="s40"> % s : % s , % d lerroan , sarrera estandarrean <br>
+(trg)="s40"> %s : %s à la ligne %d de la sortie standard <br>
+<hr>
+(src)="s41"> Probatu `%s --help ' informazio gehiago eskuratzeko. <br>
+(trg)="s41"> Essayer « %s --help » pour plus d' informations . <br>
+<hr>
+(src)="s42"> % s : Bide-izen absolutoen ' / ' aurrizkia kentzen <br>
+(trg)="s42"> %s : suppression du premier « / » des noms de chemins absolus <br>
+<hr>
+(src)="s43"> % s % s -- fitxategi sarrera kontrol zerrendak ( ACL ) eskuratu <br>
+(trg)="s43"> %s %s -- obtenir les listes de contrôle d' accès du fichier <br>
+<hr>
+(src)="s44"> Erabilera : % s [ - % s ] fitxategia ... <br>
+(trg)="s44"> Utilisation : %s [ -%s ] fichier ... <br>
+<hr>
+(src)="s45"> -d , --default lehenetsitako sarrera kontrol zerrenda bistaratu <br>
+(trg)="s45"> -d , --default afficher la liste de contrôle d' accès par défaut <br>
+<hr>
+(src)="s46"> -a , --access erakutsi fitxategia atzitzeko kontrol-zerrenda soilik -d , --default erakutsi atzitzeko kontrol-zerrenda lehenetsia soilik -c , --omit-header ez erakutsi iruzkinaren goiburua -e , --all-effective inprimatu baimen efektibo guztiak -E , --no-effective ez inprimatu baimen efektiboak -s , --skip-base ezikusi oinarrizko erregistroak soilik dituzten fitxategiak -R , --recursive errekurtsiboa azpi-direktorio guztientzat -L , --logical ibilaldi logikoa , jarraitu esteka sinbolikoak -P , --physical ibilaldi fisikoa , ez jarraitu esteka sinbolikoak -t , --tabular irteerarentzat erabili tabulaziodun formatua -n , --numeric inprimatu zenbakizko erabiltzaile / taldeen identifikatzaileak -p , --absolute-names ez kendu hasierako ' / ' ikurra bide-izenetan <br>
+(trg)="s46"> -a , --access affiche la liste de contrôle d’ accès du fichier seule -d , --default affiche la liste de contrôle d’ accès par défaut seule -c , --omit-header supprime les commentaires à l' affichage -e , --all-effective affiche les droits effectifs -E , --no-effective affiche les droits non effectifs -s , --skip-base ignore les fichiers qui n' ont que les entrées de la base -R , --recursive traitement récursif des sous-dossiers -L , --logical parcours logique , suit les liens symboliques -P , --physical parcours physique , ne suit les liens symboliques -t , --tabular affiche les colonnes séparées par des tabulations -n , --numeric affiche les identifiants numériques d' utilisateur et de groupes -p , --absolute-names préserve le caractère « / » en début de chemin <br>
+<hr>
+(src)="s47"> Mota bereko sarrera ugari <br>
+(trg)="s47"> Plusieurs entrées de même type <br>
+<hr>
+(src)="s48"> Sarrera bikoiztuak <br>
+(trg)="s48"> Entrées dupliquées <br>
+<hr>
+(src)="s49"> Sarrera falta da , edo okerra da <br>
+(trg)="s49"> Entrée erronée ou manquante <br>
+<hr>
+(src)="s50"> Sarrera mota baliogabea <br>
+(trg)="s50"> Type d' entrée non valable <br>
+<hr>
+(src)="s51"> baimenak eartzen % s -rentzat <br>
+(trg)="s51"> modifier les permissions pour %s <br>
+<hr>
+(src)="s52"> baimenak gordetzen % s -rentzat <br>
+(trg)="s52"> conserver les permissions pour %s <br>
+<hr>
+<p>
+
+# eu/activity-log-manager.xml.gz<br>
+# fr/activity-log-manager.xml.gz
+
+<p><hr>
+(src)="s1"> Jarduera-egunkariaren kudeatzailea <br>
+(trg)="s1"> Gestionnaire de journal d' activité <br>
+<hr>
+(src)="s2"> Konfiguratu zer grabatzen den Zeitgeist jarduera-egutegian <br>
+(trg)="s2"> Configurer ce qui sera consigné dans votre journal d' activité Zeitgeist <br>
+<hr>
+(src)="s3"> Jarduera eta pribatutasuna kudeatzeko tresna <br>
+(trg)="s3"> Outil de gestion d' activité et de confidentialité <br>
+<hr>
+(src)="s4"> Segurtasuna eta pribatutasuna <br>
+(trg)="s4"> Sécurité et vie privée <br>
+<hr>
+(src)="s5"> Pribatutasun eta jarduera kudeatzailea <br>
+(trg)="s5"> Gestionnaire de confidentialité et d' activité <br>
+<hr>
+(src)="s6"> pribatutasuna ; jarduera ; egunkaria ; zeitgeist ; diagnosiak ; errore-txostenak ; <br>
+(trg)="s6"> vie privée ; activité ; journalisation ; zeitgeist ; diagnostics ; rapports d' erreurs ; <br>
+<hr>
+(src)="s7"> Fitxategi eta aplikazioak <br>
+(trg)="s7"> Fichiers &amp; Applications <br>
+<hr>
+(src)="s8"> Segurtasuna <br>
+(trg)="s8"> Sécurité <br>
+<hr>
+(src)="s9"> Bilatu <br>
+(trg)="s9"> Recherches <br>
+<hr>
+(src)="s10"> Diagnostikoak <br>
+(trg)="s10"> Diagnostics <br>
+<hr>
+(src)="s11"> Abio-leihoan bilatzean : <br>
+(trg)="s11"> Lors de la recherche dans le tableau de bord : <br>
+<hr>
+(src)="s12"> Bilatu emaitzak linean ere <br>
+(trg)="s12"> Inclure les résultats de recherche en ligne <br>
+<hr>
+(src)="s13"> Eskatu pasahitza : <br>
+(trg)="s13"> Demander mon mot de passe en : <br>
+<hr>
+(src)="s14"> _ Eseki ondoren iratzartzean <br>
+(trg)="s14"> _sortant de veille <br>
+<hr>
+(src)="s15"> _ Pantaila beltzetik itzultzean <br>
+(trg)="s15"> sortant de l' écran de _veille <br>
+<hr>
+(src)="s16"> Pantaila _ beltz egon bada tarte batez <br>
+(trg)="s16"> _si l' écran est en veille depuis <br>
+<hr>
+(src)="s17"> Pasahitzaren ezarpenak <br>
+(trg)="s17"> Options des mots de passe <br>
+<hr>
+(src)="s18"> Energia-ezarpenak <br>
+(trg)="s18"> Paramètres d' alimentation <br>
+<hr>
+(src)="s19"> Izena <br>
+(trg)="s19"> Nom <br>
+<hr>
+(src)="s20"> Ez dago deskribapenik <br>
+(trg)="s20"> Aucune description n' est disponible <br>
+<hr>
+(src)="s21"> Azkenekoz erabilia <br>
+(trg)="s21"> Dernière utilisation <br>
+<hr>
+(src)="s22"> Jarduera <br>
+(trg)="s22"> Activité <br>
+<hr>
+(src)="s23"> Hautatu aplikazioa <br>
+(trg)="s23"> Sélectionner l' application <br>
+<hr>
+(src)="s24"> Gaur , % H : % M <br>
+(trg)="s24"> Aujourd'hui , %H:%M <br>
+<hr>
+(src)="s25"> Atzo , % H : % M <br>
+(trg)="s25"> Hier , %H:%M <br>
+<hr>
+(src)="s26"> % Y ( e ) ko % Bren % e ( e ) an , % H : % M <br>
+(trg)="s26"> %e %B %Y , %H:%M <br>
+<hr>
+(src)="s27"> Inoiz ez <br>
+(trg)="s27"> Jamais <br>
+<hr>
+(src)="s28"> Noiztik : <br>
+(trg)="s28"> De : <br>
+<hr>
+(src)="s29"> Noiz arte : <br>
+(trg)="s29"> À : <br>
+<hr>
+(src)="s30"> Denbora-tarte baliogabea <br>
+(trg)="s30"> Intervalle de temps non valide <br>
+<hr>
+(src)="s31"> % Y ( e ) ko % Bren % d ( e ) an <br>
+(trg)="s31"> %d %B %Y <br>
+<hr>
+(src)="s32"> Musika <br>
+(trg)="s32"> Musique <br>
+<hr>
+(src)="s33"> Bideoak <br>
+(trg)="s33"> Vidéos <br>
+<hr>
+(src)="s34"> Irudiak <br>
+(trg)="s34"> Images <br>
+<hr>
+(src)="s35"> Dokumentuak <br>
+(trg)="s35"> Documents <br>
+<hr>
+(src)="s36"> Aurkezpenak <br>
+(trg)="s36"> Présentations <br>
+<hr>
+(src)="s37"> Kalkulu-orriak <br>
+(trg)="s37"> Feuilles de calcul <br>
+<hr>
+(src)="s38"> Elkarrizketa-erregistroak <br>
+(trg)="s38"> Historique des conversations <br>
+<hr>
+(src)="s39"> Orain gutxi erabilitako fitxategi eta aplikazioak abio-leihoan eta beste edonon bistara daitezke . Beste norbaitek ikus badezake , edo zure kontura sar badaiteke , agian zein elementu grabatzen diren kontrolatu nahiko duzu . <br>
+(trg)="s39"> Les fichiers et les applications que vous avez utilisés récemment peuvent être affichés dans le tableau de bord ou à d' autres endroits . Si d' autres personnes peuvent voir ou accéder à votre compte utilisateur , vous avez la possibilité de choisir quels éléments seront enregistrés . <br>
+<hr>
+(src)="s40"> Grabatu fitxategi eta aplikazioen erabilera <br>
+(trg)="s40"> Enregistrer l' utilisation des fichiers et des applications <br>
+<hr>
+(src)="s41"> Garbitu erabilera-datuak ... <br>
+(trg)="s41"> Effacer les données d' utilisation ... <br>
+<hr>
+(src)="s42"> Sartu : <br>
+(trg)="s42"> Inclure : <br>
+<hr>
+(src)="s43"> Baztertu : <br>
+(trg)="s43"> Exclure : <br>
+<hr>
+(src)="s44"> Kendu elementua <br>
+(trg)="s44"> Supprimer cet élément <br>
+<hr>
+(src)="s45"> Hautatu karpeta bat zerrenda beltzera gehitzeko <br>
+(trg)="s45"> Ajouter un dossier à la liste noire <br>
+<hr>
+(src)="s46"> Hautatu fitxategi bat zerrenda beltzera gehitzeko <br>
+(trg)="s46"> Ajouter un fichier à la liste noire <br>
+<hr>
+(src)="s47"> Garbitu erabilera-datuak <br>
+(trg)="s47"> Effacer les données d' utilisation <br>
+<hr>
+</body>
+</html>

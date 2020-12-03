@@ -1,0 +1,322 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# mn/adduser.xml.gz<br>
+# sl/adduser.xml.gz
+
+<p><hr>
+(src)="s1"> Зөвхөн root системийн хэрэглэгч болон группыг нэмнэ . <br>
+(trg)="s1"> Samo skrbnik ( root ) lahko dodaja uporabnike ali skupine v sistem . <br>
+<hr>
+(src)="s2"> Зөвхөн нэг эсвэл хоёр зөвшөөрсөн . <br>
+(trg)="s2"> Dovoljeni sta samo eno ali dve imeni . <br>
+<hr>
+(src)="s11"> GID `%s ' ашиглагдаж байна. <br>
+(trg)="s11"> GID `%s ' je že v uporabi. <br>
+<hr>
+(src)="s13">`%s ' групп үүссэнгүй. <br>
+(trg)="s13"> Skupina `%s ' ni bila ustvarjena. <br>
+<hr>
+(src)="s15"> Дууслаа . <br>
+(trg)="s15"> Končano . <br>
+<hr>
+(src)="s16">`%s ' групп өмнө нь үүссэн байна. <br>
+(trg)="s16"> Skupina `%s ' že obstaja. <br>
+<hr>
+(src)="s18">`%s ' хэрэглэгч алга. <br>
+(trg)="s18"> Uporabnik `%s ' ne obstaja. <br>
+<hr>
+(src)="s19">`%s ' групп үүссэнгүй. <br>
+(trg)="s19"> Skupina `%s ' ne obstaja. <br>
+<hr>
+(src)="s20">`%s ' хэрэглэгч ` % s '-д үүссэн байна <br>
+(trg)="s20"> Uporabnik `%s ' je že član ` % s '. <br>
+<hr>
+(src)="s26">`%s ' хэрэглэгчийг үүсгэж чадсангүй. <br>
+(trg)="s26"> Uporabnik `%s ' ni bil ustvarjen. <br>
+<hr>
+(src)="s28"> Дотоод алдаа <br>
+(trg)="s28"> Notranja napaka <br>
+<hr>
+(src)="s40"> Хандах эрх боломжгүй <br>
+(trg)="s40"> Dostop zavrnjen <br>
+<hr>
+(src)="s41"> тохирохгүй тохиргоо <br>
+(trg)="s41"> napačna kombinacija možnosti <br>
+<hr>
+(src)="s42"> юу ч биелсэнгүй . <br>
+(trg)="s42"> nepričakovana napaka , sprememba ni izvedena <br>
+<hr>
+(src)="s43"> нууц үгийн файлын алдаа <br>
+(trg)="s43"> nepričakovana napaka , datoteka passwd manjka <br>
+<hr>
+(src)="s44"> Нууц үгийн файл завгүй байна. дахин оролдоно уу . <br>
+(trg)="s44"> datoteka passwd je zasedena , poskusite znova <br>
+<hr>
+(src)="s45"> тохирохгүй аргумент locale noexpr <br>
+(trg)="s45"> neveljaven argument za možnost locale noexpr <br>
+<hr>
+(src)="s46"> locale yesexpr <br>
+(trg)="s46"> Poskusim znova ? [ y / N ] locale yesexpr <br>
+<hr>
+(src)="s50">`%s ' хэрэглэгчийн санг үүсгэж чадсангүй. <br>
+(trg)="s50"> Domača mapa `%s ' ne bo ustvarjena. <br>
+<hr>
+(src)="s58">`%s ' хэрэглэгч үүссэн байна, системийн хэрэглэгч биш. <br>
+(trg)="s58"> Uporabnik `%s ' že obstaja in ni sistemski uporabnik. <br>
+<hr>
+(src)="s59">`%s ' хэрэглэгч үүссэн байна.. <br>
+(trg)="s59"> Uporabnik `%s ' že obstaja. <br>
+<hr>
+(src)="s65"> Сэжигтэй нэрийг зөвшөөрч ашиглах . <br>
+(trg)="s65"> Dopuščanje uporabe vprašljivega imena . <br>
+<hr>
+(src)="s77"> --help " and " --version <br>
+(trg)="s77"> adduser [ --home MAPA ] [ --shell LUPINA ] [ --no-create-home ] [ --uid ID ] [ --firstuid ID ] [ --lastuid ID ] [ --gecos GECOS ] [ --ingroup SKUPINA | --gid ID ] [ --disabled-password ] [ --disabled-login ] [ --encrypt-home ] UPORABNIK Doda običajnega uporabnika adduser --system [ --home MAPA ] [ --shell LUPINA ] [ --no-create-home ] [ --uid ID ] [ --gecos GECOS ] [ --group | --ingroup SKUPINA | --gid ID ] [ --disabled-password ] [ --disabled-login ] UPORABNIK Doda sistemskega uporabnika adduser --group [ --gid ID ] SKUPINA addgroup [ --gid ID ] SKUPINA Doda uporabniško skupino addgroup --system [ --gid ID ] SKUPINA Doda sistemsko skupino adduser UPORABNIK SKUPINA Doda obstoječega uporabnika obstoječi skupini splošne možnosti : --quiet | -q ne doda podatkov o procesu v stdout --force-badname omogoči uporabniška imena , ki se ne ujemajo z spremenljivko nastavitve NAME _ REGEX [ _ SYSTEM ] --help | -h pomoč --version | -v številka različice in avtorske pravice --conf | -c DATOTEKA uporabi DATOTEKO kot nastavitveno datoteko --help " and " --version <br>
+<hr>
+(src)="s78"> Зөвхөн root системийн групп болон хэрэглэгчийг устгана . <br>
+(trg)="s78"> Samo skrbnik lahko odstrani uporabnika ali skupino s sistema . <br>
+<hr>
+(src)="s80"> Устгах группын нэр : <br>
+(trg)="s80"> Vnesite ime skupine , ki jo želite odstraniti : <br>
+<hr>
+(src)="s81"> Устгах хэрэглэгчний нэр : <br>
+(trg)="s81"> Vnesite ime uporabnika , ki ga želite odstraniti : <br>
+<hr>
+(src)="s101">`%s ' групп хоосон биш байна. <br>
+(trg)="s101"> Skupina `%s ' in prazna! <br>
+<hr>
+(src)="s104">`%s ' хэрэглэгч ` % s ' группын хэрэглэгч биш байна. <br>
+(trg)="s104"> Uporabnik `%s ' ni član skupine ` % s '. <br>
+<hr>
+<p>
+
+# mn/aisleriot.xml.gz<br>
+# sl/aisleriot.xml.gz
+
+<p><hr>
+(src)="s1"> АйслеРойт хөзөр <br>
+(trg)="s1"> Pasjansa AisleRiot <br>
+<hr>
+(src)="s2"> Өөр олон хөзрийн тоглоомууд тоглох <br>
+(trg)="s2"> Igrajte več različnih iger pasjanse <br>
+<hr>
+(src)="s6"> Багаж самбар харуулах эсэх <br>
+(trg)="s6"> Ali naj bo prikazana orodna vrstica <br>
+<hr>
+(src)="s10"> Дуу <br>
+(trg)="s10"> Zvok <br>
+<hr>
+(src)="s11"> Дуу тоглуулах эсэх <br>
+(trg)="s11"> Ali naj se ob dogodkih predvajajo zvoki . <br>
+<hr>
+(src)="s14"> Хэрэглэх тоглоомын файл <br>
+(trg)="s14"> Ime datoteke igre , ki jo želite igrati <br>
+<hr>
+(src)="s16"> Тоглосон тоглоомын статистик <br>
+(trg)="s16"> Statistika odigranih iger <br>
+<hr>
+(src)="s20"> Шинэ тоглоом <br>
+(trg)="s20"> Nova igra <br>
+<hr>
+(src)="s22"> Статистикууд <br>
+(trg)="s22"> Statistika <br>
+<hr>
+(src)="s27"> Тоглоомоо сонго <br>
+(trg)="s27"> Izberi igro <br>
+<hr>
+(src)="s31"> _ New " is for the menu item ' Game- &gt; New ' , implies " New Game <br>
+(trg)="s31"> _ Namig _ New " is for the menu item ' Game- &gt; New ' , implies " New Game <br>
+<hr>
+(src)="s32"> _ New Game <br>
+(trg)="s32"> _ Nova _ New Game <br>
+<hr>
+(src)="s34"> Reset <br>
+(trg)="s34"> _ Obnovi potezoReset <br>
+<hr>
+(src)="s35"> _ Дахин эхлэх _ Restart " is the menu item ' Game- &gt; Restart ' , implies " Restart Game <br>
+(trg)="s35"> _ Ponastavi _ Restart " is the menu item ' Game- &gt; Restart ' , implies " Restart Game <br>
+<hr>
+(src)="s43"> slot type <br>
+(trg)="s43"> Skupaj s programom bi morali dobiti tudi kopijo GNU splošne javne licence . V primeru , da je niste , si oglejte <br>
+<hr>
+(src)="s44"> slot type <br>
+(trg)="s44">osnovni talonslot type<br>
+<hr>
+(src)="s45"> slot type <br>
+(trg)="s45">zalogaslot type<br>
+<hr>
+(src)="s46"> slot type <br>
+(trg)="s46">Kupčekslot type<br>
+<hr>
+(src)="s47"> slot type <br>
+(trg)="s47">okvirslot type<br>
+<hr>
+(src)="s48"> foundationslot hint <br>
+(trg)="s48">neuporabne kartefoundationslot hint<br>
+<hr>
+(src)="s49"> reserveslot hint <br>
+(trg)="s49">%s v osnovnem talonureserveslot hint<br>
+<hr>
+(src)="s50"> stockslot hint <br>
+(trg)="s50">%s v zalogistockslot hint<br>
+<hr>
+(src)="s51"> tableauslot hint <br>
+(trg)="s51">%s v kupÃÂkutableauslot hint<br>
+<hr>
+(src)="s52"> wasteslot hint <br>
+(trg)="s52">%s v polju okvirjawasteslot hint<br>
+<hr>
+(src)="s54"> Энэ тоглоомын зөвлөмж тодорхойлогдоогүй байна . <br>
+(trg)="s54">Ta igra še nima podpore za prikaz namigov.<br>
+<hr>
+(src)="s55"> % s -г % s рүү зөөх . <br>
+(trg)="s55">Premaknite %s na %s.<br>
+<hr>
+(src)="s56"> Энэ тоглоом зөвлөмж өгөхөд боломжгүй . <br>
+(trg)="s56">Ta igra nima možnosti prikaza namigov.<br>
+<hr>
+(src)="s58"> Агнес <br>
+(trg)="s58">Agnes<br>
+<hr>
+(src)="s68"> Бристоль <br>
+(trg)="s68">Bristol<br>
+<hr>
+(src)="s69"> Камелот <br>
+(trg)="s69">Camelot<br>
+<hr>
+(src)="s70"> Хурд <br>
+(trg)="s70">Canfield<br>
+<hr>
+(src)="s72"> Шатрын хөлөг <br>
+(trg)="s72">Šahovnica<br>
+<hr>
+(src)="s73"> Цаг <br>
+(trg)="s73">Ura<br>
+<hr>
+(src)="s74"> Дугтуй <br>
+(trg)="s74">Cover<br>
+<hr>
+(src)="s77"> Хуулбар <br>
+(trg)="s77">Doublets<br>
+<hr>
+(src)="s79"> Дорнын боомт <br>
+(trg)="s79">Vzhodni raj<br>
+<hr>
+(src)="s81"> Цахилгаан шат <br>
+(trg)="s81">Dvigalo<br>
+<hr>
+(src)="s83"> Гүйдэг шат <br>
+(trg)="s83">Escalator<br>
+<hr>
+(src)="s85"> Цайз <br>
+(trg)="s85">Trdnjava<br>
+<hr>
+(src)="s86"> Аз <br>
+(trg)="s86">Fortunes<br>
+<hr>
+(src)="s88"> Арван дөрөв <br>
+(trg)="s88">Štirinajst<br>
+<hr>
+(src)="s89"> Нүд чөлөөлөх <br>
+(trg)="s89">Freecell<br>
+<hr>
+(src)="s93"> Хавцал <br>
+(trg)="s93">Glenwood<br>
+<hr>
+(src)="s95"> Гольф <br>
+(trg)="s95">Golf<br>
+<hr>
+(src)="s96"> Цыганууд <br>
+(trg)="s96">Cigan<br>
+<hr>
+(src)="s97"> Хельсинк <br>
+(trg)="s97">Helsinki<br>
+<hr>
+(src)="s98"> Тэмтэг <br>
+(trg)="s98">Hopscotch<br>
+<hr>
+(src)="s99"> Изабель <br>
+(trg)="s99">Izabela<br>
+<hr>
+(src)="s100"> Jamestown <br>
+(trg)="s100">Jamestown<br>
+<hr>
+(src)="s101"> Жумбо <br>
+(trg)="s101">Jumbo<br>
+<hr>
+(src)="s102"> Канзас <br>
+(trg)="s102">Kansas<br>
+<hr>
+(src)="s105"> Клондайк <br>
+(trg)="s105">Klondike<br>
+<hr>
+(src)="s107"> Лабиринт <br>
+(trg)="s107">Labirint<br>
+<hr>
+(src)="s109"> Мазе <br>
+(trg)="s109">Blodnjak<br>
+<hr>
+(src)="s112"> Хөрш <br>
+(trg)="s112">Sosed<br>
+<hr>
+(src)="s113"> Одесса <br>
+(trg)="s113">Odessa<br>
+<hr>
+(src)="s114"> Осмос <br>
+(trg)="s114">Osmosis<br>
+<hr>
+(src)="s115"> Peek <br>
+(trg)="s115">Peek<br>
+<hr>
+(src)="s116"> Pileon <br>
+(trg)="s116">Pileon<br>
+<hr>
+(src)="s117"> Хуниас <br>
+(trg)="s117">Plait<br>
+<hr>
+(src)="s118"> Покер <br>
+(trg)="s118">Poker<br>
+<hr>
+(src)="s119"> Quatorze <br>
+(trg)="s119">Quatorze<br>
+<hr>
+(src)="s122"> Хилэнцэт <br>
+(trg)="s122">Škorpijon<br>
+<hr>
+(src)="s123"> Зодоон <br>
+(trg)="s123">Scuffle<br>
+<hr>
+(src)="s124"> Seahaven <br>
+(trg)="s124">Morski raj<br>
+<hr>
+(src)="s127"> Аалз <br>
+(trg)="s127">Pajek<br>
+<hr>
+(src)="s129"> Аалзхан <br>
+(trg)="s129">Spiderette<br>
+<hr>
+(src)="s132"> Цоолтуур <br>
+(trg)="s132">Template<br>
+<hr>
+(src)="s135"> Хулгайч <br>
+(trg)="s135">Lopovi<br>
+<hr>
+(src)="s136"> Арвангурав <br>
+(trg)="s136">Trinajst<br>
+<hr>
+(src)="s138"> Treize <br>
+(trg)="s138">Treize<br>
+<hr>
+(src)="s141"> Валентин <br>
+(trg)="s141">Valentin<br>
+<hr>
+</body>
+</html>
