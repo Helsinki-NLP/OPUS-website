@@ -1,0 +1,316 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# de_CH/Pulseaudio.master/Pulseaudio.master.xml.gz<br>
+# te/Pulseaudio.master/Pulseaudio.master.xml.gz
+
+<p><hr>
+(src)="s1"> Root-Privilegien aufräumen . <br>
+(trg)="s1"> అనుమతులను శుభ ్ రపరచుచున ్ నది . <br>
+<hr>
+(src)="s2"> % s [ options ] BEFEHLE : -h , --help Zeige diese Hilfe --version Zeige Version --dump-conf Zeige Standardkonfiguration --dump-modules Zeige Liste verfügbarer Module --dump-resample-methods Zeige verfügbare Resample-Methoden --cleanup-shm Cleanup stale shared memory segments --start Starte Daemon , falls noch nicht geschehen -k --kill Laufenden Daemon beenden --check Prüfe laufende Daemone ( gibt nur einen Exit-Code zurück ) OPTIONS : --system [ = BOOL ] Als systemweite Instanz ausführen -D , --daemonize [ = BOOL ] Nach Start zum Daemon machen --fail [ = BOOL ] Beenden , wenn Start fehlschlägt --high-priority [ = BOOL ] Nutze höchste Priorität ( Nur verfügbar als root , wenn SUID oder mit erhöhtem RLIMIT _ NICE ) --realtime [ = BOOL ] Versuche , Echtzeit-Scheduling zu aktivieren ( Nur verfügbar als root , wenn SUID oder mit erhöhtem RLIMIT _ RTPRIO ) --disallow-module-loading [ = BOOL ] Verbiete ( Ent- ) laden durch Nutzer angeforderter Module nach dem Start --disallow-exit [ = BOOL ] Verbiete Beenden auf Anfrage des Nutzers --exit-idle-time = SECS Beende Daemon , wenn für diese Zeit untätig --module-idle-time = SECS Entlade untätige Module nach dieser Zeit --scache-idle-time = SECS Entlade untätige automatisch geladene Samples nach dieser Zeit --log-level [ = STUFE ] Grad der Ausführlichkeit angeben -v Ausführliche Meldungen --log-target = { auto , syslog , stderr } Protokoll-Ziel angeben -p , --dl-search-path = PFAD Suchpfad für dynamisch freigegebene Objekte ( Plugins ) --resample-method = METHODE Nutze diese Resampling-Methode ( Siehe --dump-resample-methods für mögliche Werte ) --use-pid-file [ = BOOL ] Eine PID-Datei erstellen --no-cpu-limit [ = BOOL ] CPU-Lastbegrenzung auf unterstützten Systemen nicht installieren . --disable-shm [ = BOOL ] Keine Unterstützung für Shared Memory . STARTUP-SCRIPT : -L , --load = " MODUL-ARGUMENTE " Plugin-Modul mit diesen Parametern laden . -F , --file = DATEINAMEN Dieses Skript ausführen -C Nach Start auf laufendem TTY eine Kommandozeile öffnen -n Standardskript nicht laden <br>
+(trg)="s2"> % s [ options ] COMMANDS : -h , --help Show this help --version Show version --dump-conf Dump default configuration --dump-modules Dump list of available modules --dump-resample-methods Dump available resample methods --cleanup-shm Cleanup stale shared memory segments --start Start the daemon if it is not running -k --kill Kill a running daemon --check Check for a running daemon ( only returns exit code ) OPTIONS : --system [ = BOOL ] Run as system-wide instance -D , --daemonize [ = BOOL ] Daemonize after startup --fail [ = BOOL ] Quit when startup fails --high-priority [ = BOOL ] Try to set high nice level ( only available as root , when SUID or with elevated RLIMIT _ NICE ) --realtime [ = BOOL ] Try to enable realtime scheduling ( only available as root , when SUID or with elevated RLIMIT _ RTPRIO ) --disallow-module-loading [ = BOOL ] Disallow module user requested module loading / unloading after startup --disallow-exit [ = BOOL ] Disallow user requested exit --exit-idle-time = SECS Terminate the daemon when idle and this time passed --module-idle-time = SECS Unload autoloaded modules when idle and this time passed --scache-idle-time = SECS Unload autoloaded samples when idle and this time passed --log-level [ = LEVEL ] Increase or set verbosity level -v Increase the verbosity level --log-target = { auto , syslog , stderr } Specify the log target --log-meta [ = BOOL ] Include code location in log messages --log-time [ = BOOL ] Include timestamps in log messages --log-backtrace = FRAMES Include a backtrace in log messages -p , --dl-search-path = PATH Set the search path for dynamic shared objects ( plugins ) --resample-method = METHOD Use the specified resampling method ( See --dump-resample-methods for possible values ) --use-pid-file [ = BOOL ] Create a PID file --no-cpu-limit [ = BOOL ] Do not install CPU load limiter on platforms that support it . --disable-shm [ = BOOL ] Disable shared memory support . STARTUP SCRIPT : -L , --load = " MODULE ARGUMENTS " Load the specified plugin module with the specified argument -F , --file = FILENAME Run the specified script -C Open a command line on the running TTY after startup -n Don 't load default script file <br>
+<hr>
+(src)="s3"> Option --daemonize erfordert bool 'schen Wert <br>
+(trg)="s3"> --daemonize బూలియన ్ ఆర ్ గుమెంటును కోరుకుంటుంది <br>
+<hr>
+(src)="s4"> Option --fail erfordert bool 'schen Wert <br>
+(trg)="s4"> --fail బూలియన ్ ఆర ్ గుమెంటును కోరుకుంటుంది <br>
+<hr>
+(src)="s5"> --log-level erfordert Wert für Grad der Protokollierung ( entweder numerisch im Bereich 0 .. 4 or einen dieser : debug , info , notice , warn , error ) . <br>
+(trg)="s5"> --log-level లాగ ్ స ్ థాయి ఆర ్ గుమెంట ్ ‌ ను కోరుకుంటోంది ( సహజసంఖ ్ యను 0 .. 4 విస ్ తృతిలో కాని లేదా డీబగ ్ ‌ , సమాచారము , నోటీసు , హెచ ్ చరిక , దోషము వీటిలో వొకటికాని ) . <br>
+<hr>
+(src)="s6"> Option --high-priority erfordert bool 'schen Wert <br>
+(trg)="s6"> --high-priority బూలియన ్ ఆర ్ గుమెంటును కోరుకుంటుంది <br>
+<hr>
+(src)="s7"> Option --realtime erfordert bool 'schen Wert <br>
+(trg)="s7"> --realtime బూలియన ్ ఆర ్ గుమెంటును కోరుకుంటుంది <br>
+<hr>
+(src)="s8"> Option --disallow-module-loading erfordert bool 'schen Wert <br>
+(trg)="s8"> --disallow-module-loading బూలియన ్ ఆర ్ గుమెంటును కోరుకుంటుంది <br>
+<hr>
+(src)="s9"> --disallow-exit erfordert boolsches Argument <br>
+(trg)="s9"> --disallow-exit బూలియన ్ ఆర ్ గుమెంటును కోరుకుంటుంది <br>
+<hr>
+(src)="s10"> Option --use-pid-file erfordert bool 'schen Wert <br>
+(trg)="s10"> --use-pid-file బూలియన ్ ఆర ్ గుమెంటును కోరుకుంటుంది <br>
+<hr>
+(src)="s11"> Ungültiges Log-Ziel : Benutzen Sie entweder ' syslog ' , ' stderr ' oder ' auto ' . <br>
+(trg)="s11"> చెల ్ లని లాగ ్ టార ్ గెట ్ : ' syslog ' , ' stderr ' లేదా ' auto ' వుపయోగించుము . <br>
+<hr>
+(src)="s12"> Ungültiges Log-Ziel : Benutzen Sie entweder ' syslog ' , ' stderr ' oder ' auto ' . <br>
+(trg)="s12"> చెల ్ లని లాగ ్ టార ్ గెట ్ : ' syslog ' , ' stderr ' లేదా ' auto ' వుపయోగించుము . <br>
+<hr>
+(src)="s13"> --realtime erfordert boolsches Argument <br>
+(trg)="s13"> --log-time బూలియన ్ ఆర ్ గుమెంటును కోరుకుంటుంది <br>
+<hr>
+(src)="s14"> --log-meta erfordert boolschen Wert <br>
+(trg)="s14"> --log-meta బూలియన ్ ఆర ్ గుమెంటును కోరుకుంటుంది <br>
+<hr>
+(src)="s15"> Ungültige Resample-Methode ' % s ' . <br>
+(trg)="s15"> చెల ్ లని పునఃవుదాహరణ పద ్ దతి ' % s ' . <br>
+<hr>
+(src)="s16"> --System erwartet Boolean-Argument <br>
+(trg)="s16"> --system బూలియన ్ ఆర ్ గుమెంటును కోరుకుంటుంది <br>
+<hr>
+(src)="s17"> Option --no-cpu-limit erfordert bool 'schen Wert <br>
+(trg)="s17"> --no-cpu-limit బూలియన ్ ఆర ్ గుమెంటును కోరుకుంటుంది <br>
+<hr>
+(src)="s18"> Option --disable-shm erfordert bool 'schen Wert <br>
+(trg)="s18"> --disable-shm బూలియన ్ ఆర ్ గుమెంటును కోరుకుంటుంది <br>
+<hr>
+(src)="s19"> [ % s : % u ] Ungültiges Log-Ziel ' % s ' . <br>
+(trg)="s19"> [ % s : % u ] చెల ్ లని లాగ ్ లక ్ ష ్ యము ' % s ' . <br>
+<hr>
+(src)="s20"> [ % s : % u ] Ungültige Log-Stufe ' % s ' . <br>
+(trg)="s20"> [ % s : % u ] చెల ్ లని లాగ ్ స ్ థాయి ' % s ' . <br>
+<hr>
+(src)="s21"> [ % s : % u ] Ungültige Resample-Methode ' % s ' . <br>
+(trg)="s21"> [ % s : % u ] చెల ్ లని పునఃవుదాహరణ పద ్ దతి ' % s ' . <br>
+<hr>
+(src)="s22"> [ % s : % u ] Ungültiges rlimit ' % s ' . <br>
+(trg)="s22"> [ % s : % u ] చెల ్ లని rlimit ' % s ' . <br>
+<hr>
+(src)="s23"> [ % s : % u ] Ungültiges Sample-Format ' % s ' . <br>
+(trg)="s23"> [ % s : % u ] చెల ్ లని మాదిరి ఫార ్ మాట ్ ' % s ' . <br>
+<hr>
+(src)="s24"> [ % s : % u ] Ungültige Sample-Rate ' % s ' . <br>
+(trg)="s24"> [ % s : % u ] చెల ్ లని మాదిరి రేటు ' % s ' . <br>
+<hr>
+(src)="s25"> [ % s : % u ] Ungültige Sample-Kanäle ' % s ' . <br>
+(trg)="s25"> [ % s : % u ] చెల ్ లని మాదిరి చానళ ్ ళు ' % s ' . <br>
+<hr>
+(src)="s26"> [ % s : % u ] Ungültige Kanal-Zuordnung ' % s ' . <br>
+(trg)="s26"> [ % s : % u ] చెల ్ లని ఛానల ్ మాప ్ ' % s ' . <br>
+<hr>
+(src)="s27"> [ % s : % u ] Ungültige Anzahl von Fragmenten ' % s ' . <br>
+(trg)="s27"> [ % s : % u ] చెల ్ లని ముక ్ కలు సంఖ ్ య ' % s ' . <br>
+<hr>
+(src)="s28"> [ % s : % u ] Ungültige Fragmentgröße ' % s ' . <br>
+(trg)="s28"> [ % s : % u ] చెల ్ లని ముక ్ క పరిమాణము ' % s ' . <br>
+<hr>
+(src)="s29"> [ % s : % u ] Ungültige Nice-Stufe ' % s ' . <br>
+(trg)="s29"> [ % s : % u ] చెల ్ లని సాదా స ్ థాయి ' % s ' . <br>
+<hr>
+(src)="s30"> [ % s : % u ] Ungültige Sample-Rate ' % s ' . <br>
+(trg)="s30"> [ % s : % u ] చెల ్ లని మాదిరి రేటు ' % s ' . <br>
+<hr>
+(src)="s31"> Öffnen der Konfigurationsdatei fehlgeschlagen : % s <br>
+(trg)="s31"> ఆకృతీకరణ దస ్ త ్ రమును తెరుచుటకు విఫలమైంది : % s <br>
+<hr>
+(src)="s32"> Die angegebene Standard-Kanalzuordnung hat eine andere Anzahl von Kanälen als die angegebene Standard-Kanal-Anzahl . <br>
+(trg)="s32"> తెలుపబడిన అప ్ రమేయ ప ్ రాసారమార ్ గం మాప ్ తెలుపబడిన అప ్ రమేయ ప ్ రసారమార ్ గముల కన ్ నా విభిన ్ న ప ్ రసారమార ్ గముల సంఖ ్ యను కలిగివుంది . <br>
+<hr>
+(src)="s33"> # # # Lese von Konfigurationsdatei : % s # # # <br>
+(trg)="s33"> # # # ఆకృతీకరణ దస ్ త ్ రమునుండి చదువుము : % s # # # <br>
+<hr>
+(src)="s34"> Name : % s <br>
+(trg)="s34"> నామము : % s <br>
+<hr>
+(src)="s35"> Keine Modul-Informationen verfügbar <br>
+(trg)="s35"> ఎటువంటి మాడ ్ యూల ్ సమాచారము అందుబాటులోలేదు <br>
+<hr>
+(src)="s36"> Version : % s <br>
+(trg)="s36"> వర ్ షన ్ : % s <br>
+<hr>
+(src)="s37"> Beschreibung : % s <br>
+(trg)="s37"> వివరణ : % s <br>
+<hr>
+(src)="s38"> Autor : % s <br>
+(trg)="s38"> మూలకర ్ త : % s <br>
+<hr>
+(src)="s39"> Verwendung : % s <br>
+(trg)="s39"> వాడుక : % s <br>
+<hr>
+(src)="s40"> Lade einmalig : % s <br>
+(trg)="s40"> ఒకసారి లోడుచేయుము : % s <br>
+<hr>
+(src)="s41"> DEPRECATION WARNING : % s <br>
+(trg)="s41"> తీసివేత హెచ ్ చరిక : % s <br>
+<hr>
+(src)="s42"> Pfad : % s <br>
+(trg)="s42"> పాత ్ : % s <br>
+<hr>
+(src)="s43"> Öffnen der Datei ' % s ' fehlgeschlagen <br>
+(trg)="s43"> ఆకృతీకరణ దస ్ త ్ రము ' % s ' తెరువుటకు విఫలమైంది : % s <br>
+<hr>
+(src)="s44"> Ursprünglicher dlopen-Loader konnte nicht gefunden werden . <br>
+(trg)="s44"> వాస ్ తవ lt _ dlopen లోడర ్ కనుగొనుటలో విఫలమైంది . <br>
+<hr>
+(src)="s45"> Neuer dlopen-Loader konnte nicht gefunden werden . <br>
+(trg)="s45"> కొత ్ త dl లోడర ్ కేటాయించుటలో విఫలమైంది . <br>
+<hr>
+(src)="s46"> Hinzufügen von Bind-Now-Loader fehlgeschlagen . <br>
+(trg)="s46"> bind-now-loader జతచేయుటకు విఫలమైంది . <br>
+<hr>
+(src)="s47"> Signal % s empfangen . <br>
+(trg)="s47"> సంకేతము % s పొందినది . <br>
+<hr>
+(src)="s48"> Wird beendet . <br>
+(trg)="s48"> నిష ్ క ్ రమించుచున ్ నది . <br>
+<hr>
+(src)="s49"> Benutzer ' % s ' nicht gefunden . <br>
+(trg)="s49"> వినియోగదారి ' % s 'ను కనుగొనుటకు విఫలమైంది . <br>
+<hr>
+(src)="s50"> Gruppe ' % s ' nicht gefunden . <br>
+(trg)="s50"> సమూహం ' % s ' కనుగొనుటకు విఫలమైంది . <br>
+<hr>
+(src)="s51"> Benutzer ' % s ' ( UID % lu ) und Gruppe ' % s ' ( GID % lu ) gefunden . <br>
+(trg)="s51"> వినియోగదారి ' % s ' ( UID % lu ) మరియు సమూహము ' % s ' ( GID % lu ) కనబడినవి . <br>
+<hr>
+(src)="s52"> GID von Benutzer ' % s ' und Gruppe ' % s ' stimmen nicht überein . <br>
+(trg)="s52"> వినియోగదారి ' % s ' మరియు సమూహము ' % s ' యొక ్ క GID సరితూగలేదు . <br>
+<hr>
+(src)="s53"> Benutzerverzeichnis von Benutzer ' % s ' ist nicht ' % s ' , ignoriere . <br>
+(trg)="s53"> వినియోగదారి ' % s ' యొక ్ క నివాస డైరెక ్ టరీ ' % s ' కాదు , వదిలివేయుచున ్ నది . <br>
+<hr>
+(src)="s54"> Konnte ' % s ' nciht erzeugen : % s <br>
+(trg)="s54"> ' % s ' సృష ్ టించుటకు విఫలమైంది : % s <br>
+<hr>
+(src)="s55"> Wechseln der Gruppen-Liste fehlgeschlagen : % s <br>
+(trg)="s55"> సమూహ జాబితా మార ్ చుటకు విఫలమైంది : % s <br>
+<hr>
+(src)="s56"> Wechseln der GID fehlgeschlagen : % s <br>
+(trg)="s56"> GID మార ్ చుటకు విఫలమైంది : % s <br>
+<hr>
+(src)="s57"> Wechseln der UID fehlgeschlagen : % s <br>
+(trg)="s57"> UID మార ్ చటకు విఫలమైంది : % s <br>
+<hr>
+(src)="s59"> System-Modus auf dieser Plattform nicht unterstützt . <br>
+(trg)="s59"> ఈ ప ్ లాట ్ ‌ ఫాం నందు సిస ్ టమ ్ తరహా రీతి మద ్ దతీయబడదు . <br>
+<hr>
+(src)="s60"> setrlimit ( % s , ( % u , % u ) ) fehlgeschlagen : % s <br>
+(trg)="s60"> setrlimit ( % s , ( % u , % u ) ) విఫలమైంది : % s <br>
+<hr>
+(src)="s61"> Parsen der Kommandzeile fehlgeschlagen . <br>
+(trg)="s61"> ఆదేశ వరుసను పార ్ శ ్ చేయుటకు విఫలమైంది . <br>
+<hr>
+(src)="s63"> Daemon läuft nicht <br>
+(trg)="s63"> డెమోన ్ నడుచుట లేదు <br>
+<hr>
+(src)="s64"> Daemon läuft als PID % u <br>
+(trg)="s64"> డెమోన ్ PID % u వలె నడుచుచున ్ నది <br>
+<hr>
+(src)="s65"> Konnte Prozess nicht abbrechen : % s <br>
+(trg)="s65"> డెమోన ్ చంపుటకు విఫలమైంది : % s <br>
+<hr>
+(src)="s66"> Dieses Programm sollte ohne die Option --system nicht als Administrator ausgeführt werden . <br>
+(trg)="s66"> ఈ ప ్ రోగ ్ రామ ్ root లా నడుపవలసింది కాదు ( --system తెలిపితే తప ్ ప ) <br>
+<hr>
+(src)="s67"> Root-Berechtigungen benötigt . <br>
+(trg)="s67"> Root అనుమతులు అవసరము . <br>
+<hr>
+(src)="s68"> --start nicht unterstützt für System-Instanzen . <br>
+(trg)="s68"> --start సిస ్ టమ ్ సంభవాల ద ్ వారా మద ్ దతీయబడదు . <br>
+<hr>
+(src)="s71"> System-Modus aktiv , jeodch --disallow-exit nicht gesetzt ! <br>
+(trg)="s71"> సిస ్ టమ ్ మోడ ్ నందు నడుపుతోంది , అయితే --disallow-exit అమర ్ చలేదు ! <br>
+<hr>
+(src)="s72"> System-Modus aktiv , jedoch --disallow-module-loading nicht gesetzt ! <br>
+(trg)="s72"> సిస ్ టమ ్ రీతినందు నడుచుచున ్ నది , అయితే --disallow-module-loading అమర ్ చలేదు ! <br>
+<hr>
+(src)="s73"> System-Modus aktiv , SHM-Modus gezwungenermaßen deaktiviert ! <br>
+(trg)="s73"> సిస ్ టమ ్ రీతినందు నడుపుచున ్ నది , బలవంతంగా SHM రీతిని అచేతనము చేస ్ తోంది ! <br>
+<hr>
+(src)="s74"> System-Modus aktiv , Exit-Idle-Time gezwungenermaßen deaktiviert ! <br>
+(trg)="s74"> సిస ్ టమ ్ రీతినందు నడుచుచున ్ నది , బలవంతంగా నిష ్ క ్ రమణ వృధా సమయాన ్ ని అచేతనము చేయుచున ్ నది ! <br>
+<hr>
+(src)="s75"> Reservieren von STDIO fehlgeschlagen . <br>
+(trg)="s75"> stdio పొందుటకు విఫలమైంది . <br>
+<hr>
+(src)="s76"> pipe fehlgeschlagen : % s <br>
+(trg)="s76"> పైర ్ విఫలమైంది : % s <br>
+<hr>
+(src)="s77"> fork ( ) fehlgeschlagen : % s <br>
+(trg)="s77"> fork ( ) విఫలమైంది : % s <br>
+<hr>
+(src)="s78"> read ( ) fehlgeschlagen : % s <br>
+(trg)="s78"> read ( ) విఫలమైంది : % s <br>
+<hr>
+(src)="s79"> Start des Daemons fehlgeschlagen . <br>
+(trg)="s79"> డెమోన ్ ప ్ రారంభం విఫలమైంది . <br>
+<hr>
+(src)="s80"> Start des Daemons erfolgreich . <br>
+(trg)="s80"> డెమోన ్ ప ్ రారంభము సఫలమైంది . <br>
+<hr>
+(src)="s81"> read ( ) fehlgeschlagen : % s <br>
+(trg)="s81"> read ( ) విఫలమైంది : % s <br>
+<hr>
+(src)="s82"> Dies ist PulseAudio % s <br>
+(trg)="s82"> ఇది PulseAudio % s <br>
+<hr>
+(src)="s83"> Kompilier-Host : % s <br>
+(trg)="s83"> నిర ్ వర ్ తన హోస ్ టు : % s <br>
+<hr>
+(src)="s84"> Kompilier-CFLAGS : % s <br>
+(trg)="s84"> నిర ్ వర ్ తన CFLAGS : % s <br>
+<hr>
+(src)="s85"> Laufe auf Host : % s <br>
+(trg)="s85"> హోస ్ టును నడుపుచున ్ నది : % s <br>
+<hr>
+(src)="s86"> % u CPUs gefunden . <br>
+(trg)="s86"> % u CPUలను కనుగొన ్ నది . <br>
+<hr>
+(src)="s87"> Seitengröße ist % lu Bytes . <br>
+(trg)="s87"> పేజీ పరిమాణము % lu బైట ్ లు <br>
+<hr>
+(src)="s88"> Kompiliere mit Valgrind-Unterstützung : ja <br>
+(trg)="s88"> Valgrind మద ్ దతుతో నిర ్ వర ్ తించబడింది : అవును <br>
+<hr>
+(src)="s89"> Kompiliere mit Valgrind-Unterstützung : nein <br>
+(trg)="s89"> Valgrind మద ్ దతుతో నిర ్ వర ్ తించబడింది : లేదు <br>
+<hr>
+(src)="s90"> Läuft im Valgrind-Modus : % s <br>
+(trg)="s90"> valgrind రీతినందు నడుపుచున ్ నది : % s <br>
+<hr>
+(src)="s91"> Laufe auf Host : % s <br>
+(trg)="s91"> హోస ్ టును నడుపుచున ్ నది : % s <br>
+<hr>
+(src)="s92"> Optimiertes Build : ja <br>
+(trg)="s92"> ఆప ్ టిమైజ ్ డు బుల ్ డు : అవును <br>
+<hr>
+(src)="s93"> Optimiertes Build : nein <br>
+(trg)="s93"> ఆప ్ టిమైజ ్ డు బుల ్ డు : కాదు <br>
+<hr>
+(src)="s94"> NDEBUG definiert , alle Ansprüche deaktiviert . <br>
+(trg)="s94"> NDEBUG నిర ్ వచించబడింది , అన ్ ని స ్ థిరరాశులు అచేతనమైనవి . <br>
+<hr>
+(src)="s95"> FASTPATH definiert , nur fast-path-Ansprüche deaktiviert . <br>
+(trg)="s95"> FASTPATH నిర ్ వచించబడింది , ఫాస ్ ట ్ పాత ్ స ్ థిరరాశులు మాత ్ రమే అచేతనమైనవి . <br>
+<hr>
+(src)="s96"> Alle Ansprüche aktiviert . <br>
+(trg)="s96"> అన ్ ని స ్ థిరరాశులు చేతనమైనవి . <br>
+<hr>
+(src)="s97"> Beziehen der Maschinen-ID fehlgeschlagen <br>
+(trg)="s97"> మిషన ్ ID పొందుటకు విఫలమైంది <br>
+<hr>
+(src)="s98"> System- ID ist % s . <br>
+(trg)="s98"> మిషన ్ ID % s . <br>
+<hr>
+(src)="s99"> System- ID ist % s . <br>
+(trg)="s99"> సెషన ్ ID % s . <br>
+<hr>
+(src)="s100"> Nutze Laufzeit-Verzeichnis % s . <br>
+(trg)="s100"> రన ్ ‌ టైమ ్ డైరెక ్ టరీను వుపయోగించుచున ్ నది % s . <br>
+<hr>
+(src)="s101"> Nutze Zustands-Verzeichnis % s . <br>
+(trg)="s101"> స ్ థితి డైరెక ్ టరీను వుపయోగించుచున ్ నది % s . <br>
+<hr>
+(src)="s102"> Modul-Verzeichnis % s benutzen . <br>
+(trg)="s102"> మాడ ్ యూళ ్ ళ డైరెక ్ టరీ % s వుపయోగిస ్ తోంది . <br>
+<hr>
+(src)="s103"> Laufe im System-Modus : % s <br>
+(trg)="s103"> సిస ్ టమ ్ రీతినందు వుపయోగించుచున ్ నది : % s <br>
+<hr>
+(src)="s105"> pa _ pid _ file _ create ( ) fehlgeschlagen . <br>
+(trg)="s105"> pa _ pid _ file _ create ( ) విఫలమైంది . <br>
+<hr>
+</body>
+</html>

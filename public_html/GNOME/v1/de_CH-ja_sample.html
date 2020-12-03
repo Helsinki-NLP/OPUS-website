@@ -1,0 +1,316 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# de_CH/Pulseaudio.master/Pulseaudio.master.xml.gz<br>
+# ja/Pulseaudio.master/Pulseaudio.master.xml.gz
+
+<p><hr>
+(src)="s1"> Root-Privilegien aufräumen . <br>
+(trg)="s1"> 権限をクリーンアップ <br>
+<hr>
+(src)="s2"> % s [ options ] BEFEHLE : -h , --help Zeige diese Hilfe --version Zeige Version --dump-conf Zeige Standardkonfiguration --dump-modules Zeige Liste verfügbarer Module --dump-resample-methods Zeige verfügbare Resample-Methoden --cleanup-shm Cleanup stale shared memory segments --start Starte Daemon , falls noch nicht geschehen -k --kill Laufenden Daemon beenden --check Prüfe laufende Daemone ( gibt nur einen Exit-Code zurück ) OPTIONS : --system [ = BOOL ] Als systemweite Instanz ausführen -D , --daemonize [ = BOOL ] Nach Start zum Daemon machen --fail [ = BOOL ] Beenden , wenn Start fehlschlägt --high-priority [ = BOOL ] Nutze höchste Priorität ( Nur verfügbar als root , wenn SUID oder mit erhöhtem RLIMIT _ NICE ) --realtime [ = BOOL ] Versuche , Echtzeit-Scheduling zu aktivieren ( Nur verfügbar als root , wenn SUID oder mit erhöhtem RLIMIT _ RTPRIO ) --disallow-module-loading [ = BOOL ] Verbiete ( Ent- ) laden durch Nutzer angeforderter Module nach dem Start --disallow-exit [ = BOOL ] Verbiete Beenden auf Anfrage des Nutzers --exit-idle-time = SECS Beende Daemon , wenn für diese Zeit untätig --module-idle-time = SECS Entlade untätige Module nach dieser Zeit --scache-idle-time = SECS Entlade untätige automatisch geladene Samples nach dieser Zeit --log-level [ = STUFE ] Grad der Ausführlichkeit angeben -v Ausführliche Meldungen --log-target = { auto , syslog , stderr } Protokoll-Ziel angeben -p , --dl-search-path = PFAD Suchpfad für dynamisch freigegebene Objekte ( Plugins ) --resample-method = METHODE Nutze diese Resampling-Methode ( Siehe --dump-resample-methods für mögliche Werte ) --use-pid-file [ = BOOL ] Eine PID-Datei erstellen --no-cpu-limit [ = BOOL ] CPU-Lastbegrenzung auf unterstützten Systemen nicht installieren . --disable-shm [ = BOOL ] Keine Unterstützung für Shared Memory . STARTUP-SCRIPT : -L , --load = " MODUL-ARGUMENTE " Plugin-Modul mit diesen Parametern laden . -F , --file = DATEINAMEN Dieses Skript ausführen -C Nach Start auf laufendem TTY eine Kommandozeile öffnen -n Standardskript nicht laden <br>
+(trg)="s2"> % s [ オプション ] コマンド : -h , --help このヘルプを表示 --version バージョンを表示 --dump-conf デフォルト設定をダンプ --dump-modules 使用可能なモジュール一覧をダンプ --dump-resample-methods 使用可能な再サンプル方法をダンプ --cleanup-shm 古い共有メモリーセグメントをクリーンアップ --start 実行していない場合 、 デーモンを開始 -k --kill 実行中のデーモンをキル --check 実行中のデーモンをチェック ( 退出コードを返すのみ ) オプション : --system [ = BOOL ] システム全域インスタンスとして実行 -D , --daemonize [ = BOOL ] 開始後デーモン化 --fail [ = BOOL ] 開始失敗なら終了 --high-priority [ = BOOL ] 高度なナイスレベルの設定を試行 ( root としてのみ可能 , SUID の時 、 又は昇格した RLIMIT _ NICE で ) --realtime [ = BOOL ] リアルタイムスケジュールを有効にする試行 ( root としてのみ可能 , SUID の時 、 又は昇格した RLIMIT _ RTPRIO で ) --disallow-module-loading [ = BOOL ] 起動後のユーザー要求のモジュールのロード / アンロードを許可しない --disallow-exit [ = BOOL ] ユーザー要求の退出を許可しない --exit-idle-time = SECS 遊休時と指定時間後にデーモンを終了 --scache-idle-time = SECS 遊休時と指定時間後に自動ロードサンプルをアンロード --log-level [ = LEVEL ] 詳細レベルを上げるか 、 又はセット -v 詳細レベルを上げる --log-target = { auto , syslog , stderr , file : PATH } ログターゲットを指定 --log-meta [ = BOOL ] ログメッセージ内にコードの場所を含む --log-time [ = BOOL ] ログメッセージ内にタイムスタンプを含む --log-backtrace = FRAMES ログメッセージ内にバックトレースを含む -p , --dl-search-path = PATH 動的共有オブジェクト ( plugins ) 用に検索パスをセット --resample-method = METHOD 指定した再サンプリング方法を使用 ( 使用可能な値は --dump-resample-methods で 参照 ) --use-pid-file [ = BOOL ] PID ファイルを作成 --no-cpu-limit [ = BOOL ] サポートしているプラットフォームで CPU ロードリミッターをインストールしない --disable-shm [ = BOOL ] 共有メモリーサポートを無効にする スタートアップスクリプト : -L , --load = " MODULE ARGUMENTS " 指定した引数で指定したプラグインモジュールをロード -F , --file = FILENAME 指定したスクリプトを実行 -C スタートアップ後に実行中の TTY 上でコマンドラインを開く -n デフォルトのスクリプトファイルをロードしない <br>
+<hr>
+(src)="s3"> Option --daemonize erfordert bool 'schen Wert <br>
+(trg)="s3"> --daemonize はブーリアン引数を予期します <br>
+<hr>
+(src)="s4"> Option --fail erfordert bool 'schen Wert <br>
+(trg)="s4"> --fail はブーリアン引数を予期します 。 <br>
+<hr>
+(src)="s5"> --log-level erfordert Wert für Grad der Protokollierung ( entweder numerisch im Bereich 0 .. 4 or einen dieser : debug , info , notice , warn , error ) . <br>
+(trg)="s5"> --log-level はログレベル引数を予期します （ 数値幅0 ～ 4 、 又はデバグ 、 情報 、 注記 、 警告 、 エラーの中の1つ ） <br>
+<hr>
+(src)="s6"> Option --high-priority erfordert bool 'schen Wert <br>
+(trg)="s6"> --high-priority は ブーリアン引数を予期します <br>
+<hr>
+(src)="s7"> Option --realtime erfordert bool 'schen Wert <br>
+(trg)="s7"> --realtime はブーリアン引数を予期します <br>
+<hr>
+(src)="s8"> Option --disallow-module-loading erfordert bool 'schen Wert <br>
+(trg)="s8"> --disallow-module-loading はブーリアン引数を予期します <br>
+<hr>
+(src)="s9"> --disallow-exit erfordert boolsches Argument <br>
+(trg)="s9"> --disallow-exit はブーリアン引数を予期します <br>
+<hr>
+(src)="s10"> Option --use-pid-file erfordert bool 'schen Wert <br>
+(trg)="s10"> --use-pid-file はブーリアン引数を予期します <br>
+<hr>
+(src)="s11"> Ungültiges Log-Ziel : Benutzen Sie entweder ' syslog ' , ' stderr ' oder ' auto ' . <br>
+(trg)="s11"> 無効なログターゲット : ' syslog ' か 、 ' stderr ' か 、 ' auto ' か 、 正しいファイル名 ' file : &lt; path &gt; ' を使用して下さい 。 <br>
+<hr>
+(src)="s12"> Ungültiges Log-Ziel : Benutzen Sie entweder ' syslog ' , ' stderr ' oder ' auto ' . <br>
+(trg)="s12"> 無効なログターゲット : ' syslog ' か 、 ' stderr ' か 、 ' auto ' か 、 正しいファイル名 ' file : &lt; path &gt; ' を使用して下さい 。 <br>
+<hr>
+(src)="s13"> --realtime erfordert boolsches Argument <br>
+(trg)="s13"> --log-time ブーリアン引数を予期します <br>
+<hr>
+(src)="s14"> --log-meta erfordert boolschen Wert <br>
+(trg)="s14"> --log-meta ブーリアン引数を予期します <br>
+<hr>
+(src)="s15"> Ungültige Resample-Methode ' % s ' . <br>
+(trg)="s15"> 無効な再サンプル方法 ' % s ' <br>
+<hr>
+(src)="s16"> --System erwartet Boolean-Argument <br>
+(trg)="s16"> --system はブーリアン引数を予期します <br>
+<hr>
+(src)="s17"> Option --no-cpu-limit erfordert bool 'schen Wert <br>
+(trg)="s17"> --no-cpu-limit はブーリアン引数を予期します <br>
+<hr>
+(src)="s18"> Option --disable-shm erfordert bool 'schen Wert <br>
+(trg)="s18"> --disable-shm はブーリアン引数を予期します <br>
+<hr>
+(src)="s19"> [ % s : % u ] Ungültiges Log-Ziel ' % s ' . <br>
+(trg)="s19"> [ % s : % u ] 無効なログターゲット ' % s ' <br>
+<hr>
+(src)="s20"> [ % s : % u ] Ungültige Log-Stufe ' % s ' . <br>
+(trg)="s20"> [ % s : % u ] 無効なログレベル ' % s ' <br>
+<hr>
+(src)="s21"> [ % s : % u ] Ungültige Resample-Methode ' % s ' . <br>
+(trg)="s21"> [ % s : % u ] 無効な再サンプル方法 ' % s ' <br>
+<hr>
+(src)="s22"> [ % s : % u ] Ungültiges rlimit ' % s ' . <br>
+(trg)="s22"> [ % s : % u ] 無効な rlimit ' % s ' <br>
+<hr>
+(src)="s23"> [ % s : % u ] Ungültiges Sample-Format ' % s ' . <br>
+(trg)="s23"> [ % s : % u ] 無効なサンプル形式 ' % s ' <br>
+<hr>
+(src)="s24"> [ % s : % u ] Ungültige Sample-Rate ' % s ' . <br>
+(trg)="s24"> [ % s : % u ] 無効なサンプルレート ' % s ' <br>
+<hr>
+(src)="s25"> [ % s : % u ] Ungültige Sample-Kanäle ' % s ' . <br>
+(trg)="s25"> [ % s : % u ] 無効なサンプルチャンネル ' % s ' <br>
+<hr>
+(src)="s26"> [ % s : % u ] Ungültige Kanal-Zuordnung ' % s ' . <br>
+(trg)="s26"> [ % s : % u ] 無効なチャンネルマップ ' % s ' <br>
+<hr>
+(src)="s27"> [ % s : % u ] Ungültige Anzahl von Fragmenten ' % s ' . <br>
+(trg)="s27"> [ % s : % u ] 無効なフラグメントの数 ' % s ' <br>
+<hr>
+(src)="s28"> [ % s : % u ] Ungültige Fragmentgröße ' % s ' . <br>
+(trg)="s28"> [ % s : % u ] 無効なフラグメントサイズ ' % s ' <br>
+<hr>
+(src)="s29"> [ % s : % u ] Ungültige Nice-Stufe ' % s ' . <br>
+(trg)="s29"> [ % s : % u ] 無効なナイスレベル ' % s ' <br>
+<hr>
+(src)="s30"> [ % s : % u ] Ungültige Sample-Rate ' % s ' . <br>
+(trg)="s30"> [ % s : % u ] 無効なサーバータイプ ' % s ' <br>
+<hr>
+(src)="s31"> Öffnen der Konfigurationsdatei fehlgeschlagen : % s <br>
+(trg)="s31"> 設定ファイルを開くのに失敗 : % s <br>
+<hr>
+(src)="s32"> Die angegebene Standard-Kanalzuordnung hat eine andere Anzahl von Kanälen als die angegebene Standard-Kanal-Anzahl . <br>
+(trg)="s32"> 指定されたデフォルトのチャンネルマップは 、 指定されたデフォルトのチャンネル数とは異なるチャンネル数を持っています 。 <br>
+<hr>
+(src)="s33"> # # # Lese von Konfigurationsdatei : % s # # # <br>
+(trg)="s33"> # # # 設定ファイルから読み込み : % s # # # <br>
+<hr>
+(src)="s34"> Name : % s <br>
+(trg)="s34"> 名前 : % s <br>
+<hr>
+(src)="s35"> Keine Modul-Informationen verfügbar <br>
+(trg)="s35"> モジュール情報が使用できません <br>
+<hr>
+(src)="s36"> Version : % s <br>
+(trg)="s36"> バージョン : % s <br>
+<hr>
+(src)="s37"> Beschreibung : % s <br>
+(trg)="s37"> 説明 : % s <br>
+<hr>
+(src)="s38"> Autor : % s <br>
+(trg)="s38"> 著者 : % s <br>
+<hr>
+(src)="s39"> Verwendung : % s <br>
+(trg)="s39"> 使用法 : % s <br>
+<hr>
+(src)="s40"> Lade einmalig : % s <br>
+(trg)="s40"> １度だけロード : % s <br>
+<hr>
+(src)="s41"> DEPRECATION WARNING : % s <br>
+(trg)="s41"> 破棄の警告 : % s <br>
+<hr>
+(src)="s42"> Pfad : % s <br>
+(trg)="s42"> パス : % s <br>
+<hr>
+(src)="s43"> Öffnen der Datei ' % s ' fehlgeschlagen <br>
+(trg)="s43"> 設定ファイル ' % s ' を開くのに失敗 : % s <br>
+<hr>
+(src)="s44"> Ursprünglicher dlopen-Loader konnte nicht gefunden werden . <br>
+(trg)="s44"> オリジナルの lt _ dlopen ローダーを見つけるのに失敗しました 。 <br>
+<hr>
+(src)="s45"> Neuer dlopen-Loader konnte nicht gefunden werden . <br>
+(trg)="s45"> 新規の dl ローダーの割り当てに失敗しました 。 <br>
+<hr>
+(src)="s46"> Hinzufügen von Bind-Now-Loader fehlgeschlagen . <br>
+(trg)="s46"> bind-now-loader の追加に失敗しました 。 <br>
+<hr>
+(src)="s47"> Signal % s empfangen . <br>
+(trg)="s47"> 信号 % s を得ました 。 <br>
+<hr>
+(src)="s48"> Wird beendet . <br>
+(trg)="s48"> 終了しています 。 <br>
+<hr>
+(src)="s49"> Benutzer ' % s ' nicht gefunden . <br>
+(trg)="s49"> ユーザー ' % s ' が見つかりませんでした 。 <br>
+<hr>
+(src)="s50"> Gruppe ' % s ' nicht gefunden . <br>
+(trg)="s50"> グループ ' % s ' が見つかりませんでした 。 <br>
+<hr>
+(src)="s51"> Benutzer ' % s ' ( UID % lu ) und Gruppe ' % s ' ( GID % lu ) gefunden . <br>
+(trg)="s51"> ユーザー ' % s ' ( UID % lu ) とグループ ' % s ' ( GID % lu ) を見つけました 。 <br>
+<hr>
+(src)="s52"> GID von Benutzer ' % s ' und Gruppe ' % s ' stimmen nicht überein . <br>
+(trg)="s52"> ユーザー ' % s ' と グループ ' % s ' の GID が一致しません 。 <br>
+<hr>
+(src)="s53"> Benutzerverzeichnis von Benutzer ' % s ' ist nicht ' % s ' , ignoriere . <br>
+(trg)="s53"> ユーザー ' % s ' のホームディレクトリは ' % s ' ではありません 。 無視します 。 <br>
+<hr>
+(src)="s54"> Konnte ' % s ' nciht erzeugen : % s <br>
+(trg)="s54"> ' % s ' の作成に失敗しました : % s <br>
+<hr>
+(src)="s55"> Wechseln der Gruppen-Liste fehlgeschlagen : % s <br>
+(trg)="s55"> グループ一覧の変更に失敗しました : % s <br>
+<hr>
+(src)="s56"> Wechseln der GID fehlgeschlagen : % s <br>
+(trg)="s56"> GID の変更に失敗しました : % s <br>
+<hr>
+(src)="s57"> Wechseln der UID fehlgeschlagen : % s <br>
+(trg)="s57"> UID の変更に失敗しました : % s <br>
+<hr>
+(src)="s59"> System-Modus auf dieser Plattform nicht unterstützt . <br>
+(trg)="s59"> このプラットフォームではシステム全域のモードはサポートがありません 。 <br>
+<hr>
+(src)="s60"> setrlimit ( % s , ( % u , % u ) ) fehlgeschlagen : % s <br>
+(trg)="s60"> setrlimit ( % s , ( % u , % u ) ) は失敗 : % s <br>
+<hr>
+(src)="s61"> Parsen der Kommandzeile fehlgeschlagen . <br>
+(trg)="s61"> コマンドラインの構文解析に失敗しました 。 <br>
+<hr>
+(src)="s63"> Daemon läuft nicht <br>
+(trg)="s63"> デーモンは稼働していません <br>
+<hr>
+(src)="s64"> Daemon läuft als PID % u <br>
+(trg)="s64"> デーモンは PID % u として稼働していません <br>
+<hr>
+(src)="s65"> Konnte Prozess nicht abbrechen : % s <br>
+(trg)="s65"> デーモンのキルに失敗しました : % s <br>
+<hr>
+(src)="s66"> Dieses Programm sollte ohne die Option --system nicht als Administrator ausgeführt werden . <br>
+(trg)="s66"> このプログラムは root として実行されるように意図されていません （ --system を 指定していない限り ） 。 <br>
+<hr>
+(src)="s67"> Root-Berechtigungen benötigt . <br>
+(trg)="s67"> Root の権限が必要です 。 <br>
+<hr>
+(src)="s68"> --start nicht unterstützt für System-Instanzen . <br>
+(trg)="s68"> --start はシステムインスタンスではサポートがありません 。 <br>
+<hr>
+(src)="s71"> System-Modus aktiv , jeodch --disallow-exit nicht gesetzt ! <br>
+(trg)="s71"> システムモードで実行中です 、 しかし --disallow-exit がセットされていません ! <br>
+<hr>
+(src)="s72"> System-Modus aktiv , jedoch --disallow-module-loading nicht gesetzt ! <br>
+(trg)="s72"> システムモードで実行中です 、 しかし --disallow-module-loading がセットされていません ! <br>
+<hr>
+(src)="s73"> System-Modus aktiv , SHM-Modus gezwungenermaßen deaktiviert ! <br>
+(trg)="s73"> システムモードで実行中です 、 強制的に SHM モードを無効にしています ! <br>
+<hr>
+(src)="s74"> System-Modus aktiv , Exit-Idle-Time gezwungenermaßen deaktiviert ! <br>
+(trg)="s74"> システムモードで実行中です 、 強制的に exit の遊び時間を無効にしています ! <br>
+<hr>
+(src)="s75"> Reservieren von STDIO fehlgeschlagen . <br>
+(trg)="s75"> stdio の取得に失敗しました 。 <br>
+<hr>
+(src)="s76"> pipe fehlgeschlagen : % s <br>
+(trg)="s76"> pipe ( ) は失敗 : % s <br>
+<hr>
+(src)="s77"> fork ( ) fehlgeschlagen : % s <br>
+(trg)="s77"> fork ( ) は失敗 : % s <br>
+<hr>
+(src)="s78"> read ( ) fehlgeschlagen : % s <br>
+(trg)="s78"> read ( ) は失敗 : % s <br>
+<hr>
+(src)="s79"> Start des Daemons fehlgeschlagen . <br>
+(trg)="s79"> デーモン開始に失敗しました 。 <br>
+<hr>
+(src)="s80"> Start des Daemons erfolgreich . <br>
+(trg)="s80"> デーモンが正常に開始しました 。 <br>
+<hr>
+(src)="s81"> read ( ) fehlgeschlagen : % s <br>
+(trg)="s81"> setsid ( ) は失敗 : % s <br>
+<hr>
+(src)="s82"> Dies ist PulseAudio % s <br>
+(trg)="s82"> これは PulseAudio % s です 。 <br>
+<hr>
+(src)="s83"> Kompilier-Host : % s <br>
+(trg)="s83"> コンパイルホスト : % s <br>
+<hr>
+(src)="s84"> Kompilier-CFLAGS : % s <br>
+(trg)="s84"> コンパイル CFLAGS : % s <br>
+<hr>
+(src)="s85"> Laufe auf Host : % s <br>
+(trg)="s85"> ホスト上で実行中 : % s <br>
+<hr>
+(src)="s86"> % u CPUs gefunden . <br>
+(trg)="s86"> CPU を % u 個見つけました 。 <br>
+<hr>
+(src)="s87"> Seitengröße ist % lu Bytes . <br>
+(trg)="s87"> ページサイズは % lu バイトです <br>
+<hr>
+(src)="s88"> Kompiliere mit Valgrind-Unterstützung : ja <br>
+(trg)="s88"> Valgrind サポートでのコンパイル : はい <br>
+<hr>
+(src)="s89"> Kompiliere mit Valgrind-Unterstützung : nein <br>
+(trg)="s89"> Valgrind サポートでのコンパイル : いいえ <br>
+<hr>
+(src)="s90"> Läuft im Valgrind-Modus : % s <br>
+(trg)="s90"> valgrind モードで実行中 : % s <br>
+<hr>
+(src)="s91"> Laufe auf Host : % s <br>
+(trg)="s91"> VM 上で実行中 : % s <br>
+<hr>
+(src)="s92"> Optimiertes Build : ja <br>
+(trg)="s92"> 最適化したビルド : はい <br>
+<hr>
+(src)="s93"> Optimiertes Build : nein <br>
+(trg)="s93"> 最適化したビルド : いいえ <br>
+<hr>
+(src)="s94"> NDEBUG definiert , alle Ansprüche deaktiviert . <br>
+(trg)="s94"> NDEBUG は定義済みです 。 アサーションは全て無効です 。 <br>
+<hr>
+(src)="s95"> FASTPATH definiert , nur fast-path-Ansprüche deaktiviert . <br>
+(trg)="s95"> FASTPATH は定義済みです 。 ファストパスアサーションのみが無効です 。 <br>
+<hr>
+(src)="s96"> Alle Ansprüche aktiviert . <br>
+(trg)="s96"> アサーションは全て有効です 。 <br>
+<hr>
+(src)="s97"> Beziehen der Maschinen-ID fehlgeschlagen <br>
+(trg)="s97"> マシン ID の取得に失敗 <br>
+<hr>
+(src)="s98"> System- ID ist % s . <br>
+(trg)="s98"> マシン ID は % s <br>
+<hr>
+(src)="s99"> System- ID ist % s . <br>
+(trg)="s99"> セッション ID は % s <br>
+<hr>
+(src)="s100"> Nutze Laufzeit-Verzeichnis % s . <br>
+(trg)="s100"> ランタイムディレクトリ % s を使用 <br>
+<hr>
+(src)="s101"> Nutze Zustands-Verzeichnis % s . <br>
+(trg)="s101"> 状態ディレクトリ % s を使用 <br>
+<hr>
+(src)="s102"> Modul-Verzeichnis % s benutzen . <br>
+(trg)="s102"> モジュールディレクトリ % s を使用 <br>
+<hr>
+(src)="s103"> Laufe im System-Modus : % s <br>
+(trg)="s103"> システムモードで実行中 : % s <br>
+<hr>
+(src)="s105"> pa _ pid _ file _ create ( ) fehlgeschlagen . <br>
+(trg)="s105"> pa _ pid _ file _ create ( ) は失敗 <br>
+<hr>
+</body>
+</html>

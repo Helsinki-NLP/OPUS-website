@@ -1,0 +1,316 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# de_CH/Pulseaudio.master/Pulseaudio.master.xml.gz<br>
+# nl/Pulseaudio.master/Pulseaudio.master.xml.gz
+
+<p><hr>
+(src)="s1"> Root-Privilegien aufräumen . <br>
+(trg)="s1"> Rechten opschonen . <br>
+<hr>
+(src)="s2"> % s [ options ] BEFEHLE : -h , --help Zeige diese Hilfe --version Zeige Version --dump-conf Zeige Standardkonfiguration --dump-modules Zeige Liste verfügbarer Module --dump-resample-methods Zeige verfügbare Resample-Methoden --cleanup-shm Cleanup stale shared memory segments --start Starte Daemon , falls noch nicht geschehen -k --kill Laufenden Daemon beenden --check Prüfe laufende Daemone ( gibt nur einen Exit-Code zurück ) OPTIONS : --system [ = BOOL ] Als systemweite Instanz ausführen -D , --daemonize [ = BOOL ] Nach Start zum Daemon machen --fail [ = BOOL ] Beenden , wenn Start fehlschlägt --high-priority [ = BOOL ] Nutze höchste Priorität ( Nur verfügbar als root , wenn SUID oder mit erhöhtem RLIMIT _ NICE ) --realtime [ = BOOL ] Versuche , Echtzeit-Scheduling zu aktivieren ( Nur verfügbar als root , wenn SUID oder mit erhöhtem RLIMIT _ RTPRIO ) --disallow-module-loading [ = BOOL ] Verbiete ( Ent- ) laden durch Nutzer angeforderter Module nach dem Start --disallow-exit [ = BOOL ] Verbiete Beenden auf Anfrage des Nutzers --exit-idle-time = SECS Beende Daemon , wenn für diese Zeit untätig --module-idle-time = SECS Entlade untätige Module nach dieser Zeit --scache-idle-time = SECS Entlade untätige automatisch geladene Samples nach dieser Zeit --log-level [ = STUFE ] Grad der Ausführlichkeit angeben -v Ausführliche Meldungen --log-target = { auto , syslog , stderr } Protokoll-Ziel angeben -p , --dl-search-path = PFAD Suchpfad für dynamisch freigegebene Objekte ( Plugins ) --resample-method = METHODE Nutze diese Resampling-Methode ( Siehe --dump-resample-methods für mögliche Werte ) --use-pid-file [ = BOOL ] Eine PID-Datei erstellen --no-cpu-limit [ = BOOL ] CPU-Lastbegrenzung auf unterstützten Systemen nicht installieren . --disable-shm [ = BOOL ] Keine Unterstützung für Shared Memory . STARTUP-SCRIPT : -L , --load = " MODUL-ARGUMENTE " Plugin-Modul mit diesen Parametern laden . -F , --file = DATEINAMEN Dieses Skript ausführen -C Nach Start auf laufendem TTY eine Kommandozeile öffnen -n Standardskript nicht laden <br>
+(trg)="s2"> %s [opties] COMMANDO'S: -h, --help Laat deze hulp zien --version Laat versie zien --dump-conf Dump standaard configuratie --dump-modules Dump lijst van beschikbare modules --dump-resample-methods Dump beschikbare resample methodes --cleanup-shm Schoon oud gedeelde geheugen segmenten op --start Start de daemon als deze niet draait -k --kill Schiet een draaiende daemon af --check Controleer voor een draaiende daemon (geeft alleen uitgangs code terug) OPTIES: --system[=BOOL] Draaieals systeem-brede instance -D, --daemonize[=BOOL] Maak daemon na opstarten --fail[=BOOL] Verlaat als opstarten mislukt --high-priority[=BOOL] Probeer een hoog nice nivo in te stellen (only beschikbaar voor, als SUID of met verhoogde RLIMIT_NICE) --realtime[=BOOL] Probeer realtime scheduling aan te zetten (alleen beschikbaar voor root, als SUID of met verhoogde RLIMIT_RTPRIO) --disallow-module-loading[=BOOL] Sta de module gebruiker niet toe om de gevraagde module te laden/verwijderen na opstarten --disallow-exit[=BOOL] Sta de gebruiker het gevraagde vertrek niet toe --exit-idle-time=SECS Sluit de daemon af deze niets doet en deze tijd verstreken is --module-idle-time=SECS Verwijder automatisch geladen modules als deze niets doen en deze tijd verstreken is --scache-idle-time=SECS Verwijder automatisch geladen samples als deze niets doen en deze tijd verstreken is --log-level[=LEVEL] Verhoog of instellen van breedsprakigheids nivo -v Verhoog breedsprakigheids nivo --log-target={auto,syslog,stderr} Specificeer het log doel --log-meta[=BOOL] Voeg code locatie toe aan log boodschappen --log-time[=BOOL] Voeg tijdstempels toe aan log boodschappen --log-backtrace=FRAMES Voeg een backtrace toe aan log boodscvhappen -p, --dl-search-path=PATH Stel het zoek pad voor dynamisch gedeelde objecten in (plugins) --resample-method=METHOD Gebruik de opgegeven resampling methode (Zie --dump-resample-methods voor mogelijke waardes) --use-pid-file[=BOOL] Maak een PID bestand --no-cpu-limit[=BOOL] Installeer geen CPU load begrenzer op platforms die dat ondersteunen. --disable-shm[=BOOL] Zet gedeeld heugen ondersteuning uit. OPSTART SCRIPT: -L, --load="MODULE ARGUMENTS" Laad de opgegeven plugin module met de opgegeven argumenten -F, --file=FILENAME Draai het opgegeven script -C Open een opdrachtregel op de draaiende TTY na het opstarten -n Laad het standaard script bestand niet <br>
+<hr>
+(src)="s3"> Option --daemonize erfordert bool 'schen Wert <br>
+(trg)="s3"> --daemonize verwacht een boolean argument <br>
+<hr>
+(src)="s4"> Option --fail erfordert bool 'schen Wert <br>
+(trg)="s4"> --fail verwacht een boolean argument <br>
+<hr>
+(src)="s5"> --log-level erfordert Wert für Grad der Protokollierung ( entweder numerisch im Bereich 0 .. 4 or einen dieser : debug , info , notice , warn , error ) . <br>
+(trg)="s5">--log-level verwacht een log level argument (numeriek uit de reeks 0..4 of een van type debug, info, notice, warn, error). <br>
+<hr>
+(src)="s6"> Option --high-priority erfordert bool 'schen Wert <br>
+(trg)="s6"> --high-priority verwacht een boolean argument <br>
+<hr>
+(src)="s7"> Option --realtime erfordert bool 'schen Wert <br>
+(trg)="s7"> --realtime verwacht een boolean argument <br>
+<hr>
+(src)="s8"> Option --disallow-module-loading erfordert bool 'schen Wert <br>
+(trg)="s8"> --disallow-module-loading verwacht een boolean argument <br>
+<hr>
+(src)="s9"> --disallow-exit erfordert boolsches Argument <br>
+(trg)="s9"> --disallow-exit verwacht een bolean argument <br>
+<hr>
+(src)="s10"> Option --use-pid-file erfordert bool 'schen Wert <br>
+(trg)="s10"> --use-pid-file verwacht een boolean argument <br>
+<hr>
+(src)="s11"> Ungültiges Log-Ziel : Benutzen Sie entweder ' syslog ' , ' stderr ' oder ' auto ' . <br>
+(trg)="s11"> Ongeldig log doel : gebruik een van ' syslog ' , ' stderr ' , ' auto ' . <br>
+<hr>
+(src)="s12"> Ungültiges Log-Ziel : Benutzen Sie entweder ' syslog ' , ' stderr ' oder ' auto ' . <br>
+(trg)="s12"> Ongeldig log doel : gebruik een van ' syslog ' , ' stderr ' , ' auto ' . <br>
+<hr>
+(src)="s13"> --realtime erfordert boolsches Argument <br>
+(trg)="s13"> --log-time verwacht een boolean argument <br>
+<hr>
+(src)="s14"> --log-meta erfordert boolschen Wert <br>
+(trg)="s14"> --log-meta verwacht een boolean argument <br>
+<hr>
+(src)="s15"> Ungültige Resample-Methode ' % s ' . <br>
+(trg)="s15"> Ongeldige resample methode ' % s ' . <br>
+<hr>
+(src)="s16"> --System erwartet Boolean-Argument <br>
+(trg)="s16"> --system verwacht een boolean argument <br>
+<hr>
+(src)="s17"> Option --no-cpu-limit erfordert bool 'schen Wert <br>
+(trg)="s17"> --no-cpu-limit verwacht een boolean argument <br>
+<hr>
+(src)="s18"> Option --disable-shm erfordert bool 'schen Wert <br>
+(trg)="s18"> --disable-shm verwacht een boolean argument <br>
+<hr>
+(src)="s19"> [ % s : % u ] Ungültiges Log-Ziel ' % s ' . <br>
+(trg)="s19"> [ % s : % u ] Ongeldig logdoel ' % s ' . <br>
+<hr>
+(src)="s20"> [ % s : % u ] Ungültige Log-Stufe ' % s ' . <br>
+(trg)="s20"> [ % s : % u ] Ongeldig logniveau ' % s ' . <br>
+<hr>
+(src)="s21"> [ % s : % u ] Ungültige Resample-Methode ' % s ' . <br>
+(trg)="s21"> [ % s : % u ] Ongeldige resample-methode ‘ % s ’ . <br>
+<hr>
+(src)="s22"> [ % s : % u ] Ungültiges rlimit ' % s ' . <br>
+(trg)="s22"> [ % s : % u ] Ongeldige rlimit ‘ % s ’ . <br>
+<hr>
+(src)="s23"> [ % s : % u ] Ungültiges Sample-Format ' % s ' . <br>
+(trg)="s23"> [ % s : % u ] Ongeldig sampleformaat ‘ % s ’ . <br>
+<hr>
+(src)="s24"> [ % s : % u ] Ungültige Sample-Rate ' % s ' . <br>
+(trg)="s24"> [ % s : % u ] Ongeldige samlperate ‘ % s ’ . <br>
+<hr>
+(src)="s25"> [ % s : % u ] Ungültige Sample-Kanäle ' % s ' . <br>
+(trg)="s25"> [ % s : % u ] Ongeldige sample-kanalen ‘ % s ’ . <br>
+<hr>
+(src)="s26"> [ % s : % u ] Ungültige Kanal-Zuordnung ' % s ' . <br>
+(trg)="s26"> [ % s : % u ] Ongeldige kanalenkaart ‘ % s ’ . <br>
+<hr>
+(src)="s27"> [ % s : % u ] Ungültige Anzahl von Fragmenten ' % s ' . <br>
+(trg)="s27"> [ % s : % u ] Ongeldig aantal fragmenten ' % s ' . <br>
+<hr>
+(src)="s28"> [ % s : % u ] Ungültige Fragmentgröße ' % s ' . <br>
+(trg)="s28"> [ % s : % u ] Ongeldige fragmentgrootte ‘ % s ’ . <br>
+<hr>
+(src)="s29"> [ % s : % u ] Ungültige Nice-Stufe ' % s ' . <br>
+(trg)="s29"> [ % s : % u ] Ongeldig nice niveau ‘ % s ’ . <br>
+<hr>
+(src)="s30"> [ % s : % u ] Ungültige Sample-Rate ' % s ' . <br>
+(trg)="s30"> [ % s : % u ] Ongeldige samlperate ‘ % s ’ . <br>
+<hr>
+(src)="s31"> Öffnen der Konfigurationsdatei fehlgeschlagen : % s <br>
+(trg)="s31"> Openen van configuratiebestand % s mislukt . <br>
+<hr>
+(src)="s32"> Die angegebene Standard-Kanalzuordnung hat eine andere Anzahl von Kanälen als die angegebene Standard-Kanal-Anzahl . <br>
+(trg)="s32"> De opgegeven standaard kanalenkaart heeft een ander aantal kanalen dan de opgegeven standaard aantal kanalen . <br>
+<hr>
+(src)="s33"> # # # Lese von Konfigurationsdatei : % s # # # <br>
+(trg)="s33"> # # # Lees uit het configuratiebestand : % s # # # <br>
+<hr>
+(src)="s34"> Name : % s <br>
+(trg)="s34"> Naam : % s <br>
+<hr>
+(src)="s35"> Keine Modul-Informationen verfügbar <br>
+(trg)="s35"> Geen module informatie beschikbaar <br>
+<hr>
+(src)="s36"> Version : % s <br>
+(trg)="s36"> Versie : % s <br>
+<hr>
+(src)="s37"> Beschreibung : % s <br>
+(trg)="s37"> Beschrijving : % s <br>
+<hr>
+(src)="s38"> Autor : % s <br>
+(trg)="s38"> Auteur : % s <br>
+<hr>
+(src)="s39"> Verwendung : % s <br>
+(trg)="s39"> Gebruik : % s <br>
+<hr>
+(src)="s40"> Lade einmalig : % s <br>
+(trg)="s40"> Laad eenmaal : % s <br>
+<hr>
+(src)="s41"> DEPRECATION WARNING : % s <br>
+(trg)="s41"> ACHTERHAALDHEIDSWAARSCHUWING : % s <br>
+<hr>
+(src)="s42"> Pfad : % s <br>
+(trg)="s42"> Pad : % s <br>
+<hr>
+(src)="s43"> Öffnen der Datei ' % s ' fehlgeschlagen <br>
+(trg)="s43"> Open van configuratiebestand ‘ % s ’ mislukte : % s <br>
+<hr>
+(src)="s44"> Ursprünglicher dlopen-Loader konnte nicht gefunden werden . <br>
+(trg)="s44"> Kon de originele lt _ dlopen lader niet vinden . <br>
+<hr>
+(src)="s45"> Neuer dlopen-Loader konnte nicht gefunden werden . <br>
+(trg)="s45"> Kon die nieuwe dl lader niet toekennen . <br>
+<hr>
+(src)="s46"> Hinzufügen von Bind-Now-Loader fehlgeschlagen . <br>
+(trg)="s46"> Kon bind-now-loader niet toevoegen . <br>
+<hr>
+(src)="s47"> Signal % s empfangen . <br>
+(trg)="s47"> Signaal % s ontvangen . <br>
+<hr>
+(src)="s48"> Wird beendet . <br>
+(trg)="s48"> Afsluiten . <br>
+<hr>
+(src)="s49"> Benutzer ' % s ' nicht gefunden . <br>
+(trg)="s49"> Kon gebruiker ' % s ' niet vinden . <br>
+<hr>
+(src)="s50"> Gruppe ' % s ' nicht gefunden . <br>
+(trg)="s50"> Kon groep ‘ % s ’ niet vinden . <br>
+<hr>
+(src)="s51"> Benutzer ' % s ' ( UID % lu ) und Gruppe ' % s ' ( GID % lu ) gefunden . <br>
+(trg)="s51"> Gebruiker ‘ % s ’ ( UID % lu ) en groep ‘ % s ’ ( GID % lu ) gevonden . <br>
+<hr>
+(src)="s52"> GID von Benutzer ' % s ' und Gruppe ' % s ' stimmen nicht überein . <br>
+(trg)="s52"> GID van gebruiker ‘ % s ’ en van groep ‘ % s ’ passen niet bij elkaar . <br>
+<hr>
+(src)="s53"> Benutzerverzeichnis von Benutzer ' % s ' ist nicht ' % s ' , ignoriere . <br>
+(trg)="s53"> Persoonlijke map van gebruiker ‘ % s ’ is niet ‘ % s ’ , negeer het . <br>
+<hr>
+(src)="s54"> Konnte ' % s ' nciht erzeugen : % s <br>
+(trg)="s54"> Aanmaken van ‘ % s ’ mislukt : % s <br>
+<hr>
+(src)="s55"> Wechseln der Gruppen-Liste fehlgeschlagen : % s <br>
+(trg)="s55"> Veranderen van groepslijst mislukt : % s <br>
+<hr>
+(src)="s56"> Wechseln der GID fehlgeschlagen : % s <br>
+(trg)="s56"> Veranderen van GID mislukt : % s <br>
+<hr>
+(src)="s57"> Wechseln der UID fehlgeschlagen : % s <br>
+(trg)="s57"> Veranderen van UID mislukt : % s <br>
+<hr>
+(src)="s59"> System-Modus auf dieser Plattform nicht unterstützt . <br>
+(trg)="s59"> Systeembrede modus wordt op dit platform niet ondersteund . <br>
+<hr>
+(src)="s60"> setrlimit ( % s , ( % u , % u ) ) fehlgeschlagen : % s <br>
+(trg)="s60"> setrlimit ( % s , ( % u , % u ) ) mislukte : % s <br>
+<hr>
+(src)="s61"> Parsen der Kommandzeile fehlgeschlagen . <br>
+(trg)="s61"> Analyseren van de opdrachtregel mislukte . <br>
+<hr>
+(src)="s63"> Daemon läuft nicht <br>
+(trg)="s63"> Voorziening draait niet <br>
+<hr>
+(src)="s64"> Daemon läuft als PID % u <br>
+(trg)="s64"> Voorziening draait met PID % u <br>
+<hr>
+(src)="s65"> Konnte Prozess nicht abbrechen : % s <br>
+(trg)="s65"> Elimineren van voorziening mislukt : ‘ % s ’ <br>
+<hr>
+(src)="s66"> Dieses Programm sollte ohne die Option --system nicht als Administrator ausgeführt werden . <br>
+(trg)="s66"> Dit programma is niet bedoeld om als root gedraaid te worden ( behalve als --system is opgegeven ) . <br>
+<hr>
+(src)="s67"> Root-Berechtigungen benötigt . <br>
+(trg)="s67"> Beheerdersrechten vereist . <br>
+<hr>
+(src)="s68"> --start nicht unterstützt für System-Instanzen . <br>
+(trg)="s68"> --start wordt niet ondersteund voor systeeminstanties <br>
+<hr>
+(src)="s71"> System-Modus aktiv , jeodch --disallow-exit nicht gesetzt ! <br>
+(trg)="s71"> Draaiend in systeemmodus , maar --disallow-exit is niet ingesteld ! <br>
+<hr>
+(src)="s72"> System-Modus aktiv , jedoch --disallow-module-loading nicht gesetzt ! <br>
+(trg)="s72"> Draaiend in systeemmodus , maar --disallow-module-loading is niet gezet ! <br>
+<hr>
+(src)="s73"> System-Modus aktiv , SHM-Modus gezwungenermaßen deaktiviert ! <br>
+(trg)="s73"> Draaiend in systeemmodus , geforceerd uitzetten van SHM-modus ! <br>
+<hr>
+(src)="s74"> System-Modus aktiv , Exit-Idle-Time gezwungenermaßen deaktiviert ! <br>
+(trg)="s74"> Draaiend in systeemmodus , geforceerd uitzetten van exit idle time ! <br>
+<hr>
+(src)="s75"> Reservieren von STDIO fehlgeschlagen . <br>
+(trg)="s75"> Verkrijgen van stdio mislukte . <br>
+<hr>
+(src)="s76"> pipe fehlgeschlagen : % s <br>
+(trg)="s76"> pipe mislukte : % s <br>
+<hr>
+(src)="s77"> fork ( ) fehlgeschlagen : % s <br>
+(trg)="s77"> fork ( ) mislukte : % s <br>
+<hr>
+(src)="s78"> read ( ) fehlgeschlagen : % s <br>
+(trg)="s78"> read ( ) mislukte : % s <br>
+<hr>
+(src)="s79"> Start des Daemons fehlgeschlagen . <br>
+(trg)="s79"> Voorziening opstarten mislukt . <br>
+<hr>
+(src)="s80"> Start des Daemons erfolgreich . <br>
+(trg)="s80"> Voorziening met succes opgestart . <br>
+<hr>
+(src)="s81"> read ( ) fehlgeschlagen : % s <br>
+(trg)="s81"> read ( ) mislukte : % s <br>
+<hr>
+(src)="s82"> Dies ist PulseAudio % s <br>
+(trg)="s82"> Dit is PulseAudio % s <br>
+<hr>
+(src)="s83"> Kompilier-Host : % s <br>
+(trg)="s83"> Compilatiehost : % s <br>
+<hr>
+(src)="s84"> Kompilier-CFLAGS : % s <br>
+(trg)="s84"> Compilatie-CFLAGS : % s <br>
+<hr>
+(src)="s85"> Laufe auf Host : % s <br>
+(trg)="s85"> Draaiend op host : % s <br>
+<hr>
+(src)="s86"> % u CPUs gefunden . <br>
+(trg)="s86"> % u CPU ' s gevonden . <br>
+<hr>
+(src)="s87"> Seitengröße ist % lu Bytes . <br>
+(trg)="s87"> Pagina grootte is % lu bytes <br>
+<hr>
+(src)="s88"> Kompiliere mit Valgrind-Unterstützung : ja <br>
+(trg)="s88"> Gecompileerd met Valgrind ondersteuning : ja <br>
+<hr>
+(src)="s89"> Kompiliere mit Valgrind-Unterstützung : nein <br>
+(trg)="s89"> Gecompileerd met Valgrind ondersteuning : nee <br>
+<hr>
+(src)="s90"> Läuft im Valgrind-Modus : % s <br>
+(trg)="s90"> Draaiend in valgrind-modus : % s <br>
+<hr>
+(src)="s91"> Laufe auf Host : % s <br>
+(trg)="s91"> Draaiend op host : % s <br>
+<hr>
+(src)="s92"> Optimiertes Build : ja <br>
+(trg)="s92"> Geoptimaliseerd gebouwd : ja <br>
+<hr>
+(src)="s93"> Optimiertes Build : nein <br>
+(trg)="s93"> Geoptimaliseerd gebouwd : nee <br>
+<hr>
+(src)="s94"> NDEBUG definiert , alle Ansprüche deaktiviert . <br>
+(trg)="s94"> NDEBUG gedefinieerd , alle asserts uitgezet . <br>
+<hr>
+(src)="s95"> FASTPATH definiert , nur fast-path-Ansprüche deaktiviert . <br>
+(trg)="s95"> FASTPATH gedefinieerd , alleen fast path-asserts uitgezet . <br>
+<hr>
+(src)="s96"> Alle Ansprüche aktiviert . <br>
+(trg)="s96"> Alle asserts aangezet . <br>
+<hr>
+(src)="s97"> Beziehen der Maschinen-ID fehlgeschlagen <br>
+(trg)="s97"> Machine-ID verkrijgen mislukt <br>
+<hr>
+(src)="s98"> System- ID ist % s . <br>
+(trg)="s98"> Machine-ID is : % s . <br>
+<hr>
+(src)="s99"> System- ID ist % s . <br>
+(trg)="s99"> Sessie-ID is : % s . <br>
+<hr>
+(src)="s100"> Nutze Laufzeit-Verzeichnis % s . <br>
+(trg)="s100"> Gebruik van runtime-map % s . <br>
+<hr>
+(src)="s101"> Nutze Zustands-Verzeichnis % s . <br>
+(trg)="s101"> Verbruik van state-map % s . <br>
+<hr>
+(src)="s102"> Modul-Verzeichnis % s benutzen . <br>
+(trg)="s102"> Gebruik van module-map % s . <br>
+<hr>
+(src)="s103"> Laufe im System-Modus : % s <br>
+(trg)="s103"> Draaiend in systeemmodus : % s <br>
+<hr>
+(src)="s105"> pa _ pid _ file _ create ( ) fehlgeschlagen . <br>
+(trg)="s105"> pa _ pid _ file _ create ( ) mislukte . <br>
+<hr>
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# de_CH/Pulseaudio.master/Pulseaudio.master.xml.gz<br>
+# sr/Pulseaudio.master/Pulseaudio.master.xml.gz
+
+<p><hr>
+(src)="s1"> Root-Privilegien aufräumen . <br>
+(trg)="s1"> Чистим повластице . <br>
+<hr>
+(src)="s2"> % s [ options ] BEFEHLE : -h , --help Zeige diese Hilfe --version Zeige Version --dump-conf Zeige Standardkonfiguration --dump-modules Zeige Liste verfügbarer Module --dump-resample-methods Zeige verfügbare Resample-Methoden --cleanup-shm Cleanup stale shared memory segments --start Starte Daemon , falls noch nicht geschehen -k --kill Laufenden Daemon beenden --check Prüfe laufende Daemone ( gibt nur einen Exit-Code zurück ) OPTIONS : --system [ = BOOL ] Als systemweite Instanz ausführen -D , --daemonize [ = BOOL ] Nach Start zum Daemon machen --fail [ = BOOL ] Beenden , wenn Start fehlschlägt --high-priority [ = BOOL ] Nutze höchste Priorität ( Nur verfügbar als root , wenn SUID oder mit erhöhtem RLIMIT _ NICE ) --realtime [ = BOOL ] Versuche , Echtzeit-Scheduling zu aktivieren ( Nur verfügbar als root , wenn SUID oder mit erhöhtem RLIMIT _ RTPRIO ) --disallow-module-loading [ = BOOL ] Verbiete ( Ent- ) laden durch Nutzer angeforderter Module nach dem Start --disallow-exit [ = BOOL ] Verbiete Beenden auf Anfrage des Nutzers --exit-idle-time = SECS Beende Daemon , wenn für diese Zeit untätig --module-idle-time = SECS Entlade untätige Module nach dieser Zeit --scache-idle-time = SECS Entlade untätige automatisch geladene Samples nach dieser Zeit --log-level [ = STUFE ] Grad der Ausführlichkeit angeben -v Ausführliche Meldungen --log-target = { auto , syslog , stderr } Protokoll-Ziel angeben -p , --dl-search-path = PFAD Suchpfad für dynamisch freigegebene Objekte ( Plugins ) --resample-method = METHODE Nutze diese Resampling-Methode ( Siehe --dump-resample-methods für mögliche Werte ) --use-pid-file [ = BOOL ] Eine PID-Datei erstellen --no-cpu-limit [ = BOOL ] CPU-Lastbegrenzung auf unterstützten Systemen nicht installieren . --disable-shm [ = BOOL ] Keine Unterstützung für Shared Memory . STARTUP-SCRIPT : -L , --load = " MODUL-ARGUMENTE " Plugin-Modul mit diesen Parametern laden . -F , --file = DATEINAMEN Dieses Skript ausführen -C Nach Start auf laufendem TTY eine Kommandozeile öffnen -n Standardskript nicht laden <br>
+(trg)="s2"> % s [ опције ] НАРЕДБЕ : -h , --help Прикажи ову помоћ --version Прикажи верзију --dump-conf Испиши подразумевана подешавања --dump-modules Испиши списак доступних модула --dump-resample-methods Испиши доступне вредности дискретизације --cleanup-shm Очисти бајате делове дељене меморије --start Покрени демон ако већ није покренут -k --kill Убиј покренути демон --check Провери постојање покренутог демона ( враћа само излазни ко ̑ д ) ОПЦИЈЕ : --system [ = логичка вредност ] Покрени као системски примерак -D , --daemonize [ = лог. вредност ] Покрени у позадини --fail [ = лог. вредност ] Изађи после неуспешног покретања --high-priority [ = лог. вредност ] Покушај поставити високоприоритетно распоређивање ( доступно само root-у , или преко SUID-а или са повишеним RLIMIT _ NICE нивоом ) --realtime [ = лог. вредност ] Покушај омогућити стварновременско распоређивање ( доступно само root-у , или преко SUID-а или са повишеним RLIMIT _ RTPRIO нивоом ) --disallow-module-loading [ = лог . ] Не дозвољавај учитавање / уклањање модула на кориснички захтев после покретања --disallow-exit [ = лог. вредност ] Не дозвољавај излаз на кориснички захтев --exit-idle-time = СЕКУНДИ Прекини рад демона после мировања од оволико секунди --module-idle-time = СЕКУНДИ Уклони самоучитане модуле после мировања од оволико секунди --scache-idle-time = СЕКУНДИ Уклони самоучитане примерке после мировања од оволико секунди --log-level [ = НИВО ] Повећај или постави ниво опширности -v Повећај ниво опширности --log-target = { auto , syslog , stderr } Наведи циљни дневник --log-meta [ = лог. вредност ] Укључи место у ко ̑ ду у порукама дневника --log-time [ = лог. вредност ] Укључи време у порукама дневника --log-backtrace = FRAMES Укључи трагове у порукама дневника -p , --dl-search-path = ПУТАЊА Постави путању претраге за динамички дељене објекте ( додаци ) --resample-method = НАЧИН Користи наведени начин дискретизације ( Погледај --dump-resample-methods за могуће вредности ) --use-pid-file [ = лог. вредност ] Направи PID датотеку --no-cpu-limit [ = лог. вредност ] Немој инсталирати ограничавање процесорског терета на платформама које то подржавају . --disable-shm [ = лог. вредност ] Онемогући подршку за дељену меморију . STARTUP SCRIPT : -L , --load = " ПАРАМЕТРИ МОДУЛА " Учитај наведени модул додатка са наведеним параметрима -F , --file = ИМЕДАТОТЕКЕ Покрени наведену скрипту -C Отвори командну линију на покренутом TTY-у после покретања -n Не учитавај подразумевану датотеку скрипте . <br>
+<hr>
+(src)="s3"> Option --daemonize erfordert bool 'schen Wert <br>
+(trg)="s3"> --daemonize очекује логички аргумент <br>
+<hr>
+(src)="s4"> Option --fail erfordert bool 'schen Wert <br>
+(trg)="s4"> --fail очекује логички аргумент <br>
+<hr>
+(src)="s5"> --log-level erfordert Wert für Grad der Protokollierung ( entweder numerisch im Bereich 0 .. 4 or einen dieser : debug , info , notice , warn , error ) . <br>
+(trg)="s5"> --log-level очекује аргумент за ниво записа ( или нумеричка вредност у опсегу 0 .. 4 или једно од debug , info , notice , warn , error ) . <br>
+<hr>
+(src)="s6"> Option --high-priority erfordert bool 'schen Wert <br>
+(trg)="s6"> --high-priority очекује логички аргумент <br>
+<hr>
+(src)="s7"> Option --realtime erfordert bool 'schen Wert <br>
+(trg)="s7"> --realtime очекује логички аргумент <br>
+<hr>
+(src)="s8"> Option --disallow-module-loading erfordert bool 'schen Wert <br>
+(trg)="s8"> --disallow-module-loading очекује логички аргумент <br>
+<hr>
+(src)="s9"> --disallow-exit erfordert boolsches Argument <br>
+(trg)="s9"> --disallow-exit очекује логички аргумент <br>
+<hr>
+(src)="s10"> Option --use-pid-file erfordert bool 'schen Wert <br>
+(trg)="s10"> --use-pid-file очекује логички аргумент <br>
+<hr>
+(src)="s11"> Ungültiges Log-Ziel : Benutzen Sie entweder ' syslog ' , ' stderr ' oder ' auto ' . <br>
+(trg)="s11"> Неисправан циљни дневник : користите једно од „ syslog “ , „ stderr “ или „ auto “ . <br>
+<hr>
+(src)="s12"> Ungültiges Log-Ziel : Benutzen Sie entweder ' syslog ' , ' stderr ' oder ' auto ' . <br>
+(trg)="s12"> Неисправан циљни дневник : користите једно од „ syslog “ , „ stderr “ или „ auto “ . <br>
+<hr>
+(src)="s13"> --realtime erfordert boolsches Argument <br>
+(trg)="s13"> --log-time очекује логички аргумент <br>
+<hr>
+(src)="s14"> --log-meta erfordert boolschen Wert <br>
+(trg)="s14"> --log-meta очекује логички аргумент <br>
+<hr>
+(src)="s15"> Ungültige Resample-Methode ' % s ' . <br>
+(trg)="s15"> Неисправан начин дискретизације „ % s “ . <br>
+<hr>
+(src)="s16"> --System erwartet Boolean-Argument <br>
+(trg)="s16"> --system очекује логички аргумент <br>
+<hr>
+(src)="s17"> Option --no-cpu-limit erfordert bool 'schen Wert <br>
+(trg)="s17"> --no-cpu-limit очекује логички аргумент <br>
+<hr>
+(src)="s18"> Option --disable-shm erfordert bool 'schen Wert <br>
+(trg)="s18"> --disable-shm очекује логички аргумент <br>
+<hr>
+(src)="s19"> [ % s : % u ] Ungültiges Log-Ziel ' % s ' . <br>
+(trg)="s19"> [ % s : % u ] Неисправан циљни дневник „ % s “ . <br>
+<hr>
+(src)="s20"> [ % s : % u ] Ungültige Log-Stufe ' % s ' . <br>
+(trg)="s20"> [ % s : % u ] Неисправан ниво опширности у дневнику „ % s “ . <br>
+<hr>
+(src)="s21"> [ % s : % u ] Ungültige Resample-Methode ' % s ' . <br>
+(trg)="s21"> [ % s : % u ] Неисправан начин дискретизације „ % s “ . <br>
+<hr>
+(src)="s22"> [ % s : % u ] Ungültiges rlimit ' % s ' . <br>
+(trg)="s22"> [ % s : % u ] Неисправан rlimit „ % s “ . <br>
+<hr>
+(src)="s23"> [ % s : % u ] Ungültiges Sample-Format ' % s ' . <br>
+(trg)="s23"> [ % s : % u ] Неисправан формат узорка „ % s “ . <br>
+<hr>
+(src)="s24"> [ % s : % u ] Ungültige Sample-Rate ' % s ' . <br>
+(trg)="s24"> [ % s : % u ] Неисправна учестаност дискретизације „ % s “ . <br>
+<hr>
+(src)="s25"> [ % s : % u ] Ungültige Sample-Kanäle ' % s ' . <br>
+(trg)="s25"> [ % s : % u ] Неисправни канали узорка „ % s “ . <br>
+<hr>
+(src)="s26"> [ % s : % u ] Ungültige Kanal-Zuordnung ' % s ' . <br>
+(trg)="s26"> [ % s : % u ] Неисправна мапа канала „ % s “ . <br>
+<hr>
+(src)="s27"> [ % s : % u ] Ungültige Anzahl von Fragmenten ' % s ' . <br>
+(trg)="s27"> [ % s : % u ] Неисправан број одломака „ % s “ . <br>
+<hr>
+(src)="s28"> [ % s : % u ] Ungültige Fragmentgröße ' % s ' . <br>
+(trg)="s28"> [ % s : % u ] Неисправна величина одломка „ % s “ . <br>
+<hr>
+(src)="s29"> [ % s : % u ] Ungültige Nice-Stufe ' % s ' . <br>
+(trg)="s29"> [ % s : % u ] Неисправан ниво приоритета „ % s “ . <br>
+<hr>
+(src)="s30"> [ % s : % u ] Ungültige Sample-Rate ' % s ' . <br>
+(trg)="s30"> [ % s : % u ] Неисправна учестаност дискретизације „ % s “ . <br>
+<hr>
+(src)="s31"> Öffnen der Konfigurationsdatei fehlgeschlagen : % s <br>
+(trg)="s31"> Неуспело отварање датотеке подешавања : % s <br>
+<hr>
+(src)="s32"> Die angegebene Standard-Kanalzuordnung hat eine andere Anzahl von Kanälen als die angegebene Standard-Kanal-Anzahl . <br>
+(trg)="s32"> Наведена мапа канала има нема исти број канала као што је наведено у подразумеваном броју канала . <br>
+<hr>
+(src)="s33"> # # # Lese von Konfigurationsdatei : % s # # # <br>
+(trg)="s33"> # # # Прочитај из датотеке подешавања : % s # # # <br>
+<hr>
+(src)="s34"> Name : % s <br>
+(trg)="s34"> Име : % s <br>
+<hr>
+(src)="s35"> Keine Modul-Informationen verfügbar <br>
+(trg)="s35"> Подаци о модулу нису доступни <br>
+<hr>
+(src)="s36"> Version : % s <br>
+(trg)="s36"> Верзија : % s <br>
+<hr>
+(src)="s37"> Beschreibung : % s <br>
+(trg)="s37"> Опис : % s <br>
+<hr>
+(src)="s38"> Autor : % s <br>
+(trg)="s38"> Аутор : % s <br>
+<hr>
+(src)="s39"> Verwendung : % s <br>
+(trg)="s39"> Употреба : % s <br>
+<hr>
+(src)="s40"> Lade einmalig : % s <br>
+(trg)="s40"> Учитај једном : % s <br>
+<hr>
+(src)="s41"> DEPRECATION WARNING : % s <br>
+(trg)="s41"> УПОЗОРЕЊЕ О ПРЕВАЗИЛАЖЕЊУ : % s <br>
+<hr>
+(src)="s42"> Pfad : % s <br>
+(trg)="s42"> Путања : % s <br>
+<hr>
+(src)="s43"> Öffnen der Datei ' % s ' fehlgeschlagen <br>
+(trg)="s43"> Неуспешно отварање датотеке подешавања „ % s “ : % s <br>
+<hr>
+(src)="s44"> Ursprünglicher dlopen-Loader konnte nicht gefunden werden . <br>
+(trg)="s44"> Неуспешна претрага за оригиналним lt _ dlopen учитавачем . <br>
+<hr>
+(src)="s45"> Neuer dlopen-Loader konnte nicht gefunden werden . <br>
+(trg)="s45"> Неуспешно смештање новог dl учитавача . <br>
+<hr>
+(src)="s46"> Hinzufügen von Bind-Now-Loader fehlgeschlagen . <br>
+(trg)="s46"> Неуспешно додавање „ повежи одмах “ учитавача . <br>
+<hr>
+(src)="s47"> Signal % s empfangen . <br>
+(trg)="s47"> Добих сигнал % s . <br>
+<hr>
+(src)="s48"> Wird beendet . <br>
+(trg)="s48"> Напуштам . <br>
+<hr>
+(src)="s49"> Benutzer ' % s ' nicht gefunden . <br>
+(trg)="s49"> Не могу наћи корисника „ % s “ . <br>
+<hr>
+(src)="s50"> Gruppe ' % s ' nicht gefunden . <br>
+(trg)="s50"> Не могу наћи групу „ % s “ . <br>
+<hr>
+(src)="s51"> Benutzer ' % s ' ( UID % lu ) und Gruppe ' % s ' ( GID % lu ) gefunden . <br>
+(trg)="s51"> Нађени су корисник „ % s “ ( UID % lu ) и група „ % s “ ( GID % lu ) . <br>
+<hr>
+(src)="s52"> GID von Benutzer ' % s ' und Gruppe ' % s ' stimmen nicht überein . <br>
+(trg)="s52"> GID корисника „ % s “ се не поклапа са групом „ % s “ . <br>
+<hr>
+(src)="s53"> Benutzerverzeichnis von Benutzer ' % s ' ist nicht ' % s ' , ignoriere . <br>
+(trg)="s53"> Лични директоријум корисника „ % s “ није „ % s “ , занемарујем . <br>
+<hr>
+(src)="s54"> Konnte ' % s ' nciht erzeugen : % s <br>
+(trg)="s54"> Неуспешно прављење „ % s “ : % s <br>
+<hr>
+(src)="s55"> Wechseln der Gruppen-Liste fehlgeschlagen : % s <br>
+(trg)="s55"> Неуспешна промена групног списка : % s <br>
+<hr>
+(src)="s56"> Wechseln der GID fehlgeschlagen : % s <br>
+(trg)="s56"> Неуспешна промена GID-а : % s <br>
+<hr>
+(src)="s57"> Wechseln der UID fehlgeschlagen : % s <br>
+(trg)="s57"> Неуспешна промена UID-а : % s <br>
+<hr>
+(src)="s59"> System-Modus auf dieser Plattform nicht unterstützt . <br>
+(trg)="s59"> Режим за читав систем није подржан на овој платформи . <br>
+<hr>
+(src)="s60"> setrlimit ( % s , ( % u , % u ) ) fehlgeschlagen : % s <br>
+(trg)="s60"> setrlimit ( % s , ( % u , % u ) ) није успело : % s <br>
+<hr>
+(src)="s61"> Parsen der Kommandzeile fehlgeschlagen . <br>
+(trg)="s61"> Неуспешно тумачење командне линије . <br>
+<hr>
+(src)="s63"> Daemon läuft nicht <br>
+(trg)="s63"> Демон није покренут <br>
+<hr>
+(src)="s64"> Daemon läuft als PID % u <br>
+(trg)="s64"> Демон је покренут са PID-ом % u <br>
+<hr>
+(src)="s65"> Konnte Prozess nicht abbrechen : % s <br>
+(trg)="s65"> Неуспешно убијање демона : % s <br>
+<hr>
+(src)="s66"> Dieses Programm sollte ohne die Option --system nicht als Administrator ausgeführt werden . <br>
+(trg)="s66"> Није намеравано да се овај програм покреће из root налога ( осим у случају када је --system наведено ) <br>
+<hr>
+(src)="s67"> Root-Berechtigungen benötigt . <br>
+(trg)="s67"> Потребна су root овлашћења . <br>
+<hr>
+(src)="s68"> --start nicht unterstützt für System-Instanzen . <br>
+(trg)="s68"> --start није подржано за системске примерке . <br>
+<hr>
+(src)="s71"> System-Modus aktiv , jeodch --disallow-exit nicht gesetzt ! <br>
+(trg)="s71"> Покренуто у системском режиму , али --disallow-exit није постављено ! <br>
+<hr>
+(src)="s72"> System-Modus aktiv , jedoch --disallow-module-loading nicht gesetzt ! <br>
+(trg)="s72"> Покренуто у системском режиму , али --disallow-module-loading није постављено ! <br>
+<hr>
+(src)="s73"> System-Modus aktiv , SHM-Modus gezwungenermaßen deaktiviert ! <br>
+(trg)="s73"> Покренуто у системском режиму , присилно онемогућујем SHM режим ! <br>
+<hr>
+(src)="s74"> System-Modus aktiv , Exit-Idle-Time gezwungenermaßen deaktiviert ! <br>
+(trg)="s74"> Покренуто у системском режиму , присилно онемогућујем гашење после одређеног времена мировања ! <br>
+<hr>
+(src)="s75"> Reservieren von STDIO fehlgeschlagen . <br>
+(trg)="s75"> Неуспешно проналажење стандардног улаза / излаза . <br>
+<hr>
+(src)="s76"> pipe fehlgeschlagen : % s <br>
+(trg)="s76"> Неуспешно пуштање података кроз цев : % s <br>
+<hr>
+(src)="s77"> fork ( ) fehlgeschlagen : % s <br>
+(trg)="s77"> Неуспела функција fork ( ) : % s <br>
+<hr>
+(src)="s78"> read ( ) fehlgeschlagen : % s <br>
+(trg)="s78"> Неуспела функција read ( ) : % s <br>
+<hr>
+(src)="s79"> Start des Daemons fehlgeschlagen . <br>
+(trg)="s79"> Неуспешно покретање демона . <br>
+<hr>
+(src)="s80"> Start des Daemons erfolgreich . <br>
+(trg)="s80"> Демон успешно покренут . <br>
+<hr>
+(src)="s81"> read ( ) fehlgeschlagen : % s <br>
+(trg)="s81"> Неуспела функција read ( ) : % s <br>
+<hr>
+(src)="s82"> Dies ist PulseAudio % s <br>
+(trg)="s82"> Ово је PulseAudio % s <br>
+<hr>
+(src)="s83"> Kompilier-Host : % s <br>
+(trg)="s83"> Домаћин компајлирања : % s <br>
+<hr>
+(src)="s84"> Kompilier-CFLAGS : % s <br>
+(trg)="s84"> CFLAGS компајлирања : % s <br>
+<hr>
+(src)="s85"> Laufe auf Host : % s <br>
+(trg)="s85"> Покренут на домаћину : % s <br>
+<hr>
+(src)="s86"> % u CPUs gefunden . <br>
+(trg)="s86"> Нашао % u процесор ( а ) <br>
+<hr>
+(src)="s87"> Seitengröße ist % lu Bytes . <br>
+(trg)="s87"> Величина странице је % lu бајтова <br>
+<hr>
+(src)="s88"> Kompiliere mit Valgrind-Unterstützung : ja <br>
+(trg)="s88"> Компајлирано са подршком за Valgrind : да <br>
+<hr>
+(src)="s89"> Kompiliere mit Valgrind-Unterstützung : nein <br>
+(trg)="s89"> Компајлирано са подршком за Valgrind : не <br>
+<hr>
+(src)="s90"> Läuft im Valgrind-Modus : % s <br>
+(trg)="s90"> Покренут у Valgrind режиму : % s <br>
+<hr>
+(src)="s91"> Laufe auf Host : % s <br>
+(trg)="s91"> Покренут на домаћину : % s <br>
+<hr>
+(src)="s92"> Optimiertes Build : ja <br>
+(trg)="s92"> Оптимизована изградња : да <br>
+<hr>
+(src)="s93"> Optimiertes Build : nein <br>
+(trg)="s93"> Оптимизована изградња : не <br>
+<hr>
+(src)="s94"> NDEBUG definiert , alle Ansprüche deaktiviert . <br>
+(trg)="s94"> NDEBUG дефинисан , сва обавештења искључена . <br>
+<hr>
+(src)="s95"> FASTPATH definiert , nur fast-path-Ansprüche deaktiviert . <br>
+(trg)="s95"> FASTPATH дефинисан , само обавештења брзе путање искључена . <br>
+<hr>
+(src)="s96"> Alle Ansprüche aktiviert . <br>
+(trg)="s96"> Сва обавештења омогућена . <br>
+<hr>
+(src)="s97"> Beziehen der Maschinen-ID fehlgeschlagen <br>
+(trg)="s97"> Неуспешно добављање ИБ машине <br>
+<hr>
+(src)="s98"> System- ID ist % s . <br>
+(trg)="s98"> ИБ машине је % s . <br>
+<hr>
+(src)="s99"> System- ID ist % s . <br>
+(trg)="s99"> ИБ сесије је % s . <br>
+<hr>
+(src)="s100"> Nutze Laufzeit-Verzeichnis % s . <br>
+(trg)="s100"> Користи се % s извршни директоријум . <br>
+<hr>
+(src)="s101"> Nutze Zustands-Verzeichnis % s . <br>
+(trg)="s101"> Користи се % s директоријум стања . <br>
+<hr>
+(src)="s102"> Modul-Verzeichnis % s benutzen . <br>
+(trg)="s102"> Користи се % s директоријум модула . <br>
+<hr>
+(src)="s103"> Laufe im System-Modus : % s <br>
+(trg)="s103"> Покренуто у системском режиму : % s <br>
+<hr>
+(src)="s105"> pa _ pid _ file _ create ( ) fehlgeschlagen . <br>
+(trg)="s105"> Неуспела функција pa _ pid _ file _ create ( ) . <br>
+<hr>
+</body>
+</html>

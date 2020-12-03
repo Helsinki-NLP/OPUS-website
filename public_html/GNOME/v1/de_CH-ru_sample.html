@@ -1,0 +1,316 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# de_CH/Pulseaudio.master/Pulseaudio.master.xml.gz<br>
+# ru/Pulseaudio.master/Pulseaudio.master.xml.gz
+
+<p><hr>
+(src)="s1"> Root-Privilegien aufräumen . <br>
+(trg)="s1"> Отказ от привилегий администратора . <br>
+<hr>
+(src)="s2"> % s [ options ] BEFEHLE : -h , --help Zeige diese Hilfe --version Zeige Version --dump-conf Zeige Standardkonfiguration --dump-modules Zeige Liste verfügbarer Module --dump-resample-methods Zeige verfügbare Resample-Methoden --cleanup-shm Cleanup stale shared memory segments --start Starte Daemon , falls noch nicht geschehen -k --kill Laufenden Daemon beenden --check Prüfe laufende Daemone ( gibt nur einen Exit-Code zurück ) OPTIONS : --system [ = BOOL ] Als systemweite Instanz ausführen -D , --daemonize [ = BOOL ] Nach Start zum Daemon machen --fail [ = BOOL ] Beenden , wenn Start fehlschlägt --high-priority [ = BOOL ] Nutze höchste Priorität ( Nur verfügbar als root , wenn SUID oder mit erhöhtem RLIMIT _ NICE ) --realtime [ = BOOL ] Versuche , Echtzeit-Scheduling zu aktivieren ( Nur verfügbar als root , wenn SUID oder mit erhöhtem RLIMIT _ RTPRIO ) --disallow-module-loading [ = BOOL ] Verbiete ( Ent- ) laden durch Nutzer angeforderter Module nach dem Start --disallow-exit [ = BOOL ] Verbiete Beenden auf Anfrage des Nutzers --exit-idle-time = SECS Beende Daemon , wenn für diese Zeit untätig --module-idle-time = SECS Entlade untätige Module nach dieser Zeit --scache-idle-time = SECS Entlade untätige automatisch geladene Samples nach dieser Zeit --log-level [ = STUFE ] Grad der Ausführlichkeit angeben -v Ausführliche Meldungen --log-target = { auto , syslog , stderr } Protokoll-Ziel angeben -p , --dl-search-path = PFAD Suchpfad für dynamisch freigegebene Objekte ( Plugins ) --resample-method = METHODE Nutze diese Resampling-Methode ( Siehe --dump-resample-methods für mögliche Werte ) --use-pid-file [ = BOOL ] Eine PID-Datei erstellen --no-cpu-limit [ = BOOL ] CPU-Lastbegrenzung auf unterstützten Systemen nicht installieren . --disable-shm [ = BOOL ] Keine Unterstützung für Shared Memory . STARTUP-SCRIPT : -L , --load = " MODUL-ARGUMENTE " Plugin-Modul mit diesen Parametern laden . -F , --file = DATEINAMEN Dieses Skript ausführen -C Nach Start auf laufendem TTY eine Kommandozeile öffnen -n Standardskript nicht laden <br>
+(trg)="s2"> % s [ параметры ] Команды : -h , --help Показать эту справку о параметрах --version Показать сведения о версии --dump-conf Вывести конфигурацию по умолчанию --dump-modules Вывести список доступных модулей --dump-resample-methods Вывести список доступных методов передискретизации . --cleanup-shm Очистить неиспользуемые блоки общей памяти --start Запустить демон , если ещё не запущен -k --kill Завершить работу запущенного демона --check Проверить , запущен ли демон ( возвращает только код завершения ) Параметры : --system [ = ЛОГ . ] Запустить в общесистемном режиме -D , --daemonize [ = ЛОГ . ] Запустить как демон --fail [ = ЛОГ . ] Выйти при ошибке запуска --high-priority [ = ЛОГ . ] Попытаться установить высокий приоритет ( nice ) . Доступно только с привилегиями администратора , с битом SUID у файла , либо при повышенном значении RLIMIT _ NICE . --realtime [ = ЛОГ . ] Попытаться включить планировщик реального времени . Доступно только с привилегиями администратора , с битом SUID у файла , либо при повышенном значении RLIMIT _ RTPRIO . --disallow-module-loading [ = ЛОГ . ] Запретить загрузку запрошенных пользователем модулей после запуска . --disallow-exit [ = ЛОГ . ] Запретить выход по запросу пользователя --exit-idle-time = СЕКУНДЫ Завершить работу демона после бездействия в течение указанного периода времени . --scache-idle-time = СЕКУНДЫ Выгрузить автоматически загруженные сэмплы после бездействия в течение указанного периода времени . --log-level [ = УРОВЕНЬ ] Повысить или установить уровень подробности журналирования . -v Повысить уровень подробности журналирования . --log-target = { auto , syslog , stderr , file : ПУТЬ , newfile : ПУТЬ } Задать журнал --log-meta [ = ЛОГ . ] Записывать в журнал позиции в исходном коде . --log-time [ = ЛОГ . ] Записывать в журнал отметки времени --log-backtrace = КАДРОВ Записывать в журнал стек вызовов -p , --dl-search-path = ПУТЬ Задать путь для поиска динамических разделяемых объектов ( расширений ) . --resample-method = МЕТОД Использовать указанный метод передискретизации . Используйте « --dump-resample-methods » для просмотра списка возможных значений . --use-pid-file [ = ЛОГ . ] Создать файл с идентификатором процесса ( PID ) . --no-cpu-limit [ = ЛОГ . ] Не устанавливать ограничитель загрузки процессора на платформах , на которых он поддерживается . --disable-shm [ = ЛОГ . ] Выключить поддержку общей памяти . Сценарии запуска : -L , --load = " МОДУЛЬ АРГУМЕНТЫ " Загрузить указанный модуль с указанными аргументами . -F , --file = ИМЯ _ ФАЙЛА Запустить указанный сценарий -C После запуска открыть командную строку в текущем терминале . -n Не загружать файл сценария , используемый по умолчанию . <br>
+<hr>
+(src)="s3"> Option --daemonize erfordert bool 'schen Wert <br>
+(trg)="s3"> « --daemonize » ожидает логический аргумент . <br>
+<hr>
+(src)="s4"> Option --fail erfordert bool 'schen Wert <br>
+(trg)="s4"> « --fail » ожидает логический аргумент . <br>
+<hr>
+(src)="s5"> --log-level erfordert Wert für Grad der Protokollierung ( entweder numerisch im Bereich 0 .. 4 or einen dieser : debug , info , notice , warn , error ) . <br>
+(trg)="s5"> « --log-level » ожидает уровень журналирования — либо число в диапазоне от 0 до 4 , либо одно из слов « debug » , « info » , « notice » , « warn » или « error » . <br>
+<hr>
+(src)="s6"> Option --high-priority erfordert bool 'schen Wert <br>
+(trg)="s6"> « --high-priority » ожидает логический аргумент . <br>
+<hr>
+(src)="s7"> Option --realtime erfordert bool 'schen Wert <br>
+(trg)="s7"> « --realtime » ожидает логический аргумент . <br>
+<hr>
+(src)="s8"> Option --disallow-module-loading erfordert bool 'schen Wert <br>
+(trg)="s8"> « --disallow-module-loading » ожидает логический аргумент . <br>
+<hr>
+(src)="s9"> --disallow-exit erfordert boolsches Argument <br>
+(trg)="s9"> « --disallow-exit » ожидает логический аргумент . <br>
+<hr>
+(src)="s10"> Option --use-pid-file erfordert bool 'schen Wert <br>
+(trg)="s10"> « --use-pid-file » ожидает логический аргумент . <br>
+<hr>
+(src)="s11"> Ungültiges Log-Ziel : Benutzen Sie entweder ' syslog ' , ' stderr ' oder ' auto ' . <br>
+(trg)="s11"> Недопустимый журнал : используйте « syslog » , « journal » , « stderr » , « auto » или файл — « file : &lt; \ <br>
+<hr>
+(src)="s12"> Ungültiges Log-Ziel : Benutzen Sie entweder ' syslog ' , ' stderr ' oder ' auto ' . <br>
+(trg)="s12">ÐÐµÐ´Ð¾Ð¿ÑÑÑÐ¸Ð¼ÑÐ¹ Ð¶ÑÑÐ½Ð°Ð»: Ð¸ÑÐ¿Ð¾Ð»ÑÐ·ÑÐ¹ÑÐµ Â«syslogÂ», Â«stderrÂ», Â«autoÂ» Ð¸Ð»Ð¸ ÑÐ°Ð¹Ð» â Â«file:&lt;\ÃÂÃÂµÃÂ´ÃÂ¾ÃÂ¿ÃÂÃÂÃÂÃÂ¸ÃÂ¼ÃÂÃÂ¹ ÃÂ¶ÃÂÃÂÃÂ½ÃÂ°ÃÂ»: ÃÂ¸ÃÂÃÂ¿ÃÂ¾ÃÂ»ÃÂÃÂ·ÃÂÃÂ¹ÃÂÃÂµ ÃÂ«syslogÃÂ», ÃÂ«stderrÃÂ», ÃÂ«autoÃÂ» ÃÂ¸ÃÂ»ÃÂ¸ ÃÂÃÂ°ÃÂ¹ÃÂ» Ã¢ÂÂ ÃÂ«file:&lt;\Ã\Â¿\Ã\Â\Ã\Â\Ã\Â&gt;ÃÂ», ÃÂ«newfile:&lt;\Ã\Â¿\Ã\Â\Ã\Â\Ã\Â&gt;ÃÂ».<br>
+<hr>
+(src)="s13"> --realtime erfordert boolsches Argument <br>
+(trg)="s13">«--log-time» ожидает логический аргумент.<br>
+<hr>
+(src)="s14"> --log-meta erfordert boolschen Wert <br>
+(trg)="s14">ÃÂ«--log-metaÃÂ» ÃÂ¾ÃÂ¶ÃÂ¸ÃÂ´ÃÂ°ÃÂµÃÂ ÃÂ»ÃÂ¾ÃÂ³ÃÂ¸ÃÂÃÂµÃÂÃÂºÃÂ¸ÃÂ¹ ÃÂ°ÃÂÃÂ³ÃÂÃÂ¼ÃÂµÃÂ½ÃÂ.<br>
+<hr>
+(src)="s15"> Ungültige Resample-Methode ' % s ' . <br>
+(trg)="s15">Недопустимый метод передискретизации «%s».<br>
+<hr>
+(src)="s16"> --System erwartet Boolean-Argument <br>
+(trg)="s16">ÃÂ«--systemÃÂ» ÃÂ¾ÃÂ¶ÃÂ¸ÃÂ´ÃÂ°ÃÂµÃÂ ÃÂ»ÃÂ¾ÃÂ³ÃÂ¸ÃÂÃÂµÃÂÃÂºÃÂ¸ÃÂ¹ ÃÂ°ÃÂÃÂ³ÃÂÃÂ¼ÃÂµÃÂ½ÃÂ.<br>
+<hr>
+(src)="s17"> Option --no-cpu-limit erfordert bool 'schen Wert <br>
+(trg)="s17">«--no-cpu-limit» ожидает логический аргумент.<br>
+<hr>
+(src)="s18"> Option --disable-shm erfordert bool 'schen Wert <br>
+(trg)="s18">ÃÂ«--disable-shmÃÂ» ÃÂ¾ÃÂ¶ÃÂ¸ÃÂ´ÃÂ°ÃÂµÃÂ ÃÂ»ÃÂ¾ÃÂ³ÃÂ¸ÃÂÃÂµÃÂÃÂºÃÂ¸ÃÂ¹ ÃÂ°ÃÂÃÂ³ÃÂÃÂ¼ÃÂµÃÂ½ÃÂ.<br>
+<hr>
+(src)="s19"> [ % s : % u ] Ungültiges Log-Ziel ' % s ' . <br>
+(trg)="s19">[%s:%u] Недопустимое назначение журнала «%s».<br>
+<hr>
+(src)="s20"> [ % s : % u ] Ungültige Log-Stufe ' % s ' . <br>
+(trg)="s20">[%s:%u] ÃÂÃÂµÃÂ´ÃÂ¾ÃÂ¿ÃÂÃÂÃÂÃÂ¸ÃÂ¼ÃÂÃÂ¹ ÃÂÃÂÃÂ¾ÃÂ²ÃÂµÃÂ½ÃÂ ÃÂ¶ÃÂÃÂÃÂ½ÃÂ°ÃÂ»ÃÂ¸ÃÂÃÂ¾ÃÂ²ÃÂ°ÃÂ½ÃÂ¸ÃÂ ÃÂ«%sÃÂ».<br>
+<hr>
+(src)="s21"> [ % s : % u ] Ungültige Resample-Methode ' % s ' . <br>
+(trg)="s21">[%s:%u] Недопустимый метод передискретизации «%s».<br>
+<hr>
+(src)="s22"> [ % s : % u ] Ungültiges rlimit ' % s ' . <br>
+(trg)="s22">[%s:%u] ÃÂÃÂµÃÂ´ÃÂ¾ÃÂ¿ÃÂÃÂÃÂÃÂ¸ÃÂ¼ÃÂ¾ÃÂµ ÃÂ·ÃÂ½ÃÂ°ÃÂÃÂµÃÂ½ÃÂ¸ÃÂµ ÃÂ¾ÃÂ³ÃÂÃÂ°ÃÂ½ÃÂ¸ÃÂÃÂµÃÂ½ÃÂ¸ÃÂ ÃÂ½ÃÂ° ÃÂ¸ÃÂÃÂ¿ÃÂ¾ÃÂ»ÃÂÃÂ·ÃÂÃÂµÃÂ¼ÃÂÃÂµ ÃÂÃÂµÃÂÃÂÃÂÃÂÃÂ (rlimit) ÃÂ«%sÃÂ».<br>
+<hr>
+(src)="s23"> [ % s : % u ] Ungültiges Sample-Format ' % s ' . <br>
+(trg)="s23">[%s:%u] Недопустимый формат отсчётов «%s».<br>
+<hr>
+(src)="s24"> [ % s : % u ] Ungültige Sample-Rate ' % s ' . <br>
+(trg)="s24">[%s:%u] ÃÂÃÂµÃÂ´ÃÂ¾ÃÂ¿ÃÂÃÂÃÂÃÂ¸ÃÂ¼ÃÂ°ÃÂ ÃÂÃÂ°ÃÂÃÂÃÂ¾ÃÂÃÂ° ÃÂ´ÃÂ¸ÃÂÃÂºÃÂÃÂµÃÂÃÂ¸ÃÂ·ÃÂ°ÃÂÃÂ¸ÃÂ¸ ÃÂ«%sÃÂ».<br>
+<hr>
+(src)="s25"> [ % s : % u ] Ungültige Sample-Kanäle ' % s ' . <br>
+(trg)="s25">[%s:%u] Недопустимые каналы сэмпла «%s».<br>
+<hr>
+(src)="s26"> [ % s : % u ] Ungültige Kanal-Zuordnung ' % s ' . <br>
+(trg)="s26">[%s:%u] ÃÂÃÂµÃÂ´ÃÂ¾ÃÂ¿ÃÂÃÂÃÂÃÂ¸ÃÂ¼ÃÂ°ÃÂ ÃÂÃÂÃÂµÃÂ¼ÃÂ° ÃÂºÃÂ°ÃÂ½ÃÂ°ÃÂ»ÃÂ¾ÃÂ² ÃÂ«%sÃÂ».<br>
+<hr>
+(src)="s27"> [ % s : % u ] Ungültige Anzahl von Fragmenten ' % s ' . <br>
+(trg)="s27">[%s:%u] Недопустимое число фрагментов «%s».<br>
+<hr>
+(src)="s28"> [ % s : % u ] Ungültige Fragmentgröße ' % s ' . <br>
+(trg)="s28">[%s:%u] ÃÂÃÂµÃÂ´ÃÂ¾ÃÂ¿ÃÂÃÂÃÂÃÂ¸ÃÂ¼ÃÂÃÂ¹ ÃÂÃÂ°ÃÂ·ÃÂ¼ÃÂµÃÂ ÃÂÃÂÃÂ°ÃÂ³ÃÂ¼ÃÂµÃÂ½ÃÂÃÂ° ÃÂ«%sÃÂ».<br>
+<hr>
+(src)="s29"> [ % s : % u ] Ungültige Nice-Stufe ' % s ' . <br>
+(trg)="s29">[%s:%u] Недопустимый приоритет (nice) «%s».<br>
+<hr>
+(src)="s30"> [ % s : % u ] Ungültige Sample-Rate ' % s ' . <br>
+(trg)="s30">[%s:%u] ÃÂÃÂµÃÂ´ÃÂ¾ÃÂ¿ÃÂÃÂÃÂÃÂ¸ÃÂ¼ÃÂÃÂ¹ ÃÂÃÂ¸ÃÂ¿ ÃÂÃÂµÃÂÃÂ²ÃÂµÃÂÃÂ° ÃÂ«%sÃÂ».<br>
+<hr>
+(src)="s31"> Öffnen der Konfigurationsdatei fehlgeschlagen : % s <br>
+(trg)="s31">Не удалось открыть файл конфигурации: %s<br>
+<hr>
+(src)="s32"> Die angegebene Standard-Kanalzuordnung hat eine andere Anzahl von Kanälen als die angegebene Standard-Kanal-Anzahl . <br>
+(trg)="s32">ÃÂ ÃÂÃÂºÃÂ°ÃÂ·ÃÂ°ÃÂ½ÃÂ½ÃÂ¾ÃÂ¹ ÃÂÃÂÃÂµÃÂ¼ÃÂµ ÃÂºÃÂ°ÃÂ½ÃÂ°ÃÂ»ÃÂ¾ÃÂ² ÃÂ¿ÃÂ¾ ÃÂÃÂ¼ÃÂ¾ÃÂ»ÃÂÃÂ°ÃÂ½ÃÂ¸ÃÂ ÃÂÃÂ¸ÃÂÃÂ»ÃÂ¾ ÃÂºÃÂ°ÃÂ½ÃÂ°ÃÂ»ÃÂ¾ÃÂ² ÃÂ¾ÃÂÃÂ»ÃÂ¸ÃÂÃÂ°ÃÂµÃÂÃÂÃÂ ÃÂ¾ÃÂ ÃÂÃÂ¸ÃÂÃÂ»ÃÂ° ÃÂºÃÂ°ÃÂ½ÃÂ°ÃÂ»ÃÂ¾ÃÂ² ÃÂ¿ÃÂ¾ ÃÂÃÂ¼ÃÂ¾ÃÂ»ÃÂÃÂ°ÃÂ½ÃÂ¸ÃÂ.<br>
+<hr>
+(src)="s33"> # # # Lese von Konfigurationsdatei : % s # # # <br>
+(trg)="s33">### Прочитано из файла конфигурации: %s ### <br>
+<hr>
+(src)="s34"> Name : % s <br>
+(trg)="s34">ÃÂÃÂ¼ÃÂ: %s <br>
+<hr>
+(src)="s35"> Keine Modul-Informationen verfügbar <br>
+(trg)="s35">Нет информации о модуле <br>
+<hr>
+(src)="s36"> Version : % s <br>
+(trg)="s36">ÃÂÃÂµÃÂÃÂÃÂ¸ÃÂ: %s <br>
+<hr>
+(src)="s37"> Beschreibung : % s <br>
+(trg)="s37">Описание: %s <br>
+<hr>
+(src)="s38"> Autor : % s <br>
+(trg)="s38">ÃÂÃÂ²ÃÂÃÂ¾ÃÂ: %s <br>
+<hr>
+(src)="s39"> Verwendung : % s <br>
+(trg)="s39">Использование: %s <br>
+<hr>
+(src)="s40"> Lade einmalig : % s <br>
+(trg)="s40">ÃÂÃÂ°ÃÂ³ÃÂÃÂÃÂ¶ÃÂ°ÃÂÃÂ ÃÂÃÂ¾ÃÂ»ÃÂÃÂºÃÂ¾ ÃÂ¾ÃÂ´ÃÂ¸ÃÂ½ ÃÂÃÂ°ÃÂ·: %s <br>
+<hr>
+(src)="s41"> DEPRECATION WARNING : % s <br>
+(trg)="s41">Предупреждение об устаревшем модуле: %s <br>
+<hr>
+(src)="s42"> Pfad : % s <br>
+(trg)="s42">ÃÂÃÂÃÂÃÂ: %s <br>
+<hr>
+(src)="s43"> Öffnen der Datei ' % s ' fehlgeschlagen <br>
+(trg)="s43">Не удалось открыть модуль %s: %s<br>
+<hr>
+(src)="s44"> Ursprünglicher dlopen-Loader konnte nicht gefunden werden . <br>
+(trg)="s44">ÃÂÃÂµ ÃÂÃÂ´ÃÂ°ÃÂ»ÃÂ¾ÃÂÃÂ ÃÂ½ÃÂ°ÃÂ¹ÃÂÃÂ¸ ÃÂ¸ÃÂÃÂÃÂ¾ÃÂ´ÃÂ½ÃÂÃÂ¹ ÃÂ·ÃÂ°ÃÂ³ÃÂÃÂÃÂ·ÃÂÃÂ¸ÃÂº lt_dlopen.<br>
+<hr>
+(src)="s45"> Neuer dlopen-Loader konnte nicht gefunden werden . <br>
+(trg)="s45">Не удалось выделить память для нового загрузчика разделяемых библиотек.<br>
+<hr>
+(src)="s46"> Hinzufügen von Bind-Now-Loader fehlgeschlagen . <br>
+(trg)="s46">ÃÂÃÂµ ÃÂÃÂ´ÃÂ°ÃÂ»ÃÂ¾ÃÂÃÂ ÃÂ´ÃÂ¾ÃÂ±ÃÂ°ÃÂ²ÃÂ¸ÃÂÃÂ ÃÂ½ÃÂ¾ÃÂ²ÃÂÃÂ¹ ÃÂ·ÃÂ°ÃÂ³ÃÂÃÂÃÂ·ÃÂÃÂ¸ÃÂº bind-now.<br>
+<hr>
+(src)="s47"> Signal % s empfangen . <br>
+(trg)="s47">Получен сигнал %s.<br>
+<hr>
+(src)="s48"> Wird beendet . <br>
+(trg)="s48">ÃÂÃÂÃÂÃÂ¾ÃÂ´.<br>
+<hr>
+(src)="s49"> Benutzer ' % s ' nicht gefunden . <br>
+(trg)="s49">Не удалось найти пользователя «%s».<br>
+<hr>
+(src)="s50"> Gruppe ' % s ' nicht gefunden . <br>
+(trg)="s50">ÃÂÃÂµ ÃÂÃÂ´ÃÂ°ÃÂ»ÃÂ¾ÃÂÃÂ ÃÂ½ÃÂ°ÃÂ¹ÃÂÃÂ¸ ÃÂ³ÃÂÃÂÃÂ¿ÃÂ¿ÃÂ ÃÂ¿ÃÂ¾ÃÂ»ÃÂÃÂ·ÃÂ¾ÃÂ²ÃÂ°ÃÂÃÂµÃÂ»ÃÂµÃÂ¹ ÃÂ«%sÃÂ».<br>
+<hr>
+(src)="s51"> Benutzer ' % s ' ( UID % lu ) und Gruppe ' % s ' ( GID % lu ) gefunden . <br>
+(trg)="s51">Найден пользователь «%s» (UID %lu) и группа «%s» (GID %lu).<br>
+<hr>
+(src)="s52"> GID von Benutzer ' % s ' und Gruppe ' % s ' stimmen nicht überein . <br>
+(trg)="s52">ÃÂÃÂ´ÃÂµÃÂ½ÃÂÃÂ¸ÃÂÃÂ¸ÃÂºÃÂ°ÃÂÃÂ¾ÃÂÃÂ ÃÂ³ÃÂÃÂÃÂ¿ÃÂ¿ ÃÂ¿ÃÂ¾ÃÂ»ÃÂÃÂ·ÃÂ¾ÃÂ²ÃÂ°ÃÂÃÂµÃÂ»ÃÂ ÃÂ«%sÃÂ» ÃÂ¸ ÃÂ³ÃÂÃÂÃÂ¿ÃÂ¿ÃÂ ÃÂ«%sÃÂ» ÃÂ½ÃÂµ ÃÂÃÂ¾ÃÂ²ÃÂ¿ÃÂ°ÃÂ´ÃÂ°ÃÂÃÂ.<br>
+<hr>
+(src)="s53"> Benutzerverzeichnis von Benutzer ' % s ' ist nicht ' % s ' , ignoriere . <br>
+(trg)="s53">Домашний каталог пользователя «%s» не совпадает с «%s», проигнорировано.<br>
+<hr>
+(src)="s54"> Konnte ' % s ' nciht erzeugen : % s <br>
+(trg)="s54">ÃÂÃÂµ ÃÂÃÂ´ÃÂ°ÃÂ»ÃÂ¾ÃÂÃÂ ÃÂÃÂ¾ÃÂ·ÃÂ´ÃÂ°ÃÂÃÂ ÃÂ«%sÃÂ»: %s<br>
+<hr>
+(src)="s55"> Wechseln der Gruppen-Liste fehlgeschlagen : % s <br>
+(trg)="s55">Не удалось изменить список групп: %s<br>
+<hr>
+(src)="s56"> Wechseln der GID fehlgeschlagen : % s <br>
+(trg)="s56">ÃÂÃÂµ ÃÂÃÂ´ÃÂ°ÃÂ»ÃÂ¾ÃÂÃÂ ÃÂ¸ÃÂ·ÃÂ¼ÃÂµÃÂ½ÃÂ¸ÃÂÃÂ ÃÂ¸ÃÂ´ÃÂµÃÂ½ÃÂÃÂ¸ÃÂÃÂ¸ÃÂºÃÂ°ÃÂÃÂ¾ÃÂ ÃÂ³ÃÂÃÂÃÂ¿ÃÂ¿ÃÂ (GID): %s<br>
+<hr>
+(src)="s57"> Wechseln der UID fehlgeschlagen : % s <br>
+(trg)="s57">Не удалось изменить идентификатор пользователя (UID): %s<br>
+<hr>
+(src)="s59"> System-Modus auf dieser Plattform nicht unterstützt . <br>
+(trg)="s59">Общесистемный режим не поддерживается на этой платформе.<br>
+<hr>
+(src)="s60"> setrlimit ( % s , ( % u , % u ) ) fehlgeschlagen : % s <br>
+(trg)="s60">ÃÂÃÂµ ÃÂÃÂ´ÃÂ°ÃÂ»ÃÂ¾ÃÂÃÂ ÃÂ²ÃÂÃÂ¿ÃÂ¾ÃÂ»ÃÂ½ÃÂ¸ÃÂÃÂ setrlimit(%s, (%u, %u)): %s<br>
+<hr>
+(src)="s61"> Parsen der Kommandzeile fehlgeschlagen . <br>
+(trg)="s61">Ошибка разбора командной строки.<br>
+<hr>
+(src)="s63"> Daemon läuft nicht <br>
+(trg)="s63">Демон не запущен.<br>
+<hr>
+(src)="s64"> Daemon läuft als PID % u <br>
+(trg)="s64">ÃÂÃÂµÃÂ¼ÃÂ¾ÃÂ½ ÃÂ·ÃÂ°ÃÂ¿ÃÂÃÂÃÂµÃÂ½ ÃÂ ÃÂ¸ÃÂ´ÃÂµÃÂ½ÃÂÃÂ¸ÃÂÃÂ¸ÃÂºÃÂ°ÃÂÃÂ¾ÃÂÃÂ¾ÃÂ¼ ÃÂ¿ÃÂÃÂ¾ÃÂÃÂµÃÂÃÂÃÂ° (PID) %u.<br>
+<hr>
+(src)="s65"> Konnte Prozess nicht abbrechen : % s <br>
+(trg)="s65">Не удалось завершить работу демона: %s<br>
+<hr>
+(src)="s66"> Dieses Programm sollte ohne die Option --system nicht als Administrator ausgeführt werden . <br>
+(trg)="s66">ÃÂ­ÃÂÃÂ° ÃÂ¿ÃÂÃÂ¾ÃÂ³ÃÂÃÂ°ÃÂ¼ÃÂ¼ÃÂ° ÃÂ½ÃÂµ ÃÂ¿ÃÂÃÂµÃÂ´ÃÂ½ÃÂ°ÃÂ·ÃÂ½ÃÂ°ÃÂÃÂµÃÂ½ÃÂ° ÃÂ´ÃÂ»ÃÂ ÃÂ·ÃÂ°ÃÂ¿ÃÂÃÂÃÂºÃÂ° ÃÂ ÃÂ¿ÃÂÃÂ¸ÃÂ²ÃÂ¸ÃÂ»ÃÂµÃÂ³ÃÂ¸ÃÂÃÂ¼ÃÂ¸ ÃÂ°ÃÂ´ÃÂ¼ÃÂ¸ÃÂ½ÃÂ¸ÃÂÃÂÃÂÃÂ°ÃÂÃÂ¾ÃÂÃÂ° (ÃÂºÃÂÃÂ¾ÃÂ¼ÃÂµ ÃÂÃÂ»ÃÂÃÂÃÂ°ÃÂ, ÃÂºÃÂ¾ÃÂ³ÃÂ´ÃÂ° ÃÂÃÂºÃÂ°ÃÂ·ÃÂ°ÃÂ½ ÃÂºÃÂ»ÃÂÃÂ ÃÂ«--systemÃÂ»).<br>
+<hr>
+(src)="s67"> Root-Berechtigungen benötigt . <br>
+(trg)="s67">Необходимы привилегии администратора.<br>
+<hr>
+(src)="s68"> --start nicht unterstützt für System-Instanzen . <br>
+(trg)="s68">ÃÂ«--startÃÂ» ÃÂ½ÃÂµ ÃÂ¿ÃÂ¾ÃÂ´ÃÂ´ÃÂµÃÂÃÂ¶ÃÂ¸ÃÂ²ÃÂ°ÃÂµÃÂÃÂÃÂ ÃÂ´ÃÂ»ÃÂ ÃÂ¾ÃÂ±ÃÂÃÂµÃÂÃÂ¸ÃÂÃÂÃÂµÃÂ¼ÃÂ½ÃÂ¾ÃÂ³ÃÂ¾ ÃÂÃÂµÃÂ¶ÃÂ¸ÃÂ¼ÃÂ°.<br>
+<hr>
+(src)="s71"> System-Modus aktiv , jeodch --disallow-exit nicht gesetzt ! <br>
+(trg)="s71">Запущен в общесистемном режиме, но «--disallow-exit» не задан.<br>
+<hr>
+(src)="s72"> System-Modus aktiv , jedoch --disallow-module-loading nicht gesetzt ! <br>
+(trg)="s72">ÃÂÃÂ°ÃÂ¿ÃÂÃÂÃÂµÃÂ½ ÃÂ² ÃÂ¾ÃÂ±ÃÂÃÂµÃÂÃÂ¸ÃÂÃÂÃÂµÃÂ¼ÃÂ½ÃÂ¾ÃÂ¼ ÃÂÃÂµÃÂ¶ÃÂ¸ÃÂ¼ÃÂµ, ÃÂ½ÃÂ¾ ÃÂ«--disallow-module-loadingÃÂ» ÃÂ½ÃÂµ ÃÂ·ÃÂ°ÃÂ´ÃÂ°ÃÂ½.<br>
+<hr>
+(src)="s73"> System-Modus aktiv , SHM-Modus gezwungenermaßen deaktiviert ! <br>
+(trg)="s73">Запущен в общесистемном режиме, поэтому режим SHM принудительно отключён.<br>
+<hr>
+(src)="s74"> System-Modus aktiv , Exit-Idle-Time gezwungenermaßen deaktiviert ! <br>
+(trg)="s74">ÃÂÃÂ°ÃÂ¿ÃÂÃÂÃÂµÃÂ½ ÃÂ² ÃÂ¾ÃÂ±ÃÂÃÂµÃÂÃÂ¸ÃÂÃÂÃÂµÃÂ¼ÃÂ½ÃÂ¾ÃÂ¼ ÃÂÃÂµÃÂ¶ÃÂ¸ÃÂ¼ÃÂµ, ÃÂ¿ÃÂ¾ÃÂÃÂÃÂ¾ÃÂ¼ÃÂ ÃÂ°ÃÂ²ÃÂÃÂ¾ÃÂ¼ÃÂ°ÃÂÃÂ¸ÃÂÃÂµÃÂÃÂºÃÂ¾ÃÂµ ÃÂ·ÃÂ°ÃÂ²ÃÂµÃÂÃÂÃÂµÃÂ½ÃÂ¸ÃÂµ ÃÂ¿ÃÂÃÂ¸ ÃÂ´ÃÂ¾ÃÂ»ÃÂ³ÃÂ¾ÃÂ¼ ÃÂ¿ÃÂÃÂ¾ÃÂÃÂÃÂ¾ÃÂµ ÃÂ¾ÃÂÃÂºÃÂ»ÃÂÃÂÃÂµÃÂ½ÃÂ¾.<br>
+<hr>
+(src)="s75"> Reservieren von STDIO fehlgeschlagen . <br>
+(trg)="s75">Не удалось начать критическую секцию работы с вводом-выводом.<br>
+<hr>
+(src)="s76"> pipe fehlgeschlagen : % s <br>
+(trg)="s76">ÃÂÃÂÃÂ¾ÃÂ¸ÃÂ·ÃÂ¾ÃÂÃÂ»ÃÂ° ÃÂ¾ÃÂÃÂ¸ÃÂ±ÃÂºÃÂ° ÃÂ¿ÃÂÃÂ¸ ÃÂ²ÃÂÃÂ¿ÃÂ¾ÃÂ»ÃÂ½ÃÂµÃÂ½ÃÂ¸ÃÂ¸ pipe(): %s<br>
+<hr>
+(src)="s77"> fork ( ) fehlgeschlagen : % s <br>
+(trg)="s77">Произошла ошибка при выполнении fork(): %s<br>
+<hr>
+(src)="s78"> read ( ) fehlgeschlagen : % s <br>
+(trg)="s78">ÃÂÃÂÃÂ¾ÃÂ¸ÃÂ·ÃÂ¾ÃÂÃÂ»ÃÂ° ÃÂ¾ÃÂÃÂ¸ÃÂ±ÃÂºÃÂ° ÃÂ¿ÃÂÃÂ¸ ÃÂ²ÃÂÃÂ¿ÃÂ¾ÃÂ»ÃÂ½ÃÂµÃÂ½ÃÂ¸ÃÂ¸ read(): %s<br>
+<hr>
+(src)="s79"> Start des Daemons fehlgeschlagen . <br>
+(trg)="s79">Не удалось запустить демон.<br>
+<hr>
+(src)="s80"> Start des Daemons erfolgreich . <br>
+(trg)="s80">ÃÂÃÂµÃÂ¼ÃÂ¾ÃÂ½ ÃÂÃÂÃÂ¿ÃÂµÃÂÃÂ½ÃÂ¾ ÃÂ·ÃÂ°ÃÂ¿ÃÂÃÂÃÂµÃÂ½.<br>
+<hr>
+(src)="s81"> read ( ) fehlgeschlagen : % s <br>
+(trg)="s81">Произошла ошибка при выполнении setsid(): %s<br>
+<hr>
+(src)="s82"> Dies ist PulseAudio % s <br>
+(trg)="s82">PulseAudio %s<br>
+<hr>
+(src)="s83"> Kompilier-Host : % s <br>
+(trg)="s83">Скомпилирован на хосте: %s<br>
+<hr>
+(src)="s84"> Kompilier-CFLAGS : % s <br>
+(trg)="s84">CFLAGS ÃÂ¿ÃÂÃÂ¸ ÃÂºÃÂ¾ÃÂ¼ÃÂ¿ÃÂ¸ÃÂ»ÃÂÃÂÃÂ¸ÃÂ¸: %s<br>
+<hr>
+(src)="s85"> Laufe auf Host : % s <br>
+(trg)="s85">Запущен на хосте: %s<br>
+<hr>
+(src)="s86"> % u CPUs gefunden . <br>
+(trg)="s86">ÃÂÃÂ°ÃÂ¹ÃÂ´ÃÂµÃÂ½ÃÂ¾ ÃÂ¿ÃÂÃÂ¾ÃÂÃÂµÃÂÃÂÃÂ¾ÃÂÃÂ¾ÃÂ²: %u.<br>
+<hr>
+(src)="s87"> Seitengröße ist % lu Bytes . <br>
+(trg)="s87">Размер страницы: %lu байт<br>
+<hr>
+(src)="s88"> Kompiliere mit Valgrind-Unterstützung : ja <br>
+(trg)="s88">ÃÂ¡ÃÂºÃÂ¾ÃÂ¼ÃÂ¿ÃÂ¸ÃÂ»ÃÂ¸ÃÂÃÂ¾ÃÂ²ÃÂ°ÃÂ½ÃÂ¾ ÃÂ ÃÂ¿ÃÂ¾ÃÂ´ÃÂ´ÃÂµÃÂÃÂ¶ÃÂºÃÂ¾ÃÂ¹ Valgrind: ÃÂ´ÃÂ°<br>
+<hr>
+(src)="s89"> Kompiliere mit Valgrind-Unterstützung : nein <br>
+(trg)="s89">Скомпилировано с поддержкой Valgrind: нет<br>
+<hr>
+(src)="s90"> Läuft im Valgrind-Modus : % s <br>
+(trg)="s90">ÃÂÃÂ°ÃÂ¿ÃÂÃÂÃÂµÃÂ½ ÃÂ² ÃÂÃÂµÃÂ¶ÃÂ¸ÃÂ¼ÃÂµ Valgrind: %s<br>
+<hr>
+(src)="s91"> Laufe auf Host : % s <br>
+(trg)="s91">Запущен в виртуальной машине: %s<br>
+<hr>
+(src)="s92"> Optimiertes Build : ja <br>
+(trg)="s92">ÃÂÃÂ¿ÃÂÃÂ¸ÃÂ¼ÃÂ¸ÃÂ·ÃÂ¸ÃÂÃÂ¾ÃÂ²ÃÂ°ÃÂ½ÃÂ½ÃÂ°ÃÂ ÃÂÃÂ±ÃÂ¾ÃÂÃÂºÃÂ°: ÃÂ´ÃÂ°<br>
+<hr>
+(src)="s93"> Optimiertes Build : nein <br>
+(trg)="s93">Оптимизированная сборка: нет<br>
+<hr>
+(src)="s94"> NDEBUG definiert , alle Ansprüche deaktiviert . <br>
+(trg)="s94">NDEBUG ÃÂ·ÃÂ°ÃÂ´ÃÂ°ÃÂ½, ÃÂ²ÃÂÃÂµ ÃÂ¿ÃÂÃÂ¾ÃÂ²ÃÂµÃÂÃÂºÃÂ¸ ÃÂ¾ÃÂÃÂºÃÂ»ÃÂÃÂÃÂµÃÂ½ÃÂ.FASTPATH defined, only fast path asserts enabled.<br>
+<hr>
+(src)="s95"> FASTPATH definiert , nur fast-path-Ansprüche deaktiviert . <br>
+(trg)="s95">FASTPATH задан, включены только быстрые проверки «fast path».<br>
+<hr>
+(src)="s96"> Alle Ansprüche aktiviert . <br>
+(trg)="s96">ÃÂÃÂÃÂµ ÃÂ¿ÃÂÃÂ¾ÃÂ²ÃÂµÃÂÃÂºÃÂ¸ ÃÂ²ÃÂºÃÂ»ÃÂÃÂÃÂµÃÂ½ÃÂ.<br>
+<hr>
+(src)="s97"> Beziehen der Maschinen-ID fehlgeschlagen <br>
+(trg)="s97">Не удалось получить идентификатор компьютера.<br>
+<hr>
+(src)="s98"> System- ID ist % s . <br>
+(trg)="s98">ÃÂÃÂ´ÃÂµÃÂ½ÃÂÃÂ¸ÃÂÃÂ¸ÃÂºÃÂ°ÃÂÃÂ¾ÃÂ ÃÂºÃÂ¾ÃÂ¼ÃÂ¿ÃÂÃÂÃÂÃÂµÃÂÃÂ°: %s.<br>
+<hr>
+(src)="s99"> System- ID ist % s . <br>
+(trg)="s99">Идентификатор сеанса: %s.<br>
+<hr>
+(src)="s100"> Nutze Laufzeit-Verzeichnis % s . <br>
+(trg)="s100">ÃÂÃÂÃÂ¿ÃÂ¾ÃÂ»ÃÂÃÂ·ÃÂÃÂµÃÂÃÂÃÂ ÃÂÃÂ°ÃÂ±ÃÂ¾ÃÂÃÂ¸ÃÂ¹ ÃÂºÃÂ°ÃÂÃÂ°ÃÂ»ÃÂ¾ÃÂ³ %s.<br>
+<hr>
+(src)="s101"> Nutze Zustands-Verzeichnis % s . <br>
+(trg)="s101">Используется каталог хранения состояний %s.<br>
+<hr>
+(src)="s102"> Modul-Verzeichnis % s benutzen . <br>
+(trg)="s102">ÃÂÃÂÃÂ¿ÃÂ¾ÃÂ»ÃÂÃÂ·ÃÂÃÂµÃÂÃÂÃÂ ÃÂºÃÂ°ÃÂÃÂ°ÃÂ»ÃÂ¾ÃÂ³ ÃÂ¼ÃÂ¾ÃÂ´ÃÂÃÂ»ÃÂµÃÂ¹ %s.<br>
+<hr>
+(src)="s103"> Laufe im System-Modus : % s <br>
+(trg)="s103">Запущен в общесистемном режиме: %s<br>
+<hr>
+(src)="s105"> pa _ pid _ file _ create ( ) fehlgeschlagen . <br>
+(trg)="s105">Произошла ошибка при выполнении pa_pid_file_create().<br>
+<hr>
+</body>
+</html>

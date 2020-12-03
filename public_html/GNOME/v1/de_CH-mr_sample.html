@@ -1,0 +1,316 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# de_CH/Pulseaudio.master/Pulseaudio.master.xml.gz<br>
+# mr/Pulseaudio.master/Pulseaudio.master.xml.gz
+
+<p><hr>
+(src)="s1"> Root-Privilegien aufräumen . <br>
+(trg)="s1"> परवानगी वगळत आहे . <br>
+<hr>
+(src)="s2"> % s [ options ] BEFEHLE : -h , --help Zeige diese Hilfe --version Zeige Version --dump-conf Zeige Standardkonfiguration --dump-modules Zeige Liste verfügbarer Module --dump-resample-methods Zeige verfügbare Resample-Methoden --cleanup-shm Cleanup stale shared memory segments --start Starte Daemon , falls noch nicht geschehen -k --kill Laufenden Daemon beenden --check Prüfe laufende Daemone ( gibt nur einen Exit-Code zurück ) OPTIONS : --system [ = BOOL ] Als systemweite Instanz ausführen -D , --daemonize [ = BOOL ] Nach Start zum Daemon machen --fail [ = BOOL ] Beenden , wenn Start fehlschlägt --high-priority [ = BOOL ] Nutze höchste Priorität ( Nur verfügbar als root , wenn SUID oder mit erhöhtem RLIMIT _ NICE ) --realtime [ = BOOL ] Versuche , Echtzeit-Scheduling zu aktivieren ( Nur verfügbar als root , wenn SUID oder mit erhöhtem RLIMIT _ RTPRIO ) --disallow-module-loading [ = BOOL ] Verbiete ( Ent- ) laden durch Nutzer angeforderter Module nach dem Start --disallow-exit [ = BOOL ] Verbiete Beenden auf Anfrage des Nutzers --exit-idle-time = SECS Beende Daemon , wenn für diese Zeit untätig --module-idle-time = SECS Entlade untätige Module nach dieser Zeit --scache-idle-time = SECS Entlade untätige automatisch geladene Samples nach dieser Zeit --log-level [ = STUFE ] Grad der Ausführlichkeit angeben -v Ausführliche Meldungen --log-target = { auto , syslog , stderr } Protokoll-Ziel angeben -p , --dl-search-path = PFAD Suchpfad für dynamisch freigegebene Objekte ( Plugins ) --resample-method = METHODE Nutze diese Resampling-Methode ( Siehe --dump-resample-methods für mögliche Werte ) --use-pid-file [ = BOOL ] Eine PID-Datei erstellen --no-cpu-limit [ = BOOL ] CPU-Lastbegrenzung auf unterstützten Systemen nicht installieren . --disable-shm [ = BOOL ] Keine Unterstützung für Shared Memory . STARTUP-SCRIPT : -L , --load = " MODUL-ARGUMENTE " Plugin-Modul mit diesen Parametern laden . -F , --file = DATEINAMEN Dieses Skript ausführen -C Nach Start auf laufendem TTY eine Kommandozeile öffnen -n Standardskript nicht laden <br>
+(trg)="s2"> % s [ options ] COMMANDS : -h , --help Show this help --version Show version --dump-conf Dump default configuration --dump-modules Dump list of available modules --dump-resample-methods Dump available resample methods --cleanup-shm Cleanup stale shared memory segments --start Start the daemon if it is not running -k --kill Kill a running daemon --check Check for a running daemon ( only returns exit code ) OPTIONS : --system [ = BOOL ] Run as system-wide instance -D , --daemonize [ = BOOL ] Daemonize after startup --fail [ = BOOL ] Quit when startup fails --high-priority [ = BOOL ] Try to set high nice level ( only available as root , when SUID or with elevated RLIMIT _ NICE ) --realtime [ = BOOL ] Try to enable realtime scheduling ( only available as root , when SUID or with elevated RLIMIT _ RTPRIO ) --disallow-module-loading [ = BOOL ] Disallow module user requested module loading / unloading after startup --disallow-exit [ = BOOL ] Disallow user requested exit --exit-idle-time = SECS Terminate the daemon when idle and this time passed --module-idle-time = SECS Unload autoloaded modules when idle and this time passed --scache-idle-time = SECS Unload autoloaded samples when idle and this time passed --log-level [ = LEVEL ] Increase or set verbosity level -v Increase the verbosity level --log-target = { auto , syslog , stderr } Specify the log target --log-meta [ = BOOL ] Include code location in log messages --log-time [ = BOOL ] Include timestamps in log messages --log-backtrace = FRAMES Include a backtrace in log messages -p , --dl-search-path = PATH Set the search path for dynamic shared objects ( plugins ) --resample-method = METHOD Use the specified resampling method ( See --dump-resample-methods for possible values ) --use-pid-file [ = BOOL ] Create a PID file --no-cpu-limit [ = BOOL ] Do not install CPU load limiter on platforms that support it . --disable-shm [ = BOOL ] Disable shared memory support . STARTUP SCRIPT : -L , --load = " MODULE ARGUMENTS " Load the specified plugin module with the specified argument -F , --file = FILENAME Run the specified script -C Open a command line on the running TTY after startup -n Don 't load default script file <br>
+<hr>
+(src)="s3"> Option --daemonize erfordert bool 'schen Wert <br>
+(trg)="s3"> --daemonize यास बूलीयन बाब अपेक ् षीत आहे <br>
+<hr>
+(src)="s4"> Option --fail erfordert bool 'schen Wert <br>
+(trg)="s4"> --fail यास बूलीयन बाब अपेक ् षीत आहे <br>
+<hr>
+(src)="s5"> --log-level erfordert Wert für Grad der Protokollierung ( entweder numerisch im Bereich 0 .. 4 or einen dieser : debug , info , notice , warn , error ) . <br>
+(trg)="s5"> --log-level यास लॉग स ् तरीय बाब अपेक ् षीत आहे ( एकतर क ् षेत ् र 0 .. 4 अंतर ् गत संख ् यायी किंवा debug , info , notice , warn , error पैकी एक ) . <br>
+<hr>
+(src)="s6"> Option --high-priority erfordert bool 'schen Wert <br>
+(trg)="s6"> --high-priority यास बूलीयन बाब अपेक ् षीत आहे <br>
+<hr>
+(src)="s7"> Option --realtime erfordert bool 'schen Wert <br>
+(trg)="s7"> --realtime यास बूलीयन बाब अपेक ् षीत आहे <br>
+<hr>
+(src)="s8"> Option --disallow-module-loading erfordert bool 'schen Wert <br>
+(trg)="s8"> --disallow-module-loading यास बूलीयन बाब अपेक ् षीत आहे <br>
+<hr>
+(src)="s9"> --disallow-exit erfordert boolsches Argument <br>
+(trg)="s9"> --disallow-exit यास बूलीयन बाब अपेक ् षीत आहे <br>
+<hr>
+(src)="s10"> Option --use-pid-file erfordert bool 'schen Wert <br>
+(trg)="s10"> --use-pid-file यास बूलीयन बाब अपेक ् षीत आहे <br>
+<hr>
+(src)="s11"> Ungültiges Log-Ziel : Benutzen Sie entweder ' syslog ' , ' stderr ' oder ' auto ' . <br>
+(trg)="s11"> अवैध लॉग लक ् ष ् य : ' syslog ' , ' stderr ' किंवा ' auto ' पैकी एक वापरा . <br>
+<hr>
+(src)="s12"> Ungültiges Log-Ziel : Benutzen Sie entweder ' syslog ' , ' stderr ' oder ' auto ' . <br>
+(trg)="s12"> अवैध लॉग लक ् ष ् य : ' syslog ' , ' stderr ' किंवा ' auto ' पैकी एक वापरा . <br>
+<hr>
+(src)="s13"> --realtime erfordert boolsches Argument <br>
+(trg)="s13"> --log-time यास बूलीयन बाब अपेक ् षीत आहे <br>
+<hr>
+(src)="s14"> --log-meta erfordert boolschen Wert <br>
+(trg)="s14"> --log-meta यास बूलीयन बाब अपेक ् षीत आहे <br>
+<hr>
+(src)="s15"> Ungültige Resample-Methode ' % s ' . <br>
+(trg)="s15"> अवैध पुन ् ह सॅम ् पल पद ् धत ' % s ' . <br>
+<hr>
+(src)="s16"> --System erwartet Boolean-Argument <br>
+(trg)="s16"> --system यास बूलीयन बाब अपेक ् षीत आहे <br>
+<hr>
+(src)="s17"> Option --no-cpu-limit erfordert bool 'schen Wert <br>
+(trg)="s17"> --no-cpu-limit यास बूलीयन बाब अपेक ् षीत आहे <br>
+<hr>
+(src)="s18"> Option --disable-shm erfordert bool 'schen Wert <br>
+(trg)="s18"> --disable-shm यास बूलीयन बाब अपेक ् षीत आहे <br>
+<hr>
+(src)="s19"> [ % s : % u ] Ungültiges Log-Ziel ' % s ' . <br>
+(trg)="s19"> [ % s : % u ] अवैध लॉग लक ् ष ् य ' % s ' . <br>
+<hr>
+(src)="s20"> [ % s : % u ] Ungültige Log-Stufe ' % s ' . <br>
+(trg)="s20"> [ % s : % u ] अवैध लॉग स ् तर ' % s ' . <br>
+<hr>
+(src)="s21"> [ % s : % u ] Ungültige Resample-Methode ' % s ' . <br>
+(trg)="s21"> [ % s : % u ] अवैध पुन ् ह सॅम ् पल पद ् धत ' % s ' . <br>
+<hr>
+(src)="s22"> [ % s : % u ] Ungültiges rlimit ' % s ' . <br>
+(trg)="s22"> [ % s : % u ] अवैध rlimit ' % s ' . <br>
+<hr>
+(src)="s23"> [ % s : % u ] Ungültiges Sample-Format ' % s ' . <br>
+(trg)="s23"> [ % s : % u ] अवैध सॅम ् पल स ् वरूप ' % s ' . <br>
+<hr>
+(src)="s24"> [ % s : % u ] Ungültige Sample-Rate ' % s ' . <br>
+(trg)="s24"> [ % s : % u ] अवैध सॅम ् पल दर ' % s ' . <br>
+<hr>
+(src)="s25"> [ % s : % u ] Ungültige Sample-Kanäle ' % s ' . <br>
+(trg)="s25"> [ % s : % u ] अवैध सॅम ् पल मार ् ग ' % s ' . <br>
+<hr>
+(src)="s26"> [ % s : % u ] Ungültige Kanal-Zuordnung ' % s ' . <br>
+(trg)="s26"> [ % s : % u ] अवैध मार ् ग मॅप ' % s ' . <br>
+<hr>
+(src)="s27"> [ % s : % u ] Ungültige Anzahl von Fragmenten ' % s ' . <br>
+(trg)="s27"> [ % s : % u ] अवैध तुकडे ' % s ' यांची एकूण संख ् या . <br>
+<hr>
+(src)="s28"> [ % s : % u ] Ungültige Fragmentgröße ' % s ' . <br>
+(trg)="s28"> [ % s : % u ] अवैध तुकड ् याचे आकार ' % s ' . <br>
+<hr>
+(src)="s29"> [ % s : % u ] Ungültige Nice-Stufe ' % s ' . <br>
+(trg)="s29"> [ % s : % u ] अवैध nice स ् तर ' % s ' . <br>
+<hr>
+(src)="s30"> [ % s : % u ] Ungültige Sample-Rate ' % s ' . <br>
+(trg)="s30"> [ % s : % u ] अवैध सॅम ् पल दर ' % s ' . <br>
+<hr>
+(src)="s31"> Öffnen der Konfigurationsdatei fehlgeschlagen : % s <br>
+(trg)="s31"> संयोजना फाइल उघडण ् यास अपयशी : % s <br>
+<hr>
+(src)="s32"> Die angegebene Standard-Kanalzuordnung hat eine andere Anzahl von Kanälen als die angegebene Standard-Kanal-Anzahl . <br>
+(trg)="s32"> निश ् चित मुलभूत वाहिनी मॅपकडे निश ् चित एकूण मुलभूत वाहिनी पेक ् षा वेगळे वाहिनी संख ् या समाविष ् टीत आहे . <br>
+<hr>
+(src)="s33"> # # # Lese von Konfigurationsdatei : % s # # # <br>
+(trg)="s33"> # # # संयोजना फाइल : % s पासून वाचा # # # <br>
+<hr>
+(src)="s34"> Name : % s <br>
+(trg)="s34"> नाव : % s <br>
+<hr>
+(src)="s35"> Keine Modul-Informationen verfügbar <br>
+(trg)="s35"> घटक माहिती उपलब ् ध नाही <br>
+<hr>
+(src)="s36"> Version : % s <br>
+(trg)="s36"> आवृत ् ती : % s <br>
+<hr>
+(src)="s37"> Beschreibung : % s <br>
+(trg)="s37"> वर ् णन : % s <br>
+<hr>
+(src)="s38"> Autor : % s <br>
+(trg)="s38"> लेखक : % s <br>
+<hr>
+(src)="s39"> Verwendung : % s <br>
+(trg)="s39"> वापरणी : % s <br>
+<hr>
+(src)="s40"> Lade einmalig : % s <br>
+(trg)="s40"> एकदा दाखल करा : % s <br>
+<hr>
+(src)="s41"> DEPRECATION WARNING : % s <br>
+(trg)="s41"> DEPRECATION WARNING : % s <br>
+<hr>
+(src)="s42"> Pfad : % s <br>
+(trg)="s42"> मार ् ग : % s <br>
+<hr>
+(src)="s43"> Öffnen der Datei ' % s ' fehlgeschlagen <br>
+(trg)="s43"> संयोजना फाइल ' % s ' उघडण ् यास अपयशी : % s <br>
+<hr>
+(src)="s44"> Ursprünglicher dlopen-Loader konnte nicht gefunden werden . <br>
+(trg)="s44"> मूळ lt _ dlopen दाखलकर ् ता शोधण ् यास अपयशी . <br>
+<hr>
+(src)="s45"> Neuer dlopen-Loader konnte nicht gefunden werden . <br>
+(trg)="s45"> नवीन dl दाखलकर ् ता वाटप करण ् यास अपयशी . <br>
+<hr>
+(src)="s46"> Hinzufügen von Bind-Now-Loader fehlgeschlagen . <br>
+(trg)="s46"> bind-now-loader समावेष करण ् यास अपयशी . <br>
+<hr>
+(src)="s47"> Signal % s empfangen . <br>
+(trg)="s47"> संकेत % s प ् राप ् त झाले . <br>
+<hr>
+(src)="s48"> Wird beendet . <br>
+(trg)="s48"> बाहेर पडत आहे . <br>
+<hr>
+(src)="s49"> Benutzer ' % s ' nicht gefunden . <br>
+(trg)="s49"> वापरकर ् ता ' % s ' शोधणे अशक ् य . <br>
+<hr>
+(src)="s50"> Gruppe ' % s ' nicht gefunden . <br>
+(trg)="s50"> गट ' % s ' शोधण ् यास अपयशी . <br>
+<hr>
+(src)="s51"> Benutzer ' % s ' ( UID % lu ) und Gruppe ' % s ' ( GID % lu ) gefunden . <br>
+(trg)="s51"> वापरकर ् ता ' % s ' ( UID % lu ) व गट ' % s ' ( GID % lu ) आढळले . <br>
+<hr>
+(src)="s52"> GID von Benutzer ' % s ' und Gruppe ' % s ' stimmen nicht überein . <br>
+(trg)="s52"> वापरकर ् ता ' % s ' व गट ' % s ' चे GID जुळत नाही . <br>
+<hr>
+(src)="s53"> Benutzerverzeichnis von Benutzer ' % s ' ist nicht ' % s ' , ignoriere . <br>
+(trg)="s53"> वापरकर ् ता ' % s ' ची मुख ् य डिरेक ् ट ् री ' % s ' नाही , दुर ् लक ् ष करत आहे . <br>
+<hr>
+(src)="s54"> Konnte ' % s ' nciht erzeugen : % s <br>
+(trg)="s54"> ' % s ' बनवण ् यास अपयशी : % s <br>
+<hr>
+(src)="s55"> Wechseln der Gruppen-Liste fehlgeschlagen : % s <br>
+(trg)="s55"> गट यादी बदलवण ् यास अपयशी : % s <br>
+<hr>
+(src)="s56"> Wechseln der GID fehlgeschlagen : % s <br>
+(trg)="s56"> GID बदलवण ् यास अपयशी : % s <br>
+<hr>
+(src)="s57"> Wechseln der UID fehlgeschlagen : % s <br>
+(trg)="s57"> UID बदलवण ् यास अपयशी : % s <br>
+<hr>
+(src)="s59"> System-Modus auf dieser Plattform nicht unterstützt . <br>
+(trg)="s59"> प ् रणाली भर पद ् धत या प ् लॅटफॉर ् म करीता समर ् थीत नाही . <br>
+<hr>
+(src)="s60"> setrlimit ( % s , ( % u , % u ) ) fehlgeschlagen : % s <br>
+(trg)="s60"> setrlimit ( % s , ( % u , % u ) ) अपयशी : % s <br>
+<hr>
+(src)="s61"> Parsen der Kommandzeile fehlgeschlagen . <br>
+(trg)="s61"> आदेश ओळ वाचण ् यास अपयशी . <br>
+<hr>
+(src)="s63"> Daemon läuft nicht <br>
+(trg)="s63"> डिमन कार ् यरत नाही <br>
+<hr>
+(src)="s64"> Daemon läuft als PID % u <br>
+(trg)="s64"> डिमन PID % u नुरूप कार ् यरत आहे <br>
+<hr>
+(src)="s65"> Konnte Prozess nicht abbrechen : % s <br>
+(trg)="s65"> डिमन नष ् ट करण ् यास अपयशी : % s <br>
+<hr>
+(src)="s66"> Dieses Programm sollte ohne die Option --system nicht als Administrator ausgeführt werden . <br>
+(trg)="s66"> हा कार ् यक ् रम रूट नुरूप चालविण ् याकरीता नाही ( जोपर ् यंत --system निश ् चित नाही ) . <br>
+<hr>
+(src)="s67"> Root-Berechtigungen benötigt . <br>
+(trg)="s67"> रूट परवानगी आवश ् यक . <br>
+<hr>
+(src)="s68"> --start nicht unterstützt für System-Instanzen . <br>
+(trg)="s68"> प ् रणाली घटनांकरीता --start समर ् थीत नाही . <br>
+<hr>
+(src)="s71"> System-Modus aktiv , jeodch --disallow-exit nicht gesetzt ! <br>
+(trg)="s71"> प ् रणाली पद ् धती अंतर ् गत कार ् यरत , परंतु --disallow-exit निश ् चित केले नाही ! <br>
+<hr>
+(src)="s72"> System-Modus aktiv , jedoch --disallow-module-loading nicht gesetzt ! <br>
+(trg)="s72"> प ् रणाली पद ् धती अंतर ् गत कार ् यरत , परंतु --disallow-module-loading निश ् चित केले नाही ! <br>
+<hr>
+(src)="s73"> System-Modus aktiv , SHM-Modus gezwungenermaßen deaktiviert ! <br>
+(trg)="s73"> प ् रणाली पद ् धती अंतर ् गत कार ् यरत , SHM पद ् धत जबरनरित ् या अकार ् यान ् वीत करत आहे ! <br>
+<hr>
+(src)="s74"> System-Modus aktiv , Exit-Idle-Time gezwungenermaßen deaktiviert ! <br>
+(trg)="s74"> प ् रणाली पद ् धती अंतर ् गत कार ् यरत , रिकामे वेळ जबरनरित ् या अकार ् यान ् वीत करत आहे ! <br>
+<hr>
+(src)="s75"> Reservieren von STDIO fehlgeschlagen . <br>
+(trg)="s75"> stdio प ् राप ् त करण ् यास अपयशी . <br>
+<hr>
+(src)="s76"> pipe fehlgeschlagen : % s <br>
+(trg)="s76"> पाइप अपयशी : % s <br>
+<hr>
+(src)="s77"> fork ( ) fehlgeschlagen : % s <br>
+(trg)="s77"> fork ( ) अपयशी : % s <br>
+<hr>
+(src)="s78"> read ( ) fehlgeschlagen : % s <br>
+(trg)="s78"> read ( ) अपयशी : % s <br>
+<hr>
+(src)="s79"> Start des Daemons fehlgeschlagen . <br>
+(trg)="s79"> डिमन स ् टार ् टअप अपयशी . <br>
+<hr>
+(src)="s80"> Start des Daemons erfolgreich . <br>
+(trg)="s80"> डिमन स ् टार ् टअप यशस ् वी . <br>
+<hr>
+(src)="s81"> read ( ) fehlgeschlagen : % s <br>
+(trg)="s81"> read ( ) अपयशी : % s <br>
+<hr>
+(src)="s82"> Dies ist PulseAudio % s <br>
+(trg)="s82"> हे PulseAudio % s आहे <br>
+<hr>
+(src)="s83"> Kompilier-Host : % s <br>
+(trg)="s83"> कंपाइलेशन यजमान : % s <br>
+<hr>
+(src)="s84"> Kompilier-CFLAGS : % s <br>
+(trg)="s84"> कंपाइलेशन CFLAGS : % s <br>
+<hr>
+(src)="s85"> Laufe auf Host : % s <br>
+(trg)="s85"> यजमान वर कार ् यरत : % s <br>
+<hr>
+(src)="s86"> % u CPUs gefunden . <br>
+(trg)="s86"> % u CPUs आढळले . <br>
+<hr>
+(src)="s87"> Seitengröße ist % lu Bytes . <br>
+(trg)="s87"> पान आकार % lu बाईटस ् आहे <br>
+<hr>
+(src)="s88"> Kompiliere mit Valgrind-Unterstützung : ja <br>
+(trg)="s88"> Valgrind समर ् थनशी कंपाईल केले : होय <br>
+<hr>
+(src)="s89"> Kompiliere mit Valgrind-Unterstützung : nein <br>
+(trg)="s89"> Valgrind समर ् थनशी कंपाईल केले : नाही <br>
+<hr>
+(src)="s90"> Läuft im Valgrind-Modus : % s <br>
+(trg)="s90"> valgrind पद ् धतीत कार ् यरत : % s <br>
+<hr>
+(src)="s91"> Laufe auf Host : % s <br>
+(trg)="s91"> यजमान वर कार ् यरत : % s <br>
+<hr>
+(src)="s92"> Optimiertes Build : ja <br>
+(trg)="s92"> अनुकूल बिल ् ड : होय <br>
+<hr>
+(src)="s93"> Optimiertes Build : nein <br>
+(trg)="s93"> अनुकूल बिल ् ड : नाही <br>
+<hr>
+(src)="s94"> NDEBUG definiert , alle Ansprüche deaktiviert . <br>
+(trg)="s94"> NDEBUG वर ् णीकृत , सर ् व asserts अकार ् यान ् वीत . <br>
+<hr>
+(src)="s95"> FASTPATH definiert , nur fast-path-Ansprüche deaktiviert . <br>
+(trg)="s95"> FASTPATH वर ् णीकृत , फक ् त जलद मार ् गीय asserts अकार ् यान ् वीत केले . <br>
+<hr>
+(src)="s96"> Alle Ansprüche aktiviert . <br>
+(trg)="s96"> सर ् व asserts कार ् यान ् वीत केले . <br>
+<hr>
+(src)="s97"> Beziehen der Maschinen-ID fehlgeschlagen <br>
+(trg)="s97"> मशीन ID प ् राप ् त करण ् यास अपयशी <br>
+<hr>
+(src)="s98"> System- ID ist % s . <br>
+(trg)="s98"> मशीन ID % s आहे . <br>
+<hr>
+(src)="s99"> System- ID ist % s . <br>
+(trg)="s99"> सत ् र ID % s आहे . <br>
+<hr>
+(src)="s100"> Nutze Laufzeit-Verzeichnis % s . <br>
+(trg)="s100"> रनटाईम डिरेक ् ट ् री % s वापरत आहे . <br>
+<hr>
+(src)="s101"> Nutze Zustands-Verzeichnis % s . <br>
+(trg)="s101"> स ् थिती डिरेक ् ट ् री % s वापरत आहे . <br>
+<hr>
+(src)="s102"> Modul-Verzeichnis % s benutzen . <br>
+(trg)="s102"> घटक डिरेक ् ट ् री % s वापरत आहे . <br>
+<hr>
+(src)="s103"> Laufe im System-Modus : % s <br>
+(trg)="s103"> प ् रणाली पद ् धतीत कार ् यरत : % s <br>
+<hr>
+(src)="s105"> pa _ pid _ file _ create ( ) fehlgeschlagen . <br>
+(trg)="s105"> pa _ pid _ file _ create ( ) अपयशी . <br>
+<hr>
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# ca/Pulseaudio.master/Pulseaudio.master.xml.gz<br>
+# de_CH/Pulseaudio.master/Pulseaudio.master.xml.gz
+
+<p><hr>
+(src)="s1"> Alliberant els privilegis . <br>
+(trg)="s1"> Root-Privilegien aufräumen . <br>
+<hr>
+(src)="s2"> % s [ opcions ] COMANDES : -h , --help Mostra aquesta ajuda --version Mostra la versió --dump-conf Volca la configuració per omissió --dump-modules Volca la llista de mòduls --dump-resample-methods Volca els mètodes disponibles de remostratge --cleanup-shm Neteja els segments de memòria compartida sense emprar --start Inicia el dimoni si aquest no s ' està executant -k --kill Mata el dimoni en execució --check Comprova l ' execució del dimoni OPCIONS : --system [ = BOOL ] Executa com una instància de sistema -D , --daemonize [ = BOOL ] Converteix en dimoni després de la inicialització --fail [ = BOOL ] Surt quan falli la inicialització --high-priority [ = BOOL ] Prova d ' establir un nivell de Prioritat alta ( només disponible com a root , amb SUID o amb un RLIMIT _ NICE elevat ) --realtime [ = BOOL ] Intenta habilitar la programació en en temps real ( només disponible com a root , amb SUID o amb un RLIMIT _ RTPRIO elevat ) --disallow-module-loading [ = BOOL ] Inhabilita el mòdul de carrega / descarrega de mòduls demanats per l ' usuari després de l ' inici --disallow-exit [ = BOOL ] Inhabilita la petició de l ' usuari de sortida --exit-idle-time = SEGS Mata el dimoni quan estigui inactiu i hagi passat aquest temps --module-idle-time = SEGS Descarrega els mòduls carregats automàticament quan estigui inactiu o hagi passat aquest temps --scache-idle-time = SEGS Descarrega les mostres carregades automàticament després que hagi passat aquest temps --log-level [ = NIVELL ] Incrementa o especifica el nivell de detall -v Incrementa el nivell de detall --log-target = { auto , syslog , stderr } Especifica el destí del registre --log-meta [ = BOOL ] Inclou codi de localització en els missatges de registre --log-time [ = BOOL ] Inclou marques de temps en els missatges de registre --log-backtrace = MARCS Inclou una traça en els missatges de registre -p , --dl-search-path = CAMÍ Estableix el camí de cerca d ' objectes dinàmics compartits ( plugins ) --resample-method = MÈTODE Utilitza el mètode de remostreig ( Per veure els valors possibles utilitza --dump-resample-methods ) --use-pid-file [ = BOOL ] Crea un fitxer PID --no-cpu-limit [ = BOOL ] No instal · lis un limitador de càrrega de CPU en plataformes que ho suportin . --disable-shm [ = BOOL ] Inhabilita el suport de memòria compartida . SCRIPT D ' INICI : -L , --load = " ARGUMENTS MÒDUL " Carrega el mòdul especificat amb els arguments especificats -F , --file = NOMFITXER Executa l ' script especificat -C Obre una línia d ' ordres en la TTY actual després de l ' inici -n No carreguis el fitxer de configuració per omissió <br>
+(trg)="s2"> % s [ options ] BEFEHLE : -h , --help Zeige diese Hilfe --version Zeige Version --dump-conf Zeige Standardkonfiguration --dump-modules Zeige Liste verfügbarer Module --dump-resample-methods Zeige verfügbare Resample-Methoden --cleanup-shm Cleanup stale shared memory segments --start Starte Daemon , falls noch nicht geschehen -k --kill Laufenden Daemon beenden --check Prüfe laufende Daemone ( gibt nur einen Exit-Code zurück ) OPTIONS : --system [ = BOOL ] Als systemweite Instanz ausführen -D , --daemonize [ = BOOL ] Nach Start zum Daemon machen --fail [ = BOOL ] Beenden , wenn Start fehlschlägt --high-priority [ = BOOL ] Nutze höchste Priorität ( Nur verfügbar als root , wenn SUID oder mit erhöhtem RLIMIT _ NICE ) --realtime [ = BOOL ] Versuche , Echtzeit-Scheduling zu aktivieren ( Nur verfügbar als root , wenn SUID oder mit erhöhtem RLIMIT _ RTPRIO ) --disallow-module-loading [ = BOOL ] Verbiete ( Ent- ) laden durch Nutzer angeforderter Module nach dem Start --disallow-exit [ = BOOL ] Verbiete Beenden auf Anfrage des Nutzers --exit-idle-time = SECS Beende Daemon , wenn für diese Zeit untätig --module-idle-time = SECS Entlade untätige Module nach dieser Zeit --scache-idle-time = SECS Entlade untätige automatisch geladene Samples nach dieser Zeit --log-level [ = STUFE ] Grad der Ausführlichkeit angeben -v Ausführliche Meldungen --log-target = { auto , syslog , stderr } Protokoll-Ziel angeben -p , --dl-search-path = PFAD Suchpfad für dynamisch freigegebene Objekte ( Plugins ) --resample-method = METHODE Nutze diese Resampling-Methode ( Siehe --dump-resample-methods für mögliche Werte ) --use-pid-file [ = BOOL ] Eine PID-Datei erstellen --no-cpu-limit [ = BOOL ] CPU-Lastbegrenzung auf unterstützten Systemen nicht installieren . --disable-shm [ = BOOL ] Keine Unterstützung für Shared Memory . STARTUP-SCRIPT : -L , --load = " MODUL-ARGUMENTE " Plugin-Modul mit diesen Parametern laden . -F , --file = DATEINAMEN Dieses Skript ausführen -C Nach Start auf laufendem TTY eine Kommandozeile öffnen -n Standardskript nicht laden <br>
+<hr>
+(src)="s3"> --daemonize necessita un argument booleà <br>
+(trg)="s3"> Option --daemonize erfordert bool 'schen Wert <br>
+<hr>
+(src)="s4"> --fail necessita un argument booleà <br>
+(trg)="s4"> Option --fail erfordert bool 'schen Wert <br>
+<hr>
+(src)="s5"> --log-level necessita un argument de nivell de log ( valor númeric 0 .. 4 o debug , info , notice , warn , error ) . <br>
+(trg)="s5"> --log-level erfordert Wert für Grad der Protokollierung ( entweder numerisch im Bereich 0 .. 4 or einen dieser : debug , info , notice , warn , error ) . <br>
+<hr>
+(src)="s6"> --high-priority necessita un argument booleà <br>
+(trg)="s6"> Option --high-priority erfordert bool 'schen Wert <br>
+<hr>
+(src)="s7"> --realtime necessita un argument booleà <br>
+(trg)="s7"> Option --realtime erfordert bool 'schen Wert <br>
+<hr>
+(src)="s8"> --disallow-module-loading necessita un argument booleà <br>
+(trg)="s8"> Option --disallow-module-loading erfordert bool 'schen Wert <br>
+<hr>
+(src)="s9"> --disallow-exit necessita un argument booleà <br>
+(trg)="s9"> --disallow-exit erfordert boolsches Argument <br>
+<hr>
+(src)="s10"> --use-pid-file necessita un argument booleà <br>
+(trg)="s10"> Option --use-pid-file erfordert bool 'schen Wert <br>
+<hr>
+(src)="s11"> Objectiu de log invàlid : utilitzeu ' syslog ' , ' stderr ' o ' auto ' . <br>
+(trg)="s11"> Ungültiges Log-Ziel : Benutzen Sie entweder ' syslog ' , ' stderr ' oder ' auto ' . <br>
+<hr>
+(src)="s12"> Objectiu de log invàlid : utilitzeu ' syslog ' , ' stderr ' o ' auto ' . <br>
+(trg)="s12"> Ungültiges Log-Ziel : Benutzen Sie entweder ' syslog ' , ' stderr ' oder ' auto ' . <br>
+<hr>
+(src)="s13"> --logtime necessita un argument booleà <br>
+(trg)="s13"> --realtime erfordert boolsches Argument <br>
+<hr>
+(src)="s14"> --log-meta necessita un argument booleà <br>
+(trg)="s14"> --log-meta erfordert boolschen Wert <br>
+<hr>
+(src)="s15"> Mètode de remostratge invàlid ' % s ' . <br>
+(trg)="s15"> Ungültige Resample-Methode ' % s ' . <br>
+<hr>
+(src)="s16"> --system necessita un argument booleà <br>
+(trg)="s16"> --System erwartet Boolean-Argument <br>
+<hr>
+(src)="s17"> --no-cpu-limit necessita un argument booleà <br>
+(trg)="s17"> Option --no-cpu-limit erfordert bool 'schen Wert <br>
+<hr>
+(src)="s18"> --disable-shm necessita un argument booleà <br>
+(trg)="s18"> Option --disable-shm erfordert bool 'schen Wert <br>
+<hr>
+(src)="s19"> [ % s : % u ] Destí de registre incorrecte ' % s ' <br>
+(trg)="s19"> [ % s : % u ] Ungültiges Log-Ziel ' % s ' . <br>
+<hr>
+(src)="s20"> [ % s : % u ] Nivell de registre incorrecte ' % s ' . <br>
+(trg)="s20"> [ % s : % u ] Ungültige Log-Stufe ' % s ' . <br>
+<hr>
+(src)="s21"> [ % s : % u ] Mètode de remostreig incorrecte ' % s ' . <br>
+(trg)="s21"> [ % s : % u ] Ungültige Resample-Methode ' % s ' . <br>
+<hr>
+(src)="s22"> [ % s : % u ] rlimit incorrecte ' % s ' . <br>
+(trg)="s22"> [ % s : % u ] Ungültiges rlimit ' % s ' . <br>
+<hr>
+(src)="s23"> [ % s : % u ] Format de mostra incorrecte ' % s ' . <br>
+(trg)="s23"> [ % s : % u ] Ungültiges Sample-Format ' % s ' . <br>
+<hr>
+(src)="s24"> [ % s : % u ] Velocitat de mostreig ' % s ' . <br>
+(trg)="s24"> [ % s : % u ] Ungültige Sample-Rate ' % s ' . <br>
+<hr>
+(src)="s25"> [ % s : % u ] Canals de mostreig incorrectes ' % s ' . <br>
+(trg)="s25"> [ % s : % u ] Ungültige Sample-Kanäle ' % s ' . <br>
+<hr>
+(src)="s26"> [ % s : % u ] Mapa de canals incorrecte ' % s ' . <br>
+(trg)="s26"> [ % s : % u ] Ungültige Kanal-Zuordnung ' % s ' . <br>
+<hr>
+(src)="s27"> [ % s : % u ] Nombre de fragments incorrecte ' % s ' . <br>
+(trg)="s27"> [ % s : % u ] Ungültige Anzahl von Fragmenten ' % s ' . <br>
+<hr>
+(src)="s28"> [ % s : % u ] Mida de fragment incorrecta ' % s ' . <br>
+(trg)="s28"> [ % s : % u ] Ungültige Fragmentgröße ' % s ' . <br>
+<hr>
+(src)="s29"> [ % s : % u ] Nivell de prioritat incorrecte ' % s ' . <br>
+(trg)="s29"> [ % s : % u ] Ungültige Nice-Stufe ' % s ' . <br>
+<hr>
+(src)="s30"> [ % s : % u ] Velocitat de mostreig ' % s ' . <br>
+(trg)="s30"> [ % s : % u ] Ungültige Sample-Rate ' % s ' . <br>
+<hr>
+(src)="s31"> Error en obrir el fitxer de configuració : % s <br>
+(trg)="s31"> Öffnen der Konfigurationsdatei fehlgeschlagen : % s <br>
+<hr>
+(src)="s32"> El mapa de canals especificat per omissió té un número de canals diferent del número de canals especificat per omissió . <br>
+(trg)="s32"> Die angegebene Standard-Kanalzuordnung hat eine andere Anzahl von Kanälen als die angegebene Standard-Kanal-Anzahl . <br>
+<hr>
+(src)="s33"> # # # Lectura del fitxer de configuració : % s # # # <br>
+(trg)="s33"> # # # Lese von Konfigurationsdatei : % s # # # <br>
+<hr>
+(src)="s34"> Nom : % s <br>
+(trg)="s34"> Name : % s <br>
+<hr>
+(src)="s35"> No hi ha informació del módul disponible <br>
+(trg)="s35"> Keine Modul-Informationen verfügbar <br>
+<hr>
+(src)="s36"> Versió : % s <br>
+(trg)="s36"> Version : % s <br>
+<hr>
+(src)="s37"> Descripció : % s <br>
+(trg)="s37"> Beschreibung : % s <br>
+<hr>
+(src)="s38"> Autor : % s <br>
+(trg)="s38"> Autor : % s <br>
+<hr>
+(src)="s39"> Utilització : % s <br>
+(trg)="s39"> Verwendung : % s <br>
+<hr>
+(src)="s40"> Càrrega : % s <br>
+(trg)="s40"> Lade einmalig : % s <br>
+<hr>
+(src)="s41"> Advertència d ' obsolescència : % s <br>
+(trg)="s41"> DEPRECATION WARNING : % s <br>
+<hr>
+(src)="s42"> Ruta : % s <br>
+(trg)="s42"> Pfad : % s <br>
+<hr>
+(src)="s43"> No s ' ha pogut obrir el fitxer ' % s ' <br>
+(trg)="s43"> Öffnen der Datei ' % s ' fehlgeschlagen <br>
+<hr>
+(src)="s44"> No s ' ha trobat el carregador lt _ dlopen original . <br>
+(trg)="s44"> Ursprünglicher dlopen-Loader konnte nicht gefunden werden . <br>
+<hr>
+(src)="s45"> No s ' ha pogut allotjar el nou carregador dl . <br>
+(trg)="s45"> Neuer dlopen-Loader konnte nicht gefunden werden . <br>
+<hr>
+(src)="s46"> No s ' ha pogut afegir bind-now-loader . <br>
+(trg)="s46"> Hinzufügen von Bind-Now-Loader fehlgeschlagen . <br>
+<hr>
+(src)="s47"> S ' ha obtingut la senyal % s . <br>
+(trg)="s47"> Signal % s empfangen . <br>
+<hr>
+(src)="s48"> S ' està sortint . <br>
+(trg)="s48"> Wird beendet . <br>
+<hr>
+(src)="s49"> No s ' ha trobat l ' usuari ' % s ' . <br>
+(trg)="s49"> Benutzer ' % s ' nicht gefunden . <br>
+<hr>
+(src)="s50"> No s ' ha trobat el grup ' % s ' . <br>
+(trg)="s50"> Gruppe ' % s ' nicht gefunden . <br>
+<hr>
+(src)="s51"> S ' han trobat l ' usuari ' % s ' ( UID % lu ) i el grup ' % s ' ( GID % lu ) . <br>
+(trg)="s51"> Benutzer ' % s ' ( UID % lu ) und Gruppe ' % s ' ( GID % lu ) gefunden . <br>
+<hr>
+(src)="s52"> El GID de l ' usuari ' % s ' i del grup ' % s ' no coincideixen . <br>
+(trg)="s52"> GID von Benutzer ' % s ' und Gruppe ' % s ' stimmen nicht überein . <br>
+<hr>
+(src)="s53"> El directori arrel de l ' usuari ' % s ' no és ' % s ' , s ' ignorarà . <br>
+(trg)="s53"> Benutzerverzeichnis von Benutzer ' % s ' ist nicht ' % s ' , ignoriere . <br>
+<hr>
+(src)="s54"> No s ' ha pogut crear ' % s ' : % s <br>
+(trg)="s54"> Konnte ' % s ' nciht erzeugen : % s <br>
+<hr>
+(src)="s55"> No s ' ha pogut canviar la llista del grup : % s <br>
+(trg)="s55"> Wechseln der Gruppen-Liste fehlgeschlagen : % s <br>
+<hr>
+(src)="s56"> No s ' ha pogut canviar el GID : % s <br>
+(trg)="s56"> Wechseln der GID fehlgeschlagen : % s <br>
+<hr>
+(src)="s57"> No s ' ha pogut canviar l ' UID : % s <br>
+(trg)="s57"> Wechseln der UID fehlgeschlagen : % s <br>
+<hr>
+(src)="s59"> El mode de sistema global no és compatible amb aquesta plataforma . <br>
+(trg)="s59"> System-Modus auf dieser Plattform nicht unterstützt . <br>
+<hr>
+(src)="s60"> S ' ha produït un error en setrlimit ( % s , ( % u , % u ) ) : % s <br>
+(trg)="s60"> setrlimit ( % s , ( % u , % u ) ) fehlgeschlagen : % s <br>
+<hr>
+(src)="s61"> No s ' ha pogut interpretar la línia d ' ordres . <br>
+(trg)="s61"> Parsen der Kommandzeile fehlgeschlagen . <br>
+<hr>
+(src)="s63"> El dimoni no s ' està executant <br>
+(trg)="s63"> Daemon läuft nicht <br>
+<hr>
+(src)="s64"> El dimoni s ' està executant amb PID % u <br>
+(trg)="s64"> Daemon läuft als PID % u <br>
+<hr>
+(src)="s65"> S ' ha produït un error en matar el dimoni : % s <br>
+(trg)="s65"> Konnte Prozess nicht abbrechen : % s <br>
+<hr>
+(src)="s66"> No és necessari executar aquesta aplicació com a root ( excepte si s ' especifica --system ) <br>
+(trg)="s66"> Dieses Programm sollte ohne die Option --system nicht als Administrator ausgeführt werden . <br>
+<hr>
+(src)="s67"> Es requereixen privilegis de root . <br>
+(trg)="s67"> Root-Berechtigungen benötigt . <br>
+<hr>
+(src)="s68"> La opció --start no està suportada per a instàncies de sistema . <br>
+(trg)="s68"> --start nicht unterstützt für System-Instanzen . <br>
+<hr>
+(src)="s71"> S ' està executant en mode sistema , però no s ' ha especificat l ' opció --disallow-exit . <br>
+(trg)="s71"> System-Modus aktiv , jeodch --disallow-exit nicht gesetzt ! <br>
+<hr>
+(src)="s72"> S ' està executant en mode sistema , però no s ' ha especificat l ' opció --disallow-module-loading . <br>
+(trg)="s72"> System-Modus aktiv , jedoch --disallow-module-loading nicht gesetzt ! <br>
+<hr>
+(src)="s73"> S ' està executant en mode sistema , es deshabilitarà el mode SHM forçosament . <br>
+(trg)="s73"> System-Modus aktiv , SHM-Modus gezwungenermaßen deaktiviert ! <br>
+<hr>
+(src)="s74"> S ' està executant en mode sistema , la sortida per temps d ' inactivitat es deshabilita . <br>
+(trg)="s74"> System-Modus aktiv , Exit-Idle-Time gezwungenermaßen deaktiviert ! <br>
+<hr>
+(src)="s75"> S ' ha produït un error en adquirir stdio . <br>
+(trg)="s75"> Reservieren von STDIO fehlgeschlagen . <br>
+<hr>
+(src)="s76"> Ha fallat la canonada : % s <br>
+(trg)="s76"> pipe fehlgeschlagen : % s <br>
+<hr>
+(src)="s77"> Ha fallat fork ( ) : % s <br>
+(trg)="s77"> fork ( ) fehlgeschlagen : % s <br>
+<hr>
+(src)="s78"> Ha fallat read ( ) : % s <br>
+(trg)="s78"> read ( ) fehlgeschlagen : % s <br>
+<hr>
+(src)="s79"> S ' ha produït un error en iniciar el dimoni . <br>
+(trg)="s79"> Start des Daemons fehlgeschlagen . <br>
+<hr>
+(src)="s80"> S ' ha iniciat el dimoni . <br>
+(trg)="s80"> Start des Daemons erfolgreich . <br>
+<hr>
+(src)="s81"> Ha fallat read ( ) : % s <br>
+(trg)="s81"> read ( ) fehlgeschlagen : % s <br>
+<hr>
+(src)="s82"> Aquest és el PulseAudio % s <br>
+(trg)="s82"> Dies ist PulseAudio % s <br>
+<hr>
+(src)="s83"> Host de compilació : % s <br>
+(trg)="s83"> Kompilier-Host : % s <br>
+<hr>
+(src)="s84"> CFLAGS de compilació : % s <br>
+(trg)="s84"> Kompilier-CFLAGS : % s <br>
+<hr>
+(src)="s85"> S ' està executant en el host : % s <br>
+(trg)="s85"> Laufe auf Host : % s <br>
+<hr>
+(src)="s86"> S ' han trobat % u CPU ' s <br>
+(trg)="s86"> % u CPUs gefunden . <br>
+<hr>
+(src)="s87"> La mida de pàgina és de % lu bytes . <br>
+(trg)="s87"> Seitengröße ist % lu Bytes . <br>
+<hr>
+(src)="s88"> Compilat amb suport per a Valgrind : sí <br>
+(trg)="s88"> Kompiliere mit Valgrind-Unterstützung : ja <br>
+<hr>
+(src)="s89"> Compilat amb suport per a Valgrind : no <br>
+(trg)="s89"> Kompiliere mit Valgrind-Unterstützung : nein <br>
+<hr>
+(src)="s90"> S ' està executant amb el mode valgrind : % s <br>
+(trg)="s90"> Läuft im Valgrind-Modus : % s <br>
+<hr>
+(src)="s91"> S ' està executant en el host : % s <br>
+(trg)="s91"> Laufe auf Host : % s <br>
+<hr>
+(src)="s92"> Construcció optimitzada : sí <br>
+(trg)="s92"> Optimiertes Build : ja <br>
+<hr>
+(src)="s93"> Construcció optmitzada : no <br>
+(trg)="s93"> Optimiertes Build : nein <br>
+<hr>
+(src)="s94"> NDEBUG està definit , s ' han desactivat totes les assercions . <br>
+(trg)="s94"> NDEBUG definiert , alle Ansprüche deaktiviert . <br>
+<hr>
+(src)="s95"> FASTPATH està definit , només s ' ha deshabilitat les assercions de camí ràpid . <br>
+(trg)="s95"> FASTPATH definiert , nur fast-path-Ansprüche deaktiviert . <br>
+<hr>
+(src)="s96"> S ' han habilitat totes les assercions . <br>
+(trg)="s96"> Alle Ansprüche aktiviert . <br>
+<hr>
+(src)="s97"> No s ' ha pogut obtenir l ' ID de la màquina <br>
+(trg)="s97"> Beziehen der Maschinen-ID fehlgeschlagen <br>
+<hr>
+(src)="s98"> L ' ID de la màquina és % s . <br>
+(trg)="s98"> System- ID ist % s . <br>
+<hr>
+(src)="s99"> L ' ID de la sessió és % s . <br>
+(trg)="s99"> System- ID ist % s . <br>
+<hr>
+(src)="s100"> S ' està utilitzant el directori d ' execució % s . <br>
+(trg)="s100"> Nutze Laufzeit-Verzeichnis % s . <br>
+<hr>
+(src)="s101"> S ' està utilitzant el directori d ' estat % s . <br>
+(trg)="s101"> Nutze Zustands-Verzeichnis % s . <br>
+<hr>
+(src)="s102"> S ' està utilitzant el directori dels móduls % s . <br>
+(trg)="s102"> Modul-Verzeichnis % s benutzen . <br>
+<hr>
+(src)="s103"> S ' està executant en mode sistema : % s <br>
+(trg)="s103"> Laufe im System-Modus : % s <br>
+<hr>
+(src)="s105"> S ' ha produït un error en pa _ pid _ file _ create ( ) . <br>
+(trg)="s105"> pa _ pid _ file _ create ( ) fehlgeschlagen . <br>
+<hr>
+</body>
+</html>

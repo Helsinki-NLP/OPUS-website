@@ -1,0 +1,316 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# de_CH/Pulseaudio.master/Pulseaudio.master.xml.gz<br>
+# pl/Pulseaudio.master/Pulseaudio.master.xml.gz
+
+<p><hr>
+(src)="s1"> Root-Privilegien aufräumen . <br>
+(trg)="s1"> Czyszczenie uprawnień . <br>
+<hr>
+(src)="s2"> % s [ options ] BEFEHLE : -h , --help Zeige diese Hilfe --version Zeige Version --dump-conf Zeige Standardkonfiguration --dump-modules Zeige Liste verfügbarer Module --dump-resample-methods Zeige verfügbare Resample-Methoden --cleanup-shm Cleanup stale shared memory segments --start Starte Daemon , falls noch nicht geschehen -k --kill Laufenden Daemon beenden --check Prüfe laufende Daemone ( gibt nur einen Exit-Code zurück ) OPTIONS : --system [ = BOOL ] Als systemweite Instanz ausführen -D , --daemonize [ = BOOL ] Nach Start zum Daemon machen --fail [ = BOOL ] Beenden , wenn Start fehlschlägt --high-priority [ = BOOL ] Nutze höchste Priorität ( Nur verfügbar als root , wenn SUID oder mit erhöhtem RLIMIT _ NICE ) --realtime [ = BOOL ] Versuche , Echtzeit-Scheduling zu aktivieren ( Nur verfügbar als root , wenn SUID oder mit erhöhtem RLIMIT _ RTPRIO ) --disallow-module-loading [ = BOOL ] Verbiete ( Ent- ) laden durch Nutzer angeforderter Module nach dem Start --disallow-exit [ = BOOL ] Verbiete Beenden auf Anfrage des Nutzers --exit-idle-time = SECS Beende Daemon , wenn für diese Zeit untätig --module-idle-time = SECS Entlade untätige Module nach dieser Zeit --scache-idle-time = SECS Entlade untätige automatisch geladene Samples nach dieser Zeit --log-level [ = STUFE ] Grad der Ausführlichkeit angeben -v Ausführliche Meldungen --log-target = { auto , syslog , stderr } Protokoll-Ziel angeben -p , --dl-search-path = PFAD Suchpfad für dynamisch freigegebene Objekte ( Plugins ) --resample-method = METHODE Nutze diese Resampling-Methode ( Siehe --dump-resample-methods für mögliche Werte ) --use-pid-file [ = BOOL ] Eine PID-Datei erstellen --no-cpu-limit [ = BOOL ] CPU-Lastbegrenzung auf unterstützten Systemen nicht installieren . --disable-shm [ = BOOL ] Keine Unterstützung für Shared Memory . STARTUP-SCRIPT : -L , --load = " MODUL-ARGUMENTE " Plugin-Modul mit diesen Parametern laden . -F , --file = DATEINAMEN Dieses Skript ausführen -C Nach Start auf laufendem TTY eine Kommandozeile öffnen -n Standardskript nicht laden <br>
+(trg)="s2"> % s [ opcje ] POLECENIA : -h , --help Wyświetla tę pomoc --version Wyświetla wersję --dump-conf Zrzuca domyślną konfigurację --dump-modules Zrzuca listę dostępnych modułów --dump-resample-methods Zrzuca dostępne metody resamplingu --cleanup-shm Czyści stare fragmenty pamięci współdzielonej --start Uruchamia usługi , jeśli nie jest uruchomiona -k --kill Niszczy uruchomioną usługę --check Sprawdza , czy usługa jest uruchomiona ( zwraca tylko kod wyjścia ) OPCJE : --system [ = ZMIENNALOGICZNA ] Uruchamia w trybie systemowym -D , --daemonize [ = ZMIENNALOGICZNA ] Tworzy usługę po uruchomieniu --fail [ = ZMIENNALOGICZNA ] Wyłącza , kiedy uruchomienie się nie powiedzie --high-priority [ = ZMIENNALOGICZNA ] Próbuje ustawić wysoki poziom nice ( dostępne tylko jako root , na SUID lub z podniesionym RLIMIT _ NICE ) --realtime [ = ZMIENNALOGICZNA ] Próbuje ustawić szeregowanie w czasie rzeczywistym ( dostępne tylko jako root , na SUID lub z podniesionym RLIMIT _ RTPRIO ) --disallow-module-loading [ = ZMIENNALOGICZNA ] Nie zezwala użytkownikowi modułu na żądanie wczytania / usunięcia modułu po uruchomieniu --disallow-exit [ = ZMIENNALOGICZNA ] Nie zezwala użytkownikowi na żądanie wyłączenia --exit-idle-time = SEKUNDY Niszczy usługę , kiedy jest zajęta i upłynął podany czas --scache-idle-time = SEKUNDY Usuwa automatycznie wczytane próbki , kiedy jest zajęty i upłynął podany czas --log-level [ = POZIOM ] Zwiększa lub ustawia poziom wyświetlanych informacji -v --verbose Zwiększa poziom wyświetlanych informacji --log-target = { auto , syslog , stderr , file : ŚCIEŻKA , newfile : ŚCIEŻKA } Określa dziennik docelowy --log-meta [ = ZMIENNALOGICZNA ] Dołącza położenie kodu do komunikatów dziennika --log-time [ = ZMIENNALOGICZNA ] Dołącza czas w komunikatach dziennika --log-backtrace = RAMKI Dołącza błąd w komunikatach dziennika -p , --dl-search-path = ŚCIEŻKA Ustawia ścieżkę wyszukiwania dla dynamicznie współdzielonych obiektów ( wtyczek ) --resample-method = METODA Używa podanej metody resamplingu ( zobacz --dump-resample-methods , aby poznać możliwe wartości ) --use-pid-file [ = ZMIENNALOGICZNA ] Tworzy plik PID --no-cpu-limit [ = ZMIENNALOGICZNA ] Nie instaluje ograniczenia zasobów procesora na obsługujących je platformach . --disable-shm [ = ZMIENNALOGICZNA ] Wyłącza obsługę pamięci współdzielonej . SKRYPT STARTOWY : -L , --load = " PARAMETRY MODUŁU " Wczytuje podany moduł wtyczki z podanym parametrem -F , --file = NAZWAPLIKU Wykonuje podany skrypt -C Otwiera wiersz poleceń na uruchomionym TTY po uruchomieniu -n Nie wczytuje domyślnego pliku skryptu <br>
+<hr>
+(src)="s3"> Option --daemonize erfordert bool 'schen Wert <br>
+(trg)="s3"> --daemonize oczekuje parametru zmiennej logicznej <br>
+<hr>
+(src)="s4"> Option --fail erfordert bool 'schen Wert <br>
+(trg)="s4"> --fail oczekuje parametru zmiennej logicznej <br>
+<hr>
+(src)="s5"> --log-level erfordert Wert für Grad der Protokollierung ( entweder numerisch im Bereich 0 .. 4 or einen dieser : debug , info , notice , warn , error ) . <br>
+(trg)="s5"> --log-level oczekuje parametru poziomu dziennika ( numeryczny w zakresie 0 .. 4 lub jeden z debug , info , notice , warn , error ) . <br>
+<hr>
+(src)="s6"> Option --high-priority erfordert bool 'schen Wert <br>
+(trg)="s6"> --high-priority oczekuje parametru zmiennej logicznej <br>
+<hr>
+(src)="s7"> Option --realtime erfordert bool 'schen Wert <br>
+(trg)="s7"> --realtime oczekuje parametru zmiennej logicznej <br>
+<hr>
+(src)="s8"> Option --disallow-module-loading erfordert bool 'schen Wert <br>
+(trg)="s8"> --disallow-module-loading oczekuje parametru zmiennej logicznej <br>
+<hr>
+(src)="s9"> --disallow-exit erfordert boolsches Argument <br>
+(trg)="s9"> --disallow-exit oczekuje parametru zmiennej logicznej <br>
+<hr>
+(src)="s10"> Option --use-pid-file erfordert bool 'schen Wert <br>
+(trg)="s10"> --use-pid-file oczekuje parametru zmiennej logicznej <br>
+<hr>
+(src)="s11"> Ungültiges Log-Ziel : Benutzen Sie entweder ' syslog ' , ' stderr ' oder ' auto ' . <br>
+(trg)="s11"> Nieprawidłowy dziennik docelowy : należy użyć " syslog " , " journal " , " stderr " , " auto " lub prawidłowej nazwy pliku " file : &lt; \ <br>
+<hr>
+(src)="s12"> Ungültiges Log-Ziel : Benutzen Sie entweder ' syslog ' , ' stderr ' oder ' auto ' . <br>
+(trg)="s12">Nieprawidłowy dziennik docelowy: należy użyć "syslog", "stderr", "auto" lub prawidłowej nazwy pliku "file:&lt;\NieprawidÅowy dziennik docelowy: naleÅ¼y uÅ¼yÄ "syslog", "stderr", "auto" lub prawidÅowej nazwy pliku "file:&lt;\Å\cie\Å\¼ka&gt;", "newfile:&lt;\Å\cie\Å\¼ka&gt;".<br>
+<hr>
+(src)="s13"> --realtime erfordert boolsches Argument <br>
+(trg)="s13">--log-time oczekuje parametru zmiennej logicznej<br>
+<hr>
+(src)="s14"> --log-meta erfordert boolschen Wert <br>
+(trg)="s14">--log-meta oczekuje parametru zmiennej logicznej<br>
+<hr>
+(src)="s15"> Ungültige Resample-Methode ' % s ' . <br>
+(trg)="s15">Nieprawidłowa metoda resamplingu "%s".<br>
+<hr>
+(src)="s16"> --System erwartet Boolean-Argument <br>
+(trg)="s16">--system oczekuje parametru zmiennej logicznej<br>
+<hr>
+(src)="s17"> Option --no-cpu-limit erfordert bool 'schen Wert <br>
+(trg)="s17">--no-cpu-limit oczekuje parametru zmiennej logicznej<br>
+<hr>
+(src)="s18"> Option --disable-shm erfordert bool 'schen Wert <br>
+(trg)="s18">--disable-shm oczekuje parametru zmiennej logicznej<br>
+<hr>
+(src)="s19"> [ % s : % u ] Ungültiges Log-Ziel ' % s ' . <br>
+(trg)="s19">[%s:%u] Nieprawidłowy dziennik docelowy "%s".<br>
+<hr>
+(src)="s20"> [ % s : % u ] Ungültige Log-Stufe ' % s ' . <br>
+(trg)="s20">[%s:%u] NieprawidÅowy poziom dziennika "%s".<br>
+<hr>
+(src)="s21"> [ % s : % u ] Ungültige Resample-Methode ' % s ' . <br>
+(trg)="s21">[%s:%u] Nieprawidłowa metoda resamplingu "%s".<br>
+<hr>
+(src)="s22"> [ % s : % u ] Ungültiges rlimit ' % s ' . <br>
+(trg)="s22">[%s:%u] NieprawidÅowy rlimit "%s".<br>
+<hr>
+(src)="s23"> [ % s : % u ] Ungültiges Sample-Format ' % s ' . <br>
+(trg)="s23">[%s:%u] Nieprawidłowy format próbki "%s".<br>
+<hr>
+(src)="s24"> [ % s : % u ] Ungültige Sample-Rate ' % s ' . <br>
+(trg)="s24">[%s:%u] NieprawidÅowa czÄstotliwoÅÄ prÃ³bki "%s".<br>
+<hr>
+(src)="s25"> [ % s : % u ] Ungültige Sample-Kanäle ' % s ' . <br>
+(trg)="s25">[%s:%u] Nieprawidłowe kanały próbki "%s".<br>
+<hr>
+(src)="s26"> [ % s : % u ] Ungültige Kanal-Zuordnung ' % s ' . <br>
+(trg)="s26">[%s:%u] NieprawidÅowa mapa kanaÅÃ³w "%s".<br>
+<hr>
+(src)="s27"> [ % s : % u ] Ungültige Anzahl von Fragmenten ' % s ' . <br>
+(trg)="s27">[%s:%u] Nieprawidłowa liczba fragmentów "%s".<br>
+<hr>
+(src)="s28"> [ % s : % u ] Ungültige Fragmentgröße ' % s ' . <br>
+(trg)="s28">[%s:%u] NieprawidÅowy rozmiar fragmentu "%s".<br>
+<hr>
+(src)="s29"> [ % s : % u ] Ungültige Nice-Stufe ' % s ' . <br>
+(trg)="s29">[%s:%u] Nieprawidłowy poziom nice "%s".<br>
+<hr>
+(src)="s30"> [ % s : % u ] Ungültige Sample-Rate ' % s ' . <br>
+(trg)="s30">[%s:%u] NieprawidÅowy typ serwera "%s".<br>
+<hr>
+(src)="s31"> Öffnen der Konfigurationsdatei fehlgeschlagen : % s <br>
+(trg)="s31">Otwarcie pliku konfiguracji się nie powiodło: %s<br>
+<hr>
+(src)="s32"> Die angegebene Standard-Kanalzuordnung hat eine andere Anzahl von Kanälen als die angegebene Standard-Kanal-Anzahl . <br>
+(trg)="s32">Podana domyÅlna mapa kanaÅÃ³w ma innÄ liczbÄ kanaÅÃ³w niÅ¼ podana domyÅlna liczba kanaÅÃ³w.<br>
+<hr>
+(src)="s33"> # # # Lese von Konfigurationsdatei : % s # # # <br>
+(trg)="s33">### Odczytano z pliku konfiguracji: %s ### <br>
+<hr>
+(src)="s34"> Name : % s <br>
+(trg)="s34">Nazwa: %s <br>
+<hr>
+(src)="s35"> Keine Modul-Informationen verfügbar <br>
+(trg)="s35">Brak dostępnych informacji o module <br>
+<hr>
+(src)="s36"> Version : % s <br>
+(trg)="s36">Wersja: %s <br>
+<hr>
+(src)="s37"> Beschreibung : % s <br>
+(trg)="s37">Opis: %s <br>
+<hr>
+(src)="s38"> Autor : % s <br>
+(trg)="s38">Autor: %s <br>
+<hr>
+(src)="s39"> Verwendung : % s <br>
+(trg)="s39">Użycie: %s <br>
+<hr>
+(src)="s40"> Lade einmalig : % s <br>
+(trg)="s40">Wczytanie jednorazowe: %s <br>
+<hr>
+(src)="s41"> DEPRECATION WARNING : % s <br>
+(trg)="s41">OSTRZEŻENIE O PRZESTARZAŁOŚCI: %s <br>
+<hr>
+(src)="s42"> Pfad : % s <br>
+(trg)="s42">ÅcieÅ¼ka: %s <br>
+<hr>
+(src)="s43"> Öffnen der Datei ' % s ' fehlgeschlagen <br>
+(trg)="s43">Otwarcie modułu %s się nie powiodło: %s<br>
+<hr>
+(src)="s44"> Ursprünglicher dlopen-Loader konnte nicht gefunden werden . <br>
+(trg)="s44">Odnalezienie pierwotnego programu wczytujÄcego lt_dlopen siÄ nie powiodÅo.<br>
+<hr>
+(src)="s45"> Neuer dlopen-Loader konnte nicht gefunden werden . <br>
+(trg)="s45">Przydzielenie nowego programu wczytującego dl się nie powiodło.<br>
+<hr>
+(src)="s46"> Hinzufügen von Bind-Now-Loader fehlgeschlagen . <br>
+(trg)="s46">Dodanie bind-now-loader siÄ nie powiodÅo.<br>
+<hr>
+(src)="s47"> Signal % s empfangen . <br>
+(trg)="s47">Otrzymano sygnał %s.<br>
+<hr>
+(src)="s48"> Wird beendet . <br>
+(trg)="s48">KoÅczenie dziaÅania.<br>
+<hr>
+(src)="s49"> Benutzer ' % s ' nicht gefunden . <br>
+(trg)="s49">Odnalezienie użytkownika "%s" się nie powiodło.<br>
+<hr>
+(src)="s50"> Gruppe ' % s ' nicht gefunden . <br>
+(trg)="s50">Odnalezienie grupy "%s" siÄ nie powiodÅo.<br>
+<hr>
+(src)="s51"> Benutzer ' % s ' ( UID % lu ) und Gruppe ' % s ' ( GID % lu ) gefunden . <br>
+(trg)="s51">Odnaleziono użytkownika "%s" (UID %lu) i grupę "%s" (GID %lu).<br>
+<hr>
+(src)="s52"> GID von Benutzer ' % s ' und Gruppe ' % s ' stimmen nicht überein . <br>
+(trg)="s52">GID uÅ¼ytkownika "%s" i grupy "%s" siÄ nie zgadzajÄ.<br>
+<hr>
+(src)="s53"> Benutzerverzeichnis von Benutzer ' % s ' ist nicht ' % s ' , ignoriere . <br>
+(trg)="s53">Katalogiem domowym użytkownika "%s" nie jest "%s", ignorowanie.<br>
+<hr>
+(src)="s54"> Konnte ' % s ' nciht erzeugen : % s <br>
+(trg)="s54">Utworzenie "%s" siÄ nie powiodÅo: %s<br>
+<hr>
+(src)="s55"> Wechseln der Gruppen-Liste fehlgeschlagen : % s <br>
+(trg)="s55">Zmiana listy grup się nie powiodła: %s<br>
+<hr>
+(src)="s56"> Wechseln der GID fehlgeschlagen : % s <br>
+(trg)="s56">Zmiana GID siÄ nie powiodÅa: %s<br>
+<hr>
+(src)="s57"> Wechseln der UID fehlgeschlagen : % s <br>
+(trg)="s57">Zmiana UID się nie powiodła: %s<br>
+<hr>
+(src)="s59"> System-Modus auf dieser Plattform nicht unterstützt . <br>
+(trg)="s59">Tryb systemowy nie jest obsługiwany na tej platformie.<br>
+<hr>
+(src)="s60"> setrlimit ( % s , ( % u , % u ) ) fehlgeschlagen : % s <br>
+(trg)="s60">setrlimit(%s, (%u, %u)) siÄ nie powiodÅo: %s<br>
+<hr>
+(src)="s61"> Parsen der Kommandzeile fehlgeschlagen . <br>
+(trg)="s61">Przetworzenie wiersza poleceń się nie powiodło.<br>
+<hr>
+(src)="s63"> Daemon läuft nicht <br>
+(trg)="s63">Usługa nie jest uruchomiona<br>
+<hr>
+(src)="s64"> Daemon läuft als PID % u <br>
+(trg)="s64">UsÅuga jest uruchomiona jako PID %u<br>
+<hr>
+(src)="s65"> Konnte Prozess nicht abbrechen : % s <br>
+(trg)="s65">Zniszczenie usługi się nie powiodło: %s<br>
+<hr>
+(src)="s66"> Dieses Programm sollte ohne die Option --system nicht als Administrator ausgeführt werden . <br>
+(trg)="s66">Ten program nie powinien byÄ uruchamiany jako root (chyba, Å¼e podano --system).<br>
+<hr>
+(src)="s67"> Root-Berechtigungen benötigt . <br>
+(trg)="s67">Wymagane są uprawnienia roota.<br>
+<hr>
+(src)="s68"> --start nicht unterstützt für System-Instanzen . <br>
+(trg)="s68">--start nie jest obsÅugiwane przy uruchamianiu systemowym.<br>
+<hr>
+(src)="s71"> System-Modus aktiv , jeodch --disallow-exit nicht gesetzt ! <br>
+(trg)="s71">Uruchamianie w trybie systemowym, ale --disallow-exit nie jest ustawione.<br>
+<hr>
+(src)="s72"> System-Modus aktiv , jedoch --disallow-module-loading nicht gesetzt ! <br>
+(trg)="s72">Uruchamianie w trybie systemowym, ale --disallow-module-loading nie jest ustawione.<br>
+<hr>
+(src)="s73"> System-Modus aktiv , SHM-Modus gezwungenermaßen deaktiviert ! <br>
+(trg)="s73">Uruchamianie w trybie systemowym, wymuszanie wyłączenia trybu SHM.<br>
+<hr>
+(src)="s74"> System-Modus aktiv , Exit-Idle-Time gezwungenermaßen deaktiviert ! <br>
+(trg)="s74">Uruchamianie w trybie systemowym, wymuszanie wyÅÄczenia czasu oczekiwania na zakoÅczenie.<br>
+<hr>
+(src)="s75"> Reservieren von STDIO fehlgeschlagen . <br>
+(trg)="s75">Uzyskanie standardowego wejścia/wyjścia się nie powiodło.<br>
+<hr>
+(src)="s76"> pipe fehlgeschlagen : % s <br>
+(trg)="s76">pipe() siÄ nie powiodÅo: %s<br>
+<hr>
+(src)="s77"> fork ( ) fehlgeschlagen : % s <br>
+(trg)="s77">fork() się nie powiodło: %s<br>
+<hr>
+(src)="s78"> read ( ) fehlgeschlagen : % s <br>
+(trg)="s78">read() siÄ nie powiodÅo: %s<br>
+<hr>
+(src)="s79"> Start des Daemons fehlgeschlagen . <br>
+(trg)="s79">Uruchomienie usługi się nie powiodło.<br>
+<hr>
+(src)="s80"> Start des Daemons erfolgreich . <br>
+(trg)="s80">PomyÅlnie uruchomiono usÅugÄ.<br>
+<hr>
+(src)="s81"> read ( ) fehlgeschlagen : % s <br>
+(trg)="s81">setsid() się nie powiodło: %s<br>
+<hr>
+(src)="s82"> Dies ist PulseAudio % s <br>
+(trg)="s82">To jest PulseAudio %s<br>
+<hr>
+(src)="s83"> Kompilier-Host : % s <br>
+(trg)="s83">Komputer kompilacji: %s<br>
+<hr>
+(src)="s84"> Kompilier-CFLAGS : % s <br>
+(trg)="s84">CFLAGS kompilacji: %s<br>
+<hr>
+(src)="s85"> Laufe auf Host : % s <br>
+(trg)="s85">Uruchamianie na komputerze: %s<br>
+<hr>
+(src)="s86"> % u CPUs gefunden . <br>
+(trg)="s86">Odnaleziono %u procesorÃ³w.<br>
+<hr>
+(src)="s87"> Seitengröße ist % lu Bytes . <br>
+(trg)="s87">Rozmiar strony to %lu bajtów<br>
+<hr>
+(src)="s88"> Kompiliere mit Valgrind-Unterstützung : ja <br>
+(trg)="s88">Skompilowano z obsÅugÄ Valgrind: tak<br>
+<hr>
+(src)="s89"> Kompiliere mit Valgrind-Unterstützung : nein <br>
+(trg)="s89">Skompilowano z obsługą Valgrind: nie<br>
+<hr>
+(src)="s90"> Läuft im Valgrind-Modus : % s <br>
+(trg)="s90">Uruchamianie w trybie Valgrind: %s<br>
+<hr>
+(src)="s91"> Laufe auf Host : % s <br>
+(trg)="s91">Uruchamianie w maszynie wirtualnej: %s<br>
+<hr>
+(src)="s92"> Optimiertes Build : ja <br>
+(trg)="s92">Budowanie optymalizowane: tak<br>
+<hr>
+(src)="s93"> Optimiertes Build : nein <br>
+(trg)="s93">Budowanie optymalizowane: nie<br>
+<hr>
+(src)="s94"> NDEBUG definiert , alle Ansprüche deaktiviert . <br>
+(trg)="s94">Podano NDEBUG, wszystkie asercje zostaÅy wyÅÄczone.<br>
+<hr>
+(src)="s95"> FASTPATH definiert , nur fast-path-Ansprüche deaktiviert . <br>
+(trg)="s95">Podano FASTPATH, tylko szybkie asercje ścieżek zostały wyłączone.<br>
+<hr>
+(src)="s96"> Alle Ansprüche aktiviert . <br>
+(trg)="s96">Wszystkie asercje sÄ wÅÄczone.<br>
+<hr>
+(src)="s97"> Beziehen der Maschinen-ID fehlgeschlagen <br>
+(trg)="s97">Uzyskanie identyfikatora komputera się nie powiodło<br>
+<hr>
+(src)="s98"> System- ID ist % s . <br>
+(trg)="s98">Identyfikator komputera to %s.<br>
+<hr>
+(src)="s99"> System- ID ist % s . <br>
+(trg)="s99">Identyfikator sesji to %s.<br>
+<hr>
+(src)="s100"> Nutze Laufzeit-Verzeichnis % s . <br>
+(trg)="s100">UÅ¼ywanie katalogu wykonywania %s.<br>
+<hr>
+(src)="s101"> Nutze Zustands-Verzeichnis % s . <br>
+(trg)="s101">Używanie katalogu stanu %s.<br>
+<hr>
+(src)="s102"> Modul-Verzeichnis % s benutzen . <br>
+(trg)="s102">UÅ¼ywanie katalogu moduÅÃ³w %s.<br>
+<hr>
+(src)="s103"> Laufe im System-Modus : % s <br>
+(trg)="s103">Uruchamianie w trybie systemowym: %s<br>
+<hr>
+(src)="s105"> pa _ pid _ file _ create ( ) fehlgeschlagen . <br>
+(trg)="s105">pa_pid_file_create() się nie powiodło.<br>
+<hr>
+</body>
+</html>

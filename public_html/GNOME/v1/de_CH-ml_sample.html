@@ -1,0 +1,316 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# de_CH/Pulseaudio.master/Pulseaudio.master.xml.gz<br>
+# ml/Pulseaudio.master/Pulseaudio.master.xml.gz
+
+<p><hr>
+(src)="s1"> Root-Privilegien aufräumen . <br>
+(trg)="s1"> അനുമതികള ് ‍ വെടിപ ് പാക ് കുന ് നു . <br>
+<hr>
+(src)="s2"> % s [ options ] BEFEHLE : -h , --help Zeige diese Hilfe --version Zeige Version --dump-conf Zeige Standardkonfiguration --dump-modules Zeige Liste verfügbarer Module --dump-resample-methods Zeige verfügbare Resample-Methoden --cleanup-shm Cleanup stale shared memory segments --start Starte Daemon , falls noch nicht geschehen -k --kill Laufenden Daemon beenden --check Prüfe laufende Daemone ( gibt nur einen Exit-Code zurück ) OPTIONS : --system [ = BOOL ] Als systemweite Instanz ausführen -D , --daemonize [ = BOOL ] Nach Start zum Daemon machen --fail [ = BOOL ] Beenden , wenn Start fehlschlägt --high-priority [ = BOOL ] Nutze höchste Priorität ( Nur verfügbar als root , wenn SUID oder mit erhöhtem RLIMIT _ NICE ) --realtime [ = BOOL ] Versuche , Echtzeit-Scheduling zu aktivieren ( Nur verfügbar als root , wenn SUID oder mit erhöhtem RLIMIT _ RTPRIO ) --disallow-module-loading [ = BOOL ] Verbiete ( Ent- ) laden durch Nutzer angeforderter Module nach dem Start --disallow-exit [ = BOOL ] Verbiete Beenden auf Anfrage des Nutzers --exit-idle-time = SECS Beende Daemon , wenn für diese Zeit untätig --module-idle-time = SECS Entlade untätige Module nach dieser Zeit --scache-idle-time = SECS Entlade untätige automatisch geladene Samples nach dieser Zeit --log-level [ = STUFE ] Grad der Ausführlichkeit angeben -v Ausführliche Meldungen --log-target = { auto , syslog , stderr } Protokoll-Ziel angeben -p , --dl-search-path = PFAD Suchpfad für dynamisch freigegebene Objekte ( Plugins ) --resample-method = METHODE Nutze diese Resampling-Methode ( Siehe --dump-resample-methods für mögliche Werte ) --use-pid-file [ = BOOL ] Eine PID-Datei erstellen --no-cpu-limit [ = BOOL ] CPU-Lastbegrenzung auf unterstützten Systemen nicht installieren . --disable-shm [ = BOOL ] Keine Unterstützung für Shared Memory . STARTUP-SCRIPT : -L , --load = " MODUL-ARGUMENTE " Plugin-Modul mit diesen Parametern laden . -F , --file = DATEINAMEN Dieses Skript ausführen -C Nach Start auf laufendem TTY eine Kommandozeile öffnen -n Standardskript nicht laden <br>
+(trg)="s2"> % s [ options ] COMMANDS : -h , --help Show this help --version Show version --dump-conf Dump default configuration --dump-modules Dump list of available modules --dump-resample-methods Dump available resample methods --cleanup-shm Cleanup stale shared memory segments --start Start the daemon if it is not running -k --kill Kill a running daemon --check Check for a running daemon ( only returns exit code ) OPTIONS : --system [ = BOOL ] Run as system-wide instance -D , --daemonize [ = BOOL ] Daemonize after startup --fail [ = BOOL ] Quit when startup fails --high-priority [ = BOOL ] Try to set high nice level ( only available as root , when SUID or with elevated RLIMIT _ NICE ) --realtime [ = BOOL ] Try to enable realtime scheduling ( only available as root , when SUID or with elevated RLIMIT _ RTPRIO ) --disallow-module-loading [ = BOOL ] Disallow module user requested module loading / unloading after startup --disallow-exit [ = BOOL ] Disallow user requested exit --exit-idle-time = SECS Terminate the daemon when idle and this time passed --module-idle-time = SECS Unload autoloaded modules when idle and this time passed --scache-idle-time = SECS Unload autoloaded samples when idle and this time passed --log-level [ = LEVEL ] Increase or set verbosity level -v Increase the verbosity level --log-target = { auto , syslog , stderr } Specify the log target --log-meta [ = BOOL ] Include code location in log messages --log-time [ = BOOL ] Include timestamps in log messages --log-backtrace = FRAMES Include a backtrace in log messages -p , --dl-search-path = PATH Set the search path for dynamic shared objects ( plugins ) --resample-method = METHOD Use the specified resampling method ( See --dump-resample-methods for possible values ) --use-pid-file [ = BOOL ] Create a PID file --no-cpu-limit [ = BOOL ] Do not install CPU load limiter on platforms that support it . --disable-shm [ = BOOL ] Disable shared memory support . STARTUP SCRIPT : -L , --load = " MODULE ARGUMENTS " Load the specified plugin module with the specified argument -F , --file = FILENAME Run the specified script -C Open a command line on the running TTY after startup -n Don 't load default script file <br>
+<hr>
+(src)="s3"> Option --daemonize erfordert bool 'schen Wert <br>
+(trg)="s3"> --daemonize-നു ് ബൂളിയന ് ‍ ആര ് ‍ ഗ ് യുമെന ് റ ് ആവശ ് യമുണ ് ടു ് <br>
+<hr>
+(src)="s4"> Option --fail erfordert bool 'schen Wert <br>
+(trg)="s4"> --fail-നു ് ബൂളിയന ് ‍ ആര ് ‍ ഗ ് യുമെന ് റ ് ആവശ ് യമുണ ് ടു ് <br>
+<hr>
+(src)="s5"> --log-level erfordert Wert für Grad der Protokollierung ( entweder numerisch im Bereich 0 .. 4 or einen dieser : debug , info , notice , warn , error ) . <br>
+(trg)="s5"> --log-level-നു ് ലോഗ ് ലവല ് ‍ ആര ് ‍ ഗ ് യുമെന ് റ ് ആവശ ് യമുണ ് ടു ് ( ഒന ് നുകില ് ‍ 0 .. 4 വരെയുള ് ള ന ് യൂമറിക ് പരിധി അല ് ലെങ ് കില ് ‍ debug , info , notice , warn , error എന ് നിവയില ് ‍ ഒന ് നു ് ) . <br>
+<hr>
+(src)="s6"> Option --high-priority erfordert bool 'schen Wert <br>
+(trg)="s6"> --high-priority-നു ് ബൂളിയന ് ‍ ആര ് ‍ ഗ ് യുമെന ് റ ് ആവശ ് യമുണ ് ടു ് <br>
+<hr>
+(src)="s7"> Option --realtime erfordert bool 'schen Wert <br>
+(trg)="s7"> --realtime-നു ് ബൂളിയന ് ‍ ആര ് ‍ ഗ ് യുമെന ് റ ് ആവശ ് യമുണ ് ടു ് <br>
+<hr>
+(src)="s8"> Option --disallow-module-loading erfordert bool 'schen Wert <br>
+(trg)="s8"> --disallow-module-loading-നു ് ബൂളിയന ് ‍ ആര ് ‍ ഗ ് യുമെന ് റ ് ആവശ ് യമുണ ് ടു ് <br>
+<hr>
+(src)="s9"> --disallow-exit erfordert boolsches Argument <br>
+(trg)="s9"> --disallow-exit-നു ് ബൂളിയന ് ‍ ആര ് ‍ ഗ ് യുമെന ് റ ് ആവശ ് യമുണ ് ടു ് <br>
+<hr>
+(src)="s10"> Option --use-pid-file erfordert bool 'schen Wert <br>
+(trg)="s10"> --use-pid-file-നു ് ബൂളിയന ് ‍ ആര ് ‍ ഗ ് യുമെന ് റ ് ആവശ ് യമുണ ് ടു ് <br>
+<hr>
+(src)="s11"> Ungültiges Log-Ziel : Benutzen Sie entweder ' syslog ' , ' stderr ' oder ' auto ' . <br>
+(trg)="s11"> തെറ ് റായ ലോഗ ് ടാര ് ‍ ഗറ ് റ ് : ' syslog ' , ' stderr ' അല ് ലെങ ് കില ് ‍ ' auto ' ഉപയോഗിക ് കുക . <br>
+<hr>
+(src)="s12"> Ungültiges Log-Ziel : Benutzen Sie entweder ' syslog ' , ' stderr ' oder ' auto ' . <br>
+(trg)="s12"> തെറ ് റായ ലോഗ ് ടാര ് ‍ ഗറ ് റ ് : ' syslog ' , ' stderr ' അല ് ലെങ ് കില ് ‍ ' auto ' ഉപയോഗിക ് കുക . <br>
+<hr>
+(src)="s13"> --realtime erfordert boolsches Argument <br>
+(trg)="s13"> --log-time-നു ് ബൂളിയന ് ‍ ആര ് ‍ ഗ ് യുമെന ് റ ് ആവശ ് യമുണ ് ടു ് <br>
+<hr>
+(src)="s14"> --log-meta erfordert boolschen Wert <br>
+(trg)="s14"> --log-meta-നു ് ബൂളിയന ് ‍ ആര ് ‍ ഗ ് യുമെന ് റ ് ആവശ ് യമുണ ് ടു ് <br>
+<hr>
+(src)="s15"> Ungültige Resample-Methode ' % s ' . <br>
+(trg)="s15"> തെറ ് റായ റീസാംപിള ് ‍ മാര ് ‍ ഗ ് ഗം ' % s ' . <br>
+<hr>
+(src)="s16"> --System erwartet Boolean-Argument <br>
+(trg)="s16"> --system-നു ് ബൂളിയന ് ‍ ആര ് ‍ ഗ ് യുമെന ് റ ് ആവശ ് യമുണ ് ടു ് <br>
+<hr>
+(src)="s17"> Option --no-cpu-limit erfordert bool 'schen Wert <br>
+(trg)="s17"> --no-cpu-limit-നു ് ബൂളിയന ് ‍ ആര ് ‍ ഗ ് യുമെന ് റ ് ആവശ ് യമുണ ് ടു ് <br>
+<hr>
+(src)="s18"> Option --disable-shm erfordert bool 'schen Wert <br>
+(trg)="s18"> --disable-shm-നു ് ബൂളിയന ് ‍ ആര ് ‍ ഗ ് യുമെന ് റ ് ആവശ ് യമുണ ് ടു ് <br>
+<hr>
+(src)="s19"> [ % s : % u ] Ungültiges Log-Ziel ' % s ' . <br>
+(trg)="s19"> [ % s : % u ] തെറ ് റായ ലോഗ ് ടാര ് ‍ ഗറ ് റ ് ' % s ' . <br>
+<hr>
+(src)="s20"> [ % s : % u ] Ungültige Log-Stufe ' % s ' . <br>
+(trg)="s20"> [ % s : % u ] തെറ ് റായ ലോഗ ് ലവല ് ‍ ' % s ' . <br>
+<hr>
+(src)="s21"> [ % s : % u ] Ungültige Resample-Methode ' % s ' . <br>
+(trg)="s21"> [ % s : % u ] തെറ ് റായ റീസാംപിള ് ‍ മാര ് ‍ ഗ ് ഗം ' % s ' . <br>
+<hr>
+(src)="s22"> [ % s : % u ] Ungültiges rlimit ' % s ' . <br>
+(trg)="s22"> [ % s : % u ] അസാധുവായ rlimit ' % s ' . <br>
+<hr>
+(src)="s23"> [ % s : % u ] Ungültiges Sample-Format ' % s ' . <br>
+(trg)="s23"> [ % s : % u ] തെറ ് റായ സാംപിള ് ‍ മാതൃക ' % s ' . <br>
+<hr>
+(src)="s24"> [ % s : % u ] Ungültige Sample-Rate ' % s ' . <br>
+(trg)="s24"> [ % s : % u ] തെറ ് റായ സാംപിള ് ‍ റേറ ് റ ് ' % s ' . <br>
+<hr>
+(src)="s25"> [ % s : % u ] Ungültige Sample-Kanäle ' % s ' . <br>
+(trg)="s25"> [ % s : % u ] തെറ ് റായ സാംപിള ് ‍ ചാനലുകള ് ‍ ' % s ' . <br>
+<hr>
+(src)="s26"> [ % s : % u ] Ungültige Kanal-Zuordnung ' % s ' . <br>
+(trg)="s26"> [ % s : % u ] അസാധുവായ ചാനല ് ‍ മാപ ് പ ് ' % s ' . <br>
+<hr>
+(src)="s27"> [ % s : % u ] Ungültige Anzahl von Fragmenten ' % s ' . <br>
+(trg)="s27"> [ % s : % u ] ' % s ' ഫ ് രാഗ ് മെന ് റുകളുടെ തെറ ് റായ എണ ് ണം . <br>
+<hr>
+(src)="s28"> [ % s : % u ] Ungültige Fragmentgröße ' % s ' . <br>
+(trg)="s28"> [ % s : % u ] തെറ ് റായ ഫ ് രാഗ ് മെന ് റ ് വ ് യാപ ് തി ' % s ' . <br>
+<hr>
+(src)="s29"> [ % s : % u ] Ungültige Nice-Stufe ' % s ' . <br>
+(trg)="s29"> [ % s : % u ] അസാധുവായ nice സ ് ഥാനം ' % s ' . <br>
+<hr>
+(src)="s30"> [ % s : % u ] Ungültige Sample-Rate ' % s ' . <br>
+(trg)="s30"> [ % s : % u ] തെറ ് റായ സാംപിള ് ‍ റേറ ് റ ് ' % s ' . <br>
+<hr>
+(src)="s31"> Öffnen der Konfigurationsdatei fehlgeschlagen : % s <br>
+(trg)="s31"> ക ് രമീകരണ ഫയല ് ‍ തുറക ് കുന ് നതില ് ‍ പരാജയപ ് പെട ് ടു : % s <br>
+<hr>
+(src)="s32"> Die angegebene Standard-Kanalzuordnung hat eine andere Anzahl von Kanälen als die angegebene Standard-Kanal-Anzahl . <br>
+(trg)="s32"> വ ് യക ് തമാക ് കിയിട ് ടുള ് ള സ ് വതവേയുള ് ള ചാനല ് ‍ മാപ ് പിനുള ് ള ചാനലുകളുടെ എണ ് ണം നല ് ‍ കിയിരിക ് കുന ് ന സ ് വതവേയുള ് ള ചാനലുകളുടെ എണ ് ണത ് തേക ് കാള ് ‍ വ ് യത ് യസ ് ഥമാണു ് . <br>
+<hr>
+(src)="s33"> # # # Lese von Konfigurationsdatei : % s # # # <br>
+(trg)="s33"> # # # ക ് രമീകരണ ഫയലില ് ‍ നിന ് നും ലഭ ് യമാക ് കുക : % s # # # <br>
+<hr>
+(src)="s34"> Name : % s <br>
+(trg)="s34"> പേരു ് : % s <br>
+<hr>
+(src)="s35"> Keine Modul-Informationen verfügbar <br>
+(trg)="s35"> ഘടകത ് തെപ ് പറ ് റിയുള ് ള വിവരം ലഭ ് യമല ് ല <br>
+<hr>
+(src)="s36"> Version : % s <br>
+(trg)="s36"> പതിപ ് പു ് : % s <br>
+<hr>
+(src)="s37"> Beschreibung : % s <br>
+(trg)="s37"> വിവരണം : % s <br>
+<hr>
+(src)="s38"> Autor : % s <br>
+(trg)="s38"> രചയിതാവു ് : % s <br>
+<hr>
+(src)="s39"> Verwendung : % s <br>
+(trg)="s39"> ഉപയോഗം : % s <br>
+<hr>
+(src)="s40"> Lade einmalig : % s <br>
+(trg)="s40"> ഒരിക ് കല ് ‍ ലഭ ് യമാക ് കുക : % s <br>
+<hr>
+(src)="s41"> DEPRECATION WARNING : % s <br>
+(trg)="s41"> DEPRECATION WARNING : % s <br>
+<hr>
+(src)="s42"> Pfad : % s <br>
+(trg)="s42"> പാഥ ് : % s <br>
+<hr>
+(src)="s43"> Öffnen der Datei ' % s ' fehlgeschlagen <br>
+(trg)="s43"> ക ് രമീകരണ ഫയല ് ‍ ' % s ' തുറക ് കുന ് നതില ് ‍ പരാജയപ ് പെട ് ടു : % s <br>
+<hr>
+(src)="s44"> Ursprünglicher dlopen-Loader konnte nicht gefunden werden . <br>
+(trg)="s44"> യഥാര ് ‍ ത ് ഥ lt _ dlopen ലോഡര ് ‍ ലഭ ് യമാക ് കുന ് നതില ് ‍ പരാജയപ ് പെട ് ടു . <br>
+<hr>
+(src)="s45"> Neuer dlopen-Loader konnte nicht gefunden werden . <br>
+(trg)="s45"> പുതിയ dl ലോഡര ് ‍ അനുവദിക ് കുന ് നതില ് ‍ പരാജയപ ് പെട ് ടു . <br>
+<hr>
+(src)="s46"> Hinzufügen von Bind-Now-Loader fehlgeschlagen . <br>
+(trg)="s46"> bind-now-loader ചേര ് ‍ ക ് കുന ് നതില ് ‍ പരാജയപ ് പെട ് ടു . <br>
+<hr>
+(src)="s47"> Signal % s empfangen . <br>
+(trg)="s47"> % s സിഗ ് നല ് ‍ ലഭ ് യമായി . <br>
+<hr>
+(src)="s48"> Wird beendet . <br>
+(trg)="s48"> പുറത ് തു ് കടക ് കുന ് നു . <br>
+<hr>
+(src)="s49"> Benutzer ' % s ' nicht gefunden . <br>
+(trg)="s49"> ' % s ' എന ് ന ഉപയോക ് താവു ് ലഭ ് യമാക ് കുന ് നതില ് ‍ പരാജയപ ് പെട ് ടു . <br>
+<hr>
+(src)="s50"> Gruppe ' % s ' nicht gefunden . <br>
+(trg)="s50"> ' % s ' എന ് ന ഗ ് രൂപ ് പ ് ലഭ ് യമാക ് കുന ് നതില ് ‍ പരാജയപ ് പെട ് ടു . <br>
+<hr>
+(src)="s51"> Benutzer ' % s ' ( UID % lu ) und Gruppe ' % s ' ( GID % lu ) gefunden . <br>
+(trg)="s51"> ഉപയോക ് താവു ് ' % s ' ( UID % lu ) , ഗ ് രൂപ ് പ ് ' % s ' ( GID % lu ) ലഭ ് യമായി . <br>
+<hr>
+(src)="s52"> GID von Benutzer ' % s ' und Gruppe ' % s ' stimmen nicht überein . <br>
+(trg)="s52"> ഉപയോക ് താവു ് ' % s ' -ന ് റെയും ഗ ് രൂപ ് പ ് ' % s ' -ന ് റെയും GID ചേരുന ് നില ് ല . <br>
+<hr>
+(src)="s53"> Benutzerverzeichnis von Benutzer ' % s ' ist nicht ' % s ' , ignoriere . <br>
+(trg)="s53"> ഉപയോക ് താവു ് ' % s ' -ന ് റെ ഹോം ഡയറക ് ടറി ' % s ' അല ് ല , ഉപേക ് ഷിക ് കുന ് നു . <br>
+<hr>
+(src)="s54"> Konnte ' % s ' nciht erzeugen : % s <br>
+(trg)="s54"> ' % s ' ഉണ ് ടാക ് കുന ് നതില ് ‍ പരാജയപ ് പെട ് ടു : % s <br>
+<hr>
+(src)="s55"> Wechseln der Gruppen-Liste fehlgeschlagen : % s <br>
+(trg)="s55"> ഗ ് രൂപ ് പ ് ലിസ ് റ ് റ ് മാറ ് റുന ് നതില ് ‍ പരാജയപ ് പെട ് ടു : % s <br>
+<hr>
+(src)="s56"> Wechseln der GID fehlgeschlagen : % s <br>
+(trg)="s56"> GID മാറ ് റുന ് നതില ് ‍ പരാജയപ ് പെട ് ടു : % s <br>
+<hr>
+(src)="s57"> Wechseln der UID fehlgeschlagen : % s <br>
+(trg)="s57"> UID മാറ ് റുന ് നതില ് ‍ പരാജയപ ് പെട ് ടു : % s <br>
+<hr>
+(src)="s59"> System-Modus auf dieser Plattform nicht unterstützt . <br>
+(trg)="s59"> ഈ പ ് ലാറ ് റ ് ഫോമില ് ‍ സിസ ് റ ് റം വൈഡ ് മോഡ ് പിന ് തുണയ ് ക ് കുന ് നില ് ല . <br>
+<hr>
+(src)="s60"> setrlimit ( % s , ( % u , % u ) ) fehlgeschlagen : % s <br>
+(trg)="s60"> setrlimit ( % s , ( % u , % u ) ) പരാജയപ ് പെട ് ടു : % s <br>
+<hr>
+(src)="s61"> Parsen der Kommandzeile fehlgeschlagen . <br>
+(trg)="s61"> കമാന ് ‍ ഡ ് ലൈന ് ‍ പാഴ ് സ ് ചെയ ് യുന ് നതില ് ‍ പരാജയപ ് പെട ് ടു . <br>
+<hr>
+(src)="s63"> Daemon läuft nicht <br>
+(trg)="s63"> ഡെമണ ് ‍ പ ് രവര ് ‍ ത ് തനത ് തിലില ് ല <br>
+<hr>
+(src)="s64"> Daemon läuft als PID % u <br>
+(trg)="s64"> ഡെമണ ് ‍ PID % u ആയി പ ് രവര ് ‍ ത ് തിക ് കുന ് നു <br>
+<hr>
+(src)="s65"> Konnte Prozess nicht abbrechen : % s <br>
+(trg)="s65"> ഡെമണ ് ‍ നശിപ ് പിക ് കുന ് നതില ് ‍ പരാജയപ ് പെട ് ടു : % s <br>
+<hr>
+(src)="s66"> Dieses Programm sollte ohne die Option --system nicht als Administrator ausgeführt werden . <br>
+(trg)="s66"> ഈ പ ് രോഗ ് രാം റൂട ് ടായി പ ് രവര ് ‍ ത ് തിപ ് പിക ് കേണ ് ടതല ് ല ( --system എന ് നു ് പറഞ ് ഞിട ് ടുണ ് ടെങ ് കില ് ‍ മാത ് രം റൂട ് ട ് ആവശ ് യമുണ ് ടു ് ) . <br>
+<hr>
+(src)="s67"> Root-Berechtigungen benötigt . <br>
+(trg)="s67"> റൂട ് ട ് ആനുകൂല ് യങ ് ങള ് ‍ ആവശ ് യമുണ ് ടു ് . <br>
+<hr>
+(src)="s68"> --start nicht unterstützt für System-Instanzen . <br>
+(trg)="s68"> സിസ ് റ ് റം ഇന ് ‍ സ ് റ ് റന ് ‍ സുകള ് ‍ ക ് ക ് --start പിന ് തുണയ ് ക ് കുന ് നില ് ല . <br>
+<hr>
+(src)="s71"> System-Modus aktiv , jeodch --disallow-exit nicht gesetzt ! <br>
+(trg)="s71"> സിസ ് റ ് റം മോഡില ് ‍ പ ് രവര ് ‍ ത ് തിക ് കുന ് നു , പക ് ഷേ --disallow-exit സജ ് ജമാക ് കിയിട ് ടില ് ല ! <br>
+<hr>
+(src)="s72"> System-Modus aktiv , jedoch --disallow-module-loading nicht gesetzt ! <br>
+(trg)="s72"> സിസ ് റ ് റം മോഡില ് ‍ പ ് രവര ് ‍ ത ് തിക ് കുന ് നു , പക ് ഷേ --disallow-module-loading സജ ് ജമാക ് കിയിട ് ടില ് ല ! <br>
+<hr>
+(src)="s73"> System-Modus aktiv , SHM-Modus gezwungenermaßen deaktiviert ! <br>
+(trg)="s73"> സിസ ് റ ് റം മോഡില ് ‍ പ ് രവര ് ‍ ത ് തിക ് കുന ് നു , നിര ് ‍ ബന ് ധമായും SHM മോഡ ് പ ് രവര ് ‍ ത ് ത രഹിതമാക ് കുന ് നു ! <br>
+<hr>
+(src)="s74"> System-Modus aktiv , Exit-Idle-Time gezwungenermaßen deaktiviert ! <br>
+(trg)="s74"> സിസ ് റ ് റം മോഡില ് ‍ പ ് രവര ് ‍ ത ് തിക ് കുന ് നു , നിര ് ‍ ബന ് ധമായും എക ് സിറ ് റ ് ഐഡില ് ‍ സമയം പ ് രവര ് ‍ ത ് ത രഹിതമാക ് കുന ് നു ! <br>
+<hr>
+(src)="s75"> Reservieren von STDIO fehlgeschlagen . <br>
+(trg)="s75"> stdio ലഭിക ് കുന ് നതില ് ‍ പരാജയപ ് പെട ് ടു . <br>
+<hr>
+(src)="s76"> pipe fehlgeschlagen : % s <br>
+(trg)="s76"> pipe പരാജയപ ് പെട ് ടു : % s <br>
+<hr>
+(src)="s77"> fork ( ) fehlgeschlagen : % s <br>
+(trg)="s77"> fork ( ) പരാജയപ ് പെട ് ടു : % s <br>
+<hr>
+(src)="s78"> read ( ) fehlgeschlagen : % s <br>
+(trg)="s78"> read ( ) പരാജയപ ് പെട ് ടു : % s <br>
+<hr>
+(src)="s79"> Start des Daemons fehlgeschlagen . <br>
+(trg)="s79"> ഡെമണിന ് റെ തുടക ് കം പരാജയപ ് പെട ് ടു . <br>
+<hr>
+(src)="s80"> Start des Daemons erfolgreich . <br>
+(trg)="s80"> ഡെമണിന ് റെ തുടക ് കം വിജയിച ് ചു . <br>
+<hr>
+(src)="s81"> read ( ) fehlgeschlagen : % s <br>
+(trg)="s81"> read ( ) പരാജയപ ് പെട ് ടു : % s <br>
+<hr>
+(src)="s82"> Dies ist PulseAudio % s <br>
+(trg)="s82"> ഇതു ് PulseAudio % s ആണു ് <br>
+<hr>
+(src)="s83"> Kompilier-Host : % s <br>
+(trg)="s83"> കംപൈലേഷന ് ‍ ഹോസ ് റ ് റ ് : % s <br>
+<hr>
+(src)="s84"> Kompilier-CFLAGS : % s <br>
+(trg)="s84"> കംപൈലേഷന ് ‍ CFLAGS : % s <br>
+<hr>
+(src)="s85"> Laufe auf Host : % s <br>
+(trg)="s85"> ഹോസ ് റ ് റില ് ‍ പ ് രവര ് ‍ ത ് തിക ് കുന ് നു : % s <br>
+<hr>
+(src)="s86"> % u CPUs gefunden . <br>
+(trg)="s86"> % u സിപിയു ലഭ ് യമായി . <br>
+<hr>
+(src)="s87"> Seitengröße ist % lu Bytes . <br>
+(trg)="s87"> താളിന ് റെ വ ് യാപ ് തി % lu ബൈറ ് റുകളാണു ് <br>
+<hr>
+(src)="s88"> Kompiliere mit Valgrind-Unterstützung : ja <br>
+(trg)="s88"> Valgrind പിന ് തുണയോടെ കംപൈല ് ‍ ചെയ ് തിരിക ് കുന ് നു : ഉവ ് വു ് <br>
+<hr>
+(src)="s89"> Kompiliere mit Valgrind-Unterstützung : nein <br>
+(trg)="s89"> Valgrind പിന ് തുണയോടെ കംപൈല ് ‍ ചെയ ് തിരിക ് കുന ് നു : ഇല ് ല <br>
+<hr>
+(src)="s90"> Läuft im Valgrind-Modus : % s <br>
+(trg)="s90"> valgrind മോഡില ് ‍ പ ് രവര ് ‍ ത ് തിപ ് പിക ് കുന ് നു : % s <br>
+<hr>
+(src)="s91"> Laufe auf Host : % s <br>
+(trg)="s91"> ഹോസ ് റ ് റില ് ‍ പ ് രവര ് ‍ ത ് തിക ് കുന ് നു : % s <br>
+<hr>
+(src)="s92"> Optimiertes Build : ja <br>
+(trg)="s92"> ഒപ ് ടിമൈസ ് ഡ ് ബിള ് ‍ ഡ ് : ഉവ ് വു ് <br>
+<hr>
+(src)="s93"> Optimiertes Build : nein <br>
+(trg)="s93"> ഒപ ് ടിമൈസ ് ഡ ് ബിള ് ‍ ഡ ് : ഇല ് ല <br>
+<hr>
+(src)="s94"> NDEBUG definiert , alle Ansprüche deaktiviert . <br>
+(trg)="s94"> NDEBUG നിഷ ് കര ് ‍ ഷിച ് ചിരിക ് കുന ് നു , എല ് ലാ asserts-ഉം പ ് രവര ് ‍ ‌ ത ് ത രഹിതം . <br>
+<hr>
+(src)="s95"> FASTPATH definiert , nur fast-path-Ansprüche deaktiviert . <br>
+(trg)="s95"> FASTPATH നിഷ ് കര ് ‍ ഷിച ് ചിരിക ് കുന ് നു , fast path asserts മാത ് രം പ ് രവര ് ‍ ‌ ത ് ത രഹിതം . <br>
+<hr>
+(src)="s96"> Alle Ansprüche aktiviert . <br>
+(trg)="s96"> എല ് ലാ asserts-ഉം പ ് രവര ് ‍ ‌ ത ് ത സജ ് ജം <br>
+<hr>
+(src)="s97"> Beziehen der Maschinen-ID fehlgeschlagen <br>
+(trg)="s97"> മഷീന ് ‍ ID ലഭ ് യമാക ് കുവാന ് ‍ സാധ ് യമായില ് ല <br>
+<hr>
+(src)="s98"> System- ID ist % s . <br>
+(trg)="s98"> മഷീന ് ‍ ID % s ആണു ് . <br>
+<hr>
+(src)="s99"> System- ID ist % s . <br>
+(trg)="s99"> സെഷന ് ‍ ID % s ആണു ് . <br>
+<hr>
+(src)="s100"> Nutze Laufzeit-Verzeichnis % s . <br>
+(trg)="s100"> റണ ് ‍ ടൈം ഡയറക ് ടറി % s ഉപയോഗിക ് കുന ് നു . <br>
+<hr>
+(src)="s101"> Nutze Zustands-Verzeichnis % s . <br>
+(trg)="s101"> സ ് റ ് റേറ ് റ ് ഡയറക ് ടറി % s ഉപയോഗിക ് കുന ് നു . <br>
+<hr>
+(src)="s102"> Modul-Verzeichnis % s benutzen . <br>
+(trg)="s102"> മൊഡ ് യൂള ് ‍ സ ് ഡയറക ് ടറി % s ഉപയോഗിക ് കുന ് നു . <br>
+<hr>
+(src)="s103"> Laufe im System-Modus : % s <br>
+(trg)="s103"> സിസ ് റ ് റം മോഡില ് ‍ പ ് രവര ് ‍ ത ് തിക ് കുന ് നു : % s <br>
+<hr>
+(src)="s105"> pa _ pid _ file _ create ( ) fehlgeschlagen . <br>
+(trg)="s105"> pa _ pid _ file _ create ( ) പരാജയപ ് പെട ് ടു . <br>
+<hr>
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# de_CH/Pulseaudio.master/Pulseaudio.master.xml.gz<br>
+# es/Pulseaudio.master/Pulseaudio.master.xml.gz
+
+<p><hr>
+(src)="s1"> Root-Privilegien aufräumen . <br>
+(trg)="s1"> Abandonando privilegios . <br>
+<hr>
+(src)="s2"> % s [ options ] BEFEHLE : -h , --help Zeige diese Hilfe --version Zeige Version --dump-conf Zeige Standardkonfiguration --dump-modules Zeige Liste verfügbarer Module --dump-resample-methods Zeige verfügbare Resample-Methoden --cleanup-shm Cleanup stale shared memory segments --start Starte Daemon , falls noch nicht geschehen -k --kill Laufenden Daemon beenden --check Prüfe laufende Daemone ( gibt nur einen Exit-Code zurück ) OPTIONS : --system [ = BOOL ] Als systemweite Instanz ausführen -D , --daemonize [ = BOOL ] Nach Start zum Daemon machen --fail [ = BOOL ] Beenden , wenn Start fehlschlägt --high-priority [ = BOOL ] Nutze höchste Priorität ( Nur verfügbar als root , wenn SUID oder mit erhöhtem RLIMIT _ NICE ) --realtime [ = BOOL ] Versuche , Echtzeit-Scheduling zu aktivieren ( Nur verfügbar als root , wenn SUID oder mit erhöhtem RLIMIT _ RTPRIO ) --disallow-module-loading [ = BOOL ] Verbiete ( Ent- ) laden durch Nutzer angeforderter Module nach dem Start --disallow-exit [ = BOOL ] Verbiete Beenden auf Anfrage des Nutzers --exit-idle-time = SECS Beende Daemon , wenn für diese Zeit untätig --module-idle-time = SECS Entlade untätige Module nach dieser Zeit --scache-idle-time = SECS Entlade untätige automatisch geladene Samples nach dieser Zeit --log-level [ = STUFE ] Grad der Ausführlichkeit angeben -v Ausführliche Meldungen --log-target = { auto , syslog , stderr } Protokoll-Ziel angeben -p , --dl-search-path = PFAD Suchpfad für dynamisch freigegebene Objekte ( Plugins ) --resample-method = METHODE Nutze diese Resampling-Methode ( Siehe --dump-resample-methods für mögliche Werte ) --use-pid-file [ = BOOL ] Eine PID-Datei erstellen --no-cpu-limit [ = BOOL ] CPU-Lastbegrenzung auf unterstützten Systemen nicht installieren . --disable-shm [ = BOOL ] Keine Unterstützung für Shared Memory . STARTUP-SCRIPT : -L , --load = " MODUL-ARGUMENTE " Plugin-Modul mit diesen Parametern laden . -F , --file = DATEINAMEN Dieses Skript ausführen -C Nach Start auf laufendem TTY eine Kommandozeile öffnen -n Standardskript nicht laden <br>
+(trg)="s2"> %s [ opciones ] COMANDOS : -h , --help Muestra esta ayuda --version Muestra la versión --dump-conf Vuelca la configuración por defecto --dump-modules Vuelca una lista de múdulos disponibles --dump-resample-methods Vuelca los métodos disponibles de remuestreo --cleanup-shm Limpia los segmentos de memoria compartidos --start Inicia el demonio , si es que aún no está funcionando -k --kill Detiene a un demonio funcionando --check Verifica qué demonios están funcionando OPCIONES : --system[=BOOL ] Se ejecuta como unica instancia a nivel del sistema -D , --daemonize[=BOOL ] Se convierte en demonio luego de iniciarse --fail[=BOOL ] Se cierra cuando falla el inicio --high-priority[=BOOL ] Trata de establecer un nivel de nice alto ( sólo disponible como root , cuando el SUID o con RLIMIT_NICE ) elevado --realtime[=BOOL ] Trata de activar planificación en tiempo real ( sólo disponible como root , cuando el SUID o con RLIMIT_RTPRIO ) elevado --disallow-module-loading[=BOOL ] No permite la carga/ descarga del módulo por el usuario después que se haya iniciado --disallow-exit[=BOOL ] No permite la petición del usuario de abandonar el programa --exit-idle-time=SECS Desactiva un demonio cuando está ocioso y ha transcurrido esta cantidad de tiempo --module-idle-time=SECS Descarga modulos que se han cargado automáticamente cuando están ociosos y ha transcurrido esta cantidad de tiempo --scache-idle-time=SECS Descarga muestras cargadas automáticamente cuando están ociosos y ha transcurrido esta cantidad de tiempo --log-level[=LEVEL ] Aumenta o define el grado de salida a utilizar -v Aumenta el grado de salida --log-target={auto , syslog , stderr } Especifica el destino del log -p , --dl-search-path=PATH Establece la ruta de búsqueda ( search path ) para complementos ( plugins ) compartidos --resample-method=METHOD Utiliza un método de remuestreo específico ( Ver en --dump-resample-methods los valores posibles ) --use-pid-file[=BOOL ] Crea el archivo PID --no-cpu-limit[=BOOL ] No instala un limitador de carga de CPU en plataformas que lo soporten . --disable-shm[=BOOL ] Deshabilita el soporte para memoria compartida . SCRIPT DE INICIO : -L , --load="ARGUMENTOS DEL MODULO " Carga el módulo complemento con los parámetros dados -F , --file=FILENAME Ejecuta el script especificado -C Abre una línea de comando en el TTY actual después de iniciar -n No carga el archivo script predeterminado <br>
+<hr>
+(src)="s3"> Option --daemonize erfordert bool 'schen Wert <br>
+(trg)="s3"> --daemonize espera un argumento booleano <br>
+<hr>
+(src)="s4"> Option --fail erfordert bool 'schen Wert <br>
+(trg)="s4"> --fail espera un argumento booleano <br>
+<hr>
+(src)="s5"> --log-level erfordert Wert für Grad der Protokollierung ( entweder numerisch im Bereich 0 .. 4 or einen dieser : debug , info , notice , warn , error ) . <br>
+(trg)="s5"> --log-level espera un argumento en el nivel del log ( ya sea numérico , que caiga en el rango de 0..4 ; ya sea uno de debug , info , notice , warn , o error ) . <br>
+<hr>
+(src)="s6"> Option --high-priority erfordert bool 'schen Wert <br>
+(trg)="s6"> --high-priority espera un argumento booleano <br>
+<hr>
+(src)="s7"> Option --realtime erfordert bool 'schen Wert <br>
+(trg)="s7"> --realtime espera un argumento booleano <br>
+<hr>
+(src)="s8"> Option --disallow-module-loading erfordert bool 'schen Wert <br>
+(trg)="s8"> --disallow-module-loading espera un argumento booleano <br>
+<hr>
+(src)="s9"> --disallow-exit erfordert boolsches Argument <br>
+(trg)="s9"> --disallow-exit espera un argumento booleano <br>
+<hr>
+(src)="s10"> Option --use-pid-file erfordert bool 'schen Wert <br>
+(trg)="s10"> --use pid-file espera un argumento booleano <br>
+<hr>
+(src)="s11"> Ungültiges Log-Ziel : Benutzen Sie entweder ' syslog ' , ' stderr ' oder ' auto ' . <br>
+(trg)="s11"> Log target inválido : use o " syslog " , o " stderr " , o " auto " . <br>
+<hr>
+(src)="s12"> Ungültiges Log-Ziel : Benutzen Sie entweder ' syslog ' , ' stderr ' oder ' auto ' . <br>
+(trg)="s12"> Log target inválido : use o " syslog " , o " stderr " , o " auto " . <br>
+<hr>
+(src)="s13"> --realtime erfordert boolsches Argument <br>
+(trg)="s13"> --log-time espera un argumento booleano <br>
+<hr>
+(src)="s14"> --log-meta erfordert boolschen Wert <br>
+(trg)="s14"> --log-meta espera un argumento booleano <br>
+<hr>
+(src)="s15"> Ungültige Resample-Methode ' % s ' . <br>
+(trg)="s15"> Método de remuestreo inválido '%s ' <br>
+<hr>
+(src)="s16"> --System erwartet Boolean-Argument <br>
+(trg)="s16"> --system espera un argumento booleano <br>
+<hr>
+(src)="s17"> Option --no-cpu-limit erfordert bool 'schen Wert <br>
+(trg)="s17"> --no-cpu-limit espera un argumento booleano <br>
+<hr>
+(src)="s18"> Option --disable-shm erfordert bool 'schen Wert <br>
+(trg)="s18"> --disable-shm espera un argumento booleano <br>
+<hr>
+(src)="s19"> [ % s : % u ] Ungültiges Log-Ziel ' % s ' . <br>
+(trg)="s19"> [ %s:%u ] Destino de log inválido '%s ' . <br>
+<hr>
+(src)="s20"> [ % s : % u ] Ungültige Log-Stufe ' % s ' . <br>
+(trg)="s20"> [ %s:%u ] Nivel de log inválido '%s ' . <br>
+<hr>
+(src)="s21"> [ % s : % u ] Ungültige Resample-Methode ' % s ' . <br>
+(trg)="s21"> [ %s:%u ] Método de remuestreo inválido '%s ' . <br>
+<hr>
+(src)="s22"> [ % s : % u ] Ungültiges rlimit ' % s ' . <br>
+(trg)="s22"> [ %s:%u ] Rlimit inválido '%s ' . <br>
+<hr>
+(src)="s23"> [ % s : % u ] Ungültiges Sample-Format ' % s ' . <br>
+(trg)="s23"> [ %s:%u ] Formato de muestra inválido '%s ' . <br>
+<hr>
+(src)="s24"> [ % s : % u ] Ungültige Sample-Rate ' % s ' . <br>
+(trg)="s24"> [ %s:%u ] Tasa de muestra inválida '%s ' . <br>
+<hr>
+(src)="s25"> [ % s : % u ] Ungültige Sample-Kanäle ' % s ' . <br>
+(trg)="s25"> [ %s:%u ] Canales de muestra inválidos '%s ' . <br>
+<hr>
+(src)="s26"> [ % s : % u ] Ungültige Kanal-Zuordnung ' % s ' . <br>
+(trg)="s26"> [ %s:%u ] Mapa de canal inválido '%s ' . <br>
+<hr>
+(src)="s27"> [ % s : % u ] Ungültige Anzahl von Fragmenten ' % s ' . <br>
+(trg)="s27"> [ %s:%u ] Cantidad de fragmentoa inválidos '%s ' . <br>
+<hr>
+(src)="s28"> [ % s : % u ] Ungültige Fragmentgröße ' % s ' . <br>
+(trg)="s28"> [ %s:%u ] Tamaño inválido de fragmento '%s ' . <br>
+<hr>
+(src)="s29"> [ % s : % u ] Ungültige Nice-Stufe ' % s ' . <br>
+(trg)="s29"> [ %s:%u ] Nivel de nice inválido '%s ' . <br>
+<hr>
+(src)="s30"> [ % s : % u ] Ungültige Sample-Rate ' % s ' . <br>
+(trg)="s30"> [ %s:%u ] Tasa de muestra inválida '%s ' . <br>
+<hr>
+(src)="s31"> Öffnen der Konfigurationsdatei fehlgeschlagen : % s <br>
+(trg)="s31"> No se pudo abrir el archivo de configuración : %s <br>
+<hr>
+(src)="s32"> Die angegebene Standard-Kanalzuordnung hat eine andere Anzahl von Kanälen als die angegebene Standard-Kanal-Anzahl . <br>
+(trg)="s32"> El mapa de canal predeterminado especificado tiene un número de canales distinto al especificado como predeterminado . <br>
+<hr>
+(src)="s33"> # # # Lese von Konfigurationsdatei : % s # # # <br>
+(trg)="s33"> ### Leyendo desde el archivo de confioguración : %s ### <br>
+<hr>
+(src)="s34"> Name : % s <br>
+(trg)="s34"> Nombre : %s <br>
+<hr>
+(src)="s35"> Keine Modul-Informationen verfügbar <br>
+(trg)="s35"> No existe información disponible acerca del módulo <br>
+<hr>
+(src)="s36"> Version : % s <br>
+(trg)="s36"> Versión : %s <br>
+<hr>
+(src)="s37"> Beschreibung : % s <br>
+(trg)="s37"> Descripción : %s <br>
+<hr>
+(src)="s38"> Autor : % s <br>
+(trg)="s38"> Autor : %s <br>
+<hr>
+(src)="s39"> Verwendung : % s <br>
+(trg)="s39"> Uso : %s <br>
+<hr>
+(src)="s40"> Lade einmalig : % s <br>
+(trg)="s40"> Carga una vez : %s <br>
+<hr>
+(src)="s41"> DEPRECATION WARNING : % s <br>
+(trg)="s41"> ADVERTENCIA DE COMPATIBILIDAD : %s <br>
+<hr>
+(src)="s42"> Pfad : % s <br>
+(trg)="s42"> Ruta : %s <br>
+<hr>
+(src)="s43"> Öffnen der Datei ' % s ' fehlgeschlagen <br>
+(trg)="s43"> Error al intentar abrir el archivo '%s ' <br>
+<hr>
+(src)="s44"> Ursprünglicher dlopen-Loader konnte nicht gefunden werden . <br>
+(trg)="s44"> Falló al buscar cargador el cargador llt_dlopen original . <br>
+<hr>
+(src)="s45"> Neuer dlopen-Loader konnte nicht gefunden werden . <br>
+(trg)="s45"> Falló al asignar el cargador dl nuevo . <br>
+<hr>
+(src)="s46"> Hinzufügen von Bind-Now-Loader fehlgeschlagen . <br>
+(trg)="s46"> Falló al agregar bind-now-loader . <br>
+<hr>
+(src)="s47"> Signal % s empfangen . <br>
+(trg)="s47"> Se obtuvo la señal %s . <br>
+<hr>
+(src)="s48"> Wird beendet . <br>
+(trg)="s48"> Saliendo . <br>
+<hr>
+(src)="s49"> Benutzer ' % s ' nicht gefunden . <br>
+(trg)="s49"> Falló al buscar usuario '%s ' . <br>
+<hr>
+(src)="s50"> Gruppe ' % s ' nicht gefunden . <br>
+(trg)="s50"> Falló al buscar grupo '%s ' . <br>
+<hr>
+(src)="s51"> Benutzer ' % s ' ( UID % lu ) und Gruppe ' % s ' ( GID % lu ) gefunden . <br>
+(trg)="s51"> Se encontró el usuario '%s ' ( UID %lu ) y el grupo '%s ' ( GID %lu ) . <br>
+<hr>
+(src)="s52"> GID von Benutzer ' % s ' und Gruppe ' % s ' stimmen nicht überein . <br>
+(trg)="s52"> GID del usuario '%s ' y del grupo '%s ' no son similares . <br>
+<hr>
+(src)="s53"> Benutzerverzeichnis von Benutzer ' % s ' ist nicht ' % s ' , ignoriere . <br>
+(trg)="s53"> El directorio de inicio del usuario '%s ' no es '%s ' , ignorando . <br>
+<hr>
+(src)="s54"> Konnte ' % s ' nciht erzeugen : % s <br>
+(trg)="s54"> Falló al crear '%s ' : %s <br>
+<hr>
+(src)="s55"> Wechseln der Gruppen-Liste fehlgeschlagen : % s <br>
+(trg)="s55"> Falló al cambiar la lista de grupo : %s <br>
+<hr>
+(src)="s56"> Wechseln der GID fehlgeschlagen : % s <br>
+(trg)="s56"> Falló al cambiar GID : %s <br>
+<hr>
+(src)="s57"> Wechseln der UID fehlgeschlagen : % s <br>
+(trg)="s57"> Falló al cambiar UID : %s <br>
+<hr>
+(src)="s59"> System-Modus auf dieser Plattform nicht unterstützt . <br>
+(trg)="s59"> El modo a nivel de sistema no es soportado en esta plataforma . <br>
+<hr>
+(src)="s60"> setrlimit ( % s , ( % u , % u ) ) fehlgeschlagen : % s <br>
+(trg)="s60"> setrlimit(%s , ( %u , %u ) ) falló : %s <br>
+<hr>
+(src)="s61"> Parsen der Kommandzeile fehlgeschlagen . <br>
+(trg)="s61"> Falló al analizar la línea de comando . <br>
+<hr>
+(src)="s63"> Daemon läuft nicht <br>
+(trg)="s63"> El demonio no está funcionando <br>
+<hr>
+(src)="s64"> Daemon läuft als PID % u <br>
+(trg)="s64"> El demonio está funcionando como PID %u <br>
+<hr>
+(src)="s65"> Konnte Prozess nicht abbrechen : % s <br>
+(trg)="s65"> No se ha podido detener el demonio : %s <br>
+<hr>
+(src)="s66"> Dieses Programm sollte ohne die Option --system nicht als Administrator ausgeführt werden . <br>
+(trg)="s66"> Este programa no tiene por qué ser ejecutado como root ( a menos que --system sea especificado ) . <br>
+<hr>
+(src)="s67"> Root-Berechtigungen benötigt . <br>
+(trg)="s67"> Se necesitan privilegios de root . <br>
+<hr>
+(src)="s68"> --start nicht unterstützt für System-Instanzen . <br>
+(trg)="s68"> --start no está soportado para las instancias del sistema . <br>
+<hr>
+(src)="s71"> System-Modus aktiv , jeodch --disallow-exit nicht gesetzt ! <br>
+(trg)="s71"> Ejecutándose en modo de sistema , ¡ pero no se ha configurado --disallow-exit ! <br>
+<hr>
+(src)="s72"> System-Modus aktiv , jedoch --disallow-module-loading nicht gesetzt ! <br>
+(trg)="s72"> Ejecutándose en modo de sistema , ¡ pero no se ha configurado --disallow-module-loading ! <br>
+<hr>
+(src)="s73"> System-Modus aktiv , SHM-Modus gezwungenermaßen deaktiviert ! <br>
+(trg)="s73"> Ejecutándose en modo de sistema , ¡ desactivando forzadamente el modo SHM ! <br>
+<hr>
+(src)="s74"> System-Modus aktiv , Exit-Idle-Time gezwungenermaßen deaktiviert ! <br>
+(trg)="s74"> Ejecutándose en modo de sistema , ¡ desactivando forzadamente exit idle time ! <br>
+<hr>
+(src)="s75"> Reservieren von STDIO fehlgeschlagen . <br>
+(trg)="s75"> Fallo al intentar adquirir stdio . <br>
+<hr>
+(src)="s76"> pipe fehlgeschlagen : % s <br>
+(trg)="s76"> Falló el pipe : %s <br>
+<hr>
+(src)="s77"> fork ( ) fehlgeschlagen : % s <br>
+(trg)="s77"> Falló el fork( ) : %s <br>
+<hr>
+(src)="s78"> read ( ) fehlgeschlagen : % s <br>
+(trg)="s78"> Falló la operación read( ) : %s <br>
+<hr>
+(src)="s79"> Start des Daemons fehlgeschlagen . <br>
+(trg)="s79"> Falló el inicio del demonio . <br>
+<hr>
+(src)="s80"> Start des Daemons erfolgreich . <br>
+(trg)="s80"> El demonio se inició exitosamente . <br>
+<hr>
+(src)="s81"> read ( ) fehlgeschlagen : % s <br>
+(trg)="s81"> Falló la operación read( ) : %s <br>
+<hr>
+(src)="s82"> Dies ist PulseAudio % s <br>
+(trg)="s82"> Esto es PulseAudio %s <br>
+<hr>
+(src)="s83"> Kompilier-Host : % s <br>
+(trg)="s83"> Host de compilación : %s <br>
+<hr>
+(src)="s84"> Kompilier-CFLAGS : % s <br>
+(trg)="s84"> Compilación CFLAGS : %s <br>
+<hr>
+(src)="s85"> Laufe auf Host : % s <br>
+(trg)="s85"> Ejecutándose en el host : %s <br>
+<hr>
+(src)="s86"> % u CPUs gefunden . <br>
+(trg)="s86"> Se encontraron %u CPUs . <br>
+<hr>
+(src)="s87"> Seitengröße ist % lu Bytes . <br>
+(trg)="s87"> El tamaño de la página es de %lu bytes <br>
+<hr>
+(src)="s88"> Kompiliere mit Valgrind-Unterstützung : ja <br>
+(trg)="s88"> Soporte para compilar con Valgrind : si <br>
+<hr>
+(src)="s89"> Kompiliere mit Valgrind-Unterstützung : nein <br>
+(trg)="s89"> Soporte para compilar con Valgrind : no <br>
+<hr>
+(src)="s90"> Läuft im Valgrind-Modus : % s <br>
+(trg)="s90"> Ejecutándose en modo valgrind : %s <br>
+<hr>
+(src)="s91"> Laufe auf Host : % s <br>
+(trg)="s91"> Ejecutándose en el host : %s <br>
+<hr>
+(src)="s92"> Optimiertes Build : ja <br>
+(trg)="s92"> Build optimizado : si <br>
+<hr>
+(src)="s93"> Optimiertes Build : nein <br>
+(trg)="s93"> Build optimizado : no <br>
+<hr>
+(src)="s94"> NDEBUG definiert , alle Ansprüche deaktiviert . <br>
+(trg)="s94"> NDEBUG definido , todos los chequeos deshabilitados . <br>
+<hr>
+(src)="s95"> FASTPATH definiert , nur fast-path-Ansprüche deaktiviert . <br>
+(trg)="s95"> FASTPATH definido , sólo se deshabilitan los chequeos fast path . <br>
+<hr>
+(src)="s96"> Alle Ansprüche aktiviert . <br>
+(trg)="s96"> Todos los chequeos habilitados . <br>
+<hr>
+(src)="s97"> Beziehen der Maschinen-ID fehlgeschlagen <br>
+(trg)="s97"> Fallo al intentar obtener el ID de la máquina <br>
+<hr>
+(src)="s98"> System- ID ist % s . <br>
+(trg)="s98"> El ID de la máquina es %s <br>
+<hr>
+(src)="s99"> System- ID ist % s . <br>
+(trg)="s99"> El ID de la sesión es %s . <br>
+<hr>
+(src)="s100"> Nutze Laufzeit-Verzeichnis % s . <br>
+(trg)="s100"> Utilizando directorio de tiempo de ejecución %s . <br>
+<hr>
+(src)="s101"> Nutze Zustands-Verzeichnis % s . <br>
+(trg)="s101"> Utilizando directorio de estado %s . <br>
+<hr>
+(src)="s102"> Modul-Verzeichnis % s benutzen . <br>
+(trg)="s102"> Utilizando directorio de módulos %s . <br>
+<hr>
+(src)="s103"> Laufe im System-Modus : % s <br>
+(trg)="s103"> Ejecutándose en modo de sistema : %s <br>
+<hr>
+(src)="s105"> pa _ pid _ file _ create ( ) fehlgeschlagen . <br>
+(trg)="s105"> Ha fallado pa_pid_file_create( ) . <br>
+<hr>
+</body>
+</html>

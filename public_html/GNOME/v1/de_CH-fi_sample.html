@@ -1,0 +1,316 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# de_CH/Pulseaudio.master/Pulseaudio.master.xml.gz<br>
+# fi/Pulseaudio.master/Pulseaudio.master.xml.gz
+
+<p><hr>
+(src)="s1"> Root-Privilegien aufräumen . <br>
+(trg)="s1"> Luovutaan oikeuksista . <br>
+<hr>
+(src)="s2"> % s [ options ] BEFEHLE : -h , --help Zeige diese Hilfe --version Zeige Version --dump-conf Zeige Standardkonfiguration --dump-modules Zeige Liste verfügbarer Module --dump-resample-methods Zeige verfügbare Resample-Methoden --cleanup-shm Cleanup stale shared memory segments --start Starte Daemon , falls noch nicht geschehen -k --kill Laufenden Daemon beenden --check Prüfe laufende Daemone ( gibt nur einen Exit-Code zurück ) OPTIONS : --system [ = BOOL ] Als systemweite Instanz ausführen -D , --daemonize [ = BOOL ] Nach Start zum Daemon machen --fail [ = BOOL ] Beenden , wenn Start fehlschlägt --high-priority [ = BOOL ] Nutze höchste Priorität ( Nur verfügbar als root , wenn SUID oder mit erhöhtem RLIMIT _ NICE ) --realtime [ = BOOL ] Versuche , Echtzeit-Scheduling zu aktivieren ( Nur verfügbar als root , wenn SUID oder mit erhöhtem RLIMIT _ RTPRIO ) --disallow-module-loading [ = BOOL ] Verbiete ( Ent- ) laden durch Nutzer angeforderter Module nach dem Start --disallow-exit [ = BOOL ] Verbiete Beenden auf Anfrage des Nutzers --exit-idle-time = SECS Beende Daemon , wenn für diese Zeit untätig --module-idle-time = SECS Entlade untätige Module nach dieser Zeit --scache-idle-time = SECS Entlade untätige automatisch geladene Samples nach dieser Zeit --log-level [ = STUFE ] Grad der Ausführlichkeit angeben -v Ausführliche Meldungen --log-target = { auto , syslog , stderr } Protokoll-Ziel angeben -p , --dl-search-path = PFAD Suchpfad für dynamisch freigegebene Objekte ( Plugins ) --resample-method = METHODE Nutze diese Resampling-Methode ( Siehe --dump-resample-methods für mögliche Werte ) --use-pid-file [ = BOOL ] Eine PID-Datei erstellen --no-cpu-limit [ = BOOL ] CPU-Lastbegrenzung auf unterstützten Systemen nicht installieren . --disable-shm [ = BOOL ] Keine Unterstützung für Shared Memory . STARTUP-SCRIPT : -L , --load = " MODUL-ARGUMENTE " Plugin-Modul mit diesen Parametern laden . -F , --file = DATEINAMEN Dieses Skript ausführen -C Nach Start auf laufendem TTY eine Kommandozeile öffnen -n Standardskript nicht laden <br>
+(trg)="s2"> % s [ valitsimet ] KOMENNOT : -h , --help Näytä tämä ohje --version Näytä versio --dump-conf Tulosta oletusasetukset --dump-modules Tulosta saatavilla olevien moduulien luettelo --dump-resample-methods Tulosta saatavilla olevat uudelleennäytteistystavat --cleanup-shm Puhdista vanhentuneet jaetun muistin segmentit --start Käynnistä taustaprosessi , jos se ei ole käynnissä -k --kill Tapa suoritettava taustaprosessi --check Tarkista onko taustaprosessi suoritettavana ( palauttaa vain lopetuskoodin ) VALITSIMET : --system [ = BOOL ] Suorita järjestelmänlaajuisena -D , --daemonize [ = BOOL ] Vaihda taustaprosessiksi käynnistyksen jälkeen --fail [ = BOOL ] Lopeta kun käynnistys epäonnistuu --high-priority [ = BOOL ] Yritä asettaa korkea nice-taso ( käytettävissä vain root- käyttäjänä , SUIDilla tai kohotetulla RLIMIT _ NICE-arvolla ) --realtime [ = BOOL ] Yritä asettaa reaaliaikainen ajoitus ( käytettävissä vain root-käyttäjänä , SUIDilla tai kohotetulla RLIMIT _ RTPRIO-arvolla ) --disallow-module-loading [ = BOOL ] Kiellä käyttäjän pyytämä moduulin lataus tai poisto käynnistyksen jälkeen --disallow-exit [ = BOOL ] Kiellä käyttäjän pyytämä lopettaminen --exit-idle-time = SEK Lopeta taustaprosessi , kun se on toimettomana ja tämä aika on kulunut --module-idle-time = SEK Poista automaattisesti ladatut moduulit , kun taustaprosessi on toimettomana ja tämä aika on kulunut --scache-idle-time = SEK Poista automaattisesti ladatut näytteet , kun taustaprosessi on toimettomana ja tämä aika on kulunut --log-level [ = TASO ] Aseta tai kasvata lokikirjoituksen tasoa -v Kasvata tulosteiden yksityiskohtaisuutta --log-target = { auto , syslog , stderr } Aseta lokikirjoituksen kohde --log-meta [ = BOOL ] Lisää koodikohta lokiviesteihin --log-time [ = BOOL ] Lisää aikaleima lokiviesteihin --log-backtrace = KEHYKSET Lisää pinolistaus lokiviesteihin -p , --dl-search-path = POLKU Aseta dynaamisten jaettujen objektien ( liitännäisten ) hakupolku --resample-method = TAPA Käytä määritettyä uudelleennäytteistyksen tapaa ( --dump-resample-methods luetteloi mahdolliset arvot ) --use-pid-file [ = BOOL ] Luo PID-tiedosto --no-cpu-limit [ = BOOL ] Älä asenna suoritinkuorman rajoitinta alustoilla , jotka tukevat sitä --disable-shm [ = BOOL ] Poista jaetun muistin tuki käytöstä ALOITUSKOMENTOSARJA : -L , --load = " MODUULIN ARGUMENTIT " Lataa liitännäismoduuli annetulla argumentilla -F , --file = TIEDOSTO Suorita annettu komentosarja -C Avaa komentokehote nykyiseen päätteeseen käynnistyksen jälkeen -n Älä lataa oletuskomentosarja- tiedostoa <br>
+<hr>
+(src)="s3"> Option --daemonize erfordert bool 'schen Wert <br>
+(trg)="s3"> --daemonize vaatii totuusarvoisen argumentin <br>
+<hr>
+(src)="s4"> Option --fail erfordert bool 'schen Wert <br>
+(trg)="s4"> --fail vaatii totuusarvoisen argumentin <br>
+<hr>
+(src)="s5"> --log-level erfordert Wert für Grad der Protokollierung ( entweder numerisch im Bereich 0 .. 4 or einen dieser : debug , info , notice , warn , error ) . <br>
+(trg)="s5"> --log-level vaatii lokikirjoituksen tason argumentiksi ( joko numero väliltä 0 .. 4 tai yksi seuraavista : debug , info , notice , warn , error ) . <br>
+<hr>
+(src)="s6"> Option --high-priority erfordert bool 'schen Wert <br>
+(trg)="s6"> --high-priority vaatii totuusarvoisen argumentin <br>
+<hr>
+(src)="s7"> Option --realtime erfordert bool 'schen Wert <br>
+(trg)="s7"> --realtime vaatii totuusarvoisen argumentin <br>
+<hr>
+(src)="s8"> Option --disallow-module-loading erfordert bool 'schen Wert <br>
+(trg)="s8"> --disallow-module-loading vaatii totuusarvoisen argumentin <br>
+<hr>
+(src)="s9"> --disallow-exit erfordert boolsches Argument <br>
+(trg)="s9"> --disallow-exit vaatii totuusarvoisen argumentin <br>
+<hr>
+(src)="s10"> Option --use-pid-file erfordert bool 'schen Wert <br>
+(trg)="s10"> --use-pid-file vaatii totuusarvoisen argumentin <br>
+<hr>
+(src)="s11"> Ungültiges Log-Ziel : Benutzen Sie entweder ' syslog ' , ' stderr ' oder ' auto ' . <br>
+(trg)="s11"> Virheellinen lokikirjoituksen kohde : käytä jotain seuraavista : ” syslog ” , ” stderr ” tai ” auto ” . <br>
+<hr>
+(src)="s12"> Ungültiges Log-Ziel : Benutzen Sie entweder ' syslog ' , ' stderr ' oder ' auto ' . <br>
+(trg)="s12"> Virheellinen lokikirjoituksen kohde : käytä jotain seuraavista : ” syslog ” , ” stderr ” tai ” auto ” . <br>
+<hr>
+(src)="s13"> --realtime erfordert boolsches Argument <br>
+(trg)="s13"> --log-time vaatii totuusarvoisen argumentin <br>
+<hr>
+(src)="s14"> --log-meta erfordert boolschen Wert <br>
+(trg)="s14"> --log-meta vaatii totuusarvoisen argumentin <br>
+<hr>
+(src)="s15"> Ungültige Resample-Methode ' % s ' . <br>
+(trg)="s15"> Virheellinen uudelleennäytteistyksen tapa ” % s ” . <br>
+<hr>
+(src)="s16"> --System erwartet Boolean-Argument <br>
+(trg)="s16"> --system vaatii totuusarvoisen argumentin <br>
+<hr>
+(src)="s17"> Option --no-cpu-limit erfordert bool 'schen Wert <br>
+(trg)="s17"> --no-cpu-limit vaatii totuusarvoisen argumentin <br>
+<hr>
+(src)="s18"> Option --disable-shm erfordert bool 'schen Wert <br>
+(trg)="s18"> --disable-shm vaatii totuusarvoisen argumentin <br>
+<hr>
+(src)="s19"> [ % s : % u ] Ungültiges Log-Ziel ' % s ' . <br>
+(trg)="s19"> [ % s : % u ] Virheellinen lokikirjoituksen kohde ” % s ” . <br>
+<hr>
+(src)="s20"> [ % s : % u ] Ungültige Log-Stufe ' % s ' . <br>
+(trg)="s20"> [ % s : % u ] Virheellinen lokikirjoituksen taso ” % s ” . <br>
+<hr>
+(src)="s21"> [ % s : % u ] Ungültige Resample-Methode ' % s ' . <br>
+(trg)="s21"> [ % s : % u ] Virheellinen uudelleennäytteistyksen tapa ” % s ” . <br>
+<hr>
+(src)="s22"> [ % s : % u ] Ungültiges rlimit ' % s ' . <br>
+(trg)="s22"> [ % s : % u ] Virheellinen rlimit ” % s ” . <br>
+<hr>
+(src)="s23"> [ % s : % u ] Ungültiges Sample-Format ' % s ' . <br>
+(trg)="s23"> [ % s : % u ] Virheellinen näytemuoto ” % s ” . <br>
+<hr>
+(src)="s24"> [ % s : % u ] Ungültige Sample-Rate ' % s ' . <br>
+(trg)="s24"> [ % s : % u ] Virheellinen näytteenottotaajuus ” % s ” . <br>
+<hr>
+(src)="s25"> [ % s : % u ] Ungültige Sample-Kanäle ' % s ' . <br>
+(trg)="s25"> [ % s : % u ] Virheelliset näytekanavat ” % s ” . <br>
+<hr>
+(src)="s26"> [ % s : % u ] Ungültige Kanal-Zuordnung ' % s ' . <br>
+(trg)="s26"> [ % s : % u ] Virheellinen kanavakartta ” % s ” . <br>
+<hr>
+(src)="s27"> [ % s : % u ] Ungültige Anzahl von Fragmenten ' % s ' . <br>
+(trg)="s27"> [ % s : % u ] Virheellinen fragmenttimäärä ” % s ” . <br>
+<hr>
+(src)="s28"> [ % s : % u ] Ungültige Fragmentgröße ' % s ' . <br>
+(trg)="s28"> [ % s : % u ] Virheellinen fragmenttikoko ” % s ” . <br>
+<hr>
+(src)="s29"> [ % s : % u ] Ungültige Nice-Stufe ' % s ' . <br>
+(trg)="s29"> [ % s : % u ] Virheellinen nice-taso ” % s ” . <br>
+<hr>
+(src)="s30"> [ % s : % u ] Ungültige Sample-Rate ' % s ' . <br>
+(trg)="s30"> [ % s : % u ] Virheellinen näytteenottotaajuus ” % s ” . <br>
+<hr>
+(src)="s31"> Öffnen der Konfigurationsdatei fehlgeschlagen : % s <br>
+(trg)="s31"> Asetustiedoston avaaminen epäonnistui : % s <br>
+<hr>
+(src)="s32"> Die angegebene Standard-Kanalzuordnung hat eine andere Anzahl von Kanälen als die angegebene Standard-Kanal-Anzahl . <br>
+(trg)="s32"> Kanavien oletusmäärä ja oletuskanavakartan kanavien määrä poikkeavat toisistaan . <br>
+<hr>
+(src)="s33"> # # # Lese von Konfigurationsdatei : % s # # # <br>
+(trg)="s33"> # # # Luettu asetustiedostosta : % s # # # <br>
+<hr>
+(src)="s34"> Name : % s <br>
+(trg)="s34"> Nimi : % s <br>
+<hr>
+(src)="s35"> Keine Modul-Informationen verfügbar <br>
+(trg)="s35"> Moduulitietoja ei saatavilla <br>
+<hr>
+(src)="s36"> Version : % s <br>
+(trg)="s36"> Versio : % s <br>
+<hr>
+(src)="s37"> Beschreibung : % s <br>
+(trg)="s37"> Kuvaus : % s <br>
+<hr>
+(src)="s38"> Autor : % s <br>
+(trg)="s38"> Tekijä : % s <br>
+<hr>
+(src)="s39"> Verwendung : % s <br>
+(trg)="s39"> Käyttö : % s <br>
+<hr>
+(src)="s40"> Lade einmalig : % s <br>
+(trg)="s40"> Lataa kerran : % s <br>
+<hr>
+(src)="s41"> DEPRECATION WARNING : % s <br>
+(trg)="s41"> VAROITUS VANHENTUNEISUUDESTA : % s <br>
+<hr>
+(src)="s42"> Pfad : % s <br>
+(trg)="s42"> Polku : % s <br>
+<hr>
+(src)="s43"> Öffnen der Datei ' % s ' fehlgeschlagen <br>
+(trg)="s43"> Tiedoston ” % s ” avaaminen epäonnistui <br>
+<hr>
+(src)="s44"> Ursprünglicher dlopen-Loader konnte nicht gefunden werden . <br>
+(trg)="s44"> Alkuperäisen lt _ dlopen-lataimen löytäminen epäonnistui . <br>
+<hr>
+(src)="s45"> Neuer dlopen-Loader konnte nicht gefunden werden . <br>
+(trg)="s45"> Uuden dl-lataaminen varaaminen epäonnistui . <br>
+<hr>
+(src)="s46"> Hinzufügen von Bind-Now-Loader fehlgeschlagen . <br>
+(trg)="s46"> bind-now-loaderin lisääminen epäonnistui . <br>
+<hr>
+(src)="s47"> Signal % s empfangen . <br>
+(trg)="s47"> Saatiin signaali % s . <br>
+<hr>
+(src)="s48"> Wird beendet . <br>
+(trg)="s48"> Poistutaan . <br>
+<hr>
+(src)="s49"> Benutzer ' % s ' nicht gefunden . <br>
+(trg)="s49"> Käyttäjää ” % s ” ei löydetty . <br>
+<hr>
+(src)="s50"> Gruppe ' % s ' nicht gefunden . <br>
+(trg)="s50"> Ryhmää ” % s ” ei löydetty . <br>
+<hr>
+(src)="s51"> Benutzer ' % s ' ( UID % lu ) und Gruppe ' % s ' ( GID % lu ) gefunden . <br>
+(trg)="s51"> Löydettiin käyttäjä ” % s ” ( UID % lu ) ja ryhmä ” % s ” ( GID % lu ) . <br>
+<hr>
+(src)="s52"> GID von Benutzer ' % s ' und Gruppe ' % s ' stimmen nicht überein . <br>
+(trg)="s52"> Käyttäjän ” % s ” ja ryhmän ” % s ” GID : t eivät vastaa toisiaan . <br>
+<hr>
+(src)="s53"> Benutzerverzeichnis von Benutzer ' % s ' ist nicht ' % s ' , ignoriere . <br>
+(trg)="s53"> Käyttäjän ” % s ” kotihakemisto ei ole ” % s ” , ohitetaan . <br>
+<hr>
+(src)="s54"> Konnte ' % s ' nciht erzeugen : % s <br>
+(trg)="s54"> Hakemiston ” % s ” luominen epäonnistui : % s <br>
+<hr>
+(src)="s55"> Wechseln der Gruppen-Liste fehlgeschlagen : % s <br>
+(trg)="s55"> Ryhmäluettelon vaihtaminen epäonnistui : % s <br>
+<hr>
+(src)="s56"> Wechseln der GID fehlgeschlagen : % s <br>
+(trg)="s56"> GID : n vaihtaminen epäonnistui : % s <br>
+<hr>
+(src)="s57"> Wechseln der UID fehlgeschlagen : % s <br>
+(trg)="s57"> UID : n vaihtaminen epäonnistui : % s <br>
+<hr>
+(src)="s59"> System-Modus auf dieser Plattform nicht unterstützt . <br>
+(trg)="s59"> Järjestelmänlaajuista tilaa ei tueta tällä alustalla . <br>
+<hr>
+(src)="s60"> setrlimit ( % s , ( % u , % u ) ) fehlgeschlagen : % s <br>
+(trg)="s60"> setrlimit ( % s , ( % u , % u ) ) epäonnistui : % s <br>
+<hr>
+(src)="s61"> Parsen der Kommandzeile fehlgeschlagen . <br>
+(trg)="s61"> Komentorivin jäsentäminen epäonnistui . <br>
+<hr>
+(src)="s63"> Daemon läuft nicht <br>
+(trg)="s63"> Taustaprosessi ei ole käynnissä <br>
+<hr>
+(src)="s64"> Daemon läuft als PID % u <br>
+(trg)="s64"> Taustaprosessi käynnissä prosessitunnisteella % u <br>
+<hr>
+(src)="s65"> Konnte Prozess nicht abbrechen : % s <br>
+(trg)="s65"> Taustaprosessin lopettaminen epäonnistui : % s <br>
+<hr>
+(src)="s66"> Dieses Programm sollte ohne die Option --system nicht als Administrator ausgeführt werden . <br>
+(trg)="s66"> Tätä ohjelmaa ei ole tarkoitettu suoritettavaksi pääkäyttäjänä ( ellei --system ole määritelty ) . <br>
+<hr>
+(src)="s67"> Root-Berechtigungen benötigt . <br>
+(trg)="s67"> Pääkäyttäjän ( root ) oikeudet vaaditaan . <br>
+<hr>
+(src)="s68"> --start nicht unterstützt für System-Instanzen . <br>
+(trg)="s68"> --start-valitsinta ei tueta järjestelmätilassa . <br>
+<hr>
+(src)="s71"> System-Modus aktiv , jeodch --disallow-exit nicht gesetzt ! <br>
+(trg)="s71"> Suoritetaan järjestelmätilassa , mutta --disallow-exit ei ole asetettuna ! <br>
+<hr>
+(src)="s72"> System-Modus aktiv , jedoch --disallow-module-loading nicht gesetzt ! <br>
+(trg)="s72"> Suoritetaan järjestelmätilassa , mutta --disallow-module-loading ei ole asetettuna ! <br>
+<hr>
+(src)="s73"> System-Modus aktiv , SHM-Modus gezwungenermaßen deaktiviert ! <br>
+(trg)="s73"> Suoritetaan järjestelmätilassa , otetaan SHM-tila pakotetusti pois käytöstä . <br>
+<hr>
+(src)="s74"> System-Modus aktiv , Exit-Idle-Time gezwungenermaßen deaktiviert ! <br>
+(trg)="s74"> Suoritetaan järjestelmätilassa , otetaan poistumisen joutenoloaika pakotetusti pois käytöstä . <br>
+<hr>
+(src)="s75"> Reservieren von STDIO fehlgeschlagen . <br>
+(trg)="s75"> stdio : n saaminen epäonnistui . <br>
+<hr>
+(src)="s76"> pipe fehlgeschlagen : % s <br>
+(trg)="s76"> putki epäonnistui : % s <br>
+<hr>
+(src)="s77"> fork ( ) fehlgeschlagen : % s <br>
+(trg)="s77"> fork ( ) epäonnistui : % s <br>
+<hr>
+(src)="s78"> read ( ) fehlgeschlagen : % s <br>
+(trg)="s78"> read ( ) epäonnistui : % s <br>
+<hr>
+(src)="s79"> Start des Daemons fehlgeschlagen . <br>
+(trg)="s79"> Taustaprosessin käynnistys epäonnistui . <br>
+<hr>
+(src)="s80"> Start des Daemons erfolgreich . <br>
+(trg)="s80"> Taustaprosessin käynnistys onnistui . <br>
+<hr>
+(src)="s81"> read ( ) fehlgeschlagen : % s <br>
+(trg)="s81"> read ( ) epäonnistui : % s <br>
+<hr>
+(src)="s82"> Dies ist PulseAudio % s <br>
+(trg)="s82"> Tämä on PulseAudio % s <br>
+<hr>
+(src)="s83"> Kompilier-Host : % s <br>
+(trg)="s83"> Käännöksen isäntäkone : % s <br>
+<hr>
+(src)="s84"> Kompilier-CFLAGS : % s <br>
+(trg)="s84"> Käännösaikaiset C-liput ( CFLAGS ) : % s <br>
+<hr>
+(src)="s85"> Laufe auf Host : % s <br>
+(trg)="s85"> Käynnissä isäntäkoneella : % s <br>
+<hr>
+(src)="s86"> % u CPUs gefunden . <br>
+(trg)="s86"> Löydettiin % u CPU : ta . <br>
+<hr>
+(src)="s87"> Seitengröße ist % lu Bytes . <br>
+(trg)="s87"> Sivun koko on % lu tavua <br>
+<hr>
+(src)="s88"> Kompiliere mit Valgrind-Unterstützung : ja <br>
+(trg)="s88"> Käännetty Valgrind-tuella : kyllä <br>
+<hr>
+(src)="s89"> Kompiliere mit Valgrind-Unterstützung : nein <br>
+(trg)="s89"> Käännetty Valgrind-tuella : ei <br>
+<hr>
+(src)="s90"> Läuft im Valgrind-Modus : % s <br>
+(trg)="s90"> Käynnissä valgrind-tilassa : % s <br>
+<hr>
+(src)="s91"> Laufe auf Host : % s <br>
+(trg)="s91"> Käynnissä isäntäkoneella : % s <br>
+<hr>
+(src)="s92"> Optimiertes Build : ja <br>
+(trg)="s92"> Optimoitu rakentaminen : kyllä <br>
+<hr>
+(src)="s93"> Optimiertes Build : nein <br>
+(trg)="s93"> Optimoitu rakentaminen : ei <br>
+<hr>
+(src)="s94"> NDEBUG definiert , alle Ansprüche deaktiviert . <br>
+(trg)="s94"> NDEBUG on määritelty , kaikki assertit ovat poissa käytöstä . <br>
+<hr>
+(src)="s95"> FASTPATH definiert , nur fast-path-Ansprüche deaktiviert . <br>
+(trg)="s95"> FASTPATH on määritelty , vain fast path -assertit ovat poissa käytöstä . <br>
+<hr>
+(src)="s96"> Alle Ansprüche aktiviert . <br>
+(trg)="s96"> Kaikki assertit ovat käytössä . <br>
+<hr>
+(src)="s97"> Beziehen der Maschinen-ID fehlgeschlagen <br>
+(trg)="s97"> Konetunnisteen nouto epäonnistui <br>
+<hr>
+(src)="s98"> System- ID ist % s . <br>
+(trg)="s98"> Konetunniste on % s . <br>
+<hr>
+(src)="s99"> System- ID ist % s . <br>
+(trg)="s99"> Istunnon tunniste on % s . <br>
+<hr>
+(src)="s100"> Nutze Laufzeit-Verzeichnis % s . <br>
+(trg)="s100"> Käytetään ajonaikaista hakemistoa % s . <br>
+<hr>
+(src)="s101"> Nutze Zustands-Verzeichnis % s . <br>
+(trg)="s101"> Käytetään tilahakemistoa % s . <br>
+<hr>
+(src)="s102"> Modul-Verzeichnis % s benutzen . <br>
+(trg)="s102"> Käytetään moduulihakemistoa % s . <br>
+<hr>
+(src)="s103"> Laufe im System-Modus : % s <br>
+(trg)="s103"> Suoritetaan järjestelmätilassa : % s <br>
+<hr>
+(src)="s105"> pa _ pid _ file _ create ( ) fehlgeschlagen . <br>
+(trg)="s105"> pa _ pid _ file _ create ( ) epäonnistui . <br>
+<hr>
+</body>
+</html>

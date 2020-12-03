@@ -1,0 +1,316 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# de_CH/Pulseaudio.master/Pulseaudio.master.xml.gz<br>
+# ta/Pulseaudio.master/Pulseaudio.master.xml.gz
+
+<p><hr>
+(src)="s1"> Root-Privilegien aufräumen . <br>
+(trg)="s1"> முன ் னுரிமைகளை துடைக ் கிறது . <br>
+<hr>
+(src)="s2"> % s [ options ] BEFEHLE : -h , --help Zeige diese Hilfe --version Zeige Version --dump-conf Zeige Standardkonfiguration --dump-modules Zeige Liste verfügbarer Module --dump-resample-methods Zeige verfügbare Resample-Methoden --cleanup-shm Cleanup stale shared memory segments --start Starte Daemon , falls noch nicht geschehen -k --kill Laufenden Daemon beenden --check Prüfe laufende Daemone ( gibt nur einen Exit-Code zurück ) OPTIONS : --system [ = BOOL ] Als systemweite Instanz ausführen -D , --daemonize [ = BOOL ] Nach Start zum Daemon machen --fail [ = BOOL ] Beenden , wenn Start fehlschlägt --high-priority [ = BOOL ] Nutze höchste Priorität ( Nur verfügbar als root , wenn SUID oder mit erhöhtem RLIMIT _ NICE ) --realtime [ = BOOL ] Versuche , Echtzeit-Scheduling zu aktivieren ( Nur verfügbar als root , wenn SUID oder mit erhöhtem RLIMIT _ RTPRIO ) --disallow-module-loading [ = BOOL ] Verbiete ( Ent- ) laden durch Nutzer angeforderter Module nach dem Start --disallow-exit [ = BOOL ] Verbiete Beenden auf Anfrage des Nutzers --exit-idle-time = SECS Beende Daemon , wenn für diese Zeit untätig --module-idle-time = SECS Entlade untätige Module nach dieser Zeit --scache-idle-time = SECS Entlade untätige automatisch geladene Samples nach dieser Zeit --log-level [ = STUFE ] Grad der Ausführlichkeit angeben -v Ausführliche Meldungen --log-target = { auto , syslog , stderr } Protokoll-Ziel angeben -p , --dl-search-path = PFAD Suchpfad für dynamisch freigegebene Objekte ( Plugins ) --resample-method = METHODE Nutze diese Resampling-Methode ( Siehe --dump-resample-methods für mögliche Werte ) --use-pid-file [ = BOOL ] Eine PID-Datei erstellen --no-cpu-limit [ = BOOL ] CPU-Lastbegrenzung auf unterstützten Systemen nicht installieren . --disable-shm [ = BOOL ] Keine Unterstützung für Shared Memory . STARTUP-SCRIPT : -L , --load = " MODUL-ARGUMENTE " Plugin-Modul mit diesen Parametern laden . -F , --file = DATEINAMEN Dieses Skript ausführen -C Nach Start auf laufendem TTY eine Kommandozeile öffnen -n Standardskript nicht laden <br>
+(trg)="s2"> % s [ options ] COMMANDS : -h , --help Show this help --version Show version --dump-conf Dump default configuration --dump-modules Dump list of available modules --dump-resample-methods Dump available resample methods --cleanup-shm Cleanup stale shared memory segments --start Start the daemon if it is not running -k --kill Kill a running daemon --check Check for a running daemon ( only returns exit code ) OPTIONS : --system [ = BOOL ] Run as system-wide instance -D , --daemonize [ = BOOL ] Daemonize after startup --fail [ = BOOL ] Quit when startup fails --high-priority [ = BOOL ] Try to set high nice level ( only available as root , when SUID or with elevated RLIMIT _ NICE ) --realtime [ = BOOL ] Try to enable realtime scheduling ( only available as root , when SUID or with elevated RLIMIT _ RTPRIO ) --disallow-module-loading [ = BOOL ] Disallow module user requested module loading / unloading after startup --disallow-exit [ = BOOL ] Disallow user requested exit --exit-idle-time = SECS Terminate the daemon when idle and this time passed --module-idle-time = SECS Unload autoloaded modules when idle and this time passed --scache-idle-time = SECS Unload autoloaded samples when idle and this time passed --log-level [ = LEVEL ] Increase or set verbosity level -v Increase the verbosity level --log-target = { auto , syslog , stderr } Specify the log target --log-meta [ = BOOL ] Include code location in log messages --log-time [ = BOOL ] Include timestamps in log messages --log-backtrace = FRAMES Include a backtrace in log messages -p , --dl-search-path = PATH Set the search path for dynamic shared objects ( plugins ) --resample-method = METHOD Use the specified resampling method ( See --dump-resample-methods for possible values ) --use-pid-file [ = BOOL ] Create a PID file --no-cpu-limit [ = BOOL ] Do not install CPU load limiter on platforms that support it . --disable-shm [ = BOOL ] Disable shared memory support . STARTUP SCRIPT : -L , --load = " MODULE ARGUMENTS " Load the specified plugin module with the specified argument -F , --file = FILENAME Run the specified script -C Open a command line on the running TTY after startup -n Don 't load default script file <br>
+<hr>
+(src)="s3"> Option --daemonize erfordert bool 'schen Wert <br>
+(trg)="s3"> --daemonize பூலியன ் அளவுரு எதிர ் பார ் க ் கிறது <br>
+<hr>
+(src)="s4"> Option --fail erfordert bool 'schen Wert <br>
+(trg)="s4"> --fail பூலியன ் அளவுரு எதிர ் பார ் க ் கிறது <br>
+<hr>
+(src)="s5"> --log-level erfordert Wert für Grad der Protokollierung ( entweder numerisch im Bereich 0 .. 4 or einen dieser : debug , info , notice , warn , error ) . <br>
+(trg)="s5"> --log-level பதிவு நிலை அளவுருவை எதிர ் பார ் க ் கிறது ( எண ் 0 .. 4 அல ் லது debug , info , notice , warn , errorஇல ் ஒன ் று ) . <br>
+<hr>
+(src)="s6"> Option --high-priority erfordert bool 'schen Wert <br>
+(trg)="s6"> --high-priority பூலியன ் அளவுரு எதிர ் பார ் க ் கிறது <br>
+<hr>
+(src)="s7"> Option --realtime erfordert bool 'schen Wert <br>
+(trg)="s7"> --realtime பூலியன ் அளவுரு எதிர ் பார ் க ் கிறது <br>
+<hr>
+(src)="s8"> Option --disallow-module-loading erfordert bool 'schen Wert <br>
+(trg)="s8"> --disallow-module-loading பூலியன ் அளவுரு எதிர ் பார ் க ் கிறது <br>
+<hr>
+(src)="s9"> --disallow-exit erfordert boolsches Argument <br>
+(trg)="s9"> --disallow-exit பூலியன ் அளவுரு எதிர ் பார ் க ் கிறது <br>
+<hr>
+(src)="s10"> Option --use-pid-file erfordert bool 'schen Wert <br>
+(trg)="s10"> --use-pid-file பூலியன ் அளவுரு எதிர ் பார ் க ் கிறது <br>
+<hr>
+(src)="s11"> Ungültiges Log-Ziel : Benutzen Sie entweder ' syslog ' , ' stderr ' oder ' auto ' . <br>
+(trg)="s11"> தவறான பதிவு இலக ் கு : ' syslog ' , ' stderr ' அல ் லது ' auto 'ஐ பயன ் படுத ் தவும ் . <br>
+<hr>
+(src)="s12"> Ungültiges Log-Ziel : Benutzen Sie entweder ' syslog ' , ' stderr ' oder ' auto ' . <br>
+(trg)="s12"> தவறான பதிவு இலக ் கு : ' syslog ' , ' stderr ' அல ் லது ' auto 'ஐ பயன ் படுத ் தவும ் . <br>
+<hr>
+(src)="s13"> --realtime erfordert boolsches Argument <br>
+(trg)="s13"> --log-time பூலியன ் அளவுரு எதிர ் பார ் க ் கிறது <br>
+<hr>
+(src)="s14"> --log-meta erfordert boolschen Wert <br>
+(trg)="s14"> --log-meta பூலியன ் அளவுரு எதிர ் பார ் க ் கிறது <br>
+<hr>
+(src)="s15"> Ungültige Resample-Methode ' % s ' . <br>
+(trg)="s15"> தவறான மறுமாதிரி முறை ' % s ' . <br>
+<hr>
+(src)="s16"> --System erwartet Boolean-Argument <br>
+(trg)="s16"> --system பூலியன ் அளவுரு எதிர ் பார ் க ் கிறது <br>
+<hr>
+(src)="s17"> Option --no-cpu-limit erfordert bool 'schen Wert <br>
+(trg)="s17"> --no-cpu-limit பூலியன ் அளவுரு எதிர ் பார ் க ் கிறது <br>
+<hr>
+(src)="s18"> Option --disable-shm erfordert bool 'schen Wert <br>
+(trg)="s18"> --disable-shm பூலியன ் அளவுரு எதிர ் பார ் க ் கிறது <br>
+<hr>
+(src)="s19"> [ % s : % u ] Ungültiges Log-Ziel ' % s ' . <br>
+(trg)="s19"> [ % s : % u ] தவறான பதிவு இலக ் கு ' % s ' . <br>
+<hr>
+(src)="s20"> [ % s : % u ] Ungültige Log-Stufe ' % s ' . <br>
+(trg)="s20"> [ % s : % u ] தவறான பதிவு இலக ் கு ' % s ' . <br>
+<hr>
+(src)="s21"> [ % s : % u ] Ungültige Resample-Methode ' % s ' . <br>
+(trg)="s21"> [ % s : % u ] தவறான மறுமாதிரி முறை ' % s ' . <br>
+<hr>
+(src)="s22"> [ % s : % u ] Ungültiges rlimit ' % s ' . <br>
+(trg)="s22"> [ % s : % u ] தவறான rlimit ' % s ' . <br>
+<hr>
+(src)="s23"> [ % s : % u ] Ungültiges Sample-Format ' % s ' . <br>
+(trg)="s23"> [ % s : % u ] தவறான மாதிரி முறை ' % s ' . <br>
+<hr>
+(src)="s24"> [ % s : % u ] Ungültige Sample-Rate ' % s ' . <br>
+(trg)="s24"> [ % s : % u ] தவறான மாதிரி விலை ' % s ' . <br>
+<hr>
+(src)="s25"> [ % s : % u ] Ungültige Sample-Kanäle ' % s ' . <br>
+(trg)="s25"> [ % s : % u ] தவறான மாதிரி சேனல ் கள ் ' % s ' . <br>
+<hr>
+(src)="s26"> [ % s : % u ] Ungültige Kanal-Zuordnung ' % s ' . <br>
+(trg)="s26"> [ % s : % u ] தவறான சேனல ் படம ் ' % s ' . <br>
+<hr>
+(src)="s27"> [ % s : % u ] Ungültige Anzahl von Fragmenten ' % s ' . <br>
+(trg)="s27"> [ % s : % u ] பகுப ் பு ' % s 'க ் கு தவறான எண ் <br>
+<hr>
+(src)="s28"> [ % s : % u ] Ungültige Fragmentgröße ' % s ' . <br>
+(trg)="s28"> [ % s : % u ] தவறான பகுப ் பு அளவு ' % s ' . <br>
+<hr>
+(src)="s29"> [ % s : % u ] Ungültige Nice-Stufe ' % s ' . <br>
+(trg)="s29"> [ % s : % u ] தவறான நல ் ல நிலை ' % s ' . <br>
+<hr>
+(src)="s30"> [ % s : % u ] Ungültige Sample-Rate ' % s ' . <br>
+(trg)="s30"> [ % s : % u ] தவறான மாதிரி விலை ' % s ' . <br>
+<hr>
+(src)="s31"> Öffnen der Konfigurationsdatei fehlgeschlagen : % s <br>
+(trg)="s31"> கட ் டமைக ் கப ் பட ் ட கோப ் பினை திறப ் பதில ் தோல ் வி : % s <br>
+<hr>
+(src)="s32"> Die angegebene Standard-Kanalzuordnung hat eine andere Anzahl von Kanälen als die angegebene Standard-Kanal-Anzahl . <br>
+(trg)="s32"> குறிப ் பிட ் ட முன ் னிருப ் பு சேனல ் மேப ் வேறுபட ் ட சேனல ் களின ் எண ் ணிக ் கையை குறிப ் பிட ் ட முன ் னிருப ் பு சேனல ் களின ் எண ் ணிக ் கையை விட கொண ் டுள ் ளது <br>
+<hr>
+(src)="s33"> # # # Lese von Konfigurationsdatei : % s # # # <br>
+(trg)="s33"> # # # கட ் டமைப ் பு கோப ் பிலிருந ் து வாசிக ் கவும ் : % s # # # <br>
+<hr>
+(src)="s34"> Name : % s <br>
+(trg)="s34"> பெயர ் : % s <br>
+<hr>
+(src)="s35"> Keine Modul-Informationen verfügbar <br>
+(trg)="s35"> தொகுதி தகவல ் கிடைக ் கப ் பெறவில ் லை <br>
+<hr>
+(src)="s36"> Version : % s <br>
+(trg)="s36"> பதிப ் பு : % s <br>
+<hr>
+(src)="s37"> Beschreibung : % s <br>
+(trg)="s37"> விளக ் கம ் : % s <br>
+<hr>
+(src)="s38"> Autor : % s <br>
+(trg)="s38"> ஆசிரியர ் : % s <br>
+<hr>
+(src)="s39"> Verwendung : % s <br>
+(trg)="s39"> பயன ் பாடு : % s <br>
+<hr>
+(src)="s40"> Lade einmalig : % s <br>
+(trg)="s40"> ஒருமுறை ஏற ் றப ் பட ் டது : % s <br>
+<hr>
+(src)="s41"> DEPRECATION WARNING : % s <br>
+(trg)="s41"> DEPRECATION WARNING : % s <br>
+<hr>
+(src)="s42"> Pfad : % s <br>
+(trg)="s42"> பாதை : % s <br>
+<hr>
+(src)="s43"> Öffnen der Datei ' % s ' fehlgeschlagen <br>
+(trg)="s43"> ' % s 'கட ் டமைக ் கப ் பட ் ட கோப ் பினை திறக ் க முடியவில ் லை : % s <br>
+<hr>
+(src)="s44"> Ursprünglicher dlopen-Loader konnte nicht gefunden werden . <br>
+(trg)="s44"> அசல ் lt _ dlopen ஏற ் றியை காண முடியவில ் லை . <br>
+<hr>
+(src)="s45"> Neuer dlopen-Loader konnte nicht gefunden werden . <br>
+(trg)="s45"> புதிய dl ஏற ் றுபவரை ஒதுக ் கிருவதில ் தோல ் வி . <br>
+<hr>
+(src)="s46"> Hinzufügen von Bind-Now-Loader fehlgeschlagen . <br>
+(trg)="s46"> இப ் போது பிணைக ் கும ் ஏற ் பியை சேர ் ப ் பதில ் தோல ் வி . <br>
+<hr>
+(src)="s47"> Signal % s empfangen . <br>
+(trg)="s47"> % sக ் கு சிக ் னல ் கிடைத ் துவிட ் டது . <br>
+<hr>
+(src)="s48"> Wird beendet . <br>
+(trg)="s48"> வெளியேறுதல ் . <br>
+<hr>
+(src)="s49"> Benutzer ' % s ' nicht gefunden . <br>
+(trg)="s49"> ' % s ' பயனரை கண ் டுபிடிப ் பதில ் தோல ் வி . <br>
+<hr>
+(src)="s50"> Gruppe ' % s ' nicht gefunden . <br>
+(trg)="s50"> ' % s ' குழுவை கண ் டுபிடிப ் பதில ் தோல ் வி . <br>
+<hr>
+(src)="s51"> Benutzer ' % s ' ( UID % lu ) und Gruppe ' % s ' ( GID % lu ) gefunden . <br>
+(trg)="s51"> ' % s 'பயனர ் கண ் டுபிடிக ் கப ் பட ் டார ் ( UID % lu ) மற ் றும ் குழு ' % s ' ( GID % lu ) . <br>
+<hr>
+(src)="s52"> GID von Benutzer ' % s ' und Gruppe ' % s ' stimmen nicht überein . <br>
+(trg)="s52"> GID ன ் பயனர ் ' % s ' மற ் றும ் ' % s ' குழுவுடன ் ஒத ் து போகவில ் லை . <br>
+<hr>
+(src)="s53"> Benutzerverzeichnis von Benutzer ' % s ' ist nicht ' % s ' , ignoriere . <br>
+(trg)="s53"> முகப ் பு அடைவு பயனரான ' % s ' ' % s 'ஆல ் , புறக ் கணிக ் கப ் படவில ் லை . <br>
+<hr>
+(src)="s54"> Konnte ' % s ' nciht erzeugen : % s <br>
+(trg)="s54"> ' % s 'ஐ உருவாக ் க முடியவில ் லை : % s <br>
+<hr>
+(src)="s55"> Wechseln der Gruppen-Liste fehlgeschlagen : % s <br>
+(trg)="s55"> குழுப ் பட ் டியலை மாற ் ற முடியவில ் லை : % s <br>
+<hr>
+(src)="s56"> Wechseln der GID fehlgeschlagen : % s <br>
+(trg)="s56"> GIDக ் கு மாற ் றுவதில ் தோல ் வி : % s <br>
+<hr>
+(src)="s57"> Wechseln der UID fehlgeschlagen : % s <br>
+(trg)="s57"> UIDக ் கு மாற ் றுவதில ் தோல ் வி : % s <br>
+<hr>
+(src)="s59"> System-Modus auf dieser Plattform nicht unterstützt . <br>
+(trg)="s59"> இந ் த தளத ் தில ் கணினியின ் திறந ் த முறைமை துணைபுரியவில ் லை . <br>
+<hr>
+(src)="s60"> setrlimit ( % s , ( % u , % u ) ) fehlgeschlagen : % s <br>
+(trg)="s60"> setrlimit ( % s , ( % u , % u ) ) தோல ் வியுற ் றது : % s <br>
+<hr>
+(src)="s61"> Parsen der Kommandzeile fehlgeschlagen . <br>
+(trg)="s61"> கட ் டளை வரியை மாற ் றுவதில ் தோல ் வி . <br>
+<hr>
+(src)="s63"> Daemon läuft nicht <br>
+(trg)="s63"> டோமோன ் இயங ் கவில ் லை <br>
+<hr>
+(src)="s64"> Daemon läuft als PID % u <br>
+(trg)="s64"> PID % uவாக டோமோன ் இயங ் குகிறது <br>
+<hr>
+(src)="s65"> Konnte Prozess nicht abbrechen : % s <br>
+(trg)="s65"> டோமோனுக ் கு முடிவு கட ் டுவதில ் தோல ் வி : % s <br>
+<hr>
+(src)="s66"> Dieses Programm sollte ohne die Option --system nicht als Administrator ausgeführt werden . <br>
+(trg)="s66"> இந ் த நிரல ் ரூட ் டாக இயங ் க முடியவில ் லை ( --system குறிப ் பிடாத வரை ) . <br>
+<hr>
+(src)="s67"> Root-Berechtigungen benötigt . <br>
+(trg)="s67"> ரூட ் முன ் னுரிமைகள ் தேவைப ் படுகிறது . <br>
+<hr>
+(src)="s68"> --start nicht unterstützt für System-Instanzen . <br>
+(trg)="s68"> --start கணினி நிகழ ் வில ் துணைபுரியவில ் லை . <br>
+<hr>
+(src)="s71"> System-Modus aktiv , jeodch --disallow-exit nicht gesetzt ! <br>
+(trg)="s71"> கணினி முறைமையில ் இயங ் குகிறது , ஆனால ் --disallow-exit அமைக ் கப ் படவில ் லை ! <br>
+<hr>
+(src)="s72"> System-Modus aktiv , jedoch --disallow-module-loading nicht gesetzt ! <br>
+(trg)="s72"> கணினி முறைமையில ் இயங ் குகிறது , ஆனால ் --disallow-module-loading அமைக ் கப ் படவில ் லை ! <br>
+<hr>
+(src)="s73"> System-Modus aktiv , SHM-Modus gezwungenermaßen deaktiviert ! <br>
+(trg)="s73"> கணினி முறைமையில ் இயங ் குகிறது , SHM முறைமை செயல ் நீக ் குதல ் கட ் டாயப ் படுத ் துகிறது ! <br>
+<hr>
+(src)="s74"> System-Modus aktiv , Exit-Idle-Time gezwungenermaßen deaktiviert ! <br>
+(trg)="s74"> கணினி முறைமையில ் இயங ் குகிறது , வெறுமை நேரத ் தை செயல ் நீக ் க கட ் டாயப ் படுத ் துகிறது ! <br>
+<hr>
+(src)="s75"> Reservieren von STDIO fehlgeschlagen . <br>
+(trg)="s75"> stdioஐ பெற முடியவில ் லை . <br>
+<hr>
+(src)="s76"> pipe fehlgeschlagen : % s <br>
+(trg)="s76"> பைப ் தோல ் வியுற ் றது : % s <br>
+<hr>
+(src)="s77"> fork ( ) fehlgeschlagen : % s <br>
+(trg)="s77"> fork ( ) தோல ் வியுற ் றது : % s <br>
+<hr>
+(src)="s78"> read ( ) fehlgeschlagen : % s <br>
+(trg)="s78"> வாசிப ் பதில ் ( ) தோல ் வியுற ் றது : % s <br>
+<hr>
+(src)="s79"> Start des Daemons fehlgeschlagen . <br>
+(trg)="s79"> டோமோனை துவக ் குவதில ் தோல ் வியுற ் றது . <br>
+<hr>
+(src)="s80"> Start des Daemons erfolgreich . <br>
+(trg)="s80"> டோமோனை வெற ் றிகரமாக துவக ் ககப ் பட ் டது . <br>
+<hr>
+(src)="s81"> read ( ) fehlgeschlagen : % s <br>
+(trg)="s81"> வாசிப ் பதில ் ( ) தோல ் வியுற ் றது : % s <br>
+<hr>
+(src)="s82"> Dies ist PulseAudio % s <br>
+(trg)="s82"> இது தான ் பள ் ஸ ் ஆடியோ % s <br>
+<hr>
+(src)="s83"> Kompilier-Host : % s <br>
+(trg)="s83"> தொகுக ் கப ் பட ் ட புரவலன ் : % s <br>
+<hr>
+(src)="s84"> Kompilier-CFLAGS : % s <br>
+(trg)="s84"> தொகுப ் பு CFLAGS : % s <br>
+<hr>
+(src)="s85"> Laufe auf Host : % s <br>
+(trg)="s85"> புரவலனாக இயங ் குகிறத : % s <br>
+<hr>
+(src)="s86"> % u CPUs gefunden . <br>
+(trg)="s86"> CPUs % uவில ் காணப ் படுகிறது . <br>
+<hr>
+(src)="s87"> Seitengröße ist % lu Bytes . <br>
+(trg)="s87"> பக ் க அளவுகள ் % lu பைட ் ஸ ் <br>
+<hr>
+(src)="s88"> Kompiliere mit Valgrind-Unterstützung : ja <br>
+(trg)="s88"> Compiled with Valgrind support : yes <br>
+<hr>
+(src)="s89"> Kompiliere mit Valgrind-Unterstützung : nein <br>
+(trg)="s89"> Compiled with Valgrind support : no <br>
+<hr>
+(src)="s90"> Läuft im Valgrind-Modus : % s <br>
+(trg)="s90"> valgrind முறைமையில ் இயங ் குகிறது : % s <br>
+<hr>
+(src)="s91"> Laufe auf Host : % s <br>
+(trg)="s91"> புரவலனாக இயங ் குகிறத : % s <br>
+<hr>
+(src)="s92"> Optimiertes Build : ja <br>
+(trg)="s92"> Optimized build : yes <br>
+<hr>
+(src)="s93"> Optimiertes Build : nein <br>
+(trg)="s93"> சுருக ் கமான உருவாக ் கம ் : இல ் லை <br>
+<hr>
+(src)="s94"> NDEBUG definiert , alle Ansprüche deaktiviert . <br>
+(trg)="s94"> NDEBUG வரையறுக ் கப ் பட ் டது , அனைத ் தும ் உறுதியாக செயல ் நீக ் கப ் பட ் டது . <br>
+<hr>
+(src)="s95"> FASTPATH definiert , nur fast-path-Ansprüche deaktiviert . <br>
+(trg)="s95"> FASTPATH வரையறுக ் கப ் பட ் டது , விரைவு பாதை மட ் டும ் உறுதியாக செயல ் நீக ் கப ் பட ் டது . <br>
+<hr>
+(src)="s96"> Alle Ansprüche aktiviert . <br>
+(trg)="s96"> அனைத ் து உறுதியாக செயல ் படுகிறது . <br>
+<hr>
+(src)="s97"> Beziehen der Maschinen-ID fehlgeschlagen <br>
+(trg)="s97"> கணினி குறியீடை பெறுவதில ் தோல ் வி <br>
+<hr>
+(src)="s98"> System- ID ist % s . <br>
+(trg)="s98"> கணினி குறியீடு % s . <br>
+<hr>
+(src)="s99"> System- ID ist % s . <br>
+(trg)="s99"> அமர ் வு குறியீடு % s . <br>
+<hr>
+(src)="s100"> Nutze Laufzeit-Verzeichnis % s . <br>
+(trg)="s100"> ஓடும ் நேரம ் % s அடைவை பயன ் படுத ் துகிறது . <br>
+<hr>
+(src)="s101"> Nutze Zustands-Verzeichnis % s . <br>
+(trg)="s101"> % s நிலை அடைவினை பயன ் படுத ் துகிறது . <br>
+<hr>
+(src)="s102"> Modul-Verzeichnis % s benutzen . <br>
+(trg)="s102"> தொகுதி % s அடைவை பயன ் படுத ் துகிறது . <br>
+<hr>
+(src)="s103"> Laufe im System-Modus : % s <br>
+(trg)="s103"> கணினியின ் முறைமையில ் இயங ் குகிறது : % s <br>
+<hr>
+(src)="s105"> pa _ pid _ file _ create ( ) fehlgeschlagen . <br>
+(trg)="s105"> pa _ pid _ file _ create ( ) தோல ் வியுற ் றது . <br>
+<hr>
+</body>
+</html>

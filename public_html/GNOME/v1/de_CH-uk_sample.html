@@ -1,0 +1,316 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# de_CH/Pulseaudio.master/Pulseaudio.master.xml.gz<br>
+# uk/Pulseaudio.master/Pulseaudio.master.xml.gz
+
+<p><hr>
+(src)="s1"> Root-Privilegien aufräumen . <br>
+(trg)="s1"> Позбуваємося прав доступу . <br>
+<hr>
+(src)="s2"> % s [ options ] BEFEHLE : -h , --help Zeige diese Hilfe --version Zeige Version --dump-conf Zeige Standardkonfiguration --dump-modules Zeige Liste verfügbarer Module --dump-resample-methods Zeige verfügbare Resample-Methoden --cleanup-shm Cleanup stale shared memory segments --start Starte Daemon , falls noch nicht geschehen -k --kill Laufenden Daemon beenden --check Prüfe laufende Daemone ( gibt nur einen Exit-Code zurück ) OPTIONS : --system [ = BOOL ] Als systemweite Instanz ausführen -D , --daemonize [ = BOOL ] Nach Start zum Daemon machen --fail [ = BOOL ] Beenden , wenn Start fehlschlägt --high-priority [ = BOOL ] Nutze höchste Priorität ( Nur verfügbar als root , wenn SUID oder mit erhöhtem RLIMIT _ NICE ) --realtime [ = BOOL ] Versuche , Echtzeit-Scheduling zu aktivieren ( Nur verfügbar als root , wenn SUID oder mit erhöhtem RLIMIT _ RTPRIO ) --disallow-module-loading [ = BOOL ] Verbiete ( Ent- ) laden durch Nutzer angeforderter Module nach dem Start --disallow-exit [ = BOOL ] Verbiete Beenden auf Anfrage des Nutzers --exit-idle-time = SECS Beende Daemon , wenn für diese Zeit untätig --module-idle-time = SECS Entlade untätige Module nach dieser Zeit --scache-idle-time = SECS Entlade untätige automatisch geladene Samples nach dieser Zeit --log-level [ = STUFE ] Grad der Ausführlichkeit angeben -v Ausführliche Meldungen --log-target = { auto , syslog , stderr } Protokoll-Ziel angeben -p , --dl-search-path = PFAD Suchpfad für dynamisch freigegebene Objekte ( Plugins ) --resample-method = METHODE Nutze diese Resampling-Methode ( Siehe --dump-resample-methods für mögliche Werte ) --use-pid-file [ = BOOL ] Eine PID-Datei erstellen --no-cpu-limit [ = BOOL ] CPU-Lastbegrenzung auf unterstützten Systemen nicht installieren . --disable-shm [ = BOOL ] Keine Unterstützung für Shared Memory . STARTUP-SCRIPT : -L , --load = " MODUL-ARGUMENTE " Plugin-Modul mit diesen Parametern laden . -F , --file = DATEINAMEN Dieses Skript ausführen -C Nach Start auf laufendem TTY eine Kommandozeile öffnen -n Standardskript nicht laden <br>
+(trg)="s2"> % s [ параметри ] КОМАНДИ : -h , --help Показати цю довідку --version Показати дані щодо версії --dump-conf Створити знімок поточних налаштувань --dump-modules Створити перелік можливих модулів --dump-resample-methods Створити перелік можливих методів зміни частотних характеристик --cleanup-shm Спорожнити непотрібні сегменти пам ’ яті спільного використання --start Запустити фонову службу , якщо її ще не запущено -k --kill Завершити роботу запущеної фонової служби --check Перевірити , чи запущено фонову службу ( буде повернуто лише код виходу ) ПАРАМЕТРИ : --system [ = BOOL ] Загальносистемний режим -D , --daemonize [ = BOOL ] Перетворити на фонову службу після запуску --fail [ = BOOL ] Завершити роботу , якщо запуск був невдалим --high-priority [ = BOOL ] Спробувати встановити вищий рівень nice ( доступне лише для root , з SUID або підвищеним RLIMIT _ NICE ) --realtime [ = BOOL ] Спробувати увімкнути планування у режимі реального часу ( доступне лише для root , з SUID або підвищеним RLIMIT _ RTPRIO ) --disallow-module-loading [ = BOOL ] Заборонити для вказаного користувачем модуля завантаження / вивантаження після запуску --disallow-exit [ = BOOL ] Заборонити завершення роботи користувачем --exit-idle-time = СЕК . Перервати виконання фонової служби , якщо не спостерігатиметься активності протягом вказаного часу --scache-idle-time = СЕК . Вивантажити автоматично завантажені фрагменти , якщо не спостерігатиметься активності протягом вказаного часу --log-level [ = РІВЕНЬ ] Підвищити або встановити рівень докладності виводу -v Підвищити рівень докладності виводу --log-target = { auto , syslog , stderr , file : ШЛЯХ , newfile : ШЛЯХ } Вказати журнал --log-meta [ = BOOL ] Додати повідомлення про місце у коді до повідомлень журналу --log-time [ = BOOL ] Додати час до повідомлень журналу --log-backtrace = FRAMES Додати зворотне трасування до повідомлень журналу -p , --dl-search-path = ШЛЯХ Встановити шлях пошуку для об ’ єктів динамічного спільного використання ( додатків ) --resample-method = МЕТОД Використовувати вказаний метод зміни частотних характеристик ( Про можливі варіанти можна дізнатися за допомогою параметра --dump-resample-methods ) --use-pid-file [ = BOOL ] Створювати файл PID --no-cpu-limit [ = BOOL ] Не встановлювати обмеження на використання процесора на платформах , які його підтримують . --disable-shm [ = BOOL ] Вимкнути підтримку спільного використання пам ’ яті . СКРИПТ ЗАПУСКУ : -L , --load = " ПАРАМЕТРИ МОДУЛЯ " Завантажити вказаний модуль додатка з вказаними параметрами -F , --file = НАЗВА _ ФАЙЛА Виконати вказаний скрипт -C Відкрити командний рядок на запущеному TTY після запуску -n Не завантажувати типовий файл скрипту <br>
+<hr>
+(src)="s3"> Option --daemonize erfordert bool 'schen Wert <br>
+(trg)="s3"> Для параметра --daemonize слід вказувати булівський аргумент <br>
+<hr>
+(src)="s4"> Option --fail erfordert bool 'schen Wert <br>
+(trg)="s4"> Для параметра --fail слід вказувати булівський аргумент <br>
+<hr>
+(src)="s5"> --log-level erfordert Wert für Grad der Protokollierung ( entweder numerisch im Bereich 0 .. 4 or einen dieser : debug , info , notice , warn , error ) . <br>
+(trg)="s5"> Для параметра --log-level слід вказувати значення рівня журналювання ( числове у діапазоні 0 .. 4 або одне зі значень debug , info , notice , warn , error ) . <br>
+<hr>
+(src)="s6"> Option --high-priority erfordert bool 'schen Wert <br>
+(trg)="s6"> Для параметра --high-priority слід вказувати булівський аргумент <br>
+<hr>
+(src)="s7"> Option --realtime erfordert bool 'schen Wert <br>
+(trg)="s7"> Для параметра --realtime слід вказувати булівський аргумент <br>
+<hr>
+(src)="s8"> Option --disallow-module-loading erfordert bool 'schen Wert <br>
+(trg)="s8"> Для параметра --disallow-module-loading слід вказувати булівський аргумент <br>
+<hr>
+(src)="s9"> --disallow-exit erfordert boolsches Argument <br>
+(trg)="s9"> Для параметра --disallow-exit слід вказувати булівський аргумент <br>
+<hr>
+(src)="s10"> Option --use-pid-file erfordert bool 'schen Wert <br>
+(trg)="s10"> Для параметра --use-pid-file слід вказувати булівський аргумент <br>
+<hr>
+(src)="s11"> Ungültiges Log-Ziel : Benutzen Sie entweder ' syslog ' , ' stderr ' oder ' auto ' . <br>
+(trg)="s11"> Журнал вказано неправильно : можливі варіанти « syslog » , « journal » , « stderr » , « auto » і чинна назва файла « file : &lt; \ <br>
+<hr>
+(src)="s12"> Ungültiges Log-Ziel : Benutzen Sie entweder ' syslog ' , ' stderr ' oder ' auto ' . <br>
+(trg)="s12">Журнал вказано неправильно: можливі варіанти «syslog», «stderr», «auto» і чинна назва файла «file:&lt;\ÐÑÑÐ½Ð°Ð» Ð²ÐºÐ°Ð·Ð°Ð½Ð¾ Ð½ÐµÐ¿ÑÐ°Ð²Ð¸Ð»ÑÐ½Ð¾: Ð¼Ð¾Ð¶Ð»Ð¸Ð²Ñ Ð²Ð°ÑÑÐ°Ð½ÑÐ¸ Â«syslogÂ», Â«stderrÂ», Â«autoÂ» Ñ ÑÐ¸Ð½Ð½Ð° Ð½Ð°Ð·Ð²Ð° ÑÐ°Ð¹Ð»Ð° Â«file:&lt;\Ñ\\Ð\»\Ñ\\Ñ\&gt;Â» Ð°Ð±Ð¾ Â«newfile:&lt;\Ñ\\Ð\»\Ñ\\Ñ\&gt;Â».<br>
+<hr>
+(src)="s13"> --realtime erfordert boolsches Argument <br>
+(trg)="s13">Для параметра --log-time слід вказувати булівський аргумент<br>
+<hr>
+(src)="s14"> --log-meta erfordert boolschen Wert <br>
+(trg)="s14">ÐÐ»Ñ Ð¿Ð°ÑÐ°Ð¼ÐµÑÑÐ° --log-meta ÑÐ»ÑÐ´ Ð²ÐºÐ°Ð·ÑÐ²Ð°ÑÐ¸ Ð±ÑÐ»ÑÐ²ÑÑÐºÐ¸Ð¹ Ð°ÑÐ³ÑÐ¼ÐµÐ½Ñ<br>
+<hr>
+(src)="s15"> Ungültige Resample-Methode ' % s ' . <br>
+(trg)="s15">Некоректний метод зміни частотних характеристик «%s».<br>
+<hr>
+(src)="s16"> --System erwartet Boolean-Argument <br>
+(trg)="s16">ÐÐ»Ñ Ð¿Ð°ÑÐ°Ð¼ÐµÑÑÐ° --system ÑÐ»ÑÐ´ Ð²ÐºÐ°Ð·ÑÐ²Ð°ÑÐ¸ Ð±ÑÐ»ÑÐ²ÑÑÐºÐ¸Ð¹ Ð°ÑÐ³ÑÐ¼ÐµÐ½Ñ<br>
+<hr>
+(src)="s17"> Option --no-cpu-limit erfordert bool 'schen Wert <br>
+(trg)="s17">Для параметра --no-cpu-limit слід вказувати булівський аргумент<br>
+<hr>
+(src)="s18"> Option --disable-shm erfordert bool 'schen Wert <br>
+(trg)="s18">ÐÐ»Ñ Ð¿Ð°ÑÐ°Ð¼ÐµÑÑÐ° --disable-shm ÑÐ»ÑÐ´ Ð²ÐºÐ°Ð·ÑÐ²Ð°ÑÐ¸ Ð±ÑÐ»ÑÐ²ÑÑÐºÐ¸Ð¹ Ð°ÑÐ³ÑÐ¼ÐµÐ½Ñ<br>
+<hr>
+(src)="s19"> [ % s : % u ] Ungültiges Log-Ziel ' % s ' . <br>
+(trg)="s19">[%s:%u] Некоректний журнал «%s».<br>
+<hr>
+(src)="s20"> [ % s : % u ] Ungültige Log-Stufe ' % s ' . <br>
+(trg)="s20">[%s:%u] ÐÐµÐºÐ¾ÑÐµÐºÑÐ½Ð¸Ð¹ ÑÑÐ²ÐµÐ½Ñ Ð¶ÑÑÐ½Ð°Ð»ÑÐ²Ð°Ð½Ð½Ñ Â«%sÂ».<br>
+<hr>
+(src)="s21"> [ % s : % u ] Ungültige Resample-Methode ' % s ' . <br>
+(trg)="s21">[%s:%u] Некоректний метод зміни частотних характеристик «%s».<br>
+<hr>
+(src)="s22"> [ % s : % u ] Ungültiges rlimit ' % s ' . <br>
+(trg)="s22">[%s:%u] ÐÐµÐºÐ¾ÑÐµÐºÑÐ½Ðµ Ð·Ð½Ð°ÑÐµÐ½Ð½Ñ rlimit Â«%sÂ».<br>
+<hr>
+(src)="s23"> [ % s : % u ] Ungültiges Sample-Format ' % s ' . <br>
+(trg)="s23">[%s:%u] Некоректний формат фрагмента «%s».<br>
+<hr>
+(src)="s24"> [ % s : % u ] Ungültige Sample-Rate ' % s ' . <br>
+(trg)="s24">[%s:%u] ÐÐµÐºÐ¾ÑÐµÐºÑÐ½Ð° ÑÐ°ÑÑÐ¾ÑÐ° Ð²Ð¸Ð±ÑÑÐºÐ¸ Â«%sÂ».<br>
+<hr>
+(src)="s25"> [ % s : % u ] Ungültige Sample-Kanäle ' % s ' . <br>
+(trg)="s25">[%s:%u] Некоректні канали фрагмента «%s».<br>
+<hr>
+(src)="s26"> [ % s : % u ] Ungültige Kanal-Zuordnung ' % s ' . <br>
+(trg)="s26">[%s:%u] ÐÐµÐºÐ¾ÑÐµÐºÑÐ½Ð° ÐºÐ°ÑÑÐ° ÐºÐ°Ð½Ð°Ð»ÑÐ² Â«%sÂ»'.<br>
+<hr>
+(src)="s27"> [ % s : % u ] Ungültige Anzahl von Fragmenten ' % s ' . <br>
+(trg)="s27">[%s:%u] Некоректна кількість фрагментів «%s».<br>
+<hr>
+(src)="s28"> [ % s : % u ] Ungültige Fragmentgröße ' % s ' . <br>
+(trg)="s28">[%s:%u] ÐÐµÐºÐ¾ÑÐµÐºÑÐ½Ð¸Ð¹ ÑÐ¾Ð·Ð¼ÑÑ ÑÑÐ°Ð³Ð¼ÐµÐ½ÑÐ° Â«%sÂ».<br>
+<hr>
+(src)="s29"> [ % s : % u ] Ungültige Nice-Stufe ' % s ' . <br>
+(trg)="s29">[%s:%u] Некоректний рівень nice «%s».<br>
+<hr>
+(src)="s30"> [ % s : % u ] Ungültige Sample-Rate ' % s ' . <br>
+(trg)="s30">[%s:%u] ÐÐµÐºÐ¾ÑÐµÐºÑÐ½Ð¸Ð¹ ÑÐ¸Ð¿ ÑÐµÑÐ²ÐµÑÐ° Â«%sÂ».<br>
+<hr>
+(src)="s31"> Öffnen der Konfigurationsdatei fehlgeschlagen : % s <br>
+(trg)="s31">Не вдалося відкрити файл налаштувань: %s<br>
+<hr>
+(src)="s32"> Die angegebene Standard-Kanalzuordnung hat eine andere Anzahl von Kanälen als die angegebene Standard-Kanal-Anzahl . <br>
+(trg)="s32">Ð£ Ð²ÐºÐ°Ð·Ð°Ð½ÑÐ¹ ÑÐ¸Ð¿Ð¾Ð²ÑÐ¹ ÐºÐ°ÑÑÑ ÐºÐ°Ð½Ð°Ð»ÑÐ² Ð²Ð¸Ð·Ð½Ð°ÑÐ°ÑÑÑÑÑ ÑÐ½ÑÐ° ÐºÑÐ»ÑÐºÑÑÑÑ ÐºÐ°Ð½Ð°Ð»ÑÐ², Ð½ÑÐ¶ ÑÐ¸Ð¿Ð¾Ð²Ð° ÐºÑÐ»ÑÐºÑÑÑÑ ÐºÐ°Ð½Ð°Ð»ÑÐ².<br>
+<hr>
+(src)="s33"> # # # Lese von Konfigurationsdatei : % s # # # <br>
+(trg)="s33">### Прочитано з файла налаштувань: %s ### <br>
+<hr>
+(src)="s34"> Name : % s <br>
+(trg)="s34">ÐÐ°Ð·Ð²Ð°: %s <br>
+<hr>
+(src)="s35"> Keine Modul-Informationen verfügbar <br>
+(trg)="s35">Дані щодо модуля недоступні <br>
+<hr>
+(src)="s36"> Version : % s <br>
+(trg)="s36">ÐÐµÑÑÑÑ: %s <br>
+<hr>
+(src)="s37"> Beschreibung : % s <br>
+(trg)="s37">Опис: %s <br>
+<hr>
+(src)="s38"> Autor : % s <br>
+(trg)="s38">ÐÐ²ÑÐ¾Ñ: %s <br>
+<hr>
+(src)="s39"> Verwendung : % s <br>
+(trg)="s39">Використання: %s <br>
+<hr>
+(src)="s40"> Lade einmalig : % s <br>
+(trg)="s40">ÐÐ°Ð²Ð°Ð½ÑÐ°Ð¶ÐµÐ½Ð½Ñ Ð¿ÑÐ¸: %s <br>
+<hr>
+(src)="s41"> DEPRECATION WARNING : % s <br>
+(trg)="s41">ПОПЕРЕДЖЕННЯ ПРО ЗАСТАРІЛІСТЬ: %s <br>
+<hr>
+(src)="s42"> Pfad : % s <br>
+(trg)="s42">Ð¨Ð»ÑÑ: %s <br>
+<hr>
+(src)="s43"> Öffnen der Datei ' % s ' fehlgeschlagen <br>
+(trg)="s43">Не вдалося відкрити модуль %s: %s<br>
+<hr>
+(src)="s44"> Ursprünglicher dlopen-Loader konnte nicht gefunden werden . <br>
+(trg)="s44">Ð¡Ð¿ÑÐ¾Ð±Ð° Ð·Ð½Ð°Ð¹ÑÐ¸ Ð¿Ð¾ÑÐ°ÑÐºÐ¾Ð²Ð¸Ð¹ ÑÐ½ÑÑÑÑÐ¼ÐµÐ½Ñ Ð·Ð°Ð²Ð°Ð½ÑÐ°Ð¶ÐµÐ½Ð½Ñ lt_dlopen Ð·Ð°Ð·Ð½Ð°Ð»Ð° Ð½ÐµÐ²Ð´Ð°ÑÑ.<br>
+<hr>
+(src)="s45"> Neuer dlopen-Loader konnte nicht gefunden werden . <br>
+(trg)="s45">Спроба виділення пам’яті для нового інструменту завантаження dl зазнала невдачі.<br>
+<hr>
+(src)="s46"> Hinzufügen von Bind-Now-Loader fehlgeschlagen . <br>
+(trg)="s46">ÐÐµ Ð²Ð´Ð°Ð»Ð¾ÑÑ Ð´Ð¾Ð´Ð°ÑÐ¸ bind-now-loader.<br>
+<hr>
+(src)="s47"> Signal % s empfangen . <br>
+(trg)="s47">Отримано сигнал %s.<br>
+<hr>
+(src)="s48"> Wird beendet . <br>
+(trg)="s48">ÐÐ°Ð²ÐµÑÑÐµÐ½Ð½Ñ ÑÐ¾Ð±Ð¾ÑÐ¸.<br>
+<hr>
+(src)="s49"> Benutzer ' % s ' nicht gefunden . <br>
+(trg)="s49">Не вдалося знайти користувача «%s».<br>
+<hr>
+(src)="s50"> Gruppe ' % s ' nicht gefunden . <br>
+(trg)="s50">ÐÐµ Ð²Ð´Ð°Ð»Ð¾ÑÑ Ð·Ð½Ð°Ð¹ÑÐ¸ Ð³ÑÑÐ¿Ñ Â«%sÂ».<br>
+<hr>
+(src)="s51"> Benutzer ' % s ' ( UID % lu ) und Gruppe ' % s ' ( GID % lu ) gefunden . <br>
+(trg)="s51">Знайдено користувача «%s» (UID %lu) і групу «%s» (GID %lu).<br>
+<hr>
+(src)="s52"> GID von Benutzer ' % s ' und Gruppe ' % s ' stimmen nicht überein . <br>
+(trg)="s52">GID ÐºÐ¾ÑÐ¸ÑÑÑÐ²Ð°ÑÐ° Â«%sÂ» Ñ Ð³ÑÑÐ¿Ð¸ Â«%sÂ» Ð½Ðµ Ð·Ð±ÑÐ³Ð°ÑÑÑÑÑ.<br>
+<hr>
+(src)="s53"> Benutzerverzeichnis von Benutzer ' % s ' ist nicht ' % s ' , ignoriere . <br>
+(trg)="s53">Домашнім каталогом користувача «%s» не є «%s», дані проігноровано.<br>
+<hr>
+(src)="s54"> Konnte ' % s ' nciht erzeugen : % s <br>
+(trg)="s54">ÐÐµ Ð²Ð´Ð°Ð»Ð¾ÑÑ ÑÑÐ²Ð¾ÑÐ¸ÑÐ¸ Â«%sÂ»: %s<br>
+<hr>
+(src)="s55"> Wechseln der Gruppen-Liste fehlgeschlagen : % s <br>
+(trg)="s55">Не вдалося змінити список груп: %s<br>
+<hr>
+(src)="s56"> Wechseln der GID fehlgeschlagen : % s <br>
+(trg)="s56">ÐÐµ Ð²Ð´Ð°Ð»Ð¾ÑÑ Ð·Ð¼ÑÐ½Ð¸ÑÐ¸ GID: %s<br>
+<hr>
+(src)="s57"> Wechseln der UID fehlgeschlagen : % s <br>
+(trg)="s57">Не вдалося змінити UID: %s<br>
+<hr>
+(src)="s59"> System-Modus auf dieser Plattform nicht unterstützt . <br>
+(trg)="s59">Загальносистемний режим не підтримується на цій платформі.<br>
+<hr>
+(src)="s60"> setrlimit ( % s , ( % u , % u ) ) fehlgeschlagen : % s <br>
+(trg)="s60">Ð¡Ð¿ÑÐ¾Ð±Ð° Ð²Ð¸ÐºÐ¾Ð½Ð°ÑÐ¸ setrlimit(%s, (%u, %u)) Ð±ÑÐ»Ð° Ð½ÐµÐ²Ð´Ð°Ð»Ð¾Ñ: %s<br>
+<hr>
+(src)="s61"> Parsen der Kommandzeile fehlgeschlagen . <br>
+(trg)="s61">Не вдалося обробити рядок команди.<br>
+<hr>
+(src)="s63"> Daemon läuft nicht <br>
+(trg)="s63">Фонову службу не запущено<br>
+<hr>
+(src)="s64"> Daemon läuft als PID % u <br>
+(trg)="s64">Ð¤Ð¾Ð½Ð¾Ð²Ñ ÑÐ»ÑÐ¶Ð±Ñ Ð·Ð°Ð¿ÑÑÐµÐ½Ð¾ ÑÐº PID %u<br>
+<hr>
+(src)="s65"> Konnte Prozess nicht abbrechen : % s <br>
+(trg)="s65">Не вдалося завершити роботу фонової служби: %s<br>
+<hr>
+(src)="s66"> Dieses Programm sollte ohne die Option --system nicht als Administrator ausgeführt werden . <br>
+(trg)="s66">Ð¦Ñ Ð¿ÑÐ¾Ð³ÑÐ°Ð¼Ñ Ð½Ðµ Ð¿ÑÐ¸Ð·Ð½Ð°ÑÐµÐ½Ð¾ Ð´Ð»Ñ Ð·Ð°Ð¿ÑÑÐºÑ Ð²ÑÐ´ ÑÐ¼ÐµÐ½Ñ ÐºÐ¾ÑÐ¸ÑÑÑÐ²Ð°ÑÐ° root (ÑÐºÑÐ¾ Ð½Ðµ Ð²ÐºÐ°Ð·Ð°Ð½Ð¾ Ð¿Ð°ÑÐ°Ð¼ÐµÑÑÐ° --system).<br>
+<hr>
+(src)="s67"> Root-Berechtigungen benötigt . <br>
+(trg)="s67">Потрібні права доступу користувача root.<br>
+<hr>
+(src)="s68"> --start nicht unterstützt für System-Instanzen . <br>
+(trg)="s68">ÐÐ°ÑÐ°Ð¼ÐµÑÑ --start Ð½Ðµ Ð¿ÑÐ´ÑÑÐ¸Ð¼ÑÑÑÑÑÑ Ð´Ð»Ñ Ð·Ð°Ð³Ð°Ð»ÑÐ½Ð¾ÑÐ¸ÑÑÐµÐ¼Ð½Ð¸Ñ ÐµÐºÐ·ÐµÐ¼Ð¿Ð»ÑÑÑÐ² Ð¿ÑÐ¾Ð³ÑÐ°Ð¼Ð¸.<br>
+<hr>
+(src)="s71"> System-Modus aktiv , jeodch --disallow-exit nicht gesetzt ! <br>
+(trg)="s71">Запуск у загальносистемному режимі, але не встановлено --disallow-exit!<br>
+<hr>
+(src)="s72"> System-Modus aktiv , jedoch --disallow-module-loading nicht gesetzt ! <br>
+(trg)="s72">ÐÐ°Ð¿ÑÑÐº Ñ Ð·Ð°Ð³Ð°Ð»ÑÐ½Ð¾ÑÐ¸ÑÑÐµÐ¼Ð½Ð¾Ð¼Ñ ÑÐµÐ¶Ð¸Ð¼Ñ, Ð°Ð»Ðµ Ð½Ðµ Ð²ÑÑÐ°Ð½Ð¾Ð²Ð»ÐµÐ½Ð¾ --disallow-module-loading!<br>
+<hr>
+(src)="s73"> System-Modus aktiv , SHM-Modus gezwungenermaßen deaktiviert ! <br>
+(trg)="s73">Запуск у загальносистемному режимі, примусове вимикання режиму SHM!<br>
+<hr>
+(src)="s74"> System-Modus aktiv , Exit-Idle-Time gezwungenermaßen deaktiviert ! <br>
+(trg)="s74">ÐÐ°Ð¿ÑÑÐº Ñ Ð·Ð°Ð³Ð°Ð»ÑÐ½Ð¾ÑÐ¸ÑÑÐµÐ¼Ð½Ð¾Ð¼Ñ ÑÐµÐ¶Ð¸Ð¼Ñ, Ð¿ÑÐ¸Ð¼ÑÑÐ¾Ð²Ðµ Ð²Ð¸Ð¼Ð¸ÐºÐ°Ð½Ð½Ñ ÑÐµÐ¶Ð¸Ð¼Ñ Ð¿Ð°ÑÐ°Ð¼ÐµÑÑÑÐ² ÑÐ°ÑÑ Ð²Ð¸ÑÐ¾Ð´Ñ Ð·Ð° Ð²ÑÐ´ÑÑÑÐ½Ð¾ÑÑÑ Ð°ÐºÑÐ¸Ð²Ð½Ð¾ÑÑÑ!<br>
+<hr>
+(src)="s75"> Reservieren von STDIO fehlgeschlagen . <br>
+(trg)="s75">Не вдалося отримати stdio.<br>
+<hr>
+(src)="s76"> pipe fehlgeschlagen : % s <br>
+(trg)="s76">Ð¡Ð¿ÑÐ¾Ð±Ð° Ð²Ð¸ÐºÐ¾Ð½Ð°Ð½Ð½Ñ pipe() Ð·Ð°Ð²ÐµÑÑÐ¸Ð»Ð°ÑÑ Ð½ÐµÐ²Ð´Ð°Ð»Ð¾: %s<br>
+<hr>
+(src)="s77"> fork ( ) fehlgeschlagen : % s <br>
+(trg)="s77">Спроба виконання fork() завершилася невдало: %s<br>
+<hr>
+(src)="s78"> read ( ) fehlgeschlagen : % s <br>
+(trg)="s78">Ð¡Ð¿ÑÐ¾Ð±Ð° Ð²Ð¸ÐºÐ¾Ð½Ð°Ð½Ð½Ñ read() Ð·Ð°Ð²ÐµÑÑÐ¸Ð»Ð°ÑÑ Ð½ÐµÐ²Ð´Ð°Ð»Ð¾: %s<br>
+<hr>
+(src)="s79"> Start des Daemons fehlgeschlagen . <br>
+(trg)="s79">Спроба запуску фонової служби завершилася невдало.<br>
+<hr>
+(src)="s80"> Start des Daemons erfolgreich . <br>
+(trg)="s80">Ð¤Ð¾Ð½Ð¾Ð²Ñ ÑÐ»ÑÐ¶Ð±Ñ ÑÑÐ¿ÑÑÐ½Ð¾ Ð·Ð°Ð¿ÑÑÐµÐ½Ð¾.<br>
+<hr>
+(src)="s81"> read ( ) fehlgeschlagen : % s <br>
+(trg)="s81">Спроба виконання setsid() завершилася невдало: %s<br>
+<hr>
+(src)="s82"> Dies ist PulseAudio % s <br>
+(trg)="s82">Ð¦Ðµ PulseAudio %s<br>
+<hr>
+(src)="s83"> Kompilier-Host : % s <br>
+(trg)="s83">Вузол збирання: %s<br>
+<hr>
+(src)="s84"> Kompilier-CFLAGS : % s <br>
+(trg)="s84">CFLAGS Ð·Ð±Ð¸ÑÐ°Ð½Ð½Ñ: %s<br>
+<hr>
+(src)="s85"> Laufe auf Host : % s <br>
+(trg)="s85">Запущено на вузлі: %s<br>
+<hr>
+(src)="s86"> % u CPUs gefunden . <br>
+(trg)="s86">ÐÐ½Ð°Ð¹Ð´ÐµÐ½Ð¾ %u Ð¿ÑÐ¾ÑÐµÑÐ¾ÑÑÐ².<br>
+<hr>
+(src)="s87"> Seitengröße ist % lu Bytes . <br>
+(trg)="s87">Розмір сторінки дорівнює %lu байтам<br>
+<hr>
+(src)="s88"> Kompiliere mit Valgrind-Unterstützung : ja <br>
+(trg)="s88">ÐÑÐ±ÑÐ°Ð½Ð¾ Ð· Ð¿ÑÐ´ÑÑÐ¸Ð¼ÐºÐ¾Ñ Valgrind: ÑÐ°Ðº<br>
+<hr>
+(src)="s89"> Kompiliere mit Valgrind-Unterstützung : nein <br>
+(trg)="s89">Зібрано з підтримкою Valgrind: ні<br>
+<hr>
+(src)="s90"> Läuft im Valgrind-Modus : % s <br>
+(trg)="s90">ÐÐ°Ð¿ÑÑÐº Ñ ÑÐµÐ¶Ð¸Ð¼Ñ valgrind: %s<br>
+<hr>
+(src)="s91"> Laufe auf Host : % s <br>
+(trg)="s91">Запущено у віртуальній машині: %s<br>
+<hr>
+(src)="s92"> Optimiertes Build : ja <br>
+(trg)="s92">ÐÑÐ±ÑÐ°Ð½Ð¾ Ð· Ð¾Ð¿ÑÐ¸Ð¼ÑÐ·Ð°ÑÑÑÑ: ÑÐ°Ðº<br>
+<hr>
+(src)="s93"> Optimiertes Build : nein <br>
+(trg)="s93">Зібрано з оптимізацією: ні<br>
+<hr>
+(src)="s94"> NDEBUG definiert , alle Ansprüche deaktiviert . <br>
+(trg)="s94">ÐÐ¸Ð·Ð½Ð°ÑÐµÐ½Ð¾ NDEBUG, Ð²ÑÑ Ð´Ð¾Ð´Ð°Ð²Ð°Ð½Ð½Ñ Ð²Ð¸Ð¼ÐºÐ½ÐµÐ½Ð¾.<br>
+<hr>
+(src)="s95"> FASTPATH definiert , nur fast-path-Ansprüche deaktiviert . <br>
+(trg)="s95">Визначено FASTPATH, вимкнено лише додавання швидких шляхів.<br>
+<hr>
+(src)="s96"> Alle Ansprüche aktiviert . <br>
+(trg)="s96">Ð£Ð²ÑÐ¼ÐºÐ½ÐµÐ½Ð¾ Ð²ÑÑ Ð´Ð¾Ð´Ð°Ð²Ð°Ð½Ð½Ñ.<br>
+<hr>
+(src)="s97"> Beziehen der Maschinen-ID fehlgeschlagen <br>
+(trg)="s97">Спроба отримати ідентифікатор системи завершилася невдало<br>
+<hr>
+(src)="s98"> System- ID ist % s . <br>
+(trg)="s98">ÐÐ´ÐµÐ½ÑÐ¸ÑÑÐºÐ°ÑÐ¾Ñ ÑÐ¸ÑÑÐµÐ¼Ð¸ %s.<br>
+<hr>
+(src)="s99"> System- ID ist % s . <br>
+(trg)="s99">Ідентифікатор сеансу — %s.<br>
+<hr>
+(src)="s100"> Nutze Laufzeit-Verzeichnis % s . <br>
+(trg)="s100">ÐÐ°ÑÐ°Ð»Ð¾Ð³ Ð·Ð°Ð¿ÑÑÐºÑ: %s.<br>
+<hr>
+(src)="s101"> Nutze Zustands-Verzeichnis % s . <br>
+(trg)="s101">Каталог стану: %s.<br>
+<hr>
+(src)="s102"> Modul-Verzeichnis % s benutzen . <br>
+(trg)="s102">ÐÐ°ÑÐ°Ð»Ð¾Ð³ Ð¼Ð¾Ð´ÑÐ»ÑÐ²: %s.<br>
+<hr>
+(src)="s103"> Laufe im System-Modus : % s <br>
+(trg)="s103">Запуску у загальносистемному режимі: %s<br>
+<hr>
+(src)="s105"> pa _ pid _ file _ create ( ) fehlgeschlagen . <br>
+(trg)="s105">Спроба виконання pa_pid_file_create() зазнала невдачі.<br>
+<hr>
+</body>
+</html>
