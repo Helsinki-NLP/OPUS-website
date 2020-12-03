@@ -1,0 +1,160 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+Sok időt szentelt saját, Le Sourire című újságjának, amelyben védelmébe vette a bennszülötteket a hatóságokkal szemben. <br/>
+සමන්තුරේ කල්මුනේ අක්කරෙයිපත්තුව පොතුවිල් මහඔය උහන දමන ඉගිනියාගල වඩිනාගල අරන්තලාව ශ්‍රී ලංකාවේ නගර ලැයිස්තුව East of Sri Lanka Divisions of Ampara Detailed map of Ampara vicinity and Sri Lanka Google Map <br/>
+<hr/>
+¿Cuál libro prefieres: este (éste) o ese (ése)? ’Melyik könyvet szereted jobban: ezt itt, vagy azt nálad?’. <br/>
+ලීය මෙ ගෙත්තමට සිතු(ජු)කෙනෙක්ද එ කවෙක් හින්දෙ ලී (මෙ බෙ) ලුව ගී නොහිස් ගී බලත දක්නා සෙ ගෙති 86. <br/>
+<hr/>
+Mindörökké élni fog a szívünkben. <br/>
+ඔහුට මගේ හදේ සදහටම ලැගුම්ගත හැකියි. <br/>
+<hr/>
+Ausztráliában az öngyilkosság nem bűn. <br/>
+ඔස්ට්‍රේලියාවේ සියදිවි නසාගැනීම අපරාධයක් නොවේ. <br/>
+<hr/>
+Örülök, hogy látlak. <br/>
+ඔබව දකින තැනැත්තා ප්‍රීතියට පත්වන්නේ ය. <br/>
+<hr/>
+Így amikor a tényleges Építő létrejön, adhatunk neki néhány feladatot. ////// Terméknyilatkozatok és inline implementáció ////// class Product{ public: // ezt az osztályt használja a termék megépítésére class Builder; private: // az érvényes objektum létrehozásához szükséges változók int i; float f; char c; // csak egy egyszerű konstruktor - a továbbiakat az Építő kezeli Product( const int i, const float f, const char c ) : i(i), f(f), c(c){} public: // Termékspecifikus funkciók void print(); void doSomething(); void doSomethingElse(); }; class Product::Builder{ private: // A Product osztály objektumainak létrehozásához szükséges változók int i; float f; char c; public: // változók alapértelmezett értékei static const int defaultI = 1; static const float defaultF = 3.1415f; static const char defaultC = 'a'; // Építő létrehozása a hozzárendelt alapértékekkel // (A C++11-ben ehelyett egyszerűen hozzárendelhetjük őket a deklarációkor) Builder() : i( defaultI ), f( defaultF ), c( defaultC ){} // Egyedi értékeket ad a termék létrehozásnak // Visszatér az Építő gyors és inline alkalmazásra Builder&amp; setI( const int i ){ this-&gt;i = i; return *this; } Builder&amp; setF( const float f ){ this-&gt;f = f; return *this; } Builder&amp; setC( const char c ){ this-&gt;c = c; return *this; } // elkésziti a gyaktan keresett specifikus termékeket // Visszatér az Építő gyors és inline elkalmazásra Builder&amp; setProductP(){ this-&gt;i = 42; this-&gt;f = -1.0f/12.0f; this-&gt;c = '@'; return *this; } // elkésziti a kivánt terméket Product build(){ // itt opcionálisan ellenőrizhetjük a változókonzisztenciát // illetve hogy a termék megépíthető-e a kapott információk alapján return Product( this-&gt;i, this-&gt;f, this-&gt;c ); } }; ///// termék végrehajtása ///// #include &lt;iostream&gt; void Product::print(){ using namespace std; cout &lt;&lt; "Product internals dump:" &lt;&lt; endl; cout &lt;&lt; "i: " &lt;&lt; this-&gt;i &lt;&lt; endl; cout &lt;&lt; "f: " &lt;&lt; this-&gt;f &lt;&lt; endl; cout &lt;&lt; "c: " &lt;&lt; this-&gt;c &lt;&lt; endl; } void Product::doSomething(){} void Product::doSomethingElse(){} //////////////////// Builder használata (az Igazgató helyettesítése) int main(){ // egyszerűsitett használat Product p1 = Product::Builder().setI(2).setF(0.5f).setC('x').build(); p1.print(); // test p1 // haladóknak Product::Builder b; b.setProductP(); Product p2 = b.build(); // Product P objektum b.setC('!'); // Product P objektum testreszabása Product p3 = b.build(); p2.print(); // test p2 p3.print(); // test p3 } /** * Represents the product created by the builder. */ class Car { private int wheels; private String color; public Car() { } @Override public String toString() { return "Car "; } public int getWheels() { return wheels; } public void setWheels(final int wheels) { this.wheels = wheels; } public String getColor() { return color; } public void setColor(final String color) { this.color = color; } } /** * The builder abstraction. */ interface CarBuilder { CarBuilder setWheels(final int wheels); CarBuilder setColor(final String color); Car build(); } class CarBuilderImpl implements CarBuilder { private Car car; public CarBuilderImpl() { car = new Car(); } @Override public CarBuilder setWheels(final int wheels) { car.setWheels(wheels); return this; } @Override public CarBuilder setColor(final String color) { car.setColor(color); return this; } @Override public Car build() { return car; } } public class CarBuildDirector { private CarBuilder builder; public CarBuildDirector(final CarBuilder builder) { this.builder = builder; } public Car construct() { return builder.setWheels(4) .setColor("Red") .build(); } public static void main(final String arguments) { CarBuilder builder = new CarBuilderImpl(); CarBuildDirector carBuildDirector = new CarBuildDirector(builder); System.out.println(carBuildDirector.construct()); } } abstract class GetterSetter { public function __get($name) { $method = sprintf('get%s', ucfirst($name)); if (!method_exists($this, $method)) { throw new Exception(); } return $this-&gt;$method(); } public function __set($name, $v) { $method = sprintf('set%s', ucfirst($name)); if (!method_exists($this, $method)) { throw new Exception(); } $this-&gt;$method($v); } } //Represents a product created by the builder class Car extends GetterSetter { private $wheels; private $colour; function __construct() { } public function setWheels($wheels) { $this-&gt;wheels = $wheels; } public function getWheels() { return $this-&gt;wheels; } public function setColour($colour) { $this-&gt;colour = $colour; } public function getColour() { return $this-&gt;colour; } } //The builder abstraction interface ICarBuilder { public function SetColour($colour); public function SetWheels($count); public function GetResult(); } //Concrete builder implementation class CarBuilder implements ICarBuilder { private $_car; function __construct() { $this-&gt;_car = new Car(); } public function SetColour($colour) { $this-&gt;_car-&gt;setColour($colour); } public function SetWheels($count) { $this-&gt;_car-&gt;setWheels($count); } public function GetResult() { return $this-&gt;_car; } } //The director class CarBuildDirector { public $builder; function __construct($color = "White", $wheels = 4) { $this-&gt;builder = new CarBuilder(); $this-&gt;builder-&gt;SetColour($color); $this-&gt;builder-&gt;SetWheels($wheels); } public function GetResult() { return $this-&gt;builder-&gt;GetResult(); } } A meghatározatlan nyelvű +/- Wikikönyvekben további információk találhatók Builder témában. <br/>
+ප්‍රේමය බිඳවැටීම කෙරේ බලපාන අභ්‍යන්තර සාධක දෙස විමසා බැලීමේදී මූලිකම කාරණය වන්නේ ආකර්ෂණය හීන වීමයි.එනම් එකිනෙකා අතර ඇති අනුරාගික ආකර්ෂණය අඩුවී යයි.ස්ත්‍රී පුරුෂ ප්‍රේමයේ පදනම වන්නේ ලිංගික ආකර්ෂණයයි.මේහි ප්‍රථිපලය ලෙස පෙම්වතුන් එකිනෙකාගෙන් දුරස්වීම හා ප්‍රතික්ෂේප කිරීමට ක්‍රමයෙන් පෙළඹේ.මේ සමගම දෙදෙනා අතර ඇති සියුම් භාවාත්මක හැඟීම්ද දුර්වලවේ.මෙසේ දුරස්වීම සමග ප්‍රේමය බිඳවැටීමේ දෙවන පියවර ආරම්භවේ.එනම් ඔවුනොවුන් කලහ කරගැනීම ආරම්භවේ.මෙසේ ඇතිකරගන්නා රණ්ඩු සරුවල් දෝෂාරෝපනය කිරීම් මත තවදුරටත් ඔවුන් අතර ආකර්ෂණය හීනවී යයි.මෙසේ ඇතිවන කලහ කිරීම් හමුවේ ඔවුන් එකිනෙකා අතර ඇති හැඟීම් ආකල්පයන් විශ්වාස අතර ඇති නොගැලපීම් වටහා ගනී.එනම් ඔවුන් එකිනෙකා සන්සන්දනය කිරීමට පෙළඹේ.මෙසේ ඇතිවන සන්සන්දනය කිරීම් හමුවේ එකිනෙකා අතර ඇති නොහැලපීම් වටහාගනී.අවසානයේ මෙම සම්බන්ධය තවදුරටත් පවත්වාගෙනයාමේ වැදගත්කමක් නැතිබව ඔවුන් තීරණය කරයි. / ඇතැම් පුද්ගලයන් ආදර සම්බන්ධතා ඇතිකර නොගෙන සිටිනු දක්නට ලැබේ.මනෝ විද්‍යාඥයන්ට අනුව මෙවන් බොහෝ පුද්ගලයින් තුල විවිධ මානසික ගැටළු පවතින බව පෙන්චා දෙයි.මෙවැනි මානසික පීඩනයන් ඇතිවීමට විවිධ හේතු බලපානු ලබයි.ළමා කාලයේදී තම පවුලේ විරුද්ධ ලිංගික සාමාජිකයන්ගේ ඇසුර හරිහැටි නොලැබීම නිසාද තරුණවියේදී විරුද්ධ ලිංගික සාමාජිකයන්ට සමීපවීමට හා ඔවුන් තේරුම් ගැනීමට අපහසුවේ.එසේම තම පවුල තුල මෙන්ම පාසැළ තුලදීද විරුද්ධ ලිංගික යහළු යෙහෙළියන්ගෙ ඇසුර නොලැබීම මෙම තත්වය තවත් වැඩිදියුණු කරයි.එසේම සංස්කෘතිය විසින් පැනවෙන තහංචිද මෙයට බලපායි.තවද සමාජයේ ඇසුරු කරන පුද්ගලයන් විසින් ආදර සබදතා කෙරෙහි ඇතිකරන ඍණාත්මක පෙළඹවීම්ද මේ අතරවේ.එසේම ඇතමුන් තුල පවතින සමාජශීලි ගති ලක්ෂණ අඩුවීම නිසාද තම මතයන් අන් අයට ප්‍රකාශ කිරීමට බියක් චකිතයක් දක්වයි.තවද ඇතමුන් තුල තමා කෙරේ පවතින හීනමානය නිසා මෙන්ම අධි මානය නිසාද සහකරුවකු තෝරා ගැනීමේ ගැටළු ඇතිකර ගනී.මීට ඇතැම් අතීතයේ සිදුවූ අමිහිරි මතකයන් නිසාද ප්‍රේමයට නොපෙළඹේ.විශේෂයෙන් ප්‍රේමයෙන් පරාජයටපත්වීම ප්‍රේමය බිඳවැටීම වැනි කරුණු නිසා යලි ආදර සමදතාවක් ඇතිකර ගැනීමට ඇතැම් පුද්ගලයන් නොපෙළඹේ.මීට අමතරව පෙරදිග රටවල නම් කුඩා අවදියේදී හෝ තරුණ අවදියේදී අතවරයට ලක්වීම කන්‍යාභාවය අහිමිවීම වැනි සාධක නිසා ස්ත්‍රීන් ප්‍රේමයට තොපෙළඹීම සිදුවේ.තවද ඇතමුන් සමලිංගික චර්‍යා වලට පෙළඹීමද ආදර සමබදතා ඇති කරනොගැනීමට හේතුවේ.ඇතමුන් තුල ලිංගික ආබාධ පැවතීම හා ඒ පිළිබඳ ඇතිකරගන්නාලද අස්ථාන බියද මෙයට හේතුවේ. <br/>
+<hr/>
+Hozzáférés 2007/09/15 . <br/>
+සිළුමිණ 2009/09/15. <br/>
+<hr/>
+Ha igen, mikortól és milyen mértékben? <br/>
+ක්‍රියාත්මක කරන්නේ කෙසේ ද, කිනම් වෙලාවක ද? <br/>
+<hr/>
+Hideg van. <br/>
+ශීතලයි. <br/>
+<hr/>
+The New York Times (angol nyelven). <br/>
+The New York Times (in ඉංග්‍රීසි). <br/>
+<hr/>
+Arra is utalt, hogy az új zene hamarosan érkezik. <br/>
+ඔහුගේ නව ගීතය ලඟදීම එන බව ඔහු ප්‍රකාශ කර ඇත. <br/>
+<hr/>
+Miért vannak itt? <br/>
+ඇයි ඒ අය මෙහෙ? <br/>
+<hr/>
+A Pioneer–9 különösen hosszú életűnek bizonyult, még 1987-ben is közvetített adatokat. <br/>
+“පයනියර් 9” ඉතා දිගු කාලයක් ක්‍රියාත්මක වූ අතර එය 1987 වන තෙක් දත්ත සම්ප්‍රේෂණය සිදු කළේය. <br/>
+<hr/>
+Varaqa azt mondta: "Ez ugyanaz, , akit Allah Múszához (Mózeshez) küldött. <br/>
+එවිට නබිතුමා: "ඔබ මේ සියල්ල තුල ඊමාන්(විශ්වාසය) තැබුවහොත් ඔබ විශ්වාසවන්තයෙක් යැයි පැවසුවා." <br/>
+<hr/>
+Ugyanitt a 191. oldal megemlíti a brit csapatok pontos számának meghatározási nehézségeit. <br/>
+191 සටහන් කරනුයේ බ්‍රිතාන්‍ය හමුදාවන්ගේ නිවැරැදි ගණනයක් සිදු කිරීමේ දුෂ්කරතාවයක් පැන නැගුණු බවයි. <br/>
+<hr/>
+Más országokban, amelyeket Japán megszállt, a törvényt vegyes reakciók fogadták, vagy teljesen elkendőzték azt. <br/>
+ජපානයේ අධිවාසව සිටි අනෙකුත් ජාතීන්ට 1999 නීතිය සම්මිශ්‍රිත ප්‍රතිචාර හෝ රැවටීමක් ලෙස හමුවිය. <br/>
+<hr/>
+Felfedezte, hogy a hő és a mechanikai munka is az energia egy formája, és később, fizikai tudását bővítve, kvantitatív összefüggést állított fel a kettő között. <br/>
+තාපය හා යාන්ත්‍රික කාර්ය ‍යන දෙකම ශක්ති විශේෂ බව සොයාගත් ඔහු පසුව භෞතික විද්‍යාව පිළිබඳ ඔහුගේ දැණුම වැඩි කරගත් පසු එම දෙක අතර ප්‍රමාණාත්මක සම්බන්ධතාවක් ගොඩ නැංවීය. <br/>
+<hr/>
+Úgy éreztem, sosem szólalok meg többé, mert a hangom bárkit megölhet.” <br/>
+මම නැවත කිසිදිනෙක කතා නොකරන්නේ, මගේ වචන විසින් ඕනෑම අයෙකු මරා දැමිය හැකි නිසයි ..." <br/>
+<hr/>
+A VIC-20 után vásárolt egy Sinclair QL-t, amit jelentős mértékben átalakított, különösen operációs rendszer szinten. <br/>
+VIC-20ට පසුව ඔහු Sinclair QL පරිගණකයක් මිලදී ගෙන එය බොහෝ සෙයින් නවීකරණය කලේය.විශේෂයෙන්ම මෙහෙයුම් පද්ධතිය විශාල වෙනස්කම් වලට භාජනය විය. <br/>
+<hr/>
+Az egész csak álom volt. <br/>
+නමුත් එය නිකම්ම නිකම් සිහිනයක් විතරයි නේද? <br/>
+<hr/>
+A PHP 5-ben a láthatóság is szabályozható a private és a protected kulcsszavakkal. <br/>
+PHP5 විසින් private හා protected ආකාරයට විචල්‍යයන් දැක්විය හැකි විය. <br/>
+<hr/>
+A tudományhoz semmi köze. <br/>
+විද්‍යාව සමබර නැත. <br/>
+<hr/>
+Fordította: dr. <br/>
+පරිවර්තකය <br/>
+<hr/>
+A számítógépekkel való ismerkedést egy Commodore VIC-20-szal kezdte. <br/>
+ඔහුගේ පරිගණක පිළිබඳ උනන්දුව ඇරඹෙන්නේ Commodore VIC-20.පරිගණකයක් සමඟින්ය. <br/>
+<hr/>
+Ez lesz a kulcs. <br/>
+මෙන්න ඔබේ යතුර . <br/>
+<hr/>
+Porter szerint az öt erő modellt üzleti szinten kellene használni; nem az iparági csoport vagy iparági szektor szintjén történő használatra tervezték. <br/>
+පෝටර්ට අනුව පස්විධි බලවේග ආකෘතිය කර්මාන්ත මට්ටමේදී භාවිතා කළ යුතු වන අතර එය කර්මාන්ත කණ්ඩායම් හෝ කර්මාන්ත අංශ මට්ටමේදී භාවිතා කිරීම සඳහා නිර්මණය කර නොමැත. <br/>
+<hr/>
+Én nő vagyok. <br/>
+මම ගැහැනියක් මි. <br/>
+<hr/>
+Eredetileg úgy vélték, hogy hat robbanás következett be a metrórendszerben, és nem három. <br/>
+පළමුව සිතා තිබුනේ උමං මාර්ගය තුළ පිපිරුම් තුනක් නොව හයක් සිදු වුනාය යනුවෙනි. <br/>
+<hr/>
+1993. április 30-án a CERN bejelentette, hogy a világháló mindenki számára szabad és ingyenes. <br/>
+1993 අප්‍රේල් 30 වැනිදා CERN ආයතනය නිවේදනයක් නිකුත් කරමින් කියා සිටියේ ඉන් මතුවට වෙබ් අඩවිය ඕනෑම අයකුට කවර ආකාරයකට හෝ ගාස්තුවක් ගෙවීමකින් තොරව පරිශීලනය කළ හැකි බවය. <br/>
+<hr/>
+Túl sokat ittam, ezzel a sráccal ez volt a kapcsolatunk alapja. <br/>
+මම ඉතාම දැඩි ලෙස බොමින් හිටියේ, අන්න ඒ වගේ සම්බන්ධතාවයක් තමයි ඒ පිරිමි ළමයත් එක්ක මට තිබුණේ. <br/>
+<hr/>
+Tanúk: Zot besúgói. <br/>
+හිගේ නැතිව දෙවියෝ මුර කරනව ද? <br/>
+<hr/>
+Később láttuk, mennyire igaza van. <br/>
+එහෙත් පසුව එය සම්පූර්ණයෙන් නිවැරදි බව හෙළි විය. <br/>
+<hr/>
+(Vö. „Ízekre szedlek!”) <br/>
+"උෂිකු දායිබුත්සු". <br/>
+<hr/>
+"Semmi sem tart örökké". <br/>
+කිසිවක් සදාකාලිකව පවතින්නක් නොවේ. <br/>
+<hr/>
+Emeld Fel Kezed! <br/>
+අත් පා කැපීම. <br/>
+<hr/>
+A polgármesterek közül kevesebb, mint 1% az, aki nő. <br/>
+මහ නගරාධිපතිවරුන් අතරින් 1% ට අඩු සංඛ්‍යාවක් කාන්තාවන් වෙති. <br/>
+<hr/>
+Köszönöm, hogy meghallgattak. <br/>
+ඒත් ඔවුන් අහගෙන ඉන්නවා. <br/>
+<hr/>
+2002-ben a Sports Illustrated az Év Sportolójának nevezte. <br/>
+2002 දී ස්පෝර්ට්ස් ඉලස්ට්‍රේටඩ් (Sports Illustrated) සඟරාව මගින් ඔහුව වසරේ ක්‍රීඩකයා ලෙස නම් කරන ලදී. <br/>
+<hr/>
+A kokainnal és methamphetaminnal való visszaélés nagy mértékben összefügg az öngyilkossággal. <br/>
+කොකේන් සහ methamphetamines අනිසි ලෙස භාවිතා කිරීම සහ සියදිවි නසාගැනීම අතර සහසම්බන්ධයක් පවතී. <br/>
+<hr/>
+Esdrást a Korán is megemlíti Uzair éven (arabul: عزير). <br/>
+හිජ්රත් සිද්ධිය මුල් කොටගෙන “හිජ්රී” නමැති ඉස්ලාමීය වසර ආරම්භ වන්නේය. <br/>
+<hr/>
+AZ LESZ!!! <br/>
+වෙත්‍වා !!! <br/>
+<hr/>
+Még ő maga sem tudja, hogy mikor és hol született. <br/>
+හරියට ම ඔහු ඉපදුන කාලය හා ස්ථානය ගැන තොරතුරු දැනගන්නට නැත. <br/>
+<hr/>
+Egyesek tiltakoztak, arra hivatkozva, hogy ez sérti a japán alkotmányt, azonban a Tanács azzal érvelt, hogy az iskolák kormányzati szervezetek, ezért az alkalmazottainak kötelessége, hogy arra tanítsa a diákokat, miképp legyenek jó Japán állampolgárok. <br/>
+මෙවැනි නීති මගින් ජපන් ආණ්ඩුක්‍රමය උල්ලංඝණය කෙරෙන බව පවසමින් ඇතැමෙක් එයට විරුද්ධ වූ නමුත් පාසල් යනු රජයේ ආයතන වන අතර, ඒවායේ සේවකයන් ලෙස ඔවුන් ඔවුන්ගේ සිසුන්ට යහපත් ජපන් පුරවැසියන් වන්නේ කෙසේද යනවග ඉගැන්වීමට බැඳී සිටින බව පාලක මණ්ඩලය තර්ක කරනුලබයි. <br/>
+<hr/>
+Mitől változik a nyelv? <br/>
+එනිසා භාෂාව යනු කුමක් ද? <br/>
+<hr/>
+Auschwitz I. az egész komplexum adminisztratív központjaként funkcionált. <br/>
+ආරම්භයේ සිටම අවුෂ්විට්ස් 1 යනු කඳවුරු සංකීර්ණයේ පරිපාලන මධ්‍යස්ථානය උනා. <br/>
+<hr/>
+Az Egyházmegye története <br/>
+පල්ලියේ ඉතිහාසය <br/>
+<hr/>
+A modell ideális szolgáltatások interakcióira amelyek ugyanazon a feldolgozóegységen futnak. <br/>
+ස්වභාවික වර්ණාත්මක ක්‍රියාවලිය ක්‍රමානුකූල ක්‍රියාවලියක් වන අතර, එය පරිණාමවාදයේ පදනමයි. <br/>
+<hr/>
+2010-ben Nobel-békedíjat kapott „Az alapvető emberi jogokért Kínában folytatott hosszú és erőszakmentes küzdelméért”. <br/>
+ඔහුගේ සිව්වන සිර දඬුවම් කාලය තුළදී, ලියු "2010 දී චීනයේ මූලික මිනිස් අයිතිවාසිකම් සඳහා ඔහුගේ දිගුකාලීන හා ප්රචණ්ඩකාරී අරගලය සඳහා නොබෙල් සාම ත්යාගයෙන් පිදුම් ලැබීය." <br/>
+<hr/>
+Az egyetlen dolog amit tudok, hogy nem tudok semmit. <br/>
+මා දන්නා එකම දෙයනම් මා කිසිවක් නොදන්නා බවයි. <br/>
+<hr/>
+Hetzmann Róbert: Kirándulás a Békás elfeledett völgyébe ( <br/>
+රෙඩ් හැට් එන්ටප්‍රයිස් (ලිනක්ස් බෙදා හැරීම) Red Hat Enterprise Linux - RELEASE-NOTES සිංහලෙන් ( ( <br/>
+<hr/>
+</body></html/>

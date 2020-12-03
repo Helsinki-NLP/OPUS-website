@@ -1,0 +1,160 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+Una vegada que surt de la seva crisàlide com imago viu només uns dies per aparellar-se. <br/>
+ഇംഗ്ലീഷ് വിലാസം Editions <br/>
+<hr/>
+Sobre el cielo y la tierra (en castellà). <br/>
+അല്ലാഹുവിൽനിന്ന് മറഞ്ഞിരിക്കുന്നതായി ഒന്നുമില്ല ഭൂമിയിലും ആകാശത്തും.' <br/>
+<hr/>
+The Lord of the Rings (en anglès). <br/>
+എങ്കിലും നെയ്യഭിഷേകമാണ് ഇവിടെയും വടക്കുംനാഥന് പ്രധാനം. <br/>
+<hr/>
+Si ho desitges, la qual cosa es desitja és la veritat pel qual (representa) la millor veritat. <br/>
+വ്യക്തിപരമായ സുന്നത്തും (ഉദാ: നഖം വെട്ടുക), സാമൂഹിക സുന്നത്തും(ഉദാ: കുടുംബക്കാരെ തൊട്ട് ബലി അറവ് നടത്തുക. <br/>
+<hr/>
+Les lleis haurien de recompensar a aquells que les compleixen i castigar a aquells que les desobeeixen. <br/>
+ഇനി അതിനു ശേഷവും ആരെങ്കിലും അതിക്രമം പ്രവർത്തിക്കുകയാണെങ്കിൽ അവന്‌ വേദനയേറിയ ശിക്ഷയുണ്ടായിരിക്കും.” <br/>
+<hr/>
+No estaven sotmesos a mals usos ni a servituds. <br/>
+സഹായിയായ കീഴ്ശാന്തിയും അന്ന് ക്ഷേത്രത്തിലുണ്ടായിരുന്നില്ല. <br/>
+<hr/>
+Digitela novament:"; cin&gt;&gt; opció; } return opció; } void add (void){ do{ cout &lt;&lt; "\nIntrodueixi el nombre de vèrtexs (no mínim de 2):"; cin&gt;&gt; vèrtexs; }While (vèrtexs &lt;2); if (! costos) delete (costos); costos = new int ; for (int i = 0; i &lt;= vèrtexs * vèrtexs; i++) costos = -1; cout &lt;&lt; "N º Vertices =" &lt;&lt;vèrtexs &lt;&lt;endl; cout &lt;&lt; "Ara unim els vèrtexs:\n"; bool segueixo = true; int origen; int destinació; while (segueixo){ cout &lt;&lt; "Escolliu el primer vèrtex de l'aresta:" &lt;&lt;endl; do{ cin&gt;&gt; origen; if (origen&gt; vertices){ cout &lt;&lt; "El nombre del vèrtex ha de ser menor de" &lt;&lt;vèrtexs &lt;&lt;endl; } }while (origen&gt; vertices); cout &lt;&lt; "Escolliu el segon vèrtex de l'aresta:" &lt;&lt;endl; do{ cin&gt;&gt; destinació; if (destinació&gt; vertices){ cout &lt;&lt; "El nombre de vèrtex ha de ser menor de" &lt;&lt;vèrtexs &lt;&lt;endl; } }while (destinació&gt; vertices); int pes = 0; cout &lt;&lt; "Pes:" &lt;&lt;endl; cin&gt;&gt; pes; costos = pes; costos = pes; int seguir = 1; cout &lt;&lt; "Voleu afegir una altra aresta? (0 - NO, 1 - SI, per defecte 1):"; cin&gt;&gt; seguir; segueixo = (seguir == 1); } } void cercar (void){ int i, j; cout &lt;&lt; "Llista dels Menors Camins a Graf Atès:\n"; for (i = 1; i &lt;= vèrtexs; i++){ for (j = 1; j &lt;= vèrtexs; j++) Dijkstra (vèrtexs, i, j, costos); cout &lt;&lt;endl; } cout &lt;&lt; "&lt;Premeu ENTER per tornar al menú principal.\n"; } int main (int argc, char ** argv){ int opció; do{ opcion = menu (); switch (opció){ case 1: add (); break; case 2: cercar (); break; } }While (opció ! = 0); delete (costos); cout &lt;&lt; "\nFins la proxima ...\n\n"; system ( "pause"); return 0; } Una altra possible implementació de l'algorisme de Dijkstra és mitjançant monticles binaris. struct T_Heap{ A turo; int num_elem; }; void CrearHeap (T_Heap &amp; heap){ heap.num_elem = 0; for (int i = 0; i &lt;MAX_HEAP; i++){ heap.monticulo = NULL; }//for } void Intercanviar (T_Heap &amp; heap, int i, int j){ T_Lista aux; aux = heap.monticulo ; heap.monticulo = heap.monticulo ; heap.monticulo = aux; } void Meter (T_Heap &amp; heap, const T_Lista &amp; elem){ int k; k = heap.num_elem; heap.monticulo = elem; while (k ! = 0||(heap.monticulo --&gt; pes&gt; heap.monticulo --&gt; pes){ Intercanviar (heap, k, ((k-1)/2)); k = (k-1)/2; }//while heap.num_elem++; } void Treure (T_Heap &amp; heap, int &amp; elem){ int k; elem = heap.monticulo ; heap.monticulo = heap.monticulo ; heap.monticulo = NULL; heap.num_elem--; k = 0; while (k &lt;heap.num_elem &amp;&amp; (heap.monticulo--&gt; pes &lt;heap.monticulo --&gt; pes|| heap.monticulo --&gt; pes &lt;heap.monticulo --&gt; pes)){ if (heap.monticulo &lt;heap.monticulo ){ Intercanviar (heap, k, 2 * k+1); k = 2 * k+1; }else{ Intercanviar (heap, k, 2 * k+2); k = 2 * k+2; }//if }//while } bool HeapLleno (const T_Heap &amp; heap){ return (heap.num_elem == MAX_HEAP); } bool HeapVacio (const T_Heap &amp; heap){ return (heap.num_elem == 0); } void DestruirHeap (T_Heap &amp; heap){ for (int i = 0; i &lt;MAX_HEAP; i++){ heap.monticulo = NULL; }//for heap.num_elem = 0; } Aquesta és una implementació de l'algorisme de Dijkstra mitjançant monticles binaris, que és capaç de donar els millors resultats perquè l'algorisme de Johnson sigui més eficient. <br/>
+അലി ബിൻ അബീത്വാലിബ്‌ Ali ibn Abu Talibعلي بن أبي طالب(Abu al-Hassan/أبو الحسن) ഹസൻ ഇബ്ൻ അലി Hasan ibn Aliالحسن بن علي(Abu Muhammadأبو محمد) ഹുസൈൻ ബിൻ അലി Husayn ibn Aliالحسین بن علي(Abu Abdillahأبو عبدالله) അലി ഇബ്നു ഹുസൈൻ(സൈനുൽ ആബിദീൻ)Ali ibn al-Hussein Zayn al-Abidin(Zayn al-Abidinعلي بن الحسین)Or Al-Sajjad, മുഹമ്മദ് ഇബ്നു അലി(മുഹമ്മദ് അൽ ബാഖിർ)Muhammad ibn Ali Or Muhammad al-Baqirمحمد بن علي(Abu Ja'farأبو جعفر) ജാഫർ ഇബ്നു മുഹമ്മദ്(ജാഫർ അൽ-സാദിക്)Jafar ibn Muhammad(Jafar al-Sadiq)جعفر بن محمد(Abu Abdillahأبو عبدالله) മൂസ്സാ ഇബ്നു ജാഫർ (മൂസാ അൽ കാളിം)Musa ibn Jafar(Musa al-Kadhim)موسی بن جعفر(Abu al-Hassan-1 أبو الحسن الاول) അലി ഇബ്നു മൂസ്സാ(അലി റിളാ)Ali ibn Musa(Ali al-Ridha)علي بن موسی(Abu al-Hassan-IIأبو الحسن الثانی) മുഹമ്മദ് ഇബ്നു അലി(അത്തക്വിയ്യ്)Muhammad ibn Ali(Muhammad al-Taqi)محمد بن علي(Abu Ja'farأبو جعفر) അലി ഇബ്നു മുഹമ്മദ്(അലി അൽ‌ ഹാദി)( (അന്നക്വിയ്യ്)Ali ibn Muhammad(Ali al-Hadi)علي بن محمد(Abu al-Hassan-IIIأبو الحسن الثالث ഹസ്സൻ‌ ഇബ്നു അലി(ഹസ്സൻ‌ അൽ‌ അസ്കരി) (അൽ‌അസ്കരി)Hassan ibn Ali(Hasan al-Askari)الحسن بن علي(Abu Muhammadأبو محمد) മുഹമ്മദ് ഇബ്നു അൽ‌ ഹസ്സൻ‌(മഹ്ദി) (അൽ‌ മഹ്ദി) (അൽ‌ മഹ്ദി)Muhammad ibn al-Hassan(Muhammad al-Mahdi)محمد بن الحسن(Abu al-Qasimأبو القاسم) അലി ബിൻ അബീത്വാലിബ്‌ ഹസൻ ഇബ്ൻ അലി ഹുസൈൻ ബിൻ അലി അലി ഇബ്നു ഹുസൈൻ(സൈനുൽ ആബിദീൻ) മുഹമ്മദ് ഇബ്നു അലി(മുഹമ്മദ് അൽ ബാഖിർ) ജാഫർ ഇബ്നു മുഹമ്മദ്(ജാഫർ അൽ-സാദിക്) ഇസ്മാഈൽ‌ ഇബ്നു ജാഫർ മുഹമ്മദ് ഇബ്നു ഇസ്മാഈൽ‌ <br/>
+<hr/>
+Cor: Was Gott tut, das ist wohlgetan (Tot el que Déu fa, està ben fet) Recitatiu (tenor): Ach Gott! <br/>
+അനുവദനീയ കാര്യങ്ങളിൽ അല്ലാഹുവിനു ഏറ്റവും കോപിഷ്ടമായ കാര്യമാണത്രെ വിവാഹമോചനം. . <br/>
+<hr/>
+No arriba a tocar gens el terme de la Pobla de Segur. <br/>
+മൌലികരാഗത്തിന്റെ അന്തഃസത്തയ്ക്ക് ഊനം സംഭവിക്കുകയുമരുത്. <br/>
+<hr/>
+A les muntanyes Taígetos: Messapees (llatí Messapeae). <br/>
+ഇവയ്ക്ക് മലവരമ്പനോട് സാമ്യമുണ്ട്. <br/>
+<hr/>
+Això sí: també relacionada amb els llops. <br/>
+ഇതും പൂന്താനവുമായി ബന്ധപ്പെട്ട കഥയാണ്. <br/>
+<hr/>
+Sydney Morning Herald article (anglès). <br/>
+The Sydney Morning Herald (ഭാഷ: ഇംഗ്ലീഷ്). <br/>
+<hr/>
+IBARZ, Mercè: "La dona errant. <br/>
+അവൾ ചോദിച്ചു: അല്ലാഹുവിന്റെ കൽപനയാണോ ഇത്! <br/>
+<hr/>
+No sabia gens sobre això. <br/>
+അതുകൊണ്ടു നാം അതിനെക്കുറിച്ച് അറിയുന്നില്ല . <br/>
+<hr/>
+No s'ha concedit mai cap barra (és a dir, no ha estat concedida mai una segona vegada). <br/>
+ഇനിമേൽ എനിക്ക് (അവളുടെമേൽ) യാതൊരവകാശവുമില്ല. <br/>
+<hr/>
+Ària (duet de contralt i tenor): Du musst glauben, du musst hoffen (Cal que creguis, cal que esperis) Recitatiu (baix): So sei, o Seele, sei zufrieden! <br/>
+സത്യവിശ്വാസികളേ, നിങ്ങൾ അദ്ദേഹത്തിൻറെ മേൽ ( അല്ലാഹുവിൻറെ ) കാരുണ്യവും ശാന്തിയുമുണ്ടാകാൻ പ്രാർത്ഥിക്കുക. <br/>
+<hr/>
+Paisley es va retirar el 1983, i va ser reemplaçat pel seu assistent Joe Fagan. <br/>
+പെയ്സ്ലി 1983ൽ വിരമിക്കുകയും അദ്ദേഹത്തിന്റെ സഹായിയായ ജോ ഫാഗൻ പകരം ചുമതലയേൽക്കുകയും ചെയ്തു. <br/>
+<hr/>
+L'excusa que va posar és que ella havia provat d'enverinar-lo. <br/>
+പക്ഷേ ഇദ്ദേഹത്തിനെ വിഷം കൊടുത്ത് കൊന്നതാണെന്ന കിംവദന്തി പരന്നിരുന്നു. <br/>
+<hr/>
+El COI reconeix 10 proves oficials. <br/>
+10 ശാന്തിപാഠങ്ങൾ ശങ്കരമഠക്കാർ സ്വീകരിച്ചിരിക്കുന്നു. <br/>
+<hr/>
+Believers: spiritual leaders of the world (en anglès). <br/>
+ഥേരവാദ ബുദ്ധമതവിശ്വാസികളാണ് ഭൂരിഭാഗം സിംഹളരും. <br/>
+<hr/>
+Bugies inadequades (castellà) <br/>
+മനോരമ ഓൺലൈൻ( <br/>
+<hr/>
+Said Haddad : Said Haddad, Fuat «Khalil Hawi. <br/>
+ഒന്നും സംസാരിക്കാതെ താഴെഇറങ്ങിയിട്ട് ശിഷ്യരോട് പറഞ്ഞു : ഇദ്ദേഹം വല്ലാതെ വിഷമിക്കുന്നു. <br/>
+<hr/>
+Descobrí que la majoria dels articles donats al museu per Hans Sloane estaven en una condició molt dolenta. <br/>
+Hans Sloane -മ്യൂസിയത്തിലേക്ക് സംഭാവന നൽകിയ ഭൂരിഭാഗം വസ്തുക്കളും മോശം രീതിയിൽ ആണ് ഉള്ളതെന്ന് അദ്ദേഹം മനസ്സിലാക്കി. <br/>
+<hr/>
+Pa de Sant Jordi: pa farcit amb sobrassada formant les quatre barres. <br/>
+വിനയപിടകത്തിന് നാല് ഉപവിഭാഗങ്ങളാണുള്ളത്. <br/>
+<hr/>
+La bicicleta més ràpida del món és una bicicleta reclinada, però aquest tipus es va prohibir a les curses l'any 1934 per la Unió Ciclista Internacional. <br/>
+ലോകത്തെ ഏറ്റവും വേഗതയേറിയ സൈക്കിൾ ഒരു റെക്കുമ്പെന്റ് സൈക്കിളാണ് , അതുകൊണ്ടുതന്നെ 1934 -ലെ യൂണിയൻ സൈക്കിളിസ്റ്റ് ഇന്റർനാഷ്ണലിൽ ഇത്തരം സൈക്കിളുകളെ നിരോധിച്ചിരുന്നു. <br/>
+<hr/>
+Era nadiu de Bijjada Bida (modern Bijapur). <br/>
+ക്യൂവിന്റെ തന്നെ സഹോദരസംരംഭമായ ഐ പി എൻ ഐയുടെ (IPNI) മായി ഇതിനു ബന്ധമുണ്ട്. <br/>
+<hr/>
+Si Déu no m'oblida) Ària (baix): Auf Gott steht meine Zuversicht (En Déu poso la meva confiança) Recitatiu (contralt): Ei nun! <br/>
+എന്റെ ജീവന്റെ (പ്രാണ) ഈശ്വരാ (നാഥാ)! <br/>
+<hr/>
+Més tard aquest recuperarà el control amb l'ajuda dels romans de Galeri. <br/>
+അതിനുശേഷം എത്രയും പെട്ടെന്ന് അതത് വകുപ്പുകളുടെ സഹായത്തോടെ പരാതി പരിഹരിക്കുന്നു. <br/>
+<hr/>
+Lithuania: the Bradt travel guide (en anglès). <br/>
+Venezuela: The Bradt Travel Guide (ഭാഷ: ഇംഗ്ലീഷ്). <br/>
+<hr/>
+En molts moments sentiràs com sortint volant. <br/>
+ഇതു മിക്കവാറം പറക്കുന്നതു പോലയാണ് അനുഭവപ്പെടുക. <br/>
+<hr/>
+Però aquesta esdevé llavors una perillosa homicida... <br/>
+എന്നാൽ, ഇത്തവണ ഭീതി അസുരന്മാർക്കായി. <br/>
+<hr/>
+Tots els ingressos anaven al Waqf. <br/>
+എല്ലാ വരുമാനവും വഖാഫിലേക്ക് മാറ്റിയിരുന്നു. <br/>
+<hr/>
+Tractat de No Proliferació Nuclear <br/>
+ഇംഗ്ലീഷ് വിലാസം Non-Proliferation <br/>
+<hr/>
+Tant Loaisa com Elcano moririen durant el viatge. <br/>
+ലെനയും ആലീസും പിൽക്കാലത്ത് മരണമടഞ്ഞു. <br/>
+<hr/>
+“Sí, soc ambidextra com els bojos. <br/>
+തിമില വട്ടംപോലുള്ളതാണ് പടഹത്തിന്റെ വട്ടങ്ങൾ. <br/>
+<hr/>
+Va desdejunar al llit, va eixir i va anar cap a la sala de bany. <br/>
+തളികയിലെടുത്ത് കുളക്കടവിലേക്കുപോയി. <br/>
+<hr/>
+Fins a l'any 1976 Gjesvær només estava comunicat per mar. <br/>
+1976 മുതലാണ് ഫലസ്തീനികൾ ഭൂമിദിനം ആചരിക്കാൻ തുടങ്ങിയത്. <br/>
+<hr/>
+I tu hi estaràs a mercè de les onades i de les teves associacions. <br/>
+ആന്തരികവും ബാഹ്യവുമായ അവയവയങ്ങളെ യോഗസാധനയ്ക്കു വിധേയമാക്കി നിയന്ത്രിക്കുന്നതാണ്‌ "ബന്ധ"വും "മുദ്ര"യും. <br/>
+<hr/>
+Aquesta memòria augmenta notòriament la velocitat de funcionament de l'ordinador. <br/>
+ഇത് കമ്പ്യൂട്ടറിന്റെ വേഗത വളരെയധികം വർധിപ്പിക്കുന്നു. <br/>
+<hr/>
+Encara que hi ha pla de convertir-les en un museu. <br/>
+സർക്കാർ ഇതൊരു മ്യൂസിയമാക്കി മാറ്റ. <br/>
+<hr/>
+ISOCARP és reconeguda oficialment pel Nacions Unides i el Consell d'Europa. <br/>
+ISOCARP ഔദ്യോഗികമായി അംഗീകരിച്ച ഐക്യരാഷ്ട്രസഭയും യൂറോപ്പിന്റെ കൌൺസിലും ആണ്. <br/>
+<hr/>
+"El llistó –va admetre– és baix. <br/>
+താഴ് + തു - താഴ്ന്നു - താണു. <br/>
+<hr/>
+Abraça l'estiu i inspira el perfum de les flors. <br/>
+സൂര്യകാന്തി പൂക്കളിലെ വിത്തുകളുടെ ക്രമീകരണം. <br/>
+<hr/>
+Produeixen el plor en ser colpejades. <br/>
+അടിക്കാടുകളിൽ കൂട്ടമായാണ് ഇരതേടുന്നത്. <br/>
+<hr/>
+Els seus seguidors creien en la resurrecció, en la comunió amb el pa i el vi, en el cel i en l'infern. <br/>
+ഇതുകണ്ട ഉമ്മ അല്ലാഹുവെ സ്തുതിച്ച് വെള്ളത്തിനരികിലേക്ക് കുതിച്ചുചെന്നു. <br/>
+<hr/>
+Biao (表, taules), 8 volums. <br/>
+Biao (表, പട്ടിക), 8 വാല്യം. <br/>
+<hr/>
+La relació s'il·lustra en la taula següent: <br/>
+അടുത്ത ചിത്രത്തിൽ അതൊരു കബന്ധമാെണന്നു വ്യക്തമാകുന്നു. <br/>
+<hr/>
+Et prego que m’enviïs... <br/>
+അയയ്ക്കുകയാണ് വേണ്ടത്. <br/>
+<hr/>
+L'esperança de vida de les dones a Croàcia és de 80,1 anys (segons estimacions del 2012). <br/>
+ക്രൊയേഷ്യയിലെ സ്ത്രീകളുടെ ആയുർദൈർഘ്യം 80.1 ആകുന്നു (2012). <br/>
+<hr/>
+A entre set i deu dies, les pústules maduren i assoleixen la seva mida màxima. <br/>
+പിന്നീട് ഏഴുമണിയ്ക്ക് അത്താഴപ്പൂജയും ഏഴരയ്ക്ക് അത്താഴശീവേലിയും കഴിഞ്ഞ് എട്ടുമണിയ്ക്ക് വീണ്ടൂം നടയടയ്ക്കുന്നു. <br/>
+<hr/>
+</body></html/>
