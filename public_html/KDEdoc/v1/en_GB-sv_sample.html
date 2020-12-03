@@ -1,0 +1,360 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# en_GB/docs/kdebase/kdebugdialog/index.docbook.xml.gz<br>
+# sv/docs/kdebase/kdebugdialog/index.docbook.xml.gz
+
+<p><hr>
+(src)="s1.1"> The KDebugDialog Handbook <br>
+(trg)="s1.1"> Handbok för avlusningsinställningar <br>
+<hr>
+(src)="s2.1"> This document describes KDebugDialog . <br>
+(trg)="s2.1"> Det här dokumentet beskriver avlusningsinställningar . <br>
+<hr>
+(src)="s3.1"> What is KDebugDialog ? <br>
+(trg)="s3.1"> Vad är avlusningsinställningar ? <br>
+<hr>
+(src)="s4.1"> It is a dialogue box for managing diagnostic messages at runtime . <br>
+(trg)="s4.1"> Det är en dialogruta för att hantera diagnostikmeddelanden vid körning . <br>
+<hr>
+(src)="s5.1"> If you simply start " kdebugdialog " , you will see a list of " areas " , that can be disabled or enabled . <br>
+(trg)="s5.1"> Om du helt enkelt startar " kdebugdialog" , ser du en lista på "ytor " , som du kan aktivera eller stänga av . <br>
+<hr>
+(src)="s5.2"> A kdDebug(area ) call in the code will show something in the debug output only if the area is enabled . <br>
+(trg)="s5.2"> Ett anrop till kdDebug( yta ) i koden visar bara någonting i avlusningsutmatningen om ytan är aktiverat . <br>
+<hr>
+(src)="s6.1"> Note that kdWarning , kdError and kdFatal always appear , they are NOT controlled by this setting . <br>
+(trg)="s6.1"> Observera att kdWarning , kdError och kdFatal alltid visas , de kontrolleras INTE av de här inställningarna . <br>
+<hr>
+(src)="s7.1"> If you start " kdebugdialog --fullmode " , then for every severity level you can define separately what should be done with the diagnostic messages of that level , and the same for each debug area . <br>
+(trg)="s7.1"> Om du startar med " kdebugdialog --fullmode " , kan du för varje utskriftsnivå definiera separat vad som ska göras med diagnostikmeddelanden för den nivån , för varje avlusningsyta . <br>
+<hr>
+(src)="s8.1"> Output : <br>
+(trg)="s8.1"> Utdata till : <br>
+<hr>
+(src)="s8.2"> In this Combobox , you can choose where the messages should be output . <br>
+(trg)="s8.2"> I den här kombinationsrutan kan du välja var meddelanden ska skrivas ut . <br>
+<hr>
+(src)="s8.3"> The choices are : " File " , " Message Box " , " Shell " ( meaning stderr ) and " syslog " . <br>
+(trg)="s8.3"> Du kan välja " Arkiv" , "Meddelanderuta" , "Skal " (vilket betyder standard felutmatning ) och "Systemlogg " . <br>
+<hr>
+(src)="s8.4"> Please do not direct fatal messages to syslog unless you are the system administrator yourself . <br>
+(trg)="s8.4"> Skicka inte allvarliga fel till systemloggen om du inte är systemadministratör själv . <br>
+<hr>
+(src)="s8.5"> The default is " Message Box " . <br>
+(trg)="s8.5"> Förvalt värde är " Meddelanderuta " . <br>
+<hr>
+(src)="s9.1"> File : <br>
+(trg)="s9.1"> Filnamn : <br>
+<hr>
+(src)="s9.2"> This is only meaningful when you have chosen " File " as the output and provides the name of that file ( which is interpreted as relative to the current directory ) . <br>
+(trg)="s9.2"> Det här är bara relevant när du har valt " Arkiv " som utmatning och anger namnet på filen (som tolkas relativt till den nuvarande katalogen ) . <br>
+<hr>
+(src)="s9.3"> The default is kdebug.dbg . <br>
+(trg)="s9.3"> Förvalt värde är kdebug.dbg . <br>
+<hr>
+(src)="s10.1"> Area : <br>
+(trg)="s10.1"> Avlusningsyta : <br>
+<hr>
+(src)="s10.2"> The areas which should only be output . <br>
+(trg)="s10.2"> Ytorna som ska skrivas ut . <br>
+<hr>
+(src)="s10.3"> Every message that is not mentioned here will simply not be output ( unless this field remains empty , which is the default , and means that all messages should be output ) . <br>
+(trg)="s10.3"> Varje meddelande som inte nämns här kommer helt enkelt inte skrivas ut ( om inte det här fältet förblir tomt , vilket är förvalt , och betyder att alla meddelanden ska skrivas ut ) . <br>
+<hr>
+(src)="s10.4"> You can enter several areas separated by commas here , and you can also use area ranges with the syntax start-end . <br>
+(trg)="s10.4"> Du kan ange flera ytor separerade med kommatecken här , och du kan också använda ytintervall med syntaxen start-slut . <br>
+<hr>
+(src)="s10.5"> Thus a valid entry could be : <br>
+(trg)="s10.5"> På så sätt kan en giltig post vara : <br>
+<hr>
+(src)="s10.6"> 117,214-289,356-359,221 . <br>
+(trg)="s10.6"> 117,214-289,356-359,221 . <br>
+<hr>
+(src)="s10.7"> NOTE : <br>
+(src)="s10.8"> Do not use whitespaces . <br>
+(trg)="s10.7"> Observera : använd inte blanktecken . <br>
+<hr>
+(src)="s11.1"> Apart from this , you can also tick the checkbox " Abort on fatal errors " . <br>
+(trg)="s11.1"> Bortsett från det här kan du också markera rutan " Avbryt vid allvarliga fel " . <br>
+<hr>
+(src)="s11.2"> In this case , if a diagnostic message with the severity level " KDEBUG_FATAL " is output , the application aborts with a SIGABRT after outputting the message . <br>
+(trg)="s11.2"> I detta fall , om ett diagnostikmeddelande med nivån " KDEBUG_FATAL " skrivs ut , så avbryts programmet med en SIGABRT efter meddelandet har skrivits ut . <br>
+<hr>
+(src)="s12.1"> When you close the dialogue by pressing OK , your entries apply immediately and are saved in kdebugrc . <br>
+(trg)="s12.1"> Om du stänger dialogrutan med Ok , börjar ändringarna gälla omedelbart , och sparas i kdebugrc . <br>
+<hr>
+(src)="s12.2"> When you press Cancel , your entries are discarded and the old ones are restored . <br>
+(trg)="s12.2"> Om du trycker på Avbryt , så slängs dina ändringar och de tidigare återställs . <br>
+<hr>
+(src)="s13.1"> Credits to Kalle Dalheimer for the original version of kdebugdialog <br>
+(trg)="s13.1"> Tack till Kalle Dalheimer för originalversionen av avlusningsinställningar <br>
+<hr>
+<p>
+
+# en_GB/docs/kdebase/kdeprint/extensions.docbook.xml.gz<br>
+# sv/docs/kdebase/kdeprint/extensions.docbook.xml.gz
+
+<p><hr>
+(src)="s1.1"> &amp;kdeprint ; Extensions To All Print Subsystems <br>
+(trg)="s1.1"> &amp;kdeprint ; -utökningar för alla utskriftssystem <br>
+<hr>
+(src)="s2.1"> Virtual Printers <br>
+(trg)="s2.1"> Virtuella skrivare <br>
+<hr>
+(src)="s3.1"> The Fax Printer <br>
+(trg)="s3.1"> Fax -skrivaren <br>
+<hr>
+(src)="s4.1"> The File Printer <br>
+(trg)="s4.1"> Fil -skrivaren <br>
+<hr>
+(src)="s5.1"> The PDF Printer <br>
+(trg)="s5.1"> PDF -skrivaren <br>
+<hr>
+(src)="s6.1"> External Filters <br>
+(trg)="s6.1"> Externa filter <br>
+<hr>
+(src)="s7.1"> The enscript Filter for Text Files <br>
+(trg)="s7.1"> Filtret enscript för textfiler <br>
+<hr>
+(src)="s8.1"> The n-up Filter for Any File <br>
+(trg)="s8.1"> Filtret flera sidor för alla filer <br>
+<hr>
+(src)="s9.1"> Three different Make Pamphlet Filters for PostScript Files <br>
+(trg)="s9.1"> Tre olika filter för att skapa broschyr för PostScript -filer <br>
+<hr>
+<p>
+
+# en_GB/docs/kdebase/kdeprint/external-command.docbook.xml.gz<br>
+# sv/docs/kdebase/kdeprint/external-command.docbook.xml.gz
+
+<p><hr>
+(src)="s1.1"> Module For External Print Command ( Netscape -like ) <br>
+(trg)="s1.1"> Modul för externa utskriftskommandon ( Netscape -liknande ) <br>
+<hr>
+(src)="s2.1"> This module allows the print command to be specified completely ( Netscape -like ) . <br>
+(trg)="s2.1"> Den här modulen tillåter att fullständig ange utskriftskommandot ( Netscape -liknande ) . <br>
+<hr>
+(src)="s2.2"> An edit line is added in the print dialogue for that purpose . <br>
+(trg)="s2.2"> En redigeringsrad läggs till i utskriftsdialogen för detta syfte . <br>
+<hr>
+(src)="s2.3"> Can be used in many cases , for example with a self-made print program . <br>
+(trg)="s2.3"> Kan användas i många fall , till exempel med ett egentillverkat utskriftsprogram . <br>
+<hr>
+(src)="s3.1"> Overview of provided features <br>
+(trg)="s3.1"> Översikt över tillgängliga funktioner <br>
+<hr>
+(src)="s4.1"> Printer management : not supported <br>
+(trg)="s4.1"> Skrivarhantering : stöds inte <br>
+<hr>
+(src)="s5.1"> Job management : not supported . <br>
+(trg)="s5.1"> Jobbhantering : stöds inte <br>
+<hr>
+(src)="s6.1"> Print options : basic control , depending on your knowledge of the print command <br>
+(trg)="s6.1"> Utskriftsalternativ : grundläggande styrning , beroende på din kunskap om utskriftskommandot <br>
+<hr>
+<p>
+
+# en_GB/docs/kdebase/kdeprint/lpd.docbook.xml.gz<br>
+# sv/docs/kdebase/kdeprint/lpd.docbook.xml.gz
+
+<p><hr>
+(src)="s1.1"> Generic LPD Module ( UNIX ) <br>
+(trg)="s1.1"> Generell LPD -modul ( UNIX ) <br>
+<hr>
+(src)="s2.1"> Overview of Provided Features <br>
+(trg)="s2.1"> Översikt över tillgängliga funktioner <br>
+<hr>
+(src)="s3.1"> Module used by default ( on first start for example ) . <br>
+(trg)="s3.1"> Modul som är förvald ( till exempel vid första uppstart ) . <br>
+<hr>
+(src)="s4.1"> Generic module that only allows sending of print jobs . <br>
+(trg)="s4.1"> Generella moduler som bara tillåter att utskriftsjobb skickas . <br>
+<hr>
+(src)="s4.2"> No printer or job management supported . <br>
+(trg)="s4.2"> Ingen skrivar - eller jobbhantering stöds . <br>
+<hr>
+(src)="s4.3"> It is made to work on a wide variety of UNIX flavours : <br>
+(trg)="s4.3"> Fungerar på en stor mängd olika UNIX -system : <br>
+<hr>
+(src)="s4.4"> Linux / LPR , HP-UX , Solaris , IRIX . <br>
+(trg)="s4.4"> Linux / LPR , HP-UX , Solaris , IRIX . <br>
+<hr>
+(src)="s4.5"> It also supports some LPRng extensions ( like the absence of continuation character \ in printcap files ) . <br>
+(trg)="s4.5"> De stöder också vissa LPRng -utökningar ( som avsaknad av fortsättningstecken \ i printcap -filer ) . <br>
+<hr>
+<p>
+
+# en_GB/docs/kdebase/kdeprint/lpr-bsd.docbook.xml.gz<br>
+# sv/docs/kdebase/kdeprint/lpr-bsd.docbook.xml.gz
+
+<p><hr>
+(src)="s1.1"> LPR ( BSD ) <br>
+(trg)="s1.1"> LPR ( BSD ) <br>
+<hr>
+(src)="s2.1"> Plain ( old ? ) LPR support . <br>
+(trg)="s2.1"> Enkelt ( gammalt ? ) LPR -stöd . <br>
+<hr>
+(src)="s2.2"> An LPRng module is in development , and hopefully available for 2.3 release . <br>
+(trg)="s2.2"> En LPRng -modul är under utveckling , och finns förhoppningsvis tillgänglig för 2.3 utgåvan . <br>
+<hr>
+(src)="s3.1"> Overview of Provided Features <br>
+(trg)="s3.1"> Översikt över tillgängliga funktioner <br>
+<hr>
+(src)="s4.1"> Printer management : basic support to add/remove/configure a printer , compatible with Red Hat -6.x systems ( printtool + rhs-printfilers packages ) . <br>
+(trg)="s4.1"> Skrivarhantering : grundläggande funktioner för att lägga till / ta bort / anpassa en skrivare . <br>
+(trg)="s4.2"> Fungerar med Red Hat -6.x system ( paketen printtool + rhs-printfilters ) . <br>
+<hr>
+(src)="s5.1"> Job management : not supported <br>
+(trg)="s5.1"> Jobbhantering : stöds inte <br>
+<hr>
+(src)="s6.1"> Print options : basic control <br>
+(trg)="s6.1"> Utskriftsalternativ : grundläggande styrning <br>
+<hr>
+<p>
+
+# en_GB/docs/kdebase/kdeprint/lprng.docbook.xml.gz<br>
+# sv/docs/kdebase/kdeprint/lprng.docbook.xml.gz
+
+<p><hr>
+(src)="s1.1"> LPRng <br>
+(trg)="s1.1"> LPRng <br>
+<hr>
+(src)="s2.1"> An LPRng module for &amp;kdeprint ; is in development , and hopefully available for the KDE 2.3 release . <br>
+(trg)="s2.1"> En LPRng -modul för &amp;kdeprint ; är under utveckling , och finns förhoppningsvis tillgänglig för KDE 2.3 utgåvan . <br>
+<hr>
+<p>
+
+# en_GB/docs/kdebase/kdeprint/rlpr.docbook.xml.gz<br>
+# sv/docs/kdebase/kdeprint/rlpr.docbook.xml.gz
+
+<p><hr>
+(src)="s1.1"> Module Built Around rlpr Utility <br>
+(trg)="s1.1"> Modul som bygger på verktyget rlpr <br>
+<hr>
+(src)="s2.1"> Overview of provided features <br>
+(trg)="s2.1"> Översikt över tillgängliga funktioner <br>
+<hr>
+(src)="s3.1"> Printer management : basic operations are supported ( add/remove/modify ) . <br>
+(trg)="s3.1"> Skrivarhantering : grundläggande funktioner stöds ( lägg till / ta bort / ändra ) . <br>
+<hr>
+(src)="s4.1"> Each user can predefine the printers he wants to use by specifying the host and related printer queues . <br>
+(trg)="s4.1"> Varje användare kan fördefiniera de skrivare som han vill använda , genom att ange värddator och tillhörande skrivarköer . <br>
+<hr>
+(src)="s4.2"> Printers are stored on a per user basis . <br>
+(trg)="s4.2"> Skrivare lagras per användare . <br>
+<hr>
+(src)="s4.3"> This module is built around the rlpr utility rlpr <br>
+(trg)="s4.3"> Den här modulen bygger på verktyget rlpr , rlpr . <br>
+<hr>
+<p>
+
+# en_GB/docs/kdebase/khelpcenter/contact.docbook.xml.gz<br>
+# sv/docs/kdebase/khelpcenter/contact.docbook.xml.gz
+
+<p><hr>
+(src)="s1.1"> Contact the KDE team <br>
+(trg)="s1.1"> Kontakta KDE -projektet <br>
+<hr>
+(src)="s2.1"> Mailing lists <br>
+(trg)="s2.1"> E-postlistor <br>
+<hr>
+(src)="s3.1"> KDE has several mailing lists up . <br>
+(trg)="s3.1"> KDE har flera e-postlistor . <br>
+<hr>
+(src)="s3.2"> See below for the current list . <br>
+(trg)="s3.2"> Nedan finns beskrivningar av alla nuvarande listor . <br>
+<hr>
+(src)="s3.3"> Older articles can be found in the mailing list archive . <br>
+(trg)="s3.3"> I arkivet för e-postlistor finns tidigare e-post arkiverad . <br>
+<hr>
+(src)="s4.1"> kde-request@kde.org - KDE <br>
+(trg)="s4.1"> kde-request@kde.org - KDE <br>
+<hr>
+(src)="s5.1"> For general discussion <br>
+(trg)="s5.1"> Allmänna diskussioner <br>
+<hr>
+(src)="s6.1"> kde-announce-request@kde.org - kde-announce <br>
+(trg)="s6.1"> kde-announce-request@kde.org - kde-announce <br>
+<hr>
+(src)="s7.1"> Announcements of new KDE applications <br>
+(trg)="s7.1"> Viktiga nyheter om nytillkomna KDE -program <br>
+<hr>
+(src)="s8.1"> kde-request@kde.org - kde <br>
+(trg)="s8.1"> kde-request@kde.org - KDE <br>
+<hr>
+(src)="s9.1"> Users help each other <br>
+(trg)="s9.1"> Användare hjälper varandra <br>
+<hr>
+(src)="s10.1"> kde-devel-request@kde.org - kde-devel <br>
+(trg)="s10.1"> kde-devel-request@kde.org - kde-devel <br>
+<hr>
+(src)="s11.1"> For developers . <br>
+(trg)="s11.1"> För utvecklare <br>
+<hr>
+(src)="s12.1"> kde-licensing-request@kde.org - kde-licensing <br>
+(trg)="s12.1"> kde-licensing-request@kde.org - kde-licensing <br>
+<hr>
+(src)="s13.1"> Discussion of licensing issues <br>
+(trg)="s13.1"> Diskussioner angående licenser <br>
+<hr>
+(src)="s14.1"> kde-look-request@kde.org - kde-look <br>
+(trg)="s14.1"> kde-look-request@kde.org - kde-look <br>
+<hr>
+(src)="s15.1"> Discussing " look'n'feel issues " <br>
+(trg)="s15.1"> Diskussioner om utseende <br>
+<hr>
+(src)="s16.1"> kde-artists-request@kde.org - kde-artists <br>
+(trg)="s16.1"> kde-artists-request@kde.org - kde-artists <br>
+<hr>
+(src)="s17.1"> Creating icons and other artwork <br>
+(trg)="s17.1"> Skapande av ikoner och annan grafik <br>
+<hr>
+(src)="s18.1"> kde-doc-english-request@kde.org - kde-doc-english <br>
+(trg)="s18.1"> kde-doc-english-request@kde.org - kde-doc-english <br>
+<hr>
+(src)="s19.1"> For people interested in writing documentation for KDE . <br>
+(trg)="s19.1"> För de som är intresserade av att skriva dokumentation till KDE . <br>
+<hr>
+(src)="s20.1"> kde-i18n-doc-request@kde.org - kde-18n-doc <br>
+(trg)="s20.1"> kde-i18n-doc-request@kde.org - kde-18n-doc <br>
+<hr>
+(src)="s21.1"> Internationalisation and documentation issues <br>
+(trg)="s21.1"> För översättning och dokumentation <br>
+<hr>
+(src)="s22.1"> http://i18n.kde.org/teams / " <br>
+(trg)="s22.1"> http : / /i18n.kde.org / teams / <br>
+<hr>
+(src)="s23.1"> For localised information , which may include user email lists and websites , check the translation teams page at the above URL . <br>
+(trg)="s23.1"> För information från grupperna för översättning , vilket kan omfatta e-postlistor och webbplatser , se ovanstående webbadress . <br>
+<hr>
+(src)="s24.1"> To subscribe : <br>
+(trg)="s24.1"> För att gå med i en e-postlista : <br>
+<hr>
+(src)="s24.2"> Please write your real email address instead of the plain " your-email-address " words . <br>
+(trg)="s24.2"> Du ska skriva din riktiga adress , inte " din-e-post@adress " . <br>
+<hr>
+(src)="s24.3"> Leave the body of the message empty . <br>
+(trg)="s24.3"> Skriv inget i själva meddelandet . <br>
+<hr>
+(src)="s24.4"> Do not include a signature or other text which might confuse the mail server that processes your request . <br>
+(trg)="s24.4"> Tag bort eventuell signatur eller annat som kan förvirra e-postservern . <br>
+<hr>
+(src)="s25.1"> To unsubscribe : <br>
+(trg)="s25.1"> För att gå ur en e-post lista : <br>
+<hr>
+(src)="s25.2"> Please replace " your-email-address " with the email address you used for the subscription . <br>
+(trg)="s25.2"> Ersätt " din-e-post@adress " med e-postadressen som du använde när du gick med i listan . <br>
+<hr>
+(src)="s25.3"> Leave the body of the message empty . <br>
+(trg)="s25.3"> Skriv inget i själva meddelandet . <br>
+<hr>
+</body>
+</html>

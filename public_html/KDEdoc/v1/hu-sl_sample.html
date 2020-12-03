@@ -1,0 +1,332 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# hu/docs/kdeadmin/kcron/index.docbook.xml.gz<br>
+# sl/docs/kdeadmin/kcron/index.docbook.xml.gz
+
+<p><hr>
+(src)="s1.1"> Kcron kézikönyv <br>
+(trg)="s1.1"> Priročnik za Kcron <br>
+<hr>
+(src)="s2.1"> Ez a dokumentum szabadon másolható , továbbadható és / vagy módosítható a GNU Free Documentation License ( az 1.1-es vagy bármelyik annál későbbi változat ) feltételeinek betartásával . <br>
+(src)="s2.2"> A licencet a Free Software Foundation adta ki , lásd : no Invariant Sections , no Front-Cover Texts , és no Back-Cover Texts . <br>
+(trg)="s2.1"> Dovoljuje se kopiranje , distribucija in / ali spreminjanje tega dokumenta pod pogoji GNU Free Documentation License , različice 1.1 ali katerekoli poznejše objavljene s strani Free Software Foundation ; brez nespremenljivih razdelkov , brez besedil na prednji strani ovitka in brez besedil na zadnji strani ovitka . <br>
+<hr>
+(src)="s2.3"> A licenc másolata megtalálható itt : . <br>
+(trg)="s2.2"> Kopija licence je vključena v . <br>
+<hr>
+(src)="s3.1"> A Kcron egy grafikus előtétprogram a UNIX feladatütemező kezeléséhez . <br>
+(trg)="s3.1"> Kcron je program , ki skrbi za razvrščanje opravil . <br>
+<hr>
+(src)="s4.1"> Bevezetés <br>
+(trg)="s4.1"> Uvod <br>
+<hr>
+(src)="s5.1"> A Kcron segítségével programok háttérben történő ütemezett futtatását lehet beállítani . <br>
+(trg)="s5.1"> Kcron je program za razporejanje programov , ki naj tečejo v ozadju . <br>
+<hr>
+(src)="s5.2"> Lényegében egy grafikus előtétprogram a cron -nak , a UNIX parancssoros feladatütemezőjének kényelmes kezeléséhez . <br>
+(trg)="s5.2"> Je grafični vmesnik za cron Unix-ov sistemski razporejevalnik . <br>
+<hr>
+(src)="s6.1"> A Kcron használata <br>
+(trg)="s6.1"> Uporaba Kcron <br>
+<hr>
+(src)="s7.1"> A Kcron nem fog működni , ha a rendszerben nincs elindítva a crond feladatütemező szolgáltatás . <br>
+(trg)="s7.1"> Ne pozabite povedati vašemu sistemu , naj najprej požene crond ( cron daemon ) , sicer Kcron ne bo delal . <br>
+<hr>
+(src)="s8.1"> A Kcron indulása <br>
+(trg)="s8.1"> Zagon Kcron <br>
+<hr>
+(src)="s9.1"> A Kcron indítása után a főablakban megjelennek a már beállított ütemezési feladatok áttekintő nézetben , a hozzájuk tartozó környezeti változókkal együtt . <br>
+(src)="s9.2"> Ha Ön rendszergazdaként , a root felhasználónévvel jelentkezett be , az összes felhasználói - és rendszerfeladat megjelenik . <br>
+(trg)="s9.1"> Ob zagonu Kcron a boste videli skrajšan pregled obstoječih razporejenih opravil in asociiranih okoljskih spremenljivk . Če ste prijavljeni kot root boste videli vse predmete za vse uporabnike na računalniku kot tudi sistemsko razporejena opravila . <br>
+<hr>
+(src)="s9.3"> A feladatok mappái tetszés szerint kinyithatók és összecsukhatók . <br>
+(trg)="s9.2"> Vsak od teh imenikov se da skrčiti ali razširiti . <br>
+<hr>
+(src)="s10.1"> Az ütemezett feladatok <br>
+(trg)="s10.1"> Razporejena opravila <br>
+<hr>
+(src)="s11.1"> Az összes feladat a Feladatok főmappa alatt jelenik meg . <br>
+(trg)="s11.1"> Razporejena opravila se pojavijo v imeniku Opravila ( Tasks ) . <br>
+<hr>
+(src)="s11.2"> Minden feladatnál megjelennek a következő információk : <br>
+(trg)="s11.2"> Za vsako razporejeno opravilo je prikazano naslednje : <br>
+<hr>
+(src)="s12.1"> Név <br>
+(trg)="s12.1"> Ime <br>
+<hr>
+(src)="s13.1"> A feladatot azonosító név . <br>
+(trg)="s13.1"> Ime , ki identificira razporejeno opravilo . <br>
+<hr>
+(src)="s14.1"> Érték <br>
+(trg)="s14.1"> Vrednost <br>
+<hr>
+(src)="s15.1"> A program neve és paraméterei . <br>
+(trg)="s15.1"> Programska datoteka in parametri . <br>
+<hr>
+(src)="s16.1"> Leírás <br>
+(trg)="s16.1"> Opis <br>
+<hr>
+(src)="s17.1"> A feladat kötetlen formájú leírása . <br>
+(trg)="s17.1"> Opis razporejenega opravila v naravnem jeziku . <br>
+<hr>
+(src)="s18.1"> A letiltott feladatoknál el lesz rejtve a programnév , a parancssori paraméterek és az indítási időpontok is . <br>
+(trg)="s18.1"> Če je bilo opravilo onemogočeno , se ne bosta pojavila ne datoteka in ne parametri , opis pa bo onemogočen . <br>
+<hr>
+(src)="s19.1"> Környezeti változók <br>
+(trg)="s19.1"> Spremenljivke okolja <br>
+<hr>
+(src)="s20.1"> A környezeti változók a Változók nevű almappa alatt jelennek meg . <br>
+(trg)="s20.1"> Spremenljivke okolja se nahajajo v imeniku Spremenljivke . <br>
+<hr>
+(src)="s20.2"> Mindegyik változónál megjelennek a következő adatok : <br>
+(trg)="s20.2"> Za vsako spremenljivko je prikazano : <br>
+<hr>
+(src)="s21.1"> Név <br>
+(trg)="s21.1"> Ime <br>
+<hr>
+(src)="s22.1"> A változó neve . <br>
+(trg)="s22.1"> Ime spremenljivke . <br>
+<hr>
+(src)="s23.1"> Érték <br>
+(trg)="s23.1"> Vrednost <br>
+<hr>
+(src)="s24.1"> A változó értéke . <br>
+(trg)="s24.1"> Vrednost spremenljivke . <br>
+<hr>
+(src)="s25.1"> Leírás <br>
+(trg)="s25.1"> Opis <br>
+<hr>
+(src)="s26.1"> A változó leírása kötetlen formában . <br>
+(trg)="s26.1"> Opis spremenljivke v naravnem jeziku . <br>
+<hr>
+(src)="s27.1"> Az itt megadott változóértékek mindig felülbírálják a feladatok indításakor aktuális értékeket . <br>
+(src)="s27.2"> A letiltott környezeti változóknál nem jelenik meg sem az érték , sem a leírás . <br>
+(trg)="s27.1"> Spremenljivke okolja , ki se pojavljajo tukaj , bodo prepisale vse obstoječe spremenljivke okolja za razporejena opravila . Če je bila katera spremeljivka onemogočena , se ne bo pojavila nobena vrednost in opis bo izklopljen . <br>
+<hr>
+(src)="s28.1"> Új feladat felvétele <br>
+(trg)="s28.1"> Uvrstitev opravil <br>
+<hr>
+(src)="s30.1"> A Feladat módosítása párbeszédablak <br>
+(src)="s31.1"> Megjegyzés <br>
+(trg)="s29.1"> Da uvrstite novo opravilo , najprej izberite imenik Opravila ( Tasks ) . <br>
+<hr>
+(src)="s32.1"> Ide lehet beírni a feladat kötetlen leírását . <br>
+(trg)="s30.1"> Pogovorno okno Spremeni opravilo <br>
+<hr>
+(src)="s33.1"> Programnév <br>
+(trg)="s31.1"> Komentar <br>
+<hr>
+(src)="s34.1"> Itt lehet megadni a program nevét . <br>
+(trg)="s32.1"> Vnesite opis opravila za uvrstitev . <br>
+<hr>
+(src)="s34.2"> Teljes és relatív elérési út is használható . <br>
+(trg)="s33.1"> Program <br>
+<hr>
+(src)="s34.3"> A program kiválasztásához kattintson a Tallózás.. . gombra . <br>
+(trg)="s34.1"> Vnesite ime programa . <br>
+<hr>
+(src)="s35.1"> Bekapcsolva <br>
+(src)="s36.1"> A feladatok futtathatósága ki-be kapcsolható a Bekapcsolva menüponttal . <br>
+(trg)="s34.2"> Vnesete lahko relativno ali absolutno pot . Če želite program poiskati , pritisnite Pobrskaj.. . . <br>
+<hr>
+(src)="s37.1"> Néma <br>
+(trg)="s35.1"> Vključeno <br>
+<hr>
+(src)="s38.1"> A parancs naplózásának és a parancs kimenetének letiltása . <br>
+(trg)="s36.1"> Da omogočite ali onemogočite opravilo , izberite Omogočen . <br>
+<hr>
+(src)="s39.1"> Hónapok <br>
+(trg)="s37.1"> Mesecev <br>
+<hr>
+(src)="s40.1"> Válasssza ki , hogy a futtatás mely hónapokban történjen . <br>
+(trg)="s38.1"> Izberite mesece v katere bo opravilo razvrščeno . <br>
+<hr>
+(src)="s41.1"> A hónap napjai <br>
+(trg)="s39.1"> Dni v mesecu <br>
+<hr>
+(src)="s42.1"> Válassza ki , hogy a futtatás a kiválasztott hónapok mely napjain történjen . <br>
+(trg)="s40.1"> Izberite dni v mesecu , v katere bo opravilo razporejeno . <br>
+<hr>
+(src)="s43.1"> A hét napjai <br>
+(trg)="s41.1"> Dni v tednu <br>
+<hr>
+(src)="s44.1"> Válassza ki , hogy a futtatás a hét mely napjain történjen . <br>
+(trg)="s42.1"> Izberite dneve v tednu , kamor bo opravilo uvrščeno . <br>
+<hr>
+(src)="s45.1"> Mindennap <br>
+(trg)="s43.1"> Dnevno <br>
+<hr>
+(src)="s46.1"> Ha azt szeretné , hogy a feladat minden egyes napon lefusson , válassza a Mindennap opciót . <br>
+(trg)="s44.1"> Če želite razporediti opravilo tako , da bo teklo vsak dan , izberite Poženi vsak dan . <br>
+<hr>
+(src)="s47.1"> Óra <br>
+(trg)="s45.1"> Ur <br>
+<hr>
+(src)="s48.1"> Válassza ki a futtatási időpont óra értékeit . <br>
+(trg)="s46.1"> Izberite ure , v katere bo razporejeno opravilo . <br>
+<hr>
+(src)="s49.1"> Perc <br>
+(trg)="s47.1"> Minut <br>
+<hr>
+(src)="s50.1"> Itt lehet a futtatási időpontok perc értékeit megadni . <br>
+(trg)="s48.1"> Izberite minute v katere bo opravilo razporejeno . <br>
+<hr>
+(src)="s50.2"> A Kcron ban öt perc a megengedett minimális időköz . <br>
+(trg)="s48.2"> Kcron ne podpira razporejanje opravil na intervale , krajše od petih minut . <br>
+<hr>
+(src)="s51.1"> OK <br>
+(trg)="s49.1"> V redu <br>
+<hr>
+(src)="s52.1"> Ezt megnyomva jön létre az új feladat . <br>
+(trg)="s50.1"> Dokonča ustvarjenje tega opravila . <br>
+<hr>
+(src)="s53.1"> Mégsem <br>
+(trg)="s51.1"> Prekliči <br>
+<hr>
+(src)="s54.1"> Megszakítja a feladat létrehozását . <br>
+(trg)="s52.1"> Prekine ustvarjenje tega opravila . <br>
+<hr>
+(src)="s55.1"> Ha a hónap és a hét napjai közül is kiválasztott néhány napot , akkor a feladat bármelyik feltétel teljesülése esetén el fog indulni . <br>
+(src)="s55.2"> Ha például kijelöli 1-jét és 15-ét , továbbá vasárnapot , akkor a program futni fog 1-jén és 15-én ( függetlenül attól , hogy ezek a napok vasárnapra esnek-e) , továbbá a kijelölt hónapok összes vasárnapján (függetlenül attól , hogy hányadika van ) . <br>
+(trg)="s53.1"> Če izberete dneve v mesecu kot tudi dneve v tednu , bo opravilo pognano ko je izpolnjen vsaj eden od obeh pogojev . Če na primer izberete 1 . in 15 . ter nedeljo , bo program pognan vsakega 1 . in 15 . izbranega meseca ( ne glede na dan v tednu) , kot tudi vsako nedeljo (ne glede na dan v mesecu ) . <br>
+(trg)="s54.1"> Opravilo v resnici ni razporejeno dokler ne shranite crontab -a . <br>
+<hr>
+(src)="s56.1"> A feladat csak akkor jön létre végérvényesen , ha a crontab fájl mentése befejeződik . <br>
+(trg)="s55.1"> Upravljanje razporejenih opravil <br>
+(trg)="s56.1"> Kot velja pri ustvarjanju novih opravil , spremembe dejansko ne bodo veljale , dokler ni crontab shranjen . <br>
+<hr>
+(src)="s57.1"> Az ütemezett feladatok kezelése <br>
+(trg)="s57.1"> Izrezovanje razporejenih opravil <br>
+<hr>
+(src)="s58.1"> Hasonlóan a feladatlétrehozáshoz , a módosítások rögzítése csak akkor végleges , ha a crontab fájl mentése befejeződött . <br>
+(trg)="s58.1"> Da izrežete razporejeno opravilo , ga najprej izberite . <br>
+(trg)="s60.1"> Prepisovanje razporejenih opravil <br>
+<hr>
+(src)="s59.1"> Feladat kivágása a vágólapra <br>
+(src)="s62.1"> Feladat másolása <br>
+(trg)="s61.1"> Da prepište razporejeno opravilo , ga najprej izberite . <br>
+<hr>
+(src)="s65.1"> Feladat beillesztése <br>
+(trg)="s63.1"> Prilepljanje razporejenih opravil <br>
+<hr>
+(src)="s66.1"> Feladat beillesztése csak akkor lehetséges , ha korábban egy feladatot kimásolt vagy kivágott a vágólapra . <br>
+(trg)="s64.1"> Da lahko prilepite razporejeno opravilo , mora biti to najprej izrezano ali pa prepisano na odložišče . <br>
+<hr>
+(src)="s66.2"> A beillesztés menüpontja egyébként csak ilyenkor válik aktívvá . <br>
+(trg)="s64.2"> Ko je bilo to opravljeno , bo prilepljanje omogočeno . <br>
+(trg)="s64.3"> Potem izberite imenik Opravila . <br>
+<hr>
+(src)="s68.1"> Feladat módosítása <br>
+(trg)="s66.1"> Spreminjanje razporejenih opravil <br>
+<hr>
+(src)="s70.1"> Ekkor megjelenik a Feladatszerkesztés párbeszédablak , melyben a módosítások az előbb ismertetett módon elvégezhetők . <br>
+(trg)="s67.1"> Da spremenite razporejeno opravilo , ga najprej izberite . <br>
+(trg)="s68.1"> Pojavilo se bo pogovorno okno Spremeni opravilo , ki ga spremenite , kot je opisano zgoraj . <br>
+<hr>
+(src)="s71.1"> Feladat törlése <br>
+(trg)="s69.1"> Brisanje razporejenih opravil <br>
+<hr>
+(src)="s73.1"> A művelet úgy is elvégezhető , hogy a jobb egérgombbal előhívja a felbukkanó menüt és a Törlés menüpontra kattint . <br>
+(trg)="s70.1"> Da odstranite razporejeno opravilo , ga najprej izberite . <br>
+(trg)="s71.1"> Alternativno lahko uporabite menu desnega gumba miške in izberete Izbriši . <br>
+<hr>
+(src)="s74.1"> A feladatok bekapcsolása / kikapcsolása <br>
+(trg)="s72.1"> Omogočanje / onemogočanje razporejenih opravil <br>
+<hr>
+(src)="s75.1"> Egy feladat bekapcsolásához először jelölje ki a kívánt feladatot ( kikapcsolt feladatok mellett a Kikapcsolva felirat látható ) . <br>
+(trg)="s73.1"> Da omogočite / onemogočite razporejeno opravilo , najprej izberite onemogočeno opravilo . <br>
+<hr>
+(src)="s76.1"> A művelet úgy is elvégezhető , hogy a jobb egérgombbal előhívja a felbukkanó menüt , és abban a Bekapcsolva menüpontra kattint . <br>
+(trg)="s73.2"> Ta imajo v svojem opisu oznako Onemogočen . <br>
+(trg)="s74.1"> Alternativno lahko v menuju desnega gumba miške izberete Omogočen . <br>
+<hr>
+(src)="s76.2"> Ellenőrizze , hogy a feladat neve , paraméterei és leírása megfelelnek-e . <br>
+(trg)="s74.2"> Potrdite , da so ime razporejenga opravila , parametri in opis pravilno prikazani . <br>
+<hr>
+(src)="s77.1"> Feladat futtatása <br>
+(trg)="s75.1"> Poganjanje razporejenih opravil <br>
+<hr>
+(src)="s79.1"> A művelet úgy is elvégezhető , hogy a jobb egérgombbal előhívja a felbukkanó menüt , és abban a Futtatás most menüpontot választja . <br>
+(trg)="s76.1"> Da razporejeno opravilo takoj poženete , ga najprej izberite . <br>
+(trg)="s77.1"> Alternativno lahko uporabite menu desne tipke miške in izberete Poženi zdaj . <br>
+<hr>
+(src)="s80.1"> Környezeti változók létrehozása <br>
+(trg)="s78.1"> Dodajanje spremenljivk okolja <br>
+<hr>
+(src)="s83.1"> A Változó módosítása párbeszédablak . <br>
+(trg)="s79.1"> Da ustvarite novo spremenljivko okolja najprej izberite imenik Spremenljivke . <br>
+<hr>
+(src)="s84.1"> Változó <br>
+(trg)="s81.1"> Pogovorno okno Spremeni spremenljivko <br>
+<hr>
+(src)="s85.1"> Adja meg a környezeti változó nevét . <br>
+(trg)="s82.1"> Spremenljivka <br>
+(trg)="s83.1"> Vnesite ime spremenljivke . <br>
+<hr>
+(src)="s85.2"> A kombinált listából kiválasztható néhány gyakran használt változó neve . <br>
+(trg)="s83.2"> Uporabite lahko seznam spustnega polja , da izberete izmed najpogosteje uporabljenih spremenljivk razporejenih opravil . <br>
+<hr>
+(src)="s85.3"> A listában szerepel például : <br>
+(trg)="s83.3"> Te vključujejo : <br>
+<hr>
+(src)="s86.1"> HOME <br>
+(trg)="s84.1"> HOME <br>
+<hr>
+(src)="s87.1"> A felhasználóhoz beállított saját könyvtár felülbírálása . <br>
+(trg)="s85.1"> Uporablja se namesto privzetega uporabnikovega domačega imenika . <br>
+<hr>
+(src)="s88.1"> MAILTO <br>
+(trg)="s86.1"> MAILTO <br>
+<hr>
+(src)="s89.1"> Itt adja meg azt a címet , amelyre az értesítést küldeni kell ( ha a felhasználó e-mail címe eltér az alapértelmezéstől ) . <br>
+(trg)="s87.1"> Za pošiljanje pošte na naslov , ki ni uporabnikov privzeti e-poštni naslov . <br>
+<hr>
+(src)="s90.1"> PATH <br>
+(trg)="s88.1"> PATH <br>
+<hr>
+(src)="s91.1"> A programok keresési útvonala . <br>
+(trg)="s89.1"> Se uporablja za iskanje programskih datotek po imenikih . <br>
+<hr>
+(src)="s92.1"> SHELL <br>
+(trg)="s90.1"> SHELL <br>
+<hr>
+(src)="s93.1"> A felhasználóhoz beállított parancsértelmező felülbírálása . <br>
+(trg)="s91.1"> Uporablja se namesto uporabnikove privzete vrednosti . <br>
+<hr>
+(src)="s94.1"> Érték <br>
+(trg)="s92.1"> Vrednost <br>
+<hr>
+(src)="s95.1"> Ide kell beírni a változó értékét . <br>
+(trg)="s93.1"> Vnesite vrednost spremenljivke okolja . <br>
+<hr>
+(src)="s96.1"> Megjegyzés <br>
+(trg)="s94.1"> Komentar <br>
+<hr>
+(src)="s97.1"> Itt lehet megadni a változó leírását kötetlen formában . <br>
+(trg)="s95.1"> Vnesite opis spremeljivke okolja , denimo njennamen . <br>
+<hr>
+(src)="s98.1"> Bekapcsolva <br>
+(trg)="s96.1"> Vključeno <br>
+<hr>
+(src)="s99.1"> Egy változó ki - vagy bekapcsolásához kattintson a Bekapcsolva menüpontra . <br>
+(trg)="s97.1"> Da omogočite ali onemogočite opravilo , izberite ali prekličite Omogoči . <br>
+<hr>
+(src)="s100.1"> OK <br>
+(trg)="s98.1"> V redu <br>
+<hr>
+(src)="s101.1"> Befejezi a változó beállítását . <br>
+(trg)="s99.1"> Konča ustvarjenje tega opravila . <br>
+<hr>
+(src)="s102.1"> Mégsem <br>
+(trg)="s100.1"> Prekliči <br>
+<hr>
+</body>
+</html>

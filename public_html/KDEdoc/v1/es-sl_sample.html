@@ -1,0 +1,326 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# es/docs/kdeadmin/kcron/index.docbook.xml.gz<br>
+# sl/docs/kdeadmin/kcron/index.docbook.xml.gz
+
+<p><hr>
+(src)="s1.1"> El manual de Kcron <br>
+(trg)="s1.1"> Priročnik za Kcron <br>
+<hr>
+(src)="s2.1"> Se concede permiso para copiar , distribuir y / o modificar este documento bajo los términos de la Licencia Libre de Documentación de GNU , versión 1.1 o posterior publicada por la Free Software Foundation ; con secciones no invariantes , con textos que no estén en la cubierta , y con textos que no estén en la contraportada . <br>
+(trg)="s2.1"> Dovoljuje se kopiranje , distribucija in / ali spreminjanje tega dokumenta pod pogoji GNU Free Documentation License , različice 1.1 ali katerekoli poznejše objavljene s strani Free Software Foundation ; brez nespremenljivih razdelkov , brez besedil na prednji strani ovitka in brez besedil na zadnji strani ovitka . <br>
+<hr>
+(src)="s2.2"> Se incluye una copia de la licencia en . <br>
+(trg)="s2.2"> Kopija licence je vključena v . <br>
+<hr>
+(src)="s3.1"> Kcron es una aplicación para planificar la ejecución de aplicaciones . <br>
+(trg)="s3.1"> Kcron je program , ki skrbi za razvrščanje opravil . <br>
+<hr>
+(src)="s4.1"> Introducción <br>
+(trg)="s4.1"> Uvod <br>
+<hr>
+(src)="s5.1"> Kcron es una aplicación para planificar la ejecución de aplicaciones en segundo plano . <br>
+(trg)="s5.1"> Kcron je program za razporejanje programov , ki naj tečejo v ozadju . <br>
+<hr>
+(src)="s5.2"> Es un interfaz gráfico para cron , el planificador de los sistemas UNIX . <br>
+(trg)="s5.2"> Je grafični vmesnik za cron Unix-ov sistemski razporejevalnik . <br>
+<hr>
+(src)="s6.1"> Usando Kcron <br>
+(trg)="s6.1"> Uporaba Kcron <br>
+<hr>
+(src)="s7.1"> No olvide hacer que su sistema inicie el demonio cron crond primero , o Kcron no funcionará . <br>
+(trg)="s7.1"> Ne pozabite povedati vašemu sistemu , naj najprej požene crond ( cron daemon ) , sicer Kcron ne bo delal . <br>
+<hr>
+(src)="s8.1"> Arranque de Kcron <br>
+(trg)="s8.1"> Zagon Kcron <br>
+<hr>
+(src)="s9.1"> Cuando Kcron empiece verá una vista resumida de las tareas programadas existentes y sus variables de entorno asociadas . <br>
+(src)="s9.2"> Si lo está ejecutando como el usuario root , verá las tareas correspondientes a todos los usuarios así como las correspondientes al sistema . <br>
+(trg)="s9.1"> Ob zagonu Kcron a boste videli skrajšan pregled obstoječih razporejenih opravil in asociiranih okoljskih spremenljivk . Če ste prijavljeni kot root boste videli vse predmete za vse uporabnike na računalniku kot tudi sistemsko razporejena opravila . <br>
+<hr>
+(src)="s9.3"> Cada carpeta puede expandirse o contraerse . <br>
+(trg)="s9.2"> Vsak od teh imenikov se da skrčiti ali razširiti . <br>
+<hr>
+(src)="s10.1"> Tareas programadas <br>
+(trg)="s10.1"> Razporejena opravila <br>
+<hr>
+(src)="s11.1"> Las tareas programadas aparecen bajo la carpeta Tareas . <br>
+(trg)="s11.1"> Razporejena opravila se pojavijo v imeniku Opravila ( Tasks ) . <br>
+<hr>
+(src)="s11.2"> Para cada una de las tareas programadas , se muestra lo siguiente : <br>
+(trg)="s11.2"> Za vsako razporejeno opravilo je prikazano naslednje : <br>
+<hr>
+(src)="s12.1"> Nombre <br>
+(trg)="s12.1"> Ime <br>
+<hr>
+(src)="s13.1"> Nombre para identificar la tarea programada . <br>
+(trg)="s13.1"> Ime , ki identificira razporejeno opravilo . <br>
+<hr>
+(src)="s14.1"> Valor <br>
+(trg)="s14.1"> Vrednost <br>
+<hr>
+(src)="s15.1"> Nombre del programa y sus parámetros . <br>
+(trg)="s15.1"> Programska datoteka in parametri . <br>
+<hr>
+(src)="s16.1"> Descripción <br>
+(trg)="s16.1"> Opis <br>
+<hr>
+(src)="s17.1"> Descripción en lenguaje natural de la tarea programada . <br>
+(trg)="s17.1"> Opis razporejenega opravila v naravnem jeziku . <br>
+<hr>
+(src)="s18.1"> Si una tarea está desactivada , no aparecerán ni el nombre del programa ni los parámetros , y la descripción también estará desactivada . <br>
+(trg)="s18.1"> Če je bilo opravilo onemogočeno , se ne bosta pojavila ne datoteka in ne parametri , opis pa bo onemogočen . <br>
+<hr>
+(src)="s19.1"> Variables de entorno <br>
+(trg)="s19.1"> Spremenljivke okolja <br>
+<hr>
+(src)="s20.1"> Las variables de entorno aparecen bajo la carpeta Variables . <br>
+(trg)="s20.1"> Spremenljivke okolja se nahajajo v imeniku Spremenljivke . <br>
+<hr>
+(src)="s20.2"> Para cada variable de entorno , se muestra lo siguiente : <br>
+(trg)="s20.2"> Za vsako spremenljivko je prikazano : <br>
+<hr>
+(src)="s21.1"> Nombre <br>
+(trg)="s21.1"> Ime <br>
+<hr>
+(src)="s22.1"> Nombre de la variable <br>
+(trg)="s22.1"> Ime spremenljivke . <br>
+<hr>
+(src)="s23.1"> Valor <br>
+(trg)="s23.1"> Vrednost <br>
+<hr>
+(src)="s24.1"> Valor de la variable <br>
+(trg)="s24.1"> Vrednost spremenljivke . <br>
+<hr>
+(src)="s25.1"> Descripción <br>
+(trg)="s25.1"> Opis <br>
+<hr>
+(src)="s26.1"> Descripción en lenguaje natural de la variable . <br>
+(trg)="s26.1"> Opis spremenljivke v naravnem jeziku . <br>
+<hr>
+(src)="s27.1"> Las variables de entorno que aparecen aquí anularán cualquier variable de entorno existente para todas las tareas programadas . <br>
+(src)="s27.2"> Si una variable de entorno ha sido desactivada , no aparecerá ningún valor y la descripción estará desactivada . <br>
+(trg)="s27.1"> Spremenljivke okolja , ki se pojavljajo tukaj , bodo prepisale vse obstoječe spremenljivke okolja za razporejena opravila . Če je bila katera spremeljivka onemogočena , se ne bo pojavila nobena vrednost in opis bo izklopljen . <br>
+<hr>
+(src)="s28.1"> Añadiendo tareas programadas <br>
+(trg)="s28.1"> Uvrstitev opravil <br>
+<hr>
+(src)="s29.1"> Para crear una nueva tarea programada , seleccione primero la carpeta Tareas . <br>
+(trg)="s29.1"> Da uvrstite novo opravilo , najprej izberite imenik Opravila ( Tasks ) . <br>
+<hr>
+(src)="s30.1"> El diálogo Editar Tarea <br>
+(trg)="s30.1"> Pogovorno okno Spremeni opravilo <br>
+<hr>
+(src)="s31.1"> Comentario <br>
+(trg)="s31.1"> Komentar <br>
+<hr>
+(src)="s32.1"> Introduzca la descripción de la tarea a programar . <br>
+(trg)="s32.1"> Vnesite opis opravila za uvrstitev . <br>
+<hr>
+(src)="s33.1"> Programa <br>
+(trg)="s33.1"> Program <br>
+<hr>
+(src)="s34.1"> Introduzca el nombre del programa . <br>
+(trg)="s34.1"> Vnesite ime programa . <br>
+<hr>
+(src)="s34.2"> Puede especificar una ruta relativa o bien una ruta absoluta . <br>
+(src)="s34.3"> Si quiere buscar el programa , pulse Explorar.. . . <br>
+(trg)="s34.2"> Vnesete lahko relativno ali absolutno pot . Če želite program poiskati , pritisnite Pobrskaj.. . . <br>
+<hr>
+(src)="s35.1"> Activado <br>
+(trg)="s35.1"> Vključeno <br>
+<hr>
+(src)="s36.1"> Para activar o desactivar la tarea , marque o desmarque Activado . <br>
+(trg)="s36.1"> Da omogočite ali onemogočite opravilo , izberite Omogočen . <br>
+<hr>
+(src)="s37.1"> Silencioso <br>
+(trg)="s37.1"> Mesecev <br>
+<hr>
+(src)="s38.1"> Desactiva el registro de los comandos y de su salida . <br>
+(trg)="s38.1"> Izberite mesece v katere bo opravilo razvrščeno . <br>
+<hr>
+(src)="s39.1"> Meses <br>
+(trg)="s39.1"> Dni v mesecu <br>
+<hr>
+(src)="s40.1"> Seleccione los meses en los que quiera que la tarea sea programada . <br>
+(trg)="s40.1"> Izberite dni v mesecu , v katere bo opravilo razporejeno . <br>
+<hr>
+(src)="s41.1"> Días del mes <br>
+(trg)="s41.1"> Dni v tednu <br>
+<hr>
+(src)="s42.1"> Seleccione los días del mes en los que quiera que la tarea sea programada . <br>
+(trg)="s42.1"> Izberite dneve v tednu , kamor bo opravilo uvrščeno . <br>
+<hr>
+(src)="s43.1"> Días de la semana <br>
+(trg)="s43.1"> Dnevno <br>
+<hr>
+(src)="s44.1"> Seleccione los días de la semana en los que quiera que la tarea sea programada . <br>
+(trg)="s44.1"> Če želite razporediti opravilo tako , da bo teklo vsak dan , izberite Poženi vsak dan . <br>
+<hr>
+(src)="s45.1"> Diario <br>
+(trg)="s45.1"> Ur <br>
+<hr>
+(src)="s46.1"> Si quiere programar la tarea para su ejecución diaria , seleccione Ejecutar cada día . <br>
+(trg)="s46.1"> Izberite ure , v katere bo razporejeno opravilo . <br>
+<hr>
+(src)="s47.1"> Horas <br>
+(trg)="s47.1"> Minut <br>
+<hr>
+(src)="s48.1"> Seleccione las horas en las que quiera que la tarea sea programada . <br>
+(trg)="s48.1"> Izberite minute v katere bo opravilo razporejeno . <br>
+(trg)="s48.2"> Kcron ne podpira razporejanje opravil na intervale , krajše od petih minut . <br>
+<hr>
+(src)="s49.1"> Minutos <br>
+(trg)="s49.1"> V redu <br>
+<hr>
+(src)="s50.1"> Seleccione el minuto en el que quiera que la tarea sea programada . <br>
+(src)="s50.2"> Kcron no permite programar intervalos inferiores a cinco minutos . <br>
+(trg)="s50.1"> Dokonča ustvarjenje tega opravila . <br>
+<hr>
+(src)="s51.1"> Aceptar <br>
+(trg)="s51.1"> Prekliči <br>
+<hr>
+(src)="s52.1"> Completa la creación de la tarea . <br>
+(src)="s53.1"> Cancelar <br>
+(trg)="s52.1"> Prekine ustvarjenje tega opravila . <br>
+<hr>
+(src)="s54.1"> Cancela la creación de la tarea . <br>
+(trg)="s53.1"> Če izberete dneve v mesecu kot tudi dneve v tednu , bo opravilo pognano ko je izpolnjen vsaj eden od obeh pogojev . Če na primer izberete 1 . in 15 . ter nedeljo , bo program pognan vsakega 1 . in 15 . izbranega meseca ( ne glede na dan v tednu) , kot tudi vsako nedeljo (ne glede na dan v mesecu ) . <br>
+<hr>
+(src)="s55.1"> Si selecciona simultáneamente días del mes y días de la semana , la tarea se ejecutará cuando cualquiera de las condiciones se cumpla . <br>
+(trg)="s54.1"> Opravilo v resnici ni razporejeno dokler ne shranite crontab -a . <br>
+(trg)="s55.1"> Upravljanje razporejenih opravil <br>
+<hr>
+(src)="s56.1"> La tarea programada no lo estará realmente hasta que no guarde el fichero crontab . <br>
+(trg)="s56.1"> Kot velja pri ustvarjanju novih opravil , spremembe dejansko ne bodo veljale , dokler ni crontab shranjen . <br>
+<hr>
+(src)="s57.1"> Gestionando las tareas programadas <br>
+(trg)="s57.1"> Izrezovanje razporejenih opravil <br>
+<hr>
+(src)="s58.1"> Igual que ocurría al crear tareas nuevas , los cambios sobre las tareas existentes no serán efectivos hasta que el fichero crontab sea guardado . <br>
+(src)="s59.1"> Cortando tareas programadas <br>
+(trg)="s58.1"> Da izrežete razporejeno opravilo , ga najprej izberite . <br>
+<hr>
+(src)="s60.1"> Para cortar una tarea programada , primero seleccione la tarea a cortar . <br>
+(trg)="s60.1"> Prepisovanje razporejenih opravil <br>
+<hr>
+(src)="s62.1"> Copiando tareas programadas <br>
+(trg)="s61.1"> Da prepište razporejeno opravilo , ga najprej izberite . <br>
+<hr>
+(src)="s63.1"> Para copiar una tarea programada , primero seleccione la tarea a copiar . <br>
+(trg)="s63.1"> Prilepljanje razporejenih opravil <br>
+<hr>
+(src)="s65.1"> Pegando tareas programadas <br>
+(trg)="s64.1"> Da lahko prilepite razporejeno opravilo , mora biti to najprej izrezano ali pa prepisano na odložišče . <br>
+(trg)="s64.2"> Ko je bilo to opravljeno , bo prilepljanje omogočeno . <br>
+<hr>
+(src)="s66.1"> Para poder pegar una tarea programada , primero debe haberla copiado o cortado en el portapapeles . <br>
+(src)="s66.2"> Una vez exista una tarea en el portapapeles , pegar se activará . <br>
+(trg)="s66.1"> Spreminjanje razporejenih opravil <br>
+<hr>
+(src)="s68.1"> Modificando tareas programadas <br>
+(trg)="s67.1"> Da spremenite razporejeno opravilo , ga najprej izberite . <br>
+<hr>
+(src)="s69.1"> Para modificar una tarea programada , primero seleccione la tarea a modificar . <br>
+(trg)="s68.1"> Pojavilo se bo pogovorno okno Spremeni opravilo , ki ga spremenite , kot je opisano zgoraj . <br>
+(trg)="s69.1"> Brisanje razporejenih opravil <br>
+<hr>
+(src)="s70.1"> Verá aparecer el diálogo Editar Tarea , que le permitirá modificar la tarea según se describe arriba . <br>
+(src)="s71.1"> Borrando tareas programadas <br>
+(trg)="s70.1"> Da odstranite razporejeno opravilo , ga najprej izberite . <br>
+<hr>
+(src)="s72.1"> Para eliminar una tarea programada , primero seleccione la tarea a borrar . <br>
+(trg)="s71.1"> Alternativno lahko uporabite menu desnega gumba miške in izberete Izbriši . <br>
+(trg)="s72.1"> Omogočanje / onemogočanje razporejenih opravil <br>
+<hr>
+(src)="s73.1"> Alternativamente , puede usar el menú que aparece al pulsar el botón derecho del ratón , eligiendo Eliminar . <br>
+(trg)="s73.1"> Da omogočite / onemogočite razporejeno opravilo , najprej izberite onemogočeno opravilo . <br>
+<hr>
+(src)="s74.1"> Activando / desactivando tareas programadas <br>
+(trg)="s73.2"> Ta imajo v svojem opisu oznako Onemogočen . <br>
+<hr>
+(src)="s75.1"> Para activar o desactivar una tarea programada , primero seleccione la tarea correspondiente . <br>
+(trg)="s74.1"> Alternativno lahko v menuju desnega gumba miške izberete Omogočen . <br>
+<hr>
+(src)="s75.2"> Las tareas desactivadas tendrán Desactivado en sus descripciones . <br>
+(trg)="s74.2"> Potrdite , da so ime razporejenga opravila , parametri in opis pravilno prikazani . <br>
+(trg)="s75.1"> Poganjanje razporejenih opravil <br>
+<hr>
+(src)="s76.1"> Alternativamente , puede usar el menú que aparece al pulsar el botón derecho del ratón , eligiendo Activado . <br>
+(src)="s76.2"> Confirme que el nombre del programa , los parámetros y la descripción de la tarea se muestren correctamente . <br>
+(trg)="s76.1"> Da razporejeno opravilo takoj poženete , ga najprej izberite . <br>
+<hr>
+(src)="s78.1"> Para ejecutar una tarea programada de forma inmediata , primero seleccione la tarea a ejecutar . <br>
+(trg)="s77.1"> Alternativno lahko uporabite menu desne tipke miške in izberete Poženi zdaj . <br>
+(trg)="s78.1"> Dodajanje spremenljivk okolja <br>
+<hr>
+(src)="s79.1"> Alternativamente , puede usar el menú que aparece al pulsar el botón derecho del ratón , eligiendo Ejecutar ahora . <br>
+(src)="s80.1"> Añadiendo variables de entorno <br>
+(trg)="s79.1"> Da ustvarite novo spremenljivko okolja najprej izberite imenik Spremenljivke . <br>
+<hr>
+(src)="s81.1"> Para crear una nueva variable de entorno , primero seleccione la carpeta Variables . <br>
+(trg)="s81.1"> Pogovorno okno Spremeni spremenljivko <br>
+(trg)="s82.1"> Spremenljivka <br>
+<hr>
+(src)="s83.1"> El diálogo Editar variable <br>
+(trg)="s83.1"> Vnesite ime spremenljivke . <br>
+(trg)="s83.2"> Uporabite lahko seznam spustnega polja , da izberete izmed najpogosteje uporabljenih spremenljivk razporejenih opravil . <br>
+<hr>
+(src)="s84.1"> Variable <br>
+(trg)="s83.3"> Te vključujejo : <br>
+(trg)="s84.1"> HOME <br>
+<hr>
+(src)="s85.1"> Introduzca el nombre de la variable de entorno . <br>
+(src)="s85.2"> Puede usar la lista desplegable para seleccionar una de las variables de entorno más comúnmente usadas por las tareas programadas . <br>
+(trg)="s85.1"> Uporablja se namesto privzetega uporabnikovega domačega imenika . <br>
+<hr>
+(src)="s85.3"> Están incluidas : <br>
+(src)="s86.1"> HOME <br>
+(trg)="s86.1"> MAILTO <br>
+<hr>
+(src)="s87.1"> Para ser usado en lugar del directorio del usuario por defecto . <br>
+(trg)="s87.1"> Za pošiljanje pošte na naslov , ki ni uporabnikov privzeti e-poštni naslov . <br>
+<hr>
+(src)="s88.1"> MAILTO <br>
+(trg)="s88.1"> PATH <br>
+<hr>
+(src)="s89.1"> Para enviar mensajes de salida con una dirección de correo-e distinta de la del usuario por defecto . <br>
+(trg)="s89.1"> Se uporablja za iskanje programskih datotek po imenikih . <br>
+<hr>
+(src)="s90.1"> PATH <br>
+(trg)="s90.1"> SHELL <br>
+<hr>
+(src)="s91.1"> Usado como rutas alternativas a directorios con programas . <br>
+(trg)="s91.1"> Uporablja se namesto uporabnikove privzete vrednosti . <br>
+<hr>
+(src)="s92.1"> SHELL <br>
+(trg)="s92.1"> Vrednost <br>
+<hr>
+(src)="s93.1"> Usado como alternativa al valor por defecto del usuario <br>
+(trg)="s93.1"> Vnesite vrednost spremenljivke okolja . <br>
+<hr>
+(src)="s94.1"> Valor <br>
+(trg)="s94.1"> Komentar <br>
+<hr>
+(src)="s95.1"> Introduzca la variable de entorno . <br>
+(trg)="s95.1"> Vnesite opis spremeljivke okolja , denimo njennamen . <br>
+<hr>
+(src)="s96.1"> Comentario <br>
+(trg)="s96.1"> Vključeno <br>
+<hr>
+(src)="s97.1"> Introduzca la descripción de la variable de entorno , tal como su propósito . <br>
+(trg)="s97.1"> Da omogočite ali onemogočite opravilo , izberite ali prekličite Omogoči . <br>
+<hr>
+(src)="s98.1"> Activado <br>
+(trg)="s98.1"> V redu <br>
+<hr>
+</body>
+</html>

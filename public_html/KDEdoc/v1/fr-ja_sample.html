@@ -1,0 +1,375 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# fr/docs/kdebase/kdesu/index.docbook.xml.gz<br>
+# ja/docs/kdebase/kdesu/index.docbook.xml.gz
+
+<p><hr>
+(src)="s1.1"> Le manuel de KDE su <br>
+(trg)="s1.1"> KDE su ハンドブック <br>
+<hr>
+(src)="s2.1"> Permission est accordée de copier , distribuer et/ou modifier ce document selon les termes de la Licence de Documentation Libre GNU ( GNU Free Documentation License ) , Version 1.1 ou toute version ultérieure publiée par la Free Software Foundation avec aucune section invariante , avec aucun texte de devant de couverture , et avec aucun texte d' arrière de couverture . <br>
+(trg)="s2.1"> Permission is granted to copy , distribute and / or modify this document under the terms of the GNU Free Documentation License , Version 1 . 1 or any later version published by the Free Software Foundation ; with no Invariant Sections , with no Front - Cover Texts , and with no Back - Cover Texts . <br>
+<hr>
+(src)="s2.2"> Une copie de la licence est fournie dans . <br>
+(trg)="s2.2"> A copy of the license is included in . <br>
+<hr>
+(src)="s3.1"> KDE su est une interface graphique pour la commande UNIX su . <br>
+(trg)="s3.1"> KDE su は Unix " su " コマンド の ため の グラフィカル フロント エンド です 。 <br>
+<hr>
+(src)="s4.1"> Introduction <br>
+(trg)="s4.1"> 導入 <br>
+<hr>
+(src)="s5.1"> Ce programme est prévu pour être lancé depuis la ligne de commande ou depuis un fichier .desktop. <br>
+(src)="s5.2"> Bien qu' il demande le mot de passe superutilisateur à travers une boîte de dialogue graphique , je le considère plus comme une ligne de commande connectée à une interface graphique que comme un véritable programme graphique . <br>
+(trg)="s5.1"> KDE su に ようこそ ！ KDE su は 、 UNIX " su " コマンド の 、 K デスク トップ 環境 の ため の グラフィカル フロント エンド です 。 これ は 、 他 の ユーザー の パスワード を 適応 する こと によって 、 その ユーザー として 、 プログラム を 実行 する 事 が 出来 ます 。 KDE su は 権利 の ない プログラム で あり 、 システム の su を 使っ て い ます 。 <br>
+<hr>
+(src)="s6.1"> Utiliser KDE su <br>
+(src)="s7.1"> Les options de la ligne de commande sont expliquées ci-dessous . <br>
+(trg)="s6.1"> KDE su は 、 パスワード を 保持 する 機能 が 一つ 追加 さ れ て い ます 。 この 機能 を 使え ば 、 コマンド 実行 の 度 に パスワード を 入力 する 必要 は 無くなり ます 。 この 機能 と 、 セキュリティー 分析 について の 詳細 は 、 を 御覧 下さい 。 <br>
+(trg)="s7.1"> この プログラム は 、 コマンド ライン 、 もしくは 、 . desktop ファイル から 実行 出来 ます 。 それ は 、 GUI ダイアログ を 使っ て root パスワード を 尋ね ます が 、 私 は 、 純粋 な GUI プログラム に 代る 、 コマンド ライン と GUI の より 良い 接続 法 で ある と 考え て い ます 。 <br>
+<hr>
+(src)="s8.1"> -c PROGRAMME <br>
+(trg)="s8.1"> インストール <br>
+<hr>
+(src)="s9.1"> -f FICHIER <br>
+(trg)="s9.1"> ダウン ロード <br>
+<hr>
+(src)="s10.1"> Cette option permet une utilisation efficace de KDE su dans les fichiers .desktop. <br>
+(src)="s10.2"> Elle dit à KDE su d' examiner le fichier spécifié par l' argument FICHIER . <br>
+(trg)="s10.1"> KDE su は 現在 、 KDE CVS の kdebase に 入っ て い ます 。 全て の ( 2 . x ) KDE ディストリビューション に 含ま れ て いる はず です 。 あなた も また 、 私 の ftp : / / skynet . stack . nl / pub / users / geertj / に ある ホームページ から KDE 1 . x バージョン を 入手 する こと が 出来 ます 。 <br>
+<hr>
+(src)="s10.3"> Si ce fichier est accessible en écriture par l' utilisateur courant , KDE su exécutera la commande pour le compte de l' utilisateur courant . <br>
+(trg)="s11.1"> コンパイル <br>
+(trg)="s12.1"> KDE su は kdebase に 入っ て い て 、 あなた は 既に 持っ て い ます 、 もしくは 、 kdebase を インストール する 時 に 入手 し ます 。 <br>
+<hr>
+(src)="s10.4"> Si ce n' est pas le cas , la commande sera exécutée pour le compte de l' utilisateur USER ( par défaut root ) . <br>
+(src)="s11.1"> -t <br>
+(trg)="s13.1"> KDE 1 . x バージョン を コンパイル する に は 、 次 の よう に し て 下さい 。 <br>
+<hr>
+(src)="s13.1"> Ne conserve pas le mot de passe . <br>
+(src)="s13.2"> Ceci désactive la case à cocher conserver le mot de passe dans la boîte de dialogue correspondante . <br>
+(trg)="s14.1"> 最後 の ステップ は root で 実行 する 必要 が あり ます 。 インストール 行程 は システム ワイド な KDE ディレクトリ に 書き込める 必要 が ある ため です 。 <br>
+<hr>
+(src)="s14.1"> -q <br>
+(src)="s15.1"> -d <br>
+(trg)="s15.1"> KDE su の 使い方 <br>
+<hr>
+(src)="s16.1"> Affiche les informations de débogage . <br>
+(src)="s17.1"> -v <br>
+(trg)="s16.1"> KDE su の 使い方 は 簡単 です 。 文法 は 次 の よう に なっ て い ます 。 <br>
+<hr>
+(src)="s18.1"> Affiche l' information sur la version et sort . <br>
+(src)="s19.1"> -h <br>
+(trg)="s17.1"> コマンド ライン オプション の 説明 は 次 の よう に なっ て い ます 。 <br>
+<hr>
+(src)="s20.1"> Affiche un peu d' aide . <br>
+(src)="s21.1"> -s <br>
+(trg)="s18.1"> - c PROGRAM <br>
+<hr>
+(src)="s22.1"> Arrête le démon ( daemon ) kdesu . <br>
+(trg)="s20.1"> - f FILE <br>
+<hr>
+(src)="s22.2"> Consulter . <br>
+(src)="s23.1"> Configuration <br>
+(trg)="s21.1"> この オプション は . desktop ファイル において 、 KDE su を 効率 的 に 使う 事 が 出来 ます 。 これ は 、 FILE によって 指定 さ れ た ファイル を テスト する と いう こと を KDE su に 伝え ます 。 もし 、 この ファイル が 現在 の ユーザー によって 書き換え 可能 で あれ ば 、 KDE su は 現在 の ユーザー として その コマンド を 実行 し ます 。 もし 、 書き込み 可能 で なけれ ば 、 ユーザー USER ( デフォルト は root ) として 、 その コマンド を 実行 し ます 。 <br>
+<hr>
+(src)="s24.1"> Mode écho <br>
+(src)="s25.1"> Conservation des mots de passe <br>
+(trg)="s23.1"> - t <br>
+<hr>
+(src)="s26.1"> Vous pouvez demander à KDE su de se souvenir des mots de passe en cochant la case conserver les mots de passe . <br>
+(src)="s26.2"> Si c' est le cas , vous pouvez préciser une limite de temps dans le champ texte qui suit . <br>
+(trg)="s24.1"> ターミナル 出力 を 有効 に し ます 。 これ は パスワード 保持 を 無効 に し ます 。 これ は 、 広く 、 デバッグ 用途 に 使用 し ます 。 もし 、 コンソール モード の アプリケーション を 使い たい 時 に は 、 代わり に 標準 の " su " を 使い ます 。 <br>
+<hr>
+(src)="s26.3"> C' est la durée , en minutes , pendant laquelle le mot de passe restera en mémoire . <br>
+(src)="s26.4"> Par défaut , KDE su ne mémorise pas les mots de passe . <br>
+(trg)="s25.1"> - n <br>
+(trg)="s26.1"> パスワード を 保持 し ませ ん 。 これ は 、 パスワードダイアログ の " keep password " チェック ボックス を 無効 に し ます 。 <br>
+<hr>
+(src)="s27.1"> Fonctionnement interne <br>
+(trg)="s27.1"> - q <br>
+<hr>
+(src)="s28.1"> Authentification X <br>
+(trg)="s28.1"> 無言 モード です 。 <br>
+<hr>
+(src)="s29.1"> Le programme que vous exécutez va fonctionner sous l' identité du superutilisateur et n' aura généralement pas accès à votre affichage Xwindow . <br>
+(trg)="s29.1"> - d <br>
+(trg)="s30.1"> デバッグ 情報 を 表示 し ます 。 <br>
+<hr>
+(src)="s29.2"> KDE su contourne ce problème en ajoutant un cookie d' authentification pour votre affichage dans un fichier temporaire nommé .Xauthority. <br>
+(trg)="s31.1"> - v <br>
+(trg)="s32.1"> バージョン 情報 を 表示 し て 終了 し ます 。 <br>
+<hr>
+(src)="s29.3"> Après la fin de la commande , ce fichier sera supprimé . <br>
+(trg)="s33.1"> - h <br>
+<hr>
+(src)="s30.1"> Si vous ne voulez pas utiliser de cookies X , vous devrez vous débrouiller par vos propres moyens . <br>
+(trg)="s34.1"> いくつか の ヘルプ を 表示 し ます 。 <br>
+<hr>
+(src)="s30.2"> KDE su le détectera et n' ajoutera pas de cookie , mais il vous faudra vous assurer que le superutilisateur est autorisé à accéder à votre affichage Xwindow . <br>
+(trg)="s35.1"> - s <br>
+(trg)="s36.1"> kdesu デーモン を 停止 し ます 。 を 御覧 下さい 。 <br>
+<hr>
+(src)="s31.1"> Interface avec su <br>
+(trg)="s37.1"> 設定 <br>
+<hr>
+(src)="s32.1"> KDE su utilise la commande su du système pour acquérir ses privilèges . <br>
+(trg)="s39.1"> エコー モード <br>
+<hr>
+(src)="s32.2"> Dans cette section , j' explique en détail ce fonctionnement . <br>
+(src)="s33.1"> Du fait que certaines implantations de su ( comme celle de Red Hat ) ne veulent pas lire le mot de passe depuis stdin , KDE su crée une paire pty/tty et exécute su avec ses entrées-sorties standards connectées à tty . <br>
+(trg)="s40.1"> これ は 、 入力 さ れる どの よう な 文字 列 を スクリーン に エコー さ せる か の 設定 です 。 可能 な 選択肢 は 、 一文字 ごと に スター 、 三つ の スター 、 もしくは 、 全く エコー し ない 、 で す 。 デフォルト は 、 一文字 ごと に スター 、 と なっ て い ます 。 <br>
+(trg)="s41.1"> パスワード を 保持 <br>
+<hr>
+(src)="s34.1"> Pour exécuter la commande choisie par l' utilisateur , au lieu d' un shell interactif , KDE su utilise l' argument -c avec su . <br>
+(src)="s34.2"> Cet argument est compris par tous les shells que je connais , donc le programme devrait être portable . su passe cet argument -c au shell de l' utilisateur , et le shell exécute le programme . <br>
+(trg)="s42.1"> " keep password " チェック ボックス に チェック する こと で 、 入力 し た パスワード を KDE su に 覚え させる こと が 出来 ます 。 チェック する と 、 タイム アウト 値 を 下方 の テキスト フィールド に 入力 出来る よう に なり ます 。 これ は 、 パスワード が 記憶 さ れる 時間 で 、 単位 は 分 に なっ て い ます 。 デフォルト で は 、 パスワード 保持 し ない 、 に なっ て い ます 。 <br>
+<hr>
+(src)="s35.1"> Vérification du mot de passe <br>
+(src)="s36.1"> Conservation du mot de passe <br>
+(trg)="s43.1"> 内部 <br>
+<hr>
+(src)="s37.1"> Pour votre confort , KDE su comprend une fonction de conservation du mot de passe . <br>
+(trg)="s44.1"> X 認証 <br>
+<hr>
+(src)="s37.2"> Si vous vous intéressez aux questions de sécurité , vous devriez lire ce paragraphe . <br>
+(src)="s38.1"> Le fait de permettre à KDE su de se souvenir des mots de passe ouvre une ( petite ) brèche de sécurité dans votre système . <br>
+(trg)="s45.1"> 実行 し た プログラム は root ユーザー ID に て 実行 さ れ 、 一般 的 に あなた の X ディスプレイ に アクセス する 権限 は あり ませ ん 。 KDE su は あなた の ディスプレイ の ため の 認証 クッキー を 一時 的 な . Xauthority ファイル に 加える こと によって 権限 を 得 て い ます 。 コマンド が 終了 する と 、 この ファイル は 取り除か れ ます 。 <br>
+<hr>
+(src)="s38.2"> Évidemment , KDE su n' autorise personne d' autre que vous-même ( votre user id ) à utiliser ces mots de passe , mais , si on n' y prend pas garde , ceci descend le niveau de sécurité du superutilisateur à celui d' un utilisateur normal ( vous ) . <br>
+(src)="s38.3"> Un hacker qui prendrait possession de votre compte pourrait ainsi obtenir l' accès superutilisateur . <br>
+(trg)="s46.1"> もし 、 あなた が X クッキー を 使わ ない の で あれ ば 、 自己 責任 です 。 KDE su は 、 これ を 検出 し 、 クッキー を 加え ませ ん が 、 root が あなた の ディスプレイ に アクセス 出来る よう に し て おか なけれ ば なり ませ ん 。 <br>
+<hr>
+(src)="s38.4"> KDE su essaye d' éviter cela . <br>
+(trg)="s47.1"> su へ の インターフェース <br>
+<hr>
+(src)="s38.5"> La technique qu' il utilise pour cela est , au moins de mon point de vue , raisonnablement sûre et elle est exposée ci-dessous . <br>
+(src)="s39.1"> KDE su utilise un daemon , nommé kdesud . <br>
+(trg)="s48.1"> &gt; KDE su は 権限 を 取得 する のに 、 システム の " su " を 使用 し ます 。 この 章 で は 、 KDE su は どの よう に これ を する の か の 詳細 を 説明 し ます 。 <br>
+<hr>
+(src)="s39.2"> Ce daemon attend des commandes dans un socket UNIX placé dans /tmp . <br>
+(src)="s39.3"> Le mode de ce socket est 0600 , ainsi seul votre utilisateur peut s' y connecter . <br>
+(trg)="s49.1"> いくつか の su の 実装 ( 例えば 、 Redhat の su ) で は 、 標準 入力 ( stdin ) から の パスワード 読み込み を 使わ ない ので 、 KDE su は 、 pty / tty の ペア を 作成 し 、 tty に 接続 さ れ た それ 自身 の 標準 ファイルディスクリプター に て " su " を 実行 し ます 。 <br>
+<hr>
+(src)="s39.4"> Si la conservation des mots de passe est activée , KDE su exécute les commandes par l' intermédiaire de ce daemon . <br>
+(src)="s39.5"> Il écrit la commande et le mot de passe superutilisateur dans ce socket , puis le daemon exécute la commande su comme décrit précédemment . <br>
+(trg)="s51.1"> su を 使っ て 直接 ユーザー コマンド を 実行 する 代わり に 、 KDE su は kdesu _ stub と 呼ば れる 小さな スタブ プログラム を 実行 し ます 。 この スタブ ( 対象 の ユーザー として 実行 さ れる て いる ) は 、 いくつか の 情報 を pty / tty チャンネル ( スタブ の 標準 入出力 ) 越し に KDE su に 要求 し 、 それから 、 ユーザー の プログラム を 実行 し ます 。 渡さ れる 情報 は 、 X ディスプレイ 、 ( 可能 で あれ ば ) X 認証 クッキー 、 環境 変数 PATH 、 そして 、 実行 する コマンド 、 と なっ て い ます 。 スタブ プログラム が 使わ れる 理由 は 、 X クッキー は プライベート な 情報 で ある ため で 、 コマンド ライン に 渡す こと が 出来 ない の です 。 <br>
+<hr>
+(src)="s39.6"> Ensuite , la commande et le mot de passe ne sont pas détruits . <br>
+(src)="s39.7"> Au lieu de cela , ils sont conservés pour une durée déterminée . <br>
+(trg)="s52.1"> パスワード の チェック <br>
+<hr>
+(src)="s39.8"> Il s' agit de la durée spécifiée dans le module de contrôle . <br>
+(src)="s39.9"> Si une autre requête pour la même commande intervient pendant cette période , le client ne vous demandera pas de fournir de nouveau le mot de passe . <br>
+(trg)="s53.1"> KDE su は 入力 さ れ た パスワード を チェック し 、 正しく なけれ ば エラーメッセージ を 返し ます 。 パスワード チェック は 、 テスト プログラム / bin / true を 実行 する こと によって 行わ れ ます 。 これ が 成功 する と 、 パスワード は 正しい と 、 想定 さ れ ます 。 <br>
+<hr>
+(src)="s39.10"> Pour empêcher les hackers qui prendraient le contrôle de votre compte de voler les mots de passe au daemon ( par exemple en lui attachant un débogueur ) , le daemon est installé set-group-id nogroup . <br>
+(src)="s39.11"> Ceci devrait interdire à tous les utilisateurs normaux ( y compris vous ) de récupérer les mots de passe dans le processus kdesud . <br>
+(trg)="s54.1"> パスワード 保持 <br>
+(trg)="s55.1"> 便利 に なる よう に 、 KDE su は " keep password " 機能 を 実装 し て い ます 。 もし 、 あなた が セキュリティー に 興味 が あれ ば 、 この 項 を 読む べき です 。 <br>
+<hr>
+(src)="s39.12"> Par ailleurs , le daemon fixe la variable d' environnement DISPLAY à la valeur qu' elle avait quand il a été lancé . <br>
+(src)="s39.13"> Ainsi , la seule chose que puisse faire un hacker est d' exécuter une application sur votre écran . <br>
+(trg)="s56.1"> KDE su に パスワード を 保持 さ せる 事 は 、 あなた の システム に ( 小 さ な ) セキュリティー ホール を 作る こと に なり ます 。 明らか に 、 KDE su は 、 あなた の ユーザー ID を 除い て 誰 に も 、 パスワード を 使う 事 を 許し て は い ませ ん が 、 もし 、 注意 せ ず に 使う の なら ば 、 これ は 、 root の セキュリティー レベル を 一般 ユーザー ( あなた ) の セキュリティー レベル へ と 下げ て しまう 事 に なり ます 。 あなた の アカウント に 討ち 入っ た クラッカー は 、 root 権限 を 取得することになります。 KDE su はこれを防ごうと努めます。これを使うセキュリティー策は、少なくとも私の考えでは、 合理的に安全であり、ここで説明します。 <br>
+(trg)="s57.1"> KDE su は、 kdesud というデーモンを使います。 デーモンは /tmp にあるUNIXソケットにコマンドを教えます。 ソケットのモードは 0600 なので、だた、あなたのユーザー IDのみがそれに接続することが出来ます。 パスワード保持が有効になっていると、 KDE su はこのデーモンを通してコマンドを実行します。 それは、上記にあるように、コマンドとroot のパスワードをそのソケットに書き込み、 そして、デーモンは " su" を使ってそのコマンドを実行します。 このあと、コマンドと、パスワードは捨てられません。代わって、それらは指定された時間だけ保持されます。 これは、コントロールモジュールの中のタイムアウト値です。 もし、この期間中に、同じコマンドの他のリクエストが来ても、クライアントはパスワードを入力する必要はありません。 あなたのアカウントを打破したクラッカーがデーモンからパスワードを盗む(例えば、デバッガを使って)のを防ぐために、 デーモンは set-group-id nogroup でインストールされています。 これは、全ての一般ユーザー(あなたを含めて)が、 kdesud プロセスからパスワードを取得することを防ぐはずです。 また、デーモンは環境変数 DISPLAYに、デーモンが起動された時のその値をセットします。 クラッカーが唯一することの出来るのは、アプリケーションをあなたのディスプレイ上で実行する、ということだけです。 <br>
+<hr>
+(src)="s40.1"> Un point faible dans ce schéma est que le programme que vous exécutez n' a peut être pas été écrit avec un grand souci de sécurité ( comme c' est le cas pour les programmes setuid root ) . <br>
+(src)="s40.2"> Ceci signifie que ce programme pourrait avoir des débordements de tampons ( " buffer overruns " ) ou d' autres faiblesses qu' un hacker pourrait utiliser . <br>
+(trg)="s58.1">この解決策の弱点は、恐らく、あなたが実行するプログラムはセキュリティーを考慮にいれて書かれていない、いう点です。 (例えば、setuid のrootのプログラムなど。) これは、それらのプログラムはバッファーオーバーラン、もしくは、その他の問題を持っている可能性があるということを意味していて、 そして、クラッカーはそれらの問題を見付け出すことが出来ます。<br>
+<hr>
+(src)="s41.1"> La conservation des mots de passe est donc le fruit d' un compromis entre confort et sécurité . <br>
+(src)="s41.2"> Je vous incite à y réfléchir et à décider par vous-même si vous souhaitez vous en servir ou pas . <br>
+(trg)="s59.1">パスワード保持機能を使用するかどうかは、セキキュリティーと便利さの兼ね合いに依ります。 その機能を使いたいかどうかを良く考えて、自分で決めることを、私は勧めます。<br>
+<hr>
+(src)="s42.1"> Auteur <br>
+(src)="s43.1"> KDE su <br>
+(trg)="s60.1">作者<br>
+<hr>
+(src)="s44.1"> Copyright 2000 Geert Jansen <br>
+(src)="s45.1"> KDE su est écrit par Geert Jansen . <br>
+(trg)="s61.1">KDE su<br>
+<hr>
+(src)="s45.2"> Il est par certains aspects basé sur le KDE su de Pietro Iglio , version 0.3. <br>
+(src)="s45.3"> Pietro et moi nous sommes mis d' accord pour que je me charge de la maintenance de ce programme à l' avenir . <br>
+(trg)="s62.1">Copyright 2000 Geert Jansen<br>
+<hr>
+(src)="s46.1"> L' auteur peut être joint par email à g.t.jansen@stud.tue.nl . <br>
+(src)="s46.2"> Merci de me signaler tous les bugs que vous pourriez rencontrer afin que je les résolve . <br>
+(trg)="s63.1"> KDE su は Geert Jansen によって書かれました。 Pietro Iglio の KDE su バージョン 0.3 に基づいたsomewhatです。 Pietro と 私は、将来私がこのプログラムの保守をしていくことに合意しています。 <br>
+<hr>
+(src)="s46.3"> Si vous avez une suggestion , n' hésitez pas à m' en faire part . <br>
+(src)="sgnu-fdl.1"> Cette documentation est soumise aux termes de la Licence de Documentation Libre GNU ( GNU Free Documentation License ) . <br>
+(trg)="s64.1">作者とは g.t.jansen@stud.tue.nl へのメールで連絡を取ることが出来ます。 バグがあれば、それを私がf修正出来るように、連絡して下さい。 もし提案があれば、気楽に連絡してください。 <br>
+<hr>
+(src)="s47.1"> Ce programme est soumis aux termes de la License Artistique . <br>
+(src)="s48.1"> Installation <br>
+(trg)="sgnu-fdl.1">This documentation is licensed under the terms of the GNU Free Documentation License. <br>
+<hr>
+(src)="s49.1"> Téléchargement <br>
+(src)="s50.1"> KDE su se trouve dans le paquetage kdebase à l' adresse ftp ://ftp.kde.org/pub/kde/ , le site FTP principal du projet KDE . <br>
+(trg)="s65.1">This program is licensed under the terms of the Artistic License. <br>
+<hr>
+<p>
+
+# fr/docs/kdebase/khelpcenter/contact.docbook.xml.gz<br>
+# ja/docs/kdebase/khelpcenter/contact.docbook.xml.gz
+
+<p><hr>
+(src)="s1.1"> Contacter l' équipe de KDE <br>
+(trg)="s1.1"> KDE チーム と 連絡 を 取る <br>
+<hr>
+(src)="s2.1"> Listes de diffusion <br>
+(trg)="s2.1"> メーリングリスト <br>
+(trg)="s3.1"> KDE プロジェクト で は いくつか の メーリングリスト を 運用 し て い ます 。 現在 運用 し て いる メーリングリスト について は 下 を ご覧 ください 。 メーリングリスト の 過去 の 記事 は メーリングリスト の アーカイブ を 参照 し て ください 。 <br>
+<hr>
+(src)="s3.1"> Il existe plusieurs listes de diffusion pour KDE . <br>
+(trg)="s4.1"> kde - request @ kde . org - KDE <br>
+(trg)="s5.1"> KDE について の 全般 的 な 話題 <br>
+<hr>
+(src)="s3.2"> Voir ci-dessous la liste actuelle . <br>
+(trg)="s6.1"> kde - announce - request @ kde . org - kde - announce <br>
+<hr>
+(src)="s3.3"> Vous pouvez trouver les plus anciennes contributions sur les archives des listes de diffusion . <br>
+(trg)="s7.1"> 新しい KDE アプリケーション の アナウンス <br>
+(trg)="s8.1"> kde - user - request @ kde . org - kde - user <br>
+<hr>
+(src)="s4.1"> kde-request@kde.org - KDE <br>
+(trg)="s9.1"> ユーザー の 相互 協力 <br>
+<hr>
+(src)="s5.1"> Pour les discussion d' ordre général <br>
+(trg)="s10.1"> kde - devel - request @ kde . org - kde - devel <br>
+(trg)="s11.1"> 開発 者 用 です 。 <br>
+<hr>
+(src)="s6.1"> kde-announce-request@kde.org - kde-announce <br>
+(trg)="s12.1"> kde - licensing - request @ kde . org - kde - licensing <br>
+(trg)="s13.1"> ライセンス に関する 議論 <br>
+<hr>
+(src)="s7.1"> Annonces des nouvelles applications pour KDE <br>
+(trg)="s14.1"> kde - look - request @ kde . org - kde - look <br>
+(trg)="s15.1"> 「 ルックアンドフィール 」 に関する 議論 <br>
+<hr>
+(src)="s8.1"> kde-request@kde.org - kde <br>
+(trg)="s16.1"> kde - artists - request @ kde . org - kde - artists <br>
+<hr>
+(src)="s9.1"> Entraide des utilisateurs <br>
+(trg)="s17.1"> アイコ ン や その他 の アート ワーク 作成 <br>
+<hr>
+(src)="s10.1"> kde-devel-request@kde.org - kde-devel <br>
+(trg)="s18.1"> kde - i 1 8 n - doc - request @ kde . org - kde - 1 8 n - doc <br>
+<hr>
+(src)="s11.1"> Pour les développeurs . <br>
+(trg)="s19.1"> 国際 化 と ドキュメント の 発行 <br>
+(trg)="s20.1"> http : / / i 1 8 n . kde . org / teams / <br>
+<hr>
+(src)="s12.1"> kde-licensing-request@kde.org - kde-licensing <br>
+(trg)="s21.1"> 各国 語 へ の ローカライズ に関する 情報 ( ユーザ の メーリングリスト や WEB サイト も 含め て ) について は 、 上記 URL の 翻訳 チーム の ページ を チェック し て 下さい 。 <br>
+(trg)="s24.1"> 上記 の アドレス は 参加 と 脱退 の 為 だけ の もの です 。 メーリングリスト に 参加 する と 、 メーリングリスト へ の メッセージ の 送信 方法 や 、 メーリングリスト の オプション の 変更 方法 が 記述 さ れ た メッセージ が 送ら れ て 来る でしょ う 。 <br>
+<hr>
+(src)="s13.1"> Discussions sur les problèmes de licence <br>
+(trg)="s25.1"> メーリングリスト に ポスト つもり で 上記 の アドレス に ポスト し ない よう お願い 致し ます 。 <br>
+(trg)="s26.1"> HTML メール で リクエスト を 送ら ない で ください 。 それ は 、 HTML メール で 送る と 、 メール サーバー が あなた の リクエスト を うまく 処理 でき ない こと が ある から です 。 また 、 登録 する アドレス が From : に ある アドレス と 同じ なら ば 、 件名 ( Subject ) に 入力 する 行 から アドレス を 省略 する こと が でき ます 。 <br>
+<hr>
+(src)="s14.1"> kde-look-request@kde.org - kde-look <br>
+(trg)="s27.1"> 訳注 ： ここ から は 日本 KDE ユーザ 会 の 情報 です 。 <br>
+(trg)="s28.1"> また 、 日本 KDE ユーザー 会 で は 日本語 で 議論 できる メーリングリスト を 運用 し て い ます 。 現在 日本 KDE ユーザー 会 で 運用 し て いる メーリングリスト について は 以下 を ご覧 ください 。 メーリングリスト の 過去 の 記事 について は 、 メーリングリスト の アーカイブ を 参照 し て ください 。 <br>
+<hr>
+(src)="s15.1"> Discussions sur l' apparence et l' ergonomie <br>
+(trg)="s29.1"> Kuser - ctl @ kde . gr . jp - Kuser <br>
+(trg)="s30.1"> 一般 ユーザ 向け <br>
+<hr>
+(src)="s16.1"> kde-artists-request@kde.org - kde-artists <br>
+(trg)="s31.1"> Kdeveloper - ctl @ kde . gr . jp - Kdeveloper <br>
+<hr>
+(src)="s17.1"> Création d' icônes et autres oeuvres d' art <br>
+(trg)="s32.1"> 開発 者 / 翻訳 者 向け <br>
+(trg)="s34.1"> 例 : subscribe Sora Hanawa <br>
+<hr>
+(src)="s18.1"> kde-doc-english-request@kde.org - kde-doc-english <br>
+(trg)="s36.1"> 上記 の アドレス は 参加 と 脱退 の 為 だけ の もの です 。 メーリングリスト に 参加 する と 、 メーリングリスト へ の メッセージ の 送信 方法 や 、 メーリングリスト の オプション の 変更 方法 が 記述 さ れ た メッセージ が 送ら れ て 来る でしょ う 。 <br>
+(trg)="s37.1"> メーリングリスト に ポスト つもり で 上記 の アドレス に ポスト し ない よう お願い 致し ます 。 <br>
+<hr>
+(src)="s19.1"> Pour ceux qui désirent participer à la rédaction des documentations de KDE . <br>
+(trg)="s39.1"> KDE 開発 者 の 連絡 先 <br>
+(trg)="s40.1"> 開発 者 の 連絡 用 メール アドレス は 、 個々 の アプリケーション の 文書 で 見つける こと が でき ます 。 <br>
+<hr>
+(src)="s20.1"> kde-i18n-doc-request@kde.org - kde-18n-doc <br>
+(src)="s21.1"> Internationalisation et documentation <br>
+(trg)="s41.1"> 公式 な 連絡 先 <br>
+(trg)="s42.1"> もし KDE プロジェクト に 公式 な 形 で 連絡 を 取る 必要 が あれ ば 、 公式 代表 ページ を ご覧 ください 。 <br>
+<hr>
+(src)="s22.1"> http ://i18n.kde.org/teams/ " <br>
+(trg)="s43.1"> 詳細 情報 <br>
+<hr>
+(src)="s23.1"> Cette URL vous permettra d' obtenir des informations propres à chaque langue , par exemple des adresses électroniques ou de sites internet . <br>
+(trg)="s44.1"> KDE について の もっと 詳細 な 情報 は 、 http : / / www . kde . org を ご覧 ください 。 <br>
+(trg)="s45.1"> 訳注 ： 日本 KDE ユーザ グループ の ホームページ は http : / / www . kde . gr . jp です 。 <br>
+<hr>
+<p>
+
+# fr/docs/kdebase/khelpcenter/faq/about.docbook.xml.gz<br>
+# ja/docs/kdebase/khelpcenter/faq/about.docbook.xml.gz
+
+<p><hr>
+(src)="s1.1"> À propos de cette FAQ <br>
+(trg)="s1.1"> この FAQ について <br>
+<hr>
+(src)="s2.1"> Tout d'abord , envoyez -nous toutes les erreurs que vous pourriez trouver . <br>
+(trg)="s2.1"> この FAQ ? について 何 か 手伝い が でき ます か ？ <br>
+<hr>
+(src)="s2.2"> Ensuite , toutes les suggestions que vous pourrez nous donner seront tout aussi appréciées . <br>
+(src)="s2.3"> Encore mieux , tout ce que vous trouverez pas assez clair , et si possible , envoyez -nous l' équivalent qui vous parait plus clair . <br>
+(trg)="s3.1"> まず 、 あなた が 見つけ た 全て の 誤り を 私 たち に 知ら せ て ください 。 また 、 あなた から の どんな 指摘 も 歓迎 し ます 。 望 ま くし は 、 あなた が 分かり にくい と 思う 点 、 そして もし できれ ば 、 あなた が 理解 し 易い と 思う こと を 私 たち に 教え て ください 。 私 たち の メール アドレス は kde - faq @ kde . org です 。 <br>
+<hr>
+(src)="s2.4"> Notre adresse électronique est kde-faq@kde.org . <br>
+(src)="s3.1"> Deuxièmement , envoyez -nous vos solutions aux questions posées régulièrement et qui n' ont pas encore de réponse dans cette FAQ . <br>
+(trg)="s4.1"> 次に 、 この FAQ に は まだ 盛り込ま れ て い ない FAQ の 解決 法 を 送っ て ください 。 私 たち は 出来る だけ 早く それ を 取り込む よう に し ます 。 <br>
+<hr>
+(src)="s4.1"> Dernière possibilité , mais non des moindres , veuillez profiter pleinement de cette FAQ . <br>
+(src)="s4.2"> Lisez attentivement cette FAQ ( et d' autres documentations pertinentes ) avant de poser les questions dans une des nombreuses listes de discussions ou groupes de nouvelles . <br>
+(trg)="s5.1"> 最後 で は ある けれども 重要 な 点 として 、 是非 、 この FAQ . を フル 活用 し て ください 。 様々 な KDE の メーリングリスト や ニュース グループ に 質問 を する 前 に 、 この FAQ . を よく 読ん で ください 。 <br>
+<hr>
+(src)="s5.1"> Vous pouvez aussi envisager de devenir un mainteneur de FAQ . <br>
+(src)="s5.2"> Veuillez vous référer à pour de plus amples détails . <br>
+(trg)="s6.1"> FAQ の メンテ ナ に なり たい と 思わ れ て いる あなた 。 詳細 について は 、 ããè¦§ãã ããã <br>
+<hr>
+(src)="s6.1"> En fait , c' est très facile de devenir un mainteneur d' une FAQ . <br>
+(trg)="s7.1">どうすれば、 FAQのメンテナになれますか? <br>
+<hr>
+(src)="s6.2"> Et nous sommes toujours à la recherche de sang frais ... <br>
+(src)="s6.3"> Envoyez -nous tout simplement un courrier électronique à kde-faq@kde.org . <br>
+(trg)="s8.1"> FAQのメンテナになることは簡単です。私たちは新しい血を受け入れることを望んでいます:-)。 kde-faq@kde.orgにメールを送って下さい。 <br>
+<hr>
+<p>
+
+# fr/docs/kdebase/khelpcenter/faq/configkde.docbook.xml.gz<br>
+# ja/docs/kdebase/khelpcenter/faq/configkde.docbook.xml.gz
+
+<p><hr>
+(src)="s4.1"> Vous pouvez y choisir votre langue et votre localisation . <br>
+(src)="s4.2"> Si KDE ne peut pas trouver une traduction dans la première langue souhaitée , il se retournera vers la langue par défaut . <br>
+(trg)="s1.1"> KDE の 設定 <br>
+<hr>
+(src)="s8.1"> Il est risqué de mettre en oeuvre un login graphique sans vérifier si tout fonctionne auparavant . <br>
+(src)="s8.2"> Si la procédure échoue , il vous faudra beaucoup de temps avant de tout réparer . <br>
+(trg)="s2.1"> KDE で 使用 する 言語 を どう やっ て 設定 すれ ば よい です か ? <br>
+<hr>
+(src)="s10.1"> Si vous possédez un paquet de polices TrueType grâce à Microsoft Windows , éditez le fichier XF86Config pour obtenir les polices à partir du dossier de polices . <br>
+(src)="s10.2"> Ensuite , il suffit de dire à KDE d' utiliser ces nouvelles polices avec l' utilitaire d' administration de police . <br>
+(trg)="s3.1"> KDE の メッセージ で 使用 する 言語 を 設定 する に は 二つ の 方法 が あり ます : <br>
+<hr>
+<p>
+
+# fr/docs/kdebase/khelpcenter/help.docbook.xml.gz<br>
+# ja/docs/kdebase/khelpcenter/help.docbook.xml.gz
+
+<p><hr>
+</body>
+</html>

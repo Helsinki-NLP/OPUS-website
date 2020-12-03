@@ -1,0 +1,368 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# pt/docs/kdeadmin/kwuftpd/index.docbook.xml.gz<br>
+# ru/docs/kdeadmin/kwuftpd/index.docbook.xml.gz
+
+<p><hr>
+(src)="s1.1"> O Manual do kwuftpd <br>
+(trg)="s1.1"> Справочное руководство по kwuftpd <br>
+<hr>
+(src)="s2.1"> É dada permissão para copiar , distribuir e / ou modificar este documento ao abrigo da GNU Free Documentation License , Versão 1.1 ou de uma versão mais recente publicada pela Free Software Foundation ; sem Secções Invariantes , sem Textos de Capa Frontal , e sem Textos de Capa Traseira . <br>
+(src)="s2.2"> Uma cópia desta licença está incluida na . <br>
+(trg)="s2.1"> Разрешается копировать , распространять и / или изменять этот документ на условиях лицензии GNU для свободной документации , версии 1.1 или более поздней , опубликованной Фондом Free Software Foundation ; без неизменямых разделов , без текста на первой странице , без текста на последней странице . Копия лицензии находится здесь . <br>
+<hr>
+(src)="s3.1"> O kwuftpd é uma interface do KDE para editar os ficheiros ftpaccess do wu-ftpd . <br>
+(src)="s4.1"> Introdução <br>
+(trg)="s3.1"> kwuftpd - оболочка KDE для редактирования файла ftpaccess сервера wu-ftpd ' . <br>
+<hr>
+(src)="s5.1"> Os sistemas operativos UNIX são talvez mais conhecidos pelo seu papel nos servidores . <br>
+(trg)="s4.1"> Введение <br>
+<hr>
+(src)="s5.2"> Pode ser difícil , contudo , para os utilizadores configurarem os ficheiros necessários para gerir esses serviços . <br>
+(src)="s5.3"> Ao mesmo tempo , muitos dos distribuidores compensam essa dificuldade lançando sistemas que por omissão têm configurações demasiado permissivas . <br>
+(trg)="s5.1"> Операционная система Unix , быть может , лучше всего известна своими работающими серверами . Тем не менее , пользователям бывает трудно настраивать файлы , необходимые этим сервисам . В тоже время , многие дистрибьюторы обходят эти трудности , поставляя системы с откровенно небезопасными настройками . <br>
+<hr>
+(src)="s6.1"> O kwuftpd é uma interface do KDE para editar os ficheiros ftpaccess do wu-ftpd . <br>
+(src)="s6.2"> O kwuftpd foi desenhado originalmente para o BeroFTPD 1.2.1 e foi adaptado à versão 2.6.1 do wu-ftpd encontrada na versão 7.0 do Red Hat Linux . <br>
+(trg)="s6.1"> kwuftpd - оболочка KDE для редактирования файла ftpaccess сервера wu-ftpd . kwuftpd былизначально написан для BeroFTPD 1.2.1 и был адаптирован для версии 2.6.1 wu-ftpd из RedHat Linux 7.0 . Если вы используете более новую версию wu-ftpd с большими возможностями , вам нужно обновить kwuftpd ( или исправить ftpaccess вручную ) , чтобы их использовать . <br>
+<hr>
+(src)="s6.3"> Se estás a usar uma versão mais recente do wu-ftpd com mais opções terás de actualizar o teu kwuftpd ( ou editar o ftpaccess à mão ) para tirares partido dela . <br>
+(src)="s7.1"> O kwuftpd ainda é beta ; deves fazer uma cópia de segurança do teu ficheiro ftpaccess antes de o editares com o kwuftpd . <br>
+(trg)="s7.1"> kwuftpd все еще бета ; сделайте резервную копию вашего файла ftpaccess перед редактированием его kwuftpd . <br>
+<hr>
+(src)="s8.1"> O kwuftpd foi criado pelo Bernhard Rosenkraenzer bero@redhat.com e é ( c ) 2000 Red Hat Inc . <br>
+(trg)="s8.1"> kwuftpd был написан Bernhard Rosenkraenzer bero@redhat.com ( c ) 2000 Red Hat , Inc . <br>
+<hr>
+(src)="s9.1"> Avisos <br>
+(trg)="s9.1"> Ответственность <br>
+<hr>
+(src)="s10.1"> Para além dos avisos normais que vêm com o software ( Não nos responsabiblizamos por algum mal que possa ocorrer . ) , deve ser apontado que o kwuftpd controla a possibilidade dos utilizadores se ligarem ao teu sistema e adicionarem , removerem ou modificarem ficheiros . <br>
+(src)="s10.2"> Algumas coisas a ter em conta : <br>
+(trg)="s10.1"> Помимо обычных отказов от ответственности , которые идут с программами ( Мы не отвечаем за все плохое , что может случиться . ) , следует отметить , что kwuftpd управляет способностью пользователей соединяться с вашей системой , добавлять , удалять и изменять файлы . Вот что стоить иметь в виду : <br>
+<hr>
+(src)="s11.1"> O kwuftpd facilita a criação dum servidor seguro - - não garante que fique como tal . <br>
+(src)="s11.2"> Existe uma quantidade de livros , ' sites ' Web e cursos sobre segurança e os administradores devem tirar partido deles . <br>
+(trg)="s11.1"> kwuftpd упрощает настройку защищенного сервера , но не гарантирует этого . Материалы по этому вопросу есть в книгах , на сайтах , и конечно , администраторы должны их изучить . <br>
+<hr>
+(src)="s12.1"> Os exemplos dados nesta documentação pretendem mostrar a operação do kwuftpd . <br>
+(src)="s12.2"> Não são recomendações de segurança e não devem ser tratadas como tal . <br>
+(trg)="s12.1"> Примеры , данные в этой документации предназначены показать работу kwuftpd . Это не рекомендации по безопасности и не должны использоваться как таковые . <br>
+<hr>
+(src)="s13.1"> Não te esqueças de salvaguardar o ficheiro ftpaccess antes de o modificares com o kwuftpd . <br>
+(src)="s14.1"> Configuração básica de FTP <br>
+(trg)="s13.1"> Сделайте резервную копию файла / etc / ftpaccess перед изменением его с помощью kwuftpd . <br>
+<hr>
+(src)="s15.1"> O kwuftpd só vale a pena num sistema com um servidor de FTP funcional . <br>
+(trg)="s14.1"> Базовая настройка FTP <br>
+<hr>
+(src)="s15.2"> A configuração dum servidor está fora do âmbito deste documento , mas como resumo : <br>
+(src)="s16.1"> o wu-ftpd ou um servidor de FTP semelhante devem estar instalados . <br>
+(trg)="s15.1"> kwuftpd полезна на системе с сервером FTP . Настройка сервера не входит в этот документ , но если вкратце : <br>
+<hr>
+(src)="s16.2"> O pacote anonftp também pode ser útil para permitir o FTP anónimo . <br>
+(src)="s17.1"> O ficheiro / etc / inetd.conf deve conter uma linha do estilo : <br>
+(trg)="s16.1"> wu-ftpd или похожий сервер FTP должен быть установлен . Пакет anonftp также будет полезен для организации анонимного FTP . <br>
+<hr>
+(src)="s18.1"> Descomenta esta linha retirando o # do início da linha . <br>
+(trg)="s17.1"> Файл / etc / inetd.conf должен содержать строку типа : <br>
+<hr>
+(src)="s18.2"> Se o teu sistema não tinha a linha comentada , aceita como um aviso e comenta os outros serviços que não quiseres . <br>
+(src)="s18.3"> Reinicia o / etc / inetd.conf ( através de / etc / rc.d / init.d / inet restart na linha de comandos do Red Hat e sistemas semelhantes . ) <br>
+(trg)="s18.1"> Уберите символ комментария # в начале строки . Если ваша система поставлена с уже раскомментированной строкой , примите это как предупреждение и закоментируйте все , что вам не нужно . Перезапустите / etc / inetd.conf . ( Введите / etc / rc.d / init.d / inet restart в командной строке на Red Hat-подобных системах . ) <br>
+<hr>
+(src)="s19.1"> Usar o kwuftpd <br>
+(trg)="s19.1"> Использование kwuftpd <br>
+<hr>
+(src)="s20.1"> Iniciar o kwuftpd <br>
+(trg)="s20.1"> Запуск kwuftpd <br>
+<hr>
+(src)="s21.1"> Ou escreve kwuftpd na linha de comandos . <br>
+(trg)="s22.1"> О пользователях FTP <br>
+<hr>
+(src)="s22.1"> Acerca das contas de FTP <br>
+(src)="s23.1"> O kwuftpd normalmente pergunta ao utilizador para distinguir entre três tipos de utilizadores : <br>
+(trg)="s23.1"> kwuftpd часто предлагает выбрать один из трех типов пользователей : <br>
+<hr>
+(src)="s24.1"> Anónimo <br>
+(trg)="s24.1"> Анонимный <br>
+<hr>
+(src)="s25.1"> Para usar por qualquer pessoa que possa ligar-se ao servidor ; estes utilizadores ligam-se como ftp ou anonymous e indicam como senha o seu endereço de email . <br>
+(trg)="s25.1"> Для использования любым , кто хочет поключиться к серверу , эти пользователи входят как ftp или anonymous и вводят свой почтовый адрес в качестве пароля . <br>
+<hr>
+(src)="s26.1"> Convidado <br>
+(trg)="s26.1"> Гость <br>
+<hr>
+(src)="s27.1"> Os utilizadores com contas de FTP no / etc / ftpusers mas que não tenham contas reais no sistema . <br>
+(trg)="s27.1"> Пользователи с FTP -доступом , прописанные в файле / etc / ftpusers , но не имеющие права полного входа в систему . <br>
+<hr>
+(src)="s28.1"> Real <br>
+(trg)="s28.1"> Реальный <br>
+<hr>
+(src)="s29.1"> Utilizadores com contas ( áreas ) no sistema . <br>
+(src)="s30.1"> Comandos do Menu <br>
+(trg)="s29.1"> Пользователь с правом доступа в систему . <br>
+<hr>
+(src)="s31.1"> O menu Ficheiro <br>
+(trg)="s30.1"> Команды меню <br>
+<hr>
+(src)="s32.1"> Ficheiro Ler o / etc / ftpaccess <br>
+(trg)="s31.1"> Меню Ð¤Ð°Ð¹Ð» <br>
+<hr>
+(src)="s33.1"> Abre o / etc / ftpaccess , o ficheiro normal de configuração do wu-ftpd , para o editar . <br>
+(src)="s34.1"> Ficheiro Ler Outro Ficheiro <br>
+(trg)="s33.1"> Открыть / etc / ftpaccess , стандартный файл настроек wu-ftpd , для редактирования . <br>
+<hr>
+(src)="s35.1"> Abre um ficheiro diferente para o editar . <br>
+(src)="s35.2"> É útil se quiseres experimentar com um ficheiro diferente antes de tornares efectivas as alterações no / etc / ftpaccess . <br>
+(trg)="s35.1"> Открыть другой файл для редактирования . Полезно , если вы хотите поэкспериментировать перед внесением изменений в / etc / ftpaccess . <br>
+<hr>
+(src)="s36.1"> Ficheiro Gravar o / etc / ftpaccess <br>
+(src)="s37.1"> Grava as alterações no ficheiro / etc / ftpaccess . <br>
+(trg)="s37.1"> Сохранить изменения в / etc / ftpaccess . <br>
+<hr>
+(src)="s38.1"> Ficheiro Gravar Outro Ficheiro <br>
+(src)="s39.1"> Grava as alterações noutro ficheiro a especificar . <br>
+(trg)="s39.1"> Сохранить изменения в указанном файле . <br>
+<hr>
+(src)="s40.1"> Ficheiro Sair <br>
+(src)="s41.1"> Sai do kwuftpd . <br>
+(trg)="s41.1"> Закрыть kwuftpd . <br>
+<hr>
+(src)="s42.1"> O menu Ajuda <br>
+(src)="s43.1"> F1 Ajuda Conteúdo.. . <br>
+(trg)="s42.1"> Меню ÐÐ¾Ð¼Ð¾ÑÑ <br>
+<hr>
+(src)="s44.1"> Invoca a ajuda do KDE , aberta na documentação do kwuftpd . ( este documento ) . <br>
+(trg)="s44.1"> Открывает данный документ . <br>
+<hr>
+(src)="s46.1"> Muda o cursor do rato para uma mistura de uma seta com um ponto de interrogação . <br>
+(src)="s46.2"> Ao carregares nos itens do kwuftpd irás abrir uma janela de ajuda ( se existir alguma para o item em particular ) que explica a função do item . <br>
+(trg)="s48.1"> Открывает диалог сообщения об ошибке в kwuftpd . <br>
+<hr>
+(src)="s47.1"> Ajuda Comunicar Erro.. . <br>
+(src)="s48.1"> Abre a janela de Relato de Erros onde podes comunicar um erro ou pedir uma funcionalidade . <br>
+(trg)="s50.1"> Предоставляет информацию о kwuftpd . <br>
+<hr>
+(src)="s50.1"> Isto irá mostrar a versão e as informações do autor . <br>
+(src)="s51.1"> Ajuda Acerca do KDE <br>
+(trg)="s52.1"> Предоставляет информацию о проекте KDE . <br>
+<hr>
+(src)="s52.1"> Isto mostra a versão do KDE bem como outras informações básicas . <br>
+(trg)="s53.1"> Классы пользователей <br>
+<hr>
+(src)="s53.1"> Classe de Utilizadores <br>
+(src)="s54.1"> O Painel Classes de Utilizadores <br>
+(trg)="s54.1"> Панель ÐÐ»Ð°ÑÑÐ¾Ð² Ð¿Ð¾Ð»ÑÐ·Ð¾Ð²Ð°ÑÐµÐ»ÐµÐ¹ <br>
+<hr>
+(src)="s55.1"> Este painel permite-te criar classes de utilizadores para certos endereços IP ou blocos de endereços e controlar os privilégios dessas classes . <br>
+(src)="s55.2"> Por exemplo , isto permite-te dar aos utilizadores anónimos ou convidados mais permissões se estes se ligarem de certas máquinas . <br>
+(trg)="s55.1"> Эта панель позволяет вам создать классы пользователей для определенных IP адресов , или блоков адресов , и контролировать привилегии этих классов . Например , это позволит вам установить для анонимных или гостевых пользователей больше прав , чем для нормальных , если они зашли с определенных компьютеров . <br>
+<hr>
+(src)="s56.1"> Para criares uma nova classe , carrega no botão Adicionar Classe e , na janela resultante disso , indica o nome da nova classe , os níveis de privilégios que podem pertencer a essa classe ( mais acerca disto em baixo ) e os endereços IP para essa classe . <br>
+(src)="s56.2"> Um carácter * pode ser usado para definir um bloco de endereços . ( Por exemplo 127.0.0.* inclui todos os utilizadores locais ) . <br>
+(trg)="s56.1"> Чтобы создать новый класс , нажмите кнопку Добавить класс и в показанном окне диалога , введите имя нового класса , уровень привилегий , который принадлежит классу ( подробнее об этом см . ниже ) и IP адреса для этого класса . Символ * может быть использован для задания блоков адресов . ( Например , 127.0.0.* включает всех локальных пользователей . ) . Когда закончите , нажмите OK . <br>
+<hr>
+(src)="s56.3"> Logo que esteja pronto , carrega em OK . <br>
+(src)="s57.1"> De volta ao painel Classes de Utilizadores , podes seleccionar uma classe e modificar a sua descrição e comportamento . <br>
+(trg)="s57.1"> Вернувшись в панель Классы пользователей вы можете выбрать и изменить его описание и поведение . <br>
+<hr>
+(src)="s57.2"> O endereço IP pode ser modificado . <br>
+(src)="s57.3"> A classe pode ser definida para incluir os utilizadores anónimos , convidados e / ou reais desse endereço . <br>
+(trg)="s57.2"> IP также может быть изменен . Класс может быть определен включающим анонимных , гостевых и / или реальных пользователей с этого адреса . Галочка Автогруппировать в , заставит имена в классе быть принадлежащими к выбранной группе и даст им ее привилегии . <br>
+<hr>
+(src)="s57.4"> Carregando no botão Auto-agrupar em faz com que os utilizadores na classe sejam atribuídos ao grupo seleccionado e conferidos os seus privilégios . <br>
+(src)="s58.1"> O lado direito do painel permite atribuir às classes limites no número de ligações simultâneas em certos intervalos de tempo . <br>
+(trg)="s58.1"> Правая сторона панели позволит классам ограничить число одинаковых соединений за указанное время . Также , вы можете указать какое сообщение будет показано , когда пользователь достигнет предела . <br>
+<hr>
+(src)="s58.2"> Podes também especificar a mensagem a mostrar quando o limite de utilizadores é excedido . <br>
+(src)="s59.1"> Na imagem , os utilizadores reais que se ligam a partir de 127.0.0.* são auto-agrupados ao jsinger e só é permitido um utilizador dessa classe em cada momento . <br>
+(trg)="s59.1"> На рисунке реальный пользователь , входящий с 127.0.0.* автоматически группируется в jsinger , и в этом классе одновременно может работать только один пользователь . <br>
+<hr>
+(src)="s60.1"> Directorias <br>
+(trg)="s60.1"> Каталоги <br>
+<hr>
+(src)="s61.1"> O Painel Directorias <br>
+(trg)="s61.1"> Панель Каталоги <br>
+<hr>
+(src)="s62.1"> Este painel permite-te especificar a directoria de base para os utilizadores anónimos e convidados ( os utilizadores reais vêem o sistema de ficheiros reais ) . <br>
+(src)="s62.2"> Também te permite especificar a senha e os ficheiros de senhas ' shadow ' a serem usados . <br>
+(trg)="s62.1"> Данная панель позволяет вам указать корневой каталог для анонимных игостевых пользователей ( реальные пользователи видят реальную файловую систему ) . Это также позволит вам указать основной и теневой файлы паролей . Если файлы не указаны , система будет использовать те , что по умолчанию . <br>
+<hr>
+(src)="s62.3"> Se não for especificado um ficheiro , será usado o ficheiro de sistema por omissão . <br>
+(src)="s63.1"> Na imagem , os utilizadores anónimos vêem o sistema de ficheiros com a sua base em / home / ftp / pub , enquanto que os convidados têm acesso por omissão . <br>
+(trg)="s63.1"> На рисунке анонимный пользователь видит файловую систему , корень которой - в / home / ftp / pub , в то время как гостевые пользователи имеют доступ по умолчанию . Вместо системного файла паролей используется специальный . <br>
+<hr>
+(src)="s63.2"> São usados ficheiros de senhas de FTP especiais em vez dos ficheiros de sistema . <br>
+(trg)="s64.1"> Безопасность <br>
+<hr>
+(src)="s64.1"> Segurança <br>
+(src)="s65.1"> O Painel Segurança <br>
+(trg)="s65.1"> Панель Безопасность <br>
+<hr>
+(src)="s66.1"> Este painel permite-te definir várias opções de segurança . <br>
+(trg)="s66.1"> Данная панель позволяет вам указать различные опции безопасности . Окно Недоступные позволяет указать файлы или каталоги , заблокированные от выгрузки . Нажмите кнопку Добавить и выберите файл , который будет блокирован . Выберите запись и нажмите Убрать , чтобы удалить файл из списка . <br>
+<hr>
+(src)="s66.2"> A janela Inacessíveis define quais os ficheiros ou directorias que não podem ser obtidos . <br>
+(src)="s66.3"> Carrega no botão Adicionar e selecciona o ficheiro a ser bloqueado . <br>
+(trg)="s67.1"> Число неправильных входов заставит соединение закрыться после указанного числа неправильных входов в систему . <br>
+<hr>
+(src)="s66.4"> Selecciona uma entrada e carrega em Remover para tirares o ficheiro da lista . <br>
+(src)="s67.1"> O Número máximo de ' logins ' falhados quebra as ligações ao fim do número de tentativas de autenticação falhadas . <br>
+(trg)="s69.1"> Право использовать команды chmod , delete , overwrite , rename и umask может быть расширено или запрещено для анонимных , гостевых и / или реальных пользователей . <br>
+<hr>
+(src)="s69.1"> A permissão de usar os comandos chmod , delete , overwrite , rename e umask pode ser extendida ou negada aos utilizadores anónimos , convidados e / ou reais . <br>
+(src)="s70.1"> Os utilizadores anónimos devem fornecer o seu endereço de email como a senha . <br>
+(trg)="s70.1"> От анонимных пользователей в качестве пароля ожидается ввод почтового адреса . Степень усиления контроля может управляться . <br>
+<hr>
+(src)="s70.2"> O nível de obrigação pode ser controlado . <br>
+(trg)="s71.1"> Нет <br>
+<hr>
+(src)="s71.1"> Não <br>
+(src)="s72.1"> Não há verificação da senha dada . <br>
+(trg)="s72.1"> Без проверки введенного пароля . <br>
+<hr>
+(src)="s73.1"> trivial <br>
+(trg)="s73.1"> обычная <br>
+<hr>
+(src)="s74.1"> A senha tem de conter um carácter @ . <br>
+(src)="s75.1"> RFC822 <br>
+(trg)="s74.1"> Пароль должен содержать символ @ . <br>
+<hr>
+(src)="s76.1"> A senha tem de estar na forma de um endereço válido . <br>
+(trg)="s75.1"> RFC822 <br>
+<hr>
+(src)="s77.1"> Se o botão Aplicar estiver seleccionado , as ligações que falhem o teste serão negadas ; caso contrário será dado um aviso . <br>
+(trg)="s76.1"> Пароль должен быть в форме действительного адреса . <br>
+<hr>
+(src)="s78.1"> Na imagem , as directorias / bin e / sbin e o ficheiro / etc / passwd são proibidos de serem obtidos . <br>
+(src)="s78.2"> Os utilizadores que não enviem endereços de email em conformidade com o RFC822 são avisados . <br>
+(trg)="s77.1"> Если стоит галочка Усиленный , имена , провалившие тест , будут запрещены . В противном случае будет предупреждение . <br>
+<hr>
+(src)="s79.1"> Mensagens <br>
+(trg)="s79.1"> Сообщения <br>
+<hr>
+(src)="s80.1"> O Painel Mensagens <br>
+(trg)="s80.1"> Панель Сообщения <br>
+<hr>
+(src)="s81.1"> Este painel permite-te especificar as mensagens a serem mostradas ao utilizador ligado . <br>
+(src)="s82.1"> Selecciona um ficheiro para a mensagem a mostrar na ligação ( antes da autenticação ) . <br>
+(trg)="s81.1"> Данная панель позволяет вам указать сообщение , которое будет показано вошедшему пользователю . <br>
+<hr>
+(src)="s82.2"> Alguns clientes extremamente antigos de FTP podem ficar confusos com esta mensagem . <br>
+(src)="s83.1"> O nome da máquina pode ser especificado . <br>
+(trg)="s82.1"> Выберите файл , который будет выведен при соединении ( перед входом в систему ) . Некоторые особо старые FTP клиенты могут сбоить при его обработке . <br>
+<hr>
+(src)="s83.2"> Isto será comunicado ao utilizador na autenticação , e pode ser inserido noutras mansagens ( como %L ) . <br>
+(src)="s83.3"> Se não for indicado outro nome , será usado o verdadeiro nome da máquina . <br>
+(trg)="s83.1"> Указанное здесь имя хоста будет показано при входе в систему и при обработке %L в других сообщениях.Если оно пустое , будет использовано реальное имя вашей машины . <br>
+<hr>
+(src)="s84.1"> De modo igual , pode ser definido o endereço de email do administrador para inserir nas mensagens ( como %E ) . <br>
+(trg)="s84.1"> Адрес электронной почты администратора , подставляемый вместо %E в сообщения . <br>
+<hr>
+(src)="s85.1"> Assinala as opções para que as mensagens e os README s sejam mostrados ao utilizador sempre que o evento que os desencadeia ocorra ( será explicado em baixo) ; caso contrário só serão mostrados da primeira vez . <br>
+(trg)="s85.1"> Галочка заставит сообщения и файлы README показываться каждый раз , при каком-либо событии ( описываются ниже ) . В противном случае , они будут показаны только в первый раз . <br>
+<hr>
+(src)="s86.1"> Carrega no botão Adicionar Mensagem para indicar o textoa ser mostrado ao utilizador . <br>
+(src)="s86.2"> Ser-te-á perguntada a localização do ficheiro de texto , se será mostrado ao se ligar um utilizador ou na mudança para uma dada directoria e se é mostrado para todas as classes de utilizadores ou se só para algumas . <br>
+(trg)="s86.1"> Нажмите кнопку Добавить сообщение , чтобы показать текст , который увидит пользователь . Вам будет предложено указать расположение текстового файла , а также указать будет ли он отображен при входе или при смене каталога , и будет ли он показан для всех классов пользователей или нет . <br>
+<hr>
+(src)="s87.1"> Da mesma maneira , o utilizador pode ser notificado dos ficheiros README ao se ligar ou ao mudar para uma directoria . <br>
+(trg)="s87.1"> Точно также пользователь может быть уведомлен файлом README при входе в систему или смене каталога . <br>
+<hr>
+(src)="s88.1"> Na imagem , o texto em / home / ftp / welcome.txt será mostrado quando um utilizador se ligar . <br>
+(src)="s88.2"> A máquina camelot e o endereço do administrador jsinger@leeta.net será inserido nas mensagens mas ainda não se definiram as mensagens ou os README s . <br>
+(trg)="s88.1"> На рисунке , текст в / home / ftp / welcome.txt будет отображен присоединении . Имя хоста camelot и почтовый адрес администратора jsinger@leeta.net будут вставлены в сообщение , но сообщение или файлы README еще не определены . <br>
+<hr>
+(src)="s89.1"> Registo <br>
+(trg)="s89.1"> Журналирование <br>
+<hr>
+(src)="s90.1"> O Painel Registo <br>
+(trg)="s90.1"> Панель Журналирование <br>
+<hr>
+(src)="s91.1"> Este painel permite-te controlar quais as actividades que serão registadas ( no ficheiro / var / log / xferlog ) . <br>
+(src)="s91.2"> Os utilizadores anónimos , convidados e reais podem ter diferentes tipos de eventos registados , incluindo os comandos introduzidos , os envios , obtenções e violações de segurança ( como autenticações falhadas ) . <br>
+(trg)="s91.1"> Эта панель позволяет указать , какой вид деятельности будет журналироваться ( в файл / var / log / xferlog ) . Анонимные , гостевые и реальные пользователи могут иметь различные журналируемые события , включая выполнение команд , загрузку , выгрузку и нарушение безопасности (типа ошибок входа ) . <br>
+<hr>
+(src)="s92.1"> Se seleccionares Redireccionar o registo para o syslog os registos vão para o ficheiro de registo do sistema em vez de ir para o do FTP . <br>
+(trg)="s92.1"> Галочка Перенаправить журнал в syslog пошлет записи протокола в системный журнал вместо журнала FTP . <br>
+<hr>
+(src)="s93.1"> Pode ser enviado um ' email ' para o administrador quando são enviados ficheiros para o servidor . <br>
+(src)="s93.2"> O endereço From : das mensagens , o servidor de email e o endereço do administrador podem ser indicados . <br>
+(trg)="s93.1"> Когда на сервер загружаются файлы , администратору может быть послано почтовое уведомление . Адрес отправителя From : , почтовый сервер и адрес администратора могут быть указаны . <br>
+<hr>
+(src)="s94.1"> Na imagem , todos os comandos e transferências são registados , assim como as violações de segurança dos utilizadores reais . <br>
+(src)="s94.2"> Os envios são assinalados por uma mensagem ao admin de Aviso de Envio enviado através do servidor de email por omissão . <br>
+(trg)="s94.1"> На рисунке , все команды и передачи журналируются , так же как и нарушения безопасности реальными пользователями . О загрузке на сервер сигнализируется сообщением admin от Upload Notice через почтовый сервер по-умолчанию . <br>
+<hr>
+(src)="s95.1"> Rácios <br>
+(trg)="s95.1"> Соотношения <br>
+<hr>
+(src)="s96.1"> O Painel Rácios <br>
+(trg)="s96.1"> Панель Соотношения <br>
+<hr>
+(src)="s97.1"> Este painel permite-te restringir a utilização dos utilizadores anónimos e convidados . <br>
+(src)="s97.2"> Cada uma destas restrições podem ser aplicadas aos utilizadores anónimos ou convidados . <br>
+(trg)="s97.1"> Данная панель позволяет вам ограничить использование анонимных и гостевых пользователей . Каждое из ограничений может быть применено к анонимному или гостевому пользователю . <br>
+<hr>
+(src)="s98.1"> Rácio de upload / download <br>
+(trg)="s98.1"> Соотношение загрузки / выгрузки <br>
+<hr>
+(src)="s99.1"> Por exemplo , se definires isto como 1:5 significa que os utilizadores têm de enviar 1 megabyte por cada 5 megabytes recebidos . <br>
+(src)="s99.2"> A definição disto para um valor óptimo é a chave para o teu sucesso como um aspirante de ' w4r3z kiddi3 ' . <br>
+(trg)="s99.1"> На пример , устанавливая соотношение 1:5 заставит пользователей загрузить 1 мегабайт на каждые 5 выгруженных мегабайт . Установка в оптимальное значение - это ключ к успеху для начинающих кул-хацкеров . <br>
+<hr>
+(src)="s100.1"> Limite de tempo <br>
+(trg)="s100.1"> Лимит времени <br>
+<hr>
+(src)="s101.1"> Permite aos utilizadore ligarem-se por este período de tempo . <br>
+(trg)="s101.1"> Позволяет пользователям соединяться на указанное время . <br>
+<hr>
+(src)="s102.1"> Limite de upload <br>
+(trg)="s102.1"> Лимит загрузки <br>
+<hr>
+(src)="s103.1"> Define o número máximo de ' bytes ' que podem ser enviados por sessão . <br>
+(trg)="s103.1"> Устанавливает максимальное число байт , которые можно загрузить на сервер за сеанс . <br>
+<hr>
+(src)="s104.1"> Limite de download <br>
+(trg)="s104.1"> Лимит скачивания <br>
+<hr>
+(src)="s105.1"> Define o número máximo de ' bytes ' que podem ser recebidos por sessão . <br>
+(trg)="s105.1"> Устанавливает максимальное число байт , которое можно скачать с сервера за один сеанс . <br>
+<hr>
+(src)="s106.1"> Os ficheiros e directorias podem ser excluídos dos limites de envios e recepções . <br>
+(trg)="s106.1"> Файлы и каталоги могут быть освобождены от лимитов загрузки и скачивания . <br>
+<hr>
+(src)="s107.1"> Na imagem , os rácios estão desligados , os utilizadores anónimos podem-se ligar por 15 minutos , a 10 megabytes de ' downloads ' por ligação . <br>
+(trg)="s107.1"> На рисунке соотношения выключены , анонимным пользователям дано 15 минут и разрешено скачать 10 мегабайт за один раз . <br>
+<hr>
+(src)="s108.1"> ' Uploads ' <br>
+(trg)="s108.1"> Загрузка <br>
+<hr>
+(src)="s109.1"> O Painel Uploads <br>
+(trg)="s109.1"> Панель Загрузка <br>
+<hr>
+(src)="s110.1"> Este painel permite-te controlar onde e como os utilizadores podem deixar os seus ficheiros . <br>
+(src)="s110.2"> Carrega em Adicionar para um novo conjunto de regras , Editar para modificar o conjunto escolhido e Apagar para removeres o conjunto seleccionado . <br>
+(trg)="s110.1"> Данная панель позволяет указать , куда и как пользователям разрешено загружать файлы . Нажмите кнопку Добавить , чтобы установить новое правило , кнопка Редактировать для правки , и кнопка Удалить для удаления выбранного набора . <br>
+<hr>
+(src)="s111.1"> Cada conjunto aplica-se aos utilizadores com uma dada directoria de base e afecta-se a uma directoria de envio ( 'upload' ) . <br>
+(src)="s111.2"> A directoria de envio pode ser abrangente ( por exemplo , o / home / ftp / upload / * inclui todo o conteúdo de / home / ftp / upload ) . <br>
+(trg)="s111.1"> Каждый набор правил оперирует с указанным корневым каталогом и эффективен на указанный каталог загрузки . Каталог загрузки может быть глобализирован ( например , / home / ftp / upload / * включает все содержимое / home / ftp / upload ) . <br>
+<hr>
+(src)="s112.1"> Os envios podem ser permitidos ou proibidos , e as permissões dos ficheiros criados e o seu dono e grupo podem ser alterados . <br>
+(src)="s112.2"> A capacidade criar novas directorias dentro da directoria em questão pode ser permitida ou não . <br>
+(trg)="s112.1"> Загрузка может быть разрешена и запрещена . Могут быть установлены права владельца и группы создаваемых файлов . Возможность создания новых каталогов с уже существующими также может даваться или запрещаться . <br>
+<hr>
+(src)="s113.1"> Servidores Virtuais <br>
+(trg)="s113.1"> Виртуальные хосты <br>
+<hr>
+</body>
+</html>

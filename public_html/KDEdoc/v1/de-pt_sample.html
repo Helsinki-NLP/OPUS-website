@@ -1,0 +1,326 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# de/docs/kdeadmin/kcron/index.docbook.xml.gz<br>
+# pt/docs/kdeadmin/kcron/index.docbook.xml.gz
+
+<p><hr>
+(src)="s1.1"> Das Kcron -Handbuch <br>
+(trg)="s1.1"> O Manual do Kcron <br>
+<hr>
+(src)="s2.1"> Kcron ist eine Anwendung , mit der man andere Programme nach Zeitplan starten kann . <br>
+(trg)="s2.1"> Ã‰ dada permissÃ£o para copiar , distribuir e / ou modificar este documento ao abrigo da GNU Free Documentation License , VersÃ£o 1.1 ou de uma versÃ£o mais recente publicada pela Free Software Foundation ; sem SecÃ§Ãµes Invariantes , sem Textos de Capa Frontal , e sem Textos de Capa Traseira . <br>
+<hr>
+(src)="s3.1"> Einleitung <br>
+(trg)="s2.2"> Uma cÃ³pia desta licenÃ§a estÃ¡ incluida na . <br>
+<hr>
+(src)="s4.1"> Kcron ist eine Anwendung , mit der man andere Programme nach einem Zeitplan im Hintergrund laufen lassen kann . <br>
+(trg)="s3.1"> O Kcron Ã© uma aplicaÃ§Ã£o que faz o escalonamento das aplicaÃ§Ãµes a serem executadas . <br>
+(trg)="s4.1"> IntroduÃ§Ã£o <br>
+<hr>
+(src)="s4.2"> Es ist eine graphische Oberfläche für das UNIX -Systemprogramm cron . <br>
+(trg)="s5.1"> O Kcron Ã© uma aplicaÃ§Ã£o para escalonar os programas para serem executados em segundo plano . <br>
+<hr>
+(src)="s5.1"> Benutzung von Kcron <br>
+(trg)="s5.2"> Ã‰ uma interface grÃ¡fica de utilizador para o cron , o escalonador do sistema UNIX . <br>
+<hr>
+(src)="s6.1"> Ihr System muss zuerst den cron-Dämonen crond starten , sonst funktioniert Kcron nicht . <br>
+(trg)="s6.1"> Usar o Kcron <br>
+(trg)="s7.1"> NÃ£o te esqueÃ§as de indicar ao sistema para iniciar antecipadamente o servidor crond , senÃ£o o Kcron nÃ£o irÃ¡ funcionar . <br>
+<hr>
+(src)="s7.1"> Start von Kcron <br>
+(trg)="s8.1"> Arranque do Kcron <br>
+<hr>
+(src)="s8.1"> Beim Start von Kcron sehen Sie eine Liste bereits eingestellter Aufgaben und dazugehöriger Umgebungsvariablen . <br>
+(trg)="s9.1"> Quando o Kcron arranca irÃ¡s ter uma vista geral sobre as tarefas jÃ¡ existentes em escalonamento e as variÃ¡veis de ambiente . <br>
+<hr>
+(src)="s8.2"> Wenn Sie Kcron als " root " benutzen , erscheint dies sowohl für alle Benutzer des Systems als auch für systeminterne Aufgaben . <br>
+(trg)="s9.2"> Se estiveres a correr como administrador , irÃ¡s ver esses itens para todos os utilizadores no computador , assim como as tarefas de sistema escalonadas . <br>
+<hr>
+(src)="s8.3"> Jeder Ordner kann auf- und zugeklappt werden . <br>
+(trg)="s9.3"> Cada uma das pastas pode ser expandida ou fechada . <br>
+<hr>
+(src)="s9.1"> Eingeplante Aufgaben <br>
+(trg)="s10.1"> Tarefas Escalonadas <br>
+<hr>
+(src)="s10.1"> Die eingestellten Aufgaben erscheinen in einem Aufgaben -Ordner . <br>
+(trg)="s11.1"> As tarefas escalonadas aparecem dentro duma pasta Tarefas . <br>
+<hr>
+(src)="s10.2"> Für jede Aufgabe wird angezeigt : <br>
+(trg)="s11.2"> Para cada tarefa escalonada Ã© apresentado o seguinte : <br>
+<hr>
+(src)="s11.1"> Name <br>
+(trg)="s12.1"> Nome <br>
+<hr>
+(src)="s12.1"> Bezeichnung der Aufgabe <br>
+(trg)="s13.1"> Nome para identificar a tarefa escalonada . <br>
+<hr>
+(src)="s13.1"> Wert <br>
+(trg)="s14.1"> Valor <br>
+<hr>
+(src)="s14.1"> Programmname und Parameter . <br>
+(trg)="s15.1"> Ficheiro do programa e os parÃ¢metros . <br>
+<hr>
+(src)="s15.1"> Beschreibung <br>
+(trg)="s16.1"> DescriÃ§Ã£o <br>
+<hr>
+(src)="s16.1"> Ausführliche Beschreibung der eingeplanten Aufgabe . <br>
+(trg)="s17.1"> DescriÃ§Ã£o em lÃ­ngua natural da tarefa escalonada . <br>
+<hr>
+(src)="s17.1"> Bei einer deaktivierten Aufgabe werden Programmname und Parameter nicht angezeigt und unter Beschreibung erscheint deaktiviert . <br>
+(trg)="s18.1"> Se uma tarefa foi desactivada , nenhum programa nem nenhuns parÃ¢metros irÃ£o aparecer , e a descriÃ§Ã£o estÃ¡ desactivada . <br>
+<hr>
+(src)="s18.1"> Umgebungsvariablen <br>
+(trg)="s19.1"> VariÃ¡veis de Ambiente <br>
+<hr>
+(src)="s19.1"> Umgebungsvariablen erscheinen in einem Variablen -Ordner . <br>
+(trg)="s20.1"> As variÃ¡veis de ambiente aparecem dentro duma pasta VariÃ¡veis . <br>
+<hr>
+(src)="s19.2"> Für jede Variable wird angezeigt : <br>
+(trg)="s20.2"> Para cada variÃ¡vel de ambiente , Ã© mostrado o seguinte : <br>
+<hr>
+(src)="s20.1"> Name <br>
+(trg)="s21.1"> Nome <br>
+<hr>
+(src)="s21.1"> Name der Variablen . <br>
+(trg)="s22.1"> Nome da variÃ¡vel . <br>
+<hr>
+(src)="s22.1"> Wert <br>
+(trg)="s23.1"> Valor <br>
+<hr>
+(src)="s23.1"> Wert der Variablen . <br>
+(trg)="s24.1"> Valor da variÃ¡vel . <br>
+<hr>
+(src)="s24.1"> Beschreibung <br>
+(trg)="s25.1"> DescriÃ§Ã£o <br>
+<hr>
+(src)="s25.1"> Beschreibung der Variablen . <br>
+(trg)="s26.1"> DescriÃ§Ã£o em lÃ­ngua natural da variÃ¡vel . <br>
+<hr>
+(src)="s26.1"> Die hier erscheinenden Umgebungsvariablen setzen die sonst bestehenden Umgebungsvariablen für alle aufgefürten Aufgaben außer Kraft . <br>
+(trg)="s27.1"> As variÃ¡veis de ambiente que aqui aparecem irÃ£o sobrepor qualquer variÃ¡vel de ambiente existente para todas as tarefas escalonadas . <br>
+<hr>
+(src)="s26.2"> Bei einer deaktivierten Variable erscheint als Beschreibung deaktiviert . <br>
+(trg)="s27.2"> Se uma variÃ¡vel de ambiente foi desactivada , o seu valor nÃ£o aparecerÃ¡ e a descriÃ§Ã£o estarÃ¡ desactivada . <br>
+<hr>
+(src)="s27.1"> Neue Aufgabe hinzufügen <br>
+(trg)="s28.1"> Adicionar Tarefas Escalonadas <br>
+<hr>
+(src)="s28.1"> Der Dialog Aufgabe bearbeiten <br>
+(trg)="s29.1"> Para criar uma nova tarefa escalonÃ¡vel , primeiro selecciona a pasta Tarefas . <br>
+<hr>
+(src)="s29.1"> Kommentar <br>
+(trg)="s30.1"> A Janela Editar Tarefa <br>
+<hr>
+(src)="s30.1"> Hier können Sie eine Beschreibung der Aufgabe eingeben . <br>
+(trg)="s31.1"> ComentÃ¡rio <br>
+(trg)="s32.1"> Indica uma descriÃ§Ã£o da tarefa a escalonar . <br>
+<hr>
+(src)="s31.1"> Programm <br>
+(trg)="s33.1"> Programa <br>
+<hr>
+(src)="s32.1"> Geben Sie hier den Namen des zu startenden Programms ein. <br>
+(trg)="s34.1"> Indica o nome do programa . <br>
+<hr>
+(src)="s32.2"> Sie können entweder einen relativen oder einen absoluten Pfadnamen angeben . <br>
+(trg)="s34.2"> Podes especificar um caminho ou directoria relativo ou absoluto . <br>
+<hr>
+(src)="s32.3"> Wenn Sie das Programm zuerst suchen möchten , drücken Sie Auswählen ... . <br>
+(trg)="s34.3"> Se quiseres procurar pelo programa , carrega em Procurar.. . . <br>
+<hr>
+(src)="s33.1"> Aktiviert <br>
+(trg)="s35.1"> Activa <br>
+<hr>
+(src)="s34.1"> Ob eine Aufgabe ausgeführt wird , können Sie über das Ankreuzfeld Aktiviert bestimmen . <br>
+(trg)="s36.1"> Para activar ou desactivar a tarefa , selecciona ou deselecciona a opÃ§Ã£o Activa . <br>
+<hr>
+(src)="s35.1"> Keine Meldungen <br>
+(trg)="s37.1"> Silencioso <br>
+<hr>
+(src)="s36.1"> Schaltet die Ausgabe des Befehls und der Ausgabe des Befehls ab . <br>
+(trg)="s38.1"> Desliga o registo do comando e do seu resultado . <br>
+<hr>
+(src)="s37.1"> Monate <br>
+(trg)="s39.1"> Meses <br>
+<hr>
+(src)="s38.1"> Wählen Sie die Monate aus , in denen die Aufgabe ausgeführt werden soll . <br>
+(trg)="s40.1"> Selecciona os meses durante os quais a tarefa deve ser executada . <br>
+<hr>
+(src)="s39.1"> Tage im Monat <br>
+(trg)="s41.1"> Dias do MÃªs <br>
+<hr>
+(src)="s40.1"> Wählen Sie die Tage im Monat aus , an denen die Aufgabe ausgeführt werden soll . <br>
+(trg)="s42.1"> Selecciona os meses durante os quais a tarefa deve ser executada . <br>
+<hr>
+(src)="s41.1"> Wochentage <br>
+(trg)="s43.1"> Dias da Semana <br>
+<hr>
+(src)="s42.1"> Wählen Sie die Wochentage aus , an denen die Aufgabe ausgeführt werden soll . <br>
+(trg)="s44.1"> Selecciona os dias da semana nos quais a tarefa deve ser executada . <br>
+<hr>
+(src)="s43.1"> Täglich <br>
+(trg)="s45.1"> Diariamente <br>
+<hr>
+(src)="s44.1"> Stunden <br>
+(trg)="s46.1"> Se queres que a tarefa se execute diariamente , selecciona Correr Todos os Dias . <br>
+<hr>
+(src)="s45.1"> Wählen Sie die Stunde(n ) , zu der die Aufgabe ausgeführt werden soll . <br>
+(trg)="s47.1"> Horas <br>
+(trg)="s48.1"> Selecciona as horas nas quais a tarefa deve ser executada . <br>
+<hr>
+(src)="s46.1"> Minuten <br>
+(trg)="s49.1"> Minutos <br>
+<hr>
+(src)="s47.1"> Wählen Sie die Minute(n ) , zu der die Aufgabe ausgeführt werden soll . <br>
+(trg)="s50.1"> Selecciona os minutos nos quais a tarefa deve ser executada . <br>
+<hr>
+(src)="s47.2"> Mit Kcron können Sie die Minuten in Fünferschritten angeben . <br>
+(trg)="s50.2"> O Kcron nÃ£o suporta escalonar tarefas em intervalos menores do que cinco minutos . <br>
+<hr>
+(src)="s48.1"> OK <br>
+(trg)="s51.1"> OK <br>
+<hr>
+(src)="s49.1"> Stellt die Aufgabe fertig . <br>
+(trg)="s52.1"> Completa a criaÃ§Ã£o desta tarefa . <br>
+<hr>
+(src)="s50.1"> Abbrechen <br>
+(trg)="s53.1"> Cancelar <br>
+<hr>
+(src)="s51.1"> Bricht die Bearbeitung der Aufgabe ab . <br>
+(trg)="s54.1"> Cancela a criaÃ§Ã£o desta tarefa . <br>
+<hr>
+(src)="s52.1"> Wenn Sie sowohl Monatstag(e ) als auch Wochentag(e ) angeben , wird die Aufgabe sowohl bei einem passenden Datum als auch an einem passenden Wochentag ausgeführt . <br>
+(trg)="s55.1"> Se seleccionares tanto os dias do mÃªs como os da semana , a tarefa serÃ¡ executada em qualquer uma das condiÃ§Ãµes . <br>
+<hr>
+(src)="s52.2"> Wenn Sie z.B. den 1. und 15. und Sonntag auswählen , wird das Programm am 1. und 15. der gewählten Monate unabhängig vom Wochentag ausgeführt , und außerdem an jedem Sonntag der Monate , egal , auf welches Datum sie fallen . <br>
+(trg)="s55.2"> Por exemplo , se seleccionares o dia 1 e o dia 15 e seleccionares o Domingo , o programa serÃ¡ executado em todos os dias 1 e 15 dos meses seleccionados ( independentemente do dia da semana ) assim como em todos os Domingos dos meses seleccionados ( independentemente do dia do mÃªs ) . <br>
+<hr>
+(src)="s53.1"> Die Aufgabe ist erst dann fertig aufgenommen , wenn die crontab gespeichert wurde . <br>
+(trg)="s56.1"> A tarefa escalonada nÃ£o estÃ¡ completamente configurada atÃ© o crontab ser gravado . <br>
+<hr>
+(src)="s54.1"> Aufgaben verwalten <br>
+(trg)="s57.1"> Gerir as Tarefas Escalonadas <br>
+<hr>
+(src)="s55.1"> Wie bei der Erstellung neuer Aufgaben werden Änderungen erst dann aktiv , wenn die crontab gespeichert wurde . <br>
+(trg)="s58.1"> Assim como ao criar tarefas novas , as alteraÃ§Ãµes nÃ£o terÃ£o efeito atÃ© o ficheiro crontab ser gravado . <br>
+<hr>
+(src)="s56.1"> Aufgaben ausschneiden <br>
+(trg)="s59.1"> Cortar Tarefas Escalonadas <br>
+<hr>
+(src)="s57.1"> Um eine Aufgabe auszuschneiden , wählen sie zuerst die zu entfernende Aufgabe an . <br>
+(trg)="s60.1"> Para cortares uma tarefa escalonada , primeiro selecciona a tarefa a ser cortada . <br>
+<hr>
+(src)="s59.1"> Aufgaben kopieren <br>
+(trg)="s62.1"> Copiar Tarefas Escalonadas <br>
+<hr>
+(src)="s60.1"> Um eine Aufgabe zu kopieren , wählen sie zuerst die zu kopierende Aufgabe an . <br>
+(trg)="s63.1"> Para copiares uma tarefa escalonada , primeiro selecciona a tarefa a ser copiada . <br>
+<hr>
+(src)="s62.1"> Aufgaben einfügen <br>
+(trg)="s65.1"> Colar Tarefas Escalonadas <br>
+<hr>
+(src)="s63.1"> Um eine Aufgabe einzufügen , muss zuerst eine in die Zwischenablage ausgeschnitten oder kopiert worden sein . <br>
+(trg)="s66.1"> Para colares uma tarefa escalonada , Ã© preciso ter cortado ou copiado uma tarefa escalonada para a Ãrea de TransferÃªncia em primeiro lugar . <br>
+<hr>
+(src)="s63.2"> Erst dann ist " Einfügen " überhaupt verfügbar . <br>
+(trg)="s66.2"> Logo que uma tarefa tenha sido cortada ou copiada , a colagem estarÃ¡ activa . <br>
+<hr>
+(src)="s63.3"> Wählen sie den Aufgaben -Ordner an . <br>
+(trg)="s66.3"> EntÃ£o aÃ­ selecciona a pasta Tarefas . <br>
+<hr>
+(src)="s65.1"> Aufgaben bearbeiten <br>
+(trg)="s68.1"> Modificar Tarefas Escalonadas <br>
+<hr>
+(src)="s66.1"> Um Änderungen an einer Aufgabe vorzunehmen , wählen Sie zuerst eine an . <br>
+(trg)="s69.1"> Para modificares uma tarefa escalonada , primeiro selecciona a tarefa a ser modificada . <br>
+<hr>
+(src)="s67.1"> Es erscheint dann der Dialog Aufgabe bearbeiten , in dem Sie wie oben beschrieben die gewählte Aufgabe bearbeiten können . <br>
+(trg)="s70.1"> IrÃ¡s ver a janela de Editar Tarefa , com a qual irÃ¡s modificar como descrito acima . <br>
+<hr>
+(src)="s68.1"> Aufgaben löschen <br>
+(trg)="s71.1"> Apagar Tarefas Escalonadas <br>
+<hr>
+(src)="s69.1"> Um eine Aufgabe zu löschen , wählen Sie die zu löschende Aufgabe an . <br>
+(trg)="s72.1"> Para apagares uma tarefa escalonada , primeiro selecciona a tarefa a ser removida . <br>
+<hr>
+(src)="s70.1"> Alternativ dazu können Sie auch mit der rechten Maustaste auf die Aufgabe klicken und Löschen auswählen . <br>
+(trg)="s73.1"> Alternativamente , podes usar o menu do botÃ£o direito do rato e escolher Apagar . <br>
+(trg)="s74.1"> Activar / Desactivar Tarefas Escalonadas <br>
+<hr>
+(src)="s71.1"> Aufgaben aktivieren/deaktivieren <br>
+(trg)="s75.1"> Para activares ou desactivares uma tarefa escalonada , primeiro selecciona a tarefa desactivada . <br>
+<hr>
+(src)="s73.1"> Alternativ dazu können Sie auch mit der rechten Maustaste auf die Aufgabe klicken und Aktiviert auswählen . <br>
+(trg)="s75.2"> As tarefas desactivadas terÃ£o Desactivado nas suas descriÃ§Ãµes . <br>
+(trg)="s76.1"> Alternativamente , podes usar o menu do botÃ£o direito do rato e escolher Activo . <br>
+<hr>
+(src)="s73.2"> Vergewissern Sie sich nach dem Aktivieren , dass Programmname , Parameter und Beschreibung korrekt angezeigt werden . <br>
+(trg)="s76.2"> Deves confirmar se o nome do programa , os seus parÃ¢metros e a descriÃ§Ã£o estÃ£o correctamente apresentados . <br>
+<hr>
+(src)="s74.1"> Aufgaben starten <br>
+(trg)="s77.1"> Correr Tarefas Escalonadas <br>
+<hr>
+(src)="s76.1"> Alternativ dazu können Sie auch mit der rechten Maustaste auf die Aufgabe klicken und Jetzt starten auswählen . <br>
+(trg)="s78.1"> Para correres uma tarefa escolanada imediatamente , primeiro selecciona a tarefa . <br>
+(trg)="s79.1"> Alternativamente , podes usar o menu do botÃ£o direito do rato e escolher Executar . <br>
+<hr>
+(src)="s77.1"> Umgebungsvariablen hinzufügen <br>
+(trg)="s80.1"> Adicionar VariÃ¡veis de Ambiente <br>
+<hr>
+(src)="s79.1"> Der Dialog Variablen bearbeiten <br>
+(src)="s80.1"> Variable <br>
+(trg)="s81.1"> Para criares uma nova variÃ¡vel de ambiente , primeiro selecciona a pasta VariÃ¡veis . <br>
+<hr>
+(src)="s81.1"> Geben Sie den Namen der Variablen ein. <br>
+(trg)="s83.1"> A janela de Editar VariÃ¡vel <br>
+(trg)="s84.1"> VariÃ¡vel <br>
+<hr>
+(src)="s81.2"> Sie können auch eine aus der Liste der am häufigsten benutzten Umgebungsvariablen wählen ; klicken Sie hierzu auf den Pfeil neben dem Feld für den Variablennamen . <br>
+(trg)="s85.1"> Indica o nome da variÃ¡vel de ambiente . <br>
+(trg)="s85.2"> Podes usar a lista correspondente para seleccionares o nome das variÃ¡veis de ambiente mais comuns que sÃ£o usadas pelas tarefas escalonadas . <br>
+<hr>
+(src)="s81.3"> Dies sind : <br>
+(trg)="s85.3"> Estas incluem : <br>
+<hr>
+(src)="s82.1"> HOME <br>
+(trg)="s86.1"> HOME <br>
+<hr>
+(src)="s83.1"> Verzeichnis , das anstelle des normalen Persönlichen Verzeichnisses des Benutzers verwendet werden soll <br>
+(trg)="s87.1"> A ser usada em vez da directoria pessoal do utilizador por omissÃ£o . <br>
+<hr>
+(src)="s84.1"> MAILTO <br>
+(trg)="s88.1"> MAILTO <br>
+<hr>
+(src)="s85.1"> Um Emails aus dem aufzurufenden Programm an eine andere als die normale Adresse zu schicken <br>
+(trg)="s89.1"> Para enviar o resultado por ' email ' para um endereÃ§o diferente do endereÃ§o de 'email ' do utilizador por omissÃ£o . <br>
+<hr>
+(src)="s86.1"> PATH <br>
+(trg)="s90.1"> PATH <br>
+<hr>
+(src)="s87.1"> Pfadliste , in der nach ausführbaren Programmen gesucht wird <br>
+(trg)="s91.1"> A ser usada para procurar pelos programas nas directorias indicadas . <br>
+<hr>
+(src)="s88.1"> SHELL <br>
+(trg)="s92.1"> SHELL <br>
+<hr>
+(src)="s89.1"> Shell , die anstelle der normalen Shell benutzt wird <br>
+(trg)="s93.1"> A ser usada em vez da linha de comandos por omissÃ£o do utilizador . <br>
+<hr>
+(src)="s90.1"> Wert <br>
+(trg)="s94.1"> Valor <br>
+<hr>
+(src)="s91.1"> Geben Sie hier den Wert der Variablen ein. <br>
+(trg)="s95.1"> Indica o nome da variÃ¡vel de ambiente . <br>
+<hr>
+(src)="s92.1"> Kommentar <br>
+(trg)="s96.1"> ComentÃ¡rio <br>
+<hr>
+</body>
+</html>

@@ -1,0 +1,377 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# en_GB/docs/kdebase/kcontrol/kcmintinfo.docbook.xml.gz<br>
+# ru/docs/kdebase/kcontrol/kcmintinfo.docbook.xml.gz
+
+<p><hr>
+(src)="s1.1"> Interrupt Request ( IRQ ) Lines in Use <br>
+(trg)="s1.1"> Запросы на прерывания ( IRQ ) векторов в использовании <br>
+(trg)="s2.1"> IRQ - это аппаратный вектор , используемый в PC устройствами ( ISA шины ) такими как клавиатуры , модемы , звуковые карты , и т.д. , для посылки сигнала прерывания процессору . чтобы сообщить , что устройство готово принять или отправить данные . К сожалению , всего есть только 16 векторов IRQ ( 0-15) , доступных в архитектуре i386 ( PC ) дляразделения между различными устройствами ISA . <br>
+<hr>
+(src)="s2.1"> An IRQ is a hardware line used in a PC by ( ISA bus ) devices like keyboards , modems , sound cards , etc. , to send interrupt signals to the processor to tell it that the device is ready to send or accept data . <br>
+(trg)="s3.1"> Какая именно информация показывается , зависит от системы . На некоторых системах информация об IRQ пока не может быть показана . <br>
+(trg)="s4.1"> Первая колонка - это номер IRQ . Вторая колонка - это число прерываний , которые были приняты с момента последней перезагрузки . Третья колонка показывает тип прерывания . Четвертая показывает устройство , занявшее данное прерывание . <br>
+<hr>
+(src)="s5.1"> Section Authors <br>
+(trg)="s5.1"> Автор раздела <br>
+<hr>
+(src)="s6.1"> KDE British Conversion Malcolm Hunter malcolm.hunter@gmx.co.uk <br>
+(trg)="s6.1"> Перевод на русский Виталий Лопатин vitls@chat.ru <br>
+<hr>
+<p>
+
+# en_GB/docs/kdebase/kcontrol/kcmioportinfo.docbook.xml.gz<br>
+# ru/docs/kdebase/kcontrol/kcmioportinfo.docbook.xml.gz
+
+<p><hr>
+<p>
+
+# en_GB/docs/kdebase/kcontrol/kcmmidi.docbook.xml.gz<br>
+# ru/docs/kdebase/kcontrol/kcmmidi.docbook.xml.gz
+
+<p><hr>
+(src)="s1.1"> MIDI Configuration <br>
+(trg)="s1.1"> Настройки MIDI <br>
+<hr>
+(src)="s2.1"> This module is used to determine which MIDI device KDE should use . <br>
+(src)="s2.2"> You can also install a MIDI wrapper around the device if you want . <br>
+(trg)="s2.1"> Этот модуль используется для того , чтобы определить , какое устройство MIDI должен использовать KDE . Также , если вы хотите , можно установить оболочку ( wrapper ) для устройства MIDI . <br>
+<hr>
+(src)="s3.1"> The use of this module is simple . <br>
+(src)="s3.2"> Click once on the MIDI device that you would like to use from the list . <br>
+(trg)="s3.1"> Пользоваться этим модулем очень просто . Щелкните один раз мышкой по MIDI -устройству , которое вы хотели бы использовать . <br>
+<hr>
+(src)="s4.1"> If you want to use a MIDI mapper , simply mark the checkbox below the list labelled Use MIDI Mapper . <br>
+(src)="s4.2"> This will allow you to select the map in the text box below . <br>
+(trg)="s4.1"> Если вы хотите использовать картограф MIDI , отметьте флажок Использовать картограф MIDI . Тогда вы сможете указать карту в текстовом поле , расположенном ниже . Вы можете щелкнуть по значку папки , чтобы просмотреть файловую систему и выбрать нужную вам карту . <br>
+<hr>
+(src)="s4.3"> You can click on the folder icon to browse your filesystem to find the map if you need it . <br>
+(src)="s5.1"> Section Author <br>
+(trg)="s5.1"> Автор раздела <br>
+<hr>
+(src)="s6.1"> Mike McBride mpmcbride7@yahoo.com <br>
+(trg)="s6.1"> Mike McBride mpmcbride7@yahoo.com <br>
+<hr>
+(src)="s7.1"> KDE British Conversion Malcolm Hunter malcolm.hunter@gmx.co.uk <br>
+(trg)="s7.1"> Перевод на русский - ВладимирЧепель slvun@mail.ru <br>
+<hr>
+<p>
+
+# en_GB/docs/kdebase/kcontrol/kcmmixer.docbook.xml.gz<br>
+# ru/docs/kdebase/kcontrol/kcmmixer.docbook.xml.gz
+
+<p><hr>
+(src)="s1.1"> Mixer <br>
+(trg)="s1.1"> Микшер <br>
+<hr>
+(src)="s2.1"> This module can be used to configure some of the more basic options of KMix ( the KDE Mixer ) . <br>
+(trg)="s2.1"> В этом модуле можно настроить некоторые из базовых параметров KMix - микшера KDE . <br>
+<hr>
+(src)="s3.2"> With this section , you can save the current volume levels as the default . <br>
+(src)="s3.3"> You can also load the default volume levels ( thereby restoring them to the default status ) . <br>
+(trg)="s3.1"> Первый раздел касается уровней громкости . Вы можете сохранить текущие значения уровней громкости в качестве значений по умолчанию . Можно также восстановить сохраненные уровни громкости . <br>
+<hr>
+(src)="s4.1"> By selecting the Load volumes on login , you can instruct KDE to automatically load the default volume levels whenever KDE is started . <br>
+(trg)="s4.1"> При включении опции Восстановить уровни громкости при запуске KDE уровни громкости будут устанавливаться в их значения по умолчанию при запуске KDE . <br>
+<hr>
+(src)="s5.1"> The next section , lets you specify what hardware KMix should look for . <br>
+(trg)="s5.1"> На другой вкладке вы можете указать , как KMix будет опрашивать вашу звуковую плату . <br>
+<hr>
+(src)="s6.2"> If you have one soundcard in your computer , you should set this to one . <br>
+(src)="s6.3"> Using a higher number , means KMix will continue to search for a second sound card , which will delay the startup of KMix . <br>
+(trg)="s6.1"> С помощью ползунка Максимальное число опрашиваемых микшеров вы можете задать , сколько звуковых плат будет опрашивать KMix . Если у вас только одна звуковая плата , следует указать здесь значение 1 . Большие значения привели бы к тому , что KMix продолжил бы поиск звуковых плат , что замедлило бы его запуск . <br>
+<hr>
+(src)="s7.1"> The slider labelled Maximum number of probed devices per mixer determines how many devices KMix tries to detect on each soundcard . <br>
+(src)="s7.2"> If there are more devices on your soundcard than KMix shows on startup , you should increase this number . <br>
+(trg)="s7.1"> С помощью ползунка Максимальное число опрашиваемых устройств на один микшер задается , сколько устройств будет опрашивать KMix на звуковой плате . Увеличьте это значение , если драйвер вашей звуковой платы предоставляет больше микшеров , чем находит KMix . <br>
+<hr>
+(src)="s8.1"> Section Author <br>
+(trg)="s8.1"> Автор раздела <br>
+<hr>
+(src)="s9.1"> This section written by Mike McBride mpmcbride7@yahoo.com <br>
+(trg)="s9.1"> Mike McBride mpmcbride7@yahoo.com <br>
+<hr>
+(src)="s10.1"> KDE British Conversion Malcolm Hunter malcolm.hunter@gmx.co.uk <br>
+(trg)="s10.1"> Перевод на русский - Григорий Мохин mok@kde.ru <br>
+<hr>
+<p>
+
+# en_GB/docs/kdebase/kcontrol/kcmpartitioninfo.docbook.xml.gz<br>
+# ru/docs/kdebase/kcontrol/kcmpartitioninfo.docbook.xml.gz
+
+<p><hr>
+(src)="s1.1"> Partition Information <br>
+(trg)="s1.1"> Разделы жесткого диска <br>
+<hr>
+(src)="s2.1"> The exact information displayed is system-dependent . <br>
+(src)="s2.2"> On some systems , partition information cannot be displayed yet . <br>
+(trg)="s2.1"> Что именно показывается , зависит от системы . На некоторых платформах информация о разделах все еще недоступна . <br>
+<hr>
+(src)="s3.1"> The first two columns are the major and minor numbers respectively . <br>
+(src)="s3.3"> The fourth column is a label for the device . <br>
+(trg)="s3.1"> Первые две колонки - это major и minor номера соответственно . Третья колонка - это число блоков ( обычно 1 блок равен 1024 байт ) . Четвертая колонка - это метка устройства . <br>
+<hr>
+(src)="s4.1"> Section Authors <br>
+(trg)="s4.1"> Авторы раздела <br>
+<hr>
+(src)="s5.1"> KDE British Conversion Malcolm Hunter malcolm.hunter@gmx.co.uk <br>
+(trg)="s5.1"> Перевод на русский - Григорий Мохин mok@kde.ru , 2001 . <br>
+<hr>
+<p>
+
+# en_GB/docs/kdebase/kcontrol/kcmpciinfo.docbook.xml.gz<br>
+# ru/docs/kdebase/kcontrol/kcmpciinfo.docbook.xml.gz
+
+<p><hr>
+(src)="s1.1"> PCI -bus and Installed PCI Cards <br>
+(trg)="s1.1"> Шина PCI и PCI -платы <br>
+<hr>
+(src)="s2.1"> The exact information displayed is system-dependent . <br>
+(src)="s2.2"> On some systems , PCI -information can not yet be displayed . <br>
+(trg)="s2.1"> Что именно показывается , зависит от системы . На некоторых платформах информация о PCI может быть все еще недоступна . <br>
+<hr>
+(src)="s3.1"> Each entry begins with a bus , device and function number . <br>
+(trg)="s3.1"> Каждый элемент начинается с номера шины , устройства и функции . <br>
+<hr>
+(src)="s4.1"> Section Authors <br>
+(trg)="s4.1"> Авторы раздела <br>
+<hr>
+(src)="s5.1"> KDE British Conversion Malcolm Hunter malcolm.hunter@gmx.co.uk <br>
+(trg)="s5.1"> Перевод на русский - Григорий Мохин mok@kde.ru <br>
+<hr>
+<p>
+
+# en_GB/docs/kdebase/kcontrol/kcmpcmcia.docbook.xml.gz<br>
+# ru/docs/kdebase/kcontrol/kcmpcmcia.docbook.xml.gz
+
+<p><hr>
+(src)="s1.1"> PCMCIA <br>
+(trg)="s1.1"> PCMCIA <br>
+<hr>
+(src)="s2.1"> This module displays information about PCMCIA Cards <br>
+(trg)="s2.1"> Этот модуль служит для показа сведений о платах PCMCIA <br>
+<hr>
+(src)="s3.1"> The exact information is system dependent . <br>
+(src)="s3.2"> On most systems no information is displayed at all . <br>
+(trg)="s3.1"> Что именно показывается , зависит от системы . На большинстве машин вообще не выводится никакая информация . <br>
+<hr>
+(src)="s4.1"> Section Author <br>
+(trg)="s4.1"> Автор раздела <br>
+<hr>
+(src)="s5.1"> This section written by Paul Campbell paul@taniwha.com <br>
+(trg)="s5.1"> Paul Campbell paul@taniwha.com <br>
+<hr>
+(src)="s6.1"> KDE British Conversion Malcolm Hunter malcolm.hunter@gmx.co.uk <br>
+(trg)="s6.1"> Перевод на русский - Григорий Мохин mok@kde.ru <br>
+<hr>
+<p>
+
+# en_GB/docs/kdebase/kcontrol/kcmprocinfo.docbook.xml.gz<br>
+# ru/docs/kdebase/kcontrol/kcmprocinfo.docbook.xml.gz
+
+<p><hr>
+(src)="s1.1"> Processor Information <br>
+(trg)="s1.1"> Информация о процессоре <br>
+<hr>
+(src)="s2.1"> The exact information displayed is system-dependent . <br>
+(src)="s2.2"> On some systems , processor information cannot be displayed yet . <br>
+(trg)="s2.1"> Что именно показывается , зависит от системы . На некоторых платформах информация о процессоре все еще недоступна . <br>
+<hr>
+(src)="s3.1"> The exact contents of the window will depend on the CPU ( s ) in your machine , but the window is organised into two columns . <br>
+(trg)="s3.1"> Точная информация в этом окне зависит от CPU на вашей машине ; окно организовано в две колонки . Первая колонка - это параметр , вторая - его значение . <br>
+<hr>
+(src)="s4.1"> Section Authors <br>
+(trg)="s4.1"> Авторы раздела <br>
+<hr>
+(src)="s5.1"> KDE British Conversion Malcolm Hunter malcolm.hunter@gmx.co.uk <br>
+(trg)="s5.1"> Перевод на русский - Виталий Лопатин vitls@chat.ru <br>
+<hr>
+<p>
+
+# en_GB/docs/kdebase/kcontrol/kcmsndinfo.docbook.xml.gz<br>
+# ru/docs/kdebase/kcontrol/kcmsndinfo.docbook.xml.gz
+
+<p><hr>
+(src)="s1.1"> Soundcard Information <br>
+(trg)="s1.1"> Сведения о звуковой плате и драйвере <br>
+<hr>
+(src)="s2.1"> The exact information displayed is system-dependent . <br>
+(src)="s2.2"> On some systems , soundcard information cannot be displayed yet . <br>
+(trg)="s2.1"> Что именно показывается , зависит от системы . На некоторых платформах информация о звуковой плате все еще недоступна . <br>
+<hr>
+(src)="s3.1"> The user cannot modify any settings on this page . <br>
+(trg)="s3.1"> Пользователь не может изменять никакие настройки на этой странице . <br>
+<hr>
+(src)="s4.1"> Section Authors <br>
+(trg)="s4.1"> Авторы раздела <br>
+<hr>
+(src)="s5.1"> KDE British Conversion Malcolm Hunter malcolm.hunter@gmx.co.uk <br>
+(trg)="s5.1"> Перевод на русский - Григорий Мохин mok@kde.ru <br>
+<hr>
+<p>
+
+# en_GB/docs/kdebase/kcontrol/kcmxservinfo.docbook.xml.gz<br>
+# ru/docs/kdebase/kcontrol/kcmxservinfo.docbook.xml.gz
+
+<p><hr>
+(src)="s1.1"> X Server Information <br>
+(trg)="s1.1"> Информация о Х сервере <br>
+<hr>
+(src)="s2.1"> This screen is useful for getting specific information about your X server and the current session of X. <br>
+(trg)="s2.1"> Эта страница полезна для получения информации о вашем Х-сервере и о текущем Х-сеансе . <br>
+<hr>
+(src)="s3.1"> When you open this module , you are presented with some information . <br>
+(src)="s3.2"> The left hand side of the window is organised into a tree . <br>
+(trg)="s3.1"> Когда вы открываете этот модуль , вам показывается некая информация . Левая часть окна организована в виде дерева . Некоторые элементы имеют в начале знак плюса . Щелкая на плюсе , вы открываете подменю , относящееся к элементу . Щелчок на символе минуса в начале элемента скроет от вас подменю . <br>
+<hr>
+(src)="s4.1"> The right hand side of the window contains the individual values for each of the parameters on the left . <br>
+(trg)="s4.1"> Правая часть экрана - это индивидуальное значение для каждого параметра в левой части . <br>
+<hr>
+(src)="s5.1"> The information presented will vary depending on your setup . <br>
+(trg)="s5.1"> Представленная информация будет сильно зависеть от настроек . <br>
+<hr>
+(src)="s6.1"> Some setups may not be able to determine some or all of the parameters . <br>
+(trg)="s6.1"> Некоторые настройки могут не определять некоторые или все из указанных параметров . <br>
+<hr>
+(src)="s7.1"> You can not change any values from this menu . <br>
+(src)="s7.2"> It is for information only . <br>
+(trg)="s7.1"> Вы не можете ничего изменять из этого меню . Оно служит только для информации . <br>
+<hr>
+(src)="s8.1"> Section Authors <br>
+(trg)="s8.1"> Авторы раздела <br>
+<hr>
+(src)="s9.1"> Michael McBride mpmcbride7@yahoo.com <br>
+(trg)="s9.1"> Michael McBride mpmcbride7@yahoo.com <br>
+<hr>
+(src)="s10.1"> KDE British Conversion Malcolm Hunter malcolm.hunter@gmx.co.uk <br>
+(trg)="s10.1"> Перевод на русский Виталий Лопатин vitls@chat.ru <br>
+<hr>
+<p>
+
+# en_GB/docs/kdebase/khelpcenter/contact.docbook.xml.gz<br>
+# ru/docs/kdebase/khelpcenter/contact.docbook.xml.gz
+
+<p><hr>
+(src)="s1.1"> Contact the KDE team <br>
+(src)="s2.1"> Mailing lists <br>
+(trg)="s1.1"> Как связаться с командой KDE <br>
+<hr>
+(src)="s3.1"> KDE has several mailing lists up . <br>
+(trg)="s2.1"> Списки рассылки <br>
+<hr>
+(src)="s3.2"> See below for the current list . <br>
+(src)="s3.3"> Older articles can be found in the mailing list archive . <br>
+(trg)="s3.1"> У KDE есть списки рассылки , причем несколько . См . ниже текущий список . Архивы этих списков доступны на сервере архивов . <br>
+<hr>
+(src)="s4.1"> kde-request@kde.org - KDE <br>
+(trg)="s4.1"> kde-request@kde.org - KDE <br>
+<hr>
+(src)="s5.1"> For general discussion <br>
+(trg)="s5.1"> Общие вопросы <br>
+<hr>
+(src)="s6.1"> kde-announce-request@kde.org - kde-announce <br>
+(trg)="s6.1"> kde-announce-request@kde.org - kde-announce <br>
+<hr>
+(src)="s7.1"> Announcements of new KDE applications <br>
+(src)="s8.1"> kde-request@kde.org - kde <br>
+(trg)="s7.1"> Объявления о новых версиях KDE , равно как о новых инструментах и приложениях <br>
+<hr>
+(src)="s9.1"> Users help each other <br>
+(src)="s10.1"> kde-devel-request@kde.org - kde-devel <br>
+(trg)="s8.1"> kde-user-request@kde.org - kde-user <br>
+<hr>
+(src)="s11.1"> For developers . <br>
+(src)="s12.1"> kde-licensing-request@kde.org - kde-licensing <br>
+(trg)="s9.1"> Пользователи KDE . Здесь вы можете попросить о помощи . <br>
+<hr>
+(src)="s13.1"> Discussion of licensing issues <br>
+(trg)="s10.1"> kde-devel-request@kde.org - kde-devel <br>
+<hr>
+(src)="s14.1"> kde-look-request@kde.org - kde-look <br>
+(trg)="s11.1"> Разработчики KDE <br>
+<hr>
+(src)="s15.1"> Discussing " look'n'feel issues " <br>
+(trg)="s12.1"> kde-licensing-request@kde.org - kde-licensing <br>
+<hr>
+(src)="s16.1"> kde-artists-request@kde.org - kde-artists <br>
+(trg)="s13.1"> Вопросы лицензирования <br>
+<hr>
+(src)="s17.1"> Creating icons and other artwork <br>
+(trg)="s14.1"> kde-look-request@kde.org - kde-look <br>
+<hr>
+(src)="s18.1"> kde-doc-english-request@kde.org - kde-doc-english <br>
+(src)="s19.1"> For people interested in writing documentation for KDE . <br>
+(trg)="s15.1"> Обсуждение внешнего вида и интерфейса <br>
+<hr>
+(src)="s20.1"> kde-i18n-doc-request@kde.org - kde-18n-doc <br>
+(trg)="s16.1"> kde-artists-request@kde.org - kde-artists <br>
+<hr>
+(src)="s21.1"> Internationalisation and documentation issues <br>
+(src)="s22.1"> http://i18n.kde.org/teams / " <br>
+(trg)="s17.1"> Создание изображений и оформление <br>
+<hr>
+(src)="s23.1"> For localised information , which may include user email lists and websites , check the translation teams page at the above URL . <br>
+(trg)="s18.1"> kde-doc-english-request@kde.org - kde-doc-english <br>
+(trg)="s19.1"> Документация KDE <br>
+<hr>
+(src)="s24.1"> To subscribe : <br>
+(trg)="s20.1"> kde-i18n-doc-request@kde.org - kde-18n-doc <br>
+<hr>
+(src)="s24.2"> Please write your real email address instead of the plain " your-email-address " words . <br>
+(trg)="s21.1"> Перевод на другие языки и документация <br>
+<hr>
+(src)="s24.3"> Leave the body of the message empty . <br>
+(trg)="s22.1"> http : / /i18n.kde.org / teams / " <br>
+<hr>
+(src)="s24.4"> Do not include a signature or other text which might confuse the mail server that processes your request . <br>
+(src)="s25.1"> To unsubscribe : <br>
+(trg)="s23.1"> Для сведений о соответствующих списках на других языках зайдите на указанный сайт . <br>
+<hr>
+(src)="s25.2"> Please replace " your-email-address " with the email address you used for the subscription . <br>
+(src)="s25.3"> Leave the body of the message empty . <br>
+(trg)="s26.1"> Эти адреса служат для подписки и ее отмены , и только . При подписке вы получите сообщение с информацией о пользовании списком и об изменении своих параметров подписки . <br>
+<hr>
+(src)="s25.4"> Do not include a signature or other text which might confuse the mail server that processes your request . <br>
+(src)="s26.1"> The addresses listed above are for subscribing and unsubscribing only . <br>
+(trg)="s27.1"> Не посылайте письма , предназначенные в списки рассылки , по этим адресам . <br>
+<hr>
+(src)="s26.2"> Once you have subscribed to a mailing list , you will received a message telling you how to send messages to the mailing list , and how to alter your mailing list options . <br>
+(src)="s27.1"> Please do not send messages intended to be posted to the mailing list to the above addresses . <br>
+(trg)="s28.1"> Не используйте HTML в своих запросах к серверу , так как это затрудняет его работу . Если адрес подписки именно тот , с которого вы посылаете письмо , можно его опустить в теме сообщения и оставить только subscribe . <br>
+<hr>
+(src)="s28.1"> Please do not use HTML to send your request because it makes it difficult for our mail server to process your request . <br>
+(trg)="s29.1"> Как связаться с разработчиками KDE ? <br>
+<hr>
+(src)="s28.2"> If the subscription address is identical to the address you are posting from , you may omit the address in the subject line . <br>
+(trg)="s30.1"> Адреса разработчиков указаны в документации и исходниках самих приложений . <br>
+<hr>
+(src)="s29.1"> Contacting the KDE developers <br>
+(trg)="s31.1"> Официальные контакты <br>
+<hr>
+(src)="s30.1"> Contact addresses for developers can be found in the documentation of their individual applications . <br>
+(src)="s31.1"> Official Contacts <br>
+(trg)="s32.1"> Зайдите на страницу официальных представителей KDE , если вам требуется с ними связаться . <br>
+<hr>
+(src)="s32.1"> Please visit our Official Representatives page if you need to contact KDE in an official way . <br>
+(trg)="s33.1"> Дальнейшая информация <br>
+<hr>
+(src)="s33.1"> More information <br>
+(src)="s34.1"> Please find more information about KDE at http://www.kde.org / . <br>
+(trg)="s34.1"> Ее можно получить на сайте http : / /www.kde.org . <br>
+<hr>
+<p>
+
+# en_GB/docs/kdebase/khelpcenter/faq/about.docbook.xml.gz<br>
+# ru/docs/kdebase/khelpcenter/faq/about.docbook.xml.gz
+
+<p><hr>
+</body>
+</html>

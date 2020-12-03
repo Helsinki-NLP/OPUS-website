@@ -1,0 +1,355 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# hu/docs/kdebase/kdesu/index.docbook.xml.gz<br>
+# ja/docs/kdebase/kdesu/index.docbook.xml.gz
+
+<p><hr>
+(src)="s1.1"> A KDE su kézikönyve <br>
+(trg)="s1.1"> KDE su ハンドブック <br>
+<hr>
+(src)="s2.1"> Ez a dokumentum szabadon másolható , továbbadható és / vagy módosítható a GNU Free Documentation License ( az 1.1-es vagy bármelyik annál későbbi változat ) feltételeinek betartásával . <br>
+(src)="s2.2"> A licencet a Free Software Foundation adta ki , lásd : no Invariant Sections , no Front-Cover Texts , és no Back-Cover Texts . <br>
+(trg)="s2.1"> Permission is granted to copy , distribute and / or modify this document under the terms of the GNU Free Documentation License , Version 1 . 1 or any later version published by the Free Software Foundation ; with no Invariant Sections , with no Front - Cover Texts , and with no Back - Cover Texts . <br>
+<hr>
+(src)="s2.3"> A licenc másolata megtalálható itt : . <br>
+(trg)="s2.2"> A copy of the license is included in . <br>
+<hr>
+(src)="s3.1"> A KDE su egy grafikus előtétprogram a Unix " su " parancsához . <br>
+(src)="s4.1"> Bevezetés <br>
+(trg)="s3.1"> KDE su は Unix " su " コマンド の ため の グラフィカル フロント エンド です 。 <br>
+<hr>
+(src)="s5.1"> Üdvözöljük a KDE su -ban ! <br>
+(trg)="s4.1"> 導入 <br>
+<hr>
+(src)="s5.2"> A KDE su egy KDE -alapú grafikus előtétprogram a " su " parancs használatához . <br>
+(src)="s5.3"> Lehetővé teszi egy program más nevében történő futtatását a felhasználónévhez tartozó jelszó megadásával . <br>
+(trg)="s5.1"> KDE su に ようこそ ！ KDE su は 、 UNIX " su " コマンド の 、 K デスク トップ 環境 の ため の グラフィカル フロント エンド です 。 これ は 、 他 の ユーザー の パスワード を 適応 する こと によって 、 その ユーザー として 、 プログラム を 実行 する 事 が 出来 ます 。 KDE su は 権利 の ない プログラム で あり 、 システム の su を 使っ て い ます 。 <br>
+<hr>
+(src)="s5.4"> A KDE su a rendszer su parancsát használja , nem tartalmaz privilegizált kódot . <br>
+(src)="s6.1"> A KDE su-nak van még egy speciális tulajdonsága : képes megjegyezni a beírt jelszavakat . <br>
+(trg)="s6.1"> KDE su は 、 パスワード を 保持 する 機能 が 一つ 追加 さ れ て い ます 。 この 機能 を 使え ば 、 コマンド 実行 の 度 に パスワード を 入力 する 必要 は 無くなり ます 。 この 機能 と 、 セキュリティー 分析 について の 詳細 は 、 を 御覧 下さい 。 <br>
+<hr>
+(src)="s6.2"> Ha engedélyezi ezt a lehetőséget , akkor elég egy parancsnál egyszer megadni a jelszót . <br>
+(src)="s6.3"> További információ és biztonsági elemzés itt található : . <br>
+(trg)="s7.1"> この プログラム は 、 コマンド ライン 、 もしくは 、 . desktop ファイル から 実行 出来 ます 。 それ は 、 GUI ダイアログ を 使っ て root パスワード を 尋ね ます が 、 私 は 、 純粋 な GUI プログラム に 代る 、 コマンド ライン と GUI の より 良い 接続 法 で ある と 考え て い ます 。 <br>
+<hr>
+(src)="s7.1"> A program indítása történhet parancsértelmezőből vagy egy .desktop fájlból is . <br>
+(trg)="s8.1"> インストール <br>
+(trg)="s9.1"> ダウン ロード <br>
+<hr>
+(src)="s7.2"> A jelszót ugyan egy grafikus ablakban kell beírni , de ennek ellenére inkább összekötő rétegnek lehet tekinteni a karakteres módú és a grafikus programok között , mintsem igazi grafikus alkalmazásnak . <br>
+(src)="s8.1"> Telepítés <br>
+(trg)="s10.1"> KDE su は 現在 、 KDE CVS の kdebase に 入っ て い ます 。 全て の ( 2 . x ) KDE ディストリビューション に 含ま れ て いる はず です 。 あなた も また 、 私 の ftp : / / skynet . stack . nl / pub / users / geertj / に ある ホームページ から KDE 1 . x バージョン を 入手 する こと が 出来 ます 。 <br>
+<hr>
+(src)="s9.1"> Letöltés <br>
+(trg)="s11.1"> コンパイル <br>
+<hr>
+(src)="s10.1"> A KDE su a kdebase csomag része , mely minden KDE 2.x disztribúcióban megtalálható . <br>
+(src)="s10.2"> A KDE 1.x-alapú verzió letölthető a következő címről : ftp : / /skynet.stack.nl / pub / users / geertj / . <br>
+(trg)="s12.1"> KDE su は kdebase に 入っ て い て 、 あなた は 既に 持っ て い ます 、 もしくは 、 kdebase を インストール する 時 に 入手 し ます 。 <br>
+<hr>
+(src)="s11.1"> Lefordítás <br>
+(src)="s12.1"> A KDE su a kdebase csomag része , telepítése automatikusan megtörténik a csomag többi részével együtt . <br>
+(trg)="s13.1"> KDE 1 . x バージョン を コンパイル する に は 、 次 の よう に し て 下さい 。 <br>
+<hr>
+(src)="s13.1"> A KDE 1.x verzió lefordításához a következőket kell tenni : <br>
+(src)="s14.1"> Az utolsó lépéshez rendszergazdai jogosultság szükséges , mert néhány műveletnél a KDE rendszerkönyvtárába kell írni . <br>
+(trg)="s14.1"> 最後 の ステップ は root で 実行 する 必要 が あり ます 。 インストール 行程 は システム ワイド な KDE ディレクトリ に 書き込める 必要 が ある ため です 。 <br>
+<hr>
+(src)="s15.1"> A KDE su kezelése <br>
+(src)="s16.1"> A KDE su használata nagyon egyszerű . <br>
+(trg)="s15.1"> KDE su の 使い方 <br>
+<hr>
+(src)="s16.2"> A szintaxis a következő : <br>
+(src)="s17.1"> A lehetséges parancssori paraméterek a következők . <br>
+(trg)="s16.1"> KDE su の 使い方 は 簡単 です 。 文法 は 次 の よう に なっ て い ます 。 <br>
+<hr>
+(src)="s18.1"> -c PROGRAMNÉV <br>
+(src)="s19.1"> Itt lehet megadni a futtatni kívánt program nevét . <br>
+(trg)="s17.1"> コマンド ライン オプション の 説明 は 次 の よう に なっ て い ます 。 <br>
+<hr>
+(src)="s20.1"> -f FÁJLNÉV <br>
+(src)="s21.1"> Ez az opció lehetővé teszi a KDE su használatát .desktop fájlokban . <br>
+(trg)="s18.1"> - c PROGRAM <br>
+<hr>
+(src)="s21.2"> Ennek hatására a KDE su megvizsgálja a FÁJLNÉV nevű fájlt . <br>
+(src)="s21.3"> Ha a fájlhoz az aktuális felhasználónak írási joga van , akkor a KDE su végrehajtja azt az aktuális felhasználó nevében . <br>
+(trg)="s20.1"> - f FILE <br>
+<hr>
+(src)="s21.4"> Ha nincs hozzá írási jogosultsága , akkor a végrehajtás a FELHASZNÁLÓ nevében fog történni ( ennek alapértelmezése : root ) . <br>
+(src)="s22.1"> A FÁJLNÉV paraméter kiértékelése a következő módon történik : ha a FÁJLNÉV első karaktere " / " , akkor teljes elérési útnak tekinti a program , egyébként úgy veszi , hogy egy globális KDE beállítófájlról van szó . <br>
+(trg)="s21.1"> この オプション は . desktop ファイル において 、 KDE su を 効率 的 に 使う 事 が 出来 ます 。 これ は 、 FILE によって 指定 さ れ た ファイル を テスト する と いう こと を KDE su に 伝え ます 。 もし 、 この ファイル が 現在 の ユーザー によって 書き換え 可能 で あれ ば 、 KDE su は 現在 の ユーザー として その コマンド を 実行 し ます 。 もし 、 書き込み 可能 で なけれ ば 、 ユーザー USER ( デフォルト は root ) として 、 その コマンド を 実行 し ます 。 <br>
+<hr>
+(src)="s23.1"> -t <br>
+(trg)="s23.1"> - t <br>
+<hr>
+(src)="s24.1"> Engedélyezi a terminálkimenetet , letiltja a jelszavak megjegyzését . <br>
+(src)="s24.2"> Elsősorban nyomkövetési célokat szolgál , mert karakteres módban inkább a " su " -t érdemes használni . <br>
+(trg)="s24.1"> ターミナル 出力 を 有効 に し ます 。 これ は パスワード 保持 を 無効 に し ます 。 これ は 、 広く 、 デバッグ 用途 に 使用 し ます 。 もし 、 コンソール モード の アプリケーション を 使い たい 時 に は 、 代わり に 標準 の " su " を 使い ます 。 <br>
+<hr>
+(src)="s25.1"> -n <br>
+(trg)="s25.1"> - n <br>
+<hr>
+(src)="s26.1"> Letiltja a jelszó megjegyzését , " A jelszó mentése " választónégyzet nem lesz használható . <br>
+(src)="s27.1"> -q <br>
+(trg)="s26.1"> パスワード を 保持 し ませ ん 。 これ は 、 パスワードダイアログ の " keep password " チェック ボックス を 無効 に し ます 。 <br>
+<hr>
+(src)="s28.1"> Néma üzemmód . <br>
+(src)="s29.1"> -d <br>
+(trg)="s27.1"> - q <br>
+<hr>
+(src)="s30.1"> Részletesen kiírja a nyomkövetéshez szükséges információkat . <br>
+(src)="s31.1"> -v <br>
+(trg)="s28.1"> 無言 モード です 。 <br>
+<hr>
+(src)="s32.1"> Kiírja a verzióinformációt és bezárja a programot . <br>
+(src)="s33.1"> -h <br>
+(trg)="s29.1"> - d <br>
+<hr>
+(src)="s34.1"> A használathoz szükséges tájékoztató szöveget írja ki . <br>
+(src)="s35.1"> -s <br>
+(trg)="s30.1"> デバッグ 情報 を 表示 し ます 。 <br>
+<hr>
+(src)="s36.1"> Leállítja a kdesu szolgáltatást , lásd : . <br>
+(src)="s37.1"> Beállítások <br>
+(trg)="s31.1"> - v <br>
+<hr>
+(src)="s40.1"> Ez határozza meg , hogy a jelszókarakterek hogyan jelennek meg . <br>
+(src)="s40.2"> A választható lehetőségek : egy csillag , három csillag vagy nincs kijelzés . <br>
+(trg)="s32.1"> バージョン 情報 を 表示 し て 終了 し ます 。 <br>
+<hr>
+(src)="s40.3"> Az alapértelmezés : egy csillag karakterenként . <br>
+(src)="s41.1"> A jelszavak megjegyzése <br>
+(trg)="s33.1"> - h <br>
+<hr>
+(src)="s42.1"> A KDE su meg tudja jegyezni a beírt jelszavakat , ha bejelöli " A jelszó megjegyzése " opciót . <br>
+(src)="s42.2"> Ilyenkor meg lehet adni az alatta levő szöveges mezőben egy elévülési időt . <br>
+(trg)="s34.1"> いくつか の ヘルプ を 表示 し ます 。 <br>
+<hr>
+(src)="s42.3"> A megadott számú percig tudja a program felhasználni a beírt jelszavakat . <br>
+(trg)="s35.1"> - s <br>
+<hr>
+(src)="s42.4"> Alapértelmezés szerint a jelszó megjegyzése ki van kapcsolva . <br>
+(src)="s43.1"> Technikai részletek <br>
+(trg)="s36.1"> kdesu デーモン を 停止 し ます 。 を 御覧 下さい 。 <br>
+<hr>
+(src)="s45.1"> A program végrehajtása a root felhasználó nevében történik , melynek általában nincs hozzáférési jogosultsága az X képernyőhöz . <br>
+(src)="s45.2"> A KDE su úgy oldja meg ezt a problémát , hogy egy hozzáférési cookie-t ad hozzá az .Xauthority ideiglenes fájlhoz . <br>
+(trg)="s37.1"> 設定 <br>
+<hr>
+(src)="s45.3"> A futás befejeződése után törli ezt a fájlt . <br>
+(trg)="s39.1"> エコー モード <br>
+<hr>
+(src)="s46.1"> Ha nem használhat X cookie-kat , akkor más megoldást kell keresni . <br>
+(src)="s46.2"> A KDE su felismeri , ha ez a helyzet , nem hozza létre a cookie-t , de azt már Önnek kell biztosítania , hogy ilyenkor hozzá lehessen férni a képernyőhöz . <br>
+(trg)="s40.1"> これ は 、 入力 さ れる どの よう な 文字 列 を スクリーン に エコー さ せる か の 設定 です 。 可能 な 選択肢 は 、 一文字 ごと に スター 、 三つ の スター 、 もしくは 、 全く エコー し ない 、 で す 。 デフォルト は 、 一文字 ごと に スター 、 と なっ て い ます 。 <br>
+<hr>
+(src)="s48.1"> A KDE su a " su " -t használja a megfelelő jogosultság megszerzéséhez . <br>
+(src)="s48.2"> A következő részben részletesen elmagyarázzuk , hogy ez milyen módon történik . <br>
+(trg)="s41.1"> パスワード を 保持 <br>
+<hr>
+(src)="s49.1"> A su néhány változata ( pl . a Red Hat disztribúcióé ) nem fogad el jelszót a standard bemenetről , ezért a KDE su létrehoz egy pty / tty párt és a " su " végrehajtásánál a standard fájlleírókat a tty-hez rendeli . <br>
+(src)="s50.1"> A megadott program végrehajtásakor a KDE su az interaktív parancsértelmező helyett a su parancsot a " -c " argumentummal indítja . <br>
+(trg)="s42.1"> " keep password " チェック ボックス に チェック する こと で 、 入力 し た パスワード を KDE su に 覚え させる こと が 出来 ます 。 チェック する と 、 タイム アウト 値 を 下方 の テキスト フィールド に 入力 出来る よう に なり ます 。 これ は 、 パスワード が 記憶 さ れる 時間 で 、 単位 は 分 に なっ て い ます 。 デフォルト で は 、 パスワード 保持 し ない 、 に なっ て い ます 。 <br>
+<hr>
+(src)="s50.2"> Ezt az argumentumot minden parancsértelmező ismeri , ezért minden esetben működnie kell . <br>
+(trg)="s43.1"> 内部 <br>
+<hr>
+(src)="s50.3"> A su átadja a " -c " argumentban megadott szöveget a parancsértelmezőnek , amely aztán végrehajtja a programot . <br>
+(trg)="s44.1"> X 認証 <br>
+<hr>
+(src)="s51.1"> A megadott parancsot nem közvetlenül a su -n keresztül hajtja végre a KDE su , hanem egy kdesu_stub nevű segédprogramon keresztül . <br>
+(src)="s51.2"> Ez a programocska fut a megadott felhasználó nevében , lekérdez néhány információt a KDE su -ról a pty / tty csatornán keresztül ( ezek a segédprogram standard ki - és bemenetei ) , majd végrehajtja a programot . <br>
+(trg)="s45.1"> 実行 し た プログラム は root ユーザー ID に て 実行 さ れ 、 一般 的 に あなた の X ディスプレイ に アクセス する 権限 は あり ませ ん 。 KDE su は あなた の ディスプレイ の ため の 認証 クッキー を 一時 的 な . Xauthority ファイル に 加える こと によって 権限 を 得 て い ます 。 コマンド が 終了 する と 、 この ファイル は 取り除か れ ます 。 <br>
+<hr>
+(src)="s51.3"> A lekérdezett információk : az X képernyő azonosítója , egy X azonosítási cookie ( ha ezek használata lehetséges ) , a PATH változó értéke és maga a futtatandó parancs . <br>
+(src)="s51.4"> A segédprogramra azért van szükség , mert az X cookie privát információ , nem adható át parancsori paraméterként . <br>
+(trg)="s46.1"> もし 、 あなた が X クッキー を 使わ ない の で あれ ば 、 自己 責任 です 。 KDE su は 、 これ を 検出 し 、 クッキー を 加え ませ ん が 、 root が あなた の ディスプレイ に アクセス 出来る よう に し て おか なけれ ば なり ませ ん 。 <br>
+<hr>
+(src)="s53.1"> A KDE su leellenőrzi a beírt jelszót és hibaüzenetet ad , ha az nem megfelelő . <br>
+(src)="s53.2"> Az ellenőrzés a / bin / true végrehajtásának megkísérlésével történik . <br>
+(trg)="s47.1"> su へ の インターフェース <br>
+<hr>
+(src)="s55.1"> Kényelmi okokból a KDE su lehetővé teszi a jelszavak megjegyzését . <br>
+(src)="s55.2"> A következő szakaszban az ezzel kapcsolatos biztonsági tudnivalókat foglaljuk össze . <br>
+(trg)="s48.1"> &gt; KDE su は 権限 を 取得 する のに 、 システム の " su " を 使用 し ます 。 この 章 で は 、 KDE su は どの よう に これ を する の か の 詳細 を 説明 し ます 。 <br>
+<hr>
+(src)="s56.1"> A jelszavak megjegyzésének engedélyezése egy bizonyos biztonsági kockázattal jár . <br>
+(src)="s56.2"> A KDE su ugyan csak az Ön nevében engedi felhasználni a jelszavakat , de ha elővigyázatosság nélkül használják , akkor a root felhasználó biztonsági szintje az Önével azonos lesz . <br>
+(trg)="s49.1"> いくつか の su の 実装 ( 例えば 、 Redhat の su ) で は 、 標準 入力 ( stdin ) から の パスワード 読み込み を 使わ ない ので 、 KDE su は 、 pty / tty の ペア を 作成 し 、 tty に 接続 さ れ た それ 自身 の 標準 ファイルディスクリプター に て " su " を 実行 し ます 。 <br>
+<hr>
+(src)="s56.3"> Ugyanis ha ha valaki sikeresen megszerzi az Ön jelszavát , akkor egyben rendszergazdai jogot is szerez . <br>
+(src)="s56.4"> A KDE su megpróbálja megakadályozni ezt a lehetőséget oly módon , mely kellőképpen biztonságosnak mondható . <br>
+(trg)="s51.1"> su を 使っ て 直接 ユーザー コマンド を 実行 する 代わり に 、 KDE su は kdesu _ stub と 呼ば れる 小さな スタブ プログラム を 実行 し ます 。 この スタブ ( 対象 の ユーザー として 実行 さ れる て いる ) は 、 いくつか の 情報 を pty / tty チャンネル ( スタブ の 標準 入出力 ) 越し に KDE su に 要求 し 、 それから 、 ユーザー の プログラム を 実行 し ます 。 渡さ れる 情報 は 、 X ディスプレイ 、 ( 可能 で あれ ば ) X 認証 クッキー 、 環境 変数 PATH 、 そして 、 実行 する コマンド 、 と なっ て い ます 。 スタブ プログラム が 使わ れる 理由 は 、 X クッキー は プライベート な 情報 で ある ため で 、 コマンド ライン に 渡す こと が 出来 ない の です 。 <br>
+<hr>
+(src)="s57.2"> Ez egy Unix aljazatot figyel a / tmp könyvtárban , parancsokra várva . <br>
+(src)="s57.3"> Az aljazat jogosultsági értéke 0600 , tehát csak az Ön nevével lehet csatlakozni hozzá . <br>
+(trg)="s52.1"> パスワード の チェック <br>
+<hr>
+(src)="s57.4"> Ha a jelszómentés be van kapcsolva , a KDE su ezen a szolgáltatáson keresztül hajtja végre a parancsokat . <br>
+(src)="s57.5"> Kiírja a parancsot és a root jelszót az aljazatra , a szolgáltatás végrehajtja a parancsot a " su " -n keresztül , ahogy korábban leírtuk . <br>
+(trg)="s53.1"> KDE su は 入力 さ れ た パスワード を チェック し 、 正しく なけれ ば エラーメッセージ を 返し ます 。 パスワード チェック は 、 テスト プログラム / bin / true を 実行 する こと によって 行わ れ ます 。 これ が 成功 する と 、 パスワード は 正しい と 、 想定 さ れ ます 。 <br>
+<hr>
+(src)="s57.6"> Ezután egy ideig megőrzi a parancsot és a jelszót is . <br>
+(trg)="s54.1"> パスワード 保持 <br>
+<hr>
+(src)="s57.7"> A várakozási idő értékét a vezérlőközpontbeli modullal lehet megváltoztatni . <br>
+(src)="s57.8"> Ha a megadott időn belül ugyanazt a parancsot még egyszer végre kell hajtani , akkor a kliensnek nem kell megadnia a jelszót még egyszer . <br>
+(trg)="s55.1"> 便利 に なる よう に 、 KDE su は " keep password " 機能 を 実装 し て い ます 。 もし 、 あなた が セキュリティー に 興味 が あれ ば 、 この 項 を 読む べき です 。 <br>
+<hr>
+(src)="s57.9"> Hogy az esetleges betörőnek ne legyen módja a jelszavak lekérdezésére a szolgáltatástól ( például egy nyomkövető használatával) , a szolgáltatás "set-group-id nogroup " módon van beállítva . <br>
+(src)="s57.10"> Ez megakadályozza , hogy bármely felhasználó ( Önt is beleértve ) lekérdezhesse a jelszavakat a kdesud folyamattól . <br>
+(trg)="s56.1"> KDE su に パスワード を 保持 さ せる 事 は 、 あなた の システム に ( 小 さ な ) セキュリティー ホール を 作る こと に なり ます 。 明らか に 、 KDE su は 、 あなた の ユーザー ID を 除い て 誰 に も 、 パスワード を 使う 事 を 許し て は い ませ ん が 、 もし 、 注意 せ ず に 使う の なら ば 、 これ は 、 root の セキュリティー レベル を 一般 ユーザー ( あなた ) の セキュリティー レベル へ と 下げ て しまう 事 に なり ます 。 あなた の アカウント に 討ち 入っ た クラッカー は 、 root 権限 を 取得することになります。 KDE su はこれを防ごうと努めます。これを使うセキュリティー策は、少なくとも私の考えでは、 合理的に安全であり、ここで説明します。 <br>
+<hr>
+(src)="s57.11"> Ezen kívül a szolgáltatás beállítja a DISPLAY környezeti változót arra az értékre , amely induláskor volt . <br>
+(src)="s57.12"> Így a betörő legrosszabb esetben arra lehet képes , hogy végrehajtson egy programot az Ön képernyőjén . <br>
+(trg)="s57.1"> KDE su は、 kdesud というデーモンを使います。 デーモンは /tmp にあるUNIXソケットにコマンドを教えます。 ソケットのモードは 0600 なので、だた、あなたのユーザー IDのみがそれに接続することが出来ます。 パスワード保持が有効になっていると、 KDE su はこのデーモンを通してコマンドを実行します。 それは、上記にあるように、コマンドとroot のパスワードをそのソケットに書き込み、 そして、デーモンは " su" を使ってそのコマンドを実行します。 このあと、コマンドと、パスワードは捨てられません。代わって、それらは指定された時間だけ保持されます。 これは、コントロールモジュールの中のタイムアウト値です。 もし、この期間中に、同じコマンドの他のリクエストが来ても、クライアントはパスワードを入力する必要はありません。 あなたのアカウントを打破したクラッカーがデーモンからパスワードを盗む(例えば、デバッガを使って)のを防ぐために、 デーモンは set-group-id nogroup でインストールされています。 これは、全ての一般ユーザー(あなたを含めて)が、 kdesud プロセスからパスワードを取得することを防ぐはずです。 また、デーモンは環境変数 DISPLAYに、デーモンが起動された時のその値をセットします。 クラッカーが唯一することの出来るのは、アプリケーションをあなたのディスプレイ上で実行する、ということだけです。 <br>
+<hr>
+(src)="s58.1"> Ennek az eljárásnak az az egyik gyenge pontja , a végrehajtott programok nem minden esetben tesznek eleget a biztonsági előírásoknak ( pl . a setuid root programok ) . <br>
+(src)="s58.2"> A programokban megbújó ' buffer overrun ' és egyéb hibákat kihasználhatja egy esetleges támadó . <br>
+(trg)="s58.1">この解決策の弱点は、恐らく、あなたが実行するプログラムはセキュリティーを考慮にいれて書かれていない、いう点です。 (例えば、setuid のrootのプログラムなど。) これは、それらのプログラムはバッファーオーバーラン、もしくは、その他の問題を持っている可能性があるということを意味していて、 そして、クラッカーはそれらの問題を見付け出すことが出来ます。<br>
+<hr>
+(src)="s59.1"> A jelszómegjegyzési lehetőség használata bizonyos biztonsági kockázatot jelent . <br>
+(src)="s59.2"> Az adott környezettől függően kell eldönteni , hogy érdemes-e bekapcsolni vagy nem . <br>
+(trg)="s59.1">パスワード保持機能を使用するかどうかは、セキキュリティーと便利さの兼ね合いに依ります。 その機能を使いたいかどうかを良く考えて、自分で決めることを、私は勧めます。<br>
+<hr>
+(src)="s60.1"> Szerzők <br>
+(trg)="s60.1">作者<br>
+<hr>
+(src)="s61.1"> KDE su <br>
+(src)="s62.1"> Copyright : <br>
+(trg)="s61.1">KDE su<br>
+<hr>
+(src)="s62.2"> Geert Jansen , 2000 . <br>
+(src)="s63.1"> A KDE su -t Geert Jansen készítette . <br>
+(trg)="s62.1">Copyright 2000 Geert Jansen<br>
+<hr>
+(src)="s63.2"> A program részben Pietro Iglio KDE su 0.3 alkalmazása alapján készült . <br>
+(src)="s63.3"> Megegyeztem Pietróval , hogy a jövőben én fogom karbantartani a programot . <br>
+(trg)="s63.1"> KDE su は Geert Jansen によって書かれました。 Pietro Iglio の KDE su バージョン 0.3 に基づいたsomewhatです。 Pietro と 私は、将来私がこのプログラムの保守をしていくことに合意しています。 <br>
+<hr>
+(src)="s64.1"> A szerző elérhető a következő e-mail címen : g.t.jansen@stud.tue.nl . <br>
+(src)="s64.2"> Várom a programmal kapcsolatos észrevételeket , hibabejelentéseket , írjon bátran ! <br>
+(trg)="s64.1">作者とは g.t.jansen@stud.tue.nl へのメールで連絡を取ることが出来ます。 バグがあれば、それを私がf修正出来るように、連絡して下さい。 もし提案があれば、気楽に連絡してください。 <br>
+<hr>
+(src)="sgnu-fdl.1"> This documentation is licensed under the terms of the GNU Free Documentation License . <br>
+(trg)="sgnu-fdl.1">This documentation is licensed under the terms of the GNU Free Documentation License. <br>
+<hr>
+(src)="s65.1"> Ez a program az Artistic License feltételeinek megfelelően használható . <br>
+(trg)="s65.1">This program is licensed under the terms of the Artistic License. <br>
+<hr>
+<p>
+
+# hu/docs/kdebase/khelpcenter/contact.docbook.xml.gz<br>
+# ja/docs/kdebase/khelpcenter/contact.docbook.xml.gz
+
+<p><hr>
+(src)="s1.1"> A KDE -fejlesztők elérhetősége <br>
+(trg)="s1.1"> KDE チーム と 連絡 を 取る <br>
+<hr>
+(src)="s2.1"> Levelezőlisták <br>
+(trg)="s2.1"> メーリングリスト <br>
+<hr>
+(src)="s3.1"> Több KDE -s levelezőlista is létezik , alább felsoroltuk a legfontosabbakat . <br>
+(src)="s3.2"> A régebbi hozzászólások archívuma elérhető ezen a címen . <br>
+(trg)="s3.1"> KDE プロジェクト で は いくつか の メーリングリスト を 運用 し て い ます 。 現在 運用 し て いる メーリングリスト について は 下 を ご覧 ください 。 メーリングリスト の 過去 の 記事 は メーリングリスト の アーカイブ を 参照 し て ください 。 <br>
+<hr>
+(src)="s4.1"> kde-request@kde.org - KDE <br>
+(trg)="s4.1"> kde - request @ kde . org - KDE <br>
+<hr>
+(src)="s5.1"> Általános témakörök <br>
+(trg)="s5.1"> KDE について の 全般 的 な 話題 <br>
+<hr>
+(src)="s6.1"> kde-announce-request@kde.org - kde-announce <br>
+(trg)="s6.1"> kde - announce - request @ kde . org - kde - announce <br>
+<hr>
+(src)="s7.1"> Az új KDE -alkalmazások bejelentése <br>
+(trg)="s7.1"> 新しい KDE アプリケーション の アナウンス <br>
+<hr>
+(src)="s8.1"> kde-request@kde.org - kde <br>
+(trg)="s8.1"> kde - user - request @ kde . org - kde - user <br>
+<hr>
+(src)="s9.1"> A KDE-felhasználók listája <br>
+(trg)="s9.1"> ユーザー の 相互 協力 <br>
+<hr>
+(src)="s10.1"> kde-devel-request@kde.org - kde-devel <br>
+(trg)="s10.1"> kde - devel - request @ kde . org - kde - devel <br>
+<hr>
+(src)="s11.1"> A KDE-fejlesztők listája . <br>
+(trg)="s11.1"> 開発 者 用 です 。 <br>
+<hr>
+(src)="s12.1"> kde-licensing-request@kde.org - kde-licensing <br>
+(trg)="s12.1"> kde - licensing - request @ kde . org - kde - licensing <br>
+<hr>
+(src)="s13.1"> A licencelési kérdések fóruma <br>
+(trg)="s13.1"> ライセンス に関する 議論 <br>
+<hr>
+(src)="s14.1"> kde-look-request@kde.org - kde-look <br>
+(trg)="s14.1"> kde - look - request @ kde . org - kde - look <br>
+<hr>
+(src)="s15.1"> A KDE grafikus megjelenésével foglalkozó fórum <br>
+(trg)="s15.1"> 「 ルックアンドフィール 」 に関する 議論 <br>
+<hr>
+(src)="s16.1"> kde-artists-request@kde.org - kde-artists <br>
+(trg)="s16.1"> kde - artists - request @ kde . org - kde - artists <br>
+<hr>
+(src)="s17.1"> Ez elsősorban azoknak szól , akik ikonok és más grafikák készítésével foglalkoznak <br>
+(trg)="s17.1"> アイコ ン や その他 の アート ワーク 作成 <br>
+<hr>
+(src)="s18.1"> kde-doc-english-request@kde.org - kde-doc-english <br>
+(trg)="s18.1"> kde - i 1 8 n - doc - request @ kde . org - kde - 1 8 n - doc <br>
+<hr>
+(src)="s19.1"> A KDE -s dokumentációkészítéssel foglalkozók listája . <br>
+(trg)="s19.1"> 国際 化 と ドキュメント の 発行 <br>
+(trg)="s20.1"> http : / / i 1 8 n . kde . org / teams / <br>
+<hr>
+(src)="s20.1"> kde-i18n-doc-request@kde.org - kde-18n-doc <br>
+(trg)="s21.1"> 各国 語 へ の ローカライズ に関する 情報 ( ユーザ の メーリングリスト や WEB サイト も 含め て ) について は 、 上記 URL の 翻訳 チーム の ページ を チェック し て 下さい 。 <br>
+(trg)="s24.1"> 上記 の アドレス は 参加 と 脱退 の 為 だけ の もの です 。 メーリングリスト に 参加 する と 、 メーリングリスト へ の メッセージ の 送信 方法 や 、 メーリングリスト の オプション の 変更 方法 が 記述 さ れ た メッセージ が 送ら れ て 来る でしょ う 。 <br>
+<hr>
+(src)="s21.1"> A nemzetköziesítéssel és a dokumentációkészítés listája <br>
+(src)="s22.1"> http : / /i18n.kde.org / teams / " <br>
+(trg)="s25.1"> メーリングリスト に ポスト つもり で 上記 の アドレス に ポスト し ない よう お願い 致し ます 。 <br>
+<hr>
+(src)="s23.1"> Ha a KDE valamelyik nyelvre lefordításával kapcsolatos információt keres , a fenti címen megtalálhatja a fordítócsapatok oldalát . <br>
+(src)="s24.1"> Írja be az Ön valódi e-mail címét az Ön e-mail címe szöveg helyére . <br>
+(trg)="s26.1"> HTML メール で リクエスト を 送ら ない で ください 。 それ は 、 HTML メール で 送る と 、 メール サーバー が あなた の リクエスト を うまく 処理 でき ない こと が ある から です 。 また 、 登録 する アドレス が From : に ある アドレス と 同じ なら ば 、 件名 ( Subject ) に 入力 する 行 から アドレス を 省略 する こと が でき ます 。 <br>
+<hr>
+(src)="s24.2"> Hagyja üresen a levél törzsét . <br>
+(trg)="s27.1"> 訳注 ： ここ から は 日本 KDE ユーザ 会 の 情報 です 。 <br>
+<hr>
+(src)="s24.3"> Ne tegyen semmit a levélbe , még aláírást sem , mert az megzavarhatja a feldolgozást végző programot . <br>
+(src)="s25.1"> Cserélje ki az " az Ön e-mail címe " szöveget azzal az e-mail címmel , amit a feliratkozáshoz használt . <br>
+(trg)="s28.1"> また 、 日本 KDE ユーザー 会 で は 日本語 で 議論 できる メーリングリスト を 運用 し て い ます 。 現在 日本 KDE ユーザー 会 で 運用 し て いる メーリングリスト について は 以下 を ご覧 ください 。 メーリングリスト の 過去 の 記事 について は 、 メーリングリスト の アーカイブ を 参照 し て ください 。 <br>
+<hr>
+(src)="s25.2"> Hagyja üresen a levél törzsét . <br>
+(trg)="s29.1"> Kuser - ctl @ kde . gr . jp - Kuser <br>
+<hr>
+(src)="s25.3"> Ne tegyen semmi mást a levélbe , még aláírást sem , mert az megzavarhatja a feldolgozást végző programot . <br>
+(trg)="s30.1"> 一般 ユーザ 向け <br>
+(trg)="s31.1"> Kdeveloper - ctl @ kde . gr . jp - Kdeveloper <br>
+<hr>
+(src)="s26.1"> A fenti címek csak feliratkozásra és leiratkozásra szolgálnak . <br>
+(trg)="s32.1"> 開発 者 / 翻訳 者 向け <br>
+(trg)="s34.1"> 例 : subscribe Sora Hanawa <br>
+<hr>
+(src)="s26.2"> Ha sikeresen feliratkozott , akkor kapni fog egy üzenetet , amelyből megtudhatja , hogyan kell üzenetet küldeni a listára és hogyan lehet testreszabni a beállításokat . <br>
+(trg)="s36.1"> 上記 の アドレス は 参加 と 脱退 の 為 だけ の もの です 。 メーリングリスト に 参加 する と 、 メーリングリスト へ の メッセージ の 送信 方法 や 、 メーリングリスト の オプション の 変更 方法 が 記述 さ れ た メッセージ が 送ら れ て 来る でしょ う 。 <br>
+<hr>
+(src)="s27.1"> Kérjük , hogy a fenti címekre *ne* küldjön levelezőlistára szánt üzenetet . <br>
+(trg)="s37.1"> メーリングリスト に ポスト つもり で 上記 の アドレス に ポスト し ない よう お願い 致し ます 。 <br>
+<hr>
+(src)="s28.1"> Ne használjon HTML formátumú levéltartalmat , mert ez megzavarhatja a feldolgozást végző programot . <br>
+(src)="s28.2"> Ha arra a címre kéri a leveleket , amelyről a feliratkozást küldi , akkor elhagyhatja az e-mail címet a tárgysorból . <br>
+(trg)="s38.1"> HTML メール で リクエスト を 送ら ない で ください 。 それ は 、 HTML メール で 送る と 、 メール サーバー が あなた の リクエスト を うまく 処理 でき ない こと が ある から です 。 また 、 登録 する アドレス が From : に ある アドレス と 同じ なら ば 、 件名 ( Subject ) に 入力 する 行 から アドレス を 省略 する こと が でき ます 。 <br>
+<hr>
+</body>
+</html>

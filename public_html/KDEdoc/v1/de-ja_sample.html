@@ -1,0 +1,356 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# de/docs/kdebase/kdesu/index.docbook.xml.gz<br>
+# ja/docs/kdebase/kdesu/index.docbook.xml.gz
+
+<p><hr>
+(src)="s1.1"> Das Handbuch zu KDE su <br>
+(src)="s2.1"> KDE su ist eine graphische Oberfl�che f�r den UNIX -Befehl su . <br>
+(trg)="s1.1"> KDE su ハンドブック <br>
+<hr>
+(src)="s4.2"> KDE su ist eine graphische Oberfl�che f�r den UNIX -Befehl su in KDE . <br>
+(src)="s4.3"> Dies erm�glicht Ihnen , ein Programm mit einer anderen Benutzerkennung auszuf�hren , indem Sie das Passwort dieses Benutzers angeben . <br>
+(trg)="s2.1"> Permission is granted to copy , distribute and / or modify this document under the terms of the GNU Free Documentation License , Version 1 . 1 or any later version published by the Free Software Foundation ; with no Invariant Sections , with no Front - Cover Texts , and with no Back - Cover Texts . <br>
+<hr>
+(src)="s4.4"> KDE su hat keine speziellen Systemrechte ; es benutzt den Befehl su . <br>
+(src)="s5.1"> KDE su hat eine zus�tzliche Funktion : <br>
+(trg)="s2.2"> A copy of the license is included in . <br>
+<hr>
+(src)="s5.2"> Es kann Passw�rter speichern . <br>
+(src)="s5.3"> Wenn Sie diese Funktion benutzen , m�ssen Sie das Passwort f�r jeden Befehl nur einmal eingeben . <br>
+(trg)="s3.1"> KDE su は Unix " su " コマンド の ため の グラフィカル フロント エンド です 。 <br>
+<hr>
+(src)="s5.4"> Weitere Informationen und eine Sicherheitsanalyse finden Sie unter . <br>
+(trg)="s4.1"> 導入 <br>
+<hr>
+(src)="s6.1"> Dieses Programm sollte von der Befehlszeile oder durch .desktop -Dateien gestartet werden . <br>
+(src)="s6.2"> Obwohl es nach dem Passwort des Systemverwalters ( root ) mit Hilfe eines GUI -Dialoges fragt , ist es trotzdem eher ein Befehlszeilen- als ein reines GUI -Programm . <br>
+(trg)="s5.1"> KDE su に ようこそ ！ KDE su は 、 UNIX " su " コマンド の 、 K デスク トップ 環境 の ため の グラフィカル フロント エンド です 。 これ は 、 他 の ユーザー の パスワード を 適応 する こと によって 、 その ユーザー として 、 プログラム を 実行 する 事 が 出来 ます 。 KDE su は 権利 の ない プログラム で あり 、 システム の su を 使っ て い ます 。 <br>
+<hr>
+(src)="s7.1"> KDE su benutzen <br>
+(src)="s8.1"> Die Befehlszeilen-Parameter sind unterhalb erkl�rt . <br>
+(trg)="s6.1"> KDE su は 、 パスワード を 保持 する 機能 が 一つ 追加 さ れ て い ます 。 この 機能 を 使え ば 、 コマンド 実行 の 度 に パスワード を 入力 する 必要 は 無くなり ます 。 この 機能 と 、 セキュリティー 分析 について の 詳細 は 、 を 御覧 下さい 。 <br>
+<hr>
+(src)="s10.1"> Dieser Parameter gibt an , dass das Programm mit den Rechten des Systemverwalters ausgef�hrt wird . <br>
+(src)="s10.2"> Der Parameter muss einzeln angegeben werden . <br>
+(trg)="s7.1"> この プログラム は 、 コマンド ライン 、 もしくは 、 . desktop ファイル から 実行 出来 ます 。 それ は 、 GUI ダイアログ を 使っ て root パスワード を 尋ね ます が 、 私 は 、 純粋 な GUI プログラム に 代る 、 コマンド ライン と GUI の より 良い 接続 法 で ある と 考え て い ます 。 <br>
+<hr>
+(src)="s11.1"> -f FILE <br>
+(src)="s12.1"> Dieser Parameter erlaubt den leistungsf�higen Einsatz von KDE su bei .desktop Dateien . <br>
+(trg)="s8.1"> インストール <br>
+<hr>
+(src)="s12.2"> Er weist KDE su an , die Datei , die mit FILE angegeben wurde , zu untersuchen . <br>
+(trg)="s9.1"> ダウン ロード <br>
+<hr>
+(src)="s12.3"> Wenn der aktuelle Benutzer Schreibrechte auf die Datei hat , wird die Datei unter seinem Namen ausgef�hrt . <br>
+(src)="s12.4"> Wenn er keine Schreibrechte hat , wird die Datei unter dem Benutzernamen USER ( Voreinstellung : <br>
+(trg)="s10.1"> KDE su は 現在 、 KDE CVS の kdebase に 入っ て い ます 。 全て の ( 2 . x ) KDE ディストリビューション に 含ま れ て いる はず です 。 あなた も また 、 私 の ftp : / / skynet . stack . nl / pub / users / geertj / に ある ホームページ から KDE 1 . x バージョン を 入手 する こと が 出来 ます 。 <br>
+<hr>
+(src)="s13.1"> -t <br>
+(src)="s14.1"> Terminal-Ausgabe einschalten . <br>
+(trg)="s11.1"> コンパイル <br>
+<hr>
+(src)="s14.2"> Dieser Parameter schaltet das Speichern von Passw�rtern aus . <br>
+(src)="s14.3"> Dies ist haupts�chlich f�r Debugging-Zwecke interessant . <br>
+(trg)="s12.1"> KDE su は kdebase に 入っ て い て 、 あなた は 既に 持っ て い ます 、 もしくは 、 kdebase を インストール する 時 に 入手 し ます 。 <br>
+<hr>
+(src)="s14.4"> Wenn Sie eine Anwendung benutzen wollen , die im Konsolen-Modus l�uft , sollten Sie stattdessen den Standardbefehl su verwenden . <br>
+(src)="s15.1"> -n <br>
+(trg)="s13.1"> KDE 1 . x バージョン を コンパイル する に は 、 次 の よう に し て 下さい 。 <br>
+<hr>
+(src)="s16.1"> Das Passwort nicht speichern . <br>
+(src)="s16.2"> Dieser Parameter schaltet das Ankreuzfeld Passwort beibehalten im Passwort-Dialog aus . <br>
+(trg)="s14.1"> 最後 の ステップ は root で 実行 する 必要 が あり ます 。 インストール 行程 は システム ワイド な KDE ディレクトリ に 書き込める 必要 が ある ため です 。 <br>
+<hr>
+(src)="s17.1"> -q <br>
+(src)="s19.1"> -d <br>
+(trg)="s15.1"> KDE su の 使い方 <br>
+<hr>
+(src)="s21.1"> -v <br>
+(src)="s22.1"> Versionsinformationen anzeigen und Programm beenden . <br>
+(trg)="s16.1"> KDE su の 使い方 は 簡単 です 。 文法 は 次 の よう に なっ て い ます 。 <br>
+<hr>
+(src)="s23.1"> --help <br>
+(src)="s24.1"> Hilfe anzeigen . <br>
+(trg)="s17.1"> コマンド ライン オプション の 説明 は 次 の よう に なっ て い ます 。 <br>
+<hr>
+(src)="s25.1"> -s <br>
+(src)="s26.1"> Den kdesu-D�mon anhalten . <br>
+(trg)="s18.1"> - c PROGRAM <br>
+<hr>
+(src)="s26.2"> Weitere Details finden Sie unter . <br>
+(trg)="s20.1"> - f FILE <br>
+<hr>
+(src)="s27.1"> Einrichtung <br>
+(src)="s28.1"> KDE su wird mit dem Kontrollmodul passwords ausgeliefert . <br>
+(trg)="s21.1"> この オプション は . desktop ファイル において 、 KDE su を 効率 的 に 使う 事 が 出来 ます 。 これ は 、 FILE によって 指定 さ れ た ファイル を テスト する と いう こと を KDE su に 伝え ます 。 もし 、 この ファイル が 現在 の ユーザー によって 書き換え 可能 で あれ ば 、 KDE su は 現在 の ユーザー として その コマンド を 実行 し ます 。 もし 、 書き込み 可能 で なけれ ば 、 ユーザー USER ( デフォルト は root ) として 、 その コマンド を 実行 し ます 。 <br>
+<hr>
+(src)="s29.1"> Anzeigemodus <br>
+(trg)="s23.1"> - t <br>
+<hr>
+(src)="s30.1"> Hier l�sst sich festlegen , wie Ihre eingegebenen Zeichen auf dem Bildschirm erscheinen . <br>
+(src)="s30.2"> M�gliche Einstellungen sind : ein Stern pro Zeichen , drei Sterne pro Zeichen oder keine R�ckmeldung auf dem Bildschirm . <br>
+(trg)="s24.1"> ターミナル 出力 を 有効 に し ます 。 これ は パスワード 保持 を 無効 に し ます 。 これ は 、 広く 、 デバッグ 用途 に 使用 し ます 。 もし 、 コンソール モード の アプリケーション を 使い たい 時 に は 、 代わり に 標準 の " su " を 使い ます 。 <br>
+<hr>
+(src)="s30.3"> Die Voreinstellung ist " ein Stern pro Zeichen " . <br>
+(src)="s31.1"> Passw�rter speichern <br>
+(trg)="s25.1"> - n <br>
+<hr>
+(src)="s32.1"> Sie k�nnen Passw�rter in KDE su speichern , indem Sie das Einstellungsfeld Passw�rter speichern ankreuzen . <br>
+(src)="s32.2"> In dem Textfeld darunter k�nnen Sie angeben , wieviele Minuten lang das Passwort gespeichert werden soll . <br>
+(trg)="s26.1"> パスワード を 保持 し ませ ん 。 これ は 、 パスワードダイアログ の " keep password " チェック ボックス を 無効 に し ます 。 <br>
+<hr>
+(src)="s32.3"> Standardm��ig werden keine Passw�rter gespeichert . <br>
+(trg)="s27.1"> - q <br>
+<hr>
+(src)="s33.1"> Interne Funktionsweise <br>
+(trg)="s28.1"> 無言 モード です 。 <br>
+<hr>
+(src)="s34.1"> X-Authentifizierung <br>
+(trg)="s29.1"> - d <br>
+<hr>
+(src)="s35.1"> Wenn Sie keine X-Cookies benutzen , sind Sie auf sich alleine gestellt . <br>
+(trg)="s30.1"> デバッグ 情報 を 表示 し ます 。 <br>
+<hr>
+(src)="s35.2"> KDE su wird dies erkennen und kein Cookie hinzuf�gen . <br>
+(trg)="s31.1"> - v <br>
+<hr>
+(src)="s35.3"> Sie m�ssen sich vergewissern , dass der Systemverwalter berechtigt ist , auf die Anzeige zuzugreifen . <br>
+(trg)="s32.1"> バージョン 情報 を 表示 し て 終了 し ます 。 <br>
+<hr>
+(src)="s36.1"> Schnittstelle zu su <br>
+(trg)="s33.1"> - h <br>
+<hr>
+(src)="s37.1"> KDE su benutzt das Systemkommando su , um Rechte zu erhalten . <br>
+(src)="s37.2"> In diesem Abschnitt wird erkl�rt , wie KDE su dabei vorgeht . <br>
+(trg)="s34.1"> いくつか の ヘルプ を 表示 し ます 。 <br>
+<hr>
+(src)="s38.1"> Weil manche su -Implementierungen ( z.B. die von Red Hat ) keine Passw�rter von StdIn lesen , erstellt KDE su ein pty/tty-Paar und f�hrt su mit den Standard-Dateibeschreibungen aus , die durch das tty �bergeben werden . <br>
+(src)="s39.1"> Um anstelle einer interaktiven Shell einen Befehl auszuf�hren , den der Benutzer ausw�hlt , benutzt KDE su den Parameter -c mit dem Befehl su . <br>
+(trg)="s35.1"> - s <br>
+<hr>
+(src)="s39.2"> Dieser Parameter wird von jeder bekannten Shell verstanden , sodass er portabel einsetzbar sein sollte . su �bergibt den Parameter -c an die Shell desjenigen Benutzers , unter dessen ID der Befehl ausgef�hrt werden soll . <br>
+(trg)="s36.1"> kdesu デーモン を 停止 し ます 。 を 御覧 下さい 。 <br>
+(trg)="s37.1"> 設定 <br>
+<hr>
+(src)="s39.3"> Diese Shell f�hrt dann das Programm aus . <br>
+(trg)="s39.1"> エコー モード <br>
+<hr>
+(src)="s40.1"> Statt den Befehl des Benutzers direkt mit su auszuf�hren , f�hrt KDE su das kleine Unterprogramm kdesu_stub aus . <br>
+(src)="s40.2"> Dieses Unterprogramm , das unter der ID des Zielbenutzers l�uft , fordert einige Informationen von KDE su �ber �ber den pty/tty Kanal an ( stdin und stdout des Unterprogramms ) . <br>
+(trg)="s40.1"> これ は 、 入力 さ れる どの よう な 文字 列 を スクリーン に エコー さ せる か の 設定 です 。 可能 な 選択肢 は 、 一文字 ごと に スター 、 三つ の スター 、 もしくは 、 全く エコー し ない 、 で す 。 デフォルト は 、 一文字 ごと に スター 、 と なっ て い ます 。 <br>
+<hr>
+(src)="s40.3"> Danach wird das Programm des Benutzers ausgef�hrt . <br>
+(trg)="s41.1"> パスワード を 保持 <br>
+<hr>
+(src)="s40.4"> Folgende Informationen werden �bergeben : die X-Anzeige , ein X-Authentifizierungs-Cookie ( wenn verf�gbar ) , die Variable PATH und der auszuf�hrende Befehl . <br>
+(src)="s40.5"> Der Grund f�r die Benutzung eines Unterprogramms ist der X-Cookie . <br>
+(trg)="s42.1"> " keep password " チェック ボックス に チェック する こと で 、 入力 し た パスワード を KDE su に 覚え させる こと が 出来 ます 。 チェック する と 、 タイム アウト 値 を 下方 の テキスト フィールド に 入力 出来る よう に なり ます 。 これ は 、 パスワード が 記憶 さ れる 時間 で 、 単位 は 分 に なっ て い ます 。 デフォルト で は 、 パスワード 保持 し ない 、 に なっ て い ます 。 <br>
+<hr>
+(src)="s40.6"> Dieser beinhaltet sensible Informationen und kann deshalb nicht �ber die Befehlszeile �bergeben werden . <br>
+(src)="s41.1"> Passwort-�berpr�fung <br>
+(trg)="s43.1"> 内部 <br>
+<hr>
+(src)="s42.1"> Passw�rter speichern <br>
+(src)="s43.1"> Um es Ihnen so einfach wie m�glich zu machen , enth�lt KDE su eine Funktion Passwort beibehalten . <br>
+(trg)="s44.1"> X 認証 <br>
+<hr>
+(src)="s43.2"> Falls Sie sich f�r die Sicherheit dieser Funktion interessieren , sollten Sie diesen Absatz lesen . <br>
+(src)="s44.1"> Indem Sie KDE su erlauben , die Passw�rter zu speichern , entsteht eine ( kleine ) Sicherheitsl�cke in Ihrem System . <br>
+(trg)="s45.1"> 実行 し た プログラム は root ユーザー ID に て 実行 さ れ 、 一般 的 に あなた の X ディスプレイ に アクセス する 権限 は あり ませ ん 。 KDE su は あなた の ディスプレイ の ため の 認証 クッキー を 一時 的 な . Xauthority ファイル に 加える こと によって 権限 を 得 て い ます 。 コマンド が 終了 する と 、 この ファイル は 取り除か れ ます 。 <br>
+<hr>
+(src)="s44.2"> KDE su erlaubt niemandem au�er Ihnen mit Ihrer Benutzer-ID , diese Passw�rter zu benutzen . <br>
+(src)="s44.3"> Wenn Sie allerdings nicht aufpassen , kann das Sicherheitslevel des Systemverwalters ( root ) auf das eines normalen Benutzers ( Ihre Benutzer-ID ) herabgesetzt werden . <br>
+(trg)="s46.1"> もし 、 あなた が X クッキー を 使わ ない の で あれ ば 、 自己 責任 です 。 KDE su は 、 これ を 検出 し 、 クッキー を 加え ませ ん が 、 root が あなた の ディスプレイ に アクセス 出来る よう に し て おか なけれ ば なり ませ ん 。 <br>
+<hr>
+(src)="s44.4"> Ein Hacker , der versucht , in Ihren Zugang einzubrechen , w�rde dann Zugang zu den Funktionen von root erhalten . <br>
+(src)="s44.5"> KDE su versucht dies zu verhindern . <br>
+(trg)="s47.1"> su へ の インターフェース <br>
+<hr>
+(src)="s44.6"> Das Sicherheitskonzept , das benutzt wird , ist angemessen sicher , zumindest nach bestem Wissen des Autors . <br>
+(src)="s44.7"> Das Konzept wird hier weiter erkl�rt . <br>
+(trg)="s48.1"> &gt; KDE su は 権限 を 取得 する のに 、 システム の " su " を 使用 し ます 。 この 章 で は 、 KDE su は どの よう に これ を する の か の 詳細 を 説明 し ます 。 <br>
+<hr>
+(src)="s45.2"> Der D�mon nimmt auf einem UNIX -Socket in /tmp Befehle entgegen . <br>
+(src)="s45.3"> Die Zugriffsrechte des Sockets sind auf 0600 eingestellt , sodass nur Ihre Benutzer-ID Verbindungen zu dem Socket aufbauen kann . <br>
+(trg)="s49.1"> いくつか の su の 実装 ( 例えば 、 Redhat の su ) で は 、 標準 入力 ( stdin ) から の パスワード 読み込み を 使わ ない ので 、 KDE su は 、 pty / tty の ペア を 作成 し 、 tty に 接続 さ れ た それ 自身 の 標準 ファイルディスクリプター に て " su " を 実行 し ます 。 <br>
+<hr>
+(src)="s45.4"> Wenn Passwort beibehalten aktiviert wurde , f�hrt KDE su Befehle durch diesen D�mon aus . <br>
+(src)="s45.5"> KDE su schreibt dann den Befehl und das Passwort des Systemverwalters auf den Socket . <br>
+(trg)="s51.1"> su を 使っ て 直接 ユーザー コマンド を 実行 する 代わり に 、 KDE su は kdesu _ stub と 呼ば れる 小さな スタブ プログラム を 実行 し ます 。 この スタブ ( 対象 の ユーザー として 実行 さ れる て いる ) は 、 いくつか の 情報 を pty / tty チャンネル ( スタブ の 標準 入出力 ) 越し に KDE su に 要求 し 、 それから 、 ユーザー の プログラム を 実行 し ます 。 渡さ れる 情報 は 、 X ディスプレイ 、 ( 可能 で あれ ば ) X 認証 クッキー 、 環境 変数 PATH 、 そして 、 実行 する コマンド 、 と なっ て い ます 。 スタブ プログラム が 使わ れる 理由 は 、 X クッキー は プライベート な 情報 で ある ため で 、 コマンド ライン に 渡す こと が 出来 ない の です 。 <br>
+<hr>
+(src)="s45.6"> Der D�mon f�hrt dann mit Hilfe von su den Befehl , wie oben beschrieben , aus . <br>
+(trg)="s52.1"> パスワード の チェック <br>
+<hr>
+(src)="s45.7"> Danach werden Befehl und Passwort nicht gel�scht , sondern f�r eine bestimmte Zeit zwischengespeichert . <br>
+(src)="s45.8"> Diese Zeit wird dem Kontrollmodul entnommen . <br>
+(trg)="s53.1"> KDE su は 入力 さ れ た パスワード を チェック し 、 正しく なけれ ば エラーメッセージ を 返し ます 。 パスワード チェック は 、 テスト プログラム / bin / true を 実行 する こと によって 行わ れ ます 。 これ が 成功 する と 、 パスワード は 正しい と 、 想定 さ れ ます 。 <br>
+<hr>
+(src)="s45.9"> Wenn jetzt eine andere Anfrage f�r den Befehl in der angegebenen Zeit kommt , muss der Benutzer das Passwort nicht nochmals eingeben . <br>
+(trg)="s54.1"> パスワード 保持 <br>
+<hr>
+(src)="s45.10"> Um zu verhindern , dass Hacker , die in Ihren Zugang eingedrungen sind , Passw�rter stehlen , wird der D�mon mit den Parametern set-group-id nogroup eingerichtet . <br>
+(src)="s45.11"> Dies sollte alle normalen Benutzer ( Sie eingeschlossen ) daran hindern , Passw�rter von dem Prozess kdesud zu bekommen . <br>
+(trg)="s55.1"> 便利 に なる よう に 、 KDE su は " keep password " 機能 を 実装 し て い ます 。 もし 、 あなた が セキュリティー に 興味 が あれ ば 、 この 項 を 読む べき です 。 <br>
+<hr>
+(src)="s45.12"> Der D�mon setzt au�erdem die Umgebungsvariable DISPLAY auf den Wert , den der D�mon hatte , als er gestartet wurde . <br>
+(src)="s45.13"> Das Einzige , was ein Hacker demnach tun k�nnte , w�re Anwendungen auf Ihrer Anzeige auszuf�hren . <br>
+(trg)="s56.1"> KDE su に パスワード を 保持 さ せる 事 は 、 あなた の システム に ( 小 さ な ) セキュリティー ホール を 作る こと に なり ます 。 明らか に 、 KDE su は 、 あなた の ユーザー ID を 除い て 誰 に も 、 パスワード を 使う 事 を 許し て は い ませ ん が 、 もし 、 注意 せ ず に 使う の なら ば 、 これ は 、 root の セキュリティー レベル を 一般 ユーザー ( あなた ) の セキュリティー レベル へ と 下げ て しまう 事 に なり ます 。 あなた の アカウント に 討ち 入っ た クラッカー は 、 root 権限 を 取得することになります。 KDE su はこれを防ごうと努めます。これを使うセキュリティー策は、少なくとも私の考えでは、 合理的に安全であり、ここで説明します。 <br>
+(trg)="s57.1"> KDE su は、 kdesud というデーモンを使います。 デーモンは /tmp にあるUNIXソケットにコマンドを教えます。 ソケットのモードは 0600 なので、だた、あなたのユーザー IDのみがそれに接続することが出来ます。 パスワード保持が有効になっていると、 KDE su はこのデーモンを通してコマンドを実行します。 それは、上記にあるように、コマンドとroot のパスワードをそのソケットに書き込み、 そして、デーモンは " su" を使ってそのコマンドを実行します。 このあと、コマンドと、パスワードは捨てられません。代わって、それらは指定された時間だけ保持されます。 これは、コントロールモジュールの中のタイムアウト値です。 もし、この期間中に、同じコマンドの他のリクエストが来ても、クライアントはパスワードを入力する必要はありません。 あなたのアカウントを打破したクラッカーがデーモンからパスワードを盗む(例えば、デバッガを使って)のを防ぐために、 デーモンは set-group-id nogroup でインストールされています。 これは、全ての一般ユーザー(あなたを含めて)が、 kdesud プロセスからパスワードを取得することを防ぐはずです。 また、デーモンは環境変数 DISPLAYに、デーモンが起動された時のその値をセットします。 クラッカーが唯一することの出来るのは、アプリケーションをあなたのディスプレイ上で実行する、ということだけです。 <br>
+<hr>
+(src)="s46.1"> Ein Schwachpunkt in diesem Sicherheitskonzept ist die Tatsache , dass die auszuf�hrenden Programme wahrscheinlich nicht nach Sicherheitsgesichtpunkten geschrieben wurden ( z.B. setuid root Programme ) . <br>
+(src)="s46.2"> Dies bedeutet , dass diese Programme Puffer-�berl�ufe oder andere Probleme enthalten k�nnten , die ein Hacker ausn�tzen k�nnte . <br>
+(trg)="s58.1">この解決策の弱点は、恐らく、あなたが実行するプログラムはセキュリティーを考慮にいれて書かれていない、いう点です。 (例えば、setuid のrootのプログラムなど。) これは、それらのプログラムはバッファーオーバーラン、もしくは、その他の問題を持っている可能性があるということを意味していて、 そして、クラッカーはそれらの問題を見付け出すことが出来ます。<br>
+<hr>
+(src)="s47.1"> Die Benutzung der Funktion zum Speichern der Passw�rter ist ein Kompromiss zwischen Sicherheitsanspr�chen und Komfort . <br>
+(src)="s47.2"> �berdenken Sie dies bitte und entscheiden Sie selbst ob Sie diese Funktion benutzen wollen oder nicht . <br>
+(trg)="s59.1">パスワード保持機能を使用するかどうかは、セキキュリティーと便利さの兼ね合いに依ります。 その機能を使いたいかどうかを良く考えて、自分で決めることを、私は勧めます。<br>
+<hr>
+(src)="s49.1"> KDE su <br>
+(src)="s50.1"> Copyright 2000 Geert Jansen <br>
+(trg)="s60.1">作者<br>
+<hr>
+(src)="s51.1"> KDE su wurde von Geert Jansen geschrieben . <br>
+(src)="s51.2"> Es basiert ein wenig auf Pietro Iglios KDE su , Version 0.3 . <br>
+(trg)="s61.1">KDE su<br>
+<hr>
+(src)="s51.3"> Pietro und Geert Jansen sind �bereingekommen , dass Geert Jansen das Programm in Zukunft pflegen wird . <br>
+(src)="s52.1"> Der Autor ist unter folgender Adresse zu erreichen : g.t.jansen@stud.tue.nl . <br>
+(trg)="s62.1">Copyright 2000 Geert Jansen<br>
+<hr>
+(src)="s52.2"> Bitte schicken Sie ihm alle Fehler die Sie finden , sodass er Sie entfernen kann . <br>
+(src)="s52.3"> Wenn Sie Vorschl�ge zu diesem Programm haben k�nnen Sie Geert Jansen gerne anschreiben . <br>
+(trg)="s63.1"> KDE su は Geert Jansen によって書かれました。 Pietro Iglio の KDE su バージョン 0.3 に基づいたsomewhatです。 Pietro と 私は、将来私がこのプログラムの保守をしていくことに合意しています。 <br>
+<hr>
+(src)="s55.1"> KDE su ist Teil des KDE -Projekts http://www.kde.org / . <br>
+(src)="s56.1"> KDE su k�nnen Sie im kdebase-Paket finden auf ftp://ftp.kde.org/pub/kde / , der Haupt- FTP -Site des KDE -Projekts . <br>
+(trg)="s64.1">作者とは g.t.jansen@stud.tue.nl へのメールで連絡を取ることが出来ます。 バグがあれば、それを私がf修正出来るように、連絡して下さい。 もし提案があれば、気楽に連絡してください。 <br>
+<hr>
+(src)="s57.1"> Kompilieren <br>
+(src)="s58.1"> Um KDE su auf Ihrem System zu kompilieren und zu installieren , schreiben Sie das Folgende in das Hauptverzeichnis in der KDE su -Distribution : <br>
+(trg)="sgnu-fdl.1">This documentation is licensed under the terms of the GNU Free Documentation License. <br>
+<hr>
+(src)="s59.1"> Da KDE su autoconf und automake benutzt , sollte es dabei keine Schwierigkeiten geben . <br>
+(src)="s59.2"> Sollten dennoch Probleme auftauchen , wenden Sie sich bitte an die KDE -Mailinglisten . <br>
+(trg)="s65.1">This program is licensed under the terms of the Artistic License. <br>
+<hr>
+<p>
+
+# de/docs/kdebase/khelpcenter/contact.docbook.xml.gz<br>
+# ja/docs/kdebase/khelpcenter/contact.docbook.xml.gz
+
+<p><hr>
+(src)="s1.1"> Kontakt mit dem KDE -Team aufnehmen <br>
+(trg)="s1.1"> KDE チーム と 連絡 を 取る <br>
+<hr>
+(src)="s2.1"> Mailing-Listen <br>
+(trg)="s2.1"> メーリングリスト <br>
+<hr>
+(src)="s3.1"> Es existieren einige KDE -Mailinglisten . <br>
+(src)="s3.2"> Die aktuellen sind unten aufgelistet . <br>
+(trg)="s3.1"> KDE プロジェクト で は いくつか の メーリングリスト を 運用 し て い ます 。 現在 運用 し て いる メーリングリスト について は 下 を ご覧 ください 。 メーリングリスト の 過去 の 記事 は メーリングリスト の アーカイブ を 参照 し て ください 。 <br>
+<hr>
+(src)="s3.3"> �ltere Artikel k�nnen im Mailinglisten-Archiv recherchiert werden . <br>
+(trg)="s4.1"> kde - request @ kde . org - KDE <br>
+(trg)="s5.1"> KDE について の 全般 的 な 話題 <br>
+<hr>
+(src)="s4.1"> kde-request@kde.org - KDE <br>
+(trg)="s6.1"> kde - announce - request @ kde . org - kde - announce <br>
+<hr>
+(src)="s5.1"> F�r allgemeine Diskussionen <br>
+(trg)="s7.1"> 新しい KDE アプリケーション の アナウンス <br>
+<hr>
+(src)="s6.1"> kde-announce-request@kde.org - kde-announce <br>
+(trg)="s8.1"> kde - user - request @ kde . org - kde - user <br>
+<hr>
+(src)="s7.1"> Ank�ndigungen neuer KDE -Anwendungen <br>
+(trg)="s9.1"> ユーザー の 相互 協力 <br>
+<hr>
+(src)="s8.1"> kde-request@kde.org - KDE <br>
+(trg)="s10.1"> kde - devel - request @ kde . org - kde - devel <br>
+<hr>
+(src)="s9.1"> Benutzer helfen sich gegenseitig <br>
+(trg)="s11.1"> 開発 者 用 です 。 <br>
+<hr>
+(src)="s10.1"> kde-devel-request@kde.org - kde-devel <br>
+(trg)="s12.1"> kde - licensing - request @ kde . org - kde - licensing <br>
+<hr>
+(src)="s11.1"> Diskussionsplattform f�r ( externe ) Entwickler von KDE-Programmen . <br>
+(trg)="s13.1"> ライセンス に関する 議論 <br>
+(trg)="s14.1"> kde - look - request @ kde . org - kde - look <br>
+<hr>
+(src)="s11.2"> Gelegentlich kommentiert von Mitgliedern des Kern-Teams . <br>
+(trg)="s15.1"> 「 ルックアンドフィール 」 に関する 議論 <br>
+<hr>
+(src)="s12.1"> kde-licensing-request@kde.org - kde-licensing <br>
+(trg)="s16.1"> kde - artists - request @ kde . org - kde - artists <br>
+<hr>
+(src)="s13.1"> Diskussion �ber Lizenz-Angelegenheiten <br>
+(trg)="s17.1"> アイコ ン や その他 の アート ワーク 作成 <br>
+<hr>
+(src)="s14.1"> kde-look-request@kde.org - kde-look <br>
+(trg)="s18.1"> kde - i 1 8 n - doc - request @ kde . org - kde - 1 8 n - doc <br>
+<hr>
+(src)="s15.1"> Diskussionen �ber das Erscheinungsbild und das Verhalten von KDE <br>
+(trg)="s19.1"> 国際 化 と ドキュメント の 発行 <br>
+<hr>
+(src)="s16.1"> kde-artists-request@kde.org - kde-artists <br>
+(trg)="s20.1"> http : / / i 1 8 n . kde . org / teams / <br>
+<hr>
+(src)="s17.1"> Erstellen von Symbolen und andere k�nstlerische Dinge <br>
+(src)="s18.1"> kde-doc-english-request@kde.org - kde-doc-english <br>
+(trg)="s21.1"> 各国 語 へ の ローカライズ に関する 情報 ( ユーザ の メーリングリスト や WEB サイト も 含め て ) について は 、 上記 URL の 翻訳 チーム の ページ を チェック し て 下さい 。 <br>
+<hr>
+(src)="s19.1"> F�r Leute , die sich f�r das Schreiben von KDE -Dokumentation interessieren . <br>
+(src)="s20.1"> kde-i18n-doc-request@kde.org - kde-18n-doc <br>
+(trg)="s24.1"> 上記 の アドレス は 参加 と 脱退 の 為 だけ の もの です 。 メーリングリスト に 参加 する と 、 メーリングリスト へ の メッセージ の 送信 方法 や 、 メーリングリスト の オプション の 変更 方法 が 記述 さ れ た メッセージ が 送ら れ て 来る でしょ う 。 <br>
+<hr>
+(src)="s21.1"> Internationalisierung , �bersetzung und Dokumentation <br>
+(src)="s22.1"> http://i18n.kde.org/teams / <br>
+(trg)="s25.1"> メーリングリスト に ポスト つもり で 上記 の アドレス に ポスト し ない よう お願い 致し ます 。 <br>
+<hr>
+(src)="s23.1"> F�r Informationen �ber sprach- und L�nder-spezifische Dinge , wie Benutzer-Mailinglisten und Webseiten , schauen Sie bitte unter oben genannter URL nach . <br>
+(src)="s24.1"> Bitte geben Sie ihre richtige E-Mail-Adresse statt der Worte " Ihre-Mail-Adresse " an . <br>
+(trg)="s26.1"> HTML メール で リクエスト を 送ら ない で ください 。 それ は 、 HTML メール で 送る と 、 メール サーバー が あなた の リクエスト を うまく 処理 でき ない こと が ある から です 。 また 、 登録 する アドレス が From : に ある アドレス と 同じ なら ば 、 件名 ( Subject ) に 入力 する 行 から アドレス を 省略 する こと が でき ます 。 <br>
+<hr>
+(src)="s24.2"> Geben Sie ansonsten keinen Text ein. <br>
+(trg)="s27.1"> 訳注 ： ここ から は 日本 KDE ユーザ 会 の 情報 です 。 <br>
+<hr>
+(src)="s24.3"> Auch keine Signatur oder �hnliches , da dies den Mailserver verwirren k�nnte , der Ihre Anforderung bearbeitet . <br>
+(src)="s25.1"> Bitte geben Sie ihre richtige E-Mail-Adresse statt der Worte " Ihre-Mail-Adresse " an . <br>
+(trg)="s28.1"> また 、 日本 KDE ユーザー 会 で は 日本語 で 議論 できる メーリングリスト を 運用 し て い ます 。 現在 日本 KDE ユーザー 会 で 運用 し て いる メーリングリスト について は 以下 を ご覧 ください 。 メーリングリスト の 過去 の 記事 について は 、 メーリングリスト の アーカイブ を 参照 し て ください 。 <br>
+<hr>
+(src)="s25.2"> Geben Sie ansonsten keinen Text ein. <br>
+(trg)="s29.1"> Kuser - ctl @ kde . gr . jp - Kuser <br>
+<hr>
+(src)="s25.3"> Auch keine Signatur oder �hnliches , da dies den Mailserver verwirren k�nnte , der Ihre Anforderung bearbeitet . <br>
+(trg)="s30.1"> 一般 ユーザ 向け <br>
+(trg)="s31.1"> Kdeveloper - ctl @ kde . gr . jp - Kdeveloper <br>
+<hr>
+(src)="s26.1"> Die oben aufgelisteten Adressen sind nur zum Abonnieren und K�ndigen . <br>
+(trg)="s32.1"> 開発 者 / 翻訳 者 向け <br>
+(trg)="s34.1"> 例 : subscribe Sora Hanawa <br>
+<hr>
+(src)="s26.2"> Wenn Sie die Mailingliste einmal abonniert haben , werden Sie eine Nachricht erhalten , die Ihnen mitteilt , wie Sie Nachrichten an die Mailingliste senden und wie Sie die Einstellungen f�r Ihr Abonnement �ndern . <br>
+(trg)="s36.1"> 上記 の アドレス は 参加 と 脱退 の 為 だけ の もの です 。 メーリングリスト に 参加 する と 、 メーリングリスト へ の メッセージ の 送信 方法 や 、 メーリングリスト の オプション の 変更 方法 が 記述 さ れ た メッセージ が 送ら れ て 来る でしょ う 。 <br>
+<hr>
+(src)="s27.1"> Bitten schicken Sie keine Nachrichten an die obigen Adressen , wenn Sie eigentlich an eine der Liste schreiben wollen . <br>
+(trg)="s37.1"> メーリングリスト に ポスト つもり で 上記 の アドレス に ポスト し ない よう お願い 致し ます 。 <br>
+<hr>
+(src)="s28.1"> Bitte benutzen Sie kein HTML um Ihre Anfrage zu schicken , da es dem Mailserver erschwert , Ihre Anfrage zu bearbeiten . <br>
+(src)="s28.2"> Wenn die Adresse , unter der Sie die E-Mail verschicken , die gleiche ist wie die , unter der Sie die Mailing-Liste abonnieren wollen , k�nnen Sie die Adresse in der Betreffzeile weglassen . <br>
+(trg)="s38.1"> HTML メール で リクエスト を 送ら ない で ください 。 それ は 、 HTML メール で 送る と 、 メール サーバー が あなた の リクエスト を うまく 処理 でき ない こと が ある から です 。 また 、 登録 する アドレス が From : に ある アドレス と 同じ なら ば 、 件名 ( Subject ) に 入力 する 行 から アドレス を 省略 する こと が でき ます 。 <br>
+<hr>
+(src)="s29.1"> Kontakt mit den KDE -Entwicklern aufnehmen <br>
+(trg)="s39.1"> KDE 開発 者 の 連絡 先 <br>
+<hr>
+</body>
+</html>

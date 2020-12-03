@@ -1,0 +1,352 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# ja/docs/kdebase/kdesu/index.docbook.xml.gz<br>
+# sl/docs/kdebase/kdesu/index.docbook.xml.gz
+
+<p><hr>
+(src)="s1.1"> KDE su ハンドブック <br>
+(trg)="s1.1"> Priročnik za KDE su <br>
+<hr>
+(src)="s2.1"> Permission is granted to copy , distribute and / or modify this document under the terms of the GNU Free Documentation License , Version 1 . 1 or any later version published by the Free Software Foundation ; with no Invariant Sections , with no Front - Cover Texts , and with no Back - Cover Texts . <br>
+(trg)="s2.1"> Dovoljuje se kopiranje , distribucija in / ali spreminjanje tega dokumenta pod pogoji GNU Free Documentation License , različice 1.1 ali katerekoli poznejše objavljene s strani Free Software Foundation ; brez nespremenljivih razdelkov , brez besedil na prednji strani ovitka in brez besedil na zadnji strani ovitka . <br>
+<hr>
+(src)="s2.2"> A copy of the license is included in . <br>
+(trg)="s2.2"> Kopija licence je vključena v . <br>
+<hr>
+(src)="s3.1"> KDE su は Unix " su " コマンド の ため の グラフィカル フロント エンド です 。 <br>
+(trg)="s3.1"> KDE su je grafični vmesnik za UNIX -ov ukaz su . <br>
+(trg)="s4.1"> Uvod <br>
+<hr>
+(src)="s4.1"> 導入 <br>
+(trg)="s5.1"> Dobrodošli v KDE su ! <br>
+<hr>
+(src)="s5.1"> KDE su に ようこそ ！ KDE su は 、 UNIX " su " コマンド の 、 K デスク トップ 環境 の ため の グラフィカル フロント エンド です 。 これ は 、 他 の ユーザー の パスワード を 適応 する こと によって 、 その ユーザー として 、 プログラム を 実行 する 事 が 出来 ます 。 KDE su は 権利 の ない プログラム で あり 、 システム の su を 使っ て い ます 。 <br>
+(trg)="s5.2"> KDE su je grafični vmesnik za UNIX -ov ukaz su za namizno okolje KDE . <br>
+(trg)="s5.3"> Omogoča vam , da poganjate program kot drug uporabnik , s tem , da zagotovite geslo tega uporabnika . <br>
+<hr>
+(src)="s6.1"> KDE su は 、 パスワード を 保持 する 機能 が 一つ 追加 さ れ て い ます 。 この 機能 を 使え ば 、 コマンド 実行 の 度 に パスワード を 入力 する 必要 は 無くなり ます 。 この 機能 と 、 セキュリティー 分析 について の 詳細 は 、 を 御覧 下さい 。 <br>
+(trg)="s5.4"> KDE su je nepriviligiran program ; uporablja sistemski su . <br>
+(trg)="s6.1"> KDE su ima dodatno možnost : za vas si lahko zapomni gesla . Če uporabljate to možnost , morate vnesti vsako geslo le enkrat za vsak ukaz . <br>
+<hr>
+(src)="s7.1"> この プログラム は 、 コマンド ライン 、 もしくは 、 . desktop ファイル から 実行 出来 ます 。 それ は 、 GUI ダイアログ を 使っ て root パスワード を 尋ね ます が 、 私 は 、 純粋 な GUI プログラム に 代る 、 コマンド ライン と GUI の より 良い 接続 法 で ある と 考え て い ます 。 <br>
+(trg)="s6.2"> Glejte za več informacij o tem in za varnostno analizo . <br>
+(trg)="s7.1"> Ta program je mišljen za zagon iz ukazne vrstice ali .desktop datoteke . Čeprav vpraša za korensko ( root ) geslo z uporabo GUI pogovornega okna , ga smatram bolj za lepilo med ukazno vrstico &lt;-&gt; GUI , kot pa za čist GUI program . <br>
+<hr>
+(src)="s8.1"> インストール <br>
+(trg)="s9.2"> Skladnja izgleda takole : <br>
+(trg)="s10.1"> Možnosti ukazne vrstice so razložene spodaj . <br>
+<hr>
+(src)="s9.1"> ダウン ロード <br>
+(trg)="s11.1"> -c PROGRAM <br>
+(trg)="s12.1"> To določa , da program teče kot root . <br>
+<hr>
+(src)="s10.1"> KDE su は 現在 、 KDE CVS の kdebase に 入っ て い ます 。 全て の ( 2 . x ) KDE ディストリビューション に 含ま れ て いる はず です 。 あなた も また 、 私 の ftp : / / skynet . stack . nl / pub / users / geertj / に ある ホームページ から KDE 1 . x バージョン を 入手 する こと が 出来 ます 。 <br>
+(trg)="s14.1"> Ta možnost omogoča učinkovito uporabo KDE su v .desktop datotekah . kdesu ; namreč pove , da mora pregledati datoteko določeno z FILE . Če lahko to datoteko zapiše trenutni uporabnik bo kdesu ; izvedel ukaz kot trenutni uporabnik . Če pa ni zapisljiva , je ukaz izveden kot uporabnik USER ( privzeto kot root ) . <br>
+(trg)="s15.1"> FILE se obravnava takole : če se FILE ( ime datoteke ) prične z / , je obravnavano kot absolutno ime datoteke . <br>
+<hr>
+(src)="s11.1"> コンパイル <br>
+(trg)="s15.2"> Drugače pa je vzeto kot ime globalne KDE nastavitvene datoteke . <br>
+(trg)="s16.1"> -t <br>
+<hr>
+(src)="s12.1"> KDE su は kdebase に 入っ て い て 、 あなた は 既に 持っ て い ます 、 もしくは 、 kdebase を インストール する 時 に 入手 し ます 。 <br>
+(trg)="s17.1"> Omogoči terminalski izhod . <br>
+(trg)="s17.2"> To onemogoči shranjevanje gesel . <br>
+<hr>
+(src)="s13.1"> KDE 1 . x バージョン を コンパイル する に は 、 次 の よう に し て 下さい 。 <br>
+(trg)="s17.3"> Uporabno je predvsem za razhroščevanje ; če želite poganjati program v konzolnem načinu , uporabite običajni su . <br>
+(trg)="s18.1"> -n <br>
+<hr>
+(src)="s14.1"> 最後 の ステップ は root で 実行 する 必要 が あり ます 。 インストール 行程 は システム ワイド な KDE ディレクトリ に 書き込める 必要 が ある ため です 。 <br>
+(trg)="s19.1"> Ne shrani gesla . <br>
+(trg)="s19.2"> To onemogoči potrditveno polje Obdrži geslo v pogovornem oknu gesel . <br>
+<hr>
+(src)="s15.1"> KDE su の 使い方 <br>
+(trg)="s20.1"> -q <br>
+(trg)="s21.1"> Bodi tiho . <br>
+<hr>
+(src)="s16.1"> KDE su の 使い方 は 簡単 です 。 文法 は 次 の よう に なっ て い ます 。 <br>
+(trg)="s22.1"> -d <br>
+(trg)="s23.1"> Prikaži informacije za razhroščevanje . <br>
+<hr>
+(src)="s17.1"> コマンド ライン オプション の 説明 は 次 の よう に なっ て い ます 。 <br>
+(trg)="s24.1"> -v <br>
+(trg)="s25.1"> Izpiši informacijo o različici in končaj . <br>
+<hr>
+(src)="s18.1"> - c PROGRAM <br>
+(trg)="s26.1"> -h <br>
+(trg)="s27.1"> Izpiši nekaj pomoči . <br>
+<hr>
+(src)="s20.1"> - f FILE <br>
+(trg)="s29.1"> Ustavi kdesu daemona . <br>
+(trg)="s29.2"> Poglejte v . <br>
+<hr>
+(src)="s21.1"> この オプション は . desktop ファイル において 、 KDE su を 効率 的 に 使う 事 が 出来 ます 。 これ は 、 FILE によって 指定 さ れ た ファイル を テスト する と いう こと を KDE su に 伝え ます 。 もし 、 この ファイル が 現在 の ユーザー によって 書き換え 可能 で あれ ば 、 KDE su は 現在 の ユーザー として その コマンド を 実行 し ます 。 もし 、 書き込み 可能 で なけれ ば 、 ユーザー USER ( デフォルト は root ) として 、 その コマンド を 実行 し ます 。 <br>
+(trg)="s30.1"> Nastavitev <br>
+(trg)="s31.1"> KDE su pride z nadzornim modulom imenovanim kcmkdesu . <br>
+<hr>
+(src)="s23.1"> - t <br>
+(trg)="s31.2"> Spremenite lahko naslednje stvari : <br>
+(trg)="s32.1"> Echo Mode <br>
+<hr>
+(src)="s24.1"> ターミナル 出力 を 有効 に し ます 。 これ は パスワード 保持 を 無効 に し ます 。 これ は 、 広く 、 デバッグ 用途 に 使用 し ます 。 もし 、 コンソール モード の アプリケーション を 使い たい 時 に は 、 代わり に 標準 の " su " を 使い ます 。 <br>
+(trg)="s33.1"> To je način , kako na zaslonu odmevajo znaki ki jih vtipkate . <br>
+(trg)="s33.2"> Možne izbire so : ena zvezda za znak , tri zvezde ali brez odmeva . <br>
+<hr>
+(src)="s25.1"> - n <br>
+(trg)="s33.3"> Privzeto je to ena zvezda za znak . <br>
+<hr>
+(src)="s26.1"> パスワード を 保持 し ませ ん 。 これ は 、 パスワードダイアログ の " keep password " チェック ボックス を 無効 に し ます 。 <br>
+(trg)="s34.1"> Shranjevanje gesel <br>
+(trg)="s35.1"> KDE su lahko naročite da shranjuje gesla z odkljukanjem izbire Obdrži geslo . Če je ta označena , lahko vnesete časovno vrednost v tekstno polje pod njo . <br>
+<hr>
+(src)="s27.1"> - q <br>
+(trg)="s35.2"> To določa ( v minutah ) , kako dolgo se bo geslo shranilo . <br>
+<hr>
+(src)="s28.1"> 無言 モード です 。 <br>
+(trg)="s35.3"> Privzeto je neshranjevanje gesel . <br>
+(trg)="s36.1"> Podrobnosti <br>
+<hr>
+(src)="s29.1"> - d <br>
+(trg)="s37.1"> X avtentifikacija <br>
+<hr>
+(src)="s30.1"> デバッグ 情報 を 表示 し ます 。 <br>
+(src)="s31.1"> - v <br>
+(trg)="s38.1"> Program , ki ga izvedete bo tekel pod korenskim ( root ) id in v splošnem ne bo imel avtoritete za dostop do vašega X zaslona . <br>
+<hr>
+(src)="s32.1"> バージョン 情報 を 表示 し て 終了 し ます 。 <br>
+(trg)="s38.2"> KDE su se temu izogne z dodajanjem avtentifikacijskega piškotka za vaš zaslon v začasno datoteko .Xauthority . <br>
+<hr>
+(src)="s33.1"> - h <br>
+(trg)="s38.3"> Ko je ukaz končan , je ta datoteka odstranjena . <br>
+<hr>
+(src)="s34.1"> いくつか の ヘルプ を 表示 し ます 。 <br>
+(trg)="s39.1"> Če ne uporabljate X piškotkov , ste odvisni od samega sebe . <br>
+<hr>
+(src)="s35.1"> - s <br>
+(src)="s36.1"> kdesu デーモン を 停止 し ます 。 を 御覧 下さい 。 <br>
+(trg)="s39.2"> KDE su bo to zaznal in ne bo dodal piškotka , vendar pa boste morali zagotoviti , da ima root dovoljen dostop do vašega zaslona . <br>
+(trg)="s40.1"> Vmesnik za su <br>
+<hr>
+(src)="s37.1"> 設定 <br>
+(trg)="s41.1"> KDE su uporablja sistemski su za dosego privilegijev . <br>
+<hr>
+(src)="s39.1"> エコー モード <br>
+(trg)="s41.2"> V tem odstavku bom razložil podrobnosti , kako KDE su to naredi . <br>
+<hr>
+(src)="s40.1"> これ は 、 入力 さ れる どの よう な 文字 列 を スクリーン に エコー さ せる か の 設定 です 。 可能 な 選択肢 は 、 一文字 ごと に スター 、 三つ の スター 、 もしくは 、 全く エコー し ない 、 で す 。 デフォルト は 、 一文字 ごと に スター 、 と なっ て い ます 。 <br>
+(trg)="s42.1"> Ker nekatere implementacije su ( Red Hat ova ) nočejo brati gesla iz stdin , ustvari KDE su par pty / tty in izvede su z njegovimi standardnimi datotečnimi opisi ( filedescriptors ) povezanimi na tty . <br>
+(trg)="s43.1"> Da izvede ukaz , ki ga je izbral uporabnik in ne interaktivno lupino , uporablja KDE su skupaj z su argument -c . <br>
+<hr>
+(src)="s41.1"> パスワード を 保持 <br>
+(trg)="s43.2"> Ta argument razume vsaka lupina , ki jo poznam , tako da bi to moralo delovati prenosljivo . su preda -c lupini in ta prevzame program . <br>
+<hr>
+(src)="s42.1"> " keep password " チェック ボックス に チェック する こと で 、 入力 し た パスワード を KDE su に 覚え させる こと が 出来 ます 。 チェック する と 、 タイム アウト 値 を 下方 の テキスト フィールド に 入力 出来る よう に なり ます 。 これ は 、 パスワード が 記憶 さ れる 時間 で 、 単位 は 分 に なっ て い ます 。 デフォルト で は 、 パスワード 保持 し ない 、 に なっ て い ます 。 <br>
+(trg)="s44.1"> Namesto izvajanja uporabnikovega ukaza direktno z su , izvede KDE su majhen programček imenovan kdesu_stub . <br>
+(trg)="s44.2"> Ta programček ( teče kot uporabnik ) , zahteva nekaj podatkov od KDE su preko pty / tty kanala ( njegov stdin in stdout ) in potem izvede uporabniški program . <br>
+<hr>
+(src)="s43.1"> 内部 <br>
+(src)="s44.1"> X 認証 <br>
+(trg)="s44.3"> Predane so naslednje informacije : <br>
+<hr>
+(src)="s45.1"> 実行 し た プログラム は root ユーザー ID に て 実行 さ れ 、 一般 的 に あなた の X ディスプレイ に アクセス する 権限 は あり ませ ん 。 KDE su は あなた の ディスプレイ の ため の 認証 クッキー を 一時 的 な . Xauthority ファイル に 加える こと によって 権限 を 得 て い ます 。 コマンド が 終了 する と 、 この ファイル は 取り除か れ ます 。 <br>
+(trg)="s44.4"> X zaslon , X avtentifikacijski piškotek ( če je dostopen ) , PATH in ukaz , ki naj bo pognan . <br>
+(trg)="s44.5"> Razlog , zakaj je uporabljen kratek programček je , da je X piškotek zasebna informacija in tako ne more biti predan na ukazni vrstici . <br>
+<hr>
+(src)="s46.1"> もし 、 あなた が X クッキー を 使わ ない の で あれ ば 、 自己 責任 です 。 KDE su は 、 これ を 検出 し 、 クッキー を 加え ませ ん が 、 root が あなた の ディスプレイ に アクセス 出来る よう に し て おか なけれ ば なり ませ ん 。 <br>
+(trg)="s46.1"> KDE su bo preveril geslo ki ga vnesete in vrnil sporočilo o napaki , če je napačno . <br>
+(trg)="s46.2"> Preverjanje je izvedeno s testnim programom : / bin / true . Če to uspe , je geslo smatrano kot pravilno . <br>
+<hr>
+(src)="s47.1"> su へ の インターフェース <br>
+(trg)="s47.1"> Ohranjanje gesel <br>
+<hr>
+(src)="s48.1"> &gt; KDE su は 権限 を 取得 する のに 、 システム の " su " を 使用 し ます 。 この 章 で は 、 KDE su は どの よう に これ を する の か の 詳細 を 説明 し ます 。 <br>
+(trg)="s48.1"> Za vaše udobje ima KDE su izvedeno možnost Obdrži geslo . Če se zanimate za varnost , potem morate prebrati ta odstavek . <br>
+(trg)="s49.1"> Dovoljenje KDE su , da si zapomni gesla odpre ( majhno ) varnostno luknjo v vašem sistemu . <br>
+<hr>
+(src)="s49.1"> いくつか の su の 実装 ( 例えば 、 Redhat の su ) で は 、 標準 入力 ( stdin ) から の パスワード 読み込み を 使わ ない ので 、 KDE su は 、 pty / tty の ペア を 作成 し 、 tty に 接続 さ れ た それ 自身 の 標準 ファイルディスクリプター に て " su " を 実行 し ます 。 <br>
+(trg)="s49.2"> Jasno je , da KDE su ne dovoli nikomur razen vašemu uporabniškemu id da uporablja gesla , vendar pa , če je to narejeno brez previdnosti , lahko zniža root -ov varnostni nivo na uporabniškega . <br>
+(trg)="s49.3"> Heker , ki bi vdrl v vaš račun , bi dobil korenski ( root ) dostop . kdesu ; poskuša to preprečiti . <br>
+<hr>
+(src)="s51.1"> su を 使っ て 直接 ユーザー コマンド を 実行 する 代わり に 、 KDE su は kdesu _ stub と 呼ば れる 小さな スタブ プログラム を 実行 し ます 。 この スタブ ( 対象 の ユーザー として 実行 さ れる て いる ) は 、 いくつか の 情報 を pty / tty チャンネル ( スタブ の 標準 入出力 ) 越し に KDE su に 要求 し 、 それから 、 ユーザー の プログラム を 実行 し ます 。 渡さ れる 情報 は 、 X ディスプレイ 、 ( 可能 で あれ ば ) X 認証 クッキー 、 環境 変数 PATH 、 そして 、 実行 する コマンド 、 と なっ て い ます 。 スタブ プログラム が 使わ れる 理由 は 、 X クッキー は プライベート な 情報 で ある ため で 、 コマンド ライン に 渡す こと が 出来 ない の です 。 <br>
+(trg)="s49.4"> Varnostna shema , ki jo uporablja je , vsaj po mojem prepričanju , razumno varna in je razložena tukaj . <br>
+(trg)="s50.1"> KDE su uporablja deamona , imenovanega kdesud . <br>
+<hr>
+(src)="s52.1"> パスワード の チェック <br>
+(trg)="s50.2"> Ta posluša UNIX -ov socket v / tmp za ukazi . <br>
+<hr>
+(src)="s53.1"> KDE su は 入力 さ れ た パスワード を チェック し 、 正しく なけれ ば エラーメッセージ を 返し ます 。 パスワード チェック は 、 テスト プログラム / bin / true を 実行 する こと によって 行わ れ ます 。 これ が 成功 する と 、 パスワード は 正しい と 、 想定 さ れ ます 。 <br>
+(trg)="s50.3"> Način socketa je 0600 , tako da se nanj lahko priključi le vaš uporabniški id . Če je shranjevanje gesel omogočeno , kdesu ; izvede ukaze skozi ta deamon . <br>
+(trg)="s50.4"> Ukaze in korensko ( root ) geslo zapiše v socket in deamon izvede ukaz z uporabo su , kot je opisano prej . <br>
+<hr>
+(src)="s54.1"> パスワード 保持 <br>
+(trg)="s50.5"> Po tem ukaz in geslo nista zavržena . <br>
+<hr>
+(src)="s55.1"> 便利 に なる よう に 、 KDE su は " keep password " 機能 を 実装 し て い ます 。 もし 、 あなた が セキュリティー に 興味 が あれ ば 、 この 項 を 読む べき です 。 <br>
+(trg)="s50.6"> Namesto tega sta shranjena za določen čas . <br>
+(trg)="s50.7"> To je časovna vrednost iz krmilnega modula . Če se v tem času pojavi nova zahteva klientu ni treba dostaviti gesla . <br>
+<hr>
+(src)="s56.1"> KDE su に パスワード を 保持 さ せる 事 は 、 あなた の システム に ( 小 さ な ) セキュリティー ホール を 作る こと に なり ます 。 明らか に 、 KDE su は 、 あなた の ユーザー ID を 除い て 誰 に も 、 パスワード を 使う 事 を 許し て は い ませ ん が 、 もし 、 注意 せ ず に 使う の なら ば 、 これ は 、 root の セキュリティー レベル を 一般 ユーザー ( あなた ) の セキュリティー レベル へ と 下げ て しまう 事 に なり ます 。 あなた の アカウント に 討ち 入っ た クラッカー は 、 root 権限 を 取得することになります。 KDE su はこれを防ごうと努めます。これを使うセキュリティー策は、少なくとも私の考えでは、 合理的に安全であり、ここで説明します。 <br>
+(trg)="s50.8"> Da prepreči hekerjem , ki so vdrli v vaš račun , krajo gesel ( na primer z prilepljenjem razhroščevalnika ) , je deamon nameščen kot set-group-id nogrup . <br>
+(trg)="s50.9"> To bi moralo preprečiti vsem normalnim uporabnikom ( vključno z vami ) da bi dobili gesla od kdesud procesa . <br>
+<hr>
+(src)="s57.1"> KDE su は、 kdesud というデーモンを使います。 デーモンは /tmp にあるUNIXソケットにコマンドを教えます。 ソケットのモードは 0600 なので、だた、あなたのユーザー IDのみがそれに接続することが出来ます。 パスワード保持が有効になっていると、 KDE su はこのデーモンを通してコマンドを実行します。 それは、上記にあるように、コマンドとroot のパスワードをそのソケットに書き込み、 そして、デーモンは " su" を使ってそのコマンドを実行します。 このあと、コマンドと、パスワードは捨てられません。代わって、それらは指定された時間だけ保持されます。 これは、コントロールモジュールの中のタイムアウト値です。 もし、この期間中に、同じコマンドの他のリクエストが来ても、クライアントはパスワードを入力する必要はありません。 あなたのアカウントを打破したクラッカーがデーモンからパスワードを盗む(例えば、デバッガを使って)のを防ぐために、 デーモンは set-group-id nogroup でインストールされています。 これは、全ての一般ユーザー(あなたを含めて)が、 kdesud プロセスからパスワードを取得することを防ぐはずです。 また、デーモンは環境変数 DISPLAYに、デーモンが起動された時のその値をセットします。 クラッカーが唯一することの出来るのは、アプリケーションをあなたのディスプレイ上で実行する、ということだけです。 <br>
+(trg)="s50.10"> Prav tako deamon postavi spremenljivko DISPLAY na vrednost , ki jo je imela ob zagonu . <br>
+(trg)="s50.11"> Edina stvar , ki jo lahko heker naredi , je da na vašem zaslonu izvede program . <br>
+<hr>
+(src)="s58.1">この解決策の弱点は、恐らく、あなたが実行するプログラムはセキュリティーを考慮にいれて書かれていない、いう点です。 (例えば、setuid のrootのプログラムなど。) これは、それらのプログラムはバッファーオーバーラン、もしくは、その他の問題を持っている可能性があるということを意味していて、 そして、クラッカーはそれらの問題を見付け出すことが出来ます。<br>
+(trg)="s51.1"> Šibko mesto v tej shemi je , da programi , ki jih izvajate verjetno niso pisani z varnostjo v mislih ( kot setuid root programi ) . <br>
+(trg)="s51.2"> To pomeni , da imajo morda prelitja medpomnilnika ( buffer overruns ) ali druge težave in jih lahko heker izkoristi . <br>
+<hr>
+(src)="s59.1">パスワード保持機能を使用するかどうかは、セキキュリティーと便利さの兼ね合いに依ります。 その機能を使いたいかどうかを良く考えて、自分で決めることを、私は勧めます。<br>
+(trg)="s52.1"> Uporaba možnosti shranjevanja gesel je trgovina med varnostjo in udobjem . <br>
+(trg)="s52.2"> Spodbujam vas , da razmislite o tem in se odločite zase , ali to želite uporabljati ali ne . <br>
+<hr>
+(src)="s60.1">作者<br>
+(trg)="s53.1"> Avtor <br>
+(trg)="s54.1"> KDE su <br>
+<hr>
+(src)="s61.1">KDE su<br>
+(trg)="s55.1"> Copyright 2000 Geert Jansen <br>
+(trg)="s56.1"> KDE su je spisal Geert Jansen . <br>
+<hr>
+(src)="s62.1">Copyright 2000 Geert Jansen<br>
+(trg)="s56.2"> Je nekako osnovan na kdesu ; , Pierta Iglia , različice 0.3 . <br>
+(trg)="s56.3"> S Pietrom sva se strinjala , da bom v prihodnosti ta program vzdreževal jaz . <br>
+<hr>
+(src)="s63.1"> KDE su は Geert Jansen によって書かれました。 Pietro Iglio の KDE su バージョン 0.3 に基づいたsomewhatです。 Pietro と 私は、将来私がこのプログラムの保守をしていくことに合意しています。 <br>
+(trg)="s57.1"> Avtor je dosegljiv preko e-pošte g.t.jansen@stud.tue.nl . <br>
+(trg)="s57.2"> Prosim poročajte mi o vseh hroščih , ki jih najdete , tako , da jih lahko popravim . Če imate predloge , ne oklevajte in me kontaktirajte . <br>
+<hr>
+(src)="s64.1">作者とは g.t.jansen@stud.tue.nl へのメールで連絡を取ることが出来ます。 バグがあれば、それを私がf修正出来るように、連絡して下さい。 もし提案があれば、気楽に連絡してください。 <br>
+(trg)="sgnu-fdl.1"> Dokumentacija je objavljena pod pogoji GNU Free Documentation License . <br>
+(trg)="s58.1"> Pogoji uporabe tega programa so določeni z Artistic License . <br>
+<hr>
+(src)="sgnu-fdl.1">This documentation is licensed under the terms of the GNU Free Documentation License. <br>
+(trg)="s61.1"> KDE su je del projekta KDE http : / /www.kde.org / . <br>
+(trg)="s62.1"> KDE su lahko najdete v paketu kdebase na ftp : / /ftp.kde.org / pub / kde / , glavni FTP strani projekta KDE . <br>
+<hr>
+(src)="s65.1">This program is licensed under the terms of the Artistic License. <br>
+(trg)="s64.1"> Da prevedete in namestite KDE su v vaš sistem , vtipkajte naslednje v osnovni imenik distribucije KDE su : <br>
+(trg)="s65.1"> Ker KDE su uporablja autoconf in automake ne bi smeli imeti težav pri prevajanju . Če nanje vendarle naletite , jih prosim sporočite v poštne sezname KDE . <br>
+<hr>
+<p>
+
+# ja/docs/kdebase/khelpcenter/contact.docbook.xml.gz<br>
+# sl/docs/kdebase/khelpcenter/contact.docbook.xml.gz
+
+<p><hr>
+(src)="s1.1"> KDE チーム と 連絡 を 取る <br>
+(trg)="s1.1"> Kontaktirajte KDE skupino <br>
+(trg)="s2.1"> Poštne liste <br>
+<hr>
+(src)="s2.1"> メーリングリスト <br>
+(trg)="s3.1"> KDE ima več poštnih list . <br>
+<hr>
+(src)="s3.1"> KDE プロジェクト で は いくつか の メーリングリスト を 運用 し て い ます 。 現在 運用 し て いる メーリングリスト について は 下 を ご覧 ください 。 メーリングリスト の 過去 の 記事 は メーリングリスト の アーカイブ を 参照 し て ください 。 <br>
+(trg)="s3.2"> Poglejte spodaj za trenuten seznam . <br>
+(trg)="s3.3"> Starejše članke lahko najdete v arhivu poštnih list . <br>
+<hr>
+(src)="s4.1"> kde - request @ kde . org - KDE <br>
+(trg)="s4.1"> kde-request@kde.org - KDE <br>
+<hr>
+(src)="s5.1"> KDE について の 全般 的 な 話題 <br>
+(trg)="s5.1"> Za splošne razprave <br>
+<hr>
+(src)="s6.1"> kde - announce - request @ kde . org - kde - announce <br>
+(trg)="s6.1"> kde-announce-request@kde.org - kde-announce <br>
+<hr>
+(src)="s7.1"> 新しい KDE アプリケーション の アナウンス <br>
+(trg)="s7.1"> Najave novih KDE programov <br>
+<hr>
+(src)="s8.1"> kde - user - request @ kde . org - kde - user <br>
+(trg)="s8.1"> kde-request@kde.org - kde <br>
+<hr>
+(src)="s9.1"> ユーザー の 相互 協力 <br>
+(trg)="s9.1"> Uporabniki si pomagajo med seboj <br>
+<hr>
+(src)="s10.1"> kde - devel - request @ kde . org - kde - devel <br>
+(trg)="s10.1"> kde-devel-request@kde.org - kde-devel <br>
+<hr>
+(src)="s11.1"> 開発 者 用 です 。 <br>
+(trg)="s11.1"> Za razvijalce . <br>
+<hr>
+(src)="s12.1"> kde - licensing - request @ kde . org - kde - licensing <br>
+(trg)="s12.1"> kde-licensing-request@kde.org - kde-licensing <br>
+<hr>
+(src)="s13.1"> ライセンス に関する 議論 <br>
+(trg)="s13.1"> razprava o zadevah povezanih z licenco <br>
+<hr>
+(src)="s14.1"> kde - look - request @ kde . org - kde - look <br>
+(trg)="s14.1"> kde-look-request@kde.org - kde-look <br>
+<hr>
+(src)="s15.1"> 「 ルックアンドフィール 」 に関する 議論 <br>
+(trg)="s15.1"> Razprava o izgledu ( "look'n'feel issues" ) <br>
+<hr>
+(src)="s16.1"> kde - artists - request @ kde . org - kde - artists <br>
+(trg)="s16.1"> kde-artists-request@kde.org - kde-artists <br>
+<hr>
+(src)="s17.1"> アイコ ン や その他 の アート ワーク 作成 <br>
+(trg)="s17.1"> Ustvarjanje ikon in drugo umetniško delo <br>
+<hr>
+(src)="s18.1"> kde - i 1 8 n - doc - request @ kde . org - kde - 1 8 n - doc <br>
+(trg)="s18.1"> kde-doc-english-request@kde.org - kde-doc-english <br>
+<hr>
+(src)="s19.1"> 国際 化 と ドキュメント の 発行 <br>
+(src)="s20.1"> http : / / i 1 8 n . kde . org / teams / <br>
+(trg)="s19.1"> Za ljudi , ki jih zanima pisanje dokumentacije za KDE . <br>
+<hr>
+(src)="s21.1"> 各国 語 へ の ローカライズ に関する 情報 ( ユーザ の メーリングリスト や WEB サイト も 含め て ) について は 、 上記 URL の 翻訳 チーム の ページ を チェック し て 下さい 。 <br>
+(trg)="s20.1"> kde-i18n-doc-request@kde.org - kde-18n-doc <br>
+(trg)="s21.1"> Zadeve povezane z internacionalizacijo in documentacijo <br>
+<hr>
+(src)="s24.1"> 上記 の アドレス は 参加 と 脱退 の 為 だけ の もの です 。 メーリングリスト に 参加 する と 、 メーリングリスト へ の メッセージ の 送信 方法 や 、 メーリングリスト の オプション の 変更 方法 が 記述 さ れ た メッセージ が 送ら れ て 来る でしょ う 。 <br>
+(trg)="s22.1"> http : / /i18n.kde.org / teams / <br>
+(trg)="s23.1"> Če iščete lokalizirane informacije , ki lahko vsebujejo poštne liste in spletne strani preverite spletne strani posameznih skupin na gornjem URL . <br>
+<hr>
+(src)="s25.1"> メーリングリスト に ポスト つもり で 上記 の アドレス に ポスト し ない よう お願い 致し ます 。 <br>
+(src)="s26.1"> HTML メール で リクエスト を 送ら ない で ください 。 それ は 、 HTML メール で 送る と 、 メール サーバー が あなた の リクエスト を うまく 処理 でき ない こと が ある から です 。 また 、 登録 する アドレス が From : に ある アドレス と 同じ なら ば 、 件名 ( Subject ) に 入力 する 行 から アドレス を 省略 する こと が でき ます 。 <br>
+(trg)="s24.1"> Prijava : <br>
+<hr>
+(src)="s27.1"> 訳注 ： ここ から は 日本 KDE ユーザ 会 の 情報 です 。 <br>
+(trg)="s24.2"> Prosim vpišite vaš resničen email naslov namesto besed " vaš-email-naslov " . <br>
+<hr>
+(src)="s28.1"> また 、 日本 KDE ユーザー 会 で は 日本語 で 議論 できる メーリングリスト を 運用 し て い ます 。 現在 日本 KDE ユーザー 会 で 運用 し て いる メーリングリスト について は 以下 を ご覧 ください 。 メーリングリスト の 過去 の 記事 について は 、 メーリングリスト の アーカイブ を 参照 し て ください 。 <br>
+(trg)="s24.3"> Pustite telo sporočila prazno . <br>
+(trg)="s24.4"> Ne vključujte podpisov ali drugega besedila , ki bi lahko zmedlo naš strežnik ki obdeluje vaš zahtevek . <br>
+<hr>
+(src)="s29.1"> Kuser - ctl @ kde . gr . jp - Kuser <br>
+(trg)="s25.1"> Odjava : <br>
+<hr>
+(src)="s30.1"> 一般 ユーザ 向け <br>
+(src)="s31.1"> Kdeveloper - ctl @ kde . gr . jp - Kdeveloper <br>
+(trg)="s25.2"> Prosim zamenjajte " vaš-email-naslov " z email naslovom , ki ste ga uporabili za prijavo . <br>
+<hr>
+(src)="s32.1"> 開発 者 / 翻訳 者 向け <br>
+(trg)="s25.3"> Pustite telo sporočila prazno . <br>
+<hr>
+(src)="s34.1"> 例 : subscribe Sora Hanawa <br>
+(trg)="s25.4"> Ne vključite podpisov ali drugega besedila , ki bi lahko zmedlo naš strežnik ki obdeluje vaš zahtevek . <br>
+<hr>
+(src)="s36.1"> 上記 の アドレス は 参加 と 脱退 の 為 だけ の もの です 。 メーリングリスト に 参加 する と 、 メーリングリスト へ の メッセージ の 送信 方法 や 、 メーリングリスト の オプション の 変更 方法 が 記述 さ れ た メッセージ が 送ら れ て 来る でしょ う 。 <br>
+(trg)="s26.1"> Zgoraj našteti naslovi so namenjeni le prijavljanju in odjavljanju . <br>
+(trg)="s26.2"> Ko ste se enkrat prijavili na poštno listo , boste prejeli sporočilo , ki vam bo povedalo , kako pošiljati sporočila na poštne sezname in kako spremeniti njihove možnosti . <br>
+<hr>
+(src)="s37.1"> メーリングリスト に ポスト つもり で 上記 の アドレス に ポスト し ない よう お願い 致し ます 。 <br>
+(trg)="s27.1"> Prosim ne pošiljajte sporočil , ki so namenjena objavi na poštnem seznamu na gornje naslove . <br>
+<hr>
+(src)="s38.1"> HTML メール で リクエスト を 送ら ない で ください 。 それ は 、 HTML メール で 送る と 、 メール サーバー が あなた の リクエスト を うまく 処理 でき ない こと が ある から です 。 また 、 登録 する アドレス が From : に ある アドレス と 同じ なら ば 、 件名 ( Subject ) に 入力 する 行 から アドレス を 省略 する こと が でき ます 。 <br>
+(trg)="s28.1"> Prosim ne uporabljajte HTML ko pošljete zahtevek , ker to povzroča težave našemu poštnemu strežniku pri obdelavi vaše zahteve . Če je prijavni naslov enak naslovu , s katerega pošiljate zahtevek lahko izpustite naslov v predmetu sporočila . <br>
+<hr>
+(src)="s39.1"> KDE 開発 者 の 連絡 先 <br>
+(trg)="s29.1"> Kontaktiranje KDE razvijalcev <br>
+<hr>
+</body>
+</html>

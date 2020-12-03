@@ -1,0 +1,339 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# ja/docs/kdebase/kdesu/index.docbook.xml.gz<br>
+# sv/docs/kdebase/kdesu/index.docbook.xml.gz
+
+<p><hr>
+(src)="s1.1"> KDE su ハンドブック <br>
+(trg)="s1.1"> K�r som root handbok <br>
+<hr>
+(src)="s2.1"> Permission is granted to copy , distribute and / or modify this document under the terms of the GNU Free Documentation License , Version 1 . 1 or any later version published by the Free Software Foundation ; with no Invariant Sections , with no Front - Cover Texts , and with no Back - Cover Texts . <br>
+(trg)="s2.1"> H�rmed ges till�telse att kopiera , distribuera och / eller �ndra detta dokument under villkoren i GNU Free Documentation License , Version 1.1 eller n�gon senare version publicerad av Free Software Foundation ; utan invarianta avsnitt , utan framsidestexter och utan baksidestexter . <br>
+(trg)="s2.2"> En kopia av licensen inkluderas i . <br>
+<hr>
+(src)="s2.2"> A copy of the license is included in . <br>
+(trg)="s3.1"> K�r som root �r ett grafiskt gr�nssnitt f�r UNIX -kommandot su . <br>
+(trg)="s4.1"> Inledning <br>
+<hr>
+(src)="s3.1"> KDE su は Unix " su " コマンド の ため の グラフィカル フロント エンド です 。 <br>
+(trg)="s5.2"> K�r som root �r ett grafiskt gr�nssnitt f�r UNIX -kommandot su f�r skrivbordsmilj�n KDE . <br>
+(trg)="s5.3"> Det l�ter dig k�ra ett program som en annan anv�ndare genom att ange l�senordet f�r den anv�ndaren . <br>
+<hr>
+(src)="s4.1"> 導入 <br>
+(trg)="s5.4"> K�r som root �r ett program utan s�rskilda r�ttigheter . <br>
+(trg)="s5.5"> Det anv�nder systemets su . <br>
+<hr>
+(src)="s5.1"> KDE su に ようこそ ！ KDE su は 、 UNIX " su " コマンド の 、 K デスク トップ 環境 の ため の グラフィカル フロント エンド です 。 これ は 、 他 の ユーザー の パスワード を 適応 する こと によって 、 その ユーザー として 、 プログラム を 実行 する 事 が 出来 ます 。 KDE su は 権利 の ない プログラム で あり 、 システム の su を 使っ て い ます 。 <br>
+(trg)="s6.1"> K�r som root har ytterligare en funktion : det kan komma ih�g l�senord �t dig . <br>
+(trg)="s6.2"> Om du anv�nder den h�r funktionen beh�ver du bara ange l�senordet en g�ng f�r varje kommando . <br>
+<hr>
+(src)="s6.1"> KDE su は 、 パスワード を 保持 する 機能 が 一つ 追加 さ れ て い ます 。 この 機能 を 使え ば 、 コマンド 実行 の 度 に パスワード を 入力 する 必要 は 無くなり ます 。 この 機能 と 、 セキュリティー 分析 について の 詳細 は 、 を 御覧 下さい 。 <br>
+(trg)="s6.3"> Se f�r mer information om det h�r och en s�kerhetsanalys . <br>
+(trg)="s7.1"> Det �r meningen att det h�r programmet ska startas fr�n kommandoraden eller fr�n .desktop -filer . <br>
+<hr>
+(src)="s7.1"> この プログラム は 、 コマンド ライン 、 もしくは 、 . desktop ファイル から 実行 出来 ます 。 それ は 、 GUI ダイアログ を 使っ て root パスワード を 尋ね ます が 、 私 は 、 純粋 な GUI プログラム に 代る 、 コマンド ライン と GUI の より 良い 接続 法 で ある と 考え て い ます 。 <br>
+(trg)="s7.2"> �ven om det fr�gar efter root -l�senordet med en grafisk dialogruta , anser jag att det �r mer som en kommandorad &lt;-&gt; grafiskt gr�nssnitt koppling , �n ett program med ett rent grafiskt gr�nssnitt . <br>
+(trg)="s8.1"> Att anv�nda K�r som root <br>
+<hr>
+(src)="s8.1"> インストール <br>
+(trg)="s9.1"> Anv�ndningen av K�r som root �r enkel . <br>
+(trg)="s9.2"> Syntaxen �r s� h�r : <br>
+<hr>
+(src)="s9.1"> ダウン ロード <br>
+(trg)="s10.1"> Kommandoradsparametrarna f�rklaras nedan . <br>
+(trg)="s11.1"> -c PROGRAM <br>
+<hr>
+(src)="s10.1"> KDE su は 現在 、 KDE CVS の kdebase に 入っ て い ます 。 全て の ( 2 . x ) KDE ディストリビューション に 含ま れ て いる はず です 。 あなた も また 、 私 の ftp : / / skynet . stack . nl / pub / users / geertj / に ある ホームページ から KDE 1 . x バージョン を 入手 する こと が 出来 ます 。 <br>
+(trg)="s12.1"> Det h�r anger programmet som ska k�ras som root . <br>
+(trg)="s12.2"> Det m�ste skickas som en parameter . <br>
+<hr>
+(src)="s11.1"> コンパイル <br>
+(trg)="s13.1"> -f FILE <br>
+<hr>
+(src)="s12.1"> KDE su は kdebase に 入っ て い て 、 あなた は 既に 持っ て い ます 、 もしくは 、 kdebase を インストール する 時 に 入手 し ます 。 <br>
+(trg)="s14.1"> Den h�r parametern till�ter effektiv anv�ndning av K�r som root i .desktop -filer . <br>
+(trg)="s14.2"> Det talar om f�r K�r som root att det ska titta i filen som anges av FILE . <br>
+<hr>
+(src)="s13.1"> KDE 1 . x バージョン を コンパイル する に は 、 次 の よう に し て 下さい 。 <br>
+(trg)="s14.3"> Om den h�r filen �r skrivbar f�r den nuvarande anv�ndaren k�rs kommandot som det nuvarande anv�ndaren . <br>
+(trg)="s14.4"> Om den inte �r skrivbar , k�rs kommandot som anv�ndaren USER ( standardv�rde �r root ) . <br>
+<hr>
+(src)="s14.1"> 最後 の ステップ は root で 実行 する 必要 が あり ます 。 インストール 行程 は システム ワイド な KDE ディレクトリ に 書き込める 必要 が ある ため です 。 <br>
+(trg)="s15.1"> FILE utv�rderas s� h�r : om FILE b�rjar med ett / , anses den vara ett absolut filnamn . <br>
+(trg)="s15.2"> Annars antas den vara namnet p� en global KDE konfigurationsfil . <br>
+<hr>
+(src)="s15.1"> KDE su の 使い方 <br>
+(trg)="s17.1"> Aktivera terminalutmatning . <br>
+(trg)="s17.2"> Det h�r st�nger av funktionen att beh�lla l�senord . <br>
+<hr>
+(src)="s16.1"> KDE su の 使い方 は 簡単 です 。 文法 は 次 の よう に なっ て い ます 。 <br>
+(trg)="s17.3"> Det h�r �r enbart f�r avlusningssyfte . <br>
+(trg)="s17.4"> Om du vill k�ra ett kommandoradsprogram , anv�nd det vanliga su ist�llet . <br>
+<hr>
+(src)="s17.1"> コマンド ライン オプション の 説明 は 次 の よう に なっ て い ます 。 <br>
+(trg)="s19.1"> Beh�ll inte l�senordet . <br>
+(trg)="s19.2"> Det h�r g�r att kryssrutan Kom ih�g l�senord inte visas i l�senordsdialogrutan . <br>
+<hr>
+(src)="s18.1"> - c PROGRAM <br>
+(trg)="s20.1"> -q <br>
+(trg)="s21.1"> Var tyst . <br>
+<hr>
+(src)="s20.1"> - f FILE <br>
+(trg)="s22.1"> -d <br>
+(trg)="s23.1"> Visa avlusningsinformation . <br>
+<hr>
+(src)="s21.1"> この オプション は . desktop ファイル において 、 KDE su を 効率 的 に 使う 事 が 出来 ます 。 これ は 、 FILE によって 指定 さ れ た ファイル を テスト する と いう こと を KDE su に 伝え ます 。 もし 、 この ファイル が 現在 の ユーザー によって 書き換え 可能 で あれ ば 、 KDE su は 現在 の ユーザー として その コマンド を 実行 し ます 。 もし 、 書き込み 可能 で なけれ ば 、 ユーザー USER ( デフォルト は root ) として 、 その コマンド を 実行 し ます 。 <br>
+(trg)="s24.1"> -v <br>
+(trg)="s25.1"> Skriv ut versionsinformation och avsluta . <br>
+<hr>
+(src)="s23.1"> - t <br>
+(trg)="s29.1"> Avbryt kdesu-demonen . <br>
+(trg)="s29.2"> Se . <br>
+<hr>
+(src)="s24.1"> ターミナル 出力 を 有効 に し ます 。 これ は パスワード 保持 を 無効 に し ます 。 これ は 、 広く 、 デバッグ 用途 に 使用 し ます 。 もし 、 コンソール モード の アプリケーション を 使い たい 時 に は 、 代わり に 標準 の " su " を 使い ます 。 <br>
+(trg)="s30.1"> Inst�llningar <br>
+(trg)="s31.1"> K�r som root levereras med en inst�llningsmodul som heter kcmkdesu . <br>
+<hr>
+(src)="s25.1"> - n <br>
+(trg)="s32.1"> Ekol�ge <br>
+<hr>
+(src)="s26.1"> パスワード を 保持 し ませ ん 。 これ は 、 パスワードダイアログ の " keep password " チェック ボックス を 無効 に し ます 。 <br>
+(trg)="s33.1"> Det h�r �r hur tecken som du skriver in ekas p� sk�rmen . <br>
+(trg)="s33.2"> M�jliga val �r : en stj�rna per tecken , tre stj�rnor per tecken eller inget eko alls . <br>
+<hr>
+(src)="s27.1"> - q <br>
+(trg)="s33.3"> F�rvalt v�rde �r en stj�rna per tecken . <br>
+<hr>
+(src)="s28.1"> 無言 モード です 。 <br>
+(trg)="s34.1"> Beh�lla l�senord <br>
+(trg)="s35.1"> Du kan tala om f�r K�r som root att komma ih�g l�senorden du skriver in genom att markera Kom ih�g l�senord . <br>
+<hr>
+(src)="s29.1"> - d <br>
+(trg)="s35.2"> Om den h�r �r markerad , kan du skriva in en tidsgr�ns i textrutan nedanf�r . <br>
+<hr>
+(src)="s30.1"> デバッグ 情報 を 表示 し ます 。 <br>
+(trg)="s35.3"> Det h�r �r tiden , i minuter , att komma ih�g l�senordet . <br>
+(trg)="s35.4"> F�rval �r att inte komma ih�g l�senord . <br>
+<hr>
+(src)="s31.1"> - v <br>
+(trg)="s36.1"> Interna funktioner <br>
+<hr>
+(src)="s32.1"> バージョン 情報 を 表示 し て 終了 し ます 。 <br>
+(trg)="s37.1"> X-identifiering <br>
+(trg)="s38.1"> Programmet du startar k�r med anv�ndaridentiteten root och har i allm�nhet inga r�ttigheter att komma �t din X-sk�rm . <br>
+<hr>
+(src)="s33.1"> - h <br>
+(src)="s34.1"> いくつか の ヘルプ を 表示 し ます 。 <br>
+(trg)="s38.2"> K�r som root kommer runt detta genom att l�gga till en identifieringskaka f�r din sk�rm i en tillf�llig .Xauthority -fil . <br>
+(trg)="s38.3"> Efter kommandot avslutats , tas den h�r filen bort . <br>
+<hr>
+(src)="s35.1"> - s <br>
+(trg)="s39.1"> Om du inte anv�nder X-kakor , �r du utel�mnad till dig sj�lv . <br>
+<hr>
+(src)="s36.1"> kdesu デーモン を 停止 し ます 。 を 御覧 下さい 。 <br>
+(trg)="s39.2"> K�r som root uppt�cker det h�r och l�gger inte till en kaka , men du m�ste f�rs�kra dig om att root har r�ttigheter att komma �t din sk�rm . <br>
+(trg)="s40.1"> Gr�nssnitt med su <br>
+<hr>
+(src)="s37.1"> 設定 <br>
+(trg)="s41.1"> K�r som root anv�nder systemets su kommando f�r att erh�lla r�ttigheter . <br>
+<hr>
+(src)="s39.1"> エコー モード <br>
+(trg)="s41.2"> I det h�r avsnittet f�rklarar jag detaljerna om hur K�r som root g�r det h�r . <br>
+<hr>
+(src)="s40.1"> これ は 、 入力 さ れる どの よう な 文字 列 を スクリーン に エコー さ せる か の 設定 です 。 可能 な 選択肢 は 、 一文字 ごと に スター 、 三つ の スター 、 もしくは 、 全く エコー し ない 、 で す 。 デフォルト は 、 一文字 ごと に スター 、 と なっ て い ます 。 <br>
+(trg)="s42.1"> Eftersom vissa su -implementeringar ( dvs . den fr�n Redhat ) inte vill l�sa l�senordet fr�n stdin , s� skapar K�r som root ett pty / tty-par och k�r su med dess standard fildeskriptorer anslutna till tty:n . <br>
+(trg)="s43.1"> F�r att k�ra kommandot som anv�ndaren valt , ist�llet f�r ett interaktivt skal , anv�nder K�r som root parametern -c till su . <br>
+<hr>
+(src)="s41.1"> パスワード を 保持 <br>
+(trg)="s43.2"> Den h�r parametern f�rst�s av alla skal som jag k�nner till , s� det h�r b�r vara flyttningsbart . <br>
+(trg)="s43.3"> Su skickar parametern -c till den slutliga anv�ndarens skal , och skalet k�r programmet . <br>
+<hr>
+(src)="s42.1"> " keep password " チェック ボックス に チェック する こと で 、 入力 し た パスワード を KDE su に 覚え させる こと が 出来 ます 。 チェック する と 、 タイム アウト 値 を 下方 の テキスト フィールド に 入力 出来る よう に なり ます 。 これ は 、 パスワード が 記憶 さ れる 時間 で 、 単位 は 分 に なっ て い ます 。 デフォルト で は 、 パスワード 保持 し ない 、 に なっ て い ます 。 <br>
+(trg)="s44.1"> I st�llet f�r att k�ra anv�ndarkommandot direkt med su , startar K�r som root ett litet st�dprogram som heter kdesu_stub . <br>
+(trg)="s44.2"> Detta st�dprogram ( som k�r som m�lanv�ndaren) , beg�r en del information fr�n K�r som root �ver pty / tty-kanalen (st�dprogrammets stdin och stdout ) och k�r sedan anv�ndarens program . <br>
+<hr>
+(src)="s43.1"> 内部 <br>
+(src)="s44.1"> X 認証 <br>
+(trg)="s44.3"> Informationen som skickas �ver �r : <br>
+<hr>
+(src)="s45.1"> 実行 し た プログラム は root ユーザー ID に て 実行 さ れ 、 一般 的 に あなた の X ディスプレイ に アクセス する 権限 は あり ませ ん 。 KDE su は あなた の ディスプレイ の ため の 認証 クッキー を 一時 的 な . Xauthority ファイル に 加える こと によって 権限 を 得 て い ます 。 コマンド が 終了 する と 、 この ファイル は 取り除か れ ます 。 <br>
+(trg)="s44.4"> X-sk�rmen , en X-identifieringskaka ( om tillg�nglig ) , PATH och kommandot som ska k�ras . <br>
+(trg)="s44.5"> Orsaken att ett st�dprogram anv�nds �r att X-kakan �r privat information och kan d�rf�r inte skickas p� kommandoraden . <br>
+<hr>
+(src)="s46.1"> もし 、 あなた が X クッキー を 使わ ない の で あれ ば 、 自己 責任 です 。 KDE su は 、 これ を 検出 し 、 クッキー を 加え ませ ん が 、 root が あなた の ディスプレイ に アクセス 出来る よう に し て おか なけれ ば なり ませ ん 。 <br>
+(trg)="s46.1"> K�r som root kontrollerar l�senordet som du skrivit in och ger ett felmeddelande om det inte �r riktigt . <br>
+(trg)="s46.2"> Kontrollen g�rs genom att k�ra ett testprogram : / bin / true . <br>
+<hr>
+(src)="s47.1"> su へ の インターフェース <br>
+(trg)="s46.3"> Om det h�r lyckas , antas l�senordet vara riktigt . <br>
+(trg)="s47.1"> Kom ih�g l�senord <br>
+<hr>
+(src)="s48.1"> &gt; KDE su は 権限 を 取得 する のに 、 システム の " su " を 使用 し ます 。 この 章 で は 、 KDE su は どの よう に これ を する の か の 詳細 を 説明 し ます 。 <br>
+(trg)="s48.1"> F�r din bekv�mlighet implementerar K�r som root en funktion f�r att beh�lla l�senord . <br>
+(trg)="s48.2"> Om du �r intresserad av s�kerhet , b�r du l�sa det h�r stycket . <br>
+<hr>
+(src)="s49.1"> いくつか の su の 実装 ( 例えば 、 Redhat の su ) で は 、 標準 入力 ( stdin ) から の パスワード 読み込み を 使わ ない ので 、 KDE su は 、 pty / tty の ペア を 作成 し 、 tty に 接続 さ れ た それ 自身 の 標準 ファイルディスクリプター に て " su " を 実行 し ます 。 <br>
+(trg)="s49.1"> Att l�ta K�r som root komma ih�g l�senord �ppnar en ( liten ) s�kerhetslucka i ditt system . <br>
+(trg)="s49.2"> Uppenbarligen l�ter inte K�r som root n�gon annan �n din anv�ndaridentitet anv�nda l�senorden , men , om det g�rs utan f�rsiktighet , s�nker detta s�kerhetsniv�n f�r root till en vanlig anv�ndares niv� ( din ) . <br>
+<hr>
+(src)="s51.1"> su を 使っ て 直接 ユーザー コマンド を 実行 する 代わり に 、 KDE su は kdesu _ stub と 呼ば れる 小さな スタブ プログラム を 実行 し ます 。 この スタブ ( 対象 の ユーザー として 実行 さ れる て いる ) は 、 いくつか の 情報 を pty / tty チャンネル ( スタブ の 標準 入出力 ) 越し に KDE su に 要求 し 、 それから 、 ユーザー の プログラム を 実行 し ます 。 渡さ れる 情報 は 、 X ディスプレイ 、 ( 可能 で あれ ば ) X 認証 クッキー 、 環境 変数 PATH 、 そして 、 実行 する コマンド 、 と なっ て い ます 。 スタブ プログラム が 使わ れる 理由 は 、 X クッキー は プライベート な 情報 で ある ため で 、 コマンド ライン に 渡す こと が 出来 ない の です 。 <br>
+(trg)="s49.5"> S�kerhetsmetoden som anv�nds �r , iallafall enligt min mening , rimligt s�ker och f�rklaras h�r . <br>
+(trg)="s50.1"> K�r som root anv�nder en demon , som kallas kdesud . <br>
+<hr>
+(src)="s52.1"> パスワード の チェック <br>
+(trg)="s50.2"> Demonen lyssnar med ett UNIX -uttag ( socket ) i / tmp efter kommandon . <br>
+(trg)="s50.3"> Uttagets r�ttigheter �r 0600 , s� att bara din anv�ndaridentitet kan ansluta till det . <br>
+<hr>
+(src)="s53.1"> KDE su は 入力 さ れ た パスワード を チェック し 、 正しく なけれ ば エラーメッセージ を 返し ます 。 パスワード チェック は 、 テスト プログラム / bin / true を 実行 する こと によって 行わ れ ます 。 これ が 成功 する と 、 パスワード は 正しい と 、 想定 さ れ ます 。 <br>
+(trg)="s50.4"> Om funktionen att komma ih�g l�senord �r aktiverad , startar K�r som root kommandon via den h�r demonen . <br>
+(trg)="s50.5"> Det skriver kommandon och root -l�senordet till uttaget och demonen k�r kommandot med su , som beskrivits ovan . <br>
+<hr>
+(src)="s54.1"> パスワード 保持 <br>
+(trg)="s50.6"> D�refter sl�ngs inte kommandot och l�senordet som beskrivits ovan , utan de beh�lls en angiven tid . <br>
+<hr>
+(src)="s55.1"> 便利 に なる よう に 、 KDE su は " keep password " 機能 を 実装 し て い ます 。 もし 、 あなた が セキュリティー に 興味 が あれ ば 、 この 項 を 読む べき です 。 <br>
+(trg)="s50.7"> Det h�r �r tidsgr�nsen fr�n inst�llningsmodulen . <br>
+(trg)="s50.8"> Om en annan f�rfr�gan med samma kommando anl�nder inom den h�r tidsperioden , beh�ver inte klienten ange l�senordet . <br>
+<hr>
+(src)="s56.1"> KDE su に パスワード を 保持 さ せる 事 は 、 あなた の システム に ( 小 さ な ) セキュリティー ホール を 作る こと に なり ます 。 明らか に 、 KDE su は 、 あなた の ユーザー ID を 除い て 誰 に も 、 パスワード を 使う 事 を 許し て は い ませ ん が 、 もし 、 注意 せ ず に 使う の なら ば 、 これ は 、 root の セキュリティー レベル を 一般 ユーザー ( あなた ) の セキュリティー レベル へ と 下げ て しまう 事 に なり ます 。 あなた の アカウント に 討ち 入っ た クラッカー は 、 root 権限 を 取得することになります。 KDE su はこれを防ごうと努めます。これを使うセキュリティー策は、少なくとも私の考えでは、 合理的に安全であり、ここで説明します。 <br>
+(trg)="s50.9"> F�r att f�rhindra att hackare som brutit sig in i ditt konto stj�l l�senorden fr�n demonen ( till exempel genom att ansluta en avlusare ) , installeras demonen som en set-group-id med ingen grupp . <br>
+(trg)="s50.10"> Detta b�r f�rhindra alla normala anv�ndare ( inklusive dig sj�lv ) fr�n att ta reda p� l�senord fr�n kdesud -processen . <br>
+<hr>
+(src)="s57.1"> KDE su は、 kdesud というデーモンを使います。 デーモンは /tmp にあるUNIXソケットにコマンドを教えます。 ソケットのモードは 0600 なので、だた、あなたのユーザー IDのみがそれに接続することが出来ます。 パスワード保持が有効になっていると、 KDE su はこのデーモンを通してコマンドを実行します。 それは、上記にあるように、コマンドとroot のパスワードをそのソケットに書き込み、 そして、デーモンは " su" を使ってそのコマンドを実行します。 このあと、コマンドと、パスワードは捨てられません。代わって、それらは指定された時間だけ保持されます。 これは、コントロールモジュールの中のタイムアウト値です。 もし、この期間中に、同じコマンドの他のリクエストが来ても、クライアントはパスワードを入力する必要はありません。 あなたのアカウントを打破したクラッカーがデーモンからパスワードを盗む(例えば、デバッガを使って)のを防ぐために、 デーモンは set-group-id nogroup でインストールされています。 これは、全ての一般ユーザー(あなたを含めて)が、 kdesud プロセスからパスワードを取得することを防ぐはずです。 また、デーモンは環境変数 DISPLAYに、デーモンが起動された時のその値をセットします。 クラッカーが唯一することの出来るのは、アプリケーションをあなたのディスプレイ上で実行する、ということだけです。 <br>
+(trg)="s50.11"> Dessutom s�tter demonen DISPLAY -milj�variabeln till v�rdet den hade n�r den startade . <br>
+(trg)="s50.12"> Det enda en hackare kan g�ra �r att k�ra ett program p� din sk�rm . <br>
+<hr>
+(src)="s58.1">この解決策の弱点は、恐らく、あなたが実行するプログラムはセキュリティーを考慮にいれて書かれていない、いう点です。 (例えば、setuid のrootのプログラムなど。) これは、それらのプログラムはバッファーオーバーラン、もしくは、その他の問題を持っている可能性があるということを意味していて、 そして、クラッカーはそれらの問題を見付け出すことが出来ます。<br>
+(trg)="s51.1"> En svaghet med den h�r metoden �r att program som du k�r f�rmodligen inte �r skrivna med s�kerhet i �tanke ( som setuid root -program ) . <br>
+(trg)="s51.2"> Det betyder att de kan ha buffrar som blir �verfulla eller andra problem , och att en hackare skulle kunna utnyttja dessa . <br>
+<hr>
+(src)="s59.1">パスワード保持機能を使用するかどうかは、セキキュリティーと便利さの兼ね合いに依ります。 その機能を使いたいかどうかを良く考えて、自分で決めることを、私は勧めます。<br>
+(trg)="s52.1"> Anv�ndning av funktionen att komma ih�g l�senord �r en kompromiss mellan s�kerhet och bekv�mlighet . <br>
+(trg)="s52.2"> Jag uppmuntrar dig att t�nka igenom och best�mma sj�lv om du vill anv�nda den eller inte . <br>
+<hr>
+(src)="s60.1">作者<br>
+(trg)="s55.1"> Copyright 2000 Geert Jansen <br>
+(trg)="s56.1"> K�r som root �r skrivet av Geert Jansen . <br>
+<hr>
+(src)="s61.1">KDE su<br>
+(trg)="s56.2"> Det �r till viss del baserat p� Pietro Iglios K�r som root , version 0.3 . <br>
+(trg)="s56.3"> Pietro och jag kom �verens om att jag ska underh�lla det h�r programmet i framtiden . <br>
+<hr>
+(src)="s62.1">Copyright 2000 Geert Jansen<br>
+(trg)="s57.1"> Upphovsmannen kan n�s via e-post p� g.t.jansen@stud.tue.nl . <br>
+(trg)="s57.2"> Rapportera alla fel du hittar s� att jag kan r�tta dem . <br>
+<hr>
+(src)="s63.1"> KDE su は Geert Jansen によって書かれました。 Pietro Iglio の KDE su バージョン 0.3 に基づいたsomewhatです。 Pietro と 私は、将来私がこのプログラムの保守をしていくことに合意しています。 <br>
+(trg)="sgnu-fdl.1"> Den h�r dokumentationen licensieras under villkoren i GNU Free Documentation License . <br>
+(trg)="s58.1"> Det h�r programmet licensieras under villkoren i Artistic License . <br>
+<hr>
+(src)="s64.1">作者とは g.t.jansen@stud.tue.nl へのメールで連絡を取ることが出来ます。 バグがあれば、それを私がf修正出来るように、連絡して下さい。 もし提案があれば、気楽に連絡してください。 <br>
+(trg)="s61.1"> KDE su �r en del av KDE -projektet http : / /www.kde.org / . <br>
+(trg)="s62.1"> KDE su finns i kdebase-paketet p� ftp : / /ftp.kde.org / pub / kde / , KDE -projektets huvudsakliga FTP -plats . <br>
+<hr>
+(src)="sgnu-fdl.1">This documentation is licensed under the terms of the GNU Free Documentation License. <br>
+(trg)="s63.1"> Kompilera <br>
+(trg)="s64.1"> F�r att kompilera och installera KDE su p� ditt system , skriv f�ljande i baskatalogen f�r distributionen av KDE su : <br>
+<hr>
+(src)="s65.1">This program is licensed under the terms of the Artistic License. <br>
+(trg)="s65.1"> Eftersom KDE su anv�nder autoconf och automake b�r du inte ha n�gra problem med att kompilera det . <br>
+(trg)="s65.2"> Skulle du st�ta p� problem , var sn�ll rapportera dem till KDE :s e-postlistor . <br>
+<hr>
+<p>
+
+# ja/docs/kdebase/khelpcenter/contact.docbook.xml.gz<br>
+# sv/docs/kdebase/khelpcenter/contact.docbook.xml.gz
+
+<p><hr>
+(src)="s1.1"> KDE チーム と 連絡 を 取る <br>
+(trg)="s1.1"> Kontakta KDE -projektet <br>
+(trg)="s2.1"> E-postlistor <br>
+<hr>
+(src)="s2.1"> メーリングリスト <br>
+(trg)="s3.1"> KDE har flera e-postlistor . <br>
+<hr>
+(src)="s3.1"> KDE プロジェクト で は いくつか の メーリングリスト を 運用 し て い ます 。 現在 運用 し て いる メーリングリスト について は 下 を ご覧 ください 。 メーリングリスト の 過去 の 記事 は メーリングリスト の アーカイブ を 参照 し て ください 。 <br>
+(trg)="s3.2"> Nedan finns beskrivningar av alla nuvarande listor . <br>
+(trg)="s3.3"> I arkivet f�r e-postlistor finns tidigare e-post arkiverad . <br>
+<hr>
+(src)="s4.1"> kde - request @ kde . org - KDE <br>
+(trg)="s4.1"> kde-request@kde.org - KDE <br>
+<hr>
+(src)="s5.1"> KDE について の 全般 的 な 話題 <br>
+(trg)="s5.1"> Allm�nna diskussioner <br>
+<hr>
+(src)="s6.1"> kde - announce - request @ kde . org - kde - announce <br>
+(trg)="s6.1"> kde-announce-request@kde.org - kde-announce <br>
+<hr>
+(src)="s7.1"> 新しい KDE アプリケーション の アナウンス <br>
+(trg)="s7.1"> Viktiga nyheter om nytillkomna KDE -program <br>
+<hr>
+(src)="s8.1"> kde - user - request @ kde . org - kde - user <br>
+(trg)="s8.1"> kde-request@kde.org - KDE <br>
+<hr>
+(src)="s9.1"> ユーザー の 相互 協力 <br>
+(trg)="s9.1"> Anv�ndare hj�lper varandra <br>
+<hr>
+(src)="s10.1"> kde - devel - request @ kde . org - kde - devel <br>
+(trg)="s10.1"> kde-devel-request@kde.org - kde-devel <br>
+<hr>
+(src)="s11.1"> 開発 者 用 です 。 <br>
+(trg)="s11.1"> F�r utvecklare <br>
+<hr>
+(src)="s12.1"> kde - licensing - request @ kde . org - kde - licensing <br>
+(trg)="s12.1"> kde-licensing-request@kde.org - kde-licensing <br>
+<hr>
+(src)="s13.1"> ライセンス に関する 議論 <br>
+(trg)="s13.1"> Diskussioner ang�ende licenser <br>
+<hr>
+(src)="s14.1"> kde - look - request @ kde . org - kde - look <br>
+(trg)="s14.1"> kde-look-request@kde.org - kde-look <br>
+<hr>
+(src)="s15.1"> 「 ルックアンドフィール 」 に関する 議論 <br>
+(trg)="s15.1"> Diskussioner om utseende <br>
+<hr>
+(src)="s16.1"> kde - artists - request @ kde . org - kde - artists <br>
+(trg)="s16.1"> kde-artists-request@kde.org - kde-artists <br>
+<hr>
+(src)="s17.1"> アイコ ン や その他 の アート ワーク 作成 <br>
+(trg)="s17.1"> Skapande av ikoner och annan grafik <br>
+<hr>
+(src)="s18.1"> kde - i 1 8 n - doc - request @ kde . org - kde - 1 8 n - doc <br>
+(trg)="s18.1"> kde-doc-english-request@kde.org - kde-doc-english <br>
+<hr>
+(src)="s19.1"> 国際 化 と ドキュメント の 発行 <br>
+(src)="s20.1"> http : / / i 1 8 n . kde . org / teams / <br>
+(trg)="s19.1"> F�r de som �r intresserade av att skriva dokumentation till KDE . <br>
+<hr>
+(src)="s21.1"> 各国 語 へ の ローカライズ に関する 情報 ( ユーザ の メーリングリスト や WEB サイト も 含め て ) について は 、 上記 URL の 翻訳 チーム の ページ を チェック し て 下さい 。 <br>
+(trg)="s20.1"> kde-i18n-doc-request@kde.org - kde-18n-doc <br>
+(trg)="s21.1"> F�r �vers�ttning och dokumentation <br>
+<hr>
+(src)="s24.1"> 上記 の アドレス は 参加 と 脱退 の 為 だけ の もの です 。 メーリングリスト に 参加 する と 、 メーリングリスト へ の メッセージ の 送信 方法 や 、 メーリングリスト の オプション の 変更 方法 が 記述 さ れ た メッセージ が 送ら れ て 来る でしょ う 。 <br>
+(trg)="s22.1"> http : / /i18n.kde.org / teams / <br>
+(trg)="s23.1"> F�r information fr�n grupperna f�r �vers�ttning , vilket kan omfatta e-postlistor och webbplatser , se ovanst�ende webbadress . <br>
+<hr>
+(src)="s25.1"> メーリングリスト に ポスト つもり で 上記 の アドレス に ポスト し ない よう お願い 致し ます 。 <br>
+(src)="s26.1"> HTML メール で リクエスト を 送ら ない で ください 。 それ は 、 HTML メール で 送る と 、 メール サーバー が あなた の リクエスト を うまく 処理 でき ない こと が ある から です 。 また 、 登録 する アドレス が From : に ある アドレス と 同じ なら ば 、 件名 ( Subject ) に 入力 する 行 から アドレス を 省略 する こと が でき ます 。 <br>
+(trg)="s24.1"> F�r att g� med i en e-postlista : <br>
+<hr>
+(src)="s27.1"> 訳注 ： ここ から は 日本 KDE ユーザ 会 の 情報 です 。 <br>
+(trg)="s24.2"> Du ska skriva din riktiga adress , inte " din-e-post@adress " . <br>
+<hr>
+(src)="s28.1"> また 、 日本 KDE ユーザー 会 で は 日本語 で 議論 できる メーリングリスト を 運用 し て い ます 。 現在 日本 KDE ユーザー 会 で 運用 し て いる メーリングリスト について は 以下 を ご覧 ください 。 メーリングリスト の 過去 の 記事 について は 、 メーリングリスト の アーカイブ を 参照 し て ください 。 <br>
+(trg)="s24.3"> Skriv inget i sj�lva meddelandet . <br>
+(trg)="s24.4"> Tag bort eventuell signatur eller annat som kan f�rvirra e-postservern . <br>
+<hr>
+(src)="s29.1"> Kuser - ctl @ kde . gr . jp - Kuser <br>
+(trg)="s25.1"> F�r att g� ur en e-post lista : <br>
+<hr>
+</body>
+</html>

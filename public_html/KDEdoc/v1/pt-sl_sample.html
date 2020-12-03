@@ -1,0 +1,322 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# pt/docs/kdeadmin/kcron/index.docbook.xml.gz<br>
+# sl/docs/kdeadmin/kcron/index.docbook.xml.gz
+
+<p><hr>
+(src)="s1.1"> O Manual do Kcron <br>
+(trg)="s1.1"> Priročnik za Kcron <br>
+<hr>
+(src)="s2.1"> É dada permissão para copiar , distribuir e / ou modificar este documento ao abrigo da GNU Free Documentation License , Versão 1.1 ou de uma versão mais recente publicada pela Free Software Foundation ; sem Secções Invariantes , sem Textos de Capa Frontal , e sem Textos de Capa Traseira . <br>
+(trg)="s2.1"> Dovoljuje se kopiranje , distribucija in / ali spreminjanje tega dokumenta pod pogoji GNU Free Documentation License , različice 1.1 ali katerekoli poznejše objavljene s strani Free Software Foundation ; brez nespremenljivih razdelkov , brez besedil na prednji strani ovitka in brez besedil na zadnji strani ovitka . <br>
+<hr>
+(src)="s2.2"> Uma cópia desta licença está incluida na . <br>
+(trg)="s2.2"> Kopija licence je vključena v . <br>
+<hr>
+(src)="s3.1"> O Kcron é uma aplicação que faz o escalonamento das aplicações a serem executadas . <br>
+(trg)="s3.1"> Kcron je program , ki skrbi za razvrščanje opravil . <br>
+<hr>
+(src)="s4.1"> Introdução <br>
+(trg)="s4.1"> Uvod <br>
+<hr>
+(src)="s5.1"> O Kcron é uma aplicação para escalonar os programas para serem executados em segundo plano . <br>
+(trg)="s5.1"> Kcron je program za razporejanje programov , ki naj tečejo v ozadju . <br>
+<hr>
+(src)="s5.2"> É uma interface gráfica de utilizador para o cron , o escalonador do sistema UNIX . <br>
+(trg)="s5.2"> Je grafični vmesnik za cron Unix-ov sistemski razporejevalnik . <br>
+<hr>
+(src)="s6.1"> Usar o Kcron <br>
+(trg)="s6.1"> Uporaba Kcron <br>
+<hr>
+(src)="s7.1"> Não te esqueças de indicar ao sistema para iniciar antecipadamente o servidor crond , senão o Kcron não irá funcionar . <br>
+(trg)="s7.1"> Ne pozabite povedati vašemu sistemu , naj najprej požene crond ( cron daemon ) , sicer Kcron ne bo delal . <br>
+<hr>
+(src)="s8.1"> Arranque do Kcron <br>
+(trg)="s8.1"> Zagon Kcron <br>
+<hr>
+(src)="s9.1"> Quando o Kcron arranca irás ter uma vista geral sobre as tarefas já existentes em escalonamento e as variáveis de ambiente . <br>
+(src)="s9.2"> Se estiveres a correr como administrador , irás ver esses itens para todos os utilizadores no computador , assim como as tarefas de sistema escalonadas . <br>
+(trg)="s9.1"> Ob zagonu Kcron a boste videli skrajšan pregled obstoječih razporejenih opravil in asociiranih okoljskih spremenljivk . Če ste prijavljeni kot root boste videli vse predmete za vse uporabnike na računalniku kot tudi sistemsko razporejena opravila . <br>
+<hr>
+(src)="s9.3"> Cada uma das pastas pode ser expandida ou fechada . <br>
+(trg)="s9.2"> Vsak od teh imenikov se da skrčiti ali razširiti . <br>
+<hr>
+(src)="s10.1"> Tarefas Escalonadas <br>
+(trg)="s10.1"> Razporejena opravila <br>
+<hr>
+(src)="s11.1"> As tarefas escalonadas aparecem dentro duma pasta Tarefas . <br>
+(trg)="s11.1"> Razporejena opravila se pojavijo v imeniku Opravila ( Tasks ) . <br>
+<hr>
+(src)="s11.2"> Para cada tarefa escalonada é apresentado o seguinte : <br>
+(trg)="s11.2"> Za vsako razporejeno opravilo je prikazano naslednje : <br>
+<hr>
+(src)="s12.1"> Nome <br>
+(trg)="s12.1"> Ime <br>
+<hr>
+(src)="s13.1"> Nome para identificar a tarefa escalonada . <br>
+(trg)="s13.1"> Ime , ki identificira razporejeno opravilo . <br>
+<hr>
+(src)="s14.1"> Valor <br>
+(trg)="s14.1"> Vrednost <br>
+<hr>
+(src)="s15.1"> Ficheiro do programa e os parâmetros . <br>
+(trg)="s15.1"> Programska datoteka in parametri . <br>
+<hr>
+(src)="s16.1"> Descrição <br>
+(trg)="s16.1"> Opis <br>
+<hr>
+(src)="s17.1"> Descrição em língua natural da tarefa escalonada . <br>
+(trg)="s17.1"> Opis razporejenega opravila v naravnem jeziku . <br>
+<hr>
+(src)="s18.1"> Se uma tarefa foi desactivada , nenhum programa nem nenhuns parâmetros irão aparecer , e a descrição está desactivada . <br>
+(trg)="s18.1"> Če je bilo opravilo onemogočeno , se ne bosta pojavila ne datoteka in ne parametri , opis pa bo onemogočen . <br>
+<hr>
+(src)="s19.1"> Variáveis de Ambiente <br>
+(trg)="s19.1"> Spremenljivke okolja <br>
+<hr>
+(src)="s20.1"> As variáveis de ambiente aparecem dentro duma pasta Variáveis . <br>
+(trg)="s20.1"> Spremenljivke okolja se nahajajo v imeniku Spremenljivke . <br>
+<hr>
+(src)="s20.2"> Para cada variável de ambiente , é mostrado o seguinte : <br>
+(trg)="s20.2"> Za vsako spremenljivko je prikazano : <br>
+<hr>
+(src)="s21.1"> Nome <br>
+(trg)="s21.1"> Ime <br>
+<hr>
+(src)="s22.1"> Nome da variável . <br>
+(trg)="s22.1"> Ime spremenljivke . <br>
+<hr>
+(src)="s23.1"> Valor <br>
+(trg)="s23.1"> Vrednost <br>
+<hr>
+(src)="s24.1"> Valor da variável . <br>
+(trg)="s24.1"> Vrednost spremenljivke . <br>
+<hr>
+(src)="s25.1"> Descrição <br>
+(trg)="s25.1"> Opis <br>
+<hr>
+(src)="s26.1"> Descrição em língua natural da variável . <br>
+(trg)="s26.1"> Opis spremenljivke v naravnem jeziku . <br>
+<hr>
+(src)="s27.1"> As variáveis de ambiente que aqui aparecem irão sobrepor qualquer variável de ambiente existente para todas as tarefas escalonadas . <br>
+(src)="s27.2"> Se uma variável de ambiente foi desactivada , o seu valor não aparecerá e a descrição estará desactivada . <br>
+(trg)="s27.1"> Spremenljivke okolja , ki se pojavljajo tukaj , bodo prepisale vse obstoječe spremenljivke okolja za razporejena opravila . Če je bila katera spremeljivka onemogočena , se ne bo pojavila nobena vrednost in opis bo izklopljen . <br>
+<hr>
+(src)="s28.1"> Adicionar Tarefas Escalonadas <br>
+(trg)="s28.1"> Uvrstitev opravil <br>
+<hr>
+(src)="s29.1"> Para criar uma nova tarefa escalonável , primeiro selecciona a pasta Tarefas . <br>
+(trg)="s29.1"> Da uvrstite novo opravilo , najprej izberite imenik Opravila ( Tasks ) . <br>
+<hr>
+(src)="s30.1"> A Janela Editar Tarefa <br>
+(trg)="s30.1"> Pogovorno okno Spremeni opravilo <br>
+<hr>
+(src)="s31.1"> Comentário <br>
+(trg)="s31.1"> Komentar <br>
+<hr>
+(src)="s32.1"> Indica uma descrição da tarefa a escalonar . <br>
+(trg)="s32.1"> Vnesite opis opravila za uvrstitev . <br>
+<hr>
+(src)="s33.1"> Programa <br>
+(trg)="s33.1"> Program <br>
+<hr>
+(src)="s34.1"> Indica o nome do programa . <br>
+(trg)="s34.1"> Vnesite ime programa . <br>
+<hr>
+(src)="s34.2"> Podes especificar um caminho ou directoria relativo ou absoluto . <br>
+(src)="s34.3"> Se quiseres procurar pelo programa , carrega em Procurar.. . . <br>
+(trg)="s34.2"> Vnesete lahko relativno ali absolutno pot . Če želite program poiskati , pritisnite Pobrskaj.. . . <br>
+<hr>
+(src)="s35.1"> Activa <br>
+(trg)="s35.1"> Vključeno <br>
+<hr>
+(src)="s36.1"> Para activar ou desactivar a tarefa , selecciona ou deselecciona a opção Activa . <br>
+(src)="s37.1"> Silencioso <br>
+(trg)="s36.1"> Da omogočite ali onemogočite opravilo , izberite Omogočen . <br>
+<hr>
+(src)="s38.1"> Desliga o registo do comando e do seu resultado . <br>
+(trg)="s37.1"> Mesecev <br>
+<hr>
+(src)="s39.1"> Meses <br>
+(src)="s40.1"> Selecciona os meses durante os quais a tarefa deve ser executada . <br>
+(trg)="s38.1"> Izberite mesece v katere bo opravilo razvrščeno . <br>
+<hr>
+(src)="s41.1"> Dias do Mês <br>
+(trg)="s39.1"> Dni v mesecu <br>
+<hr>
+(src)="s42.1"> Selecciona os meses durante os quais a tarefa deve ser executada . <br>
+(trg)="s40.1"> Izberite dni v mesecu , v katere bo opravilo razporejeno . <br>
+<hr>
+(src)="s43.1"> Dias da Semana <br>
+(trg)="s41.1"> Dni v tednu <br>
+<hr>
+(src)="s44.1"> Selecciona os dias da semana nos quais a tarefa deve ser executada . <br>
+(trg)="s42.1"> Izberite dneve v tednu , kamor bo opravilo uvrščeno . <br>
+<hr>
+(src)="s45.1"> Diariamente <br>
+(trg)="s43.1"> Dnevno <br>
+<hr>
+(src)="s46.1"> Se queres que a tarefa se execute diariamente , selecciona Correr Todos os Dias . <br>
+(trg)="s44.1"> Če želite razporediti opravilo tako , da bo teklo vsak dan , izberite Poženi vsak dan . <br>
+<hr>
+(src)="s47.1"> Horas <br>
+(trg)="s45.1"> Ur <br>
+<hr>
+(src)="s48.1"> Selecciona as horas nas quais a tarefa deve ser executada . <br>
+(trg)="s46.1"> Izberite ure , v katere bo razporejeno opravilo . <br>
+<hr>
+(src)="s49.1"> Minutos <br>
+(trg)="s47.1"> Minut <br>
+<hr>
+(src)="s50.1"> Selecciona os minutos nos quais a tarefa deve ser executada . <br>
+(trg)="s48.1"> Izberite minute v katere bo opravilo razporejeno . <br>
+<hr>
+(src)="s50.2"> O Kcron não suporta escalonar tarefas em intervalos menores do que cinco minutos . <br>
+(trg)="s48.2"> Kcron ne podpira razporejanje opravil na intervale , krajše od petih minut . <br>
+<hr>
+(src)="s51.1"> OK <br>
+(trg)="s49.1"> V redu <br>
+<hr>
+(src)="s52.1"> Completa a criação desta tarefa . <br>
+(trg)="s50.1"> Dokonča ustvarjenje tega opravila . <br>
+<hr>
+(src)="s53.1"> Cancelar <br>
+(trg)="s51.1"> Prekliči <br>
+<hr>
+(src)="s54.1"> Cancela a criação desta tarefa . <br>
+(trg)="s52.1"> Prekine ustvarjenje tega opravila . <br>
+<hr>
+(src)="s55.1"> Se seleccionares tanto os dias do mês como os da semana , a tarefa será executada em qualquer uma das condições . <br>
+(src)="s55.2"> Por exemplo , se seleccionares o dia 1 e o dia 15 e seleccionares o Domingo , o programa será executado em todos os dias 1 e 15 dos meses seleccionados ( independentemente do dia da semana ) assim como em todos os Domingos dos meses seleccionados ( independentemente do dia do mês ) . <br>
+(trg)="s53.1"> Če izberete dneve v mesecu kot tudi dneve v tednu , bo opravilo pognano ko je izpolnjen vsaj eden od obeh pogojev . Če na primer izberete 1 . in 15 . ter nedeljo , bo program pognan vsakega 1 . in 15 . izbranega meseca ( ne glede na dan v tednu) , kot tudi vsako nedeljo (ne glede na dan v mesecu ) . <br>
+<hr>
+(src)="s56.1"> A tarefa escalonada não está completamente configurada até o crontab ser gravado . <br>
+(trg)="s54.1"> Opravilo v resnici ni razporejeno dokler ne shranite crontab -a . <br>
+<hr>
+(src)="s57.1"> Gerir as Tarefas Escalonadas <br>
+(trg)="s55.1"> Upravljanje razporejenih opravil <br>
+<hr>
+(src)="s58.1"> Assim como ao criar tarefas novas , as alterações não terão efeito até o ficheiro crontab ser gravado . <br>
+(trg)="s56.1"> Kot velja pri ustvarjanju novih opravil , spremembe dejansko ne bodo veljale , dokler ni crontab shranjen . <br>
+<hr>
+(src)="s59.1"> Cortar Tarefas Escalonadas <br>
+(trg)="s57.1"> Izrezovanje razporejenih opravil <br>
+<hr>
+(src)="s60.1"> Para cortares uma tarefa escalonada , primeiro selecciona a tarefa a ser cortada . <br>
+(trg)="s58.1"> Da izrežete razporejeno opravilo , ga najprej izberite . <br>
+<hr>
+(src)="s62.1"> Copiar Tarefas Escalonadas <br>
+(trg)="s60.1"> Prepisovanje razporejenih opravil <br>
+<hr>
+(src)="s63.1"> Para copiares uma tarefa escalonada , primeiro selecciona a tarefa a ser copiada . <br>
+(trg)="s61.1"> Da prepište razporejeno opravilo , ga najprej izberite . <br>
+<hr>
+(src)="s65.1"> Colar Tarefas Escalonadas <br>
+(trg)="s63.1"> Prilepljanje razporejenih opravil <br>
+<hr>
+(src)="s66.1"> Para colares uma tarefa escalonada , é preciso ter cortado ou copiado uma tarefa escalonada para a Área de Transferência em primeiro lugar . <br>
+(trg)="s64.1"> Da lahko prilepite razporejeno opravilo , mora biti to najprej izrezano ali pa prepisano na odložišče . <br>
+<hr>
+(src)="s66.2"> Logo que uma tarefa tenha sido cortada ou copiada , a colagem estará activa . <br>
+(trg)="s64.2"> Ko je bilo to opravljeno , bo prilepljanje omogočeno . <br>
+<hr>
+(src)="s66.3"> Então aí selecciona a pasta Tarefas . <br>
+(trg)="s64.3"> Potem izberite imenik Opravila . <br>
+<hr>
+(src)="s68.1"> Modificar Tarefas Escalonadas <br>
+(trg)="s66.1"> Spreminjanje razporejenih opravil <br>
+<hr>
+(src)="s69.1"> Para modificares uma tarefa escalonada , primeiro selecciona a tarefa a ser modificada . <br>
+(trg)="s67.1"> Da spremenite razporejeno opravilo , ga najprej izberite . <br>
+<hr>
+(src)="s70.1"> Irás ver a janela de Editar Tarefa , com a qual irás modificar como descrito acima . <br>
+(trg)="s68.1"> Pojavilo se bo pogovorno okno Spremeni opravilo , ki ga spremenite , kot je opisano zgoraj . <br>
+<hr>
+(src)="s71.1"> Apagar Tarefas Escalonadas <br>
+(trg)="s69.1"> Brisanje razporejenih opravil <br>
+<hr>
+(src)="s72.1"> Para apagares uma tarefa escalonada , primeiro selecciona a tarefa a ser removida . <br>
+(trg)="s70.1"> Da odstranite razporejeno opravilo , ga najprej izberite . <br>
+<hr>
+(src)="s73.1"> Alternativamente , podes usar o menu do botão direito do rato e escolher Apagar . <br>
+(trg)="s71.1"> Alternativno lahko uporabite menu desnega gumba miške in izberete Izbriši . <br>
+<hr>
+(src)="s74.1"> Activar / Desactivar Tarefas Escalonadas <br>
+(trg)="s72.1"> Omogočanje / onemogočanje razporejenih opravil <br>
+<hr>
+(src)="s75.1"> Para activares ou desactivares uma tarefa escalonada , primeiro selecciona a tarefa desactivada . <br>
+(trg)="s73.1"> Da omogočite / onemogočite razporejeno opravilo , najprej izberite onemogočeno opravilo . <br>
+<hr>
+(src)="s75.2"> As tarefas desactivadas terão Desactivado nas suas descrições . <br>
+(trg)="s73.2"> Ta imajo v svojem opisu oznako Onemogočen . <br>
+<hr>
+(src)="s76.1"> Alternativamente , podes usar o menu do botão direito do rato e escolher Activo . <br>
+(trg)="s74.1"> Alternativno lahko v menuju desnega gumba miške izberete Omogočen . <br>
+<hr>
+(src)="s76.2"> Deves confirmar se o nome do programa , os seus parâmetros e a descrição estão correctamente apresentados . <br>
+(trg)="s74.2"> Potrdite , da so ime razporejenga opravila , parametri in opis pravilno prikazani . <br>
+<hr>
+(src)="s77.1"> Correr Tarefas Escalonadas <br>
+(trg)="s75.1"> Poganjanje razporejenih opravil <br>
+<hr>
+(src)="s78.1"> Para correres uma tarefa escolanada imediatamente , primeiro selecciona a tarefa . <br>
+(trg)="s76.1"> Da razporejeno opravilo takoj poženete , ga najprej izberite . <br>
+<hr>
+(src)="s79.1"> Alternativamente , podes usar o menu do botão direito do rato e escolher Executar . <br>
+(trg)="s77.1"> Alternativno lahko uporabite menu desne tipke miške in izberete Poženi zdaj . <br>
+<hr>
+(src)="s80.1"> Adicionar Variáveis de Ambiente <br>
+(trg)="s78.1"> Dodajanje spremenljivk okolja <br>
+<hr>
+(src)="s81.1"> Para criares uma nova variável de ambiente , primeiro selecciona a pasta Variáveis . <br>
+(trg)="s79.1"> Da ustvarite novo spremenljivko okolja najprej izberite imenik Spremenljivke . <br>
+<hr>
+(src)="s83.1"> A janela de Editar Variável <br>
+(trg)="s81.1"> Pogovorno okno Spremeni spremenljivko <br>
+<hr>
+(src)="s84.1"> Variável <br>
+(trg)="s82.1"> Spremenljivka <br>
+<hr>
+(src)="s85.1"> Indica o nome da variável de ambiente . <br>
+(trg)="s83.1"> Vnesite ime spremenljivke . <br>
+<hr>
+(src)="s85.2"> Podes usar a lista correspondente para seleccionares o nome das variáveis de ambiente mais comuns que são usadas pelas tarefas escalonadas . <br>
+(trg)="s83.2"> Uporabite lahko seznam spustnega polja , da izberete izmed najpogosteje uporabljenih spremenljivk razporejenih opravil . <br>
+<hr>
+(src)="s85.3"> Estas incluem : <br>
+(trg)="s83.3"> Te vključujejo : <br>
+<hr>
+(src)="s86.1"> HOME <br>
+(trg)="s84.1"> HOME <br>
+<hr>
+(src)="s87.1"> A ser usada em vez da directoria pessoal do utilizador por omissão . <br>
+(trg)="s85.1"> Uporablja se namesto privzetega uporabnikovega domačega imenika . <br>
+<hr>
+(src)="s88.1"> MAILTO <br>
+(trg)="s86.1"> MAILTO <br>
+<hr>
+(src)="s89.1"> Para enviar o resultado por ' email ' para um endereço diferente do endereço de 'email ' do utilizador por omissão . <br>
+(trg)="s87.1"> Za pošiljanje pošte na naslov , ki ni uporabnikov privzeti e-poštni naslov . <br>
+<hr>
+(src)="s90.1"> PATH <br>
+(trg)="s88.1"> PATH <br>
+<hr>
+(src)="s91.1"> A ser usada para procurar pelos programas nas directorias indicadas . <br>
+(trg)="s89.1"> Se uporablja za iskanje programskih datotek po imenikih . <br>
+<hr>
+(src)="s92.1"> SHELL <br>
+(trg)="s90.1"> SHELL <br>
+<hr>
+(src)="s93.1"> A ser usada em vez da linha de comandos por omissão do utilizador . <br>
+(trg)="s91.1"> Uporablja se namesto uporabnikove privzete vrednosti . <br>
+<hr>
+</body>
+</html>
