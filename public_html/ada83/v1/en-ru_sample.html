@@ -1,0 +1,318 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# en/arm.xml.gz<br>
+# ru/arm.xml.gz
+
+<p><hr>
+(src)="1"> Ada is a programming language designed in accordance with requirements defined by the United States Department of Defense : the so-called Steelman requirements . <br>
+(trg)="1"> Ада — это язык программирования , разработанный в соответствии с так называемыми стилмановскими требованиями , определёнными МО США . <br>
+<hr>
+(src)="2"> Overall , these requirements call for a language with considerable expressive power covering a wide application domain . <br>
+(trg)="2"> Более того , эти требования определили язык с мощными выразительными возможностями , пригодный для широкого класса задач . <br>
+<hr>
+(src)="3"> As a result , the language includes facilities offered by classical languages such as Pascal as well as facilities often found only in specialized languages . <br>
+(trg)="3"> Вследствие этого языку Ада присущи как свойства классических языков , подобных языку Паскаль , так и свойства , характерные для специализированных языков . <br>
+<hr>
+(src)="4"> Thus the language is a modern algorithmic language with the usual control structures , and with the ability to define types and subprograms . <br>
+(trg)="4"> Таким образом , этот язык является современным алгоритмическим языком с традиционными управляющими структурами и средствами определения типов и подпрограмм . <br>
+<hr>
+(src)="5"> It also serves the need for modularity , whereby data , types , and subprograms can be packaged . <br>
+(trg)="5"> Он также удовлетворяет требованию модульности ; данные , типы и подпрограммы могут образовывать пакеты . <br>
+<hr>
+(src)="6"> It treats modularity in the physical sense as well , with a facility to support separate compilation . <br>
+(trg)="6"> Модульность понимается и в физическом смысле , что обеспечивается раздельной компиляцией модулей . <br>
+<hr>
+(src)="7"> In addition to these aspects , the language covers real-time programming , with facilities to model parallel tasks and to handle exceptions . <br>
+(trg)="7"> В дополнение к указанному язык обеспечивает программирование задач реального времени с возможностями моделирования параллельных задач и обработки исключений . <br>
+<hr>
+(src)="8"> It also covers systems programming ; <br>
+(trg)="8"> Он пригоден также для системного программирования ; <br>
+<hr>
+(src)="9"> this requires precise control over the representation of data and access to system-dependent properties . <br>
+(trg)="9"> это требует прецизионного управления представлением данных и доступа к зависимым от системы параметрам . <br>
+<hr>
+(src)="10"> Finally , both application-level and machine-level input-output are defined . <br>
+(trg)="10"> Наконец , в языке определены пользовательский и машинный уровни ввода-вывода . <br>
+<hr>
+(src)="11"> This standard specifies the form and meaning of program units written in Ada . <br>
+(trg)="11"> В данном стандарте описаны форма представления и семантика программных модулей , написанных на языке Ада . <br>
+<hr>
+(src)="12"> Its purpose is to promote the portability of Ada programs to a variety of data processing systems . <br>
+(trg)="12"> Цель стандарта — повысить переносимость Ада-программ . <br>
+<hr>
+(src)="13"> This standard specifies : <br>
+(trg)="13"> Данный стандарт определяет : <br>
+<hr>
+(src)="14"> The form of a program unit written in Ada . <br>
+(trg)="14"> форму представления программного модуля , написанного на языке Ада ; <br>
+<hr>
+(src)="15"> The effect of translating and executing such a program unit . <br>
+(trg)="15"> результаты трансляции и выполнения такого программного модуля ; <br>
+<hr>
+(src)="16"> The manner in which program units may be combined to form Ada programs . <br>
+(trg)="16"> способ получения Ада-программ из набора программных модулей ; <br>
+<hr>
+(src)="17"> The predefined program units that a conforming implementation must supply . <br>
+(trg)="17"> предопределённые программные модули , которые должна обеспечивать согласованная со стандартом реализация ( далее в тексте — согласованная реализация ) ; <br>
+<hr>
+(src)="18"> The permissible variations within the standard , and the manner in which they must be specified . <br>
+(trg)="18"> допустимые в рамках стандарта изменения и способы их задания ; <br>
+<hr>
+(src)="19"> Those violations of the standard that a conforming implementation is required to detect , and the effect of attempting to translate or execute a program unit containing such violations . <br>
+(trg)="19"> те нарушения стандарта , которые обязана обнаруживать согласованная реализация , а также результат попытки транслировать или выполнить программный модуль , содержащий такие нарушения ; <br>
+<hr>
+(src)="20"> Those violations of the standard that a conforming implementation is not required to detect . <br>
+(trg)="20"> те нарушения стандарта , которые согласованная реализация не обязана обнаруживать . <br>
+<hr>
+(src)="21"> This standard does not specify : <br>
+(trg)="21"> Этот стандарт не определяет : <br>
+<hr>
+(src)="22"> The means whereby a program unit written in Ada is transformed into object code executable by a processor . <br>
+(trg)="22"> средства преобразования программного модуля , написанного на языке Ада , в объектный код , выполняемый процессором ; <br>
+<hr>
+(src)="23"> The means whereby translation or execution of program units is invoked and the executing units are controlled . <br>
+(trg)="23"> средства запуска трансляции , выполнения программных модулей и управления ими ; <br>
+<hr>
+(src)="24"> The size or speed of the object code , or the relative execution speed of different language constructs . <br>
+(trg)="24"> размер и скорость выполнения объектного кода , а также относительную скорость выполнения различных языковых конструкций ; <br>
+<hr>
+(src)="25"> The form or contents of any listings produced by implementations ; in particular , the form or contents of error or warning messages . <br>
+(trg)="25"> форму и содержание любых листингов , создаваемых реализациями , в частности форму и содержание сообщений об ошибках или предупреждающих сообщений ; <br>
+<hr>
+(src)="26"> The effect of executing a program unit that contains any violation that a conforming implementation is not required to detect . <br>
+(trg)="26"> результат выполнения программного модуля , содержащего любое нарушение стандарта , которое согласованная реализация не обязана обнаруживать ; <br>
+<hr>
+(src)="27"> The size of a program or program unit that will exceed the capacity of a particular conforming implementation . <br>
+(trg)="27"> предельный размер программы или программного модуля для конкретной согласованной реализации . <br>
+<hr>
+(src)="28"> Where this standard specifies that a program unit written in Ada has an exact effect , this effect is the operational meaning of the program unit and must be produced by all conforming implementations . <br>
+(trg)="28"> Там , где стандарт предписывает , что программный модуль , написанный на языке Ада , имеет точный результат , этот результат является функциональным значением данного программного модуля , и его должны обеспечить все согласованные реализации . <br>
+<hr>
+(src)="29"> Where this standard specifies permissible variations in the effects of constituents of a program unit written in Ada , the operational meaning of the program unit as a whole is understood to be the range of possible effects that result from all these variations , and a conforming implementation is allowed to produce any of these possible effects . <br>
+(trg)="29"> Там , где стандарт допускает неоднозначность результата выполнения программного модуля , под функциональным значением программного модуля в целом понимается множество возможных результатов , и согласованная реализация может обеспечить любой из этих возможных результатов . <br>
+<hr>
+(src)="30"> Examples of permissible variations are : <br>
+(trg)="30"> Примерами допустимых неоднозначностей являются : <br>
+<hr>
+(src)="31"> The represented values of fixed or floating numeric quantities , and the results of operations upon them . <br>
+(trg)="31"> значения фиксированных и плавающих числовых величин , а также результаты операций над ними ; <br>
+<hr>
+(src)="32"> The order of execution of statements in different parallel tasks , in the absence of explicit synchronization . <br>
+(trg)="32"> порядок выполнения операторов в различных параллельных задачах при отсутствии явной синхронизации . <br>
+<hr>
+(src)="33"> A conforming implementation is one that : <br>
+(trg)="33"> Согласованная реализация должна : <br>
+<hr>
+(src)="34"> Correctly translates and executes legal program units written in Ada , provided that they are not so large as to exceed the capacity of the implementation . <br>
+(trg)="34"> корректно транслировать и выполнять правильные программные модули , написанные на языке Ада , если только их объем находится в допустимых для реализации пределах ; <br>
+<hr>
+(src)="35"> Rejects all program units that are so large as to exceed the capacity of the implementation . <br>
+(trg)="35"> отвергать все программные модули , объем которых больше допускаемого реализацией ; <br>
+<hr>
+(src)="36"> Rejects all program units that contain errors whose detection is required by the standard . <br>
+(trg)="36"> отвергать все программные модули , содержащие ошибки , обнаружение которых предусмотрено стандартом ; <br>
+<hr>
+(src)="37"> Supplies all predefined program units required by the standard . <br>
+(trg)="37"> обеспечивать всеми предопределёнными программными модулями , предусмотренными стандартом ; <br>
+<hr>
+(src)="38"> Contains no variations except where the standard permits . <br>
+(trg)="38"> содержать только те изменения , которые допускает стандарт ; <br>
+<hr>
+(src)="39"> Specifies all such permitted variations in the manner prescribed by the standard . <br>
+(trg)="39"> описывать допустимые изменения способом , разрешённым стандартом . <br>
+<hr>
+(src)="40"> This reference manual contains fourteen chapters , three annexes , three appendices , and an index . <br>
+(trg)="40"> Это справочное руководство содержит четырнадцать глав , три дополнения , три приложения , указатель терминов и синтаксис . <br>
+<hr>
+(src)="41"> Each chapter is divided into sections that have a common structure . <br>
+(trg)="41"> Каждая глава делится на разделы , которые имеют общую структуру . <br>
+<hr>
+(src)="42"> Each section introduces its subject , gives any necessary syntax rules , and describes the semantics of the corresponding language constructs . <br>
+(trg)="42"> В каждом разделе вводятся соответствующие понятия , даются все необходимые синтаксические правила и описывается семантика соответствующих конструкций . <br>
+<hr>
+(src)="43"> Examples and notes , and then references , may appear at the end of a section . <br>
+(trg)="43"> В конце раздела могут быть даны примеры , примечания и ссылки . <br>
+<hr>
+(src)="44"> Examples are meant to illustrate the possible forms of the constructs described . <br>
+(trg)="44"> Примеры предназначены для иллюстрации возможных форм описанных конструкций . <br>
+<hr>
+(src)="45"> Notes are meant to emphasize consequences of the rules described in the section or elsewhere . <br>
+(trg)="45"> Примечание предназначено для пояснения следствий из правил , описанных в данном или других разделах . <br>
+<hr>
+(src)="46"> References are meant to attract the attention of readers to a term or phrase having a technical meaning defined in another section . <br>
+(trg)="46"> Ссылки нужны , чтобы обратить внимание читателей на термины и терминологические обороты , имеющие специальный смысл и определённые в других разделах . <br>
+<hr>
+(src)="47"> The standard definition of the Ada programming language consists of the fourteen chapters and the three annexes , subject to the following restriction : the material in each of the items listed below is informative , and not part of the standard definition of the Ada programming language : <br>
+(trg)="47"> Определение стандарта языка программирования Ада , состоящее из четырнадцати глав и трёх дополнений , предполагает , следующее ограничение : материал каждого из перечисленных ниже пунктов носит информативный характер и не является частью определения стандарта языка . <br>
+<hr>
+(src)="48"> Section 1.3 Design goals and sources <br>
+(trg)="48.1"> 1.3 . <br>
+(trg)="48.2"> Цели и источники разработки <br>
+<hr>
+(src)="49"> Section 1.4 Language summary <br>
+(trg)="49.1"> 1.4 . <br>
+(trg)="49.2"> Обзор свойств языка <br>
+<hr>
+(src)="50"> The examples , notes , and references given at the end of each section <br>
+(trg)="50"> Примеры , примечания и ссылки , приведённые в конце любого раздела <br>
+<hr>
+(src)="51"> Each section whose title starts with the word " Example " or " Examples " <br>
+(trg)="51"> Каждый подраздел , заголовок которого начинается со слов « Пример » или « Примеры » <br>
+<hr>
+(src)="52"> Ada was designed with three overriding concerns : program reliability and maintenance , programming as a human activity , and efficiency . <br>
+(trg)="52"> Язык был разработан , исходя из трёх противоречивых требований : обеспечить надёжность и сопровождение программ , поддерживать программирование как вид человеческой деятельности и обеспечить эффективность программ . <br>
+<hr>
+(src)="53"> The need for languages that promote reliability and simplify maintenance is well established . <br>
+(trg)="53"> Необходимость в языках , повышающих надёжность и упрощающих сопровождение , является установленным фактом . <br>
+<hr>
+(src)="54"> Hence emphasis was placed on program readability over ease of writing . <br>
+(trg)="54"> В языке Ада предпочтение было отдано удобочитаемости программы по сравнению с лёгкостью её написания . <br>
+<hr>
+(src)="55"> For example , the rules of the language require that program variables be explicitly declared and that their type be specified . <br>
+(trg)="55"> Например , правила языка требуют , чтобы все переменные и их типы были явно описаны в программе . <br>
+<hr>
+(src)="56"> Since the type of a variable is invariant , compilers can ensure that operations on variables are compatible with the properties intended for objects of the type . <br>
+(trg)="56"> Далее , тип переменной неизменен , и компилятор может гарантировать совместимость операций над переменными со свойствами , присущими объектам этого типа . <br>
+<hr>
+(src)="57"> Furthermore , error-prone notations have been avoided , and the syntax of the language avoids the use of encoded forms in favor of more English-like constructs . <br>
+(trg)="57"> Более того , чтобы избежать обозначений , которые могут привести к ошибкам , в синтаксисе языка было отдано предпочтение конструкциям , которые ближе к естественному языку , чем к каким-то кодированным формам . <br>
+<hr>
+(src)="58"> Finally , the language offers support for separate compilation of program units in a way that facilitates program development and maintenance , and which provides the same degree of checking between units as within a unit . <br>
+(trg)="58"> Наконец , язык поддерживает раздельную компиляцию программных модулей способом , облегчающим разработку и сопровождение программ и обеспечивающим один и тот же уровень контроля для межмодульных и внутримодульных связей . <br>
+<hr>
+(src)="59"> Concern for the human programmer was also stressed during the design . <br>
+(trg)="59"> При разработке языка также учитывался человеческий фактор в программировании . <br>
+<hr>
+(src)="60"> Above all , an attempt was made to keep the language as small as possible , given the ambitious nature of the application domain . <br>
+(trg)="60"> Прежде всего была сделана попытка ограничить язык настолько , насколько это позволяла широкая область его применения . <br>
+<hr>
+(src)="61"> We have attempted to cover this domain with a small number of underlying concepts integrated in a consistent and systematic way . <br>
+(trg)="61"> Мы попытались путём систематизации и выявления однородности охватить всю область применения небольшим числом основных понятий . <br>
+<hr>
+(src)="62"> Nevertheless we have tried to avoid the pitfalls of excessive involution , and in the constant search for simpler designs we have tried to provide language constructs that correspond intuitively to what the users will normally expect . <br>
+(trg)="62"> Тем не менее мы постарались вложить в языковые конструкции такую семантику , которая совпадает с интуитивным представлением о них у пользователя . <br>
+<hr>
+(src)="63"> Like many other human activities , the development of programs is becoming ever more decentralized and distributed . <br>
+(trg)="63"> Как и многие другие виды человеческой деятельности , разработка программ становится все более децентрализованной и разобщённой . <br>
+<hr>
+(src)="64"> Consequently , the ability to assemble a program from independently produced software components has been a central idea in this design . <br>
+(trg)="64"> Следовательно , одной из центральных идей при разработке языка было обеспечение возможности составлять программу из независимо разработанных компонент . <br>
+<hr>
+(src)="65"> The concepts of packages , of private types , and of generic units are directly related to this idea , which has ramifications in many other aspects of the language . <br>
+(trg)="65"> Концепции пакетов , личных типов и настраиваемых модулей прямо служат этой идее , которая повлияла на многие другие аспекты языка . <br>
+<hr>
+(src)="66"> No language can avoid the problem of efficiency . <br>
+(trg)="66"> При создании любого языка нельзя избежать проблемы эффективности . <br>
+<hr>
+(src)="67"> Languages that require over-elaborate compilers , or that lead to the inefficient use of storage or execution time , force these inefficiencies on all machines and on all programs . <br>
+(trg)="67"> Языки , которые требуют сверхсложных компиляторов или приводят к неэффективному использованию памяти и времени выполнения программы , дают неэффективные результаты на всех машинах и для всех программ . <br>
+<hr>
+(src)="68"> Every construct of the language was examined in the light of present implementation techniques . <br>
+(trg)="68"> При создании языка Ада каждая его конструкция оценивалась с точки зрения современных методов реализации . <br>
+<hr>
+(src)="69"> Any proposed construct whose implementation was unclear or that required excessive machine resources was rejected . <br>
+(trg)="69"> Отвергались все те конструкции , которые были недостаточно ясными или требовали чрезмерных машинных ресурсов . <br>
+<hr>
+(src)="70"> None of the above design goals was considered as achievable after the fact . <br>
+(trg)="70"> Ни одна из указанных выше целей разработки языка не откладывалась на будущее . <br>
+<hr>
+(src)="71"> The design goals drove the entire design process from the beginning . <br>
+(trg)="71"> Все они учитывались одновременно и с самого начала разработки . <br>
+<hr>
+(src)="72"> A perpetual difficulty in language design is that one must both identify the capabilities required by the application domain and design language features that provide these capabilities . <br>
+(trg)="72"> При разработке любого языка трудность заключается в том , что необходимо определить не только возможности , которыми должен обладать язык и которые диктует предполагаемая область применения , но и собственно разработать средства языка , обеспечивающие эти возможности . <br>
+<hr>
+(src)="73"> The difficulty existed in this design , although to a lesser degree than usual because of the Steelman requirements . <br>
+(trg)="73"> Подобная трудность существовала и при разработке языка Ада , хотя благодаря стилмановским требованиям она была меньше , чем обычно . <br>
+<hr>
+(src)="74"> These requirements often simplified the design process by allowing it to concentrate on the design of a given system providing a well defined set of capabilities , rather than on the definition of the capabilities themselves . <br>
+(trg)="74"> Стилмановские требования , коль скоро требования уже существуют , позволяли сконцентрировать внимание собственно на создании системы , удовлетворяющей этим требованиям , что часто упрощало процесс разработки . <br>
+<hr>
+(src)="75"> Another significant simplification of the design work resulted from earlier experience acquired by several successful Pascal derivatives developed with similar goals . <br>
+(trg)="75"> Другое обстоятельство , существенно упростившее разработку , было следствием приобретённого ранее опыта реализации удачных проектов с целями , подобными указанным выше , на базе языка Паскаль . <br>
+<hr>
+(src)="76"> These are the languages Euclid , Lis , Mesa , Modula , and Sue . <br>
+(trg)="76"> Такими языками являются языки Евклид , Лис , Меса , Модула и Сью . <br>
+<hr>
+(src)="77"> Many of the key ideas and syntactic forms developed in these languages have counterparts in Ada . <br>
+(trg)="77"> Многие из ключевых идей и синтаксических форм этих языков имеют аналоги в языке Ада . <br>
+<hr>
+(src)="78"> Several existing languages such as Algol 68 and Simula , and also recent research languages such as Alphard and Clu , influenced this language in several respects , although to a lesser degree than did the Pascal family . <br>
+(trg)="78"> Некоторые существующие языки , такие как Алгол-68 и Симула , а также современные проекты языков Альфард и Клу , также повлияли на разработку языка , хотя и в меньшей степени , чем языки семейства Паскаль . <br>
+<hr>
+(src)="79"> Finally , the evaluation reports received on an earlier formulation ( the Green language ) , and on alternative proposals ( the Red , Blue , and Yellow languages ) , the language reviews that took place at different stages of this project , and the thousands of comments received from fifteen different countries during the preliminary stages of the Ada design and during the ANSI canvass , all had a significant impact on the standard definition of the language . <br>
+(trg)="79"> Наконец , большое значение для определения стандарта языка имели его начальная разработка ( язык « Зелёный » ) , проекты языков « Красный » , « Голубой » и « Жёлтый » , рассмотрение различных стадий проекта и тысячи замечаний , полученных из 15 стран на предварительных этапах разработки и в процессе голосования при стандартизации , — все это оказало значительное влияние на определение стандарта языка . <br>
+<hr>
+(src)="80"> An Ada program is composed of one or more program units . <br>
+(trg)="80"> Ада-программа представляет собой один или несколько программных модулей . <br>
+<hr>
+(src)="81"> These program units can be compiled separately . <br>
+(trg)="81"> Эти программные модули могут компилироваться раздельно . <br>
+<hr>
+(src)="82"> Program units may be subprograms ( which define executable algorithms ) , package units ( which define collections of entities ) , task units ( which define parallel computations ) , or generic units ( which define parameterized forms of packages and subprograms ) . <br>
+(trg)="82"> Программные модули — это подпрограммы ( определяющие выполняемый алгоритм ) , пакеты ( определяющие наборы понятий ) , модули-задачи ( определяющие параллельные вычисления ) или настраиваемые модули ( определяющие параметризованные пакеты и подпрограммы ) . <br>
+<hr>
+(src)="83"> Each unit normally consists of two parts : a specification , containing the information that must be visible to other units , and a body , containing the implementation details , which need not be visible to other units . <br>
+(trg)="83"> Каждый модуль обычно состоит из двух частей : спецификации , содержащей видимую для других модулей информацию , и тела , содержащего детали реализации , о которых другие модули не обязаны знать . <br>
+<hr>
+(src)="84"> This distinction of the specification and body , and the ability to compile units separately , allows a program to be designed , written , and tested as a set of largely independent software components . <br>
+(trg)="84"> Это различие между спецификацией и телом , а также возможность компилировать модули раздельно позволяют разрабатывать , кодировать и тестировать программу как множество в достаточной степени независимых программных компонент . <br>
+<hr>
+(src)="85"> An Ada program will normally make use of a library of program units of general utility . <br>
+(trg)="85"> Ада-программа обычно будет использовать библиотеку программных модулей общего назначения . <br>
+<hr>
+(src)="86"> The language provides means whereby individual organizations can construct their own libraries . <br>
+(trg)="86"> Язык предоставляет средства , с помощью которых отдельные организации могут создавать свои собственные библиотеки . <br>
+<hr>
+(src)="87"> The text of a separately compiled program unit must name the library units it requires . <br>
+(trg)="87"> В тексте раздельно компилируемого программного модуля должны быть указаны имена библиотечных модулей , которые ему требуются . <br>
+<hr>
+(src)="88"> Program Units <br>
+(trg)="88"> Программные модули <br>
+<hr>
+(src)="89"> A subprogram is the basic unit for expressing an algorithm . <br>
+(trg)="89"> Подпрограмма является основным модулем для представления алгоритма . <br>
+<hr>
+(src)="90"> There are two kinds of subprograms : procedures and functions . <br>
+(trg)="90"> Существует два вида подпрограмм : процедуры и функции . <br>
+<hr>
+(src)="91"> A procedure is the means of invoking a series of actions . <br>
+(trg)="91"> Процедура — это средство вызова последовательности действий . <br>
+<hr>
+(src)="92"> For example , it may read data , update variables , or produce some output . <br>
+(trg)="92"> Например , она может считывать данные , изменять значения переменных или выводить информацию . <br>
+<hr>
+(src)="93"> It may have parameters , to provide a controlled means of passing information between the procedure and the point of call . <br>
+(trg)="93"> Процедура может иметь параметры для управления механизмом передачи информации между процедурой и точкой вызова . <br>
+<hr>
+(src)="94"> A function is the means of invoking the computation of a value . <br>
+(trg)="94"> Функция — это средство вызова действий по вычислению значения . <br>
+<hr>
+(src)="95"> It is similar to a procedure , but in addition will return a result . <br>
+(trg)="95"> Она подобна процедуре , но в результате выполнения ещё и возвращает значение . <br>
+<hr>
+(src)="96"> A package is the basic unit for defining a collection of logically related entities . <br>
+(trg)="96"> Пакет — это основной модуль для определения набора логически связанных понятий . <br>
+<hr>
+(src)="97"> For example , a package can be used to define a common pool of data and types , a collection of related subprograms , or a set of type declarations and associated operations . <br>
+(trg)="97"> Например , пакет может быть использован для определения общей группы данных и типов , набора взаимосвязанных подпрограмм или же множества описаний типов и соответствующих операций . <br>
+<hr>
+(src)="98"> Portions of a package can be hidden from the user , thus allowing access only to the logical properties expressed by the package specification . <br>
+(trg)="98"> Части пакета могут быть скрыты от пользователя , разрешая , таким образом , доступ только к тем логическим свойствам , которые описаны в спецификации пакета . <br>
+<hr>
+(src)="99"> A task unit is the basic unit for defining a task whose sequence of actions may be executed in parallel with those of other tasks . <br>
+(trg)="99"> Задачный модуль — это основной модуль для определения задачи , последовательность действий которой может выполняться параллельно с выполнением других задач . <br>
+<hr>
+(src)="100"> Such tasks may be implemented on multicomputers , multiprocessors , or with interleaved execution on a single processor . <br>
+(trg)="100"> Такие задачи могут быть реализованы на многомашинной или многопроцессорной системе либо чередованием выполнения задач на одном процессоре . <br>
+<hr>
+</body>
+</html>
