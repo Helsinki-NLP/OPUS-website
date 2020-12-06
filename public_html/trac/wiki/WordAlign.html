@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      WordAlign – OPUS
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/trac/wiki/WordAlign?format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="../../index.html"><img src="../../img/opus_medium.jpg" alt="opus" height="90" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="WordAlign.html" title="View WordAlign">WordAlign</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/trac/wiki/WordAlign?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><h1 id="WordAlignmentsandPhraseTranslationTables">Word Alignments and Phrase Translation Tables</h1>
+<p>
+For most corpora we also provide word alignments and phrase translation tables in Moses format. If you search for the resources in the language pair that you are interested in (using the form at the front page of OPUS) then you will see links to the downloadable files in the column <strong>alg</strong> of the resource table. Click on those links that pack word alignments (alg) or phrase-tables and related files (smt).
+</p>
+<p>
+The word alignments are stored in the format used by Moses and refer to the toknisation given in the tokenised versions of OPUS corpora. The lines correspond to the aligned sentences in the <tt>bitext.xml</tt> file in XCES align format that is included in the package. Word positions refer to tokens in the tokenised XML corpus files.
+</p>
+<pre class="wiki">0-1 1-0 1-2 2-3 3-4
+6-0 7-1 8-2 9-3 10-4 11-5 13-6 14-7 15-8 16-9 17-10 18-11
+0-0 1-1 2-2 3-3 4-4 5-5 6-6 7-7 8-8 9-9 10-10 11-11 12-12
+0-0 1-1 2-2 3-3 4-4 5-5 6-6 7-7 9-8 10-9 11-10 12-11 13-12 14-13
+...
+</pre><p>
+The included <tt>bitext.xml</tt> file in XCES align format can be used to extract the data from the native XML files. There are typically various alternative alignment files in each word alignment package including different kinds of symmetrisation heuristics that can be used to combine IBM-style word alignments. For more information, please, read the documentation at the Moses SMT package about  <a class="ext-link" href="http://www.statmt.org/moses/?n=FactoredTraining.AlignWords"><span class="icon">​</span>aligning words and common symmetrisation heuristics</a>
+</p>
+<p>
+The {{{smt}} packages include translation models that are extracted from the word aligned bitterest:  <a class="ext-link" href="http://www.statmt.org/moses/?n=FactoredTraining.GetLexicalTranslationTable"><span class="icon">​</span>lexical translation probabilities</a> and a filtered phrase translation table <tt>phrase-table-filtered.gz</tt> in <a class="ext-link" href="http://www.statmt.org/moses/?n=FactoredTraining.ScorePhrases"><span class="icon">​</span>Moses format</a>. For filtering, we use the <a class="ext-link" href="http://www.statmt.org/moses/?n=Advanced.RuleTables#ntoc9"><span class="icon">​</span>pruning method based on significance scores</a> and the log-file in the same directory (if available) shows information about the pruning result:
+</p>
+<pre class="wiki">...
+------------------------------------------------------
+  unfiltered phrases pairs: 433767941
+
+     P(f|e) filter [first]: 66846556   (15.4107%)
+       significance filter: 328790557   (75.7987%)
+            TOTAL FILTERED: 395637113   (91.2094%)
+
+     FILTERED phrase pairs: 38130828   (8.79061%)
+------------------------------------------------------
+</pre></div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/trac/wiki/WordAlign?action=diff&amp;version=3" title="Version 3 by tiedeman">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/trac/timeline?from=2019-01-02T19%3A16%3A27Z&amp;precision=second" title="See timeline at Jan 2, 2019, 7:16:27 PM">2 years ago</a></span>
+            <span class="trac-print">Last modified on Jan 2, 2019, 7:16:27 PM</span>
+          </div>
+        
+        
+      </div>
+      
+    <div id="attachments">
+        <h3 class="foldable">Attachments <span class="trac-count">(1)</span></h3>
+        <div>
+          <ul>
+              <li>
+    <a href="../attachment/wiki/WordAlign/wordalign-download.png.html" title="View attachment">wordalign-download.png</a><a href="../raw-attachment/wiki/WordAlign/wordalign-download.png" class="trac-rawlink" title="Download">​</a>
+       (<span title="38459 bytes">37.6 KB</span>) -
+      added by <em>tiedeman</em> <a class="timeline" href="http://opus.nlpl.eu/trac/timeline?from=2017-11-15T20%3A14%3A30Z&amp;precision=second" title="See timeline at Nov 15, 2017, 8:14:30 PM">3 years ago</a>.
+              </li>
+          </ul>
+          <p>
+            Download all attachments as: <a rel="nofollow" href="../zip-attachment/wiki/WordAlign/index.html">.zip</a>
+          </p>
+        </div>
+    </div>
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/trac/wiki/WordAlign?format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

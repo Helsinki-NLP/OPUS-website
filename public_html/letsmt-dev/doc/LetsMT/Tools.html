@@ -1,0 +1,218 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Tools</title>
+<link rel="stylesheet" href="../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#variables">VARIABLES</a></li>
+	<ul>
+
+		<li><a href="#_default_input_encoding"><code>$DEFAULT_INPUT_ENCODING</code></a></li>
+		<li><a href="#_default_output_encoding"><code>$DEFAULT_OUTPUT_ENCODING</code></a></li>
+	</ul>
+
+	<li><a href="#functions">FUNCTIONS</a></li>
+	<ul>
+
+		<li><a href="#fgets"><code>fgets</code></a></li>
+		<li><a href="#open_bom_file"><code>open_bom_file</code></a></li>
+		<li><a href="#utf8_to_perl__utf8_to_perl_no_copy"><code>utf8_to_perl</code>, <code>utf8_to_perl_no_copy</code></a></li>
+		<li><a href="#safe_path__safe_path_utf8"><code>safe_path</code>, <code>safe_path_utf8</code></a></li>
+		<li><a href="#safe_system"><code>safe_system</code></a></li>
+		<li><a href="#open_cmd_x___cmd_x_reader___scrape_cmd_x"><code>open_cmd_</code><em>X</em> | <code>cmd_</code><em>X</em><code>_reader</code> | <code>scrape_cmd_</code><em>X</em></a></li>
+		<li><a href="#open_out_file"><code>open_out_file</code></a></li>
+		<li><a href="#open_in_file"><code>open_in_file</code></a></li>
+		<li><a href="#get_bom_encoding"><code>get_bom_encoding</code></a></li>
+		<li><a href="#q_string__qq_string"><code>q_string</code>, <code>qq_string</code></a></li>
+		<li><a href="#xmlify___xmlify_no_copy___xmlify_with_quotes___xmlify_with_quotes_no_copy"><code>xmlify</code> | <code>xmlify_no_copy</code> | <code>xmlify_with_quotes</code> | <code>xmlify_with_quotes_no_copy</code></a></li>
+		<li><a href="#build_lookup_func"><code>build_lookup_func</code></a></li>
+		<li><a href="#find_files"><code>find_files</code></a></li>
+		<li><a href="#find_files_relative"><code>find_files_relative</code></a></li>
+		<li><a href="#unescape"><code>unescape</code></a></li>
+		<li><a href="#cacheopen__append__cacheclose"><code>cacheopen</code>, <code>append</code>, <code>cacheclose</code></a></li>
+	</ul>
+
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>LetsMT::Tools - general good-to-have stuff</p>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>
+</p>
+<hr />
+<h1><a name="variables">VARIABLES</a></h1>
+<p>
+</p>
+<h2><a name="_default_input_encoding"><code>$DEFAULT_INPUT_ENCODING</code></a></h2>
+<p>Relaxed utf-8 encoding, <code>utf8</code>.
+Accepts characters that are interpretable utf-8 characters, but strictly incorrect.
+Good for reading.</p>
+<p>
+</p>
+<h2><a name="_default_output_encoding"><code>$DEFAULT_OUTPUT_ENCODING</code></a></h2>
+<p>Strict utf-8 encoding, <code>utf-8</code>.
+Good for writing.</p>
+<p>
+</p>
+<hr />
+<h1><a name="functions">FUNCTIONS</a></h1>
+<p>
+</p>
+<h2><a name="fgets"><code>fgets</code></a></h2>
+<pre>
+ $line = fgets ($fh, $limit)</pre>
+<p>Read a line with a pre-defined buffer limit.</p>
+<p>
+</p>
+<h2><a name="open_bom_file"><code>open_bom_file</code></a></h2>
+<pre>
+ open_bom_file ($file [, $encoding])</pre>
+<p>Open <code>$file</code> for input.</p>
+<p>If <code>$encoding</code> evaluates to <code>false</code>,
+the default (<code>$DEFAULT_INPUT_ENCODING</code>) is used.</p>
+<p>
+</p>
+<h2><a name="utf8_to_perl__utf8_to_perl_no_copy"><code>utf8_to_perl</code>, <code>utf8_to_perl_no_copy</code></a></h2>
+<pre>
+ $new_string = utf8_to_perl ($string);</pre>
+<p>The <code>_no_copy</code> version performs destructive conversion by changing the original <code>$string</code>.</p>
+<p>
+</p>
+<h2><a name="safe_path__safe_path_utf8"><code>safe_path</code>, <code>safe_path_utf8</code></a></h2>
+<pre>
+ safe_path (@pathelements);</pre>
+<p>Clean <code>@pathelements</code> from unsafe '../' and '~' components
+that would make it possible to break out of an allowed path.</p>
+<p>
+</p>
+<h2><a name="safe_system"><code>safe_system</code></a></h2>
+<p>Perform a safe system call.
+Any parameters passed to the method are concatenated (joined with space)
+to form the command being executed.</p>
+<p>Returns <code>true</code> or <code>false</code>.</p>
+<p>
+</p>
+<h2><a name="open_cmd_x___cmd_x_reader___scrape_cmd_x"><code>open_cmd_</code><em>X</em> | <code>cmd_</code><em>X</em><code>_reader</code> | <code>scrape_cmd_</code><em>X</em></a></h2>
+<p>E.g.</p>
+<pre>
+ LetsMT::Tools::cmd_out_reader ('gzip -d', 'file.gz');</pre>
+<p>Execute the given command with possible parameters.
+Return either a filehandler (<code>open_cmd_X</code>),
+a line iterator (<code>cmd_X_reader</code>)
+or a list of output lines (<code>scrape_cmd_X</code>) from the process.</p>
+<p>The output is read from either STDOUT (<code>X</code> = <code>out</code>),
+STDERR (<em>X</em> = <code>err</code>),
+or both (<em>X</em> = <code>out_err</code>).</p>
+<p>
+</p>
+<h2><a name="open_out_file"><code>open_out_file</code></a></h2>
+<pre>
+ $fh = LetsMT::Tools::open_out_file ($file, $encoding)</pre>
+<p>Open <code>$file</code> for output.</p>
+<p>If <code>$encoding</code> is missing or evaluates as <code>false</code>,
+the default (<code>$DEFAULT_OUTPUT_ENCODING</code>) is used.</p>
+<p>
+</p>
+<h2><a name="open_in_file"><code>open_in_file</code></a></h2>
+<p>An alias for <code>open_bom_file</code>.</p>
+<p>
+</p>
+<h2><a name="get_bom_encoding"><code>get_bom_encoding</code></a></h2>
+<pre>
+ LetsMT::Tools::get_bom_encoding ($file)</pre>
+<p>Try to determine the encoding of <code>$file</code> by examining the BOM.</p>
+<p>
+</p>
+<h2><a name="q_string__qq_string"><code>q_string</code>, <code>qq_string</code></a></h2>
+<pre>
+ LetsMT::Tools::q_string  ($string)
+ LetsMT::Tools::qq_string ($string)</pre>
+<p>Add single (<code>q_string</code>) or double (<code>qq_string</code>) quotes around <code>$string</code>.</p>
+<p>
+</p>
+<h2><a name="xmlify___xmlify_no_copy___xmlify_with_quotes___xmlify_with_quotes_no_copy"><code>xmlify</code> | <code>xmlify_no_copy</code> | <code>xmlify_with_quotes</code> | <code>xmlify_with_quotes_no_copy</code></a></h2>
+<pre>
+ $string = LetsMT::Tools::xmlify ($string)
+ $string = LetsMT::Tools::xmlify_with_quotes ($string)
+ LetsMT::Tools::xmlify_no_copy ($string)
+ LetsMT::Tools::xmlify_with_quotes_no_copy ($string)</pre>
+<p>Convert a limited set of characters to xml entities.
+The <code>_no_copy</code> versions perform destructive conversion by changing the original <code>$string</code>.
+We do not need <code>HTML::Entities</code> or <code>XML::Entities</code>,
+since only the characters reserved for XML needs to be fixed.</p>
+<p>
+</p>
+<h2><a name="build_lookup_func"><code>build_lookup_func</code></a></h2>
+<pre>
+ LetsMT::Tools::build_lookup_func ($map, $prefix, $suffix)</pre>
+<p>Build a lookup function that searches the first parameter for any matches to
+prefix key suffix, and replces them with the key's value.</p>
+<p>
+</p>
+<h2><a name="find_files"><code>find_files</code></a></h2>
+<pre>
+ LetsMT::Tools::find_files ($pattern, $location)</pre>
+<p>Recursively find all files in <code>$location</code> matching <code>$pattern</code>.</p>
+<p>
+</p>
+<h2><a name="find_files_relative"><code>find_files_relative</code></a></h2>
+<pre>
+ LetsMT::Tools::find_files_relative ($pattern, $location)</pre>
+<p>Recursively find all files in <code>$location</code> matching <code>$pattern</code>,
+returning their paths relative to <code>$location</code>.</p>
+<p>
+</p>
+<h2><a name="unescape"><code>unescape</code></a></h2>
+<p>Does the same as URI::Escape::uri_unescape with the addition of converting '+' to ' '.
+This is need as URI::query_form encodes spaces in URIs to '+' and not to a %-encoding.</p>
+<p>
+</p>
+<h2><a name="cacheopen__append__cacheclose"><code>cacheopen</code>, <code>append</code>, <code>cacheclose</code></a></h2>
+<pre>
+ my $fh = cacheopen $file;
+ my $fh = cacheopen $file, $encoding;</pre>
+<pre>
+ $fh = cacheopen $file;
+ print $fh &quot;something&quot;;
+ # ...
+ $fh = cacheopen $file;
+ print $fh &quot;something more&quot;;
+ cacheclose $file;
+ 
+ # or:
+ # ...
+ append $file, &quot;something else&quot;;</pre>
+<p>Cached (write-only) file-handle management (inspired by core module FileCache).</p>
+<p>Be sure to call <code>cacheopen</code> each time before you try to write to a file
+after you may have written to some other file; or use <code>append</code>.</p>
+<p>The maximum number of open files is 100 by default.
+You can change it via the variable <code>$LetsMT::Tools::MAX_OPEN_FILES</code>.</p>
+<p>The default encoding is utf8.</p>
+
+</body>
+
+</html>

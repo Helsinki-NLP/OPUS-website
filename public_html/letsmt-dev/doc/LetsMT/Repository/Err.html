@@ -1,0 +1,89 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Err</title>
+<link rel="stylesheet" href="../../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#codes">CODES</a></li>
+	<li><a href="#functions">FUNCTIONS</a></li>
+	<ul>
+
+		<li><a href="#raise"><code>raise</code></a></li>
+	</ul>
+
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>LetsMT::Repository::Err - definition of errors, and main exception invocation subroutine</p>
+<p>
+</p>
+<hr />
+<h1><a name="codes">CODES</a></h1>
+<p>The following error codes are used:</p>
+<pre>
+  1 User already member of group [HTTP code 409]
+  2 Failed to add user to group  [HTTP code 403]
+ 
+  3 Group not found              [HTTP code 404]
+ 
+  4 Resource exists already      [HTTP code 409]
+ 
+  6 Cannot find/read _           [HTTP code 403]
+ 
+  7 DB error                     [HTTP code 500]
+  8 System level failure         [HTTP code 500]
+ 
+  9 Init failure                 [HTTP code 403]
+ 10 Failed to create group       [HTTP code 403]
+ 
+ 11 Other error                  [HTTP code 409]
+ 
+ 12 Missing _                    [HTTP code 400]
+ 
+ 13 Not implemented              [HTTP code 501]
+ 
+ 14 Permission denied            [HTTP code 403]
+ 
+ 15 Not a valid user             [HTTP code 403]
+ 
+ 16 Failed to delete _           [HTTP code 409]
+ 
+ 17 Invalid _                    [HTTP code 400]</pre>
+<p>
+</p>
+<hr />
+<h1><a name="functions">FUNCTIONS</a></h1>
+<p>
+</p>
+<h2><a name="raise"><code>raise</code></a></h2>
+<pre>
+ raise( $code )
+ raise( $code, $message )
+ raise( $code, $message, $log_level )</pre>
+<p>Given the type code <code>$code</code> (a hash key from the table above),
+this will raise an exception describing the error and where it happened.</p>
+<p>Returns: nothing (it raises an exception using die())</p>
+
+</body>
+
+</html>

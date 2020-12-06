@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      AlignModules – LetsMT
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/letsmt-trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/AlignModules?format=txt" type="text/x-trac-wiki" title="Plain Text" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/AlignModules?format=tex" type="text/x-trac-wiki" title="Latex" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/AlignModules?format=pdf" type="text/x-trac-wiki" title="Latex-Pdf" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.letsmt.eu/"><img src="http://stp.lingfil.uu.se/~joerg/LetsMT/letsmt.jpg" alt="LetsMT" width="100" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/letsmt-trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/letsmt-trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="AlignModules.html" title="View AlignModules">AlignModules</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/letsmt-trac/wiki/AlignModules?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><h2 id="AddingSentenceAlignmentModules">Adding Sentence Alignment Modules</h2>
+<p>
+Sentence alignment modules are implemented as LetsMT::Align modules. New alignment approaches can be added in the following way:
+</p>
+<ul><li>create a new alignment module in perllib/LetsMT/lib/LetsMT/Align, for example perlib/LetsMT/lib/LetsMT/Align/MyAligner.pm
+</li></ul><div class="code"><pre><span class="nb">package</span> <span class="nn">LetsMT::Align::</span>MyAligner<span class="p">;</span>
+
+<span class="k">use</span> strict<span class="p">;</span>
+<span class="k">use</span> base <span class="sx">qw/LetsMT::Align/</span><span class="p">;</span>
+
+<span class="k">use</span> <span class="nn">Log::</span>Log4perl <span class="sx">qw(get_logger :levels)</span><span class="p">;</span>
+
+<span class="k">use</span> <span class="nn">LetsMT::</span>WebService<span class="p">;</span>
+<span class="k">use</span> <span class="nn">LetsMT::</span>Align<span class="p">;</span>
+<span class="k">use</span> <span class="nn">LetsMT::Export::</span>Reader<span class="p">;</span>
+<span class="k">use</span> <span class="nn">LetsMT::Export::</span>Writer<span class="p">;</span>
+<span class="k">use</span> <span class="nn">LetsMT::Export::Writer::</span>XCES<span class="p">;</span>
+
+
+<span class="c1"># and now the procedure that aligns two LetsMT resources</span>
+<span class="c1">#</span>
+<span class="c1"># SrcResource .... source language resource</span>
+<span class="c1"># TrgResource .... target language resource</span>
+<span class="c1"># AlgResource .... sentence alignment resource (optional!)</span>
+
+
+<span class="k">sub </span><span class="nf">align</span> <span class="p">{</span>
+    <span class="k">my</span> <span class="nv">$self</span><span class="o">=</span><span class="nb">shift</span><span class="p">;</span>
+    <span class="k">my</span> <span class="p">(</span><span class="nv">$SrcResource</span><span class="p">,</span><span class="nv">$TrgResource</span><span class="p">,</span><span class="nv">$AlgResource</span><span class="p">)</span> <span class="o">=</span> <span class="nv">@_</span><span class="p">;</span>
+
+    <span class="c1"># swap resources if necessary (language IDs should be sorted!)</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nv">$SrcResource</span><span class="o">-&gt;</span>language<span class="p">()</span> <span class="ow">gt</span> <span class="nv">$TrgResource</span><span class="o">-&gt;</span>language<span class="p">()){</span>
+        <span class="p">(</span><span class="nv">$SrcResource</span><span class="p">,</span><span class="nv">$TrgResource</span><span class="p">)</span> <span class="o">=</span> <span class="p">(</span><span class="nv">$TrgResource</span><span class="p">,</span><span class="nv">$SrcResource</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="c1"># create the alignment resource if it doesn't exist</span>
+    <span class="k">unless</span> <span class="p">(</span><span class="nb">ref</span><span class="p">(</span><span class="nv">$AlgResource</span><span class="p">)){</span>
+        <span class="nv">$AlgResource</span> <span class="o">=</span> <span class="o">&amp;</span><span class="nn">LetsMT::Align::</span>make_align_resource<span class="p">(</span><span class="nv">$SrcResource</span><span class="p">,</span>
+                                                           <span class="nv">$TrgResource</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="c1"># add here you code for aligning sentences in the two given resources</span>
+    <span class="c1"># check the Hunalign and the GaleChurch module for two examples</span>
+
+    <span class="c1"># open a new XCES writer (which does not overwrite fromDoc and toDoc)</span>
+    <span class="k">my</span> <span class="nv">$writer</span> <span class="o">=</span> <span class="k">new</span> <span class="nn">LetsMT::Export::Writer::</span>XCES<span class="p">();</span>
+    <span class="nv">$writer</span><span class="o">-&gt;</span><span class="nb">open</span><span class="p">(</span><span class="nv">$AlgResource</span><span class="p">);</span>
+    <span class="nv">$writer</span><span class="o">-&gt;</span>open_document_pair<span class="p">(</span><span class="nv">$AlgResource</span><span class="o">-&gt;</span>fromDoc<span class="p">,</span><span class="nv">$AlgResource</span><span class="o">-&gt;</span>toDoc<span class="p">);</span>
+
+    <span class="c1"># write all links to the alignment resource (assume that they are stored in @links)</span>
+    <span class="k">foreach</span> <span class="k">my</span> <span class="nv">$l</span> <span class="p">(</span><span class="nv">@links</span><span class="p">){</span>
+       <span class="c1"># assume that $l is a pointer to a hash describing the link:</span>
+       <span class="c1">#   $l-&gt;{srcIDs} points to an array of sentence IDs in the source language</span>
+       <span class="c1">#   $l-&gt;{trgIDs} points to an array of sentence IDs in the target language</span>
+       <span class="nv">$writer</span><span class="o">-&gt;</span><span class="nb">write</span><span class="p">(</span><span class="nv">$l</span><span class="o">-&gt;</span><span class="p">{</span>srcIDs<span class="p">},</span><span class="nv">$l</span><span class="o">-&gt;</span><span class="p">{</span>trgIDs<span class="p">});</span>
+    <span class="p">}</span>
+
+    <span class="c1"># store some information about the alignment if you want to save meta information in the repository</span>
+    <span class="c1"># set, for example:</span>
+    <span class="c1">#    $self-&gt;{NrSrcSents} = total number of source sentences</span>
+    <span class="c1">#    $self-&gt;{NrTrgSents} = total number of target sentences</span>
+    <span class="c1">#    $self-&gt;{NrLinks}    = total number of alignments</span>
+    <span class="c1">#    $self-&gt;{LinkTypes}  = a pointer to a hash of link type counts</span>
+    <span class="c1">#    $self-&gt;{AlignCost}  = the total alignment cost</span>
+
+    <span class="k">return</span> <span class="nv">$AlgResource</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="mi">1</span><span class="p">;</span>
+</pre></div><ul><li>register the new aligner module in the alignment factory class LetsMT::Align:
+</li></ul><div class="code"><pre><span class="k">use</span> <span class="nn">LetsMT::Align::</span>MyAligner<span class="p">;</span>
+<span class="o">...</span>
+<span class="k">sub </span><span class="nf">new</span><span class="p">{</span>
+<span class="o">...</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nv">$self</span><span class="p">{</span>method<span class="p">}</span><span class="o">=~</span><span class="sr">/myalign/i</span><span class="p">){</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="nn">LetsMT::Align::</span>MyAligner<span class="p">(</span><span class="nv">@_</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="o">...</span>
+<span class="p">}</span>
+</pre></div><ul><li>install the package &amp; restart the web server
+</li><li>use the new aligner module with the letsmt_align script (-m specifies the aligner to be used):
+</li></ul><pre class="wiki">letsmt_align -m myalign ....
+</pre></div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/letsmt-trac/wiki/AlignModules?action=diff&amp;version=3" title="Version 3 by joerg">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2012-01-17T21%3A02%3A17Z&amp;precision=second" title="See timeline at Jan 17, 2012, 9:02:17 PM">9 years ago</a></span>
+            <span class="trac-print">Last modified on Jan 17, 2012, 9:02:17 PM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <script type="text/javascript">
+        jQuery.loadStyleSheet("/letsmt-trac/pygments/trac.css", "text/css");
+    </script>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/AlignModules?format=txt">Plain Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/AlignModules?format=tex">Latex</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/AlignModules?format=pdf">Latex-Pdf</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

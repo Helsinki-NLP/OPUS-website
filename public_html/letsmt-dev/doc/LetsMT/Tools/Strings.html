@@ -1,0 +1,61 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Strings</title>
+<link rel="stylesheet" href="../../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<ul>
+
+		<li><a href="#lcsr"><code>lcsr</code></a></li>
+		<li><a href="#lcs"><code>lcs</code></a></li>
+	</ul>
+
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>LetsMT::Tools::Strings</p>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>String manipulation/matching tools</p>
+<p>
+</p>
+<h2><a name="lcsr"><code>lcsr</code></a></h2>
+<pre>
+ $score = &amp;lcsr ($string1, $string2)</pre>
+<p>Compute the Longest Common Subsequence Ratio between two given strings $string1 and $string2 (based on edit distance)</p>
+<p>
+</p>
+<h2><a name="lcs"><code>lcs</code></a></h2>
+<pre>
+ $length = &amp;lcs ($string1, $string2 [,\%trace [,$printMatrix ] ] )</pre>
+<p>Compute the length of the Longest Common Subsequence (LCS) of two given strings $string1 and $string2.</p>
+<p>Returns the length of the LCS.</p>
+<p>If \%trace is given: return also a trace back the path of the best match.
+If $printMatrix is true: print the character matching matrix.</p>
+
+</body>
+
+</html>

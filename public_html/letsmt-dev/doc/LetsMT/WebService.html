@@ -1,0 +1,425 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>WebService</title>
+<link rel="stylesheet" href="../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<ul>
+
+		<li><a href="#user_agent"><code>user_agent</code></a></li>
+	</ul>
+
+	<li><a href="#functions___general">FUNCTIONS - General</a></li>
+	<ul>
+
+		<li><a href="#request"><code>request</code></a></li>
+		<li><a href="#letsmt_request"><code>letsmt_request</code></a></li>
+		<li><a href="#request_result"><code>request_result</code></a></li>
+		<li><a href="#letsmt_request_result"><code>letsmt_request_result</code></a></li>
+		<li><a href="#verbose"><code>verbose</code></a></li>
+		<li><a href="#build_server_address"><code>build_server_address</code></a></li>
+	</ul>
+
+	<li><a href="#functions___storage">FUNCTIONS - Storage</a></li>
+	<ul>
+
+		<li><a href="#put_file_request"><code>put_file_request</code></a></li>
+		<li><a href="#post_file_request"><code>post_file_request</code></a></li>
+		<li><a href="#get_resource_request"><code>get_resource_request</code></a></li>
+	</ul>
+
+	<li><a href="#functions___storage_api">FUNCTIONS - Storage API</a></li>
+	<ul>
+
+		<li><a href="#storage_url"><code>storage_url</code></a></li>
+		<li><a href="#get___put___post___del"><code>get</code> | <code>put</code> | <code>post</code> | <code>del</code></a></li>
+		<li><a href="#put_resource"><code>put_resource</code></a></li>
+		<li><a href="#put_file"><code>put_file</code></a></li>
+		<li><a href="#post_file"><code>post_file</code></a></li>
+		<li><a href="#get_resource"><code>get_resource</code></a></li>
+		<li><a href="#copy"><code>copy</code></a></li>
+		<li><a href="#fetch"><code>fetch</code></a></li>
+		<li><a href="#list"><code>list</code></a></li>
+		<li><a href="#resource_exists"><code>resource_exists</code></a></li>
+	</ul>
+
+	<li><a href="#functions___metadata">FUNCTIONS - Metadata</a></li>
+	<ul>
+
+		<li><a href="#meta_url"><code>meta_url</code></a></li>
+		<li><a href="#get_meta___put_meta___post_meta___del_meta"><code>get_meta</code> | <code>put_meta</code> | <code>post_meta</code> | <code>del_meta</code></a></li>
+		<li><a href="#search_meta"><code>search_meta</code></a></li>
+		<li><a href="#list_meta"><code>list_meta</code></a></li>
+	</ul>
+
+	<li><a href="#functions___groups">FUNCTIONS - Groups</a></li>
+	<ul>
+
+		<li><a href="#group_url"><code>group_url</code></a></li>
+		<li><a href="#get_group___put_group___post_group___del_group"><code>get_group</code> | <code>put_group</code> | <code>post_group</code> | <code>del_group</code></a></li>
+		<li><a href="#user_exists"><code>user_exists</code></a></li>
+	</ul>
+
+	<li><a href="#functions___access_permissions">FUNCTIONS - Access Permissions</a></li>
+	<ul>
+
+		<li><a href="#access_url"><code>access_url</code></a></li>
+		<li><a href="#get_access___put_access"><code>get_access</code> | <code>put_access</code></a></li>
+	</ul>
+
+	<li><a href="#functions___administration">FUNCTIONS - Administration</a></li>
+	<ul>
+
+		<li><a href="#admin_url"><code>admin_url</code></a></li>
+	</ul>
+
+	<li><a href="#functions___jobs">FUNCTIONS - Jobs</a></li>
+	<ul>
+
+		<li><a href="#job_url"><code>job_url</code></a></li>
+		<li><a href="#get_job___put_job___post_job___del_job"><code>get_job</code> | <code>put_job</code> | <code>post_job</code> | <code>del_job</code></a></li>
+	</ul>
+
+	<li><a href="#high_level_letsmt_api">&quot;HIGH-LEVEL&quot; LETSMT API</a></li>
+	<ul>
+
+		<li><a href="#letsmt_url"><code>letsmt_url</code></a></li>
+		<li><a href="#the_high_level_api__letsmt_">The high-level API (letsmt)</a></li>
+		<li><a href="#fetch_letsmt___path___user___local_dir_"><code>fetch_letsmt ($path, $user, $local_dir)</code></a></li>
+	</ul>
+
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>LetsMT::WebService - low level repository manager for <code>Resource</code>s</p>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>All functions accept additional key-value pairs as parameters that will be added
+as a query form to the request.</p>
+<p>
+</p>
+<h2><a name="user_agent"><code>user_agent</code></a></h2>
+<pre>
+ $ua = user_agent( $server )</pre>
+<p>Return a new LWP user-agent object that can handle all the HTTPS requests,
+setting the SSL environment variables to point to the proper SSL certificate
+and key files for the server <code>$server</code>.</p>
+<p>It is okay if <code>$server</code> is a complete URL.</p>
+<p>
+</p>
+<hr />
+<h1><a name="functions___general">FUNCTIONS - General</a></h1>
+<p>
+</p>
+<h2><a name="request"><code>request</code></a></h2>
+<pre>
+ $response = LetsMT::WebService::request ($method, $uri)</pre>
+<p>Issue a general HTTP request.</p>
+<p>Returns an <code>HTTP::Response</code> object.</p>
+<p>
+</p>
+<h2><a name="letsmt_request"><code>letsmt_request</code></a></h2>
+<pre>
+ $response = letsmt_request ($method, $make_url_ref, @params)</pre>
+<p>Issue a general HTTP request.
+<code>$make_url_ref</code> is a code reference that makes a URI using the given <code>@params</code>.</p>
+<p>Returns an <code>HTTP::Response</code> object.</p>
+<p>
+</p>
+<h2><a name="request_result"><code>request_result</code></a></h2>
+<pre>
+ request_result ($method, $url, @params)</pre>
+<p>Issue a general HTTP request, and return the result.</p>
+<p>Returns:</p>
+<p>* In a scalar context, the decoded content if the method is GET,
+otherwise the success.</p>
+<p>* In a list context, the success, the decoded content (body),
+the HTTP status code (100--505), and the response object itself.</p>
+<p>
+</p>
+<h2><a name="letsmt_request_result"><code>letsmt_request_result</code></a></h2>
+<pre>
+ letsmt_request_result ($method, $make_url_ref, @params)</pre>
+<p>Issue a general HTTP request, and return the result.
+<code>$make_url_ref</code> is a code reference that makes a URI using the given <code>@params</code>.</p>
+<p>Returns:</p>
+<p>* In a scalar context, the decoded content if the method is GET,
+otherwise the success.</p>
+<p>* In a list context, the success, the decoded content (body),
+the HTTP status code (100--505), and the response object itself.</p>
+<p>
+</p>
+<h2><a name="verbose"><code>verbose</code></a></h2>
+<pre>
+ WebService::verbose</pre>
+<p>Toggle verbose output (via User Agent's show_progress attribute).
+Default: off.</p>
+<p>
+</p>
+<h2><a name="build_server_address"><code>build_server_address</code></a></h2>
+<pre>
+ $url = build_server_address ($server)</pre>
+<p>
+</p>
+<hr />
+<h1><a name="functions___storage">FUNCTIONS - Storage</a></h1>
+<p>
+</p>
+<h2><a name="put_file_request"><code>put_file_request</code></a></h2>
+<pre>
+ $success = put_file_request ($make_url_ref, $resource, $file)</pre>
+<p>Upload <code>$file</code> to the repository location corresponding to <code>$resource</code>.
+<code>$make_url_ref</code> is a code reference for making an appropriate URL for the HTTP request.</p>
+<p>
+</p>
+<h2><a name="post_file_request"><code>post_file_request</code></a></h2>
+<pre>
+ $success = post_file_request ($make_url_ref, $resource, $file, %payload)</pre>
+<p>Uploads <code>$file</code> to the repository location corresponding to <code>$resource</code>.
+<code>$make_url_ref</code> is a code reference for making an appropriate URL for the HTTP request.</p>
+<p>
+</p>
+<h2><a name="get_resource_request"><code>get_resource_request</code></a></h2>
+<pre>
+ $object = get_resource_request ($make_url_ref, $resource, %payload)</pre>
+<p>Download a resource from the repository.
+<code>$make_url_ref</code> is a code reference for making an appropriate URL for the HTTP request.</p>
+<p>Returns true or false.
+A true return value signals that the submitted resource object
+can be used to access a local copy of the corresponding repository file.</p>
+<p>
+</p>
+<hr />
+<h1><a name="functions___storage_api">FUNCTIONS - Storage API</a></h1>
+<p>
+</p>
+<h2><a name="storage_url"><code>storage_url</code></a></h2>
+<pre>
+ $url = storage_url ($resource, %payload)</pre>
+<p>Create a url to the storage of <code>$resource</code>.
+If no <code>uid</code> parameter is supplied, the <code>$resource-&gt;user</code> is used.</p>
+<p>
+</p>
+<h2><a name="get___put___post___del"><code>get</code> | <code>put</code> | <code>post</code> | <code>del</code></a></h2>
+<pre>
+ $data = get($resource, uid C&lt;&lt; =&gt; &gt;&gt; requesting_user)  # Force requesting_user as uid
+ put($resource-&gt;path_down, gid =&gt; user)                 # Ensure the resource path exists
+ # etc.</pre>
+<p>Issue an HTTP request to the storage of the resource.</p>
+<p><code>get</code> returns an <code>HTTP::Response</code> object,
+the others return <code>true</code> or <code>false</code> reflecting the success of the request.</p>
+<p>
+</p>
+<h2><a name="put_resource"><code>put_resource</code></a></h2>
+<pre>
+ $success = put_resource ($resource, %payload)</pre>
+<p>Uploads a resource to the repository using a PUT request.</p>
+<p>
+</p>
+<h2><a name="put_file"><code>put_file</code></a></h2>
+<pre>
+ $success = put_file ($resource, $file)</pre>
+<p>Upload <code>$file</code> to the repository location corresponding to <code>$resource</code>.</p>
+<p>
+</p>
+<h2><a name="post_file"><code>post_file</code></a></h2>
+<pre>
+ $success = post_file ($resource, $file)</pre>
+<p>Upload <code>$file</code> to the repository location corresponding to <code>$resource</code>.</p>
+<p>
+</p>
+<h2><a name="get_resource"><code>get_resource</code></a></h2>
+<pre>
+ $success = get_resource ($resource)</pre>
+<p>Download a resource from the repository.</p>
+<p>Returns true or false.
+A true return value signals that the submitted resource object
+can be used to access a local copy of the corresponding repository file.</p>
+<p>
+</p>
+<h2><a name="copy"><code>copy</code></a></h2>
+<pre>
+ $success = copy ($resource, $uid[, $dest[, $revision]])</pre>
+<p>Make a copy of an entire branch specified by <code>resource</code>.</p>
+<p>The name of the destination branch is <code>$dest</code>, or <code>$uid</code> if no <code>$dest</code> is given.
+<code>$revision</code> is optional.
+<code>$uid</code> needs to have read permissions for the resource!</p>
+<p>
+</p>
+<h2><a name="fetch"><code>fetch</code></a></h2>
+<pre>
+ $local_path = fetch($path, $user, $local_dir)</pre>
+<p>Fetch a resource from the repository using the given path and user.
+Returns the local path to the resource if fetching succeeds.</p>
+<p>
+</p>
+<h2><a name="list"><code>list</code></a></h2>
+<pre>
+ @list = list ($slot, $branch, $path)</pre>
+<p>
+</p>
+<h2><a name="resource_exists"><code>resource_exists</code></a></h2>
+<pre>
+ $exists = resource_exists ($resource)</pre>
+<p>Returns 1 if the given resource exists in the repository.</p>
+<p>
+</p>
+<hr />
+<h1><a name="functions___metadata">FUNCTIONS - Metadata</a></h1>
+<p>
+</p>
+<h2><a name="meta_url"><code>meta_url</code></a></h2>
+<pre>
+ $url = meta_url ($resource, %payload)</pre>
+<p>Produce an url to the meta data of <code>$resource</code>.</p>
+<p>
+</p>
+<h2><a name="get_meta___put_meta___post_meta___del_meta"><code>get_meta</code> | <code>put_meta</code> | <code>post_meta</code> | <code>del_meta</code></a></h2>
+<pre>
+ $response = get_meta ($resource, %payload)
+ $success = post_meta ($resource, %payload)
+ # etc.</pre>
+<p>Issue the corresponding HTTP requests to the meta data of <code>$resource</code>.</p>
+<p>The function <code>get_meta</code> returns an <code>HTTP::Response</code> object,
+and the others return <code>true</code> or <code>false</code> reflecting the success of the request.</p>
+<p>
+</p>
+<h2><a name="search_meta"><code>search_meta</code></a></h2>
+<pre>
+ @result = search_meta (%payload)</pre>
+<p>
+</p>
+<h2><a name="list_meta"><code>list_meta</code></a></h2>
+<pre>
+ @list = list_meta ($slot, $branch, $path)</pre>
+<p>
+</p>
+<hr />
+<h1><a name="functions___groups">FUNCTIONS - Groups</a></h1>
+<p>
+</p>
+<h2><a name="group_url"><code>group_url</code></a></h2>
+<pre>
+ $url = group_url ($gid, $user, $uid, %payload)</pre>
+<p>Produce an url to a user (<code>$user</code>) in a group (<code>$gid</code>).
+The URL points to the group only if <code>$user</code> is left out.
+<code>$uid</code> is the effective user that will perform the action.
+<code>$gid</code> will be used if <code>$uid</code> is not specified.</p>
+<p>
+</p>
+<h2><a name="get_group___put_group___post_group___del_group"><code>get_group</code> | <code>put_group</code> | <code>post_group</code> | <code>del_group</code></a></h2>
+<pre>
+ $group = get_group ($gid, $uid, $owner, %payload)
+ #etc.</pre>
+<p>Issues the corresponding HTTP requests to the user <code>$uid</code> in the group <code>$gid</code>.
+The function <code>get_group</code> returns an <code>HTTP::Response</code> object,
+and the others return <code>true</code> or <code>false</code> reflecting the success of the request.</p>
+<p>
+</p>
+<h2><a name="user_exists"><code>user_exists</code></a></h2>
+<pre>
+ $exists = user_exists ($user, $group, $owner)</pre>
+<p>
+</p>
+<hr />
+<h1><a name="functions___access_permissions">FUNCTIONS - Access Permissions</a></h1>
+<p>
+</p>
+<h2><a name="access_url"><code>access_url</code></a></h2>
+<pre>
+ $url = access_url ($resource, %payload)</pre>
+<p>Produce a URL to the slot for setting access permissions.</p>
+<p>
+</p>
+<h2><a name="get_access___put_access"><code>get_access</code> | <code>put_access</code></a></h2>
+<pre>
+ $access = get_access ($gid, $uid)</pre>
+<p>Issue the corresponding HTTP requests to the user <code>$uid</code> in the group <code>$gid</code>.
+The function <code>get_access</code> returns an <code>HTTP::Response</code> object,
+<code>put_access</code> returns <code>true</code> or <code>false</code> reflecting the success of the request.</p>
+<p>
+</p>
+<hr />
+<h1><a name="functions___administration">FUNCTIONS - Administration</a></h1>
+<p>
+</p>
+<h2><a name="admin_url"><code>admin_url</code></a></h2>
+<pre>
+ $url = admin_url ($resource, %payload)</pre>
+<p>
+</p>
+<hr />
+<h1><a name="functions___jobs">FUNCTIONS - Jobs</a></h1>
+<p>
+</p>
+<h2><a name="job_url"><code>job_url</code></a></h2>
+<pre>
+ $url = job_url ($resource, %payload)</pre>
+<p>Produce an url to the job of <code>$resource</code>.</p>
+<p>
+</p>
+<h2><a name="get_job___put_job___post_job___del_job"><code>get_job</code> | <code>put_job</code> | <code>post_job</code> | <code>del_job</code></a></h2>
+<pre>
+ $job = get_job ($resource, %payload)
+ # etc.</pre>
+<p>Issues the corresponding HTTP requests to the job of <code>$resource</code>. The
+<code>get_job</code> method return an <code>HTTP::Response</code> object, and the others return
+<code>true</code> or <code>false</code> reflecting the success of the request.</p>
+<p>
+</p>
+<hr />
+<h1><a name="high_level_letsmt_api">&quot;HIGH-LEVEL&quot; LETSMT API</a></h1>
+<p>The following &quot;high-level&quot; functions are obsolescent.
+They remain for the time being mostly for the sake of backward compatibility.</p>
+<p>
+</p>
+<h2><a name="letsmt_url"><code>letsmt_url</code></a></h2>
+<p>letsmt_url ($resource)</p>
+<p>Create the high-level url of <code>$resource</code>.
+If no <code>uid</code> parameter is supplied, the <code>$resource-&gt;user</code> is used.</p>
+<p>
+</p>
+<h2><a name="the_high_level_api__letsmt_">The high-level API (letsmt)</a></h2>
+<p>The high-level LetsMT API provides the same services as the low-level API but uses
+different resource URLs and triggers some additional internal processes.
+The sub-routines provided here are used in the same way as the low-level functions.</p>
+<pre>
+ get_letsmt ($resource)
+ put_letsmt ($resource)
+ post_letsmt ($resource)
+ del_letsmt ($resource)
+ put_letsmt_resource ($resource)
+ put_letsmt_file ($resource, $file)
+ get_letsmt_resource ($resource)</pre>
+<p>
+</p>
+<h2><a name="fetch_letsmt___path___user___local_dir_"><code>fetch_letsmt ($path, $user, $local_dir)</code></a></h2>
+<p>Fetch a resource from the repository using the given letsmt-path and user.
+Returns the local path to the resource.</p>
+
+</body>
+
+</html>

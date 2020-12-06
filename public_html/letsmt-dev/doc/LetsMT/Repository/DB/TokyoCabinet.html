@@ -1,0 +1,168 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TokyoCabinet</title>
+<link rel="stylesheet" href="../../../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#constructor">CONSTRUCTOR</a></li>
+	<li><a href="#destructor">DESTRUCTOR</a></li>
+	<li><a href="#methods">METHODS</a></li>
+	<ul>
+
+		<li><a href="#open_read"><code>open_read</code></a></li>
+		<li><a href="#open_write"><code>open_write</code></a></li>
+		<li><a href="#hotcopy"><code>hotcopy</code></a></li>
+		<li><a href="#db_handle"><code>db_handle</code></a></li>
+		<li><a href="#close"><code>close</code></a></li>
+		<li><a href="#delete_all"><code>delete_all</code></a></li>
+		<li><a href="#auto_optimize"><code>auto_optimize</code></a></li>
+		<li><a href="#optimize"><code>optimize</code></a></li>
+		<li><a href="#add_index"><code>add_index</code></a></li>
+		<li><a href="#delete_index"><code>delete_index</code></a></li>
+		<li><a href="#optimize_index"><code>optimize_index</code></a></li>
+		<li><a href="#post"><code>post</code></a></li>
+		<li><a href="#put"><code>put</code></a></li>
+		<li><a href="#get_strict"><code>get_strict</code></a></li>
+		<li><a href="#get"><code>get</code></a></li>
+		<li><a href="#key_exists"><code>key_exists</code></a></li>
+		<li><a href="#search"><code>search</code></a></li>
+		<li><a href="#delete"><code>delete</code></a></li>
+		<li><a href="#copy"><code>copy</code></a></li>
+		<li><a href="#delete_recursive"><code>delete_recursive</code></a></li>
+	</ul>
+
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>LetsMT::Repository::DB::TokyoCabinet - a module for storing and manipulating metadata</p>
+<p>
+</p>
+<hr />
+<h1><a name="constructor">CONSTRUCTOR</a></h1>
+<pre>
+ $db = new LetsMT::Repository::DB::TokyoCabinet( %opts )</pre>
+<pre>
+ -no_logging ......... don't log transactions!
+ -no_transactions .... don't use transactions!</pre>
+<p>
+</p>
+<hr />
+<h1><a name="destructor">DESTRUCTOR</a></h1>
+<p>Make sure that the DB gets closed again.</p>
+<p>
+</p>
+<hr />
+<h1><a name="methods">METHODS</a></h1>
+<p>
+</p>
+<h2><a name="open_read"><code>open_read</code></a></h2>
+<p>
+</p>
+<h2><a name="open_write"><code>open_write</code></a></h2>
+<p>
+</p>
+<h2><a name="hotcopy"><code>hotcopy</code></a></h2>
+<p>
+</p>
+<h2><a name="db_handle"><code>db_handle</code></a></h2>
+<p>
+</p>
+<h2><a name="close"><code>close</code></a></h2>
+<p>
+</p>
+<h2><a name="delete_all"><code>delete_all</code></a></h2>
+<p>Full reset --&gt; delete all records!!</p>
+<p>
+</p>
+<h2><a name="auto_optimize"><code>auto_optimize</code></a></h2>
+<p>
+</p>
+<h2><a name="optimize"><code>optimize</code></a></h2>
+<p>
+</p>
+<h2><a name="add_index"><code>add_index</code></a></h2>
+<p>
+</p>
+<h2><a name="delete_index"><code>delete_index</code></a></h2>
+<p>
+</p>
+<h2><a name="optimize_index"><code>optimize_index</code></a></h2>
+<p>
+</p>
+<h2><a name="post"><code>post</code></a></h2>
+<p>Update a data record (create if it doesn't exist).
+# (reserved key _ID_ with id --&gt; needed for recursive delete etc)</p>
+<p>
+</p>
+<h2><a name="put"><code>put</code></a></h2>
+<p>Add a new key--value pairs to the data
+(add new string elements in fields that already exist).</p>
+<p>
+</p>
+<h2><a name="get_strict"><code>get_strict</code></a></h2>
+<p>Get a data record.
+# TODO: should we make it possible to return only values for an optional key?</p>
+<p>
+</p>
+<h2><a name="get"><code>get</code></a></h2>
+<p>A bit more tolerant than the above:</p>
+<p>Returns string,
+empty hash if the ID is not found.</p>
+<p>
+</p>
+<h2><a name="key_exists"><code>key_exists</code></a></h2>
+<p>
+</p>
+<h2><a name="search"><code>search</code></a></h2>
+<p>Query the database with simple conditions (conjunction only!)</p>
+<p>Special treatment for fields that start with:</p>
+<pre>
+  ONE_OF_ ....... use keyword search in a string (OR)
+  ALL_OF_ ....... use keyword search in a string (AND)
+  STARTS_WITH_ .. search prefix
+  ENDS_WITH_ .... search suffix
+  MIN_ .......... numeric comparison (&gt;=)
+  MAX_ .......... numeric comparison (&lt;=)</pre>
+<p>
+</p>
+<h2><a name="delete"><code>delete</code></a></h2>
+<p>Delete a specific key-value pair in a data record.</p>
+<p>- if no value is given or '*' --&gt; delete whatever value is stored in key</p>
+<p>- if no key is given: delete entire entry!</p>
+<p>
+</p>
+<h2><a name="copy"><code>copy</code></a></h2>
+<p>Copy all metadata records for IDs with a specific prefix
+to new records with the old prefix replaced by a new one
+(this is useful when copying branches!)</p>
+<p>optional $uid: set new uid for all copied elements</p>
+<p>
+</p>
+<h2><a name="delete_recursive"><code>delete_recursive</code></a></h2>
+<p>Delete recursive for all resource items below path (dangerous!).
+if $prefix ends with '/' --&gt; delete only sub-resources
+otherwise: also delete resource $prefix (together with all sub-resources)</p>
+
+</body>
+
+</html>

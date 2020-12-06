@@ -1,0 +1,100 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Reader</title>
+<link rel="stylesheet" href="../../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<ul>
+
+		<li><a href="#implemented_data_formats">Implemented data formats</a></li>
+	</ul>
+
+	<li><a href="#constructor___factory_method">CONSTRUCTOR / FACTORY METHOD</a></li>
+	<li><a href="#class_method">CLASS METHOD</a></li>
+	<ul>
+
+		<li><a href="#reader"><code>reader</code></a></li>
+	</ul>
+
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>LetsMT::Export::Reader - reader objects for various data formats</p>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>Reader objects for various data formats.</p>
+<p>
+</p>
+<h2><a name="implemented_data_formats">Implemented data formats</a></h2>
+<dl>
+<dt><strong><a name="doc_word_doc" class="item">doc   - Word DOC</a></strong></dt>
+
+<dt><strong><a name="mono_monolingual_corpus" class="item">mono  - Monolingual corpus</a></strong></dt>
+
+<dt><strong><a name="moses_moses" class="item">moses - Moses</a></strong></dt>
+
+<dt><strong><a name="para_parallel_corpus" class="item">para  - Parallel corpus</a></strong></dt>
+
+<dt><strong><a name="pdf_pdf" class="item">pdf   - PDF</a></strong></dt>
+
+<dt><strong><a name="srt_srt" class="item">srt   - SRT</a></strong></dt>
+
+<dt><strong><a name="text_plain_text" class="item">text  - Plain text</a></strong></dt>
+
+<dt><strong><a name="tmx_tmx" class="item">tmx   - TMX</a></strong></dt>
+
+<dt><strong><a name="xces_xces" class="item">xces  - XCES</a></strong></dt>
+
+<dt><strong><a name="xliff_xliff" class="item">xliff - XLIFF</a></strong></dt>
+
+<dt><strong><a name="xml_xml" class="item">xml   - XML</a></strong></dt>
+
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="constructor___factory_method">CONSTRUCTOR / FACTORY METHOD</a></h1>
+<pre>
+ $reader = new LetsMT::Export::Reader ($resource, $format)</pre>
+<p>Return an appropriate reader object for a given resource <code>$resource</code>.</p>
+<p>The data format <code>$format</code> is optional.
+If it is not specified,
+the constructor tries to infer the data from the resource object
+(see <a href="./../..//LetsMT/Resource.html">LetsMT::Resource</a>::type)</p>
+<p>
+</p>
+<hr />
+<h1><a name="class_method">CLASS METHOD</a></h1>
+<p>
+</p>
+<h2><a name="reader"><code>reader</code></a></h2>
+<pre>
+ LetsMT::Export::Reader::reader ($format)</pre>
+<p>Return appropriate reader for a given format.</p>
+
+</body>
+
+</html>

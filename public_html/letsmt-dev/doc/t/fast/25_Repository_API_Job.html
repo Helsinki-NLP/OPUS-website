@@ -1,0 +1,82 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>25_Repository_API_Job</title>
+<link rel="stylesheet" href="../../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>25_Repository_API_Job.t - test <em>Job</em> API</p>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>This script tests the following assertions:</p>
+<p>Calling the <em>Job</em> API via the <code>WebService</code> module, ...</p>
+<ul>
+<li>
+<p>after you upload a job-description file to a slot ... (put_file)</p>
+</li>
+<li>
+<p>you can submit the file as a job, ... (post_job)</p>
+</li>
+<li>
+<p>... which will have the job executed on the SGE grid engine
+and finished within a reasonable amount of time.</p>
+</li>
+<li>
+<p>You can query metadata of a job description
+that has been finished ... (get_meta)</p>
+</li>
+<li>
+<p>... and it will show successful commands (ls, date, ...)
+as 'done' ...</p>
+</li>
+<li>
+<p>... and failed commands (e.g. cd to nonexisting directory)
+as 'failed'.</p>
+</li>
+<li>
+<p>you can resubmit a job description file. (put_job)</p>
+</li>
+<li>
+<p>you can check the status of a (re)submitted job
+-- which will be 'pending' during job execution. (get_job)</p>
+</li>
+<li>
+<p>The metadata of a (re)submitted job description will also show the status,
+as well as the job ID.</p>
+</li>
+<li>
+<p>you can delete a job ... (del_job)</p>
+</li>
+<li>
+<p>... and it will no longer be found in the system. (get_job)</p>
+</li>
+</ul>
+
+</body>
+
+</html>

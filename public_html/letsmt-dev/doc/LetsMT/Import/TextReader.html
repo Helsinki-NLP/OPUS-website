@@ -1,0 +1,94 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TextReader</title>
+<link rel="stylesheet" href="../../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#constructor">CONSTRUCTOR</a></li>
+	<li><a href="#methods">METHODS</a></li>
+	<ul>
+
+		<li><a href="#open"><code>open</code></a></li>
+		<li><a href="#read"><code>read</code></a></li>
+		<li><a href="#read_old__obsolescent_"><code>read_old</code> (obsolescent)</a></li>
+		<li><a href="#_reader__close">$reader-&gt;close</a></li>
+	</ul>
+
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>LetsMT::Import::TextReader - reader for plain-text files</p>
+<p>
+</p>
+<hr />
+<h1><a name="constructor">CONSTRUCTOR</a></h1>
+<pre>
+ $reader = new LetsMT::Import::TextReader (%OPTIONS)</pre>
+<p>Create a new instance of <code>LetsMT::Import::TextReader</code>,
+which is guaranteed to have the fields <code>tokenizer</code>, <code>normalizer</code>, <code>splitter</code> and <code>lang</code>.
+If no such keys are provided in the supplied <code>%hash</code>, the defaults in <code>LetsMT::Import</code> are used.</p>
+<p>All sentences begin read are returned as if they are in language <code>lang</code>.
+This has consequences for the way they are written with <code>LetsMT::Import::XCESWriter</code>.</p>
+<p>
+</p>
+<hr />
+<h1><a name="methods">METHODS</a></h1>
+<p>
+</p>
+<h2><a name="open"><code>open</code></a></h2>
+<p>
+</p>
+<h2><a name="read"><code>read</code></a></h2>
+<pre>
+ $reader-&gt;read</pre>
+<pre>
+ $reader-&gt;read ($before, $after)</pre>
+<p>... optional hash structures for data before and after the current text chunk (par-breaks).</p>
+<p>Monolingual sentence &quot;pair&quot; structure:</p>
+<pre>
+ {
+     lang =&gt; {
+         id =&gt; [ token1, token2, ..., tokenN ]
+     }
+ }</pre>
+<p>Before and after markup structures:</p>
+<pre>
+ {
+     lang =&gt; [
+         &quot;plain text&quot;,
+         [open-tag, {attr1 =&gt; 1, ... } ],
+         [close-tag],
+     ]
+ }</pre>
+<p>
+</p>
+<h2><a name="read_old__obsolescent_"><code>read_old</code> (obsolescent)</a></h2>
+<p><code>read_old</code> always split incoming lines ---&gt; leads to long sentences
+that should be split on double new lines (or empty lines)</p>
+<p>
+</p>
+<h2><a name="_reader__close">$reader-&gt;close</a></h2>
+
+</body>
+
+</html>

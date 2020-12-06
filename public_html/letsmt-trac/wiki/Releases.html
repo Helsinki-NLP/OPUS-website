@@ -1,0 +1,646 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      Releases – LetsMT
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/letsmt-trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/Releases?format=txt" type="text/x-trac-wiki" title="Plain Text" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/Releases?format=tex" type="text/x-trac-wiki" title="Latex" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/Releases?format=pdf" type="text/x-trac-wiki" title="Latex-Pdf" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.letsmt.eu/"><img src="http://stp.lingfil.uu.se/~joerg/LetsMT/letsmt.jpg" alt="LetsMT" width="100" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/letsmt-trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/letsmt-trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="Releases.html" title="View Releases">Releases</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/letsmt-trac/wiki/Releases?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><h1 id="Releases">Releases</h1>
+<p>
+For installation, see <a class="wiki" href="RepositorySetup.html">the setup instructions</a>.
+The releases can be downloaded <a class="ext-link" href="http://opus.lingfil.uu.se/letsmt-dev/releases/"><span class="icon">​</span>here</a>.
+</p>
+<p>
+</p><div class="wiki-toc">
+<ol>
+  <li>
+    <a href="Releases.html#Releases">Releases</a>
+    <ol>
+      <li>
+        <a href="Releases.html#a0.51">0.51</a>
+      </li>
+      <li>
+        <a href="Releases.html#a0.50">0.50</a>
+      </li>
+      <li>
+        <a href="Releases.html#a0.44">0.44</a>
+      </li>
+      <li>
+        <a href="Releases.html#a0.43">0.43</a>
+      </li>
+      <li>
+        <a href="Releases.html#a0.42">0.42</a>
+      </li>
+      <li>
+        <a href="Releases.html#a0.42rc4">0.42rc4</a>
+      </li>
+      <li>
+        <a href="Releases.html#a0.42rc3">0.42rc3</a>
+      </li>
+      <li>
+        <a href="Releases.html#a0.41">0.41</a>
+      </li>
+      <li>
+        <a href="Releases.html#a0.41rc7">0.41rc7</a>
+      </li>
+      <li>
+        <a href="Releases.html#a0.41rc6">0.41rc6</a>
+      </li>
+      <li>
+        <a href="Releases.html#a0.41rc4">0.41rc4</a>
+      </li>
+      <li>
+        <a href="Releases.html#a0.37rc8">0.37rc8</a>
+      </li>
+      <li>
+        <a href="Releases.html#a0.37rc2">0.37rc2</a>
+      </li>
+      <li>
+        <a href="Releases.html#a0.37rc1">0.37rc1</a>
+      </li>
+      <li>
+        <a href="Releases.html#a0.36rc5">0.36rc5</a>
+      </li>
+      <li>
+        <a href="Releases.html#a0.35rc2">0.35rc2</a>
+      </li>
+      <li>
+        <a href="Releases.html#a0.34">0.34</a>
+      </li>
+      <li>
+        <a href="Releases.html#a0.33">0.33</a>
+      </li>
+      <li>
+        <a href="Releases.html#a0.32">0.32</a>
+      </li>
+      <li>
+        <a href="Releases.html#a0.31">0.31</a>
+      </li>
+      <li>
+        <a href="Releases.html#a0.30">0.30</a>
+      </li>
+      <li>
+        <a href="Releases.html#a0.28b">0.28b</a>
+      </li>
+      <li>
+        <a href="Releases.html#a0.28">0.28</a>
+      </li>
+      <li>
+        <a href="Releases.html#a0.20">0.20</a>
+      </li>
+      <li>
+        <a href="Releases.html#a0.19c">0.19c</a>
+      </li>
+      <li>
+        <a href="Releases.html#a0.19b">0.19b</a>
+      </li>
+      <li>
+        <a href="Releases.html#a0.18">0.18</a>
+      </li>
+      <li>
+        <a href="Releases.html#a0.17">0.17</a>
+      </li>
+      <li>
+        <a href="Releases.html#a0.16">0.16</a>
+      </li>
+      <li>
+        <a href="Releases.html#a0.12">0.12</a>
+      </li>
+    </ol>
+  </li>
+</ol>
+</div><p>
+</p>
+<h2 id="a0.51">0.51</h2>
+<p>
+Release date: <strong>2012-09-20</strong>.
+</p>
+<h3 id="Majorchanges">Major changes</h3>
+<ul><li>Bug fix in installation routines (setting environment variables for the Apache:443 host)
+</li><li>Better integration of OpenNLP sentence splitters (using Inline Java)
+</li><li>Bug fix in the Text Importer (conversion to UTF-8 in validation step)
+</li></ul><h2 id="a0.50">0.50</h2>
+<p>
+Release date: <strong>2012-09-17</strong>.
+</p>
+<p>
+The LetsMT! Resource Repository is now officially licensed under the <a class="ext-link" href="http://www.gnu.org/licenses/"><span class="icon">​</span>GNU General Public License</a>.
+</p>
+<h3 id="Majorchanges1">Major changes</h3>
+<ul><li>improved handling of large imports:
+<ul><li>individual files from archives are uploaded from the grid client to the repository as soon as they are processed
+</li><li>creation of import jobs is deferred to a "master job" on the grid (via new <em>letsmt_make</em>) so that the user interface is operable again ASAP after a command
+</li></ul></li><li>all temporary files obey the directory choice made in the environment variable $LETSMT_TMP
+</li><li>no direct communication between RR server and group database (fixes bug in v 0.44)
+</li><li><em>letsmt_rest</em>:
+<ul><li>displays more specific error information
+</li><li>displays a bit more verbose status information in the case of setting/deleting commands
+</li><li>command-line option <em>-x</em> has XML responses converted into a more human-readable format (vaguely similar to <a class="ext-link" href="http://haml.info/"><span class="icon">​</span>HAML</a>) that uses indentation rather than "&lt;tag&gt;...&lt;/tag&gt;" syntax to show structure (the lines of multiline text content, such as that returned by "cat", are marked by vertical bars "|" at the left)
+</li></ul></li><li><em>test suite</em>:
+<ul><li>split into "fast" and "slow" tests
+</li><li>ordered such that fundamental operations are checked before others that rely on them
+</li><li>common operations outsourced into central <em>Scaffold.pm</em>
+</li><li>standard operations (user, slot management) are only tested once, so that the number of tests shown at the end gives a better impression of how many individual aspects actually are tested
+</li></ul></li><li><em>distributed installation</em>:
+<ul><li>as-installed configuration on Frontend, SGE clients points to server
+</li><li>SSL-transfer hint printed at the end of the installation
+</li></ul></li></ul><p>
+  
+</p>
+<ul><li>includes a Web user interface for the resource repository, called the <em>"Grenzschnitte"</em>
+<ul><li>optional, <a class="wiki" href="RepositorySetup.html#webui">installed separately</a>
+</li><li>runs as a system service, reachable on port 81 or port 3000
+</li></ul></li></ul><p>
+  
+</p>
+<h2 id="a0.44">0.44</h2>
+<p>
+Release date: <strong>2012-06-29</strong>.
+</p>
+<h3 id="Majorchanges2">Major changes</h3>
+<ul><li>more robust handling of UTF-8, not only within files
+<ul><li>filenames and metadata with accents work (mostly?) properly
+</li></ul></li><li><em>import</em>: fuzzy name matching for triggering automatic sentence alignment 
+</li><li>better cleanup of temporary files
+</li><li>better permission handling
+</li><li>add handling of group/user info (e.g. default pdf import mode)
+</li><li><em>test suite</em>: cleanup of all temporary groups and users
+</li></ul><h2 id="a0.43">0.43</h2>
+<h3 id="Majorchanges3">Major changes</h3>
+<ul><li><em>TokyoTorrent-server</em> more robust &amp; standard startup 
+<ul><li>no manual fixing needed after a crash
+</li><li>process-id files in /var/run/letsmt
+</li></ul></li><li>fix Latvian text for language identification
+</li><li>implement better, safer way of calling system commands
+<ul><li>used especially in the storage backends
+</li></ul></li><li><em>letsmt_rest</em>: can also show history of metadata
+</li><li><em>prerequisite installation</em>: allow forced installation (via flags set in makefile)
+</li><li><em>installation</em>: abort if hostname is empty (which would cause trouble with certificates)
+</li></ul><h2 id="a0.42">0.42</h2>
+<h3 id="Majorchanges4">Major changes</h3>
+<ul><li>correct *.gz, especially *.txt.gz import (Tilde ticket <a class="missing ticket">#265</a>)
+</li><li>correct detection of UTF-16 (Tilde ticket <a class="missing ticket">#264</a>)
+</li><li>correct PDF import issue (formfeeds-&gt;newlines) (Tilde ticket <a class="missing ticket">#247</a>)
+</li><li>make testing independent from execution speed (Tilde ticket <a class="missing ticket">#233</a>)
+</li><li>Hunalign module checks that program is installed
+</li><li>less verbose logging
+</li><li>extend code documentation, make HTML doc. tree more user-friendly
+</li></ul><h2 id="a0.42rc4">0.42rc4</h2>
+<h3 id="Majorchanges5">Major changes</h3>
+<ul><li>relaxed language detection (warning instead of failure)
+</li><li>improved import logging
+</li><li>added incremental download when fetching parallel corpora
+</li></ul><h2 id="a0.42rc3">0.42rc3</h2>
+<h3 id="Majorchanges6">Major changes</h3>
+<ul><li>user name can contain @ sign now
+</li><li>Moses imports can have blanks
+</li><li>owner/creator of a slot can change meta data on slot level
+</li></ul><h2 id="a0.41">0.41</h2>
+<h3 id="Majorchanges7">Major changes</h3>
+<ul><li>Fixed encoding/utf-8 related issues in file names, paths, username etc.
+</li><li>srt subtitle import format added
+</li></ul><p>
+ 
+</p>
+<h2 id="a0.41rc7">0.41rc7</h2>
+<h3 id="Majorchanges8">Major changes</h3>
+<ul><li>Ticket 236, download with archive=no in filesystem backup works now
+</li><li>added character encoding detection (for plain text import)
+</li><li>added language identification (for imports)
+</li><li>added meta-data for aligned documents (aligned-with, fromDoc, toDoc)
+</li><li>text import produces paragraph boundaries, used in length-based sentence alignment (hunalign)
+</li><li>improved (simplified) installation routines with various server roles (still needs to be tested more!)
+</li><li>added Moses normalizer (takes care of special symbols that could crash Moses training)
+</li><li>letsmt_rest supports "cat"
+</li><li>added scripts for off-line language detection (letsmt_langdetect) and character encoding detection (letsmt_chardetect)
+</li></ul><h3 id="Knownissues">Known issues</h3>
+<ul><li>install character encoding detection software with
+<tt> sudo make -C installation -f Makefile.prereqs software-chared </tt>
+</li></ul><h2 id="a0.41rc6">0.41rc6</h2>
+<h3 id="Majorchanges9">Major changes</h3>
+<p>
+This release addresses various high-priority bugs identified by Tilde. Here are some comments about each specific bug:
+</p>
+<p>
+Ticket 192 and 232:
+</p>
+<ul><li>files with UTF8 characters can be uploaded now (automatic import works as well)
+</li><li>files with special characters and spaces are possible as well
+</li></ul><p>
+Ticket 231:
+</p>
+<ul><li>uploads in Moses format may now include multiple parallel documents
+</li></ul><p>
+The release includes several other fixes not listed here ....
+</p>
+<h2 id="a0.41rc4">0.41rc4</h2>
+<h3 id="Majorchanges10">Major changes</h3>
+<p>
+This release addresses various high-priority bugs identified by Tilde. Here are some comments about each specific bug:
+</p>
+<p>
+Ticket 222:
+</p>
+<ul><li>error in TMXReader is fixed and import does not fail anymore without raising an error
+</li><li>ulimit calls are changed and should not throw an error anymore on machines &gt; 1GB virtual memory
+</li><li>upload of small.tmx works in our test instance
+</li></ul><p>
+Ticket 223:
+</p>
+<ul><li>zip archives were not implemented yet for uploads in Moses format (tar archives did work before)
+</li><li>zip is now possible and should work
+</li></ul><p>
+Ticket 196:
+</p>
+<ul><li>installation procedure is now changed to skip mySQL dependencies
+</li><li>mySQL packages will only be installed if they are required (currently they are not with the standard setup)
+</li></ul><p>
+Ticket 224:
+</p>
+<ul><li>uploads of large TMX files was tested and seems to work at our test instance
+</li><li>there are validation error for some files, for example, when using control characters (maybe that was the problem?)
+</li><li>logfiles for DTD validation errors and XML validation are now always uploaded
+</li><li>added a new metadata attribute to show the progress of large imports: 'import_progress' attached to the resource to be imported
+</li></ul><p>
+Ticket 191:
+</p>
+<ul><li>importing empty TMX files did not really fail but just did not produce any output
+</li><li>changed status information to inform about empty output when converting
+</li><li>validation logfiles will be uploaded now
+</li></ul><p>
+Ticket 186:
+</p>
+<ul><li>removed bug with empty alignment in the Gale&amp;Church alignment module
+</li></ul><h2 id="a0.37rc8">0.37rc8</h2>
+<h3 id="Majorchangesfrom0.37rc2">Major changes from 0.37rc2</h3>
+<ul><li>Meta and group DB are using <a class="wiki" href="http://opus.nlpl.eu/letsmt-trac/wiki/TokyoTyrant">TokyoTyrant</a> server instead of <a class="missing wiki">TokyoCabinet?</a> and MySQL -&gt; this should solve the import problems
+</li><li>Storage backend is more abstract and allows switching between SVN-file, SVN-server and experimental plain filesystem storage (currently SVN-file is active)
+</li><li>The installation procedure has changed, aptitude packages get installed via the makefiles, not manually 
+</li><li>General improvements to the makefiles and install speed
+</li></ul><h2 id="a0.37rc2">0.37rc2</h2>
+<h3 id="Majorchangesfrom0.37rc1">Major changes from 0.37rc1</h3>
+<ul><li>Fixed metadata problems Tilde tickets 118, 132, 165
+</li><li>fixed letsmt_fetch, Tilde ticket 158
+</li><li>Setup problem fixed, 159
+</li><li>Download of files with special characters, 163
+</li></ul><h2 id="a0.37rc1">0.37rc1</h2>
+<h3 id="Majorchangesfrom0.36rc5">Major changes from 0.36rc5</h3>
+<ul><li>Naming of branches more flexible, does not need to be the users name any more unless data has to be imported from it
+</li><li>Improved handling of public group, no it is an actually existing group, not just logically
+</li><li>Installation errors fixed (Tilde ticket 159)
+</li><li>Upload via curl works again like before (Tilde ticket 160)
+</li><li>letsmt_fetch not fetching &lt;lm&gt; fixed (Tilde ticket 162)
+</li></ul><h2 id="a0.36rc5">0.36rc5</h2>
+<h3 id="Majorchangesfrom0.35rc2">Major changes from 0.35rc2</h3>
+<ul><li>Lots of internal changes, for an overview of user related interface changes see: <a class="ext-link" href="http://opus.lingfil.uu.se/letsmt-trac/wiki/WebAPI"><span class="icon">​</span>http://opus.lingfil.uu.se/letsmt-trac/wiki/WebAPI</a>
+</li></ul><h2 id="a0.35rc2">0.35rc2</h2>
+<h3 id="Majorchangesfrom0.34">Major changes from 0.34</h3>
+<ul><li>daily metadata backups
+</li><li>transaction log for write operations in metadata
+</li><li>better cleanup in tmp/
+</li><li>admin tool for listing slot contents and checking metadata
+</li></ul><h2 id="a0.34">0.34</h2>
+<h3 id="Majorchangesfrom0.33">Major changes from 0.33</h3>
+<ul><li>fixed bug with blanks in file names, directory names
+</li><li>validation log files get uploaded into repository
+</li><li>letsmt_import uses relative paths in repository
+</li><li>letsmt_import for OPUS corpora skips already existing files 
+</li></ul><h2 id="a0.33">0.33</h2>
+<p>
+PLEASE NOT THAT UPGRADE IS NOT SUPPORTED FOR THIS VERSION. YOU HAVE TO DO A CLEAN INSTALL!!
+</p>
+<h3 id="Majorchangesfrom0.31">Major changes from 0.31</h3>
+<ul><li>updated Apache Tika from version 0.8 to 0.9 (for DOC import)
+</li><li>added DOC import (still in testing)
+</li><li>changed mysql DB user and password
+</li><li>moved logs from /tmp to /var/log/letsmt
+</li><li>splitted logs in username_debug.log, username_error.log, username_cluster_debug.log
+</li><li>fixed TMX import
+</li><li>XLIFF validation via schema
+</li></ul><h3 id="ResolvedticketsinTildeextranetissuetracker">Resolved tickets in Tilde extranet issue tracker</h3>
+<ul><li><a class="ext-link" href="https://extranet.tilde.lv/letsmt/Lists/Task%20tracking/DispForm.aspx?ID=110"><span class="icon">​</span>https://extranet.tilde.lv/letsmt/Lists/Task%20tracking/DispForm.aspx?ID=110</a>
+</li><li><a class="ext-link" href="https://extranet.tilde.lv/letsmt/Lists/Task"><span class="icon">​</span>https://extranet.tilde.lv/letsmt/Lists/Task</a> tracking/DispForm.aspx?ID=102
+</li><li><a class="ext-link" href="https://extranet.tilde.lv/letsmt/Lists/Task"><span class="icon">​</span>https://extranet.tilde.lv/letsmt/Lists/Task</a> tracking/DispForm.aspx?ID=99
+</li></ul><h2 id="a0.32">0.32</h2>
+<p>
+does not exist due to svn code repository problems...
+</p>
+<h2 id="a0.31">0.31</h2>
+<h3 id="Majorchangesfrom0.28b">Major changes from 0.28b</h3>
+<ul><li>Improved logging so one has finer control over amount of logging information per module and moved initialization of logging to earlier stage in startup process 
+</li><li>fixed bug in exception handling and reporting (Can't locate object method "Exception" via package "LetsMT_modperl_handler_exception"... ) 
+</li><li>extended error reporting to reflect source of actual error with package name, filename, line
+</li></ul><h3 id="ResolvedticketsinTildeextranetissuetracker1">Resolved tickets in Tilde extranet issue tracker</h3>
+<p>
+none
+</p>
+<h3 id="ResolvedticketsinUUPissuetracker">Resolved tickets in UUP issue tracker</h3>
+<p>
+none
+</p>
+<h2 id="a0.30">0.30</h2>
+<p>
+PLEASE NOTE THAT UPGRADING FROM PREVIOUS VERSION TO 0.29 IS NOT SUPPORTED AT THIS TIME; THIS IS AN EMERGENCY FIX TO GET THE EC2 SERVER READY WHERE NEW INSTALLATION IS THE ONLY OPTION.
+</p>
+<h3 id="Majorchangesfrom0.28b1">Major changes from 0.28b</h3>
+<ul><li>Configurable server host name, to allow any name in the SSL server certificate
+</li><li>[update] fixed Makefile to use right user name, $LETSMTUSER instead of $USER
+</li></ul><h3 id="ResolvedticketsinTildeextranetissuetracker2">Resolved tickets in Tilde extranet issue tracker</h3>
+<p>
+none
+</p>
+<h3 id="ResolvedticketsinUUPissuetracker1">Resolved tickets in UUP issue tracker</h3>
+<p>
+none
+</p>
+<h2 id="a0.28b">0.28b</h2>
+<h3 id="ResolvedticketsinTildeextranetissuetracker3">Resolved tickets in Tilde extranet issue tracker</h3>
+<ul><li><a class="ext-link" href="https://extranet.tilde.lv/letsmt/Lists/Task%20tracking/DispForm.aspx?ID=109"><span class="icon">​</span>https://extranet.tilde.lv/letsmt/Lists/Task%20tracking/DispForm.aspx?ID=109</a>
+</li></ul><h2 id="a0.28">0.28</h2>
+<h3 id="Upgradingfrom0.20">Upgrading from 0.20</h3>
+<p>
+Download the release file <a class="ext-link" href="http://opus.lingfil.uu.se/letsmt-dev/releases/"><span class="icon">​</span>here</a> and run the installation procedure:
+</p>
+<pre class="wiki">  sudo apt-get install libapache2-mod-perl2 libapache2-reload-perl libapache2-request-perl
+  tar -xzf LetsMT-0.28.tar.gz
+  cd LetsMT-0.28
+  sudo make upgrade
+  make test
+</pre><p>
+You can now remove the installation directory:
+</p>
+<pre class="wiki">   cd ..
+   rm -rf LetsMT-0.28
+</pre><h3 id="Majorchangesfrom0.20">Major changes from 0.20</h3>
+<ul><li>The repository is now using mod_perl for speed.
+</li><li>The installation procedure for servers without the repository has been updated.
+</li><li>removed /cgi-bin from request url (from /cgi-bin/ws to /ws)
+</li></ul><h3 id="ResolvedticketsinTildeextranetissuetracker4">Resolved tickets in Tilde extranet issue tracker</h3>
+<ul><li><a class="ext-link" href="https://extranet.tilde.lv/letsmt/Lists/Task%20tracking/DispForm.aspx?ID=104"><span class="icon">​</span>https://extranet.tilde.lv/letsmt/Lists/Task%20tracking/DispForm.aspx?ID=104</a>
+</li><li><a class="ext-link" href="https://extranet.tilde.lv/letsmt/Lists/Task%20tracking/DispForm.aspx?ID=105"><span class="icon">​</span>https://extranet.tilde.lv/letsmt/Lists/Task%20tracking/DispForm.aspx?ID=105</a>
+</li></ul><h3 id="ResolvedticketsinUUPissuetracker2">Resolved tickets in UUP issue tracker</h3>
+<p>
+none
+</p>
+<h2 id="a0.20">0.20</h2>
+<h3 id="Upgradingfrom0.19c">Upgrading from 0.19c</h3>
+<p>
+Download the release file <a class="ext-link" href="http://opus.lingfil.uu.se/letsmt-dev/releases/"><span class="icon">​</span>here</a> and run the installation procedure:
+</p>
+<pre class="wiki">  tar -xzf LetsMT-0.20.tar.gz
+  cd LetsMT-0.20
+  sudo make upgrade
+  make test
+</pre><p>
+You can now remove the installation directory:
+</p>
+<pre class="wiki">   cd ..
+   rm -rf LetsMT-0.20
+</pre><h3 id="Majorchangesfrom0.19c">Major changes from 0.19c</h3>
+<ul><li>letsmt_rest can handle metadata via command-line (setmeta, addmeta, delete_meta)
+</li><li>relative paths in fromDoc &amp; toDoc + adjustments in import/fetch scripts
+</li><li>new import modules for TMX (including older versions), XLIFF, tar, gz, zip
+</li><li>found and fixed a branch retrieval bug, which triggered when branchname or slot was included in retrieval key
+</li></ul><h3 id="ResolvedticketsinTildeextranetissuetracker5">Resolved tickets in Tilde extranet issue tracker</h3>
+<ul><li><a class="ext-link" href="https://extranet.tilde.lv/letsmt/Lists/Task%20tracking/DispForm.aspx?ID=93"><span class="icon">​</span>93</a>
+</li><li><a class="ext-link" href="https://extranet.tilde.lv/letsmt/Lists/Task%20tracking/DispForm.aspx?ID=94"><span class="icon">​</span>94</a>
+</li><li><a class="ext-link" href="https://extranet.tilde.lv/letsmt/Lists/Task%20tracking/DispForm.aspx?ID=95"><span class="icon">​</span>95</a>
+</li><li><a class="ext-link" href="https://extranet.tilde.lv/letsmt/Lists/Task%20tracking/DispForm.aspx?ID=99"><span class="icon">​</span>99</a>
+</li><li><a class="ext-link" href="https://extranet.tilde.lv/letsmt/Lists/Task%20tracking/DispForm.aspx?ID=101"><span class="icon">​</span>101</a>
+</li><li><a class="ext-link" href="https://extranet.tilde.lv/letsmt/Lists/Task%20tracking/DispForm.aspx?ID=102"><span class="icon">​</span>102</a>
+</li><li><a class="ext-link" href="https://extranet.tilde.lv/letsmt/Lists/Task%20tracking/DispForm.aspx?ID=103"><span class="icon">​</span>103</a>
+</li></ul><h3 id="ResolvedticketsinUUPissuetracker3">Resolved tickets in UUP issue tracker</h3>
+<ul><li><a class="ext-link" href="http://opus.lingfil.uu.se/letsmt-trac/ticket/47"><span class="icon">​</span>47</a>
+</li><li><a class="ext-link" href="http://opus.lingfil.uu.se/letsmt-trac/ticket/48"><span class="icon">​</span>48</a>
+</li><li><a class="ext-link" href="http://opus.lingfil.uu.se/letsmt-trac/ticket/49"><span class="icon">​</span>49</a>
+</li><li><a class="ext-link" href="http://opus.lingfil.uu.se/letsmt-trac/ticket/50"><span class="icon">​</span>50</a>
+</li><li><a class="ext-link" href="http://opus.lingfil.uu.se/letsmt-trac/ticket/52"><span class="icon">​</span>52</a>
+</li></ul><h2 id="a0.19c">0.19c</h2>
+<p>
+This is a hotfix for release 0.19b. It could easily be a proper release, as the changes related to ticket 98 were not checked in seperate from other changes that are not ready for release.
+</p>
+<h3 id="Upgradingfrom0.19b">Upgrading from 0.19b</h3>
+<p>
+Download the release file <a class="ext-link" href="http://opus.lingfil.uu.se/letsmt-dev/releases/"><span class="icon">​</span>here</a> and run the installation procedure:
+</p>
+<pre class="wiki">  tar -xzf LetsMT-0.19c.tar.gz
+  cd LetsMT-0.19c
+  sudo make upgrade
+  make test
+</pre><p>
+You can now remove the installation directory:
+</p>
+<pre class="wiki">   cd ..
+   rm -rf LetsMT-0.19c
+</pre><h3 id="Majorchangesfrom0.19">Major changes from 0.19</h3>
+<h3 id="ResolvedticketsinTildeextranetissuetracker6">Resolved tickets in Tilde extranet issue tracker</h3>
+<ul><li><a class="ext-link" href="https://extranet.tilde.lv/letsmt/Lists/Task%20tracking/DispForm.aspx?ID=98"><span class="icon">​</span>98</a>
+</li></ul><h3 id="ResolvedticketsinUUPissuetracker4">Resolved tickets in UUP issue tracker</h3>
+<ul><li>none
+</li></ul><h2 id="a0.19b">0.19b</h2>
+<p>
+This is a hotfix for release 0.19 (just forget about 0.19)
+</p>
+<h3 id="Upgradingfrom0.18">Upgrading from 0.18</h3>
+<p>
+Download the release file <a class="ext-link" href="http://opus.lingfil.uu.se/letsmt-dev/releases/"><span class="icon">​</span>here</a> and run the installation procedure:
+</p>
+<pre class="wiki">  tar -xzf LetsMT-0.19b.tar.gz
+  cd LetsMT-0.19b
+  sudo make upgrade
+  make test
+</pre><p>
+You can now remove the installation directory:
+</p>
+<pre class="wiki">   cd ..
+   rm -rf LetsMT-0.19b
+</pre><h3 id="Majorchangesfrom0.18">Major changes from 0.18</h3>
+<ul><li>queue manager includes correct configuration file
+(automatic TMX conversion should work now for TMX v1.4 in UTF8)
+</li></ul><h3 id="ResolvedticketsinTildeextranetissuetracker7">Resolved tickets in Tilde extranet issue tracker</h3>
+<ul><li><a class="ext-link" href="https://extranet.tilde.lv/letsmt/Lists/Task%20tracking/DispForm.aspx?ID=94"><span class="icon">​</span>94</a>
+</li><li><a class="ext-link" href="https://extranet.tilde.lv/letsmt/Lists/Task%20tracking/DispForm.aspx?ID=95"><span class="icon">​</span>95</a>
+</li></ul><h3 id="ResolvedticketsinUUPissuetracker5">Resolved tickets in UUP issue tracker</h3>
+<ul><li>none
+</li></ul><h2 id="a0.18">0.18</h2>
+<h3 id="Upgradingfrom0.17">Upgrading from 0.17</h3>
+<p>
+Download the release file <a class="ext-link" href="http://opus.lingfil.uu.se/letsmt-dev/releases/"><span class="icon">​</span>here</a> and run the installation procedure:
+</p>
+<pre class="wiki">  tar -xzf LetsMT-0.18.tar.gz
+  cd LetsMT-0.18
+  sudo make upgrade
+  make test
+</pre><p>
+You can now remove the installation directory:
+</p>
+<pre class="wiki">   cd ..
+   rm -rf LetsMT-0.18
+</pre><h3 id="Majorchangesfrom0.17">Major changes from 0.17</h3>
+<ul><li>Metadata <tt>resource-type</tt> is copied to <tt>kind</tt>
+</li><li>The release notes can now be found in <tt>/usr/local/share/doc/resource_repository/Changelog.txt</tt>
+</li></ul><h3 id="ResolvedticketsinTildeextranetissuetracker8">Resolved tickets in Tilde extranet issue tracker</h3>
+<ul><li><a class="ext-link" href="https://extranet.tilde.lv/letsmt/Lists/Task%20tracking/DispForm.aspx?ID=89"><span class="icon">​</span>89</a>
+</li></ul><h3 id="ResolvedticketsinUUPissuetracker6">Resolved tickets in UUP issue tracker</h3>
+<ul><li>none
+</li></ul><h2 id="a0.17">0.17</h2>
+<h3 id="Upgradingfrom0.16">Upgrading from 0.16</h3>
+<p>
+Download the release file <a class="ext-link" href="http://opus.lingfil.uu.se/letsmt-dev/releases/"><span class="icon">​</span>here</a> and run the installation procedure:
+</p>
+<pre class="wiki">  tar -xzf LetsMT-0.17.tar.gz
+  cd LetsMT-0.17
+  sudo make upgrade
+  make test
+</pre><p>
+You can now remove the installation directory:
+</p>
+<pre class="wiki">   cd ..
+   rm -rf LetsMT-0.17
+</pre><h3 id="Majorchangesfrom0.16">Major changes from 0.16</h3>
+<ul><li>Delete slot is now working.
+</li><li>All metadata responses are now in XML.
+</li><li>Downloading single files can now be done without archiving (using option archive=no). This release has no checks whether the object is a directory or a file, so until that is in place, only do this for objects you know are files.
+</li><li>The test suite now cleans up its slots .
+</li></ul><h3 id="ResolvedticketsinTildeextranetissuetracker9">Resolved tickets in Tilde extranet issue tracker</h3>
+<ul><li>80, 84, 86, 87 and 88
+</li></ul><h3 id="ResolvedticketsinUUPissuetracker7">Resolved tickets in UUP issue tracker</h3>
+<ul><li>none
+</li></ul><h2 id="a0.16">0.16</h2>
+<h3 id="Upgradingfrom0.12">Upgrading from 0.12</h3>
+<p>
+Download the release file <a class="ext-link" href="http://opus.lingfil.uu.se/letsmt-dev/releases/"><span class="icon">​</span>here</a> and run the installation procedure:
+</p>
+<pre class="wiki">  tar -xzf LetsMT-0.16.tar.gz
+  cd LetsMT-0.16
+  sudo make upgrade
+  make test (if you accept test slots left in your repository)
+</pre><p>
+You can now remove the installation directory:
+</p>
+<pre class="wiki">   cd ..
+   rm -rf LetsMT-0.16
+</pre><h3 id="Downgradingto0.16from0.17">Downgrading to 0.16 from 0.17</h3>
+<p>
+Download the release file <a class="ext-link" href="http://opus.lingfil.uu.se/letsmt-dev/releases/"><span class="icon">​</span>here</a> and run the installation procedure:
+</p>
+<pre class="wiki">  tar -xzf LetsMT-0.16.tar.gz
+  cd LetsMT-0.16
+  sudo make downgrade
+  make test
+</pre><p>
+You can now remove the installation directory:
+</p>
+<pre class="wiki">   cd ..
+   rm -rf LetsMT-0.16
+</pre><h3 id="Majorchangesfrom0.12">Major changes from 0.12</h3>
+<ul><li>the installation and upgrade procedure has been improved. The main makefile (in the root directory of the release installation directory) includes new targets upgrade, downgrade and test.
+</li><li>the test suite is now working. Please note that the delete slot function is still not activated in the repository, so if you run tests, you will get a number of test slots in your repository.
+</li><li>Status response XML should now be returned for all requests that are not downloading data.
+</li></ul><h2 id="a0.12">0.12</h2>
+<p>
+It does not provide the upgrade or test target in the main makefile.
+</p>
+<h3 id="Downgradingto0.12from0.16">Downgrading to 0.12 from 0.16</h3>
+<p>
+As this release did not contain routines for this, please contact Per (per.weijnitz@…).
+</p>
+</div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/letsmt-trac/wiki/Releases?action=diff&amp;version=50" title="Version 50 by joerg">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2012-09-20T10%3A09%3A39Z&amp;precision=second" title="See timeline at Sep 20, 2012, 10:09:39 AM">8 years ago</a></span>
+            <span class="trac-print">Last modified on Sep 20, 2012, 10:09:39 AM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/Releases?format=txt">Plain Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/Releases?format=tex">Latex</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/Releases?format=pdf">Latex-Pdf</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

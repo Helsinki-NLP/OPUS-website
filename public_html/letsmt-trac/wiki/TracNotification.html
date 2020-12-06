@@ -1,0 +1,431 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      TracNotification – LetsMT
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/letsmt-trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracNotification?format=txt" type="text/x-trac-wiki" title="Plain Text" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracNotification?format=tex" type="text/x-trac-wiki" title="Latex" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracNotification?format=pdf" type="text/x-trac-wiki" title="Latex-Pdf" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.letsmt.eu/"><img src="http://stp.lingfil.uu.se/~joerg/LetsMT/letsmt.jpg" alt="LetsMT" width="100" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/letsmt-trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/letsmt-trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="TracNotification.html" title="View TracNotification">TracNotification</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/letsmt-trac/wiki/TracNotification?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><h1 id="EmailNotificationofTicketChanges">Email Notification of Ticket Changes</h1>
+<p>
+</p><div class="wiki-toc"><h4>Table of Contents</h4><ul><li class="False"><a class="False" href="TracGuide.html">Index</a></li><li class="False"><a class="False" href="TracInstall.html">Installation</a></li><li class="False"><a class="False" href="TracInterfaceCustomization.html">Customization</a></li><li class="False"><a class="False" href="TracPlugins.html">Plugins</a></li><li class="False"><a class="False" href="TracUpgrade.html">Upgrading</a></li><li class="False"><a class="False" href="TracIni.html">Configuration</a></li><li class="False"><a class="False" href="TracAdmin.html">Administration</a></li><li class="False"><a class="False" href="TracBackup.html">Backup</a></li><li class="False"><a class="False" href="TracLogging.html">Logging</a></li><li class="False"><a class="False" href="TracPermissions.html">Permissions</a></li><li class="False"><a class="False" href="TracWiki.html">The Wiki</a></li><li class="False"><a class="False" href="WikiFormatting.html">Wiki Formatting</a></li><li class="False"><a class="False" href="TracTimeline.html">Timeline</a></li><li class="False"><a class="False" href="TracBrowser.html">Repository Browser</a></li><li class="False"><a class="False" href="TracRevisionLog.html">Revision Log</a></li><li class="False"><a class="False" href="TracChangeset.html">Changesets</a></li><li class="False"><a class="False" href="TracTickets.html">Tickets</a></li><li class="False"><a class="False" href="TracWorkflow.html">Workflow</a></li><li class="False"><a class="False" href="TracRoadmap.html">Roadmap</a></li><li class="False"><a class="False" href="TracQuery.html">Ticket Queries</a></li><li class="False"><a class="False" href="TracBatchModify.html">Batch Modify</a></li><li class="False"><a class="False" href="TracReports.html">Reports</a></li><li class="False"><a class="False" href="TracRss.html">RSS Support</a></li><li class="active"><a class="False" href="TracNotification.html">Notification</a></li></ul></div><p>
+</p>
+<p>
+Trac supports notification of ticket changes via email. 
+</p>
+<p>
+Email notification is useful to keep users up-to-date on tickets/issues of interest, and also provides a convenient way to post all ticket changes to a dedicated mailing list. For example, this is how the <a class="ext-link" href="http://lists.edgewall.com/archive/trac-tickets/"><span class="icon">​</span>Trac-tickets</a> mailing list is set up.
+</p>
+<p>
+Disabled by default, notification can be activated and configured in <a class="wiki" href="TracIni.html">trac.ini</a>.
+</p>
+<h2 id="ReceivingNotificationMails">Receiving Notification Mails</h2>
+<p>
+When reporting a new ticket or adding a comment, enter a valid email address or your Trac username in the <em>reporter</em>, <em>assigned to/owner</em> or <em>cc</em> field. Trac will automatically send you an email when changes are made to the ticket, depending on how notification is configured.
+</p>
+<h3 id="Howtouseyourusernametoreceivenotificationmails">How to use your username to receive notification mails</h3>
+<p>
+To receive notification mails, you can either enter a full email address or your Trac username. To get notified with a simple username or login, you need to specify a valid email address in the <em>Preferences</em> page. 
+</p>
+<p>
+Alternatively, a default domain name (<strong><tt>smtp_default_domain</tt></strong>) can be set in the <a class="wiki" href="TracIni.html">TracIni</a> file, see <a class="wiki" href="TracNotification.html#ConfigurationOptions">Configuration Options</a> below. In this case, the default domain will be appended to the username, which can be useful for an "Intranet" kind of installation.
+</p>
+<p>
+When using apache and mod_kerb for authentication against Kerberos / Active Directory, usernames take the form (<strong><tt>username@EXAMPLE.LOCAL</tt></strong>). To avoid this being interpreted as an email address, add the Kerberos domain to  (<strong><tt>ignore_domains</tt></strong>).
+</p>
+<h3 id="Ticketattachmentnotifications">Ticket attachment notifications</h3>
+<p>
+Since 1.0.3 Trac will send notifications when a ticket attachment is added or deleted. Usually attachment notifications will be enabled in an environment by default. To disable the attachment notifications for an environment the <tt>TicketAttachmentNotifier</tt> component must be disabled:
+</p>
+<div class="code"><pre><span class="k">[components]</span>
+<span class="na">trac.ticket.notification.TicketAttachmentNotifier</span> <span class="o">=</span> <span class="s">disabled</span>
+</pre></div><h2 id="ConfiguringSMTPNotification">Configuring SMTP Notification</h2>
+<p>
+<strong>Important:</strong> For <a class="wiki" href="TracNotification.html">TracNotification</a> to work correctly, the <tt>[trac] base_url</tt> option must be set in <a class="wiki" href="TracIni.html">trac.ini</a>. 
+</p>
+<h3 id="ConfigurationOptions">Configuration Options</h3>
+<p>
+These are the available options for the <tt>[notification]</tt> section in trac.ini:
+</p>
+<p>
+</p><div class="tracini"><h3 id="notification-section"><code>[notification]</code></h3><table class="wiki"><tbody><tr><td><tt>admit_domains</tt></td><td>Comma-separated list of domains that should be considered as
+valid for email addresses (such as localdomain).</td><td class="nodefault">(no default)</td></tr><tr><td><tt>always_notify_owner</tt></td><td>Always send notifications to the ticket owner (<em>since 0.9</em>).</td><td class="default"><code>false</code></td></tr><tr><td><tt>always_notify_reporter</tt></td><td>Always send notifications to any address in the <em>reporter</em>
+field.</td><td class="default"><code>false</code></td></tr><tr><td><tt>always_notify_updater</tt></td><td>Always send notifications to the person who causes the ticket
+property change and to any previous updater of that ticket.</td><td class="default"><code>true</code></td></tr><tr><td><tt>ambiguous_char_width</tt></td><td>Which width of ambiguous characters (e.g. 'single' or
+'double') should be used in the table of notification mail.
+
+If 'single', the same width as characters in US-ASCII. This is
+expected by most users. If 'double', twice the width of
+US-ASCII characters.  This is expected by CJK users. <em>(since
+0.12.2)</em></td><td class="default"><code>single</code></td></tr><tr><td><tt>batch_subject_template</tt></td><td>Like ticket_subject_template but for batch modifications.
+
+By default, the template is <tt>$prefix Batch modify: $tickets_descr</tt>.
+<em>(since 1.0)</em></td><td class="default"><code>$prefix Batch modify: $tickets_descr</code></td></tr><tr><td><tt>email_sender</tt></td><td>Name of the component implementing <tt>IEmailSender</tt>.
+
+This component is used by the notification system to send emails.
+Trac currently provides <tt>SmtpEmailSender</tt> for connecting to an SMTP
+server, and <tt>SendmailEmailSender</tt> for running a <tt>sendmail</tt>-compatible
+executable. (<em>since 0.12</em>)</td><td class="default"><code>SmtpEmailSender</code></td></tr><tr><td><tt>ignore_domains</tt></td><td>Comma-separated list of domains that should not be considered
+part of email addresses (for usernames with Kerberos domains).</td><td class="nodefault">(no default)</td></tr><tr><td><tt>mime_encoding</tt></td><td>Specifies the MIME encoding scheme for emails.
+
+Valid options are 'base64' for Base64 encoding, 'qp' for
+Quoted-Printable, and 'none' for no encoding, in which case mails will
+be sent as 7bit if the content is all ASCII, or 8bit otherwise.
+(<em>since 0.10</em>)</td><td class="default"><code>none</code></td></tr><tr><td><tt>sendmail_path</tt></td><td>Path to the sendmail executable.
+
+The sendmail program must accept the <tt>-i</tt> and <tt>-f</tt> options.
+ (<em>since 0.12</em>)</td><td class="default"><code>sendmail</code></td></tr><tr><td><tt>smtp_always_bcc</tt></td><td>Email address(es) to always send notifications to,
+addresses do not appear publicly (Bcc:). (<em>since 0.10</em>)</td><td class="nodefault">(no default)</td></tr><tr><td><tt>smtp_always_cc</tt></td><td>Email address(es) to always send notifications to,
+addresses can be seen by all recipients (Cc:).</td><td class="nodefault">(no default)</td></tr><tr><td><tt>smtp_default_domain</tt></td><td>Default host/domain to append to address that do not specify
+one.</td><td class="nodefault">(no default)</td></tr><tr><td><tt>smtp_enabled</tt></td><td>Enable email notification.</td><td class="default"><code>false</code></td></tr><tr><td><tt>smtp_from</tt></td><td>Sender address to use in notification emails.</td><td class="default"><code>trac@localhost</code></td></tr><tr><td><tt>smtp_from_author</tt></td><td>Use the action author as the sender of notification emails.
+(<em>since 1.0</em>)</td><td class="default"><code>false</code></td></tr><tr><td><tt>smtp_from_name</tt></td><td>Sender name to use in notification emails.</td><td class="nodefault">(no default)</td></tr><tr><td><tt>smtp_password</tt></td><td>Password for SMTP server. (<em>since 0.9</em>)</td><td class="nodefault">(no default)</td></tr><tr><td><tt>smtp_port</tt></td><td>SMTP server port to use for email notification.</td><td class="default"><code>25</code></td></tr><tr><td><tt>smtp_replyto</tt></td><td>Reply-To address to use in notification emails.</td><td class="default"><code>trac@localhost</code></td></tr><tr><td><tt>smtp_server</tt></td><td>SMTP server hostname to use for email notifications.</td><td class="default"><code>localhost</code></td></tr><tr><td><tt>smtp_subject_prefix</tt></td><td>Text to prepend to subject line of notification emails.
+
+If the setting is not defined, then the [$project_name] prefix.
+If no prefix is desired, then specifying an empty option
+will disable it. (<em>since 0.10.1</em>)</td><td class="default"><code>__default__</code></td></tr><tr><td><tt>smtp_user</tt></td><td>Username for SMTP server. (<em>since 0.9</em>)</td><td class="nodefault">(no default)</td></tr><tr><td><tt>ticket_subject_template</tt></td><td>A Genshi text template snippet used to get the notification subject.
+
+By default, the subject template is <tt>$prefix #$ticket.id: $summary</tt>.
+<tt>$prefix</tt> being the value of the <tt>smtp_subject_prefix</tt> option.
+<em>(since 0.11)</em></td><td class="default"><code>$prefix #$ticket.id: $summary</code></td></tr><tr><td><tt>use_public_cc</tt></td><td>Recipients can see email addresses of other CC'ed recipients.
+
+If this option is disabled (the default), recipients are put on BCC.
+(<em>since 0.10</em>)</td><td class="default"><code>false</code></td></tr><tr><td><tt>use_short_addr</tt></td><td>Permit email address without a host/domain (i.e. username only).
+
+The SMTP server should accept those addresses, and either append
+a FQDN or use local delivery. (<em>since 0.10</em>)</td><td class="default"><code>false</code></td></tr><tr><td><tt>use_tls</tt></td><td>Use SSL/TLS to send notifications over SMTP. (<em>since 0.10</em>)</td><td class="default"><code>false</code></td></tr></tbody></table></div><p>
+</p>
+<h3 id="ExampleConfigurationSMTP">Example Configuration (SMTP)</h3>
+<pre class="wiki">[notification]
+smtp_enabled = true
+smtp_server = mail.example.com
+smtp_from = notifier@example.com
+smtp_replyto = myproj@projects.example.com
+smtp_always_cc = ticketmaster@example.com, theboss+myproj@example.com
+</pre><h3 id="ExampleConfigurationsendmail">Example Configuration (<tt>sendmail</tt>)</h3>
+<pre class="wiki">[notification]
+smtp_enabled = true
+email_sender = SendmailEmailSender
+sendmail_path = /usr/sbin/sendmail
+smtp_from = notifier@example.com
+smtp_replyto = myproj@projects.example.com
+smtp_always_cc = ticketmaster@example.com, theboss+myproj@example.com
+</pre><h3 id="Customizingthee-mailsubject">Customizing the e-mail subject</h3>
+<p>
+The e-mail subject can be customized with the <tt>ticket_subject_template</tt> option, which contains a <a class="ext-link" href="http://genshi.edgewall.org/wiki/Documentation/text-templates.html"><span class="icon">​</span>Genshi text template</a> snippet. The default value is:
+</p>
+<pre class="wiki">$prefix #$ticket.id: $summary
+</pre><p>
+The following variables are available in the template:
+</p>
+<ul><li><tt>env</tt>: The project environment (see <a class="ext-link" href="http://trac.edgewall.org/intertrac/source%3A/trunk/trac/env.py" title="source:/trunk/trac/env.py in Trac project trac"><span class="icon">​</span>env.py</a>).
+</li><li><tt>prefix</tt>: The prefix defined in <tt>smtp_subject_prefix</tt>.
+</li><li><tt>summary</tt>: The ticket summary, with the old value if the summary was edited.
+</li><li><tt>ticket</tt>: The ticket model object (see <a class="ext-link" href="http://trac.edgewall.org/intertrac/source%3A/trunk/trac/ticket/model.py" title="source:/trunk/trac/ticket/model.py in Trac project trac"><span class="icon">​</span>model.py</a>). Individual ticket fields can be addressed by appending the field name separated by a dot, eg <tt>$ticket.milestone</tt>.
+</li></ul><h3 id="Customizingthee-mailcontent">Customizing the e-mail content</h3>
+<p>
+The notification e-mail content is generated based on <tt>ticket_notify_email.txt</tt> in <tt>trac/ticket/templates</tt>. You can add your own version of this template by adding a <tt>ticket_notify_email.txt</tt> to the templates directory of your environment. The default looks like this:
+</p>
+<pre class="wiki">$ticket_body_hdr
+$ticket_props
+{% choose ticket.new %}\
+{%   when True %}\
+$ticket.description
+{%   end %}\
+{%   otherwise %}\
+{%     if changes_body %}\
+${_('Changes (by %(author)s):', author=change.author)}
+
+$changes_body
+{%     end %}\
+{%     if changes_descr %}\
+{%       if not changes_body and not change.comment and change.author %}\
+${_('Description changed by %(author)s:', author=change.author)}
+{%       end %}\
+$changes_descr
+--
+{%     end %}\
+{%     if change.comment %}\
+
+${changes_body and _('Comment:') or _('Comment (by %(author)s):', author=change.author)}
+
+$change.comment
+{%     end %}\
+{%   end %}\
+{% end %}\
+
+-- 
+${_('Ticket URL: &lt;%(link)s&gt;', link=ticket.link)}
+$project.name &lt;${project.url or abs_href()}&gt;
+$project.descr
+</pre><h2 id="SampleEmail">Sample Email</h2>
+<pre class="wiki">#42: testing
+---------------------------+------------------------------------------------
+       Id:  42             |      Status:  assigned                
+Component:  report system  |    Modified:  Fri Apr  9 00:04:31 2004
+ Severity:  major          |   Milestone:  0.9                     
+ Priority:  lowest         |     Version:  0.6                     
+    Owner:  anonymous      |    Reporter:  jonas@example.com               
+---------------------------+------------------------------------------------
+Changes:
+  * component:  changeset view =&gt; search system
+  * priority:  low =&gt; highest
+  * owner:  jonas =&gt; anonymous
+  * cc:  daniel@example.com =&gt;
+         daniel@example.com, jonas@example.com
+  * status:  new =&gt; assigned
+
+Comment:
+I'm interested too!
+
+--
+Ticket URL: &lt;http://example.com/trac/ticket/42&gt;
+My Project &lt;http://myproj.example.com/&gt;
+</pre><h2 id="Customizinge-mailcontentforMSOutlook">Customizing e-mail content for MS Outlook</h2>
+<p>
+MS Outlook normally presents plain text e-mails with a variable-width font, and as a result the ticket properties table will most certainly look like a mess in MS Outlook. This can be fixed with some customization of the <a class="wiki" href="TracNotification.html#Customizingthee-mailcontent">e-mail template</a>.
+</p>
+<p>
+Replace the following second row in the template:
+</p>
+<pre class="wiki">$ticket_props
+</pre><p>
+with this (requires Python 2.6 or later):
+</p>
+<pre class="wiki">--------------------------------------------------------------------------
+{% with
+   pv = [(a[0].strip(), a[1].strip()) for a in [b.split(':') for b in
+         [c.strip() for c in 
+          ticket_props.replace('|', '\n').splitlines()[1:-1]] if ':' in b]];
+   sel = ['Reporter', 'Owner', 'Type', 'Status', 'Priority', 'Milestone', 
+          'Component', 'Severity', 'Resolution', 'Keywords'] %}\
+${'\n'.join('%s\t%s' % (format(p[0]+':', ' &lt;12'), p[1]) for p in pv if p[0] in sel)}
+{% end %}\
+--------------------------------------------------------------------------
+</pre><p>
+The table of ticket properties is replaced with a list of a selection of the properties. A tab character separates the name and value in such a way that most people should find this more pleasing than the default table when using MS Outlook.
+</p>
+<div style="margin: 1em 1.75em; border:1px dotted" class="wikipage">#42: testing<br />
+--------------------------------------------------------------------------<br />
+<table cellpadding="0">
+<tr><td>Reporter:</td><td>jonas@example.com</td></tr>
+<tr><td>Owner:</td><td>anonymous</td></tr>
+<tr><td>Type:</td><td>defect</td></tr>
+<tr><td>Status:</td><td>assigned</td></tr>
+<tr><td>Priority:</td><td>lowest</td></tr>
+<tr><td>Milestone:</td><td>0.9</td></tr>
+<tr><td>Component:</td><td>report system</td></tr>
+<tr><td>Severity:</td><td>major</td></tr>
+<tr><td>Resolution:</td><td> </td></tr>
+<tr><td>Keywords:</td><td> </td></tr>
+</table>
+--------------------------------------------------------------------------<br />
+Changes:<br />
+<br />
+  * component:  changeset view =&gt; search system<br />
+  * priority:  low =&gt; highest<br />
+  * owner:  jonas =&gt; anonymous<br />
+  * cc:  daniel@example.com =&gt;<br />
+          daniel@example.com, jonas@example.com<br />
+  * status:  new =&gt; assigned<br />
+<br />
+Comment:<br />
+I'm interested too!<br />
+<br />
+--<br />
+Ticket URL: &lt;http://example.com/trac/ticket/42&gt;<br />
+My Project &lt;http://myproj.example.com/&gt;<br />
+</div><p>
+<strong>Important</strong>: Only those ticket fields that are listed in <tt>sel</tt> are part of the HTML mail. If you have defined custom ticket fields which are to be part of the mail, then they have to be added to <tt>sel</tt>. Example:
+</p>
+<pre class="wiki">   sel = ['Reporter', ..., 'Keywords', 'Custom1', 'Custom2']
+</pre><p>
+However, the solution is still a workaround to an automatically HTML-formatted e-mail.
+</p>
+<h2 id="UsingGMailastheSMTPrelayhost">Using GMail as the SMTP relay host</h2>
+<p>
+Use the following configuration snippet:
+</p>
+<pre class="wiki">[notification]
+smtp_enabled = true
+use_tls = true
+mime_encoding = base64
+smtp_server = smtp.gmail.com
+smtp_port = 587
+smtp_user = user
+smtp_password = password
+</pre><p>
+where <em>user</em> and <em>password</em> match an existing GMail account, ie the ones you use to log in on <a class="ext-link" href="http://gmail.com"><span class="icon">​</span>http://gmail.com</a>.
+</p>
+<p>
+Alternatively, you can use <tt>smtp_port = 25</tt>.<br />
+You should not use <tt>smtp_port = 465</tt>. Doing so may deadlock your ticket submission. Port 465 is reserved for the SMTPS protocol, which is not supported by Trac. See <a class="ext-link" href="http://trac.edgewall.org/intertrac/comment%3A2%3Aticket%3A7107" title="comment:2:ticket:7107 in Trac project trac"><span class="icon">​</span>#7107</a> for details.
+ 
+</p>
+<h2 id="Filteringnotificationsforonesownchangesandcomments">Filtering notifications for one's own changes and comments</h2>
+<p>
+In Gmail, use the filter:
+</p>
+<pre class="wiki">from:(&lt;smtp_from&gt;) (("Reporter: &lt;username&gt;" -Changes -Comment) OR "Changes (by &lt;username&gt;)" OR "Comment (by &lt;username&gt;)")
+</pre><p>
+to delete these notifications.
+</p>
+<p>
+In Thunderbird, there is no such solution if you use IMAP, see <a class="ext-link" href="http://kb.mozillazine.org/Filters_(Thunderbird)#Filtering_the_message_body"><span class="icon">​</span>http://kb.mozillazine.org/Filters_(Thunderbird)#Filtering_the_message_body</a>.
+</p>
+<p>
+You can also add this plugin:
+<a class="ext-link" href="http://trac-hacks.org/wiki/NeverNotifyUpdaterPlugin"><span class="icon">​</span>http://trac-hacks.org/wiki/NeverNotifyUpdaterPlugin</a>, or vote for <a class="ext-link" href="http://trac.edgewall.org/intertrac/%232247" title="#2247 in Trac project trac"><span class="icon">​</span>#2247</a> to be fixed.
+</p>
+<h2 id="Troubleshooting">Troubleshooting</h2>
+<p>
+If you cannot get the notification working, first make sure the log is activated and have a look at the log to find if an error message has been logged. See <a class="wiki" href="TracLogging.html">TracLogging</a> for help about the log feature.
+</p>
+<p>
+Notification errors are not reported through the web interface, so the user who submits a change or a new ticket never gets notified about a notification failure. The Trac administrator needs to look at the log to find the error trace.
+</p>
+<h3 id="Permissiondeniederror"><em>Permission denied</em> error</h3>
+<p>
+Typical error message:
+</p>
+<pre class="wiki">  ...
+  File ".../smtplib.py", line 303, in connect
+    raise socket.error, msg
+  error: (13, 'Permission denied')
+</pre><p>
+This error usually comes from a security settings on the server: many Linux distributions do not allow the web server (Apache, ...) to post email messages to the local SMTP server.
+</p>
+<p>
+Many users get confused when their manual attempts to contact the SMTP server succeed:
+</p>
+<pre class="wiki">telnet localhost 25
+</pre><p>
+This is because a regular user may connect to the SMTP server, but the web server cannot:
+</p>
+<pre class="wiki">sudo -u www-data telnet localhost 25
+</pre><p>
+In such a case, you need to configure your server so that the web server is authorized to post to the SMTP server. The actual settings depend on your Linux distribution and current security policy. You may find help in the Trac <a class="ext-link" href="http://trac.edgewall.org/intertrac/MailingList" title="MailingList in Trac project trac"><span class="icon">​</span>MailingList</a> archive.
+</p>
+<p>
+Relevant ML threads:
+</p>
+<ul><li>SELinux: <a class="ext-link" href="http://article.gmane.org/gmane.comp.version-control.subversion.trac.general/7518"><span class="icon">​</span>http://article.gmane.org/gmane.comp.version-control.subversion.trac.general/7518</a>
+</li></ul><p>
+For SELinux in Fedora 10:
+</p>
+<pre class="wiki">$ setsebool -P httpd_can_sendmail 1
+</pre><h3 id="Suspectedspamerror"><em>Suspected spam</em> error</h3>
+<p>
+Some SMTP servers may reject the notification email sent by Trac.
+</p>
+<p>
+The default Trac configuration uses Base64 encoding to send emails to the recipients. The whole body of the email is encoded, which sometimes trigger <em>false positive</em> spam detection on sensitive email servers. In such an event, change the default encoding to "quoted-printable" using the <tt>mime_encoding</tt> option.
+</p>
+<p>
+Quoted printable encoding works better with languages that use one of the Latin charsets. For Asian charsets, stick with the Base64 encoding.
+</p>
+<hr />
+<p>
+See also: <a class="wiki" href="TracTickets.html">TracTickets</a>, <a class="wiki" href="TracIni.html">TracIni</a>, <a class="wiki" href="TracGuide.html">TracGuide</a>, <a class="ext-link" href="http://trac.edgewall.org/intertrac/TracDev/NotificationApi" title="TracDev/NotificationApi in Trac project trac"><span class="icon">​</span>TracDev/NotificationApi</a>
+</p>
+</div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/letsmt-trac/wiki/TracNotification?action=diff&amp;version=3" title="Version 3 by trac">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2015-02-25T21%3A37%3A47Z&amp;precision=second" title="See timeline at Feb 25, 2015, 9:37:47 PM">6 years ago</a></span>
+            <span class="trac-print">Last modified on Feb 25, 2015, 9:37:47 PM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <script type="text/javascript">
+        jQuery.loadStyleSheet("/letsmt-trac/pygments/trac.css", "text/css");
+    </script>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracNotification?format=txt">Plain Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracNotification?format=tex">Latex</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracNotification?format=pdf">Latex-Pdf</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

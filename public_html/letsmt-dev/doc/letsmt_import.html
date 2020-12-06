@@ -1,0 +1,144 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>letsmt_import</title>
+<link rel="stylesheet" href="pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#usage">USAGE</a></li>
+	<ul>
+
+		<li><a href="#normal_usage_">NORMAL USAGE:</a></li>
+		<li><a href="#opus_usage_">OPUS USAGE:</a></li>
+	</ul>
+
+	<li><a href="#options">OPTIONS</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<ul>
+
+		<li><a href="#import_opus">IMPORT OPUS</a></li>
+		<ul>
+
+			<li><a href="#options">OPTIONS</a></li>
+			<li><a href="#options">OPTIONS</a></li>
+		</ul>
+
+	</ul>
+
+	<li><a href="#license">LICENSE</a></li>
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>letsmt_import - a script for importing corpus data to the LetsMT repository</p>
+<p>
+</p>
+<hr />
+<h1><a name="usage">USAGE</a></h1>
+<p>
+</p>
+<h2><a name="normal_usage_">NORMAL USAGE:</a></h2>
+<pre>
+ letsmt_import -u user -s slot -p path [OPTIONS]</pre>
+<pre>
+ slot ........ name of the REST-slot (= corpus name)
+ user ........ name of the REST-user (= branch name)
+ path ........ relative path to file to be imported (within slot/user/)</pre>
+<p>
+</p>
+<h2><a name="opus_usage_">OPUS USAGE:</a></h2>
+<p>See</p>
+<pre>
+ letsmt_import -o
+ letsmt_import -O</pre>
+<p>
+</p>
+<hr />
+<h1><a name="options">OPTIONS</a></h1>
+<pre>
+ -L language ..... language ID (may change some import behavior)
+ -S splitter ..... text splitter (sentence boundary detection)
+ -T tokenizer .... tokenizer
+ -N normalizer ... comma-separated chain of text normalizers
+ -m mode ......... conversion mode (useful for some import handlers)
+ -v .............. be verbose</pre>
+<pre>
+ -h .............. show the help text
+ -V .............. display the LetsMT library version</pre>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>This script is used for converting and importing data files into the LetsMT repository.
+It has two interfaces:</p>
+<p>1) It is used to validate/convert/import files that are already in the 'uploads' directory of existing repositories (see NORMAL USAGE).
+Supported formats are listed in <a href=".//LetsMT/Import.html">LetsMT::Import</a>.
+The script will be called automatically when data are uploaded to appropriate data directories via the LetsMT high-level webservice API.</p>
+<p>2) The second interface is initiated by the flag (-o).
+In this way letsmt_import can be used to upload OPUS corpora to LetsMT in the format required (see IMPORT OPUS).</p>
+<p>
+</p>
+<h2><a name="import_opus">IMPORT OPUS</a></h2>
+<p>letsmt_import -o -u user [OPTIONS] corpus [destname]</p>
+<p>Import the OPUS corpus &lt;corpus&gt; to LetsMT using &lt;destname&gt; as the corpus name in the repository.
+The script tries to create the user &lt;user&gt; in group 'public'.
+It also tries to create the slot &lt;destname&gt;/&lt;user&gt;.</p>
+<p>
+</p>
+<h3><a name="options">OPTIONS</a></h3>
+<pre>
+ -d opushome ........ home directory of the OPUS corpus 
+                      (default = /home/opus/OPUS/corpus/)
+ -a ................. skip individual sentence alignment files
+                      (the ones in xml/xx-yy/ for each document)
+ -l letsmt_url ...... URL of the LetsMT repository (default=$ENV{LETSMT_URL})
+ -f ................. force overwriting existing files (default: skip existing)</pre>
+<p>
+</p>
+<h3><a name="options">OPTIONS</a></h3>
+<pre>
+ -s slot ........ name of the REST-slot (= corpus)
+ -u user ........ name of the REST-user (= branch)
+ -e ext ......... file extension of sentence align files (default: try various)
+ -r ............. keep region codes (like BR in pt_BR)
+ -a ............. skip sentence alignment files for individual documents</pre>
+<p>If slot is given: Add prefix to   <a href="https://rest-server/letsmt/slot">https://rest-server/letsmt/slot</a>
+If slot and branch are given: add <a href="https://rest-server/storage/slot/branch">https://rest-server/storage/slot/branch</a></p>
+<p>
+</p>
+<hr />
+<h1><a name="license">LICENSE</a></h1>
+<p>This program is part of LetsMT! Resource Repository.</p>
+<p>LetsMT! Resource Repository is free software: you can redistribute it
+and/or modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.</p>
+<p>LetsMT! Resource Repository is distributed in the hope that it will be
+useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+General Public License for more details.</p>
+<p>You should have received a copy of the GNU General Public License
+along with LetsMT! Resource Repository.  If not, see
+<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>.</p>
+
+</body>
+
+</html>

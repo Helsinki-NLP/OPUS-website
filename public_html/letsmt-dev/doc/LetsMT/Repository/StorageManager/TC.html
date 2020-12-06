@@ -1,0 +1,111 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TC</title>
+<link rel="stylesheet" href="../../../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#constructor">CONSTRUCTOR</a></li>
+	<li><a href="#methods">METHODS</a></li>
+	<ul>
+
+		<li><a href="#make_instance"><code>make_instance</code></a></li>
+		<li><a href="#init_instance"><code>init_instance</code></a></li>
+		<li><a href="#store"><code>store</code></a></li>
+		<li><a href="#save"><code>save</code></a></li>
+		<li><a href="#delete"><code>delete</code></a></li>
+		<li><a href="#retrieve"><code>retrieve</code></a></li>
+		<li><a href="#find"><code>find</code></a></li>
+		<li><a href="#restore_next"><code>restore_next</code></a></li>
+		<li><a href="#make_idquery"><code>make_idquery</code></a></li>
+		<li><a href="#may_write"><code>may_write</code></a></li>
+		<li><a href="#may_read"><code>may_read</code></a></li>
+		<li><a href="#drop_table"><code>drop_table</code></a></li>
+	</ul>
+
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>LetsMT::Repository::StorageManager::TC - persistent object class for LetsMT's StorageManager</p>
+<p>
+</p>
+<hr />
+<h1><a name="constructor">CONSTRUCTOR</a></h1>
+<p>Returns: a TC object.</p>
+<p>
+</p>
+<hr />
+<h1><a name="methods">METHODS</a></h1>
+<p>
+</p>
+<h2><a name="make_instance"><code>make_instance</code></a></h2>
+<p>Abstract method, overridden in children.</p>
+<p>
+</p>
+<h2><a name="init_instance"><code>init_instance</code></a></h2>
+<p>Abstract method, overridden in children.</p>
+<p>
+</p>
+<h2><a name="store"><code>store</code></a></h2>
+<p>
+</p>
+<h2><a name="save"><code>save</code></a></h2>
+<p>
+</p>
+<h2><a name="delete"><code>delete</code></a></h2>
+<p>
+</p>
+<h2><a name="retrieve"><code>retrieve</code></a></h2>
+<p>
+</p>
+<h2><a name="find"><code>find</code></a></h2>
+<p>Alias of <code>retrieve</code>.</p>
+<p>
+</p>
+<h2><a name="restore_next"><code>restore_next</code></a></h2>
+<p>Restore the next object.</p>
+<p>
+</p>
+<h2><a name="make_idquery"><code>make_idquery</code></a></h2>
+<p>Returns: just the query parameters.</p>
+<p>
+</p>
+<h2><a name="may_write"><code>may_write</code></a></h2>
+<pre>
+ may_write ($self, $user, $groups)</pre>
+<p># Check whether this instance may be written to by the effective user.</p>
+<p>## FIXME: this seems malplaced, is it even used? The subs in Branch is probably the right stuff.</p>
+<p># Returns: true or false</p>
+<p>
+</p>
+<h2><a name="may_read"><code>may_read</code></a></h2>
+<pre>
+ may_read ($self, $user, $groups)</pre>
+<p>Returns: true or false</p>
+<p>
+</p>
+<h2><a name="drop_table"><code>drop_table</code></a></h2>
+<p>nothing to do here ....</p>
+
+</body>
+
+</html>

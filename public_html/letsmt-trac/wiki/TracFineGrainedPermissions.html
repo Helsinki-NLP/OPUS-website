@@ -1,0 +1,423 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      TracFineGrainedPermissions – LetsMT
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/letsmt-trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracFineGrainedPermissions?format=txt" type="text/x-trac-wiki" title="Plain Text" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracFineGrainedPermissions?format=tex" type="text/x-trac-wiki" title="Latex" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracFineGrainedPermissions?format=pdf" type="text/x-trac-wiki" title="Latex-Pdf" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.letsmt.eu/"><img src="http://stp.lingfil.uu.se/~joerg/LetsMT/letsmt.jpg" alt="LetsMT" width="100" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/letsmt-trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/letsmt-trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="TracFineGrainedPermissions.html" title="View TracFineGrainedPermissions">TracFineGrainedPermissions</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/letsmt-trac/wiki/TracFineGrainedPermissions?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><h1 id="Finegrainedpermissions">Fine grained permissions</h1>
+<p>
+</p><div class="wiki-toc"><h4>Contents</h4>
+    <ol>
+      <li>
+        <a href="TracFineGrainedPermissions.html#PermissionPolicies">Permission Policies</a>
+        <ol>
+          <li>
+            <a href="TracFineGrainedPermissions.html#AuthzPolicy">AuthzPolicy</a>
+            <ol>
+              <li>
+                <a href="TracFineGrainedPermissions.html#Configuration">Configuration</a>
+              </li>
+              <li>
+                <a href="TracFineGrainedPermissions.html#UsageNotes">Usage Notes</a>
+              </li>
+              <li>
+                <a href="TracFineGrainedPermissions.html#MissingFeatures">Missing Features</a>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <a href="TracFineGrainedPermissions.html#AuthzSourcePolicy">AuthzSourcePolicy  (mod_authz_svn-like permission policy)</a>
+            <ol>
+              <li>
+                <a href="TracFineGrainedPermissions.html#TracConfiguration">Trac Configuration</a>
+              </li>
+              <li>
+                <a href="TracFineGrainedPermissions.html#SubversionConfiguration">Subversion Configuration</a>
+              </li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <a href="TracFineGrainedPermissions.html#Debuggingpermissions">Debugging permissions</a>
+      </li>
+    </ol>
+</div><p>
+</p><div class="wiki-toc"><h4>Table of Contents</h4><ul><li class="False"><a class="False" href="TracGuide.html">Index</a></li><li class="False"><a class="False" href="TracInstall.html">Installation</a></li><li class="False"><a class="False" href="TracInterfaceCustomization.html">Customization</a></li><li class="False"><a class="False" href="TracPlugins.html">Plugins</a></li><li class="False"><a class="False" href="TracUpgrade.html">Upgrading</a></li><li class="False"><a class="False" href="TracIni.html">Configuration</a></li><li class="False"><a class="False" href="TracAdmin.html">Administration</a></li><li class="False"><a class="False" href="TracBackup.html">Backup</a></li><li class="False"><a class="False" href="TracLogging.html">Logging</a></li><li class="False"><a class="False" href="TracPermissions.html">Permissions</a></li><li class="False"><a class="False" href="TracWiki.html">The Wiki</a></li><li class="False"><a class="False" href="WikiFormatting.html">Wiki Formatting</a></li><li class="False"><a class="False" href="TracTimeline.html">Timeline</a></li><li class="False"><a class="False" href="TracBrowser.html">Repository Browser</a></li><li class="False"><a class="False" href="TracRevisionLog.html">Revision Log</a></li><li class="False"><a class="False" href="TracChangeset.html">Changesets</a></li><li class="False"><a class="False" href="TracTickets.html">Tickets</a></li><li class="False"><a class="False" href="TracWorkflow.html">Workflow</a></li><li class="False"><a class="False" href="TracRoadmap.html">Roadmap</a></li><li class="False"><a class="False" href="TracQuery.html">Ticket Queries</a></li><li class="False"><a class="False" href="TracBatchModify.html">Batch Modify</a></li><li class="False"><a class="False" href="TracReports.html">Reports</a></li><li class="False"><a class="False" href="TracRss.html">RSS Support</a></li><li class="False"><a class="False" href="TracNotification.html">Notification</a></li></ul></div><p>
+</p>
+<p>
+There is a general mechanism in place that allows custom <strong>permission policy plugins</strong> to grant or deny any action on any kind of Trac resource, even at the level of specific versions of such resources.
+</p>
+<p>
+That mechanism is <tt>authz_policy</tt>, which is an optional module in <tt>tracopt.perm.authz_policy.*</tt>, so it is installed by default. It can be activated via the <em>Plugins</em> panel in the Trac administration module.
+</p>
+<h2 id="PermissionPolicies">Permission Policies</h2>
+<p>
+A great diversity of permission policies can be implemented and Trac comes with a few examples. 
+</p>
+<p>
+Which policies are currently active is determined by a configuration setting in <a class="wiki" href="TracIni.html">TracIni</a>:
+</p>
+<div class="code"><pre><span class="k">[trac]</span>
+<span class="na">permission_policies</span> <span class="o">=</span> <span class="s">AuthzSourcePolicy, DefaultPermissionPolicy, LegacyAttachmentPolicy</span>
+</pre></div><p>
+This lists the <a class="wiki" href="TracFineGrainedPermissions.html#AuthzSourcePolicy">#AuthzSourcePolicy</a> described below as the first policy, followed by the DefaultPermissionPolicy which checks for the traditional coarse grained style permissions described in <a class="wiki" href="TracPermissions.html">TracPermissions</a>, and the LegacyAttachmentPolicy which knows how to use the coarse grained permissions for checking the permissions available on attachments.
+</p>
+<p>
+Among the optional choices, there is <a class="wiki" href="TracFineGrainedPermissions.html#AuthzPolicy">#AuthzPolicy</a>, a very generic permission policy, based on an Authz-style system. See
+<a class="ext-link" href="http://trac.edgewall.org/intertrac/source%3Abranches/1.0-stable/tracopt/perm/authz_policy.py" title="source:branches/1.0-stable/tracopt/perm/authz_policy.py in Trac project trac"><span class="icon">​</span>authz_policy.py</a> for details. 
+</p>
+<p>
+Another popular permission policy <a class="wiki" href="TracFineGrainedPermissions.html#AuthzSourcePolicy">#AuthzSourcePolicy</a>, re-implements the pre-0.12 support for checking fine-grained permissions limited to Subversion repositories in terms of the new system.
+</p>
+<p>
+See also <a class="ext-link" href="http://trac.edgewall.org/intertrac/source%3Abranches/1.0-stable/sample-plugins/permissions" title="source:branches/1.0-stable/sample-plugins/permissions in Trac project trac"><span class="icon">​</span>sample-plugins/permissions</a> for more examples.
+</p>
+<h3 id="AuthzPolicy">AuthzPolicy</h3>
+<h4 id="Configuration">Configuration</h4>
+<ul><li>Install <a class="ext-link" href="http://www.voidspace.org.uk/python/configobj.html"><span class="icon">​</span>ConfigObj</a>.
+</li><li>Put a <a class="ext-link" href="http://swapoff.org/files/authzpolicy.conf"><span class="icon">​</span>authzpolicy.conf</a> file somewhere, preferably on a secured location on the server, not readable for others than the webuser. If the  file contains non-ASCII characters, the UTF-8 encoding should be used.
+</li><li>Update your <tt>trac.ini</tt>:
+<ol><li>modify the <a class="wiki" href="TracIni.html#trac-section">permission_policies</a> entry in the <tt>[trac]</tt> section:
+<div class="code"><pre><span class="k">[trac]</span>
+<span class="err">...</span>
+<span class="na">permission_policies</span> <span class="o">=</span> <span class="s">AuthzPolicy, DefaultPermissionPolicy, LegacyAttachmentPolicy</span>
+</pre></div></li><li>add a new <tt>[authz_policy]</tt> section:
+<div class="code"><pre><span class="k">[authz_policy]</span>
+<span class="na">authz_file</span> <span class="o">=</span> <span class="s">/some/trac/env/conf/authzpolicy.conf</span>
+</pre></div></li><li>enable the plugin through <a href="http://opus.nlpl.eu/letsmt-trac/admin/general/plugin">WebAdmin</a> or by editing the <tt>[components]</tt> section:
+<div class="code"><pre><span class="k">[components]</span>
+<span class="na">tracopt.perm.authz_policy.*</span> <span class="o">=</span> <span class="s">enabled</span>
+</pre></div></li></ol></li></ul><h4 id="UsageNotes">Usage Notes</h4>
+<p>
+Note the order in which permission policies are specified: policies are implemented in the sequence provided and therefore may override earlier policy specifications.
+</p>
+<p>
+A policy will return either <tt>True</tt>, <tt>False</tt> or <tt>None</tt> for a given permission check. <tt>True</tt> is returned if the policy explicitly grants the permission. <tt>False</tt> is returned if the policy explicitly denies the permission. <tt>None</tt> is returned if the policy is unable to either grant or deny the permission.
+</p>
+<p>
+NOTE: Only if the return value is <tt>None</tt> will the <em>next</em> permission policy be consulted. If none of the policies explicitly grants the permission, the final result will be <tt>False</tt>, i.e. permission denied.
+</p>
+<p>
+The <tt>authzpolicy.conf</tt> file is a <tt>.ini</tt> style configuration file:
+</p>
+<div class="code"><pre><span class="k">[wiki:PrivatePage@*]</span>
+<span class="na">john</span> <span class="o">=</span> <span class="s">WIKI_VIEW, !WIKI_MODIFY</span>
+<span class="na">jack</span> <span class="o">=</span> <span class="s">WIKI_VIEW</span>
+<span class="na">*</span> <span class="o">=</span>
+</pre></div><ul><li>Each section of the config is a glob pattern used to match against a Trac resource descriptor. These descriptors are in the form:
+<pre class="wiki">&lt;realm&gt;:&lt;id&gt;@&lt;version&gt;[/&lt;realm&gt;:&lt;id&gt;@&lt;version&gt; ...]
+</pre></li></ul><p>
+Resources are ordered left to right, from parent to child. If any component is inapplicable, <tt>*</tt> is substituted. If the version pattern is not specified explicitly, all versions (<tt>@*</tt>) is added implicitly. Example: Match the <a class="wiki" href="WikiStart.html">WikiStart</a> page:
+</p>
+<div class="code"><pre><span class="k">[wiki:*]</span>
+<span class="k">[wiki:WikiStart*]</span>
+<span class="k">[wiki:WikiStart@*]</span>
+<span class="k">[wiki:WikiStart]</span>
+</pre></div><p>
+Example: Match the attachment <tt>wiki:WikiStart@117/attachment:FOO.JPG@*</tt> on <a class="wiki" href="WikiStart.html">WikiStart</a>:
+</p>
+<div class="code"><pre><span class="k">[wiki:*]</span>
+<span class="k">[wiki:WikiStart*]</span>
+<span class="k">[wiki:WikiStart@*]</span>
+<span class="k">[wiki:WikiStart@*/attachment:*]</span>
+<span class="k">[wiki:WikiStart@117/attachment:FOO.JPG]</span>
+</pre></div><ul><li>Sections are checked against the current Trac resource descriptor <strong>IN ORDER</strong> of appearance in the configuration file. <strong>ORDER IS CRITICAL</strong>.
+</li></ul><ul><li>Once a section matches, the current username is matched against the keys (usernames) of the section, <strong>IN ORDER</strong>. 
+<ul><li>If a key (username) is prefixed with a <tt>@</tt>, it is treated as a group. 
+</li><li>If a value (permission) is prefixed with a <tt>!</tt>, the permission is denied rather than granted.
+</li></ul></li></ul><table class="wiki">
+<tr>The username will match any of 'anonymous', 'authenticated', &lt;username&gt; or '*', using normal Trac permission rules. <td> <strong>Note:</strong> Other groups which are created by user (e.g. by 'adding subjects to groups' on web interface page <em>Admin / Permissions</em>) cannot be used. See <a class="ext-link" href="http://trac.edgewall.org/intertrac/ticket%3A5648" title="ticket:5648 in Trac project trac"><span class="icon">​</span>#5648</a> for details about this missing feature. 
+</td></tr></table>
+<p>
+For example, if the <tt>authz_file</tt> contains:
+</p>
+<div class="code"><pre><span class="k">[wiki:WikiStart@*]</span>
+<span class="na">*</span> <span class="o">=</span> <span class="s">WIKI_VIEW</span>
+
+<span class="k">[wiki:PrivatePage@*]</span>
+<span class="na">john</span> <span class="o">=</span> <span class="s">WIKI_VIEW</span>
+<span class="na">*</span> <span class="o">=</span> <span class="s">!WIKI_VIEW</span>
+</pre></div><p>
+and the default permissions are set like this:
+</p>
+<pre class="wiki">john           WIKI_VIEW
+jack           WIKI_VIEW
+# anonymous has no WIKI_VIEW
+</pre><p>
+Then: 
+</p>
+<ul><li>All versions of <a class="wiki" href="WikiStart.html">WikiStart</a> will be viewable by everybody, including anonymous
+</li><li>PrivatePage will be viewable only by john
+</li><li>other pages will be viewable only by john and jack
+</li></ul><p>
+Groups:
+</p>
+<div class="code"><pre><span class="k">[groups]</span>
+<span class="na">admins</span> <span class="o">=</span> <span class="s">john, jack</span>
+<span class="na">devs</span> <span class="o">=</span> <span class="s">alice, bob</span>
+
+<span class="k">[wiki:Dev@*]</span>
+<span class="na">@admins</span> <span class="o">=</span> <span class="s">TRAC_ADMIN</span>
+<span class="na">@devs</span> <span class="o">=</span> <span class="s">WIKI_VIEW</span>
+<span class="na">*</span> <span class="o">=</span>
+
+<span class="k">[*]</span>
+<span class="na">@admins</span> <span class="o">=</span> <span class="s">TRAC_ADMIN</span>
+<span class="na">*</span> <span class="o">=</span>
+</pre></div><p>
+Then:
+</p>
+<ul><li>everything is blocked (whitelist approach), but
+</li><li>admins get all TRAC_ADMIN everywhere and
+</li><li>devs can view wiki pages.
+</li></ul><p>
+Some repository examples (Browse Source specific):
+</p>
+<div class="code"><pre><span class="c1"># A single repository:</span>
+<span class="k">[repository:test_repo@*]</span>
+<span class="na">john</span> <span class="o">=</span> <span class="s">BROWSER_VIEW, FILE_VIEW</span>
+<span class="c1"># John has BROWSER_VIEW and FILE_VIEW for the entire test_repo</span>
+
+<span class="c1"># The default repository (requires Trac 1.0.2 or later):</span>
+<span class="k">[repository:@*]</span>
+<span class="na">john</span> <span class="o">=</span> <span class="s">BROWSER_VIEW, FILE_VIEW</span>
+<span class="c1"># John has BROWSER_VIEW and FILE_VIEW for the entire default repository</span>
+
+<span class="c1"># All repositories:</span>
+<span class="k">[repository:*@*]</span>
+<span class="na">jack</span> <span class="o">=</span> <span class="s">BROWSER_VIEW, FILE_VIEW</span>
+<span class="c1"># Jack has BROWSER_VIEW and FILE_VIEW for all repositories</span>
+</pre></div><p>
+Very granular repository access:
+</p>
+<div class="code"><pre><span class="c1"># John has BROWSER_VIEW and FILE_VIEW access to trunk/src/some/location/ only</span>
+<span class="k">[repository:test_repo@*/source:trunk/src/some/location/*@*]</span>
+<span class="na">john</span> <span class="o">=</span> <span class="s">BROWSER_VIEW, FILE_VIEW</span>
+
+<span class="c1"># John has BROWSER_VIEW and FILE_VIEW access to only revision 1 of all files at trunk/src/some/location only</span>
+<span class="k">[repository:test_repo@*/source:trunk/src/some/location/*@1]</span>
+<span class="na">john</span> <span class="o">=</span> <span class="s">BROWSER_VIEW, FILE_VIEW</span>
+
+<span class="c1"># John has BROWSER_VIEW and FILE_VIEW access to all revisions of 'somefile' at trunk/src/some/location only </span>
+<span class="k">[repository:test_repo@*/source:trunk/src/some/location/somefile@*]</span>
+<span class="na">john</span> <span class="o">=</span> <span class="s">BROWSER_VIEW, FILE_VIEW</span>
+
+<span class="c1"># John has BROWSER_VIEW and FILE_VIEW access to only revision 1 of 'somefile' at trunk/src/some/location only</span>
+<span class="k">[repository:test_repo@*/source:trunk/src/some/location/somefile@1]</span>
+<span class="na">john</span> <span class="o">=</span> <span class="s">BROWSER_VIEW, FILE_VIEW</span>
+</pre></div><p>
+Note: In order for Timeline to work/visible for John, we must add CHANGESET_VIEW to the above permission list.
+</p>
+<h4 id="MissingFeatures">Missing Features</h4>
+<p>
+Although possible with the DefaultPermissionPolicy handling (see Admin panel), fine-grained permissions still miss those grouping features (see <a class="ext-link" href="http://trac.edgewall.org/intertrac/ticket%3A9573" title="ticket:9573 in Trac project trac"><span class="icon">​</span>#9573</a>, <a class="ext-link" href="http://trac.edgewall.org/intertrac/ticket%3A5648" title="ticket:5648 in Trac project trac"><span class="icon">​</span>#5648</a>). Patches are partially available, see authz_policy.2.patch, part of <a class="ext-link" href="http://trac.edgewall.org/intertrac/ticket%3A6680" title="ticket:6680 in Trac project trac"><span class="icon">​</span>#6680</a>.
+</p>
+<p>
+You cannot do the following:
+</p>
+<div class="code"><pre><span class="k">[groups]</span>
+<span class="na">team1</span> <span class="o">=</span> <span class="s">a, b, c</span>
+<span class="na">team2</span> <span class="o">=</span> <span class="s">d, e, f</span>
+<span class="na">team3</span> <span class="o">=</span> <span class="s">g, h, i</span>
+<span class="na">departmentA</span> <span class="o">=</span> <span class="s">team1, team2</span>
+</pre></div><p>
+Permission groups are not supported either, so you cannot do the following:
+</p>
+<div class="code"><pre><span class="k">[groups]</span>
+<span class="na">permission_level_1</span> <span class="o">=</span> <span class="s">WIKI_VIEW, TICKET_VIEW</span>
+<span class="na">permission_level_2</span>  <span class="o">=</span> <span class="s">permission_level_1, WIKI_MODIFY, TICKET_MODIFY</span>
+<span class="k">[*]</span>
+<span class="na">@team1</span> <span class="o">=</span> <span class="s">permission_level_1</span>
+<span class="na">@team2</span> <span class="o">=</span> <span class="s">permission_level_2</span>
+<span class="na">@team3</span> <span class="o">=</span> <span class="s">permission_level_2, TICKET_CREATE</span>
+</pre></div><h3 id="AuthzSourcePolicy">AuthzSourcePolicy  (mod_authz_svn-like permission policy)</h3>
+<p>
+At the time of this writing, the old granular permissions system from Trac 0.11 and before used for restricting access to the repository has been converted to a permission policy component. But from the user's point of view, this makes little if any difference.
+</p>
+<p>
+That kind of granular permission control needs a definition file, which is the one used by Subversion's mod_authz_svn. 
+More information about this file format and about its usage in Subversion is available in the <a class="ext-link" href="http://svnbook.red-bean.com/en/1.5/svn.serverconfig.pathbasedauthz.html"><span class="icon">​</span>Path-Based Authorization</a> section in the Server Configuration chapter of the svn book.
+</p>
+<p>
+Example:
+</p>
+<div class="code"><pre><span class="k">[/]</span>
+<span class="na">*</span> <span class="o">=</span> <span class="s">r</span>
+
+<span class="k">[/branches/calc/bug-142]</span>
+<span class="na">harry</span> <span class="o">=</span> <span class="s">rw</span>
+<span class="na">sally</span> <span class="o">=</span> <span class="s">r</span>
+
+<span class="k">[/branches/calc/bug-142/secret]</span>
+<span class="na">harry</span> <span class="o">=</span>
+</pre></div><ul><li><strong>/</strong> = <em>Everyone has read access by default</em>
+</li><li><strong>/branches/calc/bug-142</strong> = <em>harry has read/write access, sally read only</em>
+</li><li><strong>/branches/calc/bug-142/secret</strong> = <em>harry has no access, sally has read access (inherited as a sub folder permission)</em>
+</li></ul><h4 id="TracConfiguration">Trac Configuration</h4>
+<p>
+To activate granular permissions you <span class="underline">must</span> specify the <tt>authz_file</tt> option in the <tt>[trac]</tt> section of trac.ini. If this option is set to null or not specified, the permissions will not be used.
+</p>
+<div class="code"><pre><span class="k">[trac]</span>
+<span class="na">authz_file</span> <span class="o">=</span> <span class="s">/path/to/svnaccessfile</span>
+</pre></div><p>
+If you want to support the use of the <tt>[</tt><em>modulename</em><tt>:/</tt><em>some</em><tt>/</tt><em>path</em><tt>]</tt> syntax within the <tt>authz_file</tt>, add:
+</p>
+<div class="code"><pre><span class="na">authz_module_name</span> <span class="o">=</span> <span class="s">modulename</span>
+</pre></div><p>
+where <em>modulename</em> refers to the same repository indicated by the <tt>repository_dir</tt> entry in the <tt>[trac]</tt> section. As an example, if the <tt>repository_dir</tt> entry in the <tt>[trac]</tt> section is <tt>/srv/active/svn/somemodule</tt>, that would yield the following:
+</p>
+<div class="code"><pre><span class="k">[trac]</span>
+<span class="na">authz_file</span> <span class="o">=</span> <span class="s">/path/to/svnaccessfile</span>
+<span class="na">authz_module_name</span> <span class="o">=</span> <span class="s">somemodule</span>
+<span class="err">...</span>
+<span class="na">repository_dir</span> <span class="o">=</span> <span class="s">/srv/active/svn/somemodule </span>
+</pre></div><p>
+where the svn access file, <tt>/path/to/svnaccessfile</tt>, contains entries such as <tt>[somemodule:/some/path]</tt>.
+</p>
+<p>
+<strong>Note:</strong> Usernames inside the Authz file <span class="underline">must</span> be the same as those used inside trac. 
+</p>
+<p>
+As of version 0.12, make sure you have <em>AuthzSourcePolicy</em> included in the permission_policies list in trac.ini, otherwise the authz permissions file will be ignored.
+</p>
+<div class="code"><pre><span class="k">[trac]</span>
+<span class="na">permission_policies</span> <span class="o">=</span> <span class="s">AuthzSourcePolicy, DefaultPermissionPolicy, LegacyAttachmentPolicy</span>
+</pre></div><h4 id="SubversionConfiguration">Subversion Configuration</h4>
+<p>
+The same access file is typically applied to the corresponding Subversion repository using an Apache directive like this:
+</p>
+<div class="code"><pre><span class="nt">&lt;Location</span> <span class="s">/repos</span><span class="nt">&gt;</span>
+  <span class="nb">DAV</span> svn
+  <span class="nb">SVNParentPath</span> <span class="sx">/usr/local/svn</span>
+
+  <span class="c"># our access control policy</span>
+  <span class="nb">AuthzSVNAccessFile</span> <span class="sx">/path/to/svnaccessfile</span>
+<span class="nt">&lt;/Location&gt;</span>
+</pre></div><p>
+For information about how to restrict access to entire projects in a multiple project environment see <a class="ext-link" href="http://trac.edgewall.org/intertrac/wiki%3ATracMultipleProjectsSVNAccess" title="wiki:TracMultipleProjectsSVNAccess in Trac project trac"><span class="icon">​</span>wiki:TracMultipleProjectsSVNAccess</a>.
+</p>
+<h2 id="Debuggingpermissions">Debugging permissions</h2>
+<p>
+In trac.ini set:
+</p>
+<div class="code"><pre><span class="k">[logging]</span>
+<span class="na">log_file</span> <span class="o">=</span> <span class="s">trac.log</span>
+<span class="na">log_level</span> <span class="o">=</span> <span class="s">DEBUG</span>
+<span class="na">log_type</span> <span class="o">=</span> <span class="s">file</span>
+</pre></div><p>
+Display the trac.log to understand what checks are being performed:
+</p>
+<div class="code"><pre>tail -n 0 -f log/trac.log | egrep <span class="s1">'\[perm\]|\[authz_policy\]'</span>
+</pre></div><p>
+See the sourced documentation of the plugin for more info.
+</p>
+<hr />
+<p>
+See also: <a class="wiki" href="TracPermissions.html">TracPermissions</a>,
+<a class="ext-link" href="http://trac-hacks.org/wiki/FineGrainedPageAuthzEditorPlugin"><span class="icon">​</span>TracHacks:FineGrainedPageAuthzEditorPlugin</a> for a simple editor plugin.
+</p>
+</div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/letsmt-trac/wiki/TracFineGrainedPermissions?action=diff&amp;version=3" title="Version 3 by trac">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2015-02-25T21%3A37%3A47Z&amp;precision=second" title="See timeline at Feb 25, 2015, 9:37:47 PM">6 years ago</a></span>
+            <span class="trac-print">Last modified on Feb 25, 2015, 9:37:47 PM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <script type="text/javascript">
+        jQuery.loadStyleSheet("/letsmt-trac/pygments/trac.css", "text/css");
+    </script>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracFineGrainedPermissions?format=txt">Plain Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracFineGrainedPermissions?format=tex">Latex</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracFineGrainedPermissions?format=pdf">Latex-Pdf</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

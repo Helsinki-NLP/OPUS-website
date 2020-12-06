@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      TroubleShooting – LetsMT
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/letsmt-trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/TroubleShooting?format=txt" type="text/x-trac-wiki" title="Plain Text" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/TroubleShooting?format=tex" type="text/x-trac-wiki" title="Latex" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/TroubleShooting?format=pdf" type="text/x-trac-wiki" title="Latex-Pdf" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.letsmt.eu/"><img src="http://stp.lingfil.uu.se/~joerg/LetsMT/letsmt.jpg" alt="LetsMT" width="100" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/letsmt-trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/letsmt-trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="TroubleShooting.html" title="View TroubleShooting">TroubleShooting</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/letsmt-trac/wiki/TroubleShooting?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><h1 id="TroubleShooting">Trouble Shooting</h1>
+<h2 id="Installationproblems">Installation problems</h2>
+<ul><li>xinetd fails after a fresh install (svn server will not run!)
+<pre class="wiki">sudo service xinetd restart
+</pre></li></ul><ul><li>Grid Engine setup fails: Check <a class="wiki" href="GridSetup.html">GridEngine Setup</a> (especially at the end of that page)
+</li></ul><ul><li>hostname -A gives back something like &lt;your_hostname&gt;-&lt;number&gt;.local instead of &lt;your_hostname&gt;
+<pre class="wiki">sudo apt-get purge avahi-daemon
+</pre></li></ul><hr />
+<h2 id="SSLproblems">SSL problems</h2>
+<p>
+See ticket <a class="missing ticket">#160</a>. Should be solved in commit <a class="missing changeset" title="/usr/local/svn/letsmt_mirror does not appear to be a Subversion repository.">[5409]</a>/release 0.50, but creeps up again every now and then.
+</p>
+<blockquote class="citation">
+<p>
+Several newer Perl packages cannot connect to the server via SSL: 
+This is an incompatibility in IO::Socket::SSL.
+<strong>Solution:</strong> Its alternative Net::SSL works fine.
+Sometimes an explicit 'use Net::SSL' suffices.
+You may have to run
+</p>
+</blockquote>
+<pre class="wiki">sudo cpanm Net::SSL
+</pre><blockquote class="citation">
+<p>
+manually (weirdly, although it's in the installation!) to make sure it is properly installed.
+</p>
+</blockquote>
+<blockquote class="citation">
+<p>
+Other packages such as Mojolicious force the use of IO::Socket::SSL if it is installed.
+To solve the problem with them, use this command repeatedly:
+</p>
+</blockquote>
+<pre class="wiki">perl -e 'use IO::Socket::SSL; print $INC{"IO/Socket/SSL.pm"}."\n"'
+</pre><blockquote class="citation">
+<p>
+and remove/rename each file that is reported.
+</p>
+</blockquote>
+<hr />
+<h2 id="Compilinghunalign">Compiling hunalign</h2>
+<p>
+See ticket <a class="missing ticket">#161</a>. Solved in commit <a class="missing changeset" title="/usr/local/svn/letsmt_mirror does not appear to be a Subversion repository.">[5410]</a>/release 0.50.
+</p>
+<blockquote class="citation">
+<p>
+The compilation of hunalign may fail on some systems).
+<strong>Solution:</strong> Call "make" like this:
+</p>
+</blockquote>
+<pre class="wiki">make CC=g++
+</pre><h2 id="SVNbackends">SVN backends</h2>
+<p>
+SVN repositories may get really slow. A possible improvement could be to run
+</p>
+<pre class="wiki">svnadmin pack /path/to/repo
+</pre><p>
+(The repo is probably locked during this type of maintenance).
+</p>
+<p>
+Another idea is to check BDB filesystems instead of the standard FSFS (create with --fs-type=bdb). But according to documentation this would not be better. SVN 1.7. might be faster because of new locking mechanisms?
+</p>
+</div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/letsmt-trac/wiki/TroubleShooting?action=diff&amp;version=13" title="Version 13 by joerg">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2012-09-25T20%3A42%3A31Z&amp;precision=second" title="See timeline at Sep 25, 2012, 8:42:31 PM">8 years ago</a></span>
+            <span class="trac-print">Last modified on Sep 25, 2012, 8:42:31 PM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/TroubleShooting?format=txt">Plain Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/TroubleShooting?format=tex">Latex</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/TroubleShooting?format=pdf">Latex-Pdf</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

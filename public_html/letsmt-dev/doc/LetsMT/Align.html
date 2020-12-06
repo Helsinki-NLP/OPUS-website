@@ -1,0 +1,130 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Align</title>
+<link rel="stylesheet" href="../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#constructor">CONSTRUCTOR</a></li>
+	<li><a href="#methods">METHODS</a></li>
+	<ul>
+
+		<li><a href="#align_resources">align_resources</a></li>
+		<li><a href="#make_align_resource">make_align_resource</a></li>
+		<li><a href="#nr_links">nr_links</a></li>
+		<li><a href="#nr_source_sentences">nr_source_sentences</a></li>
+		<li><a href="#nr_target_sentences">nr_target_sentences</a></li>
+		<li><a href="#link_types">link_types</a></li>
+		<li><a href="#align_cost">align_cost</a></li>
+		<li><a href="#average_align_cost">average_align_cost</a></li>
+		<li><a href="#average_align_confidence">average_align_confidence</a></li>
+	</ul>
+
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>LetsMT::Align - family of modules for sentence alignment</p>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>A factory class to return an object instance of a selected alignment module.</p>
+<p>
+</p>
+<hr />
+<h1><a name="constructor">CONSTRUCTOR</a></h1>
+<pre>
+ $aligner = new LetsMT::Align (method =&gt; 'hunalign|gale|one-to-one|bisent', %params)</pre>
+<p>Return an object instance of the alignment module that is selected with the 'method' argument.
+Available methods:</p>
+<ul>
+<li><strong><a name="hunalign" class="item">Hunalign</a></strong>
+
+</li>
+<li><strong><a name="one_to_one" class="item">One-to-one</a></strong>
+
+</li>
+<li><strong><a name="gale_church" class="item">Gale-Church</a></strong>
+
+</li>
+<li><strong><a name="hunalign_in_bisent_mode" class="item">Hunalign in 'bisent' mode</a></strong>
+
+</li>
+</ul>
+<p>Default is the Hunalign sentence aligner.</p>
+<p>%params is a hash of additional parameters (specific to the alignment method chosen).</p>
+<p>
+</p>
+<hr />
+<h1><a name="methods">METHODS</a></h1>
+<p>
+</p>
+<h2><a name="align_resources">align_resources</a></h2>
+<pre>
+ $AlignRes = $aligner-&gt;align_resources($SrcRes, $TrgRes [, $AlignRes])</pre>
+<p>Align sentences of two given resources ($SrcRes,$TrgRes) in the resource repository.
+Returns the resource object ($AlgRes) that stores the sentence alignment.</p>
+<p>The $AlignRes argument is optional.
+If it is not given, a clone of the $SrcRes is used with the language part of its path replaced
+by the language pair (language of $SrcRes + language of $TrgRes, sorted alphabetically)
+(see make_align_resource).</p>
+<p>
+</p>
+<h2><a name="make_align_resource">make_align_resource</a></h2>
+<pre>
+ $AlignRes = $aligner-&gt;make_align_resource($SrcRes, $TrgRes)</pre>
+<p>Create a resource for storing sentence alignment between $SrcRes and $TrgRes.</p>
+<p>$AlignRes will be a clone of $SrcRes except for the language part of the path.
+The language will be replaced by the language pair taken from the given resources $SrcRes and $TrgRes.</p>
+<p>
+</p>
+<h2><a name="nr_links">nr_links</a></h2>
+<p>How many links exist in the object?</p>
+<p>
+</p>
+<h2><a name="nr_source_sentences">nr_source_sentences</a></h2>
+<p>How many source sentences are there in the object?</p>
+<p>
+</p>
+<h2><a name="nr_target_sentences">nr_target_sentences</a></h2>
+<p>How many target sentences are there in the object?</p>
+<p>
+</p>
+<h2><a name="link_types">link_types</a></h2>
+<p>Which are the link types in the object?</p>
+<p>
+</p>
+<h2><a name="align_cost">align_cost</a></h2>
+<p>What is the total cost of the alignments processed by object?</p>
+<p>
+</p>
+<h2><a name="average_align_cost">average_align_cost</a></h2>
+<p>What is the average cost per alignment processed by the object?</p>
+<p>
+</p>
+<h2><a name="average_align_confidence">average_align_confidence</a></h2>
+<p>What is the average cost per alignment processed by the object?</p>
+
+</body>
+
+</html>

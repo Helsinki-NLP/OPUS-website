@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>20_Encoding</title>
+<link rel="stylesheet" href="../../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>20_Encoding.t - test encoding facilities</p>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>This script tests the following assertions:</p>
+<p>Using <code>letsmt_rest</code>, ...</p>
+<ul>
+<li>
+<p>you can import a file with unicode characters in its name. (import)</p>
+</li>
+<li>
+<p>you can find the file in the repository's upload folder... (show)</p>
+</li>
+<li>
+<p>and the path and the name are correctly encoded.</p>
+</li>
+<li>
+<p>The TMX file is processed,
+where the output is written to an XML file
+in a path corresponding to the content language.</p>
+</li>
+</ul>
+<p>Likewise, communicating via cURL, ...</p>
+<ul>
+<li>
+<p>you can import a file with unicode characters in its name. (PUT storage/...&amp;action=import)</p>
+</li>
+<li>
+<p>you can show the file. (letsmt_rest show -p ...)</p>
+</li>
+<li>
+<p>you can download the copy of the file saved in the repository,
+and its content is as in the original. (PUT storage/...&amp;action=import)</p>
+</li>
+<li>
+<p>the imported file is named correctly.</p>
+</li>
+<li>
+<p>You can set metadata with a utf8 value. (WebService: put_meta)</p>
+</li>
+</ul>
+
+</body>
+
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      WikiRestructuredText – LetsMT
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/letsmt-trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/WikiRestructuredText?format=txt" type="text/x-trac-wiki" title="Plain Text" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/WikiRestructuredText?format=tex" type="text/x-trac-wiki" title="Latex" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/WikiRestructuredText?format=pdf" type="text/x-trac-wiki" title="Latex-Pdf" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.letsmt.eu/"><img src="http://stp.lingfil.uu.se/~joerg/LetsMT/letsmt.jpg" alt="LetsMT" width="100" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/letsmt-trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/letsmt-trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="WikiRestructuredText.html" title="View WikiRestructuredText">WikiRestructuredText</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/letsmt-trac/wiki/WikiRestructuredText?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><h1 id="reStructuredTextSupportinTrac">reStructuredText Support in Trac</h1>
+<p>
+Trac supports <a class="ext-link" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html"><span class="icon">​</span>reStructuredText (RST)</a> as an alternative to wiki markup where <a class="wiki" href="WikiFormatting.html">WikiFormatting</a> is used.
+</p>
+<p>
+From the reStucturedText webpage:
+</p>
+<blockquote>
+<p>
+"<em>reStructuredText is an easy-to-read, what-you-see-is-what-you-get plaintext markup syntax and parser   system. It is useful for in-line program documentation (such as Python docstrings), for quickly creating  simple web pages, and for standalone documents. reStructuredText is designed for extensibility for  specific application domains. </em>"
+</p>
+</blockquote>
+<p>
+If you want a file from your Subversion repository to be displayed as reStructuredText in the Trac source browser, set <tt>text/x-rst</tt> as the value for the Subversion property <tt>svn:mime-type</tt>. See <a class="ext-link" href="http://trac.edgewall.org/intertrac/source%3A/trunk/INSTALL" title="source:/trunk/INSTALL in Trac project trac"><span class="icon">​</span>this example</a>.
+</p>
+<h3 id="Requirements">Requirements</h3>
+<p>
+To activate RST support in Trac, install the python docutils package: <tt>easy_install docutils</tt>. If not already available on your operating system, you can download it at the <a class="ext-link" href="http://docutils.sourceforge.net/rst.html"><span class="icon">​</span>RST Website</a>.
+</p>
+<p>
+Do not use the package manager of your OS, eg <tt>apt-get install python-docutils</tt>, because Trac will not find docutils then.
+</p>
+<h3 id="MoreinformationonRST">More information on RST</h3>
+<ul><li>reStructuredText Website -- <a class="ext-link" href="http://docutils.sourceforge.net/rst.html"><span class="icon">​</span>http://docutils.sourceforge.net/rst.html</a>
+</li><li>RST Quick Reference -- <a class="ext-link" href="http://docutils.sourceforge.net/docs/rst/quickref.html"><span class="icon">​</span>http://docutils.sourceforge.net/docs/rst/quickref.html</a>
+</li></ul><hr />
+<h2 id="UsingRSTinTrac">Using RST in Trac</h2>
+<p>
+To specify that a block of text should be parsed using RST, use the <em>rst</em> processor. 
+</p>
+<h3 id="TracLinksinreStructuredText"><a class="wiki" href="TracLinks.html">TracLinks</a> in reStructuredText</h3>
+<ul><li>Trac provides a custom RST directive <tt>trac::</tt> to allow <a class="wiki" href="TracLinks.html">TracLinks</a> from within RST text.
+</li></ul><table class="wiki">
+<tr><th> Wiki Markup </th><th> Display 
+</th></tr><tr><td><pre class="wiki">{{{
+#!rst
+This is a reference to |a ticket|
+
+.. |a ticket| trac:: #42
+}}}
+</pre></td><td><div class="document">
+<p>This is a reference to <a class="missing reference external" href="WikiRestructuredText.html">#42</a></p>
+</div>
+</td></tr></table>
+<ul><li>Trac allows an even easier way of creating <a class="wiki" href="TracLinks.html">TracLinks</a> in RST, using the custom <tt>:trac:</tt> role.
+</li></ul><table class="wiki">
+<tr><th> Wiki Markup </th><th> Display 
+</th></tr><tr><td><pre class="wiki">{{{
+#!rst
+This is a reference to ticket `#12`:trac:
+
+To learn how to use Trac, see `TracGuide`:trac:
+}}}
+</pre></td><td><div class="document">
+<p>This is a reference to ticket <a class="missing reference external" href="WikiRestructuredText.html">#12</a></p>
+<p>To learn how to use Trac, see <a class="reference external" href="TracGuide.html">TracGuide</a></p>
+</div>
+</td></tr></table>
+<blockquote>
+<p>
+For a complete example of all uses of the <tt>:trac:</tt> role, please see <a class="wiki" href="WikiRestructuredTextLinks.html">WikiRestructuredTextLinks</a>. 
+</p>
+</blockquote>
+<h3 id="SyntaxhighlightinginreStructuredText">Syntax highlighting in reStructuredText</h3>
+<p>
+There is a directive for doing <a class="wiki" href="TracSyntaxColoring.html">TracSyntaxColoring</a> in RST as well. The directive is called code-block:
+</p>
+<table class="wiki">
+<tr><th> Wiki Markup </th><th> Display 
+</th></tr><tr><td><pre class="wiki">{{{
+#!rst
+
+.. code-block:: python
+
+   class Test:
+
+       def TestFunction(self):
+           pass
+
+}}}
+</pre></td><td><div class="document">
+<div class="code"><pre><span class="k">class</span> <span class="nc">Test</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">TestFunction</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">pass</span>
+</pre></div></div>
+</td></tr></table>
+<p>
+Note the need to indent the code at least one character after the <tt>.. code-block</tt> directive.
+</p>
+<h3 id="WikiMacrosinreStructuredText">Wiki Macros in reStructuredText</h3>
+<p>
+To enable <a class="wiki" href="WikiMacros.html">Wiki Macros</a> in RST, you use the same directive as for syntax highlighting, ie code-block:
+</p>
+<table class="wiki">
+<tr><th> Wiki Markup </th><th> Display 
+</th></tr><tr><td><pre class="wiki">{{{
+#!rst
+
+.. code-block:: RecentChanges
+
+   Trac,3
+
+}}}
+</pre></td><td><div class="document">
+<div><h3>Feb 25, 2015</h3><ul><li><a href="TracQuery.html">TracQuery</a><small> (<a href="http://opus.nlpl.eu/letsmt-trac/wiki/TracQuery?action=diff&amp;version=3">diff</a>)</small>
+</li><li><a href="TracReports.html">TracReports</a><small> (<a href="http://opus.nlpl.eu/letsmt-trac/wiki/TracReports?action=diff&amp;version=3">diff</a>)</small>
+</li><li><a href="TracLogging.html">TracLogging</a><small> (<a href="http://opus.nlpl.eu/letsmt-trac/wiki/TracLogging?action=diff&amp;version=2">diff</a>)</small>
+</li></ul></div></div>
+</td></tr></table>
+<p>
+Or a more concise Wiki Macro-like syntax is also available, using the <tt>:code-block:</tt> role:
+</p>
+<table class="wiki">
+<tr><th> Wiki Markup </th><th> Display 
+</th></tr><tr><td><pre class="wiki">{{{
+#!rst
+
+:code-block:`RecentChanges:Trac,3`
+}}}
+</pre></td><td><div class="document">
+<p><div><h3>Feb 25, 2015</h3><ul><li><a href="TracQuery.html">TracQuery</a><small> (<a href="http://opus.nlpl.eu/letsmt-trac/wiki/TracQuery?action=diff&amp;version=3">diff</a>)</small>
+</li><li><a href="TracReports.html">TracReports</a><small> (<a href="http://opus.nlpl.eu/letsmt-trac/wiki/TracReports?action=diff&amp;version=3">diff</a>)</small>
+</li><li><a href="TracLogging.html">TracLogging</a><small> (<a href="http://opus.nlpl.eu/letsmt-trac/wiki/TracLogging?action=diff&amp;version=2">diff</a>)</small>
+</li></ul></div></p>
+</div>
+</td></tr></table>
+<h3 id="BiggerRSTExample">Bigger RST Example</h3>
+<p>
+The example below should be self-explanatory:
+</p>
+<table class="wiki">
+<tr><th> Wiki Markup </th><th> Display 
+</th></tr><tr><td><pre class="wiki">{{{
+#!rst
+FooBar Header
+=============
+reStructuredText is **nice**. It has its own webpage_.
+
+A table:
+
+=====  =====  ======
+   Inputs     Output
+------------  ------
+  A      B    A or B
+=====  =====  ======
+False  False  False
+True   False  True
+False  True   True
+True   True   True
+=====  =====  ======
+
+RST TracLinks
+-------------
+
+See also ticket `#42`:trac:.
+
+.. _webpage: http://docutils.sourceforge.net/rst.html
+}}}</pre>
+</td><td><div class="document" id="foobar-header">
+<h1 class="title">FooBar Header</h1>
+<p>reStructuredText is <strong>nice</strong>. It has its own <a class="reference external" href="http://docutils.sourceforge.net/rst.html">webpage</a>.</p>
+<p>A table:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="31%" />
+<col width="31%" />
+<col width="38%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head" colspan="2">Inputs</th>
+<th class="head">Output</th>
+</tr>
+<tr><th class="head">A</th>
+<th class="head">B</th>
+<th class="head">A or B</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>False</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr><td>True</td>
+<td>False</td>
+<td>True</td>
+</tr>
+<tr><td>False</td>
+<td>True</td>
+<td>True</td>
+</tr>
+<tr><td>True</td>
+<td>True</td>
+<td>True</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="rst-traclinks">
+<h1>RST TracLinks</h1>
+<p>See also ticket <a class="missing reference external" href="WikiRestructuredText.html">#42</a>.</p>
+</div>
+</div>
+</td></tr></table>
+<hr />
+<p>
+See also: <a class="wiki" href="WikiRestructuredTextLinks.html">WikiRestructuredTextLinks</a>, <a class="wiki" href="WikiProcessors.html">WikiProcessors</a>, <a class="wiki" href="WikiFormatting.html">WikiFormatting</a>
+</p>
+</div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/letsmt-trac/wiki/WikiRestructuredText?action=diff&amp;version=3" title="Version 3 by trac">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2015-02-25T21%3A37%3A47Z&amp;precision=second" title="See timeline at Feb 25, 2015, 9:37:47 PM">6 years ago</a></span>
+            <span class="trac-print">Last modified on Feb 25, 2015, 9:37:47 PM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <script type="text/javascript">
+        jQuery.loadStyleSheet("/letsmt-trac/pygments/trac.css", "text/css");
+    </script>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/WikiRestructuredText?format=txt">Plain Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/WikiRestructuredText?format=tex">Latex</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/WikiRestructuredText?format=pdf">Latex-Pdf</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

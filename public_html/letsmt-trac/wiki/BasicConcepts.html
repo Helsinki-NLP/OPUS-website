@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      BasicConcepts – LetsMT
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/letsmt-trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/BasicConcepts?format=txt" type="text/x-trac-wiki" title="Plain Text" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/BasicConcepts?format=tex" type="text/x-trac-wiki" title="Latex" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/BasicConcepts?format=pdf" type="text/x-trac-wiki" title="Latex-Pdf" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.letsmt.eu/"><img src="http://stp.lingfil.uu.se/~joerg/LetsMT/letsmt.jpg" alt="LetsMT" width="100" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/letsmt-trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/letsmt-trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="BasicConcepts.html" title="View BasicConcepts">BasicConcepts</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/letsmt-trac/wiki/BasicConcepts?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><h1 id="BasicConceptsoftheLetsMTrepository">Basic Concepts of the LetsMT! repository</h1>
+<p>
+Here is a list of very basic concepts of the LetsMT repository:
+</p>
+<p>
+<strong>Corpus</strong> = <span class="underline">Collection</span> of text documents in XML
+</p>
+<ul><li>several (many!) documents from one domain &amp; provider
+</li><li>may contain data in <span class="underline">several</span> languages
+</li><li>content &amp; meta-data
+</li></ul><p>
+<strong>Parallel Corpus</strong> = <span class="underline">Collection</span> of parallel documents
+</p>
+<ul><li>a corpus with (many!) documents in <span class="underline">various</span> languages
+</li><li>pairwise sentence alignments between corresponding documents
+</li></ul><p>
+<strong>Parallel documents</strong> in LetsMT are documents that
+</p>
+<ul><li>exist in several languages
+</li><li>are completely translated
+</li></ul><p>
+A pair of aligned documents is usally called a <strong>bitext</strong>.
+</p>
+<h2 id="Sharedresources">Shared resources</h2>
+<p>
+Each corpus is a unique resource with a unique name. However, a corpus can be shared among several users and there might be several versions of that corpus. This means a corpus can grow, or shrink or change in various ways (include new documents, included documents may change ...). In order to provide a repository with data integrity for all users we introduce <strong>branching</strong> as the main mechanism for data sharing.
+</p>
+<p>
+Basically a shared resource (corpus) is handled as a branch of the original corpus and may develop independent of the original version (this is specific to our version-controlled solution for storing repositories). In fact, the original corpus is also a branch owned by the initial provider of that corpus. To sum up, this means that a user who owns or shares a corpus will have his/her own branch and only this user may modify files and permissions in that branch. The name of that branch is simply the unique user name!
+</p>
+<p>
+Internally the structure of the LetsMT repository looks like this (example):
+</p>
+<pre class="wiki">storage/CORPUS_1
+storage/CORPUS_1/USER_1
+storage/CORPUS_1/USER_1/xml
+....
+storage/CORPUS_1/USER_2
+storage/CORPUS_1/USER_2/xml
+...
+storage/CORPUS_2
+storage/CORPUS_2/USER_6
+...
+</pre><p>
+Obviously, users can only share resources from others for which they have permissions. These resources can be "public" or "shared" via group membership (each user is a member of one or several groups). A branch is created at the time a user decides to share a new resource. Updating this branch with information from other branches (merging) is not supported. This means that each branch will develop independent of all others from the time of creation.
+</p>
+<p>
+Externally branches will not be visible for LetsMT users. Each user will be able to browse through his/her own resources (including shared resources) but also through available resources provided by others. However, before using resources by others he/she has to select those resources to be included in his/her own repository/list of resources (which internally means that a new branch is created from that resource).
+</p>
+<p>
+The big advantage of branching <strong>data integrity</strong>: users do not depend on others and their modifications. The disadvantage is that users who share a resource do not have access to extensions/improvements of the original corpus. However, a mechanism that informs users who share a resource about new revisions could be implemented. These users can then decide to drop their own branch and to creata a new copy (branch) of the fresh revision.
+</p>
+<p>
+A merging function could possibly also be implemented but this would require proper conflict handling via appropriate interfaces.
+</p>
+</div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/letsmt-trac/wiki/BasicConcepts?action=diff&amp;version=3" title="Version 3 by joerg">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2010-11-19T13%3A56%3A14Z&amp;precision=second" title="See timeline at Nov 19, 2010, 1:56:14 PM">10 years ago</a></span>
+            <span class="trac-print">Last modified on Nov 19, 2010, 1:56:14 PM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/BasicConcepts?format=txt">Plain Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/BasicConcepts?format=tex">Latex</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/BasicConcepts?format=pdf">Latex-Pdf</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

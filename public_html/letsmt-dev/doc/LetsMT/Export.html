@@ -1,0 +1,137 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Export</title>
+<link rel="stylesheet" href="../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#constructor">CONSTRUCTOR</a></li>
+	<li><a href="#class_methods">CLASS METHODS</a></li>
+	<ul>
+
+		<li><a href="#filter_settings">Filter settings</a></li>
+		<ul>
+
+			<li><a href="#max"><code>max</code></a></li>
+			<li><a href="#skip"><code>skip</code></a></li>
+			<li><a href="#link_type"><code>link_type</code></a></li>
+		</ul>
+
+		<li><a href="#reset"><code>reset</code></a></li>
+	</ul>
+
+	<li><a href="#instance_methods">INSTANCE METHODS</a></li>
+	<ul>
+
+		<li><a href="#export_resource"><code>export_resource</code></a></li>
+		<li><a href="#open_reader"><code>open_reader</code></a></li>
+		<li><a href="#open_writer___open"><code>open_writer</code> | <code>open</code></a></li>
+		<li><a href="#export"><code>export</code></a></li>
+	</ul>
+
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>LetsMT::Export - family of modules for exporting data</p>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>Export resources from the repository into various formats.</p>
+<p>This parent class is rarely called directly.</p>
+<p>
+</p>
+<hr />
+<h1><a name="constructor">CONSTRUCTOR</a></h1>
+<pre>
+ $exporter = new LetsMT::Export ( -verbose =&gt; 1, local_root =&gt; '...' )</pre>
+<p>Construct a new export object.</p>
+<p>
+</p>
+<hr />
+<h1><a name="class_methods">CLASS METHODS</a></h1>
+<p>
+</p>
+<h2><a name="filter_settings">Filter settings</a></h2>
+<p>With two input parameters <code>$filter</code> and <code>$value</code>, set a filter property.
+With one input <code>$filter</code>, read the filter's respective setting.</p>
+<p>
+</p>
+<h3><a name="max"><code>max</code></a></h3>
+<pre>
+ $exporter-&gt;max ($filter, $count)
+ $count = $exporter-&gt;max ($filter)</pre>
+<p>Read at most <code>$count</code> data records.</p>
+<p>
+</p>
+<h3><a name="skip"><code>skip</code></a></h3>
+<pre>
+ $skips = $exporter-&gt;skip ($filter)
+ $exporter-&gt;skip ($filter, $skips)</pre>
+<p>Skip <code>$skips</code> data records.</p>
+<p>
+</p>
+<h3><a name="link_type"><code>link_type</code></a></h3>
+<pre>
+ $exporter-&gt;link_type ($filter, $type)
+ $type = $exporter-&gt;link_type ($filter)</pre>
+<p>Return only sentence alignments of a certain type <code>$filter</code>.</p>
+<p>The <code>link_type</code> filter is only useful for parallel corpora.
+The link type (<code>$type</code>) is a simple string, for example, '1:1' to require one-to-one links.</p>
+<p>
+</p>
+<h2><a name="reset"><code>reset</code></a></h2>
+<pre>
+ $exporter-&gt;reset ($filter)</pre>
+<p>Reset exporter filters and counters.</p>
+<p>
+</p>
+<hr />
+<h1><a name="instance_methods">INSTANCE METHODS</a></h1>
+<p>
+</p>
+<h2><a name="export_resource"><code>export_resource</code></a></h2>
+<pre>
+ $exporter-&gt;export_resource($FromResource,$ToResource,$FromFormat,$ToFormat)</pre>
+<p>Reads data from $FromResource and writes them to $ToResource.
+$FromFormat and $ToFormat are optional and may be infered from the
+path of the given resources (see <a href="./..//LetsMT/Resource.html">the LetsMT::Resource manpage</a>::type).</p>
+<p><code>$FromResource</code>, <code>$ToResource</code> .. LetsMTResource objects</p>
+<p><code>$FromType</code>, <code>$ToType</code> .. strings</p>
+<p>See <a href="./..//LetsMT/Export/Reader.html">the LetsMT::Export::Reader manpage</a> and <a href="./..//LetsMT/Export/Writer.html">the LetsMT::Export::Writer manpage</a>
+for supported resource formats.</p>
+<p>Returns a list of resources (LetsMT::Resource objects) created while exporting.</p>
+<p>
+</p>
+<h2><a name="open_reader"><code>open_reader</code></a></h2>
+<p>
+</p>
+<h2><a name="open_writer___open"><code>open_writer</code> | <code>open</code></a></h2>
+<p>
+</p>
+<h2><a name="export"><code>export</code></a></h2>
+<p>Export (read) a given resource and write with the given writer.</p>
+
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      LetsMTsSystemComponents – LetsMT
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/letsmt-trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/LetsMTsSystemComponents?format=txt" type="text/x-trac-wiki" title="Plain Text" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/LetsMTsSystemComponents?format=tex" type="text/x-trac-wiki" title="Latex" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/LetsMTsSystemComponents?format=pdf" type="text/x-trac-wiki" title="Latex-Pdf" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.letsmt.eu/"><img src="http://stp.lingfil.uu.se/~joerg/LetsMT/letsmt.jpg" alt="LetsMT" width="100" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/letsmt-trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/letsmt-trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="LetsMTsSystemComponents.html" title="View LetsMTsSystemComponents">LetsMTsSystemComponents</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/letsmt-trac/wiki/LetsMTsSystemComponents?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><h1 id="LetsMTsSystemComponents">LetsMT's System Components</h1>
+<p>
+The LetsMT system consists of various components each serving its own purpose (like data storage, task execution, etc.). All components can be installed on the same machine but can also be distributed across several machines on a network for scalability. The following shows an overview of the system and describes each component, its role and services it consists of.
+</p>
+<h2 id="RRServer">RR Server</h2>
+<p>
+Only one DB server exists for the system.
+</p>
+<h3 id="Roles">Roles</h3>
+<ul><li>Holds and servers the meta data and group/permissino DB for the whole system. 
+</li><li>Offers web services to serve meta and group data
+</li><li>Resolves storage location adresses via meta DB
+</li></ul><h3 id="Services">Services</h3>
+<ul><li>Meta DB, Group DB
+</li><li>WebServices
+</li><li>SGE submit host?
+</li></ul><h2 id="StorageServer">Storage Server</h2>
+<p>
+Several storage server can exist in the system to scale space and improve accessibility.
+</p>
+<h3 id="Roles1">Roles</h3>
+<ul><li>Holds a storage backend and serves the data in it
+</li><li>Offers web services to serve the storage data
+</li><li>Submits batch jobs to SGE master
+</li></ul><h3 id="Services1">Services</h3>
+<ul><li>Storage Backend
+</li><li>WebServices
+</li><li>SGE submit host
+</li></ul><h2 id="FrontendClient">Frontend Client</h2>
+<p>
+(Several) front end clients can use the web services to talk to the DB and Storage Servers
+</p>
+<h3 id="Roles2">Roles</h3>
+<ul><li>Uploads user data to the storage servers
+</li><li>Starts actions
+</li><li>writes and requests meta- and group data on DB server
+</li></ul><h3 id="Services2">Services</h3>
+<ul><li>WebServices
+</li></ul><h2 id="SGEMaster">SGE Master</h2>
+<p>
+One standart SGE master with a queue 'letsmt' to execute import, conversion, alignment and other jobs on the SGE execution clients
+</p>
+<h2 id="SGEClient">SGE Client</h2>
+<p>
+(Several) SGE clients execute the batch jobs
+</p>
+<h3 id="Roles3">Roles</h3>
+<ul><li>Execute commands defined in job description files that they fetch from the storage servers. 
+</li><li>Resulting files and logs are uploaded back to the storage server
+</li><li>Meta data is written and updated on the meta DB during the whole job execution to inform about status and progress
+</li></ul><h3 id="Services3">Services</h3>
+<ul><li>WebServices 
+</li><li>SGE execution client
+</li></ul></div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/letsmt-trac/wiki/LetsMTsSystemComponents?action=diff&amp;version=6" title="Version 6 by zumpe">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2012-01-16T14%3A00%3A24Z&amp;precision=second" title="See timeline at Jan 16, 2012, 2:00:24 PM">9 years ago</a></span>
+            <span class="trac-print">Last modified on Jan 16, 2012, 2:00:24 PM</span>
+          </div>
+        
+        
+      </div>
+      
+    <div id="attachments">
+        <h3 class="foldable">Attachments <span class="trac-count">(1)</span></h3>
+        <div>
+          <ul>
+              <li>
+    <a href="http://opus.nlpl.eu/letsmt-trac/attachment/wiki/LetsMTsSystemComponents/DistributedSystemOverview-1.jpg" title="View attachment">DistributedSystemOverview-1.jpg</a><a href="http://opus.nlpl.eu/letsmt-trac/raw-attachment/wiki/LetsMTsSystemComponents/DistributedSystemOverview-1.jpg" class="trac-rawlink" title="Download">​</a>
+       (<span title="49539 bytes">48.4 KB</span>) -
+      added by <em>zumpe</em> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2011-11-17T13%3A33%3A31Z&amp;precision=second" title="See timeline at Nov 17, 2011, 1:33:31 PM">9 years ago</a>.
+                <q>System Components Overview</q>
+              </li>
+          </ul>
+          <p>
+            Download all attachments as: <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/zip-attachment/wiki/LetsMTsSystemComponents/">.zip</a>
+          </p>
+        </div>
+    </div>
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/LetsMTsSystemComponents?format=txt">Plain Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/LetsMTsSystemComponents?format=tex">Latex</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/LetsMTsSystemComponents?format=pdf">Latex-Pdf</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

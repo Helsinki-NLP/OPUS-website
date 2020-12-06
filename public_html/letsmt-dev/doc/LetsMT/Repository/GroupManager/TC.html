@@ -1,0 +1,125 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TC</title>
+<link rel="stylesheet" href="../../../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#methods">METHODS</a></li>
+	<ul>
+
+		<li><a href="#drop_tables"><code>drop_tables</code></a></li>
+		<li><a href="#create_group"><code>create_group</code></a></li>
+		<li><a href="#delete_group"><code>delete_group</code></a></li>
+		<li><a href="#delete_user_recursive"><code>delete_user_recursive</code></a></li>
+		<li><a href="#get_group"><code>get_group</code></a></li>
+		<li><a href="#group_exists"><code>group_exists</code></a></li>
+		<li><a href="#read_group"><code>read_group</code></a></li>
+		<li><a href="#add_user_to_group"><code>add_user_to_group</code></a></li>
+		<li><a href="#is_member"><code>is_member</code></a></li>
+		<li><a href="#get_users_in_group"><code>get_users_in_group</code></a></li>
+		<li><a href="#get_groups_for_user"><code>get_groups_for_user</code></a></li>
+		<li><a href="#get_user_info"><code>get_user_info</code></a></li>
+		<li><a href="#set_user_info"><code>set_user_info</code></a></li>
+		<li><a href="#add_user_info"><code>add_user_info</code></a></li>
+		<li><a href="#del_user_info"><code>del_user_info</code></a></li>
+	</ul>
+
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>LetsMT::Repository::GroupManager - a group manager</p>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>This is the group manager API. Using sub modules directly is no-no.</p>
+<p>
+</p>
+<hr />
+<h1><a name="methods">METHODS</a></h1>
+<p>
+</p>
+<h2><a name="drop_tables"><code>drop_tables</code></a></h2>
+<p>Use with care!</p>
+<p>
+</p>
+<h2><a name="create_group"><code>create_group</code></a></h2>
+<p>
+</p>
+<h2><a name="delete_group"><code>delete_group</code></a></h2>
+<p>
+</p>
+<h2><a name="delete_user_recursive"><code>delete_user_recursive</code></a></h2>
+<p>
+</p>
+<h2><a name="get_group"><code>get_group</code></a></h2>
+<p>
+</p>
+<h2><a name="group_exists"><code>group_exists</code></a></h2>
+<p>
+</p>
+<h2><a name="read_group"><code>read_group</code></a></h2>
+<pre>
+ $xml = $gm-&gt;read_group ($gid)</pre>
+<p>Search for group <code>$gid</code> and return all users in it, if any.</p>
+<p>
+</p>
+<h2><a name="add_user_to_group"><code>add_user_to_group</code></a></h2>
+<p>
+</p>
+<h2><a name="is_member"><code>is_member</code></a></h2>
+<p>
+</p>
+<h2><a name="get_users_in_group"><code>get_users_in_group</code></a></h2>
+<p>
+</p>
+<h2><a name="get_groups_for_user"><code>get_groups_for_user</code></a></h2>
+<p>
+</p>
+<h2><a name="get_user_info"><code>get_user_info</code></a></h2>
+<p>Get information about a given user.
+Returns a reference to a hash with key-value pairs.</p>
+<p>
+</p>
+<h2><a name="set_user_info"><code>set_user_info</code></a></h2>
+<p>Set user information in terms of key-value pairs.
+User information will be stored in the user's group.
+This function overwrites existing values.</p>
+<p>
+</p>
+<h2><a name="add_user_info"><code>add_user_info</code></a></h2>
+<p>Add user information in terms of key-value pairs.
+User information will be stored in the user's group.
+Existing values will stay in the database.</p>
+<p>
+</p>
+<h2><a name="del_user_info"><code>del_user_info</code></a></h2>
+<p>Delete information about a specific user from the User's group database.
+The given hash specifies keys and values to be deleted. Undefined values
+or '*' cause the entire key to be deleted.
+With an empty hash, the entire record will be deleted (don't do it!)</p>
+
+</body>
+
+</html>

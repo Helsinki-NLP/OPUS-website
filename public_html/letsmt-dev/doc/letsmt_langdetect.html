@@ -1,0 +1,98 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>letsmt_langdetect</title>
+<link rel="stylesheet" href="pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#usage">USAGE</a></li>
+	<li><a href="#options">OPTIONS</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<ul>
+
+		<li><a href="#in_language_detection_mode_">In language detection mode:</a></li>
+		<li><a href="#in_training_mode___n__">In training mode (-n):</a></li>
+	</ul>
+
+	<li><a href="#license">LICENSE</a></li>
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>letsmt_langdetect - try to detect the language of a given file</p>
+<p>
+</p>
+<hr />
+<h1><a name="usage">USAGE</a></h1>
+<pre>
+ # detect language of a given file:
+ letsmt_langdetect [-u user] [-s slot] [-p] file</pre>
+<pre>
+ # create a new language model for language 'lang' from a given file
+ letsmt_langdetect [-u user] [-s slot] [-p] -n lang file</pre>
+<p>
+</p>
+<hr />
+<h1><a name="options">OPTIONS</a></h1>
+<p>If you want to use it for resources in the repository:</p>
+<pre>
+ -s slot .......... specify a slot
+ -u user .......... specify a repository username
+ -p path/to/file .. relative path to the resource</pre>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>
+</p>
+<h2><a name="in_language_detection_mode_">In language detection mode:</a></h2>
+<p>The script simply returns a (space-separated) list of possible languages.</p>
+<p>
+</p>
+<h2><a name="in_training_mode___n__">In training mode (-n):</a></h2>
+<p>The script tries to install the language model in the central LM home
+directory. This fails if you do not have permissions to create files
+there or if the file already exists. In that case, letsmt_langdetect
+will try to safe the file in the current directory.</p>
+<p>'lang' can be a valid ISO639 code or a valid language
+name. Internally, this will be converted into a ISO639 2-letter code
+if possible. This code will be used to store the language model (for
+example 'en.lm' for English).</p>
+<p>
+</p>
+<hr />
+<h1><a name="license">LICENSE</a></h1>
+<p>This program is part of LetsMT! Resource Repository.</p>
+<p>LetsMT! Resource Repository is free software: you can redistribute it
+and/or modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.</p>
+<p>LetsMT! Resource Repository is distributed in the hope that it will be
+useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+General Public License for more details.</p>
+<p>You should have received a copy of the GNU General Public License
+along with LetsMT! Resource Repository.  If not, see
+<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>.</p>
+
+</body>
+
+</html>

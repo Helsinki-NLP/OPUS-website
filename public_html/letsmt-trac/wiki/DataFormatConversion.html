@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      DataFormatConversion – LetsMT
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/letsmt-trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/DataFormatConversion?format=txt" type="text/x-trac-wiki" title="Plain Text" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/DataFormatConversion?format=tex" type="text/x-trac-wiki" title="Latex" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/DataFormatConversion?format=pdf" type="text/x-trac-wiki" title="Latex-Pdf" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.letsmt.eu/"><img src="http://stp.lingfil.uu.se/~joerg/LetsMT/letsmt.jpg" alt="LetsMT" width="100" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/letsmt-trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/letsmt-trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="DataFormatConversion.html" title="View DataFormatConversion">DataFormatConversion</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/letsmt-trac/wiki/DataFormatConversion?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><h1 id="Toolsforconvertingbetweenvariousdataformats">Tools for converting between various data formats</h1>
+<ul><li>Localization files
+<ul><li><a class="ext-link" href="http://code.google.com/p/m4loc/"><span class="icon">​</span>http://code.google.com/p/m4loc/</a>
+</li></ul></li></ul><ul><li>HTML &amp; XML
+<ul><li><a class="ext-link" href="http://tidy.sourceforge.net/"><span class="icon">​</span>http://tidy.sourceforge.net/</a>
+</li><li><a class="ext-link" href="http://www.crummy.com/software/BeautifulSoup/"><span class="icon">​</span>http://www.crummy.com/software/BeautifulSoup/</a>
+</li><li>boilerplate detection: <a class="ext-link" href="http://www.l3s.de/~kohlschuetter/boilerplate/"><span class="icon">​</span>http://www.l3s.de/~kohlschuetter/boilerplate/</a>
+</li><li><a class="ext-link" href="http://code.google.com/p/justext/"><span class="icon">​</span>http://code.google.com/p/justext/</a> (removes boilerplates)
+</li><li>bootcat: <a class="ext-link" href="http://bootcat.sslmit.unibo.it/"><span class="icon">​</span>http://bootcat.sslmit.unibo.it/</a> (and the wacky project: <a class="ext-link" href="http://wacky.sslmit.unibo.it"><span class="icon">​</span>http://wacky.sslmit.unibo.it</a>)
+</li><li><a class="ext-link" href="http://www.nljubesic.net/resources/tools/webcontentextractor/"><span class="icon">​</span>http://www.nljubesic.net/resources/tools/webcontentextractor/</a>
+</li></ul></li></ul><ul><li>PDF
+<ul><li>pdftotext as part of xpdf (<a class="ext-link" href="http://www.foolabs.com/xpdf/home.html"><span class="icon">​</span>http://www.foolabs.com/xpdf/home.html</a>)
+</li><li>Multivalent: <a class="ext-link" href="http://multivalent.sourceforge.net/"><span class="icon">​</span>http://multivalent.sourceforge.net/</a>
+</li><li>PDFBox: <a class="ext-link" href="http://pdfbox.apache.org/"><span class="icon">​</span>http://pdfbox.apache.org/</a>
+</li><li>Tika: <a class="ext-link" href="http://tika.apache.org/"><span class="icon">​</span>http://tika.apache.org/</a>
+</li><li>pdftoxml: <a class="ext-link" href="http://pdftoxml.sourceforge.net/"><span class="icon">​</span>http://pdftoxml.sourceforge.net/</a>
+</li><li>Poppler: <a class="ext-link" href="http://poppler.freedesktop.org/"><span class="icon">​</span>http://poppler.freedesktop.org/</a> (GPL version of Xpdf)
+</li><li>layout-aware text extraction: lapdftotext: <a class="ext-link" href="http://code.google.com/p/lapdftext/"><span class="icon">​</span>http://code.google.com/p/lapdftext/</a>
+</li><li>pdftohtml: <a class="ext-link" href="http://pdftohtml.sourceforge.net/"><span class="icon">​</span>http://pdftohtml.sourceforge.net/</a>
+</li><li>pdftoword: <a class="ext-link" href="http://www.pdftoword.com/"><span class="icon">​</span>http://www.pdftoword.com/</a>
+</li><li>Perl &amp; PDF: <a class="ext-link" href="http://www.perl.com/pub/2007/09/20/pdf-processing-with-perl.html"><span class="icon">​</span>http://www.perl.com/pub/2007/09/20/pdf-processing-with-perl.html</a>
+<ul><li>interesting module: <a class="ext-link" href="http://search.cpan.org/~leocharre/PDF-OCR2-1.20/lib/PDF/OCR2.pod"><span class="icon">​</span>http://search.cpan.org/~leocharre/PDF-OCR2-1.20/lib/PDF/OCR2.pod</a>
+</li><li><a class="ext-link" href="http://search.cpan.org/~larslund/PDF-Reuse-0.35/Reuse.pm"><span class="icon">​</span>http://search.cpan.org/~larslund/PDF-Reuse-0.35/Reuse.pm</a>
+</li><li><a class="ext-link" href="http://search.cpan.org/dist/PDF-API2/lib/PDF/API2.pm"><span class="icon">​</span>http://search.cpan.org/dist/PDF-API2/lib/PDF/API2.pm</a> ($pdf = PDF::API2-&gt;open('my/old.pdf');print $pdf-&gt;stringify;)
+</li><li><a class="ext-link" href="http://search.cpan.org/dist/CAM-PDF/lib/CAM/PDF.pm"><span class="icon">​</span>http://search.cpan.org/dist/CAM-PDF/lib/CAM/PDF.pm</a>
+</li><li><a class="ext-link" href="http://search.cpan.org/~antro/PDF-111/PDF.pm"><span class="icon">​</span>http://search.cpan.org/~antro/PDF-111/PDF.pm</a>
+</li></ul></li></ul></li></ul><ul><li>Word
+<ul><li>antiword (<a class="ext-link" href="http://www.winfield.demon.nl/"><span class="icon">​</span>http://www.winfield.demon.nl/</a>)
+</li><li>abiword <a class="ext-link" href="http://www.abisource.com/"><span class="icon">​</span>http://www.abisource.com/</a>
+<ul><li>on command-line: abiword --to=txt document.doc. 
+</li><li>uses wvWare (<a class="ext-link" href="http://wvware.sourceforge.net/"><span class="icon">​</span>http://wvware.sourceforge.net/</a>)
+</li></ul></li><li>Apache Tika (<a class="ext-link" href="http://tika.apache.org/"><span class="icon">​</span>http://tika.apache.org/</a>)
+</li><li>openXML library <a class="ext-link" href="http://openxmldeveloper.org/articles.aspx"><span class="icon">​</span>http://openxmldeveloper.org/articles.aspx</a>
+</li><li><a class="ext-link" href="http://docx2txt.sourceforge.net/"><span class="icon">​</span>http://docx2txt.sourceforge.net/</a>
+</li></ul></li></ul><ul><li>convert/align various formats to TMX: LF Aligner
+<ul><li><a class="ext-link" href="http://sourceforge.net/projects/aligner/"><span class="icon">​</span>http://sourceforge.net/projects/aligner/</a>
+</li></ul></li></ul><ul><li>various filters
+<ul><li><a class="ext-link" href="http://www.w3.org/Tools/Word_proc_filters.html"><span class="icon">​</span>http://www.w3.org/Tools/Word_proc_filters.html</a>
+</li></ul></li></ul><ul><li>frame-maker tools
+<ul><li><a class="ext-link" href="http://members.tripod.com/~the_great_site/frame.htm"><span class="icon">​</span>http://members.tripod.com/~the_great_site/frame.htm</a>
+</li><li><a class="ext-link" href="http://hydra.nac.uci.edu/indiv/ehood/mifmucker.doc.html"><span class="icon">​</span>http://hydra.nac.uci.edu/indiv/ehood/mifmucker.doc.html</a>
+</li></ul></li></ul><ul><li>Wikipedia text extraction
+<ul><li><a class="ext-link" href="http://medialab.di.unipi.it/wiki/Wikipedia_Extractor"><span class="icon">​</span>http://medialab.di.unipi.it/wiki/Wikipedia_Extractor</a>
+</li><li><a class="ext-link" href="http://www.cs.technion.ac.il/~gabr/resources/code/wikiprep/"><span class="icon">​</span>http://www.cs.technion.ac.il/~gabr/resources/code/wikiprep/</a>
+</li><li><a class="ext-link" href="http://www.evanjones.ca/software/wikipedia2text.html"><span class="icon">​</span>http://www.evanjones.ca/software/wikipedia2text.html</a>
+</li><li><a class="ext-link" href="http://www.mediawiki.org/wiki/Alternative_parsers"><span class="icon">​</span>http://www.mediawiki.org/wiki/Alternative_parsers</a>
+</li><li><a class="ext-link" href="http://code.google.com/p/wikixmlj/"><span class="icon">​</span>http://code.google.com/p/wikixmlj/</a>
+</li><li>the official <a class="missing wiki">MediaWiki?</a> parser class: <a class="ext-link" href="http://www.mediawiki.org/wiki/Manual:Parser.php"><span class="icon">​</span>http://www.mediawiki.org/wiki/Manual:Parser.php</a> (<a class="ext-link" href="http://svn.wikimedia.org/doc/classParser.html"><span class="icon">​</span>http://svn.wikimedia.org/doc/classParser.html</a>)
+</li></ul></li></ul><ul><li>Wiktionary
+<ul><li><a class="ext-link" href="http://www.ukp.tu-darmstadt.de/software/jwktl/"><span class="icon">​</span>http://www.ukp.tu-darmstadt.de/software/jwktl/</a>
+</li><li><a class="ext-link" href="http://dbpedia.org/Wiktionary"><span class="icon">​</span>http://dbpedia.org/Wiktionary</a>
+</li><li><a class="ext-link" href="http://kaiko.getalp.org/dbnary"><span class="icon">​</span>http://kaiko.getalp.org/dbnary</a>
+</li></ul></li></ul><ul><li>Crawler
+<ul><li><a class="ext-link" href="http://code.google.com/p/zeitcrawler/"><span class="icon">​</span>http://code.google.com/p/zeitcrawler/</a>
+</li><li>scraping service: <a class="ext-link" href="http://Hubify.com"><span class="icon">​</span>http://Hubify.com</a>
+</li><li><a class="ext-link" href="http://scrapy.org/"><span class="icon">​</span>http://scrapy.org/</a>
+</li><li><a class="ext-link" href="http://nutch.apache.org/"><span class="icon">​</span>http://nutch.apache.org/</a> (and <a class="ext-link" href="https://github.com/DigitalPebble/behemoth"><span class="icon">​</span>https://github.com/DigitalPebble/behemoth</a>)
+</li></ul></li></ul><ul><li>duplicate removal: <a class="ext-link" href="http://code.google.com/p/onion/"><span class="icon">​</span>http://code.google.com/p/onion/</a>
+</li></ul></div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/letsmt-trac/wiki/DataFormatConversion?action=diff&amp;version=17" title="Version 17 by joerg">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2013-01-26T21%3A42%3A46Z&amp;precision=second" title="See timeline at Jan 26, 2013, 9:42:46 PM">8 years ago</a></span>
+            <span class="trac-print">Last modified on Jan 26, 2013, 9:42:46 PM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/DataFormatConversion?format=txt">Plain Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/DataFormatConversion?format=tex">Latex</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/DataFormatConversion?format=pdf">Latex-Pdf</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      RepositorySetup – LetsMT
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/letsmt-trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositorySetup?format=txt" type="text/x-trac-wiki" title="Plain Text" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositorySetup?format=tex" type="text/x-trac-wiki" title="Latex" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositorySetup?format=pdf" type="text/x-trac-wiki" title="Latex-Pdf" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.letsmt.eu/"><img src="http://stp.lingfil.uu.se/~joerg/LetsMT/letsmt.jpg" alt="LetsMT" width="100" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/letsmt-trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/letsmt-trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="RepositorySetup.html" title="View RepositorySetup">RepositorySetup</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositorySetup?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><p>
+</p><div class="wiki-toc">
+<ol>
+  <li>
+    <a href="RepositorySetup.html#InstallationSetupoftheLetsMTrepositorySoftware">Installation &amp; Setup of the LetsMT repository Software</a>
+    <ol>
+      <li>
+        <a href="RepositorySetup.html#GeneralInstallationPreperation">General Installation Preperation</a>
+      </li>
+      <li>
+        <a href="RepositorySetup.html#AvailableInstallationOptions">Available Installation Options</a>
+        <ol>
+          <li>
+            <a href="RepositorySetup.html#AllComponents">All Components</a>
+          </li>
+          <li>
+            <a href="RepositorySetup.html#FrontendClient">Frontend Client</a>
+          </li>
+          <li>
+            <a href="RepositorySetup.html#RRServer">RR Server</a>
+          </li>
+          <li>
+            <a href="RepositorySetup.html#StorageServer">Storage Server</a>
+          </li>
+          <li>
+            <a href="RepositorySetup.html#SGEClient">SGE Client</a>
+          </li>
+          <li>
+            <a href="RepositorySetup.html#WebInterface">Web Interface</a>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <a href="RepositorySetup.html#FinalConfiguration">Final Configuration</a>
+        <ol>
+          <li>
+            <a href="RepositorySetup.html#TransferSSLAuthenticationFiles">Transfer SSL Authentication Files</a>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <a href="RepositorySetup.html#Runthetestsuite">Run the test suite</a>
+      </li>
+      <li>
+        <a href="RepositorySetup.html#Cleanup">Clean up</a>
+      </li>
+    </ol>
+  </li>
+</ol>
+</div><p>
+</p>
+<h1 id="InstallationSetupoftheLetsMTrepositorySoftware">Installation &amp; Setup of the LetsMT repository Software</h1>
+<p>
+The following installation procedures apply to Ubuntu 10.04 LTS and 12.04 LTS as a base system. To succeed on another OS, you may need to adjust one or two things.
+</p>
+<p>
+The installation process may not work as expected on a server where the Sun Grid Engine is already installed and configured.
+</p>
+<p>
+The installation is aimed at <tt>/usr/local</tt>. 
+</p>
+<p>
+The release information page can be found <a class="wiki" href="Releases.html">here</a>.
+</p>
+<p>
+There are several components of the system and each of them can be installed on separated machine as described below. It is also possible to install all components on the same machine to save resources and if the overall system load does not require the distributed installation.
+</p>
+<p>
+The following installation options are available:
+</p>
+<ul><li><a class="wiki" href="RepositorySetup.html#AllComponents">All components on the same machine</a>
+</li><li><a class="wiki" href="RepositorySetup.html#FrontendClient">Only the frontend client</a>
+</li><li><a class="wiki" href="RepositorySetup.html#RRServer">Only the repository server</a>
+</li><li><a class="wiki" href="RepositorySetup.html#StorageServer">Only the Storage server</a>
+</li><li><a class="wiki" href="RepositorySetup.html#SGEClient">Only the SGE client</a>
+</li><li><a class="wiki" href="RepositorySetup.html#WebInterface">The Web user interface</a>
+</li></ul><h2 id="GeneralInstallationPreperation">General Installation Preperation</h2>
+<p>
+Download and unpack the latest installation file from <a class="ext-link" href="http://opus.lingfil.uu.se/letsmt-dev/releases/"><span class="icon">​</span>http://opus.lingfil.uu.se/letsmt-dev/releases/</a> with for example the following commands:
+</p>
+<pre class="wiki">wget -O - http://opus.lingfil.uu.se/letsmt-dev/releases/LetsMT-0.50.tar.gz | tar -xz
+cd LetsMT-0.50
+</pre><p>
+For the <strong>distributed setups</strong>, each machine needs to be able to find the other hosts on the network. This can for example be done via static IPs and the hosts file:
+</p>
+<ul><li>edit /etc/hosts file, add for example:
+<pre class="wiki">192.168.1.1     rrserver
+192.168.1.2     storage
+192.168.1.3     frontend
+192.168.1.4     sgeclient
+</pre></li></ul><ul><li>set up a static IP in /etc/network/interfaces, e.g.:
+<pre class="wiki">auto eth1
+iface eth1 inet static
+        address 192.168.1.1
+        netmask 255.255.255.0
+        network 192.168.1.0
+        broadcast 192.168.1.255
+</pre></li></ul><ul><li>correct the hostname in /etc/hostname, e.g.:
+<pre class="wiki">rrserver
+</pre></li></ul><ul><li>To make the changes take effect run the following commands:
+<pre class="wiki">sudo /etc/init.d/networking restart
+sudo service hostname start
+</pre></li></ul><hr />
+<h2 id="AvailableInstallationOptions">Available Installation Options</h2>
+<h3 id="AllComponents">All Components</h3>
+<p>
+Check your hostname with  
+</p>
+<pre class="wiki">hostname -A
+</pre><p>
+and edit /etc/hosts to add the host name to the line that starts with 127.0.0.1, like so:
+</p>
+<pre class="wiki">127.0.0.1       localhost        &lt;hostname&gt;
+</pre><p>
+(Be careful: This really has to be written on one line! Otherwise the SGE client will be unable to communicate later on.)
+</p>
+<p>
+Then start the installation with
+</p>
+<pre class="wiki">sudo make install
+</pre><p>
+Recommended answers for the configuration dialogs:
+</p>
+<table class="wiki">
+<tr><td> General type of mail configuration </td><td> Internet Site 
+</td></tr><tr><td> System mail name                   </td><td> &lt;hostname&gt;.&lt;your domain&gt; 
+</td></tr><tr><td> Configure SGE automatically?       </td><td> yes 
+</td></tr><tr><td> SGE cell name                      </td><td> default 
+</td></tr><tr><td> SGE master hostname                </td><td> &lt;hostname&gt;  
+</td></tr><tr><td> SSL server certificate hostname    </td><td> &lt;hostname&gt;  
+</td></tr><tr><td> Sign the certificate? [y/n]  </td><td> y 
+</td></tr><tr><td> 1 out of 1 certificate requests certified, commit? [y/n] </td><td> y 
+</td></tr><tr><td> Sign the certificate? [y/n]  </td><td> y 
+</td></tr><tr><td> 1 out of 1 certificate requests certified, commit? [y/n] </td><td> y 
+</td></tr></table>
+<h3 id="FrontendClient">Frontend Client</h3>
+<p>
+<strong>NOTE:</strong>
+The SGE master server must an have entry in /etc/hosts prior to installation.
+</p>
+<pre class="wiki">sudo make install-frontend
+</pre><p>
+Recommended answers for the configuration dialogs (following the example configuration provided here):
+</p>
+<table class="wiki">
+<tr><td> General type of mail configuration </td><td> Internet Site 
+</td></tr><tr><td> System mail name </td><td> &lt;hostname&gt;.&lt;your domain&gt; 
+</td></tr><tr><td> Configure SGE automatically?  </td><td> yes 
+</td></tr><tr><td> SGE cell name                 </td><td> default 
+</td></tr><tr><td> SGE master hostname           </td><td> &lt;hostname&gt;  
+</td></tr></table>
+<p>
+Finally copy all required SSL certificates to the front end client according to <a class="wiki" href="RepositorySetup.html#ssltransfer">Transfer SSL Authentication Files</a>. 
+</p>
+<p>
+<strong>NOTE:</strong>
+In the out-of-the-box installation, no direct communication with the repository server (Web API) is possible.
+If this functionality is required, you have to edit the environment variable LETSMT_CONNECT in the file /usr/local/etc/repository/conf.sh.
+</p>
+<h3 id="RRServer">RR Server</h3>
+<pre class="wiki">sudo make install-rr-server
+</pre><p>
+Recommended answers for the configuration dialogs:
+</p>
+<table class="wiki">
+<tr><td> General type of mail configuration               </td><td> Internet Site 
+</td></tr><tr><td> System mail name                                 </td><td> rrserver.&lt;your domain&gt; 
+</td></tr><tr><td> Configure SGE automatically?                     </td><td> yes 
+</td></tr><tr><td> SGE cell name                                    </td><td> default 
+</td></tr><tr><td> SGE master hostname                              </td><td> sgemaster  
+</td></tr><tr><td> Hostname of the server running  your Metadata DB </td><td> rrserver 
+</td></tr><tr><td>
+</td></tr><tr><td> SSL server certificate hostname                  </td><td> rrserver  
+</td></tr><tr><td> Sign the certificate? [y/n]                      </td><td> y 
+</td></tr><tr><td> 1 out of 1 certificate requests certified, commit? [y/n] </td><td> y 
+</td></tr><tr><td> Sign the certificate? [y/n]                      </td><td> y 
+</td></tr><tr><td> 1 out of 1 certificate requests certified, commit? [y/n] </td><td> y 
+</td></tr></table>
+<p>
+Note: Starting internet superserver xinetd might give a fail message. This means the TokyoTyrant server are not running yet. A reboot fixes that problem until we fix the installation script. 
+</p>
+<h3 id="StorageServer">Storage Server</h3>
+<pre class="wiki">sudo make install-storage-server
+</pre><p>
+Recommended answers for the configuration dialogs:
+</p>
+<table class="wiki">
+<tr><td> General type of mail configuration         </td><td> Internet Site 
+</td></tr><tr><td> System mail name                           </td><td> rrserver.&lt;your domain&gt; 
+</td></tr><tr><td> Configure SGE automatically?               </td><td> yes 
+</td></tr><tr><td> SGE cell name                              </td><td> default 
+</td></tr><tr><td> SGE master hostname                        </td><td> sgemaster  
+</td></tr><tr><td>
+</td></tr><tr><td> SSL server certificate hostname            </td><td> storage  
+</td></tr><tr><td> Sign the certificate? [y/n]                </td><td> y 
+</td></tr><tr><td> 1 out of 1 certificate requests certified, commit? [y/n] </td><td> y 
+</td></tr><tr><td> Sign the certificate? [y/n]                </td><td> y 
+</td></tr><tr><td> 1 out of 1 certificate requests certified, commit? [y/n] </td><td> y 
+</td></tr></table>
+<p>
+After this copy all required SSL certificates to the storage server according to <a class="wiki" href="RepositorySetup.html#ssltransfer">Transfer SSL Authentication Files</a>. 
+</p>
+<h3 id="SGEClient">SGE Client</h3>
+<p>
+Note: not yet finished!
+</p>
+<pre class="wiki">sudo make install-sge-client
+</pre><p>
+Finally copy all required SSL certificates to the SGE client according to <a class="wiki" href="RepositorySetup.html#ssltransfer">Transfer SSL Authentication Files</a>. 
+</p>
+<h3 id="WebInterface">Web Interface</h3>
+<p>
+The web interface called 'Grenzschnitte' is an easy-to-use interface for the LetsMT repository system that allows to import, browse and share resources, edit meta data and more. 
+</p>
+<pre class="wiki">sudo make install-grenzschnitte
+</pre><p>
+This command will install the required perl and Ubuntu packages, copy package files to the directory '/usr/local/lib/grenzschnitte', register and run its "private" web server as a service.
+At least the <a class="wiki" href="RepositorySetup.html#frontend">repository frontend</a> has to be installed first.
+</p>
+<hr />
+<h2 id="FinalConfiguration">Final Configuration</h2>
+<h3 id="TransferSSLAuthenticationFiles">Transfer SSL Authentication Files</h3>
+<p>
+<span class="wikianchor" id="ssltransfer"></span>
+</p>
+<p>
+In case of a distributed setup each machine will need the certificates files of all other machines it directly communicates with via the web services. The required certificates can be seen in following table (.: automatically installed, X: has to be transferred).
+</p>
+<table class="wiki">
+<tr><td style="text-align: center">         </td><th> RR Server Certs </th><th> Storage Certs 
+</th></tr><tr><th> Frontend Client </th><td style="text-align: center">   X     </td><td style="text-align: center">        X        
+</td></tr><tr><th> RR Server       </th><td style="text-align: center">   .     </td><td style="text-align: center">        X        
+</td></tr><tr><th> Storage Server  </th><td style="text-align: center">         </td><td style="text-align: center">        .        
+</td></tr><tr><th> SGE Client      </th><td style="text-align: center">   X     </td><td style="text-align: center">                 
+</td></tr></table>
+<p>
+After a successful installation of a component there will be a sub-directory named after the hostname in /etc/ssl. This sub-directory contains the necessary SSL certificates and has to be copied to other servers according to the table above.
+</p>
+<p>
+A fairly easy way to transfer the certificates is to log in to the "receiving" machine and there to issue the command
+</p>
+<pre class="wiki">sudo scp -r &lt;user&gt;@&lt;hostname&gt;:/etc/ssl/&lt;hostname&gt; /etc/ssl
+</pre><p>
+where &lt;hostname&gt; is the address of the "providing" machine (e.g. the RR server),
+and &lt;user&gt; is a user name to which you have access on that machine.
+</p>
+<p>
+Repeat these steps to distribute all required certificates to the right machines.
+</p>
+<hr />
+<h2 id="Runthetestsuite">Run the test suite</h2>
+<p>
+Re-login to your shell or open a new bash in order to load all required environment variables, and run:
+</p>
+<pre class="wiki">make test
+</pre><p>
+for fast tests or
+</p>
+<pre class="wiki">make test-all
+</pre><p>
+to include also slower, more detailed tests.
+</p>
+<p>
+It will take a while for the test to complete as all important functionality is tested. They all should return 'ok' and the overall result should be 'PASS'.
+</p>
+<p>
+To test only a specific module or functionality, you can also run single test scripts from the subdirectories <em>fast</em> and <em>slow</em> of <em>perllib/LetsMT/t</em> (they are executable Perl scripts).
+</p>
+<hr />
+<h2 id="Cleanup">Clean up</h2>
+<p>
+You can now optionally remove the installation directory, but to be able to run the tests it might be wise to keep it.
+</p>
+<pre class="wiki">rm -rf LetsMT-0.50
+</pre></div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositorySetup?action=diff&amp;version=104" title="Version 104 by sesc">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2012-09-17T07%3A44%3A42Z&amp;precision=second" title="See timeline at Sep 17, 2012, 7:44:42 AM">8 years ago</a></span>
+            <span class="trac-print">Last modified on Sep 17, 2012, 7:44:42 AM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositorySetup?format=txt">Plain Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositorySetup?format=tex">Latex</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositorySetup?format=pdf">Latex-Pdf</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

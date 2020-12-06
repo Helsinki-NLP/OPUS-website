@@ -1,0 +1,96 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Writer</title>
+<link rel="stylesheet" href="../../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<ul>
+
+		<li><a href="#implemented_data_formats">Implemented data formats</a></li>
+	</ul>
+
+	<li><a href="#methods">METHODS</a></li>
+	<ul>
+
+		<li><a href="#constructor">Constructor</a></li>
+		<li><a href="#get_resource"><code>get_resource</code></a></li>
+	</ul>
+
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>LetsMT::Export::Writer</p>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>Resource-writer objects.</p>
+<p>
+</p>
+<h2><a name="implemented_data_formats">Implemented data formats</a></h2>
+<dl>
+<dt><strong><a name="align_xces" class="item">align - XCES</a></strong></dt>
+
+<dt><strong><a name="moses_moses" class="item">moses - Moses</a></strong></dt>
+
+<dt><strong><a name="para_parallel_corpus" class="item">para  - Parallel corpus</a></strong></dt>
+
+<dt><strong><a name="pdf_pdf" class="item">pdf   - PDF</a></strong></dt>
+
+<dt><strong><a name="srt_srt" class="item">srt   - SRT</a></strong></dt>
+
+<dt><strong><a name="text_plain_text" class="item">text  - Plain text</a></strong></dt>
+
+<dt><strong><a name="tmx_tmx" class="item">tmx   - TMX</a></strong></dt>
+
+<dt><strong><a name="xces_xces" class="item">xces  - XCES</a></strong></dt>
+
+<dt><strong><a name="xliff_xliff" class="item">xliff - XLIFF</a></strong></dt>
+
+<dt><strong><a name="xml_xml" class="item">xml   - XML</a></strong></dt>
+
+</dl>
+<p>
+</p>
+<hr />
+<h1><a name="methods">METHODS</a></h1>
+<p>
+</p>
+<h2><a name="constructor">Constructor</a></h2>
+<pre>
+ $writer = new LetsMT::Export::Writer ($resource, $format)</pre>
+<p>Returns an appropriate writer object for a given resource $resource.
+The data format $format is optional. The constructor tries to infer
+the data from the resource object if $format is not specified 
+(see <a href="./../..//LetsMT/Resource.html">the LetsMT::Resource manpage</a>::type)</p>
+<p>
+</p>
+<h2><a name="get_resource"><code>get_resource</code></a></h2>
+<pre>
+ @resources = $writer-&gt;get_resource()</pre>
+<p>Returns a list of resources created while writing ....</p>
+
+</body>
+
+</html>

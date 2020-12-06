@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      VirtualMachines – LetsMT
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/letsmt-trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/VirtualMachines?format=txt" type="text/x-trac-wiki" title="Plain Text" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/VirtualMachines?format=tex" type="text/x-trac-wiki" title="Latex" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/VirtualMachines?format=pdf" type="text/x-trac-wiki" title="Latex-Pdf" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.letsmt.eu/"><img src="http://stp.lingfil.uu.se/~joerg/LetsMT/letsmt.jpg" alt="LetsMT" width="100" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/letsmt-trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/letsmt-trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="VirtualMachines.html" title="View VirtualMachines">VirtualMachines</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/letsmt-trac/wiki/VirtualMachines?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><h1 id="VirtualBoxSetupandOperation">VirtualBox Setup and Operation</h1>
+<p>
+Currently we use Ubuntu 10.04 LTS for AMD64 as a base system, this should be installed in a new VirtualBox with the OpenSSH option of the server version.
+We assume you set 'letsmt' as the user during the installation. Additionally the Guest Additions for Linux should be installed in the guest system. See <a class="ext-link" href="http://www.virtualbox.org/manual/ch04.html"><span class="icon">​</span>http://www.virtualbox.org/manual/ch04.html</a>
+</p>
+<p>
+To be able to login via ssh from the host the choose one of the following network settings:
+</p>
+<ol><li>Host-only Network
+</li></ol><p>
+Set up a Host-only Network in the general preferences of VirtualBox in the Network tab. You can activate the DHCP server if you want and give it an IP range.
+In the network settings of the new VirtualBox enable one Adapter and set it to:
+Attached to: Host-only Adapter
+Name: (the name of your previously created Host-only Network)
+</p>
+<p>
+In the guest system in /etc/network/interfaces you should have something like this with IP numbers and ranges according to your Host-only network settings:
+</p>
+<pre class="wiki">auto eth0
+iface eth0 inet static
+        address 192.168.56.7
+        netmask 255.255.255.0
+        network 192.168.56.0
+        broadcast 192.168.56.255
+</pre><p>
+or in case of a DHCP setup:
+</p>
+<pre class="wiki">auto eth0
+iface eth0 inet dhcp
+</pre><p>
+With this setup you can now connect via
+</p>
+<pre class="wiki">ssh letsmt@192.168.56.7
+</pre><ol start="2"><li>NAT
+</li></ol><p>
+In the network settings of the new VirtualBox make enable on Adapter and set it to:
+Attached to: NAT
+Under Advanced set the Port Forwarding to:
+Name: ssh
+Protocal: TCP
+Host Port: for example 6000 or any free port over 1024
+Guest Port: 22
+</p>
+<p>
+With this setup you can connect via
+</p>
+<pre class="wiki">ssh -p 6000 letsmt@localhost
+</pre><p>
+After you started up your new VirtualBox you have to do 
+</p>
+<pre class="wiki">sudo apt-get install make
+</pre><p>
+After that you should be able to install the LetsMT system according to <a class="wiki" href="RepositorySetup.html">RepositorySetup</a>
+</p>
+<h3 id="TypicaldistributedVBoxsetup">Typical distributed VBox setup</h3>
+<ul><li>distributed setup with the following servers:
+<ul><li>letsmt: repository server with metadata DB and group DB
+</li><li>storage: additional storage-server (without DB's)
+</li><li>frontend: frontend-server for "grenzschnitte"
+</li><li>sgeX: SGE execution hosts
+</li></ul></li></ul><ul><li>use 3 network Adapter:
+<ul><li>1 = NAT with port forwarding for login via ssh (22 --&gt; 600x)
+</li><li>2 = internal network with static IPs (set in /etc/network/interfaces)
+</li><li>3 = bridged network (to obtain IP from the common gateway via dhcp)
+</li></ul></li></ul><ul><li>edit <tt>/etc/network/interfaces</tt>, for example to include something like this
+</li></ul><pre class="wiki"># The primary network interface
+auto eth0
+iface eth0 inet dhcp
+
+auto eth1
+iface eth1 inet static
+        address 192.168.1.6
+        netmask 255.255.255.0
+        network 192.168.1.0
+        broadcast 192.168.1.255
+
+auto eth2
+iface eth2 inet dhcp
+</pre><ul><li>add all hostnames in <tt>/etc/hosts</tt>, for example on fronted:
+</li></ul><pre class="wiki">127.0.0.1       localhost       frontend        frontend.local
+127.0.1.1       frontend.local  frontend
+192.168.1.5     letsmt  letsmt.local
+192.168.1.10    storage storage.local
+</pre><h2 id="Otherthings">Other things</h2>
+<blockquote>
+<p>
+Sharing folders with the host:
+</p>
+</blockquote>
+<ul><li>download the Guest Addition ISO from <a class="ext-link" href="http://download.virtualbox.org/virtualbox/"><span class="icon">​</span>http://download.virtualbox.org/virtualbox/</a>
+</li><li>mount the ISO and connect it to the VM (or copy into the VBox)
+</li><li>install the Guest Addition with <tt>VBoxLinuxAdditions.run</tt>
+</li><li>add shared folders in the settings of the VBox (check "automount" --&gt; makes them appear under /media)
+</li></ul></div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/letsmt-trac/wiki/VirtualMachines?action=diff&amp;version=14" title="Version 14 by joerg">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2012-09-24T20%3A42%3A45Z&amp;precision=second" title="See timeline at Sep 24, 2012, 8:42:45 PM">8 years ago</a></span>
+            <span class="trac-print">Last modified on Sep 24, 2012, 8:42:45 PM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/VirtualMachines?format=txt">Plain Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/VirtualMachines?format=tex">Latex</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/VirtualMachines?format=pdf">Latex-Pdf</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

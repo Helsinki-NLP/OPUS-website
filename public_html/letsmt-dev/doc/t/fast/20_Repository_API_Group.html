@@ -1,0 +1,94 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>20_Repository_API_Group</title>
+<link rel="stylesheet" href="../../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>20_Repository_API_Group.t - test <em>Group</em> API</p>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>This script tests the following assertions:</p>
+<p>Calling the <em>Group</em> API via the <code>WebService</code> module, ...</p>
+<ul>
+<li>
+<p>you can create groups with users in them. (post_group)</p>
+</li>
+<li>
+<p>you can list a group ... (get_group)</p>
+</li>
+<li>
+<p>... and you can see the users that are in the group.</p>
+</li>
+<li>
+<p>you can add a user to an existing group. (put_group)</p>
+</li>
+<li>
+<p>you can list all existing groups and users ... (get_group with undefined GID)</p>
+</li>
+<li>
+<p>... and the result is accurate.</p>
+</li>
+<li>
+<p>you can delete a user from a group ... (del_group)</p>
+</li>
+<li>
+<p>... and afterwards that user is actually gone from the group.</p>
+</li>
+<li>
+<p>you can delete a group ... (del_group with undefined UID)</p>
+</li>
+<li>
+<p>... and afterwards that user is actually gone.</p>
+</li>
+<li>
+<p>you CANNOT find a group that does not exist. (get_group)</p>
+</li>
+<li>
+<p>you CANNOT add a user that already exists in a group. (put_group)</p>
+</li>
+<li>
+<p>you CANNOT add a user to a group if you specify the wrong owner UID. (put_group)</p>
+</li>
+<li>
+<p>you CANNOT delete a user from a group if it isn't a member. (del_group)</p>
+</li>
+<li>
+<p>you CANNOT delete a group that does not exist. (del_group)</p>
+</li>
+<li>
+<p>you CANNOT delete a group if you specify the wrong owner UID. (del_group)</p>
+</li>
+<li>
+<p>you can delete a user from the group 'public'. (del_group)</p>
+</li>
+</ul>
+
+</body>
+
+</html>

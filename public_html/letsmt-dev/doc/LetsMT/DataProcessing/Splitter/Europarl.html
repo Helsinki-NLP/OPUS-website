@@ -1,0 +1,170 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Europarl</title>
+<link rel="stylesheet" href="../../../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#synopsis">SYNOPSIS</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<ul>
+
+		<li><a href="#nonbreaking_prefixes_files">Nonbreaking-Prefixes Files</a></li>
+	</ul>
+
+	<li><a href="#constructor">CONSTRUCTOR</a></li>
+	<ul>
+
+		<li><a href="#credits">CREDITS</a></li>
+	</ul>
+
+	<li><a href="#support">SUPPORT</a></li>
+	<li><a href="#see_also">SEE ALSO</a></li>
+	<li><a href="#author">AUTHOR</a></li>
+	<li><a href="#copyright_and_license">COPYRIGHT AND LICENSE</a></li>
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>LetsMT::DataProcessing::Splitter::Europarl - Moses/Europarl sentence splitter</p>
+<p>
+</p>
+<hr />
+<h1><a name="synopsis">SYNOPSIS</a></h1>
+<pre>
+ use LetsMT::DataProcessing::Splitter::Europarl;
+ my $splitter = LetsMT::DataProcessing::Splitter::Europarl-&gt;new (lang =&gt; 'en');
+ my $text = 'This is a paragraph. It contains several sentences. &quot;But why,&quot; you ask?';
+ print $splitter-&gt;split($text);</pre>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>This module allows splitting of text paragraphs into sentences.
+It is based on scripts developed by Philipp Koehn and Josh Schroeder
+for processing the Europarl corpus (<a href="http://www.statmt.org/europarl/">http://www.statmt.org/europarl/</a>).</p>
+<p>The module uses punctuation and capitalization clues to split paragraphs
+into an newline-separated string with one sentence per line.
+For example:</p>
+<pre>
+ This is a paragraph. It contains several sentences. &quot;But why,&quot; you ask?</pre>
+<p>goes to:</p>
+<pre>
+ This is a paragraph.
+ It contains several sentences.
+ &quot;But why,&quot; you ask?</pre>
+<p>Languages currently supported by the module are:</p>
+<dl>
+<dt><strong><a name="catalan" class="item">Catalan</a></strong></dt>
+
+<dt><strong><a name="dutch" class="item">Dutch</a></strong></dt>
+
+<dt><strong><a name="english" class="item">English</a></strong></dt>
+
+<dt><strong><a name="french" class="item">French</a></strong></dt>
+
+<dt><strong><a name="german" class="item">German</a></strong></dt>
+
+<dt><strong><a name="greek" class="item">Greek</a></strong></dt>
+
+<dt><strong><a name="italian" class="item">Italian</a></strong></dt>
+
+<dt><strong><a name="portuguese" class="item">Portuguese</a></strong></dt>
+
+<dt><strong><a name="spanish" class="item">Spanish</a></strong></dt>
+
+</dl>
+<p>
+</p>
+<h2><a name="nonbreaking_prefixes_files">Nonbreaking-Prefixes Files</a></h2>
+<p>Nonbreaking prefixes are loosely defined as any word ending in a period
+that does NOT indicate an end of sentence marker.
+A basic example is Mr. and Ms. in English.</p>
+<p>The sentence splitter module uses the nonbreaking prefix files included in this distribution.</p>
+<p>To add a file for other languages, follow the naming convention nonbreaking_prefix.??
+and use the two-letter language code you intend to use when creating a Lingua::Sentence object.</p>
+<p>The sentence splitter module will first look for a file for the language it is processing,
+and fall back to English if a file for that language is not found.</p>
+<p>For the splitter, normally a period followed by an uppercase word results in a sentence split.
+If the word preceeding the period is a nonbreaking prefix, this line break is not inserted.</p>
+<p>A special case of prefixes, NUMERIC_ONLY, is included for special cases where the prefix should be handled ONLY when before numbers.
+For example, &quot;Article No. 24 states this.&quot; the No. is a nonbreaking prefix.
+However, in &quot;No. It is not true.&quot; No functions as a word.</p>
+<p>See the example prefix files included in the distribution for more examples.</p>
+<p>
+</p>
+<hr />
+<h1><a name="constructor">CONSTRUCTOR</a></h1>
+<p>The constructor can be called in two ways:</p>
+<pre>
+ LetsMT::DataProcessing::Splitter::Europarl-&gt;new (lang =&gt; $lang_id)</pre>
+<p>Instantiate an object to split sentences in language <code>$lang_id</code>.
+If the language is not supported, a splitter object for English will be instantiated.</p>
+<p>
+</p>
+<h2><a name="credits">CREDITS</a></h2>
+<p>Thanks for the following individuals for supplying nonbreaking prefix files:
+Bas Rozema (Dutch), Hil&aacute;rio Leal Fontes (Portuguese), Jes&uacute;s Gim&eacute;nez (Catalan &amp; Spanish)</p>
+<p>
+</p>
+<hr />
+<h1><a name="support">SUPPORT</a></h1>
+<p>Bugs should always be submitted via the project hosting bug tracker</p>
+<p><a href="http://code.google.com/p/corpus-tools/issues/list">http://code.google.com/p/corpus-tools/issues/list</a></p>
+<p>For other issues, contact the maintainer.</p>
+<p>
+</p>
+<hr />
+<h1><a name="see_also">SEE ALSO</a></h1>
+<p><a href="./../../..//Text/Sentence.html">the Text::Sentence manpage</a>,
+<a href="./../../..//Lingua/EN/Sentence.html">the Lingua::EN::Sentence manpage</a>,
+<a href="./../../..//Lingua/DE/Sentence.html">the Lingua::DE::Sentence manpage</a>,
+<a href="./../../..//Lingua/HE/Sentence.html">the Lingua::HE::Sentence manpage</a></p>
+<p>
+</p>
+<hr />
+<h1><a name="author">AUTHOR</a></h1>
+<p>Lingua::Sentence: Achim Ruopp, &lt;<a href="mailto:achimru@gmail.com">achimru@gmail.com</a>&gt;
+Adjusted for LetsMT: Joerg Tiedemann</p>
+<p>
+</p>
+<hr />
+<h1><a name="copyright_and_license">COPYRIGHT AND LICENSE</a></h1>
+<p>Copyright (C) 2010 by Digital Silk Road</p>
+<p>Portions Copyright (C) 2005 by Philip Koehn and Josh Schroeder (used with permission)</p>
+<p>This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself, either Perl version 5.8.8 or,
+at your option, any later version of Perl 5 you may have available.</p>
+<p>AS PART OF LetsMT! Resource Repository, you can redistribute it
+and/or modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.</p>
+<p>LetsMT! Resource Repository is distributed in the hope that it will be
+useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+General Public License for more details.</p>
+<p>You should have received a copy of the GNU General Public License
+along with LetsMT! Resource Repository.  If not, see
+&lt;http://www.gnu.org/licenses/&gt;.</p>
+
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Safesys</title>
+<link rel="stylesheet" href="../../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#functions">FUNCTIONS</a></li>
+	<li><a href="#sys"><code>sys</code></a></li>
+	<li><a href="#safe_filesys_name"><code>safe_filesys_name</code></a></li>
+	<li><a href="#safe_filesys_unique_name"><code>safe_filesys_unique_name</code></a></li>
+	<li><a href="#safe_du"><code>safe_du</code></a></li>
+	<li><a href="#time"><code>time</code></a></li>
+	<li><a href="#get_tempdir"><code>get_tempdir</code></a></li>
+	<li><a href="#sql_escape"><code>sql_escape</code></a></li>
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>LetsMT::Repository::Safesys - tools for interacting with the operating system</p>
+<p>
+</p>
+<hr />
+<h1><a name="functions">FUNCTIONS</a></h1>
+<p>
+</p>
+<hr />
+<h1><a name="sys"><code>sys</code></a></h1>
+<pre>
+ $status = &amp;sys ($cmd)</pre>
+<p>Execute a command using <code>system()</code> and log the call.</p>
+<p>Returns: exit status of <code>system()</code>.</p>
+<p>
+</p>
+<hr />
+<h1><a name="safe_filesys_name"><code>safe_filesys_name</code></a></h1>
+<pre>
+ $safename = &amp;safe_filesys_name ($name)</pre>
+<p>Remove unsafe characters from a file name.</p>
+<p>Returns: the &quot;safeified&quot; filename.</p>
+<p>
+</p>
+<hr />
+<h1><a name="safe_filesys_unique_name"><code>safe_filesys_unique_name</code></a></h1>
+<pre>
+ $uniquename = &amp;safe_filesys_unique_name ($name)</pre>
+<p>Create a safe filename, then find a unique permutation of it.</p>
+<p>Returns: a unique, safe filename.</p>
+<p>
+</p>
+<hr />
+<h1><a name="safe_du"><code>safe_du</code></a></h1>
+<pre>
+ $size = &amp;safe_du ($dir)</pre>
+<p>Compute the disk usage of a directory.</p>
+<p>Returns: the size on disk of the directory.</p>
+<p>
+</p>
+<hr />
+<h1><a name="time"><code>time</code></a></h1>
+<p>Format a time string.</p>
+<p>Returns: a nicely formatted time string</p>
+<p>
+</p>
+<hr />
+<h1><a name="get_tempdir"><code>get_tempdir</code></a></h1>
+<pre>
+ $dir = &amp;get_tempdir</pre>
+<p>Create a temporary directory.</p>
+<p>Returns: a new temporary directory, which will be cleaned up by Perl on exit.</p>
+<p>
+</p>
+<hr />
+<h1><a name="sql_escape"><code>sql_escape</code></a></h1>
+<pre>
+ sql_escape ($list)</pre>
+<p>Try to create a safe SQL string from a list of strings.</p>
+<p>Returns: a safe SQL string.</p>
+
+</body>
+
+</html>

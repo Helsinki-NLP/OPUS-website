@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      TracNavigation – OPUS
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/trac/wiki/TracNavigation?format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="../../index.html"><img src="../../img/opus_medium.jpg" alt="opus" height="90" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="TracNavigation.html" title="View TracNavigation">TracNavigation</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/trac/wiki/TracNavigation?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><h1 id="TracNavigation">Trac Navigation</h1>
+<p>
+The main and meta navigation entries can be customized in some basic ways. The <tt>[mainnav]</tt> and <tt>[metanav]</tt> configuration sections can be used to customize the text and link used for the navigation items, or even to disable them.  The <tt>mainnav</tt> and <tt>metanav</tt> options in the <tt>[trac]</tt> configuration section can be used to change the order.
+</p>
+<h3 id="mainnav-bar"><tt>[mainnav]</tt></h3>
+<p>
+<tt>[mainnav]</tt> corresponds to the <strong>main navigation bar</strong>, the one containing entries such as <em>Wiki</em>, <em>Timeline</em>, <em>Roadmap</em>, <em>Browse Source</em> and so on. This navigation bar is meant to access the default page of the main modules enabled in Trac that are accessible for the current user.
+</p>
+<p>
+<strong> <span class="wikianchor" id="Example">Example</span> </strong> 
+</p>
+<p>
+In the following example, we rename the link to the Wiki start "Home", and make the "View Tickets" entry link to a specific report.  The second example (below) also hides the "Help/Guide" link.
+</p>
+<p>
+Relevant excerpt from the <a class="wiki" href="TracIni.html">TracIni</a>:
+</p>
+<pre class="wiki">[mainnav]
+wiki.label = Home
+tickets.href = /report/24
+</pre><h3 id="metanav-bar"><tt>[metanav]</tt></h3>
+<p>
+<tt>[metanav]</tt> corresponds to the <strong>meta navigation bar</strong>, by default positioned above the main navigation bar and below the <em>Search</em> box. It contains the <em>Log in</em>, <em>Logout</em>, <em>Help/Guide</em> etc. entries. This navigation bar is meant to access some global information about the Trac project and the current user.
+</p>
+<p>
+There is one special entry in the  <tt>[metanav]</tt> section: <tt>logout.redirect</tt> is the page the user sees after hitting the logout button. 
+
+</p>
+<p>
+<strong> Example </strong> 
+</p>
+<pre class="wiki">[metanav]
+help = disabled
+logout.redirect = wiki/Logout
+</pre><h3 id="Notes">Notes</h3>
+<p>
+Possible URL formats (for <tt>.href</tt> or <tt>.redirect</tt>):
+</p>
+<table class="wiki">
+<tr><td> <strong>config</strong> </td><td> <strong>redirect to</strong> 
+</td></tr><tr><td> <tt>wiki/Logout</tt> </td><td> <tt>/projects/env/wiki/Logout</tt> 
+</td></tr><tr><td> <tt>http://hostname/</tt> </td><td> <tt>http://hostname/</tt> 
+</td></tr><tr><td> <tt>/projects</tt> </td><td> <tt>/projects</tt> 
+</td></tr></table>
+<h3 id="nav-order"><tt>[trac]</tt></h3>
+<p>
+The <tt>mainnav</tt> and <tt>metanav</tt> options in the <tt>[trac]</tt> configuration section control the order in which the navigation items are displayed (left to right).  This can be useful with plugins that add navigation items.
+</p>
+<p>
+<strong> Example </strong> 
+</p>
+<p>
+In the following example, we change the order to prioritise the ticket related items further left.
+</p>
+<p>
+Relevant excerpt from the <a class="wiki" href="TracIni.html">TracIni</a>:
+</p>
+<pre class="wiki">[trac]
+mainnav = wiki,tickets,newticket,timeline,roadmap,browser,search,admin
+</pre><p>
+The default order and item names can be viewed in the <a class="wiki" href="TracIni.html#trac-section">trac section of TracIni</a>.
+</p>
+<h3 id="ctxtnav-bar">Context Navigation</h3>
+<p>
+Note that it is still not possible to customize the <strong>contextual navigation bar</strong>, i.e. the one usually placed below the main navigation bar.
+</p>
+<hr />
+<p>
+See also: <a class="wiki" href="TracInterfaceCustomization.html">TracInterfaceCustomization</a>, and the <a class="ext-link" href="http://trac-hacks.org/wiki/NavAddPlugin"><span class="icon">​</span>TracHacks:NavAddPlugin</a> or <a class="ext-link" href="http://trac-hacks.org/wiki/MenusPlugin"><span class="icon">​</span>TracHacks:MenusPlugin</a> (still needed for adding entries)
+</p>
+</div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/trac/wiki/TracNavigation?action=diff&amp;version=2" title="Version 2 by trac">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/trac/timeline?from=2015-02-25T21%3A38%3A24Z&amp;precision=second" title="See timeline at Feb 25, 2015, 9:38:24 PM">6 years ago</a></span>
+            <span class="trac-print">Last modified on Feb 25, 2015, 9:38:24 PM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/trac/wiki/TracNavigation?format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

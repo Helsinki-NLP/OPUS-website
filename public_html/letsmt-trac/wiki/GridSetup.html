@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      GridSetup – LetsMT
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/letsmt-trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/GridSetup?format=txt" type="text/x-trac-wiki" title="Plain Text" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/GridSetup?format=tex" type="text/x-trac-wiki" title="Latex" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/GridSetup?format=pdf" type="text/x-trac-wiki" title="Latex-Pdf" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.letsmt.eu/"><img src="http://stp.lingfil.uu.se/~joerg/LetsMT/letsmt.jpg" alt="LetsMT" width="100" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/letsmt-trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/letsmt-trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="GridSetup.html" title="View GridSetup">GridSetup</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/letsmt-trac/wiki/GridSetup?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><h2 id="PreperationVirtualBoxVirtualMachines:">Preperation VirtualBox Virtual Machines:</h2>
+<ul><li>In the settings of the virtual machine add a network card with NAT translation and port forwarding for ssh, for example host port 6000 to guest port 22, add an other network card with 'internal network' setting for inter-guest networking
+</li></ul><h3 id="PrepareNetworkConnections">Prepare Network Connections</h3>
+<ul><li>On the virtual machine set static IP address in /etc/network/interfaces, e.g:
+<pre class="wiki">auto eth2
+iface eth2 inet static
+        address 192.168.1.X
+        netmask 255.255.255.0
+        network 192.168.1.0
+        broadcast 192.168.1.255
+</pre></li></ul><ul><li>restart network
+<pre class="wiki">sudo /etc/init.d/networking restart
+</pre></li></ul><ul><li>change the hostname in /etc/hostname to something descriptive e.g. 'exec2':
+</li></ul><ul><li>edit /etc/hosts file, add for example:
+<pre class="wiki">192.168.1.10   master
+192.168.1.1     exec1
+192.168.1.2     exec2
+192.168.1.4     zumpe
+192.168.1.5     jorg
+192.168.1.7     zumpetest
+</pre></li></ul><ul><li>Add SGE_ROOT to ~/.bashrc and source it
+<pre class="wiki">export SGE_ROOT=/var/lib/gridengine
+</pre></li></ul><h3 id="InstallandConfigureSGEGridEngine">Install and Configure SGE Grid Engine</h3>
+<ul><li>install gridengine packages for server:
+<pre class="wiki">sudo apt-get install gridengine-master gridengine-client
+</pre></li></ul><ul><li>install gridengine packages for client:
+<pre class="wiki">sudo apt-get install gridengine-exec gridengine-client
+</pre><ul><li>Answers:
+<ul><li>Chose mail server type: OK
+</li><li>General type of mail config: Internet Site
+</li><li>System mail name: &lt;hostname&gt;.lingfil.uu.se
+</li><li>Configure SGE automatically: yes
+</li><li>SGE cell name: default
+</li><li>SGE master hostname: &lt;hostname of your she master&gt;
+</li></ul></li></ul></li></ul><p>
+There will be the error message:
+</p>
+<pre class="wiki">error: can't connect to service
+error: can't get configuration from qmaster -- backgrounding
+</pre><p>
+This can be ignored at this point.
+</p>
+<h3 id="InstallandSetupNFS">Install and Setup NFS</h3>
+<ul><li>install nfs packages on server:
+<pre class="wiki">sudo apt-get install nfs-kernel-server
+</pre></li></ul><ul><li>configure /etc/exports on the nfs server:
+<pre class="wiki">/var/lib/gridengine     192.168.1.0/24(rw,fsid=0,no_subtree_check,async)
+</pre></li></ul><ul><li>restart nfs server:
+<pre class="wiki">sudo /etc/init.d/nfs-kernel-server restart
+</pre></li></ul><ul><li>install nfs packages on client:
+<pre class="wiki">sudo apt-get install nfs-common
+</pre></li></ul><ul><li>load nfs module
+<pre class="wiki">sudo modprobe nfs
+</pre></li></ul><ul><li>add nfs module to /etc/modules to load at boot time (only exec clients)
+</li></ul><ul><li>empty dir to mount nfs on:
+<pre class="wiki">cd /var/lib/gridengine
+sudo rm -r *
+</pre></li></ul><ul><li>leave /var/lib/gridengine and try to mount
+<pre class="wiki">cd ..
+sudo mount -t nfs4 letsmtmaster:/ /var/lib/gridengine/
+</pre></li></ul><ul><li>add mount command to /etc/fstab
+</li></ul><pre class="wiki">letsmtmaster:/ /var/lib/gridengine    nfs4    _netdev,auto    0       0
+</pre><ul><li>Add user 'letsmt' as manager
+<pre class="wiki">sudo qconf -am letsmt
+</pre></li></ul><ul><li>Add new exec host  to list of exec hosts on the master server:
+<pre class="wiki">qconf -ae
+</pre></li></ul><ul><li>Create queue 'letsmt'
+<pre class="wiki">qconf -aq
+</pre></li></ul><ul><li>Add new exec host to queue 'letsmt' on the master server:
+<pre class="wiki">qconf -mq letsmt
+</pre></li></ul><ul><li>restart
+</li></ul><pre class="wiki">sudo service gridengine-master restart
+sudo service gridengine-exec restart
+</pre><h3 id="TroubleShooting">Trouble Shooting</h3>
+<p>
+In case the SGE setup routine fails to install the SGE master it might come to a situation where some initialization has happened and every subsequent attempt to reinstall SGE is canceled. In that case it might help to do the following steps:
+</p>
+<pre class="wiki">sudo mv /var/spool/gridengine/spooldb/sge /var/spool/gridengine/spooldb/sge_old
+sudo apt-get purge gridengine-master
+sudo apt-get install gridengine-master
+</pre><p>
+Re-do the SGE configuration (see above) or run a fresh letsmt install:
+</p>
+<pre class="wiki">sudo make install
+</pre><p>
+Try to restart master and exec deamons if you still have problems:
+</p>
+<pre class="wiki">sudo service gridengine-master restart
+sudo service gridengine-exec restart
+</pre><p>
+If you still have problems running jobs: Check for broken sge_qmaster and sge_execd processes. Try to stop them or kill them manually and try to repeat the steps above.
+</p>
+<h3 id="SGEmanagementwithqmon">SGE management with qmon</h3>
+<ul><li>install qmon:
+</li></ul><pre class="wiki">sudo apt-get install gridengine-qmon
+</pre><ul><li>start qmon via sudo
+</li></ul><p>
+Typical issues:
+</p>
+<ul><li>check that www-data is defined as user
+<ul><li>goto user configuration (top-right button)
+</li><li>goto 'User' tab and add 'www-data'
+</li></ul></li></ul><ul><li>check that letsmt queue exists and exec-hosts are registered
+<ul><li>goto 'Queue Control' (second top button)
+</li><li>goto 'Cluster Queues' and make sure that the letsmt queue is defined
+</li><li>click on 'Modify' to open queue settings for the 'letsmt' queue
+</li><li>add execution hosts to 'Hostlist' by typing the hostname into 'New <a class="missing wiki">Host/Hostgroup?</a>' and clicking on the button with the red arrow
+</li><li>close the queue configuration window and goto the 'Host' button in the 'Queue Control' window and check whether all hosts are listed there
+</li></ul></li></ul><h3 id="SGE:cannotreachqmaster">SGE: cannot reach qmaster</h3>
+<ul><li>look at <a class="ext-link" href="http://superuser.com/questions/404315/installing-grid-engine-cannot-reach-qmaster"><span class="icon">​</span>http://superuser.com/questions/404315/installing-grid-engine-cannot-reach-qmaster</a>:
+</li></ul><p>
+Essentially it's complaining that a reverse lookup of your IP returns localhost instead of anton-Virtualbox and your queue is setup to use anton-Virtualbox as the qmaster. So you need to update your hosts file.
+</p>
+<p>
+Mine reads:
+</p>
+<pre class="wiki">my.full.local.ip        my.fully.qualified.hostname    shorthostname
+127.0.1.1               my.fully.qualified.hostname    shorthostname
+127.0.0.1               localhost
+...
+</pre><p>
+==Links ==
+</p>
+<ul><li>Docs at Oracle: <a class="ext-link" href="http://docs.oracle.com/cd/E24901_01/index.htm"><span class="icon">​</span>http://docs.oracle.com/cd/E24901_01/index.htm</a>
+</li><li>Other tutorials for setup and configuration: 
+<ul><li><a class="ext-link" href="http://www.softpanorama.info/Admin/Job_schedulers/Grid_engine/Installation/index.shtml"><span class="icon">​</span>http://www.softpanorama.info/Admin/Job_schedulers/Grid_engine/Installation/index.shtml</a>
+</li><li><a class="ext-link" href="http://www.softpanorama.info/Admin/Job_schedulers/Grid_engine/Installation/installation_of_execution_host.shtml"><span class="icon">​</span>http://www.softpanorama.info/Admin/Job_schedulers/Grid_engine/Installation/installation_of_execution_host.shtml</a>
+</li><li><a class="ext-link" href="http://www.globusconsortium.org/tutorial/ch3/page_3.php"><span class="icon">​</span>http://www.globusconsortium.org/tutorial/ch3/page_3.php</a>
+</li></ul></li></ul></div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/letsmt-trac/wiki/GridSetup?action=diff&amp;version=24" title="Version 24 by joerg">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2012-09-23T08%3A28%3A44Z&amp;precision=second" title="See timeline at Sep 23, 2012, 8:28:44 AM">8 years ago</a></span>
+            <span class="trac-print">Last modified on Sep 23, 2012, 8:28:44 AM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/GridSetup?format=txt">Plain Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/GridSetup?format=tex">Latex</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/GridSetup?format=pdf">Latex-Pdf</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

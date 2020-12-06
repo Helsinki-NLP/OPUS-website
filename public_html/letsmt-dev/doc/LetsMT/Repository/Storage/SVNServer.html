@@ -1,0 +1,109 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>SVNServer</title>
+<link rel="stylesheet" href="../../../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#constructor">CONSTRUCTOR</a></li>
+	<li><a href="#methods">METHODS</a></li>
+	<ul>
+
+		<li><a href="#init"><code>init</code></a></li>
+		<li><a href="#add_user"><code>add_user</code></a></li>
+		<li><a href="#mkdir"><code>mkdir</code></a></li>
+		<li><a href="#copy"><code>copy</code></a></li>
+	</ul>
+
+	<li><a href="#internal_method">INTERNAL METHOD</a></li>
+	<ul>
+
+		<li><a href="#_cleanup_listing"><code>_cleanup_listing</code></a></li>
+	</ul>
+
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>LetsMT::Repository::SVNServer - storage backend for access to remote Subversion</p>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>This class is a child of 
+<a href="./../../..//LetsMT/Repository/Storage/SVNLocal.html">LetsMT::Repository::Storage::SVNLocal</a>
+and adds some server capabilities to it.
+Most documentation is found in that class.</p>
+<p>
+</p>
+<hr />
+<h1><a name="constructor">CONSTRUCTOR</a></h1>
+<pre>
+ $storage = new LetsMT::Repository::Storage::SVNServer (%params);</pre>
+<p>
+</p>
+<hr />
+<h1><a name="methods">METHODS</a></h1>
+<p>
+</p>
+<h2><a name="init"><code>init</code></a></h2>
+<pre>
+ $storage-&gt;init ($path)</pre>
+<p>Initialize a new subversion repository.</p>
+<p>Returns: true (an exception is raised on failure).</p>
+<p>
+</p>
+<h2><a name="add_user"><code>add_user</code></a></h2>
+<pre>
+ $storage-&gt;add_user ($slot, $user)</pre>
+<p>Add a user to the repository.</p>
+<p>Returns: true (an exception is raised on failure).</p>
+<p>
+</p>
+<h2><a name="mkdir"><code>mkdir</code></a></h2>
+<pre>
+ $storage-&gt;mkdir ($repos, $branch, $user, $dir)</pre>
+<p>A wrapper around <code>svn mkdir</code>.</p>
+<p>Returns: true if directory already exists, or creation went well.
+An exception is raised on creation failure.</p>
+<p>
+</p>
+<h2><a name="copy"><code>copy</code></a></h2>
+<pre>
+ $storage-&gt;copy ($user, $slot, $source, $target)</pre>
+<p>A wrapper around <code>svn copy</code>.</p>
+<p>Returns: true (an exception is raised on failure).</p>
+<p>
+</p>
+<hr />
+<h1><a name="internal_method">INTERNAL METHOD</a></h1>
+<p>
+</p>
+<h2><a name="_cleanup_listing"><code>_cleanup_listing</code></a></h2>
+<pre>
+ $listing = $storage-&gt;_cleanup_listing ($listing, $slotobject)</pre>
+<p>A simplistic way to cleanup absolute paths from the svn listings.
+Does things slightly differently from the parent class.</p>
+
+</body>
+
+</html>

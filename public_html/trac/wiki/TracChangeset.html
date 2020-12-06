@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      TracChangeset – OPUS
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/trac/wiki/TracChangeset?format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="../../index.html"><img src="../../img/opus_medium.jpg" alt="opus" height="90" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="TracChangeset.html" title="View TracChangeset">TracChangeset</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/trac/wiki/TracChangeset?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><h1 id="TracChangesetModule">Trac Changeset Module</h1>
+<p>
+</p><div class="wiki-toc"><h4>Table of Contents</h4><ul><li class="False"><a class="False" href="TracGuide.html">Index</a></li><li class="False"><a class="False" href="TracInstall.html">Installation</a></li><li class="False"><a class="False" href="TracInterfaceCustomization.html">Customization</a></li><li class="False"><a class="False" href="TracPlugins.html">Plugins</a></li><li class="False"><a class="False" href="TracUpgrade.html">Upgrading</a></li><li class="False"><a class="False" href="TracIni.html">Configuration</a></li><li class="False"><a class="False" href="TracAdmin.html">Administration</a></li><li class="False"><a class="False" href="TracBackup.html">Backup</a></li><li class="False"><a class="False" href="TracLogging.html">Logging</a></li><li class="False"><a class="False" href="TracPermissions.html">Permissions</a></li><li class="False"><a class="False" href="TracWiki.html">The Wiki</a></li><li class="False"><a class="False" href="WikiFormatting.html">Wiki Formatting</a></li><li class="False"><a class="False" href="TracTimeline.html">Timeline</a></li><li class="False"><a class="False" href="TracBrowser.html">Repository Browser</a></li><li class="False"><a class="False" href="TracRevisionLog.html">Revision Log</a></li><li class="active"><a class="False" href="TracChangeset.html">Changesets</a></li><li class="False"><a class="False" href="TracTickets.html">Tickets</a></li><li class="False"><a class="False" href="TracWorkflow.html">Workflow</a></li><li class="False"><a class="False" href="TracRoadmap.html">Roadmap</a></li><li class="False"><a class="False" href="TracQuery.html">Ticket Queries</a></li><li class="False"><a class="False" href="TracBatchModify.html">Batch Modify</a></li><li class="False"><a class="False" href="TracReports.html">Reports</a></li><li class="False"><a class="False" href="TracRss.html">RSS Support</a></li><li class="False"><a class="False" href="TracNotification.html">Notification</a></li></ul></div><p>
+</p>
+<p>
+Trac has a built-in functionality for visualizing “diffs”, or changes to files.
+</p>
+<p>
+There are different kinds of <em>change sets</em>.  Some correspond to revisions made in the repositories, others aggregate changes made in several revisions. Ultimately, any kind of difference can be shown.
+</p>
+<p>
+The changeset view consists of two parts, the <em>header</em> and the <em>diff views</em>.
+</p>
+<h2 id="ChangesetHeader">Changeset Header</h2>
+<p>
+The header shows an overview of the whole changeset.
+Here you will find information such as:
+</p>
+<ul><li>Timestamp — When the changeset was commited
+</li><li>Author — Who commited the changeset
+</li><li>Message — A brief description from the author (the commit log message)
+</li><li>Location — Parent directory of all files affected by this changeset
+</li><li>Files — A list of files affected by this changeset
+</li></ul><p>
+If more than one revision is involved in the set of changes being displayed, the <em>Timestamp</em>, <em>Author</em> and <em>Message</em> fields will not be shown.
+</p>
+<p>
+A colored rectangle indicates how the file is affected by the changeset:
+ 
+</p>
+<blockquote>
+<p>
+<span style="background:#bfb; border:1px solid #999; font-size:80%; margin-right:.5em"><em>  </em></span> Green: Added <br />
+<span style="background:#f88; border:1px solid #999; font-size:80%; margin-right:.5em"><em>  </em></span> Red: Removed <br />
+<span style="background:#fd8; border:1px solid #999; font-size:80%; margin-right:.5em"><em>  </em></span> Yellow: Modified <br />
+<span style="background:#88f; border:1px solid #999; font-size:80%; margin-right:.5em"><em>  </em></span> Blue: Copied <br />
+<span style="background:#ccc; border:1px solid #999; font-size:80%; margin-right:.5em"><em>  </em></span> Gray: Moved <br />
+</p>
+</blockquote>
+<p>
+The color legend is located below the header as a reminder.
+</p>
+<h2 id="DiffViews">Diff Views</h2>
+<p>
+Below the header is the main part of the changeset, the diff view. Each file is shown in a separate section, each of which contains only the regions of the file that are affected by the changeset. There are two different styles to display the diffs: <em>inline</em> or <em>side-by-side</em>. You can switch between the styles using the preferences form:
+</p>
+<ul><li>The <em>inline</em> style shows the changed regions of a file underneath each other. A region removed from the file will be colored red, an added region will be colored green. If a region was modified, the old version is displayed above the new version. Line numbers indicate the exact position of the change in both the old and the new version of the file.
+</li><li>The <em>side-by-side</em> style shows the old version on the left and the new version on the right and this will typically require more screen width than the inline style. Added and removed regions will be colored in the same way as with the inline style (green and red), and modified regions will have a yellow background.
+</li></ul><p>
+In addition, various advanced options are available in the preferences form for adjusting the display of the diffs:
+</p>
+<ul><li>You can set how many lines are displayed before and after every change; if the value <em>all</em> is used, then the full file will be shown.
+</li><li>You can toggle whether blank lines, case changes and white space changes are ignored, thereby letting you find the functional changes more quickly.
+</li></ul><h2 id="TheDifferentWaystoGetaDiff">The Different Ways to Get a Diff</h2>
+<h3 id="ExaminingaChangeset">Examining a Changeset</h3>
+<p>
+When viewing a repository check-in, such as when following a changeset <a class="wiki" href="TracLinks.html">link</a> or a changeset event in the <a class="wiki" href="TracTimeline.html">timeline</a>, Trac will display the exact changes made by the check-in.
+</p>
+<p>
+There will be also navigation links to the <em>Previous Changeset</em> to and <em>Next Changeset</em>.
+</p>
+<h3 id="ExaminingDifferencesBetweenRevisions">Examining Differences Between Revisions</h3>
+<p>
+Often you want to look at changes made on a file or on a directory spanning multiple revisions. The easiest way to get there is from the <a class="wiki" href="TracRevisionLog.html">TracRevisionLog</a>, where you can select the <em>old</em> and the <em>new</em> revisions of the file or directory, and then click the <em>View changes</em> button.
+</p>
+<h3 id="ExaminingDifferencesBetweenBranches">Examining Differences Between Branches</h3>
+<p>
+One of the core features of version control systems is the possibility to work simultaneously on different <em>Lines of Developments</em>, commonly called “branches”. Trac enables you to examine the exact differences between such branches.
+</p>
+<p>
+Using the <strong>View changes ...</strong> button in the <a class="wiki" href="TracBrowser.html">TracBrowser</a> allows you to enter <em>From:</em> and <em>To:</em> path/revision pairs. The resulting set of differences consist of the changes that should be applied to the <em>From:</em> content to get to the <em>To:</em> content.
+</p>
+<p>
+For convenience, it is possible to invert the roles of the <em>old</em> and the <em>new</em> path/revision pairs by clicking the <em>Reverse Diff</em> link on the changeset page.
+</p>
+<h3 id="CheckingtheLastChange">Checking the Last Change</h3>
+<p>
+Another way to examine changes is to use the <em>Last Change</em> link provided by the <a class="wiki" href="TracBrowser.html">TracBrowser</a>.
+</p>
+<p>
+This link will take you to the last change that was made on that path. From there, you can use the <em>Previous Change</em> and <em>Next Change</em> links to traverse the change history of the file or directory.
+</p>
+<hr />
+<p>
+See also: <a class="wiki" href="TracGuide.html">TracGuide</a>, <a class="wiki" href="TracBrowser.html">TracBrowser</a>
+</p>
+</div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/trac/wiki/TracChangeset?action=diff&amp;version=2" title="Version 2 by trac">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/trac/timeline?from=2015-02-25T21%3A38%3A24Z&amp;precision=second" title="See timeline at Feb 25, 2015, 9:38:24 PM">6 years ago</a></span>
+            <span class="trac-print">Last modified on Feb 25, 2015, 9:38:24 PM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/trac/wiki/TracChangeset?format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

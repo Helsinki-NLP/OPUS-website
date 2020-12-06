@@ -1,0 +1,79 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Encoding</title>
+<link rel="stylesheet" href="../../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#functions">FUNCTIONS</a></li>
+	<ul>
+
+		<li><a href="#create_model"><code>create_model</code></a></li>
+		<li><a href="#text2utf8"><code>text2utf8</code></a></li>
+		<li><a href="#text2utf8"><code>text2utf8</code></a></li>
+		<li><a href="#detect_encoding"><code>detect_encoding</code></a></li>
+		<li><a href="#guess_encoding"><code>guess_encoding</code></a></li>
+	</ul>
+
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>LetsMT::Lang::Encoding</p>
+<p>
+</p>
+<hr />
+<h1><a name="functions">FUNCTIONS</a></h1>
+<p>
+</p>
+<h2><a name="create_model"><code>create_model</code></a></h2>
+<p>
+</p>
+<h2><a name="text2utf8"><code>text2utf8</code></a></h2>
+<pre>
+ $outfile = &amp;text2utf8 ($infile, $outfile, $enc, $lang)</pre>
+<p>Convert a text to uft-8 encoding.</p>
+<p>Returns the name of the output file on success,
+or <code>undef</code> on failure.</p>
+<p>
+</p>
+<h2><a name="text2utf8"><code>text2utf8</code></a></h2>
+<pre>
+ $status = &amp;text2utf8 ($infile, $enc, $lang)</pre>
+<p>Convert a text to uft-8 encoding in place.</p>
+<p>
+</p>
+<h2><a name="detect_encoding"><code>detect_encoding</code></a></h2>
+<pre>
+ $encoding = &amp;detect_encoding ($file, $lang)</pre>
+<p>Try to detect the character encoding (mainly using chared).</p>
+<p>
+</p>
+<h2><a name="guess_encoding"><code>guess_encoding</code></a></h2>
+<pre>
+ $encoding = &amp;guess_encoding ($lang, $file)</pre>
+<p>Heuristics for setting character encoding depending on the source language
+(this assumes that most stuff comes from the windows world ...).</p>
+<p>Requires 'file' tool!</p>
+
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>XML</title>
+<link rel="stylesheet" href="../../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#functions">FUNCTIONS</a></li>
+	<ul>
+
+		<li><a href="#validate_dtd"><code>validate_dtd</code></a></li>
+		<li><a href="#validate_xs"><code>validate_xs</code></a></li>
+		<li><a href="#validate_xml"><code>validate_xml</code></a></li>
+		<li><a href="#validate_standalone_xml"><code>validate_standalone_xml</code></a></li>
+		<li><a href="#tidy_xml"><code>tidy_xml</code></a></li>
+		<li><a href="#clean_xml"><code>clean_xml</code></a></li>
+	</ul>
+
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>Tools</p>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>XML-related tools</p>
+<p>
+</p>
+<hr />
+<h1><a name="functions">FUNCTIONS</a></h1>
+<p>
+</p>
+<h2><a name="validate_dtd"><code>validate_dtd</code></a></h2>
+<pre>
+ $errors = &amp;validate_dtd ($resource, $dtd)</pre>
+<p>Validate <code>$resource</code> according to <code>$dtd</code>.</p>
+<p>Returns a list of errors if it fails, and an empty list otherwise.</p>
+<p>
+</p>
+<h2><a name="validate_xs"><code>validate_xs</code></a></h2>
+<pre>
+ $errors = &amp;validate_xs ($resource, $xs)</pre>
+<p>Validate <code>$resource</code> according to XML Schema <code>$xs</code>. 
+Returns a list of errors if it fails, and an empty list otherwise.</p>
+<p>
+</p>
+<h2><a name="validate_xml"><code>validate_xml</code></a></h2>
+<pre>
+ $errors = &amp;validate_xml ($resource)</pre>
+<p>Check that <code>$resource</code> is valid XML.
+This expects a DOCTYPE declaration in the document!</p>
+<p>Returns a list of errors if it fails, and an empty list otherwise.</p>
+<p>
+</p>
+<h2><a name="validate_standalone_xml"><code>validate_standalone_xml</code></a></h2>
+<pre>
+ $errors = &amp;validate_standalone_xml ($resource)</pre>
+<p>Check that <code>$resource</code> is valid xml
+(without DTD validation id a DOCTYPE is given in the document).</p>
+<p>Returns a list of errors if it fails, and an empty list otherwise.</p>
+<p>
+</p>
+<h2><a name="tidy_xml"><code>tidy_xml</code></a></h2>
+<pre>
+ $errors = &amp;tidy_xml ($resource)</pre>
+<p>Validate, correct, and format (in place) the XML file found at path <code>$resource</code>.</p>
+<p>Returns a list of errors if it fails, and an empty list otherwise.</p>
+<p>
+</p>
+<h2><a name="clean_xml"><code>clean_xml</code></a></h2>
+<p>Clean up strings before parsing.</p>
+<p>From <a href="http://stackoverflow.com/questions/1016910/how-can-i-strip-invalid-xml-characters-from-strings-in-perl">http://stackoverflow.com/questions/1016910/how-can-i-strip-invalid-xml-characters-from-strings-in-perl</a></p>
+
+</body>
+
+</html>

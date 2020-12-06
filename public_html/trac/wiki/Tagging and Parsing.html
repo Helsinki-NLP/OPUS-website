@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      Tagging and Parsing – OPUS
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/trac/wiki/Tagging%20and%20Parsing?format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="../../index.html"><img src="../../img/opus_medium.jpg" alt="opus" height="90" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="Tagging&#32;and&#32;Parsing.html" title="View Tagging and Parsing">Tagging and Parsing</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/trac/wiki/Tagging%20and%20Parsing?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><p>
+</p><div class="wiki-toc">
+<ol>
+  <li>
+    <a href="Tagging&#32;and&#32;Parsing.html#Language-specificTaggersandParsersintheOPUScorpus">Language-specific Taggers and Parsers in the OPUS corpus</a>
+    <ol>
+      <li>
+        <a href="Tagging&#32;and&#32;Parsing.html#Czech">Czech</a>
+      </li>
+      <li>
+        <a href="Tagging&#32;and&#32;Parsing.html#Chinese">Chinese</a>
+      </li>
+      <li>
+        <a href="Tagging&#32;and&#32;Parsing.html#Danish">Danish</a>
+      </li>
+      <li>
+        <a href="Tagging&#32;and&#32;Parsing.html#Dutch">Dutch</a>
+      </li>
+      <li>
+        <a href="Tagging&#32;and&#32;Parsing.html#English">English</a>
+      </li>
+      <li>
+        <a href="Tagging&#32;and&#32;Parsing.html#French">French</a>
+      </li>
+      <li>
+        <a href="Tagging&#32;and&#32;Parsing.html#German">German</a>
+      </li>
+      <li>
+        <a href="Tagging&#32;and&#32;Parsing.html#Hungarian">Hungarian</a>
+      </li>
+      <li>
+        <a href="Tagging&#32;and&#32;Parsing.html#Italian">Italian</a>
+      </li>
+      <li>
+        <a href="Tagging&#32;and&#32;Parsing.html#Portuguese">Portuguese</a>
+      </li>
+      <li>
+        <a href="Tagging&#32;and&#32;Parsing.html#Russian">Russian</a>
+      </li>
+      <li>
+        <a href="Tagging&#32;and&#32;Parsing.html#Slovene">Slovene</a>
+      </li>
+      <li>
+        <a href="Tagging&#32;and&#32;Parsing.html#Spanish">Spanish</a>
+      </li>
+      <li>
+        <a href="Tagging&#32;and&#32;Parsing.html#Swedish">Swedish</a>
+      </li>
+      <li>
+        <a href="Tagging&#32;and&#32;Parsing.html#Turkish">Turkish</a>
+      </li>
+    </ol>
+  </li>
+</ol>
+</div><p>
+</p>
+<h1 id="Language-specificTaggersandParsersintheOPUScorpus">Language-specific Taggers and Parsers in the OPUS corpus</h1>
+<p>
+In the OPUS corpus, language-specific tools for tagging and parsing have been collected, and are available for download here: <a class="wiki" href="DownloadTools.html">DownloadTools</a>. For a consistent tagging and parsing procedure, the same tagging and parsing tools have been used for most of the languages, i.e. the Hunpos tagger (<em>Péter Halácsy, András Kornai, Csaba Oravecz, 2007, Hunpos - an open source trigram tagger</em>) and the Maltparser (<em>Joakim Nivre and Johan Hall, 2005, Maltparser: A language-independent system for data-driven dependency parsing</em>). For some languages, alternative taggers and/or parsers are used.
+</p>
+<h2 id="Czech">Czech</h2>
+<p>
+The tagger used for tagging Czech texts is the Hunpos tagger, trained on the Prague Dependency Treebank (PDT).
+</p>
+<p>
+The parser used for parsing Czech texts is Maltparser, trained on the Prague Dependency Treebank (PDT). The Czech parsing model was provided by Marco Kuhlmann, Uppsala University (<em>Marco Kuhlmann and Joakim Nivre, 2010, Transition-Based Techniques for Non-Projective Dependency Parsing</em>).
+</p>
+<h2 id="Chinese">Chinese</h2>
+<p>
+For Chinese, the Zpar parser is used for segmentation, tagging and parsing. The Chinese model was downloaded from <a class="ext-link" href="http://sourceforge.net/projects/zpar/files/0.4/"><span class="icon">​</span>http://sourceforge.net/projects/zpar/files/0.4/</a>.
+</p>
+<h2 id="Danish">Danish</h2>
+<p>
+The tagger used for tagging Danish texts is the Hunpos tagger, trained on the Danish Dependency Treebank (<a class="ext-link" href="http://www.id.cbs.dk/~mtk/treebank/"><span class="icon">​</span>http://www.id.cbs.dk/~mtk/treebank/</a>).
+</p>
+<p>
+The parser used for parsing Danish texts is Maltparser, trained on the Danish Dependency Treebank (DDT). Optimized settings were provided by Joakim Nivre, Uppsala University.
+</p>
+<h2 id="Dutch">Dutch</h2>
+<p>
+The parser used for parsing Dutch texts is Maltparser, trained on the CDB corpus, i.e. the newspaper part of the Alpino Treebank (van Noord, 2006). The Dutch parsing model was provided by Barbara Plank, University of Groningen.
+</p>
+<h2 id="English">English</h2>
+<p>
+The tagger used for tagging English texts is the Hunpos tagger, trained on the Wall Street Journal section of the Penn Treebank. The English tagging model was downloaded from <a class="ext-link" href="http://code.google.com/p/hunpos/downloads/list"><span class="icon">​</span>http://code.google.com/p/hunpos/downloads/list</a>.
+</p>
+<p>
+The parser used for parsing English texts is Maltparser, trained on the Wall Street Journal section of the Penn Treebank extended with about 4000 questions from the Question Bank, converted to dependency trees using the Stanford Parser. The English parsing model was downloaded from <a class="ext-link" href="http://maltparser.org/mco/english_parser/engmalt.html"><span class="icon">​</span>http://maltparser.org/mco/english_parser/engmalt.html</a>.
+</p>
+<h2 id="French">French</h2>
+<p>
+The tagger used for tagging French texts is the MElt tagger (<em>Denis and Sagôt, 2009, Coupling an annotated corpus and a morphosyntactic lexicon
+for state-of-the-art POS tagging with less human effort</em>). The French tagging model was downloaded from <a class="ext-link" href="https://gforge.inria.fr/frs/download.php/27240/melt-0.6.tar.gz"><span class="icon">​</span>https://gforge.inria.fr/frs/download.php/27240/melt-0.6.tar.gz</a>. 
+</p>
+<p>
+The parser used for parsing French texts is Maltparser, trained on a dependency version of the French Treebank. The French parsing model was downloaded from <a class="ext-link" href="http://maltparser.org/mco/french_parser/fremalt.html"><span class="icon">​</span>http://maltparser.org/mco/french_parser/fremalt.html</a>.
+</p>
+<h2 id="German">German</h2>
+<p>
+The parser used for parsing German texts is Maltparser, trained on the Tiger Treebank. The German parsing model was provided by Marco Kuhlmann, Uppsala University (<em>Marco Kuhlmann and Joakim Nivre, 2010, Transition-Based Techniques for Non-Projective Dependency Parsing</em>).
+</p>
+<h2 id="Hungarian">Hungarian</h2>
+<p>
+The tagger used for tagging Hungarian texts is the Hunpos tagger. The Hungarian tagging model was downloaded from <a class="ext-link" href="http://code.google.com/p/hunpos/downloads/list"><span class="icon">​</span>http://code.google.com/p/hunpos/downloads/list</a>.
+</p>
+<h2 id="Italian">Italian</h2>
+<p>
+Pre-processing tools and taggers for Italian are bundled in <a class="ext-link" href="http://textpro.fbk.eu/home.html"><span class="icon">​</span>TextPro</a>. The parser is trained with <a class="missing wiki">MaltParser?</a>.
+</p>
+<h2 id="Portuguese">Portuguese</h2>
+<p>
+The tagger used for tagging Portuguese texts is the Hunpos tagger, trained on the Floresta corpus.
+</p>
+<p>
+The parser used for parsing Portuguese texts is Maltparser, trained on the Floresta corpus.
+</p>
+<h2 id="Russian">Russian</h2>
+<p>
+The tagger used for tagging Russian texts is the Hunpos tagger.
+</p>
+<p>
+The parser used for parsing Russian texts is Maltparser.
+</p>
+<h2 id="Slovene">Slovene</h2>
+<p>
+The tagger used for tagging Slovene texts is the Hunpos tagger, trained on the jos100k corpus, version 2.0. Training data was provided by Tomaž Erjavec, Department of Knowledge Technologies, Jozef Štefan Institute.
+</p>
+<p>
+The parser used for parsing Slovene texts is Malt Parser, trained on the jos100k corpus, version 2.0. Training data was provided by Tomaž Erjavec, Department of Knowledge Technologies, Jozef Štefan Institute.
+</p>
+<h2 id="Spanish">Spanish</h2>
+<p>
+The tagger used for tagging Spanish texts is the SVMTool (<em>Jesús Giménez and Lluis Màrquez, 2004, SVMTool: A general POS tagger generator based on Support Vector Machines</em>), trained on the Ancora corpus. The Spanish tagging model was provided by Jesús Giménez, Universitat Politècnica de Catalunya Barcelona Tech.
+</p>
+<p>
+The parser used for parsing spanish texts is Maltparser, trained on the Ancora corpus. The Spanish parsing model was provided by Jesús Giménez.
+</p>
+<h2 id="Swedish">Swedish</h2>
+<p>
+The tagger used for tagging Swedish texts is the Hunpos tagger, trained on the SUC corpus, version 2.0. The Swedish tagging model was provided by Uppsala University.
+</p>
+<p>
+The parser used for parsing Swedish texts is Maltparser, trained on the Talbanken section of the Swedish Treebank. The Swedish parsing model was downloaded from <a class="ext-link" href="http://maltparser.org/mco/swedish_parser/swemalt.html"><span class="icon">​</span>http://maltparser.org/mco/swedish_parser/swemalt.html</a>.
+</p>
+<h2 id="Turkish">Turkish</h2>
+<p>
+For the morpho-syntactic annotation of Turkish texts, a morphological segmenter and analyser developed by Kemal Oflazer is used, leaving ambiguous tokens (<em>Kemal Oflazer, 1994, Two-level description of Turkish morphology</em>). The disambiguation is performed using the disambiguator described by Yüret and Türe (<em>Deniz Yüret and Ferhan Türe, 2006, Learning morphological disambiguation rules for Turkish</em>).
+</p>
+<p>
+The parser used for parsing Turkish texts is Maltparser, with a pre-trained Turkish model provided by Gülsen Eryigit, İstanbul Teknik Üniversitesi (<em>J. Eryigit G., Nivre and K. Oflazer, 2006, The incremental use of morphological information and lexicalization in data-driven dependency parsing</em>).
+</p>
+</div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/trac/wiki/Tagging%20and%20Parsing?action=diff&amp;version=43" title="Version 43 by joerg">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/trac/timeline?from=2013-11-03T12%3A25%3A40Z&amp;precision=second" title="See timeline at Nov 3, 2013, 12:25:40 PM">7 years ago</a></span>
+            <span class="trac-print">Last modified on Nov 3, 2013, 12:25:40 PM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/trac/wiki/Tagging%20and%20Parsing?format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

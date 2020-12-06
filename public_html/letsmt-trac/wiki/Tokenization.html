@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      Tokenization – LetsMT
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/letsmt-trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/Tokenization?format=txt" type="text/x-trac-wiki" title="Plain Text" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/Tokenization?format=tex" type="text/x-trac-wiki" title="Latex" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/Tokenization?format=pdf" type="text/x-trac-wiki" title="Latex-Pdf" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.letsmt.eu/"><img src="http://stp.lingfil.uu.se/~joerg/LetsMT/letsmt.jpg" alt="LetsMT" width="100" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/letsmt-trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/letsmt-trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="Tokenization.html" title="View Tokenization">Tokenization</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/letsmt-trac/wiki/Tokenization?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><h1 id="Toolsfortokenization">Tools for tokenization</h1>
+<h2 id="Generictoolsmultiplelanguages">Generic tools / multiple languages</h2>
+<ul><li>New trainable tokenizer:
+<ul><li><a class="ext-link" href="https://github.com/jirkamarsik/trainable-tokenizer"><span class="icon">​</span>https://github.com/jirkamarsik/trainable-tokenizer</a>
+</li></ul></li></ul><ul><li><a class="missing wiki">Moses/Europarl?</a> tokenizer
+<ul><li><a class="ext-link" href="http://www.statmt.org/wmt10/scripts.tgz"><span class="icon">​</span>http://www.statmt.org/wmt10/scripts.tgz</a>
+</li><li>more <a class="ext-link" href="http://www.precisiontranslationtools.com/index.php?option=com_content&amp;view=article&amp;id=29"><span class="icon">​</span>non-breaking prefixes</a>
+</li></ul></li></ul><ul><li>OpenNLP (GPL?)
+<ul><li><a class="ext-link" href="http://opennlp.sourceforge.net/"><span class="icon">​</span>http://opennlp.sourceforge.net/</a>
+</li><li>trainable tokenizer, 
+</li><li>models available for English, German, Spanish, Thai
+</li></ul></li></ul><ul><li>NLTK  (Apache license)
+<ul><li>(regexp)
+</li><li><a class="ext-link" href="http://www.nltk.org/"><span class="icon">​</span>http://www.nltk.org/</a>
+</li></ul></li></ul><ul><li>huntoken (License?)
+<ul><li><a class="ext-link" href="http://mokk.bme.hu/resources/huntoken"><span class="icon">​</span>http://mokk.bme.hu/resources/huntoken</a>
+</li></ul></li></ul><ul><li>Jena NLP tools
+<ul><li><a class="ext-link" href="http://www.julielab.de/Resources/Software/NLP+Tools.html"><span class="icon">​</span>http://www.julielab.de/Resources/Software/NLP+Tools.html</a>
+</li><li>trainable
+</li><li>article: <a class="ext-link" href="http://books.google.com/books?id=dEXxG4XyvKwC&amp;pg=PA524&amp;lpg=PA524&amp;dq=Katrin+Tomanek,+Joachim+Wermter,+and+Udo+Hahn.+A+reappraisal+of+sentence+and+token+splitting+for+life+science+documents.+In+MEDINFO+2007+-+Proceedings+of+the+12th+World+Congress+on+Medical+Informatics.&amp;source=bl&amp;ots=AvAJreMFHq&amp;sig=ASKHCYHUHiXC7IBbhErmF1MGTJw&amp;hl=en&amp;ei=Qu0MTJi-Cd-JOLndtRQ&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=1&amp;ved=0CBIQ6AEwAA#v=onepage&amp;q&amp;f=false"><span class="icon">​</span>http://books.google.com/books?id=dEXxG4XyvKwC&amp;pg=PA524&amp;lpg=PA524&amp;dq=Katrin+Tomanek,+Joachim+Wermter,+and+Udo+Hahn.+A+reappraisal+of+sentence+and+token+splitting+for+life+science+documents.+In+MEDINFO+2007+-+Proceedings+of+the+12th+World+Congress+on+Medical+Informatics.&amp;source=bl&amp;ots=AvAJreMFHq&amp;sig=ASKHCYHUHiXC7IBbhErmF1MGTJw&amp;hl=en&amp;ei=Qu0MTJi-Cd-JOLndtRQ&amp;sa=X&amp;oi=book_result&amp;ct=result&amp;resnum=1&amp;ved=0CBIQ6AEwAA#v=onepage&amp;q&amp;f=false</a>
+</li></ul></li></ul><ul><li><a class="missing wiki">FreeLing?</a> (GPL)
+<ul><li><a class="ext-link" href="http://www.lsi.upc.edu/~nlp/freeling"><span class="icon">​</span>http://www.lsi.upc.edu/~nlp/freeling</a>
+</li><li>regexp tokenizer
+</li><li>(mainly Catalan &amp; Spanish?)
+</li></ul></li></ul><ul><li>another classifier-based tokenizer;
+<ul><li><a class="ext-link" href="http://labs.sapo.pt/up/2011/11/12/sylvester-ugc-tokenizer/"><span class="icon">​</span>http://labs.sapo.pt/up/2011/11/12/sylvester-ugc-tokenizer/</a>
+</li><li><a class="ext-link" href="http://dl.acm.org/citation.cfm?id=1871853"><span class="icon">​</span>http://dl.acm.org/citation.cfm?id=1871853</a>
+</li></ul></li></ul><ul><li>Ellogon (LGPL)
+<ul><li><a class="ext-link" href="http://www.ellogon.org"><span class="icon">​</span>http://www.ellogon.org</a>
+</li><li>(useful but seems to big/complex for our purposes(?))
+</li></ul></li></ul><ul><li>Java 6, <a class="missing wiki">BreakIterator?</a>
+<ul><li><a class="ext-link" href="http://java.sun.com/javase/6/docs/api/java/text/BreakIterator.html#word"><span class="icon">​</span>http://java.sun.com/javase/6/docs/api/java/text/BreakIterator.html#word</a>
+</li><li>comment: "Actually I have only used the <a class="missing wiki">BreakIterator?</a> for getting word and sentence instances from Portuguese text and it works quite well.  For instance, I don't remember of having any problem with the word instance tokenization.  As for the sentence splitting there might be a few problems, but it still works ok. For instance, I remeber that it could recognize dots in references, such as Author et al. 2010, and it did not split the sentence with the dot there. Furthermore, when using the getCharacterInstance(), getWordInstance() and getSentenceInstance() methods you can provide the desired Locale (there are several available countries), and I believe that splitting will adapt to it."
+</li></ul></li></ul><h2 id="Language-specifictools">Language-specific tools</h2>
+<ul><li>Alpino for Dutch (tokenization + sentence splitting)
+<ul><li><a class="ext-link" href="http://www.let.rug.nl/vannoord/alp/Alpino/"><span class="icon">​</span>http://www.let.rug.nl/vannoord/alp/Alpino/</a>
+</li></ul></li></ul><ul><li>Chinese:
+<ul><li><a class="ext-link" href="http://nlp.stanford.edu/software/segmenter.shtml"><span class="icon">​</span>http://nlp.stanford.edu/software/segmenter.shtml</a>
+</li><li><a class="ext-link" href="http://www.cl.cam.ac.uk/~yz360/zpar.html"><span class="icon">​</span>http://www.cl.cam.ac.uk/~yz360/zpar.html</a>
+</li></ul></li></ul><ul><li>MADA for Arabic (research only!!!!)
+<ul><li><a class="ext-link" href="http://www1.ccls.columbia.edu/~cadim/MADA.html"><span class="icon">​</span>http://www1.ccls.columbia.edu/~cadim/MADA.html</a>
+</li></ul></li></ul><ul><li>Japanese:
+<ul><li><a class="missing wiki">CaSen?</a>: <a class="ext-link" href="http://chasen-legacy.sourceforge.jp/"><span class="icon">​</span>http://chasen-legacy.sourceforge.jp/</a>
+</li><li><a class="missing wiki">MeCab?</a>: <a class="ext-link" href="http://code.google.com/p/mecab/"><span class="icon">​</span>http://code.google.com/p/mecab/</a>
+<ul><li>Solr package: <a class="ext-link" href="https://github.com/yamac/livedoor-solr-MeCabTokenizer-3.1"><span class="icon">​</span>https://github.com/yamac/livedoor-solr-MeCabTokenizer-3.1</a>
+</li><li>Perl: <a class="ext-link" href="http://search.cpan.org/~miki/Lingua-JA-Expand-0.00002/lib/Lingua/JA/Expand/Tokenizer/MeCab.pm"><span class="icon">​</span>http://search.cpan.org/~miki/Lingua-JA-Expand-0.00002/lib/Lingua/JA/Expand/Tokenizer/MeCab.pm</a>
+</li></ul></li></ul></li></ul><ul><li>Thai: <a class="ext-link" href="http://www.cs.cmu.edu/~paisarn/software.html"><span class="icon">​</span>http://www.cs.cmu.edu/~paisarn/software.html</a>
+</li></ul></div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/letsmt-trac/wiki/Tokenization?action=diff&amp;version=6" title="Version 6 by joerg">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2012-08-21T14%3A39%3A10Z&amp;precision=second" title="See timeline at Aug 21, 2012, 2:39:10 PM">8 years ago</a></span>
+            <span class="trac-print">Last modified on Aug 21, 2012, 2:39:10 PM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/Tokenization?format=txt">Plain Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/Tokenization?format=tex">Latex</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/Tokenization?format=pdf">Latex-Pdf</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+  
+
+  
+
+
+
+  <head>
+    <title>
+      Preferences: Syntax Highlighting – LetsMT
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/letsmt-trac/search" />
+        <link rel="help" href="../wiki/TracGuide.html" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/prefs.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+    <style type="text/css">
+      div.code pre { border: 1px solid #999; font-size: 90%; margin: 1em 2em;
+        padding: 5px; width: 60%;
+      }
+    </style><link rel="stylesheet" type="text/css" href="../pygments/autumn.css" title="Autumn" /><link rel="stylesheet" type="text/css" href="../pygments/borland.css" title="Borland" /><link rel="stylesheet" type="text/css" href="../pygments/bw.css" title="Bw" /><link rel="stylesheet" type="text/css" href="../pygments/colorful.css" title="Colorful" /><link rel="stylesheet" type="text/css" href="../pygments/default.css" title="Default" /><link rel="stylesheet" type="text/css" href="../pygments/emacs.css" title="Emacs" /><link rel="stylesheet" type="text/css" href="../pygments/friendly.css" title="Friendly" /><link rel="stylesheet" type="text/css" href="../pygments/fruity.css" title="Fruity" /><link rel="stylesheet" type="text/css" href="../pygments/manni.css" title="Manni" /><link rel="stylesheet" type="text/css" href="../pygments/monokai.css" title="Monokai" /><link rel="stylesheet" type="text/css" href="../pygments/murphy.css" title="Murphy" /><link rel="stylesheet" type="text/css" href="../pygments/native.css" title="Native" /><link rel="stylesheet" type="text/css" href="../pygments/pastie.css" title="Pastie" /><link rel="stylesheet" type="text/css" href="../pygments/perldoc.css" title="Perldoc" /><link rel="stylesheet" type="text/css" href="../pygments/rrt.css" title="Rrt" /><link rel="stylesheet" type="text/css" href="../pygments/tango.css" title="Tango" /><link rel="stylesheet" type="text/css" href="../pygments/trac.css" title="Trac" /><link rel="stylesheet" type="text/css" href="../pygments/vim.css" title="Vim" /><link rel="stylesheet" type="text/css" href="../pygments/vs.css" title="Vs" /><script type="text/javascript">
+      (function($){
+        window.switchStyleSheet = function(title) {
+          $('link[rel="stylesheet"][title]').each(function() {
+            this.disabled = true; // needed to force correct behavior for WebKit (see #10923)
+            this.disabled = this.getAttribute('title') != title;
+          });
+        }
+      })(jQuery);
+      jQuery(document).ready(function($) {
+        switchStyleSheet("Trac");
+        $("#pygment_theme").attr("autocomplete", "off").bind('change keypress', function() {
+          switchStyleSheet(this.options[this.selectedIndex].text);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.letsmt.eu/"><img src="http://stp.lingfil.uu.se/~joerg/LetsMT/letsmt.jpg" alt="LetsMT" width="100" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/letsmt-trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/letsmt-trac/login">Login</a></li><li class="active"><a href="../prefs.html">Preferences</a></li><li><a href="../wiki/TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <hr />
+      </div>
+    <div id="content" class="prefs">
+      <h1>Preferences</h1>
+      <p>This page lets you customize your personal settings for this site.
+      These settings are stored on the server and are identified by a session
+      key stored in a browser cookie. That cookie allows your settings to be
+      restored on subsequent visits.</p>
+      <ul id="tabs">
+        <li>
+          <a href="../prefs.html">General</a>
+        </li><li id="tab_advanced">
+          <a href="advanced.html">Advanced</a>
+        </li><li id="tab_datetime">
+          <a href="datetime.html">Date &amp; Time</a>
+        </li><li id="tab_keybindings">
+          <a href="keybindings.html">Keyboard Shortcuts</a>
+        </li><li id="tab_language">
+          <a href="language.html">Language</a>
+        </li><li class="active" id="tab_pygments">
+          Syntax Highlighting
+        </li><li id="tab_userinterface">
+          <a href="userinterface.html">User Interface</a>
+        </li>
+      </ul>
+      <div id="tabcontent">
+        <form id="userprefs" action="pygments.html" method="post"><div><input type="hidden" name="__FORM_TOKEN" value="b1d078119149bb31b4ce1be2" /></div>
+    <div class="field">
+      <p class="hint">The Pygments syntax highlighter can be used with
+      different coloring styles.</p>
+      <p><label>Style:
+        <select id="pygment_theme" name="style">
+          <option value="autumn">Autumn</option><option value="borland">Borland</option><option value="bw">Bw</option><option value="colorful">Colorful</option><option value="default">Default</option><option value="emacs">Emacs</option><option value="friendly">Friendly</option><option value="fruity">Fruity</option><option value="manni">Manni</option><option value="monokai">Monokai</option><option value="murphy">Murphy</option><option value="native">Native</option><option value="pastie">Pastie</option><option value="perldoc">Perldoc</option><option value="rrt">Rrt</option><option value="tango">Tango</option><option value="trac" selected="selected">Trac</option><option value="vim">Vim</option><option value="vs">Vs</option>
+        </select>
+      </label></p>
+      Preview:
+      <div class="code"><pre><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Hello, world!<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;script&gt;</span>
+      <span class="nx">jQuery</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">$</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s2">"h1"</span><span class="p">).</span><span class="nx">fadeIn</span><span class="p">(</span><span class="s2">"slow"</span><span class="p">);</span>
+      <span class="p">});</span>
+    <span class="nt">&lt;/script&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>Hello, world!<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></div>
+    </div>
+          <div class="buttons">
+            <input type="hidden" name="action" value="save" />
+            <input type="submit" value="Save changes" />
+          </div>
+        </form>
+      </div>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

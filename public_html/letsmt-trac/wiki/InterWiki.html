@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      InterWiki – LetsMT
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/letsmt-trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/InterWiki?format=txt" type="text/x-trac-wiki" title="Plain Text" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/InterWiki?format=tex" type="text/x-trac-wiki" title="Latex" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/InterWiki?format=pdf" type="text/x-trac-wiki" title="Latex-Pdf" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.letsmt.eu/"><img src="http://stp.lingfil.uu.se/~joerg/LetsMT/letsmt.jpg" alt="LetsMT" width="100" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/letsmt-trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/letsmt-trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="InterWiki.html" title="View InterWiki">InterWiki</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/letsmt-trac/wiki/InterWiki?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><h1 id="SupportforInterWikilinks">Support for <a class="wiki" href="InterWiki.html">InterWiki</a> links</h1>
+<h2 id="Definition">Definition</h2>
+<p>
+An <a class="wiki" href="InterWiki.html">InterWiki</a> link can be used for referring to a Wiki page
+located in another Wiki system, and by extension, to any object
+located in any other Web application, provided a simple URL 
+mapping can be done.
+</p>
+<p>
+At the extreme, <a class="wiki" href="InterWiki.html">InterWiki</a> prefixes can even be used to simply introduce
+links to new protocols, such as <tt>tsvn:</tt> used by <a class="ext-link" href="http://trac.edgewall.org/intertrac/TortoiseSvn" title="TortoiseSvn in Trac project trac"><span class="icon">​</span>TortoiseSvn</a>.
+</p>
+<h2 id="LinkSyntax">Link Syntax</h2>
+<pre class="wiki">&lt;target_wiki&gt;(:&lt;identifier&gt;)+
+</pre><p>
+The link is composed by the targeted Wiki (or system) name,
+followed by a colon (e.g. <tt>MeatBall:</tt>),
+followed by a page specification in the target.
+Note that, as for <a class="wiki" href="InterTrac.html">InterTrac</a> prefixes, <strong><a class="wiki" href="InterWiki.html">InterWiki</a> prefixes are case insensitive</strong>.
+</p>
+<p>
+The target Wiki URL is looked up in the <tt>[interwiki]</tt> section of <a class="wiki" href="TracIni.html">TracIni</a> or in the <a class="wiki" href="InterMapTxt.html">InterMapTxt</a> wiki page, modeled after <a class="ext-link" href="http://www.usemod.com/cgi-bin/mb.pl?InterMapTxt" title="InterMapTxt in MeatBall"><span class="icon">​</span>MeatBall:InterMapTxt</a>. If a prefix is defined in both the <tt>[interwiki]</tt> section and <a class="wiki" href="InterMapTxt.html">InterMapTxt</a>, the <tt>[interwiki]</tt> section takes precedence.
+</p>
+<p>
+In addition to traditional <a class="wiki" href="InterWiki.html">InterWiki</a> links, where the target
+is simply <em>appended</em> to the URL, 
+Trac supports parametric <a class="wiki" href="InterWiki.html">InterWiki</a> URLs:
+identifiers <tt>$1</tt>, <tt>$2</tt>, ... in the URL
+will be replaced by corresponding arguments.
+The argument list is formed by splitting the page identifier
+using the ":" separator.
+</p>
+<h3 id="interwiki">[interwiki]</h3>
+<p>
+Every option in the <tt>[interwiki]</tt> section in <a class="wiki" href="TracIni.html">TracIni</a> defines one <a class="wiki" href="InterWiki.html">InterWiki</a> prefix. The option name defines the prefix. The option value defines the URL, optionally followed by a description separated from the URL by whitespace. Parametric URLs are supported as well.
+</p>
+<p>
+<strong>Example:</strong>
+</p>
+<pre class="wiki">[interwiki]
+MeatBall = http://www.usemod.com/cgi-bin/mb.pl?
+PEP = http://www.python.org/peps/pep-$1.html Python Enhancement Proposal $1
+tsvn = tsvn: Interact with TortoiseSvn
+</pre><h2 id="Examples">Examples</h2>
+<p>
+If the following is an excerpt of the <a class="wiki" href="InterMapTxt.html">InterMapTxt</a> page:
+</p>
+<pre class="wiki">= InterMapTxt =
+== This is the place for defining InterWiki prefixes ==
+
+Currently active prefixes: [[InterWiki]]
+
+This page is modelled after the MeatBall:InterMapTxt page.
+In addition, an optional comment is allowed after the mapping.
+----
+{{{
+PEP      http://www.python.org/peps/pep-$1.html           # Python Enhancement Proposal $1 
+Trac-ML  http://thread.gmane.org/gmane.comp.version-control.subversion.trac.general/$1  # Message $1 in Trac Mailing List
+
+tsvn     tsvn:                                            # Interact with TortoiseSvn
+...
+MeatBall http://www.usemod.com/cgi-bin/mb.pl?
+MetaWiki http://sunir.org/apps/meta.pl?
+MetaWikiPedia http://meta.wikipedia.org/wiki/
+MoinMoin http://moinmoin.wikiwikiweb.de/
+...
+}}}
+</pre><p>
+Then, 
+</p>
+<ul><li><tt>MoinMoin:InterWikiMap</tt> should be rendered as <a class="ext-link" href="http://moinmoin.wikiwikiweb.de/InterWikiMap" title="InterWikiMap in MoinMoin"><span class="icon">​</span>MoinMoin:InterWikiMap</a>
+and the <em>title</em> for that link would be "InterWikiMap in MoinMoin"
+</li><li><tt>Trac-ML:4346</tt> should be rendered as <a class="ext-link" href="http://thread.gmane.org/gmane.comp.version-control.subversion.trac.general/4346" title="Message 4346 in Trac Mailing List"><span class="icon">​</span>Trac-ML:4346</a>
+and the <em>title</em> for that link would be "Message 4346 in Trac Mailing List"
+</li></ul><hr />
+<p>
+See also: <a class="wiki" href="InterTrac.html">InterTrac</a>, <a class="wiki" href="InterMapTxt.html">InterMapTxt</a>
+</p>
+</div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/letsmt-trac/wiki/InterWiki?action=diff&amp;version=2" title="Version 2 by trac">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2015-02-25T21%3A37%3A47Z&amp;precision=second" title="See timeline at Feb 25, 2015, 9:37:47 PM">6 years ago</a></span>
+            <span class="trac-print">Last modified on Feb 25, 2015, 9:37:47 PM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/InterWiki?format=txt">Plain Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/InterWiki?format=tex">Latex</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/InterWiki?format=pdf">Latex-Pdf</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

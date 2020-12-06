@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      BasicFunctionality – LetsMT
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/letsmt-trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/BasicFunctionality?format=txt" type="text/x-trac-wiki" title="Plain Text" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/BasicFunctionality?format=tex" type="text/x-trac-wiki" title="Latex" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/BasicFunctionality?format=pdf" type="text/x-trac-wiki" title="Latex-Pdf" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.letsmt.eu/"><img src="http://stp.lingfil.uu.se/~joerg/LetsMT/letsmt.jpg" alt="LetsMT" width="100" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/letsmt-trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/letsmt-trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="BasicFunctionality.html" title="View BasicFunctionality">BasicFunctionality</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/letsmt-trac/wiki/BasicFunctionality?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><p>
+</p><div class="wiki-toc">
+<ol>
+  <li>
+    <a href="BasicFunctionality.html#BasicFunctionalities">Basic Functionalities</a>
+    <ol>
+      <li>
+        <a href="BasicFunctionality.html#a1Uploadingresources">1) Uploading resources</a>
+      </li>
+      <li>
+        <a href="BasicFunctionality.html#a2pre-processingjobs">2) pre-processing jobs</a>
+      </li>
+      <li>
+        <a href="BasicFunctionality.html#a3Resourcesmanagement">3) Resources management</a>
+      </li>
+      <li>
+        <a href="BasicFunctionality.html#a4UseresourcesforSMT">4) Use resources for SMT</a>
+      </li>
+    </ol>
+  </li>
+</ol>
+</div><p>
+</p>
+<h1 id="BasicFunctionalities">Basic Functionalities</h1>
+<p>
+This is a list of basic tasks that should be supported by the LetsMT platform (this list is not complete or finalized in any way)
+</p>
+<h2 id="a1Uploadingresources">1) Uploading resources</h2>
+<p>
+(only registered users? I guess so ....)
+</p>
+<ul><li>user creates a new resource (corpus)
+</li></ul><pre class="wiki">  Input:
+   - resource name (= corpus name = repository name = source of the data)
+   - meta-data for the new resource
+     * domain (&amp; subdomain?)
+     * data provider (= user, no need to fill in ....)
+     * data owner (of original source) --&gt; can be difficult for provider!
+     (check discussion with partners, deliverables, ...)
+  Action:
+   - system check if resource (with that name) already exists
+     YES --&gt; ask user if he wants to create a branch (if permissions allow)
+     NO ---&gt; create empty resource
+   - initialize (database entry, etc ...)
+</pre><ul><li>important: careful name checking for files and corpora (avoid problematic names)
+<ul><li>no spaces
+</li><li>only ascii characters
+</li><li>remove other characters automatically?
+</li><li>warn/inform users about this restriction!
+</li></ul></li></ul><ul><li>user uploads new TMX file:
+</li></ul><pre class="wiki">  Input:
+   - resource (out of user-specific list)
+   - source language
+   - target language 
+     (should we support multiple target languages? take lang-IDs
+      directly from file? don't bother users?)
+   - TMX (plain, zip, gz)
+  Action:
+   - warning if file exists already (update?)
+   - upload to repository (original format), (file name normalization?)
+   - add entry in meta-info database
+     (initial status: raw)
+     * additional meta-info: upload date, size, type, ...?
+   - schedule validation &amp; pre-processing job(s)
+     (format specific, language specific)
+</pre><ul><li>user uploads new monolingual data file
+<ul><li>same as above but no target language, different pre-processing jobs
+</li></ul></li></ul><h2 id="a2pre-processingjobs">2) pre-processing jobs</h2>
+<ul><li>TMX validation &amp; pre-processing jobs (off-line through job server)
+</li></ul><p>
+Conversion jobs:
+</p>
+<pre class="wiki">  1. extraction (if TMX is compressed)
+  2. validation: valid TMX? matching language tags? 
+                --&gt; add status "valid"
+  3. conversion:
+    a) create new XML file in corpus for each language
+      --&gt; use 2-letter language codes (ISO639-1) as subdirectory (+ region code if necessary?)
+      --&gt; new generic file name to avoid problems with strange characters (?)
+    b) create sentence alignment file for each language pair
+       (symmetric alignment! --&gt; each pair only once!)
+    c) extract aligned "sentences" (tuv's) from TMX
+      --&gt; remove (?) inline markup, add sentence markup with unique ID
+      --&gt; add sentences to appropriate corpus files
+      --&gt; add sentence alignment to appropriate sentence alignment file
+      --&gt; add status "converted"
+    d) commit &amp; create pre-processing jobs
+      --&gt; check-in all new files
+      --&gt; for each corpus file: create language-specific pre-processing jobs
+      --&gt; for each sentence alignment file: create initialization job
+</pre><p>
+Pre-processing jobs:
+</p>
+<pre class="wiki">  1. checkout "converted" files
+  2. language-specific or generic tokenization (no sentence splitting)
+      (--&gt; other stuff? tagging etc?)
+  3. commit final version (sentence align file should link to those)
+      --&gt; add status "ready" for that file
+      --&gt; store information about pre-processing (what has been done?)
+          (specific version of a specific Makefile?)
+  4. update global information about corpus
+      --&gt; new language file is ready
+      --&gt; new statistics
+</pre><p>
+Alignment initialization job:
+</p>
+<pre class="wiki">  1. wait until all pre-processing jobs are finished 
+     (usually two -- one for source and one for target)
+  2. update global information about corpus (if pre-processing succeeds)
+      --&gt; new global sentence alignment files (including the new resource)
+      --&gt; compute new statistics
+  3. add information to meta-info database (or generate error report)
+      --&gt; add new version to meta-info database
+      --&gt; new sentence alignment file
+      --&gt; new corpus files (for each language)
+      --&gt; some statistics about the new data
+</pre><ul><li>pre-processing monolingual data
+</li></ul><pre class="wiki">    1. format specific validation and text extraction
+    2. language-specific pre-processing (see above but also sentence splitting)
+</pre><ul><li>unaligned parallel documents
+</li></ul><pre class="wiki">   1. format-specific vaildation &amp; conversion (like for monolingual data)
+   2. language-specific pre-processing (like for monolingual data) 
+   3. automatic sentence alignment
+      --&gt; status: "verification required"
+   4. after verification: add as new parallel resource in corpus
+</pre><h2 id="a3Resourcesmanagement">3) Resources management</h2>
+<pre class="wiki"> * share resource (or remove permissions)
+  --&gt; group definition, group changes, ...
+ * change pre-processing
+  --&gt; select different tokenizers, taggers, whatever we support ...
+ * delete file from corpus
+ * remove resource (do we allow that?)
+ * later: on-line alignment ...
+</pre><h2 id="a4UseresourcesforSMT">4) Use resources for SMT</h2>
+<pre class="wiki"> * browse/search through repository (using meta-info database)
+
+ * select parallel training data
+  --&gt; select particular corpus (one language pair)
+  --&gt; select all shared data for a specific language pair
+  --&gt; select all shared data from a specific domain
+  --&gt; combine several selections
+
+ * select monolingual data
+  --&gt; same as above but for one language only
+
+ * download personal SMT model (from repository)
+
+ * specify &amp; submit a job
+  --&gt; using selected data
+  --&gt; usually: use standard settings (could include baseline data?)
+  --&gt; advanced: decide certain training parameters
+
+ * job management
+  --&gt; inspect status of personal training jobs
+  --&gt; cancel running/queued jobs
+  --&gt; restart canceled jobs
+</pre></div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/letsmt-trac/wiki/BasicFunctionality?action=diff&amp;version=5" title="Version 5 by joerg">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2010-11-23T08%3A29%3A57Z&amp;precision=second" title="See timeline at Nov 23, 2010, 8:29:57 AM">10 years ago</a></span>
+            <span class="trac-print">Last modified on Nov 23, 2010, 8:29:57 AM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/BasicFunctionality?format=txt">Plain Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/BasicFunctionality?format=tex">Latex</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/BasicFunctionality?format=pdf">Latex-Pdf</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Slot</title>
+<link rel="stylesheet" href="../../../../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#constructor">CONSTRUCTOR</a></li>
+	<li><a href="#methods">METHODS</a></li>
+	<ul>
+
+		<li><a href="#make_idquery"><code>make_idquery</code></a></li>
+		<li><a href="#may_write"><code>may_write</code></a></li>
+		<li><a href="#is_locked"><code>is_locked</code></a></li>
+		<li><a href="#set_lock"><code>set_lock</code></a></li>
+	</ul>
+
+	<li><a href="#class_method">CLASS METHOD</a></li>
+	<ul>
+
+		<li><a href="#drop_table"><code>drop_table</code></a></li>
+	</ul>
+
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>LetsMT::Repository::StorageManager::MySQL::Slot - persistent object class for LetsMT's StorageManager</p>
+<p>
+</p>
+<hr />
+<h1><a name="constructor">CONSTRUCTOR</a></h1>
+<pre>
+ $slot = new LetsMT::Repository::StorageManager::MySQL::Slot ($name, $partition)</pre>
+<p>
+</p>
+<hr />
+<h1><a name="methods">METHODS</a></h1>
+<p>
+</p>
+<h2><a name="make_idquery"><code>make_idquery</code></a></h2>
+<pre>
+ $sql = $slot-&gt;make_idquery (name =&gt; name)</pre>
+<p>Returns: SQL query to be used in a <code>retrieve</code>.</p>
+<p>
+</p>
+<h2><a name="may_write"><code>may_write</code></a></h2>
+<pre>
+ $result = $slot-&gt;may_write ($user, $groups)</pre>
+<p>Checks whether this instance may be written to by the effective user.</p>
+<p># FIXME: this seems malplaced, is it even used? The subs in Branch is probably the right stuff.</p>
+<p>Returns: true or false</p>
+<p>
+</p>
+<h2><a name="is_locked"><code>is_locked</code></a></h2>
+<pre>
+ $slot-&gt;is_locked ($name)</pre>
+<p># UNCHECKED, PROBABLY OBSOLETE, REMOVE</p>
+<p>
+</p>
+<h2><a name="set_lock"><code>set_lock</code></a></h2>
+<pre>
+ $slot-&gt;set_lock ($status)</pre>
+<p># UNCHECKED, PROBABLY OBSOLETE, REMOVE</p>
+<p>
+</p>
+<hr />
+<h1><a name="class_method">CLASS METHOD</a></h1>
+<p>
+</p>
+<h2><a name="drop_table"><code>drop_table</code></a></h2>
+<p>Drop the Slot table.</p>
+<p>Returns: nothing</p>
+
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>letsmt_fetch</title>
+<link rel="stylesheet" href="pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#usage">USAGE</a></li>
+	<li><a href="#options">OPTIONS</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#license">LICENSE</a></li>
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>letsmt_fetch - a script for fetching training data from the LetsMT repositories</p>
+<p>
+</p>
+<hr />
+<h1><a name="usage">USAGE</a></h1>
+<pre>
+ letsmt_fetch [OPTIONS] config_file</pre>
+<p>
+</p>
+<hr />
+<h1><a name="options">OPTIONS</a></h1>
+<pre>
+ -u user ..... user name (overwrite user name in config file)
+ -i .......... &quot;incremental&quot; fetching of aligned data (fetch files one by one)</pre>
+<pre>
+ -h .......... show the help text
+ -V .......... display the LetsMT library version</pre>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>letsmt_fetch reads a simple XML-based configuration file and fetches all the data files specified in 'tm', 'lm', 'tuning' and 'evaluation'.</p>
+<p>Configuration files have to look like the following example:</p>
+<pre>
+ &lt;SMT&gt;
+   &lt;!-- this part is relevant to corpus extraction from repository --&gt;
+   &lt;user&gt;jorgtied&lt;/user&gt;
+   &lt;srclang&gt;sv&lt;/srclang&gt;
+   &lt;trglang&gt;en&lt;/trglang&gt;
+   &lt;tm id=&quot;1&quot; name=&quot;para1&quot;&gt;
+     &lt;corpus&gt;https://host/ws/letsmt/EUconst/xml/en-sv&lt;/corpus&gt;
+     &lt;corpus&gt;https://host/ws/letsmt/OpenOffice/xml/en-sv&lt;/corpus&gt;
+     &lt;filter&gt;
+       &lt;sample skip=&quot;1000&quot; /&gt;
+     &lt;/filter&gt;
+   &lt;/tm&gt;
+   &lt;tm id=&quot;2&quot; name=&quot;para2&quot;&gt;
+     &lt;corpus&gt;https://host/ws/letsmt/KDE4/xml/en-sv&lt;/corpus&gt;
+     &lt;corpus&gt;https://host/ws/letsmt/Europarl/xml/en-sv/ep-05-03-07.xml&lt;/corpus&gt;
+     &lt;corpus&gt;https://host/ws/letsmt/Europarl/xml/en-sv/ep-05-03-08.xml&lt;/corpus&gt;
+     &lt;corpus&gt;https://host/ws/letsmt/Europarl/xml/en-sv/ep-05-03-13.xml&lt;/corpus&gt;
+     &lt;filter&gt;
+       &lt;links type=&quot;1:1&quot; /&gt;
+     &lt;/filter&gt;
+   &lt;/tm&gt;
+   &lt;lm id=&quot;1&quot; name =&quot;mono1&quot;&gt;
+     &lt;corpus&gt;https://host/ws/letsmt/EUconst/xml/en&lt;/corpus&gt;
+     &lt;corpus&gt;https://host/ws/letsmt/KDE4/xml/en&lt;/corpus&gt;
+     &lt;filter&gt;
+       &lt;sample skip=&quot;1000&quot; /&gt;
+     &lt;/filter&gt;
+   &lt;/lm&gt;
+   &lt;tuning name=&quot;tune&quot;&gt;
+     &lt;corpus&gt;https://host/ws/letsmt/EUconst/xml/en-sv&lt;/corpus&gt;
+     &lt;filter&gt;
+       &lt;sample size=&quot;500&quot; /&gt;
+     &lt;/filter&gt;
+   &lt;/tuning&gt;
+   &lt;evaluation name=&quot;eval&quot;&gt;
+     &lt;corpus&gt;https://host/ws/letsmt/EUconst/xml/en-sv&lt;/corpus&gt;
+     &lt;filter&gt;
+       &lt;sample skip=&quot;500&quot; /&gt;
+       &lt;sample size=&quot;500&quot; /&gt;
+     &lt;/filter&gt;
+   &lt;/evaluation&gt;</pre>
+<pre>
+   &lt;!-- various training and decoding options begin here --&gt;
+ &lt;/SMT&gt;</pre>
+<p>Note that you can use the filter arguments 'sample - skip' and 'sample - size' to create disjoint sets for training, tuning and evaluation from the same data set!
+In the example above, the first 500 sentence pairs from EUconst will be used for tuning, the following 500 for testing and the remaining for testing.</p>
+<p>Caveat: Other filters (like link type) may destroy this feature!</p>
+<p>If the corpus is a directory:
+All files XML-files in all its sub-directories will be processed.
+For the skip/size options this should be safe because the files are always processed in alphabetical order.</p>
+<p>Some filters are better to apply after fetching.
+For example, a length filter requires tokenzied text!
+Make sure to run the clean-corpus script first before using the output of letsmt_fetch for SMT training!</p>
+<p>
+</p>
+<hr />
+<h1><a name="license">LICENSE</a></h1>
+<p>This program is part of LetsMT! Resource Repository.</p>
+<p>LetsMT! Resource Repository is free software: you can redistribute it
+and/or modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.</p>
+<p>LetsMT! Resource Repository is distributed in the hope that it will be
+useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+General Public License for more details.</p>
+<p>You should have received a copy of the GNU General Public License
+along with LetsMT! Resource Repository.  If not, see
+<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>.</p>
+
+</body>
+
+</html>

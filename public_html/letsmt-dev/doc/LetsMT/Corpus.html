@@ -1,0 +1,214 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Corpus</title>
+<link rel="stylesheet" href="../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#functions">FUNCTIONS</a></li>
+	<ul>
+
+		<li><a href="#find_parallel_resources"><code>find_parallel_resources</code></a></li>
+		<li><a href="#find_parallel_documents"><code>find_parallel_documents</code></a></li>
+		<li><a href="#find_aligned_documents"><code>find_aligned_documents</code></a></li>
+		<li><a href="#find_sentence_aligned"><code>find_sentence_aligned</code></a></li>
+		<li><a href="#find_all_parallel"><code>find_all_parallel</code></a></li>
+		<li><a href="#find_resources"><code>find_resources</code></a></li>
+		<li><a href="#get_import_parameter"><code>get_import_parameter</code></a></li>
+		<li><a href="#get_align_parameter"><code>get_align_parameter</code></a></li>
+		<li><a href="#get_user_parameter"><code>get_user_parameter</code></a></li>
+		<li><a href="#get_resource_parameter"><code>get_resource_parameter</code></a></li>
+	</ul>
+
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>LetsMT::Corpus - find matching documents in a corpus</p>
+<p>
+</p>
+<hr />
+<h1><a name="description__cut">DESCRIPTION
+=cut</a></h1>
+<p>use strict;
+use XML::LibXML;
+use XML::Simple;</p>
+<p>use open qw(:std :utf8);
+use Encode qw(decode decode_utf8 is_utf8);</p>
+<p>use File::Basename qw/basename dirname/;
+use LetsMT::Tools::Strings;
+use LetsMT::Lang::ISO639;
+use LetsMT::WebService;</p>
+<p>use Log::Log4perl qw(get_logger :levels);</p>
+<p>use Exporter 'import';
+our @EXPORT = qw(
+    get_resource_parameter get_user_parameter
+    get_align_parameter get_import_parameter
+    find_parallel_resources find_all_parallel find_sentence_aligned
+    find_resources
+);
+our %EXPORT_TAGS = ( all =&gt; \@EXPORT );</p>
+<p># my $XmlParser = new XML::LibXML;</p>
+<p>## Default search mode for finding parallel documents
+## (comment out if you like to use the fuzzy search below)
+my $DEFAULT_SEARCH = 'identical';</p>
+<p>## uncomment this one if you want to match similar file names as well
+## (difference = language ID's + matching thresholds below)
+##
+## TODO: searching for similar files is less efficient!
+##  --&gt; need to check time/space complexities
+##  --&gt; especially for large corpora (= with many files)
+# my $DEFAULT_SEARCH = 'similar';</p>
+<p>## default thresholds for size ratio and name match
+my $DEFAULT_SIZE_RATIO_THR = 0.7;
+my $DEFAULT_NAME_MATCH_THR = 0.9;</p>
+<p>## default interpolation weights for size ratio and name match
+my $DEFAULT_SIZE_RATIO_WEIGHT = 0.2;
+my $DEFAULT_NAME_MATCH_WEIGHT = 1 - $DEFAULT_SIZE_RATIO_WEIGHT;</p>
+<p># default parameters for searching parallel documents</p>
+<p>our %DEFAULT_PARA = (
+    search_parallel                   =&gt; $DEFAULT_SEARCH,
+    search_parallel_min_size_ratio    =&gt; $DEFAULT_SIZE_RATIO_THR,
+    search_parallel_min_name_match    =&gt; $DEFAULT_NAME_MATCH_THR,
+    search_parallel_weight_size_ratio =&gt; $DEFAULT_SIZE_RATIO_WEIGHT,
+    search_parallel_weight_name_match =&gt; $DEFAULT_NAME_MATCH_WEIGHT
+);</p>
+<p># default sentence aligner method for all parallel documents</p>
+<p># our $DEFAULT_ALIGNER = 'hunalign';
+our $DEFAULT_ALIGNER = 'bisent';</p>
+<p>## default alignment parameters:
+## - search paramaters for finding parallel documents
+## - aligner method</p>
+<p>our %ALIGNPARA = %DEFAULT_PARA;
+$ALIGNPARA{method} = $DEFAULT_ALIGNER;</p>
+<p>
+</p>
+<hr />
+<h1><a name="functions">FUNCTIONS</a></h1>
+<p>
+</p>
+<h2><a name="find_parallel_resources"><code>find_parallel_resources</code></a></h2>
+<p>Returns a list of matching resources.</p>
+<p>
+</p>
+<h2><a name="find_parallel_documents"><code>find_parallel_documents</code></a></h2>
+<pre>
+ @docs = LetsMT::Corpus::find_parallel_documents ($corpus, $resource)</pre>
+<p>Input parameters:</p>
+<dl>
+<dt><strong><a name="_corpus" class="item"><code>$corpus</code></a></strong></dt>
+
+<dd>
+<p>Resource object for the selected corpus.</p>
+</dd>
+<dt><strong><a name="_resource" class="item"><code>$resource</code></a></strong></dt>
+
+<dd>
+<p>Resource for which matching documents need to be found.</p>
+</dd>
+</dl>
+<p>Result:
+A list of resources.</p>
+<p>
+</p>
+<h2><a name="find_aligned_documents"><code>find_aligned_documents</code></a></h2>
+<p>
+</p>
+<h2><a name="find_sentence_aligned"><code>find_sentence_aligned</code></a></h2>
+<p>Search for all sentence alignment files.</p>
+<p>Returns a hash reference of aligned documents.</p>
+<p>
+</p>
+<h2><a name="find_all_parallel"><code>find_all_parallel</code></a></h2>
+<pre>
+ $parallel = LetsMT::Corpus::find_all_parallel ($corpus)</pre>
+<p>Find all parallel documents in <a href="#_corpus"><code>$corpus</code></a>.</p>
+<p>Returns a hash reference.</p>
+<p>
+</p>
+<h2><a name="find_resources"><code>find_resources</code></a></h2>
+<pre>
+ @files = LetsMT::Corpus::find_resources ($corpus [,%args] )</pre>
+<p>Returns an array of resources within the branch of $corpus</p>
+<p>
+</p>
+<h2><a name="get_import_parameter"><code>get_import_parameter</code></a></h2>
+<pre>
+ my %para = get_import_parameter ($resource)</pre>
+<p>Returns a hash of import parameters.</p>
+<p>It will set default parameters and will try to overwrite them with:
+ - user-specific parameters
+ - type-specific parameters (meta of slot/branch/uploads/type)
+ - resource-specific parameters (meta of path/to/resource metadata)</p>
+<p>Possible parameters are:</p>
+<pre>
+ splitter ..... text splitter (sentence boundary detection)
+ tokenizer .... tokenizer
+ normalizer ... comma-separated chain of text normalizers</pre>
+<p>Special parameters for PDF:</p>
+<pre>
+ mode .................... layout|raw|standard (default=layout)</pre>
+<p>
+</p>
+<h2><a name="get_align_parameter"><code>get_align_parameter</code></a></h2>
+<pre>
+ my %para = get_align_parameter ($resource)</pre>
+<p>Returns a hash of alignment parameters.</p>
+<p>It will set default parameters and will try to overwrite them with:
+ - user-specific parameters
+ - corpus-specific parameters (meta of slot/branch/uploads metadata)
+ - resource-specific parameters (meta of path/to/resource metadata)</p>
+<p>Possible parameters for finding parallel documents:</p>
+<pre>
+    search_parallel ........................ identical|similar
+    search_parallel_min_size_ratio ......... [0.0,1.0]
+    search_parallel_min_name_match ......... [0.0,1.0]
+    search_parallel_weight_size_ratio ...... [0.0,1.0]
+    search_parallel_weight_name_match ...... [0.0,1.0]</pre>
+<p>Possible parameters for sentence alignment:</p>
+<pre>
+    method ...... one-to-one|GaleChurch|hunalign|bisent</pre>
+<p>For the Gale &amp; Church aligner:</p>
+<pre>
+    mean ........... mean length-diff distribution (default=1)
+    variance ....... variance of length-diff distribution (default=6.8)
+    search_window .. max distance from diagonal (default=50)
+    pillow ......... [0|1] 1 = create pillow-shaped search space
+                           (default=1)</pre>
+<p>For hunalign (see hunalign for possible parameters):</p>
+<pre>
+    dic ............ path to bilingual dictionary (default: empty dic)
+    para ........... hunalign parameters (default: '-realign')</pre>
+<p>Default hunalign parameter for bisent: 'realign -cautious'</p>
+<p>
+</p>
+<h2><a name="get_user_parameter"><code>get_user_parameter</code></a></h2>
+<p>
+</p>
+<h2><a name="get_resource_parameter"><code>get_resource_parameter</code></a></h2>
+<p>Return parameters stored in the metadata record attached to $resource.
+Parameters are all key-value pairs for which the key starts with $prefix
+($prefix will be deleted!).</p>
+
+</body>
+
+</html>

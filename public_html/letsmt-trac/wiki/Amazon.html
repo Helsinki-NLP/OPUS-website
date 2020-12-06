@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      Amazon – LetsMT
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/letsmt-trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/Amazon?format=txt" type="text/x-trac-wiki" title="Plain Text" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/Amazon?format=tex" type="text/x-trac-wiki" title="Latex" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/Amazon?format=pdf" type="text/x-trac-wiki" title="Latex-Pdf" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.letsmt.eu/"><img src="http://stp.lingfil.uu.se/~joerg/LetsMT/letsmt.jpg" alt="LetsMT" width="100" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/letsmt-trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/letsmt-trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="Amazon.html" title="View Amazon">Amazon</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/letsmt-trac/wiki/Amazon?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><h1 id="AmazonEC2Setup">Amazon EC2 Setup</h1>
+<p>
+This is a short description of how to setup, start and stop a new Ubuntu instance on the Amazon EC2 service.
+<a class="missing wiki">TOC(depth=1)?</a>
+</p>
+<h2 id="Setupandstartanewsysteminstance">Set up and start a new system instance</h2>
+<ul><li>Point you browser to  <a class="ext-link" href="http://aws.amazon.com"><span class="icon">​</span>http://aws.amazon.com</a>
+</li><li>Click on Sign in to the AWS Managemnt Console
+</li><li>Login in 
+</li><li>Click on the EC2 tab
+</li><li>Choose Region: US East (this is currently the cheapest option)
+</li><li>Choose Instances
+</li><li>Click on Lauch Instance
+</li></ul><p>
+In the Request Insatances Wizard:
+</p>
+<ul><li>Choose an AMI (Amazon Machine Image)
+<ul><li>Click on the tab Community AMIs 
+</li><li>Choose Viewing: Public Images and search for: ubuntu-lucid-10.04-amd64-server-2011
+</li><li>Select the entry with Root Device: instance-store
+</li></ul></li></ul><ul><li>Instance Details
+<ul><li>Number of Instances: 1
+</li><li>Availablility Zone: no preference
+</li><li>Instance Type: Large 7.5 GB
+</li><li>Termination Protection: not ticked
+</li><li>Select Launch Instance
+</li><li>Click Continue
+</li><li>Kernel ID: default
+</li><li>RAM Disk ID: default
+</li><li>Monitoring: not ticked
+</li><li>User Data: empty
+</li><li>Click Continue
+</li><li>For the key Name enter a value that identifies this instance as yours, like 'Matthias test'
+</li><li>Click Continue
+</li></ul></li></ul><ul><li>Create Key Pair
+<ul><li>choose Your existing Key Pairs: letsmt-aws-key
+</li><li>Click Continue
+</li></ul></li></ul><ul><li>Security Group
+<ul><li>Security Groups: ssh
+</li></ul></li></ul><ul><li>Review
+<ul><li>check all settings and click on Launch
+</li><li>Close the information window
+</li></ul></li></ul><p>
+Back in the My Instances window wait for the instance to change Status form pending to running.
+</p>
+<p>
+Select the just started instance to see details in the window below. Copy the value in the Public DNS field.
+</p>
+<p>
+Done!
+</p>
+<p>
+To login to the new instance from opus use the following command where you replace the server name with the public DNS you just copied from your new instance:
+</p>
+<pre class="wiki">ssh -i /home/letsmt/letsmt-aws-key.pem ubuntu@ec2-204-236-170-135.us-west-1.compute.amazonaws.com
+</pre><h2 id="Stopaninstance">Stop an instance</h2>
+<p>
+In the Instance section of the AWS Management Console select your instance and choose Terminate from the Instance Actions menu. 
+</p>
+</div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/letsmt-trac/wiki/Amazon?action=diff&amp;version=6" title="Version 6 by zumpe">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2011-03-08T15%3A32%3A07Z&amp;precision=second" title="See timeline at Mar 8, 2011, 3:32:07 PM">10 years ago</a></span>
+            <span class="trac-print">Last modified on Mar 8, 2011, 3:32:07 PM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/Amazon?format=txt">Plain Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/Amazon?format=tex">Latex</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/Amazon?format=pdf">Latex-Pdf</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

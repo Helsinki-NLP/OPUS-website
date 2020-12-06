@@ -1,0 +1,129 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TMXReader</title>
+<link rel="stylesheet" href="../../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#class_variable__internal_">CLASS VARIABLE (internal)</a></li>
+	<ul>
+
+		<li><a href="#tags">Tags</a></li>
+	</ul>
+
+	<li><a href="#constructor">CONSTRUCTOR</a></li>
+	<ul>
+
+		<li><a href="#open"><code>open</code></a></li>
+		<li><a href="#read"><code>read</code></a></li>
+		<li><a href="#close"><code>close</code></a></li>
+	</ul>
+
+	<li><a href="#class_methods___xml_processing_callbacks">CLASS METHODS - XML processing callbacks</a></li>
+	<ul>
+
+		<li><a href="#handle_start"><code>handle_start</code></a></li>
+		<li><a href="#handle_end"><code>handle_end</code></a></li>
+		<li><a href="#handle_char"><code>handle_char</code></a></li>
+	</ul>
+
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>LetsMT::Import::TMXReader - reader for TMX files</p>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>TMX: the Translation Memory eXchange format.</p>
+<p>
+</p>
+<hr />
+<h1><a name="class_variable__internal_">CLASS VARIABLE (internal)</a></h1>
+<p>
+</p>
+<h2><a name="tags">Tags</a></h2>
+<p>Tags can be either extracted or ignored.
+The class variable <code>$TAG_TO_CONCEPT</code> maps tmx-tags to keys that the reader can use.
+If the reader hans any such key set to a <code>true</code> value, the tags will be visible.
+They are thus ignored by default.</p>
+<p>
+</p>
+<hr />
+<h1><a name="constructor">CONSTRUCTOR</a></h1>
+<pre>
+ $handler = new LetsMT::Import::TMXReader (%OPTIONS)</pre>
+<p>OPTIONS:</p>
+<pre>
+ normalizer
+ tokenizer
+ resource</pre>
+<p>
+</p>
+<h2><a name="open"><code>open</code></a></h2>
+<pre>
+ $handler-&gt;open ($resource)</pre>
+<p>Open the <code>$resource</code> for reading.</p>
+<pre>
+ $handler-&gt;open</pre>
+<p><code>$resource</code> can also have been passed as an option to the constructor.</p>
+<p>
+</p>
+<h2><a name="read"><code>read</code></a></h2>
+<p>Read one translation unit from the open tmx-file. Returns a reference to a
+translation unit or <code>undef</code>. A translation unit always has the format:</p>
+<pre>
+ {
+     lang1 =&gt; {
+         id1 =&gt; [ token1, token2, ..., tokenN ],
+         id2 =&gt; [ token1, token2, ..., tokenN ],
+         ...
+     },
+     lang2 =&gt; {
+         id1 =&gt; [ token1, token2, ..., tokenN ],
+         id2 =&gt; [ token1, token2, ..., tokenN ],
+         ...
+     },
+     ...
+ }</pre>
+<p>
+</p>
+<h2><a name="close"><code>close</code></a></h2>
+<p>Gracefully tell the system that this reader will not be used to read any more.</p>
+<p>
+</p>
+<hr />
+<h1><a name="class_methods___xml_processing_callbacks">CLASS METHODS - XML processing callbacks</a></h1>
+<p>
+</p>
+<h2><a name="handle_start"><code>handle_start</code></a></h2>
+<p>
+</p>
+<h2><a name="handle_end"><code>handle_end</code></a></h2>
+<p>
+</p>
+<h2><a name="handle_char"><code>handle_char</code></a></h2>
+
+</body>
+
+</html>

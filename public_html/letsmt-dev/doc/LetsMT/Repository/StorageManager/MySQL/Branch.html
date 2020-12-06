@@ -1,0 +1,107 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Branch</title>
+<link rel="stylesheet" href="../../../../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#constructor">CONSTRUCTOR</a></li>
+	<li><a href="#methods">METHODS</a></li>
+	<ul>
+
+		<li><a href="#make_idquery"><code>make_idquery</code></a></li>
+		<li><a href="#may_write"><code>may_write</code></a></li>
+		<li><a href="#may_read"><code>may_read</code></a></li>
+		<li><a href="#pp_perms"><code>pp_perms</code></a></li>
+	</ul>
+
+	<li><a href="#class_method">CLASS METHOD</a></li>
+	<ul>
+
+		<li><a href="#drop_table"><code>drop_table</code></a></li>
+	</ul>
+
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>LetsMT::Repository::StorageManager::MySQL::Branch - persistent object class for LetsMT's StorageManager</p>
+<p>
+</p>
+<hr />
+<h1><a name="constructor">CONSTRUCTOR</a></h1>
+<pre>
+ $manager = new LetsMT::Repository::StorageManager::Branch (
+     $class, $repos, $name, $slot, $owner, $grp,
+     $userread, $userwrite,
+     $groupread, $groupwrite,
+     $otherread, $otherwrite
+ )</pre>
+<p>
+</p>
+<hr />
+<h1><a name="methods">METHODS</a></h1>
+<p>
+</p>
+<h2><a name="make_idquery"><code>make_idquery</code></a></h2>
+<pre>
+ $sql = $manager-&gt;make_idquery (
+     name           =&gt; $name,
+     user           =&gt; $user,
+     groups         =&gt; $groups,
+     slot           =&gt; $slot,
+     superuser_view =&gt; $superuser_view,
+ )</pre>
+<p>Returns: an SQL query to be used by <code>retrieve</code>.</p>
+<p>
+</p>
+<h2><a name="may_write"><code>may_write</code></a></h2>
+<pre>
+ $result = $manager-&gt;may_write ($user, $groups)</pre>
+<p>Checks whether this Branch may be written to by the effective user.</p>
+<p>Returns: true or false</p>
+<p>
+</p>
+<h2><a name="may_read"><code>may_read</code></a></h2>
+<pre>
+ $result = $manager-&gt;may_read ($self, $user, $groups)</pre>
+<p>Checks whether this Branch may be read to by the effective user.</p>
+<p>Returns: true or false</p>
+<p>
+</p>
+<h2><a name="pp_perms"><code>pp_perms</code></a></h2>
+<pre>
+ $string = $manager-&gt;pp_perms</pre>
+<p>Pretty-print the permission part of the data records.</p>
+<p>Returns: pretty-printed string.</p>
+<p>
+</p>
+<hr />
+<h1><a name="class_method">CLASS METHOD</a></h1>
+<p>
+</p>
+<h2><a name="drop_table"><code>drop_table</code></a></h2>
+<p>Drop the Branch table.</p>
+<p>Returns: nothing</p>
+
+</body>
+
+</html>

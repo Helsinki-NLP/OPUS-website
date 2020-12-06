@@ -1,0 +1,188 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>JobManager</title>
+<link rel="stylesheet" href="../../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#functions">FUNCTIONS</a></li>
+	<ul>
+
+		<li><a href="#create_job"><code>create_job</code></a></li>
+		<li><a href="#job_maker"><code>job_maker</code></a></li>
+		<li><a href="#run"><code>run</code></a></li>
+		<li><a href="#run_align"><code>run_align</code></a></li>
+		<li><a href="#run_realign"><code>run_realign</code></a></li>
+		<li><a href="#run_align_resource"><code>run_align_resource</code></a></li>
+		<li><a href="#run_import"><code>run_import</code></a></li>
+		<li><a href="#run_import_resource"><code>run_import_resource</code></a></li>
+		<li><a href="#submit"><code>submit</code></a></li>
+		<li><a href="#check_status"><code>check_status</code></a></li>
+		<li><a href="#delete"><code>delete</code></a></li>
+		<li><a href="#get_id_from_path"><code>get_ID_from_path</code></a></li>
+	</ul>
+
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>LetsMT::Repository::JobManager - manager for the job API</p>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>Interacts with the Oracle (Sun) Grid Engine.</p>
+<p>
+</p>
+<hr />
+<h1><a name="functions">FUNCTIONS</a></h1>
+<p>
+</p>
+<h2><a name="create_job"><code>create_job</code></a></h2>
+<pre>
+ LetsMT::Repository::JobManager::create_job (
+     path     =&gt; $path,
+     uid      =&gt; $uid,
+     commands =&gt; $commands,
+     walltime =&gt; $walltime,
+ )</pre>
+<p>Create a job descriptions file with the given command list and walltime
+and upload it to the repository at the given path.</p>
+<p>Returns: resource object of the created job</p>
+<p>
+</p>
+<h2><a name="job_maker"><code>job_maker</code></a></h2>
+<pre>
+ LetsMT::Repository::JobManager::job_maker (
+    $command,
+    $path_elements,
+    $args
+ )</pre>
+<p>Create a job that will create jobs (running $command) for resources in the given path and submit them to the SGE using the letsmt_maker script.</p>
+<p>
+</p>
+<h2><a name="run"><code>run</code></a></h2>
+<pre>
+ LetsMT::Repository::JobManager::run (
+    $command,
+    $path_elements,
+    $args
+ )</pre>
+<p>Create jobs (running $command) for resources in the given path and submit them to the SGE.</p>
+<p>
+</p>
+<h2><a name="run_align"><code>run_align</code></a></h2>
+<pre>
+ LetsMT::Repository::JobManager::run_align (
+    $path_elements,
+    $args
+ )</pre>
+<p>Create sentence alignment jobs for parallel resources in the given path
+and submit them to the SGE
+ The path should refer to a corpus root or its xml directory.</p>
+<p>
+</p>
+<h2><a name="run_realign"><code>run_realign</code></a></h2>
+<pre>
+ LetsMT::Repository::JobManager::run_realign (
+    $path_elements,
+    $args
+ )</pre>
+<p>Create sentence re-alignment jobs for resources in the given path
+and submit them to the SGE.
+The path may refer to a directory
+(re-run alignment of all existing sentence alignment files below this path)
+or a sentence alignment resource
+(re-run alignment for this resource).</p>
+<p>
+</p>
+<h2><a name="run_align_resource"><code>run_align_resource</code></a></h2>
+<pre>
+ LetsMT::Repository::JobManager::run_align_resource (
+    $slot,
+    $branch,
+    $srcfile,
+    $trgfile,
+    $sentalign,
+    $args
+ )</pre>
+<p>Create a sentence alignment job for aligning two resources
+(slot/branch/srcfile and slot/branch/trgfile)
+and submit it to the SGE
+<code>$sentalign</code> is used as a basename for the job file
+(<code>$srcfile</code> is used if <code>$sentalign</code> is not given).</p>
+<p>
+</p>
+<h2><a name="run_import"><code>run_import</code></a></h2>
+<pre>
+ LetsMT::Repository::JobManager::run_import (
+    $path_elements,
+    $args
+ )</pre>
+<p>Create import jobs for resources in the given path and submit them to the SGE.
+The path may refer to a directory (re-run import for all existing resources below this directory)
+or a single resource.</p>
+<p>
+</p>
+<h2><a name="run_import_resource"><code>run_import_resource</code></a></h2>
+<pre>
+ LetsMT::Repository::JobManager::run_import_resource (
+    $path_elements,
+    $args
+ )</pre>
+<p>Create an import job for a resource given by its path and submit it to the SGE.</p>
+<p>
+</p>
+<h2><a name="submit"><code>submit</code></a></h2>
+<pre>
+ LetsMT::Repository::JobManager::submit (
+     path    =&gt; $path,
+     uid     =&gt; $uid,
+     message =&gt; $message,
+ )</pre>
+<p>Submit a job to the SGE queue.</p>
+<p>Returns: an XML-formatted status string.</p>
+<p>
+</p>
+<h2><a name="check_status"><code>check_status</code></a></h2>
+<pre>
+ $status = LetsMT::Repository::JobManager::check_status ( job_id =&gt; $jobID, path =&gt; $path )</pre>
+<p>Returns the current status of a job</p>
+<p>Returns: true or false</p>
+<p>
+</p>
+<h2><a name="delete"><code>delete</code></a></h2>
+<pre>
+ LetsMT::Repository::JobManager::delete (job_id =&gt; $jobID, path =&gt; $path)</pre>
+<p>Delete a job, identified by its job ID or the path to the job file, from the grid engine.</p>
+<p>Returns: true or false</p>
+<p>
+</p>
+<h2><a name="get_id_from_path"><code>get_ID_from_path</code></a></h2>
+<pre>
+ $id = LetsMT::Repository::JobManager::get_ID_from_path ($path)</pre>
+<p>Returns the job ID if it is found at the given path</p>
+<p>Returns: jobID string</p>
+
+</body>
+
+</html>

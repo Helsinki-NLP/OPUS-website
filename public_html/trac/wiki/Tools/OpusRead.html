@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      Tools/OpusRead – OPUS
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/trac/search" />
+        <link rel="help" href="../TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/trac/wiki/Tools/OpusRead?format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="../Tools.html" title="View parent page" />
+        <link rel="start" href="../../wiki.html" />
+        <link rel="stylesheet" href="../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../../chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="../../../index.html"><img src="../../../img/opus_medium.jpg" alt="opus" height="90" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/trac/login">Login</a></li><li><a href="../../prefs.html">Preferences</a></li><li><a href="../TracGuide.html">Help/Guide</a></li><li class="last"><a href="../../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../../wiki.html">Wiki</a></li><li class="last"><a href="../../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../../wiki.html">wiki:</a><a class="pathentry" href="../Tools.html" title="View Tools">Tools</a><span class="pathentry sep">/</span><a class="pathentry" href="OpusRead.html" title="View Tools/OpusRead">OpusRead</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="../Tools.html">Up</a></li><li><a href="../WikiStart.html">Start Page</a></li><li><a href="../TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/trac/wiki/Tools/OpusRead?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><h1 id="opus-read">opus-read</h1>
+<p>
+Read sentence aligned OPUS data in XCES align / XML format
+</p>
+<p>
+opus-read is a simple script to read sentence alignments stored in XCES align format and prints the aligned sentences to STDOUT. It requires monolingual alignments (ascending order, no crossing links) of sentences in linked XML files. Linked XML files are specified in the "toDoc" and "fromDoc" attributes (see below).
+</p>
+<div class="code"><pre><span class="nt">&lt;cesAlign</span> <span class="na">version=</span><span class="s">"1.0"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;linkGrp</span> <span class="na">targType=</span><span class="s">"s"</span> <span class="na">toDoc=</span><span class="s">"source1.xml"</span> <span class="na">fromDoc=</span><span class="s">"target1.xml"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">certainty=</span><span class="s">"0.88"</span> <span class="na">xtargets=</span><span class="s">"s1.1 s1.2;s1.1"</span> <span class="na">id=</span><span class="s">"SL1"</span> <span class="nt">/&gt;</span>
+           ....
+  <span class="nt">&lt;linkGrp</span> <span class="na">targType=</span><span class="s">"s"</span> <span class="na">toDoc=</span><span class="s">"source2.xml"</span> <span class="na">fromDoc=</span><span class="s">"target2.xml"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">certainty=</span><span class="s">"0.88"</span> <span class="na">xtargets=</span><span class="s">"s1.1;s1.1"</span> <span class="na">id=</span><span class="s">"SL1"</span> <span class="nt">/&gt;</span>
+</pre></div><p>
+Several parameters can be set to filter the alignments and to print only certain types of alignments. The output will look something like this (example from the RF corpus):
+</p>
+<pre class="wiki"># /proj/nlpl/data/OPUS/corpus/RF/xml/en/1988.xml.gz
+# /proj/nlpl/data/OPUS/corpus/RF/xml/fr/1988.xml.gz
+
+================================
+(src)="s1.1"&gt; Statement of Government Policy by the Prime Minister , Mr Ingvar Carlsson , at the Opening of the Swedish Parliament on Tuesday , 4 October , 1988 . 
+(trg)="s1.1"&gt; Declaration de Politique Générale du Gouvernement présentée mardi 4 octobre 1988 devant le Riksdag par Monsieur Ingvar Carlsson , Premier Ministre . 
+================================
+(src)="s2.1"&gt; Your Majesties , Your Royal Highnesses , Mr Speaker , Members of the Swedish Parliament . 
+(trg)="s2.1"&gt; Majestés , Altesses Royales , Monsieur le Président , Mesdames et Messieurs les députés ! 
+================================
+(src)="s3.1"&gt; Sweden 's policy of neutrality is of decisive importance for our peace and independence . 
+(trg)="s3.1"&gt; La politique suédoise de neutralité revêt une importance capitale pour la paix et l ' indépendance de notre pays . 
+================================
+(src)="s3.2"&gt; It also contributes to stability and détente in our part of the world . 
+(trg)="s3.2"&gt; Elle contribue également à la stabilité et à la détente dans notre secteur du monde . 
+================================
+(src)="s3.3"&gt; There is wide popular support for this policy . 
+(trg)="s3.3"&gt; Cette politique recueille une large adhésion populaire . 
+...
+</pre><p>
+opus-read can also be used to filter the XCES alignment files and to print the remaining links in the same XCES align format. Use the "-l" flag to enable this mode.
+</p>
+<h2 id="Examples">Examples</h2>
+<div class="code"><pre><span class="c"># read sentence alignments and print aligned sentences
+# (make sure that you run the command in the directory 
+#  where the aligned files coming from fromDoc and toDoc 
+#  can be found by the system)
+</span>opus-read align-file.xml
+opus-read align-file.xml.gz
+
+<span class="c"># the script uses some heuristics to locate 
+# the home directory of OPUS
+# the following commands only work if you have the same structure
+</span>opus-read corpusname/lang-pair
+opus-read -d corpusname lang-pair
+opus-read -d corpusname -s srclang -t trglang
+
+<span class="c"># print alignments with alignment certainty &gt; LinkThr=0
+</span>opus-read -c 0 align-file.xml
+
+<span class="c"># print alignments with max 2 source sentences and 3 target sentences
+</span>opus-read -S 2 -T 3 align-file.xml
+
+<span class="c"># print aligned sentences marked as 'de' (source) and 'en' (target)
+# (this only works if sentences are marked with languages:
+#  for example, in the German XML file: &lt;s lang="de"&gt;...&lt;/s&gt;)
+</span>opus-read -s de -t en align-file.xml
+
+<span class="c"># wrap aligned sentences in simple HTML
+</span>opus-read -h align-file.xml
+
+<span class="c"># print max 10 alignments
+</span>opus-read -m 10 align-file.xml
+
+<span class="c"># specify home directory of aligned XML files
+</span>opus-read -d /path/to/xml/files align-file.xml
+
+<span class="c"># print XCES align format of all 1:1 sentence alignments
+</span>opus-read -S 1 -T 1 -l align-file.xml
+</pre></div></div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/trac/wiki/Tools/OpusRead?action=diff&amp;version=2" title="Version 2 by tiedeman">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/trac/timeline?from=2017-11-15T17%3A40%3A40Z&amp;precision=second" title="See timeline at Nov 15, 2017, 5:40:40 PM">3 years ago</a></span>
+            <span class="trac-print">Last modified on Nov 15, 2017, 5:40:40 PM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <script type="text/javascript">
+        jQuery.loadStyleSheet("/trac/pygments/trac.css", "text/css");
+    </script>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/trac/wiki/Tools/OpusRead?format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

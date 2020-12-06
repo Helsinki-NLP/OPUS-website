@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      RepositoryStructure – LetsMT
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/letsmt-trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositoryStructure?format=txt" type="text/x-trac-wiki" title="Plain Text" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositoryStructure?format=tex" type="text/x-trac-wiki" title="Latex" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositoryStructure?format=pdf" type="text/x-trac-wiki" title="Latex-Pdf" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.letsmt.eu/"><img src="http://stp.lingfil.uu.se/~joerg/LetsMT/letsmt.jpg" alt="LetsMT" width="100" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/letsmt-trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/letsmt-trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="RepositoryStructure.html" title="View RepositoryStructure">RepositoryStructure</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositoryStructure?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><p>
+</p><div class="wiki-toc">
+<ol>
+  <li>
+    <a href="RepositoryStructure.html#TheBasicStructureoftheLetsMTdatarepository">The Basic Structure of the LetsMT data repository</a>
+  </li>
+  <li>
+    <a href="RepositoryStructure.html#Ideasaboutthemodelrepository">Ideas about the model repository</a>
+  </li>
+</ol>
+</div><p>
+</p>
+<h1 id="TheBasicStructureoftheLetsMTdatarepository">The Basic Structure of the LetsMT data repository</h1>
+<ul><li>each corpus has a unique name (CORPUSNAME)
+</li><li>each corpus has an upload directory (where all user-contributed files will be stored in their original format)
+</li><li>each corpus has an xml directory for storing all documents in the internal LetsMT format
+<ul><li>there are subdirectories for each language (using ISO-language IDs)
+</li><li>there are subdirectories for each language pair for storing sentence alignment between parallel documents
+</li><li>files with the same name in different language subdirectories are parallel!
+</li></ul></li></ul><p>
+Internally the a corpus will be stored in a branch using the user-id as its name. This supports data sharing with data integrity as explained <a class="wiki" href="BasicConcepts.html">here</a>.
+</p>
+<pre class="wiki">storage/CORPUSNAME_1
+storage/CORPUSNAME_1/USER_1
+storage/CORPUSNAME_2
+storage/CORPUSNAME_2/USER_2
+storage/CORPUSNAME_2/USER_3
+...
+</pre><p>
+Within a corpus the file structure looks like this (a simple example - omitting the branch name):
+</p>
+<pre class="wiki">CORPUSNAME/
+CORPUSNAME/uploads
+CORPUSNAME/uploads/tmx
+CORPUSNAME/uploads/tmx/first.tmx
+CORPUSNAME/uploads/tmx/second.tmx
+...
+CORPUSNAME/uploads/xliff
+...
+CORPUSNAME/uploads/doc
+CORPUSNAME/uploads/doc/en/word.doc
+CORPUSNAME/uploads/doc/fr/word.doc
+CORPUSNAME/uploads/doc/de/word.doc
+...
+CORPUSNAME/uploads/pdf
+...
+CORPUSNAME/xml/de
+CORPUSNAME/xml/de/word.xml
+CORPUSNAME/xml/en
+CORPUSNAME/xml/en/first.xml
+CORPUSNAME/xml/en/second.xml
+CORPUSNAME/xml/en/word.xml
+CORPUSNAME/xml/fr
+CORPUSNAME/xml/fr/first.xml
+CORPUSNAME/xml/fr/second.xml
+CORPUSNAME/xml/fr/word.xml
+...
+CORPUSNAME/xml/de-fr.xml
+CORPUSNAME/xml/de-fr/word.xml
+CORPUSNAME/xml/de-en.xml
+CORPUSNAME/xml/de-en/word.xml
+CORPUSNAME/xml/en-fr.xml
+CORPUSNAME/xml/en-fr/first.xml
+CORPUSNAME/xml/en-fr/second.xml
+CORPUSNAME/xml/en-fr/word.xml
+...
+</pre><p>
+The top-level sentence-alignment file contains sentence alignments of the entire corpus! For example, "CORPUSNAME/xml/fr-en.xml" includes all sentence alignments between the "first", "second" and "word" documents in French and English.
+</p>
+<p>
+Sentence alignment is symmetric! Therefore, we store only alignments in one direction according to the alphabetic order of the language IDs!
+More information about the data formats can be found <a class="wiki" href="DataFormats.html">here</a>.
+</p>
+<h1 id="Ideasaboutthemodelrepository">Ideas about the model repository</h1>
+<p>
+General idea: Use the same implementation for storing SMT models and other resources
+</p>
+<ul><li>Another layer with the same functionality?!
+</li></ul><pre class="wiki">&lt;host&gt;/storage/    for corpora
+&lt;host&gt;/models/    for SMT models
+</pre><p>
+It could be even good to have different places for TM, LM and other SMT model files to make it flexible to re-use LMs and TMs in combinations with others (and also for the coming incremental training procedures)
+</p>
+<pre class="wiki">&lt;host&gt;/models/tm            translation models (phrase tables,
+reordering models)
+&lt;host&gt;/models/lm            language models
+&lt;host&gt;/models/moses      moses configutration files and parameters, ....
+</pre><p>
+And inside of each resource we sort by language/language-pair:
+</p>
+<pre class="wiki">&lt;host&gt;/models/tm/&lt;srclang&gt;/&lt;trglang&gt;/&lt;resourcename&gt;
+&lt;host&gt;/models/lm/&lt;lang&gt;/&lt;resourcename&gt;
+&lt;host&gt;/models/moses/&lt;srclang&gt;/&lt;trglang&gt;/&lt;resourcename&gt;
+</pre><p>
+This is without branching for the time being. But branching could be useful here again. This could be used here as well to make model sharing possible!
+</p>
+</div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositoryStructure?action=diff&amp;version=4" title="Version 4 by joerg">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2010-11-23T10%3A15%3A09Z&amp;precision=second" title="See timeline at Nov 23, 2010, 10:15:09 AM">10 years ago</a></span>
+            <span class="trac-print">Last modified on Nov 23, 2010, 10:15:09 AM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositoryStructure?format=txt">Plain Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositoryStructure?format=tex">Latex</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositoryStructure?format=pdf">Latex-Pdf</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

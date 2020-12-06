@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      makesystem – LetsMT
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/letsmt-trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/makesystem?format=txt" type="text/x-trac-wiki" title="Plain Text" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/makesystem?format=tex" type="text/x-trac-wiki" title="Latex" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/makesystem?format=pdf" type="text/x-trac-wiki" title="Latex-Pdf" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.letsmt.eu/"><img src="http://stp.lingfil.uu.se/~joerg/LetsMT/letsmt.jpg" alt="LetsMT" width="100" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/letsmt-trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/letsmt-trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="makesystem.html" title="View makesystem">makesystem</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/letsmt-trac/wiki/makesystem?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><h1 id="MakeSystem">Make System</h1>
+<p>
+This is an overview of the main targets of our make files.
+</p>
+<h2 id="Frontend">Frontend</h2>
+<pre class="wiki">Makefile
+ |- install-frontend
+     |- prepare-target
+     |- installation/Makefile.prereq install-frontend
+     |   |- install-perlmodules 
+     |   |- frontend-software
+     |   |     |- software-base (UBUNTU_BASE_PACKAGES, UBUNTU_FORCE_PACKAGES)
+     |   |- make software-gridrequest
+     |
+     |- installation/Makefile install-frontend
+         |- install-frontend-targets
+                |- install-frontend-files 
+                |    |- prepare-directories
+                |    |- install-log
+                |- install-modules
+                     |- config-conf
+                     |- config-conf-frontend
+                     |- update-version-file
+
+</pre><h2 id="RR-Server">RR-Server</h2>
+<pre class="wiki">Makefile
+ |- install-rr-server
+     |- prepare-target
+     |- installation/Makefile.prereq install-rr-server
+     |   |- server-software
+     |   |            |- software-base (UBUNTU_BASE_PACKAGES, UBUNTU_FORCE_PACKAGES)
+     |   |            |- software-mysql
+     |   |            |- software-sge-master
+     |   |            |- software-sge-client
+     |   |            |- software-sge-exec
+     |   |            |- software-tokyocabinet
+     |   |            |- software-tokyotyrant
+     |   |            |- software-hunalign
+     |   |            |- software-chared
+     |   |- install-perlmodules
+     |
+     |- installation/Makefile install-rr-server
+         |- install-targets
+              |- install-modules 
+              |- install-files
+              |     |- ttservctl_group 
+              |     |- ttservctl_meta 
+              |     |- prepare-directories 
+              |     |- install-log
+              |- install-config
+              |    |- config-conf
+              |    |- config-gridengine
+              |    |- config-apache2
+              |    |- config-mysql
+              |    |- config-openssl
+              |    |- install-diskroot
+              |- install-svnserver
+                   |- config-svnserver
+              |- restart-apache
+              |- clean
+              |- update-version-file
+
+</pre><h2 id="Storage-Server">Storage-Server</h2>
+<pre class="wiki">Makefile
+ |- install-storage-server
+     |- prepare-target
+     |- installation/Makefile.prereq install-storage-server
+     |   |- server-software
+     |   |            |- software-base (UBUNTU_BASE_PACKAGES, UBUNTU_FORCE_PACKAGES)
+     |   |            |- software-mysql
+     |   |            |- software-sge-master
+     |   |            |- software-sge-client
+     |   |            |- software-sge-exec
+     |   |            |- software-tokyocabinet
+     |   |            |- software-tokyotyrant
+     |   |            |- software-hunalign
+     |   |            |- software-chared
+     |   |- install-perlmodules
+     |
+     |- installation/Makefile install-storage-server
+         |- install
+              |- install-targets
+                   |- install-modules 
+                   |- install-files
+                   |     |- ttservctl_group 
+                   |     |- ttservctl_meta 
+                   |     |- prepare-directories 
+                   |     |- install-log
+                   |- install-config
+                   |    |- config-conf
+                   |    |- config-gridengine
+                   |    |- config-apache2
+                   |    |- config-mysql
+                   |    |- config-openssl
+                   |    |- install-diskroot
+                   |- install-svnserver
+                        |- config-svnserver
+                   |- restart-apache
+                   |- clean
+                   |- update-version-file
+
+</pre><h2 id="SGE-Client">SGE-Client</h2>
+<pre class="wiki">Makefile
+ |- install-sge-client
+     |- installation/Makefile.prereq install-sge-client
+     |   |- sge-client-software
+     |   |            |- software-base (UBUNTU_BASE_PACKAGES, UBUNTU_FORCE_PACKAGES)
+     |   |            |- software-sge-client
+     |   |            |- software-sge-exec
+     |   |            |- software-hunalign
+     |   |            |- software-chared
+     |   |- install-perlmodules
+     |   
+     |- installation/Makefile install-sge-client
+         |- install-sge-client-targets
+               |- install-modules
+               |- prepare-directories
+               |- install-log
+               |- config-conf
+               |- install-diskroot
+               |- update-version-file
+
+</pre></div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/letsmt-trac/wiki/makesystem?action=diff&amp;version=8" title="Version 8 by zumpe">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2012-03-26T08%3A28%3A46Z&amp;precision=second" title="See timeline at Mar 26, 2012, 8:28:46 AM">9 years ago</a></span>
+            <span class="trac-print">Last modified on Mar 26, 2012, 8:28:46 AM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/makesystem?format=txt">Plain Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/makesystem?format=tex">Latex</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/makesystem?format=pdf">Latex-Pdf</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

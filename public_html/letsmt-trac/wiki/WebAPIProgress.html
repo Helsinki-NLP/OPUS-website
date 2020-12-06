@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      WebAPIProgress – LetsMT
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/letsmt-trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/WebAPIProgress?format=txt" type="text/x-trac-wiki" title="Plain Text" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/WebAPIProgress?format=tex" type="text/x-trac-wiki" title="Latex" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/WebAPIProgress?format=pdf" type="text/x-trac-wiki" title="Latex-Pdf" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.letsmt.eu/"><img src="http://stp.lingfil.uu.se/~joerg/LetsMT/letsmt.jpg" alt="LetsMT" width="100" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/letsmt-trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/letsmt-trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="WebAPIProgress.html" title="View WebAPIProgress">WebAPIProgress</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/letsmt-trac/wiki/WebAPIProgress?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><h1 id="Statusofcurrentimplementation">Status of current implementation</h1>
+<h2 id="Implementationofthelowerlevelstorage">Implementation of the lower level storage</h2>
+<table class="wiki">
+<tr><td> <strong>Description</strong>        </td><td> <strong>Method</strong> </td><td> <strong>Arguments</strong>       </td><td> <strong>Upload</strong>  </td><td> <strong>Download</strong> </td><td> <strong>Response code</strong> </td><td> <strong>status</strong> 
+</td></tr></table>
+<table class="wiki">
+<tr><td> Create a resource  </td><td> POST   </td><td> [uid:uid]       </td><td> Content </td><td> Status   </td><td> Success: 201  </td><td style="text-align: center">  works  
+</td></tr><tr><td> Update a resource  </td><td> PUT    </td><td> [uid:uid]       </td><td> Content </td><td> Status   </td><td> Success: 202  </td><td> 
+</td></tr><tr><td> Copy branch        </td><td> POST   </td><td> [uid:uid]       </td><td style="text-align: center">         </td><td> Status   </td><td> Success: 201  </td><td> works (except [rev:n]) 
+</td></tr><tr><td style="text-align: center">                    </td><td style="text-align: center">        </td><td> [type:copy]     </td><td style="text-align: center">         </td><td style="text-align: center">          </td><td style="text-align: center">               </td><td> 
+</td></tr><tr><td style="text-align: center">                    </td><td style="text-align: center">        </td><td> [dest:&lt;path&gt;]   </td><td style="text-align: center">         </td><td style="text-align: center">          </td><td style="text-align: center">               </td><td> 
+</td></tr><tr><td style="text-align: center">                    </td><td style="text-align: center">        </td><td> ([rev:n])       </td><td style="text-align: center">         </td><td style="text-align: center">          </td><td style="text-align: center">               </td><td> 
+</td></tr><tr><td> List resources     </td><td> GET    </td><td> [uid:uid]       </td><td style="text-align: center">         </td><td> Listing  </td><td> Success: 200  </td><td> works 
+</td></tr><tr><td style="text-align: center">                    </td><td style="text-align: center">        </td><td> ([rev:n])       </td><td style="text-align: center">         </td><td style="text-align: center">          </td><td style="text-align: center">               </td><td> 
+</td></tr><tr><td> Download resources </td><td> GET    </td><td> [uid:uid]       </td><td style="text-align: center">         </td><td> Content  </td><td> Success: 200  </td><td> works (except [rev:n]) 
+</td></tr><tr><td style="text-align: center">                    </td><td style="text-align: center">        </td><td> [type:download] </td><td style="text-align: center">         </td><td style="text-align: center">          </td><td style="text-align: center">               </td><td> 
+</td></tr><tr><td style="text-align: center">                    </td><td style="text-align: center">        </td><td> ([rev:n])       </td><td style="text-align: center">         </td><td style="text-align: center">          </td><td style="text-align: center">               </td><td> 
+</td></tr><tr><td> Delete resources   </td><td> DELETE </td><td> [uid:uid]       </td><td style="text-align: center">         </td><td> Status   </td><td> Success: 202  </td><td> works 
+</td></tr></table>
+<h2 id="Implementationofthehigherlevelstorage">Implementation of the higher level storage</h2>
+<table class="wiki">
+<tr><td> <strong>Description</strong>                </td><td> <strong>Method</strong> </td><td style="text-align: right"> <strong>Arguments</strong></td><td style="text-align: right"> <strong>Upload</strong></td><td> <strong>Download</strong> </td><td> <strong>Response code</strong> </td><td> <strong>status</strong> 
+</td></tr></table>
+<table class="wiki">
+<tr><td> Upload and preprocess a document </td><td> POST   </td><td> [uid:uid]            </td><td> Content </td><td> Status   </td><td> Success: 201  
+</td></tr><tr><td style="text-align: center">                                  </td><td style="text-align: center">        </td><td> ([type:archive])     </td><td style="text-align: center">         </td><td style="text-align: center">          </td><td style="text-align: center">               
+</td></tr><tr><td style="text-align: center">                                  </td><td style="text-align: center">        </td><td> Optional tar content </td><td style="text-align: center">         </td><td style="text-align: center">          </td><td style="text-align: center">               
+</td></tr><tr><td> Upload updates (archived)        </td><td> PUT    </td><td> [uid:uid]            </td><td> Content </td><td> Status   </td><td> Success: 202  
+</td></tr><tr><td style="text-align: center">                                  </td><td style="text-align: center">        </td><td> ([type:archive])     </td><td style="text-align: center">         </td><td style="text-align: center">          </td><td style="text-align: center">               
+</td></tr><tr><td style="text-align: center">                                  </td><td style="text-align: center">        </td><td> Optional tar content </td><td style="text-align: center">         </td><td style="text-align: center">          </td><td style="text-align: center">               
+</td></tr><tr><td> Pass through to lower level      </td><td> -      </td><td> -                    </td><td> -       </td><td> -        </td><td> -             
+</td></tr></table>
+<h3 id="Ideasforextensionsofthehigherlevelstorage">Ideas for extensions of the higher level storage</h3>
+<ul><li>integration of metadata handling and branch access permissions (groups) via high-level requests to /letsmt/
+</li></ul><table class="wiki">
+<tr><td> <strong>Method</strong> </td><td> <strong>Path</strong>        </td><td> <strong>Arguments</strong>                       </td><td> <strong>Upload</strong> </td><td> <strong>Download</strong> </td><td> <strong>Description</strong> 
+</td></tr><tr><td> POST         </td><td> /letsmt/slot      </td><td> [uid:user]([gid:group][key:value])*   </td><td> Content      </td><td> Status         </td><td style="text-align: right"> create slot/user, set group permissions to &lt;group&gt; and add &lt;key&gt;-&lt;value&gt; pairs to metadatabase for slot/user
+</td></tr><tr><td> POST         </td><td> /letsmt/slot/path </td><td> [uid:user]([key:value])*              </td><td> Content      </td><td> Status         </td><td> create slot/user/path, and add &lt;key&gt;-&lt;value&gt; pairs to metadatabase for slot/user, ignore 'gid'!! 
+</td></tr><tr><td> POST/PUT/GET/DELETE </td><td> /letsmt/path </td><td> [type:meta]([key:value])* </td><td style="text-align: center">              </td><td> Status         </td><td> pass through to /metadata/path (with all arguments except type!) 
+</td></tr><tr><td> PUT          </td><td> /letsmt/slot      </td><td> [uid:user][type:access][gid:group]    </td><td style="text-align: center">              </td><td> Status         </td><td> pass through to /groups/slot (with all arguments except type!) 
+</td></tr></table>
+<h2 id="Implementationofthestoragemetadatadatabase">Implementation of the storage metadata database</h2>
+<table class="wiki">
+<tr><td> <strong>Description</strong>            </td><td> <strong>Method</strong> </td><td> <strong>Path</strong>  </td><td> <strong>Argument</strong>    </td><td> <strong>Download</strong> </td><td> <strong>Response code</strong> </td><td> <strong>status</strong> 
+</td></tr></table>
+<table class="wiki">
+<tr><td> Set group on a branch  </td><td> PUT    </td><td> /slot </td><td> [uid:uid]   </td><td> Status   </td><td> Success: 202  
+</td></tr><tr><td style="text-align: center">                        </td><td style="text-align: center">        </td><td style="text-align: center">       </td><td> [gid:grp] </td><td style="text-align: center">          </td><td style="text-align: center">               
+</td></tr><tr><td> Get group on a branch  </td><td> GET    </td><td> /slot </td><td> [uid:uid]   </td><td> Listing  </td><td> Success: 200  
+</td></tr></table>
+<h2 id="Implementationofthegroupdatabase">Implementation of the group database</h2>
+<table class="wiki">
+<tr><td> <strong>Description</strong>            </td><td> <strong>Method</strong> </td><td> <strong>Path</strong>    </td><td> <strong>Arg</strong> </td><td> <strong>Download</strong> </td><td> <strong>Response code</strong> </td><td> <strong>status</strong> 
+</td></tr></table>
+<table class="wiki">
+<tr><td> Create a group               </td><td> POST   </td><td> /groupname          </td><td> [uid:uid] </td><td> Status   </td><td> Success: 201  </td><td> works 
+</td></tr><tr><td> Add a user to a group (group created if necessary) </td><td> PUT    </td><td> /groupname/username </td><td> [uid:uid] </td><td> Status   </td><td> Success: 202  </td><td> works 
+</td></tr><tr><td> List groups                  </td><td> GET    </td><td> /                   </td><td>  </td><td> Listing  </td><td> Success: 200  </td><td> works 
+</td></tr><tr><td> List users in group          </td><td> GET    </td><td> /groupname          </td><td>  </td><td> Listing  </td><td> Success: 200  </td><td> works 
+</td></tr><tr><td> Delete a user from a group   </td><td> DELETE </td><td> /groupname/username </td><td> [uid:uid] </td><td> Status   </td><td> Success: 202  </td><td> works 
+</td></tr></table>
+<h2 id="Openissuesandothercomments">Open issues and other comments</h2>
+<p>
+Jag checkar snart in en ny version av repositoriet, med mer saker som fungerar (se sådant jag ändrar till "works" ovan fram tills jag checkar in.
+</p>
+<ul><li>LETSMTVERSION ändras från 1 till 2
+</li><li>conf.sh kommer inte längre vara nödvändig för Webbervicen (men fortfarande för kommandoradsverktyg). Webbservicen har sina miljövariabler satta i /etc/apache2/sites-available/letsmt istället.
+</li><li>mod_perl aktiverat, för att snabba upp webbservicen lite. Under en tid kommer det betyda att vissa saker i loggfilen (som i letsmtversion 1 hette /tmp/pw_test.log) inte kommer inkludera sådant som webbservicen skrev till STDERR. Det går att åtgärda, men är inte högprioriterat.
+</li><li>"mountpoint" för "diskarna" flyttad till /opt/letsmt_diskroot (LETSMTDISKROOT)
+</li></ul></div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/letsmt-trac/wiki/WebAPIProgress?action=diff&amp;version=18" title="Version 18 by joerg">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2011-04-01T20%3A47%3A39Z&amp;precision=second" title="See timeline at Apr 1, 2011, 8:47:39 PM">10 years ago</a></span>
+            <span class="trac-print">Last modified on Apr 1, 2011, 8:47:39 PM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/WebAPIProgress?format=txt">Plain Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/WebAPIProgress?format=tex">Latex</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/WebAPIProgress?format=pdf">Latex-Pdf</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

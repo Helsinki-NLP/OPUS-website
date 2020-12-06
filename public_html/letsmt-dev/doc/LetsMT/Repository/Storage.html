@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Storage</title>
+<link rel="stylesheet" href="../../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#constructor___factory_method">CONSTRUCTOR / FACTORY METHOD</a></li>
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>LetsMT::Repository::Storage - abstract class for storage in version-control systems</p>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>Implemented backends:</p>
+<pre>
+ svn_local  (aliases: svn_file, VCSubversion, VCSubersionLocal)
+ svn_server (alias:   VCSubversionServer)
+ filesystem
+ compressed
+ any_vc
+ vc</pre>
+<p>
+</p>
+<hr />
+<h1><a name="constructor___factory_method">CONSTRUCTOR / FACTORY METHOD</a></h1>
+<pre>
+ $storage = new LetsMT::Repository::Storage ($type, $resource [, $format])</pre>
+<p>Return an appropriate reader object for a given resource <code>$resource</code>.
+The data format <code>$format</code> is optional.
+The constructor tries to infer the data from the resource object
+if <code>$format</code> is not specified (see <a href="./../..//LetsMT/Resource.html">the LetsMT::Resource manpage</a>::type).</p>
+
+</body>
+
+</html>

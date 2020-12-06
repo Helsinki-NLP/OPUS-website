@@ -1,0 +1,125 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>FileSystem</title>
+<link rel="stylesheet" href="../../../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#constructor">CONSTRUCTOR</a></li>
+	<li><a href="#methods">METHODS</a></li>
+	<ul>
+
+		<li><a href="#init"><code>init</code></a></li>
+		<li><a href="#mkdir"><code>mkdir</code></a></li>
+		<li><a href="#is_path"><code>is_path</code></a></li>
+		<li><a href="#copy"><code>copy</code></a></li>
+		<li><a href="#add"><code>add</code></a></li>
+		<li><a href="#update"><code>update</code></a></li>
+		<li><a href="#remove"><code>remove</code></a></li>
+		<li><a href="#export"><code>export</code></a></li>
+		<li><a href="#list"><code>list</code></a></li>
+		<li><a href="#_list_file"><code>_list_file</code></a></li>
+		<li><a href="#_list_dir"><code>_list_dir</code></a></li>
+		<li><a href="#cat"><code>cat</code></a></li>
+	</ul>
+
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>LetsMT::Repository::Storage::FileSystem - storage backend using simple files on disk</p>
+<p>
+</p>
+<hr />
+<h1><a name="constructor">CONSTRUCTOR</a></h1>
+<pre>
+ $storage = new LetsMT::Repository::Storage::FileSystem (%params);</pre>
+<p>
+</p>
+<hr />
+<h1><a name="methods">METHODS</a></h1>
+<p>
+</p>
+<h2><a name="init"><code>init</code></a></h2>
+<pre>
+ $storage-&gt;init ($path)</pre>
+<p>Initialize a new storage path.</p>
+<p>
+</p>
+<h2><a name="mkdir"><code>mkdir</code></a></h2>
+<p>
+</p>
+<h2><a name="is_path"><code>is_path</code></a></h2>
+<p>
+</p>
+<h2><a name="copy"><code>copy</code></a></h2>
+<p>
+</p>
+<h2><a name="add"><code>add</code></a></h2>
+<p>
+</p>
+<h2><a name="update"><code>update</code></a></h2>
+<p>Functionally identical to <code>add</code>.</p>
+<p>
+</p>
+<h2><a name="remove"><code>remove</code></a></h2>
+<p>
+</p>
+<h2><a name="export"><code>export</code></a></h2>
+<pre>
+ $storage-&gt;export( %params )</pre>
+<p>Parameters:</p>
+<pre>
+ repos
+ rev
+ src
+ trg
+ flags
+ archive</pre>
+<p>
+</p>
+<h2><a name="list"><code>list</code></a></h2>
+<pre>
+ $list = $storage-&gt;list( %params )</pre>
+<p>Parameters:</p>
+<pre>
+ repos
+ dir
+ branch</pre>
+<p>
+</p>
+<h2><a name="_list_file"><code>_list_file</code></a></h2>
+<pre>
+ $entry = &amp;_list_file( $path, $owner )</pre>
+<p>
+</p>
+<h2><a name="_list_dir"><code>_list_dir</code></a></h2>
+<pre>
+ $entry = &amp;_list_dir( $path, $owner )</pre>
+<p>
+</p>
+<h2><a name="cat"><code>cat</code></a></h2>
+<pre>
+ $content = $storage-&gt;cat( $range, $dir )</pre>
+
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>22_Repository_API_MetaData</title>
+<link rel="stylesheet" href="../../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>22_Repository_API_MetaData.t - test <em>MetaData</em> API</p>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>This script tests the following assertions:</p>
+<p>Calling the <em>MetaData</em> API via the <code>WebService</code> module, ...</p>
+<ul>
+<li>
+<p>you can query the metadata of a slot ... (get_meta)</p>
+</li>
+<li>
+<p>... and information concerning <em>path</em>, <em>creator</em> and <em>resource-type</em>
+is available.</p>
+</li>
+<li>
+<p>you can also query the metadata of a branch. (get_meta)</p>
+</li>
+<li>
+<p>you can add new metadata. (put_meta)</p>
+</li>
+<li>
+<p>you can extend existing metadata. (put_meta)</p>
+</li>
+<li>
+<p>you can overwrite metadata. (put_meta)</p>
+</li>
+<li>
+<p>you can search the metadata for a specific key=value pair. (search_meta)</p>
+</li>
+<li>
+<p>you can search the metadata for a key=value pair
+using the special search-modifier prefix <em>STARTS_WITH_</em>. (search_meta)</p>
+</li>
+<li>
+<p>you can search the metadata for a key=value(s) pair
+using the modifier prefix <em>ONE_OF_</em>. (search_meta)</p>
+</li>
+<li>
+<p>you can delete a single value from a metadata entry. (del_meta)</p>
+</li>
+<li>
+<p>you can delete a complete metadata entry. (del_meta)</p>
+</li>
+<li>
+<p>you can delete all the metadata from a branch. (del_meta)</p>
+</li>
+<li>
+<p>you can set metadata values containing unicode characters.</p>
+</li>
+<li>
+<p>when deleting a slot or branch,
+you can have the corresponding metadata deleted at the same time.
+(del, action =&gt; delete_meta)</p>
+</li>
+</ul>
+
+</body>
+
+</html>

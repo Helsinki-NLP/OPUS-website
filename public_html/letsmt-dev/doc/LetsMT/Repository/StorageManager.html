@@ -1,0 +1,246 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>StorageManager</title>
+<link rel="stylesheet" href="../../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#functions">FUNCTIONS</a></li>
+	<ul>
+
+		<li><a href="#drop_tables"><code>drop_tables</code></a></li>
+		<li><a href="#create_storage"><code>create_storage</code></a></li>
+		<li><a href="#create_storage_slot"><code>create_storage_slot</code></a></li>
+		<li><a href="#create_storage_branch"><code>create_storage_branch</code></a></li>
+		<li><a href="#copy_branch"><code>copy_branch</code></a></li>
+		<li><a href="#list_storage"><code>list_storage</code></a></li>
+		<li><a href="#cat_storage"><code>cat_storage</code></a></li>
+		<li><a href="#list_storage_branch_filelist"><code>list_storage_branch_filelist</code></a></li>
+		<li><a href="#_filelist"><code>_filelist</code></a></li>
+		<li><a href="#list_storage_branches"><code>list_storage_branches</code></a></li>
+		<li><a href="#list_storage_slots"><code>list_storage_slots</code></a></li>
+		<li><a href="#existent"><code>existent</code></a></li>
+		<li><a href="#download_storage"><code>download_storage</code></a></li>
+		<li><a href="#delete_storage"><code>delete_storage</code></a></li>
+		<li><a href="#delete_storage_slot"><code>delete_storage_slot</code></a></li>
+		<li><a href="#put_access"><code>put_access</code></a></li>
+		<li><a href="#get_access"><code>get_access</code></a></li>
+		<li><a href="#_get_branch"><code>_get_branch</code></a></li>
+		<li><a href="#_get_slot"><code>_get_slot</code></a></li>
+	</ul>
+
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>LetsMT::Repository::StorageManager - storage manager</p>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>This is the storage manager API.</p>
+<p>
+</p>
+<hr />
+<h1><a name="functions">FUNCTIONS</a></h1>
+<p>
+</p>
+<h2><a name="drop_tables"><code>drop_tables</code></a></h2>
+<p>Clean out the database.
+Use with care...</p>
+<p>Returns: nothing</p>
+<p>
+</p>
+<h2><a name="create_storage"><code>create_storage</code></a></h2>
+<pre>
+ $status = &amp;LetsMT::Repository::StorageManager::create_storage (
+     path       =&gt; $path,
+     uid        =&gt; $uid,
+     gid        =&gt; $gid,
+     userread   =&gt; $userread,
+     userwrite  =&gt; $userwrite,
+     groupread  =&gt; $groupread,
+     groupwrite =&gt; $groupwrite,
+     otherread  =&gt; $otherread,
+     otherwrite =&gt; $otherwrite,
+     payload    =&gt; $payload
+ )</pre>
+<p>Create data, either only a slot and a branch, or a file with contents in a branch's directory.
+The other arguments are metadata for the branch.</p>
+<p>If <code>$path</code> only consists of [slot, branch], then only that is created.</p>
+<p>If <code>$path</code> contains more, it must have a FILE (not directory) last, in which to deliver the payload.</p>
+<p>Returns: an XML-formatted string indicating the status.</p>
+<p>
+</p>
+<h2><a name="create_storage_slot"><code>create_storage_slot</code></a></h2>
+<p>
+</p>
+<h2><a name="create_storage_branch"><code>create_storage_branch</code></a></h2>
+<p>
+</p>
+<h2><a name="copy_branch"><code>copy_branch</code></a></h2>
+<pre>
+ &amp;LetsMT::Repository::StorageManager::copy_branch (
+     path       =&gt; $path,
+     uid        =&gt; $uid,
+     gid        =&gt; $gid,
+     userread   =&gt; $userread,
+     userwrite  =&gt; $userwrite,
+     groupread  =&gt; $groupread,
+     groupwrite =&gt; $groupwrite,
+     otherread  =&gt; $otherread,
+     otherwrite =&gt; $otherwrite,
+     dest       =&gt; $dest,
+ )</pre>
+<p>Copy a branch to a new destination.
+Must be in the same slot.
+The metadata arguments are used for the new branch.</p>
+<p>FIXME: should return an XML-formatted string indicating success (presently, 
+this bug is caught in the mod_perl handler and assigned something standard).</p>
+<p>Returns: true (an exception is raised on failure).</p>
+<p>
+</p>
+<h2><a name="list_storage"><code>list_storage</code></a></h2>
+<pre>
+ $listing = &amp;LetsMT::Repository::StorageManager::list_storage ($result_ref, $pathref, $user, $rev)</pre>
+<p>List storage.</p>
+<p>Returns: an XML-formatted string with a content listing.</p>
+<p>
+</p>
+<h2><a name="cat_storage"><code>cat_storage</code></a></h2>
+<pre>
+ $data = &amp;LetsMT::Repository::StorageManager::cat_storage ($result_ref, $pathref, $user, $range, $rev)</pre>
+<p>Read out storage.</p>
+<p>Returns: file contents (?)</p>
+<p>
+</p>
+<h2><a name="list_storage_branch_filelist"><code>list_storage_branch_filelist</code></a></h2>
+<pre>
+ list_storage_branch_filelist ($slotobj, $slot, $branch, $user, $pathref, $rev)</pre>
+<p>A helper function for <code>list_storage</code>, don't use directly.</p>
+<p>Returns: an XML-formatted listing string.</p>
+<p>
+</p>
+<h2><a name="_filelist"><code>_filelist</code></a></h2>
+<pre>
+ _filelist ($slotobj, $branchobj, $pathref)</pre>
+<p>An internal helper function for <code>list_storage</code>, don't use directly.</p>
+<p>Returns: a list of XML listings</p>
+<p>
+</p>
+<h2><a name="list_storage_branches"><code>list_storage_branches</code></a></h2>
+<pre>
+ list_storage_branches ($slot, $user)</pre>
+<p>List branches (that we may see, i.e., that we have read perms on).
+TODO: Find out if a user should see other user's slot content via storage GET.</p>
+<p>A helper function for <code>list_storage</code>, don't use directly.</p>
+<p>Returns: a hash ref containing path and entry with result</p>
+<p>
+</p>
+<h2><a name="list_storage_slots"><code>list_storage_slots</code></a></h2>
+<p>List all the slots.</p>
+<p>Returns: an XML-formatted listing string with slots.</p>
+<p>
+</p>
+<h2><a name="existent"><code>existent</code></a></h2>
+<pre>
+ $exist = &amp;LetsMT::Repository::StorageManager::existent (
+     path =&gt; $path,
+     rev  =&gt; $revision,
+     uid  =&gt; $uid,
+     gid  =&gt; $gid,
+ )</pre>
+<p>Check for the existence of a given path.</p>
+<p>Returns: true or false</p>
+<p>
+</p>
+<h2><a name="download_storage"><code>download_storage</code></a></h2>
+<pre>
+ &amp;LetsMT::Repository::StorageManager::download_storage (
+     path    =&gt; $path,
+     uid     =&gt; $uid,
+     archive =&gt; $archive,
+     target  =&gt; $target,
+ )</pre>
+<p>Prepare download of the given path by writing the contents to the given target.
+If <code>$archive</code> is &quot;no&quot; or 0, don't make a zip file of it.</p>
+<p>Returns: nothing on success (an exception is raised on failure)</p>
+<p>FIXME: return true on success.</p>
+<p>
+</p>
+<h2><a name="delete_storage"><code>delete_storage</code></a></h2>
+<pre>
+ &amp;LetsMT::Repository::StorageManager::delete_storage ($pathref, $user)</pre>
+<p>Delete the given path.</p>
+<p>FIXME: Only makes sense on rev=HEAD</p>
+<p>Returns: an XML-formatted string indicating success.</p>
+<p>
+</p>
+<h2><a name="delete_storage_slot"><code>delete_storage_slot</code></a></h2>
+<pre>
+ &amp;LetsMT::Repository::StorageManager::delete_storage_slot (
+     uid =&gt; uid,
+     slot =&gt; slot,
+ )</pre>
+<p>Delete a slot from the resource repository.</p>
+<p>Returns: true (an exception is raised on failure).</p>
+<p>
+</p>
+<h2><a name="put_access"><code>put_access</code></a></h2>
+<pre>
+ &amp;LetsMT::Repository::StorageManager::put_access ($pathref, $uid, $gid)</pre>
+<p>Change the group setting of a branch.</p>
+<p>Returns: an XML-formatted string indicating success.</p>
+<p>
+</p>
+<h2><a name="get_access"><code>get_access</code></a></h2>
+<pre>
+ &amp;LetsMT::Repository::StorageManager::get_access ($result_ref, $pathref, $uid)</pre>
+<p>Get the group settings for the branches in a slot,
+the group setting of a single branch
+or a resource below branch level.</p>
+<p>Returns: nothing, writes hash ref to in-argument $resutl_ref</p>
+<p>
+</p>
+<h2><a name="_get_branch"><code>_get_branch</code></a></h2>
+<pre>
+ _get_branch (
+     name           =&gt; $name,
+     user           =&gt; $user,
+     slot           =&gt; $slot,
+     superuser_view =&gt; $superuser_view,
+ )</pre>
+<p>Try to retrieve Branch objects from the datastore,
+using the effective user's permissions.
+If superuser_view is true, then all objects can be seen.</p>
+<p>Returns: a Branch object or false.</p>
+<p>
+</p>
+<h2><a name="_get_slot"><code>_get_slot</code></a></h2>
+<pre>
+ _get_slot (name =&gt; $name)</pre>
+<p>Try to retrieve Slot objects from the datastore.</p>
+<p>Returns: a Slot object or false.</p>
+
+</body>
+
+</html>

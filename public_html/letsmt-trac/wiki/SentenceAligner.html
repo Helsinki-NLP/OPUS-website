@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      SentenceAligner – LetsMT
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/letsmt-trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/SentenceAligner?format=txt" type="text/x-trac-wiki" title="Plain Text" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/SentenceAligner?format=tex" type="text/x-trac-wiki" title="Latex" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/SentenceAligner?format=pdf" type="text/x-trac-wiki" title="Latex-Pdf" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.letsmt.eu/"><img src="http://stp.lingfil.uu.se/~joerg/LetsMT/letsmt.jpg" alt="LetsMT" width="100" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/letsmt-trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/letsmt-trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="SentenceAligner.html" title="View SentenceAligner">SentenceAligner</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/letsmt-trac/wiki/SentenceAligner?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><h1 id="Toolsforautomaticsentencealignment">Tools for automatic sentence alignment</h1>
+<ul><li>hunalign (LGPL)
+<ul><li><a class="ext-link" href="http://mokk.bme.hu/resources/hunalign"><span class="icon">​</span>http://mokk.bme.hu/resources/hunalign</a>
+</li></ul></li></ul><ul><li>Europarl sentence aligner (Gale &amp; Church re-implementation in Perl)
+<ul><li><a class="ext-link" href="http://code.google.com/p/corpus-tools/downloads/list"><span class="icon">​</span>http://code.google.com/p/corpus-tools/downloads/list</a>
+</li><li><a class="ext-link" href="http://search.cpan.org/~achimru/Text-GaleChurch-1.00/lib/Text/GaleChurch.pm"><span class="icon">​</span>http://search.cpan.org/~achimru/Text-GaleChurch-1.00/lib/Text/GaleChurch.pm</a>
+</li><li>Gale &amp; Church in Python: <a class="ext-link" href="https://github.com/vchahun/galechurch"><span class="icon">​</span>https://github.com/vchahun/galechurch</a>
+</li></ul></li></ul><ul><li>Gargantua
+<ul><li><a class="ext-link" href="http://sourceforge.net/projects/gargantua/"><span class="icon">​</span>http://sourceforge.net/projects/gargantua/</a>
+</li></ul></li></ul><ul><li>Melamed's GMA (GPL)
+<ul><li><a class="ext-link" href="http://nlp.cs.nyu.edu/GMA/"><span class="icon">​</span>http://nlp.cs.nyu.edu/GMA/</a>
+</li></ul></li></ul><ul><li>Bob Moore's sentence aligner (Microsoft, license?)
+<ul><li><a class="ext-link" href="http://research.microsoft.com/en-us/downloads/aafd5dcf-4dcc-49b2-8a22-f7055113e656/"><span class="icon">​</span>http://research.microsoft.com/en-us/downloads/aafd5dcf-4dcc-49b2-8a22-f7055113e656/</a>
+</li></ul></li></ul><ul><li>LF aligner (based on hunalign)
+<ul><li><a class="ext-link" href="http://sourceforge.net/projects/aligner/"><span class="icon">​</span>http://sourceforge.net/projects/aligner/</a>
+</li><li><a class="ext-link" href="http://traduccionymundolibre.com/wiki/LF_Aligner"><span class="icon">​</span>http://traduccionymundolibre.com/wiki/LF_Aligner</a>
+</li><li>(can also do more than 2 languages simultaneously)
+</li></ul></li></ul><ul><li>Bleualign: <a class="ext-link" href="https://github.com/rsennrich/bleualign"><span class="icon">​</span>https://github.com/rsennrich/bleualign</a>
+</li></ul><ul><li>maligna
+<ul><li><a class="ext-link" href="http://sourceforge.net/projects/align/"><span class="icon">​</span>http://sourceforge.net/projects/align/</a>
+</li></ul></li></ul><ul><li>tca-align (is it available?)
+<ul><li><a class="ext-link" href="http://freeterm.wordpress.com/2010/06/30/tca2-parallel-text-processing-at-uib-no/"><span class="icon">​</span>http://freeterm.wordpress.com/2010/06/30/tca2-parallel-text-processing-at-uib-no/</a>
+</li></ul></li></ul><ul><li>Champollion
+<ul><li>in scala: <a class="ext-link" href="https://github.com/jhclark/akerblad"><span class="icon">​</span>https://github.com/jhclark/akerblad</a>
+</li></ul></li></ul><ul><li>sentence aligner from Uplug (based on the Europarl aligner)
+<ul><li>uplugalign.pl (need to be adjusted ...!)
+</li><li><a class="ext-link" href="http://sourceforge.net/projects/uplug/"><span class="icon">​</span>http://sourceforge.net/projects/uplug/</a>
+</li></ul></li></ul><ul><li>srtalign for movie subtitle alignment
+<ul><li><a class="ext-link" href="http://opus.lingfil.uu.se/tools.php"><span class="icon">​</span>http://opus.lingfil.uu.se/tools.php</a>
+</li></ul></li></ul><p>
+Commercial tools:
+</p>
+<ul><li><a class="missing wiki">AlignFactroy?</a>: <a class="ext-link" href="http://www.terminotix.com/index.asp?name=AlignFactory"><span class="icon">​</span>http://www.terminotix.com/index.asp?name=AlignFactory</a>
+<ul><li>free on-line aligner at: <a class="ext-link" href="http://www.youalign.com/"><span class="icon">​</span>http://www.youalign.com/</a>
+</li></ul></li></ul><p>
+Comparisons of alignment performance:
+</p>
+<ul><li> <a class="ext-link" href="http://www.ims.uni-stuttgart.de/~fraser/pubs/braune_coling2010.pdf"><span class="icon">​</span>http://www.ims.uni-stuttgart.de/~fraser/pubs/braune_coling2010.pdf</a>
+</li><li> <a class="ext-link" href="http://lium3.univ-lemans.fr/mtmarathon2010/ProjectFinalPresentation/SentenceAlignment/sentence_alignment.pdf"><span class="icon">​</span>http://lium3.univ-lemans.fr/mtmarathon2010/ProjectFinalPresentation/SentenceAlignment/sentence_alignment.pdf</a>
+</li></ul><h1 id="Otheralignmenttools">Other alignment tools</h1>
+<ul><li>Tools for book alignment: <a class="ext-link" href="http://search.cpan.org/~andrefs/"><span class="icon">​</span>http://search.cpan.org/~andrefs/</a>
+</li></ul><h1 id="Toolsforcomparablecorpora">Tools for comparable corpora</h1>
+<ul><li>Extract parallel sentences from comparable corpora: <a class="ext-link" href="http://jgosme.perso.info.unicaen.fr/sentpair.html"><span class="icon">​</span>http://jgosme.perso.info.unicaen.fr/sentpair.html</a>
+</li><li>Accurat toolkit: <a class="ext-link" href="http://www.accurat-project.eu/index.php?p=accurat-toolkit"><span class="icon">​</span>http://www.accurat-project.eu/index.php?p=accurat-toolkit</a>
+</li><li>yalign: <a class="ext-link" href="https://github.com/machinalis/yalign"><span class="icon">​</span>https://github.com/machinalis/yalign</a>
+</li></ul></div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/letsmt-trac/wiki/SentenceAligner?action=diff&amp;version=14" title="Version 14 by joerg">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2016-08-21T17%3A53%3A27Z&amp;precision=second" title="See timeline at Aug 21, 2016, 5:53:27 PM">4 years ago</a></span>
+            <span class="trac-print">Last modified on Aug 21, 2016, 5:53:27 PM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/SentenceAligner?format=txt">Plain Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/SentenceAligner?format=tex">Latex</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/SentenceAligner?format=pdf">Latex-Pdf</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      Tools/Opus2Multi – OPUS
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/trac/search" />
+        <link rel="help" href="../TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/trac/wiki/Tools/Opus2Multi?format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="up" href="../Tools.html" title="View parent page" />
+        <link rel="start" href="../../wiki.html" />
+        <link rel="stylesheet" href="../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../../chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="../../../index.html"><img src="../../../img/opus_medium.jpg" alt="opus" height="90" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/trac/login">Login</a></li><li><a href="../../prefs.html">Preferences</a></li><li><a href="../TracGuide.html">Help/Guide</a></li><li class="last"><a href="../../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../../wiki.html">Wiki</a></li><li class="last"><a href="../../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../../wiki.html">wiki:</a><a class="pathentry" href="../Tools.html" title="View Tools">Tools</a><span class="pathentry sep">/</span><a class="pathentry" href="Opus2Multi.html" title="View Tools/Opus2Multi">Opus2Multi</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="../Tools.html">Up</a></li><li><a href="../WikiStart.html">Start Page</a></li><li><a href="../TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/trac/wiki/Tools/Opus2Multi?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><h1 id="opus2multi">opus2multi</h1>
+<p>
+<tt> opus2multi [OPTIONS] xmldir pivot [lang-ids]* </tt>
+</p>
+<p>
+Combine sentence alignments for several language pairs using a pivot language as intermediate language
+for all other languages.
+</p>
+<p>
+OUTPUT: sentence alignment files for all languages together with the pivot language
+</p>
+<pre class="wiki">        &lt;xmldir&gt; should be the path to the XML directory that contains
+                 sentence alignment files
+                 for each individual language pair (e.g. xmldir/en-fr.xml.gz)
+        &lt;pivot&gt; is the language ID of the pivot language (e.g. en)
+        &lt;lang-ids&gt; are language IDs of the other language to be combined
+                   in the multilingual corpus
+</pre><h1 id="SYNOPSIS">SYNOPSIS</h1>
+<div class="code"><pre>        <span class="c"># Combine all sentence alignments via Swedish
+</span>        <span class="c"># for German, English, Spanish and French.
+</span>        <span class="c"># The alignment units will cover the same English sentences.
+</span>
+        opus2multi /path/to/OPUS/corpus/RF/xml sv de en es fr
+
+        <span class="c"># shortcut without full path to xml-dir
+</span>        <span class="c"># (requires OPUS in some standard directory)
+</span>
+        opus2multi RF sv de en es fr
+
+        <span class="c"># use intralingual links (for pivot language) to extend the data set
+</span>        <span class="c"># (useful for OpenSubtitles-corpora)
+</span>
+        opus2multi -a OpenSubtitles2016 sv de en es fr
+</pre></div><h1 id="OPTIONS">OPTIONS</h1>
+<pre class="wiki">        -e ................. keep segments with empty links in any of the languages
+        -i pivot-links ..... intralingual pivot link file
+        -a ................. same as -i but read intralingual links from xmldir/../alt/
+        -s nr .............. max number of sentences in an alignment unit
+        -h ................. this help
+</pre></div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/trac/wiki/Tools/Opus2Multi?action=diff&amp;version=1" title="Version 1 by tiedeman">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/trac/timeline?from=2017-11-16T20%3A25%3A22Z&amp;precision=second" title="See timeline at Nov 16, 2017, 8:25:22 PM">3 years ago</a></span>
+            <span class="trac-print">Last modified on Nov 16, 2017, 8:25:22 PM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <script type="text/javascript">
+        jQuery.loadStyleSheet("/trac/pygments/trac.css", "text/css");
+    </script>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/trac/wiki/Tools/Opus2Multi?format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

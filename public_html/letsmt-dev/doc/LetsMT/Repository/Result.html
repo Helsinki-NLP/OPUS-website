@@ -1,0 +1,76 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Result</title>
+<link rel="stylesheet" href="../../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#constructor">CONSTRUCTOR</a></li>
+	<li><a href="#methods">METHODS</a></li>
+	<ul>
+
+		<li><a href="#get_xml_result"><code>get_xml_result</code></a></li>
+		<li><a href="#set_values"><code>set_values</code></a></li>
+		<li><a href="#success"><code>success</code></a></li>
+	</ul>
+
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>LetsMT::Repository::Result - Object that holds and returns the XML result</p>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>This class stores the result that every API function call returns in hash. The
+constructor takes kes/value pairs as arguements and sets them as properties.
+The get_xml_result function returns a XML formated string reference.</p>
+<p>
+</p>
+<hr />
+<h1><a name="constructor">CONSTRUCTOR</a></h1>
+<pre>
+ LetsMT::Repository::Result-&gt;new ( %list )</pre>
+<p>The constructor takes a hash style list as parameter.</p>
+<p>
+</p>
+<hr />
+<h1><a name="methods">METHODS</a></h1>
+<p>
+</p>
+<h2><a name="get_xml_result"><code>get_xml_result</code></a></h2>
+<p>Return a reference to formatted XML format</p>
+<p>
+</p>
+<h2><a name="set_values"><code>set_values</code></a></h2>
+<pre>
+ &amp;$result-&gt;set_values (%list)</pre>
+<p>Set or overwrite member variables in Result object.</p>
+<p>
+</p>
+<h2><a name="success"><code>success</code></a></h2>
+<p>Check if result type is 'ok'.</p>
+
+</body>
+
+</html>

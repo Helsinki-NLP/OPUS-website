@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      webinterface – LetsMT
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/letsmt-trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/webinterface?format=txt" type="text/x-trac-wiki" title="Plain Text" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/webinterface?format=tex" type="text/x-trac-wiki" title="Latex" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/webinterface?format=pdf" type="text/x-trac-wiki" title="Latex-Pdf" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.letsmt.eu/"><img src="http://stp.lingfil.uu.se/~joerg/LetsMT/letsmt.jpg" alt="LetsMT" width="100" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/letsmt-trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/letsmt-trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="webinterface.html" title="View webinterface">webinterface</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/letsmt-trac/wiki/webinterface?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><p>
+</p><div class="wiki-toc">
+<ol>
+  <li>
+    <a href="webinterface.html#WebInterface">Web Interface</a>
+    <ol>
+      <li>
+        <a href="webinterface.html#Routes">Routes</a>
+      </li>
+      <li>
+        <a href="webinterface.html#TemplatesView">Templates/View</a>
+      </li>
+      <li>
+        <a href="webinterface.html#StackFlashandSession">Stack, Flash and Session</a>
+        <ol>
+          <li>
+            <a href="webinterface.html#CSSandJavaScript">CSS and JavaScript</a>
+            <ol>
+              <li>
+                <a href="webinterface.html#TheFilebrowser">The Filebrowser</a>
+              </li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <a href="webinterface.html#DataTables">DataTables</a>
+      </li>
+      <li>
+        <a href="webinterface.html#ConfigurationFile">Configuration File</a>
+      </li>
+      <li>
+        <a href="webinterface.html#Userdatabase">User database</a>
+      </li>
+      <li>
+        <a href="webinterface.html#JQueryicons">JQuery icons</a>
+      </li>
+    </ol>
+  </li>
+</ol>
+</div><p>
+</p>
+<h1 id="WebInterface">Web Interface</h1>
+<p>
+The current web interface is build with the perl based <a class="ext-link" href="http://mojolicio.us/"><span class="icon">​</span>mojolicious</a> web framework and uses a MVC design pattern. As a javascript framework, mainly for ajax calls and user interface templates we use jQuery <a class="ext-link" href="http://docs.jquery.com/Main_Page"><span class="icon">​</span>jQuery</a>. 
+</p>
+<p>
+The code of the web interface can be found in the LetsMT repository in
+</p>
+<pre class="wiki">trunk/dev/src/www/webinterface
+</pre><p>
+from there the startup script is in
+</p>
+<pre class="wiki">lib/WebInterface.pm
+</pre><p>
+The controller and models are in
+</p>
+<pre class="wiki">lib/WebInterface/Controller
+lib/WebInterface/Model
+</pre><p>
+The templates that generate the actual HTML output are in 
+</p>
+<pre class="wiki">templates/&lt;controller_name&gt;/&lt;action_name&gt;
+</pre><p>
+The controller scripts define functions/actions that contain the logic how to react to requests and input. The controller uses the model to generate the reply. The model is in our case mostly a wrapper/helper around our web services with the exception of the user model which uses DBIx::Simple for the MySQL user DB. The functions/actions of the controller then implicitly or explicitly use the views/templates to generate the HTML output.
+ 
+</p>
+<h2 id="Routes">Routes</h2>
+<p>
+In the startup script WebInterface.pm the routes are defined that map incoming requests to the appropriate response/action in the controller. See the <a class="ext-link" href="http://search.cpan.org/~sri/Mojolicious-2.95/lib/Mojolicious/Guides/Routing.pod"><span class="icon">​</span>routing guide</a> for more information.
+</p>
+<p>
+For user authentication check we have a bridge called 'check' that can be used for pages or resources that should only be accessible for users that are logged in. So for example the following route takes a GET request to the URL '/protected' and calls  the function/action 'index' in the controller module lib/WebInterface/Controller/Welcome.pm. 
+</p>
+<pre class="wiki">$check-&gt;get('/index') -&gt;to('welcome#index');
+</pre><p>
+At the end of the index function the template with the same name as the function/action is called implicitly or explicitly by 
+</p>
+<pre class="wiki">$self-&gt;render('welcome/index');
+</pre><p>
+ 
+In the template files there is the HTML markup and often javascript to load further content via ajax calls.
+</p>
+<h2 id="TemplatesView">Templates/View</h2>
+<p>
+There is a special template in 'templates/layouts/default.html.ep' which defines the 'framework' of our website. It contains the HTML header and body, adds the main and the user menu (login, logout, etc), the info and error messages and has a special placeholder variable 
+</p>
+<pre class="wiki">&lt;%= content %&gt;
+</pre><p>
+Every other template that should use this standard layout has to start with 
+</p>
+<pre class="wiki">% layout 'default';
+</pre><p>
+and then defines the HTML content that the content variable in the default template will be replaces with. Our templates all have the ending .html.ep to indicate they produce HTML output and use 'embedded perl', a minimalistic templating language. See <a class="ext-link" href="http://search.cpan.org/~ams/Mojolicious-2.47/lib/Mojolicious/Guides/Rendering.pod#Embedded_Perl"><span class="icon">​</span>Embedded Perl</a>.
+</p>
+<p>
+Normally the templates would only take care of the representation of the data loaded and generated by the actions of the controller but since we use quite some ajax to load content dynamically we have a lot of javascript code in the templates. 
+</p>
+<h2 id="StackFlashandSession">Stack, Flash and Session</h2>
+<p>
+There are three ways to pass on data from the actions in the controller to the templates for rendering. 
+</p>
+<ul><li><strong>Stash</strong> is a hash variable that is available in the same request only, this is where you would store all data that should be rendered in the template belonging to the action you generate the data in. 
+</li><li><strong>Flash</strong> is a hash variable that is valid only in the following request, useful for information needed after a redirect, e.g. an error message.
+</li><li><strong>Session</strong>, session wide available hash, currently only 'user=&gt;username'
+</li></ul><pre class="wiki"># In the action of a control you set a stash variable like this
+$self-&gt;stash(author =&gt; 'Matthias');
+ 
+# In the corresponding template you would render it like this
+&lt;h1&gt;&lt;%= $author %&gt;&lt;/h1&gt; 
+</pre><h3 id="CSSandJavaScript">CSS and JavaScript</h3>
+<p>
+We try to use as much global CSS definitions as possible, no hidden inline style definitions. CSS and JavaScrips can be found in 
+</p>
+<pre class="wiki">public/css
+public/js
+</pre><p>
+main.css and main .js are the only self developed ones, the rest is mainly from jQuery.
+</p>
+<h4 id="TheFilebrowser">The Filebrowser</h4>
+<p>
+The file browser is a open source jQuery plugin but adapted to our use case. It is a recursive javascript function that calls the controller 'Filebrowser.pm' to list directories. The initialization calls for each file browser is made in template/storage/show.html.ep and looks for example like this: 
+</p>
+<pre class="wiki">$('#file_browser_uploads').fileTree({
+    			  root : '&lt;%= stash 'slot' %&gt;/&lt;%= stash 'branch' %&gt;/uploads/',
+    			  script : '/filebrowser',
+    			  loadMessage : 'loading...',
+    			  downloadOption: 0,
+    		   }, function(file) {load_tabs(file);} 
+    		);
+</pre><p>
+This calls the 'fileTree' function in 'jqueryFileTree.js' on the placeholder div 'file_browser_uploads', sets the root for the browser to 'slot/branch/uploads', sets the script to the controller 'filebrowser' and defines the callback function 'load_tabs(file)' for every click on a file entry in the directory listings. The 'load_tabs' function in 'show.html.ep' makes a ajax call to '/get_tab_list' with 'path' and 'revision number' as url arguments and then creates the required jquery-tabs in the right hand view of show.html.ep from the returned json-encoded data structure programmatically. The tabs itself load their content dynamically via ajax and are added like this in the 'load_tabs' function:
+</p>
+<pre class="wiki">/* Go through the json data and add tabs */
+                jQuery.each(data, function(i, val) {                                 
+                    $('#tabs_right').tabs('add', val.url, val.name); 
+                });  
+</pre><h2 id="DataTables">DataTables</h2>
+<p>
+The main resource table on the front/welcome page uses a javascript called <a class="ext-link" href="http://datatables.net/index"><span class="icon">​</span>!DataTables</a> for sorting, filtering, searching, etc.. It gets initialized in templates/welcome/index.html.ep with the line:
+</p>
+<pre class="wiki">var oTable = $('#resource_table').dataTable(...);
+</pre><p>
+There are also all parameters like what column to sort on initially and so on. 
+</p>
+<h2 id="ConfigurationFile">Configuration File</h2>
+<p>
+The file 'web_interface.json[.template] contains the configuration of the webinterface in <a class="ext-link" href="http://json.org"><span class="icon">​</span>json</a> format. I did't manage to include all parameters there since it was added a bit late but this can easily be extended in the future. To use a value from the config file simply write:
+</p>
+<pre class="wiki">$self-&gt;config-&gt;{'system_user'}
+</pre><h2 id="Userdatabase">User database</h2>
+<p>
+The user database is stored in mySQL in the database <tt>webinterface_user_db</tt>.
+The table with user information is called <tt>user</tt>.
+</p>
+<h2 id="JQueryicons">JQuery icons</h2>
+<p>
+<a class="ext-link" href="http://jquery-ui.googlecode.com/svn/tags/1.6rc5/tests/static/icons.html"><span class="icon">​</span>http://jquery-ui.googlecode.com/svn/tags/1.6rc5/tests/static/icons.html</a>
+</p>
+</div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/letsmt-trac/wiki/webinterface?action=diff&amp;version=14" title="Version 14 by joerg">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2012-10-22T21%3A47%3A18Z&amp;precision=second" title="See timeline at Oct 22, 2012, 9:47:18 PM">8 years ago</a></span>
+            <span class="trac-print">Last modified on Oct 22, 2012, 9:47:18 PM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/webinterface?format=txt">Plain Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/webinterface?format=tex">Latex</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/webinterface?format=pdf">Latex-Pdf</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

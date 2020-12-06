@@ -1,0 +1,94 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>ModPerlHandler</title>
+<link rel="stylesheet" href="../../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#synopsis">SYNOPSIS</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#class_method">CLASS METHOD</a></li>
+	<ul>
+
+		<li><a href="#request_handler_handler">Request Handler <code>handler</code></a></li>
+		<li><a href="#cleanup_handler_cleanup">Cleanup Handler <code>cleanup</code></a></li>
+	</ul>
+
+	<li><a href="#internal_utility_method">INTERNAL UTILITY METHOD</a></li>
+	<ul>
+
+		<li><a href="#_copy_file"><code>_copy_file</code></a></li>
+	</ul>
+
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>LetsMT::WWW::ModperlHandler - Apache2 mod_perl handler</p>
+<p>
+</p>
+<hr />
+<h1><a name="synopsis">SYNOPSIS</a></h1>
+<p>By having the following location in the apache virtual host file, the mod_perl
+handler gets called for every web service HTTP request.</p>
+<pre>
+ &lt;Location /ws&gt;
+    SetHandler perl-script
+    PerlOptions +ParseHeaders
+    PerlResponseHandler LetsMT::WWW::ModPerlHandler
+ &lt;/Location&gt;</pre>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>This is the Apache response handler for the web service API of the LetsMT!
+resource repository.</p>
+<p>
+</p>
+<hr />
+<h1><a name="class_method">CLASS METHOD</a></h1>
+<p>
+</p>
+<h2><a name="request_handler_handler">Request Handler <code>handler</code></a></h2>
+<p>This is the hook called by Apache's mod_perl, the entry point.</p>
+<p>Parameter: <code>$mod_perl_env</code></p>
+<p>Returns: an <code>Apache2::Const::DONE</code> or <code>::OK</code> constant.</p>
+<p>Throws no exception.</p>
+<p>
+</p>
+<h2><a name="cleanup_handler_cleanup">Cleanup Handler <code>cleanup</code></a></h2>
+<p>Cleaning up temporary files.</p>
+<p>
+</p>
+<hr />
+<h1><a name="internal_utility_method">INTERNAL UTILITY METHOD</a></h1>
+<p>
+</p>
+<h2><a name="_copy_file"><code>_copy_file</code></a></h2>
+<pre>
+ &amp;_copy_file($source, $dest);</pre>
+<p>A general file stream copy that will not mess up binary files.</p>
+<p>Returns: true on success, false on failure.</p>
+<p>Parameters: filehandles for source and destination.</p>
+
+</body>
+
+</html>

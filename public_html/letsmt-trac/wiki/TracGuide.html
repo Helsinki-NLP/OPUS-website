@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      TracGuide – LetsMT
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/letsmt-trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracGuide?format=txt" type="text/x-trac-wiki" title="Plain Text" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracGuide?format=tex" type="text/x-trac-wiki" title="Latex" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracGuide?format=pdf" type="text/x-trac-wiki" title="Latex-Pdf" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.letsmt.eu/"><img src="http://stp.lingfil.uu.se/~joerg/LetsMT/letsmt.jpg" alt="LetsMT" width="100" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/letsmt-trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/letsmt-trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="TracGuide.html" title="View TracGuide">TracGuide</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/letsmt-trac/wiki/TracGuide?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><h1 id="TheTracUserandAdministrationGuide">The Trac User and Administration Guide</h1>
+<p>
+</p><div class="wiki-toc"><h4>Table of Contents</h4><ul><li class="active"><a class="False" href="TracGuide.html">Index</a></li><li class="False"><a class="False" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracInstall">Installation</a></li><li class="False"><a class="False" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracInterfaceCustomization">Customization</a></li><li class="False"><a class="False" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracPlugins">Plugins</a></li><li class="False"><a class="False" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracUpgrade">Upgrading</a></li><li class="False"><a class="False" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracIni">Configuration</a></li><li class="False"><a class="False" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracAdmin">Administration</a></li><li class="False"><a class="False" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracBackup">Backup</a></li><li class="False"><a class="False" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracLogging">Logging</a></li><li class="False"><a class="False" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracPermissions">Permissions</a></li><li class="False"><a class="False" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracWiki">The Wiki</a></li><li class="False"><a class="False" href="http://opus.nlpl.eu/letsmt-trac/wiki/WikiFormatting">Wiki Formatting</a></li><li class="False"><a class="False" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracTimeline">Timeline</a></li><li class="False"><a class="False" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracBrowser">Repository Browser</a></li><li class="False"><a class="False" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracRevisionLog">Revision Log</a></li><li class="False"><a class="False" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracChangeset">Changesets</a></li><li class="False"><a class="False" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracTickets">Tickets</a></li><li class="False"><a class="False" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracWorkflow">Workflow</a></li><li class="False"><a class="False" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracRoadmap">Roadmap</a></li><li class="False"><a class="False" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracQuery">Ticket Queries</a></li><li class="False"><a class="False" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracBatchModify">Batch Modify</a></li><li class="False"><a class="False" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracReports">Reports</a></li><li class="False"><a class="False" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracRss">RSS Support</a></li><li class="False"><a class="False" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracNotification">Notification</a></li></ul></div><p>
+</p>
+<span style="font-size:90%"><em>The <a class="wiki" href="TracGuide.html">TracGuide</a> is meant to serve as a starting point for all documentation regarding Trac usage and development. The guide is a free document, a collaborative effort, and a part of the <a class="ext-link" href="http://trac.edgewall.org"><span class="icon">​</span>Trac Project</a> itself.</em></span><h2 id="Introduction">Introduction</h2>
+<p>
+Trac is an enhanced wiki and issue tracking system for software development projects. Trac uses a minimalistic approach to web-based software project management. It strives to help developers write great software while staying out of the way. Trac should impose as little as possible on a team's established development process and policies.
+</p>
+<p>
+It provides an interface to Subversion (and other version control systems), an integrated Wiki and convenient reporting facilities.
+</p>
+<p>
+Trac allows wiki markup in issue descriptions and commit messages, creating links and seamless references between bugs, tasks, changesets, files and wiki pages. A timeline shows all current and past project events in order, making the acquisition of an overview of the project and tracking progress very easy. The roadmap shows the road ahead, listing the upcoming milestones.
+</p>
+<h2 id="UserGuide">User Guide</h2>
+<ul><li>Using the Wiki subsystem
+<ul><li><a class="wiki" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracWiki">TracWiki</a> — How to use the built-in Wiki.
+</li><li><a class="wiki" href="http://opus.nlpl.eu/letsmt-trac/wiki/WikiFormatting">WikiFormatting</a> — Reference to the wiki syntax used throughout.
+</li></ul></li><li>Using the Version Control subsystem
+<ul><li><a class="wiki" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracBrowser">TracBrowser</a> — Browsing source code with Trac.
+</li><li><a class="wiki" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracChangeset">TracChangeset</a> — Viewing changes to source code.
+</li><li><a class="wiki" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracRevisionLog">TracRevisionLog</a> — Viewing change history.
+</li></ul></li><li>Using the Ticket subsystem
+<ul><li><a class="wiki" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracTickets">TracTickets</a> — Using the issue tracker.
+</li><li><a class="wiki" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracRoadmap">TracRoadmap</a> — The roadmap helps tracking project progress.
+</li><li><a class="wiki" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracReports">TracReports</a> — Writing and using reports.
+</li><li><a class="wiki" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracQuery">TracQuery</a> — Executing custom ticket queries.
+</li><li><a class="wiki" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracBatchModify">TracBatchModify</a> - Modifying a batch of tickets in one request.
+</li></ul></li><li>Other modules and general topics
+<ul><li><a class="wiki" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracSearch">TracSearch</a> — Full text search in all content.
+</li><li><a class="wiki" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracTimeline">TracTimeline</a> — The timeline provides a historic perspective on a project.
+</li><li><a class="wiki" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracRss">TracRss</a> — RSS content syndication in Trac.
+</li><li><a class="wiki" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracAccessibility">TracAccessibility</a> — Accessibility keys support
+</li></ul></li></ul><h2 id="AdministratorGuide">Administrator Guide</h2>
+<ul><li>Installation and upgrade
+<ul><li><a class="wiki" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracInstall">TracInstall</a> — How to install and run Trac.
+</li><li><a class="wiki" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracUpgrade">TracUpgrade</a> — How to upgrade existing installations.
+</li><li><a class="wiki" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracImport">TracImport</a> — Importing tickets from other bug databases.
+</li><li><a class="wiki" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracPlugins">TracPlugins</a> — Installing and managing Trac extensions.
+</li></ul></li><li>Configuration and customization
+<ul><li><a class="wiki" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracIni">TracIni</a> — Trac configuration file reference. 
+</li><li><a class="wiki" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracPermissions">TracPermissions</a> — Access control and permissions.
+</li><li><a class="wiki" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracNavigation">TracNavigation</a> — Customize main navigation menus.
+</li><li><a class="wiki" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracInterfaceCustomization">TracInterfaceCustomization</a> — Customizing the Trac interface.
+</li><li><a class="wiki" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracLogging">TracLogging</a> — The Trac logging facility.
+</li></ul></li><li>Administering the Version Control subsystem
+<ul><li><a class="wiki" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracRepositoryAdmin">TracRepositoryAdmin</a> — Management of Source Code Repositories.
+</li></ul></li><li>Administering the Ticket subsystem
+<ul><li><a class="wiki" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracTicketsCustomFields">TracTicketsCustomFields</a> — Expanding tickets with customized fields.
+</li><li><a class="wiki" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracNotification">TracNotification</a> — Email notification.
+</li><li><a class="wiki" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracWorkflow">TracWorkflow</a> — Configurable Ticket Workflow.
+</li></ul></li><li>Reference
+<ul><li><a class="wiki" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracEnvironment">TracEnvironment</a> — All you need to know about Trac environments
+</li><li><a class="wiki" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracAdmin">TracAdmin</a> — Administering a Trac project via the command-line.
+</li></ul></li></ul><h2 id="SupportandOtherSourcesofInformation">Support and Other Sources of Information</h2>
+<ul><li><a class="ext-link" href="http://trac.edgewall.org/intertrac/TracFaq" title="TracFaq in Trac project trac"><span class="icon">​</span>Trac FAQ</a> — A collection of Frequently Asked Questions (on the project website).
+</li><li><a class="ext-link" href="http://trac.edgewall.org/intertrac/TracDev" title="TracDev in Trac project trac"><span class="icon">​</span>TracDev</a> and <a class="ext-link" href="http://trac.edgewall.org/intertrac/TracDev/ApiDocs" title="TracDev/ApiDocs in Trac project trac"><span class="icon">​</span>API docs</a> — Trac Developer documentation
+</li><li><a class="wiki" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracSupport">TracSupport</a> — How to get more information
+</li></ul><p>
+If you are looking for a good place to ask a question about Trac, look no further than the <a class="ext-link" href="http://trac.edgewall.org/intertrac/MailingList" title="MailingList in Trac project trac"><span class="icon">​</span>MailingList</a>. It provides a friendly environment to discuss openly among Trac users and developers.
+</p>
+</div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/letsmt-trac/wiki/TracGuide?action=diff&amp;version=3" title="Version 3 by trac">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2015-02-25T21%3A37%3A47Z&amp;precision=second" title="See timeline at Feb 25, 2015, 9:37:47 PM">6 years ago</a></span>
+            <span class="trac-print">Last modified on Feb 25, 2015, 9:37:47 PM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracGuide?format=txt">Plain Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracGuide?format=tex">Latex</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/TracGuide?format=pdf">Latex-Pdf</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

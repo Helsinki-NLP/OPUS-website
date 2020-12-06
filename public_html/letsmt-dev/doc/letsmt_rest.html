@@ -1,0 +1,229 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>letsmt_rest</title>
+<link rel="stylesheet" href="pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#synopsis">SYNOPSIS</a></li>
+	<li><a href="#options_and_arguments">OPTIONS AND ARGUMENTS</a></li>
+	<ul>
+
+		<li><a href="#commands">COMMANDS</a></li>
+		<li><a href="#options">OPTIONS</a></li>
+	</ul>
+
+	<li><a href="#description">DESCRIPTION</a></li>
+	<ul>
+
+		<li><a href="#manipulating_resources">MANIPULATING RESOURCES</a></li>
+		<li><a href="#manipulating_groups">MANIPULATING GROUPS</a></li>
+		<li><a href="#manipulating_group_and_user_information">MANIPULATING GROUP AND USER INFORMATION</a></li>
+		<li><a href="#manipulating_metadata">MANIPULATING METADATA</a></li>
+		<li><a href="#manipulating_jobs">MANIPULATING JOBS</a></li>
+		<li><a href="#human_readable_output">HUMAN-READABLE OUTPUT</a></li>
+	</ul>
+
+	<li><a href="#license">LICENSE</a></li>
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>letsmt_rest - a simple frontend for using the LetsMT REST server</p>
+<p>
+</p>
+<hr />
+<h1><a name="synopsis">SYNOPSIS</a></h1>
+<pre>
+ letsmt_rest [OPTIONS] command [MORE_OPTIONS] [ARGUMENTS]</pre>
+<p>
+</p>
+<hr />
+<h1><a name="options_and_arguments">OPTIONS AND ARGUMENTS</a></h1>
+<p>
+</p>
+<h2><a name="commands">COMMANDS</a></h2>
+<pre>
+ add_meta             fetch
+ add_user             group
+ add_user_info        import
+ cat                  permission
+ commit_job           run_import
+ copy                 run_align
+ create               run_realign
+ create_group         set_meta
+ create_user          set_user_info
+ delete               show
+ delete_group         show_meta
+ delete_meta          upload
+ delete_user          user_info
+ delete_user_info</pre>
+<p>
+</p>
+<h2><a name="options">OPTIONS</a></h2>
+<pre>
+ -a ............. (search) list all entries (not only matching resources)
+ -A ............. (fetch) download as archive (do not unpack)
+ -b branch ...... name of the branch within &lt;slot&gt; (default = user)
+ -c copy_dest ... destination for copy (default = user)
+ -d dest ........ **TODO** equivalent with -p
+ -D domain ...... (create) domain of the corpus
+ -f ............. (delete) force - delete without comfirmation
+ -F from ........ (cat) start at line &lt;from&gt;
+ -g group ....... name of the REST group for &lt;user&gt; (default = 'public')
+ -h ............. show the help text
+ -H ............. show the man page
+ -l lang-ID ..... language ID (optional for corpus uploads)
+ -m metadata .... metadata in the form of &quot;key:value&quot;
+ -o operation ... (search) operation to perform on matching data
+ -O owner ....... owner of the data (for create), default = user
+ -p path ........ relative path (directory) inside of the repository
+ -P provider .... provider of the data (for create), default = user
+ -r revisionNr .. revision number (for show, cat, fetch, show_meta)
+ -S server ...... storage-server URL (for create slot)
+ -s slot ........ name of the REST slot (= corpus)
+ -T to .......... (cat) end at line &lt;to&gt;
+ -t type ........ file type (for uploads), backend type (for create)
+ -u user ........ name of the REST user
+ -v ............. verbose output
+ -V ............. display the LetsMT library version
+ -x ............. de-XMLify the returned data (make more human-readable)</pre>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p><code>letsmt_rest</code> sends requests to the LetsMT REST server,
+using the <a href=".//LetsMT/WebService.html">LetsMT::WebService</a> module.</p>
+<p>
+</p>
+<h2><a name="manipulating_resources">MANIPULATING RESOURCES</a></h2>
+<pre>
+ create ......... create a new resource-directory (slot/user/path)
+                  '-S &lt;server&gt;': use specific storage server &lt;server&gt;
+                  '-t &lt;type&gt;': use specific backend type &lt;type&gt;
+ fetch .......... fetch resources from REST (alias: download)
+ show ........... show files in given slot/branch/path
+ cat ............ show contents of given slot/branch/path (see also -F and -T)
+ permission ..... change group settings of &lt;slot&gt;/&lt;user&gt; to &lt;group&gt;
+ delete ......... delete a resource
+ copy ........... copy a &lt;branch&gt; in &lt;slot&gt; to &lt;slot&gt;/&lt;copy_dest&gt;
+ upload ......... upload files to slot/user/path
+                  If you specify only one file on the command line:
+                  destination = slot/user/path
+                  If you specify multiple upload files (file1 file2):
+                  destinations = slot/user/path/file1, slot/user/path/file2
+ import ......... upload files to 'slot/user' into uploads/type/, where type
+                  is either specified on the command line (-t) or
+                  taken from file extension (check accepted types).
+                  You can specify multiple files on the command-line:
+          letsmt_rest -s slot -u user import file1.tmx en/file2.pdf ...
+                  NOTE: relative paths are kept when uploading
+                  NOTE: absolute paths are removed and only filenames are used
+                  Optional: -l langID (to specify the language of the doc)
+                  --&gt; this will be used to put the doc in a langID-subdir:
+                  e.g. put file2,pdf into uploads/en/ with
+          letsmt_rest -s slot -u user -l en import file2.pdf ...</pre>
+<p>
+</p>
+<h2><a name="manipulating_groups">MANIPULATING GROUPS</a></h2>
+<pre>
+ create_user .... create a new user (default group = 'public')
+ create_group ... create a new group &lt;group&gt; owned by &lt;user&gt;
+ add_user ....... add user &lt;user&gt; to group &lt;group&gt; owned by &lt;owner&gt;
+ group .......... show all groups or members of a specific group &lt;group&gt;
+ delete_group ... delete user &lt;user&gt; from group &lt;group&gt; owned by &lt;owner&gt;</pre>
+<p>
+</p>
+<h2><a name="manipulating_group_and_user_information">MANIPULATING GROUP AND USER INFORMATION</a></h2>
+<pre>
+ user_info ...... show information about &lt;user&gt;
+ add_user_info .. add user information for &lt;user&gt; using key-value pairs
+                  specified with -m (see metadata below)
+ set_user_info .. the same as 'add_user_info' but overwrites existing values
+ del_user_info .. delete user information for &lt;user&gt; (using -m keys/values)</pre>
+<p>
+</p>
+<h2><a name="manipulating_metadata">MANIPULATING METADATA</a></h2>
+<pre>
+ show_meta ...... show metadata for slot/branch/path
+ set_meta ....... set metadata &lt;metadata&gt; for slot/branch[/path]
+                    -m 'key=value'
+ add_meta ....... add metadata &lt;metadata&gt; to slot/branch[/path]
+                    -m 'key=value'
+ delete_meta .... delete all metadata from slot/branch[/path]
+                    -m 'key=value' (delete specific key-value pair)
+                    -m 'key'       (delete all values for key)
+ search ......... search the database using query given by
+                    -m 'key=value'     (search entries with &lt;value&gt; in &lt;key&gt;)
+                    -o 'OPERATION_key' (apply operation on &lt;key&gt;)</pre>
+<p>Option -m can take more than one key-value pair, for example, 'key1=val1:key2=val2'.
+For search it is possible to add supported search conditions
+such as 'ONE_OF_', 'ALL_OF_', 'STARTS_WITH_', 'ENDS_WITH_',
+'MAX_', 'MIN_', 'NOT_' as prefix of the key to be conditioned.</p>
+<p>The optional operation parameter -o can be used to define an operation like
+'SUM_' (summing) over all values listed in matching entries in the &lt;key&gt;
+given after the operation.
+Other supported operations are 'MIN_' and 'MAX_'.</p>
+<p>Here is an example:</p>
+<pre>
+ letsmt_rest -u user -m 'ONE_OF_language=en' -o 'SUM_size' search</pre>
+<p>(Search for all entries that include 'en' in the &lt;language&gt; field,
+and sum all values given in their &lt;size&gt; field.)</p>
+<p>
+</p>
+<h2><a name="manipulating_jobs">MANIPULATING JOBS</a></h2>
+<pre>
+ commit_job ..... upload an XML job description file to a given path
+                  and execute the jobs or queues them for execution
+ run_import ..... create (re-)import jobs for all files in the given path
+                  (should be somewhere in uploads)
+ run_align .....  create alignment jobs for all parallel documents
+                  in the given path
+ run_realign ...  create alignment jobs for all aligned documents
+                  in the given path</pre>
+<p>
+</p>
+<h2><a name="human_readable_output">HUMAN-READABLE OUTPUT</a></h2>
+<p>With command-line option -x, XML responses are converted into a more
+human-readable format that uses indentation rather than &quot;&lt;tag&gt;...&lt;/tag&gt;&quot;
+syntax to show structure.</p>
+<p>The lines of multiline text content, such as that returned by &quot;cat&quot;,
+are marked by vertical bars &quot;|&quot; at the left.</p>
+<p>
+</p>
+<hr />
+<h1><a name="license">LICENSE</a></h1>
+<p>This program is part of LetsMT! Resource Repository.</p>
+<p>LetsMT! Resource Repository is free software: you can redistribute it
+and/or modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.</p>
+<p>LetsMT! Resource Repository is distributed in the hope that it will be
+useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+General Public License for more details.</p>
+<p>You should have received a copy of the GNU General Public License
+along with LetsMT! Resource Repository.  If not, see
+<a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>.</p>
+
+</body>
+
+</html>

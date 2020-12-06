@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      Tools – OPUS
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/trac/wiki/Tools?format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="../../index.html"><img src="../../img/opus_medium.jpg" alt="opus" height="90" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="Tools.html" title="View Tools">Tools</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/trac/wiki/Tools?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><h1 id="Tools">Tools</h1>
+<p>
+Various tools are used for preparing the data in OPUS. Most of them are common open source tools available for common GNU/Linux systems. Many pre-processing tools are integrated in <a class="ext-link" href="https://bitbucket.org/tiedemann/uplug"><span class="icon">​</span>Uplug</a> which we use extensively for processing the parallel data. Uplug defines pre-processing pipelines for various languages and includes generic tools for tokenization and sentence alignment.
+</p>
+<p>
+There are also packages for processing the data. Two main packages are available to make it easier to access the data and alignments in their native XML format:
+</p>
+<ul><li>a python package (<a class="ext-link" href="https://pypi.org/project/opustools/"><span class="icon">​</span>https://pypi.org/project/opustools/</a>) 
+</li><li>a perl package (<a class="ext-link" href="https://github.com/Helsinki-NLP/opus-tools"><span class="icon">​</span>opus-tools</a>).
+</li></ul><h2 id="PythonpackageOpusTools">Python package OpusTools</h2>
+<p>
+The original source code is available from github: <a class="ext-link" href="https://github.com/Helsinki-NLP/OpusTools"><span class="icon">​</span>https://github.com/Helsinki-NLP/OpusTools</a> and the package can also be installed via pip: 
+</p>
+<pre class="wiki">pip install opustools-pkg
+</pre><p>
+It implements a library for processing OPUS data in their native XML format and also command-line tools for reading and extracting data: <tt>opus_read</tt> and <tt>opus_cat</tt>. More details about the usage of these tools can be found at <a class="ext-link" href="https://pypi.org/project/opustools-pkg/"><span class="icon">​</span>https://pypi.org/project/opustools-pkg/</a>
+</p>
+<ul><li><strong>opus_read</strong>:  read parallel data sets and convert to different output formats
+</li><li><strong>opus_cat</strong>: extract a given OPUS document from release data
+</li></ul><p>
+These tools are specifically implemented for accessing the released data that are distributed in compressed zip archives. They include various options and some examples are given below:
+</p>
+<pre class="wiki">opus_read -d Books -s en -t fi
+opus_read -d MultiUN -s en -t es -a certainty -tr 0
+opus_read -d Books -s en -t fi -m 10
+opus_read -d Books -s en -t fi -S 1 -T 1 -wm links
+</pre><p>
+<tt>opus_read</tt> and <tt>opus_cat</tt> will look at the default location of the OPUS data on taito in case you use CSC. The tools can also access local copies of the data. Look at the details in the <a class="ext-link" href="https://pypi.org/project/opustools-pkg/"><span class="icon">​</span>online documentation</a>
+</p>
+<p>
+Note that you may need to set the root directory of OPUS and the pre-processing type depending on what kind of data is available on your system (see below for information for NLPL users and abel).
+</p>
+<h2 id="Perlpackageopus-tools">Perl package opus-tools</h2>
+<p>
+The Perl package opus-tools implements an alternative way of processing OPUS data. The tools are bundled in <a class="ext-link" href="https://github.com/Helsinki-NLP/opus-tools"><span class="icon">​</span>opus-tools</a> and can be downloaded from github. There are tools for reading, converting and indexing parallel corpora in OPUS format. Here are some of the most common tools that you may want to use:
+</p>
+<ul><li><strong><a class="wiki" href="Tools/OpusRead.html">opus-read</a></strong>: read a bitext by combining the standoff annotation for sentence alignment with the standalone XML files of the source and target language corpora; you can also use this tool to filter the sentence alignment according to some constraints
+</li><li><strong><a class="wiki" href="Tools/Opus2Moses.html">opus2moses</a></strong>: convert the XML-based bitext into aligned plain text format (Moses format)
+</li><li><strong><a class="wiki" href="Tools/Opus2Multi.html">opus2multi</a></strong>: make a truly multilingual corpus out of the bilingually aligned sub-corpora using one language as a pivot
+</li><li><strong><a class="missing wiki">opus-pt2dic?</a></strong>: extract rough bilingual lexicons from Moses-style phrase translation tables
+</li><li><strong><a class="wiki" href="Tools/OpusPt2dice.html">opus-pt2dice</a></strong>: similar to opus-pt2dic but produce Dice scores and include co-occurrence frequencies
+</li><li><strong><a class="wiki" href="Tools/OpusIndex.html">opus-index</a></strong>: convert and index OPUS data using the corpus work bench (CWB)
+</li><li><strong><a class="wiki" href="Tools/OpusUDpipe.html">opus-udpipe</a></strong>: parse OPUS data (in raw XML format) and produce XML-based annotation with dependency relations and morphosyntactic annotation (this requires a proper installation of UDPipe and the Perl interface to UDPipe)
+</li></ul><h2 id="NLPLusers">NLPL users</h2>
+<p>
+The tools are installed on taito and CSC and provided under the umbrella of <a class="ext-link" href="http://wiki.nlpl.eu"><span class="icon">​</span>NLPL</a>. 
+For <a class="ext-link" href="http://wiki.nlpl.eu/index.php/Infrastructure/software/catalogue"><span class="icon">​</span>NLPL users</a>: You can load OPUS related software by loading the module <strong>nlpl-opus</strong>, which includes OpusTools and opus-tools:
+</p>
+<pre class="wiki">module load nlpl-opus
+</pre><p>
+Running OousTool scripts like opus_read on Abel requires some extra parameters because there is only a partial copy of the data and the root directory is different than on CSC/taito. Add flags for setting the root directory and use the pre-processing type <tt>raw</tt>, for example:
+</p>
+<pre class="wiki">opus_read -rd /projects/nlpl/data/OPUS/ -p raw -d Books -s en -t fr
+</pre><p>
+Alternatively, you can use the script from the Perl package with similar functionality without the extra flags even on abel but note that this does not work for some bigger corpora like <a class="missing wiki">OpenSubtitles?</a> because of the 32-bit restrictions of the library that is used to zip-files.
+</p>
+<pre class="wiki">opus-read -d Books -s en -t fr
+</pre><h2 id="Oldandmostlyobsolete">Old and mostly obsolete</h2>
+<p>
+OPUS provides models for PoS tagging and dependency parsing:
+</p>
+<ul><li><a class="wiki" href="Tagging&#32;and&#32;Parsing.html">Information about tagging and parsing</a>
+</li><li><a class="wiki" href="DownloadTools.html">Download tagging and parsing models</a>
+</li><li>Another outdated list of tools is <a class="ext-link" href="http://opus.lingfil.uu.se/tools.php"><span class="icon">​</span>here</a> (including some scripts for processing the data)
+</li></ul></div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/trac/wiki/Tools?action=diff&amp;version=16" title="Version 16 by tiedeman">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/trac/timeline?from=2020-02-15T20%3A16%3A04Z&amp;precision=second" title="See timeline at Feb 15, 2020, 8:16:04 PM">10 months ago</a></span>
+            <span class="trac-print">Last modified on Feb 15, 2020, 8:16:04 PM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/trac/wiki/Tools?format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

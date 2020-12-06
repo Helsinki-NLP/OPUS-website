@@ -1,0 +1,114 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>21_Repository_API_Storage</title>
+<link rel="stylesheet" href="../../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>21_Repository_API_Storage.t - test <em>Storage</em> API</p>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>This script tests the following assertions:</p>
+<p>Calling the <em>Storage</em> API via the <code>WebService</code> module, ...</p>
+<ul>
+<li>
+<p>you can create a slot with a branch. (put)</p>
+</li>
+<li>
+<p>you can read the branch ... (get)</p>
+</li>
+<li>
+<p>... and the result will show the branch.</p>
+</li>
+<li>
+<p>you can also read the slot ... (get)</p>
+</li>
+<li>
+<p>... and the result will show the slot ...</p>
+</li>
+<li>
+<p>...and that it contains the branch created above, ...</p>
+</li>
+<li>
+<p>... whose name, owner and group are as specified.</p>
+</li>
+<li>
+<p>you can upload a file to an existing branch. (put_file)</p>
+</li>
+<li>
+<p>you can see the file in the branch listing ... (get)</p>
+</li>
+<li>
+<p>... and the file name and author name are correct.</p>
+</li>
+<li>
+<p>you can download the previously uploaded file ... (get_resource)</p>
+</li>
+<li>
+<p>... and its content matches that of the original file.</p>
+</li>
+<li>
+<p>you can get (cat) the content of the uploaded file ... (get)</p>
+</li>
+<li>
+<p>... and it, too, matches the original content.</p>
+</li>
+<li>
+<p>you can delete a previously created slot,
+(including its metadata, but we don't test that here) ... (del)</p>
+</li>
+<li>
+<p>... and then the slot is really gone.</p>
+</li>
+<li>
+<p>you can copy a branch within a slot ... (copy)</p>
+</li>
+<li>
+<p>... and then it does exist at the new location,
+with the correct owner and group set.</p>
+</li>
+<li>
+<p>you CANNOT access a branch if you do not belong to the correct group. (get)</p>
+</li>
+<li>
+<p>you CANNOT list all slots without specifying a user ID. (get)</p>
+</li>
+<li>
+<p>you CANNOT delete a slot while there is still a branch belonging to another user. (del)</p>
+</li>
+<li>
+<p>you can delete a branch you own from a slot created by another user. (del)</p>
+</li>
+<li>
+<p>you can delete a slot once all other users' branches in it are gone. (del)</p>
+</li>
+</ul>
+
+</body>
+
+</html>

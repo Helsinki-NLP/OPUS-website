@@ -494,18 +494,31 @@ function size_color($nr){
     return sprintf("#%x%x%x",$red,$green,$blue);
 }
 
+function getHTML($url,$timeout)
+{
+       $ch = curl_init($url); // initialize curl with given url
+       curl_setopt($ch, CURLOPT_USERAGENT, $_SERVER["HTTP_USER_AGENT"]); // set  useragent
+       curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); // write the response to a variable
+       curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true); // follow redirects if any
+       curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout); // max. seconds to execute
+       curl_setopt($ch, CURLOPT_FAILONERROR, 1); // stop when it encounters an error
+       return @curl_exec($ch);
+}
 
 function find_opus_resources($src,$trg,&$resources){
   // $OPUSAPI = 'https://translate.ling.helsinki.fi/opusapi';
   // $OPUSAPI = 'http://vm1637.kaj.pouta.csc.fi/opusapi';
-  $OPUSAPI = 'http://opus.nlpl.eu/opusapi';
+  // $OPUSAPI = 'http://opus.nlpl.eu/opusapi';
+  $OPUSAPI = 'http://localhost/opusapi';
   global $version;
 
   $url = $OPUSAPI.'/?source='.$src.'&target='.$trg;
   if ( $version != 'all' ){
     $url .= '&version='.$version;
   }
-  $lines_array=file($url);
+  // $lines_array=file($url);
+  // $lines_array=file($url);
+  $lines_array=explode("\n",getHTML($url,10));
   // turn array into one variable
   $string=implode('',$lines_array);
   $json = json_decode($string, true);

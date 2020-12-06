@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      Procedures – LetsMT
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/letsmt-trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/Procedures?format=txt" type="text/x-trac-wiki" title="Plain Text" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/Procedures?format=tex" type="text/x-trac-wiki" title="Latex" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/Procedures?format=pdf" type="text/x-trac-wiki" title="Latex-Pdf" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.letsmt.eu/"><img src="http://stp.lingfil.uu.se/~joerg/LetsMT/letsmt.jpg" alt="LetsMT" width="100" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/letsmt-trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/letsmt-trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="Procedures.html" title="View Procedures">Procedures</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/letsmt-trac/wiki/Procedures?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><p>
+<a class="missing wiki">TOC?</a>
+</p>
+<h2 id="ImportTMXfilesfromcommand-line">Import TMX files from command-line</h2>
+<ul><li>Get <tt>*.tmx.tar.gz</tt> files from here: <a class="ext-link" href="http://opus.lingfil.uu.se/letsmt-dev/data/"><span class="icon">​</span>http://opus.lingfil.uu.se/letsmt-dev/data/</a>
+</li><li>unpack and import with letsmt_rest, for example
+</li></ul><pre class="wiki">letsmt_rest -u username -s OpenOffice create
+tar -xzf OpenOffice.xml.tar.gz
+letsmt_rest -u username -s OpenOffice -t tmx upload_corpus OpenOffice/*.tmx.gz
+</pre><h2 id="ImportofOPUScorpora">Import of OPUS corpora</h2>
+<p>
+Get data from here: <a class="ext-link" href="http://opus.lingfil.uu.se/letsmt-dev/data/"><span class="icon">​</span>http://opus.lingfil.uu.se/letsmt-dev/data/</a>
+</p>
+<p>
+Example:
+</p>
+<pre class="wiki"> tar -xzf RF.tar.gz
+ letsmt_import -o -u your-user-name -d . RF
+</pre><h2 id="Conversionandimportofuploadedfiles">Conversion and import of uploaded files</h2>
+<p>
+The higher level API triggers conversion/import processes for supported file formats:
+</p>
+<ul><li>uploads have to be uploaded to /letsmt/&lt;slot&gt;/uploads/&lt;type&gt;/&lt;path&gt;
+</li><li>currently only valid TMX version 1.4 in UTF8 is supported
+</li><li>a 'letsmt_import'-process will be scheduled at the SGE after successfully uploading the document
+</li><li>the import process does
+<ul><li>validation (XML DTD validation)
+</li><li>conversion
+<ul><li>2 or more monolingual XML files, language IDs are taken from the TMX-file (xml:lang attribute in every &lt;tu&gt;)
+</li><li>1 sentence alignment file for every language pair
+</li></ul></li><li>check-in &amp; update of metadata and status information
+<ul><li>PUT files into repository
+</li><li>add some automatically generated information about every new file (size, language) in metadata
+</li><li>increment size counters for each language and language-pair
+</li></ul></li></ul></li><li>status information is added to the metadata database for entry /metadata/&lt;slot&gt;/uploads/&lt;type&gt;/&lt;path&gt;
+</li></ul><table class="wiki">
+<tr><td> converted           </td><td> success 
+</td></tr><tr><td> failed to fetch    </td><td> could not fetch uploaded file from repository 
+</td></tr><tr><td> failed to validate </td><td> could not validate file according to specified format 
+</td></tr><tr><td> failed to convert  </td><td> format not supported or other conversion error 
+</td></tr></table>
+<ul><li>in case of errors: a logfile is uploaded to /letsmt/&lt;slot&gt;/uploads/&lt;type&gt;/&lt;path&gt;.err (currently only for validation errors)
+</li></ul><p>
+Example:
+</p>
+<ul><li>TMX-file:
+</li></ul><pre class="wiki">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;tmx version="1.4"&gt;
+    &lt;header creationtool="TAUSDATA" o-tmf="TAUS TM v1.0.0"
+        creationtoolversion="1.0.0" datatype="PlainText"
+        segtype="sentence" adminlang="en-US" srclang="en-US" creationdate="20100202T142404Z"/&gt;
+    &lt;body&gt;
+        &lt;tu srclang="en-US" creationdate="20090121T175658Z"
+            changedate="20090423T080610Z" tuid="531422"&gt;
+            &lt;tuv xml:lang="en-US"&gt;&lt;seg&gt;System Administrator’s Guide&lt;/seg&gt;&lt;/tuv&gt;
+            &lt;tuv xml:lang="sv-SE"&gt;&lt;seg&gt;Systemadministratörshandbok&lt;/seg&gt;&lt;/tuv&gt;
+            &lt;tuv xml:lang="de-DE"&gt;&lt;seg&gt;Systemadministratorhandbuch&lt;/seg&gt;&lt;/tuv&gt;
+        &lt;/tu&gt;
+    &lt;/body&gt;
+&lt;/tmx&gt;
+</pre><ul><li>upload to <tt>.../letsmt/myslot/uploads/tmx/test.tmx</tt>
+</li><li>if letsmt_import succeeds the following files should be created:
+</li></ul><pre class="wiki">  .../letsmt/myslot/en/test.xml
+  .../letsmt/myslot/sv/test.xml
+  .../letsmt/myslot/de/test.xml
+  .../letsmt/myslot/en-sv/test.xml
+  .../letsmt/myslot/en-de/test.xml
+  .../letsmt/myslot/de-sv/test.xml
+</pre><ul><li>metadata shoud be updated for all those files &amp; counts should be updated for
+</li></ul><pre class="wiki">  .../metadata/myslot/en
+  .../metadata/myslot/sv
+  .../metadata/myslot/de
+  .../metadata/myslot/en-sv
+  .../metadata/myslot/en-de
+  .../metadata/myslot/de-sv
+</pre><ul><li>for testing import see the scripts in src/perllib/LetsMT/test
+</li></ul><pre class="wiki">  import_tmx1
+  import_tmx2
+</pre><p>
+Currently the import function adds the following metadata in the database 
+</p>
+<table class="wiki">
+<tr><td> /metadata/&lt;slot&gt;/uploads/&lt;type&gt;/&lt;path&gt; </td><td> status </td><td style="text-align: right"> status information
+</td></tr><tr><td style="text-align: center">                                        </td><td> uid </td><td> user name 
+</td></tr><tr><td> /metadata/&lt;slot&gt;/xml/&lt;lang&gt;/&lt;path&gt;     </td><td> status </td><td style="text-align: right"> status information
+</td></tr><tr><td style="text-align: center">                                        </td><td> uid </td><td> user name 
+</td></tr><tr><td style="text-align: center">                                        </td><td> resource-type </td><td> corpusfile 
+</td></tr><tr><td style="text-align: center">                                        </td><td> language </td><td> language ID (&lt;lang&gt;) 
+</td></tr><tr><td style="text-align: center">                                        </td><td> size </td><td> size in number of sentences 
+</td></tr><tr><td style="text-align: center">                                        </td><td> slot </td><td> name of the slot (&lt;slot&gt;) 
+</td></tr><tr><td> /metadata/&lt;slot&gt;/xml/&lt;srclang&gt;-&lt;trglang&gt;/&lt;path&gt;     </td><td> status </td><td style="text-align: right"> status information
+</td></tr><tr><td style="text-align: center">                                        </td><td> uid </td><td> user name 
+</td></tr><tr><td style="text-align: center">                                        </td><td> resource-type </td><td> sentalign 
+</td></tr><tr><td style="text-align: center">                                        </td><td> language </td><td> language IDs (&lt;srclang&gt; and &lt;trglang&gt;) 
+</td></tr><tr><td style="text-align: center">                                        </td><td> source-language </td><td> source language ID (&lt;srclang&gt;) 
+</td></tr><tr><td style="text-align: center">                                        </td><td> target-language </td><td> target language ID (&lt;trglang&gt;) 
+</td></tr><tr><td style="text-align: center">                                        </td><td> size </td><td> size in number of sentences alignments 
+</td></tr><tr><td style="text-align: center">                                        </td><td> slot </td><td> name of the slot (&lt;slot&gt;) 
+</td></tr><tr><td> /metadata/&lt;slot&gt;/xml/&lt;lang&gt;     </td><td> resource-type </td><td> monolingual 
+</td></tr><tr><td style="text-align: center">                                        </td><td> size </td><td> total size in number of sentences for all files in language &lt;lang&gt; 
+</td></tr><tr><td> /metadata/&lt;slot&gt;/xml/&lt;srclang&gt;-&lt;trglang&gt;     </td><td> resource-type </td><td> parallel 
+</td></tr><tr><td style="text-align: center">                                        </td><td> size </td><td> total size in number of sentence alignments for all aligned documents with the language-pair &lt;srclang&gt;-&lt;trglang&gt; 
+</td></tr></table>
+<p>
+Some information might look a bit redundant considering the information that is encoded in the path but including these attributes in the metadata database supports effcient searching for suitable resources.
+</p>
+<h2 id="Developerserverwebservices">Developer server web services</h2>
+<p>
+There is a common installation running on port 443, based on the code in <tt>/usr/local/...</tt>, and developer installations running on port 4443, 4444, ..., running from each developers' directory.
+</p>
+<h3 id="Maintainingthecommoninstallation">Maintaining the common installation</h3>
+<pre class="wiki">   su letsmt
+   cd ~letsmt/svn/trunk/dev/src
+   svn update
+
+   ### install files from {{{letsmt/svn/trunk/dev/src}}} in /usr/local/...
+   make upgrade (when prompted, give port number 443)
+</pre><h3 id="Maintainingadeveloperinstallation">Maintaining a developer installation</h3>
+<pre class="wiki">   cd &lt;your working directory&gt;/dev/src
+   svn update
+   make upgrade-developer
+</pre></div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/letsmt-trac/wiki/Procedures?action=diff&amp;version=4" title="Version 4 by joerg">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2011-03-15T09%3A58%3A18Z&amp;precision=second" title="See timeline at Mar 15, 2011, 9:58:18 AM">10 years ago</a></span>
+            <span class="trac-print">Last modified on Mar 15, 2011, 9:58:18 AM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/Procedures?format=txt">Plain Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/Procedures?format=tex">Latex</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/Procedures?format=pdf">Latex-Pdf</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

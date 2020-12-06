@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      DownloadTools – OPUS
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/trac/wiki/DownloadTools?format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="../../index.html"><img src="../../img/opus_medium.jpg" alt="opus" height="90" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="DownloadTools.html" title="View DownloadTools">DownloadTools</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/trac/wiki/DownloadTools?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><h2 id="Pre-processingTaggingandParsing">Pre-processing, Tagging and Parsing</h2>
+<p>
+In the OPUS corpus, tools and language-specific models for segmentation, tagging and parsing have been collected. The language-specific models are available for download in the table below, whereas the tools are available for download here: 
+</p>
+<ul><li>Hunpos tagger: <a class="ext-link" href="http://code.google.com/p/hunpos/downloads/list"><span class="icon">​</span>http://code.google.com/p/hunpos/downloads/list</a> 
+</li><li><a class="missing wiki">MaltParser?</a>: <a class="ext-link" href="http://maltparser.org/download.html"><span class="icon">​</span>http://maltparser.org/download.html</a> (use version 1.4.1 for which the models below are trained for!)
+</li><li>MElt tagger for French: <a class="ext-link" href="https://gforge.inria.fr/frs/download.php/27240/"><span class="icon">​</span>https://gforge.inria.fr/frs/download.php/27240/</a>
+</li><li>SVMTool tagger (with pretrained models for English, Spanish and Catalan): <a class="ext-link" href="http://www.lsi.upc.edu/~nlp/SVMTool/#DOWNLOAD"><span class="icon">​</span>http://www.lsi.upc.edu/~nlp/SVMTool/#DOWNLOAD</a>
+</li><li>Zpar statistical parser with language-specific features for Chinese and English: <a class="ext-link" href="http://sourceforge.net/projects/zpar/"><span class="icon">​</span>http://sourceforge.net/projects/zpar/</a>
+</li></ul><p>
+For a consistent tagging and parsing procedure, the same tagging and parsing tools have been used for most of the languages, i.e. the Hunpos tagger (<em>Péter Halácsy, András Kornai, Csaba Oravecz, 2007, Hunpos - an open source trigram tagger</em>) and the Maltparser (<em>Joakim Nivre and Johan Hall, 2005, Maltparser: A language-independent system for data-driven dependency parsing</em>). For some languages, alternative taggers and/or parsers are used.
+</p>
+<p>
+Click on a language name for more information on the models available for this language.
+</p>
+<table class="wiki">
+<tr><td> <strong>Language</strong> </td><td> <strong>Tokenizer</strong> </td><td> <strong>Sentence splitter</strong> </td><td> <strong>Tagger(s)</strong> </td><td> <strong>Parser(s)</strong> 
+</td></tr><tr><td> <strong><a class="ext-link" href="http://opus.lingfil.uu.se/trac/wiki/Tagging%20and%20Parsing#Catalan"><span class="icon">​</span>Catalan</a></strong> </td><td> </td><td> </td><td> <a class="ext-link" href="http://opus.lingfil.uu.se/download.php?f=tools/tagger/SVMTool/models/SVMT.ca.tar.gz"><span class="icon">​</span>SVMTool</a> </td><td> <a class="ext-link" href="http://opus.lingfil.uu.se/download.php?f=tools/parser/maltparser/models/catmalt.mco"><span class="icon">​</span>malt-1.4.1</a> 
+</td></tr><tr><td> <strong><a class="ext-link" href="http://opus.lingfil.uu.se/trac/wiki/Tagging%20and%20Parsing#Czech"><span class="icon">​</span>Czech</a></strong> </td><td> </td><td> </td><td> <a class="ext-link" href="http://opus.lingfil.uu.se/download.php?f=tools/tagger/hunpos/models/cs_pdt.model"><span class="icon">​</span>hunpos</a> </td><td style="text-align: left"><a class="ext-link" href="http://opus.lingfil.uu.se/download.php?f=tools/parser/maltparser/models/cz-20.mco"><span class="icon">​</span>malt-1.4.1</a> 
+</td></tr><tr><td> <strong><a class="ext-link" href="http://opus.lingfil.uu.se/trac/wiki/Tagging%20and%20Parsing#Chinese"><span class="icon">​</span>Chinese</a></strong> </td><td> <a class="ext-link" href="http://opus.lingfil.uu.se/download.php?f=tools/parser/zpar/models/chinese.tar.gz"><span class="icon">​</span>zpar</a> </td><td> <a class="ext-link" href="http://opus.lingfil.uu.se/download.php?f=tools/parser/zpar/models/chinese.tar.gz"><span class="icon">​</span>zpar</a> </td><td> <a class="ext-link" href="http://opus.lingfil.uu.se/download.php?f=tools/parser/zpar/models/chinese.tar.gz"><span class="icon">​</span>zpar</a> </td><td> <a class="ext-link" href="http://opus.lingfil.uu.se/download.php?f=tools/parser/zpar/models/chinese.tar.gz"><span class="icon">​</span>zpar</a> 
+</td></tr><tr><td> <strong><a class="ext-link" href="http://opus.lingfil.uu.se/trac/wiki/Tagging%20and%20Parsing#Danish"><span class="icon">​</span>Danish</a></strong> </td><td> </td><td> </td><td> <a class="ext-link" href="http://opus.lingfil.uu.se/download.php?f=tools/tagger/hunpos/models/da_ddt.model"><span class="icon">​</span>hunpos</a> </td><td style="text-align: left"><a class="ext-link" href="http://opus.lingfil.uu.se/download.php?f=tools/parser/maltparser/models/danish.mco"><span class="icon">​</span>malt-1.4.1</a> 
+</td></tr><tr><td> <strong><a class="ext-link" href="http://opus.lingfil.uu.se/trac/wiki/Tagging%20and%20Parsing#Dutch"><span class="icon">​</span>Dutch</a></strong> </td><td> </td><td> </td><td> </td><td> <a class="ext-link" href="http://opus.lingfil.uu.se/download.php?f=tools/parser/maltparser/models/cdb.model.non-proj.mco"><span class="icon">​</span>malt</a> 
+</td></tr><tr><td> <strong><a class="ext-link" href="http://opus.lingfil.uu.se/trac/wiki/Tagging%20and%20Parsing#English"><span class="icon">​</span>English</a></strong> </td><td> </td><td> </td><td> <a class="ext-link" href="http://opus.lingfil.uu.se/download.php?f=tools/tagger/hunpos/models/en_wsj.model"><span class="icon">​</span>hunpos</a> </td><td> <a class="ext-link" href="http://opus.lingfil.uu.se/download.php?f=tools/parser/maltparser/models/engmalt.linear.mco"><span class="icon">​</span>malt-1.4.1</a> 
+</td></tr><tr><td> <strong><a class="ext-link" href="http://opus.lingfil.uu.se/trac/wiki/Tagging%20and%20Parsing#French"><span class="icon">​</span>French</a></strong> </td><td> </td><td> </td><td> <a class="ext-link" href="http://opus.lingfil.uu.se/download.php?f=tools/tagger/melt/melt-0.6.tar.gz"><span class="icon">​</span>MElt</a> </td><td style="text-align: left"><a class="ext-link" href="http://opus.lingfil.uu.se/download.php?f=tools/parser/maltparser/models/fremalt.mco"><span class="icon">​</span>malt-1.4.1</a> 
+</td></tr><tr><td> <strong><a class="ext-link" href="http://opus.lingfil.uu.se/trac/wiki/Tagging%20and%20Parsing#German"><span class="icon">​</span>German</a></strong> </td><td> </td><td> </td><td> <a class="ext-link" href="http://opus.lingfil.uu.se/download.php?f=tools/tagger/hunpos/models/de_tiger.model"><span class="icon">​</span>hunpos</a> </td><td style="text-align: left"><a class="ext-link" href="http://opus.lingfil.uu.se/download.php?f=tools/parser/maltparser/models/de-20.mco"><span class="icon">​</span>malt-1.4.1</a> 
+</td></tr><tr><td> <strong><a class="ext-link" href="http://opus.lingfil.uu.se/trac/wiki/Tagging%20and%20Parsing#Hungarian"><span class="icon">​</span>Hungarian</a></strong> </td><td> </td><td> </td><td> <a class="ext-link" href="http://opus.lingfil.uu.se/download.php?f=tools/tagger/hunpos/models/hu_szeged_kr.model"><span class="icon">​</span>hunpos</a> 
+</td></tr><tr><td> <strong><a class="ext-link" href="http://opus.lingfil.uu.se/trac/wiki/Tagging%20and%20Parsing#Italian"><span class="icon">​</span>Italian</a></strong> </td><td> </td><td> </td><td> <a class="ext-link" href="http://textpro.fbk.eu/home.html"><span class="icon">​</span>TextPro</a> </td><td> <a class="ext-link" href="http://opus.lingfil.uu.se/download.php?f=tools/parser/maltparser/models/tut-tagpro-fulltrain.mco"><span class="icon">​</span>malt-1.4.1</a> 
+</td></tr><tr><td> <strong><a class="ext-link" href="http://opus.lingfil.uu.se/trac/wiki/Tagging%20and%20Parsing#Portuguese"><span class="icon">​</span>Portuguese</a></strong> </td><td> </td><td> </td><td> <a class="ext-link" href="http://opus.lingfil.uu.se/download.php?f=tools/tagger/hunpos/models/pt_bosque.model"><span class="icon">​</span>hunpos</a> </td><td style="text-align: left"><a class="ext-link" href="http://opus.lingfil.uu.se/download.php?f=tools/parser/maltparser/models/portmalt.mco"><span class="icon">​</span>malt-1.4.1</a> 
+</td></tr><tr><td> <strong><a class="ext-link" href="http://opus.lingfil.uu.se/trac/wiki/Tagging%20and%20Parsing#Russian"><span class="icon">​</span>Russian</a></strong> </td><td> </td><td> </td><td> <a class="ext-link" href="http://opus.lingfil.uu.se/download.php?f=tools/tagger/hunpos/models/ru_rdt.model"><span class="icon">​</span>hunpos</a> </td><td> <a class="ext-link" href="http://opus.lingfil.uu.se/download.php?f=tools/parser/maltparser/models/russian.mco"><span class="icon">​</span>malt-1.4.1</a> 
+</td></tr><tr><td> <strong><a class="ext-link" href="http://opus.lingfil.uu.se/trac/wiki/Tagging%20and%20Parsing#Slovene"><span class="icon">​</span>Slovene</a></strong> </td><td> </td><td> </td><td> <a class="ext-link" href="http://opus.lingfil.uu.se/download.php?f=tools/tagger/hunpos/models/sl_jos.model"><span class="icon">​</span>hunpos</a> </td><td><a class="ext-link" href="http://opus.lingfil.uu.se/download.php?f=tools/parser/maltparser/models/slovene.mco"><span class="icon">​</span>malt-1.4.1</a>
+</td></tr><tr><td> <strong><a class="ext-link" href="http://opus.lingfil.uu.se/trac/wiki/Tagging%20and%20Parsing#Spanish"><span class="icon">​</span>Spanish</a></strong> </td><td> </td><td> </td><td style="text-align: left"><a class="ext-link" href="http://opus.lingfil.uu.se/download.php?f=tools/tagger/SVMTool/models/SVMT.spa.tar.gz"><span class="icon">​</span>SVMTool</a> </td><td> <a class="ext-link" href="http://opus.lingfil.uu.se/download.php?f=tools/parser/maltparser/models/spamalt.mco"><span class="icon">​</span>malt-1.4.1</a> 
+</td></tr><tr><td> <strong><a class="ext-link" href="http://opus.lingfil.uu.se/trac/wiki/Tagging%20and%20Parsing#Swedish"><span class="icon">​</span>Swedish</a></strong> </td><td> </td><td> </td><td> <a class="ext-link" href="http://opus.lingfil.uu.se/download.php?f=tools/tagger/hunpos/models/se_Suc2x.model"><span class="icon">​</span>hunpos</a> </td><td style="text-align: left"><a class="ext-link" href="http://opus.lingfil.uu.se/download.php?f=tools/parser/maltparser/models/swemalt.mco"><span class="icon">​</span>malt-1.4.1</a> 
+</td></tr><tr><td> <strong><a class="ext-link" href="http://opus.lingfil.uu.se/trac/wiki/Tagging%20and%20Parsing#Turkish"><span class="icon">​</span>Turkish</a></strong> </td><td> </td><td> </td><td> </td><td> malt-1.4.1 
+</td></tr></table>
+<h2 id="Othertools">Other tools</h2>
+<ul><li>language guesser: <a class="ext-link" href="http://opus.lingfil.uu.se/tools/public/language_guesser/textcat/"><span class="icon">​</span>textcat</a> with pre-trained <a class="ext-link" href="http://opus.lingfil.uu.se/tools/public/language_guesser/textcat/LM/"><span class="icon">​</span>language models</a>
+</li></ul></div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/trac/wiki/DownloadTools?action=diff&amp;version=60" title="Version 60 by joerg">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/trac/timeline?from=2012-02-28T11%3A35%3A46Z&amp;precision=second" title="See timeline at Feb 28, 2012, 11:35:46 AM">9 years ago</a></span>
+            <span class="trac-print">Last modified on Feb 28, 2012, 11:35:46 AM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/trac/wiki/DownloadTools?format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

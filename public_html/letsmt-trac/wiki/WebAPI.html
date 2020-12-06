@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      WebAPI – LetsMT
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/letsmt-trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/WebAPI?format=txt" type="text/x-trac-wiki" title="Plain Text" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/WebAPI?format=tex" type="text/x-trac-wiki" title="Latex" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/WebAPI?format=pdf" type="text/x-trac-wiki" title="Latex-Pdf" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.letsmt.eu/"><img src="http://stp.lingfil.uu.se/~joerg/LetsMT/letsmt.jpg" alt="LetsMT" width="100" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/letsmt-trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/letsmt-trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="WebAPI.html" title="View WebAPI">WebAPI</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/letsmt-trac/wiki/WebAPI?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><p>
+</p><div class="wiki-toc">
+<ol>
+  <li>
+    <a href="WebAPI.html#DraftofthenewWebAPI">Draft of the new Web API</a>
+    <ol>
+      <li>
+        <a href="WebAPI.html#ChangesfromtheoldAPI">Changes from the old API</a>
+        <ol>
+          <li>
+            <a href="WebAPI.html#InterfaceChanges">Interface Changes</a>
+          </li>
+          <li>
+            <a href="WebAPI.html#InternalChanges">Internal Changes</a>
+          </li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+</ol>
+</div><p> 
+</p>
+<h1 id="DraftofthenewWebAPI">Draft of the new Web API</h1>
+<p>
+Old API progress page: <a class="wiki" href="WebAPIProgress.html">Progress of implementation</a>
+</p>
+<h2 id="ChangesfromtheoldAPI">Changes from the old API</h2>
+<h3 id="InterfaceChanges">Interface Changes</h3>
+<ul><li>Only standart argument fromat allowd
+<ul><li>No bracket argument format allowed like: HOST/storage/slot[uid:user_1][gid:group_1]
+</li><li>Only standard argument format like: HOST/storage/slot?uid=user_1&amp;gid=group_1
+</li></ul></li><li>New argument "action" for storage-API with values: copy|import|download|cat
+<ul><li>Storage-API argument type=download is replaced by action=download
+</li><li>Storage-API argument type=copy is replaced by action=copy
+</li><li>Storage-API argument action=cat for listing content of files has additional arguments from=&lt;line number&gt; and to=&lt;line number&gt; to list only parts of a file
+</li></ul></li><li>Storage-API argument archive=no is replace by type=archive|raw (archive is default)
+</li><li>Letsmt-API argument type=meta|access is removed, the respective functionality is provided through the APIs metadata and access
+</li><li>Unified response format
+<ul><li>API calls always return a status in XML format to signal success of failure of an operation, like:
+<pre class="wiki">&lt;letsmt-ws version='X'&gt;
+  &lt;status type='ok|error' code='XXX' operation='GET|PUT|POST|DELETE' location='/storage/slot_name/branch_name/...'&gt;
+  &lt;/status&gt;
+&lt;/letsmt-ws&gt;
+</pre></li><li>If text data/information was requested there will be an extra tag &lt;list&gt; along with the &lt;status&gt; tag in case of success with none or several &lt;entry&gt; tags containing the actual information, like:
+<pre class="wiki">&lt;letsmt-ws version='X'&gt;
+  &lt;status type='ok|error' code='XXX' operation='GET|PUT|POST|DELETE' location='/storage/slot_name/branch_name/...'&gt;
+  &lt;/status&gt;
+  &lt;list path="file:///slot_name/branch_name/uploads/path/..."&gt;
+    &lt;entry kind="dir"&gt;
+      ...
+    &lt;/entry&gt;
+    &lt;entry kind="file"&gt;
+      ...
+    &lt;/entry&gt;
+    ...
+  &lt;/list&gt;
+&lt;/letsmt-ws&gt;
+</pre></li></ul></li><li>The high-level API "letsmt" will be removed and replaced by the low-level API "storage" in combination with the new URL argument "action" to trigger actions like import
+</li><li>There will be a new "job" API to execute tasks like conversion, alignment and other "off-line" tasks
+</li><li>Removal of the linux-like permissions, group/user based read and write permissions should be enough
+</li></ul><h3 id="InternalChanges">Internal Changes</h3>
+<ul><li>Move mySQL DB content and functionality to <a class="missing wiki">TokyoCabinet?</a> DB
+<ul><li>gid key stored with every DB entry
+</li></ul></li><li>Subversion system calls should be replaced by SVN Perl modules calls
+</li><li>Creation of a new set of intermediate API classes between the mod_perl handler and the existing repository managers
+</li><li>Generalization of error reporting, exception handling and logging throughout all API related modules
+</li></ul></div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/letsmt-trac/wiki/WebAPI?action=diff&amp;version=25" title="Version 25 by zumpe">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2011-07-01T12%3A34%3A17Z&amp;precision=second" title="See timeline at Jul 1, 2011, 12:34:17 PM">9 years ago</a></span>
+            <span class="trac-print">Last modified on Jul 1, 2011, 12:34:17 PM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/WebAPI?format=txt">Plain Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/WebAPI?format=tex">Latex</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/WebAPI?format=pdf">Latex-Pdf</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

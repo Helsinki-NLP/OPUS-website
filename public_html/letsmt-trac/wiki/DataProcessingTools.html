@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      DataProcessingTools – LetsMT
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/letsmt-trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/DataProcessingTools?format=txt" type="text/x-trac-wiki" title="Plain Text" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/DataProcessingTools?format=tex" type="text/x-trac-wiki" title="Latex" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/DataProcessingTools?format=pdf" type="text/x-trac-wiki" title="Latex-Pdf" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.letsmt.eu/"><img src="http://stp.lingfil.uu.se/~joerg/LetsMT/letsmt.jpg" alt="LetsMT" width="100" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/letsmt-trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/letsmt-trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="DataProcessingTools.html" title="View DataProcessingTools">DataProcessingTools</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/letsmt-trac/wiki/DataProcessingTools?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><h1 id="Dataprocessingtools">Data processing tools</h1>
+<ul><li><a class="wiki" href="LanguageIdentification.html">Language identification</a>
+</li><li><a class="wiki" href="DataFormatConversion.html">Data format conversion</a>
+</li><li><a class="wiki" href="SentenceBoundaries.html">Sentence boundary detection</a>
+</li><li><a class="wiki" href="Tokenization.html">Tokenization</a>
+</li><li><a class="wiki" href="Tagger.html">Tagger</a>
+</li><li><a class="wiki" href="Toolkits.html">General toolkits</a>
+</li><li><a class="wiki" href="LangToolkits.html">Language-specific toolkits</a>
+</li></ul><h1 id="AlignmentSMTtools">Alignment &amp; (S)MT tools</h1>
+<ul><li><a class="wiki" href="SentenceAligner.html">Sentence alignment</a>
+</li><li><a class="wiki" href="WordAligner.html">Word alignment</a>
+</li><li><a class="wiki" href="Morphology.html">Morphology</a>
+</li><li><a class="wiki" href="MTtools.html">(Statistical) Machine Translation</a>
+</li><li><a class="wiki" href="Paraphrasing.html">Paraphrasing</a>
+</li><li><a class="wiki" href="LM.html">Language Modeling</a>
+</li><li><a class="wiki" href="MTeval.html">MT Evalutation</a>
+</li><li><a class="wiki" href="MTother.html">Other MT and Alignment tools</a>
+</li></ul><h1 id="Corpusmanagementandinterfaces">Corpus management and interfaces</h1>
+<ul><li>Building parallel corpora: <a class="missing wiki">InterText?</a> (GPL) <a class="ext-link" href="http://wanthalf.saga.cz/intertext"><span class="icon">​</span>http://wanthalf.saga.cz/intertext</a>
+</li><li>manatee (GPL): <a class="ext-link" href="http://www.textforge.cz/"><span class="icon">​</span>http://www.textforge.cz/</a>
+</li><li>the corpus work bench: <a class="ext-link" href="http://cwb.sourceforge.net/"><span class="icon">​</span>http://cwb.sourceforge.net/</a> <br />
+(example for parallel corpus search: <a class="ext-link" href="http://cogsci.uni-osnabrueck.de/~korpora/ws/CQPdemo/Europarl/frames-cqp.html"><span class="icon">​</span>http://cogsci.uni-osnabrueck.de/~korpora/ws/CQPdemo/Europarl/frames-cqp.html</a>)
+</li><li>the noSketchEngine: <a class="ext-link" href="http://nlp.fi.muni.cz/trac/noske/"><span class="icon">​</span>http://nlp.fi.muni.cz/trac/noske/</a>
+</li><li>bilingual concordancer: <a class="ext-link" href="http://www.tradooit.com/"><span class="icon">​</span>http://www.tradooit.com/</a>
+</li><li>mkAlign: explore parallel corpora (<a class="ext-link" href="http://www.tal.univ-paris3.fr/mkAlign/"><span class="icon">​</span>http://www.tal.univ-paris3.fr/mkAlign/</a>)
+</li><li>trameur: explore monolingual corpora (<a class="ext-link" href="http://www.tal.univ-paris3.fr/trameur/"><span class="icon">​</span>http://www.tal.univ-paris3.fr/trameur/</a>)
+</li></ul><h1 id="OtherNLPMachineLearningTools">Other NLP / Machine Learning Tools</h1>
+<ul><li>OpenNLP: <a class="ext-link" href="https://opennlp.apache.org"><span class="icon">​</span>https://opennlp.apache.org</a>
+</li><li>NLTK: <a class="ext-link" href="http://www.nltk.org"><span class="icon">​</span>http://www.nltk.org</a>
+</li><li>Mallet: <a class="ext-link" href="http://mallet.cs.umass.edu"><span class="icon">​</span>http://mallet.cs.umass.edu</a>
+</li><li>ScalaNLP: <a class="ext-link" href="http://www.scalanlp.org"><span class="icon">​</span>http://www.scalanlp.org</a>
+</li><li>WEKA: <a class="ext-link" href="http://www.cs.waikato.ac.nz/ml/weka/"><span class="icon">​</span>http://www.cs.waikato.ac.nz/ml/weka/</a>
+</li><li>Collocation statistics: <a class="ext-link" href="http://www.collocations.de/software.html"><span class="icon">​</span>http://www.collocations.de/software.html</a>
+</li><li>OpenIE: <a class="ext-link" href="http://knowitall.github.io/openie/"><span class="icon">​</span>http://knowitall.github.io/openie/</a> (based on <a class="ext-link" href="https://knowitall.github.io/ollie/"><span class="icon">​</span>https://knowitall.github.io/ollie/</a> and <a class="ext-link" href="http://reverb.cs.washington.edu"><span class="icon">​</span>http://reverb.cs.washington.edu</a>)
+</li><li>list of NLP toolkits on Wikipedia: <a class="ext-link" href="http://en.wikipedia.org/wiki/Outline_of_natural_language_processing#Natural_language_processing_toolkits"><span class="icon">​</span>http://en.wikipedia.org/wiki/Outline_of_natural_language_processing#Natural_language_processing_toolkits</a>
+</li></ul><h1 id="Otherlinks">Other links</h1>
+<ul><li><a class="ext-link" href="http://perl-xml.sourceforge.net/faq/"><span class="icon">​</span>http://perl-xml.sourceforge.net/faq/</a>
+</li><li>visualization of dependency graphs: <a class="ext-link" href="http://dep2pict.loria.fr/"><span class="icon">​</span>http://dep2pict.loria.fr/</a>
+</li><li>lexicon with concordances: <a class="ext-link" href="http://sv.bab.la/"><span class="icon">​</span>http://sv.bab.la/</a>
+</li><li>another nice list of links: <a class="ext-link" href="http://traduccionymundolibre.com/wiki"><span class="icon">​</span>http://traduccionymundolibre.com/wiki</a>
+</li><li><a class="ext-link" href="http://www.precisiontranslationtools.com/~precis30/index.php?option=com_content&amp;view=article&amp;id=94:are-there-characters-that-cause-problems-in-moses&amp;catid=30:key-concepts&amp;Itemid=57"><span class="icon">​</span>list of special characters when using Moses</a>
+</li><li>even more links to MT-related tools: <a class="ext-link" href="http://www.taustracker.com/browse-other-language-technologies"><span class="icon">​</span>http://www.taustracker.com/browse-other-language-technologies</a>
+</li></ul></div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/letsmt-trac/wiki/DataProcessingTools?action=diff&amp;version=23" title="Version 23 by joerg">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2014-10-03T07%3A07%3A02Z&amp;precision=second" title="See timeline at Oct 3, 2014, 7:07:02 AM">6 years ago</a></span>
+            <span class="trac-print">Last modified on Oct 3, 2014, 7:07:02 AM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/DataProcessingTools?format=txt">Plain Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/DataProcessingTools?format=tex">Latex</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/DataProcessingTools?format=pdf">Latex-Pdf</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

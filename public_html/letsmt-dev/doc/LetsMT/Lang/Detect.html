@@ -1,0 +1,70 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Detect</title>
+<link rel="stylesheet" href="../../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#functions">FUNCTIONS</a></li>
+	<ul>
+
+		<li><a href="#load_models"><code>load_models</code></a></li>
+		<li><a href="#lm_exists"><code>lm_exists</code></a></li>
+		<li><a href="#classify_text___detect_language"><code>classify_text</code> | <code>detect_language</code></a></li>
+		<li><a href="#create_lm"><code>create_lm</code></a></li>
+	</ul>
+
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>LetsMT::Lang::Detect</p>
+<p>
+</p>
+<hr />
+<h1><a name="functions">FUNCTIONS</a></h1>
+<p>
+</p>
+<h2><a name="load_models"><code>load_models</code></a></h2>
+<pre>
+ &amp;load_models
+ &amp;load_models ($lm_dir)</pre>
+<p>
+</p>
+<h2><a name="lm_exists"><code>lm_exists</code></a></h2>
+<pre>
+ $result = &amp;lm_exists ($file)</pre>
+<p>Check if a language model exists for the given file.</p>
+<p>
+</p>
+<h2><a name="classify_text___detect_language"><code>classify_text</code> | <code>detect_language</code></a></h2>
+<pre>
+ @answers = &amp;classify_text ($file)
+ @answers = &amp;classify_text ($file, $lm_dir)</pre>
+<p>
+</p>
+<h2><a name="create_lm"><code>create_lm</code></a></h2>
+<pre>
+ @models = &amp;create_lm ($text, $lang, $overwrite)</pre>
+
+</body>
+
+</html>

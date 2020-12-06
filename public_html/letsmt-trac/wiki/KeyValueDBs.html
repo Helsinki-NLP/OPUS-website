@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      KeyValueDBs – LetsMT
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/letsmt-trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/KeyValueDBs?format=txt" type="text/x-trac-wiki" title="Plain Text" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/KeyValueDBs?format=tex" type="text/x-trac-wiki" title="Latex" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/KeyValueDBs?format=pdf" type="text/x-trac-wiki" title="Latex-Pdf" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.letsmt.eu/"><img src="http://stp.lingfil.uu.se/~joerg/LetsMT/letsmt.jpg" alt="LetsMT" width="100" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/letsmt-trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/letsmt-trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="KeyValueDBs.html" title="View KeyValueDBs">KeyValueDBs</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/letsmt-trac/wiki/KeyValueDBs?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><h1 id="AlistoflinkstoKeyValueDBsandrelatedtoolsinfo">A list of links to Key / Value DBs and related tools &amp; info</h1>
+<p>
+Very promising: Tokyo Cabinet!
+</p>
+<ul><li><a class="ext-link" href="http://www.igvita.com/2009/02/13/tokyo-cabinet-beyond-key-value-store/"><span class="icon">​</span>http://www.igvita.com/2009/02/13/tokyo-cabinet-beyond-key-value-store/</a>
+</li><li><a class="ext-link" href="http://fallabs.com/"><span class="icon">​</span>http://fallabs.com/</a>
+</li><li><a class="ext-link" href="http://fallabs.com/tokyocabinet/"><span class="icon">​</span>http://fallabs.com/tokyocabinet/</a>
+</li><li><a class="ext-link" href="http://www.engineyard.com/blog/2009/key-value-stores-in-ruby/"><span class="icon">​</span>http://www.engineyard.com/blog/2009/key-value-stores-in-ruby/</a>
+</li><li>use a table database (TokyoCabinet::TDB) with arbitrary columns! Cool!
+</li><li>even supports keyword search within string fields with boolean operators! <a class="wiki" href="TokyoCabinetExample.html">example perl script</a>
+</li><li>install: <tt> sudo apt-get install libbz2-dev libtokyocabinet-dev </tt> and Perl API from <a class="ext-link" href="http://fallabs.com/tokyocabinet/perlpkg/tokyocabinet-perl-1.34.tar.gz"><span class="icon">​</span>http://fallabs.com/tokyocabinet/perlpkg/tokyocabinet-perl-1.34.tar.gz</a>
+</li><li>on MacOSX: <tt>port install tokyocabinet</tt> but problems with Perl API (<a class="ext-link" href="http://efreedom.com/Question/1-1537937/Tokyo-Cabinet-Perl-Api-Libtokyocabinetdylib-File-Required-Architecture"><span class="icon">​</span>http://efreedom.com/Question/1-1537937/Tokyo-Cabinet-Perl-Api-Libtokyocabinetdylib-File-Required-Architecture</a>) probably need to modify cc call (add -arch x86_64)
+</li><li>PHP interfaces:
+<ul><li><a class="ext-link" href="http://mamasam.indefero.net/p/tyrant/"><span class="icon">​</span>http://mamasam.indefero.net/p/tyrant/</a>
+</li><li><a class="ext-link" href="http://code.google.com/p/phptyrant/"><span class="icon">​</span>http://code.google.com/p/phptyrant/</a>
+</li></ul></li></ul><p>
+Maybe we should look at Kyoto Cabinet as well:
+</p>
+<ul><li><a class="ext-link" href="http://fallabs.com/kyotocabinet/"><span class="icon">​</span>http://fallabs.com/kyotocabinet/</a>
+</li><li><a class="ext-link" href="http://fallabs.com/mikio/tech-en/promenade.cgi?id=7"><span class="icon">​</span>http://fallabs.com/mikio/tech-en/promenade.cgi?id=7</a>
+</li><li>(does it support table DBs like Tokyo Cabinet?)
+</li></ul><p>
+Another way: use full-text search in mySQL databases!
+</p>
+<ul><li>key-value pairs = tokens in a full-text field
+</li><li>create tables with <a class="ext-link" href="http://dev.mysql.com/doc/refman/5.0/en/blob.html"><span class="icon">​</span>TEXT</a> fields and index if type FULLTEXT!
+</li><li>create boolean queries:
+</li><li><a class="ext-link" href="http://dev.mysql.com/doc/refman/5.0/en/fulltext-boolean.html"><span class="icon">​</span>http://dev.mysql.com/doc/refman/5.0/en/fulltext-boolean.html</a>
+</li><li>problem: spaces in keys &amp; values, handling of stopwords &amp; frequent words in mySQL, numerical values (and numerical comparisons) ...
+</li></ul><p>
+CouchDB:
+</p>
+<ul><li><a class="ext-link" href="http://couchdb.apache.org/"><span class="icon">​</span>http://couchdb.apache.org/</a>
+</li><li>Perl API: <a class="ext-link" href="http://search.cpan.org/~zaphar/DB-CouchDB-Schema-0.3.04_remove_blib/lib/DB/CouchDB.pm"><span class="icon">​</span>http://search.cpan.org/~zaphar/DB-CouchDB-Schema-0.3.04_remove_blib/lib/DB/CouchDB.pm</a>
+</li><li>simple Perl API: <a class="ext-link" href="http://search.cpan.org/~norbu/Store-CouchDB-1.5/lib/Store/CouchDB.pm"><span class="icon">​</span>http://search.cpan.org/~norbu/Store-CouchDB-1.5/lib/Store/CouchDB.pm</a>
+</li><li><a class="ext-link" href="http://search.cpan.org/~beppu/AnyEvent-CouchDB-1.22/lib/AnyEvent/CouchDB/Database.pm"><span class="icon">​</span>http://search.cpan.org/~beppu/AnyEvent-CouchDB-1.22/lib/AnyEvent/CouchDB/Database.pm</a>
+</li><li>not Couch but similar: <a class="ext-link" href="http://search.cpan.org/~fujiwara/DBIx-CouchLike-0.16/lib/DBIx/CouchLike.pm"><span class="icon">​</span>http://search.cpan.org/~fujiwara/DBIx-CouchLike-0.16/lib/DBIx/CouchLike.pm</a>
+</li></ul><p>
+other:
+</p>
+<ul><li><a class="ext-link" href="http://www.mongodb.org/"><span class="icon">​</span>http://www.mongodb.org/</a>
+</li><li><a class="ext-link" href="http://memcachedb.org/"><span class="icon">​</span>http://memcachedb.org/</a>
+</li></ul><p>
+Inverted Index files and IR technology (store keys-value pairs as tokens in a document!)
+</p>
+<ul><li>looks simple &amp; easy: <a class="ext-link" href="http://search.cpan.org/~lbrocard/Search-Mousse-0.32/lib/Search/Mousse.pm"><span class="icon">​</span>http://search.cpan.org/~lbrocard/Search-Mousse-0.32/lib/Search/Mousse.pm</a>
+</li><li>simple indexer (qdbm-based): <a class="ext-link" href="http://search.cpan.org/~ikebe/Search-Odeum-0.02/lib/Search/Odeum.pm"><span class="icon">​</span>http://search.cpan.org/~ikebe/Search-Odeum-0.02/lib/Search/Odeum.pm</a>
+</li><li>QDBM includes inverted index handling: <a class="ext-link" href="http://search.cpan.org/~yamato/QDBM_File-1.12/lib/QDBM_File.pm"><span class="icon">​</span>http://search.cpan.org/~yamato/QDBM_File-1.12/lib/QDBM_File.pm</a>
+(doesn't compile on amd64)
+</li><li>for HTML-docs: <a class="ext-link" href="http://search.cpan.org/~awrigley/HTML-Index-0.15/lib/HTML/Index.pm"><span class="icon">​</span>http://search.cpan.org/~awrigley/HTML-Index-0.15/lib/HTML/Index.pm</a>
+</li><li>a bit strange: <a class="ext-link" href="http://search.cpan.org/~snowhare/Search-InvertedIndex-1.14/lib/Search/InvertedIndex.pm"><span class="icon">​</span>http://search.cpan.org/~snowhare/Search-InvertedIndex-1.14/lib/Search/InvertedIndex.pm</a>
+</li></ul><p>
+"Bigger" IR engines: (with perl API)
+</p>
+<ul><li><a class="missing wiki">KinoSearch?</a>: <a class="ext-link" href="http://search.cpan.org/~creamyg/KinoSearch-0.31/lib/KinoSearch.pod"><span class="icon">​</span>http://search.cpan.org/~creamyg/KinoSearch-0.31/lib/KinoSearch.pod</a>
+</li><li>PLucene: <a class="ext-link" href="http://search.cpan.org/~tmtm/Plucene-1.25/lib/Plucene.pm"><span class="icon">​</span>http://search.cpan.org/~tmtm/Plucene-1.25/lib/Plucene.pm</a>
+</li><li><a class="ext-link" href="http://search.cpan.org/~strytoast/PluceneSimple-1.04/lib/Plucene/Simple.pm"><span class="icon">​</span>http://search.cpan.org/~strytoast/PluceneSimple-1.04/lib/Plucene/Simple.pm</a>
+</li><li>access to c-Lucene: <a class="ext-link" href="http://search.cpan.org/~tbusch/Lucene-0.18/lib/Lucene.pm"><span class="icon">​</span>http://search.cpan.org/~tbusch/Lucene-0.18/lib/Lucene.pm</a>
+</li></ul><p>
+native xml-DB (maybe an option?)
+</p>
+<ul><li><a class="ext-link" href="http://exist.sourceforge.net/"><span class="icon">​</span>http://exist.sourceforge.net/</a>
+</li></ul><p>
+General info:
+</p>
+<ul><li><a class="ext-link" href="http://blog.tonybain.com/tony_bain/keyvalue-stores/"><span class="icon">​</span>http://blog.tonybain.com/tony_bain/keyvalue-stores/</a>
+</li><li><a class="ext-link" href="http://nosql.mypopescu.com/post/659390374/comparing-document-databases-to-key-value-stores"><span class="icon">​</span>http://nosql.mypopescu.com/post/659390374/comparing-document-databases-to-key-value-stores</a>
+</li><li><a class="ext-link" href="http://www.readwriteweb.com/enterprise/2009/02/is-the-relational-database-doomedp3.php"><span class="icon">​</span>http://www.readwriteweb.com/enterprise/2009/02/is-the-relational-database-doomedp3.php</a>
+</li><li><a class="ext-link" href="http://www.metabrew.com/article/anti-rdbms-a-list-of-distributed-key-value-stores/"><span class="icon">​</span>http://www.metabrew.com/article/anti-rdbms-a-list-of-distributed-key-value-stores/</a>
+</li><li><a class="ext-link" href="http://openlibrary.org/about/tech"><span class="icon">​</span>http://openlibrary.org/about/tech</a>
+</li></ul></div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/letsmt-trac/wiki/KeyValueDBs?action=diff&amp;version=9" title="Version 9 by joerg">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2011-05-19T09%3A41%3A07Z&amp;precision=second" title="See timeline at May 19, 2011, 9:41:07 AM">10 years ago</a></span>
+            <span class="trac-print">Last modified on May 19, 2011, 9:41:07 AM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/KeyValueDBs?format=txt">Plain Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/KeyValueDBs?format=tex">Latex</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/KeyValueDBs?format=pdf">Latex-Pdf</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      TimingAndEstimationPluginUserManual – LetsMT
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/letsmt-trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/TimingAndEstimationPluginUserManual?format=txt" type="text/x-trac-wiki" title="Plain Text" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/TimingAndEstimationPluginUserManual?format=tex" type="text/x-trac-wiki" title="Latex" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/TimingAndEstimationPluginUserManual?format=pdf" type="text/x-trac-wiki" title="Latex-Pdf" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.letsmt.eu/"><img src="http://stp.lingfil.uu.se/~joerg/LetsMT/letsmt.jpg" alt="LetsMT" width="100" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/letsmt-trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/letsmt-trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="TimingAndEstimationPluginUserManual.html" title="View TimingAndEstimationPluginUserManual">TimingAndEstimationPluginUserManual</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/letsmt-trac/wiki/TimingAndEstimationPluginUserManual?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><p>
+</p><div class="wiki-toc">
+<ol>
+  <li>
+    <a href="TimingAndEstimationPluginUserManual.html#TimingandEstimationPluginUserManual">Timing and Estimation Plugin User Manual</a>
+    <ol>
+      <li>
+        <a href="TimingAndEstimationPluginUserManual.html#AbstractDesignGoal">Abstract Design Goal</a>
+      </li>
+      <li>
+        <a href="TimingAndEstimationPluginUserManual.html#CustomTicketFields">Custom Ticket Fields</a>
+        <ol>
+          <li>
+            <a href="TimingAndEstimationPluginUserManual.html#Fields:">Fields:</a>
+          </li>
+          <li>
+            <a href="TimingAndEstimationPluginUserManual.html#FutureFields">Future Fields</a>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <a href="TimingAndEstimationPluginUserManual.html#ManagementPage">Management Page</a>
+        <ol>
+          <li>
+            <a href="TimingAndEstimationPluginUserManual.html#SetBillDate">Set Bill Date</a>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <a href="TimingAndEstimationPluginUserManual.html#Reports">Reports</a>
+        <ol>
+          <li>
+            <a href="TimingAndEstimationPluginUserManual.html#ReportTypes">Report Types</a>
+          </li>
+          <li>
+            <a href="TimingAndEstimationPluginUserManual.html#AddingMoreReports">Adding More Reports</a>
+          </li>
+          <li>
+            <a href="TimingAndEstimationPluginUserManual.html#RemovingaReport">Removing a Report</a>
+          </li>
+          <li>
+            <a href="TimingAndEstimationPluginUserManual.html#TAKENOTE">TAKE NOTE</a>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <a href="TimingAndEstimationPluginUserManual.html#FutureImprovements">Future Improvements</a>
+      </li>
+    </ol>
+  </li>
+</ol>
+</div><p>
+</p>
+<h1 id="TimingandEstimationPluginUserManual">Timing and Estimation Plugin User Manual</h1>
+<p>
+<a class="ext-link" href="http://trac-hacks.org/wiki/TimingAndEstimationPlugin"><span class="icon">​</span>TimingAndEstimationPlugin on TracHacks</a> | <a class="ext-link" href="http://trac-hacks.org/report/9?COMPONENT=TimingAndEstimationPlugin"><span class="icon">​</span>Open Tickets</a> | <a class="ext-link" href="http://trac-hacks.org/newticket?component=TimingAndEstimationPlugin&amp;owner=bobbysmith007"><span class="icon">​</span>New Ticket</a>  | 
+<a class="ext-link" href="http://trac-hacks.org/browser/timingandestimationplugin/trunk"><span class="icon">​</span>Web Browsable Source Code</a>
+</p>
+<h2 id="AbstractDesignGoal">Abstract Design Goal</h2>
+<p>
+My goal in writing this plugin was to use as much of the existing structure as possible (therefore not needing to add extra structure that might make maintainability difficult).  The largest downside I have found to this is that there is no way to attach more permissions to anything.
+</p>
+<h2 id="CustomTicketFields">Custom Ticket Fields</h2>
+<p>
+In adhering to our design goal, rather than creating a new ticket interface, I create some custom fields and a small daemon to watch over them.  
+</p>
+<h3 id="Fields:">Fields:</h3>
+<ul><li><strong>Hours to Add</strong> This field functions as a time tracker.  When you add hours to it , those hours get added to the total hours field.  The person  who made the change is there fore credited with the hours spent on it.
+</li><li><strong>Total Hours</strong> This field is the total number of hours that have been added to the project. This has been made uneditable by including javascript which replaces the input box with a span containing its value
+<ul><li>Reports might not agree with each other if this is manually edited (which is possible if you disable javascript).
+</li></ul></li><li><strong>Is this billable?</strong> An extra flag on tickets so that they can be marked as billable / not billable.
+</li><li><strong>Estimated Hours</strong> a field that contains the estimated amount of work
+</li></ul><h3 id="FutureFields">Future Fields</h3>
+<ul><li><strong>Ticket Rate</strong> The ability to attach a cost per hour or total amount to an individual ticket
+</li></ul><h2 id="ManagementPage">Management Page</h2>
+<p>
+This page provide a small interface for querying the tickets and adding a bill date at the current time.  
+This interface mostly just gives you links that match the interface to open any of the give reports,
+providing it the correct set of input parameters
+</p>
+<p>
+The 'Management' button should be in the main title bar.  It is possible that if you are viewing at a low resolution, it was pushed off the edge of the screen.  Also if you are not logged in with report_view permissions, it will not show that button.
+</p>
+<p>
+The direct url is '/Billing'.
+</p>
+<h3 id="SetBillDate">Set Bill Date</h3>
+<p>
+This button will add now as a bill date.  This is mostly to make it
+easier to select the last time you billed.  This would allow you to
+set a ticket as having been billed at a given time while others have
+not, and accurately get the correct billing information for all
+tickets.
+</p>
+<h2 id="Reports">Reports</h2>
+<h3 id="ReportTypes">Report Types</h3>
+<p>
+We provide a few different reports for querying different types of data:
+</p>
+<ul><li><strong>Billing Reports</strong> Currently the billing reports are the only time based reports, and are therefore useful for getting an estimate what tickets had times (and totals), and which developers spent their time where.
+<ul><li>Ticket Work Summary
+</li><li>Milestone Work Summary
+</li><li>Developer Work Summary
+</li></ul></li><li><strong><a class="missing wiki">Ticket/Hour?</a> Reports</strong> These reports are useful for reviewing estimates on a large scale or getting an idea of the project at large.  These reports currently ignore the time.
+<ul><li>Ticket Hours
+</li><li>Ticket Hours with Description 
+</li><li>Ticket Hours Grouped By Component
+</li><li>Ticket Hours Grouped By Component with Description
+</li><li>Ticket Hours Grouped By Milestone
+</li><li>Ticket Hours Grouped By Milestone with Description
+</li></ul></li></ul><h3 id="AddingMoreReports">Adding More Reports</h3>
+<p>
+To add reports to the Management screen sections, you must run the following sql against your trac database
+Remember to fill in the @reportID of the report you want to insert, and to select the insert statement for the section of your choice.
+</p>
+<ul><li><tt>INSERT INTO custom_report (id, uuid, maingroup, subgroup, version, ordering) VALUES (@reportID , @uuid, 'Timing and Estimation Plugin', 'Billing Reports', 1, 0);</tt>
+</li><li><tt>INSERT INTO custom_report (id, uuid, maingroup, subgroup, version, ordering) VALUES (@reportID , @uuid, 'Timing and Estimation Plugin', 'Ticket/Hour Reports', 1, 0);</tt>
+</li></ul><p>
+<em>NB: @uuid is a globally uninque identifier created via a tool such as <tt>uuidgen</tt> on Linux or various <a class="ext-link" href="http://www.famkruithof.net/uuid/uuidgen"><span class="icon">​</span>online tools</a>. It is used in this plugin to provide programatic reference to specific reports such that they can be upgraded successfully on future revisions of the plugin</em>
+</p>
+<h3 id="RemovingaReport">Removing a Report</h3>
+<p>
+To remove reports from the Management page, run the following query. 
+Remember to fill in the @reportID of the report you want to modify.
+</p>
+<ul><li>To remove for this version of the plugin (will be over written in future plugin upgrades)
+<ul><li><tt>UPDATE custom_report SET maingroup='x'||maingroup WHERE report = @reportID;</tt>
+</li></ul></li><li>To remove permanently (wont be over written in future plugin upgrades)
+<ul><li><tt>UPDATE custom_report SET version=9999, maingroup='x'||maingroup WHERE report = @reportID;</tt>
+</li></ul></li></ul><p>
+<em>NB: The 'x' part is not important - you just need to make the column read something other than 'Timing and Estimation Plugin'.</em>
+</p>
+<h3 id="TAKENOTE">TAKE NOTE</h3>
+<blockquote>
+<p>
+<strong>The reports can only be called from the Management Page. They will not work from the Trac View Tickets page. (Due to the custom variables that need values).</strong>
+</p>
+</blockquote>
+<h2 id="FutureImprovements">Future Improvements</h2>
+<ul><li><a class="ext-link" href="http://trac-hacks.org/wiki/TimingAndEstimationPlugin"><span class="icon">​</span>See tickets</a> at the <a class="ext-link" href="http://trac-hacks.org/wiki/TimingAndEstimationPlugin"><span class="icon">​</span>project trac</a>
+</li><li>Would like to suggest a couple of interfaces to Trac project, and perhaps write an implementation for them.
+<ul><li><strong> ICustomTicketFieldProvider </strong> This should allow a plugin to provide a custom field with the ability to add html attributes and specify at least the tag name. (hopefully with a full template) This should hopefully also allow these provided custom controls to set permissions causing them to not render or to not editable.
+</li><li><strong> ICustomReportProvider </strong> This allows custom reports to be provided in a way that permissions can be enforced on them. 
+</li></ul></li><li>work with advise and feedback from the user community to make this Plugin do this job adequately
+</li></ul></div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/letsmt-trac/wiki/TimingAndEstimationPluginUserManual?action=diff&amp;version=11" title="Version 11 by Timing and Estimation Plugin">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2011-02-28T14%3A46%3A08Z&amp;precision=second" title="See timeline at Feb 28, 2011, 2:46:08 PM">10 years ago</a></span>
+            <span class="trac-print">Last modified on Feb 28, 2011, 2:46:08 PM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/TimingAndEstimationPluginUserManual?format=txt">Plain Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/TimingAndEstimationPluginUserManual?format=tex">Latex</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/TimingAndEstimationPluginUserManual?format=pdf">Latex-Pdf</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

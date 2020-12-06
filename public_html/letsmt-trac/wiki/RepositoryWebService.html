@@ -1,0 +1,674 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      RepositoryWebService – LetsMT
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/letsmt-trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositoryWebService?format=txt" type="text/x-trac-wiki" title="Plain Text" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositoryWebService?format=tex" type="text/x-trac-wiki" title="Latex" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositoryWebService?format=pdf" type="text/x-trac-wiki" title="Latex-Pdf" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.letsmt.eu/"><img src="http://stp.lingfil.uu.se/~joerg/LetsMT/letsmt.jpg" alt="LetsMT" width="100" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/letsmt-trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/letsmt-trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="RepositoryWebService.html" title="View RepositoryWebService">RepositoryWebService</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositoryWebService?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><p>
+</p><div class="wiki-toc">
+<ol>
+  <li>
+    <a href="RepositoryWebService.html#LetsMTResourceRepository-WebServiceAPI">LetsMT Resource Repository - Web Service API</a>
+    <ol>
+      <li>
+        <a href="RepositoryWebService.html#Introduction">Introduction</a>
+      </li>
+      <li>
+        <a href="RepositoryWebService.html#WebServicedesign">Web Service design</a>
+        <ol>
+          <li>
+            <a href="RepositoryWebService.html#Clientactors">Client actors</a>
+          </li>
+          <li>
+            <a href="RepositoryWebService.html#Authenticationofasystem">Authentication of a system</a>
+          </li>
+          <li>
+            <a href="RepositoryWebService.html#Authenticationofauser">Authentication of a user</a>
+          </li>
+          <li>
+            <a href="RepositoryWebService.html#Accesscontrol">Access control</a>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <a href="RepositoryWebService.html#Lowerlevelstorage">Lower level storage</a>
+        <ol>
+          <li>
+            <a href="RepositoryWebService.html#Format:Content">Format: Content</a>
+          </li>
+          <li>
+            <a href="RepositoryWebService.html#Format:Status">Format: Status</a>
+          </li>
+          <li>
+            <a href="RepositoryWebService.html#Format:Listing">Format: Listing</a>
+          </li>
+          <li>
+            <a href="RepositoryWebService.html#Lowerlevelpathformatting">Lower level path formatting</a>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <a href="RepositoryWebService.html#Higherlevelstorage">Higher level storage</a>
+        <ol>
+          <li>
+            <a href="RepositoryWebService.html#Format:Content1">Format: Content</a>
+          </li>
+          <li>
+            <a href="RepositoryWebService.html#Higherlevelpathformatting">Higher level path formatting</a>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <a href="RepositoryWebService.html#Metadatadatabase">Metadata database</a>
+        <ol>
+          <li>
+            <a href="RepositoryWebService.html#Format:Status1">Format: Status</a>
+          </li>
+          <li>
+            <a href="RepositoryWebService.html#Format:Listing1">Format: Listing</a>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <a href="RepositoryWebService.html#Storageaccessdatabase">Storage access database</a>
+        <ol>
+          <li>
+            <a href="RepositoryWebService.html#Format:listing">Format: listing</a>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <a href="RepositoryWebService.html#Groupdatabase">Group database</a>
+        <ol>
+          <li>
+            <a href="RepositoryWebService.html#Format:listing1">Format: listing</a>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <a href="RepositoryWebService.html#Appendix">Appendix</a>
+        <ol>
+          <li>
+            <a href="RepositoryWebService.html#Errors">Errors</a>
+          </li>
+        </ol>
+      </li>
+    </ol>
+  </li>
+</ol>
+</div><p>
+</p>
+<h1 id="LetsMTResourceRepository-WebServiceAPI">LetsMT Resource Repository - Web Service API</h1>
+<p>
+The LetsMT resource repository is currently implemented as a RESTful server with a version-controled file system as its backend. The PDF-version of the following documentation of the current API is attached at the end of this page (Per notes: are the pdfs updated automatically? I modified this wiki page.).
+</p>
+<h2 id="Introduction">Introduction</h2>
+<p>
+This is part of the documentation of the LetsMT! SMT Resource Repository, WP2/Task2.1. 
+</p>
+<p>
+The SMT Resource Repository is organised into the following collection of APIs:
+</p>
+<ol><li>A lower level storage, which manages data storage. It has the fundamental operations of read, write, update and delete.
+</li><li>A higher level storage, which manages the extra data services needed by clients, such as preprocessing of uploaded documents into the normalised corpus format, prior to storage.
+</li><li>A metadata database for storing arbitrary key-value pairs and searching data in the repository
+</li><li>A storage access database, with a file registry along with access permission, ownership and group information.
+</li><li>A group database, defining groups with user memberships, constituting the basis for data sharing.
+</li></ol><p>
+All four APIs are available as Perl modules, and more importantly, as web service APIs.
+</p>
+<p>
+This document describes the web service APIs.
+</p>
+<h2 id="WebServicedesign">Web Service design</h2>
+<p>
+As a resource repository mainly rely on the CRUD operations - create, read,
+update, delete, we chose to use the RESTful web service style. It is simple and
+easy for clients to use. Resource identifiers are provided in the URL, and the
+operation to perform on the given resource is specified by the request
+method. The four HTTP request methods POST, GET, PUT and DELETE map directly to
+the CRUD operations. A RESTful web service also must make sure to return
+suitable response codes. A GET/Read request, which gets a 200-series response
+can and will be cached (by the browser or internet caching proxies). From this
+follows that GET/Read operations must not modify the state on the server, as the
+response to a certain request must give the same response. Caching mechanisms
+will not cache GET responses with codes other than in the 200-series. Neither
+will POST, PUT or DELETE requests or their reponses be cached.
+</p>
+<h3 id="Clientactors">Client actors</h3>
+<p>
+There are two client actors involved:
+</p>
+<ol><li>The system which is issuing the request to the API. This is a http client, such as a browser or another system. 
+</li><li>The effective user. Each CRUD operation must be associated with an effective user, in order for the permission verification to work.
+</li></ol><h3 id="Authenticationofasystem">Authentication of a system</h3>
+<p>
+A system is authenticated using Secure Socket Layer client certificates, a
+secure and widely accepted method, used by for instance banking and financial
+systems. 
+</p>
+<p>
+A new installation of a system that will be accessing the resource repository
+server, needs a signed client certificate in order to connect to the web
+service. It can be requested from UUP. Once you have it, install it on your file
+system, and configure your client software to use it when issuing requests to
+the SMT Resource Repository. The necessary steps are described below.
+</p>
+<p>
+To create a private client key, the following command should be used (using a
+recent version of OpenSSL):
+</p>
+<p>
+<tt>openssl genpkey -out yourname.key -outform PEM -pass [password arg, see docs] -algorithm rsa</tt>
+</p>
+<p>
+To request a signed certificate from UUP, create a certificate request using the private key:
+</p>
+<p>
+<tt>openssl req -inform PEM -outform PEM -new -key yourname.key -out yourname.csr -passin [password arg] -passout [password arg]</tt>
+</p>
+<p>
+Then send yourname.csr to UUP and wait for the signed certificate yourname.crt. During development, UUP runs its own SSL Certificate Authority which means that the LetsMT! CA certificate will be supplied by UUP. For the moment the only instance of the web service is running on a development machine at UUP. The FQDN (fully qualified domain name) refering to this host below is opus.lingfil.uu.se.
+</p>
+<h3 id="Authenticationofauser">Authentication of a user</h3>
+<p>
+The authentication of the effective user is a responsibility that falls on the
+http client which is issuing requests to the repository. The effective user is
+supplied as an argument to the function calls, and is assumed to be
+authenticated by the calling system.
+</p>
+<p>
+The chain of trust applies - only a http client trusted to manage user
+authentication will be issued a signed client certificate.
+</p>
+<h3 id="Accesscontrol">Access control</h3>
+<p>
+Access control is implemented using the three access categories: user, group and
+others. For each category, read and write permission can be set. User is always
+the owner who created the corpus, which is done either by uploading new material
+or copying an existing, shared corpus. The group is set to a valid group that is
+defined in the group database. The granularity of the access control is on the
+corpus level. This means that the permissions defined for the corpus is applied
+to all files and directories contained in the corpus.  Only the owner may edit
+the group and the permissions of a corpus.
+</p>
+<h2 id="Lowerlevelstorage">Lower level storage</h2>
+<p>
+A call to the lower level storage web service API consists of a resource
+identifier, which may point out a resource or a collection of resources. It has
+the following parts: <a class="ext-link" href="https://"><span class="icon">​</span>https://</a>&lt;host&gt;/storage/&lt;path&gt;, where &lt;host&gt; is the
+serving host, <tt>/storage/</tt> addresses the lower level storage, and
+&lt;path&gt; addresses the resource or collection of resources. It may be
+suffixed with arguments, depending on the operations, see the table below. A
+call with an argument looks like
+<a class="ext-link" href="https://"><span class="icon">​</span>https://</a>&lt;host&gt;/storage/&lt;path&gt;[argument:value].
+</p>
+<table class="wiki">
+<tr><td> <strong>Description</strong>        </td><td> <strong>Method</strong> </td><td> <strong>Arguments</strong>       </td><td> <strong>Upload</strong>  </td><td> <strong>Download</strong> </td><td> <strong>Response code</strong> 
+</td></tr></table>
+<table class="wiki">
+<tr><td> Create a resource  </td><td> POST   </td><td> [uid:uid]([gid:gid])       </td><td> Content </td><td> Status   </td><td> Success: 201  
+</td></tr><tr><td> Update a resource  </td><td> PUT    </td><td> [uid:uid]       </td><td> Content </td><td> Status   </td><td> Success: 202  
+</td></tr><tr><td> Copy branch        </td><td> POST   </td><td> [uid:uid][type:copy][dest:&lt;path&gt;]([rev:n])       </td><td style="text-align: center">         </td><td> Status   </td><td> Success: 201  
+</td></tr><tr><td> List resources     </td><td> GET    </td><td> [uid:uid]([rev:n])       </td><td style="text-align: center">         </td><td> Listing  </td><td> Success: 200  
+</td></tr><tr><td> Download resources </td><td> GET    </td><td> [uid:uid][type:download]([rev:n])       </td><td style="text-align: center">         </td><td> Content  </td><td> Success: 200  
+</td></tr><tr><td> Delete resources   </td><td> DELETE </td><td> [uid:uid]       </td><td style="text-align: center">         </td><td> Status   </td><td> Success: 202  
+</td></tr></table>
+<ul><li>uid = effective user id
+</li><li>gid = effective group id
+</li><li>type = mode of action
+</li><li>rev = revision. If omitted, HEAD is used, which denotes the latest revision
+</li><li>dest = the destination path
+</li></ul><p>
+When creating new branches (which is done implicitly when using the higher level /letsmt api so take care), the gid parameter is required.
+</p>
+<p>
+Uploading content with POST is done using the http parameter <tt>payload</tt> which is packaged as a multi part request. PUT uploads the data directly.
+</p>
+<p>
+In case the request was not completed, an appropriate error from the table in the Error appendix below is raised, along with a specific description.
+</p>
+<h3 id="Format:Content">Format: Content</h3>
+<p>
+Content is treated as binaries by the lower level storage.
+</p>
+<h3 id="Format:Status">Format: Status</h3>
+<p>
+Status messages are packaged in the simple XML format shown below. The type
+attribute declares if it is an error, warning or information message. The code
+attribute specifies the http response code. The operation attribute shows what
+http method was used in the request. The location attribute shows the resource
+identifier used in the request.
+</p>
+<div class="code"><pre><span class="nt">&lt;letsmt-ws&gt;</span>
+  <span class="nt">&lt;status</span> <span class="na">type=</span><span class="s">"error"</span> 
+          <span class="na">code=</span><span class="s">"response_code"</span> 
+          <span class="na">operation=</span><span class="s">"http method"</span> 
+          <span class="na">location=</span><span class="s">"identifier"</span><span class="nt">&gt;</span>descriptive message<span class="nt">&lt;/status&gt;</span>
+<span class="nt">&lt;/letsmt-ws&gt;</span>
+</pre></div><h3 id="Format:Listing">Format: Listing</h3>
+<p>
+The XML format for file listings is the format used by Subversion
+(<tt>http://subversion.apache.org</tt>). Two new values for the entry-nodes
+kind-attribute has been added: <tt>slot</tt> and <tt>branch</tt>.
+</p>
+<div class="code"><pre><span class="nt">&lt;lists&gt;</span>
+  <span class="nt">&lt;list</span> <span class="na">path=</span><span class="s">"identifier"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;entry</span> <span class="na">kind=</span><span class="s">"slot|branch|directory|file"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;name&gt;</span>name<span class="nt">&lt;/name&gt;</span>
+      <span class="nt">&lt;perm&gt;</span>drwrwrw<span class="nt">&lt;/perm&gt;</span>
+      <span class="nt">&lt;owner&gt;</span>root<span class="nt">&lt;/owner&gt;</span>
+      <span class="nt">&lt;group&gt;</span>users<span class="nt">&lt;/group&gt;</span>
+    <span class="nt">&lt;/entry&gt;</span>
+  <span class="nt">&lt;/list&gt;</span>
+<span class="nt">&lt;/lists&gt;</span>
+</pre></div><h3 id="Lowerlevelpathformatting">Lower level path formatting</h3>
+<p>
+The path expressions used in the lower level reveals the underlaying data
+</p>
+<blockquote>
+<p>
+organisation:
+</p>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>
+<tt>/repository name/branch name/.../...</tt>
+</p>
+</blockquote>
+</blockquote>
+<p>
+Each corpus resource is stored in a repository, refered to as a slot. Each
+repository has at least one branch, which serves as a root directory for the
+actual resource data. When a user uploads a new corpus, a new repository is
+created, and a branch is created named like the user. If a user wants to use a
+branch of a corpus shared by another user, that branch is copied to a new branch
+named after the user. This means that any resource access a user requests, is
+done to a branch named like the user.
+</p>
+<h2 id="Higherlevelstorage">Higher level storage</h2>
+<p>
+A call to the higher level storage web service API consists of a resource
+identifier, which may point out a resource or a collection of resources. It has
+the following parts: <a class="ext-link" href="https://"><span class="icon">​</span>https://</a>&lt;host&gt;/letsmt/&lt;path&gt;, where &lt;host&gt; is the
+serving host, <tt>/letsmt/</tt> addresses the higher level storage layer, and
+&lt;path&gt; addresses the resource or collection of resources. It may be
+suffixed with arguments, depending on the operations, see the table below. A
+call with an argument looks like
+<a class="ext-link" href="https://"><span class="icon">​</span>https://</a>&lt;host&gt;/letsmt/&lt;path&gt;[argument:value].
+</p>
+<table class="wiki">
+<tr><td> Description                      </td><td> Method </td><td> Arguments            </td><td> Upload  </td><td> Download </td><td> Response code 
+</td></tr></table>
+<table class="wiki">
+<tr><td> Upload and create (optional: archived)     </td><td> POST   </td><td> [uid:uid]([gid:gid])([type:archive])            </td><td> Content </td><td> Status   </td><td> Success: 201  
+</td></tr><tr><td> Upload updates (optional: archived)        </td><td> PUT    </td><td> [uid:uid]([type:archive])            </td><td> Content </td><td> Status   </td><td> Success: 202  
+</td></tr><tr><td> Pass through to lower level      </td><td> -      </td><td> -                    </td><td> -       </td><td> -        </td><td> -             
+</td></tr></table>
+<p>
+There are two reasons for implementing the higher level API:
+</p>
+<ul><li>to hide the branch level in order to make access to repository resources transparent for the frontend
+</li><li>to allow non-standard treatment of specific requests
+</li></ul><p>
+When creating new branches (which is done implicitly when using the higher level /letsmt api so take care), the gid parameter is required.
+</p>
+<p>
+One specific treatment is connected to the upload requests: These requests will automatically initiate pre-processing jobs. Pre-processing will be done off-line and the job will be scheduled on a resource-specific SGE queue (or any other job management system).
+</p>
+<p>
+For status message formatting, see the section on lower level storage above.
+</p>
+<p>
+For an upload and preprocessing request to be successful, the uploaded document
+needs to be of a valid type. The preprocessing step will take the necessary
+steps to turn it into normalised data which can be used in SMT. 
+</p>
+<p>
+The pass through functionality will catch all other variations (GET, DELETE),
+and after altering the path into the lower level path formatting, let the lower
+level handle the request.
+</p>
+<h3 id="Format:Content1">Format: Content</h3>
+<p>
+Resource content should comply with the document types specified in the LetsMT
+project specification. If the optional archive type mode is used, the content is
+a <em>tar</em> archive, and its content is deployed in the place specified by
+the resource identifier path.
+</p>
+<h3 id="Higherlevelpathformatting">Higher level path formatting</h3>
+<p>
+The path expressions used in the higher level omits the branch name. It is
+unnecessary, as the effective user is always known, and user can only access
+branch data that they own. The branch is implicit, and handled by the higher
+level layer.
+</p>
+<blockquote>
+<p>
+<tt>/repository name/.../...</tt>
+</p>
+</blockquote>
+<h2 id="Metadatadatabase">Metadata database</h2>
+<p>
+Metadata in form of arbitrary key-value pairs can be connected to each addressable resource in the LetsMT repository. Access to the metadata is given through the metadata path: <tt>https://&lt;host&gt;/metadata/&lt;path&gt;</tt> where &lt;path&gt; is the resource within the higher level storage (relative to <tt>https://&lt;host&gt;/letsmt</tt>). Metadata is related to a specific branch of that resource which is implicitly given by the user-id argument (in the same way as it is defined in the higher level storage). In other words, only the owners of a resource-branch may manipulate metadata. The actual key-value pairs are given as request arguments.
+</p>
+<ul><li> Accessing metadata for specific resources (using a non-empty &lt;path&gt; in the request):
+</li></ul><table class="wiki">
+<tr><td> <strong>method</strong> </td><td> <strong>arguments</strong>           </td><td> <strong>description</strong>                                   </td><td> <strong>Download</strong> </td><td> <strong>Response</strong> 
+</td></tr><tr><td> GET          </td><td> [uid:user]                </td><td> returns all metadata for &lt;path&gt;                     </td><td> listing        </td><td style="text-align: center">  success: 200  
+</td></tr><tr><td> GET          </td><td> [uid:user][key:key]       </td><td> returns &lt;value&gt; of key &lt;key&gt; in metadata for &lt;path&gt; </td><td> listing        </td><td style="text-align: center">  success: 200  
+</td></tr><tr><td> POST         </td><td> [uid:user]([key:value])*  </td><td> create/overwrite key/value pairs for &lt;path&gt;                </td><td> status         </td><td style="text-align: center">  success: 201  
+</td></tr><tr><td> PUT          </td><td> [uid:user]([key:value])*  </td><td> add key/value pairs in metadata for &lt;path&gt;   </td><td> status         </td><td style="text-align: center">  success: 202  
+</td></tr><tr><td> DELETE       </td><td> [uid:user][key:value]       </td><td> delete specific key/value pair in metadata for &lt;path&gt;             </td><td> status         </td><td style="text-align: center">  success: 202  
+</td></tr><tr><td> DELETE       </td><td> [uid:user][key:*]       </td><td> delete all values for &lt;key&gt; in metadata for &lt;path&gt;             </td><td> status         </td><td style="text-align: center">  success: 202  
+</td></tr><tr><td> DELETE       </td><td> [uid:user]                </td><td> delete all metadata for &lt;path&gt;                      </td><td> status         </td><td style="text-align: center">  success: 202  
+</td></tr></table>
+<p>
+<strong>Important</strong>: You can specify multiple values by separating them with ',' (comma) or ' ' (space)! 
+Note that ALL commas and spaces will be treated as delimiters and may not appear in any regular value string if you want to use a field as one with support for multiple values!
+</p>
+<ul><li>The general search function (empty &lt;path&gt;):
+</li></ul><pre class="wiki"> GET https://&lt;host&gt;/metdata([key:value])*
+</pre><p>
+Any key-value pair (within some limits) will be supported:
+</p>
+<table class="wiki">
+<tr><td> [resource-type:resource-type] </td><td style="text-align: center">  resource type (parallel, monolingual, model)      
+</td></tr><tr><td> [lang:language]      </td><td style="text-align: center">  languages (only for monolingual resources &amp; LM's)                      
+</td></tr><tr><td> [srclang:language]   </td><td style="text-align: center">  source language (for parallel resources &amp; TM's / SMT models)                      
+</td></tr><tr><td> [trglang:language]   </td><td style="text-align: center">  target language (for parallel resources &amp; TM's / SMT models)                      
+</td></tr><tr><td> [owner:owner]  </td><td style="text-align: center">  owner of the resource                                   
+</td></tr><tr><td> [provider:provider]  </td><td style="text-align: center">  resource-provider                                   
+</td></tr><tr><td> [domain:domain]      </td><td style="text-align: center">  subject domain                                            
+</td></tr><tr><td> [text-type:type]          </td><td style="text-align: center">  text type                                                
+</td></tr></table>
+<p>
+There are three reserved prefix-strings that indicate special treatment of a given search condition:
+</p>
+<ul><li>ONE_OF_: indicates a <strong>keyword match</strong> between query string and the given key (whose name follows that prefix) using <strong>boolean OR</strong> (the field has to contain words as comma-separated strings!)
+</li><li>ALL_OF_: indicates a keyword match between query string and the given field (which follows that prefix) using <strong>boolean AND</strong>
+</li><li>MAX_: make a numeric comparison between query string and key value using the '&gt;=' operator
+</li><li>MIN_: make a numeric comparison between query string and key value using the '&lt;=' operator
+</li></ul><p>
+Here are some example arguments that could be used for certain keys (size &amp; tags):
+</p>
+<table class="wiki">
+<tr><td> [ONE_OF_tags:nice,big,shiny] </td><td style="text-align: center">  one of the given tags should match in the 'tags' field               
+</td></tr><tr><td> [ALL_OF_tags:nice,big,free] </td><td style="text-align: center">  all of the given tags should match in the 'tags' field               
+</td></tr><tr><td> [MIN_size:1000]       </td><td style="text-align: center">  size filter (translated to numeric comparison of size key (&gt;=))      
+</td></tr><tr><td> [MAX_size:100000]       </td><td style="text-align: center">  size filter (translated to numeric comparison of size key (&lt;=))      
+</td></tr></table>
+<p>
+The first example clause will match any record that includes the words 'nice', 'big' OR 'shiny' within the tags-field. The second one matches only those records where all tags 'nice', 'big' AND 'free' are <span class="underline">included</span> in the corresponding tags field (word order does not matter). These extra conditions can be combined, for example <tt>[MIN_size:1000][MAX_size:10000]</tt> would give all data records for which size is between 1000 and 10000.
+</p>
+<h3 id="Format:Status1">Format: Status</h3>
+<p>
+Status information will be provided in the same simple XML format again:
+</p>
+<div class="code"><pre><span class="nt">&lt;letsmt-ws&gt;</span>
+  <span class="nt">&lt;status</span> <span class="na">type=</span><span class="s">"error"</span> 
+          <span class="na">code=</span><span class="s">"response_code"</span> 
+          <span class="na">operation=</span><span class="s">"http method"</span> 
+          <span class="na">location=</span><span class="s">"identifier"</span><span class="nt">&gt;</span>descriptive message<span class="nt">&lt;/status&gt;</span>
+<span class="nt">&lt;/letsmt-ws&gt;</span>
+</pre></div><h3 id="Format:Listing1">Format: Listing</h3>
+<p>
+Listings will look similar to the listings at the lower level storage with the difference that they include arbitrary key-vakue pairs for each matched entry. The type of the resource is specified in the <tt>kind</tt> attribute (parallel|monolingual|document|lm|tm|model|data|unknown). Here is an example:
+</p>
+<div class="code"><pre><span class="nt">&lt;lists&gt;</span>
+  <span class="nt">&lt;list</span> <span class="na">path=</span><span class="s">"identifier"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;entry</span> <span class="na">kind=</span><span class="s">"monolingual"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;resource-type&gt;</span>monolingual<span class="nt">&lt;/type&gt;</span>
+      <span class="nt">&lt;name&gt;</span>name<span class="nt">&lt;/name&gt;</span>
+      <span class="nt">&lt;provider&gt;</span>provider<span class="nt">&lt;/provider&gt;</span>
+      <span class="nt">&lt;group&gt;</span>group<span class="nt">&lt;/group&gt;</span>
+      <span class="nt">&lt;lang&gt;</span>language<span class="nt">&lt;/lang&gt;</span>
+      <span class="nt">&lt;domain&gt;</span>domain<span class="nt">&lt;/domain&gt;</span>
+      <span class="nt">&lt;text-type&gt;</span>text type<span class="nt">&lt;/texttype&gt;</span>
+      <span class="nt">&lt;size&gt;</span>size<span class="nt">&lt;/size&gt;</span>
+      <span class="nt">&lt;tag&gt;</span>tag1<span class="nt">&lt;/tag&gt;</span>
+     <span class="nt">&lt;tag&gt;</span>tag2<span class="nt">&lt;/tag&gt;</span>
+      <span class="nt">&lt;tag&gt;</span>tag3<span class="nt">&lt;/tag&gt;</span>
+      <span class="nt">&lt;rating&gt;</span>4.34231<span class="nt">&lt;/rating&gt;</span>
+    <span class="nt">&lt;/entry&gt;</span>
+  <span class="nt">&lt;/list&gt;</span>
+  <span class="nt">&lt;list</span> <span class="na">path=</span><span class="s">"identifier"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;entry</span> <span class="na">kind=</span><span class="s">"parallel"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;resource-type&gt;</span>parallel<span class="nt">&lt;/type&gt;</span>
+      <span class="nt">&lt;name&gt;</span>name<span class="nt">&lt;/name&gt;</span>
+      <span class="nt">&lt;provider&gt;</span>provider<span class="nt">&lt;/provider&gt;</span>
+      <span class="nt">&lt;group&gt;</span>group<span class="nt">&lt;/group&gt;</span>
+      <span class="nt">&lt;srclang&gt;</span>source language<span class="nt">&lt;/srclang&gt;</span>
+      <span class="nt">&lt;trglang&gt;</span>target language<span class="nt">&lt;/trglang&gt;</span>
+      <span class="nt">&lt;domain&gt;</span>domain<span class="nt">&lt;/domain&gt;</span>
+      <span class="nt">&lt;text-type&gt;</span>text type<span class="nt">&lt;/texttype&gt;</span>
+      <span class="nt">&lt;size&gt;</span>size<span class="nt">&lt;/size&gt;</span>
+      <span class="nt">&lt;tags&gt;</span>tag1<span class="nt">&lt;/tags&gt;</span>
+    <span class="nt">&lt;/entry&gt;</span>
+  <span class="nt">&lt;/list&gt;</span>
+<span class="nt">&lt;/lists&gt;</span>
+</pre></div><h2 id="Storageaccessdatabase">Storage access database</h2>
+<p>
+Group settings of a user-branch within a slot (together with all resources in that branch) can be manipulated using the access database.
+A call to the storage access database API consists of a resource identifier,
+pointing out a slot. The branch is implicitly given, using the effective user
+id. Group settings are specified at <strong>branch level</strong>. The URL has the following parts:
+<a class="ext-link" href="https://"><span class="icon">​</span>https://</a>&lt;host&gt;/access/&lt;slot&gt;, where &lt;host&gt; is the serving host,
+<tt>/access/</tt> addresses the database, and &lt;slot&gt; addresses the slot.
+It may be suffixed with arguments,
+depending on the operations, see the table below. A call with an argument looks
+like <a class="ext-link" href="https://"><span class="icon">​</span>https://</a>&lt;host&gt;/access/&lt;slot&gt;[argument:value].
+</p>
+<p>
+The API currently does not include direct permission manipulations. The default settings are useful most cases:
+</p>
+<ul><li>the creating user is the owner, and is the only user which may manipulate a branch's data (user has read and write access)
+</li><li>group has read access. Only the owner user may change the group of a branch. To make a branch public, group is set to <tt>public</tt>.
+</li><li>others have no access.
+</li></ul><p>
+This scheme allows for most sharing situations.
+</p>
+<table class="wiki">
+<tr><td> <strong>Description</strong>            </td><td> <strong>Method</strong> </td><td> <strong>Path</strong>  </td><td> <strong>Argument</strong>    </td><td> <strong>Download</strong> </td><td> <strong>Response code</strong> 
+</td></tr></table>
+<table class="wiki">
+<tr><td> Set group on a <strong>branch</strong>  </td><td> PUT    </td><td> /slot </td><td> [uid:uid][gid:group]   </td><td> Status   </td><td> Success: 202  
+</td></tr><tr><td> Get group on a <strong>branch</strong>  </td><td> GET    </td><td> /slot </td><td> [uid:uid]   </td><td> Listing  </td><td> Success: 200  
+</td></tr></table>
+<p>
+For status message formatting, see the section on lower level storage above.
+</p>
+<h3 id="Format:listing">Format: listing</h3>
+<p>
+The following format is used for the listing:
+</p>
+<div class="code"><pre><span class="nt">&lt;letsmt-ws&gt;</span>
+  <span class="nt">&lt;group&gt;</span>group name<span class="nt">&lt;/group&gt;</span>
+<span class="nt">&lt;/letsmt-ws&gt;</span>
+</pre></div><h2 id="Groupdatabase">Group database</h2>
+<p>
+All users are initially members of the group <em>public</em> and a private
+group, with the same name as the user. Newly created resources are assigned to
+the private group by default.
+</p>
+<p>
+A call to the group database API consists of a resource identifier, which may
+point out a collection of groups, a group or a user. It has the following parts:
+<a class="ext-link" href="https://"><span class="icon">​</span>https://</a>&lt;host&gt;/group/&lt;path&gt;, where &lt;host&gt; is the serving host, <tt>/group/</tt>
+addresses the group database, and &lt;path&gt; addresses the resource. The
+effective user is supplied as an argument, as it is only the creator of a group
+who may modify it. A call with an argument looks like
+<a class="ext-link" href="https://"><span class="icon">​</span>https://</a>&lt;host&gt;/group/&lt;path&gt;[uid:uid].
+</p>
+<table class="wiki">
+<tr><td> Description                  </td><td> Method </td><td> Path                </td><td> Arg       </td><td> Download </td><td> Response code 
+</td></tr></table>
+<table class="wiki">
+<tr><td> Create a group               </td><td> POST   </td><td> /groupname          </td><td> [uid:uid] </td><td> Status   </td><td> Success: 201  
+</td></tr><tr><td> Add a user to a group (group created if necessary) </td><td> PUT    </td><td> /groupname/username </td><td> [uid:uid] </td><td> Status   </td><td> Success: 202  
+</td></tr><tr><td> List groups                  </td><td> GET    </td><td> /                   </td><td>  </td><td> Listing  </td><td> Success: 200  
+</td></tr><tr><td> List users in group          </td><td> GET    </td><td> /groupname          </td><td>  </td><td> Listing  </td><td> Success: 200  
+</td></tr><tr><td> Delete a group   </td><td> DELETE </td><td> /groupname </td><td> [uid:uid] </td><td> Status   </td><td> Success: 202  
+</td></tr><tr><td> Delete a user from a group   </td><td> DELETE </td><td> /groupname/username </td><td> [uid:uid] </td><td> Status   </td><td> Success: 202  
+</td></tr></table>
+<p>
+For status message formatting, see the section on lower level storage above.
+</p>
+<h3 id="Format:listing1">Format: listing</h3>
+<p>
+The following format is used for the listing:
+</p>
+<div class="code"><pre><span class="nt">&lt;letsmt-ws&gt;</span>
+  <span class="nt">&lt;group</span> <span class="na">id=</span><span class="s">"group1 name"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;user</span> <span class="na">id=</span><span class="s">"user1"</span> <span class="nt">/&gt;</span>
+    ...
+  <span class="nt">&lt;/group&gt;</span>
+  <span class="nt">&lt;group</span> <span class="na">id=</span><span class="s">"groupN name"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;user</span> <span class="na">id=</span><span class="s">"user1"</span> <span class="nt">/&gt;</span>
+    ...
+  <span class="nt">&lt;/group&gt;</span>
+<span class="nt">&lt;/letsmt-ws&gt;</span>
+</pre></div><h2 id="Appendix">Appendix</h2>
+<h3 id="Errors">Errors</h3>
+<table class="wiki">
+<tr><td> 409 </td><td> user already member of group 
+</td></tr><tr><td> 403 </td><td> failed to add user to group  
+</td></tr><tr><td> 403 </td><td> not valid group              
+</td></tr><tr><td> 409 </td><td> already exists               
+</td></tr><tr><td> 403 </td><td> cannot find/read             
+</td></tr><tr><td> 403 </td><td> exception caught             
+</td></tr><tr><td> 403 </td><td> system level failure         
+</td></tr><tr><td> 403 </td><td> init failure                 
+</td></tr><tr><td> 403 </td><td> failed to create group       
+</td></tr><tr><td> 403 </td><td> other error                  
+</td></tr><tr><td> 403 </td><td> insufficient                 
+</td></tr><tr><td> 403 </td><td> not implemented              
+</td></tr><tr><td> 403 </td><td> permission denied            
+</td></tr><tr><td> 403 </td><td> not valid user               
+</td></tr></table>
+</div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositoryWebService?action=diff&amp;version=25" title="Version 25 by joerg">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2011-02-02T09%3A52%3A25Z&amp;precision=second" title="See timeline at Feb 2, 2011, 9:52:25 AM">10 years ago</a></span>
+            <span class="trac-print">Last modified on Feb 2, 2011, 9:52:25 AM</span>
+          </div>
+        
+        
+      </div>
+      
+    <div id="attachments">
+        <h3 class="foldable">Attachments <span class="trac-count">(2)</span></h3>
+        <div>
+          <ul>
+              <li>
+    <a href="../attachment/wiki/RepositoryWebService/webservice_api.pdf.html" title="View attachment">webservice_api.pdf</a><a href="../raw-attachment/wiki/RepositoryWebService/webservice_api.pdf" class="trac-rawlink" title="Download">​</a>
+       (<span title="239076 bytes">233.5 KB</span>) -
+      added by <em>jorgtied</em> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2010-11-18T12%3A57%3A43Z&amp;precision=second" title="See timeline at Nov 18, 2010, 12:57:43 PM">10 years ago</a>.
+                <q>Webservice API</q>
+              </li>
+              <li>
+    <a href="../attachment/wiki/RepositoryWebService/webservice_api_v2.pdf.html" title="View attachment">webservice_api_v2.pdf</a><a href="../raw-attachment/wiki/RepositoryWebService/webservice_api_v2.pdf" class="trac-rawlink" title="Download">​</a>
+       (<span title="314563 bytes">307.2 KB</span>) -
+      added by <em>joerg</em> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2010-11-30T07%3A38%3A39Z&amp;precision=second" title="See timeline at Nov 30, 2010, 7:38:39 AM">10 years ago</a>.
+                <q>new version of webservice API including metadata handling</q>
+              </li>
+          </ul>
+          <p>
+            Download all attachments as: <a rel="nofollow" href="../zip-attachment/wiki/RepositoryWebService/index.html">.zip</a>
+          </p>
+        </div>
+    </div>
+
+    </div>
+    <script type="text/javascript">
+        jQuery.loadStyleSheet("/letsmt-trac/pygments/trac.css", "text/css");
+    </script>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositoryWebService?format=txt">Plain Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositoryWebService?format=tex">Latex</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositoryWebService?format=pdf">Latex-Pdf</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

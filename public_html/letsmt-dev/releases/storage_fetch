@@ -1,0 +1,470 @@
+#!/usr/bin/env perl
+#-*-perl-*-
+#
+#-------------------------------------------------------------------------
+# Joerg Tiedemann                            jorg.tiedemann@lingfil.uu.se
+#
+#
+#  -u user  repository user
+#  -f ..... fast fetching (fetch entire parallel corpus, not individual files!)
+#           (obsolete! ---> this is now default!)
+#  -s ..... switch off fast fetching (=slow fetching)
+#  -v ..... verbose
+#  -h ..... help screen
+#
+
+
+use strict;
+use FindBin;                       # this is only needed if we use the
+use lib $FindBin::Bin.'/../lib';   # development version in src ....
+
+use LetsMT;
+use LetsMT::Corpus;
+use LetsMT::WebService::Storage;
+
+use File::Basename;
+use XML::Simple;
+use Getopt::Std;
+use vars qw($opt_h $opt_u $opt_v $opt_f $opt_s);
+
+getopts('hu:vfs');
+
+$opt_f = 1;               # fast fetching is now default!
+$opt_f = 0 if ($opt_s);   # switch off if slow fetching is selected!
+
+my $config = shift(@ARGV);
+
+my $letsmt = new LetsMT;
+my $corpus = new LetsMT::Corpus;
+my $repo   = new LetsMT::WebService::Storage;
+
+&usage unless ($config);
+
+if ($config=~/^https?:\/\//){
+    $config = $repo->fetch($config,$opt_u);
+}
+&usage && die "cannot open config-file '$config'!\n" unless (-e $config);
+
+
+# parse configuration file
+my $xml = XMLin($config, ForceArray => ['tm', 'lm', 'corpus'], KeyAttr => '' );
+die "cannot parse config-file '$config'!\n" if (ref($xml) ne 'HASH');
+
+
+
+my $user = $opt_u ? $opt_u : $xml->{user};
+
+#-------------------------------------------
+# fetch all training data sets
+#-------------------------------------------
+
+if (ref($xml->{tm}) eq 'ARRAY'){
+    foreach my $tm (@{$xml->{tm}}){
+	&FetchParallel($tm,$user);
+    }
+}
+if (ref($xml->{lm}) eq 'ARRAY'){
+    foreach my $lm (@{$xml->{lm}}){
+	&FetchMonolingual($lm,$user);
+    }
+}
+if (ref($xml->{tuning}) eq 'HASH'){
+    &FetchParallel($xml->{tuning},$user);
+}
+if (ref($xml->{evaluation}) eq 'HASH'){
+    &FetchParallel($xml->{evaluation},$user);
+}
+
+
+
+
+###############################################################
+
+
+
+
+
+sub FetchParallel{
+    my ($tm,$user)=@_;
+
+    # need to have at least one corpus
+    return 0 unless (ref($$tm{corpus}) eq 'ARRAY');
+
+    my %InAttr = (-uid => $user, 
+		  -type => 'xces',
+		  -reuse_local_files => $opt_f);
+
+    my %OutAttr = (-type => 'moses',
+		   -mode => 'write',          # open in write-mode
+		   -encoding => 'utf-8');     # UTF-8 is our standard!
+
+    my $filename = $$tm{name} || 'para'.$$tm{id};
+    $OutAttr{-file} = $filename;
+
+    # additional filter
+    my %filter = (-filter_max_length => get_filter($tm,'length','max'),
+		  -filter_link_type  => get_filter($tm,'links','type'));
+    my $skip = get_filter($tm,'sample','skip');
+    my $max = get_filter($tm,'sample','size');
+	
+    foreach (keys %filter){$InAttr{$_}  = $filter{$_};}
+#    foreach (keys %filter){$OutAttr{$_} = $filter{$_};}
+
+    print "\nfetch parallel data $filename ...\n";
+    &fetch($tm,\%InAttr,\%OutAttr,$max,$skip);
+}
+
+
+
+sub FetchMonolingual{
+    my ($lm,$user)=@_;
+
+    my %InAttr = (-uid => $user, 
+		  -type => 'xml');
+
+    my %OutAttr = (-type => 'text',
+		   -mode => 'write',          # open in write-mode
+		   -encoding => 'utf-8');     # UTF-8 is our standard!
+
+    # need to have at least one corpus
+    return 0 unless (ref($$lm{corpus}) eq 'ARRAY');
+
+    my $filename = $$lm{name} || 'mono'.$$lm{id};
+    $OutAttr{-file} = $filename;
+
+    # additional filter
+    my %filter = (-filter_max_length => get_filter($lm,'length','max'));
+    my $skip = get_filter($lm,'sample','skip');
+    my $max = get_filter($lm,'sample','size');
+
+    foreach (keys %filter){$InAttr{$_}  = $filter{$_};}
+#    foreach (keys %filter){$OutAttr{$_} = $filter{$_};}
+
+    print "\nfetch monolingual corpus $filename ...\n";
+    &fetch($lm,\%InAttr,\%OutAttr,$max,$skip);
+}
+
+
+
+
+
+
+
+
+
+sub get_filter{
+    my $config = shift;
+    my $key    = pop(@_);
+    my @para   = @_;
+
+    return undef unless (ref($config) eq 'HASH');
+    return undef unless (ref($$config{filter}) eq 'HASH');
+    $config = $$config{filter};
+
+    foreach (@para){
+	return undef unless (ref($$config{$_}) eq 'HASH');
+	$config = $$config{$_};
+    }
+    return $$config{$key};
+}
+
+
+# fetch & convert TM files 
+
+sub fetch{
+    my ($config,$InPara,$OutPara,$max,$skip)=@_;
+
+    my $output = $letsmt->new_corpusfile(%{$OutPara});
+
+    my $count=0;
+    
+    # fetch and convert all corpora
+    foreach my $c (@{$$config{corpus}}){
+	my $LocalPath = $repo->fetch($c,$user);
+	my $LocalDir = $LocalPath;
+	if (! -d $LocalPath){ $LocalDir = dirname($LocalPath); }
+
+	# add repository path to corpus objects
+	# this is required for sentence alignment files 
+	# in which fromDoc and toDoc should be relative to:
+	#
+	#   LETSMT_URL/corpusname/xml
+
+	my ($corpusName) = split(/\//,$LocalDir);
+	my $repoHome = $c;
+	$repoHome=~s/(\/xml\/).*$/$1/;
+#	my $repoHome = $ENV{LETSMT_URL}."/storage/$corpusName/$user/xml";
+	$$InPara{-repository_home} = $repoHome;
+
+	# options: fast --> fetch all XML files at once for 
+	#          a complete parallel corpus!!!
+	# - check if last part of the path is a language pair
+	# - retrieve all files for the two aligned languages
+	if ($opt_f){
+	    my @parts = split(/\//,$c);
+	    my $last = pop(@parts);
+	    if ($parts[-1] eq 'xml' && $last=~/^(.*)-(.*)$/){
+		my $srclang = $1;
+		my $trglang = $2;
+		my $path = join('/',@parts);
+		print "fetch entire corpus for language '$srclang'\n";
+		$repo->fetch($path.'/'.$srclang,$user);
+		print "fetch entire corpus for language '$trglang'\n";
+		$repo->fetch($path.'/'.$trglang,$user);
+	    }
+	}
+
+	my @xmlfiles = $corpus->find_xml_files($LocalDir);
+	foreach my $file (@xmlfiles){
+	    $$InPara{-file} = $file;
+	    my $input  = $letsmt->new_corpusfile(%{$InPara});
+	    $count=convert($input,$output,$max,\$skip,$count);
+	    $input->close();
+	    last if ($max && $count>=$max);
+	}
+    }
+
+    $output->close();
+}
+
+
+####################################################################
+
+
+
+# convert data from internal LetsMT format to Moses format
+# optional: skip the first <skip> entries and write max <max> entries
+
+sub convert{
+    my ($input,$output,$max,$skip,$count) = @_;
+
+    print "convert $input->{-file}!\n" if ($opt_v);
+    local $| = 1;
+#    my $count=0;
+    my %data=();
+    while ($input->read(\%data)){
+	if ($$skip){
+	    $$skip--;
+	    %data=();
+	    next;
+	}
+	if ($output->write(\%data)){
+	    $count++;
+	    last if ($max && $count>=$max);	
+	    print '.' if (! ($count % 10000));
+	    print "$count\n" if (! ($count % 100000));
+	}
+	%data=();           # reset data hash (otherwise data will be added)
+    }
+    print "done!\n" if ($opt_v);
+    return $count;
+}
+
+
+
+
+sub usage{
+    print <<END
+
+NAME
+    letsmt_fetch - a script for fetching training data from the LetsMT
+    repositories
+
+USAGE
+    letsmt_fetch [OPTIONS] config_file
+
+    OPTIONS
+
+      -u user ..... user name (overwrite user name in config file)
+      -s .......... "slow" fetching (fetch files one by one)
+      -v .......... verbose output
+      -h .......... show help
+
+Description
+    letsmt_fetch reads a simple XML-based configuration file and fetches all
+    the data files specified in 'tm', 'lm', 'tuning' and 'evaluation'
+
+    Configuration files have to look like the following example:
+
+  <SMT>
+    <!-- this part is relevant to corpus extraction from repository -->
+    <user>jorgtied</user>
+    <srclang>sv</srclang>
+    <trglang>en</trglang>
+    <tm id="1" name="para1">
+     <corpus>EUconst/user/xml/en-sv</corpus>
+     <corpus>OpenOffice/user/xml/en-sv</corpus>
+     <filter>
+       <sample skip="1000" />
+     </filter>
+   </tm>
+   <tm id="2" name="para2">
+     <corpus>KDE4/user/xml/en-sv</corpus>
+     <corpus>Europarl/user/xml/en-sv/ep-05-03-07.xml</corpus>
+     <corpus>Europarl/user/xml/en-sv/ep-05-03-08.xml</corpus>
+     <corpus>Europarl/user/xml/en-sv/ep-05-03-13.xml</corpus>
+     <filter>
+       <links type="1:1" />
+     </filter>
+   </tm>
+   <lm id="1" name ="mono1">
+     <corpus>EUconst/user/xml/en</corpus>
+     <corpus>KDE4/user/xml/en</corpus>
+     <filter>
+       <sample skip="1000" />
+     </filter>
+   </lm>
+   <tuning name="tune">
+     <corpus>EUconst/user/xml/en-sv</corpus>
+     <filter>
+       <sample size="500" />
+     </filter>
+   </tuning>
+   <evaluation name="eval">
+     <corpus>EUconst/user/xml/en-sv</corpus>
+     <filter>
+       <sample skip="500" size="500" />
+     </filter>
+   </evaluation>
+
+   <!-- various training and decoding options begin here -->
+  </SMT>
+
+    Note that you can use the filter arguments 'sample - skip' and 'sample -
+    size' to create disjoint sets for training, tuning and evaluation from
+    the same data set! In the example above, the first 500 sentence pairs
+    from EUconst will be used for tuning, the following 500 for testing and
+    the remaining for testing.
+
+    Caveat: Other filters (like link type) may destroy this feature!
+
+    If the corpus is a directory: All files XML-files in all its
+    sub-directories will be processed. For the skip/size options this should
+    be safe because the files are always processed in alphabetical order.
+
+    Some filters are better to apply after fetching. For example, a length
+    filter requires tokenzied text! Make sure to run the clean-corpus
+    script first before using the output of letsmt_fetch for SMT training!
+
+
+END
+
+}
+
+
+
+__END__
+
+
+=head1 NAME
+
+letsmt_fetch - a script for fetching training data from the LetsMT repositories
+
+=head1 USAGE
+
+letsmt_fetch [OPTIONS] config_file
+
+OPTIONS
+
+  -u user ..... user name (overwrite user name in config file)
+  -s .......... "slow" fetching (fetch files one by one)
+  -v .......... verbose output
+  -h .......... show help
+
+=head1 Description
+
+letsmt_fetch reads a simple XML-based configuration file and fetches all the data files specified in 'tm', 'lm', 'tuning' and 'evaluation'
+
+Configuration files have to look like the following example:
+
+  <SMT>
+    <!-- this part is relevant to corpus extraction from repository -->
+    <user>jorgtied</user>
+    <srclang>sv</srclang>
+    <trglang>en</trglang>
+    <tm id="1" name="para1">
+     <corpus>EUconst/user/xml/en-sv</corpus>
+     <corpus>OpenOffice/user/xml/en-sv</corpus>
+     <filter>
+       <sample skip="1000" />
+     </filter>
+   </tm>
+   <tm id="2" name="para2">
+     <corpus>KDE4/user/xml/en-sv</corpus>
+     <corpus>Europarl/user/xml/en-sv/ep-05-03-07.xml</corpus>
+     <corpus>Europarl/user/xml/en-sv/ep-05-03-08.xml</corpus>
+     <corpus>Europarl/user/xml/en-sv/ep-05-03-13.xml</corpus>
+     <filter>
+       <links type="1:1" />
+     </filter>
+   </tm>
+   <lm id="1" name ="mono1">
+     <corpus>EUconst/user/xml/en</corpus>
+     <corpus>KDE4/user/xml/en</corpus>
+     <filter>
+       <sample skip="1000" />
+     </filter>
+   </lm>
+   <tuning name="tune">
+     <corpus>EUconst/user/xml/en-sv</corpus>
+     <filter>
+       <sample size="500" />
+     </filter>
+   </tuning>
+   <evaluation name="eval">
+     <corpus>EUconst/user/xml/en-sv</corpus>
+     <filter>
+       <sample skip="500" size="500" />
+     </filter>
+   </evaluation>
+
+   <!-- various training and decoding options begin here -->
+  </SMT>
+
+
+Note that you can use the filter arguments 'sample - skip' and 'sample - size' to create disjoint sets for training, tuning and evaluation from the same data set! In the example above, the first 500 sentence pairs from EUconst will be used for tuning, the following 500 for testing and the remaining for testing.
+
+Caveat: Other filters (like link type) may destroy this feature!
+Note: Put only one tag of each filter type in <filter>. otherwise the parser will not find the parameter!
+
+If the corpus is a directory: All files XML-files in all its sub-directories will be processed. For the skip/size options this should be safe because the files are always processed in alphabetical order.
+
+Some filters are better to apply after fetching. For example, a length
+filter requires tokenzied text! Make sure to run the clean-corpus
+script first before using the output of letsmt_fetch for SMT training!
+
+When fast fetching is switched on (default): letsmt_fetch will fetch all monolingual for a given parallel corpus at once which makes the entire fetching process much faster. Otherwise, aligned documents will be fetched one by one. This is the default behaviour now! Fast fetching can be switched off by using option -s (slow fetching)
+
+=head1 TODO
+
+=over
+
+=item *
+
+Some filters slow fetching down. The length filter is a bit weak because text is not tokenized yet. Length based filtering is probably better to do after tokenization using the standard clean-corpus script from Moses.
+
+=item *
+
+The script creates local copies of repository files before converting. There may be conflicts with existing directories (use tempdir?) and the script does not clean-up the directory structures properly afterwards.
+
+=item *
+
+... there are probably many more things to do ... Most important: Speed it up!
+
+=back
+
+
+=head1 AUTHOR
+
+Joerg Tiedemann, E<lt>jorg.tiedemann@lingfil.uu.seE<gt>
+
+=head1 COPYRIGHT AND LICENSE
+
+Copyright (C) 2010 by Joerg Tiedemann
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself, either Perl version 5.8.8 or,
+at your option, any later version of Perl 5 you may have available.
+
+
+=cut

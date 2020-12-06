@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      UseLetsMT – LetsMT
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/letsmt-trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/UseLetsMT?format=txt" type="text/x-trac-wiki" title="Plain Text" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/UseLetsMT?format=tex" type="text/x-trac-wiki" title="Latex" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/UseLetsMT?format=pdf" type="text/x-trac-wiki" title="Latex-Pdf" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.letsmt.eu/"><img src="http://stp.lingfil.uu.se/~joerg/LetsMT/letsmt.jpg" alt="LetsMT" width="100" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/letsmt-trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/letsmt-trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="UseLetsMT.html" title="View UseLetsMT">UseLetsMT</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/letsmt-trac/wiki/UseLetsMT?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><p>
+<a class="missing wiki">TOC?</a>
+</p>
+<h1 id="UsingTheLetsMTResourceRepositorySoftware">Using The LetsMT Resource Repository Software</h1>
+<p>
+The easiest way to use the software is by using letsmt scripts:
+</p>
+<ul><li><a class="ext-link" href="http://opus.lingfil.uu.se/letsmt-dev/doc//letsmt_rest.html"><span class="icon">​</span>letsmt_rest</a>
+</li><li><a class="ext-link" href="http://opus.lingfil.uu.se/letsmt-dev/doc//letsmt_import.html"><span class="icon">​</span>letsmt_import</a>
+</li><li><a class="ext-link" href="http://opus.lingfil.uu.se/letsmt-dev/doc//letsmt_fetch.html"><span class="icon">​</span>letsmt_fetch</a>
+</li><li><a class="ext-link" href="http://opus.lingfil.uu.se/letsmt-dev/doc//letsmt_convert.html"><span class="icon">​</span>letsmt_convert</a>
+</li><li><a class="ext-link" href="http://opus.lingfil.uu.se/letsmt-dev/doc//letsmt_tokenize.html"><span class="icon">​</span>letsmt_tokenize</a>
+</li><li><a class="ext-link" href="http://opus.lingfil.uu.se/letsmt-dev/doc//letsmt_detokenize.html"><span class="icon">​</span>letsmt_detokenize</a>
+</li><li><a class="ext-link" href="http://opus.lingfil.uu.se/letsmt-dev/doc//letsmt_align.html"><span class="icon">​</span>letsmt_align</a>
+</li><li><a class="ext-link" href="http://opus.lingfil.uu.se/letsmt-dev/doc//letsmt_chardetect.html"><span class="icon">​</span>letsmt_chardetect</a>
+</li><li><a class="ext-link" href="http://opus.lingfil.uu.se/letsmt-dev/doc//letsmt_langdetect.html"><span class="icon">​</span>letsmt_langdetect</a>
+</li></ul><h2 id="letsmt_rest">letsmt_rest</h2>
+<p>
+This is a frontend to most calls in the webservice API. For more information about all its options, please, look at the <a class="ext-link" href="http://opus.lingfil.uu.se/letsmt-dev/doc//letsmt_rest.html"><span class="icon">​</span>manpages</a>:
+</p>
+<p>
+<tt> man letsmt_rest </tt>
+</p>
+<p>
+Here are some common usage examples:
+</p>
+<ul><li>create a new user
+</li><li>create a new slot
+</li><li>upload (and import) a TMX file
+</li><li>check data uploads, imports and metadata
+</li></ul><div class="code"><pre>letsmt_rest -u username create_user
+letsmt_rest -u username -s slotname create
+letsmt_rest -u username -s slotname import tmx/MyMemory.tmx
+
+<span class="c"># check whether the file has been uploaded:
+</span>letsmt_rest -u username -s slotname -p uploads/tmx show
+
+<span class="c"># check its metadata (check import progress/problems etc):
+</span>letsmt_rest -u username -s slotname -p uploads/tmx/MyMemory.tmx showmeta
+
+<span class="c"># wait for the import to finish ... and check if appropriate XML files are created:
+# (xx and yy are the language IDs used in your TMX; xx and yy should be alphabetically sorted)
+</span>letsmt_rest -u username -s slotname -p xml show
+letsmt_rest -u username -s slotname -p xml/xx show
+letsmt_rest -u username -s slotname -p xml/yy show
+letsmt_rest -u username -s slotname -p xml/xx-yy show
+</pre></div><p>
+The latest version of letsmt_rest can also handle revsions using '-r' or using '@xx'-extensions to the resource path (only if a version-controlled backend is used). For example, you can fetch revision 4 of the resource <tt>xml/en</tt> using the following commands:
+</p>
+<div class="code"><pre><span class="c"># fetch revision 4 of xml/en:
+</span>letsmt_rest -u username -s slotname -p xml/en -r 4 fetch
+
+<span class="c"># the same using the path-extension syntax
+</span>letsmt_rest -u username -s slotname -p xml/en@4 fetch
+</pre></div><p>
+The same works with letsmt_rest commands like 'show' and 'cat'. The -r flag can also be used to show the entire history of a given resource, for example ('HEAD' refers to the last revision of the resource):
+</p>
+<div class="code"><pre><span class="c"># list information including revision history for xml/en in slot slotname:
+</span>letsmt_rest -u username -s slotname -r HEAD -d xml/en show
+
+&lt;letsmt-ws <span class="nv">version</span><span class="o">=</span><span class="s2">"55"</span>&gt;
+  &lt;list <span class="nv">path</span><span class="o">=</span><span class="s2">"/test/joerg/xml/en"</span>&gt;
+    &lt;entry <span class="nv">kind</span><span class="o">=</span><span class="s2">"file"</span>&gt;
+      &lt;name&gt;small.xml&lt;/name&gt;
+      &lt;commit <span class="nv">revision</span><span class="o">=</span><span class="s2">"42"</span>&gt;
+        &lt;author&gt;joerg&lt;/author&gt;
+        &lt;date&gt;2012-05-03T10:37:58.652610Z&lt;/date&gt;
+      &lt;/commit&gt;
+      &lt;group&gt;public&lt;/group&gt;
+      &lt;owner&gt;joerg&lt;/owner&gt;
+      &lt;size&gt;266&lt;/size&gt;
+    &lt;/entry&gt;
+    &lt;<span class="nb">history </span><span class="nv">revision</span><span class="o">=</span><span class="s2">"13"</span>&gt;2012-05-03 11:41:15 +0200 <span class="o">(</span>Thu, 03 May 2012<span class="o">)</span>&lt;/history&gt;
+    &lt;<span class="nb">history </span><span class="nv">revision</span><span class="o">=</span><span class="s2">"42"</span>&gt;2012-05-03 12:37:58 +0200 <span class="o">(</span>Thu, 03 May 2012<span class="o">)</span>&lt;/history&gt;
+    &lt;<span class="nb">history </span><span class="nv">revision</span><span class="o">=</span><span class="s2">"55"</span>&gt;2012-05-04 11:30:43 +0200 <span class="o">(</span>Fri, 04 May 2012<span class="o">)</span>&lt;/history&gt;
+  &lt;/list&gt;
+  &lt;status <span class="nv">code</span><span class="o">=</span><span class="s2">"0"</span> <span class="nv">location</span><span class="o">=</span><span class="s2">"/storage/test/joerg/xml/en"</span> <span class="nv">operation</span><span class="o">=</span><span class="s2">"GET"</span> <span class="nb">type</span><span class="o">=</span><span class="s2">"ok"</span>&gt;&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+</pre></div><h2 id="letsmt_import">letsmt_import</h2>
+<p>
+This is the script that will do the automatic document imports. It will be called internally but you can also run it manually on the command line. For more details on its usage check the <a class="ext-link" href="http://opus.lingfil.uu.se/letsmt-dev/doc//letsmt_import.html"><span class="icon">​</span>manpages</a>:
+</p>
+<p>
+<tt> man letsmt_import </tt>
+</p>
+<p>
+Here is an example:
+</p>
+<ul><li>assume that you have a pdf file 'mypdf.pdf' in your slot 'slotname' that needs to be imported
+</li><li>Important: all uploads should be in the <tt>uploads</tt> directory
+</li><li>Important: sub-directories in <tt>uploads</tt> should correspond to the file format (pdf in our case)
+</li><li>Important: monolingual files should be in sub-directories corresponding to the language of their contents (for example 'en' for English)
+</li></ul><div class="code"><pre><span class="c"># upload the pdf file and check if the it is really there:
+</span>letsmt_rest -u username -s slotname -p uploads/pdf/en upload mypdf.pdf
+letsmt_rest -u username -s slotname -p uploads/pdf/en show
+
+<span class="c"># import with standard settings
+</span>letsmt_import -u username -s slotname -p uploads/pdf/en/mypdf.pdf
+
+<span class="c"># check if the import was successful
+</span>letsmt_rest -u username -s slotname -p uploads/pdf/en/mypdf.pdf showmeta
+
+<span class="c"># check if the XML file was created
+</span>letsmt_rest -u username -s slotname -p xml/en/mypdf.xml show
+letsmt_rest -u username -s slotname -p xml/en/mypdf.xml showmeta
+
+<span class="c"># show the first 10 lines of the XML code
+</span>letsmt_rest -u username -s slotname -p xml/en/mypdf.xml -T 10 cat
+</pre></div><p>
+Some import handlers allow alternative modes. Try, for example, the 'layout' mode for the PDF converter:
+</p>
+<div class="code"><pre><span class="c"># import with standard settings
+</span>letsmt_import -u username -s slotname -p uploads/pdf/en/mypdf.pdf -m layout
+
+<span class="c"># show the first 10 lines of the XML code
+</span>letsmt_rest -u username -s slotname -p xml/en/mypdf.xml -T 10 cat
+</pre></div><h2 id="letsmt_langdetect">letsmt_langdetect</h2>
+<p>
+This is a tool for language detection.
+Here are some common usage examples:
+</p>
+<div class="code"><pre><span class="c"># detect the language in a given text file
+</span>letsmt_langdetect myfile.txt
+
+<span class="c"># detect the language of a repository resource
+</span>letsmt_langdetect -u username -s slotname -p relative/path/to/myfile.txt
+
+<span class="c"># detect the language of a resource in a different format (will be converted to text first!)
+</span>letsmt_langdetect -u username -s slotname -p uploads/pdf/en/mypdf.pdf
+
+<span class="c"># create a new language model for language 'lang' from text file 'myfile.txt'
+</span>letsmt_langdetect -n lang myfile.txt
+</pre></div><p>
+The last example tries to install the language model in the central LM home directory. This fails if you do not have permissions to create files there or if the file already exists. In that case, letsmt_langdetect will try to safe the file in the current directory. 'lang' can be a valid ISO639 code or a valid language name. Internally, this will be converted into a ISO639 2-letter code if possible. This code will be used to store the language model (for example 'en.lm' for English).
+</p>
+<p>
+Look also at the <a class="ext-link" href="http://opus.lingfil.uu.se/letsmt-dev/doc//letsmt_langdetect.html"><span class="icon">​</span>manpages</a>:
+</p>
+<p>
+<tt> man letsmt_langdetect </tt>
+</p>
+</div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/letsmt-trac/wiki/UseLetsMT?action=diff&amp;version=10" title="Version 10 by joerg">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2012-05-04T14%3A23%3A20Z&amp;precision=second" title="See timeline at May 4, 2012, 2:23:20 PM">9 years ago</a></span>
+            <span class="trac-print">Last modified on May 4, 2012, 2:23:20 PM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <script type="text/javascript">
+        jQuery.loadStyleSheet("/letsmt-trac/pygments/trac.css", "text/css");
+    </script>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/UseLetsMT?format=txt">Plain Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/UseLetsMT?format=tex">Latex</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/UseLetsMT?format=pdf">Latex-Pdf</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Persist</title>
+<link rel="stylesheet" href="../../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#constructor">CONSTRUCTOR</a></li>
+	<li><a href="#methods">METHODS</a></li>
+	<ul>
+
+		<li><a href="#initialize"><code>initialize</code></a></li>
+		<li><a href="#init_instance"><code>init_instance</code></a></li>
+		<li><a href="#find"><code>find</code></a></li>
+		<li><a href="#retrieve"><code>retrieve</code></a></li>
+		<li><a href="#store"><code>store</code></a></li>
+		<li><a href="#drop_all_content"><code>drop_all_content</code></a></li>
+		<li><a href="#create_table"><code>create_table</code></a></li>
+		<li><a href="#drop_table"><code>drop_table</code></a></li>
+		<li><a href="#dosql"><code>dosql</code></a></li>
+		<li><a href="#myconnect"><code>myconnect</code></a></li>
+		<li><a href="#table_exists"><code>table_exists</code></a></li>
+	</ul>
+
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>LetsMT::Repository::Persist - persistence layer between modules for object persistence and the underlying Persistent::MySQL</p>
+<p>
+</p>
+<hr />
+<h1><a name="constructor">CONSTRUCTOR</a></h1>
+<p>Does minimal blessing.</p>
+<p>Returns: a Persistent::MySQL-derived object</p>
+<p>
+</p>
+<hr />
+<h1><a name="methods">METHODS</a></h1>
+<p>
+</p>
+<h2><a name="initialize"><code>initialize</code></a></h2>
+<p>Initialize the instance by creating the table if necessary, and setting up the Persistence::MySQL-part.</p>
+<p>Returns: nothing</p>
+<p>
+</p>
+<h2><a name="init_instance"><code>init_instance</code></a></h2>
+<pre>
+ &amp;$persist-&gt;init_instance ($self, $query)</pre>
+<p>Stores an object in the store.</p>
+<p>Returns: the instance object, or undef if it already existed.</p>
+<p>
+</p>
+<h2><a name="find"><code>find</code></a></h2>
+<p>
+</p>
+<h2><a name="retrieve"><code>retrieve</code></a></h2>
+<pre>
+ &amp;$persist-&gt;retrieve($self, $sql)</pre>
+<p>Retrieves an object from the data store.</p>
+<p>Returns: true or false depending on whether there was such an object.</p>
+<p>
+</p>
+<h2><a name="store"><code>store</code></a></h2>
+<p>Persist the object to the datastore.</p>
+<p>Returns: true or false</p>
+<p>
+</p>
+<h2><a name="drop_all_content"><code>drop_all_content</code></a></h2>
+<p>Clear the datastore.</p>
+<p>Returns: nothing</p>
+<p>
+</p>
+<h2><a name="create_table"><code>create_table</code></a></h2>
+<p>Creates the table in the database.</p>
+<p>Returns: true or false</p>
+<p>
+</p>
+<h2><a name="drop_table"><code>drop_table</code></a></h2>
+<p>Drop the objects table.</p>
+<p>Returns: true or false</p>
+<p>
+</p>
+<h2><a name="dosql"><code>dosql</code></a></h2>
+<pre>
+ &amp;$persist-&gt;dosql ($sql, $moreopts)</pre>
+<p>Execute an SQL statement.
+<code>$moreopts</code> may be used to control the DBI connection.</p>
+<p>Returns: true or false</p>
+<p>
+</p>
+<h2><a name="myconnect"><code>myconnect</code></a></h2>
+<pre>
+ &amp;$persist-&gt;myconnect ($moreopts)</pre>
+<p>Connects to the database using parameters from the environment (DBNAME, DBPORT, DBHOST, DBUSER, DBPASS).
+<code>$moreopts</code> may be used to control the DBI connection.</p>
+<p>Returns: database handler object, or undef</p>
+<p>
+</p>
+<h2><a name="table_exists"><code>table_exists</code></a></h2>
+<pre>
+ table_exists ($table)</pre>
+<p>Check whether a table exists.</p>
+<p>Returns: true or false</p>
+
+</body>
+
+</html>

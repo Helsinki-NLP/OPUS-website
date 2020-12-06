@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      LanguageIdentification – LetsMT
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/letsmt-trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/LanguageIdentification?format=txt" type="text/x-trac-wiki" title="Plain Text" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/LanguageIdentification?format=tex" type="text/x-trac-wiki" title="Latex" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/LanguageIdentification?format=pdf" type="text/x-trac-wiki" title="Latex-Pdf" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.letsmt.eu/"><img src="http://stp.lingfil.uu.se/~joerg/LetsMT/letsmt.jpg" alt="LetsMT" width="100" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/letsmt-trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/letsmt-trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="LanguageIdentification.html" title="View LanguageIdentification">LanguageIdentification</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/letsmt-trac/wiki/LanguageIdentification?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><h1 id="LanguageIdentification">Language Identification</h1>
+<p>
+With pre-trained models:
+</p>
+<ul><li>related language discrimination: <a class="ext-link" href="https://bitbucket.org/tiedemann/blacklist-classifier"><span class="icon">​</span>https://bitbucket.org/tiedemann/blacklist-classifier</a>
+</li><li><a class="ext-link" href="https://github.com/saffsd/langid.py"><span class="icon">​</span>https://github.com/saffsd/langid.py</a> (see also <a class="ext-link" href="http://www.aclweb.org/anthology-new/P/P12/P12-3005.pdf"><span class="icon">​</span>http://www.aclweb.org/anthology-new/P/P12/P12-3005.pdf</a>)
+</li><li><a class="ext-link" href="http://code.google.com/p/language-detection/"><span class="icon">​</span>http://code.google.com/p/language-detection/</a>
+</li><li>Google Chrome: <a class="ext-link" href="http://code.google.com/p/chromium-compact-language-detector/"><span class="icon">​</span>http://code.google.com/p/chromium-compact-language-detector/</a>
+</li><li>TextCat: <a class="ext-link" href="http://www.let.rug.nl/~vannoord/TextCat/"><span class="icon">​</span>http://www.let.rug.nl/~vannoord/TextCat/</a> (also: <a class="ext-link" href="http://software.wise-guys.nl/libtextcat/"><span class="icon">​</span>http://software.wise-guys.nl/libtextcat/</a>)
+</li><li>Apache Tika: <a class="ext-link" href="http://tika.apache.org/1.1/detection.html#Language_Detection"><span class="icon">​</span>http://tika.apache.org/1.1/detection.html#Language_Detection</a>
+</li><li><a class="ext-link" href="http://code.google.com/p/language-detection/"><span class="icon">​</span>http://code.google.com/p/language-detection/</a>
+</li><li>Lingua::Identify: <a class="ext-link" href="http://search.cpan.org/~ambs/Lingua-Identify-0.51/README"><span class="icon">​</span>http://search.cpan.org/~ambs/Lingua-Identify-0.51/README</a>
+</li><li>la-strings: <a class="ext-link" href="https://sourceforge.net/projects/la-strings"><span class="icon">​</span>https://sourceforge.net/projects/la-strings</a>
+</li><li>YALI: <a class="ext-link" href="http://ufal.mff.cuni.cz/~majlis/yali/"><span class="icon">​</span>http://ufal.mff.cuni.cz/~majlis/yali/</a> (many languages!!!)
+</li></ul><ul><li>langmatch: <a class="ext-link" href="https://launchpad.net/langmatch"><span class="icon">​</span>https://launchpad.net/langmatch</a>
+</li><li>Lingua::Ident: <a class="ext-link" href="http://search.cpan.org/~mpiotr/Lingua-Ident-1.7/Ident.pm"><span class="icon">​</span>http://search.cpan.org/~mpiotr/Lingua-Ident-1.7/Ident.pm</a>
+</li><li>Lingua::Lid: <a class="ext-link" href="http://search.cpan.org/~alinke/Lingua-Lid-0.03/lib/Lingua/Lid.pm"><span class="icon">​</span>http://search.cpan.org/~alinke/Lingua-Lid-0.03/lib/Lingua/Lid.pm</a> (requires commercial library)
+</li><li><a class="ext-link" href="https://github.com/feedbackmine/language_detector"><span class="icon">​</span>https://github.com/feedbackmine/language_detector</a>
+</li><li><a class="ext-link" href="https://github.com/peterc/whatlanguage"><span class="icon">​</span>https://github.com/peterc/whatlanguage</a>
+</li><li><a class="ext-link" href="http://pear.php.net/package/Text_LanguageDetect"><span class="icon">​</span>http://pear.php.net/package/Text_LanguageDetect</a>
+</li><li>other tools: <a class="ext-link" href="http://www.let.rug.nl/~vannoord/TextCat/competitors.html"><span class="icon">​</span>http://www.let.rug.nl/~vannoord/TextCat/competitors.html</a>
+</li><li><a class="ext-link" href="http://detectlanguage.com/"><span class="icon">​</span>http://detectlanguage.com/</a>
+</li><li>Tika:
+<ul><li><a class="ext-link" href="http://tika.apache.org/0.9/detection.html"><span class="icon">​</span>http://tika.apache.org/0.9/detection.html</a>
+</li><li><a class="ext-link" href="http://tika.apache.org/0.9/api/org/apache/tika/language/LanguageIdentifier.html"><span class="icon">​</span>http://tika.apache.org/0.9/api/org/apache/tika/language/LanguageIdentifier.html</a>
+</li></ul></li><li>various projects at Google code: <a class="ext-link" href="http://code.google.com/hosting/search?q=label:Languagedetection"><span class="icon">​</span>http://code.google.com/hosting/search?q=label:Languagedetection</a>
+</li></ul><p>
+Web services:
+</p>
+<ul><li>Google: 
+<ul><li><a class="ext-link" href="http://code.google.com/apis/ajax/playground/#language_detect"><span class="icon">​</span>http://code.google.com/apis/ajax/playground/#language_detect</a>
+</li><li><a class="ext-link" href="http://code.google.com/apis/language/translate/v1/using_rest_langdetect.html"><span class="icon">​</span>http://code.google.com/apis/language/translate/v1/using_rest_langdetect.html</a>
+</li></ul></li><li>Xerox: <a class="ext-link" href="http://open.xerox.com/Services/LanguageIdentifier/HowToUseTheApi"><span class="icon">​</span>http://open.xerox.com/Services/LanguageIdentifier/HowToUseTheApi</a>
+</li></ul><p>
+Info:
+</p>
+<ul><li>comparison: <a class="ext-link" href="http://java.dzone.com/articles/accuracy-and-performance"><span class="icon">​</span>http://java.dzone.com/articles/accuracy-and-performance</a>
+</li></ul><h2 id="Charactersetidentification">Character set identification</h2>
+<ul><li>with pre-trained models: <a class="ext-link" href="http://code.google.com/p/chared/"><span class="icon">​</span>http://code.google.com/p/chared/</a>
+</li><li>Mozilla: <a class="ext-link" href="https://github.com/batterseapower/libcharsetdetect"><span class="icon">​</span>https://github.com/batterseapower/libcharsetdetect</a> (also: <a class="ext-link" href="http://code.google.com/p/juniversalchardet/"><span class="icon">​</span>http://code.google.com/p/juniversalchardet/</a>)
+</li><li>looks nice: <a class="ext-link" href="http://chardet.feedparser.org/"><span class="icon">​</span>http://chardet.feedparser.org/</a>
+</li><li>enca: <a class="ext-link" href="http://gitorious.org/enca"><span class="icon">​</span>http://gitorious.org/enca</a>
+</li><li>utrac: <a class="ext-link" href="http://utrac.sourceforge.net/"><span class="icon">​</span>http://utrac.sourceforge.net/</a>
+</li><li>cpdetector: <a class="ext-link" href="http://cpdetector.sourceforge.net/"><span class="icon">​</span>http://cpdetector.sourceforge.net/</a>
+</li><li>convert_encoding (includes guess option): <a class="ext-link" href="https://github.com/goerz/convert_encoding.py"><span class="icon">​</span>https://github.com/goerz/convert_encoding.py</a>
+</li><li><a class="ext-link" href="http://www.cogsci.ed.ac.uk/~richard/ltxml2/ltguessencoding.html"><span class="icon">​</span>http://www.cogsci.ed.ac.uk/~richard/ltxml2/ltguessencoding.html</a>
+</li></ul></div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/letsmt-trac/wiki/LanguageIdentification?action=diff&amp;version=18" title="Version 18 by joerg">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2013-04-25T15%3A05%3A43Z&amp;precision=second" title="See timeline at Apr 25, 2013, 3:05:43 PM">8 years ago</a></span>
+            <span class="trac-print">Last modified on Apr 25, 2013, 3:05:43 PM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/LanguageIdentification?format=txt">Plain Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/LanguageIdentification?format=tex">Latex</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/LanguageIdentification?format=pdf">Latex-Pdf</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

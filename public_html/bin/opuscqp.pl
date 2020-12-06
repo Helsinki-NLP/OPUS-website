@@ -18,6 +18,8 @@ use Encode;
 
 use CWB::CL;
 
+$CGI::LIST_CONTEXT_WARN = 0;
+
 my %Attributes = ();				# cache requested attribute handles
 my $CorpusHandle = undef;
 
@@ -206,7 +208,7 @@ sub CorpusQueryForm{
     if (not $lang){return;}
 
     my %index=%corpora;
-    my $form= &startform();
+    my $form= &start_form();
 
 
     #---------------------------------------------------
@@ -369,7 +371,7 @@ sub CorpusQueryForm{
 	$form.=&table({-cellspacing=>"0"},caption(''),&Tr(\@rows));
     }
 
-    $form.= &endform();
+    $form.= &end_form();
     return &div({-class=>'query'},$form);
 }
 
@@ -586,7 +588,7 @@ sub RegistryLinks{
 
     my @rows=(&th({},['corpora','languages']));
 
-    my $CorpHtml = &startform();
+    my $CorpHtml = &start_form();
     my @corpora = sort keys %{$corpora};
 
     $CorpHtml .= &popup_menu(-name => 'corpus',
@@ -594,7 +596,7 @@ sub RegistryLinks{
 			     -values => \@corpora,
 			     -default => $corpus);
     $CorpHtml .= '<noscript><input type="submit" value="Submit"></noscript>';
-    $CorpHtml .= &endform();
+    $CorpHtml .= &end_form();
 
     my $LangHtml = '';
     my $baselink=&AddUrlParam($url,'corpus',$corpus);

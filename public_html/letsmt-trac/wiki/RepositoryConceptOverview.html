@@ -1,0 +1,354 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      RepositoryConceptOverview – LetsMT
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/letsmt-trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositoryConceptOverview?format=txt" type="text/x-trac-wiki" title="Plain Text" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositoryConceptOverview?format=tex" type="text/x-trac-wiki" title="Latex" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositoryConceptOverview?format=pdf" type="text/x-trac-wiki" title="Latex-Pdf" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.letsmt.eu/"><img src="http://stp.lingfil.uu.se/~joerg/LetsMT/letsmt.jpg" alt="LetsMT" width="100" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/letsmt-trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/letsmt-trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="RepositoryConceptOverview.html" title="View RepositoryConceptOverview">RepositoryConceptOverview</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositoryConceptOverview?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><p>
+<a class="missing wiki">TOC?</a>
+</p>
+<h1 id="Conceptualoverviewoftheresourcerepository">Conceptual overview of the resource repository</h1>
+<h2 id="Webservicefrontend">Web service frontend</h2>
+<p>
+The web service is implemented as a <a class="ext-link" href="http://perl.apache.org/"><span class="icon">​</span>mod_perl</a> handler, and as such, is initiated when Apache2 restarts or reloads, and then stays in memory.
+</p>
+<p>
+The handler module is <tt>src/perllib/LetsMT/lib/LetsMT/WWW/LetsMT_modperl_handler.pm</tt>.
+</p>
+<h3 id="Dispatchingrequestsfromtheclienttothebackend">Dispatching requests from the client to the backend</h3>
+<p>
+Apache relays requests to the handler, to the subroutine <tt>handler($r)</tt> where $r is the request object (see the mod_perl documentation for more info).
+</p>
+<p>
+A request consists of a set of parameters. The type of request is defined by the configuration of these parameters. The parameters are:
+</p>
+<ul><li>path_info - the string of the URI that comes after the request part, but not including the http parameters. For example, to the web service located at <tt>http://host/ws</tt>, the path_info is marked in bold: <tt>http://host/ws</tt><strong><tt>/storage/slot/branch/hey</tt></strong><tt>?foo=bar</tt>.
+</li><li>http request method - in the resource repository, only methods GET, POST, PUT and DELETE are used.
+</li><li>http parameters - last in the URL, initiated by a ?. For example, here the http parameters are marked in bold: <tt>http://host/ws/storage/slot/branch/hey?</tt><strong><tt>foo=bar&amp;fie=fum</tt></strong>. A deprecated notation also accepted by the repository is <tt>http://host/ws/storage/slot/branch/hey[</tt><strong><tt>foo=bar</tt></strong><tt>][</tt><strong>fie=fum</strong><tt>]</tt>
+</li></ul><p>
+The path_info is split using dash (/) as separator. The first element of the resulting array specifies the API to use in this request. Currently, the following APIs are available: storage, letsmt, access, group, metadata, admin. 
+</p>
+<p>
+Once initiation is ready, the request is encoded like $api_$method (for example <tt>storage_GET</tt>). A hash table <tt>%api_call_matrix</tt> maps such codes to the appropriate handlers. The chosen handler is then executed by one of two possible wrapper subroutines: 1) <tt>exec_report()</tt> for calls which produce XML as result, and 2) <tt>exec_raw_report()</tt> for calls which produce raw binary file contents as result. 
+</p>
+<h3 id="Returningresults">Returning results</h3>
+<p>
+The result is not returned from the wrapper, but rather printed to STDOUT directly back to the client. Please note that mod_perl is in control of the output buffer, and inserts HTTP response headers automatically.
+</p>
+<p>
+The resource repository modules each produce the actual XML structures that are printed to STDOUT by <tt>exec_report()</tt> and <tt>exec_raw_report()</tt>. The formatting of the XML is specified in <a class="wiki" href="RepositoryWebService.html">the API documentation</a>.
+</p>
+<h3 id="Handlingerrorsandexceptions">Handling errors and exceptions</h3>
+<p>
+Exceptions - errors that will prematurely interrupt the execution and return an error message to the client - are raised by calling the subroutine <tt>raise</tt> in <tt>src/perllib/LetsMT/lib/LetsMT/Repository/Err.pm</tt>. Technically, it calls the Perl builtin <tt>die()</tt> with a custom argument consisting of an object of the type <tt>LetsMT::WWW::LetsMT_modperl_handler_exception</tt>. Because all resource repository execution occurs in an <tt>eval { </tt>} environment from <tt>exec_report</tt> or <tt>exec_raw_report</tt> in <tt>LetsMT::WWW::LetsMT_modperl_handler</tt>, the <tt>die</tt> will be caught there, and the custom Exception object will be examined and reported appropriately.
+</p>
+<p>
+<tt>src/perllib/LetsMT/lib/LetsMT/Repository/Err.pm</tt> is also the place where the different type of errors are defined, each with an ID number, a HTTP response code and an explanatory message.
+</p>
+<h3 id="Loggingallkindsincludingwarningmessages">Logging (all kinds, including warning messages)</h3>
+<p>
+Logging is done by using the package <a class="ext-link" href="http://mschilli.github.com/log4perl/"><span class="icon">​</span>Log4Perl</a>. To use logging in a Perl program, the following actions should be taken:
+</p>
+<ol><li>the <tt>src/conf.sh</tt> should be in the environment. Alternatively, you can bypass this by creating a custom <tt>src/log4perl.conf</tt> which does not rely on the <tt>LETSMTLOG</tt> environmental variable (which points out the target log file).
+</li></ol><ol start="2"><li>your Perl program must initiate the logger: 
+<pre class="wiki">   use Log::Log4perl qw(get_logger :levels);
+   Log::Log4perl-&gt;init($ENV{LOG4PERLCONF});
+</pre></li></ol><p>
+It is of course possible to substitute $ENV{LOG4PERLCONF} with the path to the <tt>src/log4perl.conf</tt>.
+</p>
+<ol start="3"><li>write log messages by using:
+<pre class="wiki">    get_logger(type)-&gt;trace(message);
+    get_logger(type)-&gt;debug(message);
+    get_logger(type)-&gt;info(message);
+    get_logger(type)-&gt;warn(message);
+    get_logger(type)-&gt;error(message);
+    get_logger(type)-&gt;fatal(message);
+</pre></li></ol><p>
+where <tt>type</tt> is one of the defined types in <tt>src/log4perl.conf</tt>.
+</p>
+<h2 id="Backend">Backend</h2>
+<p>
+The backend consists of the following classes (files in <tt>src/perllib/LetsMT/lib/LetsMT/Repository</tt>):
+</p>
+<h3 id="LetsMT::Repository::StorageManager"><tt>LetsMT::Repository::StorageManager</tt></h3>
+<p>
+A layer responsible for operating the storage: 
+</p>
+<ul><li>checking that the requesting UID has the required permissions for the operation
+</li><li>keeping storage-related metadata about slots and branches
+</li><li>formatting output in accordance with the <a class="wiki" href="RepositoryWebService.html">API specification</a>
+</li><li>decomposing higher level commands into calls to the underlying storage module (so far only <tt>subversion</tt> exists, using module <tt>LetsMT::Repository::VCSubversion</tt>).
+</li></ul><h3 id="LetsMT::Repository::GroupManager"><tt>LetsMT::Repository::GroupManager</tt></h3>
+<p>
+A layer responsible for creating, deleting and managing groups.
+</p>
+<h3 id="LetsMT::Repository::AdminManager"><tt>LetsMT::Repository::AdminManager</tt></h3>
+<p>
+This is mostly unused. A implements a repository reset subroutine.
+</p>
+<h3 id="LetsMT::Repository::QueueManager"><tt>LetsMT::Repository::QueueManager</tt></h3>
+<p>
+This is the interface to Sun grid engine.
+</p>
+<h3 id="Databaseanddatastructures">Database and data structures</h3>
+<p>
+The storage-related metadata is defined in the submodules:
+</p>
+<ul><li><tt>LetsMT::Repository::StorageManager::Branch</tt> - this defines the storage-related metadata structure for branches, and some primitive related subroutines.
+<ul><li>name - the name of the branch [primary key]
+</li><li>owner - the owner of the slot (a user id) [primary key]
+</li><li>slot - the branch belongs to this slot [primary key]
+</li><li>grp - the group setting of the slot
+</li><li>userread - user read permission
+</li><li>userwrite - user write permission
+</li><li>groupread - group read permission
+</li><li>groupwrite  - group write permission
+</li><li>otherread - other read permission
+</li><li>otherwrite - other write permission
+</li><li>creat - not used
+</li><li>acces - not used
+</li><li>modif - not used
+</li></ul></li></ul><ul><li><tt>LetsMT::Repository::StorageManager::Slot</tt> - this defines the storage-related metadata structure for slots, and some primitive related subroutines.
+<ul><li>name - the name of the slot
+</li><li>diskname - the name of this slot, with filesystem friendly characters only (ascii)
+</li><li>partition - the directory holding this slot (mountpoint + subdirectory)
+</li><li>locked - not used - may be used in the future to allow locking of slots
+</li></ul></li></ul><ul><li><tt>LetsMT::Repository::StorageManager::Partition</tt>
+<ul><li>name - the name of the partition 
+</li><li>diskname - the name of this partition, with filesystem friendly characters only (ascii)
+</li><li>mountpoint - not used
+</li><li>online - not used
+</li></ul></li></ul><p>
+The <a class="missing wiki">GroupManager?</a> uses the following sub modules:
+</p>
+<ul><li><tt>LetsMT::Repository::GroupManager::Group</tt> is used to define a group. It has the following fields:
+<ul><li>grp - the name of the group
+</li><li>creator - the user who created the group
+</li></ul></li></ul><ul><li><tt>LetsMT::Repository::GroupManager::Groupmember</tt> is used to map users to groups. It has the following fields:
+<ul><li>user - a username
+</li><li>grp - a group
+</li></ul></li></ul><p>
+  
+</p>
+<h4 id="Persistentobjects">Persistent objects</h4>
+<p>
+The submodules above, with direct ties to a database, make use of <a class="ext-link" href="http://search.cpan.org/~dwinters/Persistent-MySQL-0.50/lib/Persistent/MySQL.pm"><span class="icon">​</span>Persistent::MySQL</a>, a Perl Persistent class that uses a MySQL database table to store and retrieve objects. This means there is no need for direct SQL-queries. The sub modules are sub classes of <tt>LetsMT::Repository::Persist</tt>, which is a layer that takes care of the work common to all sub modules, and which is a subclass of <tt>Persistent::MySQL</tt>. The Persistent API is documented <a class="ext-link" href="http://search.cpan.org/~dwinters/Persistent-DBI-0.50/lib/Persistent/DBI.pm"><span class="icon">​</span>here</a>.
+</p>
+<p>
+The retrieve a persistent object is simply a matter of creating it with <tt>new</tt>, supplying zero or more keys as restricting matching arguments. Supplying the full set of primary keys will return zero or one instances, depending on whether there is such an object in the store. Supplying an incomplete set of primary keys will return zero or more objects, depending on what matches there are in the store. 
+</p>
+<p>
+An example. To create a new persistent object of the type <tt>LetsMT::Repository::StorageManager::Slot</tt>, the following is used. It will fail if there is already such a slot, as the primary key is its name (as with any database, the primary key needs to be unique):
+</p>
+<pre class="wiki">   my $slobj = new LetsMT::Repository::StorageManager::Slot("testslot", "/opt/some_directory");
+</pre><p>
+To retrieve objects from the store, the following is used:
+</p>
+<pre class="wiki">    my $idquery = LetsMT::Repository::StorageManager::Slot::get_idquery(name =&gt; "testslot");
+    my $obj    = new LetsMT::Repository::StorageManager::Slot();
+    $obj-&gt;retrieve(qq{$idquery});
+    do { 
+       print "object name: ".$obj-&gt;name."\n"
+    } while($obj-&gt;restore_next());
+</pre><p>
+To modify a retrieved object, the following is used:
+</p>
+<pre class="wiki">## get
+print "group is: ",$branchobj-&gt;grp,"\n";
+## set
+$branchobj-&gt;grp("othergroup");
+## save
+$branchobj-&gt;save();
+</pre><h4 id="MySQL">MySQL</h4>
+<p>
+In the main configuration file <tt>conf.sh</tt>, the following database specifications are found: DBNAME DBPORT DBHOST DBUSER DBPASS. The repository will not create any databases automatically, but it will create the tables automatically if they do not already exists. This is assuming the specified database user has sufficient permissions to create tables. The table definitions are automatically created by <tt>initialize</tt> in the module <tt>LetsMT::Repository::Persist</tt>, based on the data definitions in each sub module that uses persistent storage. For instance, in <tt>LetsMT::Repository::GroupManager::Group</tt> the following data definition is found:
+</p>
+<pre class="wiki">my %persist_def = (fields    =&gt; { grp     =&gt; {type=&gt;'varchar(128) NOT NULL',prim=&gt;1},
+                                  creator =&gt; {type=&gt;'varchar(128) NOT NULL'},
+                                });
+</pre><p>
+which is automatically translated into:
+</p>
+<pre class="wiki"> CREATE TABLE sm_Group (
+        creator varchar(128) NOT NULL,
+        grp varchar(128) NOT NULL,
+        PRIMARY KEY(grp)) 
+</pre><h4 id="Subversion">Subversion</h4>
+<p>
+Subversion version &gt;= 1.7 is needed, and installed by the installation procedure. The reason for this is that the repository needs the flag <tt>--depth empty</tt> for efficient processing.
+</p>
+<h3 id="Groupsownerandpermissions">Groups, owner and permissions</h3>
+<p>
+Users' group memberships are defined as collections of <tt>LetsMT::Repository::GroupManager::Groupmember</tt>, mapping users to groups.
+</p>
+<p>
+Owner, group and permission of stored data is set on Branch level, using the following data fields:
+</p>
+<ul><li>owner - the owner of the slot (a user id)
+</li><li>grp - the group setting of the slot
+</li><li>userread - user read permission
+</li><li>userwrite - user write permission
+</li><li>groupread - group read permission
+</li><li>groupwrite  - group write permission
+</li><li>otherread - other read permission
+</li><li>otherwrite - other write permission
+</li></ul><p>
+The following two subroutines in <tt>LetsMT::Repository::StorageManager::Branch</tt> show how permissions are implemented using the fields above:
+</p>
+<pre class="wiki"># user: the effective user for this call
+# groups: the effective user's group memberships
+sub may_write {
+  my ($self, $user, $groups) = @_;
+  return ($self-&gt;owner eq $user &amp;&amp; $self-&gt;userwrite)
+       || (grep(/^$self-&gt;grp$/, @{$groups}) &amp;&amp; $self-&gt;groupwrite)
+       || $self-&gt;otherwrite;
+}
+
+
+# user: the effective user for this call
+# groups: the effective user's group memberships
+sub may_read {
+  my ($self, $user, $groups) = @_;
+
+  return ($self-&gt;owner eq $user &amp;&amp; $self-&gt;userread)
+       || (grep(/^$self-&gt;grp$/, @{$groups}) &amp;&amp; $self-&gt;groupread)
+       || $self-&gt;otherread;
+}
+</pre><h2 id="Buildsystem">Build system</h2>
+<p>
+The main makefile resides in <tt>src/Makefile</tt>, and has a number of targets. They are all documented in this file. It will propagate calls to:
+</p>
+<ul><li><tt>installation/Makefile</tt> - used for the main installation and upgrade procedure
+</li><li><tt>installation/Makefile.prereqs</tt> - used to install prerequisites
+</li></ul><p>
+The <tt>installation/letsmt</tt> is an Apache2 virtual hosts file template, with strings like REPLACE_LETSMTPORT in it. Those strings will be instantiated with real values by the installation procedure in <tt>installation/Makefile</tt> and the result written to Apache2's sites-available directory.
+</p>
+<p>
+The <tt>installation/MyConfig.pm</tt> is used by <tt>installation/Makefile.prereqs</tt> to setup CPAN prior to the CPAN installations.
+</p>
+<p>
+The <tt>installation/setup_db.sh</tt> is used to setup the database. It is used like this from the installation procedure:
+</p>
+<pre class="wiki">source conf.sh &amp;&amp; bash installation/setup_db.sh
+</pre><h2 id="Releasing">Releasing</h2>
+<ul><li>communicate with collegues and discuss what to include. Once started, everything that is currently commited in the source repository will be included, so there should be no broken or half finished components in there
+</li><li>update your working directory
+</li><li>create release notes on <a class="wiki" href="Releases.html">this page</a>. Finally, copy the source of the notes and paste into <tt>src/Changelog.txt</tt>
+</li><li>commit Changelog.txt and any other things you want to include
+</li><li>cd src/ &amp;&amp; make release
+</li><li>copy the created release file to <tt>/home/letsmt/svn/trunk/dev/src/www/dev/releases/</tt> to make it appear on the download site
+</li></ul><p>
+ 
+</p>
+<h2 id="Testing">Testing</h2>
+<p>
+The directory <tt>src/tests</tt> holds a number of tests. To use them on a system installed using <tt>make install</tt>, issue:
+</p>
+<pre class="wiki">source /usr/local/etc/repository/conf.sh &amp;&amp; source /usr/local/bin/functions.sh &amp;&amp; make -C /usr/local/repository_tests test
+</pre><p>
+To use them as a developer, issue:
+</p>
+<pre class="wiki">cd src
+source conf.sh
+source admin/function.sh
+make -C tests test
+</pre></div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositoryConceptOverview?action=diff&amp;version=27" title="Version 27 by perweij">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2011-02-28T17%3A45%3A37Z&amp;precision=second" title="See timeline at Feb 28, 2011, 5:45:37 PM">10 years ago</a></span>
+            <span class="trac-print">Last modified on Feb 28, 2011, 5:45:37 PM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositoryConceptOverview?format=txt">Plain Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositoryConceptOverview?format=tex">Latex</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositoryConceptOverview?format=pdf">Latex-Pdf</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

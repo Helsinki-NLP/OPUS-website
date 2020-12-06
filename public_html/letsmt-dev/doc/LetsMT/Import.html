@@ -1,0 +1,167 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Import</title>
+<link rel="stylesheet" href="../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#variables">VARIABLES</a></li>
+	<ul>
+
+		<li><a href="#_types"><code>$TYPES</code></a></li>
+		<li><a href="#defaults">Defaults</a></li>
+	</ul>
+
+	<li><a href="#methods">METHODS</a></li>
+	<ul>
+
+		<li><a href="#constructor">Constructor</a></li>
+		<li><a href="#supported"><code>supported</code></a></li>
+		<li><a href="#import_file"><code>import_file</code></a></li>
+		<li><a href="#import_resource"><code>import_resource</code></a></li>
+		<li><a href="#align_documents"><code>align_documents</code></a></li>
+		<li><a href="#convert_resource"><code>convert_resource</code></a></li>
+		<li><a href="#upload_new_resource"><code>upload_new_resource</code></a></li>
+		<li><a href="#update_corpus_meta"><code>update_corpus_meta</code></a></li>
+		<li><a href="#get_resource_handlers"><code>get_resource_handlers</code></a></li>
+	</ul>
+
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>LetsMT::Import - family of modules for importing data</p>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>Import resources into the repository.</p>
+<p>
+</p>
+<hr />
+<h1><a name="variables">VARIABLES</a></h1>
+<p>
+</p>
+<h2><a name="_types"><code>$TYPES</code></a></h2>
+<p>A hash reference to a catalogue of document types mapped to import handlers. To
+activate a new import handler it needs to be registered in this struct.</p>
+<p>An import handler is any class that supplies the two methods
+<code>validate(LetsMT::Resource)</code> and <code>convert(LetsMT::Resource, LetsMT::Import</code>.
+The target format for the <code>convert</code> method should always be the internal LetsMT
+flavor of xces.</p>
+<p>Each resource being imported should result in a list of new resources, each
+described by a hash. The returned structure should have this format:
+ [
+     {
+         resource =&gt; LetsMT::Resource,
+         meta =&gt; {
+             key1 =&gt; value1,
+             key2 =&gt; value2,
+             ...
+         }
+     },
+     ...
+ ]</p>
+<p>
+</p>
+<h2><a name="defaults">Defaults</a></h2>
+<p>All defaults are declared as <code>our</code>, which makes them visible to anyone using
+the module.</p>
+<p><code>$DEFAULT_TOKENIZER</code></p>
+<p><code>$DEFAULT_NORMALIZER</code></p>
+<p><code>$DEFAULT_SPLITTER</code></p>
+<p><code>$DEFAULT_LANG = 'xx'</code></p>
+<p><code>%DEFAULT_LANG_SPLITTER</code></p>
+<p>
+</p>
+<hr />
+<h1><a name="methods">METHODS</a></h1>
+<p>
+</p>
+<h2><a name="constructor">Constructor</a></h2>
+<pre>
+ $importer = new LetsMT::Import (%OPTIONS)</pre>
+<p>OPTIONS:</p>
+<pre>
+ local_root ... (default: a new temporary directory)
+ splitter ..... (default: one given in %DEFAULT_LANG_SPLITTER)
+ lang ......... (language key for the choice of the default splitter)</pre>
+<p>If no <code>local_root</code> key is given to the constructor, a new temporary directory will be created and used.</p>
+<p>
+</p>
+<h2><a name="supported"><code>supported</code></a></h2>
+<pre>
+ $importer-&gt;supported ($type)</pre>
+<p>
+</p>
+<h2><a name="import_file"><code>import_file</code></a></h2>
+<pre>
+ $importer-&gt;import_file ($user, $slot, $path)</pre>
+<p>Creates a new resource with <code>$slot</code>, <code>$user</code>, <code>$path</code> and the <code>local_root</code>
+of the importer, and imports that resource with <code>import_resource</code>.</p>
+<p>
+</p>
+<h2><a name="import_resource"><code>import_resource</code></a></h2>
+<pre>
+ $importer-&gt;import_resource ($resource)</pre>
+<p>Fetches a resource from the repository (should be from the <code>uploads</code> directory)
+and attempts to run all possible import handlers to get a new set of resources
+which are uploaded back to the repository. Returns true if conversion was
+successful and false otherwise.</p>
+<p>
+</p>
+<h2><a name="align_documents"><code>align_documents</code></a></h2>
+<p>
+</p>
+<h2><a name="convert_resource"><code>convert_resource</code></a></h2>
+<pre>
+ $importer-&gt;convert_resource ($resource[, $meta_resource[, $print_progress]])</pre>
+<p>Finds a handler for one resource and applies it to that resource.
+Useful when converting archives, as it can be used to convert a resource
+without involving the repository.
+The optional <code>$meta_resource</code> is the resource that collects meta information from the import process.
+No progress information is written by default.</p>
+<p>
+</p>
+<h2><a name="upload_new_resource"><code>upload_new_resource</code></a></h2>
+<pre>
+ $importer-&gt;upload_new_resource ( $new_resource, $original_resource )</pre>
+<p>Upload a new resource coming from a conversion process.
+<code>$new_resource</code> is a pointer to a hash
+<code>{ resource =</code> resource_object, meta =&gt; \%meta_data }&gt;.
+<code>$original_resource</code> is the resource object that has been converted.</p>
+<p>Note: Resource-types 'xml' will be run through language detection before uploading them top the repository!</p>
+<p>
+</p>
+<h2><a name="update_corpus_meta"><code>update_corpus_meta</code></a></h2>
+<p>Set some global information to the slot/branch = corpus:
+Update the available languages (langs) and language pairs (parallel-langs).</p>
+<p>
+</p>
+<h2><a name="get_resource_handlers"><code>get_resource_handlers</code></a></h2>
+<pre>
+ $importer-&gt;get_resource_handlers ($resource)</pre>
+<p>Returns a list of handlers to try on <code>$resource</code> based on path and suffix.</p>
+
+</body>
+
+</html>

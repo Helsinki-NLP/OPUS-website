@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      ideas – LetsMT
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/letsmt-trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/ideas?format=txt" type="text/x-trac-wiki" title="Plain Text" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/ideas?format=tex" type="text/x-trac-wiki" title="Latex" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/ideas?format=pdf" type="text/x-trac-wiki" title="Latex-Pdf" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.letsmt.eu/"><img src="http://stp.lingfil.uu.se/~joerg/LetsMT/letsmt.jpg" alt="LetsMT" width="100" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/letsmt-trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/letsmt-trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="ideas.html" title="View ideas">ideas</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/letsmt-trac/wiki/ideas?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><h1 id="Extendedfunctionalitydevlopmentideas">Extended functionality &amp; devlopment ideas</h1>
+<h2 id="Newstoragebackends">New storage backends</h2>
+<ul><li>other version control systems (git, hg ...)
+</li><li>combined svn and filesystem 
+<ul><li>keep a working copy and always update the working copy only
+</li><li>implement commit function in storage API (user can decide when to commit the data from the working copy)
+</li><li>when uploading files: mark in metadata that the version is not committed yet
+</li><li>commit for the entire working copy (commit all changes in one step; use background job for that)
+</li><li>implement status function in storage API (/storage/slot/branch/status) to show status of the working copy (svn status)
+</li></ul></li><li>compressed filesystem (use fusecompress)
+</li></ul><h2 id="UserDomain-specifictools">User/Domain-specific tools</h2>
+<ul><li>train sentence splitters
+</li><li>train tokenizer
+</li><li>use user-specific pre-processing tools in data import
+</li></ul><h2 id="Interactivesentencealignment">Interactive sentence alignment</h2>
+<ul><li>Integrate tools for improving sentence alignment
+</li><li>use something like ICA
+</li></ul><h2 id="Userfeedback">User feedback</h2>
+<ul><li>rating sentence alignment quality
+</li><li>rating corpus quality
+</li><li>tag corpora and other resources
+</li></ul><h2 id="Uploadoflanguagemodels">Upload of language models</h2>
+<ul><li>allow to upload language models in a standard ARPA format
+</li><li>advantage: don't need to create language models at our server
+</li><li>no IPR problems with data that have been used for creating those models
+</li></ul><h2 id="Automaticdomainclassification">Automatic domain classification</h2>
+<ul><li>trust automatic classification more than user input?
+</li><li>problem: language specific classifiers!
+</li><li>interesting idea: find similar documents and classify in the same way (some kind of kNN?)
+</li></ul><p>
+Questions: Who? How? When?
+</p>
+<h2 id="Automaticdataselection">Automatic data selection</h2>
+<ul><li>related to the automatic classification ideas
+</li><li>use IR techniques to find documents similar to given translation examples
+</li><li>user interface: "I want to translate sentence like those - find me appropriate parallel training data with at least 1 million tokens!"
+</li><li>(always interpolate domain-specific TMs and LMs with large general-purpose backoff models!!!)
+</li></ul><h2 id="IntegrationwithTDATAUSdata">Integration with TDA (TAUS data)</h2>
+<ul><li>Integrate TDA for training SMT models
+</li><li>API to access TDA data
+</li><li>no storage of TDA data in our repository (only temporary for training purposes!)
+</li></ul><p>
+Questions: Who? How? TDA API?
+</p>
+</div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/letsmt-trac/wiki/ideas?action=diff&amp;version=4" title="Version 4 by joerg">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2012-09-26T08%3A01%3A44Z&amp;precision=second" title="See timeline at Sep 26, 2012, 8:01:44 AM">8 years ago</a></span>
+            <span class="trac-print">Last modified on Sep 26, 2012, 8:01:44 AM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/ideas?format=txt">Plain Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/ideas?format=tex">Latex</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/ideas?format=pdf">Latex-Pdf</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

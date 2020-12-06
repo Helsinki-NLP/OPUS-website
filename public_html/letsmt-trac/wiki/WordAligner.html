@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      WordAligner – LetsMT
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/letsmt-trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/WordAligner?format=txt" type="text/x-trac-wiki" title="Plain Text" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/WordAligner?format=tex" type="text/x-trac-wiki" title="Latex" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/WordAligner?format=pdf" type="text/x-trac-wiki" title="Latex-Pdf" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.letsmt.eu/"><img src="http://stp.lingfil.uu.se/~joerg/LetsMT/letsmt.jpg" alt="LetsMT" width="100" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/letsmt-trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/letsmt-trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="WordAligner.html" title="View WordAligner">WordAligner</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/letsmt-trac/wiki/WordAligner?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><h1 id="Toolsforwordalignment">Tools for word alignment</h1>
+<ul><li>GIZA++ (GPL)
+<ul><li><a class="ext-link" href="http://code.google.com/p/giza-pp/"><span class="icon">​</span>http://code.google.com/p/giza-pp/</a>
+</li></ul></li></ul><ul><li>SyMGIZA++
+<ul><li><a class="ext-link" href="http://psi.amu.edu.pl/en/index.php?title=SyMGIZA%2B%2B"><span class="icon">​</span>http://psi.amu.edu.pl/en/index.php?title=SyMGIZA%2B%2B</a>
+</li></ul></li></ul><ul><li>MGIZA++ &amp; PGIZA++ (GPL?)
+<ul><li>(package = chaski)
+</li><li><a class="ext-link" href="http://www.cs.cmu.edu/~qing/"><span class="icon">​</span>http://www.cs.cmu.edu/~qing/</a>
+</li><li><a class="ext-link" href="http://geek.kyloo.net/software/doku.php"><span class="icon">​</span>http://geek.kyloo.net/software/doku.php</a>
+</li></ul></li></ul><ul><li>incremental GIZA++
+<ul><li><a class="ext-link" href="http://code.google.com/p/inc-giza-pp"><span class="icon">​</span>http://code.google.com/p/inc-giza-pp</a>
+</li></ul></li></ul><ul><li>on-line MGIZA++
+<ul><li><a class="ext-link" href="http://hlt.fbk.eu/technologies/onlinemgiza"><span class="icon">​</span>http://hlt.fbk.eu/technologies/onlinemgiza</a>
+</li></ul></li></ul><ul><li>fast-align
+<ul><li><a class="ext-link" href="http://github.com/clab/fast_align"><span class="icon">​</span>http://github.com/clab/fast_align</a> 
+</li></ul></li></ul><ul><li>SPACOS and efmaral (Bayesian model)
+<ul><li><a class="ext-link" href="http://www.ling.su.se/english/nlp/tools/spacos"><span class="icon">​</span>http://www.ling.su.se/english/nlp/tools/spacos</a>
+</li><li><a class="ext-link" href="https://github.com/robertostling/efmaral"><span class="icon">​</span>https://github.com/robertostling/efmaral</a>
+</li></ul></li></ul><ul><li><a class="missing wiki">RegAligner?</a> - Regularized IBM models
+<ul><li><a class="ext-link" href="https://github.com/Thomas1205/RegAligner"><span class="icon">​</span>https://github.com/Thomas1205/RegAligner</a>
+</li><li><a class="ext-link" href="http://user.phil-fak.uni-duesseldorf.de/~tosch/downloads.html"><span class="icon">​</span>http://user.phil-fak.uni-duesseldorf.de/~tosch/downloads.html</a>
+</li></ul></li></ul><ul><li>MTTK (Educational (?))
+<ul><li><a class="ext-link" href="http://mi.eng.cam.ac.uk/~wjb31/distrib/mttkv1/"><span class="icon">​</span>http://mi.eng.cam.ac.uk/~wjb31/distrib/mttkv1/</a>
+</li></ul></li></ul><ul><li>Berkeley Aligner (GPL)
+<ul><li><a class="ext-link" href="http://code.google.com/p/berkeleyaligner/"><span class="icon">​</span>http://code.google.com/p/berkeleyaligner/</a>
+</li><li><a class="ext-link" href="http://nlp.cs.berkeley.edu/Main.html#WordAligner"><span class="icon">​</span>http://nlp.cs.berkeley.edu/Main.html#WordAligner</a>
+</li></ul></li></ul><ul><li>CrossEM aligner (Berkeley)
+<ul><li><a class="ext-link" href="http://www.eecs.berkeley.edu/~pliang/software/"><span class="icon">​</span>http://www.eecs.berkeley.edu/~pliang/software/</a>
+</li><li><a class="ext-link" href="http://www.eecs.berkeley.edu/%7Epliang/software/cross-em-aligner-1.3.zip"><span class="icon">​</span>http://www.eecs.berkeley.edu/%7Epliang/software/cross-em-aligner-1.3.zip</a>
+</li></ul></li></ul><ul><li><a class="missing wiki">PostCat?</a> (License?)
+<ul><li><a class="ext-link" href="http://www.seas.upenn.edu/~strctlrn/CAT/CAT.html"><span class="icon">​</span>http://www.seas.upenn.edu/~strctlrn/CAT/CAT.html</a>
+</li></ul></li></ul><ul><li>anymailgn (GPL)
+<ul><li><a class="ext-link" href="http://anymalign.limsi.fr"><span class="icon">​</span>http://anymalign.limsi.fr</a>
+</li></ul></li></ul><ul><li>NILE (GPL)
+<ul><li><a class="ext-link" href="http://code.google.com/p/nile/"><span class="icon">​</span>http://code.google.com/p/nile/</a>
+</li><li><a class="ext-link" href="http://www.isi.edu/~riesa/software/nile/"><span class="icon">​</span>http://www.isi.edu/~riesa/software/nile/</a>
+</li></ul></li></ul><ul><li>geppetto
+<ul><li><a class="ext-link" href="http://code.google.com/p/geppetto/"><span class="icon">​</span>http://code.google.com/p/geppetto/</a>
+</li></ul></li></ul><ul><li>NATools (License?)
+<ul><li><a class="ext-link" href="http://linguateca.di.uminho.pt/natools/"><span class="icon">​</span>http://linguateca.di.uminho.pt/natools/</a>
+</li></ul></li></ul><ul><li>unsupervised crf-based word alignment in cdec
+<ul><li><a class="ext-link" href="http://cdec-decoder.org/index.php?title=Lexical_translation_/_Word_alignment"><span class="icon">​</span>http://cdec-decoder.org/index.php?title=Lexical_translation_/_Word_alignment</a>
+</li></ul></li></ul><ul><li>Gibbs sampler for IBM 1
+<ul><li><a class="ext-link" href="http://aclweb.org/supplementals/P/P11/P11-2032.Software.txt"><span class="icon">​</span>http://aclweb.org/supplementals/P/P11/P11-2032.Software.txt</a>
+</li></ul></li></ul><ul><li>manual alignment:
+<ul><li><a class="missing wiki">AltAligner?</a>: <a class="ext-link" href="http://geek.kyloo.net/software/doku.php/misc:alt-aligner"><span class="icon">​</span>http://geek.kyloo.net/software/doku.php/misc:alt-aligner</a>, <a class="ext-link" href="http://code.google.com/p/alt-aligner/"><span class="icon">​</span>http://code.google.com/p/alt-aligner/</a>
+</li></ul></li></ul><ul><li>Clue-based word alignment with Uplug:
+<ul><li><a class="ext-link" href="http://sourceforge.net/projects/uplug/"><span class="icon">​</span>http://sourceforge.net/projects/uplug/</a>
+</li></ul></li></ul><ul><li>Tree-aligner package, can also do word alignment:
+<ul><li><a class="ext-link" href="http://stp.lingfil.uu.se/~joerg/Lingua/"><span class="icon">​</span>http://stp.lingfil.uu.se/~joerg/Lingua/</a>
+</li><li><a class="ext-link" href="http://stp.lingfil.uu.se/~joerg/Lingua/#how_to_do_word_alignment"><span class="icon">​</span>http://stp.lingfil.uu.se/~joerg/Lingua/#how_to_do_word_alignment</a>
+</li></ul></li></ul><ul><li>word to phoneme alignment
+<ul><li><a class="ext-link" href="http://code.google.com/p/pisa/"><span class="icon">​</span>http://code.google.com/p/pisa/</a>
+</li></ul></li></ul></div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/letsmt-trac/wiki/WordAligner?action=diff&amp;version=18" title="Version 18 by joerg">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2015-10-20T12%3A58%3A44Z&amp;precision=second" title="See timeline at Oct 20, 2015, 12:58:44 PM">5 years ago</a></span>
+            <span class="trac-print">Last modified on Oct 20, 2015, 12:58:44 PM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/WordAligner?format=txt">Plain Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/WordAligner?format=tex">Latex</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/WordAligner?format=pdf">Latex-Pdf</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

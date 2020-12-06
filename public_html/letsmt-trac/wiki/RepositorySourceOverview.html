@@ -1,0 +1,310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      RepositorySourceOverview – LetsMT
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/letsmt-trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositorySourceOverview?format=txt" type="text/x-trac-wiki" title="Plain Text" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositorySourceOverview?format=tex" type="text/x-trac-wiki" title="Latex" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositorySourceOverview?format=pdf" type="text/x-trac-wiki" title="Latex-Pdf" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.letsmt.eu/"><img src="http://stp.lingfil.uu.se/~joerg/LetsMT/letsmt.jpg" alt="LetsMT" width="100" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/letsmt-trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/letsmt-trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="RepositorySourceOverview.html" title="View RepositorySourceOverview">RepositorySourceOverview</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositorySourceOverview?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><h2 id="CONFIG">CONFIG</h2>
+<h3 id="conf.sh"><tt>conf.sh</tt></h3>
+<p>
+The central config file.
+</p>
+<ul><li>DBHOST - MySQL host
+</li><li>DBNAME - MySQL database name
+</li><li>DBPASS - MySQL password
+</li><li>DBPORT - MySQL port
+</li><li>DBUSER - MySQL user
+</li></ul><ul><li>LETSMTCONF - the configuration file in use
+</li><li>LETSMTDISKROOT - the top directory under which Subversion creates slot repositories
+</li><li>LETSMTHOST - the hostname of the repository
+</li><li>LETSMTLOG_DIR - the log file directory, configuration of logging is in /log4perl.conf
+</li><li>LETSMTPORT - the port of the repository
+</li><li>LETSMTPUBLICGROUP - the name of the group used for public resources
+</li><li>LETSMTROOT - the root/prefix of the installed software
+</li><li>LETSMTUSER - the user running the repository. For Ubuntu installations, this is the same as the user running Apache2, but can also be configured for development users
+</li><li>LETSMTVERSION - the version of the data structures and database definitions. If these are changed, this version number should also be changed
+</li><li>LETSMTVIRTHOSTFILE - the name to use for the virtual hosts file
+</li><li>LETSMT_CACERT - the CA certificate (commonly named <tt>ca.crt</tt>.
+</li><li>LETSMT_CERTPATH - corresponds to Apache2 setting <tt>SSLCACertificatePath</tt>
+</li><li>LETSMT_CERTROOT - the directory holding LETSMT_CACERT (<tt>ca.crt</tt>)
+</li><li>LETSMT_CONNECT - a <tt>curl</tt>-call template, using the function <tt>curlfilter</tt> from <tt>admin/functions.sh</tt>
+</li><li>LETSMT_CONNECT_RAW - a <tt>curl</tt>-call
+</li><li>LETSMT_MODPERL_STARTUP - the mod_perl startup file, default name <tt>conf_modperl.pl</tt>
+</li><li>LETSMT_REPOS_DIR_UPLOAD - the reserved name for the upload directory, when uploading to the higher level (/letsmt)
+</li><li>LETSMT_REVOCATIONPATH - corresponds to Apache2 setting <tt>SSLCARevocationPath</tt>
+</li><li>LETSMT_SSL_CITY - the city (<tt>ST</tt>), used in certificate signature requests
+</li><li>LETSMT_SSL_COMPANY - the company (<tt>O</tt>), used in certificate signature requests
+</li><li>LETSMT_SSL_COUNTRY - the country (<tt>OU</tt>), used in certificate signature requests
+</li><li>LETSMT_SSL_DIR - deprecated
+</li><li>LETSMT_SSL_SUBDIR - directory holding the repository's SSL files
+</li><li>LETSMT_SSL_USER - username of the connecting client, for which a certificate (<tt>LETSMT_USERCERT</tt>) will be generated
+</li><li>LETSMT_SSL_USERNAME - the email address of LETSMT_SSL_USER
+</li><li>LETSMT_TAR_INITREPOS - the initial contents of a new slot is stored in this tar-file
+</li><li>LETSMT_URL - the formatted URL of the web service
+</li><li>LETSMT_USERCERT - the connecting client's user certificate
+</li><li>LETSMT_USERCERTPASS - the password for the <tt>LETSMT_USERCERT</tt> certificate
+</li><li>LETSMT_USERKEY - the key corresponding to <tt>LETSMT_USERCERT</tt>
+</li><li>LOG4PERLCONF - the log configuration, see <a class="ext-link" href="http://log4perl.sourceforge.net/"><span class="icon">​</span>http://log4perl.sourceforge.net/</a> for documentation
+</li><li>UPLOADDIR - the temporary directory holding files being uploaded
+</li><li>VC_BACKEND - the backend storage module to use. Currently only <tt>VCSubversion</tt> is implemented.
+</li></ul><h3 id="conf_modperl.pl"><tt>conf_modperl.pl</tt></h3>
+<p>
+This is read at apache initiation of mod_perl (apache reload and apache restart).
+</p>
+<h3 id="adminqconf_add_queue_editor.sh"><tt>admin/qconf_add_queue_editor.sh</tt></h3>
+<p>
+This is used by <tt>LetsMT::Repository::QueueManager</tt> to create a new queue.
+  
+</p>
+<h2 id="BUILD-FILES">BUILD-FILES</h2>
+<h3 id="Makefile"><tt>Makefile</tt></h3>
+<p>
+Main Makefile used for installs, updates, upgrades and testing.
+</p>
+<h3 id="installationMakefile"><tt>installation/Makefile</tt></h3>
+<p>
+Backend Makefile for the gritty details. Called from the main Makefile.
+</p>
+<h3 id="installationMakefile.prereqs"><tt>installation/Makefile.prereqs</tt></h3>
+<p>
+Used for installing prerequisites on a new server.
+</p>
+<h2 id="INSTALLATION">INSTALLATION</h2>
+<h3 id="adminsetup_cert_based_auth.pl"><tt>admin/setup_cert_based_auth.pl</tt></h3>
+<p>
+This is used by <tt>installation/Makefile</tt> to create ssl certificates.
+</p>
+<h3 id="installationMyConfig.pm"><tt>installation/MyConfig.pm</tt></h3>
+<p>
+This is used by <tt>installation/Makefile.prereqs</tt> to setup CPAN.
+</p>
+<h3 id="installationsetup_db.sh"><tt>installation/setup_db.sh</tt></h3>
+<p>
+This is used by <tt>installation/Makefile</tt> to setup MySQL.
+</p>
+<h3 id="installationletsmt"><tt>installation/letsmt</tt></h3>
+<p>
+This is an Apache2 virtual host file template, instantiated by <tt>installation/Makefile</tt> when <tt>make install</tt>.
+</p>
+<h2 id="WEBSERVICE">WEB SERVICE</h2>
+<h3 id="perllibLetsMTlibLetsMTWWWLetsMT_modperl_handler.pm"><tt>perllib/LetsMT/lib/LetsMT/WWW/LetsMT_modperl_handler.pm</tt></h3>
+<p>
+This is the Apache2 mod_perl handler.
+</p>
+<h3 id="perllibLetsMTlibLetsMTWWWLetsMT_modperl_handler_exception.pm"><tt>perllib/LetsMT/lib/LetsMT/WWW/LetsMT_modperl_handler_exception.pm</tt></h3>
+<p>
+This implements a mod_perl-friendly exception used in the resource repository code.
+</p>
+<h2 id="REPOSITORY">REPOSITORY</h2>
+<h3 id="perllibLetsMTlibLetsMTRepositoryErr.pm"><tt>perllib/LetsMT/lib/LetsMT/Repository/Err.pm</tt></h3>
+<p>
+The central place where error types are defined, and the <tt>raise</tt>-subroutine is defined.
+</p>
+<h3 id="perllibLetsMTlibLetsMTRepositoryPersist.pm"><tt>perllib/LetsMT/lib/LetsMT/Repository/Persist.pm</tt></h3>
+<p>
+The super class for modules with object persistence.
+</p>
+<h3 id="perllibLetsMTlibLetsMTRepositoryQueueManager.pm"><tt>perllib/LetsMT/lib/LetsMT/Repository/QueueManager.pm</tt></h3>
+<p>
+The interface to Sun Grid Engine.
+</p>
+<h3 id="perllibLetsMTlibLetsMTRepositorySafesys.pm"><tt>perllib/LetsMT/lib/LetsMT/Repository/Safesys.pm</tt></h3>
+<p>
+Some helper routines for interfacing with the operating system.
+</p>
+<h3 id="perllibLetsMTlibLetsMTRepositoryVCSubversion.pm"><tt>perllib/LetsMT/lib/LetsMT/Repository/VCSubversion.pm</tt></h3>
+<p>
+The interface to Subversion.
+</p>
+<h3 id="perllibLetsMTlibLetsMTRepositoryAdminManager.pm"><tt>perllib/LetsMT/lib/LetsMT/Repository/AdminManager.pm</tt></h3>
+<p>
+Nearly unused. Implements a total reset subroutine (obviously, use with care).
+</p>
+<h3 id="perllibLetsMTlibLetsMTRepositoryGroupManager.pm"><tt>perllib/LetsMT/lib/LetsMT/Repository/GroupManager.pm</tt></h3>
+<p>
+Manager for working with groups.
+</p>
+<h3 id="perllibLetsMTlibLetsMTRepositoryGroupManagerGroup.pm"><tt>perllib/LetsMT/lib/LetsMT/Repository/GroupManager/Group.pm</tt></h3>
+<p>
+Persistent part of <a class="missing wiki">GroupManager?</a>. Implements groups.
+</p>
+<h3 id="perllibLetsMTlibLetsMTRepositoryGroupManagerGroupmember.pm"><tt>perllib/LetsMT/lib/LetsMT/Repository/GroupManager/Groupmember.pm</tt></h3>
+<p>
+Persistent part of <a class="missing wiki">GroupManager?</a>. Implements user group memberships.
+</p>
+<h3 id="perllibLetsMTlibLetsMTRepositoryStorageManager.pm"><tt>perllib/LetsMT/lib/LetsMT/Repository/StorageManager.pm</tt></h3>
+<p>
+Manager for working with storage.
+</p>
+<h3 id="perllibLetsMTlibLetsMTRepositoryStorageManagerBranch.pm"><tt>perllib/LetsMT/lib/LetsMT/Repository/StorageManager/Branch.pm</tt></h3>
+<p>
+Persistent part of <a class="missing wiki">StorageManager?</a>. Implements branches.
+</p>
+<h3 id="perllibLetsMTlibLetsMTRepositoryStorageManagerPartition.pm"><tt>perllib/LetsMT/lib/LetsMT/Repository/StorageManager/Partition.pm</tt></h3>
+<p>
+Persistent part of <a class="missing wiki">StorageManager?</a>. Implements partitions. This is a candidate for refactoring and removal, as it basically does nothing of value.
+</p>
+<h3 id="perllibLetsMTlibLetsMTRepositoryStorageManagerSlot.pm"><tt>perllib/LetsMT/lib/LetsMT/Repository/StorageManager/Slot.pm</tt></h3>
+<p>
+Persistent part of <a class="missing wiki">StorageManager?</a>. Implements slots.
+</p>
+<h3 id="perllibLetsMTlibLetsMTWWWFile.pm"><tt>perllib/LetsMT/lib/LetsMT/WWW/File.pm</tt></h3>
+<p>
+Subroutines for safe file handling.
+</p>
+<h2 id="TESTING">TESTING</h2>
+<p>
+The goal of testing framework is to carry a complete set of tests that can be used to verify the functionality of the resource repository.
+</p>
+<h3 id="adminexecute_in_order.sh"><tt>admin/execute_in_order.sh</tt></h3>
+<p>
+Helper script to execute the different tests in the right order, and optionally selecting which tests to run.
+</p>
+<h3 id="adminfunctions.sh"><tt>admin/functions.sh</tt></h3>
+<p>
+Defines a set of useful bash functions. The testing framework depend on a number of these.
+</p>
+<h3 id="tests10_groups.sh"><tt>tests/10_groups.sh</tt></h3>
+<p>
+Testing groups.
+</p>
+<h3 id="tests15_usr.sh"><tt>tests/15_usr.sh</tt></h3>
+<p>
+Testing users.
+</p>
+<h3 id="tests20_directories.sh"><tt>tests/20_directories.sh</tt></h3>
+<p>
+Testing directories.
+</p>
+<h3 id="tests21_branching.sh"><tt>tests/21_branching.sh</tt></h3>
+<p>
+Testing branching.
+</p>
+<h3 id="tests30_single_files.sh"><tt>tests/30_single_files.sh</tt></h3>
+<p>
+Testing single file handling.
+</p>
+<h3 id="tests31_single_files_letsmtrepos.sh"><tt>tests/31_single_files_letsmtrepos.sh</tt></h3>
+<p>
+Testing higherlevel API file handling.
+</p>
+<h3 id="tests32_filetree.sh"><tt>tests/32_filetree.sh</tt></h3>
+<p>
+Testing with many files.
+</p>
+<h3 id="tests34_metadata.sh"><tt>tests/34_metadata.sh</tt></h3>
+<p>
+Testing metadata.
+</p>
+<h2 id="DEVSTUFFCANBEREMOVED">DEVSTUFF, CAN BE REMOVED</h2>
+<h3 id="adminprint_db.pl"><tt>admin/print_db.pl</tt></h3>
+<h3 id="adminscramble_file.pl"><tt>admin/scramble_file.pl</tt></h3>
+<h3 id="adminshow_size.sh"><tt>admin/show_size.sh</tt></h3>
+<h3 id="admintail_http.sh"><tt>admin/tail_http.sh</tt></h3>
+<blockquote class="citation">
+<blockquote class="citation">
+<p>
+remove: <tt>perllib/LetsMT/lib/LetsMT/WWW/Session.pm</tt>
+</p>
+</blockquote>
+</blockquote>
+</div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositorySourceOverview?action=diff&amp;version=4" title="Version 4 by zumpe">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2011-03-07T14%3A16%3A52Z&amp;precision=second" title="See timeline at Mar 7, 2011, 2:16:52 PM">10 years ago</a></span>
+            <span class="trac-print">Last modified on Mar 7, 2011, 2:16:52 PM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositorySourceOverview?format=txt">Plain Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositorySourceOverview?format=tex">Latex</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositorySourceOverview?format=pdf">Latex-Pdf</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

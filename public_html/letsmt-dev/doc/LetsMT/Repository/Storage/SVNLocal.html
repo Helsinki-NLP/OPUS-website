@@ -1,0 +1,228 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>SVNLocal</title>
+<link rel="stylesheet" href="../../../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#constructor">CONSTRUCTOR</a></li>
+	<li><a href="#methods">METHODS</a></li>
+	<ul>
+
+		<li><a href="#init"><code>init</code></a></li>
+		<li><a href="#mkdir"><code>mkdir</code></a></li>
+		<li><a href="#copy"><code>copy</code></a></li>
+		<li><a href="#is_path"><code>is_path</code></a></li>
+		<li><a href="#list"><code>list</code></a></li>
+		<li><a href="#revisions"><code>revisions</code></a></li>
+		<li><a href="#cat"><code>cat</code></a></li>
+		<li><a href="#add"><code>add</code></a></li>
+		<li><a href="#add_file"><code>add_file</code></a></li>
+		<li><a href="#commit"><code>commit</code></a></li>
+		<li><a href="#update"><code>update</code></a></li>
+		<li><a href="#remove"><code>remove</code></a></li>
+		<li><a href="#checkout"><code>checkout</code></a></li>
+		<li><a href="#info"><code>info</code></a></li>
+		<li><a href="#export"><code>export</code></a></li>
+	</ul>
+
+	<li><a href="#internal_method">INTERNAL METHOD</a></li>
+	<ul>
+
+		<li><a href="#_cleanup_listing"><code>_cleanup_listing</code></a></li>
+	</ul>
+
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>LetsMT::Repository::VCSubversion - storage backend wrapping a local Subversion</p>
+<p>
+</p>
+<hr />
+<h1><a name="constructor">CONSTRUCTOR</a></h1>
+<pre>
+ $storage = new LetsMT::Repository::Storage::SVNLocal (%params);</pre>
+<p>
+</p>
+<hr />
+<h1><a name="methods">METHODS</a></h1>
+<p>
+</p>
+<h2><a name="init"><code>init</code></a></h2>
+<pre>
+ $storage-&gt;init ($path)</pre>
+<p>Initialize a new subversion repository.</p>
+<p>Returns: true (an exception is raised on failure).</p>
+<p>
+</p>
+<h2><a name="mkdir"><code>mkdir</code></a></h2>
+<pre>
+ $storage-&gt;mkdir ($repos, $branch, $user, $dir)</pre>
+<p>A wrapper around <code>svn mkdir</code>.</p>
+<p>Returns: true if directory already exists, or creation went well.
+An exception is raised on creation failure.</p>
+<p>
+</p>
+<h2><a name="copy"><code>copy</code></a></h2>
+<pre>
+ $storage-&gt;copy ($user, $slot, $source, $target)</pre>
+<p>A wrapper around <code>svn copy</code>.</p>
+<p>Returns: true (an exception is raised on failure).</p>
+<p>
+</p>
+<h2><a name="is_path"><code>is_path</code></a></h2>
+<pre>
+ $result = $storage-&gt;is_path (
+     repos  =&gt; $repos,
+     branch =&gt; $branch,
+     dir    =&gt; $dir,
+     file   =&gt; $file,
+     rev    =&gt; $revision,
+ )</pre>
+<p>Check whether the specified file or dir exists.</p>
+<p>Returns: true or false.</p>
+<p>
+</p>
+<h2><a name="list"><code>list</code></a></h2>
+<pre>
+ $storage-&gt;list ( repos =&gt; $repos, dir =&gt; $dir )</pre>
+<p>A wrapper around &lt;svn list&gt;.
+We use XML that subversion produces.</p>
+<p>Returns: a string with an XML-document of a file listing.</p>
+<p>
+</p>
+<h2><a name="revisions"><code>revisions</code></a></h2>
+<pre>
+ %revisions = $storage-&gt;revisions (@path_elements)</pre>
+<p>Returns: a list of revisions for a given resource</p>
+<p>
+</p>
+<h2><a name="cat"><code>cat</code></a></h2>
+<pre>
+ $content = $storage-&gt;cat ($range, $path, $uid, $rev)</pre>
+<p>A wrapper around <code>svn cat</code>.</p>
+<p>Returns: the content of the given file.</p>
+<p>
+</p>
+<h2><a name="add"><code>add</code></a></h2>
+<pre>
+ $storage-&gt;add ($user, $repos, $branch, $path, $file, $source)</pre>
+<p>Add a file (source) to a repository as <code>$path</code>/<code>$file</code>.
+It is done by checking out the holding directory
+completely empty (in order to minimize traffic volumes),
+and then proceeding with add and commit.</p>
+<p>Returns: true (an exception is raised on failure).</p>
+<p>
+</p>
+<h2><a name="add_file"><code>add_file</code></a></h2>
+<pre>
+ $storage-&gt;add_file ($user, $file )</pre>
+<p>Register a file (source) to be added to a repository as <code>$path</code>/<code>$file</code>.</p>
+<p>Returns: ( $success, $return_code, $stdout, $stderr )</p>
+<pre>
+ $success = true if successful
+ $return_code = return code of the system call
+ $stdout = reference to stdout of the system call
+ $stderr = reference to stderr of the system call</pre>
+<p>
+</p>
+<h2><a name="commit"><code>commit</code></a></h2>
+<pre>
+ $storage-&gt;commit ($user, $path, $message )</pre>
+<p>Commit all changes in the given path with message $message.</p>
+<p>Returns: ( $success, $return_code, $stdout, $stderr )</p>
+<pre>
+ $success = true if successful
+ $return_code = return code of the system call
+ $stdout = reference to stdout of the system call
+ $stderr = reference to stderr of the system call</pre>
+<p>
+</p>
+<h2><a name="update"><code>update</code></a></h2>
+<pre>
+ $storage-&gt;update ($self, $user, $repos, $branch, $path, $file, $source)</pre>
+<p>Update a repository with the given file (source).</p>
+<p>Returns: true (an exception is raised on failure)</p>
+<p>
+</p>
+<h2><a name="remove"><code>remove</code></a></h2>
+<pre>
+ $storage-&gt;remove (
+     repos =&gt; $repos,
+     dir   =&gt; $dir,
+     user  =&gt; $user,
+ )</pre>
+<p>Remove objects from the repository.</p>
+<p>Returns: true (an exception is raised on failure)</p>
+<p>
+</p>
+<h2><a name="checkout"><code>checkout</code></a></h2>
+<pre>
+ $storage-&gt;checkout (
+     repos =&gt; $repos,
+     rev   =&gt; $rev,
+     src   =&gt; $src,
+     trg   =&gt; $trg,
+     flags =&gt; $flags
+ )</pre>
+<p>Check out data from the repository.</p>
+<p>Returns: true (an exception is raised on failure)</p>
+<p>
+</p>
+<h2><a name="info"><code>info</code></a></h2>
+<pre>
+ $storage-&gt;info (
+     repos =&gt; $repos,
+     dir   =&gt; $dir,
+     rev   =&gt; $rev
+ )</pre>
+<p>Get information about a path in the repository</p>
+<p>Returns: a key-value hash with info</p>
+<p>
+</p>
+<h2><a name="export"><code>export</code></a></h2>
+<pre>
+ $storage-&gt;export (
+     repos   =&gt; $repos,
+     rev     =&gt; $rev,
+     src     =&gt; $src,
+     trg     =&gt; $trg,
+     flags   =&gt; $flags
+     archive =&gt; $archive)
+ )</pre>
+<p>Exports data from a repository to a target.
+If <code>$archive</code> is true, a zip archive with the exported contents will also be created).</p>
+<p>Returns: true (an exception is raised on failure).</p>
+<p>
+</p>
+<hr />
+<h1><a name="internal_method">INTERNAL METHOD</a></h1>
+<p>
+</p>
+<h2><a name="_cleanup_listing"><code>_cleanup_listing</code></a></h2>
+<pre>
+ $listing = $storage-&gt;_cleanup_listing ($listing, $slotobject)</pre>
+<p>A simplistic way to cleanup absolute paths from the svn listings.</p>
+
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Tokenizer</title>
+<link rel="stylesheet" href="../../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#methods">METHODS</a></li>
+	<li><a href="#constructor">CONSTRUCTOR</a></li>
+	<li><a href="#methods">METHODS</a></li>
+	<ul>
+
+		<li><a href="#tokenize"><code>tokenize</code></a></li>
+		<li><a href="#detokenize"><code>detokenize</code></a></li>
+		<li><a href="#tokenize_data"><code>tokenize_data</code></a></li>
+		<li><a href="#detokenize_data"><code>detokenize_data</code></a></li>
+	</ul>
+
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>LetsMT::DataProcessing::Tokenizer</p>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>Splits a sentence into tokens.</p>
+<p>Derivative classes should implement <code>tokenize</code> or <code>detokenize</code> (or both) depending on the intended usage.
+These are gathered into one class because they may rely on shared information.</p>
+<p>
+</p>
+<hr />
+<h1><a name="methods">METHODS</a></h1>
+<p>
+</p>
+<hr />
+<h1><a name="constructor">CONSTRUCTOR</a></h1>
+<pre>
+ $tokenizer = new LetsMT::DataProcessing::Tokenizer( method =&gt; $method )</pre>
+<p>
+</p>
+<hr />
+<h1><a name="methods">METHODS</a></h1>
+<p>
+</p>
+<h2><a name="tokenize"><code>tokenize</code></a></h2>
+<pre>
+ @tokens = $tokenizer-&gt;tokenize ($string)</pre>
+<p>Turns a string into a list of tokens.</p>
+<p>Abstract method, must be overridden!</p>
+<p>
+</p>
+<h2><a name="detokenize"><code>detokenize</code></a></h2>
+<pre>
+ $string = $tokenizer-&gt;detokenize(\@tokens)</pre>
+<p>Turns a reference to a list of tokens into a string.</p>
+<p>Abstract method, must be overridden!</p>
+<p>
+</p>
+<h2><a name="tokenize_data"><code>tokenize_data</code></a></h2>
+<pre>
+ $string = $tokenizer-&gt;tokenize_data(\%data)</pre>
+<p>Tokenizes data given in a data structure</p>
+<p>
+</p>
+<h2><a name="detokenize_data"><code>detokenize_data</code></a></h2>
+<pre>
+ $string = $tokenizer-&gt;detokenize_data( \%data )</pre>
+<p>Tokenizes data given in a data structure</p>
+
+</body>
+
+</html>

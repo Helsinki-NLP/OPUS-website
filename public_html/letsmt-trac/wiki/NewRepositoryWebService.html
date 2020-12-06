@@ -1,0 +1,521 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      NewRepositoryWebService – LetsMT
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/letsmt-trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/NewRepositoryWebService?format=txt" type="text/x-trac-wiki" title="Plain Text" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/NewRepositoryWebService?format=tex" type="text/x-trac-wiki" title="Latex" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/NewRepositoryWebService?format=pdf" type="text/x-trac-wiki" title="Latex-Pdf" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.letsmt.eu/"><img src="http://stp.lingfil.uu.se/~joerg/LetsMT/letsmt.jpg" alt="LetsMT" width="100" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/letsmt-trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/letsmt-trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="NewRepositoryWebService.html" title="View NewRepositoryWebService">NewRepositoryWebService</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/letsmt-trac/wiki/NewRepositoryWebService?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><p>
+</p><div class="wiki-toc">
+<ol>
+  <li>
+    <a href="NewRepositoryWebService.html#LetsMTResourceRepository-NewWebServiceAPI">LetsMT Resource Repository - New Web Service API</a>
+    <ol>
+      <li>
+        <a href="NewRepositoryWebService.html#Introduction">Introduction</a>
+        <ol>
+          <li>
+            <a href="NewRepositoryWebService.html#StorageSystem">Storage System</a>
+          </li>
+          <li>
+            <a href="NewRepositoryWebService.html#Database">Database</a>
+          </li>
+          <li>
+            <a href="NewRepositoryWebService.html#Batch-QueuingSystem">Batch-Queuing System</a>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <a href="NewRepositoryWebService.html#RequestFormat">Request Format</a>
+      </li>
+      <li>
+        <a href="NewRepositoryWebService.html#ResponseFormat">Response Format</a>
+        <ol>
+          <li>
+            <a href="NewRepositoryWebService.html#CodeAttribute">Code Attribute</a>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <a href="NewRepositoryWebService.html#APIs">APIs</a>
+        <ol>
+          <li>
+            <a href="NewRepositoryWebService.html#Access">Access</a>
+          </li>
+          <li>
+            <a href="NewRepositoryWebService.html#Admin">Admin</a>
+          </li>
+          <li>
+            <a href="NewRepositoryWebService.html#Group">Group</a>
+          </li>
+          <li>
+            <a href="NewRepositoryWebService.html#Job">Job</a>
+          </li>
+          <li>
+            <a href="NewRepositoryWebService.html#MetaData">MetaData</a>
+            <ol>
+              <li>
+                <a href="NewRepositoryWebService.html#ReservedMetaDataKeys">Reserved Meta Data Keys</a>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <a href="NewRepositoryWebService.html#Storage">Storage</a>
+            <ol>
+              <li>
+                <a href="NewRepositoryWebService.html#DeprecatedHighLevelLetsmtAPI">Deprecated High Level Letsmt API</a>
+              </li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <a href="NewRepositoryWebService.html#Authentication">Authentication</a>
+      </li>
+    </ol>
+  </li>
+</ol>
+</div><p>
+</p>
+<h1 id="LetsMTResourceRepository-NewWebServiceAPI">LetsMT Resource Repository - New Web Service API</h1>
+<h2 id="Introduction">Introduction</h2>
+<p>
+The LetsMT resource repository has a Web API that is implemented as a REST (Representational State Transfer) service with HTTP request messages and XML response messages. The Web API gives access to the LetsMT resource repository which consists mainly of a storage system (which stores data in a revision control system or optionally without revision control), a database (TokyoCabinet) and a batch-queuing system (SGE, Sun Grid Engine). The purpose of the Web API is to allow interaction with the repository system by uploading and downloading data, requesting and searching information and triggering batch processes.  
+</p>
+<p>
+As a resource repository mainly relies on the CRUD operations -- create, read, update, delete --, we chose to use the RESTful web service style. It is simple and easy for clients to use. Resource identifiers are provided in the URL, and the operation to perform on the given resource is specified by the request method. The four HTTP request methods POST, GET, PUT and DELETE map directly to the CRUD operations. A RESTful web service also must make sure to return suitable response codes. A GET/Read request that gets a 200-series response, can and will be cached (by the browser or internet caching proxies). From this follows that GET/Read operations must not modify the state on the server, as the response to a certain request must give the same response. Caching mechanisms will not cache GET responses with codes other than in the 200-series. Neither will POST, PUT or DELETE requests or their responses be cached.
+</p>
+<h3 id="StorageSystem">Storage System</h3>
+<p>
+As default a revision control system (Subversion) is used to store the actual data that gets imported into the system. The advantages are automatic backup, history and less redundancy with branch copies. The storage system offers also an option to store data without revision control for types of data where this would mean an unnecessary overhead like big binary data files.
+</p>
+<p>
+The data structure of the repository is illustrated in the following example. 
+</p>
+<pre class="wiki">SVN-Repository (Corpus, Slot)
+├ branch_1 (users copy of data)
+│  ├ uploads
+│  │ ├ doc
+│  │ │  ├ de
+│  │ │  │ └ word.oc
+│  │ │  ├ en
+│  │ │  │ └ word.oc
+│  │ │  └ fr
+│  │ │    └ word.oc
+│  │ ├ tmx
+│  │ │  ├ first.tmx
+│  │ │  └ second.tmx
+│  │ └ pdf
+│  │    └ ...
+│  └ xml
+│    ├ en
+│    │ ├ first.xml
+│    │ ├ second.xml
+│    │ └ word.xml
+│    ├ de
+│    │ └ word.xml
+│    ├ fr
+│    │ ├ first.xml
+│    │ ├ second.xml
+│    │ └ word.xml
+│    ├ de-en.xml
+│    ├ de-en
+│    │ └ word.xml
+│    ├ de-fr.xml
+│    ├ de-fr
+│    │ └ word.xml
+│    ├ en-fr.xml
+│    └ en-fr
+│      ├ first.xml
+│      ├ second.xml
+│      └ word.xml
+├ branch_2
+└ ...
+
+</pre><h3 id="Database">Database</h3>
+<p>
+There are actually two databases, one to store metadata about the content of the repository system and one to store group (and user) related information to control the access permissions.
+</p>
+<p>
+Both databases store information in form of arbitrary key-value pairs that can be accessed through a unique ID. For the metadata database the ID is the path to the resource in the repository system that metadata describes. For the group database the ID is the name of group itself. 
+</p>
+<h3 id="Batch-QueuingSystem">Batch-Queuing System</h3>
+<p>
+The Batch-Queuing System consists of a cluster system, the Sun Grid Engine (SGE), and the Job API which is used to access the SGE. Time consuming tasks like importing, aligning or converting resources can be delegated to the grid engine for execution while status information about the progress of the execution and the results will be delivered back to the resource repository. This keeps the resource repository responsive for other requests and makes it easy to scale the system processing resources by simply adding additional execution clients to the SGE.
+</p>
+<h2 id="RequestFormat">Request Format</h2>
+<p>
+A call to the web service APIs is in HTTP format and has the following parts: 
+</p>
+<pre class="wiki">https://&lt;host:port&gt;/ws/&lt;API-name&gt;/&lt;path&gt;?&lt;argument=value&gt;&amp;&lt;key=value&gt;
+</pre><p>
+where 
+</p>
+<ul><li>&lt;host&gt; is the serving host, 
+</li><li>&lt;API-name&gt; addresses the API, 
+</li><li>&lt;path&gt; addresses the resource or collection of resources. 
+</li></ul><p>
+It may be suffixed with an &lt;argument&gt; or &lt;key&gt; or a list of both where each can have a value, depending on the operations and API. 
+</p>
+<h2 id="ResponseFormat">Response Format</h2>
+<p>
+The response to all requests, with the exception of download, is a XML formatted string containing a status part and an optional list part. The type attribute of the status tag declares if it is was an error or not. The code attribute specifies a response code which gives further information about the success of failure of the request, see table below. The operation attribute shows what http method was used in the request. The location attribute shows the resource identifier used in the request.
+</p>
+<p>
+Remark 2: The error codes should be checked for consistency 
+</p>
+<pre class="wiki">&lt;letsmt-ws version='X'&gt;
+  &lt;status type='ok|error' code='XXX' operation='GET|PUT|POST|DELETE' location='/...'&gt;descriptive message&lt;/status&gt;
+  &lt;list path="/..."&gt;
+    &lt;entry kind="dir|file|group|..."&gt;
+      ...
+    &lt;/entry&gt;
+    &lt;entry kind="dir|file|group|..."&gt;
+      ...
+    &lt;/entry&gt;
+    ...
+  &lt;/list&gt;
+&lt;/letsmt-ws&gt;
+</pre><h3 id="CodeAttribute">Code Attribute</h3>
+<table class="wiki">
+<tr><td>   0 </td><td> no error 
+</td></tr><tr><td> 409 </td><td> user already member of group 
+</td></tr><tr><td> 403 </td><td> failed to add user to group  
+</td></tr><tr><td> 403 </td><td> not valid group              
+</td></tr><tr><td> 409 </td><td> already exists               
+</td></tr><tr><td> 403 </td><td> cannot find/read             
+</td></tr><tr><td> 403 </td><td> exception caught             
+</td></tr><tr><td> 403 </td><td> system level failure         
+</td></tr><tr><td> 403 </td><td> init failure                 
+</td></tr><tr><td> 403 </td><td> failed to create group       
+</td></tr><tr><td> 403 </td><td> other error                  
+</td></tr><tr><td> 403 </td><td> insufficient                 
+</td></tr><tr><td> 403 </td><td> not implemented              
+</td></tr><tr><td> 403 </td><td> permission denied            
+</td></tr><tr><td> 403 </td><td> not valid user               
+</td></tr></table>
+<h2 id="APIs">APIs</h2>
+<p>
+The following APIs are available:
+</p>
+<table class="wiki">
+<tr><td> <strong>API Name</strong>       </td><td> <strong>Purpose</strong> 
+</td></tr><tr><td> Access      </td><td> set and get group settings for a branch 
+</td></tr><tr><td> Admin      </td><td> get extra information about the system, like DB status 
+</td></tr><tr><td> Group       </td><td> create and delete groups, add/delete user to/from groups 
+</td></tr><tr><td> Job            </td><td> start and stop data processing jobs like alignment, get status information about jobs 
+</td></tr><tr><td> MetaData </td><td> set, get, delete and search meta data 
+</td></tr><tr><td> Storage     </td><td> create, delete resources in the repository, upload resources, trigger import, copy resources 
+</td></tr></table>
+<p>
+A more detailed description of the API functionality with example calls can be found <a class="wiki" href="WebAPISummary.html">here</a>.
+</p>
+<h3 id="Access">Access</h3>
+<p>
+The Access API is used to set and get the group settings for resources. The group attribute gives read access to a resource to all users of that group. Write access is only granted to the owner of a resource and not controlled by the group attribute.
+</p>
+<p>
+The group attribute can only be set on the branch level and not for single files or directories within a branch. So the &lt;path&gt; argument for the Access API has to be a valid path pointing to a branch. 
+</p>
+<p>
+<strong>Remark:</strong> Multiple arguments in requests are separated by comma for better readability here but have to be separated by '&amp;' in the actual request. Optional arguments are given in square bracket ('[argument]'). 
+</p>
+<table class="wiki">
+<tr><td> <strong>Description</strong>       </td><td> <strong>Method</strong> </td><td> <strong>Path</strong> </td><td> <strong>Arguments</strong> </td><td> <strong>Response</strong> </td><td> <strong>Response Code</strong> 
+</td></tr><tr><td> Get group of a resource </td><td> GET          </td><td> /&lt;path&gt;    </td><td> uid=&lt;uid&gt;       </td><td> status, list </td><td> Success: 200 
+</td></tr><tr><td> Set group of a resource </td><td> PUT          </td><td> /&lt;path&gt;    </td><td> uid=&lt;uid&gt;, gid=&lt;gid&gt; </td><td> status </td><td> Success: 201 
+</td></tr></table>
+<h3 id="Admin">Admin</h3>
+<table class="wiki">
+<tr><td> <strong>Description</strong>          </td><td> <strong>Method</strong> </td><td> <strong>Path</strong> </td><td> <strong>Arguments</strong> </td><td> <strong>Response</strong> </td><td> <strong>Response Code</strong> 
+</td></tr><tr><td> Get svn path of a resource </td><td> GET          </td><td> /&lt;path&gt;    </td><td> type=svnpath    </td><td> status, list   </td><td> Success: 200        
+</td></tr></table>
+<h3 id="Group">Group</h3>
+<p>
+The Group API is used for two purposes:  
+</p>
+<ul><li>For group/user management: to create and delete groups and to add and remove users from them
+</li><li>To set and view user specific alignment and import parameters, for more details see <a class="wiki" href="ImportConfig.html#User-specificconfiguration">ImportConfig</a>
+</li></ul><table class="wiki">
+<tr><td> <strong>Description</strong> </td><td> <strong>Method</strong> </td><td> <strong>Path</strong> </td><td> <strong>Arguments</strong> </td><td> <strong>Response</strong> </td><td> <strong>Response Code</strong> 
+</td></tr><tr><td> Get all groups </td><td> GET </td><td> / </td><td> uid=&lt;uid&gt; </td><td> status, list </td><td> Success: 200 
+</td></tr><tr><td> Get users of a group </td><td> GET </td><td> /&lt;group_name&gt; </td><td> uid=&lt;uid&gt; </td><td> status, list </td><td> Success: 200 
+</td></tr><tr><td> Add user to existing group </td><td> PUT </td><td> /&lt;group_name&gt;/&lt;user_to_add&gt; </td><td> uid=&lt;uid&gt; </td><td> status </td><td> Success: 201 
+</td></tr><tr><td> Create group and add effective user as first member </td><td> POST </td><td> /&lt;group_name&gt; </td><td> uid=&lt;uid&gt; </td><td> status </td><td> Success: 201 
+</td></tr><tr><td> Delete a group </td><td> DELETE </td><td> /&lt;group_name&gt; </td><td> uid=&lt;uid&gt; </td><td> status </td><td> Success: 201 
+</td></tr><tr><td> Delete a user in a group </td><td> DELETE </td><td> /&lt;group_name&gt;/&lt;user_name&gt; </td><td> uid=&lt;uid&gt; </td><td> status </td><td> Success: 201 
+</td></tr><tr><td> </td><td> </td><td> </td><td> </td><td> </td><td> 
+</td></tr><tr><td> Get align/import parameter </td><td> GET </td><td> /&lt;user_id&gt; </td><td style="text-align: right"> uid=&lt;uid&gt;, [action=showinfo]</td><td> status, list </td><td> Success: 200 
+</td></tr><tr><td> Set/overwrite align/import parameter </td><td> POST </td><td> /&lt;user_id&gt; </td><td> uid=&lt;uid&gt;, &lt;key&gt;=&lt;value&gt; </td><td> status </td><td> Success: 201 
+</td></tr><tr><td> Add align/import parameter </td><td> PUT </td><td> /&lt;user_id&gt; </td><td> uid=&lt;uid&gt;, &lt;key&gt;=&lt;value&gt; </td><td> status </td><td> Success: 201 
+</td></tr><tr><td> Delete align/import parameter </td><td> DELETE </td><td> /&lt;user_id&gt; </td><td> uid=&lt;uid&gt;, &lt;key&gt;=&lt;value&gt; </td><td> status </td><td> Success: 201 
+</td></tr></table>
+<h3 id="Job">Job</h3>
+<p>
+The Job API submits jobs (defined by job description files) to the grid engine for execution, queries their status and can also stop already running jobs. The job description files have to be uploaded via the storage API before they can be submitted.
+</p>
+<p>
+The job API can also trigger import and alignment processes without re-uploading the files. 
+</p>
+<table class="wiki">
+<tr><td> <strong>Description</strong> </td><td> <strong>Method</strong> </td><td> <strong>Path</strong> </td><td> <strong>Arguments</strong> </td><td> <strong>Response</strong> </td><td> <strong>Response Code</strong> 
+</td></tr><tr><td> Get status of a job </td><td> GET </td><td> /&lt;path/to/job_description_file&gt; </td><td> uid=&lt;uid&gt; </td><td> status, list </td><td> Success: 200 
+</td></tr><tr><td> Submit a new job </td><td> POST </td><td> /&lt;path/to/job_description_file&gt; </td><td> uid=&lt;uid&gt; </td><td> status </td><td> Success: 201 
+</td></tr><tr><td> Submit or resubmit a job </td><td> PUT </td><td> /&lt;path/to/job_description_file&gt; </td><td> uid=&lt;uid&gt; </td><td> status </td><td> Success: 201 
+</td></tr><tr><td> Stop a running job </td><td> DELETE </td><td> /&lt;path/to/job_description_file&gt; </td><td> uid=&lt;uid&gt; </td><td> status </td><td> Success: 201 
+</td></tr><tr><td> </td><td> </td><td> </td><td> </td><td> </td><td> 
+</td></tr><tr><td> (Re-)import all files in &lt;path&gt; </td><td> PUT </td><td> /uploads/[&lt;path&gt;] </td><td> uid=&lt;uid&gt;, run=import </td><td> status </td><td> Success: 201 
+</td></tr><tr><td> Re-align a document pair </td><td> PUT </td><td> /&lt;path/to/sentalign_file&gt; </td><td> uid=&lt;uid&gt;, run=realign </td><td> status </td><td> Success: 201 
+</td></tr><tr><td> Re-align all files in &lt;path&gt; </td><td> PUT </td><td> /&lt;path&gt; </td><td> uid=&lt;uid&gt;, run=realign </td><td> status </td><td> Success: 201 
+</td></tr><tr><td> Search and align all parallel documents in &lt;path&gt; </td><td> PUT </td><td> /&lt;path&gt; </td><td> uid=&lt;uid&gt;, run=align </td><td> status </td><td> Success: 201 
+</td></tr></table>
+<p>
+Re-align only aligns documents that already have a corresponding sentalign file while the 'search and align' version starts a new search with the current search parameter and (re-)aligns all matching documents. 
+ 
+</p>
+<h3 id="MetaData">MetaData</h3>
+<p>
+The Metadata API is used to manipulate metadata about the resources and offers search functionality. By setting predefined metadata key-value pairs on certain resource paths one can control what settings are used for alignment or import of this resource. See <a class="wiki" href="ImportConfig.html#Corpusresource-specificconfiguration">ImportConfig</a> for more details.
+</p>
+<table class="wiki">
+<tr><td> <strong>Description</strong> </td><td> <strong>Method</strong> </td><td> <strong>Path</strong> </td><td> <strong>Arguments</strong> </td><td> <strong>Response</strong> </td><td> <strong>Response Code</strong> 
+</td></tr><tr><td> Get meta data of a resource by path </td><td> GET </td><td> /&lt;path&gt;[@&lt;revision_number&gt;] </td><td> uid=&lt;uid&gt;, [rev=&lt;revision_number&gt;] </td><td> status, list </td><td> Success: 200 
+</td></tr><tr><td> Search meta data by key/value </td><td> GET </td><td> / </td><td> uid=&lt;uid&gt;, &lt;key&gt;[=&lt;value&gt;], [action=list_all] </td><td> status, list </td><td> Success: 200 
+</td></tr><tr><td> Search meta data by key/value with condition </td><td> GET </td><td> / </td><td> uid=&lt;uid&gt;, CONDITION_&lt;key&gt;[=&lt;value&gt;], [action=list_all] </td><td> status, list </td><td> Success: 200 
+</td></tr><tr><td> Create/Extend meta data entry </td><td> PUT </td><td> /&lt;path&gt; </td><td> uid=&lt;uid&gt;, &lt;key&gt;=&lt;value&gt; </td><td> status </td><td> Success: 201 
+</td></tr><tr><td> Create/Overwrite meta data entry </td><td> POST </td><td> /&lt;path&gt; </td><td> uid=&lt;uid&gt;, &lt;key&gt;=&lt;value&gt; </td><td> status </td><td> Success: 201 
+</td></tr><tr><td> Delete meta data entry, key or value </td><td> DELETE </td><td> /&lt;path&gt; </td><td> uid=&lt;uid&gt;,[&lt;key&gt;[=&lt;value&gt;]] </td><td> status </td><td> Success: 201 
+</td></tr><tr><td> </td><td> </td><td> </td><td> </td><td> </td><td> 
+</td></tr><tr><td> Set corpus/document type specific align/import parameter </td><td> POST </td><td> /&lt;slot&gt;/&lt;user&gt;/uploads/[&lt;document_type&gt;] </td><td> uid=&lt;uid&gt;, &lt;key&gt;=&lt;value&gt; </td><td> status, list </td><td> Success: 201 
+</td></tr><tr><td> Set resource specific align/import parameter </td><td> POST </td><td> /&lt;slot&gt;/&lt;user&gt;/uploads/&lt;path_to_resource&gt; </td><td> uid=&lt;uid&gt;, &lt;key&gt;=&lt;value&gt; </td><td> status, list </td><td> Success: 201 
+</td></tr></table>
+<p>
+The prefix 'CONDITION_' for search can be one of:
+</p>
+<ul><li>ONE_OF_
+</li><li>ALL_OF_
+</li><li>MAX_
+</li><li>MIN_
+</li></ul><p>
+Here are some example arguments that could be used for certain keys (size &amp; tags):
+</p>
+<table class="wiki">
+<tr><td> [ONE_OF_tags:nice,big,shiny] </td><td style="text-align: center">  one of the given tags should match in the 'tags' field               
+</td></tr><tr><td> [ALL_OF_tags:nice,big,free] </td><td style="text-align: center">  all of the given tags should match in the 'tags' field               
+</td></tr><tr><td> [MIN_size:1000]       </td><td style="text-align: center">  size filter (translated to numeric comparison of size key (&gt;=))      
+</td></tr><tr><td> [MAX_size:100000]       </td><td style="text-align: center">  size filter (translated to numeric comparison of size key (&lt;=))      
+</td></tr></table>
+<p>
+The first example clause will match any record that includes the words 'nice', 'big' OR 'shiny' within the tags-field. The second one matches only those records where all tags 'nice', 'big' AND 'free' are <span class="underline">included</span> in the corresponding tags field (word order does not matter). These extra conditions can be combined, for example <tt>[MIN_size:1000][MAX_size:10000]</tt> would give all data records for which size is between 1000 and 10000.
+</p>
+<p>
+Like seen in the examples one can specify multiple values for each key by giving them in a comma (',') separated list. The space or blank character (' ') can however not be part of a value or key and has to be avoided in comma separated lists as well!
+</p>
+<p>
+The GET command has like the storage API the optional revision argument 'rev' or the '@'-notation after the path. However a listing of available historic revisions for a resource by setting the 'rev=HEAD' argument or '@'HEAD like with the storage API is not possible. Instead an existing revision number must be given.  
+</p>
+<h4 id="ReservedMetaDataKeys">Reserved Meta Data Keys</h4>
+<p>
+The repository system uses certain pre-defined keys to store information about resources. These keys are reserved and can not be used to store other information without breaking functionality. 
+</p>
+<table class="wiki">
+<tr><td> <strong>Key Name</strong> </td><td> <strong>Description</strong> 
+</td></tr><tr><td> name </td><td> Name of a file or directory 
+</td></tr><tr><td> commit </td><td> Tag containing information about a commit to the underlying revision system 
+</td></tr><tr><td> author </td><td> Author of a commit 
+</td></tr><tr><td> date </td><td> Date of a commit 
+</td></tr><tr><td> group </td><td> Name of the group a resource belongs to 
+</td></tr><tr><td> owner </td><td> Name of the owner of a resource 
+</td></tr><tr><td> size </td><td> Size in bytes for a file, 0 for a directory 
+</td></tr><tr><td> command_X </td><td> Status of a command on the grid engine with sequential numbering X 
+</td></tr><tr><td> gid </td><td> Group ID 
+</td></tr><tr><td> job_id </td><td> ID of the job on the grid engine 
+</td></tr><tr><td> job_log_err </td><td> Path to the error log file on the execution host 
+</td></tr><tr><td> job_log_out </td><td> Path to the std out log file on the execution host 
+</td></tr><tr><td> status </td><td> Status information of the file 
+</td></tr><tr><td> resource-type </td><td> Additional information about the type of the resource, e.g. corpus file 
+</td></tr><tr><td> language </td><td> The language of the a resource 
+</td></tr><tr><td> source-language </td><td> Source language of an alignment 
+</td></tr><tr><td> target-language </td><td> Target language of an alignment 
+</td></tr><tr><td> source-document </td><td> Path to the source document of an alignment 
+</td></tr><tr><td> target-document </td><td> Path to the target document of an alignment 
+</td></tr><tr><td> alignment-type </td><td>  
+</td></tr><tr><td> aligner </td><td> The alignment software used to align resources 
+</td></tr><tr><td> nr-source-sents </td><td> Number of source sentences 
+</td></tr><tr><td> nr-target-sents </td><td> Number of target sentences 
+</td></tr><tr><td> alignment-cost </td><td> A figure to evaluate the quality of the alignment 
+</td></tr><tr><td> average-link-cost </td><td>  
+</td></tr><tr><td> running-time </td><td>  
+</td></tr><tr><td> link-types </td><td>  
+</td></tr><tr><td> user </td><td> Name of a user within a group listing 
+</td></tr><tr><td> !ImportPara_* </td><td> Prefix used for import parameter 
+</td></tr><tr><td> !AlignPara_* </td><td> Prefix used for alignment parameter 
+</td></tr></table>
+<p>
+Metadata keys on branch level:
+</p>
+<table class="wiki">
+<tr><td> <strong>Key Name</strong> </td><td> <strong>Description</strong> 
+</td></tr><tr><td> create         </td><td> date of creation 
+</td></tr><tr><td> access         </td><td> date of last access 
+</td></tr><tr><td> modif          </td><td> last modification date 
+</td></tr><tr><td> provider       </td><td> provider of the corpus 
+</td></tr><tr><td> lang           </td><td> list of languages in the corpus (IDs) 
+</td></tr><tr><td> parallel-langs </td><td> list of aligned language pairs 
+</td></tr><tr><td> import_queue   </td><td> list of uploads in the import queue 
+</td></tr><tr><td> import_failed  </td><td> list of uploads that failed to import 
+</td></tr></table>
+<h3 id="Storage">Storage</h3>
+<p>
+The Storage API is used to upload and download resources, get listings and delete resources. 
+</p>
+<table class="wiki">
+<tr><td> <strong>Description</strong> </td><td> <strong>Method</strong> </td><td> <strong>Path</strong> </td><td> <strong>Arguments</strong> </td><td> <strong>Response</strong> </td><td> <strong>Response Code</strong> 
+</td></tr><tr><td> Get listing of a resource </td><td> GET </td><td> /&lt;path&gt; </td><td> uid=&lt;uid&gt;, [rev=&lt;revision number&gt;] </td><td> status, list </td><td> Success: 200 
+</td></tr><tr><td> Download a resource </td><td> GET </td><td> /&lt;path&gt; </td><td> uid=&lt;uid&gt;, action=download, [archive=0], [rev=&lt;revision number&gt;] </td><td> download of file </td><td> Success: 200 
+</td></tr><tr><td> List text content of a resource </td><td> GET </td><td> /&lt;path&gt; </td><td> uid=&lt;uid&gt;, action=cat, [from=&lt;line_number&gt;], [to=&lt;line_number&gt;], [rev=[&lt;revision number&gt;]] </td><td> status, list </td><td> Success: 200 
+</td></tr><tr><td> Upload a resource and optionally import it </td><td> PUT </td><td> /&lt;path&gt; </td><td> uid=&lt;uid&gt;, [action=import] </td><td> status </td><td> Success: 201 
+</td></tr><tr><td> Upload a resource or copy a branch </td><td> POST </td><td> /&lt;path&gt; </td><td> uid=&lt;uid&gt;, [action=copy, dest=&lt;path&gt;, gid=&lt;gid&gt;] </td><td> status </td><td> Success: 201 
+</td></tr><tr><td> Delete a resource </td><td> DELETE </td><td> /&lt;path&gt; </td><td> uid=&lt;uid&gt; </td><td> status </td><td> Success: 201 
+</td></tr></table>
+<ul><li>uid = effective user id
+</li><li>gid = effective group id
+</li><li>type = mode of action
+</li><li>dest = the destination path
+</li><li>rev = revision number
+</li></ul><p>
+PUT and POST create slots, branches and directories as required prior to uploading the file or if no file for upload is given.
+</p>
+<p>
+Uploading content with PUT or POST is done using the http form field named 'payload' which is packaged as a multi part request. So for cURL one would add
+</p>
+<pre class="wiki">--form payload=@&lt;path/to/file&gt; 
+</pre><p>
+For listing, cat and downloading of resources and via GET the optional 'rev' argument (with a revision number or HEAD as value) is available. In case of a listing it will produce extra information about the revision history of a resource. Cat will output the content of the requested revision and download will of course output the entire resource.
+</p>
+<h4 id="DeprecatedHighLevelLetsmtAPI">Deprecated High Level Letsmt API</h4>
+<p>
+In older versions of the repository system there was a so called low and high level storage API. The high level storage API (addressed by /letsmt instead of /storage in the request) took the uid from the arguments of the request to set the branch level of the &lt;path&gt;. With this system the branch name had to be identical with the &lt;uid&gt; which was not desirable. For compatibility reasons the high level storage API is currently still available but should not be used if possible. It will be removed in a future release.
+</p>
+<p>
+Remark: archive=0 should be type=plain|archive with archive being default
+</p>
+<h2 id="Authentication">Authentication</h2>
+<p>
+A client system is authenticated using Secure Socket Layer client certificates, a secure and widely accepted method.
+</p>
+<p>
+A new installation of a system that will be accessing the resource repository server, needs a signed client certificate in order to connect to the web service. It can be requested from UUP. Once you have it, install it on your file system, and configure your client software to use it when issuing requests to the LetsMT Resource Repository.
+</p>
+<p>
+The authentication of the effective user is a responsibility that falls on the http client which is issuing requests to the repository. The effective user is supplied as an argument to the function calls, and is assumed to be authenticated by the calling system.
+</p>
+<p>
+The chain of trust applies - only a http client trusted to manage user authentication will be issued a signed client certificate.
+</p>
+<hr />
+<p>
+The old version of this file can be found <a class="wiki" href="http://opus.nlpl.eu/letsmt-trac/wiki/RepositoryWebService">here</a>
+</p>
+<p>
+The draft file for the renewed API can be found  <a class="wiki" href="http://opus.nlpl.eu/letsmt-trac/wiki/WebAPI">here</a>
+</p>
+</div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/letsmt-trac/wiki/NewRepositoryWebService?action=diff&amp;version=50" title="Version 50 by zumpe">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2012-07-06T09%3A47%3A24Z&amp;precision=second" title="See timeline at Jul 6, 2012, 9:47:24 AM">8 years ago</a></span>
+            <span class="trac-print">Last modified on Jul 6, 2012, 9:47:24 AM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/NewRepositoryWebService?format=txt">Plain Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/NewRepositoryWebService?format=tex">Latex</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/NewRepositoryWebService?format=pdf">Latex-Pdf</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

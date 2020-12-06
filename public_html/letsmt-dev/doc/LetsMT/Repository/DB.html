@@ -1,0 +1,216 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>DB</title>
+<link rel="stylesheet" href="../../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#synopsis">SYNOPSIS</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#constructor">CONSTRUCTOR</a></li>
+	<li><a href="#methods">METHODS</a></li>
+	<ul>
+
+		<li><a href="#open"><code>open</code></a></li>
+		<li><a href="#get_xml"><code>get_xml</code></a></li>
+		<li><a href="#search_xml"><code>search_xml</code></a></li>
+		<li><a href="#list_all_entries"><code>list_all_entries</code></a></li>
+		<li><a href="#apply_query_operation"><code>apply_query_operation</code></a></li>
+		<li><a href="#get_gid"><code>get_gid</code></a></li>
+		<li><a href="#get_owner"><code>get_owner</code></a></li>
+	</ul>
+
+	<li><a href="#abstract_methods">ABSTRACT METHODS</a></li>
+	<ul>
+
+		<li><a href="#open_read___open_write___close___hotocopy___db_handle___delete"><code>open_read</code> | <code>open_write</code> | <code>close</code> | <code>hotocopy</code> | <code>db_handle</code> | <code>delete</code></a></li>
+		<li><a href="#delete_recursive___put_recursive___post_recursive___delete_all"><code>delete_recursive</code> | <code>put_recursive</code> | <code>post_recursive</code> | <code>delete_all</code></a></li>
+		<li><a href="#post___put___get___key_exists___search___copy"><code>post</code> | <code>put</code> | <code>get</code> | <code>key_exists</code> | <code>search</code> | <code>copy</code></a></li>
+	</ul>
+
+	<li><a href="#internal_utility_methods">INTERNAL UTILITY METHODS</a></li>
+	<ul>
+
+		<li><a href="#_format_key"><code>_format_key</code></a></li>
+		<li><a href="#_format_entry"><code>_format_entry</code></a></li>
+	</ul>
+
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>LetsMT::Repository::DB - a module for storing and manipulating metadata</p>
+<p>
+</p>
+<hr />
+<h1><a name="synopsis">SYNOPSIS</a></h1>
+<pre>
+ use LetsMT::Repository::DB::TokyoCabinet;
+ 
+ # open the default database (LETSMTDISKROOT/metadata.tct)
+ my $metaDB = new LetsMT::Repository::DB::TokyoCabinet();
+ 
+ $metaDB-&gt;open();
+ ## alternative: specify database file:
+ # $metaDB-&gt;open('/path/to/database.tct');
+ 
+ #------
+ ## via the network:
+ # use LetsMT::Repository::DB::TokyoTyrant;
+ # my $metaDB = new LetsMT::Repository::DB::TokyoTyrant(
+ #      -host =&gt; 'localhost', -port =&gt; 1234);
+ #------
+ 
+ # insert some data records:
+ $metaDB-&gt;post( &quot;id1&quot;, {size =&gt; int(rand(100000)),
+                        tags =&gt; 'big,nice,free',
+                        owner =&gt; 'me',
+                        lang =&gt; 'en',
+                        type =&gt; 'monolingual'} );
+ $metaDB-&gt;post( &quot;id2&quot;, {size =&gt; int(rand(100000)),
+                        tags =&gt; 'small,ugly,free',
+                        owner =&gt; 'me',
+                        srclang =&gt; 'en',
+                        trglang =&gt; 'sv',
+                        type =&gt; 'parallel'} );
+ $metaDB-&gt;post( &quot;id3&quot;, {size =&gt; int(rand(100000)),
+                        tags =&gt; 'big,ugly,free',
+                        owner =&gt; 'someone else',
+                        srclang =&gt; 'en',
+                        trglang =&gt; 'fr',
+                        type =&gt; 'parallel'} );
+ 
+ # find all records with one of the following tags: nice OR big
+ my $results = $metaDB-&gt;search({ONE_OF_tags =&gt; 'nice,big'});
+ foreach (@{$results}){
+    print &quot;match: $_\n&quot;;
+ }
+ 
+ # find all records with all of the following tags: nice AND free
+ # return matches wrapped in XML
+ my $xml = $metaDB-&gt;search_xml({ALL_OF_tags =&gt; 'nice,free'});
+ print $xml;
+ 
+ # two conditions
+ my $results = $metaDB-&gt;search({owner =&gt; 'me' , type =&gt; 'parallel'});
+ foreach (@{$results}) {
+    print &quot;match: $_\n&quot;;
+ }
+ 
+ # numeric comparison (MIN = '&gt;=' and MAX = '&lt;=')
+ my $results = $metaDB-&gt;search({MIN_size =&gt; 10000 , MAX_size =&gt; 80000});
+ foreach (@{$results}) {
+     print $metaDB-&gt;get_xml($_);
+ }
+ 
+ # update a record and add another key-value pair
+ $metaDB-&gt;put(&quot;id3&quot;, { time =&gt; time(), owner =&gt; 'me' });
+ print $metaDB-&gt;get_xml('id3');
+ 
+ # delete a specific key
+ $metaDB-&gt;delete(&quot;id3&quot;, 'time');
+ print $metaDB-&gt;get_xml('id3');
+ 
+ # delete the whole record
+ $metaDB-&gt;delete(&quot;id3&quot;);
+ print $metaDB-&gt;get_xml('id3');
+ 
+ # iterate over all data records
+ $metaDB-&gt;iter_start();
+ while (my $data = $metaDB-&gt;get_next) {  # we could also call get_next_xml()
+   print &quot;owner: &quot;,$data-&gt;{owner},&quot;\n&quot;;
+ }
+ 
+ $metaDB-&gt;close();</pre>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>MetaData.pm uses Tokyo Cabinet, a flexible inplementation of DBM with support for tables including arbitrary fields.
+More information about the software can be found here: <a href="http://fallabs.com/tokyocabinet/">http://fallabs.com/tokyocabinet/</a>.</p>
+<p>
+</p>
+<hr />
+<h1><a name="constructor">CONSTRUCTOR</a></h1>
+<p>
+</p>
+<hr />
+<h1><a name="methods">METHODS</a></h1>
+<p>
+</p>
+<h2><a name="open"><code>open</code></a></h2>
+<pre>
+ $metaDB-&gt;open
+ $metaDB-&gt;open ($path)</pre>
+<p>Open the database (default: open for read/write access).</p>
+<p>
+</p>
+<h2><a name="get_xml"><code>get_xml</code></a></h2>
+<pre>
+ $xml = $metaDB-&gt;get_xml( \$msg, $id, $key )</pre>
+<p>Execute <code>get</code> and wrap the results in XML.</p>
+<p>
+</p>
+<h2><a name="search_xml"><code>search_xml</code></a></h2>
+<pre>
+ $xml = $metaDB-&gt;search_xml( $result_type, \$msg, $search )</pre>
+<p>Wrap search results in XML.</p>
+<p>
+</p>
+<h2><a name="list_all_entries"><code>list_all_entries</code></a></h2>
+<p>
+</p>
+<h2><a name="apply_query_operation"><code>apply_query_operation</code></a></h2>
+<p>
+</p>
+<h2><a name="get_gid"><code>get_gid</code></a></h2>
+<p>Get gid for given resources ABOVE slot level.</p>
+<p>
+</p>
+<h2><a name="get_owner"><code>get_owner</code></a></h2>
+<p>
+</p>
+<hr />
+<h1><a name="abstract_methods">ABSTRACT METHODS</a></h1>
+<p>Must be implemented in child classes.</p>
+<p>
+</p>
+<h2><a name="open_read___open_write___close___hotocopy___db_handle___delete"><code>open_read</code> | <code>open_write</code> | <code>close</code> | <code>hotocopy</code> | <code>db_handle</code> | <code>delete</code></a></h2>
+<p>
+</p>
+<h2><a name="delete_recursive___put_recursive___post_recursive___delete_all"><code>delete_recursive</code> | <code>put_recursive</code> | <code>post_recursive</code> | <code>delete_all</code></a></h2>
+<p>
+</p>
+<h2><a name="post___put___get___key_exists___search___copy"><code>post</code> | <code>put</code> | <code>get</code> | <code>key_exists</code> | <code>search</code> | <code>copy</code></a></h2>
+<p>
+</p>
+<hr />
+<h1><a name="internal_utility_methods">INTERNAL UTILITY METHODS</a></h1>
+<p>
+</p>
+<h2><a name="_format_key"><code>_format_key</code></a></h2>
+<p>
+</p>
+<h2><a name="_format_entry"><code>_format_entry</code></a></h2>
+
+</body>
+
+</html>

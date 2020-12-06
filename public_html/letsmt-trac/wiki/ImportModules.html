@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      ImportModules – LetsMT
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/letsmt-trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/ImportModules?format=txt" type="text/x-trac-wiki" title="Plain Text" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/ImportModules?format=tex" type="text/x-trac-wiki" title="Latex" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/ImportModules?format=pdf" type="text/x-trac-wiki" title="Latex-Pdf" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.letsmt.eu/"><img src="http://stp.lingfil.uu.se/~joerg/LetsMT/letsmt.jpg" alt="LetsMT" width="100" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/letsmt-trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/letsmt-trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="ImportModules.html" title="View ImportModules">ImportModules</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/letsmt-trac/wiki/ImportModules?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><h1 id="CreatingModulesforImportingDocuments">Creating Modules for Importing Documents</h1>
+<p>
+Document import modules are implemented as LetsMT::Import modules. Adding a new import module requires the following implementation steps:
+</p>
+<ul><li>create a new Perl module in perllib/LetsMT/lib/LetsMT/Import/, for example perllib/LetsMT/lib/LetsMT/Import/MyFormat.pm
+</li></ul><div class="code"><pre><span class="nb">package</span> <span class="nn">LetsMT::Import::</span>MyFormat<span class="p">;</span>
+
+<span class="k">use</span> strict<span class="p">;</span>
+
+<span class="k">use</span> <span class="nn">LetsMT::</span>Import<span class="p">;</span>
+<span class="k">use</span> <span class="nn">LetsMT::Import::</span>MyFormatReader<span class="p">;</span>
+<span class="k">use</span> <span class="nn">LetsMT::Import::</span>XCESWriter<span class="p">;</span>
+<span class="k">use</span> <span class="nn">LetsMT::</span>WebService<span class="p">;</span>
+
+<span class="c1">#-------------------------------------</span>
+<span class="c1"># constructor</span>
+<span class="c1">#-------------------------------------</span>
+
+<span class="k">sub </span><span class="nf">new</span> <span class="p">{</span>
+    <span class="k">my</span> <span class="nv">$class</span> <span class="o">=</span> <span class="nb">shift</span><span class="p">;</span>
+    <span class="k">my</span> <span class="nv">%self</span>  <span class="o">=</span> <span class="nv">@_</span><span class="p">;</span>
+    <span class="nb">bless</span> <span class="o">\</span><span class="nv">%self</span><span class="p">,</span> <span class="nv">$class</span><span class="p">;</span>
+    <span class="k">return</span> <span class="o">\</span><span class="nv">%self</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">#-------------------------------------</span>
+<span class="c1"># document validation</span>
+<span class="c1">#-------------------------------------</span>
+
+<span class="k">sub </span><span class="nf">validate</span> <span class="p">{</span>
+    <span class="k">my</span> <span class="nv">$self</span>       <span class="o">=</span> <span class="nb">shift</span><span class="p">;</span>
+    <span class="k">my</span> <span class="p">(</span><span class="nv">$resource</span><span class="p">)</span> <span class="o">=</span> <span class="nv">@_</span><span class="p">;</span>
+
+    <span class="k">my</span> <span class="nv">$file</span> <span class="o">=</span> <span class="nv">$resource</span><span class="o">-&gt;</span>local_path<span class="p">;</span>
+
+    <span class="c1"># add here some code to validate the file</span>
+    <span class="c1"># this may create error resources ....</span>
+    <span class="c1"># and also warning resources</span>
+
+    <span class="k">my</span> <span class="nv">@warn_resource_list</span> <span class="o">=</span> <span class="p">(</span>
+                 <span class="p">[</span> <span class="nv">$warn_resource1</span><span class="p">,</span> status <span class="o">=&gt;</span> <span class="s">'format check warnings'</span> <span class="p">],</span>
+                 <span class="p">[</span> <span class="nv">$warn_resource2</span><span class="p">,</span> status <span class="o">=&gt;</span> <span class="s">'unrecognized encoding'</span> <span class="p">]</span>
+                 <span class="o">...</span> <span class="p">)</span>
+
+    <span class="c1"># this is a situation that fails!</span>
+
+    <span class="k">my</span> <span class="nv">@err_resource_list</span> <span class="o">=</span> <span class="p">(</span> 
+                 <span class="p">[</span> <span class="nv">$resource</span><span class="p">,</span> status <span class="o">=&gt;</span> <span class="s">'Failed to validate as MyFormat'</span> <span class="p">],</span>
+                 <span class="p">[</span> <span class="nv">$err_resource</span><span class="p">,</span> status <span class="o">=&gt;</span> <span class="s">'logfile of file format check'</span> <span class="p">],</span>
+                 <span class="o">...</span>       <span class="p">);</span>
+
+    <span class="c1"># success is if the list of error resources is empty (empty array @err_resource_list)!</span>
+
+    <span class="k">return</span> <span class="p">(</span><span class="o">\</span><span class="nv">@err_resource_list</span><span class="p">,</span><span class="o">\</span><span class="nv">@warn_resource_list</span><span class="p">);</span>
+<span class="p">}</span>
+
+
+
+
+<span class="c1">#-------------------------------------</span>
+<span class="c1"># document conversion</span>
+<span class="c1">#-------------------------------------</span>
+
+<span class="k">sub </span><span class="nf">convert</span> <span class="p">{</span>
+    <span class="k">my</span> <span class="nv">$self</span> <span class="o">=</span> <span class="nb">shift</span><span class="p">;</span>
+    <span class="k">my</span> <span class="p">(</span> <span class="nv">$resource</span><span class="p">,</span> <span class="nv">$importer</span><span class="p">,</span> <span class="nv">$meta_resource</span><span class="p">,</span> <span class="nv">$report_progress</span> <span class="p">)</span> <span class="o">=</span> <span class="nv">@_</span><span class="p">;</span>
+
+    <span class="k">my</span> <span class="nv">$new_resource</span> <span class="o">=</span> <span class="nv">$resource</span><span class="o">-&gt;</span>convert_type<span class="p">(</span> <span class="s">'myformat'</span><span class="p">,</span> <span class="s">'xml'</span> <span class="p">);</span>
+
+    <span class="k">my</span> <span class="nv">$reader</span> <span class="o">=</span> <span class="k">new</span> <span class="nn">LetsMT::Import::</span>MyFormatReader<span class="p">(</span>
+        normalizer <span class="o">=&gt;</span> <span class="nv">$importer</span><span class="o">-&gt;</span><span class="p">{</span>normalizer<span class="p">},</span>
+        splitter   <span class="o">=&gt;</span> <span class="nv">$importer</span><span class="o">-&gt;</span><span class="p">{</span>splitter<span class="p">},</span>
+        lang       <span class="o">=&gt;</span> <span class="nv">$importer</span><span class="o">-&gt;</span><span class="p">{</span>lang<span class="p">}</span> <span class="p">);</span>
+
+    <span class="c1"># the tokenizer can be necessary to de-tokenize ....</span>
+    <span class="k">my</span> <span class="nv">$writer</span> <span class="o">=</span> <span class="k">new</span> <span class="nn">LetsMT::Import::</span>XCESWriter<span class="p">(</span>tokenizer  <span class="o">=&gt;</span> <span class="nv">$importer</span><span class="o">-&gt;</span><span class="p">{</span>tokenizer<span class="p">});</span>
+
+    <span class="nv">$reader</span><span class="o">-&gt;</span><span class="nb">open</span><span class="p">(</span><span class="nv">$resource</span><span class="p">);</span>
+    <span class="nv">$writer</span><span class="o">-&gt;</span><span class="nb">open</span><span class="p">(</span><span class="nv">$new_resource</span><span class="p">);</span>
+    <span class="k">while</span> <span class="p">(</span> <span class="k">my</span> <span class="nv">$data</span> <span class="o">=</span> <span class="nv">$reader</span><span class="o">-&gt;</span><span class="nb">read</span> <span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$writer</span><span class="o">-&gt;</span><span class="nb">write</span><span class="p">(</span><span class="nv">$data</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="nv">$reader</span><span class="o">-&gt;</span><span class="nb">close</span><span class="p">;</span>
+    <span class="nv">$writer</span><span class="o">-&gt;</span><span class="nb">close</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nv">$writer</span><span class="o">-&gt;</span>get_resources<span class="p">;</span>
+
+<span class="p">}</span>
+
+<span class="mi">1</span><span class="p">;</span>
+
+</pre></div><ul><li>implement the reader module
+</li><li>add the new import module to the general import module
+</li></ul></div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/letsmt-trac/wiki/ImportModules?action=diff&amp;version=3" title="Version 3 by joerg">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2012-01-17T18%3A39%3A14Z&amp;precision=second" title="See timeline at Jan 17, 2012, 6:39:14 PM">9 years ago</a></span>
+            <span class="trac-print">Last modified on Jan 17, 2012, 6:39:14 PM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <script type="text/javascript">
+        jQuery.loadStyleSheet("/letsmt-trac/pygments/trac.css", "text/css");
+    </script>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/ImportModules?format=txt">Plain Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/ImportModules?format=tex">Latex</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/ImportModules?format=pdf">Latex-Pdf</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

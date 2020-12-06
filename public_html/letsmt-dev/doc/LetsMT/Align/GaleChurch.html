@@ -1,0 +1,101 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>GaleChurch</title>
+<link rel="stylesheet" href="../../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#constructor">CONSTRUCTOR</a></li>
+	<ul>
+
+		<li><a href="#align"><code>align</code></a></li>
+		<li><a href="#get_sentence_lengths"><code>get_sentence_lengths</code></a></li>
+		<li><a href="#length_align"><code>length_align</code></a></li>
+		<li><a href="#match"><code>match</code></a></li>
+		<li><a href="#pnorm"><code>pnorm</code></a></li>
+	</ul>
+
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>LetsMT::Align::GaleChurch - Sentence-align using the approach by Gale &amp; Church</p>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>Sentence-align two resources using a length-based approach (Gale &amp; Church, 1991/1993).</p>
+<p>
+</p>
+<hr />
+<h1><a name="constructor">CONSTRUCTOR</a></h1>
+<pre>
+ $aligner = new LetsMT::Align (method =&gt; 'gale', %params)</pre>
+<p>Possible parameters (%args):</p>
+<pre>
+ search_window =&gt; &lt;size&gt;</pre>
+<p>Size of the search window to prune the dynamic programming.
+If not set or zero: Do complete search (quadratic in number of sentences).
+Default = $SEARCH_WINDOW.</p>
+<pre>
+ mean =&gt; &lt;value&gt;
+ variance =&gt; &lt;value&gt;</pre>
+<p>Mean and variance of the normal distribution used in the length-match costs. Default values: mean=1, variance=6.8 (from original paper)</p>
+<pre>
+  prior =&gt; \%linktype-priors</pre>
+<p>Prior probabilities of all accepted link types. %linktype-priors is a two dimensional hash, for example:</p>
+<pre>
+ {
+   1 =&gt; { 1 =&gt; 0.8, 2 =&gt; 0.1 },
+   2 =&gt; { 1 =&gt; 0.05, 2 =&gt; 0.05}
+ }</pre>
+<p>This defines a prior distribution</p>
+<pre>
+  1:1 links = 0.9
+  1:2 links = 0.1
+  2:1 links = 0.05
+  2:2 links = 0.05</pre>
+<p>
+</p>
+<h2><a name="align"><code>align</code></a></h2>
+<pre>
+ $AlgRes = align ($SrcRes, $TrgRes [, $AlgRes])</pre>
+<p>Align <code>$SrcRes</code> and <code>$TrgRes</code> with each other and save sentence alignments in <code>$AlgRes</code>.
+If no <code>$AlgRes</code> is given: Create a new resource from the information found in <code>$SrcRes</code>, <code>$TrgRes</code>
+(see <code>LetsMT::Align::make_align_resource</code>).</p>
+<p>
+</p>
+<h2><a name="get_sentence_lengths"><code>get_sentence_lengths</code></a></h2>
+<p>Read all sentences from the resource and return sentence IDs and lengths.</p>
+<p>
+</p>
+<h2><a name="length_align"><code>length_align</code></a></h2>
+<p>
+</p>
+<h2><a name="match"><code>match</code></a></h2>
+<p>
+</p>
+<h2><a name="pnorm"><code>pnorm</code></a></h2>
+
+</body>
+
+</html>

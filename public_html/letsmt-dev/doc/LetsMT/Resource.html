@@ -1,0 +1,348 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Resource</title>
+<link rel="stylesheet" href="../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#functions">FUNCTIONS</a></li>
+	<ul>
+
+		<li><a href="#is_letsmt_resource"><code>is_letsmt_resource</code></a></li>
+	</ul>
+
+	<li><a href="#constructors">CONSTRUCTORS</a></li>
+	<ul>
+
+		<li><a href="#new"><code>new</code></a></li>
+		<li><a href="#make___factory"><code>make</code> - Factory</a></li>
+		<li><a href="#make_from_path"><code>make_from_path</code></a></li>
+		<li><a href="#make_from_url"><code>make_from_url</code></a></li>
+		<li><a href="#make_from_relative_path"><code>make_from_relative_path</code></a></li>
+		<li><a href="#make_from_storage_path"><code>make_from_storage_path</code></a></li>
+		<li><a href="#make_from_letsmt_path"><code>make_from_letsmt_path</code></a></li>
+	</ul>
+
+	<li><a href="#methods">METHODS</a></li>
+	<ul>
+
+		<li><a href="#basename"><code>basename</code></a></li>
+		<li><a href="#revision"><code>revision</code></a></li>
+		<li><a href="#language"><code>language</code></a></li>
+		<li><a href="#set_language"><code>set_language</code></a></li>
+		<li><a href="#type"><code>type</code></a></li>
+		<li><a href="#upload_type"><code>upload_type</code></a></li>
+		<li><a href="#clone"><code>clone</code></a></li>
+		<li><a href="#corpus"><code>corpus</code></a></li>
+		<li><a href="#_resrouce__strip_suffix">$resrouce-&gt;strip_suffix</a></li>
+		<li><a href="#graft_suffix"><code>graft_suffix</code></a></li>
+		<li><a href="#convert_type"><code>convert_type</code></a></li>
+		<li><a href="#path_down"><code>path_down</code></a></li>
+		<li><a href="#path_to"><code>path_to</code></a></li>
+		<li><a href="#path_elements"><code>path_elements</code></a></li>
+		<li><a href="#pop_path"><code>pop_path</code></a></li>
+		<li><a href="#shift_path"><code>shift_path</code></a></li>
+		<li><a href="#push_path"><code>push_path</code></a></li>
+		<li><a href="#unshift_path"><code>unshift_path</code></a></li>
+		<li><a href="#shift_path_to_local"><code>shift_path_to_local</code></a></li>
+		<li><a href="#slot___user___path___local_dir___fromdoc___todoc___encoding"><code>slot</code> | <code>user</code> | <code>path</code> | <code>local_dir</code> | <code>fromDoc</code> | <code>toDoc</code> | <code>encoding</code></a></li>
+		<li><a href="#filename___dirname___localdirname"><code>filename</code> | <code>dirname</code> | <code>localdirname</code></a></li>
+		<li><a href="#set_server"><code>set_server</code></a></li>
+		<li><a href="#get_server"><code>get_server</code></a></li>
+		<li><a href="#to_string"><code>to_string</code></a></li>
+		<li><a href="#letsmt_path___storage_path___local_path"><code>letsmt_path</code> | <code>storage_path</code> | <code>local_path</code></a></li>
+	</ul>
+
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>LetsMT::Resource - describe LetsMT resources</p>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>The Resource class describes a resource, using four components:</p>
+<ol>
+<li>
+<pre>
+    A C&lt;slot&gt; (a corpus name).</pre>
+</li>
+<li>
+<pre>
+    A C&lt;user&gt; (C&lt;SVN&gt;-branch).</pre>
+</li>
+<li>
+<pre>
+    A C&lt;path&gt; (the path of the actual file relative to the slot/user/local directory.</pre>
+</li>
+<li>
+<pre>
+    A C&lt;local_dir&gt; which is the place corresponding to C&lt;slot/user&gt; on the local storage device. This will typically be a temporary directory.</pre>
+</li>
+</ol>
+<p>
+</p>
+<hr />
+<h1><a name="functions">FUNCTIONS</a></h1>
+<p>
+</p>
+<h2><a name="is_letsmt_resource"><code>is_letsmt_resource</code></a></h2>
+<pre>
+ &amp;LetsMT::Resource::is_letsmt_resource ($url)</pre>
+<p>Check if <code>url</code> is a valid LetsMT URL (and remove the heading part).</p>
+<p>
+</p>
+<hr />
+<h1><a name="constructors">CONSTRUCTORS</a></h1>
+<p>
+</p>
+<h2><a name="new"><code>new</code></a></h2>
+<pre>
+ $resource = new LetsMT::Resource (
+     slot =&gt; '..', user =&gt; '..', path =&gt; '..', local_dir =&gt; '..'
+ )</pre>
+<p>Uses a hash to construct a resource.</p>
+<p>Any field that is not specified, or has the value <code>undef</code>,
+will be assigned the empty string (<code>''</code>).</p>
+<p>
+</p>
+<h2><a name="make___factory"><code>make</code> - Factory</a></h2>
+<pre>
+ $resource = LetsMT::Resource::make( $slot, $user, $path, $local_dir )</pre>
+<p>Factory for making resources.</p>
+<p>
+</p>
+<h2><a name="make_from_path"><code>make_from_path</code></a></h2>
+<pre>
+ $resource = LetsMT::Resource::make_from_path( $path, user, local_dir )</pre>
+<p>Make a resource object from a given path <code>path</code>.</p>
+<p>Tries first to use path as a complete LetsMT-URL. If this fails, tries to
+use path as a path to $ENV{LETSMT_URL} and if this fails: intepret <code>path</code> as
+high-level API path.</p>
+<p>
+</p>
+<h2><a name="make_from_url"><code>make_from_url</code></a></h2>
+<pre>
+ $resource = LetsMT::Resource::make_from_url( $url, user, local_dir )</pre>
+<p>Make a resource object from a given URL.</p>
+<p>Checks if <code>url</code> is a valid LetsMT URL
+and sets <code>user</code> if <code>local_dir</code> points to a storage location.</p>
+<p>
+</p>
+<h2><a name="make_from_relative_path"><code>make_from_relative_path</code></a></h2>
+<pre>
+ $resource = LetsMT::Resource::make_from_relative_path(
+    $path, $user, $local_dir
+ )</pre>
+<p>Make a resource object from a given path.
+Checks if <code>path</code> starts with either 'storage' or 'letsmt'.
+Use branch-name to set <code>user</code> in case of storage paths.</p>
+<p>
+</p>
+<h2><a name="make_from_storage_path"><code>make_from_storage_path</code></a></h2>
+<pre>
+ LetsMT::Resource::make_from_storage_path( $path, $local_dir )</pre>
+<p>Make a resource object from a given storage path.</p>
+<p>
+</p>
+<h2><a name="make_from_letsmt_path"><code>make_from_letsmt_path</code></a></h2>
+<pre>
+ LetsMT::Resource::make_from_letsmt_path( $path, $user, $local_dir )</pre>
+<p>Make a resource object from a given letsmt path.</p>
+<p>
+</p>
+<hr />
+<h1><a name="methods">METHODS</a></h1>
+<p>
+</p>
+<h2><a name="basename"><code>basename</code></a></h2>
+<p>Remove the initial sub-dirs of the resource path (xml/lang) and return the remaining parts.</p>
+<p>
+</p>
+<h2><a name="revision"><code>revision</code></a></h2>
+<p>Return the revision number of the resource, if defined.</p>
+<p>
+</p>
+<h2><a name="language"><code>language</code></a></h2>
+<p>When called with a parameter, set the language:</p>
+<pre>
+ $lang = $resource-&gt;language ($new_lang)</pre>
+<p>Otherwise, return the set language:</p>
+<pre>
+ $lang = $resource-&gt;language</pre>
+<p>In this case the 'lang' property is used if it exists;
+if not, the resource's path is searched for valid ISO639 language names,
+and the first match is returned.
+If everything fails, the result is <code>undef</code> (an empty list in list contexts).</p>
+<p>
+</p>
+<h2><a name="set_language"><code>set_language</code></a></h2>
+<pre>
+ $resource-&gt;set_language ($new_lang)</pre>
+<p>Return/set resource language.</p>
+<p>WARNING: setting the resource language changes the path!
+This is only useful when creating new resources from cloned resource objects.</p>
+<p>Either set as attribute,
+or second directory in path after /xml/;
+unknown otherwise.</p>
+<p>
+</p>
+<h2><a name="type"><code>type</code></a></h2>
+<pre>
+ $type = $resource-&gt;type</pre>
+<p>Return the resource type (guessing from the path if necessary).</p>
+<p>
+</p>
+<h2><a name="upload_type"><code>upload_type</code></a></h2>
+<p>
+</p>
+<h2><a name="clone"><code>clone</code></a></h2>
+<pre>
+ $resource-&gt;clone</pre>
+<p>Creates an exact copy of <code>$resource</code>.</p>
+<p>
+</p>
+<h2><a name="corpus"><code>corpus</code></a></h2>
+<pre>
+ $resource-&gt;corpus</pre>
+<p>Create a new resource, which is identical to <code>$resource</code>, but has no path.
+This means that the created resource represents the entire corpus.</p>
+<p>
+</p>
+<h2><a name="_resrouce__strip_suffix">$resrouce-&gt;strip_suffix</a></h2>
+<p>Creates a copy of <code>$resource</code> where the first found suffix has been removed. A
+suffix is identified as a dot followed by non-dots to the end of the <code>path</code>.</p>
+<p>
+</p>
+<h2><a name="graft_suffix"><code>graft_suffix</code></a></h2>
+<pre>
+ $resource-&gt;graft_suffix ($suffix)</pre>
+<p>Creates a copy of <code>$resource</code> which has the suffix <code>$suffix</code> added to the end
+of its <code>path</code>.</p>
+<p>
+</p>
+<h2><a name="convert_type"><code>convert_type</code></a></h2>
+<pre>
+ $resource-&gt;convert_type ($old_type, $new_type)</pre>
+<p><strong>This does not actually change the type of the resource, but only the naming of it!</strong></p>
+<p>Creates a copy of <code>$resource</code>, where instances of <code>$old_type</code> in the beginning
+and end has been replaced with <code>$new_type</code>. The variable <code>$old_type</code> may be a
+regex.</p>
+<p>
+</p>
+<h2><a name="path_down"><code>path_down</code></a></h2>
+<pre>
+ $resource-&gt;path_down</pre>
+<p>Creates a new resource where everything from, and including, the last slash has
+been removed from the <code>path</code>.</p>
+<p>
+</p>
+<h2><a name="path_to"><code>path_to</code></a></h2>
+<pre>
+ $resource-&gt;path_to (@nodes)</pre>
+<p>Creates a new resource with additional nodes in the path. Accepts a list of
+nodes as parameters.</p>
+<p>
+</p>
+<h2><a name="path_elements"><code>path_elements</code></a></h2>
+<pre>
+ @elements = $resource-&gt;path_elements [($attribute)]</pre>
+<p>
+</p>
+<h2><a name="pop_path"><code>pop_path</code></a></h2>
+<pre>
+ $popped = $resource-&gt;pop_path</pre>
+<p>
+</p>
+<h2><a name="shift_path"><code>shift_path</code></a></h2>
+<pre>
+ $shifted = $resource-&gt;shift_path</pre>
+<p>
+</p>
+<h2><a name="push_path"><code>push_path</code></a></h2>
+<pre>
+ $new_path = $resource-&gt;push_path ($element)</pre>
+<p>
+</p>
+<h2><a name="unshift_path"><code>unshift_path</code></a></h2>
+<pre>
+ $new_path = $resource-&gt;unshift_path ($element)</pre>
+<p>
+</p>
+<h2><a name="shift_path_to_local"><code>shift_path_to_local</code></a></h2>
+<p>Shift away the first subdirectory from the path ('uploads') and move it to local_dir.</p>
+<pre>
+ ---&gt; a handy function for import (when creating new resources)
+ ---&gt; make the correct path for new resources
+ ---&gt; still keep the local path accessible</pre>
+<p>This was previously done in LetsMT::Import::convert and described as:</p>
+<pre>
+ &gt; Voodoo magick to harmonize paths. Makes 'uploads' a part of the
+ &gt; local path, preventing it from being a part of the paths of the
+ &gt; created resources, while still making the downloaded file available.</pre>
+<p>
+</p>
+<h2><a name="slot___user___path___local_dir___fromdoc___todoc___encoding"><code>slot</code> | <code>user</code> | <code>path</code> | <code>local_dir</code> | <code>fromDoc</code> | <code>toDoc</code> | <code>encoding</code></a></h2>
+<pre>
+ $slot = $resource-&gt;slot
+ $resource-&gt;slot ($slot)
+ # etc.</pre>
+<p>Getters and setters for the components.
+Use <code>$slot = $resource-&gt;slot</code> to get a value,
+and <code>$resource-&gt;slot('testslot')</code> to set a value.</p>
+<p>When combined, a getter/setter method returns the new value.
+The value <code>$user = $resource-&gt;user('me')</code> thus return <code>'me'</code>,
+and not whatever the resources user field was before.</p>
+<p>
+</p>
+<h2><a name="filename___dirname___localdirname"><code>filename</code> | <code>dirname</code> | <code>localdirname</code></a></h2>
+<p>Getters.</p>
+<p>
+</p>
+<h2><a name="set_server"><code>set_server</code></a></h2>
+<p>Set server URL for the given slot.</p>
+<p>
+</p>
+<h2><a name="get_server"><code>get_server</code></a></h2>
+<p>Return server URL for the given slot.</p>
+<p>
+</p>
+<h2><a name="to_string"><code>to_string</code></a></h2>
+<pre>
+ $resource-&gt;to_string</pre>
+<p>Returns a string representation of the resource.
+This method is overloaded so that a resource object can be used directly in a string.</p>
+<p>
+</p>
+<h2><a name="letsmt_path___storage_path___local_path"><code>letsmt_path</code> | <code>storage_path</code> | <code>local_path</code></a></h2>
+<pre>
+ $path = $resource-&gt;letsmt_path
+ $path = $resource-&gt;storage_path
+ $path = $resource-&gt;local_path</pre>
+<p>Keeping proper track of a resource means that we always know
+where to expect to find it in the repository and on the local disc.
+These methods compose the various locations of the resource.</p>
+
+</body>
+
+</html>

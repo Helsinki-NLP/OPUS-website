@@ -1,0 +1,496 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      WebAPISummary – LetsMT
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/letsmt-trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/WebAPISummary?format=txt" type="text/x-trac-wiki" title="Plain Text" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/WebAPISummary?format=tex" type="text/x-trac-wiki" title="Latex" /><link rel="alternate" href="http://opus.nlpl.eu/letsmt-trac/wiki/WebAPISummary?format=pdf" type="text/x-trac-wiki" title="Latex-Pdf" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://www.letsmt.eu/"><img src="http://stp.lingfil.uu.se/~joerg/LetsMT/letsmt.jpg" alt="LetsMT" width="100" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/letsmt-trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/letsmt-trac/login">Login</a></li><li><a href="../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li class="last"><a href="../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="WebAPISummary.html" title="View WebAPISummary">WebAPISummary</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/letsmt-trac/wiki/WebAPISummary?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><h1 id="OverviewofAPIfunctionalitywithexamples">Overview of API functionality with examples</h1>
+<p>
+<strong>Access</strong>
+</p>
+<ul><li><a class="wiki" href="WebAPISummary.html#RequestingAllGroupName">Requesting the access settings of all branches in a slot</a>
+</li></ul><ul><li><a class="wiki" href="WebAPISummary.html#RequestingGroupName">Requesting the access settings for a certain branch</a>
+<ul><li><a class="wiki" href="WebAPISummary.html#SetGroupName">Setting the group name of a branch to a new value</a>
+</li></ul></li></ul><p>
+<strong>Admin</strong>
+</p>
+<ul><li><a class="wiki" href="WebAPISummary.html#ReturnSVNPath">Return the full SVN path of a given resource</a>
+</li></ul><p>
+ 
+<strong>Group</strong>
+</p>
+<ul><li><a class="wiki" href="WebAPISummary.html#ListAllGroups">List all groups</a>
+</li><li><a class="wiki" href="WebAPISummary.html#GetUsersOfGroup">Get the user(s) of a group</a>
+</li><li><a class="wiki" href="WebAPISummary.html#AddUserToGroup">Add user to a group</a>
+</li><li><a class="wiki" href="WebAPISummary.html#CreateGroup">Create a group with the effective user as first member</a>
+</li><li><a class="wiki" href="WebAPISummary.html#DeleteGroup">Delete a group</a>
+</li></ul><ul><li><a class="wiki" href="WebAPISummary.html#ShowUserAlignImportPara">Show user specific import and alignment parameters</a>
+</li><li><a class="wiki" href="WebAPISummary.html#SetUserAlignImportPara">Set user specific import or alignment parameters (overwrites values of existing keys)</a>
+</li><li><a class="wiki" href="WebAPISummary.html#AddUserAlignImportPara">Add user specific import or alignment parameters (adding values to existing keys) </a>
+</li><li><a class="wiki" href="WebAPISummary.html#DeleteUserAlignImportPara">Delete user specific import or alignment parameters (removing key value pairs)</a>
+</li></ul><p>
+<strong>Job</strong>
+</p>
+<ul><li><a class="wiki" href="WebAPISummary.html#GetJobStatus">Check the status of a job</a>
+</li><li><a class="wiki" href="WebAPISummary.html#PostJob">Submit a new job description file for execution</a>
+</li><li><a class="wiki" href="WebAPISummary.html#PutJob">Submit or overwrite a job description file</a> 
+</li><li><a class="wiki" href="WebAPISummary.html#DeleteJob">Stop the execution of a job</a>
+</li></ul><ul><li><a class="wiki" href="WebAPISummary.html#JobReimport">Reimport all files in a given path e.g. uploads </a>
+</li><li><a class="wiki" href="WebAPISummary.html#JobRealignPair">Re-align a document pair</a>
+</li><li><a class="wiki" href="WebAPISummary.html#JobRealignPath">Re-align all files in given path, e.g. /slot_1/user_id_1/xml/en-sv</a>
+</li><li><a class="wiki" href="WebAPISummary.html#JobAlignPath">Search and align all parallel documents in given path</a>
+</li></ul><p>
+<strong>MetaData</strong>
+</p>
+<ul><li><a class="wiki" href="WebAPISummary.html#SearchMetaByPath">Searching for meta data by path</a>
+</li><li><a class="wiki" href="WebAPISummary.html#SearchMetaByArgumentWithoutPath">Searching for meta data by argument, without path, only IDs as result</a>
+</li><li><a class="wiki" href="WebAPISummary.html#SearchingForMetaByPathAndArgumentFullResult">Searching for meta data by path and argument, only IDs as result</a>
+</li><li><a class="wiki" href="WebAPISummary.html#SearchMetaByArgumentWithoutPathFullResult">Searching for meta data by argument, without path, full result</a>
+</li><li><a class="wiki" href="WebAPISummary.html#SearchingForMetaByPathAndArgument">Searching for meta data by path and argument, full results</a>
+</li><li><a class="wiki" href="WebAPISummary.html#AddingExtendingMeta">Adding new or extending existing meta data entry</a>
+</li><li><a class="wiki" href="WebAPISummary.html#AddingOverwritingMeta">Adding new or overwriting existing meta data entry</a>
+</li><li><a class="wiki" href="WebAPISummary.html#DeletingMetaKeyAndValues">Deleting a meta data key and all its values</a>
+</li><li><a class="wiki" href="WebAPISummary.html#DeletingMetaValueFromKey">Deleting a single value from a meta data key</a>
+</li><li><a class="wiki" href="WebAPISummary.html#DeletingAllMetaForPath">Deleting all meta data for a path</a>
+</li></ul><ul><li><a class="wiki" href="WebAPISummary.html#MetaSetDocTypeImportAlignSettings">Set document type specific import or align settings, e.g. set the layout mode for PDFs to raw</a>
+</li><li><a class="wiki" href="WebAPISummary.html#MetaSetFileImportAlignSettings">Set document specific import or alignment settings, e.g. set the layout mode for the file test.pdf to standard</a>
+</li></ul><p>
+<strong>Storage</strong>
+</p>
+<ul><li><a class="wiki" href="WebAPISummary.html#ListAllSlotsStorage">List all slots</a>
+</li><li><a class="wiki" href="WebAPISummary.html#ListBranchesOfSlot">List all branches of a slot</a>
+</li><li><a class="wiki" href="WebAPISummary.html#CatFile">Output the content of a file</a>
+</li><li><a class="wiki" href="WebAPISummary.html#UploadWithoutImport">Upload files without import</a>
+</li><li><a class="wiki" href="WebAPISummary.html#UploadWithImport">Upload files with import</a>
+</li><li><a class="wiki" href="WebAPISummary.html#DeleteStorage">Delete a resource</a>
+</li></ul><hr />
+<h2 id="Access">Access</h2>
+<ul><li>Requesting the access settings of all branches in a slot, e.g. /access/slot_name_1 <span class="wikianchor" id="RequestingAllGroupName"></span>
+</li></ul><pre class="wiki">$LETSMT_CONNECT -X GET "$LETSMT_URL/access/slot_name_1?uid=user_id_2"
+</pre><pre class="wiki">&lt;letsmt-ws version="3"&gt;
+  &lt;list path="slot_name_1"&gt;
+    &lt;entry kind="branch" path="slot_name_1/user_id_2"&gt;
+      &lt;group&gt;group_id_2&lt;/group&gt;
+      &lt;owner&gt;user_id_3&lt;/owner&gt;
+    &lt;/entry&gt;
+    &lt;entry kind="branch" path="slot_name_1/user_id_3"&gt;
+      &lt;group&gt;group_id_2&lt;/group&gt;
+      &lt;owner&gt;user_id_2&lt;/owner&gt;
+    &lt;/entry&gt;
+  &lt;/list&gt;
+  &lt;status code="0" location="/access/slot_name_1" operation="GET" type="ok"&gt;&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+</pre><ul><li>Requesting the access settings of a certain branch, e.g. /access/slot_name_1/user_id_2 <span class="wikianchor" id="RequestingGroupName"></span>
+</li></ul><pre class="wiki">$LETSMT_CONNECT -X GET "$LETSMT_URL/access/slot_name_1/user_id_2?uid=user_id_2"
+</pre><pre class="wiki">&lt;letsmt-ws version="3"&gt;
+  &lt;list path="slot_name_1/user_id_2"&gt;
+    &lt;entry kind="branch" path="slot_name_1/user_id_2"&gt;
+      &lt;group&gt;group_id_2&lt;/group&gt;
+      &lt;owner&gt;user_id_2&lt;/owner&gt;
+    &lt;/entry&gt;
+  &lt;/list&gt;
+  &lt;status code="0" location="/access/slot_name_1/user_id_2" operation="GET" type="ok"&gt;&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+
+</pre><ul><li>Setting the group name of a branch to a new value, e.g. /access/slot_name_2/user_id_2?uid=user_id_2&amp;gid=group_3 <span class="wikianchor" id="SetGroupName"></span>
+</li></ul><pre class="wiki">$LETSMT_CONNECT -X PUT "$LETSMT_URL/access/slot_name_2/user_id_2?uid=user_id_2&amp;gid=group_3"
+</pre><pre class="wiki">&lt;letsmt-ws version="3"&gt;
+  &lt;status code="0" location="/access/slot_name_2/user_id_2" operation="PUT" type="ok"&gt;Set group to 'group_3'&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+</pre><h2 id="Admin">Admin</h2>
+<ul><li>Return the full SVN path of a given resource, e.g. /admin/slot_name_2/user_id_2/test_file_2.xml?type=svnpath <span class="wikianchor" id="ReturnSVNPath"></span>
+</li></ul><pre class="wiki">$LETSMT_CONNECT -X GET "$LETSMT_URL/admin/slot_name_2/user_id_2/test_file_2.xml?uid=user_id_2&amp;type=svnpath"
+</pre><pre class="wiki">&lt;letsmt-ws version="3"&gt;
+  &lt;list path="file:///slot_name_2/user_id_2/test_file_2.xml"&gt;
+    &lt;entry kind="svn path"&gt;file:///var/lib/letsmt/www-data/slot_name_2/user_id_2/test_file_2.xml&lt;/entry&gt;
+  &lt;/list&gt;
+  &lt;status code="0" location="/admin/slot_name_2/user_id_2/test_file_2.xml" operation="GET" type="ok"&gt;&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+</pre><h2 id="Group">Group</h2>
+<ul><li>List all groups: /group <span class="wikianchor" id="ListAllGroups"></span>
+</li></ul><pre class="wiki">$LETSMT_CONNECT -X GET "$LETSMT_URL/group?uid=user_id_1"
+</pre><pre class="wiki">&lt;letsmt-ws version="3"&gt;
+  &lt;list path="/"&gt;
+    &lt;entry id="group_id_1" kind="group"&gt;
+      &lt;user&gt;user_id_1&lt;/user&gt;
+    &lt;/entry&gt;
+    &lt;entry id="group_id_2" kind="group"&gt;
+      &lt;user&gt;user_id_2&lt;/user&gt;
+    &lt;/entry&gt;
+  &lt;/list&gt;
+  &lt;status code="0" location="/group" operation="GET" type="ok"&gt;&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+</pre><ul><li>Get the user(s) of a group, e.g. /group/group_id_1 <span class="wikianchor" id="GetUsersOfGroup"></span>
+<ul><li>Question: What should list path show?
+</li></ul></li></ul><pre class="wiki">$LETSMT_CONNECT -X GET "$LETSMT_URL/group/group_id_1?uid=user_id"
+</pre><pre class="wiki">&lt;letsmt-ws version="3"&gt;
+  &lt;list path="/group_id_1"&gt;
+    &lt;entry id="group_id_1" kind="group"&gt;
+      &lt;user&gt;user_id_1&lt;/user&gt;
+      &lt;user&gt;user_id_2&lt;/user&gt;
+    &lt;/entry&gt;
+  &lt;/list&gt;
+  &lt;status code="0" location="/group/group_id_1" operation="GET" type="ok"&gt;&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+</pre><ul><li>Add user to a group, e.g. /group/group_id_1/user_2?uid=user_id_1 <span class="wikianchor" id="AddUserToGroup"></span>
+</li></ul><pre class="wiki">$LETSMT_CONNECT -X PUT "$LETSMT_URL/group/group_id_1/user_2?uid=user_id_1"
+</pre><pre class="wiki">&lt;letsmt-ws version="3"&gt;
+  &lt;status code="0" location="/group/group_id_1/user_2" operation="PUT" type="ok"&gt;Added user 'user_2' to group 'group_id_1'&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+</pre><ul><li>Create a group with the effective user as first member, e.g. /group/group_1?uid=user_1 <span class="wikianchor" id="CreateGroup"></span>
+</li></ul><pre class="wiki">$LETSMT_CONNECT -X POST "$LETSMT_URL/group/group_1?uid=user_1"
+</pre><pre class="wiki">&lt;letsmt-ws version="3"&gt;
+  &lt;status code="0" location="/group/group_1" operation="POST" type="ok"&gt;Created group 'group_1' with user 'user_1'&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+</pre><ul><li>Delete a group, e.g. /group/group_1?uid=user_1 <span class="wikianchor" id="DeleteGroup"></span>
+</li></ul><pre class="wiki">$LETSMT_CONNECT -X DELETE "$LETSMT_URL/group/group_1?uid=user_1"
+</pre><pre class="wiki">&lt;letsmt-ws version="3"&gt;
+  &lt;status code="0" location="/group/group_1" operation="DELETE" type="ok"&gt;&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+
+</pre><ul><li>Show user specific import and alignment parameters <span class="wikianchor" id="ShowUserAlignImportPara"></span>
+</li></ul><pre class="wiki">$LETSMT_CONNECT -X GET "$LETSMT_URL/group/user_id_1?uid=user_id_1&amp;action=showinfo" 
+</pre><pre class="wiki">&lt;letsmt-ws version=""&gt;
+  &lt;list path="group/user_id_1"&gt;
+    &lt;entry id="user_id_1" kind="user info"&gt;
+      &lt;AlignPara_method&gt;GaleChurch&lt;/AlignPara_method&gt;
+      &lt;ImportPara_pdf_mode&gt;raw&lt;/ImportPara_pdf_mode&gt;
+      &lt;member&gt;user_id_1&lt;/member&gt;
+      &lt;member_of&gt;public,user_id_1&lt;/member_of&gt;
+      &lt;my_group&gt;user_id_1&lt;/my_group&gt;
+    &lt;/entry&gt;
+  &lt;/list&gt;
+  &lt;status code="0" location="/group/user_id_1" operation="GET" type="ok"&gt;&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+</pre><ul><li>Set user specific import or alignment parameters (overwrites values of existing keys) <span class="wikianchor" id="SetUserAlignImportPara"></span>
+</li></ul><pre class="wiki">$LETSMT_CONNECT -X POST "$LETSMT_URL/group/user_id_1?uid=user_id_1&amp;ImportPara_normalizer=moses" 
+</pre><pre class="wiki">&lt;letsmt-ws version=""&gt;
+  &lt;status code="0" location="/group/user_id_1" operation="POST" type="ok"&gt;Set user info for user 'user_id_1'&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+</pre><ul><li>Add user specific import or alignment parameters (adding values to existing keys) <span class="wikianchor" id="AddUserAlignImportPara"></span>
+</li></ul><pre class="wiki">$LETSMT_CONNECT -X PUT "$LETSMT_URL/group/user_id_1?uid=user_id_1&amp;ImportPara_mode=layout" 
+</pre><pre class="wiki">&lt;letsmt-ws version=""&gt;
+  &lt;status code="0" location="/group/user_id_1" operation="POST" type="ok"&gt;Set user info for user 'user_id_1'&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+</pre><ul><li>Delete user specific import or alignment parameters (removing key value pairs) <span class="wikianchor" id="DeleteUserAlignImportPara"></span>
+</li></ul><pre class="wiki">$LETSMT_CONNECT -X DELETE "$LETSMT_URL/group/user_id_1?uid=user_id_1&amp;ImportPara_mode=layout" 
+</pre><pre class="wiki">&lt;letsmt-ws version=""&gt;
+  &lt;status code="0" location="/group/user_id_1" operation="DELETE" type="ok"&gt;Delete user info for user 'user_id_1'&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+</pre><h2 id="Job">Job</h2>
+<ul><li>Check the status of a job<span class="wikianchor" id="GetJobStatus"></span>
+</li></ul><pre class="wiki">$LETSMT_CONNECT -X GET "$LETSMT_URL/job/slot_name_1/user_id_1/job.xml?uid=user_id_1"
+</pre><pre class="wiki">&lt;letsmt-ws version=""&gt;
+  &lt;status code="0" location="/job/slot_name_1/user_id_1/job.xml" operation="GET" type="ok"&gt;running&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+</pre><ul><li>Submit a new job description file for execution<span class="wikianchor" id="PostJob"></span>
+</li></ul><pre class="wiki">$LETSMT_CONNECT -X POST "$LETSMT_URL/job/slot_name_1/user_id_1/job.xml?uid=user_id_1"
+</pre><pre class="wiki">&lt;letsmt-ws version=""&gt;
+  &lt;status code="0" location="/job/slot_name_1/user_id_1/job.xml" operation="POST" type="ok"&gt;submitted job with ID 'job_1326188158_934584289'&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+
+</pre><ul><li>Submit or overwrite a job description file<span class="wikianchor" id="PutJob"></span> 
+</li></ul><pre class="wiki">$LETSMT_CONNECT -X PUT "$LETSMT_URL/job/slot_name_1/user_id_1/job.xml?uid=user_id_1"
+</pre><pre class="wiki">&lt;letsmt-ws version=""&gt;
+  &lt;status code="0" location="/job/slot_name_1/user_id_1/job.xml" operation="PUT" type="ok"&gt;submitted job with ID 'job_1326187976_963721617'&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+
+</pre><ul><li>Stop the execution of a job<span class="wikianchor" id="DeleteJob"></span>
+</li></ul><pre class="wiki">$LETSMT_CONNECT -X DELETE "$LETSMT_URL/job/slot_name_1/user_id_1/job.xml?uid=user_id_1"
+</pre><pre class="wiki">&lt;letsmt-ws version=""&gt;
+  &lt;status code="0" location="/job/slot_name_1/user_id_1/job.xml" operation="DELETE" type="ok"&gt;&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+</pre><ul><li>Reimport all files in a given path e.g. uploads <span class="wikianchor" id="JobReimport"></span>
+</li></ul><pre class="wiki">$LETSMT_CONNECT -X PUT "$LETSMT_URL/job/slot_1/user_id_1/uploads/?uid=user_id_1&amp;run=import"
+</pre><pre class="wiki">&lt;letsmt-ws version=""&gt;
+  &lt;status code="0" location="/job/slot_1/user_id_1/uploads" operation="PUT" type="ok"&gt;number of jobs submitted: 4&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+</pre><ul><li>Re-align a document pair <span class="wikianchor" id="JobRealignPair"></span>
+</li></ul><pre class="wiki">$LETSMT_CONNECT -X PUT "$LETSMT_URL/job/slot_1/user_id_1/xml/en-sv/small.xml?uid=user_id_1&amp;run=realign"
+</pre><pre class="wiki">&lt;letsmt-ws version=""&gt;
+  &lt;status code="0" location="/job/slot_1/user_id_1/xml/en-sv/small.xml" operation="POST" type="ok"&gt;submitted job with ID 'job_1341497918_754475290'&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+</pre><ul><li>Re-align all files in given path, e.g. /slot_1/user_id_1/xml/en-sv <span class="wikianchor" id="JobRealignPath"></span>
+</li></ul><pre class="wiki">$LETSMT_CONNECT -X PUT "$LETSMT_URL/job/slot_1/user_id_1/xml/en-sv?uid=user_id_1&amp;run=realign"
+</pre><pre class="wiki">&lt;letsmt-ws version=""&gt;
+  &lt;status code="0" location="/job/slot_1/user_id_1/xml/en-sv" operation="POST" type="ok"&gt;submitted job with ID 'job_1341498158_776108381'&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+</pre><ul><li>Search and align all parallel documents in given path <span class="wikianchor" id="JobAlignPath"></span>
+</li></ul><p>
+        
+</p>
+<pre class="wiki">$LETSMT_CONNECT -X PUT "$LETSMT_URL/job/slot_1/user_id_1/xml/en-sv?uid=user_id_1&amp;run=align"
+</pre><pre class="wiki">&lt;letsmt-ws version=""&gt;
+  &lt;status code="0" location="/job/slot_1/user_id_1/xml/en-sv" operation="POST" type="ok"&gt;submitted job with ID 'job_1341498158_776108381'&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+</pre><h2 id="MetaData">MetaData</h2>
+<ul><li>Searching for meta data by path, e.g. /slot_name_1 <span class="wikianchor" id="SearchMetaByPath"></span>
+</li></ul><pre class="wiki">$LETSMT_CONNECT -X GET "$LETSMT_URL/metadata/slot_name_1?uid=user_id_1"
+</pre><pre class="wiki">&lt;letsmt-ws version=""&gt;
+  &lt;list path=""&gt;
+    &lt;entry path="slot_name_1"&gt;
+      &lt;creator&gt;user_id_1&lt;/creator&gt;
+      &lt;resource-type&gt;slot&lt;/resource-type&gt;
+    &lt;/entry&gt;
+  &lt;/list&gt;
+  &lt;status code="0" location="/metadata/slot_name_1" operation="GET" type="ok"&gt;Found matching path ID. Listing all of its properties&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+</pre><ul><li>Searching for meta data by argument, without any path, only IDs as result, e.g. status=imported <span class="wikianchor" id="SearchMetaByArgumentWithoutPath"></span>
+<ul><li>Questions: should the path attribute in the list tag show anything here?
+</li></ul></li></ul><pre class="wiki">$LETSMT_CONNECT -X GET "$LETSMT_URL/metadata?uid=user_id_2&amp;status=imported"
+</pre><pre class="wiki">&lt;letsmt-ws version="3"&gt;
+  &lt;list path=""&gt;
+    &lt;entry path="slot_name_2/user_id_2/uploads/test_file_1.txt" /&gt;
+    &lt;entry path="slot_name_2/user_id_2/uploads/test_file_2.txt" /&gt;
+  &lt;/list&gt;
+  &lt;status code="0" location="/metadata" operation="GET" type="ok"&gt;Found 2 matching entries&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+</pre><ul><li>Searching for meta data by path and argument, only IDs as result, e.g. /slot_name_2/test_file_2.xml?uid=user_id_2&amp;size <span class="wikianchor" id="SearchingForMetaByPathAndArgument"></span>
+<ul><li>Question: Only the by argument requested properties are returned but also the 'uid' property. Should 'uid' be always included?
+</li></ul></li></ul><pre class="wiki">$LETSMT_CONNECT -X GET "$LETSMT_URL/metadata/slot_name_2/test_file_2.xml?uid=user_id_2&amp;size"
+</pre><pre class="wiki">&lt;letsmt-ws version="3"&gt;
+  &lt;list path=""&gt;
+    &lt;entry path="slot_name_2/test_file_2.xml" /&gt;
+  &lt;/list&gt;
+  &lt;status code="0" location="/metadata/slot_name_2/test_file_2.xml" operation="GET" type="ok"&gt;Found matching path ID. Listing only the requested properties&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+
+</pre><ul><li>Searching for meta data by argument, without any path, full result, e.g. status=imported&amp;action=list_all <span class="wikianchor" id="SearchMetaByArgumentWithoutPathFullResult"></span>
+<ul><li>Questions: should the path attribute in the list tag show anything here?
+</li></ul></li></ul><pre class="wiki">$LETSMT_CONNECT -X GET "$LETSMT_URL/metadata?uid=user_id_2&amp;status=imported&amp;action=list_all"
+</pre><pre class="wiki">&lt;letsmt-ws version="3"&gt;
+  &lt;list path=""&gt;
+    &lt;entry path="slot_name_2/user_id_2/uploads/test_file_1.txt"&gt;
+      &lt;status&gt;imported&lt;/status&gt;
+      &lt;uid&gt;user_id_2&lt;/uid&gt;
+    &lt;/entry&gt;
+    &lt;entry path="slot_name_2/user_id_2/uploads/test_file_2.txt"&gt;
+      &lt;status&gt;imported&lt;/status&gt;
+      &lt;uid&gt;user_id_2&lt;/uid&gt;
+    &lt;/entry&gt;
+  &lt;/list&gt;
+  &lt;status code="0" location="/metadata" operation="GET" type="ok"&gt;Found 2 matching entries&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+</pre><ul><li>Searching for meta data by path and argument, full result, e.g. /slot_name_2/test_file_2.xml?uid=user_id_2&amp;size&amp;action=list_all <span class="wikianchor" id="SearchingForMetaByPathAndArgumentFullResult"></span>
+<ul><li>Question: Only the by argument requested properties are returned but also the 'uid' property. Should 'uid' be always included?
+</li></ul></li></ul><pre class="wiki">$LETSMT_CONNECT -X GET "$LETSMT_URL/metadata/slot_name_2/test_file_2.xml?uid=user_id_2&amp;size&amp;action=list_all"
+</pre><pre class="wiki">&lt;letsmt-ws version="3"&gt;
+  &lt;list path=""&gt;
+    &lt;entry path="slot_name_2/test_file_2.xml"&gt;
+      &lt;size&gt;5&lt;/size&gt;
+      &lt;uid&gt;user_id_2&lt;/uid&gt;
+    &lt;/entry&gt;
+  &lt;/list&gt;
+  &lt;status code="0" location="/metadata/slot_name_2/test_file_2.xml" operation="GET" type="ok"&gt;Found matching path ID. Listing only the requested properties&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+
+</pre><p>
+    
+</p>
+<ul><li>Adding new or extending existing meta data entry, e.g. /slot_name_2/test_file_2.xml?uid=user_id_2&amp;foo=bar <span class="wikianchor" id="AddingExtendingMeta"></span>
+</li></ul><pre class="wiki">$LETSMT_CONNECT -X PUT "$LETSMT_URL/metadata/slot_name_2/test_file_2.xml?uid=user_id_2&amp;foo=bar"
+</pre><pre class="wiki">&lt;letsmt-ws version="3"&gt;
+  &lt;status code="0" location="/metadata/slot_name_2/test_file_2.xml" operation="PUT" type="ok"&gt;Created/Extended meta data entry&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+
+</pre><ul><li>Adding new or overwriting existing meta data entry, e.g. /slot_name_2/test_file_2.xml?uid=user_id_2&amp;foo=bar_2 <span class="wikianchor" id="AddingOverwritingMeta"></span>
+</li></ul><pre class="wiki">$LETSMT_CONNECT -X POST "$LETSMT_URL/metadata/slot_name_2/test_file_2.xml?uid=user_id_2&amp;foo=bar_2"
+</pre><pre class="wiki">&lt;letsmt-ws version="3"&gt;
+  &lt;status code="0" location="/metadata/slot_name_2/test_file_2.xml" operation="POST" type="ok"&gt;Created/Overwrote meta data entry&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+
+</pre><ul><li>Deleting a meta data key and all its values, e.g. /slot_name_2/test_file_2.xml?uid=user_id_2&amp;foo <span class="wikianchor" id="DeletingMetaKeyAndValues"></span>
+</li></ul><pre class="wiki">$LETSMT_CONNECT -X DELETE "$LETSMT_URL/metadata/slot_name_2/test_file_2.xml?uid=user_id_2&amp;foo"
+</pre><pre class="wiki">&lt;letsmt-ws version="3"&gt;
+  &lt;status code="0" location="/metadata/slot_name_2/test_file_2.xml" operation="DELETE" type="ok"&gt;Deleted meta data entry&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+
+</pre><ul><li>Deleting a single value from a meta data key, e.g. /slot_name_2/test_file_2.xml?uid=user_id_2&amp;foo=bar <span class="wikianchor" id="DeletingMetaValueFromKey"></span>
+</li></ul><pre class="wiki">$LETSMT_CONNECT -X DELETE "$LETSMT_URL/metadata/slot_name_2/test_file_2.xml?uid=user_id_2&amp;foo=bar"
+</pre><pre class="wiki">&lt;letsmt-ws version="3"&gt;
+  &lt;status code="0" location="/metadata/slot_name_2/test_file_2.xml" operation="DELETE" type="ok"&gt;Deleted meta data entry&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+
+</pre><ul><li>Deleting all meta data for a path, e.g. /slot_name_2/test_file_2.xml?uid=user_id_2 <span class="wikianchor" id="DeletingAllMetaForPath"></span>
+</li></ul><pre class="wiki">$LETSMT_CONNECT -X DELETE "$LETSMT_URL/metadata/slot_name_2/test_file_2.xml?uid=user_id_2"
+</pre><pre class="wiki">&lt;letsmt-ws version="3"&gt;
+  &lt;status code="0" location="/metadata/slot_name_2/test_file_2.xml" operation="DELETE" type="ok"&gt;Deleted meta data entry&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+
+</pre><ul><li>Set document type specific import or align settings, e.g. set the layout mode for PDFs to raw: <span class="wikianchor" id="MetaSetDocTypeImportAlignSettings"></span>
+</li></ul><pre class="wiki">$LETSMT_CONNECT -X POST "$LETSMT_URL/metadata/slot_1/user_id_1/uploads/pdf?uid=user_id_1&amp;ImportPara_mode=raw"
+</pre><pre class="wiki">&lt;letsmt-ws version=""&gt;
+  &lt;status code="0" location="/metadata/slot_1/user_id_1/uploads/pdf" operation="POST" type="ok"&gt;Created/Overwrote meta data entry&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+</pre><ul><li>Set document specific import or alignment settings, e.g. set the layout mode for the file test.pdf to standard: <span class="wikianchor" id="MetaSetFileImportAlignSettings"></span>
+</li></ul><pre class="wiki">$LETSMT_CONNECT -X POST "$LETSMT_URL/metadata/slot_1/user_id_1/uploads/pdf/test.pdf?uid=user_id_1&amp;ImportPara_mode=standard"
+</pre><pre class="wiki">&lt;letsmt-ws version=""&gt;
+  &lt;status code="0" location="/metadata/slot_1/user_id_1/uploads/pdf/test.pdf" operation="POST" type="ok"&gt;Created/Overwrote meta data entry&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+</pre><h2 id="Storage">Storage</h2>
+<ul><li>List all slots, /storage?uid=bob<span class="wikianchor" id="ListAllSlotsStorage"></span>
+</li></ul><pre class="wiki">$LETSMT_CONNECT -X GET "$LETSMT_URL/storage?uid=bob"
+</pre><pre class="wiki">&lt;letsmt-ws version="3"&gt;
+  &lt;list path="file:///"&gt;
+    &lt;entry kind="slot"&gt;
+      &lt;name&gt;slot_name_1&lt;/name&gt;
+      &lt;group&gt;users&lt;/group&gt;
+      &lt;owner&gt;root&lt;/owner&gt;
+      &lt;perm&gt;drwrwrw&lt;/perm&gt;
+    &lt;/entry&gt;
+    &lt;entry kind="slot"&gt;
+      &lt;name&gt;slot_name_2&lt;/name&gt;
+      &lt;group&gt;users&lt;/group&gt;
+      &lt;owner&gt;root&lt;/owner&gt;
+      &lt;perm&gt;drwrwrw&lt;/perm&gt;
+    &lt;/entry&gt;
+&lt;/list&gt;
+  &lt;status code="0" location="/storage" operation="GET" type="ok"&gt;&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+</pre><ul><li>List all branches of a slot, e.g. /storage/slot_name_2?uid=user_id_2<span class="wikianchor" id="ListBranchesOfSlot"></span>
+</li></ul><pre class="wiki">$LETSMT_CONNECT -X GET "$LETSMT_URL/storage/slot_name_2?uid=user_id_2"
+</pre><pre class="wiki">&lt;letsmt-ws version="3"&gt;
+  &lt;list path="file:///slot_name_2"&gt;
+    &lt;entry kind="branch"&gt;
+      &lt;name&gt;user_id_1&lt;/name&gt;
+      &lt;group&gt;group_id_2&lt;/group&gt;
+      &lt;owner&gt;user_id_1&lt;/owner&gt;
+      &lt;perm&gt;rwr---&lt;/perm&gt;
+    &lt;/entry&gt;
+    &lt;entry kind="branch"&gt;
+      &lt;name&gt;user_id_2&lt;/name&gt;
+      &lt;group&gt;group_id_2&lt;/group&gt;
+      &lt;owner&gt;user_id_2&lt;/owner&gt;
+      &lt;perm&gt;rwr---&lt;/perm&gt;
+    &lt;/entry&gt;
+  &lt;/list&gt;
+  &lt;status code="0" location="/storage/slot_name_2" operation="GET" type="ok"&gt;&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+</pre><ul><li>Output the content of a file, e.g. /storage/slot_name_2/user_id_2/uploads/test_file_2.txt?uid=user_id_2&amp;action=cat&amp;from=1&amp;to=3 <span class="wikianchor" id="CatFile"></span>
+</li></ul><pre class="wiki">$LETSMT_CONNECT -X GET "$LETSMT_URL/storage/slot_name_2/user_id_2/uploads/test_file_2.txt?uid=user_id_2&amp;action=cat&amp;from=1&amp;to=3"
+</pre><pre class="wiki">&lt;letsmt-ws version="3"&gt;
+  &lt;list path=""&gt;
+    &lt;entry&gt;This is just a test file
+Nothing more
+Nothing less
+&lt;/entry&gt;
+  &lt;/list&gt;
+  &lt;status code="0" location="/storage/slot_name_2/user_id_2/uploads/test_file_2.txt" operation="GET" type="ok"&gt;&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+</pre><ul><li>Upload files without import, e.g. /storage/slot_name_2/user_id_2/uploads/test.txt?uid=user_id_2<span class="wikianchor" id="UploadWithoutImport"></span>
+</li></ul><pre class="wiki">$LETSMT_CONNECT -X PUT "$LETSMT_URL/storage/slot_name_2/user_id_2/uploads/test.txt?uid=user_id_2"
+</pre><pre class="wiki">&lt;letsmt-ws version="3"&gt;
+  &lt;status code="0" location="/storage/slot_name_2/user_id_2/uploads/test.txt" operation="PUT" type="ok"&gt;add ok /slot_name_2/user_id_2/uploads/test.txt&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+
+</pre><ul><li>Upload files with import, e.g. /storage/slot_name_2/user_id_2/uploads/test.txt?uid=user_id_2&amp;action=import<span class="wikianchor" id="UploadWithImport"></span>
+<ul><li>by adding the argument action=import, the uploaded files get also imported
+</li></ul></li></ul><pre class="wiki">$LETSMT_CONNECT -X PUT "$LETSMT_URL/storage/slot_name_2/user_id_2/uploads/test.txt?uid=user_id_2"
+</pre><pre class="wiki">&lt;letsmt-ws version="3"&gt;
+  &lt;status code="0" location="/storage/slot_name_2/user_id_2/uploads/test.txt" operation="PUT" type="ok"&gt;add ok /slot_name_2/user_id_2/uploads/test.txt&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+</pre><ul><li>Delete a resource <span class="wikianchor" id="DeleteStorage"></span>
+</li></ul><pre class="wiki">$LETSMT_CONNECT -X DELETE "$LETSMT_URL/storage/slot_name_2?uid=user_id_2"
+</pre><pre class="wiki">&lt;letsmt-ws version="3"&gt;
+  &lt;status code="0" location="/storage/slot_name_2" operation="DELETE" type="ok"&gt;Deleted /storage/slot_name_2&lt;/status&gt;
+&lt;/letsmt-ws&gt;
+</pre></div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/letsmt-trac/wiki/WebAPISummary?action=diff&amp;version=29" title="Version 29 by zumpe">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/letsmt-trac/timeline?from=2012-07-06T09%3A44%3A56Z&amp;precision=second" title="See timeline at Jul 6, 2012, 9:44:56 AM">8 years ago</a></span>
+            <span class="trac-print">Last modified on Jul 6, 2012, 9:44:56 AM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/WebAPISummary?format=txt">Plain Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/WebAPISummary?format=tex">Latex</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://opus.nlpl.eu/letsmt-trac/wiki/WebAPISummary?format=pdf">Latex-Pdf</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>

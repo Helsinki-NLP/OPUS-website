@@ -1,0 +1,140 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>PDF</title>
+<link rel="stylesheet" href="../../pod.css" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+<!-- INDEX BEGIN -->
+<div name="index">
+<p><a name="__index__"></a></p>
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<li><a href="#public_module_variables">PUBLIC MODULE VARIABLES</a></li>
+	<ul>
+
+		<li><a href="#_default_mode"><code>$DEFAULT_MODE</code></a></li>
+		<li><a href="#_default_splitter"><code>$DEFAULT_SPLITTER</code></a></li>
+	</ul>
+
+	<li><a href="#constructor">CONSTRUCTOR</a></li>
+	<li><a href="#methods">METHODS</a></li>
+	<ul>
+
+		<li><a href="#mode"><code>mode</code></a></li>
+		<li><a href="#validate__resource_"><code>validate($resource)</code></a></li>
+		<li><a href="#convert"><code>convert</code></a></li>
+	</ul>
+
+	<li><a href="#class_methods">CLASS METHODS</a></li>
+	<ul>
+
+		<li><a href="#convert_standard_cmd"><code>convert_standard_cmd</code></a></li>
+		<li><a href="#convert_raw_cmd"><code>convert_raw_cmd</code></a></li>
+		<li><a href="#convert_layout_cmd"><code>convert_layout_cmd</code></a></li>
+	</ul>
+
+</ul>
+
+<hr name="index" />
+</div>
+<!-- INDEX END -->
+
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<p>LetsMT::Import::PDF - import handler for <code>pdf</code> files</p>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<p>PDF: the Portable Document Format.</p>
+<p>
+</p>
+<hr />
+<h1><a name="public_module_variables">PUBLIC MODULE VARIABLES</a></h1>
+<p>Declared as <code>our</code> allowing access wherever the module is being <code>use</code>d.</p>
+<p>
+</p>
+<h2><a name="_default_mode"><code>$DEFAULT_MODE</code></a></h2>
+<p>The default mode of conversion (see LetsMT.pm). Possible modes are:</p>
+<pre>
+ standard (standard mode of pdftotext)
+ raw (raw text extraction)
+ layout (text extraction with layout + post-processing for column detection)
+ tika (use Apache Tika instead)</pre>
+<p>
+</p>
+<h2><a name="_default_splitter"><code>$DEFAULT_SPLITTER</code></a></h2>
+<p>The default splitter algorithm (europarl).</p>
+<p>
+</p>
+<hr />
+<h1><a name="constructor">CONSTRUCTOR</a></h1>
+<pre>
+ $handler = new LetsMT::Import::PDF (%OPTIONS)</pre>
+<p>OPTIONS:</p>
+<pre>
+ mode
+  - possible values: layout, standard, raw
+ splitter
+  - a pre-created splitter object
+ splitter_method
+  - used in 'standard' mode to create a new splitter if no splitter
+    object is given; default: the value of C&lt;DEFAULT_SPLITTER&gt;.</pre>
+<p>
+</p>
+<hr />
+<h1><a name="methods">METHODS</a></h1>
+<p>
+</p>
+<h2><a name="mode"><code>mode</code></a></h2>
+<pre>
+ $handler-&gt;mode ($mode)</pre>
+<p>Set the conversion mode.</p>
+<p>
+</p>
+<h2><a name="validate__resource_"><code>validate($resource)</code></a></h2>
+<p>Validate that <code>$resource</code> is a pdf file.</p>
+<p>
+</p>
+<h2><a name="convert"><code>convert</code></a></h2>
+<pre>
+ $handler-&gt;convert ($resource, $importer, $meta_resource)</pre>
+<p>Convert <code>$resource</code> to text and import the resulting text file.</p>
+<p>
+</p>
+<hr />
+<h1><a name="class_methods">CLASS METHODS</a></h1>
+<p>
+</p>
+<h2><a name="convert_standard_cmd"><code>convert_standard_cmd</code></a></h2>
+<pre>
+ $data = LetsMT::Import::PDF::convert_standard_cmd ($resourcce, $text_resource)</pre>
+<p>Convert a pdf to text in <code>standard</code> mode.</p>
+<p>
+</p>
+<h2><a name="convert_raw_cmd"><code>convert_raw_cmd</code></a></h2>
+<pre>
+ $data = LetsMT::Import::PDF::convert_raw_cmd ($resourcce, $text_resource)</pre>
+<p>Convert a pdf to text in <code>raw</code> mode.</p>
+<p>
+</p>
+<h2><a name="convert_layout_cmd"><code>convert_layout_cmd</code></a></h2>
+<pre>
+ $data = LetsMT::Import::PDF::convert_layout_cmd ($resourcce, $text_resource)</pre>
+<p>Convert a pdf to text in <code>layout</code> mode,
+detecting columns with the help of a column-detection script.</p>
+
+</body>
+
+</html>
