@@ -14,17 +14,24 @@ include("count.php");
 
 <?php
 
-$DBuser = 'opus';
-$DBname = 'lexicon';
-$DBpass = 'OOO!pus';
+// upgraading to mysqli:
+// https://stackoverflow.com/questions/51712279/mysql-list-dbs-and-mysql-tablename-in-php7
+// http://code-epicenter.com/things-you-should-know-when-upgrading-to-php-7/
 
-$link = mysql_connect( "localhost", $DBuser, $DBpass);
-if (! $link){
+
+$DBconfig = file('/home/opus/.mysql-lexicon');
+$DBuser = rtrim($DBconfig[0]);
+$DBname = rtrim($DBconfig[1]);
+$DBpass = rtrim($DBconfig[2]);
+
+$DBlink = mysqli_connect('localhost', $DBuser, $DBpass, $DBname);
+// $link = mysql_connect( "localhost", $DBuser, $DBpass);
+if (! $DBlink){
     echo "cannot connect to database!";
 }
-mysql_select_db($DBname, $link);
-mysql_set_charset('utf8', $link);
-
+// mysql_select_db($DBname, $link);
+// mysql_set_charset('utf8', $link);
+mysqli_set_charset($DBlink, 'utf8');
 
 $langs = array();
 $bitexts = array();
@@ -81,16 +88,16 @@ if (isset($_REQUEST['ok'])){
 }
 
 function set_checked($ip,$srclang,$trglang,$srcID,$trgID,$ok){
-  global $DBname;
+  global $DBname, $DBlink;
 
     $query='INSERT IGNORE INTO user (user) VALUES ("'.$ip.'")';
     // echo $query;
-    $result = mysql($DBname, $query);
+    $result = mysqli_query($DBlink, $query);
     $query='SELECT ID FROM user WHERE user="'.$ip.'"';
     // echo $query;
-    if ($result = mysql($DBname, $query)){
-	if (mysql_num_rows($result)){
-	    $row=mysql_fetch_array($result);
+    if ($result = mysqli_query($DBlink, $query)){
+	if (mysqli_num_rows($result)){
+	    $row=mysqli_fetch_array($result);
 	    $userID = $row['ID'];
 	}
 	else{return false;}
@@ -107,9 +114,9 @@ function set_checked($ip,$srclang,$trglang,$srcID,$trgID,$ok){
     $query='SELECT correct FROM `'.$table.'_check` WHERE ';
     $query.='userID='.$userID.' AND srcID='.$srcID.' AND trgID='.$trgID;
     // echo $query;
-    if ($result = mysql($DBname, $query)){
-	if (mysql_num_rows($result)){
-	    $row=mysql_fetch_array($result);
+    if ($result = mysqli_query($DBlink, $query)){
+	if (mysqli_num_rows($result)){
+	    $row=mysqli_fetch_array($result);
 	    if ($row['correct'] == $ok){
 		return true;
 	    }
@@ -117,20 +124,20 @@ function set_checked($ip,$srclang,$trglang,$srcID,$trgID,$ok){
 	    $query.='SET correct='.$ok.' WHERE userID='.$userID;
 	    $query.=' AND srcID='.$srcID.' AND trgID='.$trgID;
 	    // echo $query;
-	    mysql($DBname, $query);
+	    mysqli_query($DBlink, $query);
 	    return update_feedback_counts($table,$srcID,$trgID);
 	}
     }
     $query='INSERT INTO `'.$table.'_check` (userID,srcID,trgID,correct)';
     $query.=' VALUES('.$userID.','.$srcID.','.$trgID.','.$ok.')';
 //    echo $query;
-    mysql($DBname, $query);
+    mysqli_query($DBlink, $query);
     return update_feedback_counts($table,$srcID,$trgID);
 }
 
 
 function update_feedback_counts($table,$srcID,$trgID){
-  global $DBname;
+  global $DBname, $DBlink;
     // update counts for user feedback
     $query = 'SELECT count(correct) AS count,correct FROM ';
     $query.='`'.$table.'_check` WHERE srcID=';
@@ -139,8 +146,8 @@ function update_feedback_counts($table,$srcID,$trgID){
     $wrong = 0;
     $correct = 0;
     // file_put_contents('/tmp/mysql.txt', $query);
-    if ($res = mysql($DBname, $query)){
-	while ($r=mysql_fetch_array($res)){
+    if ($res = mysqli_query($DBlink, $query)){
+	while ($r=mysqli_fetch_array($res)){
 	    if ($r['correct'] == 0){
 		$wrong=$r['count'];
 	    }
@@ -155,7 +162,7 @@ function update_feedback_counts($table,$srcID,$trgID){
 
     // echo $query;
     // file_put_contents('/tmp/mysql.txt', $query);
-    return mysql($DBname, $query);
+    return mysqli_query($DBlink, $query);
 
 }
 
@@ -317,19 +324,19 @@ if (isset($_REQUEST['w']) && ($_REQUEST['w'] != '')){
 
 
 function item_exists($lang,$word){
-  global $DBname;
+  global $DBname, $DBlink;
     $word = clean_query($word);
     $query = 'SELECT item FROM '.$lang.' WHERE item="'.$word.'"';
   //    echo $query;
-    if ($result = mysql($DBname, $query)){
-       return mysql_num_rows($result);
+    if ($result = mysqli_query($DBlink, $query)){
+       return mysqli_num_rows($result);
     }
     return false;
 }
 
 
 function print_words($lang,$first){
-  global $DBname;
+  global $DBname, $DBlink;
 //    setlocale(LC_ALL, 'en_US.UTF8');
 //    setlocale(LC_CTYPE, 'en_US.UTF8');
     $first = clean_query($first);
@@ -346,13 +353,13 @@ function print_words($lang,$first){
 
 //    echo $query;
 
-   if ($result = mysql($DBname, $query)){
+   if ($result = mysqli_query($DBlink, $query)){
        global $trgs;
        $link = 'l='.$lang;
        foreach ($trgs as $t){
 	       $link .= '&amp;'.$t.'=1';
        }
-       while ($row=mysql_fetch_array($result)){
+       while ($row=mysqli_fetch_array($result)){
 	     echo '<a rel="nofollow" href="?'.$link.'&amp;w=';
 	     echo urlencode($row['item']);
 	     echo '">';
@@ -367,6 +374,7 @@ function print_words($lang,$first){
 function print_results($src,$trg,$word){
 
   global $bitexts,$trgs, $DBname;
+  global $DBlink;
 
    $dic = $src.'-'.$trg;
    $is_trg = false;
@@ -407,7 +415,7 @@ function print_results($src,$trg,$word){
        $query .= " LIMIT 0,5";
    }
 
-   if ($result = mysql($DBname, $query)){
+   if ($result = mysqli_query($DBlink, $query)){
 
        if ($is_trg){
 	   echo "<table width='100%'><tr><td>#</td><td>prob</td><th>$src</th>";
@@ -426,7 +434,7 @@ function print_results($src,$trg,$word){
 	   if (isset($_REQUEST['c'])){
 	       $req .= '&amp;c='.$_REQUEST['c'];
 	   }
-	   if (mysql_num_rows($result)>4){
+	   if (mysqli_num_rows($result)>4){
 	       echo '<td align="right"><a rel="nofollow" href="'.$req;
 	       echo '">&nbsp;&nbsp;&gt;&gt;</a></td>';
 	   }
@@ -439,7 +447,7 @@ function print_results($src,$trg,$word){
        else{
           $thisreq = make_dic_request($word,$src,$trg);
        }
-       while ($row=mysql_fetch_array($result)){
+       while ($row=mysqli_fetch_array($result)){
 
 	   // get counts from user feedback
 	   $correct = $row['ok'];
@@ -595,11 +603,16 @@ function clean_query($q){
 
 
 function get_lang(&$langs,&$bitexts){
-  global $DBname;
-  $tabellen = mysql_list_tables( $DBname);
+  global $DBname, $DBlink;
+  // $tabellen = mysql_tables( $DBname);
+  $tabellen = mysqli_query($DBlink,"SHOW TABLES FROM {$DBname};");
+  // $i=0;
+  // while ($i < mysql_num_rows($tabellen)){
+  //   $t_name = mysql_tablename ($tabellen, $i);
+
   $i=0;
-  while ($i < mysql_num_rows($tabellen)){
-    $t_name = mysql_tablename ($tabellen, $i);
+  while ($row = mysqli_fetch_array($tabellen, MYSQLI_NUM)){
+    $t_name = $row[0];
     if (preg_match('/^...$/',$t_name)){
       array_push($langs,$t_name);
     }
@@ -616,11 +629,11 @@ function get_lang(&$langs,&$bitexts){
 
 
 function get_corpora(&$corpora){
-  global $DBname;
+  global $DBname, $DBlink;
    $query = 'select distinct corpus from origin';
-   if ($result = mysql($DBname, $query)){
+   if ($result = mysqli_query($DBlink, $query)){
      $i=0;
-     while ($row=mysql_fetch_array($result)){
+     while ($row=mysqli_fetch_array($result)){
 	 array_push($corpora,$row['corpus']);
 	 $i++;
      }
@@ -630,12 +643,12 @@ function get_corpora(&$corpora){
 }
 
 function get_initial(&$letters,$lang){
-  global $DBname;
+  global $DBname, $DBlink;
    $query = 'select distinct letter from '.$lang.'_first ORDER BY letter';
 //   echo $query;
    $i=0;
-   if ($result = mysql($DBname, $query)){
-     while ($row=mysql_fetch_array($result)){
+   if ($result = mysqli_query($DBlink, $query)){
+     while ($row=mysqli_fetch_array($result)){
 	 array_push($letters,$row['letter']);
 	 $i++;
      }
@@ -654,6 +667,22 @@ function bitext_exists($src,$trg){
   }
   return false;
 }
+
+/*
+function mysql_tables($database='')
+{
+    global $DBlink;
+    $tables = array();
+    $list_tables_sql = "SHOW TABLES FROM {$database};";
+    $result = mysqli_query($DBlink,$list_tables_sql);
+    if($result)
+    while($table = mysqli_fetch_row($result))
+    {
+        $tables[] = $table[0];
+    }
+    return $tables;
+}
+*/
 
 function iso639three2two($code){
 $codes = array(

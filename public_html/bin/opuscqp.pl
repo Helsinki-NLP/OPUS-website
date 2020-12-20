@@ -15,6 +15,7 @@ use CWB::Web::Query;
 use HTML::Entities;
 use CGI qw/:standard escapeHTML escape -utf8/;
 use Encode;
+use File::Basename qw/basename dirname/;
 
 use CWB::CL;
 
@@ -24,11 +25,11 @@ my %Attributes = ();				# cache requested attribute handles
 my $CorpusHandle = undef;
 
 
-BEGIN { 
+# BEGIN { 
 #    use CGI::Carp qw(carpout);
 #    open(LOG, ">>/tmp/opustest2.log") or die ("could not open log\n");
 #    carpout(LOG);
-}
+# }
 
 use strict;
 
@@ -37,11 +38,13 @@ my $SHOWMAX=20;
 if (param('showmax')){$SHOWMAX=param('showmax');}
 
 # my $CWBREG='/hf/logos/site/opus/cwb/reg';
-my $CWBREG='/home/opus/public_html/cwb/reg';
+my $CWBREG='/media/OPUS/cwb/reg';
 
-if (param('reg')){$CWBREG=param('reg');}
-if (url_param('reg')){$CWBREG=url_param('reg');}
+## this looks a bit dangerous ....
+# if (param('reg')){$CWBREG=param('reg');}
+# if (url_param('reg')){$CWBREG=url_param('reg');}
 chdir $CWBREG;
+
 
 my $css="/index.css";
 binmode (STDOUT,':encoding(utf-8)');
@@ -425,7 +428,7 @@ sub CorpusQuery{
 		# my $q = decode('utf-8',param("query_$_"));
 		# param("query_$_",$q);
 		my $q = param("query_$_");
-		my $q = EncodeString($_,$q);
+		$q = EncodeString($_,$q);
 		if ($q!~/^[\"\[]/){$q='"'.$q.'"';}
 		$cqp.=" :$l ".$q;
 #		$cqp.=" :$l ".EncodeString($_,param("query_$_"));
@@ -537,8 +540,7 @@ sub CorpusQuery{
 				   $bcs-1,$acs-1);
 		}
 		$string = $before.$string.' '.$after;
-
-		my $string=&FixString($_,$string);
+		$string = &FixString($_,$string);
 
                 ## highlight matching part (not always possible!)
                 my $q = param("query_$_");
@@ -654,8 +656,9 @@ sub AddUrlParam{
 #    language=registry-file
 
 sub ReadRegistry{
-    my $dir=shift;
-    my $reg=shift;
+    my $dir = shift;
+    my $reg = shift;
+    my $corpus = basename($dir);
     opendir(DIR, $dir) or die "Can't open it: $!\n";
     my @files= readdir(DIR);
     foreach my $f (@files){
@@ -672,19 +675,19 @@ sub ReadRegistry{
 	    close F;
 	    foreach (@text){
 		if (/ATTRIBUTE\s(.*)$/){
-		    push (@{$$reg{$dir}{$f}{attr}},$1);
+		    push (@{$$reg{$corpus}{$f}{attr}},$1);
 		}
 		if (/STRUCTURE\s(.*)$/){
 		    my $struc=$1;
 		    if ($struc=~/^(\S+)\_(\S+)(\s|\Z)/){
-			push (@{$$reg{$dir}{$f}{struc}{$1}},"$1_$2");
+			push (@{$$reg{$corpus}{$f}{struc}{$1}},"$1_$2");
 		    }
 		    else{
-			@{$$reg{$dir}{$f}{struc}{$struc}}=();
+			@{$$reg{$corpus}{$f}{struc}{$struc}}=();
 		    }
 		}
 		if (/ALIGNED\s(.*)$/){
-		    push (@{$$reg{$dir}{$f}{align}},$1);
+		    push (@{$$reg{$corpus}{$f}{align}},$1);
 		}
 	    }
 	}
