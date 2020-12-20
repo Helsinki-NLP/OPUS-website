@@ -16,18 +16,21 @@ use CWB::Web::Query;
 use HTML::Entities;
 use CGI qw/:standard escapeHTML escape -utf8/;
 use Encode;
+use File::Basename qw/basename dirname/;
 
 use CWB::CL;
+
+$CGI::LIST_CONTEXT_WARN = 0;
 
 my %Attributes = ();				# cache requested attribute handles
 my $CorpusHandle = undef;
 
 
-BEGIN { 
+# BEGIN { 
 #    use CGI::Carp qw(carpout);
 #    open(LOG, ">>/tmp/opustest2.log") or die ("could not open log\n");
 #    carpout(LOG);
-}
+# }
 
 use strict;
 
@@ -36,10 +39,12 @@ my $SHOWMAX=20;
 if (param('showmax')){$SHOWMAX=param('showmax');}
 
 # my $CWBREG='/hf/logos/site/opus/cwb/reg';
-my $CWBREG='/home/opus/public_html/cwb-restricted/reg';
+# my $CWBREG='/home/opus/public_html/cwb-restricted/reg';
+my $CWBREG='/media/OPUS/cwb-restricted/reg';
 
-if (param('reg')){$CWBREG=param('reg');}
-if (url_param('reg')){$CWBREG=url_param('reg');}
+## this looks a bit dangerous ....
+# if (param('reg')){$CWBREG=param('reg');}
+# if (url_param('reg')){$CWBREG=url_param('reg');}
 chdir $CWBREG;
 
 my $css="/index.css";
@@ -92,10 +97,14 @@ my $url=url();
 my %corpora=();
 my %CorpusName=();
 
-my $corpus = url_param('corpus');
-my $lang = url_param('lang');
-my $advanced = url_param('adv');
-my @alg = param('alg');
+# my $corpus = url_param('corpus');
+my $corpus = param('corpus') || url_param('corpus');
+my ($lang,$advanced,@alg);
+if ($corpus eq url_param('corpus')){
+    $lang = url_param('lang');
+    $advanced = url_param('adv');
+    @alg = param('alg');
+}
 
 ##------------------------------
 ## decode UTF-8 characters
@@ -204,7 +213,7 @@ sub CorpusQueryForm{
     if (not $lang){return;}
 
     my %index=%corpora;
-    my $form= &startform();
+    my $form= &start_form();
 
 
     #---------------------------------------------------
@@ -367,7 +376,7 @@ sub CorpusQueryForm{
 	$form.=&table({-cellspacing=>"0"},caption(''),&Tr(\@rows));
     }
 
-    $form.= &endform();
+    $form.= &end_form();
     return &div({-class=>'query'},$form);
 }
 
@@ -421,7 +430,7 @@ sub CorpusQuery{
 		# my $q = decode('utf-8',param("query_$_"));
 		# param("query_$_",$q);
 		my $q = param("query_$_");
-		my $q = EncodeString($_,$q);
+		$q = EncodeString($_,$q);
 		if ($q!~/^[\"\[]/){$q='"'.$q.'"';}
 		$cqp.=" :$l ".$q;
 #		$cqp.=" :$l ".EncodeString($_,param("query_$_"));
@@ -543,8 +552,7 @@ sub CorpusQuery{
 				   $bcs-1,$acs-1);
 		}
 		$string = $before.$string.' '.$after;
-
-		my $string=&FixString($_,$string);
+		$string = &FixString($_,$string);
 
                 ## highlight matching part (not always possible!)
                 my $q = param("query_$_");
@@ -658,8 +666,9 @@ sub AddUrlParam{
 #    language=registry-file
 
 sub ReadRegistry{
-    my $dir=shift;
-    my $reg=shift;
+    my $dir = shift;
+    my $reg = shift;
+    my $corpus = basename($dir);
     opendir(DIR, $dir) or die "Can't open it: $!\n";
     my @files= readdir(DIR);
     foreach my $f (@files){
