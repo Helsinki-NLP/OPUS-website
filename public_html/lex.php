@@ -631,8 +631,8 @@ function get_lang(&$langs,&$bitexts){
 function get_corpora(&$corpora){
   global $DBname, $DBlink;
    $query = 'select distinct corpus from origin';
+   $i=0;
    if ($result = mysqli_query($DBlink, $query)){
-     $i=0;
      while ($row=mysqli_fetch_array($result)){
 	 array_push($corpora,$row['corpus']);
 	 $i++;

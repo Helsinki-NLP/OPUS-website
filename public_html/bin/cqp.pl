@@ -19,13 +19,17 @@ use CWB::Web::Query;
 use HTML::Entities;
 use CGI qw/:standard escapeHTML escape -utf8/;
 use Encode;
+use CWB::CL;
+use File::Basename qw/basename dirname/;
 
-BEGIN { 
+$CGI::LIST_CONTEXT_WARN = 0;
+
+# BEGIN { 
 #    use CGI::Carp qw(carpout);
 #    open(LOG, ">>/tmp/opustest3.log") or die ("could not open log\n");
 #    open(LOG, ">>/tmp/opustest.log") or die ("could not open log\n");
 #    carpout(LOG);
-}
+# }
 
 use strict;
 
@@ -34,16 +38,15 @@ my $SHOWMAX=20;
 if (param('showmax')){$SHOWMAX=param('showmax');}
 
 # my $CWBREG='/hf/logos/site/opus/cwb/reg';
-# my $CWBREG='/storage/tiedeman/public_html/OPUS/cwb/reg';
-my $CWBREG='/home/opus/public_html/cwb/reg';
+my $CWBREG='/media/OPUS/cwb/reg';
 
-
-if (param('reg')){$CWBREG=param('reg');}
-if (url_param('reg')){$CWBREG=url_param('reg');}
+## this looks a bit dangerous ....
+# if (param('reg')){$CWBREG=param('reg');}
+# if (url_param('reg')){$CWBREG=url_param('reg');}
 chdir $CWBREG;
 
-# my $css="http://www.let.rug.nl/tiedeman/OPUS/index.css";
-my $css="http://opus.lingfil.uu.se/index.css";
+
+my $css="/index.css";
 binmode (STDOUT,':encoding(utf-8)');
 
 
@@ -52,9 +55,12 @@ binmode (STDOUT,':encoding(utf-8)');
 
 my ($CQPSYNTAX,$CWBLINK,$CQPEXAMPLES)=
     (
-     "http://www.ims.uni-stuttgart.de/projekte/CorpusWorkbench/CQPSyntax.html",
-     "http://www.ims.uni-stuttgart.de/projekte/CorpusWorkbench/index.html",
-     "http://www.ims.uni-stuttgart.de/projekte/CorpusWorkbench/CQPExamples.html"
+     "http://cwb.sourceforge.net/files/CQP_Tutorial/",
+     "http://cwb.sourceforge.net",
+     "http://cwb.sourceforge.net/files/CQP_Tutorial/",
+#    "http://www.ims.uni-stuttgart.de/projekte/CorpusWorkbench/CQPSyntax.html",
+#    "http://www.ims.uni-stuttgart.de/projekte/CorpusWorkbench/index.html",
+#    "http://www.ims.uni-stuttgart.de/projekte/CorpusWorkbench/CQPExamples.html"
     );
 my $CQPtext=
     'A CQP query consists of a regular'.&br().
@@ -63,8 +69,9 @@ my $CQPtext=
     &a({-href=>$CQPEXAMPLES},'Example queries');
 my $PATTRtext=
     'positional annotation';
-my $SATTRtext=
-    'structural annotation';
+#my $SATTRtext=
+#    'structural annotation';
+my $SATTRtext='';
 
 
 
@@ -89,10 +96,19 @@ my %corpora=();
 
 
 
-my $corpus = url_param('corpus');
-my $lang = url_param('lang');
-my $advanced = url_param('adv');
-my @alg = param('alg');
+#my $corpus = url_param('corpus');
+#my $lang = url_param('lang');
+#my $advanced = url_param('adv');
+#my @alg = param('alg');
+
+my $corpus = param('corpus') || url_param('corpus');
+my ($lang,$advanced,@alg);
+if ($corpus eq url_param('corpus')){
+    $lang = url_param('lang');
+    $advanced = url_param('adv');
+    @alg = param('alg');
+}
+
 
 ##------------------------------
 ## decode UTF-8 characters
@@ -138,7 +154,7 @@ sub FixString{
     decode_entities($string);
     return decode('utf-8',$string);
 
-    if ($lang=~/^(ar|az|be|bg|bs|he|id|jp|ja|ko|ku|mi|mk|ru|ta|th|uk|vi|xh|zh_tw|zh|zu|bul|chi|jap|jpn|heb|rus)$/){
+    if ($lang=~/^(ar|az|be|bg|bs|fa|he|id|jp|ja|ko|ku|mi|mk|ru|ta|th|uk|vi|xh|zh_tw|zh_cn|zh|zu|bul|chi|jap|jpn|heb|rus)$/){
 	decode_entities($string);
 	$string=decode('utf-8',$string);
     }
@@ -170,7 +186,8 @@ sub EncodeString{
     
 #    $string=decode('utf-8',$string);
 
-    if ($lang=~/^(ar|az|be|bg|bs|he|id|jp|ja|ko|ku|mi|mk|ru|ta|th|uk|vi|xh|zh_tw|zh|zu|bul|chi|jap|jpn|heb|rus)$/){
+#    $string = decode('utf-8',$string);
+    if ($lang=~/^(ar|az|be|bg|bs|he|id|jp|ja|ko|ku|mi|mk|ru|ta|th|uk|vi|xh|zh_tw|zh_cn|zh|zu|bul|chi|jap|jpn|heb|rus)$/){
 	$string=encode('utf-8',$string);
     }
 #    if ($lang eq 'el'){decode_entities($string);}
@@ -203,7 +220,7 @@ sub CorpusQueryForm{
     if (not $lang){return;}
 
     my %index=%corpora;
-    my $form= &startform();
+    my $form= &start_form();
 
 
     #---------------------------------------------------
@@ -229,15 +246,15 @@ sub CorpusQueryForm{
     # checkboxes for structural attributes
 
     my $sattr=undef;
-    if (ref($corpora{$corpus}{$lang}{struc}) eq 'HASH'){
-	my @struc=sort keys %{$corpora{$corpus}{$lang}{struc}};
-	foreach (sort @struc){
-	    $sattr.=&checkbox_group(-name=>'attr',-values=>($_));
-	    my @strucattr=sort @{$corpora{$corpus}{$lang}{struc}{$_}};
-	    $sattr.=&checkbox_group(-name=>'attr',-values=>\@strucattr);
-	    $sattr.=&br();
-	}
-    }
+    # if (ref($corpora{$corpus}{$lang}{struc}) eq 'HASH'){
+    # 	my @struc=sort keys %{$corpora{$corpus}{$lang}{struc}};
+    # 	foreach (sort @struc){
+    # 	    $sattr.=&checkbox_group(-name=>'attr',-values=>($_));
+    # 	    my @strucattr=sort @{$corpora{$corpus}{$lang}{struc}{$_}};
+    # 	    $sattr.=&checkbox_group(-name=>'attr',-values=>\@strucattr);
+    # 	    $sattr.=&br();
+    # 	}
+    # }
 
     #---------------------------------------------------
     # context window
@@ -285,7 +302,7 @@ sub CorpusQueryForm{
 		##
 		# my $cqp = decode('utf-8',param('query_'.$l));
 		# if ($cqp){param('query_'.$l,$cqp);}
-		$cqp = param('query_'.$l);
+		my $cqp = param('query_'.$l);
 		##------------------------------
 
 		$rows[$nr_rows].=
@@ -366,7 +383,7 @@ sub CorpusQueryForm{
 	$form.=&table({-cellspacing=>"0"},caption(''),&Tr(\@rows));
     }
 
-    $form.= &endform();
+    $form.= &end_form();
     return &div({-class=>'query'},$form);
 }
 
@@ -388,8 +405,7 @@ sub CorpusQuery{
     $CWB::Web::Query::Registry = $corpus;
     my $query;
     eval { $query = new CWB::Web::Query("$lang"); };
-    if ($@){print "--$@--$!--$?--";}
-
+    if ($@){ print escapeHTML($@); return undef }
     #---------------------------------------------------------
 
     $query->on_error(sub{grep {print escapeHTML($_).&br()} @_});
@@ -418,9 +434,10 @@ sub CorpusQuery{
 		# my $q = decode('utf-8',param("query_$_"));
 		# param("query_$_",$q);
 		my $q = param("query_$_");
-		my $q = EncodeString($_,$q);
+		$q = EncodeString($_,$q);
 		if ($q!~/^[\"\[]/){$q='"'.$q.'"';}
 		$cqp.=" :$l ".$q;
+#		$cqp.=" :$l ".EncodeString($_,param("query_$_"));
 	    }
 	    else{
 		my $l=uc($_);
@@ -447,6 +464,7 @@ sub CorpusQuery{
 	@result = $query->query($cqp);
 	alarm 0;
     };
+    if ($@){ return escapeHTML($@); }
     my $nr_result = @result;
     #---------------------------------------------------------
 
@@ -466,6 +484,7 @@ sub CorpusQuery{
 	my $m = $result[$i];
 	my $pos = $m->{'cpos'};
 	my $ord = &FixString($lang,$m->{'kwic'}->{'match'});
+	$ord=~s/\s/\&nbsp;/g;
 	my $res_r = &FixString($lang,$m->{'kwic'}->{'right'});
 	my $res_l = &FixString($lang,$m->{'kwic'}->{'left'});
 	my $noalign=0;
@@ -582,8 +601,9 @@ sub AddUrlParam{
 #    language=registry-file
 
 sub ReadRegistry{
-    my $dir=shift;
-    my $reg=shift;
+    my $dir = shift;
+    my $reg = shift;
+    my $corpus = basename($dir);
     opendir(DIR, $dir) or die "Can't open it: $!\n";
     my @files= readdir(DIR);
     foreach my $f (@files){
@@ -600,19 +620,19 @@ sub ReadRegistry{
 	    close F;
 	    foreach (@text){
 		if (/ATTRIBUTE\s(.*)$/){
-		    push (@{$$reg{$dir}{$f}{attr}},$1);
+		    push (@{$$reg{$corpus}{$f}{attr}},$1);
 		}
 		if (/STRUCTURE\s(.*)$/){
 		    my $struc=$1;
 		    if ($struc=~/^(\S+)\_(\S+)(\s|\Z)/){
-			push (@{$$reg{$dir}{$f}{struc}{$1}},"$1_$2");
+			push (@{$$reg{$corpus}{$f}{struc}{$1}},"$1_$2");
 		    }
 		    else{
-			@{$$reg{$dir}{$f}{struc}{$struc}}=();
+			@{$$reg{$corpus}{$f}{struc}{$struc}}=();
 		    }
 		}
 		if (/ALIGNED\s(.*)$/){
-		    push (@{$$reg{$dir}{$f}{align}},$1);
+		    push (@{$$reg{$corpus}{$f}{align}},$1);
 		}
 	    }
 	}
