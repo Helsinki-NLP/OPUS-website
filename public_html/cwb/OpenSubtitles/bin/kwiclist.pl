@@ -28,6 +28,8 @@ use My::KWIC;
 
 use CGI qw/:standard *table *Tr *td/;
 
+$CGI::LIST_CONTEXT_WARN = 0;
+
 binmode (STDOUT,':encoding(utf-8)');
 
 $query = My::Param::Get("query");

@@ -26,6 +26,8 @@ use My::KWIC;
 
 use CGI qw/:standard/;
 
+$CGI::LIST_CONTEXT_WARN = 0;
+
 binmode (STDOUT,':encoding(utf-8)');
 
 # $P = My::Config::GetAttribute("p");
