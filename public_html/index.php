@@ -140,6 +140,7 @@
           <li><a href="bible-uedin.php">Bible (uedin)</a> - Collection of Bible translations</li>
           <li><a href="Books.php">Books</a> - A collection of translated literature</li>
           <li><a href="CAPES.php">CAPES</a> - Thesis and dissertation abstracts</li>
+	  <li><a href="CCAligned.php">CCAligned</a> - Parallel sentences from Common Crawl</li>
           <li><a href="DGT.php">DGT</a> - A collection of EU Translation Memories provided by the JRC</li>
           <li><a href="DOGC.php">DOGC</a> - Documents from the Catalan Goverment</li>
           <li><a href="ECB.php">ECB - European Central Bank corpus</a></li>
@@ -150,12 +151,14 @@
           <li><a href="EMEA.php">EMEA - European Medicines Agency documents</a></li>
           <li><a href="EUbookshop.php">The EU bookshop corpus</a></li>
           <li><a href="EUconst.php">EUconst - The European constitution</a></li>
-          <li><a href="Europarl.php">EUROPARL v7 - European Parliament Proceedings</a></li>
+          <li><a href="Europarl.php">EUROPARL - European Parliament Proceedings</a></li>
+          <li><a href="EuroPat.php">EUROPAT - Parallel corpus of patents</a></li>	  
           <li><a href="Finlex.php">Finlex</a> - Legislative and other judicial information of Finland</li>
           <li><a href="fiskmo.php">fiskmo</a> - Data from the <a href="https://blogs.helsinki.fi/fiskmo-project/">fiskmö project</a></li>
           <li><a href="giga-fren.php">giga-fren</a> - French-English Gigal-Word Corpus</li>
           <li><a href="GlobalVoices.php">Global Voices</a> - News stories in various languages</li>
           <li><a href="GNOME.php">GNOME</a> - GNOME localization files</li>
+          <li><a href="GoURMET.php">GoURMET</a> - Parallel data from web crawls</li>	  
           <li><a href="hrenWaC.php">The Croatian - English WaC corpus</a></li>
 	  <li><a href="infopankki-v1.php">Infopankki</a></li>
           <li><a href="JRC-Acquis.php">JRC-Acquis- legislative EU texts</a></li>
@@ -164,11 +167,13 @@
           <li><a href="KDEdoc.php">KDEdoc - the KDE manual corpus</a></li>
           <li><a href="MBS.php">MBS - Belgisch Staatsblad corpus</a></li>
           <li><a href="memat.php">memat - Xhosa/English parallel data</a></li>
+          <li><a href="MIZAN.php">MIZAN - A large Persian-English corpus</a></li>	  
           <li><a href="MontenegrinSubs.php">MontenegrinSubs - Montenegrin movie subtitles</a></li>
         </ul>
 	    </td>
 	    <td>
         <ul>
+          <li><a href="MultiCCAligned.php">MultiCCAligned</a> - Pivot-based Bitexts from CCAligned</li>	
           <li><a href="MultiParaCrawl.php">MultiParaCrawl</a> - Non-English Bitexts from ParaCrawl</li>
           <li><a href="MultiUN.php">MultiUN</a> - Translated UN documents</li>
           <li><a href="News-Commentary.php">News Commentary</a> (<a href="News-Commentary-v1.php">v11</a>, <a href="News-Commentary-v1.php">v9.1</a>,<a href="News-Commentary-v9.php">v9</a>)</li>
@@ -194,11 +199,14 @@
           <li><a href="Tatoeba.php">Tatoeba</a> - A DB of translated sentences</li>
           <li><a href="TedTalks.php">TedTalks hr-en</a></li>
           <li><a href="TED2013.php">TED Talks 2013</a></li>
+          <li><a href="TED2020.php">TED Talks 2020</a></li>
+          <li><a href="tico-19.php">The tico-19 corpus</a></li>	  
           <li><a href="TildeMODEL.php">The Tilde MODEL corpus</a></li>
           <li><a href="TEP.php">TEP</a> - The Tehran English-Persian subtitle corpus</li>
           <li><a href="Ubuntu.php">Ubuntu</a> - Ubuntu localization files</li>
           <li><a href="UN.php">UN</a> - Translated UN documents</li>
           <li><a href="UNPC.php">UNPC</a> - The United Nations Parallel Corpus</li>
+          <li><a href="WikiMatrix.php">WikiMatrix</a> - Parallel sentences extracted from Wikipedia</li>	  
           <li><a href="wikimedia.php">Wikimedia</a> - Documents from the Wikimedia Translation project</li>
           <li><a href="Wikipedia.php">Wikipedia</a> - translated sentences from Wikipedia</li>
           <li><a href="WikiSource.php">WikiSource</a> - (small en-sv sample only</li>
@@ -316,7 +324,7 @@
 
         <td valign="top">A text book on alignment:<br>
         <br>
-        <a href="http://www.morganclaypool.com/doi/abs/10.2200/S00367ED1V01Y201106HLT014"><img border="0" src="/img/bitextalign" height="200"></a></td>
+        <a href="http://www.morganclaypool.com/doi/abs/10.2200/S00367ED1V01Y201106HLT014"><img border="0" src="/img/bitextalign.jpg" height="200"></a></td>
       </tr>
     </table>
   </div>
