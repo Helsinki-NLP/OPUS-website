@@ -12,6 +12,44 @@ sudo apt-get install awstats
 sudo apt-get install python3-pip
 ```
 
+## Setting up TSL
+
+
+```
+sudo a2enmod ssl
+sudo systemctl restart apache2
+```
+
+Issue a new certificate from Let's Encrypt: Follow instructions at https://certbot.eff.org/lets-encrypt/ubuntufocal-apache (more information is here: https://letsencrypt.org/getting-started/)
+
+```
+sudo snap install core
+sudo snap refresh core
+sudo snap install --classic certbot
+sudo ln -s /snap/bin/certbot /usr/bin/certbot
+sudo certbot certonly --apache
+```
+
+Edit apache website configuration
+
+```
+<VirtualHost *:80>
+    ServerName opus.nlpl.eu
+    Redirect / https://opus.nlpl.eu/
+</VirtualHost>
+
+<VirtualHost *:443>
+
+   SSLEngine on
+   SSLCertificateFile /etc/letsencrypt/live/opus.nlpl.eu/fullchain.pem
+   SSLCertificateKeyFile /etc/letsencrypt/live/opus.nlpl.eu/privkey.pem
+
+   ServerName opus.nlpl.eu
+   DocumentRoot /home/opus/public_html
+...
+```
+
+
 
 # Installing CWB
 

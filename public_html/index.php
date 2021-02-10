@@ -27,19 +27,24 @@
   <div class="news">
     <h3>Latest News</h3>
     <ul>
+      <li>2021-02-10: <a href="CCAligned.php">CCAligned</a> and <a href="MultiCCAligned.php">MultiCCAligned</a></li>
+      <li>2020-11-27: New: <a href="GoURMET.php">GoURMET</a> and <a href="MIZAN.php">MIZAN</a></li>      
+      <li>2020-10-31: New: <a href="EuroPat.php">EuroPat</a> and <a href="tico-19.php">tico-19</a></li>
       <li>2020-06-30: New: <a href="opus-100.php">OPUS-100 corpus</a></li>
       <li>2020-05-22: New: <a href="ELRC.php">ELRC public</a></li>
       <li>2019-10-16: New: <a href="MultiParaCrawl-v5.php">MultiParaCrawl</a></li>
       <li>2019-10-14: New: <a href="infopankki-v1.php">Infopankki v1</a></li>
-      <li>2019-09-28: Update: <a href="ParaCrawl-v5.php">ParaCrawl v5</a></li>
+<!--       <li>2019-09-28: Update: <a href="ParaCrawl-v5.php">ParaCrawl v5</a></li> -->
       <li>2019-08-28: <a href="JW300.php">JW300 corpus</a> added</li>
-      <li>2019-08-14: Various new and updated corpora</li>
+<!-- 
+    <li>2019-08-14: Various new and updated corpora</li>
+-->
     <li>2018-10-06: New corpus: <a href="memat.php">memat</a> (Xhosa/English)</li>
     <li>2018-02-15: New corpora: <a href="ParaCrawl.php">ParaCrawl</a>, <a href="XhosaNavy.php">XhosaNavy</a></li>
     <li>2017-11-06: New version: <a href="OpenSubtitles-v2018.php">OpenSubtitles2018</a></li>
+<!--
     <li>2017-11-01: New URL: <a href="http://opus.nlpl.eu">http://opus.nlpl.eu</a></li>
     <li>2016-01-08: New version: <a href="OpenSubtitles-v2016.php">OpenSubtitles2016</a></li>
-<!--
     <li>2015-10-15: New versions of <a href="TED2013.php">TED2013</a>, <a href="News-Commentary-v9.1.php">NCv9</a></li>
     <li>2014-10-24: New: <a href="JRC-Acquis.php">JRC-Acquis</a></li>
     <li>2014-10-20: <a href="News-Commentary-v9.0.php">NCv9</a>, <a href="TED2013.php">TED talks</a>, <a href="DGT.php">DGT</a>, <a href="WMT-News.php">WMT</a></li>
@@ -67,6 +72,18 @@
 
   <p><?php include("search.php"); ?></p><a name="download" id="download"></a>
 
+<!--
+  <p>
+  <table align="center" width="100%">
+    <tr>
+      <td valign="top">
+<a href="https://github.com/Helsinki-NLP/OPUS-MT"><img width="100" src="https://raw.githubusercontent.com/Helsinki-NLP/Opus-MT/master/img/opus_mt.png"></a>
+      </td>
+    </tr>
+  </table>
+  </p>
+-->
+
   <table align="center" width="100%">
     <tr>
       <td valign="top">
@@ -89,11 +106,16 @@
         <ul>
           <li><a href="/trac/wiki">OPUS Wiki</a></li>
 	  <li><a href="http://opus.nlpl.eu/opusapi">OPUS API</a></li>
+	  <li><a href="https://github.com/Helsinki-NLP/OPUS-MT">OPUS-MT</a></li>
+	  <li><a href="https://github.com/Helsinki-NLP/OPUS-CAT">OPUS-CAT</a></li>
+	  <li><a href="https://github.com/Helsinki-NLP/Tatoeba-Challenge">The Tatoeba MT Challenge</a></li>
+	  <li><a href="https://github.com/Helsinki-NLP/OpusFilter">OpusFilter</a></li>
 	  <li><a href="https://opus-repository.ling.helsinki.fi/">OPUS interface</a> (<a href="https://github.com/Helsinki-NLP/OPUS-interface">@github</a>)</li>
 	  <li><a href="https://translate.ling.helsinki.fi">OPUS translator</a> (<a href="https://github.com/Helsinki-NLP/OPUS-translator">@github</a>)</li>
-	  <li><a href="https://pypi.org/project/opustools-pkg/">OPUS tools</a> (Python package)</li>
+	  <li><a href="https://pypi.org/project/opustools/">OPUS tools</a> (Python package)</li>
 	  <li><a href="https://github.com/Helsinki-NLP/opus-tools">OPUS tools</a> (Perl package)</li>
           <li><a href="https://github.com/Helsinki-NLP/Uplug">Uplug</a> (<a href="https://bitbucket.org/tiedemann/uplug">@bitbucket</a>)</li>
+	  <li><a href="https://github.com/Helsinki-NLP/LanguageCodes">ISO language codes</a></li>
 	  <!-- <li><a href="https://github.com/yonkornilov/opus-api">OPUS API</a> by Yonathan Koren</li> -->
         </ul>
 
@@ -102,6 +124,7 @@
 
         <ul>
 	  <li><a href="http://www.letsmt.eu">Let'sMT!</a> - On-line SMT toolkit</a></li>
+	  <li><a href="https://libretranslate.com/">LibreTranslate</a> powered by <a href="https://github.com/argosopentech/argos-translate/">argos-translate</a></li>
           <li><a href="http://www.casmacat.eu">CASMACAT</a> - Computer-Aided Translation</li>
 	  <li><a href="http://www.statmt.org/wmt16/">WMT</a> - A conference on statistical MT</a></li>
 	  <li><a href="http://context.reverso.net/translation">Reverso</a> - Translations in context</li>
@@ -113,6 +136,7 @@
 <b>Links to other Resources</b>
 
         <ul>
+	  <li>The <a href="https://www.paracrawl.eu/">ParaCrawl project</a></li>
           <li>The <a href="http://statmt.org/europarl/">EuroParl corpus</a> and <a href="http://www.statmt.org/wmt13/translation-task.html">WMT data</a></li>
 	  <li><a href="https://pub.cl.uzh.ch/wiki/public/costep/start">CoStEP</a>: A cleaner and structured version of the Europarl corpus</li>
 	  <li><a href="https://conferences.unite.un.org/uncorpus">United Nations Parallel Corpus</a></li>
@@ -241,6 +265,16 @@
                 Conference on Language Resources and Evaluation
                 (LREC'2012)</cite></dd>
 
+
+	    <dt>J&ouml;rg Tiedemann and Santhosh Thottingal, 2020</dt>
+	    <dd><a href="https://www.aclweb.org/anthology/2020.eamt-1.61/">OPUS-MT – Building open translation services for the World.<a/> In <cite><a href="https://www.aclweb.org/anthology/volumes/2020.eamt-1/">Proceedings of the 22nd Annual Conference of the European Association for Machine Translation</a></cite>, 2020 (<a href="https://www.aclweb.org/anthology/2020.eamt-1.61.bib">bib</a>, <a href="https://www.aclweb.org/anthology/2020.eamt-1.61.pdf">pdf</a>)
+
+	    <dt>Mikko Aulamo, Sami Virpioja, Jörg Tiedemann, 2020</dt>
+	    <dd><a href="https://www.aclweb.org/anthology/2020.acl-demos.20/">OpusFilter: A Configurable Parallel Corpus Filtering Toolbox.<a/> In <cite><a href="https://www.aclweb.org/anthology/volumes/2020.acl-demos/">Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics: System Demonstrations</a></cite>, 2020 (<a href="https://www.aclweb.org/anthology/2020.acl-demos.20.bib">bib</a>, <a href="https://www.aclweb.org/anthology/2020.acl-demos.20.pdf">pdf</a>)
+
+	    <dt>Mikko Aulamo, Umut Sulubacak, Sami Virpioja, Jörg Tiedemann, 2020</dt>
+	    <dd><a href="https://www.aclweb.org/anthology/volumes/2020.lrec-1/">OpusTools and Parallel Corpus Diagnostics.<a/> In <cite><a href="https://www.aclweb.org/anthology/volumes/2020.lrec-1/">Proceedings of the 12th Language Resources and Evaluation Conference</a></cite>, 2020 (<a href="https://www.aclweb.org/anthology/2020.lrec-1.467.bib">bib</a>, <a href="https://www.aclweb.org/anthology/2020.lrec-1.467.pdf">pdf</a>)
+
 	    <dt>J&ouml;rg Tiedemann, 2016a</dt>
 	    <dd><a href="http://www.bjmc.lu.lv/fileadmin/user_upload/lu_portal/projekti/bjmc/Contents/4_2_28_Products.pdf">OPUS
 	    - Parallel Corpora for Everyone.</a> In <cite>Baltic
@@ -306,7 +340,7 @@
             In <cite>Proceedings of RANLP '07</cite>, Borovets,
             Bulgaria, 2007.</dd>
 
-            <dt>J&ouml;rg Tiedemann, unpublished</dt>
+            <dt>J&ouml;rg Tiedemann, 2003</dt>
             <dd>OPUS - an open source parallel
             corpus. <a href="http://stp.lingfil.uu.se/~joerg/paper/Nodalida03.pdf">[pdf]</a><br>
             In <cite>Proceedings of the 13th Nordic Conference on
