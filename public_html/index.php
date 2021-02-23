@@ -114,6 +114,8 @@
 	  <li><a href="https://translate.ling.helsinki.fi">OPUS translator</a> (<a href="https://github.com/Helsinki-NLP/OPUS-translator">@github</a>)</li>
 	  <li><a href="https://pypi.org/project/opustools/">OPUS tools</a> (Python package)</li>
 	  <li><a href="https://github.com/Helsinki-NLP/opus-tools">OPUS tools</a> (Perl package)</li>
+	  <li><a href="https://github.com/thammegowda/mtdata">mtdata - another tool for retrieving data</a></li>
+	  <li><a href="https://github.com/robertostling/eflomal">Eflomal word aligner</a> and <a href="eflomal-priors.html">pre-trained priors</a></li>
           <li><a href="https://github.com/Helsinki-NLP/Uplug">Uplug</a> (<a href="https://bitbucket.org/tiedemann/uplug">@bitbucket</a>)</li>
 	  <li><a href="https://github.com/Helsinki-NLP/LanguageCodes">ISO language codes</a></li>
 	  <!-- <li><a href="https://github.com/yonkornilov/opus-api">OPUS API</a> by Yonathan Koren</li> -->
