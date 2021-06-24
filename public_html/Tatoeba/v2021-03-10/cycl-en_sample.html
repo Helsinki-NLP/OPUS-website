@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+(not (languageSpoken (PronounFn FirstPerson-NLAttr Singular-NLAttr Ungendered-NLAttr SubjectPronoun) JapaneseLanguage)) <br/>
+I don't speak Japanese. <br/>
+<hr/>
+(nameString (PronounFn FirstPerson-NLAttr Singular-NLAttr Ungendered-NLAttr SubjectPronoun) "Jack") <br/>
+My name is Jack. <br/>
+<hr/>
+((TypeCapableFn behaviorCapable) Bear-Animal (SubcollectionOfWithRelationToTypeFn Climbing eventOccursAt Tree-ThePlant) doneBy) <br/>
+A bear can climb a tree. <br/>
+<hr/>
+((TypeCapableFn behaviorCapable) Bear-Animal (SubcollectionOfWithRelationToTypeFn Climbing eventOccursAt Tree-ThePlant) performedBy) <br/>
+A bear can climb a tree. <br/>
+<hr/>
+(thereExists ?PERSON1 (thereExists ?PERSON2 (and (nameStrings ?PERSON1 "Philip") (nameStrings ?PERSON2 "Tom") (relatives ?PERSON1 ?PERSON2)))) <br/>
+Philip and Tom are related to each other. <br/>
+<hr/>
+(#$capitalCity #$France #$Paris) <br/>
+Paris is the capital of France. <br/>
+<hr/>
+(and (isa 1 OddNumber) (isa 3 OddNumber) (isa 5 OddNumber)) <br/>
+One, three, and five are odd numbers. <br/>
+<hr/>
+(behaviorCapable-PerformedBy Madonna Singing-Human) <br/>
+Madonna is able to sing. <br/>
+<hr/>
+(numberOfInhabitants CityOfAucklandNZ 1000000) <br/>
+There are a million people in Auckland. <br/>
+<hr/>
+(numberOfInhabitants CityOfAucklandNZ 1000000) <br/>
+Auckland has a population of a million. <br/>
+<hr/>
+(isa CityOfAucklandNewZealand (CityInCountryFn NewZealand) ) <br/>
+Auckland is a city in New Zealand. <br/>
+<hr/>
+(mostNotableIsa Batman Superhero) <br/>
+The thing you have to know about Batman is, he's a superhero. <br/>
+<hr/>
+(likesAsFriend Batman Robin-BatmanSidekick) <br/>
+Batman is friends with Robin. <br/>
+<hr/>
+(likesAsFriend Batman Robin-BatmanSidekick) <br/>
+The Caped Crusader is friends with Robin, the boy Wonder. <br/>
+<hr/>
+(implies (isa ?AP (FruitFn AppleTree)) (colorOfObject ?AP RedColor)) <br/>
+Every apple is red. <br/>
+<hr/>
+(implies (isa ?AP (FruitFn AppleTree)) (colorOfObject ?AP RedColor)) <br/>
+Apples are red. <br/>
+<hr/>
+(implies (isa ?AP (FruitFn AppleTree)) (or (colorOfObject ?AP RedColor) (colorOfObject ?AP GreenColor))) <br/>
+Apples are red or green. <br/>
+<hr/>
+(implies (isa ?AP (FruitFn AppleTree)) (or (colorOfObject ?AP RedColor) (colorOfObject ?AP GreenColor))) <br/>
+If something is an apple, then it's either red or green, or possibly both. <br/>
+<hr/>
+(goals Sauron (forAll ?HOB (implies (isa ?HOB Hobbit) (feelsTowardsObjectToDegree ?HOB Sauron Fear highToVeryHighAmountOf)))) <br/>
+Sauron wants every hobbit to fear him. <br/>
+<hr/>
+(cost (TheFn (SubcollectionOfWithRelationToTypeFn Chair-PieceOfFurniture primaryConstituent Wood)) Expensive) <br/>
+The wooden chair is expensive. <br/>
+<hr/>
+(isa (TheFn (MaleFn HumanYoungAdult)) Doctor-Medical) <br/>
+The young man is a doctor. <br/>
+<hr/>
+(commonFoodTypeOfCuisine Baguette FrenchCuisine) <br/>
+The baguette is French. <br/>
+<hr/>
+(organizationHead CityCouncilOfAustin LeeLeffingwell) <br/>
+Lee Leffingwell is the head of the Austin City Council. <br/>
+<hr/>
+(genls Android Robot) <br/>
+An android is a kind of robot. <br/>
+<hr/>
+(genls Android Robot) <br/>
+All androids are robots. <br/>
+<hr/>
+(genls Android Robot) <br/>
+Every android is a robot. <br/>
+<hr/>
+(genls Android Robot) <br/>
+If something's an android, it's also a robot. <br/>
+<hr/>
+(personFoundInLocation BritneySpears ?WHERE) <br/>
+Where is Britney Spears? <br/>
+<hr/>
+(evaluate 3 (PlusFn 1 2)) <br/>
+One plus two equals three. <br/>
+<hr/>
+(thereExists ?M (and (mother (TheFn NewbornAnimal) ?M) (needs-Generic (TheFn NewbornAnimal) ?M))) <br/>
+The baby needs its mother. <br/>
+<hr/>
+(isa AbrahamLincoln FamousHuman) <br/>
+Abraham Lincoln is a famous person. <br/>
+<hr/>
+(relationAllExists properPhysicalParts IPhone-AppleCellphone Touchscreen-Capacitive) <br/>
+iPhones have capacitive touchscreens. <br/>
+<hr/>
+(forAll ?X (implies (and (different PlanetJupiter ?X) (isa ?X PlanetInTheSolarSystem)) (largerThan PlanetJupiter ?X massOfObject))) <br/>
+Jupiter is the most massive planet in the solar system. <br/>
+<hr/>
+(not (thereExists ?X (owns ?X MoonOfEarth))) <br/>
+Nobody owns the moon. <br/>
+<hr/>
+(thereExists ?Y (forAll ?X (loves ?Y ?X))) <br/>
+Somebody loves everyone. <br/>
+<hr/>
+(exceptionalAtActivityType (PronounFn ThirdPerson-NLAttr Singular-NLAttr Masculine-NLAttr SubjectPronoun) (InstrumentPlayingFn Cello)) <br/>
+He plays cello exceptionally well. <br/>
+<hr/>
+(nameString (PronounFn FirstPerson-NLAttr Singular-NLAttr Ungendered-NLAttr SubjectPronoun) "Jack") <br/>
+My name's Jack. <br/>
+<hr/>
+(on-Physical (TheFn Cat) (TheFn Mat)) <br/>
+The cat is on the mat. <br/>
+<hr/>
+(relationAllInstance sellsProductType ConvenienceStore CandyBar) <br/>
+Convenience stores sell candy bars. <br/>
+<hr/>
+(agentTypeSellsProductType ConvenienceStore CandyBar) <br/>
+Convenience stores sell candy bars. <br/>
+<hr/>
+(oppositeCollections WakingUpFromSleep GoingToSleep) <br/>
+Waking up is the opposite of going to sleep. <br/>
+<hr/>
+(nameString (PronounFn FirstPerson-NLAttr Singular-NLAttr Ungendered-NLAttr SubjectPronoun) "Farshad") <br/>
+My name is Farshad. <br/>
+<hr/>
+<br/>
+<br/>
+<hr/>
+(#$capitalCity #$France #$Paris) <br/>
+Paris is France's capital. <br/>
+<hr/>
+</body></html/>
