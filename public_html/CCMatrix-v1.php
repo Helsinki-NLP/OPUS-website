@@ -139,7 +139,7 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/az.zip">az</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Azerbaijani-Arabic' (0.5M links, 8.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-az.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Azerbaijani-Arabic' (0.5M links, 9.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-az.xml.gz">ces</a></td>
 <td></td>
 <th></th>
 <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Azerbaijani-English (sample file)" href="CCMatrix/v1/az-en_sample.html">view</a></td><td></td><td></td><td></td><td></td><td></td><td></td><th>az</th>
@@ -160,10 +160,10 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/bg.zip">bg</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Bulgarian-Arabic' (2.7M links, 49.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-bg.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Bulgarian-Arabic' (2.7M links, 57.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-bg.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Bulgarian-Belarusian' (0.9M links, 16.1M tokens)" href="download.php?f=CCMatrix/v1/xml/be-bg.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Bulgarian-Belarusian' (0.9M links, 23.1M tokens)" href="download.php?f=CCMatrix/v1/xml/be-bg.xml.gz">ces</a></td>
 <th></th>
 <td><a rel="nofollow" title="Bulgarian-Bengali (sample file)" href="CCMatrix/v1/bg-bn_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Bulgarian-Catalan (sample file)" href="CCMatrix/v1/bg-ca_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Bulgarian-Czech (sample file)" href="CCMatrix/v1/bg-cs_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Bulgarian-Danish (sample file)" href="CCMatrix/v1/bg-da_sample.html">view</a></td><td><a rel="nofollow" title="Bulgarian-German (sample file)" href="CCMatrix/v1/bg-de_sample.html">view</a></td><td><a rel="nofollow" title="Bulgarian-Greek (sample file)" href="CCMatrix/v1/bg-el_sample.html">view</a></td><td><a rel="nofollow" title="Bulgarian-English (sample file)" href="CCMatrix/v1/bg-en_sample.html">view</a></td><td><a rel="nofollow" title="Bulgarian-Esperanto (sample file)" href="CCMatrix/v1/bg-eo_sample.html">view</a></td><td><a rel="nofollow" title="Bulgarian-Spanish (sample file)" href="CCMatrix/v1/bg-es_sample.html">view</a></td><td><a rel="nofollow" title="Bulgarian-Estonian (sample file)" href="CCMatrix/v1/bg-et_sample.html">view</a></td><td><a rel="nofollow" title="Bulgarian-Basque (sample file)" href="CCMatrix/v1/bg-eu_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Bulgarian-Finnish (sample file)" href="CCMatrix/v1/bg-fi_sample.html">view</a></td><th>bg</th>
 <td><a rel="nofollow" title="Bulgarian-French (sample file)" href="CCMatrix/v1/bg-fr_sample.html">view</a></td><td></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Bulgarian-Hebrew (sample file)" href="CCMatrix/v1/bg-he_sample.html">view</a></td><td><a rel="nofollow" title="Bulgarian-Hindi (sample file)" href="CCMatrix/v1/bg-hi_sample.html">view</a></td><td><a rel="nofollow" title="Bulgarian-Croatian (sample file)" href="CCMatrix/v1/bg-hr_sample.html">view</a></td><td><a rel="nofollow" title="Bulgarian-Hungarian (sample file)" href="CCMatrix/v1/bg-hu_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Bulgarian-Indonesian (sample file)" href="CCMatrix/v1/bg-id_sample.html">view</a></td><td></td><td></td><td></td><td><a rel="nofollow" title="Bulgarian-Italian (sample file)" href="CCMatrix/v1/bg-it_sample.html">view</a></td><td><a rel="nofollow" title="Bulgarian-Japanese (sample file)" href="CCMatrix/v1/bg-ja_sample.html">view</a></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Bulgarian-Korean (sample file)" href="CCMatrix/v1/bg-ko_sample.html">view</a></td><td></td><td></td><th>bg</th>
@@ -172,11 +172,11 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/bn.zip">bn</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Bengali-Arabic' (3.1M links, 69.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-bn.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Bengali-Arabic' (3.1M links, 80.1M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-bn.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Bengali-Belarusian' (65.5k links, 1.3M tokens)" href="download.php?f=CCMatrix/v1/xml/be-bn.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Bengali-Bulgarian' (1.2M links, 32.2M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-bn.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Bengali-Belarusian' (65.5k links, 1.6M tokens)" href="download.php?f=CCMatrix/v1/xml/be-bn.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Bengali-Bulgarian' (1.2M links, 35.0M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-bn.xml.gz">ces</a></td>
 <th></th>
 <td></td><td><a rel="nofollow" title="Bengali-Catalan (sample file)" href="CCMatrix/v1/bn-ca_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Bengali-Czech (sample file)" href="CCMatrix/v1/bn-cs_sample.html">view</a></td><td></td><td></td><td><a rel="nofollow" title="Bengali-German (sample file)" href="CCMatrix/v1/bn-de_sample.html">view</a></td><td><a rel="nofollow" title="Bengali-Greek (sample file)" href="CCMatrix/v1/bn-el_sample.html">view</a></td><td><a rel="nofollow" title="Bengali-English (sample file)" href="CCMatrix/v1/bn-en_sample.html">view</a></td><td><a rel="nofollow" title="Bengali-Esperanto (sample file)" href="CCMatrix/v1/bn-eo_sample.html">view</a></td><td><a rel="nofollow" title="Bengali-Spanish (sample file)" href="CCMatrix/v1/bn-es_sample.html">view</a></td><td><a rel="nofollow" title="Bengali-Estonian (sample file)" href="CCMatrix/v1/bn-et_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Bengali-Persian (sample file)" href="CCMatrix/v1/bn-fa_sample.html">view</a></td><td><a rel="nofollow" title="Bengali-Finnish (sample file)" href="CCMatrix/v1/bn-fi_sample.html">view</a></td><th>bn</th>
 <td><a rel="nofollow" title="Bengali-French (sample file)" href="CCMatrix/v1/bn-fr_sample.html">view</a></td><td></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Bengali-Hebrew (sample file)" href="CCMatrix/v1/bn-he_sample.html">view</a></td><td><a rel="nofollow" title="Bengali-Hindi (sample file)" href="CCMatrix/v1/bn-hi_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Bengali-Hungarian (sample file)" href="CCMatrix/v1/bn-hu_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Bengali-Indonesian (sample file)" href="CCMatrix/v1/bn-id_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Bengali-Iloko (sample file)" href="CCMatrix/v1/bn-ilo_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Bengali-Italian (sample file)" href="CCMatrix/v1/bn-it_sample.html">view</a></td><td><a rel="nofollow" title="Bengali-Japanese (sample file)" href="CCMatrix/v1/bn-ja_sample.html">view</a></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Bengali-Korean (sample file)" href="CCMatrix/v1/bn-ko_sample.html">view</a></td><td><a rel="nofollow" title="Bengali-Latin (sample file)" href="CCMatrix/v1/bn-la_sample.html">view</a></td><td></td><th>bn</th>
@@ -199,12 +199,12 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/ca.zip">ca</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Catalan-Arabic' (1.6M links, 40.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-ca.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Catalan-Asturian' (0.6M links, 25.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ast-ca.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Catalan-Arabic' (1.6M links, 45.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-ca.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Catalan-Asturian' (0.6M links, 31.1M tokens)" href="download.php?f=CCMatrix/v1/xml/ast-ca.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Catalan-Bulgarian' (2.0M links, 51.4M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-ca.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Catalan-Bengali' (0.6M links, 15.4M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-ca.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Catalan-Bulgarian' (2.0M links, 57.4M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-ca.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Catalan-Bengali' (0.6M links, 16.5M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-ca.xml.gz">ces</a></td>
 <td></td>
 <th></th>
 <td></td><td></td><td></td><td><a rel="nofollow" title="Catalan-Danish (sample file)" href="CCMatrix/v1/ca-da_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Catalan-Greek (sample file)" href="CCMatrix/v1/ca-el_sample.html">view</a></td><td><a rel="nofollow" title="Catalan-English (sample file)" href="CCMatrix/v1/ca-en_sample.html">view</a></td><td><a rel="nofollow" title="Catalan-Esperanto (sample file)" href="CCMatrix/v1/ca-eo_sample.html">view</a></td><td><a rel="nofollow" title="Catalan-Spanish (sample file)" href="CCMatrix/v1/ca-es_sample.html">view</a></td><td><a rel="nofollow" title="Catalan-Estonian (sample file)" href="CCMatrix/v1/ca-et_sample.html">view</a></td><td><a rel="nofollow" title="Catalan-Basque (sample file)" href="CCMatrix/v1/ca-eu_sample.html">view</a></td><td><a rel="nofollow" title="Catalan-Persian (sample file)" href="CCMatrix/v1/ca-fa_sample.html">view</a></td><td><a rel="nofollow" title="Catalan-Finnish (sample file)" href="CCMatrix/v1/ca-fi_sample.html">view</a></td><th>ca</th>
@@ -230,12 +230,12 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/cs.zip">cs</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Czech-Arabic' (5.5M links, 152.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-cs.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Czech-Arabic' (5.5M links, 167.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-cs.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Czech-Belarusian' (1.5M links, 24.2M tokens)" href="download.php?f=CCMatrix/v1/xml/be-cs.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Czech-Bulgarian' (11.1M links, 345.3M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-cs.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Czech-Bengali' (1.4M links, 35.0M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-cs.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Czech-Belarusian' (1.5M links, 39.7M tokens)" href="download.php?f=CCMatrix/v1/xml/be-cs.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Czech-Bulgarian' (11.1M links, 385.6M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-cs.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Czech-Bengali' (1.4M links, 38.2M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-cs.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -263,18 +263,18 @@
 <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Welsh-Dutch (sample file)" href="CCMatrix/v1/cy-nl_sample.html">view</a></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><th>cy</th>
 <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/raw/cy.zip">cy</a></th></tr>
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/da.zip">da</a></th>
-<td><a rel="nofollow" title="sentence alignments for 'Danish-Afrikaans' (1.1M links, 29.8M tokens)" href="download.php?f=CCMatrix/v1/xml/af-da.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Danish-Afrikaans' (1.1M links, 32.6M tokens)" href="download.php?f=CCMatrix/v1/xml/af-da.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Danish-Arabic' (4.5M links, 129.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-da.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Danish-Belarusian' (0.2M links, 3.9M tokens)" href="download.php?f=CCMatrix/v1/xml/be-da.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Danish-Bulgarian' (7.6M links, 254.4M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-da.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Danish-Arabic' (4.5M links, 142.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-da.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Danish-Catalan' (2.2M links, 54.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-da.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Danish-Belarusian' (0.2M links, 8.6M tokens)" href="download.php?f=CCMatrix/v1/xml/be-da.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Danish-Bulgarian' (7.6M links, 283.4M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-da.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Danish-Czech' (5.3M links, 103.7M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-da.xml.gz">ces</a></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Danish-Catalan' (2.2M links, 59.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-da.xml.gz">ces</a></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Danish-Czech' (5.3M links, 117.1M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-da.xml.gz">ces</a></td>
 <td></td>
 <th></th>
 <td><a rel="nofollow" title="Danish-German (sample file)" href="CCMatrix/v1/da-de_sample.html">view</a></td><td><a rel="nofollow" title="Danish-Greek (sample file)" href="CCMatrix/v1/da-el_sample.html">view</a></td><td><a rel="nofollow" title="Danish-English (sample file)" href="CCMatrix/v1/da-en_sample.html">view</a></td><td><a rel="nofollow" title="Danish-Esperanto (sample file)" href="CCMatrix/v1/da-eo_sample.html">view</a></td><td><a rel="nofollow" title="Danish-Spanish (sample file)" href="CCMatrix/v1/da-es_sample.html">view</a></td><td><a rel="nofollow" title="Danish-Estonian (sample file)" href="CCMatrix/v1/da-et_sample.html">view</a></td><td><a rel="nofollow" title="Danish-Basque (sample file)" href="CCMatrix/v1/da-eu_sample.html">view</a></td><td><a rel="nofollow" title="Danish-Persian (sample file)" href="CCMatrix/v1/da-fa_sample.html">view</a></td><td><a rel="nofollow" title="Danish-Finnish (sample file)" href="CCMatrix/v1/da-fi_sample.html">view</a></td><th>da</th>
@@ -282,20 +282,20 @@
 <td></td><td><a rel="nofollow" title="Danish-Lithuanian (sample file)" href="CCMatrix/v1/da-lt_sample.html">view</a></td><td><a rel="nofollow" title="Danish-Latvian (sample file)" href="CCMatrix/v1/da-lv_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Danish-Macedonian (sample file)" href="CCMatrix/v1/da-mk_sample.html">view</a></td><td></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Danish-Dutch (sample file)" href="CCMatrix/v1/da-nl_sample.html">view</a></td><td><a rel="nofollow" title="Danish-Norwegian (sample file)" href="CCMatrix/v1/da-no_sample.html">view</a></td><td></td><td></td><td></td><td><a rel="nofollow" title="Danish-Polish (sample file)" href="CCMatrix/v1/da-pl_sample.html">view</a></td><td><a rel="nofollow" title="Danish-Portuguese (sample file)" href="CCMatrix/v1/da-pt_sample.html">view</a></td><td><a rel="nofollow" title="Danish-Romanian (sample file)" href="CCMatrix/v1/da-ro_sample.html">view</a></td><td><a rel="nofollow" title="Danish-Russian (sample file)" href="CCMatrix/v1/da-ru_sample.html">view</a></td><td></td><td></td><td><a rel="nofollow" title="Danish-Slovak (sample file)" href="CCMatrix/v1/da-sk_sample.html">view</a></td><td><a rel="nofollow" title="Danish-Slovenian (sample file)" href="CCMatrix/v1/da-sl_sample.html">view</a></td><td></td><th>da</th>
 <td><a rel="nofollow" title="Danish-Albanian (sample file)" href="CCMatrix/v1/da-sq_sample.html">view</a></td><td><a rel="nofollow" title="Danish-Serbian (sample file)" href="CCMatrix/v1/da-sr_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Danish-Swedish (sample file)" href="CCMatrix/v1/da-sv_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Danish-Tamil (sample file)" href="CCMatrix/v1/da-ta_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Danish-Turkish (sample file)" href="CCMatrix/v1/da-tr_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Danish-Ukrainian (sample file)" href="CCMatrix/v1/da-uk_sample.html">view</a></td><td></td><td></td><td><a rel="nofollow" title="Danish-Vietnamese (sample file)" href="CCMatrix/v1/da-vi_sample.html">view</a></td><td></td><td></td><td><a rel="nofollow" title="Danish-Yiddish (sample file)" href="CCMatrix/v1/da-yi_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Danish-Chinese (sample file)" href="CCMatrix/v1/da-zh_sample.html">view</a></td><td></td><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/raw/da.zip">da</a></th></tr>
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/de.zip">de</a></th>
-<td><a rel="nofollow" title="sentence alignments for 'German-Afrikaans' (3.6M links, 76.8M tokens)" href="download.php?f=CCMatrix/v1/xml/af-de.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'German-Afrikaans' (3.6M links, 94.2M tokens)" href="download.php?f=CCMatrix/v1/xml/af-de.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'German-Arabic' (16.0M links, 465.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-de.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'German-Belarusian' (0.7M links, 11.2M tokens)" href="download.php?f=CCMatrix/v1/xml/be-de.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'German-Bulgarian' (20.6M links, 578.4M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-de.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'German-Bengali' (3.7M links, 87.0M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-de.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'German-Arabic' (16.0M links, 531.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-de.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'German-Cebuano' (0.4M links, 4.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ceb-de.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'German-Czech' (32.9M links, 878.5M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-de.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'German-Belarusian' (0.7M links, 35.7M tokens)" href="download.php?f=CCMatrix/v1/xml/be-de.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'German-Bulgarian' (20.6M links, 689.1M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-de.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'German-Bengali' (3.7M links, 106.7M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-de.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'German-Danish' (28.3M links, 756.3M tokens)" href="download.php?f=CCMatrix/v1/xml/da-de.xml.gz">ces</a></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'German-Cebuano' (0.4M links, 8.1M tokens)" href="download.php?f=CCMatrix/v1/xml/ceb-de.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'German-Czech' (32.9M links, 1.0G tokens)" href="download.php?f=CCMatrix/v1/xml/cs-de.xml.gz">ces</a></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'German-Danish' (28.3M links, 886.1M tokens)" href="download.php?f=CCMatrix/v1/xml/da-de.xml.gz">ces</a></td>
 <th></th>
 <td><a rel="nofollow" title="German-Greek (sample file)" href="CCMatrix/v1/de-el_sample.html">view</a></td><td><a rel="nofollow" title="German-English (sample file)" href="CCMatrix/v1/de-en_sample.html">view</a></td><td><a rel="nofollow" title="German-Esperanto (sample file)" href="CCMatrix/v1/de-eo_sample.html">view</a></td><td><a rel="nofollow" title="German-Spanish (sample file)" href="CCMatrix/v1/de-es_sample.html">view</a></td><td><a rel="nofollow" title="German-Estonian (sample file)" href="CCMatrix/v1/de-et_sample.html">view</a></td><td></td><td><a rel="nofollow" title="German-Persian (sample file)" href="CCMatrix/v1/de-fa_sample.html">view</a></td><td><a rel="nofollow" title="German-Finnish (sample file)" href="CCMatrix/v1/de-fi_sample.html">view</a></td><th>de</th>
 <td><a rel="nofollow" title="German-French (sample file)" href="CCMatrix/v1/de-fr_sample.html">view</a></td><td><a rel="nofollow" title="German-Western Frisian (sample file)" href="CCMatrix/v1/de-fy_sample.html">view</a></td><td></td><td></td><td></td><td><a rel="nofollow" title="German-Hausa (sample file)" href="CCMatrix/v1/de-ha_sample.html">view</a></td><td><a rel="nofollow" title="German-Hebrew (sample file)" href="CCMatrix/v1/de-he_sample.html">view</a></td><td><a rel="nofollow" title="German-Hindi (sample file)" href="CCMatrix/v1/de-hi_sample.html">view</a></td><td><a rel="nofollow" title="German-Croatian (sample file)" href="CCMatrix/v1/de-hr_sample.html">view</a></td><td><a rel="nofollow" title="German-Hungarian (sample file)" href="CCMatrix/v1/de-hu_sample.html">view</a></td><td></td><td><a rel="nofollow" title="German-Indonesian (sample file)" href="CCMatrix/v1/de-id_sample.html">view</a></td><td></td><td><a rel="nofollow" title="German-Iloko (sample file)" href="CCMatrix/v1/de-ilo_sample.html">view</a></td><td><a rel="nofollow" title="German-Icelandic (sample file)" href="CCMatrix/v1/de-is_sample.html">view</a></td><td><a rel="nofollow" title="German-Italian (sample file)" href="CCMatrix/v1/de-it_sample.html">view</a></td><td><a rel="nofollow" title="German-Japanese (sample file)" href="CCMatrix/v1/de-ja_sample.html">view</a></td><td><a rel="nofollow" title="German-Javanese (sample file)" href="CCMatrix/v1/de-jv_sample.html">view</a></td><td></td><td></td><td></td><td><a rel="nofollow" title="German-Korean (sample file)" href="CCMatrix/v1/de-ko_sample.html">view</a></td><td></td><td><a rel="nofollow" title="German-Luxembourgish (sample file)" href="CCMatrix/v1/de-lb_sample.html">view</a></td><th>de</th>
@@ -304,41 +304,41 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/el.zip">el</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Greek-Arabic' (3.9M links, 133.1M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-el.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Greek-Arabic' (3.9M links, 147.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-el.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Greek-Belarusian' (0.2M links, 3.8M tokens)" href="download.php?f=CCMatrix/v1/xml/be-el.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Greek-Bulgarian' (9.5M links, 330.9M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-el.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Greek-Bengali' (3.0M links, 65.5M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-el.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Greek-Belarusian' (0.2M links, 9.0M tokens)" href="download.php?f=CCMatrix/v1/xml/be-el.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Greek-Bulgarian' (9.5M links, 375.8M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-el.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Greek-Bengali' (3.0M links, 74.1M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-el.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Greek-Catalan' (2.5M links, 63.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-el.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Greek-Catalan' (2.5M links, 72.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-el.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Greek-Czech' (9.1M links, 291.4M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-el.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Greek-Czech' (9.1M links, 324.4M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-el.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Greek-Danish' (7.6M links, 263.6M tokens)" href="download.php?f=CCMatrix/v1/xml/da-el.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Greek-German' (19.7M links, 579.2M tokens)" href="download.php?f=CCMatrix/v1/xml/de-el.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Greek-Danish' (7.6M links, 292.6M tokens)" href="download.php?f=CCMatrix/v1/xml/da-el.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Greek-German' (19.7M links, 685.5M tokens)" href="download.php?f=CCMatrix/v1/xml/de-el.xml.gz">ces</a></td>
 <th></th>
 <td><a rel="nofollow" title="Greek-English (sample file)" href="CCMatrix/v1/el-en_sample.html">view</a></td><td><a rel="nofollow" title="Greek-Esperanto (sample file)" href="CCMatrix/v1/el-eo_sample.html">view</a></td><td><a rel="nofollow" title="Greek-Spanish (sample file)" href="CCMatrix/v1/el-es_sample.html">view</a></td><td><a rel="nofollow" title="Greek-Estonian (sample file)" href="CCMatrix/v1/el-et_sample.html">view</a></td><td><a rel="nofollow" title="Greek-Basque (sample file)" href="CCMatrix/v1/el-eu_sample.html">view</a></td><td><a rel="nofollow" title="Greek-Persian (sample file)" href="CCMatrix/v1/el-fa_sample.html">view</a></td><td><a rel="nofollow" title="Greek-Finnish (sample file)" href="CCMatrix/v1/el-fi_sample.html">view</a></td><th>el</th>
 <td><a rel="nofollow" title="Greek-French (sample file)" href="CCMatrix/v1/el-fr_sample.html">view</a></td><td></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Greek-Hebrew (sample file)" href="CCMatrix/v1/el-he_sample.html">view</a></td><td><a rel="nofollow" title="Greek-Hindi (sample file)" href="CCMatrix/v1/el-hi_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Greek-Hungarian (sample file)" href="CCMatrix/v1/el-hu_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Greek-Indonesian (sample file)" href="CCMatrix/v1/el-id_sample.html">view</a></td><td></td><td></td><td></td><td><a rel="nofollow" title="Greek-Italian (sample file)" href="CCMatrix/v1/el-it_sample.html">view</a></td><td><a rel="nofollow" title="Greek-Japanese (sample file)" href="CCMatrix/v1/el-ja_sample.html">view</a></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Greek-Korean (sample file)" href="CCMatrix/v1/el-ko_sample.html">view</a></td><td><a rel="nofollow" title="Greek-Latin (sample file)" href="CCMatrix/v1/el-la_sample.html">view</a></td><td></td><th>el</th>
 <td></td><td><a rel="nofollow" title="Greek-Lithuanian (sample file)" href="CCMatrix/v1/el-lt_sample.html">view</a></td><td><a rel="nofollow" title="Greek-Latvian (sample file)" href="CCMatrix/v1/el-lv_sample.html">view</a></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Greek-Dutch (sample file)" href="CCMatrix/v1/el-nl_sample.html">view</a></td><td><a rel="nofollow" title="Greek-Norwegian (sample file)" href="CCMatrix/v1/el-no_sample.html">view</a></td><td></td><td></td><td></td><td><a rel="nofollow" title="Greek-Polish (sample file)" href="CCMatrix/v1/el-pl_sample.html">view</a></td><td><a rel="nofollow" title="Greek-Portuguese (sample file)" href="CCMatrix/v1/el-pt_sample.html">view</a></td><td><a rel="nofollow" title="Greek-Romanian (sample file)" href="CCMatrix/v1/el-ro_sample.html">view</a></td><td><a rel="nofollow" title="Greek-Russian (sample file)" href="CCMatrix/v1/el-ru_sample.html">view</a></td><td></td><td></td><td><a rel="nofollow" title="Greek-Slovak (sample file)" href="CCMatrix/v1/el-sk_sample.html">view</a></td><td><a rel="nofollow" title="Greek-Slovenian (sample file)" href="CCMatrix/v1/el-sl_sample.html">view</a></td><td></td><th>el</th>
 <td><a rel="nofollow" title="Greek-Albanian (sample file)" href="CCMatrix/v1/el-sq_sample.html">view</a></td><td><a rel="nofollow" title="Greek-Serbian (sample file)" href="CCMatrix/v1/el-sr_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Greek-Swedish (sample file)" href="CCMatrix/v1/el-sv_sample.html">view</a></td><td><a rel="nofollow" title="Greek-Swahili (sample file)" href="CCMatrix/v1/el-sw_sample.html">view</a></td><td><a rel="nofollow" title="Greek-Tamil (sample file)" href="CCMatrix/v1/el-ta_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Greek-Turkish (sample file)" href="CCMatrix/v1/el-tr_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Greek-Ukrainian (sample file)" href="CCMatrix/v1/el-uk_sample.html">view</a></td><td></td><td></td><td><a rel="nofollow" title="Greek-Vietnamese (sample file)" href="CCMatrix/v1/el-vi_sample.html">view</a></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Greek-Chinese (sample file)" href="CCMatrix/v1/el-zh_sample.html">view</a></td><td></td><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/raw/el.zip">el</a></th></tr>
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/en.zip">en</a></th>
-<td><a rel="nofollow" title="sentence alignments for 'English-Afrikaans' (8.7M links, 161.4M tokens)" href="download.php?f=CCMatrix/v1/xml/af-en.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'English-Afrikaans' (8.7M links, 227.0M tokens)" href="download.php?f=CCMatrix/v1/xml/af-en.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'English-Arabic' (49.7M links, 1.5G tokens)" href="download.php?f=CCMatrix/v1/xml/ar-en.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'English-Asturian' (3.0M links, 60.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ast-en.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'English-Azerbaijani' (1.3M links, 16.1M tokens)" href="download.php?f=CCMatrix/v1/xml/az-en.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'English-Belarusian' (1.9M links, 28.6M tokens)" href="download.php?f=CCMatrix/v1/xml/be-en.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'English-Bulgarian' (44.6M links, 1.2G tokens)" href="download.php?f=CCMatrix/v1/xml/bg-en.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'English-Bengali' (10.1M links, 222.0M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-en.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'English-Breton' (0.5M links, 7.3M tokens)" href="download.php?f=CCMatrix/v1/xml/br-en.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'English-Catalan' (21.3M links, 535.9M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-en.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'English-Cebuano' (0 tokens)" href="download.php?f=CCMatrix/v1/xml/ceb-en.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'English-Czech' (56.3M links, 1.4G tokens)" href="download.php?f=CCMatrix/v1/xml/cs-en.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'English-Arabic' (49.7M links, 1.9G tokens)" href="download.php?f=CCMatrix/v1/xml/ar-en.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'English-Asturian' (3.0M links, 115.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ast-en.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'English-Azerbaijani' (1.3M links, 31.2M tokens)" href="download.php?f=CCMatrix/v1/xml/az-en.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'English-Belarusian' (1.9M links, 98.8M tokens)" href="download.php?f=CCMatrix/v1/xml/be-en.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'English-Bulgarian' (44.6M links, 1.6G tokens)" href="download.php?f=CCMatrix/v1/xml/bg-en.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'English-Bengali' (10.1M links, 300.1M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-en.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'English-Breton' (0.5M links, 17.6M tokens)" href="download.php?f=CCMatrix/v1/xml/br-en.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'English-Catalan' (21.3M links, 721.9M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-en.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'English-Cebuano' (1.0M links, 29.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ceb-en.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'English-Czech' (56.3M links, 1.8G tokens)" href="download.php?f=CCMatrix/v1/xml/cs-en.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'English-Danish' (52.3M links, 1.3G tokens)" href="download.php?f=CCMatrix/v1/xml/da-en.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'English-German' (247.5M links, 7.6G tokens)" href="download.php?f=CCMatrix/v1/xml/de-en.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'English-Greek' (49.3M links, 1.4G tokens)" href="download.php?f=CCMatrix/v1/xml/el-en.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'English-Danish' (52.3M links, 1.7G tokens)" href="download.php?f=CCMatrix/v1/xml/da-en.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'English-German' (247.5M links, 8.9G tokens)" href="download.php?f=CCMatrix/v1/xml/de-en.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'English-Greek' (49.3M links, 1.9G tokens)" href="download.php?f=CCMatrix/v1/xml/el-en.xml.gz">ces</a></td>
 <th></th>
 <td><a rel="nofollow" title="English-Esperanto (sample file)" href="CCMatrix/v1/en-eo_sample.html">view</a></td><td><a rel="nofollow" title="English-Spanish (sample file)" href="CCMatrix/v1/en-es_sample.html">view</a></td><td><a rel="nofollow" title="English-Estonian (sample file)" href="CCMatrix/v1/en-et_sample.html">view</a></td><td><a rel="nofollow" title="English-Basque (sample file)" href="CCMatrix/v1/en-eu_sample.html">view</a></td><td><a rel="nofollow" title="English-Persian (sample file)" href="CCMatrix/v1/en-fa_sample.html">view</a></td><td><a rel="nofollow" title="English-Finnish (sample file)" href="CCMatrix/v1/en-fi_sample.html">view</a></td><th>en</th>
 <td><a rel="nofollow" title="English-French (sample file)" href="CCMatrix/v1/en-fr_sample.html">view</a></td><td><a rel="nofollow" title="English-Western Frisian (sample file)" href="CCMatrix/v1/en-fy_sample.html">view</a></td><td><a rel="nofollow" title="English-Irish (sample file)" href="CCMatrix/v1/en-ga_sample.html">view</a></td><td><a rel="nofollow" title="English-Gaelic (sample file)" href="CCMatrix/v1/en-gd_sample.html">view</a></td><td><a rel="nofollow" title="English-Galician (sample file)" href="CCMatrix/v1/en-gl_sample.html">view</a></td><td><a rel="nofollow" title="English-Hausa (sample file)" href="CCMatrix/v1/en-ha_sample.html">view</a></td><td><a rel="nofollow" title="English-Hebrew (sample file)" href="CCMatrix/v1/en-he_sample.html">view</a></td><td><a rel="nofollow" title="English-Hindi (sample file)" href="CCMatrix/v1/en-hi_sample.html">view</a></td><td><a rel="nofollow" title="English-Croatian (sample file)" href="CCMatrix/v1/en-hr_sample.html">view</a></td><td><a rel="nofollow" title="English-Hungarian (sample file)" href="CCMatrix/v1/en-hu_sample.html">view</a></td><td></td><td><a rel="nofollow" title="English-Indonesian (sample file)" href="CCMatrix/v1/en-id_sample.html">view</a></td><td><a rel="nofollow" title="English-Igbo (sample file)" href="CCMatrix/v1/en-ig_sample.html">view</a></td><td><a rel="nofollow" title="English-Iloko (sample file)" href="CCMatrix/v1/en-ilo_sample.html">view</a></td><td><a rel="nofollow" title="English-Icelandic (sample file)" href="CCMatrix/v1/en-is_sample.html">view</a></td><td><a rel="nofollow" title="English-Italian (sample file)" href="CCMatrix/v1/en-it_sample.html">view</a></td><td><a rel="nofollow" title="English-Japanese (sample file)" href="CCMatrix/v1/en-ja_sample.html">view</a></td><td><a rel="nofollow" title="English-Javanese (sample file)" href="CCMatrix/v1/en-jv_sample.html">view</a></td><td></td><td></td><td></td><td><a rel="nofollow" title="English-Korean (sample file)" href="CCMatrix/v1/en-ko_sample.html">view</a></td><td><a rel="nofollow" title="English-Latin (sample file)" href="CCMatrix/v1/en-la_sample.html">view</a></td><td><a rel="nofollow" title="English-Luxembourgish (sample file)" href="CCMatrix/v1/en-lb_sample.html">view</a></td><th>en</th>
@@ -347,21 +347,21 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/eo.zip">eo</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Esperanto-Arabic' (1.1M links, 24.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-eo.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Esperanto-Arabic' (1.1M links, 27.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-eo.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Esperanto-Belarusian' (89.4k links, 1.6M tokens)" href="download.php?f=CCMatrix/v1/xml/be-eo.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Esperanto-Bulgarian' (1.2M links, 27.5M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-eo.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Esperanto-Bengali' (0.5M links, 14.7M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-eo.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Esperanto-Belarusian' (89.4k links, 1.7M tokens)" href="download.php?f=CCMatrix/v1/xml/be-eo.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Esperanto-Bulgarian' (1.2M links, 31.6M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-eo.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Esperanto-Bengali' (0.5M links, 16.0M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-eo.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Esperanto-Catalan' (0.8M links, 22.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-eo.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Esperanto-Catalan' (0.8M links, 25.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-eo.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Esperanto-Czech' (1.6M links, 34.1M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-eo.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Esperanto-Czech' (1.6M links, 39.8M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-eo.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Esperanto-Danish' (1.3M links, 27.7M tokens)" href="download.php?f=CCMatrix/v1/xml/da-eo.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Esperanto-German' (4.8M links, 92.8M tokens)" href="download.php?f=CCMatrix/v1/xml/de-eo.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Esperanto-Greek' (1.3M links, 29.2M tokens)" href="download.php?f=CCMatrix/v1/xml/el-eo.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Esperanto-English' (15.4M links, 372.0M tokens)" href="download.php?f=CCMatrix/v1/xml/en-eo.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Esperanto-Danish' (1.3M links, 31.8M tokens)" href="download.php?f=CCMatrix/v1/xml/da-eo.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Esperanto-German' (4.8M links, 120.6M tokens)" href="download.php?f=CCMatrix/v1/xml/de-eo.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Esperanto-Greek' (1.3M links, 33.8M tokens)" href="download.php?f=CCMatrix/v1/xml/el-eo.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Esperanto-English' (15.4M links, 548.6M tokens)" href="download.php?f=CCMatrix/v1/xml/en-eo.xml.gz">ces</a></td>
 <th></th>
 <td><a rel="nofollow" title="Esperanto-Spanish (sample file)" href="CCMatrix/v1/eo-es_sample.html">view</a></td><td><a rel="nofollow" title="Esperanto-Estonian (sample file)" href="CCMatrix/v1/eo-et_sample.html">view</a></td><td><a rel="nofollow" title="Esperanto-Basque (sample file)" href="CCMatrix/v1/eo-eu_sample.html">view</a></td><td><a rel="nofollow" title="Esperanto-Persian (sample file)" href="CCMatrix/v1/eo-fa_sample.html">view</a></td><td><a rel="nofollow" title="Esperanto-Finnish (sample file)" href="CCMatrix/v1/eo-fi_sample.html">view</a></td><th>eo</th>
 <td><a rel="nofollow" title="Esperanto-French (sample file)" href="CCMatrix/v1/eo-fr_sample.html">view</a></td><td></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Esperanto-Hebrew (sample file)" href="CCMatrix/v1/eo-he_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Esperanto-Croatian (sample file)" href="CCMatrix/v1/eo-hr_sample.html">view</a></td><td><a rel="nofollow" title="Esperanto-Hungarian (sample file)" href="CCMatrix/v1/eo-hu_sample.html">view</a></td><td></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Esperanto-Italian (sample file)" href="CCMatrix/v1/eo-it_sample.html">view</a></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><th>eo</th>
@@ -370,22 +370,22 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/es.zip">es</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Spanish-Arabic' (33.9M links, 829.9M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-es.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Spanish-Asturian' (6.3M links, 230.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ast-es.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Spanish-Arabic' (33.9M links, 1.0G tokens)" href="download.php?f=CCMatrix/v1/xml/ar-es.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Spanish-Asturian' (6.3M links, 350.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ast-es.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Spanish-Bulgarian' (9.1M links, 206.1M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-es.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Spanish-Bengali' (3.7M links, 94.6M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-es.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Spanish-Bulgarian' (9.1M links, 250.3M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-es.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Spanish-Bengali' (3.7M links, 114.4M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-es.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Spanish-Catalan' (62.7M links, 2.1G tokens)" href="download.php?f=CCMatrix/v1/xml/ca-es.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Spanish-Catalan' (62.7M links, 2.7G tokens)" href="download.php?f=CCMatrix/v1/xml/ca-es.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Spanish-Czech' (31.7M links, 653.2M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-es.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Spanish-Czech' (31.7M links, 873.5M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-es.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Spanish-Danish' (23.2M links, 694.3M tokens)" href="download.php?f=CCMatrix/v1/xml/da-es.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Spanish-German' (108.4M links, 3.5G tokens)" href="download.php?f=CCMatrix/v1/xml/de-es.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Spanish-Greek' (43.1M links, 1.0G tokens)" href="download.php?f=CCMatrix/v1/xml/el-es.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Spanish-English' (409.1M links, 16.0G tokens)" href="download.php?f=CCMatrix/v1/xml/en-es.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Spanish-Esperanto' (5.4M links, 132.0M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-es.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Spanish-Danish' (23.2M links, 834.5M tokens)" href="download.php?f=CCMatrix/v1/xml/da-es.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Spanish-German' (108.4M links, 4.2G tokens)" href="download.php?f=CCMatrix/v1/xml/de-es.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Spanish-Greek' (43.1M links, 1.3G tokens)" href="download.php?f=CCMatrix/v1/xml/el-es.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Spanish-English' (398.0M links, 1.6G tokens)" href="download.php?f=CCMatrix/v1/xml/en-es.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Spanish-Esperanto' (5.4M links, 169.3M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-es.xml.gz">ces</a></td>
 <th></th>
 <td><a rel="nofollow" title="Spanish-Estonian (sample file)" href="CCMatrix/v1/es-et_sample.html">view</a></td><td><a rel="nofollow" title="Spanish-Basque (sample file)" href="CCMatrix/v1/es-eu_sample.html">view</a></td><td><a rel="nofollow" title="Spanish-Persian (sample file)" href="CCMatrix/v1/es-fa_sample.html">view</a></td><td><a rel="nofollow" title="Spanish-Finnish (sample file)" href="CCMatrix/v1/es-fi_sample.html">view</a></td><th>es</th>
 <td><a rel="nofollow" title="Spanish-French (sample file)" href="CCMatrix/v1/es-fr_sample.html">view</a></td><td></td><td></td><td></td><td><a rel="nofollow" title="Spanish-Galician (sample file)" href="CCMatrix/v1/es-gl_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Spanish-Hebrew (sample file)" href="CCMatrix/v1/es-he_sample.html">view</a></td><td><a rel="nofollow" title="Spanish-Hindi (sample file)" href="CCMatrix/v1/es-hi_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Spanish-Hungarian (sample file)" href="CCMatrix/v1/es-hu_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Spanish-Indonesian (sample file)" href="CCMatrix/v1/es-id_sample.html">view</a></td><td></td><td></td><td></td><td><a rel="nofollow" title="Spanish-Italian (sample file)" href="CCMatrix/v1/es-it_sample.html">view</a></td><td><a rel="nofollow" title="Spanish-Japanese (sample file)" href="CCMatrix/v1/es-ja_sample.html">view</a></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Spanish-Korean (sample file)" href="CCMatrix/v1/es-ko_sample.html">view</a></td><td><a rel="nofollow" title="Spanish-Latin (sample file)" href="CCMatrix/v1/es-la_sample.html">view</a></td><td></td><th>es</th>
@@ -394,23 +394,23 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/et.zip">et</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Estonian-Arabic' (2.7M links, 69.1M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-et.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Estonian-Arabic' (2.7M links, 75.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-et.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Estonian-Belarusian' (0.2M links, 2.9M tokens)" href="download.php?f=CCMatrix/v1/xml/be-et.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Estonian-Bulgarian' (5.6M links, 177.5M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-et.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Estonian-Bengali' (0.8M links, 18.5M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-et.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Estonian-Belarusian' (0.2M links, 6.9M tokens)" href="download.php?f=CCMatrix/v1/xml/be-et.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Estonian-Bulgarian' (5.6M links, 196.6M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-et.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Estonian-Bengali' (0.8M links, 19.7M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-et.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Estonian-Catalan' (1.2M links, 28.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-et.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Estonian-Catalan' (1.2M links, 30.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-et.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Estonian-Czech' (6.7M links, 188.7M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-et.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Estonian-Czech' (6.7M links, 208.6M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-et.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Estonian-Danish' (5.4M links, 170.7M tokens)" href="download.php?f=CCMatrix/v1/xml/da-et.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Estonian-German' (12.5M links, 300.8M tokens)" href="download.php?f=CCMatrix/v1/xml/de-et.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Estonian-Greek' (4.7M links, 149.5M tokens)" href="download.php?f=CCMatrix/v1/xml/el-et.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Estonian-English' (22.0M links, 471.0M tokens)" href="download.php?f=CCMatrix/v1/xml/en-et.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Estonian-Esperanto' (0.7M links, 15.3M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-et.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Estonian-Spanish' (10.9M links, 287.0M tokens)" href="download.php?f=CCMatrix/v1/xml/es-et.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Estonian-Danish' (5.4M links, 188.2M tokens)" href="download.php?f=CCMatrix/v1/xml/da-et.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Estonian-German' (12.5M links, 356.2M tokens)" href="download.php?f=CCMatrix/v1/xml/de-et.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Estonian-Greek' (4.7M links, 165.5M tokens)" href="download.php?f=CCMatrix/v1/xml/el-et.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Estonian-English' (22.0M links, 615.7M tokens)" href="download.php?f=CCMatrix/v1/xml/en-et.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Estonian-Esperanto' (0.7M links, 17.2M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-et.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Estonian-Spanish' (10.9M links, 342.9M tokens)" href="download.php?f=CCMatrix/v1/xml/es-et.xml.gz">ces</a></td>
 <th></th>
 <td><a rel="nofollow" title="Estonian-Basque (sample file)" href="CCMatrix/v1/et-eu_sample.html">view</a></td><td><a rel="nofollow" title="Estonian-Persian (sample file)" href="CCMatrix/v1/et-fa_sample.html">view</a></td><td><a rel="nofollow" title="Estonian-Finnish (sample file)" href="CCMatrix/v1/et-fi_sample.html">view</a></td><th>et</th>
 <td><a rel="nofollow" title="Estonian-French (sample file)" href="CCMatrix/v1/et-fr_sample.html">view</a></td><td></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Estonian-Hebrew (sample file)" href="CCMatrix/v1/et-he_sample.html">view</a></td><td><a rel="nofollow" title="Estonian-Hindi (sample file)" href="CCMatrix/v1/et-hi_sample.html">view</a></td><td><a rel="nofollow" title="Estonian-Croatian (sample file)" href="CCMatrix/v1/et-hr_sample.html">view</a></td><td><a rel="nofollow" title="Estonian-Hungarian (sample file)" href="CCMatrix/v1/et-hu_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Estonian-Indonesian (sample file)" href="CCMatrix/v1/et-id_sample.html">view</a></td><td></td><td></td><td></td><td><a rel="nofollow" title="Estonian-Italian (sample file)" href="CCMatrix/v1/et-it_sample.html">view</a></td><td></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Estonian-Korean (sample file)" href="CCMatrix/v1/et-ko_sample.html">view</a></td><td></td><td></td><th>et</th>
@@ -419,24 +419,24 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/eu.zip">eu</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Basque-Arabic' (2.0M links, 28.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-eu.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Basque-Arabic' (2.0M links, 32.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-eu.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Basque-Bulgarian' (0.9M links, 17.3M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-eu.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Basque-Bulgarian' (0.9M links, 18.7M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-eu.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Basque-Catalan' (1.1M links, 28.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-eu.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Basque-Catalan' (1.1M links, 30.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-eu.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Basque-Danish' (1.0M links, 18.0M tokens)" href="download.php?f=CCMatrix/v1/xml/da-eu.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Basque-Danish' (1.0M links, 19.5M tokens)" href="download.php?f=CCMatrix/v1/xml/da-eu.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Basque-Greek' (2.5M links, 37.1M tokens)" href="download.php?f=CCMatrix/v1/xml/el-eu.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Basque-English' (7.8M links, 109.9M tokens)" href="download.php?f=CCMatrix/v1/xml/en-eu.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Basque-Esperanto' (0.6M links, 13.6M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-eu.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Basque-Spanish' (6.2M links, 154.6M tokens)" href="download.php?f=CCMatrix/v1/xml/es-eu.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Basque-Estonian' (1.5M links, 22.6M tokens)" href="download.php?f=CCMatrix/v1/xml/et-eu.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Basque-Greek' (2.5M links, 43.1M tokens)" href="download.php?f=CCMatrix/v1/xml/el-eu.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Basque-English' (7.8M links, 147.1M tokens)" href="download.php?f=CCMatrix/v1/xml/en-eu.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Basque-Esperanto' (0.6M links, 14.5M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-eu.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Basque-Spanish' (6.2M links, 181.5M tokens)" href="download.php?f=CCMatrix/v1/xml/es-eu.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Basque-Estonian' (1.5M links, 25.1M tokens)" href="download.php?f=CCMatrix/v1/xml/et-eu.xml.gz">ces</a></td>
 <th></th>
 <td><a rel="nofollow" title="Basque-Persian (sample file)" href="CCMatrix/v1/eu-fa_sample.html">view</a></td><td><a rel="nofollow" title="Basque-Finnish (sample file)" href="CCMatrix/v1/eu-fi_sample.html">view</a></td><th>eu</th>
 <td></td><td></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Basque-Hebrew (sample file)" href="CCMatrix/v1/eu-he_sample.html">view</a></td><td></td><td></td><td><a rel="nofollow" title="Basque-Hungarian (sample file)" href="CCMatrix/v1/eu-hu_sample.html">view</a></td><td></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Basque-Italian (sample file)" href="CCMatrix/v1/eu-it_sample.html">view</a></td><td></td><td></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Basque-Latin (sample file)" href="CCMatrix/v1/eu-la_sample.html">view</a></td><td></td><th>eu</th>
@@ -445,25 +445,25 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/fa.zip">fa</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Persian-Arabic' (4.5M links, 142.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-fa.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Persian-Arabic' (4.5M links, 158.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-fa.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Persian-Bengali' (2.6M links, 61.0M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-fa.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Persian-Bengali' (2.6M links, 71.4M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-fa.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Persian-Catalan' (1.1M links, 26.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-fa.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Persian-Catalan' (1.1M links, 28.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-fa.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Persian-Czech' (2.9M links, 75.1M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-fa.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Persian-Czech' (2.9M links, 81.8M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-fa.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Persian-Danish' (2.2M links, 59.8M tokens)" href="download.php?f=CCMatrix/v1/xml/da-fa.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Persian-German' (7.4M links, 195.6M tokens)" href="download.php?f=CCMatrix/v1/xml/de-fa.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Persian-Greek' (2.6M links, 75.4M tokens)" href="download.php?f=CCMatrix/v1/xml/el-fa.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Persian-English' (24.6M links, 668.9M tokens)" href="download.php?f=CCMatrix/v1/xml/en-fa.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Persian-Esperanto' (0.8M links, 19.1M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-fa.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Persian-Spanish' (18.3M links, 393.0M tokens)" href="download.php?f=CCMatrix/v1/xml/es-fa.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Persian-Estonian' (1.5M links, 37.9M tokens)" href="download.php?f=CCMatrix/v1/xml/et-fa.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Persian-Basque' (1.8M links, 27.8M tokens)" href="download.php?f=CCMatrix/v1/xml/eu-fa.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Persian-Danish' (2.2M links, 65.3M tokens)" href="download.php?f=CCMatrix/v1/xml/da-fa.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Persian-German' (7.4M links, 224.4M tokens)" href="download.php?f=CCMatrix/v1/xml/de-fa.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Persian-Greek' (2.6M links, 83.3M tokens)" href="download.php?f=CCMatrix/v1/xml/el-fa.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Persian-English' (24.6M links, 848.0M tokens)" href="download.php?f=CCMatrix/v1/xml/en-fa.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Persian-Esperanto' (0.8M links, 21.6M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-fa.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Persian-Spanish' (18.3M links, 479.0M tokens)" href="download.php?f=CCMatrix/v1/xml/es-fa.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Persian-Estonian' (1.5M links, 41.6M tokens)" href="download.php?f=CCMatrix/v1/xml/et-fa.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Persian-Basque' (1.8M links, 32.4M tokens)" href="download.php?f=CCMatrix/v1/xml/eu-fa.xml.gz">ces</a></td>
 <th></th>
 <td><a rel="nofollow" title="Persian-Finnish (sample file)" href="CCMatrix/v1/fa-fi_sample.html">view</a></td><th>fa</th>
 <td><a rel="nofollow" title="Persian-French (sample file)" href="CCMatrix/v1/fa-fr_sample.html">view</a></td><td></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Persian-Hebrew (sample file)" href="CCMatrix/v1/fa-he_sample.html">view</a></td><td><a rel="nofollow" title="Persian-Hindi (sample file)" href="CCMatrix/v1/fa-hi_sample.html">view</a></td><td><a rel="nofollow" title="Persian-Croatian (sample file)" href="CCMatrix/v1/fa-hr_sample.html">view</a></td><td><a rel="nofollow" title="Persian-Hungarian (sample file)" href="CCMatrix/v1/fa-hu_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Persian-Indonesian (sample file)" href="CCMatrix/v1/fa-id_sample.html">view</a></td><td></td><td></td><td></td><td><a rel="nofollow" title="Persian-Italian (sample file)" href="CCMatrix/v1/fa-it_sample.html">view</a></td><td><a rel="nofollow" title="Persian-Japanese (sample file)" href="CCMatrix/v1/fa-ja_sample.html">view</a></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Persian-Korean (sample file)" href="CCMatrix/v1/fa-ko_sample.html">view</a></td><td><a rel="nofollow" title="Persian-Latin (sample file)" href="CCMatrix/v1/fa-la_sample.html">view</a></td><td></td><th>fa</th>
@@ -472,26 +472,26 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/fi.zip">fi</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Finnish-Arabic' (4.0M links, 100.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-fi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Finnish-Arabic' (4.0M links, 108.1M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-fi.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Finnish-Belarusian' (0.2M links, 2.8M tokens)" href="download.php?f=CCMatrix/v1/xml/be-fi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Finnish-Bulgarian' (6.5M links, 191.8M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-fi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Finnish-Bengali' (2.8M links, 55.9M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-fi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Finnish-Belarusian' (0.2M links, 6.4M tokens)" href="download.php?f=CCMatrix/v1/xml/be-fi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Finnish-Bulgarian' (6.5M links, 212.5M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-fi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Finnish-Bengali' (2.8M links, 62.5M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-fi.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Finnish-Catalan' (1.8M links, 36.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-fi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Finnish-Catalan' (1.8M links, 40.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-fi.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Finnish-Czech' (8.9M links, 238.6M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-fi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Finnish-Czech' (8.9M links, 261.1M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-fi.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Finnish-Danish' (9.5M links, 283.5M tokens)" href="download.php?f=CCMatrix/v1/xml/da-fi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Finnish-German' (20.0M links, 485.7M tokens)" href="download.php?f=CCMatrix/v1/xml/de-fi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Finnish-Greek' (6.3M links, 191.9M tokens)" href="download.php?f=CCMatrix/v1/xml/el-fi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Finnish-English' (36.0M links, 775.0M tokens)" href="download.php?f=CCMatrix/v1/xml/en-fi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Finnish-Esperanto' (1.1M links, 21.3M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-fi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Finnish-Spanish' (32.3M links, 636.7M tokens)" href="download.php?f=CCMatrix/v1/xml/es-fi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Finnish-Estonian' (6.0M links, 160.0M tokens)" href="download.php?f=CCMatrix/v1/xml/et-fi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Finnish-Basque' (2.4M links, 32.0M tokens)" href="download.php?f=CCMatrix/v1/xml/eu-fi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Finnish-Persian' (2.0M links, 51.2M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-fi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Finnish-Danish' (9.5M links, 309.1M tokens)" href="download.php?f=CCMatrix/v1/xml/da-fi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Finnish-German' (20.0M links, 555.9M tokens)" href="download.php?f=CCMatrix/v1/xml/de-fi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Finnish-Greek' (6.3M links, 210.8M tokens)" href="download.php?f=CCMatrix/v1/xml/el-fi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Finnish-English' (36.0M links, 960.3M tokens)" href="download.php?f=CCMatrix/v1/xml/en-fi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Finnish-Esperanto' (1.1M links, 24.6M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-fi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Finnish-Spanish' (32.3M links, 766.8M tokens)" href="download.php?f=CCMatrix/v1/xml/es-fi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Finnish-Estonian' (6.0M links, 177.4M tokens)" href="download.php?f=CCMatrix/v1/xml/et-fi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Finnish-Basque' (2.4M links, 37.2M tokens)" href="download.php?f=CCMatrix/v1/xml/eu-fi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Finnish-Persian' (2.0M links, 55.0M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-fi.xml.gz">ces</a></td>
 <th></th>
 <th>fi</th>
 <td><a rel="nofollow" title="Finnish-French (sample file)" href="CCMatrix/v1/fi-fr_sample.html">view</a></td><td></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Finnish-Hebrew (sample file)" href="CCMatrix/v1/fi-he_sample.html">view</a></td><td><a rel="nofollow" title="Finnish-Hindi (sample file)" href="CCMatrix/v1/fi-hi_sample.html">view</a></td><td><a rel="nofollow" title="Finnish-Croatian (sample file)" href="CCMatrix/v1/fi-hr_sample.html">view</a></td><td><a rel="nofollow" title="Finnish-Hungarian (sample file)" href="CCMatrix/v1/fi-hu_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Finnish-Indonesian (sample file)" href="CCMatrix/v1/fi-id_sample.html">view</a></td><td></td><td></td><td></td><td><a rel="nofollow" title="Finnish-Italian (sample file)" href="CCMatrix/v1/fi-it_sample.html">view</a></td><td><a rel="nofollow" title="Finnish-Japanese (sample file)" href="CCMatrix/v1/fi-ja_sample.html">view</a></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Finnish-Korean (sample file)" href="CCMatrix/v1/fi-ko_sample.html">view</a></td><td></td><td></td><th>fi</th>
@@ -595,34 +595,34 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/fr.zip">fr</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'French-Arabic' (23.4M links, 817.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-fr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'French-Asturian' (1.3M links, 26.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ast-fr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'French-Arabic' (23.4M links, 972.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-fr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'French-Asturian' (1.3M links, 46.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ast-fr.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'French-Bulgarian' (9.8M links, 215.9M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-fr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'French-Bengali' (9.6M links, 196.0M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-fr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'French-Bulgarian' (9.8M links, 264.1M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-fr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'French-Bengali' (9.6M links, 252.9M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-fr.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'French-Catalan' (23.1M links, 457.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-fr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'French-Catalan' (23.1M links, 601.9M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-fr.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'French-Czech' (32.2M links, 669.7M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-fr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'French-Czech' (32.2M links, 884.4M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-fr.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'French-Danish' (23.1M links, 699.2M tokens)" href="download.php?f=CCMatrix/v1/xml/da-fr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'French-German' (130.3M links, 4.3G tokens)" href="download.php?f=CCMatrix/v1/xml/de-fr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'French-Greek' (41.9M links, 992.3M tokens)" href="download.php?f=CCMatrix/v1/xml/el-fr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'French-English' (328.6M links, 11.9G tokens)" href="download.php?f=CCMatrix/v1/xml/en-fr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'French-Esperanto' (5.1M links, 108.5M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-fr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'French-Spanish' (266.5M links, 7.1G tokens)" href="download.php?f=CCMatrix/v1/xml/es-fr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'French-Estonian' (11.0M links, 297.9M tokens)" href="download.php?f=CCMatrix/v1/xml/et-fr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'French-Danish' (23.1M links, 823.6M tokens)" href="download.php?f=CCMatrix/v1/xml/da-fr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'French-German' (130.3M links, 5.2G tokens)" href="download.php?f=CCMatrix/v1/xml/de-fr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'French-Greek' (41.9M links, 1.2G tokens)" href="download.php?f=CCMatrix/v1/xml/el-fr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'French-English' (315.6M links, 13.5G tokens)" href="download.php?f=CCMatrix/v1/xml/en-fr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'French-Esperanto' (5.1M links, 141.2M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-fr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'French-Spanish' (266.5M links, 9.4G tokens)" href="download.php?f=CCMatrix/v1/xml/es-fr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'French-Estonian' (11.0M links, 350.9M tokens)" href="download.php?f=CCMatrix/v1/xml/et-fr.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'French-Persian' (7.9M links, 230.5M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-fr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'French-Finnish' (34.0M links, 678.1M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-fr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'French-Persian' (7.9M links, 268.1M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-fr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'French-Finnish' (34.0M links, 810.2M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-fr.xml.gz">ces</a></td>
 <th>fr</th>
 <th></th>
 <td></td><td></td><td></td><td><a rel="nofollow" title="French-Galician (sample file)" href="CCMatrix/v1/fr-gl_sample.html">view</a></td><td></td><td><a rel="nofollow" title="French-Hebrew (sample file)" href="CCMatrix/v1/fr-he_sample.html">view</a></td><td><a rel="nofollow" title="French-Hindi (sample file)" href="CCMatrix/v1/fr-hi_sample.html">view</a></td><td><a rel="nofollow" title="French-Croatian (sample file)" href="CCMatrix/v1/fr-hr_sample.html">view</a></td><td><a rel="nofollow" title="French-Hungarian (sample file)" href="CCMatrix/v1/fr-hu_sample.html">view</a></td><td></td><td><a rel="nofollow" title="French-Indonesian (sample file)" href="CCMatrix/v1/fr-id_sample.html">view</a></td><td></td><td></td><td></td><td><a rel="nofollow" title="French-Italian (sample file)" href="CCMatrix/v1/fr-it_sample.html">view</a></td><td><a rel="nofollow" title="French-Japanese (sample file)" href="CCMatrix/v1/fr-ja_sample.html">view</a></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="French-Korean (sample file)" href="CCMatrix/v1/fr-ko_sample.html">view</a></td><td><a rel="nofollow" title="French-Latin (sample file)" href="CCMatrix/v1/fr-la_sample.html">view</a></td><td></td><th>fr</th>
 <td></td><td><a rel="nofollow" title="French-Lithuanian (sample file)" href="CCMatrix/v1/fr-lt_sample.html">view</a></td><td><a rel="nofollow" title="French-Latvian (sample file)" href="CCMatrix/v1/fr-lv_sample.html">view</a></td><td></td><td></td><td><a rel="nofollow" title="French-Malayalam (sample file)" href="CCMatrix/v1/fr-ml_sample.html">view</a></td><td></td><td><a rel="nofollow" title="French-Malay (sample file)" href="CCMatrix/v1/fr-ms_sample.html">view</a></td><td></td><td></td><td><a rel="nofollow" title="French-Dutch (sample file)" href="CCMatrix/v1/fr-nl_sample.html">view</a></td><td><a rel="nofollow" title="French-Norwegian (sample file)" href="CCMatrix/v1/fr-no_sample.html">view</a></td><td><a rel="nofollow" title="French-Occitan (post 1500) (sample file)" href="CCMatrix/v1/fr-oc_sample.html">view</a></td><td></td><td></td><td><a rel="nofollow" title="French-Polish (sample file)" href="CCMatrix/v1/fr-pl_sample.html">view</a></td><td><a rel="nofollow" title="French-Portuguese (sample file)" href="CCMatrix/v1/fr-pt_sample.html">view</a></td><td><a rel="nofollow" title="French-Romanian (sample file)" href="CCMatrix/v1/fr-ro_sample.html">view</a></td><td><a rel="nofollow" title="French-Russian (sample file)" href="CCMatrix/v1/fr-ru_sample.html">view</a></td><td></td><td></td><td><a rel="nofollow" title="French-Slovak (sample file)" href="CCMatrix/v1/fr-sk_sample.html">view</a></td><td><a rel="nofollow" title="French-Slovenian (sample file)" href="CCMatrix/v1/fr-sl_sample.html">view</a></td><td></td><th>fr</th>
 <td></td><td><a rel="nofollow" title="French-Serbian (sample file)" href="CCMatrix/v1/fr-sr_sample.html">view</a></td><td></td><td><a rel="nofollow" title="French-Swedish (sample file)" href="CCMatrix/v1/fr-sv_sample.html">view</a></td><td><a rel="nofollow" title="French-Swahili (sample file)" href="CCMatrix/v1/fr-sw_sample.html">view</a></td><td><a rel="nofollow" title="French-Tamil (sample file)" href="CCMatrix/v1/fr-ta_sample.html">view</a></td><td><a rel="nofollow" title="French-Tagalog (sample file)" href="CCMatrix/v1/fr-tl_sample.html">view</a></td><td><a rel="nofollow" title="French-Turkish (sample file)" href="CCMatrix/v1/fr-tr_sample.html">view</a></td><td></td><td><a rel="nofollow" title="French-Ukrainian (sample file)" href="CCMatrix/v1/fr-uk_sample.html">view</a></td><td></td><td></td><td><a rel="nofollow" title="French-Vietnamese (sample file)" href="CCMatrix/v1/fr-vi_sample.html">view</a></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="French-Chinese (sample file)" href="CCMatrix/v1/fr-zh_sample.html">view</a></td><td></td><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/raw/fr.zip">fr</a></th></tr>
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/fy.zip">fy</a></th>
-<td><a rel="nofollow" title="sentence alignments for 'Western Frisian-Afrikaans' (0.1M links, 2.5M tokens)" href="download.php?f=CCMatrix/v1/xml/af-fy.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Western Frisian-Afrikaans' (0.1M links, 2.7M tokens)" href="download.php?f=CCMatrix/v1/xml/af-fy.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -635,10 +635,10 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Western Frisian-Danish' (0.6M links, 8.1M tokens)" href="download.php?f=CCMatrix/v1/xml/da-fy.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Western Frisian-German' (0.7M links, 7.6M tokens)" href="download.php?f=CCMatrix/v1/xml/de-fy.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Western Frisian-Danish' (0.6M links, 11.3M tokens)" href="download.php?f=CCMatrix/v1/xml/da-fy.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Western Frisian-German' (0.7M links, 11.4M tokens)" href="download.php?f=CCMatrix/v1/xml/de-fy.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Western Frisian-English' (1.4M links, 15.7M tokens)" href="download.php?f=CCMatrix/v1/xml/en-fy.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Western Frisian-English' (1.4M links, 25.6M tokens)" href="download.php?f=CCMatrix/v1/xml/en-fy.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -668,7 +668,7 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Irish-English' (1.1M links, 10.6M tokens)" href="download.php?f=CCMatrix/v1/xml/en-ga.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Irish-English' (1.1M links, 36.5M tokens)" href="download.php?f=CCMatrix/v1/xml/en-ga.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -696,10 +696,10 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Gaelic-Danish' (47.1k links, 0.4M tokens)" href="download.php?f=CCMatrix/v1/xml/da-gd.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Gaelic-Danish' (47.1k links, 0.7M tokens)" href="download.php?f=CCMatrix/v1/xml/da-gd.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Gaelic-English' (0.3M links, 7.6M tokens)" href="download.php?f=CCMatrix/v1/xml/en-gd.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Gaelic-English' (0.3M links, 8.9M tokens)" href="download.php?f=CCMatrix/v1/xml/en-gd.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -718,28 +718,28 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Galician-Asturian' (0.4M links, 16.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ast-gl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Galician-Asturian' (0.4M links, 20.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ast-gl.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Galician-Catalan' (3.0M links, 92.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-gl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Galician-Catalan' (3.0M links, 107.9M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-gl.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Galician-English' (13.2M links, 224.4M tokens)" href="download.php?f=CCMatrix/v1/xml/en-gl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Galician-English' (13.2M links, 323.3M tokens)" href="download.php?f=CCMatrix/v1/xml/en-gl.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Galician-Spanish' (30.4M links, 673.8M tokens)" href="download.php?f=CCMatrix/v1/xml/es-gl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Galician-Spanish' (30.4M links, 933.1M tokens)" href="download.php?f=CCMatrix/v1/xml/es-gl.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 <th>gl</th>
-<td><a rel="nofollow" title="sentence alignments for 'Galician-French' (16.1M links, 236.0M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-gl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Galician-French' (16.1M links, 330.5M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-gl.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -749,7 +749,7 @@
 <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Galician-Turkish (sample file)" href="CCMatrix/v1/gl-tr_sample.html">view</a></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/raw/gl.zip">gl</a></th></tr>
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/ha.zip">ha</a></th>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hausa-Amharic' (13.2k links, 0.3M tokens)" href="download.php?f=CCMatrix/v1/xml/am-ha.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hausa-Amharic' (13.2k links, 0.4M tokens)" href="download.php?f=CCMatrix/v1/xml/am-ha.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -762,9 +762,9 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hausa-German' (0.6M links, 8.6M tokens)" href="download.php?f=CCMatrix/v1/xml/de-ha.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hausa-German' (0.6M links, 16.1M tokens)" href="download.php?f=CCMatrix/v1/xml/de-ha.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hausa-English' (5.9M links, 75.1M tokens)" href="download.php?f=CCMatrix/v1/xml/en-ha.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hausa-English' (5.9M links, 96.1M tokens)" href="download.php?f=CCMatrix/v1/xml/en-ha.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -784,29 +784,29 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/he.zip">he</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hebrew-Arabic' (3.7M links, 99.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-he.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hebrew-Arabic' (3.7M links, 107.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-he.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hebrew-Bulgarian' (3.3M links, 83.4M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-he.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hebrew-Bengali' (2.3M links, 46.6M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-he.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hebrew-Bulgarian' (3.3M links, 90.1M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-he.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hebrew-Bengali' (2.3M links, 51.7M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-he.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hebrew-Catalan' (1.3M links, 26.9M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-he.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hebrew-Catalan' (1.3M links, 29.1M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-he.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hebrew-Czech' (3.8M links, 83.6M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-he.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hebrew-Czech' (3.8M links, 90.0M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-he.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hebrew-Danish' (3.2M links, 78.5M tokens)" href="download.php?f=CCMatrix/v1/xml/da-he.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hebrew-German' (9.2M links, 193.5M tokens)" href="download.php?f=CCMatrix/v1/xml/de-he.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hebrew-Greek' (6.3M links, 112.8M tokens)" href="download.php?f=CCMatrix/v1/xml/el-he.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hebrew-English' (25.2M links, 537.1M tokens)" href="download.php?f=CCMatrix/v1/xml/en-he.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hebrew-Esperanto' (0.8M links, 15.4M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-he.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hebrew-Spanish' (21.1M links, 360.0M tokens)" href="download.php?f=CCMatrix/v1/xml/es-he.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hebrew-Estonian' (2.0M links, 45.5M tokens)" href="download.php?f=CCMatrix/v1/xml/et-he.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hebrew-Basque' (1.8M links, 25.0M tokens)" href="download.php?f=CCMatrix/v1/xml/eu-he.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hebrew-Persian' (4.1M links, 69.2M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-he.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hebrew-Finnish' (5.6M links, 87.7M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-he.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hebrew-Danish' (3.2M links, 84.1M tokens)" href="download.php?f=CCMatrix/v1/xml/da-he.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hebrew-German' (9.2M links, 220.5M tokens)" href="download.php?f=CCMatrix/v1/xml/de-he.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hebrew-Greek' (6.3M links, 126.4M tokens)" href="download.php?f=CCMatrix/v1/xml/el-he.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hebrew-English' (25.2M links, 672.5M tokens)" href="download.php?f=CCMatrix/v1/xml/en-he.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hebrew-Esperanto' (0.8M links, 17.2M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-he.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hebrew-Spanish' (21.1M links, 443.1M tokens)" href="download.php?f=CCMatrix/v1/xml/es-he.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hebrew-Estonian' (2.0M links, 48.7M tokens)" href="download.php?f=CCMatrix/v1/xml/et-he.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hebrew-Basque' (1.8M links, 28.0M tokens)" href="download.php?f=CCMatrix/v1/xml/eu-he.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hebrew-Persian' (4.1M links, 78.1M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-he.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hebrew-Finnish' (5.6M links, 97.7M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-he.xml.gz">ces</a></td>
 <th>he</th>
-<td><a rel="nofollow" title="sentence alignments for 'Hebrew-French' (22.0M links, 370.1M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-he.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hebrew-French' (22.0M links, 454.7M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-he.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -819,35 +819,35 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/hi.zip">hi</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hindi-Arabic' (3.6M links, 103.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-hi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hindi-Arabic' (3.6M links, 115.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-hi.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hindi-Belarusian' (71.9k links, 1.5M tokens)" href="download.php?f=CCMatrix/v1/xml/be-hi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hindi-Bulgarian' (1.9M links, 72.8M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-hi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hindi-Bengali' (1.3M links, 54.8M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-hi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hindi-Belarusian' (71.9k links, 1.8M tokens)" href="download.php?f=CCMatrix/v1/xml/be-hi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hindi-Bulgarian' (1.9M links, 78.0M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-hi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hindi-Bengali' (1.3M links, 59.7M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-hi.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hindi-Catalan' (0.6M links, 18.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-hi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hindi-Cebuano' (36.0k links, 0.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ceb-hi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hindi-Czech' (2.0M links, 67.8M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-hi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hindi-Catalan' (0.6M links, 19.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-hi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hindi-Cebuano' (36.0k links, 1.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ceb-hi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hindi-Czech' (2.0M links, 72.5M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-hi.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hindi-German' (5.7M links, 192.2M tokens)" href="download.php?f=CCMatrix/v1/xml/de-hi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hindi-Greek' (3.3M links, 86.0M tokens)" href="download.php?f=CCMatrix/v1/xml/el-hi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hindi-English' (15.1M links, 448.3M tokens)" href="download.php?f=CCMatrix/v1/xml/en-hi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hindi-German' (5.7M links, 221.6M tokens)" href="download.php?f=CCMatrix/v1/xml/de-hi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hindi-Greek' (3.3M links, 95.3M tokens)" href="download.php?f=CCMatrix/v1/xml/el-hi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hindi-English' (15.1M links, 585.3M tokens)" href="download.php?f=CCMatrix/v1/xml/en-hi.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hindi-Spanish' (11.3M links, 283.9M tokens)" href="download.php?f=CCMatrix/v1/xml/es-hi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hindi-Estonian' (1.4M links, 53.3M tokens)" href="download.php?f=CCMatrix/v1/xml/et-hi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hindi-Spanish' (11.3M links, 349.7M tokens)" href="download.php?f=CCMatrix/v1/xml/es-hi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hindi-Estonian' (1.4M links, 56.1M tokens)" href="download.php?f=CCMatrix/v1/xml/et-hi.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hindi-Persian' (2.8M links, 74.7M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-hi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hindi-Finnish' (3.1M links, 74.5M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-hi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hindi-Persian' (2.8M links, 84.9M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-hi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hindi-Finnish' (3.1M links, 82.3M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-hi.xml.gz">ces</a></td>
 <th>hi</th>
-<td><a rel="nofollow" title="sentence alignments for 'Hindi-French' (10.8M links, 263.8M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-hi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hindi-French' (10.8M links, 328.1M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-hi.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hindi-Hebrew' (2.8M links, 65.4M tokens)" href="download.php?f=CCMatrix/v1/xml/he-hi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hindi-Hebrew' (2.8M links, 71.2M tokens)" href="download.php?f=CCMatrix/v1/xml/he-hi.xml.gz">ces</a></td>
 <th></th>
 <td></td><td><a rel="nofollow" title="Hindi-Hungarian (sample file)" href="CCMatrix/v1/hi-hu_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Hindi-Indonesian (sample file)" href="CCMatrix/v1/hi-id_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Hindi-Iloko (sample file)" href="CCMatrix/v1/hi-ilo_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Hindi-Italian (sample file)" href="CCMatrix/v1/hi-it_sample.html">view</a></td><td><a rel="nofollow" title="Hindi-Japanese (sample file)" href="CCMatrix/v1/hi-ja_sample.html">view</a></td><td><a rel="nofollow" title="Hindi-Javanese (sample file)" href="CCMatrix/v1/hi-jv_sample.html">view</a></td><td></td><td></td><td></td><td><a rel="nofollow" title="Hindi-Korean (sample file)" href="CCMatrix/v1/hi-ko_sample.html">view</a></td><td><a rel="nofollow" title="Hindi-Latin (sample file)" href="CCMatrix/v1/hi-la_sample.html">view</a></td><td></td><th>hi</th>
 <td></td><td><a rel="nofollow" title="Hindi-Lithuanian (sample file)" href="CCMatrix/v1/hi-lt_sample.html">view</a></td><td><a rel="nofollow" title="Hindi-Latvian (sample file)" href="CCMatrix/v1/hi-lv_sample.html">view</a></td><td><a rel="nofollow" title="Hindi-Malagasy (sample file)" href="CCMatrix/v1/hi-mg_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Hindi-Malayalam (sample file)" href="CCMatrix/v1/hi-ml_sample.html">view</a></td><td><a rel="nofollow" title="Hindi-Marathi (sample file)" href="CCMatrix/v1/hi-mr_sample.html">view</a></td><td><a rel="nofollow" title="Hindi-Malay (sample file)" href="CCMatrix/v1/hi-ms_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Hindi-Nepali (sample file)" href="CCMatrix/v1/hi-ne_sample.html">view</a></td><td><a rel="nofollow" title="Hindi-Dutch (sample file)" href="CCMatrix/v1/hi-nl_sample.html">view</a></td><td></td><td></td><td></td><td><a rel="nofollow" title="Hindi-Oriya (sample file)" href="CCMatrix/v1/hi-or_sample.html">view</a></td><td><a rel="nofollow" title="Hindi-Polish (sample file)" href="CCMatrix/v1/hi-pl_sample.html">view</a></td><td><a rel="nofollow" title="Hindi-Portuguese (sample file)" href="CCMatrix/v1/hi-pt_sample.html">view</a></td><td><a rel="nofollow" title="Hindi-Romanian (sample file)" href="CCMatrix/v1/hi-ro_sample.html">view</a></td><td><a rel="nofollow" title="Hindi-Russian (sample file)" href="CCMatrix/v1/hi-ru_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Hindi-Sinhala (sample file)" href="CCMatrix/v1/hi-si_sample.html">view</a></td><td><a rel="nofollow" title="Hindi-Slovak (sample file)" href="CCMatrix/v1/hi-sk_sample.html">view</a></td><td><a rel="nofollow" title="Hindi-Slovenian (sample file)" href="CCMatrix/v1/hi-sl_sample.html">view</a></td><td></td><th>hi</th>
@@ -855,29 +855,29 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/hr.zip">hr</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Croatian-Arabic' (1.8M links, 43.9M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-hr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Croatian-Arabic' (1.8M links, 49.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-hr.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Croatian-Belarusian' (0.1M links, 2.3M tokens)" href="download.php?f=CCMatrix/v1/xml/be-hr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Croatian-Bulgarian' (4.1M links, 128.4M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-hr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Croatian-Belarusian' (0.1M links, 3.2M tokens)" href="download.php?f=CCMatrix/v1/xml/be-hr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Croatian-Bulgarian' (4.1M links, 143.7M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-hr.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Croatian-Czech' (4.5M links, 121.2M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-hr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Croatian-Czech' (4.5M links, 136.9M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-hr.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Croatian-Danish' (2.9M links, 87.2M tokens)" href="download.php?f=CCMatrix/v1/xml/da-hr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Croatian-German' (8.9M links, 213.1M tokens)" href="download.php?f=CCMatrix/v1/xml/de-hr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Croatian-Danish' (2.9M links, 96.9M tokens)" href="download.php?f=CCMatrix/v1/xml/da-hr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Croatian-German' (8.9M links, 259.3M tokens)" href="download.php?f=CCMatrix/v1/xml/de-hr.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Croatian-English' (18.8M links, 426.1M tokens)" href="download.php?f=CCMatrix/v1/xml/en-hr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Croatian-Esperanto' (0.5M links, 10.5M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-hr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Croatian-English' (18.8M links, 579.4M tokens)" href="download.php?f=CCMatrix/v1/xml/en-hr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Croatian-Esperanto' (0.5M links, 11.8M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-hr.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Croatian-Estonian' (2.4M links, 70.1M tokens)" href="download.php?f=CCMatrix/v1/xml/et-hr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Croatian-Estonian' (2.4M links, 76.8M tokens)" href="download.php?f=CCMatrix/v1/xml/et-hr.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Croatian-Persian' (1.2M links, 24.5M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-hr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Croatian-Finnish' (2.5M links, 64.4M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-hr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Croatian-Persian' (1.2M links, 27.9M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-hr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Croatian-Finnish' (2.5M links, 71.4M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-hr.xml.gz">ces</a></td>
 <th>hr</th>
-<td><a rel="nofollow" title="sentence alignments for 'Croatian-French' (8.7M links, 233.4M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-hr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Croatian-French' (8.7M links, 289.7M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-hr.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -892,37 +892,37 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/hu.zip">hu</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hungarian-Arabic' (4.3M links, 118.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-hu.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hungarian-Arabic' (4.3M links, 127.9M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-hu.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hungarian-Belarusian' (0.4M links, 6.5M tokens)" href="download.php?f=CCMatrix/v1/xml/be-hu.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hungarian-Bulgarian' (8.3M links, 268.1M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-hu.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hungarian-Bengali' (3.0M links, 63.7M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-hu.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hungarian-Belarusian' (0.4M links, 27.3M tokens)" href="download.php?f=CCMatrix/v1/xml/be-hu.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hungarian-Bulgarian' (8.3M links, 296.5M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-hu.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hungarian-Bengali' (3.0M links, 71.3M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-hu.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hungarian-Catalan' (2.0M links, 46.1M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-hu.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hungarian-Catalan' (2.0M links, 50.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-hu.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hungarian-Czech' (11.3M links, 333.4M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-hu.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hungarian-Czech' (11.3M links, 366.9M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-hu.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hungarian-Danish' (7.7M links, 245.9M tokens)" href="download.php?f=CCMatrix/v1/xml/da-hu.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hungarian-German' (23.4M links, 632.5M tokens)" href="download.php?f=CCMatrix/v1/xml/de-hu.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hungarian-Greek' (7.6M links, 250.8M tokens)" href="download.php?f=CCMatrix/v1/xml/el-hu.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hungarian-English' (36.4M links, 890.6M tokens)" href="download.php?f=CCMatrix/v1/xml/en-hu.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hungarian-Esperanto' (1.2M links, 23.8M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-hu.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hungarian-Spanish' (35.8M links, 762.3M tokens)" href="download.php?f=CCMatrix/v1/xml/es-hu.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hungarian-Estonian' (5.5M links, 159.5M tokens)" href="download.php?f=CCMatrix/v1/xml/et-hu.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hungarian-Basque' (2.5M links, 35.8M tokens)" href="download.php?f=CCMatrix/v1/xml/eu-hu.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hungarian-Persian' (2.1M links, 55.9M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-hu.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hungarian-Finnish' (7.8M links, 215.4M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-hu.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hungarian-Danish' (7.7M links, 269.7M tokens)" href="download.php?f=CCMatrix/v1/xml/da-hu.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hungarian-German' (23.4M links, 735.0M tokens)" href="download.php?f=CCMatrix/v1/xml/de-hu.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hungarian-Greek' (7.6M links, 276.2M tokens)" href="download.php?f=CCMatrix/v1/xml/el-hu.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hungarian-English' (36.4M links, 1.1G tokens)" href="download.php?f=CCMatrix/v1/xml/en-hu.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hungarian-Esperanto' (1.2M links, 27.2M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-hu.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hungarian-Spanish' (35.8M links, 936.8M tokens)" href="download.php?f=CCMatrix/v1/xml/es-hu.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hungarian-Estonian' (5.5M links, 175.4M tokens)" href="download.php?f=CCMatrix/v1/xml/et-hu.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hungarian-Basque' (2.5M links, 41.2M tokens)" href="download.php?f=CCMatrix/v1/xml/eu-hu.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hungarian-Persian' (2.1M links, 60.6M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-hu.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hungarian-Finnish' (7.8M links, 235.1M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-hu.xml.gz">ces</a></td>
 <th>hu</th>
-<td><a rel="nofollow" title="sentence alignments for 'Hungarian-French' (36.3M links, 776.8M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-hu.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hungarian-French' (36.3M links, 943.4M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-hu.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hungarian-Hebrew' (5.7M links, 95.7M tokens)" href="download.php?f=CCMatrix/v1/xml/he-hu.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hungarian-Hindi' (3.2M links, 76.7M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-hu.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Hungarian-Croatian' (3.3M links, 93.9M tokens)" href="download.php?f=CCMatrix/v1/xml/hr-hu.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hungarian-Hebrew' (5.7M links, 106.3M tokens)" href="download.php?f=CCMatrix/v1/xml/he-hu.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hungarian-Hindi' (3.2M links, 84.4M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-hu.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Hungarian-Croatian' (3.3M links, 104.3M tokens)" href="download.php?f=CCMatrix/v1/xml/hr-hu.xml.gz">ces</a></td>
 <th></th>
 <td></td><td><a rel="nofollow" title="Hungarian-Indonesian (sample file)" href="CCMatrix/v1/hu-id_sample.html">view</a></td><td></td><td></td><td></td><td><a rel="nofollow" title="Hungarian-Italian (sample file)" href="CCMatrix/v1/hu-it_sample.html">view</a></td><td><a rel="nofollow" title="Hungarian-Japanese (sample file)" href="CCMatrix/v1/hu-ja_sample.html">view</a></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Hungarian-Korean (sample file)" href="CCMatrix/v1/hu-ko_sample.html">view</a></td><td></td><td></td><th>hu</th>
 <td></td><td><a rel="nofollow" title="Hungarian-Lithuanian (sample file)" href="CCMatrix/v1/hu-lt_sample.html">view</a></td><td><a rel="nofollow" title="Hungarian-Latvian (sample file)" href="CCMatrix/v1/hu-lv_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Hungarian-Macedonian (sample file)" href="CCMatrix/v1/hu-mk_sample.html">view</a></td><td></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Hungarian-Dutch (sample file)" href="CCMatrix/v1/hu-nl_sample.html">view</a></td><td><a rel="nofollow" title="Hungarian-Norwegian (sample file)" href="CCMatrix/v1/hu-no_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Hungarian-Oromo (sample file)" href="CCMatrix/v1/hu-om_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Hungarian-Polish (sample file)" href="CCMatrix/v1/hu-pl_sample.html">view</a></td><td><a rel="nofollow" title="Hungarian-Portuguese (sample file)" href="CCMatrix/v1/hu-pt_sample.html">view</a></td><td><a rel="nofollow" title="Hungarian-Romanian (sample file)" href="CCMatrix/v1/hu-ro_sample.html">view</a></td><td><a rel="nofollow" title="Hungarian-Russian (sample file)" href="CCMatrix/v1/hu-ru_sample.html">view</a></td><td></td><td></td><td><a rel="nofollow" title="Hungarian-Slovak (sample file)" href="CCMatrix/v1/hu-sk_sample.html">view</a></td><td><a rel="nofollow" title="Hungarian-Slovenian (sample file)" href="CCMatrix/v1/hu-sl_sample.html">view</a></td><td></td><th>hu</th>
@@ -930,9 +930,9 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/hy.zip">hy</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Armenian-Arabic' (0.3M links, 4.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-hy.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Armenian-Arabic' (0.3M links, 4.9M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-hy.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Armenian-Azerbaijani' (90.3k links, 1.2M tokens)" href="download.php?f=CCMatrix/v1/xml/az-hy.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Armenian-Azerbaijani' (90.3k links, 1.4M tokens)" href="download.php?f=CCMatrix/v1/xml/az-hy.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -969,38 +969,38 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/id.zip">id</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Indonesian-Arabic' (9.6M links, 225.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-id.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Indonesian-Arabic' (9.6M links, 261.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-id.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Indonesian-Azerbaijani' (1.3M links, 24.7M tokens)" href="download.php?f=CCMatrix/v1/xml/az-id.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Indonesian-Azerbaijani' (1.3M links, 33.0M tokens)" href="download.php?f=CCMatrix/v1/xml/az-id.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Indonesian-Bulgarian' (3.5M links, 63.9M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-id.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Indonesian-Bengali' (3.3M links, 74.7M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-id.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Indonesian-Bulgarian' (3.5M links, 75.0M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-id.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Indonesian-Bengali' (3.3M links, 88.6M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-id.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Indonesian-Catalan' (1.8M links, 43.1M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-id.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Indonesian-Cebuano' (0.2M links, 3.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ceb-id.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Indonesian-Czech' (6.2M links, 168.4M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-id.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Indonesian-Catalan' (1.8M links, 49.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-id.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Indonesian-Cebuano' (0.2M links, 6.1M tokens)" href="download.php?f=CCMatrix/v1/xml/ceb-id.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Indonesian-Czech' (6.2M links, 186.7M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-id.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Indonesian-Danish' (5.6M links, 160.1M tokens)" href="download.php?f=CCMatrix/v1/xml/da-id.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Indonesian-German' (17.0M links, 464.3M tokens)" href="download.php?f=CCMatrix/v1/xml/de-id.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Indonesian-Greek' (9.0M links, 198.4M tokens)" href="download.php?f=CCMatrix/v1/xml/el-id.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Indonesian-English' (70.5M links, 1.9G tokens)" href="download.php?f=CCMatrix/v1/xml/en-id.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Indonesian-Danish' (5.6M links, 178.9M tokens)" href="download.php?f=CCMatrix/v1/xml/da-id.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Indonesian-German' (17.0M links, 541.3M tokens)" href="download.php?f=CCMatrix/v1/xml/de-id.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Indonesian-Greek' (9.0M links, 227.4M tokens)" href="download.php?f=CCMatrix/v1/xml/el-id.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Indonesian-English' (70.5M links, 2.6G tokens)" href="download.php?f=CCMatrix/v1/xml/en-id.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Indonesian-Spanish' (38.3M links, 881.4M tokens)" href="download.php?f=CCMatrix/v1/xml/es-id.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Indonesian-Estonian' (3.4M links, 89.5M tokens)" href="download.php?f=CCMatrix/v1/xml/et-id.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Indonesian-Spanish' (38.3M links, 1.1G tokens)" href="download.php?f=CCMatrix/v1/xml/es-id.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Indonesian-Estonian' (3.4M links, 99.6M tokens)" href="download.php?f=CCMatrix/v1/xml/et-id.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Indonesian-Persian' (6.4M links, 148.2M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-id.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Indonesian-Finnish' (8.1M links, 152.3M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-id.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Indonesian-Persian' (6.4M links, 170.4M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-id.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Indonesian-Finnish' (8.1M links, 172.3M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-id.xml.gz">ces</a></td>
 <th>id</th>
-<td><a rel="nofollow" title="sentence alignments for 'Indonesian-French' (20.8M links, 439.8M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-id.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Indonesian-French' (20.8M links, 568.9M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-id.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Indonesian-Hebrew' (6.1M links, 107.5M tokens)" href="download.php?f=CCMatrix/v1/xml/he-id.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Indonesian-Hindi' (4.0M links, 113.5M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-id.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Indonesian-Hebrew' (6.1M links, 122.4M tokens)" href="download.php?f=CCMatrix/v1/xml/he-id.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Indonesian-Hindi' (4.0M links, 130.4M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-id.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Indonesian-Hungarian' (4.5M links, 124.2M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-id.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Indonesian-Hungarian' (4.5M links, 136.9M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-id.xml.gz">ces</a></td>
 <td></td>
 <th></th>
 <td></td><td><a rel="nofollow" title="Indonesian-Iloko (sample file)" href="CCMatrix/v1/id-ilo_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Indonesian-Italian (sample file)" href="CCMatrix/v1/id-it_sample.html">view</a></td><td><a rel="nofollow" title="Indonesian-Japanese (sample file)" href="CCMatrix/v1/id-ja_sample.html">view</a></td><td><a rel="nofollow" title="Indonesian-Javanese (sample file)" href="CCMatrix/v1/id-jv_sample.html">view</a></td><td></td><td></td><td></td><td><a rel="nofollow" title="Indonesian-Korean (sample file)" href="CCMatrix/v1/id-ko_sample.html">view</a></td><td></td><td></td><th>id</th>
@@ -1008,7 +1008,7 @@
 <td></td><td><a rel="nofollow" title="Indonesian-Serbian (sample file)" href="CCMatrix/v1/id-sr_sample.html">view</a></td><td><a rel="nofollow" title="Indonesian-Sundanese (sample file)" href="CCMatrix/v1/id-su_sample.html">view</a></td><td><a rel="nofollow" title="Indonesian-Swedish (sample file)" href="CCMatrix/v1/id-sv_sample.html">view</a></td><td><a rel="nofollow" title="Indonesian-Swahili (sample file)" href="CCMatrix/v1/id-sw_sample.html">view</a></td><td><a rel="nofollow" title="Indonesian-Tamil (sample file)" href="CCMatrix/v1/id-ta_sample.html">view</a></td><td><a rel="nofollow" title="Indonesian-Tagalog (sample file)" href="CCMatrix/v1/id-tl_sample.html">view</a></td><td><a rel="nofollow" title="Indonesian-Turkish (sample file)" href="CCMatrix/v1/id-tr_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Indonesian-Ukrainian (sample file)" href="CCMatrix/v1/id-uk_sample.html">view</a></td><td><a rel="nofollow" title="Indonesian-Urdu (sample file)" href="CCMatrix/v1/id-ur_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Indonesian-Vietnamese (sample file)" href="CCMatrix/v1/id-vi_sample.html">view</a></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Indonesian-Chinese (sample file)" href="CCMatrix/v1/id-zh_sample.html">view</a></td><td></td><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/raw/id.zip">id</a></th></tr>
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/ig.zip">ig</a></th>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Igbo-Amharic' (11.1k links, 0.2M tokens)" href="download.php?f=CCMatrix/v1/xml/am-ig.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Igbo-Amharic' (11.1k links, 0.4M tokens)" href="download.php?f=CCMatrix/v1/xml/am-ig.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -1023,7 +1023,7 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Igbo-English' (80.4k links, 1.0M tokens)" href="download.php?f=CCMatrix/v1/xml/en-ig.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Igbo-English' (80.4k links, 1.6M tokens)" href="download.php?f=CCMatrix/v1/xml/en-ig.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -1036,7 +1036,7 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Igbo-Hausa' (4.5k links, 0.1M tokens)" href="download.php?f=CCMatrix/v1/xml/ha-ig.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Igbo-Hausa' (4.5k links, 0.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ha-ig.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -1055,16 +1055,16 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Iloko-Bengali' (44.8k links, 0.9M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-ilo.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Iloko-Bengali' (44.8k links, 1.2M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-ilo.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td><a rel="nofollow" title="sentence alignments for 'Iloko-Cebuano' (3.1k links, 0.1M tokens)" href="download.php?f=CCMatrix/v1/xml/ceb-ilo.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Iloko-German' (0.4M links, 4.3M tokens)" href="download.php?f=CCMatrix/v1/xml/de-ilo.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Iloko-German' (0.4M links, 7.4M tokens)" href="download.php?f=CCMatrix/v1/xml/de-ilo.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Iloko-English' (0.3M links, 6.5M tokens)" href="download.php?f=CCMatrix/v1/xml/en-ilo.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Iloko-English' (0.3M links, 12.7M tokens)" href="download.php?f=CCMatrix/v1/xml/en-ilo.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -1079,18 +1079,18 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Iloko-Hindi' (35.7k links, 0.7M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-ilo.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Iloko-Hindi' (35.7k links, 0.9M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-ilo.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Iloko-Indonesian' (0.2M links, 2.4M tokens)" href="download.php?f=CCMatrix/v1/xml/id-ilo.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Iloko-Indonesian' (0.2M links, 4.1M tokens)" href="download.php?f=CCMatrix/v1/xml/id-ilo.xml.gz">ces</a></td>
 <td></td>
 <th></th>
 <td></td><td></td><td></td><td><a rel="nofollow" title="Iloko-Javanese (sample file)" href="CCMatrix/v1/ilo-jv_sample.html">view</a></td><td></td><td></td><td></td><td></td><td></td><td></td><th>ilo</th>
 <td></td><td></td><td></td><td><a rel="nofollow" title="Iloko-Malagasy (sample file)" href="CCMatrix/v1/ilo-mg_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Iloko-Malayalam (sample file)" href="CCMatrix/v1/ilo-ml_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Iloko-Malay (sample file)" href="CCMatrix/v1/ilo-ms_sample.html">view</a></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><th>ilo</th>
 <td></td><td></td><td><a rel="nofollow" title="Iloko-Sundanese (sample file)" href="CCMatrix/v1/ilo-su_sample.html">view</a></td><td></td><td></td><td></td><td><a rel="nofollow" title="Iloko-Tagalog (sample file)" href="CCMatrix/v1/ilo-tl_sample.html">view</a></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/raw/ilo.zip">ilo</a></th></tr>
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/is.zip">is</a></th>
-<td><a rel="nofollow" title="sentence alignments for 'Icelandic-Afrikaans' (0.3M links, 8.9M tokens)" href="download.php?f=CCMatrix/v1/xml/af-is.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Icelandic-Afrikaans' (0.3M links, 9.6M tokens)" href="download.php?f=CCMatrix/v1/xml/af-is.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -1103,10 +1103,10 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Icelandic-Danish' (1.3M links, 29.4M tokens)" href="download.php?f=CCMatrix/v1/xml/da-is.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Icelandic-German' (3.4M links, 55.5M tokens)" href="download.php?f=CCMatrix/v1/xml/de-is.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Icelandic-Danish' (1.3M links, 32.5M tokens)" href="download.php?f=CCMatrix/v1/xml/da-is.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Icelandic-German' (3.4M links, 70.1M tokens)" href="download.php?f=CCMatrix/v1/xml/de-is.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Icelandic-English' (8.7M links, 134.6M tokens)" href="download.php?f=CCMatrix/v1/xml/en-is.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Icelandic-English' (8.7M links, 188.1M tokens)" href="download.php?f=CCMatrix/v1/xml/en-is.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -1115,7 +1115,7 @@
 <td></td>
 <th>is</th>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Icelandic-Western Frisian' (0.1M links, 2.2M tokens)" href="download.php?f=CCMatrix/v1/xml/fy-is.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Icelandic-Western Frisian' (0.1M links, 2.5M tokens)" href="download.php?f=CCMatrix/v1/xml/fy-is.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -1135,40 +1135,40 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/it.zip">it</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Italian-Arabic' (11.0M links, 369.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-it.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Italian-Asturian' (0.6M links, 15.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ast-it.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Italian-Arabic' (11.0M links, 414.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-it.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Italian-Asturian' (0.6M links, 23.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ast-it.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Italian-Belarusian' (0.4M links, 7.7M tokens)" href="download.php?f=CCMatrix/v1/xml/be-it.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Italian-Bulgarian' (14.0M links, 475.0M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-it.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Italian-Bengali' (1.8M links, 50.4M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-it.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Italian-Belarusian' (0.4M links, 21.1M tokens)" href="download.php?f=CCMatrix/v1/xml/be-it.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Italian-Bulgarian' (14.0M links, 550.2M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-it.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Italian-Bengali' (1.8M links, 56.2M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-it.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Italian-Catalan' (11.4M links, 240.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-it.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Italian-Catalan' (11.4M links, 297.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-it.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Italian-Czech' (10.0M links, 212.4M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-it.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Italian-Czech' (10.0M links, 246.8M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-it.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Italian-Danish' (14.7M links, 500.8M tokens)" href="download.php?f=CCMatrix/v1/xml/da-it.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Italian-German' (71.6M links, 2.5G tokens)" href="download.php?f=CCMatrix/v1/xml/de-it.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Italian-Greek' (16.0M links, 568.4M tokens)" href="download.php?f=CCMatrix/v1/xml/el-it.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Italian-English' (146.2M links, 4.8G tokens)" href="download.php?f=CCMatrix/v1/xml/en-it.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Italian-Esperanto' (2.5M links, 60.6M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-it.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Italian-Spanish' (142.1M links, 4.1G tokens)" href="download.php?f=CCMatrix/v1/xml/es-it.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Italian-Estonian' (7.1M links, 217.8M tokens)" href="download.php?f=CCMatrix/v1/xml/et-it.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Italian-Basque' (1.9M links, 33.3M tokens)" href="download.php?f=CCMatrix/v1/xml/eu-it.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Italian-Persian' (4.5M links, 141.4M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-it.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Italian-Finnish' (11.4M links, 349.8M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-it.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Italian-Danish' (14.7M links, 565.0M tokens)" href="download.php?f=CCMatrix/v1/xml/da-it.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Italian-German' (71.6M links, 2.9G tokens)" href="download.php?f=CCMatrix/v1/xml/de-it.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Italian-Greek' (16.0M links, 657.6M tokens)" href="download.php?f=CCMatrix/v1/xml/el-it.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Italian-English' (146.2M links, 6.3G tokens)" href="download.php?f=CCMatrix/v1/xml/en-it.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Italian-Esperanto' (2.5M links, 73.3M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-it.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Italian-Spanish' (142.1M links, 5.1G tokens)" href="download.php?f=CCMatrix/v1/xml/es-it.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Italian-Estonian' (7.1M links, 246.4M tokens)" href="download.php?f=CCMatrix/v1/xml/et-it.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Italian-Basque' (1.9M links, 37.8M tokens)" href="download.php?f=CCMatrix/v1/xml/eu-it.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Italian-Persian' (4.5M links, 156.4M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-it.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Italian-Finnish' (11.4M links, 386.4M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-it.xml.gz">ces</a></td>
 <th>it</th>
-<td><a rel="nofollow" title="sentence alignments for 'Italian-French' (140.0M links, 4.0G tokens)" href="download.php?f=CCMatrix/v1/xml/fr-it.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Italian-French' (140.0M links, 5.0G tokens)" href="download.php?f=CCMatrix/v1/xml/fr-it.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Italian-Galician' (4.0M links, 82.3M tokens)" href="download.php?f=CCMatrix/v1/xml/gl-it.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Italian-Galician' (4.0M links, 99.7M tokens)" href="download.php?f=CCMatrix/v1/xml/gl-it.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Italian-Hindi' (3.2M links, 129.3M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-it.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Italian-Hindi' (3.2M links, 139.9M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-it.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Italian-Hungarian' (13.5M links, 445.0M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-it.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Italian-Hungarian' (13.5M links, 501.2M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-it.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Italian-Indonesian' (10.8M links, 344.5M tokens)" href="download.php?f=CCMatrix/v1/xml/id-it.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Italian-Indonesian' (10.8M links, 392.6M tokens)" href="download.php?f=CCMatrix/v1/xml/id-it.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -1179,44 +1179,44 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/ja.zip">ja</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Japanese-Arabic' (3.8M links, 53.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-ja.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Japanese-Arabic' (3.8M links, 61.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-ja.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Japanese-Bulgarian' (4.1M links, 54.0M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-ja.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Japanese-Bengali' (1.7M links, 27.0M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-ja.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Japanese-Bulgarian' (4.1M links, 64.7M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-ja.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Japanese-Bengali' (1.7M links, 33.4M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-ja.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Japanese-Cebuano' (0.2M links, 1.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ceb-ja.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Japanese-Czech' (10.9M links, 118.1M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-ja.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Japanese-Cebuano' (0.2M links, 3.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ceb-ja.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Japanese-Czech' (10.9M links, 144.2M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-ja.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Japanese-Danish' (4.1M links, 53.8M tokens)" href="download.php?f=CCMatrix/v1/xml/da-ja.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Japanese-German' (14.5M links, 180.8M tokens)" href="download.php?f=CCMatrix/v1/xml/de-ja.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Japanese-Greek' (3.9M links, 55.6M tokens)" href="download.php?f=CCMatrix/v1/xml/el-ja.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Japanese-English' (40.9M links, 611.3M tokens)" href="download.php?f=CCMatrix/v1/xml/en-ja.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Japanese-Danish' (4.1M links, 62.3M tokens)" href="download.php?f=CCMatrix/v1/xml/da-ja.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Japanese-German' (14.5M links, 217.4M tokens)" href="download.php?f=CCMatrix/v1/xml/de-ja.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Japanese-Greek' (3.9M links, 64.2M tokens)" href="download.php?f=CCMatrix/v1/xml/el-ja.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Japanese-English' (40.9M links, 753.6M tokens)" href="download.php?f=CCMatrix/v1/xml/en-ja.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Japanese-Spanish' (14.3M links, 190.4M tokens)" href="download.php?f=CCMatrix/v1/xml/es-ja.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Japanese-Spanish' (14.3M links, 229.2M tokens)" href="download.php?f=CCMatrix/v1/xml/es-ja.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Japanese-Persian' (2.3M links, 33.8M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-ja.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Japanese-Finnish' (4.0M links, 45.3M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-ja.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Japanese-Persian' (2.3M links, 38.7M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-ja.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Japanese-Finnish' (4.0M links, 51.9M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-ja.xml.gz">ces</a></td>
 <th>ja</th>
-<td><a rel="nofollow" title="sentence alignments for 'Japanese-French' (13.8M links, 189.9M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-ja.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Japanese-French' (13.8M links, 225.4M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-ja.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Japanese-Hebrew' (7.1M links, 64.7M tokens)" href="download.php?f=CCMatrix/v1/xml/he-ja.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Japanese-Hindi' (1.8M links, 32.8M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-ja.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Japanese-Hebrew' (7.1M links, 93.6M tokens)" href="download.php?f=CCMatrix/v1/xml/he-ja.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Japanese-Hindi' (1.8M links, 39.0M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-ja.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Japanese-Hungarian' (4.2M links, 51.4M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-ja.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Japanese-Hungarian' (4.2M links, 59.0M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-ja.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Japanese-Indonesian' (7.7M links, 88.9M tokens)" href="download.php?f=CCMatrix/v1/xml/id-ja.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Japanese-Indonesian' (7.7M links, 107.6M tokens)" href="download.php?f=CCMatrix/v1/xml/id-ja.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Japanese-Italian' (8.5M links, 104.6M tokens)" href="download.php?f=CCMatrix/v1/xml/it-ja.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Japanese-Italian' (8.5M links, 129.3M tokens)" href="download.php?f=CCMatrix/v1/xml/it-ja.xml.gz">ces</a></td>
 <th></th>
 <td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Japanese-Korean (sample file)" href="CCMatrix/v1/ja-ko_sample.html">view</a></td><td></td><td></td><th>ja</th>
 <td></td><td><a rel="nofollow" title="Japanese-Lithuanian (sample file)" href="CCMatrix/v1/ja-lt_sample.html">view</a></td><td></td><td></td><td></td><td><a rel="nofollow" title="Japanese-Malayalam (sample file)" href="CCMatrix/v1/ja-ml_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Japanese-Malay (sample file)" href="CCMatrix/v1/ja-ms_sample.html">view</a></td><td></td><td></td><td><a rel="nofollow" title="Japanese-Dutch (sample file)" href="CCMatrix/v1/ja-nl_sample.html">view</a></td><td><a rel="nofollow" title="Japanese-Norwegian (sample file)" href="CCMatrix/v1/ja-no_sample.html">view</a></td><td></td><td></td><td></td><td><a rel="nofollow" title="Japanese-Polish (sample file)" href="CCMatrix/v1/ja-pl_sample.html">view</a></td><td><a rel="nofollow" title="Japanese-Portuguese (sample file)" href="CCMatrix/v1/ja-pt_sample.html">view</a></td><td><a rel="nofollow" title="Japanese-Romanian (sample file)" href="CCMatrix/v1/ja-ro_sample.html">view</a></td><td><a rel="nofollow" title="Japanese-Russian (sample file)" href="CCMatrix/v1/ja-ru_sample.html">view</a></td><td></td><td></td><td><a rel="nofollow" title="Japanese-Slovak (sample file)" href="CCMatrix/v1/ja-sk_sample.html">view</a></td><td><a rel="nofollow" title="Japanese-Slovenian (sample file)" href="CCMatrix/v1/ja-sl_sample.html">view</a></td><td></td><th>ja</th>
@@ -1232,13 +1232,13 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Javanese-Cebuano' (4.2k links, 0.1M tokens)" href="download.php?f=CCMatrix/v1/xml/ceb-jv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Javanese-Cebuano' (4.2k links, 0.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ceb-jv.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Javanese-German' (0.4M links, 4.2M tokens)" href="download.php?f=CCMatrix/v1/xml/de-jv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Javanese-German' (0.4M links, 5.7M tokens)" href="download.php?f=CCMatrix/v1/xml/de-jv.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Javanese-English' (0.8M links, 10.0M tokens)" href="download.php?f=CCMatrix/v1/xml/en-jv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Javanese-English' (0.8M links, 13.2M tokens)" href="download.php?f=CCMatrix/v1/xml/en-jv.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -1253,13 +1253,13 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Javanese-Hindi' (53.6k links, 1.0M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-jv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Javanese-Hindi' (53.6k links, 1.3M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-jv.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Javanese-Indonesian' (0.3M links, 5.1M tokens)" href="download.php?f=CCMatrix/v1/xml/id-jv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Javanese-Indonesian' (0.3M links, 7.5M tokens)" href="download.php?f=CCMatrix/v1/xml/id-jv.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Javanese-Iloko' (2.5k links, 59.5k tokens)" href="download.php?f=CCMatrix/v1/xml/ilo-jv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Javanese-Iloko' (2.5k links, 75.0k tokens)" href="download.php?f=CCMatrix/v1/xml/ilo-jv.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -1270,9 +1270,9 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/ka.zip">ka</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Georgian-Arabic' (0.1M links, 2.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-ka.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Georgian-Arabic' (0.1M links, 3.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-ka.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Georgian-Azerbaijani' (34.8k links, 0.6M tokens)" href="download.php?f=CCMatrix/v1/xml/az-ka.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Georgian-Azerbaijani' (34.8k links, 1.0M tokens)" href="download.php?f=CCMatrix/v1/xml/az-ka.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -1302,7 +1302,7 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Georgian-Armenian' (35.4k links, 0.8M tokens)" href="download.php?f=CCMatrix/v1/xml/hy-ka.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Georgian-Armenian' (35.4k links, 1.0M tokens)" href="download.php?f=CCMatrix/v1/xml/hy-ka.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -1317,9 +1317,9 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/kk.zip">kk</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Kazakh-Arabic' (0.2M links, 2.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-kk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Kazakh-Arabic' (0.2M links, 2.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-kk.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Kazakh-Azerbaijani' (75.9k links, 1.1M tokens)" href="download.php?f=CCMatrix/v1/xml/az-kk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Kazakh-Azerbaijani' (75.9k links, 1.2M tokens)" href="download.php?f=CCMatrix/v1/xml/az-kk.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -1349,7 +1349,7 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Kazakh-Armenian' (50.3k links, 0.6M tokens)" href="download.php?f=CCMatrix/v1/xml/hy-kk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Kazakh-Armenian' (50.3k links, 0.7M tokens)" href="download.php?f=CCMatrix/v1/xml/hy-kk.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -1357,7 +1357,7 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Kazakh-Georgian' (24.4k links, 0.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ka-kk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Kazakh-Georgian' (24.4k links, 0.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ka-kk.xml.gz">ces</a></td>
 <th></th>
 <td></td><td></td><td></td><td></td><th>kk</th>
 <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><th>kk</th>
@@ -1365,9 +1365,9 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/km.zip">km</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Central Khmer-Arabic' (0.1M links, 3.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-km.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Central Khmer-Arabic' (0.1M links, 4.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-km.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Central Khmer-Azerbaijani' (46.0k links, 1.0M tokens)" href="download.php?f=CCMatrix/v1/xml/az-km.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Central Khmer-Azerbaijani' (46.0k links, 1.3M tokens)" href="download.php?f=CCMatrix/v1/xml/az-km.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -1397,7 +1397,7 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Central Khmer-Armenian' (34.8k links, 0.8M tokens)" href="download.php?f=CCMatrix/v1/xml/hy-km.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Central Khmer-Armenian' (34.8k links, 0.9M tokens)" href="download.php?f=CCMatrix/v1/xml/hy-km.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -1414,45 +1414,45 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/ko.zip">ko</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Korean-Arabic' (2.5M links, 58.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-ko.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Korean-Arabic' (2.5M links, 62.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-ko.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Korean-Bulgarian' (2.4M links, 53.8M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-ko.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Korean-Bengali' (0.9M links, 22.8M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-ko.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Korean-Bulgarian' (2.4M links, 58.1M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-ko.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Korean-Bengali' (0.9M links, 27.1M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-ko.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Korean-Czech' (6.7M links, 102.7M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-ko.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Korean-Czech' (6.7M links, 114.2M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-ko.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Korean-Danish' (2.5M links, 56.9M tokens)" href="download.php?f=CCMatrix/v1/xml/da-ko.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Korean-German' (9.8M links, 156.3M tokens)" href="download.php?f=CCMatrix/v1/xml/de-ko.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Korean-Greek' (2.1M links, 48.5M tokens)" href="download.php?f=CCMatrix/v1/xml/el-ko.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Korean-English' (19.4M links, 373.0M tokens)" href="download.php?f=CCMatrix/v1/xml/en-ko.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Korean-Danish' (2.5M links, 60.6M tokens)" href="download.php?f=CCMatrix/v1/xml/da-ko.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Korean-German' (9.8M links, 185.4M tokens)" href="download.php?f=CCMatrix/v1/xml/de-ko.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Korean-Greek' (2.1M links, 51.8M tokens)" href="download.php?f=CCMatrix/v1/xml/el-ko.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Korean-English' (19.4M links, 453.6M tokens)" href="download.php?f=CCMatrix/v1/xml/en-ko.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Korean-Spanish' (9.5M links, 158.3M tokens)" href="download.php?f=CCMatrix/v1/xml/es-ko.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Korean-Estonian' (1.7M links, 34.2M tokens)" href="download.php?f=CCMatrix/v1/xml/et-ko.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Korean-Spanish' (9.5M links, 187.3M tokens)" href="download.php?f=CCMatrix/v1/xml/es-ko.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Korean-Estonian' (1.7M links, 36.8M tokens)" href="download.php?f=CCMatrix/v1/xml/et-ko.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Korean-Persian' (1.6M links, 36.6M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-ko.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Korean-Finnish' (2.4M links, 48.9M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-ko.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Korean-Persian' (1.6M links, 39.4M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-ko.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Korean-Finnish' (2.4M links, 52.0M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-ko.xml.gz">ces</a></td>
 <th>ko</th>
-<td><a rel="nofollow" title="sentence alignments for 'Korean-French' (9.3M links, 156.6M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-ko.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Korean-French' (9.3M links, 184.5M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-ko.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Korean-Hebrew' (4.3M links, 60.2M tokens)" href="download.php?f=CCMatrix/v1/xml/he-ko.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Korean-Hindi' (1.5M links, 47.1M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-ko.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Korean-Hebrew' (4.3M links, 68.6M tokens)" href="download.php?f=CCMatrix/v1/xml/he-ko.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Korean-Hindi' (1.5M links, 50.5M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-ko.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Korean-Hungarian' (2.4M links, 51.6M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-ko.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Korean-Hungarian' (2.4M links, 55.1M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-ko.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Korean-Indonesian' (2.8M links, 66.3M tokens)" href="download.php?f=CCMatrix/v1/xml/id-ko.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Korean-Indonesian' (2.8M links, 71.3M tokens)" href="download.php?f=CCMatrix/v1/xml/id-ko.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Korean-Italian' (4.6M links, 117.8M tokens)" href="download.php?f=CCMatrix/v1/xml/it-ko.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Korean-Japanese' (7.2M links, 107.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-ko.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Korean-Italian' (4.6M links, 125.6M tokens)" href="download.php?f=CCMatrix/v1/xml/it-ko.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Korean-Japanese' (7.2M links, 121.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-ko.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -1464,44 +1464,44 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/la.zip">la</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Latin-Arabic' (0.1M links, 1.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-la.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Latin-Asturian' (28.7k links, 0.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ast-la.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Latin-Arabic' (0.1M links, 1.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-la.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Latin-Asturian' (28.7k links, 0.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ast-la.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Latin-Bengali' (77.8k links, 1.2M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-la.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Latin-Bengali' (77.8k links, 1.5M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-la.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Latin-Catalan' (0.1M links, 1.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-la.xml.gz">ces</a></td>
-<td></td>
-<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Latin-Catalan' (0.1M links, 1.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-la.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Latin-Greek' (0.1M links, 1.5M tokens)" href="download.php?f=CCMatrix/v1/xml/el-la.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Latin-English' (1.1M links, 12.0M tokens)" href="download.php?f=CCMatrix/v1/xml/en-la.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Latin-Spanish' (0.5M links, 6.7M tokens)" href="download.php?f=CCMatrix/v1/xml/es-la.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Latin-Basque' (65.3k links, 0.8M tokens)" href="download.php?f=CCMatrix/v1/xml/eu-la.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Latin-Persian' (0.1M links, 1.5M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-la.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Latin-Greek' (0.1M links, 1.8M tokens)" href="download.php?f=CCMatrix/v1/xml/el-la.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Latin-English' (1.1M links, 17.9M tokens)" href="download.php?f=CCMatrix/v1/xml/en-la.xml.gz">ces</a></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Latin-Spanish' (0.5M links, 9.4M tokens)" href="download.php?f=CCMatrix/v1/xml/es-la.xml.gz">ces</a></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Latin-Basque' (65.3k links, 0.9M tokens)" href="download.php?f=CCMatrix/v1/xml/eu-la.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Latin-Persian' (0.1M links, 2.0M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-la.xml.gz">ces</a></td>
 <td></td>
 <th>la</th>
-<td><a rel="nofollow" title="sentence alignments for 'Latin-French' (0.5M links, 6.1M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-la.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Latin-French' (0.5M links, 8.5M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-la.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Latin-Galician' (92.5k links, 1.2M tokens)" href="download.php?f=CCMatrix/v1/xml/gl-la.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Latin-Galician' (92.5k links, 1.4M tokens)" href="download.php?f=CCMatrix/v1/xml/gl-la.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Latin-Hebrew' (0.1M links, 1.2M tokens)" href="download.php?f=CCMatrix/v1/xml/he-la.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Latin-Hindi' (84.1k links, 1.3M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-la.xml.gz">ces</a></td>
-<td></td>
-<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Latin-Hebrew' (0.1M links, 1.4M tokens)" href="download.php?f=CCMatrix/v1/xml/he-la.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Latin-Hindi' (84.1k links, 1.6M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-la.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Latin-Italian' (0.3M links, 4.0M tokens)" href="download.php?f=CCMatrix/v1/xml/it-la.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Latin-Italian' (0.3M links, 5.1M tokens)" href="download.php?f=CCMatrix/v1/xml/it-la.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -1513,7 +1513,7 @@
 <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Latin-Occitan (post 1500) (sample file)" href="CCMatrix/v1/la-oc_sample.html">view</a></td><td></td><td></td><td></td><td><a rel="nofollow" title="Latin-Portuguese (sample file)" href="CCMatrix/v1/la-pt_sample.html">view</a></td><td><a rel="nofollow" title="Latin-Romanian (sample file)" href="CCMatrix/v1/la-ro_sample.html">view</a></td><td></td><td></td><td></td><td></td><td></td><td></td><th>la</th>
 <td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Latin-Swahili (sample file)" href="CCMatrix/v1/la-sw_sample.html">view</a></td><td><a rel="nofollow" title="Latin-Tamil (sample file)" href="CCMatrix/v1/la-ta_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Latin-Turkish (sample file)" href="CCMatrix/v1/la-tr_sample.html">view</a></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/raw/la.zip">la</a></th></tr>
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/lb.zip">lb</a></th>
-<td><a rel="nofollow" title="sentence alignments for 'Luxembourgish-Afrikaans' (67.5k links, 1.5M tokens)" href="download.php?f=CCMatrix/v1/xml/af-lb.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Luxembourgish-Afrikaans' (67.5k links, 1.7M tokens)" href="download.php?f=CCMatrix/v1/xml/af-lb.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -1526,10 +1526,10 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Luxembourgish-Danish' (0.2M links, 4.0M tokens)" href="download.php?f=CCMatrix/v1/xml/da-lb.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Luxembourgish-German' (1.1M links, 17.8M tokens)" href="download.php?f=CCMatrix/v1/xml/de-lb.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Luxembourgish-Danish' (0.2M links, 4.8M tokens)" href="download.php?f=CCMatrix/v1/xml/da-lb.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Luxembourgish-German' (1.1M links, 58.5M tokens)" href="download.php?f=CCMatrix/v1/xml/de-lb.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Luxembourgish-English' (12.0M links, 223.7M tokens)" href="download.php?f=CCMatrix/v1/xml/en-lb.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Luxembourgish-English' (12.0M links, 674.7M tokens)" href="download.php?f=CCMatrix/v1/xml/en-lb.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -1538,7 +1538,7 @@
 <td></td>
 <th>lb</th>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Luxembourgish-Western Frisian' (43.1k links, 1.7M tokens)" href="download.php?f=CCMatrix/v1/xml/fy-lb.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Luxembourgish-Western Frisian' (43.1k links, 1.8M tokens)" href="download.php?f=CCMatrix/v1/xml/fy-lb.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -1551,7 +1551,7 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Luxembourgish-Icelandic' (59.9k links, 1.1M tokens)" href="download.php?f=CCMatrix/v1/xml/is-lb.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Luxembourgish-Icelandic' (59.9k links, 1.2M tokens)" href="download.php?f=CCMatrix/v1/xml/is-lb.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -1662,7 +1662,7 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/lg.zip">lg</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ganda-Arabic' (18.6k links, 0.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-lg.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ganda-Arabic' (18.6k links, 0.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-lg.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -1715,50 +1715,50 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/lt.zip">lt</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Arabic' (3.2M links, 85.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-lt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Arabic' (3.2M links, 93.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-lt.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Belarusian' (0.2M links, 3.2M tokens)" href="download.php?f=CCMatrix/v1/xml/be-lt.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Bulgarian' (7.1M links, 228.8M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-lt.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Bengali' (2.1M links, 45.0M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-lt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Belarusian' (0.2M links, 8.3M tokens)" href="download.php?f=CCMatrix/v1/xml/be-lt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Bulgarian' (7.1M links, 252.5M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-lt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Bengali' (2.1M links, 49.9M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-lt.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Catalan' (1.4M links, 31.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-lt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Catalan' (1.4M links, 34.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-lt.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Czech' (7.5M links, 216.7M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-lt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Czech' (7.5M links, 238.5M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-lt.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Danish' (5.8M links, 188.7M tokens)" href="download.php?f=CCMatrix/v1/xml/da-lt.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-German' (13.1M links, 340.3M tokens)" href="download.php?f=CCMatrix/v1/xml/de-lt.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Greek' (5.4M links, 179.4M tokens)" href="download.php?f=CCMatrix/v1/xml/el-lt.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-English' (23.3M links, 538.4M tokens)" href="download.php?f=CCMatrix/v1/xml/en-lt.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Esperanto' (0.8M links, 15.1M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-lt.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Spanish' (22.6M links, 459.7M tokens)" href="download.php?f=CCMatrix/v1/xml/es-lt.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Estonian' (5.6M links, 169.4M tokens)" href="download.php?f=CCMatrix/v1/xml/et-lt.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Basque' (1.6M links, 23.5M tokens)" href="download.php?f=CCMatrix/v1/xml/eu-lt.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Persian' (1.6M links, 41.9M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-lt.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Finnish' (5.4M links, 150.7M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-lt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Danish' (5.8M links, 205.8M tokens)" href="download.php?f=CCMatrix/v1/xml/da-lt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-German' (13.1M links, 396.3M tokens)" href="download.php?f=CCMatrix/v1/xml/de-lt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Greek' (5.4M links, 197.4M tokens)" href="download.php?f=CCMatrix/v1/xml/el-lt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-English' (23.3M links, 690.7M tokens)" href="download.php?f=CCMatrix/v1/xml/en-lt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Esperanto' (0.8M links, 17.0M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-lt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Spanish' (22.6M links, 571.0M tokens)" href="download.php?f=CCMatrix/v1/xml/es-lt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Estonian' (5.6M links, 184.4M tokens)" href="download.php?f=CCMatrix/v1/xml/et-lt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Basque' (1.6M links, 26.3M tokens)" href="download.php?f=CCMatrix/v1/xml/eu-lt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Persian' (1.6M links, 45.6M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-lt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Finnish' (5.4M links, 164.9M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-lt.xml.gz">ces</a></td>
 <th>lt</th>
-<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-French' (23.2M links, 479.2M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-lt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-French' (23.2M links, 589.7M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-lt.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Hebrew' (3.9M links, 65.3M tokens)" href="download.php?f=CCMatrix/v1/xml/he-lt.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Hindi' (2.5M links, 66.5M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-lt.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Croatian' (2.9M links, 85.8M tokens)" href="download.php?f=CCMatrix/v1/xml/hr-lt.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Hungarian' (6.3M links, 191.4M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-lt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Hebrew' (3.9M links, 71.8M tokens)" href="download.php?f=CCMatrix/v1/xml/he-lt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Hindi' (2.5M links, 71.9M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-lt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Croatian' (2.9M links, 93.9M tokens)" href="download.php?f=CCMatrix/v1/xml/hr-lt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Hungarian' (6.3M links, 209.3M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-lt.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Indonesian' (3.7M links, 100.4M tokens)" href="download.php?f=CCMatrix/v1/xml/id-lt.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Italian' (8.3M links, 270.0M tokens)" href="download.php?f=CCMatrix/v1/xml/it-lt.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Japanese' (2.8M links, 31.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-lt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Indonesian' (3.7M links, 111.1M tokens)" href="download.php?f=CCMatrix/v1/xml/id-lt.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Italian' (8.3M links, 304.5M tokens)" href="download.php?f=CCMatrix/v1/xml/it-lt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Japanese' (2.8M links, 37.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-lt.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Korean' (1.7M links, 36.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ko-lt.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Lithuanian-Korean' (1.7M links, 39.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ko-lt.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <th>lt</th>
@@ -1769,55 +1769,55 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/lv.zip">lv</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Latvian-Arabic' (2.2M links, 62.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-lv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Latvian-Arabic' (2.2M links, 67.9M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-lv.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Latvian-Belarusian' (0.1M links, 3.1M tokens)" href="download.php?f=CCMatrix/v1/xml/be-lv.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Latvian-Bulgarian' (4.9M links, 162.1M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-lv.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Latvian-Bengali' (0.6M links, 18.1M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-lv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Latvian-Belarusian' (0.1M links, 7.0M tokens)" href="download.php?f=CCMatrix/v1/xml/be-lv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Latvian-Bulgarian' (4.9M links, 179.1M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-lv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Latvian-Bengali' (0.6M links, 19.5M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-lv.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Latvian-Catalan' (1.0M links, 29.9M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-lv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Latvian-Catalan' (1.0M links, 32.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-lv.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Latvian-Czech' (5.3M links, 159.5M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-lv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Latvian-Czech' (5.3M links, 176.6M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-lv.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Latvian-Danish' (4.2M links, 136.8M tokens)" href="download.php?f=CCMatrix/v1/xml/da-lv.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Latvian-German' (9.6M links, 258.8M tokens)" href="download.php?f=CCMatrix/v1/xml/de-lv.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Latvian-Greek' (4.1M links, 137.3M tokens)" href="download.php?f=CCMatrix/v1/xml/el-lv.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Latvian-English' (16.7M links, 389.2M tokens)" href="download.php?f=CCMatrix/v1/xml/en-lv.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Latvian-Esperanto' (0.6M links, 15.5M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-lv.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Latvian-Spanish' (8.7M links, 249.0M tokens)" href="download.php?f=CCMatrix/v1/xml/es-lv.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Latvian-Estonian' (4.1M links, 124.8M tokens)" href="download.php?f=CCMatrix/v1/xml/et-lv.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Latvian-Basque' (1.4M links, 21.8M tokens)" href="download.php?f=CCMatrix/v1/xml/eu-lv.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Latvian-Persian' (1.0M links, 29.2M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-lv.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Latvian-Finnish' (3.9M links, 110.1M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-lv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Latvian-Danish' (4.2M links, 149.7M tokens)" href="download.php?f=CCMatrix/v1/xml/da-lv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Latvian-German' (9.6M links, 314.9M tokens)" href="download.php?f=CCMatrix/v1/xml/de-lv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Latvian-Greek' (4.1M links, 151.3M tokens)" href="download.php?f=CCMatrix/v1/xml/el-lv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Latvian-English' (16.7M links, 542.5M tokens)" href="download.php?f=CCMatrix/v1/xml/en-lv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Latvian-Esperanto' (0.6M links, 17.2M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-lv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Latvian-Spanish' (8.7M links, 304.7M tokens)" href="download.php?f=CCMatrix/v1/xml/es-lv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Latvian-Estonian' (4.1M links, 135.4M tokens)" href="download.php?f=CCMatrix/v1/xml/et-lv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Latvian-Basque' (1.4M links, 24.2M tokens)" href="download.php?f=CCMatrix/v1/xml/eu-lv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Latvian-Persian' (1.0M links, 32.3M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-lv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Latvian-Finnish' (3.9M links, 120.9M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-lv.xml.gz">ces</a></td>
 <th>lv</th>
-<td><a rel="nofollow" title="sentence alignments for 'Latvian-French' (8.8M links, 258.2M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-lv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Latvian-French' (8.8M links, 313.4M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-lv.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Latvian-Hebrew' (1.6M links, 43.9M tokens)" href="download.php?f=CCMatrix/v1/xml/he-lv.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Latvian-Hindi' (1.2M links, 47.3M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-lv.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Latvian-Croatian' (2.0M links, 61.7M tokens)" href="download.php?f=CCMatrix/v1/xml/hr-lv.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Latvian-Hungarian' (4.4M links, 136.8M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-lv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Latvian-Hebrew' (1.6M links, 46.7M tokens)" href="download.php?f=CCMatrix/v1/xml/he-lv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Latvian-Hindi' (1.2M links, 49.7M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-lv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Latvian-Croatian' (2.0M links, 67.1M tokens)" href="download.php?f=CCMatrix/v1/xml/hr-lv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Latvian-Hungarian' (4.4M links, 149.8M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-lv.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Latvian-Indonesian' (2.5M links, 70.6M tokens)" href="download.php?f=CCMatrix/v1/xml/id-lv.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Latvian-Italian' (5.8M links, 187.0M tokens)" href="download.php?f=CCMatrix/v1/xml/it-lv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Latvian-Indonesian' (2.5M links, 78.4M tokens)" href="download.php?f=CCMatrix/v1/xml/id-lv.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Latvian-Italian' (5.8M links, 212.1M tokens)" href="download.php?f=CCMatrix/v1/xml/it-lv.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Latvian-Korean' (1.2M links, 29.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ko-lv.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Latvian-Korean' (1.2M links, 32.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ko-lv.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <th>lv</th>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Latvian-Lithuanian' (5.3M links, 162.1M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-lv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Latvian-Lithuanian' (5.3M links, 176.1M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-lv.xml.gz">ces</a></td>
 <th></th>
 <td></td><td><a rel="nofollow" title="Latvian-Macedonian (sample file)" href="CCMatrix/v1/lv-mk_sample.html">view</a></td><td></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Latvian-Dutch (sample file)" href="CCMatrix/v1/lv-nl_sample.html">view</a></td><td><a rel="nofollow" title="Latvian-Norwegian (sample file)" href="CCMatrix/v1/lv-no_sample.html">view</a></td><td></td><td></td><td></td><td><a rel="nofollow" title="Latvian-Polish (sample file)" href="CCMatrix/v1/lv-pl_sample.html">view</a></td><td><a rel="nofollow" title="Latvian-Portuguese (sample file)" href="CCMatrix/v1/lv-pt_sample.html">view</a></td><td><a rel="nofollow" title="Latvian-Romanian (sample file)" href="CCMatrix/v1/lv-ro_sample.html">view</a></td><td><a rel="nofollow" title="Latvian-Russian (sample file)" href="CCMatrix/v1/lv-ru_sample.html">view</a></td><td></td><td></td><td><a rel="nofollow" title="Latvian-Slovak (sample file)" href="CCMatrix/v1/lv-sk_sample.html">view</a></td><td><a rel="nofollow" title="Latvian-Slovenian (sample file)" href="CCMatrix/v1/lv-sl_sample.html">view</a></td><td></td><th>lv</th>
 <td><a rel="nofollow" title="Latvian-Albanian (sample file)" href="CCMatrix/v1/lv-sq_sample.html">view</a></td><td><a rel="nofollow" title="Latvian-Serbian (sample file)" href="CCMatrix/v1/lv-sr_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Latvian-Swedish (sample file)" href="CCMatrix/v1/lv-sv_sample.html">view</a></td><td><a rel="nofollow" title="Latvian-Swahili (sample file)" href="CCMatrix/v1/lv-sw_sample.html">view</a></td><td><a rel="nofollow" title="Latvian-Tamil (sample file)" href="CCMatrix/v1/lv-ta_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Latvian-Turkish (sample file)" href="CCMatrix/v1/lv-tr_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Latvian-Ukrainian (sample file)" href="CCMatrix/v1/lv-uk_sample.html">view</a></td><td></td><td></td><td><a rel="nofollow" title="Latvian-Vietnamese (sample file)" href="CCMatrix/v1/lv-vi_sample.html">view</a></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Latvian-Chinese (sample file)" href="CCMatrix/v1/lv-zh_sample.html">view</a></td><td></td><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/raw/lv.zip">lv</a></th></tr>
@@ -1829,41 +1829,16 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Malagasy-Bengali' (0.4M links, 12.9M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-mg.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Malagasy-Bengali' (0.4M links, 14.7M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-mg.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Malagasy-Cebuano' (8.3k links, 0.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ceb-mg.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Malagasy-German' (0.7M links, 14.4M tokens)" href="download.php?f=CCMatrix/v1/xml/de-mg.xml.gz">ces</a></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Malagasy-English' (1.7M links, 32.6M tokens)" href="download.php?f=CCMatrix/v1/xml/en-mg.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Malagasy-Cebuano' (8.3k links, 0.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ceb-mg.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Malagasy-German' (0.7M links, 20.3M tokens)" href="download.php?f=CCMatrix/v1/xml/de-mg.xml.gz">ces</a></td>
 <td></td>
-<td></td>
-<td></td>
-<th>mg</th>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Malagasy-Hebrew' (0.5M links, 9.7M tokens)" href="download.php?f=CCMatrix/v1/xml/he-mg.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Malagasy-Hindi' (0.4M links, 12.1M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-mg.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Malagasy-Indonesian' (1.2M links, 25.9M tokens)" href="download.php?f=CCMatrix/v1/xml/id-mg.xml.gz">ces</a></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Malagasy-Iloko' (3.1k links, 48.7k tokens)" href="download.php?f=CCMatrix/v1/xml/ilo-mg.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Malagasy-Javanese' (23.6k links, 0.8M tokens)" href="download.php?f=CCMatrix/v1/xml/jv-mg.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Malagasy-English' (1.7M links, 50.7M tokens)" href="download.php?f=CCMatrix/v1/xml/en-mg.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -1872,7 +1847,32 @@
 <td></td>
 <th>mg</th>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Malagasy-Lithuanian' (0.5M links, 11.5M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-mg.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Malagasy-Hebrew' (0.5M links, 11.4M tokens)" href="download.php?f=CCMatrix/v1/xml/he-mg.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Malagasy-Hindi' (0.4M links, 15.0M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-mg.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Malagasy-Indonesian' (1.2M links, 38.4M tokens)" href="download.php?f=CCMatrix/v1/xml/id-mg.xml.gz">ces</a></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Malagasy-Iloko' (3.1k links, 68.5k tokens)" href="download.php?f=CCMatrix/v1/xml/ilo-mg.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Malagasy-Javanese' (23.6k links, 1.0M tokens)" href="download.php?f=CCMatrix/v1/xml/jv-mg.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<th>mg</th>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Malagasy-Lithuanian' (0.5M links, 13.0M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-mg.xml.gz">ces</a></td>
 <td></td>
 <th></th>
 <td></td><td><a rel="nofollow" title="Malagasy-Malayalam (sample file)" href="CCMatrix/v1/mg-ml_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Malagasy-Malay (sample file)" href="CCMatrix/v1/mg-ms_sample.html">view</a></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Malagasy-Russian (sample file)" href="CCMatrix/v1/mg-ru_sample.html">view</a></td><td></td><td></td><td></td><td></td><td></td><th>mg</th>
@@ -1884,23 +1884,23 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Macedonian-Bulgarian' (3.2M links, 95.8M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-mk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Macedonian-Bengali' (0.5M links, 13.2M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-mk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Macedonian-Bulgarian' (3.2M links, 110.7M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-mk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Macedonian-Bengali' (0.5M links, 14.5M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-mk.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Macedonian-Czech' (2.3M links, 55.2M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-mk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Macedonian-Czech' (2.3M links, 63.2M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-mk.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Macedonian-Danish' (1.6M links, 42.1M tokens)" href="download.php?f=CCMatrix/v1/xml/da-mk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Macedonian-German' (5.1M links, 103.8M tokens)" href="download.php?f=CCMatrix/v1/xml/de-mk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Macedonian-Danish' (1.6M links, 47.4M tokens)" href="download.php?f=CCMatrix/v1/xml/da-mk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Macedonian-German' (5.1M links, 132.6M tokens)" href="download.php?f=CCMatrix/v1/xml/de-mk.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Macedonian-English' (12.0M links, 254.3M tokens)" href="download.php?f=CCMatrix/v1/xml/en-mk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Macedonian-Esperanto' (0.5M links, 13.0M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-mk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Macedonian-Spanish' (5.7M links, 132.4M tokens)" href="download.php?f=CCMatrix/v1/xml/es-mk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Macedonian-Estonian' (1.1M links, 29.6M tokens)" href="download.php?f=CCMatrix/v1/xml/et-mk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Macedonian-English' (12.0M links, 364.7M tokens)" href="download.php?f=CCMatrix/v1/xml/en-mk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Macedonian-Esperanto' (0.5M links, 14.4M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-mk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Macedonian-Spanish' (5.7M links, 171.5M tokens)" href="download.php?f=CCMatrix/v1/xml/es-mk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Macedonian-Estonian' (1.1M links, 32.7M tokens)" href="download.php?f=CCMatrix/v1/xml/et-mk.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Macedonian-Finnish' (1.5M links, 34.6M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-mk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Macedonian-Finnish' (1.5M links, 39.2M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-mk.xml.gz">ces</a></td>
 <th>mk</th>
 <td></td>
 <td></td>
@@ -1910,8 +1910,8 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Macedonian-Croatian' (1.5M links, 43.8M tokens)" href="download.php?f=CCMatrix/v1/xml/hr-mk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Macedonian-Hungarian' (1.8M links, 44.4M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-mk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Macedonian-Croatian' (1.5M links, 50.8M tokens)" href="download.php?f=CCMatrix/v1/xml/hr-mk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Macedonian-Hungarian' (1.8M links, 50.0M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-mk.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -1923,13 +1923,13 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Macedonian-Korean' (0.9M links, 16.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ko-mk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Macedonian-Korean' (0.9M links, 19.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ko-mk.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <th>mk</th>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Macedonian-Lithuanian' (1.3M links, 34.0M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-mk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Macedonian-Latvian' (0.9M links, 25.5M tokens)" href="download.php?f=CCMatrix/v1/xml/lv-mk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Macedonian-Lithuanian' (1.3M links, 37.6M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-mk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Macedonian-Latvian' (0.9M links, 27.8M tokens)" href="download.php?f=CCMatrix/v1/xml/lv-mk.xml.gz">ces</a></td>
 <td></td>
 <th></th>
 <td></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Macedonian-Dutch (sample file)" href="CCMatrix/v1/mk-nl_sample.html">view</a></td><td><a rel="nofollow" title="Macedonian-Norwegian (sample file)" href="CCMatrix/v1/mk-no_sample.html">view</a></td><td></td><td></td><td></td><td><a rel="nofollow" title="Macedonian-Polish (sample file)" href="CCMatrix/v1/mk-pl_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Macedonian-Romanian (sample file)" href="CCMatrix/v1/mk-ro_sample.html">view</a></td><td><a rel="nofollow" title="Macedonian-Russian (sample file)" href="CCMatrix/v1/mk-ru_sample.html">view</a></td><td></td><td></td><td><a rel="nofollow" title="Macedonian-Slovak (sample file)" href="CCMatrix/v1/mk-sk_sample.html">view</a></td><td><a rel="nofollow" title="Macedonian-Slovenian (sample file)" href="CCMatrix/v1/mk-sl_sample.html">view</a></td><td></td><th>mk</th>
@@ -1937,57 +1937,57 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/ml.zip">ml</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Malayalam-Arabic' (2.0M links, 39.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-ml.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Malayalam-Arabic' (2.0M links, 46.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-ml.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Malayalam-Bengali' (0.5M links, 13.7M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-ml.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Malayalam-Bengali' (0.5M links, 14.9M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-ml.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Malayalam-Cebuano' (31.5k links, 0.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ceb-ml.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Malayalam-German' (2.4M links, 47.5M tokens)" href="download.php?f=CCMatrix/v1/xml/de-ml.xml.gz">ces</a></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Malayalam-English' (6.8M links, 122.7M tokens)" href="download.php?f=CCMatrix/v1/xml/en-ml.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Malayalam-Cebuano' (31.5k links, 0.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ceb-ml.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Malayalam-German' (2.4M links, 60.9M tokens)" href="download.php?f=CCMatrix/v1/xml/de-ml.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Malayalam-Persian' (1.7M links, 35.4M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-ml.xml.gz">ces</a></td>
-<td></td>
-<th>ml</th>
-<td><a rel="nofollow" title="sentence alignments for 'Malayalam-French' (2.1M links, 44.2M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-ml.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Malayalam-English' (6.8M links, 167.4M tokens)" href="download.php?f=CCMatrix/v1/xml/en-ml.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Malayalam-Hebrew' (1.9M links, 34.7M tokens)" href="download.php?f=CCMatrix/v1/xml/he-ml.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Malayalam-Hindi' (0.5M links, 14.3M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-ml.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Malayalam-Indonesian' (2.3M links, 45.2M tokens)" href="download.php?f=CCMatrix/v1/xml/id-ml.xml.gz">ces</a></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Malayalam-Iloko' (29.1k links, 0.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ilo-ml.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Malayalam-Japanese' (1.1M links, 15.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-ml.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Malayalam-Javanese' (37.3k links, 0.6M tokens)" href="download.php?f=CCMatrix/v1/xml/jv-ml.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Malayalam-Persian' (1.7M links, 42.0M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-ml.xml.gz">ces</a></td>
 <td></td>
 <th>ml</th>
+<td><a rel="nofollow" title="sentence alignments for 'Malayalam-French' (2.1M links, 55.1M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-ml.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Malayalam-Malagasy' (98.8k links, 2.7M tokens)" href="download.php?f=CCMatrix/v1/xml/mg-ml.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Malayalam-Hebrew' (1.9M links, 39.0M tokens)" href="download.php?f=CCMatrix/v1/xml/he-ml.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Malayalam-Hindi' (0.5M links, 15.4M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-ml.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Malayalam-Indonesian' (2.3M links, 55.9M tokens)" href="download.php?f=CCMatrix/v1/xml/id-ml.xml.gz">ces</a></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Malayalam-Iloko' (29.1k links, 0.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ilo-ml.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Malayalam-Japanese' (1.1M links, 19.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-ml.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Malayalam-Javanese' (37.3k links, 0.8M tokens)" href="download.php?f=CCMatrix/v1/xml/jv-ml.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<th>ml</th>
+<td></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Malayalam-Malagasy' (98.8k links, 3.2M tokens)" href="download.php?f=CCMatrix/v1/xml/mg-ml.xml.gz">ces</a></td>
 <td></td>
 <th></th>
 <td></td><td><a rel="nofollow" title="Malayalam-Malay (sample file)" href="CCMatrix/v1/ml-ms_sample.html">view</a></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Malayalam-Russian (sample file)" href="CCMatrix/v1/ml-ru_sample.html">view</a></td><td></td><td></td><td></td><td></td><td></td><th>ml</th>
@@ -1995,12 +1995,12 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/mr.zip">mr</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Marathi-Arabic' (1.1M links, 21.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-mr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Marathi-Arabic' (1.1M links, 26.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-mr.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Marathi-Bengali' (0.2M links, 5.4M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-mr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Marathi-Bengali' (0.2M links, 5.8M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-mr.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -2009,12 +2009,12 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Marathi-English' (2.9M links, 47.6M tokens)" href="download.php?f=CCMatrix/v1/xml/en-mr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Marathi-English' (2.9M links, 64.1M tokens)" href="download.php?f=CCMatrix/v1/xml/en-mr.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Marathi-Persian' (0.9M links, 16.5M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-mr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Marathi-Persian' (0.9M links, 20.8M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-mr.xml.gz">ces</a></td>
 <td></td>
 <th>mr</th>
 <td></td>
@@ -2023,12 +2023,12 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Marathi-Hebrew' (1.0M links, 18.4M tokens)" href="download.php?f=CCMatrix/v1/xml/he-mr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Marathi-Hindi' (0.5M links, 14.8M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-mr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Marathi-Hebrew' (1.0M links, 21.5M tokens)" href="download.php?f=CCMatrix/v1/xml/he-mr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Marathi-Hindi' (0.5M links, 16.4M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-mr.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Marathi-Indonesian' (1.3M links, 22.9M tokens)" href="download.php?f=CCMatrix/v1/xml/id-mr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Marathi-Indonesian' (1.3M links, 33.4M tokens)" href="download.php?f=CCMatrix/v1/xml/id-mr.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -2054,59 +2054,59 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/ms.zip">ms</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Malay-Arabic' (2.7M links, 48.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-ms.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Malay-Arabic' (2.7M links, 57.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-ms.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Malay-Bengali' (0.5M links, 11.9M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-ms.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Malay-Bengali' (0.5M links, 13.2M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-ms.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Malay-Cebuano' (25.9k links, 0.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ceb-ms.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Malay-German' (4.0M links, 74.8M tokens)" href="download.php?f=CCMatrix/v1/xml/de-ms.xml.gz">ces</a></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Malay-English' (10.7M links, 199.2M tokens)" href="download.php?f=CCMatrix/v1/xml/en-ms.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Malay-Cebuano' (25.9k links, 0.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ceb-ms.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Malay-German' (4.0M links, 93.4M tokens)" href="download.php?f=CCMatrix/v1/xml/de-ms.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Malay-Persian' (2.2M links, 40.2M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-ms.xml.gz">ces</a></td>
-<td></td>
-<th>ms</th>
-<td><a rel="nofollow" title="sentence alignments for 'Malay-French' (4.1M links, 86.4M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-ms.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Malay-English' (10.7M links, 274.1M tokens)" href="download.php?f=CCMatrix/v1/xml/en-ms.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Malay-Hebrew' (1.9M links, 29.4M tokens)" href="download.php?f=CCMatrix/v1/xml/he-ms.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Malay-Hindi' (0.6M links, 18.5M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-ms.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Malay-Indonesian' (7.8M links, 149.2M tokens)" href="download.php?f=CCMatrix/v1/xml/id-ms.xml.gz">ces</a></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Malay-Iloko' (25.7k links, 0.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ilo-ms.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Malay-Japanese' (1.7M links, 17.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-ms.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Malay-Javanese' (59.1k links, 1.0M tokens)" href="download.php?f=CCMatrix/v1/xml/jv-ms.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Malay-Persian' (2.2M links, 47.6M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-ms.xml.gz">ces</a></td>
 <td></td>
 <th>ms</th>
+<td><a rel="nofollow" title="sentence alignments for 'Malay-French' (4.1M links, 106.6M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-ms.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Malay-Malagasy' (83.6k links, 1.9M tokens)" href="download.php?f=CCMatrix/v1/xml/mg-ms.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Malay-Malayalam' (0.3M links, 5.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ml-ms.xml.gz">ces</a></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Malay-Hebrew' (1.9M links, 33.1M tokens)" href="download.php?f=CCMatrix/v1/xml/he-ms.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Malay-Hindi' (0.6M links, 20.1M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-ms.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Malay-Indonesian' (7.8M links, 184.1M tokens)" href="download.php?f=CCMatrix/v1/xml/id-ms.xml.gz">ces</a></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Malay-Iloko' (25.7k links, 0.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ilo-ms.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Malay-Japanese' (1.7M links, 23.1M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-ms.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Malay-Javanese' (59.1k links, 1.2M tokens)" href="download.php?f=CCMatrix/v1/xml/jv-ms.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<th>ms</th>
+<td></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Malay-Malagasy' (83.6k links, 2.1M tokens)" href="download.php?f=CCMatrix/v1/xml/mg-ms.xml.gz">ces</a></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Malay-Malayalam' (0.3M links, 6.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ml-ms.xml.gz">ces</a></td>
 <td></td>
 <th></th>
 <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Malay-Russian (sample file)" href="CCMatrix/v1/ms-ru_sample.html">view</a></td><td></td><td></td><td></td><td></td><td></td><th>ms</th>
@@ -2114,9 +2114,9 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/my.zip">my</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Burmese-Arabic' (76.4k links, 2.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-my.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Burmese-Arabic' (76.4k links, 3.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-my.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Burmese-Azerbaijani' (27.7k links, 0.8M tokens)" href="download.php?f=CCMatrix/v1/xml/az-my.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Burmese-Azerbaijani' (27.7k links, 1.2M tokens)" href="download.php?f=CCMatrix/v1/xml/az-my.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -2146,7 +2146,7 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Burmese-Armenian' (18.8k links, 0.6M tokens)" href="download.php?f=CCMatrix/v1/xml/hy-my.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Burmese-Armenian' (18.8k links, 0.8M tokens)" href="download.php?f=CCMatrix/v1/xml/hy-my.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -2175,12 +2175,12 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/ne.zip">ne</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Nepali-Arabic' (2.2M links, 49.1M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-ne.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Nepali-Arabic' (2.2M links, 110.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-ne.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Nepali-Bengali' (41.4k links, 1.0M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-ne.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Nepali-Bengali' (41.4k links, 1.1M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-ne.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -2189,12 +2189,12 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Nepali-English' (0.7M links, 11.9M tokens)" href="download.php?f=CCMatrix/v1/xml/en-ne.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Nepali-English' (0.7M links, 16.8M tokens)" href="download.php?f=CCMatrix/v1/xml/en-ne.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Nepali-Persian' (1.7M links, 44.6M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-ne.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Nepali-Persian' (1.7M links, 92.7M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-ne.xml.gz">ces</a></td>
 <td></td>
 <th>ne</th>
 <td></td>
@@ -2203,12 +2203,12 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Nepali-Hebrew' (1.2M links, 22.4M tokens)" href="download.php?f=CCMatrix/v1/xml/he-ne.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Nepali-Hindi' (59.5k links, 1.5M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-ne.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Nepali-Hebrew' (1.2M links, 50.6M tokens)" href="download.php?f=CCMatrix/v1/xml/he-ne.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Nepali-Hindi' (59.5k links, 1.7M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-ne.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Nepali-Indonesian' (6.3M links, 126.3M tokens)" href="download.php?f=CCMatrix/v1/xml/id-ne.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Nepali-Indonesian' (6.3M links, 293.6M tokens)" href="download.php?f=CCMatrix/v1/xml/id-ne.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -2235,60 +2235,60 @@
 <td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Nepali-Oriya (sample file)" href="CCMatrix/v1/ne-or_sample.html">view</a></td><td></td><td></td><td></td><td><a rel="nofollow" title="Nepali-Russian (sample file)" href="CCMatrix/v1/ne-ru_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Nepali-Sinhala (sample file)" href="CCMatrix/v1/ne-si_sample.html">view</a></td><td></td><td></td><td></td><th>ne</th>
 <td></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Nepali-Tamil (sample file)" href="CCMatrix/v1/ne-ta_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Nepali-Turkish (sample file)" href="CCMatrix/v1/ne-tr_sample.html">view</a></td><td></td><td></td><td><a rel="nofollow" title="Nepali-Urdu (sample file)" href="CCMatrix/v1/ne-ur_sample.html">view</a></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/raw/ne.zip">ne</a></th></tr>
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/nl.zip">nl</a></th>
-<td><a rel="nofollow" title="sentence alignments for 'Dutch-Afrikaans' (2.3M links, 60.3M tokens)" href="download.php?f=CCMatrix/v1/xml/af-nl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Dutch-Afrikaans' (2.3M links, 67.8M tokens)" href="download.php?f=CCMatrix/v1/xml/af-nl.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Dutch-Arabic' (7.7M links, 236.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-nl.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Dutch-Belarusian' (0.3M links, 5.4M tokens)" href="download.php?f=CCMatrix/v1/xml/be-nl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Dutch-Bulgarian' (10.5M links, 340.7M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-nl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Dutch-Bengali' (1.8M links, 47.0M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-nl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Dutch-Breton' (93.0k links, 1.5M tokens)" href="download.php?f=CCMatrix/v1/xml/br-nl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Dutch-Arabic' (7.7M links, 259.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-nl.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Dutch-Czech' (25.5M links, 547.0M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-nl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Dutch-Welsh' (0.2M links, 2.0M tokens)" href="download.php?f=CCMatrix/v1/xml/cy-nl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Dutch-Danish' (16.6M links, 528.5M tokens)" href="download.php?f=CCMatrix/v1/xml/da-nl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Dutch-German' (68.8M links, 2.0G tokens)" href="download.php?f=CCMatrix/v1/xml/de-nl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Dutch-Greek' (11.0M links, 376.5M tokens)" href="download.php?f=CCMatrix/v1/xml/el-nl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Dutch-English' (106.7M links, 2.9G tokens)" href="download.php?f=CCMatrix/v1/xml/en-nl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Dutch-Esperanto' (2.2M links, 46.1M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-nl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Dutch-Spanish' (46.7M links, 1.5G tokens)" href="download.php?f=CCMatrix/v1/xml/es-nl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Dutch-Estonian' (6.9M links, 204.2M tokens)" href="download.php?f=CCMatrix/v1/xml/et-nl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Dutch-Belarusian' (0.3M links, 13.8M tokens)" href="download.php?f=CCMatrix/v1/xml/be-nl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Dutch-Bulgarian' (10.5M links, 382.2M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-nl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Dutch-Bengali' (1.8M links, 52.9M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-nl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Dutch-Breton' (93.0k links, 3.6M tokens)" href="download.php?f=CCMatrix/v1/xml/br-nl.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Dutch-Persian' (7.4M links, 153.3M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-nl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Dutch-Finnish' (11.4M links, 331.3M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-nl.xml.gz">ces</a></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Dutch-Czech' (25.5M links, 619.3M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-nl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Dutch-Welsh' (0.2M links, 3.7M tokens)" href="download.php?f=CCMatrix/v1/xml/cy-nl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Dutch-Danish' (16.6M links, 581.4M tokens)" href="download.php?f=CCMatrix/v1/xml/da-nl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Dutch-German' (68.8M links, 2.3G tokens)" href="download.php?f=CCMatrix/v1/xml/de-nl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Dutch-Greek' (11.0M links, 419.8M tokens)" href="download.php?f=CCMatrix/v1/xml/el-nl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Dutch-English' (106.7M links, 3.6G tokens)" href="download.php?f=CCMatrix/v1/xml/en-nl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Dutch-Esperanto' (2.2M links, 54.6M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-nl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Dutch-Spanish' (46.7M links, 1.8G tokens)" href="download.php?f=CCMatrix/v1/xml/es-nl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Dutch-Estonian' (6.9M links, 226.9M tokens)" href="download.php?f=CCMatrix/v1/xml/et-nl.xml.gz">ces</a></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Dutch-Persian' (7.4M links, 173.3M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-nl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Dutch-Finnish' (11.4M links, 360.8M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-nl.xml.gz">ces</a></td>
 <th>nl</th>
-<td><a rel="nofollow" title="sentence alignments for 'Dutch-French' (36.3M links, 1.3G tokens)" href="download.php?f=CCMatrix/v1/xml/fr-nl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Dutch-Western Frisian' (0.5M links, 8.6M tokens)" href="download.php?f=CCMatrix/v1/xml/fy-nl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Dutch-Irish' (0.2M links, 2.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ga-nl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Dutch-Gaelic' (0.1M links, 1.4M tokens)" href="download.php?f=CCMatrix/v1/xml/gd-nl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Dutch-French' (36.3M links, 1.5G tokens)" href="download.php?f=CCMatrix/v1/xml/fr-nl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Dutch-Western Frisian' (0.5M links, 11.3M tokens)" href="download.php?f=CCMatrix/v1/xml/fy-nl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Dutch-Irish' (0.2M links, 8.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ga-nl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Dutch-Gaelic' (0.1M links, 2.4M tokens)" href="download.php?f=CCMatrix/v1/xml/gd-nl.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Dutch-Hausa' (0.2M links, 3.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ha-nl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Dutch-Hebrew' (9.5M links, 162.0M tokens)" href="download.php?f=CCMatrix/v1/xml/he-nl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Dutch-Hindi' (2.8M links, 108.1M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-nl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Dutch-Hausa' (0.2M links, 6.1M tokens)" href="download.php?f=CCMatrix/v1/xml/ha-nl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Dutch-Hebrew' (9.5M links, 185.9M tokens)" href="download.php?f=CCMatrix/v1/xml/he-nl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Dutch-Hindi' (2.8M links, 117.7M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-nl.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Dutch-Hungarian' (11.6M links, 364.6M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-nl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Dutch-Hungarian' (11.6M links, 401.1M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-nl.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Dutch-Indonesian' (9.4M links, 280.2M tokens)" href="download.php?f=CCMatrix/v1/xml/id-nl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Dutch-Igbo' (0.1M links, 1.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ig-nl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Dutch-Indonesian' (9.4M links, 311.7M tokens)" href="download.php?f=CCMatrix/v1/xml/id-nl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Dutch-Igbo' (0.1M links, 2.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ig-nl.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Dutch-Icelandic' (1.7M links, 33.8M tokens)" href="download.php?f=CCMatrix/v1/xml/is-nl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Dutch-Italian' (29.3M links, 1.0G tokens)" href="download.php?f=CCMatrix/v1/xml/it-nl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Dutch-Japanese' (12.4M links, 149.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-nl.xml.gz">ces</a></td>
-<td></td>
-<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Dutch-Icelandic' (1.7M links, 38.7M tokens)" href="download.php?f=CCMatrix/v1/xml/is-nl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Dutch-Italian' (29.3M links, 1.2G tokens)" href="download.php?f=CCMatrix/v1/xml/it-nl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Dutch-Japanese' (12.4M links, 178.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-nl.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Dutch-Korean' (8.4M links, 142.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ko-nl.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Dutch-Luxembourgish' (0.6M links, 8.2M tokens)" href="download.php?f=CCMatrix/v1/xml/lb-nl.xml.gz">ces</a></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Dutch-Korean' (8.4M links, 158.9M tokens)" href="download.php?f=CCMatrix/v1/xml/ko-nl.xml.gz">ces</a></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Dutch-Luxembourgish' (0.6M links, 11.6M tokens)" href="download.php?f=CCMatrix/v1/xml/lb-nl.xml.gz">ces</a></td>
 <th>nl</th>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Dutch-Lithuanian' (7.4M links, 232.5M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-nl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Dutch-Latvian' (5.5M links, 175.1M tokens)" href="download.php?f=CCMatrix/v1/xml/lv-nl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Dutch-Lithuanian' (7.4M links, 255.0M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-nl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Dutch-Latvian' (5.5M links, 194.7M tokens)" href="download.php?f=CCMatrix/v1/xml/lv-nl.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Dutch-Macedonian' (2.5M links, 59.8M tokens)" href="download.php?f=CCMatrix/v1/xml/mk-nl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Dutch-Macedonian' (2.5M links, 69.9M tokens)" href="download.php?f=CCMatrix/v1/xml/mk-nl.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -2298,66 +2298,66 @@
 <td><a rel="nofollow" title="Dutch-Norwegian (sample file)" href="CCMatrix/v1/nl-no_sample.html">view</a></td><td></td><td></td><td></td><td><a rel="nofollow" title="Dutch-Polish (sample file)" href="CCMatrix/v1/nl-pl_sample.html">view</a></td><td><a rel="nofollow" title="Dutch-Portuguese (sample file)" href="CCMatrix/v1/nl-pt_sample.html">view</a></td><td><a rel="nofollow" title="Dutch-Romanian (sample file)" href="CCMatrix/v1/nl-ro_sample.html">view</a></td><td><a rel="nofollow" title="Dutch-Russian (sample file)" href="CCMatrix/v1/nl-ru_sample.html">view</a></td><td></td><td></td><td><a rel="nofollow" title="Dutch-Slovak (sample file)" href="CCMatrix/v1/nl-sk_sample.html">view</a></td><td><a rel="nofollow" title="Dutch-Slovenian (sample file)" href="CCMatrix/v1/nl-sl_sample.html">view</a></td><td><a rel="nofollow" title="Dutch-Somali (sample file)" href="CCMatrix/v1/nl-so_sample.html">view</a></td><th>nl</th>
 <td></td><td><a rel="nofollow" title="Dutch-Serbian (sample file)" href="CCMatrix/v1/nl-sr_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Dutch-Swedish (sample file)" href="CCMatrix/v1/nl-sv_sample.html">view</a></td><td><a rel="nofollow" title="Dutch-Swahili (sample file)" href="CCMatrix/v1/nl-sw_sample.html">view</a></td><td><a rel="nofollow" title="Dutch-Tamil (sample file)" href="CCMatrix/v1/nl-ta_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Dutch-Turkish (sample file)" href="CCMatrix/v1/nl-tr_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Dutch-Ukrainian (sample file)" href="CCMatrix/v1/nl-uk_sample.html">view</a></td><td></td><td></td><td><a rel="nofollow" title="Dutch-Vietnamese (sample file)" href="CCMatrix/v1/nl-vi_sample.html">view</a></td><td></td><td></td><td><a rel="nofollow" title="Dutch-Yiddish (sample file)" href="CCMatrix/v1/nl-yi_sample.html">view</a></td><td><a rel="nofollow" title="Dutch-Yoruba (sample file)" href="CCMatrix/v1/nl-yo_sample.html">view</a></td><td><a rel="nofollow" title="Dutch-Chinese (sample file)" href="CCMatrix/v1/nl-zh_sample.html">view</a></td><td></td><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/raw/nl.zip">nl</a></th></tr>
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/no.zip">no</a></th>
-<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Afrikaans' (1.4M links, 39.1M tokens)" href="download.php?f=CCMatrix/v1/xml/af-no.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Afrikaans' (1.4M links, 42.2M tokens)" href="download.php?f=CCMatrix/v1/xml/af-no.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Arabic' (4.6M links, 135.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-no.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Belarusian' (0.2M links, 3.3M tokens)" href="download.php?f=CCMatrix/v1/xml/be-no.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Bulgarian' (6.1M links, 182.0M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-no.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Arabic' (4.6M links, 146.9M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-no.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Catalan' (2.0M links, 46.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-no.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Belarusian' (0.2M links, 5.3M tokens)" href="download.php?f=CCMatrix/v1/xml/be-no.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Bulgarian' (6.1M links, 198.9M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-no.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Czech' (8.0M links, 219.3M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-no.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Danish' (17.7M links, 513.9M tokens)" href="download.php?f=CCMatrix/v1/xml/da-no.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Norwegian-German' (23.8M links, 600.7M tokens)" href="download.php?f=CCMatrix/v1/xml/de-no.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Greek' (5.9M links, 177.6M tokens)" href="download.php?f=CCMatrix/v1/xml/el-no.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Norwegian-English' (47.8M links, 1.1G tokens)" href="download.php?f=CCMatrix/v1/xml/en-no.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Esperanto' (1.2M links, 26.2M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-no.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Spanish' (19.9M links, 555.7M tokens)" href="download.php?f=CCMatrix/v1/xml/es-no.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Estonian' (4.2M links, 112.7M tokens)" href="download.php?f=CCMatrix/v1/xml/et-no.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Basque' (0.9M links, 16.9M tokens)" href="download.php?f=CCMatrix/v1/xml/eu-no.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Persian' (2.3M links, 66.5M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-no.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Finnish' (8.1M links, 218.5M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-no.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Catalan' (2.0M links, 51.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-no.xml.gz">ces</a></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Czech' (8.0M links, 237.8M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-no.xml.gz">ces</a></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Danish' (17.7M links, 565.5M tokens)" href="download.php?f=CCMatrix/v1/xml/da-no.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Norwegian-German' (23.8M links, 692.0M tokens)" href="download.php?f=CCMatrix/v1/xml/de-no.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Greek' (5.9M links, 193.5M tokens)" href="download.php?f=CCMatrix/v1/xml/el-no.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Norwegian-English' (47.8M links, 1.4G tokens)" href="download.php?f=CCMatrix/v1/xml/en-no.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Esperanto' (1.2M links, 30.2M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-no.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Spanish' (19.9M links, 656.4M tokens)" href="download.php?f=CCMatrix/v1/xml/es-no.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Estonian' (4.2M links, 122.2M tokens)" href="download.php?f=CCMatrix/v1/xml/et-no.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Basque' (0.9M links, 18.4M tokens)" href="download.php?f=CCMatrix/v1/xml/eu-no.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Persian' (2.3M links, 72.0M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-no.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Finnish' (8.1M links, 235.2M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-no.xml.gz">ces</a></td>
 <th>no</th>
-<td><a rel="nofollow" title="sentence alignments for 'Norwegian-French' (19.8M links, 565.2M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-no.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Western Frisian' (0.6M links, 7.8M tokens)" href="download.php?f=CCMatrix/v1/xml/fy-no.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Norwegian-French' (19.8M links, 652.4M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-no.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Western Frisian' (0.6M links, 10.8M tokens)" href="download.php?f=CCMatrix/v1/xml/fy-no.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Gaelic' (42.7k links, 0.4M tokens)" href="download.php?f=CCMatrix/v1/xml/gd-no.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Hebrew' (3.3M links, 80.8M tokens)" href="download.php?f=CCMatrix/v1/xml/he-no.xml.gz">ces</a></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Croatian' (2.5M links, 61.2M tokens)" href="download.php?f=CCMatrix/v1/xml/hr-no.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Hungarian' (6.2M links, 175.5M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-no.xml.gz">ces</a></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Indonesian' (6.1M links, 175.8M tokens)" href="download.php?f=CCMatrix/v1/xml/id-no.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Gaelic' (42.7k links, 0.7M tokens)" href="download.php?f=CCMatrix/v1/xml/gd-no.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Icelandic' (1.3M links, 29.4M tokens)" href="download.php?f=CCMatrix/v1/xml/is-no.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Italian' (12.7M links, 400.0M tokens)" href="download.php?f=CCMatrix/v1/xml/it-no.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Japanese' (4.0M links, 52.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-no.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Hebrew' (3.3M links, 86.3M tokens)" href="download.php?f=CCMatrix/v1/xml/he-no.xml.gz">ces</a></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Croatian' (2.5M links, 66.9M tokens)" href="download.php?f=CCMatrix/v1/xml/hr-no.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Hungarian' (6.2M links, 188.9M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-no.xml.gz">ces</a></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Indonesian' (6.1M links, 196.1M tokens)" href="download.php?f=CCMatrix/v1/xml/id-no.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Icelandic' (1.3M links, 32.7M tokens)" href="download.php?f=CCMatrix/v1/xml/is-no.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Italian' (12.7M links, 440.3M tokens)" href="download.php?f=CCMatrix/v1/xml/it-no.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Japanese' (4.0M links, 60.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-no.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Korean' (2.7M links, 61.9M tokens)" href="download.php?f=CCMatrix/v1/xml/ko-no.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Korean' (2.7M links, 65.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ko-no.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Luxembourgish' (0.2M links, 4.2M tokens)" href="download.php?f=CCMatrix/v1/xml/lb-no.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Luxembourgish' (0.2M links, 5.0M tokens)" href="download.php?f=CCMatrix/v1/xml/lb-no.xml.gz">ces</a></td>
 <th>no</th>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Lithuanian' (4.6M links, 128.1M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-no.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Latvian' (3.4M links, 103.3M tokens)" href="download.php?f=CCMatrix/v1/xml/lv-no.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Lithuanian' (4.6M links, 137.2M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-no.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Latvian' (3.4M links, 111.3M tokens)" href="download.php?f=CCMatrix/v1/xml/lv-no.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Macedonian' (1.6M links, 41.6M tokens)" href="download.php?f=CCMatrix/v1/xml/mk-no.xml.gz">ces</a></td>
-<td></td>
-<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Macedonian' (1.6M links, 46.8M tokens)" href="download.php?f=CCMatrix/v1/xml/mk-no.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Dutch' (14.0M links, 410.4M tokens)" href="download.php?f=CCMatrix/v1/xml/nl-no.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Norwegian-Dutch' (14.0M links, 445.2M tokens)" href="download.php?f=CCMatrix/v1/xml/nl-no.xml.gz">ces</a></td>
 <th></th>
 <td></td><td></td><td></td><td><a rel="nofollow" title="Norwegian-Polish (sample file)" href="CCMatrix/v1/no-pl_sample.html">view</a></td><td><a rel="nofollow" title="Norwegian-Portuguese (sample file)" href="CCMatrix/v1/no-pt_sample.html">view</a></td><td><a rel="nofollow" title="Norwegian-Romanian (sample file)" href="CCMatrix/v1/no-ro_sample.html">view</a></td><td><a rel="nofollow" title="Norwegian-Russian (sample file)" href="CCMatrix/v1/no-ru_sample.html">view</a></td><td></td><td></td><td><a rel="nofollow" title="Norwegian-Slovak (sample file)" href="CCMatrix/v1/no-sk_sample.html">view</a></td><td><a rel="nofollow" title="Norwegian-Slovenian (sample file)" href="CCMatrix/v1/no-sl_sample.html">view</a></td><td></td><th>no</th>
 <td><a rel="nofollow" title="Norwegian-Albanian (sample file)" href="CCMatrix/v1/no-sq_sample.html">view</a></td><td><a rel="nofollow" title="Norwegian-Serbian (sample file)" href="CCMatrix/v1/no-sr_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Norwegian-Swedish (sample file)" href="CCMatrix/v1/no-sv_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Norwegian-Tamil (sample file)" href="CCMatrix/v1/no-ta_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Norwegian-Turkish (sample file)" href="CCMatrix/v1/no-tr_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Norwegian-Ukrainian (sample file)" href="CCMatrix/v1/no-uk_sample.html">view</a></td><td></td><td></td><td><a rel="nofollow" title="Norwegian-Vietnamese (sample file)" href="CCMatrix/v1/no-vi_sample.html">view</a></td><td></td><td></td><td><a rel="nofollow" title="Norwegian-Yiddish (sample file)" href="CCMatrix/v1/no-yi_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Norwegian-Chinese (sample file)" href="CCMatrix/v1/no-zh_sample.html">view</a></td><td></td><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/raw/no.zip">no</a></th></tr>
@@ -2365,43 +2365,43 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Occitan (post 1500)-Asturian' (33.6k links, 0.9M tokens)" href="download.php?f=CCMatrix/v1/xml/ast-oc.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Occitan (post 1500)-Asturian' (33.6k links, 1.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ast-oc.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Occitan (post 1500)-Catalan' (0.2M links, 3.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-oc.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Occitan (post 1500)-Catalan' (0.2M links, 4.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-oc.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Occitan (post 1500)-English' (1.7M links, 16.5M tokens)" href="download.php?f=CCMatrix/v1/xml/en-oc.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Occitan (post 1500)-English' (1.7M links, 28.7M tokens)" href="download.php?f=CCMatrix/v1/xml/en-oc.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Occitan (post 1500)-Spanish' (0.9M links, 9.5M tokens)" href="download.php?f=CCMatrix/v1/xml/es-oc.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Occitan (post 1500)-Spanish' (0.9M links, 15.0M tokens)" href="download.php?f=CCMatrix/v1/xml/es-oc.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 <th>oc</th>
-<td><a rel="nofollow" title="sentence alignments for 'Occitan (post 1500)-French' (1.2M links, 15.3M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-oc.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Occitan (post 1500)-French' (1.2M links, 23.9M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-oc.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Occitan (post 1500)-Galician' (0.1M links, 1.6M tokens)" href="download.php?f=CCMatrix/v1/xml/gl-oc.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Occitan (post 1500)-Galician' (0.1M links, 1.9M tokens)" href="download.php?f=CCMatrix/v1/xml/gl-oc.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Occitan (post 1500)-Italian' (1.6M links, 15.8M tokens)" href="download.php?f=CCMatrix/v1/xml/it-oc.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Occitan (post 1500)-Italian' (1.6M links, 24.7M tokens)" href="download.php?f=CCMatrix/v1/xml/it-oc.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -2429,7 +2429,7 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/om.zip">om</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Oromo-Arabic' (20.3k links, 0.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-om.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Oromo-Arabic' (20.3k links, 0.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-om.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -2460,7 +2460,7 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Oromo-Hungarian' (7.1k links, 98.7k tokens)" href="download.php?f=CCMatrix/v1/xml/hu-om.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Oromo-Hungarian' (7.1k links, 0.1M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-om.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -2495,7 +2495,7 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/or.zip">or</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Oriya-Arabic' (8.0k links, 0.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-or.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Oriya-Arabic' (8.0k links, 0.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-or.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -2509,37 +2509,12 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Oriya-English' (96.6k links, 1.6M tokens)" href="download.php?f=CCMatrix/v1/xml/en-or.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Oriya-English' (96.6k links, 2.7M tokens)" href="download.php?f=CCMatrix/v1/xml/en-or.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Oriya-Persian' (9.6k links, 0.2M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-or.xml.gz">ces</a></td>
-<td></td>
-<th>or</th>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Oriya-Hindi' (5.2k links, 0.1M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-or.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Oriya-Persian' (9.6k links, 0.3M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-or.xml.gz">ces</a></td>
 <td></td>
 <th>or</th>
 <td></td>
@@ -2548,10 +2523,35 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Oriya-Marathi' (3.4k links, 74.7k tokens)" href="download.php?f=CCMatrix/v1/xml/mr-or.xml.gz">ces</a></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Oriya-Hindi' (5.2k links, 0.2M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-or.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Oriya-Nepali' (2.8k links, 53.4k tokens)" href="download.php?f=CCMatrix/v1/xml/ne-or.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<th>or</th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Oriya-Marathi' (3.4k links, 99.4k tokens)" href="download.php?f=CCMatrix/v1/xml/mr-or.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Oriya-Nepali' (2.8k links, 78.5k tokens)" href="download.php?f=CCMatrix/v1/xml/ne-or.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -2562,65 +2562,65 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/pl.zip">pl</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Polish-Arabic' (7.2M links, 203.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-pl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Polish-Arabic' (7.2M links, 224.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-pl.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Polish-Belarusian' (2.3M links, 38.3M tokens)" href="download.php?f=CCMatrix/v1/xml/be-pl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Polish-Bulgarian' (19.5M links, 424.6M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-pl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Polish-Bengali' (1.6M links, 41.6M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-pl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Polish-Belarusian' (2.3M links, 66.3M tokens)" href="download.php?f=CCMatrix/v1/xml/be-pl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Polish-Bulgarian' (19.5M links, 498.9M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-pl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Polish-Bengali' (1.6M links, 46.3M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-pl.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Polish-Czech' (31.8M links, 642.5M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-pl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Polish-Czech' (31.8M links, 739.2M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-pl.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Polish-Danish' (5.9M links, 115.0M tokens)" href="download.php?f=CCMatrix/v1/xml/da-pl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Polish-German' (44.6M links, 880.0M tokens)" href="download.php?f=CCMatrix/v1/xml/de-pl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Polish-Greek' (10.4M links, 329.8M tokens)" href="download.php?f=CCMatrix/v1/xml/el-pl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Polish-English' (74.1M links, 2.0G tokens)" href="download.php?f=CCMatrix/v1/xml/en-pl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Polish-Danish' (5.9M links, 131.5M tokens)" href="download.php?f=CCMatrix/v1/xml/da-pl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Polish-German' (44.6M links, 1.2G tokens)" href="download.php?f=CCMatrix/v1/xml/de-pl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Polish-Greek' (10.4M links, 369.5M tokens)" href="download.php?f=CCMatrix/v1/xml/el-pl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Polish-English' (74.1M links, 2.5G tokens)" href="download.php?f=CCMatrix/v1/xml/en-pl.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Polish-Spanish' (41.4M links, 884.6M tokens)" href="download.php?f=CCMatrix/v1/xml/es-pl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Polish-Estonian' (7.0M links, 191.2M tokens)" href="download.php?f=CCMatrix/v1/xml/et-pl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Polish-Spanish' (41.4M links, 1.2G tokens)" href="download.php?f=CCMatrix/v1/xml/es-pl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Polish-Estonian' (7.0M links, 213.5M tokens)" href="download.php?f=CCMatrix/v1/xml/et-pl.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Polish-Persian' (7.1M links, 133.9M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-pl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Polish-Finnish' (10.0M links, 263.6M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-pl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Polish-Persian' (7.1M links, 151.6M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-pl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Polish-Finnish' (10.0M links, 288.3M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-pl.xml.gz">ces</a></td>
 <th>pl</th>
-<td><a rel="nofollow" title="sentence alignments for 'Polish-French' (41.5M links, 898.4M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-pl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Polish-French' (41.5M links, 1.2G tokens)" href="download.php?f=CCMatrix/v1/xml/fr-pl.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Polish-Hebrew' (8.8M links, 136.8M tokens)" href="download.php?f=CCMatrix/v1/xml/he-pl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Polish-Hindi' (2.4M links, 84.1M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-pl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Polish-Croatian' (5.2M links, 137.0M tokens)" href="download.php?f=CCMatrix/v1/xml/hr-pl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Polish-Hungarian' (12.6M links, 369.2M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-pl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Polish-Hebrew' (8.8M links, 157.1M tokens)" href="download.php?f=CCMatrix/v1/xml/he-pl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Polish-Hindi' (2.4M links, 91.6M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-pl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Polish-Croatian' (5.2M links, 157.8M tokens)" href="download.php?f=CCMatrix/v1/xml/hr-pl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Polish-Hungarian' (12.6M links, 408.3M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-pl.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Polish-Indonesian' (13.7M links, 267.8M tokens)" href="download.php?f=CCMatrix/v1/xml/id-pl.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Polish-Italian' (13.0M links, 298.2M tokens)" href="download.php?f=CCMatrix/v1/xml/it-pl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Polish-Japanese' (11.6M links, 127.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-pl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Polish-Indonesian' (13.7M links, 305.1M tokens)" href="download.php?f=CCMatrix/v1/xml/id-pl.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Polish-Italian' (13.0M links, 348.2M tokens)" href="download.php?f=CCMatrix/v1/xml/it-pl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Polish-Japanese' (11.6M links, 154.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-pl.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Polish-Korean' (7.6M links, 118.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ko-pl.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Polish-Korean' (7.6M links, 132.9M tokens)" href="download.php?f=CCMatrix/v1/xml/ko-pl.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <th>pl</th>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Polish-Lithuanian' (9.2M links, 261.8M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-pl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Polish-Latvian' (6.0M links, 174.7M tokens)" href="download.php?f=CCMatrix/v1/xml/lv-pl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Polish-Lithuanian' (9.2M links, 291.9M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-pl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Polish-Latvian' (6.0M links, 197.5M tokens)" href="download.php?f=CCMatrix/v1/xml/lv-pl.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Polish-Macedonian' (2.8M links, 63.9M tokens)" href="download.php?f=CCMatrix/v1/xml/mk-pl.xml.gz">ces</a></td>
-<td></td>
-<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Polish-Macedonian' (2.8M links, 74.6M tokens)" href="download.php?f=CCMatrix/v1/xml/mk-pl.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Polish-Dutch' (30.1M links, 660.6M tokens)" href="download.php?f=CCMatrix/v1/xml/nl-pl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Polish-Norwegian' (5.0M links, 87.2M tokens)" href="download.php?f=CCMatrix/v1/xml/no-pl.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Polish-Dutch' (30.1M links, 753.5M tokens)" href="download.php?f=CCMatrix/v1/xml/nl-pl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Polish-Norwegian' (5.0M links, 99.5M tokens)" href="download.php?f=CCMatrix/v1/xml/no-pl.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -2630,56 +2630,56 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/pt.zip">pt</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Arabic' (8.6M links, 245.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-pt.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Asturian' (0.2M links, 5.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ast-pt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Arabic' (8.6M links, 285.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-pt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Asturian' (0.2M links, 8.1M tokens)" href="download.php?f=CCMatrix/v1/xml/ast-pt.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Bulgarian' (2.6M links, 68.2M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-pt.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Bengali' (2.0M links, 45.1M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-pt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Bulgarian' (2.6M links, 79.0M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-pt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Bengali' (2.0M links, 53.4M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-pt.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Catalan' (3.5M links, 81.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-pt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Catalan' (3.5M links, 99.1M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-pt.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Czech' (12.3M links, 315.3M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-pt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Czech' (12.3M links, 367.2M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-pt.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Danish' (8.8M links, 321.2M tokens)" href="download.php?f=CCMatrix/v1/xml/da-pt.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Portuguese-German' (25.8M links, 833.2M tokens)" href="download.php?f=CCMatrix/v1/xml/de-pt.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Greek' (10.7M links, 326.1M tokens)" href="download.php?f=CCMatrix/v1/xml/el-pt.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Portuguese-English' (60.0M links, 1.6G tokens)" href="download.php?f=CCMatrix/v1/xml/en-pt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Danish' (8.8M links, 368.8M tokens)" href="download.php?f=CCMatrix/v1/xml/da-pt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Portuguese-German' (25.8M links, 1.0G tokens)" href="download.php?f=CCMatrix/v1/xml/de-pt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Greek' (10.7M links, 385.0M tokens)" href="download.php?f=CCMatrix/v1/xml/el-pt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Portuguese-English' (60.0M links, 2.4G tokens)" href="download.php?f=CCMatrix/v1/xml/en-pt.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Spanish' (53.7M links, 1.5G tokens)" href="download.php?f=CCMatrix/v1/xml/es-pt.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Estonian' (4.5M links, 156.4M tokens)" href="download.php?f=CCMatrix/v1/xml/et-pt.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Basque' (0.8M links, 16.8M tokens)" href="download.php?f=CCMatrix/v1/xml/eu-pt.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Persian' (4.5M links, 115.6M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-pt.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Finnish' (7.1M links, 231.4M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-pt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Spanish' (53.7M links, 2.0G tokens)" href="download.php?f=CCMatrix/v1/xml/es-pt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Estonian' (4.5M links, 177.1M tokens)" href="download.php?f=CCMatrix/v1/xml/et-pt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Basque' (0.8M links, 19.1M tokens)" href="download.php?f=CCMatrix/v1/xml/eu-pt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Persian' (4.5M links, 134.6M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-pt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Finnish' (7.1M links, 259.6M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-pt.xml.gz">ces</a></td>
 <th>pt</th>
-<td><a rel="nofollow" title="sentence alignments for 'Portuguese-French' (43.3M links, 1.2G tokens)" href="download.php?f=CCMatrix/v1/xml/fr-pt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Portuguese-French' (43.3M links, 1.5G tokens)" href="download.php?f=CCMatrix/v1/xml/fr-pt.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Galician' (2.5M links, 46.6M tokens)" href="download.php?f=CCMatrix/v1/xml/gl-pt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Galician' (2.5M links, 57.5M tokens)" href="download.php?f=CCMatrix/v1/xml/gl-pt.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Hebrew' (4.8M links, 99.8M tokens)" href="download.php?f=CCMatrix/v1/xml/he-pt.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Hindi' (2.8M links, 91.0M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-pt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Hebrew' (4.8M links, 113.9M tokens)" href="download.php?f=CCMatrix/v1/xml/he-pt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Hindi' (2.8M links, 103.7M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-pt.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Hungarian' (8.3M links, 291.0M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-pt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Hungarian' (8.3M links, 332.8M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-pt.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Indonesian' (9.2M links, 243.8M tokens)" href="download.php?f=CCMatrix/v1/xml/id-pt.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Italian' (26.6M links, 838.4M tokens)" href="download.php?f=CCMatrix/v1/xml/it-pt.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Japanese' (3.9M links, 46.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-pt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Indonesian' (9.2M links, 288.7M tokens)" href="download.php?f=CCMatrix/v1/xml/id-pt.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Italian' (26.6M links, 1.0G tokens)" href="download.php?f=CCMatrix/v1/xml/it-pt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Japanese' (3.9M links, 62.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-pt.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Korean' (4.2M links, 78.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ko-pt.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Latin' (80.9k links, 1.2M tokens)" href="download.php?f=CCMatrix/v1/xml/la-pt.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Korean' (4.2M links, 90.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ko-pt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Latin' (80.9k links, 1.5M tokens)" href="download.php?f=CCMatrix/v1/xml/la-pt.xml.gz">ces</a></td>
 <td></td>
 <th>pt</th>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Lithuanian' (5.5M links, 197.1M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-pt.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Latvian' (3.7M links, 129.1M tokens)" href="download.php?f=CCMatrix/v1/xml/lv-pt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Lithuanian' (5.5M links, 222.8M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-pt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Latvian' (3.7M links, 145.8M tokens)" href="download.php?f=CCMatrix/v1/xml/lv-pt.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -2687,152 +2687,152 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Dutch' (14.3M links, 517.8M tokens)" href="download.php?f=CCMatrix/v1/xml/nl-pt.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Norwegian' (7.5M links, 243.0M tokens)" href="download.php?f=CCMatrix/v1/xml/no-pt.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Occitan (post 1500)' (0.1M links, 1.3M tokens)" href="download.php?f=CCMatrix/v1/xml/oc-pt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Dutch' (14.3M links, 597.5M tokens)" href="download.php?f=CCMatrix/v1/xml/nl-pt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Norwegian' (7.5M links, 275.5M tokens)" href="download.php?f=CCMatrix/v1/xml/no-pt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Occitan (post 1500)' (0.1M links, 1.8M tokens)" href="download.php?f=CCMatrix/v1/xml/oc-pt.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Polish' (15.9M links, 413.3M tokens)" href="download.php?f=CCMatrix/v1/xml/pl-pt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Portuguese-Polish' (15.9M links, 489.3M tokens)" href="download.php?f=CCMatrix/v1/xml/pl-pt.xml.gz">ces</a></td>
 <th></th>
 <td><a rel="nofollow" title="Portuguese-Romanian (sample file)" href="CCMatrix/v1/pt-ro_sample.html">view</a></td><td><a rel="nofollow" title="Portuguese-Russian (sample file)" href="CCMatrix/v1/pt-ru_sample.html">view</a></td><td></td><td></td><td><a rel="nofollow" title="Portuguese-Slovak (sample file)" href="CCMatrix/v1/pt-sk_sample.html">view</a></td><td><a rel="nofollow" title="Portuguese-Slovenian (sample file)" href="CCMatrix/v1/pt-sl_sample.html">view</a></td><td></td><th>pt</th>
 <td></td><td><a rel="nofollow" title="Portuguese-Serbian (sample file)" href="CCMatrix/v1/pt-sr_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Portuguese-Swedish (sample file)" href="CCMatrix/v1/pt-sv_sample.html">view</a></td><td><a rel="nofollow" title="Portuguese-Swahili (sample file)" href="CCMatrix/v1/pt-sw_sample.html">view</a></td><td><a rel="nofollow" title="Portuguese-Tamil (sample file)" href="CCMatrix/v1/pt-ta_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Portuguese-Turkish (sample file)" href="CCMatrix/v1/pt-tr_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Portuguese-Ukrainian (sample file)" href="CCMatrix/v1/pt-uk_sample.html">view</a></td><td></td><td></td><td><a rel="nofollow" title="Portuguese-Vietnamese (sample file)" href="CCMatrix/v1/pt-vi_sample.html">view</a></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Portuguese-Chinese (sample file)" href="CCMatrix/v1/pt-zh_sample.html">view</a></td><td></td><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/raw/pt.zip">pt</a></th></tr>
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/ro.zip">ro</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Romanian-Arabic' (5.2M links, 159.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-ro.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Romanian-Asturian' (0.3M links, 7.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ast-ro.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Romanian-Arabic' (5.2M links, 181.9M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-ro.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Romanian-Asturian' (0.3M links, 10.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ast-ro.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Romanian-Belarusian' (0.3M links, 7.3M tokens)" href="download.php?f=CCMatrix/v1/xml/be-ro.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Romanian-Bulgarian' (10.5M links, 364.4M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-ro.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Romanian-Bengali' (1.2M links, 32.2M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-ro.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Romanian-Belarusian' (0.3M links, 22.8M tokens)" href="download.php?f=CCMatrix/v1/xml/be-ro.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Romanian-Bulgarian' (10.5M links, 416.5M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-ro.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Romanian-Bengali' (1.2M links, 35.3M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-ro.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Romanian-Catalan' (5.8M links, 116.9M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-ro.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Romanian-Catalan' (5.8M links, 138.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-ro.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Romanian-Czech' (10.4M links, 331.4M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-ro.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Romanian-Czech' (10.4M links, 373.8M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-ro.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Romanian-Danish' (7.7M links, 263.4M tokens)" href="download.php?f=CCMatrix/v1/xml/da-ro.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Romanian-German' (21.7M links, 640.6M tokens)" href="download.php?f=CCMatrix/v1/xml/de-ro.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Romanian-Greek' (9.6M links, 340.2M tokens)" href="download.php?f=CCMatrix/v1/xml/el-ro.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Romanian-English' (55.6M links, 1.6G tokens)" href="download.php?f=CCMatrix/v1/xml/en-ro.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Romanian-Esperanto' (1.3M links, 30.5M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-ro.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Romanian-Spanish' (54.4M links, 1.3G tokens)" href="download.php?f=CCMatrix/v1/xml/es-ro.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Romanian-Estonian' (5.0M links, 158.5M tokens)" href="download.php?f=CCMatrix/v1/xml/et-ro.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Romanian-Danish' (7.7M links, 294.0M tokens)" href="download.php?f=CCMatrix/v1/xml/da-ro.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Romanian-German' (21.7M links, 766.9M tokens)" href="download.php?f=CCMatrix/v1/xml/de-ro.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Romanian-Greek' (9.6M links, 393.9M tokens)" href="download.php?f=CCMatrix/v1/xml/el-ro.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Romanian-English' (55.6M links, 2.1G tokens)" href="download.php?f=CCMatrix/v1/xml/en-ro.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Romanian-Esperanto' (1.3M links, 35.3M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-ro.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Romanian-Spanish' (54.4M links, 1.7G tokens)" href="download.php?f=CCMatrix/v1/xml/es-ro.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Romanian-Estonian' (5.0M links, 176.2M tokens)" href="download.php?f=CCMatrix/v1/xml/et-ro.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Romanian-Persian' (2.7M links, 80.4M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-ro.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Romanian-Finnish' (6.4M links, 194.8M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-ro.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Romanian-Persian' (2.7M links, 89.2M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-ro.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Romanian-Finnish' (6.4M links, 214.6M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-ro.xml.gz">ces</a></td>
 <th>ro</th>
-<td><a rel="nofollow" title="sentence alignments for 'Romanian-French' (55.3M links, 1.3G tokens)" href="download.php?f=CCMatrix/v1/xml/fr-ro.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Romanian-French' (55.3M links, 1.7G tokens)" href="download.php?f=CCMatrix/v1/xml/fr-ro.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Romanian-Galician' (1.8M links, 39.8M tokens)" href="download.php?f=CCMatrix/v1/xml/gl-ro.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Romanian-Galician' (1.8M links, 45.3M tokens)" href="download.php?f=CCMatrix/v1/xml/gl-ro.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Romanian-Hebrew' (3.2M links, 80.8M tokens)" href="download.php?f=CCMatrix/v1/xml/he-ro.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Romanian-Hindi' (1.8M links, 66.0M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-ro.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Romanian-Croatian' (3.7M links, 118.6M tokens)" href="download.php?f=CCMatrix/v1/xml/hr-ro.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Romanian-Hungarian' (9.2M links, 309.5M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-ro.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Romanian-Hebrew' (3.2M links, 87.6M tokens)" href="download.php?f=CCMatrix/v1/xml/he-ro.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Romanian-Hindi' (1.8M links, 71.3M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-ro.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Romanian-Croatian' (3.7M links, 135.6M tokens)" href="download.php?f=CCMatrix/v1/xml/hr-ro.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Romanian-Hungarian' (9.2M links, 346.5M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-ro.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Romanian-Indonesian' (6.0M links, 182.3M tokens)" href="download.php?f=CCMatrix/v1/xml/id-ro.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Romanian-Italian' (29.7M links, 798.1M tokens)" href="download.php?f=CCMatrix/v1/xml/it-ro.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Romanian-Japanese' (4.1M links, 60.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-ro.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Romanian-Indonesian' (6.0M links, 208.2M tokens)" href="download.php?f=CCMatrix/v1/xml/id-ro.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Romanian-Italian' (29.7M links, 958.9M tokens)" href="download.php?f=CCMatrix/v1/xml/it-ro.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Romanian-Japanese' (4.1M links, 70.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-ro.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Romanian-Latin' (0.1M links, 2.1M tokens)" href="download.php?f=CCMatrix/v1/xml/la-ro.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Romanian-Latin' (0.1M links, 2.5M tokens)" href="download.php?f=CCMatrix/v1/xml/la-ro.xml.gz">ces</a></td>
 <td></td>
 <th>ro</th>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Romanian-Lithuanian' (6.2M links, 204.6M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-ro.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Romanian-Latvian' (4.4M links, 146.2M tokens)" href="download.php?f=CCMatrix/v1/xml/lv-ro.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Romanian-Lithuanian' (6.2M links, 226.6M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-ro.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Romanian-Latvian' (4.4M links, 162.6M tokens)" href="download.php?f=CCMatrix/v1/xml/lv-ro.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Romanian-Macedonian' (2.2M links, 63.5M tokens)" href="download.php?f=CCMatrix/v1/xml/mk-ro.xml.gz">ces</a></td>
-<td></td>
-<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Romanian-Macedonian' (2.2M links, 73.2M tokens)" href="download.php?f=CCMatrix/v1/xml/mk-ro.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Romanian-Dutch' (11.7M links, 391.7M tokens)" href="download.php?f=CCMatrix/v1/xml/nl-ro.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Romanian-Norwegian' (6.3M links, 190.6M tokens)" href="download.php?f=CCMatrix/v1/xml/no-ro.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Romanian-Occitan (post 1500)' (0.2M links, 2.6M tokens)" href="download.php?f=CCMatrix/v1/xml/oc-ro.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Romanian-Polish' (12.9M links, 409.9M tokens)" href="download.php?f=CCMatrix/v1/xml/pl-ro.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Romanian-Portuguese' (18.6M links, 639.4M tokens)" href="download.php?f=CCMatrix/v1/xml/pt-ro.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Romanian-Dutch' (11.7M links, 441.7M tokens)" href="download.php?f=CCMatrix/v1/xml/nl-ro.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Romanian-Norwegian' (6.3M links, 208.6M tokens)" href="download.php?f=CCMatrix/v1/xml/no-ro.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Romanian-Occitan (post 1500)' (0.2M links, 3.4M tokens)" href="download.php?f=CCMatrix/v1/xml/oc-ro.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Romanian-Polish' (12.9M links, 466.9M tokens)" href="download.php?f=CCMatrix/v1/xml/pl-ro.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Romanian-Portuguese' (18.6M links, 765.8M tokens)" href="download.php?f=CCMatrix/v1/xml/pt-ro.xml.gz">ces</a></td>
 <th></th>
 <td></td><td></td><td></td><td><a rel="nofollow" title="Romanian-Slovak (sample file)" href="CCMatrix/v1/ro-sk_sample.html">view</a></td><td><a rel="nofollow" title="Romanian-Slovenian (sample file)" href="CCMatrix/v1/ro-sl_sample.html">view</a></td><td></td><th>ro</th>
 <td><a rel="nofollow" title="Romanian-Albanian (sample file)" href="CCMatrix/v1/ro-sq_sample.html">view</a></td><td><a rel="nofollow" title="Romanian-Serbian (sample file)" href="CCMatrix/v1/ro-sr_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Romanian-Swedish (sample file)" href="CCMatrix/v1/ro-sv_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Romanian-Tamil (sample file)" href="CCMatrix/v1/ro-ta_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Romanian-Turkish (sample file)" href="CCMatrix/v1/ro-tr_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Romanian-Ukrainian (sample file)" href="CCMatrix/v1/ro-uk_sample.html">view</a></td><td></td><td></td><td><a rel="nofollow" title="Romanian-Vietnamese (sample file)" href="CCMatrix/v1/ro-vi_sample.html">view</a></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Romanian-Chinese (sample file)" href="CCMatrix/v1/ro-zh_sample.html">view</a></td><td></td><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/raw/ro.zip">ro</a></th></tr>
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/ru.zip">ru</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Russian-Arabic' (4.8M links, 134.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-ru.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Russian-Arabic' (4.8M links, 159.9M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-ru.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Russian-Belarusian' (0.4M links, 5.6M tokens)" href="download.php?f=CCMatrix/v1/xml/be-ru.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Russian-Bulgarian' (9.4M links, 167.2M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-ru.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Russian-Bengali' (1.1M links, 26.4M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-ru.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Russian-Belarusian' (0.4M links, 8.1M tokens)" href="download.php?f=CCMatrix/v1/xml/be-ru.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Russian-Bulgarian' (9.4M links, 239.0M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-ru.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Russian-Bengali' (1.1M links, 32.8M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-ru.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Russian-Czech' (10.5M links, 169.6M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-ru.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Russian-Czech' (10.5M links, 230.9M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-ru.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Russian-Danish' (3.0M links, 52.9M tokens)" href="download.php?f=CCMatrix/v1/xml/da-ru.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Russian-German' (14.1M links, 330.9M tokens)" href="download.php?f=CCMatrix/v1/xml/de-ru.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Russian-Greek' (4.9M links, 133.1M tokens)" href="download.php?f=CCMatrix/v1/xml/el-ru.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Russian-English' (35.1M links, 756.2M tokens)" href="download.php?f=CCMatrix/v1/xml/en-ru.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Russian-Danish' (3.0M links, 63.6M tokens)" href="download.php?f=CCMatrix/v1/xml/da-ru.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Russian-German' (14.1M links, 415.7M tokens)" href="download.php?f=CCMatrix/v1/xml/de-ru.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Russian-Greek' (4.9M links, 159.5M tokens)" href="download.php?f=CCMatrix/v1/xml/el-ru.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Russian-English' (35.1M links, 1.1G tokens)" href="download.php?f=CCMatrix/v1/xml/en-ru.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Russian-Spanish' (16.7M links, 432.9M tokens)" href="download.php?f=CCMatrix/v1/xml/es-ru.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Russian-Estonian' (3.2M links, 77.0M tokens)" href="download.php?f=CCMatrix/v1/xml/et-ru.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Russian-Spanish' (16.7M links, 571.4M tokens)" href="download.php?f=CCMatrix/v1/xml/es-ru.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Russian-Estonian' (3.2M links, 89.4M tokens)" href="download.php?f=CCMatrix/v1/xml/et-ru.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Russian-Persian' (2.7M links, 68.5M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-ru.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Russian-Finnish' (4.0M links, 90.4M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-ru.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Russian-Persian' (2.7M links, 80.6M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-ru.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Russian-Finnish' (4.0M links, 104.1M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-ru.xml.gz">ces</a></td>
 <th>ru</th>
-<td><a rel="nofollow" title="sentence alignments for 'Russian-French' (14.9M links, 387.4M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-ru.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Russian-French' (14.9M links, 497.0M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-ru.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Russian-Hebrew' (3.6M links, 49.9M tokens)" href="download.php?f=CCMatrix/v1/xml/he-ru.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Russian-Hindi' (1.7M links, 54.1M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-ru.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Russian-Croatian' (2.7M links, 63.2M tokens)" href="download.php?f=CCMatrix/v1/xml/hr-ru.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Russian-Hungarian' (4.5M links, 110.5M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-ru.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Russian-Hebrew' (3.6M links, 64.3M tokens)" href="download.php?f=CCMatrix/v1/xml/he-ru.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Russian-Hindi' (1.7M links, 63.3M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-ru.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Russian-Croatian' (2.7M links, 75.1M tokens)" href="download.php?f=CCMatrix/v1/xml/hr-ru.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Russian-Hungarian' (4.5M links, 128.3M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-ru.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Russian-Indonesian' (5.9M links, 108.7M tokens)" href="download.php?f=CCMatrix/v1/xml/id-ru.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Russian-Italian' (6.3M links, 135.1M tokens)" href="download.php?f=CCMatrix/v1/xml/it-ru.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Russian-Japanese' (3.9M links, 50.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-ru.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Russian-Indonesian' (5.9M links, 142.7M tokens)" href="download.php?f=CCMatrix/v1/xml/id-ru.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Russian-Italian' (6.3M links, 163.0M tokens)" href="download.php?f=CCMatrix/v1/xml/it-ru.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Russian-Japanese' (3.9M links, 62.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-ru.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Russian-Korean' (2.8M links, 39.9M tokens)" href="download.php?f=CCMatrix/v1/xml/ko-ru.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Russian-Korean' (2.8M links, 48.9M tokens)" href="download.php?f=CCMatrix/v1/xml/ko-ru.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <th>ru</th>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Russian-Lithuanian' (4.2M links, 101.8M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-ru.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Russian-Latvian' (2.8M links, 74.9M tokens)" href="download.php?f=CCMatrix/v1/xml/lv-ru.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Russian-Malagasy' (0.1M links, 2.9M tokens)" href="download.php?f=CCMatrix/v1/xml/mg-ru.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Russian-Macedonian' (1.7M links, 39.6M tokens)" href="download.php?f=CCMatrix/v1/xml/mk-ru.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Russian-Malayalam' (0.8M links, 15.9M tokens)" href="download.php?f=CCMatrix/v1/xml/ml-ru.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Russian-Marathi' (0.2M links, 3.9M tokens)" href="download.php?f=CCMatrix/v1/xml/mr-ru.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Russian-Malay' (1.1M links, 21.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ms-ru.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Russian-Lithuanian' (4.2M links, 117.9M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-ru.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Russian-Latvian' (2.8M links, 88.7M tokens)" href="download.php?f=CCMatrix/v1/xml/lv-ru.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Russian-Malagasy' (0.1M links, 3.8M tokens)" href="download.php?f=CCMatrix/v1/xml/mg-ru.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Russian-Macedonian' (1.7M links, 49.6M tokens)" href="download.php?f=CCMatrix/v1/xml/mk-ru.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Russian-Malayalam' (0.8M links, 20.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ml-ru.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Russian-Marathi' (0.2M links, 4.7M tokens)" href="download.php?f=CCMatrix/v1/xml/mr-ru.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Russian-Malay' (1.1M links, 27.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ms-ru.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Russian-Nepali' (93.9k links, 1.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ne-ru.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Russian-Dutch' (10.0M links, 177.5M tokens)" href="download.php?f=CCMatrix/v1/xml/nl-ru.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Russian-Norwegian' (2.7M links, 46.3M tokens)" href="download.php?f=CCMatrix/v1/xml/no-ru.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Russian-Nepali' (93.9k links, 2.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ne-ru.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Russian-Dutch' (10.0M links, 237.9M tokens)" href="download.php?f=CCMatrix/v1/xml/nl-ru.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Russian-Norwegian' (2.7M links, 55.7M tokens)" href="download.php?f=CCMatrix/v1/xml/no-ru.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Russian-Polish' (12.2M links, 197.1M tokens)" href="download.php?f=CCMatrix/v1/xml/pl-ru.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Russian-Portuguese' (9.5M links, 269.3M tokens)" href="download.php?f=CCMatrix/v1/xml/pt-ru.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Russian-Polish' (12.2M links, 269.3M tokens)" href="download.php?f=CCMatrix/v1/xml/pl-ru.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Russian-Portuguese' (9.5M links, 334.1M tokens)" href="download.php?f=CCMatrix/v1/xml/pt-ru.xml.gz">ces</a></td>
 <td></td>
 <th></th>
 <td></td><td><a rel="nofollow" title="Russian-Sinhala (sample file)" href="CCMatrix/v1/ru-si_sample.html">view</a></td><td><a rel="nofollow" title="Russian-Slovak (sample file)" href="CCMatrix/v1/ru-sk_sample.html">view</a></td><td><a rel="nofollow" title="Russian-Slovenian (sample file)" href="CCMatrix/v1/ru-sl_sample.html">view</a></td><td></td><th>ru</th>
@@ -2840,7 +2840,7 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/sd.zip">sd</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Sindhi-Arabic' (0.2M links, 3.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-sd.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Sindhi-Arabic' (0.2M links, 5.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-sd.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -2854,12 +2854,12 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Sindhi-English' (1.7M links, 33.3M tokens)" href="download.php?f=CCMatrix/v1/xml/en-sd.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Sindhi-English' (1.7M links, 56.7M tokens)" href="download.php?f=CCMatrix/v1/xml/en-sd.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Sindhi-Persian' (0.3M links, 7.0M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-sd.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Sindhi-Persian' (0.3M links, 10.6M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-sd.xml.gz">ces</a></td>
 <td></td>
 <th>sd</th>
 <td></td>
@@ -2912,40 +2912,12 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/si.zip">si</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Sinhala-Arabic' (2.0M links, 34.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-si.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Sinhala-Arabic' (2.0M links, 40.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-si.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Sinhala-Bengali' (0.4M links, 11.4M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-si.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Sinhala-English' (6.3M links, 96.6M tokens)" href="download.php?f=CCMatrix/v1/xml/en-si.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Sinhala-Persian' (1.6M links, 29.2M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-si.xml.gz">ces</a></td>
-<td></td>
-<th>si</th>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Sinhala-Hebrew' (1.9M links, 32.3M tokens)" href="download.php?f=CCMatrix/v1/xml/he-si.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Sinhala-Hindi' (0.4M links, 11.7M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-si.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Sinhala-Indonesian' (2.3M links, 38.4M tokens)" href="download.php?f=CCMatrix/v1/xml/id-si.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Sinhala-Bengali' (0.4M links, 12.1M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-si.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -2954,9 +2926,12 @@
 <td></td>
 <td></td>
 <td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Sinhala-English' (6.3M links, 129.3M tokens)" href="download.php?f=CCMatrix/v1/xml/en-si.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Sinhala-Persian' (1.6M links, 34.2M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-si.xml.gz">ces</a></td>
 <td></td>
 <th>si</th>
 <td></td>
@@ -2965,7 +2940,32 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Sinhala-Marathi' (0.1M links, 2.4M tokens)" href="download.php?f=CCMatrix/v1/xml/mr-si.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Sinhala-Hebrew' (1.9M links, 35.8M tokens)" href="download.php?f=CCMatrix/v1/xml/he-si.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Sinhala-Hindi' (0.4M links, 12.4M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-si.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Sinhala-Indonesian' (2.3M links, 46.6M tokens)" href="download.php?f=CCMatrix/v1/xml/id-si.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<th>si</th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Sinhala-Marathi' (0.1M links, 2.5M tokens)" href="download.php?f=CCMatrix/v1/xml/mr-si.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td><a rel="nofollow" title="sentence alignments for 'Sinhala-Nepali' (16.3k links, 0.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ne-si.xml.gz">ces</a></td>
@@ -2973,11 +2973,11 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Sinhala-Oriya' (4.0k links, 75.8k tokens)" href="download.php?f=CCMatrix/v1/xml/or-si.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Sinhala-Oriya' (4.0k links, 0.1M tokens)" href="download.php?f=CCMatrix/v1/xml/or-si.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Sinhala-Russian' (1.4M links, 23.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ru-si.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Sinhala-Russian' (1.4M links, 26.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ru-si.xml.gz">ces</a></td>
 <td></td>
 <th></th>
 <td></td><td></td><td></td><th>si</th>
@@ -2985,72 +2985,72 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/sk.zip">sk</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovak-Arabic' (5.0M links, 139.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-sk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovak-Arabic' (5.0M links, 150.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-sk.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovak-Belarusian' (0.9M links, 13.5M tokens)" href="download.php?f=CCMatrix/v1/xml/be-sk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovak-Bulgarian' (13.3M links, 306.1M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-sk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovak-Bengali' (1.1M links, 28.7M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-sk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovak-Belarusian' (0.9M links, 20.2M tokens)" href="download.php?f=CCMatrix/v1/xml/be-sk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovak-Bulgarian' (13.3M links, 348.6M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-sk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovak-Bengali' (1.1M links, 30.7M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-sk.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovak-Catalan' (2.0M links, 47.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-sk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovak-Catalan' (2.0M links, 52.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-sk.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovak-Czech' (37.4M links, 1.0G tokens)" href="download.php?f=CCMatrix/v1/xml/cs-sk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovak-Czech' (37.4M links, 1.2G tokens)" href="download.php?f=CCMatrix/v1/xml/cs-sk.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovak-Danish' (7.9M links, 245.2M tokens)" href="download.php?f=CCMatrix/v1/xml/da-sk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovak-German' (25.0M links, 647.0M tokens)" href="download.php?f=CCMatrix/v1/xml/de-sk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovak-Greek' (7.6M links, 245.9M tokens)" href="download.php?f=CCMatrix/v1/xml/el-sk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovak-English' (38.1M links, 878.5M tokens)" href="download.php?f=CCMatrix/v1/xml/en-sk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovak-Esperanto' (1.3M links, 28.6M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-sk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovak-Spanish' (21.6M links, 606.8M tokens)" href="download.php?f=CCMatrix/v1/xml/es-sk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovak-Estonian' (5.8M links, 169.6M tokens)" href="download.php?f=CCMatrix/v1/xml/et-sk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovak-Basque' (1.1M links, 21.2M tokens)" href="download.php?f=CCMatrix/v1/xml/eu-sk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovak-Persian' (2.2M links, 56.5M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-sk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovak-Finnish' (7.4M links, 203.1M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-sk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovak-Danish' (7.9M links, 270.9M tokens)" href="download.php?f=CCMatrix/v1/xml/da-sk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovak-German' (25.0M links, 761.2M tokens)" href="download.php?f=CCMatrix/v1/xml/de-sk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovak-Greek' (7.6M links, 274.0M tokens)" href="download.php?f=CCMatrix/v1/xml/el-sk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovak-English' (38.1M links, 1.1G tokens)" href="download.php?f=CCMatrix/v1/xml/en-sk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovak-Esperanto' (1.3M links, 32.5M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-sk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovak-Spanish' (21.6M links, 730.0M tokens)" href="download.php?f=CCMatrix/v1/xml/es-sk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovak-Estonian' (5.8M links, 186.3M tokens)" href="download.php?f=CCMatrix/v1/xml/et-sk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovak-Basque' (1.1M links, 22.7M tokens)" href="download.php?f=CCMatrix/v1/xml/eu-sk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovak-Persian' (2.2M links, 61.3M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-sk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovak-Finnish' (7.4M links, 222.2M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-sk.xml.gz">ces</a></td>
 <th>sk</th>
-<td><a rel="nofollow" title="sentence alignments for 'Slovak-French' (21.5M links, 617.4M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-sk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovak-French' (21.5M links, 729.4M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-sk.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovak-Hebrew' (3.2M links, 73.7M tokens)" href="download.php?f=CCMatrix/v1/xml/he-sk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovak-Hindi' (1.8M links, 68.2M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-sk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovak-Croatian' (3.8M links, 110.4M tokens)" href="download.php?f=CCMatrix/v1/xml/hr-sk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovak-Hungarian' (10.8M links, 326.8M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-sk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovak-Hebrew' (3.2M links, 78.7M tokens)" href="download.php?f=CCMatrix/v1/xml/he-sk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovak-Hindi' (1.8M links, 71.6M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-sk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovak-Croatian' (3.8M links, 123.2M tokens)" href="download.php?f=CCMatrix/v1/xml/hr-sk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovak-Hungarian' (10.8M links, 360.6M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-sk.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovak-Indonesian' (5.0M links, 132.7M tokens)" href="download.php?f=CCMatrix/v1/xml/id-sk.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovak-Italian' (13.9M links, 439.8M tokens)" href="download.php?f=CCMatrix/v1/xml/it-sk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovak-Japanese' (4.1M links, 49.9M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-sk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovak-Indonesian' (5.0M links, 146.6M tokens)" href="download.php?f=CCMatrix/v1/xml/id-sk.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovak-Italian' (13.9M links, 503.6M tokens)" href="download.php?f=CCMatrix/v1/xml/it-sk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovak-Japanese' (4.1M links, 58.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-sk.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovak-Korean' (3.0M links, 64.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ko-sk.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovak-Korean' (3.0M links, 68.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ko-sk.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <th>sk</th>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovak-Lithuanian' (7.0M links, 212.4M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-sk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovak-Latvian' (5.1M links, 160.6M tokens)" href="download.php?f=CCMatrix/v1/xml/lv-sk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovak-Lithuanian' (7.0M links, 231.8M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-sk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovak-Latvian' (5.1M links, 176.0M tokens)" href="download.php?f=CCMatrix/v1/xml/lv-sk.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovak-Macedonian' (1.8M links, 43.3M tokens)" href="download.php?f=CCMatrix/v1/xml/mk-sk.xml.gz">ces</a></td>
-<td></td>
-<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovak-Macedonian' (1.8M links, 48.6M tokens)" href="download.php?f=CCMatrix/v1/xml/mk-sk.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovak-Dutch' (11.8M links, 353.0M tokens)" href="download.php?f=CCMatrix/v1/xml/nl-sk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovak-Norwegian' (6.7M links, 182.8M tokens)" href="download.php?f=CCMatrix/v1/xml/no-sk.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovak-Dutch' (11.8M links, 390.5M tokens)" href="download.php?f=CCMatrix/v1/xml/nl-sk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovak-Norwegian' (6.7M links, 197.6M tokens)" href="download.php?f=CCMatrix/v1/xml/no-sk.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovak-Polish' (26.0M links, 516.5M tokens)" href="download.php?f=CCMatrix/v1/xml/pl-sk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovak-Portuguese' (13.0M links, 408.4M tokens)" href="download.php?f=CCMatrix/v1/xml/pt-sk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovak-Romanian' (8.8M links, 284.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ro-sk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovak-Russian' (21.7M links, 349.1M tokens)" href="download.php?f=CCMatrix/v1/xml/ru-sk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovak-Polish' (26.0M links, 603.7M tokens)" href="download.php?f=CCMatrix/v1/xml/pl-sk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovak-Portuguese' (13.0M links, 467.6M tokens)" href="download.php?f=CCMatrix/v1/xml/pt-sk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovak-Romanian' (8.8M links, 319.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ro-sk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovak-Russian' (21.7M links, 463.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ru-sk.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <th></th>
@@ -3059,75 +3059,75 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/sl.zip">sl</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Arabic' (3.7M links, 101.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-sl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Arabic' (3.7M links, 109.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-sl.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Belarusian' (0.6M links, 9.7M tokens)" href="download.php?f=CCMatrix/v1/xml/be-sl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Bulgarian' (9.9M links, 242.8M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-sl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Bengali' (0.9M links, 24.3M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-sl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Belarusian' (0.6M links, 13.6M tokens)" href="download.php?f=CCMatrix/v1/xml/be-sl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Bulgarian' (9.9M links, 274.9M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-sl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Bengali' (0.9M links, 26.0M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-sl.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Catalan' (1.7M links, 42.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-sl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Catalan' (1.7M links, 46.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-sl.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Czech' (9.9M links, 284.2M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-sl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Czech' (9.9M links, 315.1M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-sl.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Danish' (6.4M links, 206.4M tokens)" href="download.php?f=CCMatrix/v1/xml/da-sl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovenian-German' (18.0M links, 471.8M tokens)" href="download.php?f=CCMatrix/v1/xml/de-sl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Greek' (6.1M links, 203.5M tokens)" href="download.php?f=CCMatrix/v1/xml/el-sl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovenian-English' (27.4M links, 620.9M tokens)" href="download.php?f=CCMatrix/v1/xml/en-sl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Esperanto' (1.0M links, 24.0M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-sl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Spanish' (15.6M links, 442.1M tokens)" href="download.php?f=CCMatrix/v1/xml/es-sl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Estonian' (5.3M links, 165.7M tokens)" href="download.php?f=CCMatrix/v1/xml/et-sl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Basque' (0.9M links, 18.7M tokens)" href="download.php?f=CCMatrix/v1/xml/eu-sl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Persian' (1.8M links, 43.5M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-sl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Finnish' (6.0M links, 171.9M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-sl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Danish' (6.4M links, 228.0M tokens)" href="download.php?f=CCMatrix/v1/xml/da-sl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovenian-German' (18.0M links, 557.2M tokens)" href="download.php?f=CCMatrix/v1/xml/de-sl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Greek' (6.1M links, 226.1M tokens)" href="download.php?f=CCMatrix/v1/xml/el-sl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovenian-English' (27.4M links, 807.2M tokens)" href="download.php?f=CCMatrix/v1/xml/en-sl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Esperanto' (1.0M links, 26.7M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-sl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Spanish' (15.6M links, 529.7M tokens)" href="download.php?f=CCMatrix/v1/xml/es-sl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Estonian' (5.3M links, 180.6M tokens)" href="download.php?f=CCMatrix/v1/xml/et-sl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Basque' (0.9M links, 19.8M tokens)" href="download.php?f=CCMatrix/v1/xml/eu-sl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Persian' (1.8M links, 47.2M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-sl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Finnish' (6.0M links, 188.3M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-sl.xml.gz">ces</a></td>
 <th>sl</th>
-<td><a rel="nofollow" title="sentence alignments for 'Slovenian-French' (15.7M links, 453.4M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-sl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovenian-French' (15.7M links, 535.4M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-sl.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Hebrew' (2.4M links, 57.5M tokens)" href="download.php?f=CCMatrix/v1/xml/he-sl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Hindi' (1.7M links, 64.8M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-sl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Croatian' (4.2M links, 128.5M tokens)" href="download.php?f=CCMatrix/v1/xml/hr-sl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Hungarian' (7.4M links, 228.3M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-sl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Hebrew' (2.4M links, 61.2M tokens)" href="download.php?f=CCMatrix/v1/xml/he-sl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Hindi' (1.7M links, 67.9M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-sl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Croatian' (4.2M links, 143.6M tokens)" href="download.php?f=CCMatrix/v1/xml/hr-sl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Hungarian' (7.4M links, 250.2M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-sl.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Indonesian' (4.1M links, 111.8M tokens)" href="download.php?f=CCMatrix/v1/xml/id-sl.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Italian' (10.7M links, 348.3M tokens)" href="download.php?f=CCMatrix/v1/xml/it-sl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Japanese' (3.5M links, 39.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-sl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Indonesian' (4.1M links, 123.4M tokens)" href="download.php?f=CCMatrix/v1/xml/id-sl.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Italian' (10.7M links, 396.1M tokens)" href="download.php?f=CCMatrix/v1/xml/it-sl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Japanese' (3.5M links, 48.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-sl.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Korean' (2.2M links, 48.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ko-sl.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Korean' (2.2M links, 51.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ko-sl.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <th>sl</th>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Lithuanian' (6.2M links, 196.6M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-sl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Latvian' (5.1M links, 165.0M tokens)" href="download.php?f=CCMatrix/v1/xml/lv-sl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Lithuanian' (6.2M links, 213.9M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-sl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Latvian' (5.1M links, 178.8M tokens)" href="download.php?f=CCMatrix/v1/xml/lv-sl.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Macedonian' (1.6M links, 43.3M tokens)" href="download.php?f=CCMatrix/v1/xml/mk-sl.xml.gz">ces</a></td>
-<td></td>
-<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Macedonian' (1.6M links, 47.7M tokens)" href="download.php?f=CCMatrix/v1/xml/mk-sl.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Dutch' (8.9M links, 274.7M tokens)" href="download.php?f=CCMatrix/v1/xml/nl-sl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Norwegian' (5.5M links, 157.8M tokens)" href="download.php?f=CCMatrix/v1/xml/no-sl.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Dutch' (8.9M links, 304.3M tokens)" href="download.php?f=CCMatrix/v1/xml/nl-sl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Norwegian' (5.5M links, 171.0M tokens)" href="download.php?f=CCMatrix/v1/xml/no-sl.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Polish' (16.4M links, 334.2M tokens)" href="download.php?f=CCMatrix/v1/xml/pl-sl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Portuguese' (9.6M links, 305.3M tokens)" href="download.php?f=CCMatrix/v1/xml/pt-sl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Romanian' (6.7M links, 224.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ro-sl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Russian' (15.8M links, 265.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ru-sl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Polish' (16.4M links, 394.6M tokens)" href="download.php?f=CCMatrix/v1/xml/pl-sl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Portuguese' (9.6M links, 348.0M tokens)" href="download.php?f=CCMatrix/v1/xml/pt-sl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Romanian' (6.7M links, 250.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ro-sl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Russian' (15.8M links, 353.9M tokens)" href="download.php?f=CCMatrix/v1/xml/ru-sl.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Slovak' (14.4M links, 331.8M tokens)" href="download.php?f=CCMatrix/v1/xml/sk-sl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Slovenian-Slovak' (14.4M links, 374.0M tokens)" href="download.php?f=CCMatrix/v1/xml/sk-sl.xml.gz">ces</a></td>
 <th></th>
 <td></td><th>sl</th>
 <td><a rel="nofollow" title="Slovenian-Albanian (sample file)" href="CCMatrix/v1/sl-sq_sample.html">view</a></td><td><a rel="nofollow" title="Slovenian-Serbian (sample file)" href="CCMatrix/v1/sl-sr_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Slovenian-Swedish (sample file)" href="CCMatrix/v1/sl-sv_sample.html">view</a></td><td><a rel="nofollow" title="Slovenian-Swahili (sample file)" href="CCMatrix/v1/sl-sw_sample.html">view</a></td><td><a rel="nofollow" title="Slovenian-Tamil (sample file)" href="CCMatrix/v1/sl-ta_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Slovenian-Turkish (sample file)" href="CCMatrix/v1/sl-tr_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Slovenian-Ukrainian (sample file)" href="CCMatrix/v1/sl-uk_sample.html">view</a></td><td></td><td></td><td><a rel="nofollow" title="Slovenian-Vietnamese (sample file)" href="CCMatrix/v1/sl-vi_sample.html">view</a></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Slovenian-Chinese (sample file)" href="CCMatrix/v1/sl-zh_sample.html">view</a></td><td></td><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/raw/sl.zip">sl</a></th></tr>
@@ -3148,7 +3148,7 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Somali-English' (0.2M links, 5.4M tokens)" href="download.php?f=CCMatrix/v1/xml/en-so.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Somali-English' (0.2M links, 9.4M tokens)" href="download.php?f=CCMatrix/v1/xml/en-so.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -3191,7 +3191,7 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Somali-Dutch' (0.1M links, 3.3M tokens)" href="download.php?f=CCMatrix/v1/xml/nl-so.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Somali-Dutch' (0.1M links, 5.6M tokens)" href="download.php?f=CCMatrix/v1/xml/nl-so.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -3305,27 +3305,27 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/sq.zip">sq</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Albanian-Arabic' (2.6M links, 68.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-sq.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Albanian-Arabic' (2.6M links, 77.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-sq.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Albanian-Belarusian' (0.1M links, 2.4M tokens)" href="download.php?f=CCMatrix/v1/xml/be-sq.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Albanian-Bulgarian' (3.2M links, 88.9M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-sq.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Albanian-Belarusian' (0.1M links, 2.5M tokens)" href="download.php?f=CCMatrix/v1/xml/be-sq.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Albanian-Bulgarian' (3.2M links, 99.9M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-sq.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Albanian-Catalan' (1.2M links, 30.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-sq.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Albanian-Catalan' (1.2M links, 34.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-sq.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Albanian-Czech' (3.2M links, 73.7M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-sq.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Albanian-Czech' (3.2M links, 82.5M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-sq.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Albanian-Danish' (2.3M links, 56.6M tokens)" href="download.php?f=CCMatrix/v1/xml/da-sq.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Albanian-German' (8.6M links, 185.2M tokens)" href="download.php?f=CCMatrix/v1/xml/de-sq.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Albanian-Greek' (3.2M links, 86.7M tokens)" href="download.php?f=CCMatrix/v1/xml/el-sq.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Albanian-English' (22.4M links, 485.5M tokens)" href="download.php?f=CCMatrix/v1/xml/en-sq.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Albanian-Esperanto' (1.0M links, 26.8M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-sq.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Albanian-Spanish' (10.1M links, 237.2M tokens)" href="download.php?f=CCMatrix/v1/xml/es-sq.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Albanian-Estonian' (1.4M links, 34.0M tokens)" href="download.php?f=CCMatrix/v1/xml/et-sq.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Albanian-Basque' (0.9M links, 21.4M tokens)" href="download.php?f=CCMatrix/v1/xml/eu-sq.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Albanian-Persian' (2.0M links, 54.5M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-sq.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Albanian-Finnish' (2.0M links, 42.3M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-sq.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Albanian-Danish' (2.3M links, 62.8M tokens)" href="download.php?f=CCMatrix/v1/xml/da-sq.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Albanian-German' (8.6M links, 232.8M tokens)" href="download.php?f=CCMatrix/v1/xml/de-sq.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Albanian-Greek' (3.2M links, 99.5M tokens)" href="download.php?f=CCMatrix/v1/xml/el-sq.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Albanian-English' (22.4M links, 691.3M tokens)" href="download.php?f=CCMatrix/v1/xml/en-sq.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Albanian-Esperanto' (1.0M links, 30.0M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-sq.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Albanian-Spanish' (10.1M links, 303.8M tokens)" href="download.php?f=CCMatrix/v1/xml/es-sq.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Albanian-Estonian' (1.4M links, 37.3M tokens)" href="download.php?f=CCMatrix/v1/xml/et-sq.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Albanian-Basque' (0.9M links, 22.7M tokens)" href="download.php?f=CCMatrix/v1/xml/eu-sq.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Albanian-Persian' (2.0M links, 61.2M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-sq.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Albanian-Finnish' (2.0M links, 46.8M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-sq.xml.gz">ces</a></td>
 <th>sq</th>
 <td></td>
 <td></td>
@@ -3333,16 +3333,16 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Albanian-Hebrew' (1.5M links, 31.5M tokens)" href="download.php?f=CCMatrix/v1/xml/he-sq.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Albanian-Hebrew' (1.5M links, 34.2M tokens)" href="download.php?f=CCMatrix/v1/xml/he-sq.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Albanian-Croatian' (1.6M links, 39.7M tokens)" href="download.php?f=CCMatrix/v1/xml/hr-sq.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Albanian-Hungarian' (2.5M links, 61.4M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-sq.xml.gz">ces</a></td>
-<td></td>
-<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Albanian-Croatian' (1.6M links, 45.1M tokens)" href="download.php?f=CCMatrix/v1/xml/hr-sq.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Albanian-Hungarian' (2.5M links, 67.7M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-sq.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Albanian-Italian' (5.9M links, 159.9M tokens)" href="download.php?f=CCMatrix/v1/xml/it-sq.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Albanian-Italian' (5.9M links, 191.6M tokens)" href="download.php?f=CCMatrix/v1/xml/it-sq.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -3353,28 +3353,28 @@
 <td></td>
 <th>sq</th>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Albanian-Lithuanian' (1.6M links, 38.4M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-sq.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Albanian-Latvian' (1.2M links, 35.4M tokens)" href="download.php?f=CCMatrix/v1/xml/lv-sq.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Albanian-Lithuanian' (1.6M links, 41.9M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-sq.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Albanian-Latvian' (1.2M links, 38.7M tokens)" href="download.php?f=CCMatrix/v1/xml/lv-sq.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Albanian-Macedonian' (2.1M links, 72.5M tokens)" href="download.php?f=CCMatrix/v1/xml/mk-sq.xml.gz">ces</a></td>
-<td></td>
-<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Albanian-Macedonian' (2.1M links, 83.6M tokens)" href="download.php?f=CCMatrix/v1/xml/mk-sq.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Albanian-Norwegian' (2.3M links, 55.7M tokens)" href="download.php?f=CCMatrix/v1/xml/no-sq.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Albanian-Norwegian' (2.3M links, 62.0M tokens)" href="download.php?f=CCMatrix/v1/xml/no-sq.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Albanian-Polish' (4.0M links, 89.6M tokens)" href="download.php?f=CCMatrix/v1/xml/pl-sq.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Albanian-Polish' (4.0M links, 103.0M tokens)" href="download.php?f=CCMatrix/v1/xml/pl-sq.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Albanian-Romanian' (3.4M links, 92.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ro-sq.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Albanian-Russian' (5.8M links, 123.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ru-sq.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Albanian-Romanian' (3.4M links, 106.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ro-sq.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Albanian-Russian' (5.8M links, 153.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ru-sq.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Albanian-Slovak' (3.1M links, 78.9M tokens)" href="download.php?f=CCMatrix/v1/xml/sk-sq.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Albanian-Slovenian' (2.5M links, 70.9M tokens)" href="download.php?f=CCMatrix/v1/xml/sl-sq.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Albanian-Slovak' (3.1M links, 86.9M tokens)" href="download.php?f=CCMatrix/v1/xml/sk-sq.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Albanian-Slovenian' (2.5M links, 76.6M tokens)" href="download.php?f=CCMatrix/v1/xml/sl-sq.xml.gz">ces</a></td>
 <td></td>
 <th>sq</th>
 <th></th>
@@ -3382,79 +3382,79 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/sr.zip">sr</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Arabic' (3.3M links, 86.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Arabic' (3.3M links, 93.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-sr.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Belarusian' (0.5M links, 8.4M tokens)" href="download.php?f=CCMatrix/v1/xml/be-sr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Bulgarian' (8.7M links, 181.9M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-sr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Bengali' (0.9M links, 22.8M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Belarusian' (0.5M links, 11.1M tokens)" href="download.php?f=CCMatrix/v1/xml/be-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Bulgarian' (8.7M links, 205.0M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Bengali' (0.9M links, 24.6M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-sr.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Catalan' (1.4M links, 32.9M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Catalan' (1.4M links, 35.9M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-sr.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Czech' (6.1M links, 150.3M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Czech' (6.1M links, 164.0M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-sr.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Danish' (4.1M links, 108.5M tokens)" href="download.php?f=CCMatrix/v1/xml/da-sr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-German' (12.0M links, 264.8M tokens)" href="download.php?f=CCMatrix/v1/xml/de-sr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Greek' (4.6M links, 127.1M tokens)" href="download.php?f=CCMatrix/v1/xml/el-sr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-English' (26.5M links, 544.8M tokens)" href="download.php?f=CCMatrix/v1/xml/en-sr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Esperanto' (1.0M links, 23.7M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-sr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Spanish' (12.1M links, 282.5M tokens)" href="download.php?f=CCMatrix/v1/xml/es-sr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Estonian' (3.4M links, 91.4M tokens)" href="download.php?f=CCMatrix/v1/xml/et-sr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Basque' (0.8M links, 15.8M tokens)" href="download.php?f=CCMatrix/v1/xml/eu-sr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Persian' (1.9M links, 44.6M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-sr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Finnish' (3.6M links, 82.3M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Danish' (4.1M links, 117.1M tokens)" href="download.php?f=CCMatrix/v1/xml/da-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-German' (12.0M links, 309.5M tokens)" href="download.php?f=CCMatrix/v1/xml/de-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Greek' (4.6M links, 140.6M tokens)" href="download.php?f=CCMatrix/v1/xml/el-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-English' (26.5M links, 715.8M tokens)" href="download.php?f=CCMatrix/v1/xml/en-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Esperanto' (1.0M links, 26.7M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Spanish' (12.1M links, 339.7M tokens)" href="download.php?f=CCMatrix/v1/xml/es-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Estonian' (3.4M links, 97.7M tokens)" href="download.php?f=CCMatrix/v1/xml/et-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Basque' (0.8M links, 16.9M tokens)" href="download.php?f=CCMatrix/v1/xml/eu-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Persian' (1.9M links, 49.0M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Finnish' (3.6M links, 88.8M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-sr.xml.gz">ces</a></td>
 <th>sr</th>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-French' (11.8M links, 282.6M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-French' (11.8M links, 333.0M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-sr.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Hebrew' (2.4M links, 55.3M tokens)" href="download.php?f=CCMatrix/v1/xml/he-sr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Hindi' (1.8M links, 67.4M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-sr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Croatian' (4.9M links, 141.2M tokens)" href="download.php?f=CCMatrix/v1/xml/hr-sr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Hungarian' (4.3M links, 109.1M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Hebrew' (2.4M links, 59.2M tokens)" href="download.php?f=CCMatrix/v1/xml/he-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Hindi' (1.8M links, 70.8M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Croatian' (4.9M links, 164.0M tokens)" href="download.php?f=CCMatrix/v1/xml/hr-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Hungarian' (4.3M links, 117.6M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-sr.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Indonesian' (4.2M links, 112.3M tokens)" href="download.php?f=CCMatrix/v1/xml/id-sr.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Italian' (7.0M links, 185.3M tokens)" href="download.php?f=CCMatrix/v1/xml/it-sr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Japanese' (3.4M links, 37.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Indonesian' (4.2M links, 124.4M tokens)" href="download.php?f=CCMatrix/v1/xml/id-sr.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Korean' (2.0M links, 39.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ko-sr.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<th>sr</th>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Lithuanian' (3.9M links, 103.4M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-sr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Latvian' (3.3M links, 98.0M tokens)" href="download.php?f=CCMatrix/v1/xml/lv-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Italian' (7.0M links, 207.2M tokens)" href="download.php?f=CCMatrix/v1/xml/it-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Japanese' (3.4M links, 45.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-sr.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Korean' (2.0M links, 42.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ko-sr.xml.gz">ces</a></td>
 <td></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Dutch' (5.9M links, 151.6M tokens)" href="download.php?f=CCMatrix/v1/xml/nl-sr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Norwegian' (4.5M links, 122.4M tokens)" href="download.php?f=CCMatrix/v1/xml/no-sr.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Polish' (11.6M links, 197.6M tokens)" href="download.php?f=CCMatrix/v1/xml/pl-sr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Portuguese' (7.0M links, 180.8M tokens)" href="download.php?f=CCMatrix/v1/xml/pt-sr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Romanian' (5.1M links, 144.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ro-sr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Russian' (14.2M links, 236.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ru-sr.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Slovak' (8.6M links, 161.6M tokens)" href="download.php?f=CCMatrix/v1/xml/sk-sr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Slovenian' (7.8M links, 167.8M tokens)" href="download.php?f=CCMatrix/v1/xml/sl-sr.xml.gz">ces</a></td>
 <td></td>
 <th>sr</th>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Albanian' (2.9M links, 79.3M tokens)" href="download.php?f=CCMatrix/v1/xml/sq-sr.xml.gz">ces</a></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Lithuanian' (3.9M links, 110.4M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Latvian' (3.3M links, 104.4M tokens)" href="download.php?f=CCMatrix/v1/xml/lv-sr.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Dutch' (5.9M links, 165.9M tokens)" href="download.php?f=CCMatrix/v1/xml/nl-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Norwegian' (4.5M links, 131.3M tokens)" href="download.php?f=CCMatrix/v1/xml/no-sr.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Polish' (11.6M links, 231.9M tokens)" href="download.php?f=CCMatrix/v1/xml/pl-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Portuguese' (7.0M links, 205.8M tokens)" href="download.php?f=CCMatrix/v1/xml/pt-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Romanian' (5.1M links, 161.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ro-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Russian' (14.2M links, 314.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ru-sr.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Slovak' (8.6M links, 181.2M tokens)" href="download.php?f=CCMatrix/v1/xml/sk-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Slovenian' (7.8M links, 184.6M tokens)" href="download.php?f=CCMatrix/v1/xml/sl-sr.xml.gz">ces</a></td>
+<td></td>
+<th>sr</th>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Albanian' (2.9M links, 90.5M tokens)" href="download.php?f=CCMatrix/v1/xml/sq-sr.xml.gz">ces</a></td>
 <th></th>
 <td></td><td><a rel="nofollow" title="Serbian-Swedish (sample file)" href="CCMatrix/v1/sr-sv_sample.html">view</a></td><td><a rel="nofollow" title="Serbian-Swahili (sample file)" href="CCMatrix/v1/sr-sw_sample.html">view</a></td><td><a rel="nofollow" title="Serbian-Tamil (sample file)" href="CCMatrix/v1/sr-ta_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Serbian-Turkish (sample file)" href="CCMatrix/v1/sr-tr_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Serbian-Ukrainian (sample file)" href="CCMatrix/v1/sr-uk_sample.html">view</a></td><td></td><td></td><td><a rel="nofollow" title="Serbian-Vietnamese (sample file)" href="CCMatrix/v1/sr-vi_sample.html">view</a></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Serbian-Chinese (sample file)" href="CCMatrix/v1/sr-zh_sample.html">view</a></td><td></td><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/raw/sr.zip">sr</a></th></tr>
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/su.zip">su</a></th>
@@ -3468,13 +3468,13 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Sundanese-Cebuano' (2.9k links, 94.0k tokens)" href="download.php?f=CCMatrix/v1/xml/ceb-su.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Sundanese-Cebuano' (2.9k links, 0.1M tokens)" href="download.php?f=CCMatrix/v1/xml/ceb-su.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Sundanese-German' (0.6M links, 6.3M tokens)" href="download.php?f=CCMatrix/v1/xml/de-su.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Sundanese-German' (0.6M links, 10.9M tokens)" href="download.php?f=CCMatrix/v1/xml/de-su.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Sundanese-English' (0.3M links, 3.7M tokens)" href="download.php?f=CCMatrix/v1/xml/en-su.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Sundanese-English' (0.3M links, 6.0M tokens)" href="download.php?f=CCMatrix/v1/xml/en-su.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -3493,9 +3493,9 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Sundanese-Indonesian' (0.3M links, 3.7M tokens)" href="download.php?f=CCMatrix/v1/xml/id-su.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Sundanese-Indonesian' (0.3M links, 6.0M tokens)" href="download.php?f=CCMatrix/v1/xml/id-su.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Sundanese-Iloko' (1.6k links, 36.5k tokens)" href="download.php?f=CCMatrix/v1/xml/ilo-su.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Sundanese-Iloko' (1.6k links, 45.4k tokens)" href="download.php?f=CCMatrix/v1/xml/ilo-su.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -3512,9 +3512,9 @@
 <td></td>
 <td><a rel="nofollow" title="sentence alignments for 'Sundanese-Malagasy' (13.1k links, 0.5M tokens)" href="download.php?f=CCMatrix/v1/xml/mg-su.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Sundanese-Malayalam' (34.1k links, 0.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ml-su.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Sundanese-Malayalam' (34.1k links, 0.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ml-su.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Sundanese-Malay' (43.0k links, 0.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ms-su.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Sundanese-Malay' (43.0k links, 0.9M tokens)" href="download.php?f=CCMatrix/v1/xml/ms-su.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -3537,138 +3537,138 @@
 <th></th>
 <td></td><td></td><td></td><td><a rel="nofollow" title="Sundanese-Tagalog (sample file)" href="CCMatrix/v1/su-tl_sample.html">view</a></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/raw/su.zip">su</a></th></tr>
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/sv.zip">sv</a></th>
-<td><a rel="nofollow" title="sentence alignments for 'Swedish-Afrikaans' (1.7M links, 43.0M tokens)" href="download.php?f=CCMatrix/v1/xml/af-sv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swedish-Afrikaans' (1.7M links, 47.2M tokens)" href="download.php?f=CCMatrix/v1/xml/af-sv.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swedish-Arabic' (6.6M links, 192.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-sv.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swedish-Belarusian' (0.3M links, 4.6M tokens)" href="download.php?f=CCMatrix/v1/xml/be-sv.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swedish-Bulgarian' (8.9M links, 272.0M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-sv.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swedish-Bengali' (1.6M links, 42.7M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-sv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swedish-Arabic' (6.6M links, 209.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-sv.xml.gz">ces</a></td>
 <td></td>
 <td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swedish-Belarusian' (0.3M links, 12.0M tokens)" href="download.php?f=CCMatrix/v1/xml/be-sv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swedish-Bulgarian' (8.9M links, 304.8M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-sv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swedish-Bengali' (1.6M links, 46.8M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-sv.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swedish-Czech' (22.6M links, 452.2M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-sv.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swedish-Danish' (23.1M links, 686.2M tokens)" href="download.php?f=CCMatrix/v1/xml/da-sv.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swedish-German' (43.9M links, 1.2G tokens)" href="download.php?f=CCMatrix/v1/xml/de-sv.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swedish-Greek' (9.1M links, 288.0M tokens)" href="download.php?f=CCMatrix/v1/xml/el-sv.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swedish-English' (77.0M links, 1.8G tokens)" href="download.php?f=CCMatrix/v1/xml/en-sv.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swedish-Esperanto' (1.9M links, 38.9M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-sv.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swedish-Spanish' (36.1M links, 731.0M tokens)" href="download.php?f=CCMatrix/v1/xml/es-sv.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swedish-Estonian' (6.2M links, 171.1M tokens)" href="download.php?f=CCMatrix/v1/xml/et-sv.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swedish-Persian' (3.3M links, 92.1M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-sv.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swedish-Finnish' (18.1M links, 513.8M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-sv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swedish-Czech' (22.6M links, 511.7M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-sv.xml.gz">ces</a></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swedish-Danish' (23.1M links, 762.3M tokens)" href="download.php?f=CCMatrix/v1/xml/da-sv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swedish-German' (43.9M links, 1.3G tokens)" href="download.php?f=CCMatrix/v1/xml/de-sv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swedish-Greek' (9.1M links, 319.3M tokens)" href="download.php?f=CCMatrix/v1/xml/el-sv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swedish-English' (77.0M links, 2.3G tokens)" href="download.php?f=CCMatrix/v1/xml/en-sv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swedish-Esperanto' (1.9M links, 45.2M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-sv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swedish-Spanish' (36.1M links, 969.2M tokens)" href="download.php?f=CCMatrix/v1/xml/es-sv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swedish-Estonian' (6.2M links, 190.1M tokens)" href="download.php?f=CCMatrix/v1/xml/et-sv.xml.gz">ces</a></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swedish-Persian' (3.3M links, 99.5M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-sv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swedish-Finnish' (18.1M links, 563.7M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-sv.xml.gz">ces</a></td>
 <th>sv</th>
-<td><a rel="nofollow" title="sentence alignments for 'Swedish-French' (34.9M links, 1.0G tokens)" href="download.php?f=CCMatrix/v1/xml/fr-sv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swedish-French' (34.9M links, 1.2G tokens)" href="download.php?f=CCMatrix/v1/xml/fr-sv.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swedish-Hebrew' (8.8M links, 142.5M tokens)" href="download.php?f=CCMatrix/v1/xml/he-sv.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swedish-Hindi' (2.6M links, 94.4M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-sv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swedish-Hebrew' (8.8M links, 162.5M tokens)" href="download.php?f=CCMatrix/v1/xml/he-sv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swedish-Hindi' (2.6M links, 101.0M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-sv.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swedish-Hungarian' (10.0M links, 293.0M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-sv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swedish-Hungarian' (10.0M links, 320.0M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-sv.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swedish-Indonesian' (7.9M links, 217.1M tokens)" href="download.php?f=CCMatrix/v1/xml/id-sv.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swedish-Icelandic' (1.7M links, 34.8M tokens)" href="download.php?f=CCMatrix/v1/xml/is-sv.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swedish-Italian' (21.1M links, 688.3M tokens)" href="download.php?f=CCMatrix/v1/xml/it-sv.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swedish-Japanese' (12.2M links, 135.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-sv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swedish-Indonesian' (7.9M links, 242.5M tokens)" href="download.php?f=CCMatrix/v1/xml/id-sv.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swedish-Korean' (9.3M links, 156.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ko-sv.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<th>sv</th>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swedish-Lithuanian' (6.5M links, 190.9M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-sv.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swedish-Latvian' (4.8M links, 145.6M tokens)" href="download.php?f=CCMatrix/v1/xml/lv-sv.xml.gz">ces</a></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swedish-Macedonian' (2.0M links, 47.1M tokens)" href="download.php?f=CCMatrix/v1/xml/mk-sv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swedish-Icelandic' (1.7M links, 39.2M tokens)" href="download.php?f=CCMatrix/v1/xml/is-sv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swedish-Italian' (21.1M links, 764.6M tokens)" href="download.php?f=CCMatrix/v1/xml/it-sv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swedish-Japanese' (12.2M links, 161.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-sv.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swedish-Korean' (9.3M links, 173.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ko-sv.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swedish-Dutch' (23.8M links, 717.9M tokens)" href="download.php?f=CCMatrix/v1/xml/nl-sv.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swedish-Norwegian' (23.3M links, 652.9M tokens)" href="download.php?f=CCMatrix/v1/xml/no-sv.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swedish-Polish' (27.0M links, 550.2M tokens)" href="download.php?f=CCMatrix/v1/xml/pl-sv.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swedish-Portuguese' (31.1M links, 711.4M tokens)" href="download.php?f=CCMatrix/v1/xml/pt-sv.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swedish-Romanian' (9.2M links, 288.1M tokens)" href="download.php?f=CCMatrix/v1/xml/ro-sv.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swedish-Russian' (21.4M links, 351.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ru-sv.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swedish-Slovak' (12.1M links, 347.1M tokens)" href="download.php?f=CCMatrix/v1/xml/sk-sv.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swedish-Slovenian' (9.4M links, 282.6M tokens)" href="download.php?f=CCMatrix/v1/xml/sl-sv.xml.gz">ces</a></td>
 <td></td>
 <th>sv</th>
-<td><a rel="nofollow" title="sentence alignments for 'Swedish-Albanian' (3.8M links, 90.4M tokens)" href="download.php?f=CCMatrix/v1/xml/sq-sv.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swedish-Serbian' (5.7M links, 144.2M tokens)" href="download.php?f=CCMatrix/v1/xml/sr-sv.xml.gz">ces</a></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swedish-Lithuanian' (6.5M links, 209.5M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-sv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swedish-Latvian' (4.8M links, 161.6M tokens)" href="download.php?f=CCMatrix/v1/xml/lv-sv.xml.gz">ces</a></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swedish-Macedonian' (2.0M links, 54.2M tokens)" href="download.php?f=CCMatrix/v1/xml/mk-sv.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swedish-Dutch' (23.8M links, 782.2M tokens)" href="download.php?f=CCMatrix/v1/xml/nl-sv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swedish-Norwegian' (23.3M links, 718.4M tokens)" href="download.php?f=CCMatrix/v1/xml/no-sv.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swedish-Polish' (27.0M links, 626.9M tokens)" href="download.php?f=CCMatrix/v1/xml/pl-sv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swedish-Portuguese' (31.1M links, 817.7M tokens)" href="download.php?f=CCMatrix/v1/xml/pt-sv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swedish-Romanian' (9.2M links, 322.1M tokens)" href="download.php?f=CCMatrix/v1/xml/ro-sv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swedish-Russian' (21.4M links, 442.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ru-sv.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swedish-Slovak' (12.1M links, 381.4M tokens)" href="download.php?f=CCMatrix/v1/xml/sk-sv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swedish-Slovenian' (9.4M links, 312.3M tokens)" href="download.php?f=CCMatrix/v1/xml/sl-sv.xml.gz">ces</a></td>
+<td></td>
+<th>sv</th>
+<td><a rel="nofollow" title="sentence alignments for 'Swedish-Albanian' (3.8M links, 101.3M tokens)" href="download.php?f=CCMatrix/v1/xml/sq-sv.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swedish-Serbian' (5.7M links, 156.3M tokens)" href="download.php?f=CCMatrix/v1/xml/sr-sv.xml.gz">ces</a></td>
 <td></td>
 <th></th>
 <td><a rel="nofollow" title="Swedish-Swahili (sample file)" href="CCMatrix/v1/sv-sw_sample.html">view</a></td><td><a rel="nofollow" title="Swedish-Tamil (sample file)" href="CCMatrix/v1/sv-ta_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Swedish-Turkish (sample file)" href="CCMatrix/v1/sv-tr_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Swedish-Ukrainian (sample file)" href="CCMatrix/v1/sv-uk_sample.html">view</a></td><td></td><td></td><td><a rel="nofollow" title="Swedish-Vietnamese (sample file)" href="CCMatrix/v1/sv-vi_sample.html">view</a></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Swedish-Chinese (sample file)" href="CCMatrix/v1/sv-zh_sample.html">view</a></td><td></td><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/raw/sv.zip">sv</a></th></tr>
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/sw.zip">sw</a></th>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-Amharic' (88.7k links, 2.0M tokens)" href="download.php?f=CCMatrix/v1/xml/am-sw.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-Arabic' (1.8M links, 35.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-sw.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-Amharic' (88.7k links, 2.2M tokens)" href="download.php?f=CCMatrix/v1/xml/am-sw.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-Arabic' (1.8M links, 46.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-sw.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-Belarusian' (40.2k links, 0.8M tokens)" href="download.php?f=CCMatrix/v1/xml/be-sw.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-Bulgarian' (0.6M links, 17.2M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-sw.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-Bengali' (0.9M links, 22.7M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-sw.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-Belarusian' (40.2k links, 0.9M tokens)" href="download.php?f=CCMatrix/v1/xml/be-sw.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-Bulgarian' (0.6M links, 18.9M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-sw.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-Bengali' (0.9M links, 26.8M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-sw.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-Catalan' (0.3M links, 9.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-sw.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-Catalan' (0.3M links, 10.1M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-sw.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-Czech' (0.7M links, 17.3M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-sw.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-Czech' (0.7M links, 19.6M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-sw.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-German' (2.4M links, 50.5M tokens)" href="download.php?f=CCMatrix/v1/xml/de-sw.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-Greek' (1.5M links, 29.6M tokens)" href="download.php?f=CCMatrix/v1/xml/el-sw.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-English' (5.8M links, 112.1M tokens)" href="download.php?f=CCMatrix/v1/xml/en-sw.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-Esperanto' (0.3M links, 9.0M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-sw.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-Spanish' (6.6M links, 117.3M tokens)" href="download.php?f=CCMatrix/v1/xml/es-sw.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-Estonian' (0.8M links, 15.1M tokens)" href="download.php?f=CCMatrix/v1/xml/et-sw.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-German' (2.4M links, 66.5M tokens)" href="download.php?f=CCMatrix/v1/xml/de-sw.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-Greek' (1.5M links, 38.0M tokens)" href="download.php?f=CCMatrix/v1/xml/el-sw.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-English' (5.8M links, 163.5M tokens)" href="download.php?f=CCMatrix/v1/xml/en-sw.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-Esperanto' (0.3M links, 9.7M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-sw.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-Spanish' (6.6M links, 181.6M tokens)" href="download.php?f=CCMatrix/v1/xml/es-sw.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-Estonian' (0.8M links, 17.7M tokens)" href="download.php?f=CCMatrix/v1/xml/et-sw.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-Persian' (1.6M links, 31.6M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-sw.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-Finnish' (1.4M links, 21.5M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-sw.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-Persian' (1.6M links, 42.4M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-sw.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-Finnish' (1.4M links, 28.9M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-sw.xml.gz">ces</a></td>
 <th>sw</th>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-French' (7.6M links, 134.3M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-sw.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-French' (7.6M links, 209.6M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-sw.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-Hausa' (22.7k links, 0.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ha-sw.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-Hebrew' (1.0M links, 16.9M tokens)" href="download.php?f=CCMatrix/v1/xml/he-sw.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-Hindi' (1.0M links, 27.3M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-sw.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-Hausa' (22.7k links, 0.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ha-sw.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-Hebrew' (1.0M links, 21.0M tokens)" href="download.php?f=CCMatrix/v1/xml/he-sw.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-Hindi' (1.0M links, 32.2M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-sw.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-Hungarian' (1.4M links, 24.6M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-sw.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-Hungarian' (1.4M links, 31.9M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-sw.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-Indonesian' (2.4M links, 45.6M tokens)" href="download.php?f=CCMatrix/v1/xml/id-sw.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-Igbo' (16.1k links, 0.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ig-sw.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-Italian' (1.2M links, 32.1M tokens)" href="download.php?f=CCMatrix/v1/xml/it-sw.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-Japanese' (0.9M links, 9.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-sw.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-Indonesian' (2.4M links, 64.1M tokens)" href="download.php?f=CCMatrix/v1/xml/id-sw.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-Igbo' (16.1k links, 0.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ig-sw.xml.gz">ces</a></td>
 <td></td>
 <td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-Italian' (1.2M links, 37.6M tokens)" href="download.php?f=CCMatrix/v1/xml/it-sw.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-Japanese' (0.9M links, 14.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-sw.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-Korean' (0.6M links, 11.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ko-sw.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-Latin' (34.7k links, 0.5M tokens)" href="download.php?f=CCMatrix/v1/xml/la-sw.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-Korean' (0.6M links, 14.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ko-sw.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-Latin' (34.7k links, 0.6M tokens)" href="download.php?f=CCMatrix/v1/xml/la-sw.xml.gz">ces</a></td>
 <td></td>
 <th>sw</th>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-Ganda' (3.5k links, 62.7k tokens)" href="download.php?f=CCMatrix/v1/xml/lg-sw.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-Lithuanian' (0.9M links, 17.0M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-sw.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-Latvian' (0.8M links, 15.9M tokens)" href="download.php?f=CCMatrix/v1/xml/lv-sw.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-Ganda' (3.5k links, 83.5k tokens)" href="download.php?f=CCMatrix/v1/xml/lg-sw.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-Lithuanian' (0.9M links, 20.2M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-sw.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-Latvian' (0.8M links, 18.4M tokens)" href="download.php?f=CCMatrix/v1/xml/lv-sw.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -3676,151 +3676,151 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-Dutch' (1.2M links, 29.4M tokens)" href="download.php?f=CCMatrix/v1/xml/nl-sw.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-Dutch' (1.2M links, 35.3M tokens)" href="download.php?f=CCMatrix/v1/xml/nl-sw.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-Oromo' (5.0k links, 93.4k tokens)" href="download.php?f=CCMatrix/v1/xml/om-sw.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-Oromo' (5.0k links, 0.1M tokens)" href="download.php?f=CCMatrix/v1/xml/om-sw.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-Polish' (1.0M links, 24.8M tokens)" href="download.php?f=CCMatrix/v1/xml/pl-sw.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-Portuguese' (3.6M links, 68.8M tokens)" href="download.php?f=CCMatrix/v1/xml/pt-sw.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-Polish' (1.0M links, 28.9M tokens)" href="download.php?f=CCMatrix/v1/xml/pl-sw.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-Portuguese' (3.6M links, 100.2M tokens)" href="download.php?f=CCMatrix/v1/xml/pt-sw.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-Russian' (1.4M links, 26.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ru-sw.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-Russian' (1.4M links, 34.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ru-sw.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-Slovak' (0.6M links, 16.8M tokens)" href="download.php?f=CCMatrix/v1/xml/sk-sw.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-Slovenian' (0.5M links, 15.6M tokens)" href="download.php?f=CCMatrix/v1/xml/sl-sw.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-Somali' (37.9k links, 1.2M tokens)" href="download.php?f=CCMatrix/v1/xml/so-sw.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-Slovak' (0.6M links, 18.2M tokens)" href="download.php?f=CCMatrix/v1/xml/sk-sw.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-Slovenian' (0.5M links, 16.8M tokens)" href="download.php?f=CCMatrix/v1/xml/sl-sw.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-Somali' (37.9k links, 1.4M tokens)" href="download.php?f=CCMatrix/v1/xml/so-sw.xml.gz">ces</a></td>
 <th>sw</th>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-Serbian' (0.5M links, 13.2M tokens)" href="download.php?f=CCMatrix/v1/xml/sr-sw.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-Serbian' (0.5M links, 14.3M tokens)" href="download.php?f=CCMatrix/v1/xml/sr-sw.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-Swedish' (0.9M links, 23.5M tokens)" href="download.php?f=CCMatrix/v1/xml/sv-sw.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-Swedish' (0.9M links, 26.9M tokens)" href="download.php?f=CCMatrix/v1/xml/sv-sw.xml.gz">ces</a></td>
 <th></th>
 <td><a rel="nofollow" title="Swahili-Tamil (sample file)" href="CCMatrix/v1/sw-ta_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Swahili-Turkish (sample file)" href="CCMatrix/v1/sw-tr_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Swahili-Ukrainian (sample file)" href="CCMatrix/v1/sw-uk_sample.html">view</a></td><td></td><td></td><td><a rel="nofollow" title="Swahili-Vietnamese (sample file)" href="CCMatrix/v1/sw-vi_sample.html">view</a></td><td><a rel="nofollow" title="Swahili-Wolof (sample file)" href="CCMatrix/v1/sw-wo_sample.html">view</a></td><td><a rel="nofollow" title="Swahili-Xhosa (sample file)" href="CCMatrix/v1/sw-xh_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Swahili-Yoruba (sample file)" href="CCMatrix/v1/sw-yo_sample.html">view</a></td><td><a rel="nofollow" title="Swahili-Chinese (sample file)" href="CCMatrix/v1/sw-zh_sample.html">view</a></td><td><a rel="nofollow" title="Swahili-Zulu (sample file)" href="CCMatrix/v1/sw-zu_sample.html">view</a></td><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/raw/sw.zip">sw</a></th></tr>
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/ta.zip">ta</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-Arabic' (1.9M links, 42.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-Arabic' (1.9M links, 51.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-ta.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-Bulgarian' (0.6M links, 13.7M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-ta.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-Bengali' (0.3M links, 11.0M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-Bulgarian' (0.6M links, 15.5M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-Bengali' (0.3M links, 12.6M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-ta.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-Catalan' (0.4M links, 9.1M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-Catalan' (0.4M links, 10.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-ta.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-Czech' (0.7M links, 17.7M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-Czech' (0.7M links, 20.0M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-ta.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-Danish' (0.5M links, 11.9M tokens)" href="download.php?f=CCMatrix/v1/xml/da-ta.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-German' (2.3M links, 55.7M tokens)" href="download.php?f=CCMatrix/v1/xml/de-ta.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-Greek' (1.8M links, 37.1M tokens)" href="download.php?f=CCMatrix/v1/xml/el-ta.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-English' (7.3M links, 159.2M tokens)" href="download.php?f=CCMatrix/v1/xml/en-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-Danish' (0.5M links, 13.2M tokens)" href="download.php?f=CCMatrix/v1/xml/da-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-German' (2.3M links, 71.4M tokens)" href="download.php?f=CCMatrix/v1/xml/de-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-Greek' (1.8M links, 43.8M tokens)" href="download.php?f=CCMatrix/v1/xml/el-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-English' (7.3M links, 222.4M tokens)" href="download.php?f=CCMatrix/v1/xml/en-ta.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-Spanish' (8.7M links, 194.5M tokens)" href="download.php?f=CCMatrix/v1/xml/es-ta.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-Estonian' (0.4M links, 7.8M tokens)" href="download.php?f=CCMatrix/v1/xml/et-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-Spanish' (8.7M links, 259.4M tokens)" href="download.php?f=CCMatrix/v1/xml/es-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-Estonian' (0.4M links, 8.8M tokens)" href="download.php?f=CCMatrix/v1/xml/et-ta.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-Persian' (1.8M links, 45.8M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-ta.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-Finnish' (1.8M links, 33.8M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-Persian' (1.8M links, 55.1M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-Finnish' (1.8M links, 40.5M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-ta.xml.gz">ces</a></td>
 <th>ta</th>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-French' (7.7M links, 175.6M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-French' (7.7M links, 238.6M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-ta.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-Hebrew' (1.9M links, 38.1M tokens)" href="download.php?f=CCMatrix/v1/xml/he-ta.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-Hindi' (0.4M links, 11.9M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-ta.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-Croatian' (0.6M links, 12.9M tokens)" href="download.php?f=CCMatrix/v1/xml/hr-ta.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-Hungarian' (1.8M links, 36.1M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-Hebrew' (1.9M links, 45.1M tokens)" href="download.php?f=CCMatrix/v1/xml/he-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-Hindi' (0.4M links, 12.9M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-Croatian' (0.6M links, 15.6M tokens)" href="download.php?f=CCMatrix/v1/xml/hr-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-Hungarian' (1.8M links, 43.3M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-ta.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-Indonesian' (2.3M links, 54.0M tokens)" href="download.php?f=CCMatrix/v1/xml/id-ta.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-Italian' (1.1M links, 26.8M tokens)" href="download.php?f=CCMatrix/v1/xml/it-ta.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-Japanese' (0.7M links, 14.1M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-Indonesian' (2.3M links, 67.6M tokens)" href="download.php?f=CCMatrix/v1/xml/id-ta.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-Italian' (1.1M links, 30.9M tokens)" href="download.php?f=CCMatrix/v1/xml/it-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-Japanese' (0.7M links, 17.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-ta.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-Korean' (0.5M links, 12.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ko-ta.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-Latin' (0.1M links, 1.6M tokens)" href="download.php?f=CCMatrix/v1/xml/la-ta.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-Korean' (0.5M links, 14.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ko-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-Latin' (0.1M links, 2.2M tokens)" href="download.php?f=CCMatrix/v1/xml/la-ta.xml.gz">ces</a></td>
 <td></td>
 <th>ta</th>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-Lithuanian' (1.4M links, 27.3M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-ta.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-Latvian' (0.3M links, 7.0M tokens)" href="download.php?f=CCMatrix/v1/xml/lv-ta.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-Malagasy' (0.2M links, 4.5M tokens)" href="download.php?f=CCMatrix/v1/xml/mg-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-Lithuanian' (1.4M links, 32.5M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-Latvian' (0.3M links, 7.8M tokens)" href="download.php?f=CCMatrix/v1/xml/lv-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-Malagasy' (0.2M links, 7.0M tokens)" href="download.php?f=CCMatrix/v1/xml/mg-ta.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-Malayalam' (0.3M links, 7.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ml-ta.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-Marathi' (80.6k links, 1.9M tokens)" href="download.php?f=CCMatrix/v1/xml/mr-ta.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-Malay' (0.3M links, 6.9M tokens)" href="download.php?f=CCMatrix/v1/xml/ms-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-Malayalam' (0.3M links, 8.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ml-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-Marathi' (80.6k links, 2.2M tokens)" href="download.php?f=CCMatrix/v1/xml/mr-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-Malay' (0.3M links, 8.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ms-ta.xml.gz">ces</a></td>
 <td></td>
 <td><a rel="nofollow" title="sentence alignments for 'Tamil-Nepali' (18.2k links, 0.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ne-ta.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-Dutch' (1.0M links, 25.9M tokens)" href="download.php?f=CCMatrix/v1/xml/nl-ta.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-Norwegian' (0.7M links, 16.6M tokens)" href="download.php?f=CCMatrix/v1/xml/no-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-Dutch' (1.0M links, 30.5M tokens)" href="download.php?f=CCMatrix/v1/xml/nl-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-Norwegian' (0.7M links, 18.9M tokens)" href="download.php?f=CCMatrix/v1/xml/no-ta.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-Oriya' (13.7k links, 0.3M tokens)" href="download.php?f=CCMatrix/v1/xml/or-ta.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-Polish' (0.9M links, 20.9M tokens)" href="download.php?f=CCMatrix/v1/xml/pl-ta.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-Portuguese' (4.6M links, 105.4M tokens)" href="download.php?f=CCMatrix/v1/xml/pt-ta.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-Romanian' (0.7M links, 18.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ro-ta.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-Russian' (1.5M links, 36.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ru-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-Oriya' (13.7k links, 0.6M tokens)" href="download.php?f=CCMatrix/v1/xml/or-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-Polish' (0.9M links, 24.2M tokens)" href="download.php?f=CCMatrix/v1/xml/pl-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-Portuguese' (4.6M links, 131.5M tokens)" href="download.php?f=CCMatrix/v1/xml/pt-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-Romanian' (0.7M links, 20.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ro-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-Russian' (1.5M links, 44.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ru-ta.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-Sinhala' (0.2M links, 5.6M tokens)" href="download.php?f=CCMatrix/v1/xml/si-ta.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-Slovak' (0.5M links, 10.8M tokens)" href="download.php?f=CCMatrix/v1/xml/sk-ta.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-Slovenian' (0.5M links, 10.0M tokens)" href="download.php?f=CCMatrix/v1/xml/sl-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-Sinhala' (0.2M links, 6.0M tokens)" href="download.php?f=CCMatrix/v1/xml/si-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-Slovak' (0.5M links, 11.6M tokens)" href="download.php?f=CCMatrix/v1/xml/sk-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-Slovenian' (0.5M links, 11.2M tokens)" href="download.php?f=CCMatrix/v1/xml/sl-ta.xml.gz">ces</a></td>
 <td></td>
 <th>ta</th>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-Serbian' (0.5M links, 10.9M tokens)" href="download.php?f=CCMatrix/v1/xml/sr-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-Serbian' (0.5M links, 12.2M tokens)" href="download.php?f=CCMatrix/v1/xml/sr-ta.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-Swedish' (0.8M links, 20.5M tokens)" href="download.php?f=CCMatrix/v1/xml/sv-ta.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tamil-Swahili' (1.4M links, 29.9M tokens)" href="download.php?f=CCMatrix/v1/xml/sw-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-Swedish' (0.8M links, 23.5M tokens)" href="download.php?f=CCMatrix/v1/xml/sv-ta.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tamil-Swahili' (1.4M links, 40.9M tokens)" href="download.php?f=CCMatrix/v1/xml/sw-ta.xml.gz">ces</a></td>
 <th></th>
 <td><a rel="nofollow" title="Tamil-Tagalog (sample file)" href="CCMatrix/v1/ta-tl_sample.html">view</a></td><td><a rel="nofollow" title="Tamil-Turkish (sample file)" href="CCMatrix/v1/ta-tr_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Tamil-Ukrainian (sample file)" href="CCMatrix/v1/ta-uk_sample.html">view</a></td><td><a rel="nofollow" title="Tamil-Urdu (sample file)" href="CCMatrix/v1/ta-ur_sample.html">view</a></td><td></td><td><a rel="nofollow" title="Tamil-Vietnamese (sample file)" href="CCMatrix/v1/ta-vi_sample.html">view</a></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Tamil-Chinese (sample file)" href="CCMatrix/v1/ta-zh_sample.html">view</a></td><td></td><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/raw/ta.zip">ta</a></th></tr>
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/tl.zip">tl</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tagalog-Arabic' (0.9M links, 17.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-tl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tagalog-Arabic' (0.9M links, 23.9M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-tl.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tagalog-Bengali' (0.1M links, 4.0M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-tl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tagalog-Bengali' (0.1M links, 4.3M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-tl.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tagalog-Cebuano' (43.5k links, 1.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ceb-tl.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tagalog-German' (1.1M links, 25.0M tokens)" href="download.php?f=CCMatrix/v1/xml/de-tl.xml.gz">ces</a></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tagalog-English' (3.1M links, 58.7M tokens)" href="download.php?f=CCMatrix/v1/xml/en-tl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tagalog-Cebuano' (43.5k links, 1.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ceb-tl.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tagalog-German' (1.1M links, 28.0M tokens)" href="download.php?f=CCMatrix/v1/xml/de-tl.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tagalog-Persian' (0.7M links, 14.9M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-tl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tagalog-English' (3.1M links, 74.8M tokens)" href="download.php?f=CCMatrix/v1/xml/en-tl.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tagalog-Persian' (0.7M links, 20.0M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-tl.xml.gz">ces</a></td>
 <td></td>
 <th>tl</th>
-<td><a rel="nofollow" title="sentence alignments for 'Tagalog-French' (1.0M links, 25.9M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-tl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tagalog-French' (1.0M links, 28.7M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-tl.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tagalog-Hebrew' (0.8M links, 13.7M tokens)" href="download.php?f=CCMatrix/v1/xml/he-tl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tagalog-Hindi' (0.1M links, 4.5M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-tl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tagalog-Hebrew' (0.8M links, 18.1M tokens)" href="download.php?f=CCMatrix/v1/xml/he-tl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tagalog-Hindi' (0.1M links, 4.8M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-tl.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tagalog-Indonesian' (1.7M links, 31.7M tokens)" href="download.php?f=CCMatrix/v1/xml/id-tl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tagalog-Indonesian' (1.7M links, 49.8M tokens)" href="download.php?f=CCMatrix/v1/xml/id-tl.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tagalog-Iloko' (26.6k links, 0.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ilo-tl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tagalog-Iloko' (26.6k links, 0.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ilo-tl.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tagalog-Japanese' (0.3M links, 4.1M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-tl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tagalog-Japanese' (0.3M links, 5.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-tl.xml.gz">ces</a></td>
 <td><a rel="nofollow" title="sentence alignments for 'Tagalog-Javanese' (34.2k links, 1.1M tokens)" href="download.php?f=CCMatrix/v1/xml/jv-tl.xml.gz">ces</a></td>
 <td></td>
 <td></td>
@@ -3832,13 +3832,11 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tagalog-Malagasy' (61.1k links, 2.1M tokens)" href="download.php?f=CCMatrix/v1/xml/mg-tl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tagalog-Malagasy' (61.1k links, 2.3M tokens)" href="download.php?f=CCMatrix/v1/xml/mg-tl.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tagalog-Malayalam' (0.2M links, 4.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ml-tl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tagalog-Malayalam' (0.2M links, 4.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ml-tl.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tagalog-Malay' (0.2M links, 4.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ms-tl.xml.gz">ces</a></td>
-<td></td>
-<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tagalog-Malay' (0.2M links, 4.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ms-tl.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -3847,7 +3845,9 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tagalog-Russian' (0.6M links, 11.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ru-tl.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tagalog-Russian' (0.6M links, 13.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ru-tl.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -3859,91 +3859,91 @@
 <td><a rel="nofollow" title="sentence alignments for 'Tagalog-Sundanese' (25.2k links, 0.8M tokens)" href="download.php?f=CCMatrix/v1/xml/su-tl.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tagalog-Tamil' (0.2M links, 5.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ta-tl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tagalog-Tamil' (0.2M links, 6.1M tokens)" href="download.php?f=CCMatrix/v1/xml/ta-tl.xml.gz">ces</a></td>
 <th></th>
 <td><a rel="nofollow" title="Tagalog-Turkish (sample file)" href="CCMatrix/v1/tl-tr_sample.html">view</a></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Tagalog-Vietnamese (sample file)" href="CCMatrix/v1/tl-vi_sample.html">view</a></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Tagalog-Chinese (sample file)" href="CCMatrix/v1/tl-zh_sample.html">view</a></td><td></td><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/raw/tl.zip">tl</a></th></tr>
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/tr.zip">tr</a></th>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Afrikaans' (2.7M links, 40.2M tokens)" href="download.php?f=CCMatrix/v1/xml/af-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Afrikaans' (2.7M links, 54.0M tokens)" href="download.php?f=CCMatrix/v1/xml/af-tr.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Arabic' (5.7M links, 144.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Arabic' (5.7M links, 157.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-tr.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Azerbaijani' (1.7M links, 29.4M tokens)" href="download.php?f=CCMatrix/v1/xml/az-tr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Belarusian' (2.0M links, 30.8M tokens)" href="download.php?f=CCMatrix/v1/xml/be-tr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Bulgarian' (5.4M links, 80.7M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-tr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Bengali' (5.1M links, 102.2M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Azerbaijani' (1.7M links, 39.5M tokens)" href="download.php?f=CCMatrix/v1/xml/az-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Belarusian' (2.0M links, 59.9M tokens)" href="download.php?f=CCMatrix/v1/xml/be-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Bulgarian' (5.4M links, 99.1M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Bengali' (5.1M links, 122.8M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-tr.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Czech' (14.4M links, 232.2M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Czech' (14.4M links, 262.6M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-tr.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Danish' (5.5M links, 136.0M tokens)" href="download.php?f=CCMatrix/v1/xml/da-tr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-German' (20.5M links, 480.0M tokens)" href="download.php?f=CCMatrix/v1/xml/de-tr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Greek' (10.8M links, 192.1M tokens)" href="download.php?f=CCMatrix/v1/xml/el-tr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-English' (47.0M links, 1.0G tokens)" href="download.php?f=CCMatrix/v1/xml/en-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Danish' (5.5M links, 146.5M tokens)" href="download.php?f=CCMatrix/v1/xml/da-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-German' (20.5M links, 538.0M tokens)" href="download.php?f=CCMatrix/v1/xml/de-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Greek' (10.8M links, 219.8M tokens)" href="download.php?f=CCMatrix/v1/xml/el-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-English' (47.0M links, 1.3G tokens)" href="download.php?f=CCMatrix/v1/xml/en-tr.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Spanish' (23.1M links, 404.9M tokens)" href="download.php?f=CCMatrix/v1/xml/es-tr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Estonian' (3.3M links, 70.7M tokens)" href="download.php?f=CCMatrix/v1/xml/et-tr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Basque' (3.8M links, 49.0M tokens)" href="download.php?f=CCMatrix/v1/xml/eu-tr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Persian' (4.0M links, 96.6M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-tr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Finnish' (5.3M links, 115.0M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Spanish' (23.1M links, 500.2M tokens)" href="download.php?f=CCMatrix/v1/xml/es-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Estonian' (3.3M links, 77.1M tokens)" href="download.php?f=CCMatrix/v1/xml/et-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Basque' (3.8M links, 60.7M tokens)" href="download.php?f=CCMatrix/v1/xml/eu-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Persian' (4.0M links, 105.6M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Finnish' (5.3M links, 123.4M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-tr.xml.gz">ces</a></td>
 <th>tr</th>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-French' (22.7M links, 402.5M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-French' (22.7M links, 493.5M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-tr.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Galician' (4.5M links, 60.2M tokens)" href="download.php?f=CCMatrix/v1/xml/gl-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Galician' (4.5M links, 78.1M tokens)" href="download.php?f=CCMatrix/v1/xml/gl-tr.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Hebrew' (7.6M links, 112.2M tokens)" href="download.php?f=CCMatrix/v1/xml/he-tr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Hindi' (5.5M links, 129.4M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Hebrew' (7.6M links, 129.1M tokens)" href="download.php?f=CCMatrix/v1/xml/he-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Hindi' (5.5M links, 149.3M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-tr.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Hungarian' (6.1M links, 141.8M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-tr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Armenian' (0.4M links, 5.1M tokens)" href="download.php?f=CCMatrix/v1/xml/hy-tr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Indonesian' (6.6M links, 164.6M tokens)" href="download.php?f=CCMatrix/v1/xml/id-tr.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Italian' (11.1M links, 304.0M tokens)" href="download.php?f=CCMatrix/v1/xml/it-tr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Japanese' (13.0M links, 132.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-tr.xml.gz">ces</a></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Georgian' (0.2M links, 3.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ka-tr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Kazakh' (0.3M links, 3.3M tokens)" href="download.php?f=CCMatrix/v1/xml/kk-tr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Central Khmer' (0.2M links, 4.0M tokens)" href="download.php?f=CCMatrix/v1/xml/km-tr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Korean' (6.3M links, 134.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ko-tr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Latin' (0.2M links, 1.9M tokens)" href="download.php?f=CCMatrix/v1/xml/la-tr.xml.gz">ces</a></td>
-<td></td>
-<th>tr</th>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Lithuanian' (7.4M links, 118.9M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-tr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Latvian' (2.6M links, 66.8M tokens)" href="download.php?f=CCMatrix/v1/xml/lv-tr.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Malayalam' (3.4M links, 60.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ml-tr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Marathi' (1.8M links, 28.0M tokens)" href="download.php?f=CCMatrix/v1/xml/mr-tr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Malay' (4.1M links, 60.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ms-tr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Burmese' (0.1M links, 3.5M tokens)" href="download.php?f=CCMatrix/v1/xml/my-tr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Nepali' (4.5M links, 71.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ne-tr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Dutch' (18.9M links, 337.8M tokens)" href="download.php?f=CCMatrix/v1/xml/nl-tr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Norwegian' (6.1M links, 151.9M tokens)" href="download.php?f=CCMatrix/v1/xml/no-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Hungarian' (6.1M links, 153.1M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Armenian' (0.4M links, 6.3M tokens)" href="download.php?f=CCMatrix/v1/xml/hy-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Indonesian' (6.6M links, 182.0M tokens)" href="download.php?f=CCMatrix/v1/xml/id-tr.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Polish' (17.3M links, 284.8M tokens)" href="download.php?f=CCMatrix/v1/xml/pl-tr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Portuguese' (20.9M links, 394.2M tokens)" href="download.php?f=CCMatrix/v1/xml/pt-tr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Romanian' (5.5M links, 141.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ro-tr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Russian' (11.0M links, 266.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ru-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Italian' (11.1M links, 331.9M tokens)" href="download.php?f=CCMatrix/v1/xml/it-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Japanese' (13.0M links, 158.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-tr.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Sinhala' (3.7M links, 57.0M tokens)" href="download.php?f=CCMatrix/v1/xml/si-tr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Slovak' (6.6M links, 153.4M tokens)" href="download.php?f=CCMatrix/v1/xml/sk-tr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Slovenian' (4.7M links, 113.2M tokens)" href="download.php?f=CCMatrix/v1/xml/sl-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Georgian' (0.2M links, 5.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ka-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Kazakh' (0.3M links, 3.9M tokens)" href="download.php?f=CCMatrix/v1/xml/kk-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Central Khmer' (0.2M links, 6.6M tokens)" href="download.php?f=CCMatrix/v1/xml/km-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Korean' (6.3M links, 143.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ko-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Latin' (0.2M links, 2.6M tokens)" href="download.php?f=CCMatrix/v1/xml/la-tr.xml.gz">ces</a></td>
 <td></td>
 <th>tr</th>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Albanian' (7.5M links, 124.1M tokens)" href="download.php?f=CCMatrix/v1/xml/sq-tr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Serbian' (4.1M links, 87.5M tokens)" href="download.php?f=CCMatrix/v1/xml/sr-tr.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Swedish' (19.4M links, 334.7M tokens)" href="download.php?f=CCMatrix/v1/xml/sv-tr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Swahili' (3.4M links, 47.8M tokens)" href="download.php?f=CCMatrix/v1/xml/sw-tr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Tamil' (3.3M links, 69.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ta-tr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Turkish-Tagalog' (1.5M links, 23.9M tokens)" href="download.php?f=CCMatrix/v1/xml/tl-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Lithuanian' (7.4M links, 136.1M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Latvian' (2.6M links, 73.7M tokens)" href="download.php?f=CCMatrix/v1/xml/lv-tr.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Malayalam' (3.4M links, 75.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ml-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Marathi' (1.8M links, 40.6M tokens)" href="download.php?f=CCMatrix/v1/xml/mr-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Malay' (4.1M links, 75.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ms-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Burmese' (0.1M links, 6.4M tokens)" href="download.php?f=CCMatrix/v1/xml/my-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Nepali' (4.5M links, 176.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ne-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Dutch' (18.9M links, 379.7M tokens)" href="download.php?f=CCMatrix/v1/xml/nl-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Norwegian' (6.1M links, 162.7M tokens)" href="download.php?f=CCMatrix/v1/xml/no-tr.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Polish' (17.3M links, 321.4M tokens)" href="download.php?f=CCMatrix/v1/xml/pl-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Portuguese' (20.9M links, 451.8M tokens)" href="download.php?f=CCMatrix/v1/xml/pt-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Romanian' (5.5M links, 155.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ro-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Russian' (11.0M links, 300.9M tokens)" href="download.php?f=CCMatrix/v1/xml/ru-tr.xml.gz">ces</a></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Sinhala' (3.7M links, 70.3M tokens)" href="download.php?f=CCMatrix/v1/xml/si-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Slovak' (6.6M links, 165.6M tokens)" href="download.php?f=CCMatrix/v1/xml/sk-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Slovenian' (4.7M links, 122.4M tokens)" href="download.php?f=CCMatrix/v1/xml/sl-tr.xml.gz">ces</a></td>
+<td></td>
+<th>tr</th>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Albanian' (7.5M links, 155.8M tokens)" href="download.php?f=CCMatrix/v1/xml/sq-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Serbian' (4.1M links, 95.3M tokens)" href="download.php?f=CCMatrix/v1/xml/sr-tr.xml.gz">ces</a></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Swedish' (19.4M links, 373.7M tokens)" href="download.php?f=CCMatrix/v1/xml/sv-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Swahili' (3.4M links, 76.9M tokens)" href="download.php?f=CCMatrix/v1/xml/sw-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Tamil' (3.3M links, 89.1M tokens)" href="download.php?f=CCMatrix/v1/xml/ta-tr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Turkish-Tagalog' (1.5M links, 37.8M tokens)" href="download.php?f=CCMatrix/v1/xml/tl-tr.xml.gz">ces</a></td>
 <th></th>
 <td></td><td><a rel="nofollow" title="Turkish-Ukrainian (sample file)" href="CCMatrix/v1/tr-uk_sample.html">view</a></td><td><a rel="nofollow" title="Turkish-Urdu (sample file)" href="CCMatrix/v1/tr-ur_sample.html">view</a></td><td><a rel="nofollow" title="Turkish-Uzbek (sample file)" href="CCMatrix/v1/tr-uz_sample.html">view</a></td><td><a rel="nofollow" title="Turkish-Vietnamese (sample file)" href="CCMatrix/v1/tr-vi_sample.html">view</a></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Turkish-Chinese (sample file)" href="CCMatrix/v1/tr-zh_sample.html">view</a></td><td></td><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/raw/tr.zip">tr</a></th></tr>
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/tt.zip">tt</a></th>
@@ -3951,7 +3951,7 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tatar-Azerbaijani' (0.2M links, 3.1M tokens)" href="download.php?f=CCMatrix/v1/xml/az-tt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tatar-Azerbaijani' (0.2M links, 3.6M tokens)" href="download.php?f=CCMatrix/v1/xml/az-tt.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -3981,7 +3981,7 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tatar-Armenian' (58.7k links, 0.8M tokens)" href="download.php?f=CCMatrix/v1/xml/hy-tt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tatar-Armenian' (58.7k links, 0.9M tokens)" href="download.php?f=CCMatrix/v1/xml/hy-tt.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -3989,7 +3989,7 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Tatar-Georgian' (29.8k links, 0.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ka-tt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Tatar-Georgian' (29.8k links, 0.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ka-tt.xml.gz">ces</a></td>
 <td><a rel="nofollow" title="sentence alignments for 'Tatar-Kazakh' (69.7k links, 1.0M tokens)" href="download.php?f=CCMatrix/v1/xml/kk-tt.xml.gz">ces</a></td>
 <td></td>
 <td></td>
@@ -4034,126 +4034,98 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/uk.zip">uk</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Arabic' (2.1M links, 55.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-uk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Arabic' (2.1M links, 60.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-uk.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Belarusian' (0.9M links, 15.4M tokens)" href="download.php?f=CCMatrix/v1/xml/be-uk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Bulgarian' (8.1M links, 166.5M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-uk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Bengali' (0.6M links, 13.8M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-uk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Belarusian' (0.9M links, 20.3M tokens)" href="download.php?f=CCMatrix/v1/xml/be-uk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Bulgarian' (8.1M links, 189.6M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-uk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Bengali' (0.6M links, 14.9M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-uk.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Catalan' (1.1M links, 22.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-uk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Catalan' (1.1M links, 25.1M tokens)" href="download.php?f=CCMatrix/v1/xml/ca-uk.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Czech' (4.0M links, 98.3M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-uk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Czech' (4.0M links, 107.6M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-uk.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Danish' (2.5M links, 66.0M tokens)" href="download.php?f=CCMatrix/v1/xml/da-uk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-German' (7.5M links, 181.2M tokens)" href="download.php?f=CCMatrix/v1/xml/de-uk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Greek' (2.7M links, 71.3M tokens)" href="download.php?f=CCMatrix/v1/xml/el-uk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-English' (20.2M links, 516.5M tokens)" href="download.php?f=CCMatrix/v1/xml/en-uk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Esperanto' (0.7M links, 14.0M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-uk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Spanish' (8.3M links, 226.1M tokens)" href="download.php?f=CCMatrix/v1/xml/es-uk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Estonian' (2.0M links, 48.3M tokens)" href="download.php?f=CCMatrix/v1/xml/et-uk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Danish' (2.5M links, 71.5M tokens)" href="download.php?f=CCMatrix/v1/xml/da-uk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-German' (7.5M links, 208.5M tokens)" href="download.php?f=CCMatrix/v1/xml/de-uk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Greek' (2.7M links, 78.4M tokens)" href="download.php?f=CCMatrix/v1/xml/el-uk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-English' (20.2M links, 646.1M tokens)" href="download.php?f=CCMatrix/v1/xml/en-uk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Esperanto' (0.7M links, 15.9M tokens)" href="download.php?f=CCMatrix/v1/xml/eo-uk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Spanish' (8.3M links, 264.8M tokens)" href="download.php?f=CCMatrix/v1/xml/es-uk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Estonian' (2.0M links, 52.9M tokens)" href="download.php?f=CCMatrix/v1/xml/et-uk.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Persian' (1.1M links, 27.8M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-uk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Finnish' (2.3M links, 50.1M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-uk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Persian' (1.1M links, 30.3M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-uk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Finnish' (2.3M links, 54.1M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-uk.xml.gz">ces</a></td>
 <th>uk</th>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-French' (7.3M links, 190.6M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-uk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-French' (7.3M links, 221.9M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-uk.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Hebrew' (1.8M links, 37.3M tokens)" href="download.php?f=CCMatrix/v1/xml/he-uk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Hindi' (0.9M links, 30.1M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-uk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Croatian' (1.8M links, 42.1M tokens)" href="download.php?f=CCMatrix/v1/xml/hr-uk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Hungarian' (2.6M links, 62.2M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-uk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Hebrew' (1.8M links, 40.0M tokens)" href="download.php?f=CCMatrix/v1/xml/he-uk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Hindi' (0.9M links, 31.8M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-uk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Croatian' (1.8M links, 46.3M tokens)" href="download.php?f=CCMatrix/v1/xml/hr-uk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Hungarian' (2.6M links, 67.4M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-uk.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Indonesian' (2.2M links, 57.6M tokens)" href="download.php?f=CCMatrix/v1/xml/id-uk.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Italian' (2.7M links, 42.4M tokens)" href="download.php?f=CCMatrix/v1/xml/it-uk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Japanese' (2.0M links, 23.9M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-uk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Indonesian' (2.2M links, 63.9M tokens)" href="download.php?f=CCMatrix/v1/xml/id-uk.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Korean' (1.0M links, 17.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ko-uk.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<th>uk</th>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Lithuanian' (3.0M links, 73.0M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-uk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Latvian' (1.9M links, 52.4M tokens)" href="download.php?f=CCMatrix/v1/xml/lv-uk.xml.gz">ces</a></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Macedonian' (1.4M links, 35.3M tokens)" href="download.php?f=CCMatrix/v1/xml/mk-uk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Italian' (2.7M links, 49.6M tokens)" href="download.php?f=CCMatrix/v1/xml/it-uk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Japanese' (2.0M links, 28.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-uk.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Korean' (1.0M links, 19.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ko-uk.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Dutch' (3.3M links, 86.7M tokens)" href="download.php?f=CCMatrix/v1/xml/nl-uk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Norwegian' (2.5M links, 68.4M tokens)" href="download.php?f=CCMatrix/v1/xml/no-uk.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Polish' (5.8M links, 151.7M tokens)" href="download.php?f=CCMatrix/v1/xml/pl-uk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Portuguese' (4.7M links, 136.3M tokens)" href="download.php?f=CCMatrix/v1/xml/pt-uk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Romanian' (3.4M links, 96.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ro-uk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Russian' (26.5M links, 718.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ru-uk.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Slovak' (6.1M links, 102.9M tokens)" href="download.php?f=CCMatrix/v1/xml/sk-uk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Slovenian' (4.5M links, 78.6M tokens)" href="download.php?f=CCMatrix/v1/xml/sl-uk.xml.gz">ces</a></td>
 <td></td>
 <th>uk</th>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Albanian' (1.5M links, 35.6M tokens)" href="download.php?f=CCMatrix/v1/xml/sq-uk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Serbian' (4.6M links, 79.2M tokens)" href="download.php?f=CCMatrix/v1/xml/sr-uk.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Swedish' (2.9M links, 68.8M tokens)" href="download.php?f=CCMatrix/v1/xml/sv-uk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Swahili' (0.3M links, 7.5M tokens)" href="download.php?f=CCMatrix/v1/xml/sw-uk.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Tamil' (0.3M links, 7.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ta-uk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Lithuanian' (3.0M links, 80.3M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-uk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Latvian' (1.9M links, 58.3M tokens)" href="download.php?f=CCMatrix/v1/xml/lv-uk.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Turkish' (2.4M links, 30.6M tokens)" href="download.php?f=CCMatrix/v1/xml/tr-uk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Macedonian' (1.4M links, 40.1M tokens)" href="download.php?f=CCMatrix/v1/xml/mk-uk.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Dutch' (3.3M links, 94.5M tokens)" href="download.php?f=CCMatrix/v1/xml/nl-uk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Norwegian' (2.5M links, 73.7M tokens)" href="download.php?f=CCMatrix/v1/xml/no-uk.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Polish' (5.8M links, 168.3M tokens)" href="download.php?f=CCMatrix/v1/xml/pl-uk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Portuguese' (4.7M links, 152.4M tokens)" href="download.php?f=CCMatrix/v1/xml/pt-uk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Romanian' (3.4M links, 107.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ro-uk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Russian' (26.5M links, 910.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ru-uk.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Slovak' (6.1M links, 116.4M tokens)" href="download.php?f=CCMatrix/v1/xml/sk-uk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Slovenian' (4.5M links, 88.4M tokens)" href="download.php?f=CCMatrix/v1/xml/sl-uk.xml.gz">ces</a></td>
+<td></td>
+<th>uk</th>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Albanian' (1.5M links, 39.3M tokens)" href="download.php?f=CCMatrix/v1/xml/sq-uk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Serbian' (4.6M links, 89.4M tokens)" href="download.php?f=CCMatrix/v1/xml/sr-uk.xml.gz">ces</a></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Swedish' (2.9M links, 74.4M tokens)" href="download.php?f=CCMatrix/v1/xml/sv-uk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Swahili' (0.3M links, 8.2M tokens)" href="download.php?f=CCMatrix/v1/xml/sw-uk.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Tamil' (0.3M links, 8.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ta-uk.xml.gz">ces</a></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Ukrainian-Turkish' (2.4M links, 37.2M tokens)" href="download.php?f=CCMatrix/v1/xml/tr-uk.xml.gz">ces</a></td>
 <td></td>
 <th></th>
 <td></td><td></td><td><a rel="nofollow" title="Ukrainian-Vietnamese (sample file)" href="CCMatrix/v1/uk-vi_sample.html">view</a></td><td></td><td></td><td></td><td></td><td><a rel="nofollow" title="Ukrainian-Chinese (sample file)" href="CCMatrix/v1/uk-zh_sample.html">view</a></td><td></td><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/raw/uk.zip">uk</a></th></tr>
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/ur.zip">ur</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Urdu-Arabic' (1.7M links, 34.9M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-ur.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Urdu-Arabic' (1.7M links, 43.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-ur.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Urdu-Bengali' (0.5M links, 18.4M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-ur.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Urdu-English' (6.1M links, 115.9M tokens)" href="download.php?f=CCMatrix/v1/xml/en-ur.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Urdu-Persian' (1.9M links, 42.6M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-ur.xml.gz">ces</a></td>
-<td></td>
-<th>ur</th>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Urdu-Hebrew' (0.9M links, 15.6M tokens)" href="download.php?f=CCMatrix/v1/xml/he-ur.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Urdu-Hindi' (0.8M links, 29.9M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-ur.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Urdu-Indonesian' (2.0M links, 41.8M tokens)" href="download.php?f=CCMatrix/v1/xml/id-ur.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Urdu-Bengali' (0.5M links, 20.1M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-ur.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -4162,9 +4134,12 @@
 <td></td>
 <td></td>
 <td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Urdu-English' (6.1M links, 170.8M tokens)" href="download.php?f=CCMatrix/v1/xml/en-ur.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Urdu-Persian' (1.9M links, 52.6M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-ur.xml.gz">ces</a></td>
 <td></td>
 <th>ur</th>
 <td></td>
@@ -4173,21 +4148,21 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Urdu-Marathi' (97.5k links, 2.2M tokens)" href="download.php?f=CCMatrix/v1/xml/mr-ur.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Urdu-Nepali' (25.1k links, 0.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ne-ur.xml.gz">ces</a></td>
-<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Urdu-Hebrew' (0.9M links, 18.3M tokens)" href="download.php?f=CCMatrix/v1/xml/he-ur.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Urdu-Hindi' (0.8M links, 32.4M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-ur.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Urdu-Oriya' (3.9k links, 93.1k tokens)" href="download.php?f=CCMatrix/v1/xml/or-ur.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Urdu-Indonesian' (2.0M links, 55.8M tokens)" href="download.php?f=CCMatrix/v1/xml/id-ur.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Urdu-Russian' (1.4M links, 29.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ru-ur.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Urdu-Sinhala' (0.3M links, 7.3M tokens)" href="download.php?f=CCMatrix/v1/xml/si-ur.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 <td></td>
 <td></td>
 <td></td>
@@ -4197,9 +4172,34 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Urdu-Tamil' (0.3M links, 11.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ta-ur.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Urdu-Turkish' (3.2M links, 57.0M tokens)" href="download.php?f=CCMatrix/v1/xml/tr-ur.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Urdu-Marathi' (97.5k links, 2.4M tokens)" href="download.php?f=CCMatrix/v1/xml/mr-ur.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Urdu-Nepali' (25.1k links, 0.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ne-ur.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Urdu-Oriya' (3.9k links, 0.1M tokens)" href="download.php?f=CCMatrix/v1/xml/or-ur.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Urdu-Russian' (1.4M links, 37.1M tokens)" href="download.php?f=CCMatrix/v1/xml/ru-ur.xml.gz">ces</a></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Urdu-Sinhala' (0.3M links, 7.8M tokens)" href="download.php?f=CCMatrix/v1/xml/si-ur.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td></td>
+<th>ur</th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Urdu-Tamil' (0.3M links, 12.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ta-ur.xml.gz">ces</a></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Urdu-Turkish' (3.2M links, 79.9M tokens)" href="download.php?f=CCMatrix/v1/xml/tr-ur.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <th></th>
@@ -4207,7 +4207,7 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/uz.zip">uz</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Uzbek-Arabic' (1.2M links, 31.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-uz.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Uzbek-Arabic' (1.2M links, 34.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-uz.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -4226,32 +4226,7 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Uzbek-Persian' (0.6M links, 16.7M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-uz.xml.gz">ces</a></td>
-<td></td>
-<th>uz</th>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Uzbek-Persian' (0.6M links, 18.8M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-uz.xml.gz">ces</a></td>
 <td></td>
 <th>uz</th>
 <td></td>
@@ -4286,7 +4261,32 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Uzbek-Turkish' (1.4M links, 31.3M tokens)" href="download.php?f=CCMatrix/v1/xml/tr-uz.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<th>uz</th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Uzbek-Turkish' (1.4M links, 35.5M tokens)" href="download.php?f=CCMatrix/v1/xml/tr-uz.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -4295,88 +4295,88 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/vi.zip">vi</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Arabic' (8.8M links, 225.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-vi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Arabic' (8.8M links, 258.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-vi.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Azerbaijani' (0.4M links, 7.1M tokens)" href="download.php?f=CCMatrix/v1/xml/az-vi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Belarusian' (0.2M links, 3.0M tokens)" href="download.php?f=CCMatrix/v1/xml/be-vi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Bulgarian' (4.7M links, 166.7M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-vi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Bengali' (2.8M links, 66.5M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-vi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Azerbaijani' (0.4M links, 7.9M tokens)" href="download.php?f=CCMatrix/v1/xml/az-vi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Belarusian' (0.2M links, 5.2M tokens)" href="download.php?f=CCMatrix/v1/xml/be-vi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Bulgarian' (4.7M links, 185.2M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-vi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Bengali' (2.8M links, 77.5M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-vi.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Czech' (9.9M links, 213.7M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-vi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Czech' (9.9M links, 239.9M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-vi.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Danish' (4.0M links, 131.8M tokens)" href="download.php?f=CCMatrix/v1/xml/da-vi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-German' (12.8M links, 399.4M tokens)" href="download.php?f=CCMatrix/v1/xml/de-vi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Greek' (8.4M links, 204.7M tokens)" href="download.php?f=CCMatrix/v1/xml/el-vi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-English' (50.1M links, 1.6G tokens)" href="download.php?f=CCMatrix/v1/xml/en-vi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Danish' (4.0M links, 143.1M tokens)" href="download.php?f=CCMatrix/v1/xml/da-vi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-German' (12.8M links, 454.6M tokens)" href="download.php?f=CCMatrix/v1/xml/de-vi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Greek' (8.4M links, 233.2M tokens)" href="download.php?f=CCMatrix/v1/xml/el-vi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-English' (50.1M links, 2.1G tokens)" href="download.php?f=CCMatrix/v1/xml/en-vi.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Spanish' (32.3M links, 822.3M tokens)" href="download.php?f=CCMatrix/v1/xml/es-vi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Estonian' (2.6M links, 76.2M tokens)" href="download.php?f=CCMatrix/v1/xml/et-vi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Spanish' (32.3M links, 1.0G tokens)" href="download.php?f=CCMatrix/v1/xml/es-vi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Estonian' (2.6M links, 83.0M tokens)" href="download.php?f=CCMatrix/v1/xml/et-vi.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Persian' (5.6M links, 139.6M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-vi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Finnish' (7.6M links, 159.5M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-vi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Persian' (5.6M links, 158.9M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-vi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Finnish' (7.6M links, 178.1M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-vi.xml.gz">ces</a></td>
 <th>vi</th>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-French' (15.2M links, 530.5M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-vi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-French' (15.2M links, 622.3M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-vi.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Hebrew' (6.0M links, 114.0M tokens)" href="download.php?f=CCMatrix/v1/xml/he-vi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Hindi' (3.3M links, 99.8M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-vi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Hebrew' (6.0M links, 129.6M tokens)" href="download.php?f=CCMatrix/v1/xml/he-vi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Hindi' (3.3M links, 112.4M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-vi.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Hungarian' (8.0M links, 173.7M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-vi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Armenian' (0.4M links, 6.1M tokens)" href="download.php?f=CCMatrix/v1/xml/hy-vi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Indonesian' (9.3M links, 339.9M tokens)" href="download.php?f=CCMatrix/v1/xml/id-vi.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Italian' (8.8M links, 328.8M tokens)" href="download.php?f=CCMatrix/v1/xml/it-vi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Japanese' (3.4M links, 57.1M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-vi.xml.gz">ces</a></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Georgian' (0.2M links, 4.1M tokens)" href="download.php?f=CCMatrix/v1/xml/ka-vi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Kazakh' (0.2M links, 2.7M tokens)" href="download.php?f=CCMatrix/v1/xml/kk-vi.xml.gz">ces</a></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Korean' (3.9M links, 102.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ko-vi.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<th>vi</th>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Lithuanian' (5.5M links, 120.6M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-vi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Latvian' (1.9M links, 63.3M tokens)" href="download.php?f=CCMatrix/v1/xml/lv-vi.xml.gz">ces</a></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Macedonian' (1.6M links, 48.8M tokens)" href="download.php?f=CCMatrix/v1/xml/mk-vi.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Malay' (4.2M links, 86.9M tokens)" href="download.php?f=CCMatrix/v1/xml/ms-vi.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Dutch' (12.2M links, 282.3M tokens)" href="download.php?f=CCMatrix/v1/xml/nl-vi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Norwegian' (4.4M links, 147.4M tokens)" href="download.php?f=CCMatrix/v1/xml/no-vi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Hungarian' (8.0M links, 195.7M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-vi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Armenian' (0.4M links, 7.3M tokens)" href="download.php?f=CCMatrix/v1/xml/hy-vi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Indonesian' (9.3M links, 385.8M tokens)" href="download.php?f=CCMatrix/v1/xml/id-vi.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Polish' (5.8M links, 182.5M tokens)" href="download.php?f=CCMatrix/v1/xml/pl-vi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Portuguese' (8.2M links, 196.0M tokens)" href="download.php?f=CCMatrix/v1/xml/pt-vi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Romanian' (4.8M links, 173.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ro-vi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Russian' (8.4M links, 261.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ru-vi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Italian' (8.8M links, 366.3M tokens)" href="download.php?f=CCMatrix/v1/xml/it-vi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Japanese' (3.4M links, 63.9M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-vi.xml.gz">ces</a></td>
 <td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Georgian' (0.2M links, 5.9M tokens)" href="download.php?f=CCMatrix/v1/xml/ka-vi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Kazakh' (0.2M links, 3.0M tokens)" href="download.php?f=CCMatrix/v1/xml/kk-vi.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Slovak' (5.5M links, 175.6M tokens)" href="download.php?f=CCMatrix/v1/xml/sk-vi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Slovenian' (3.8M links, 121.9M tokens)" href="download.php?f=CCMatrix/v1/xml/sl-vi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Korean' (3.9M links, 109.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ko-vi.xml.gz">ces</a></td>
+<td></td>
 <td></td>
 <th>vi</th>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Serbian' (3.5M links, 106.3M tokens)" href="download.php?f=CCMatrix/v1/xml/sr-vi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Lithuanian' (5.5M links, 136.6M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-vi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Latvian' (1.9M links, 70.0M tokens)" href="download.php?f=CCMatrix/v1/xml/lv-vi.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Swedish' (7.4M links, 238.5M tokens)" href="download.php?f=CCMatrix/v1/xml/sv-vi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Swahili' (2.5M links, 46.8M tokens)" href="download.php?f=CCMatrix/v1/xml/sw-vi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Tamil' (1.3M links, 27.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ta-vi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Tagalog' (1.6M links, 36.1M tokens)" href="download.php?f=CCMatrix/v1/xml/tl-vi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Turkish' (7.3M links, 206.8M tokens)" href="download.php?f=CCMatrix/v1/xml/tr-vi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Macedonian' (1.6M links, 55.5M tokens)" href="download.php?f=CCMatrix/v1/xml/mk-vi.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Ukrainian' (1.9M links, 58.9M tokens)" href="download.php?f=CCMatrix/v1/xml/uk-vi.xml.gz">ces</a></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Malay' (4.2M links, 102.1M tokens)" href="download.php?f=CCMatrix/v1/xml/ms-vi.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Dutch' (12.2M links, 317.0M tokens)" href="download.php?f=CCMatrix/v1/xml/nl-vi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Norwegian' (4.4M links, 158.4M tokens)" href="download.php?f=CCMatrix/v1/xml/no-vi.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Polish' (5.8M links, 199.5M tokens)" href="download.php?f=CCMatrix/v1/xml/pl-vi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Portuguese' (8.2M links, 227.3M tokens)" href="download.php?f=CCMatrix/v1/xml/pt-vi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Romanian' (4.8M links, 193.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ro-vi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Russian' (8.4M links, 305.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ru-vi.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Slovak' (5.5M links, 190.1M tokens)" href="download.php?f=CCMatrix/v1/xml/sk-vi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Slovenian' (3.8M links, 132.4M tokens)" href="download.php?f=CCMatrix/v1/xml/sl-vi.xml.gz">ces</a></td>
+<td></td>
+<th>vi</th>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Serbian' (3.5M links, 115.7M tokens)" href="download.php?f=CCMatrix/v1/xml/sr-vi.xml.gz">ces</a></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Swedish' (7.4M links, 256.9M tokens)" href="download.php?f=CCMatrix/v1/xml/sv-vi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Swahili' (2.5M links, 65.3M tokens)" href="download.php?f=CCMatrix/v1/xml/sw-vi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Tamil' (1.3M links, 35.4M tokens)" href="download.php?f=CCMatrix/v1/xml/ta-vi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Tagalog' (1.6M links, 51.0M tokens)" href="download.php?f=CCMatrix/v1/xml/tl-vi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Turkish' (7.3M links, 224.2M tokens)" href="download.php?f=CCMatrix/v1/xml/tr-vi.xml.gz">ces</a></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Vietnamese-Ukrainian' (1.9M links, 64.0M tokens)" href="download.php?f=CCMatrix/v1/xml/uk-vi.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <th></th>
@@ -4460,7 +4460,7 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Wolof-Swahili' (4.0k links, 58.5k tokens)" href="download.php?f=CCMatrix/v1/xml/sw-wo.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Wolof-Swahili' (4.0k links, 98.2k tokens)" href="download.php?f=CCMatrix/v1/xml/sw-wo.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -4474,7 +4474,7 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/xh.zip">xh</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Xhosa-Arabic' (1.0M links, 10.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-xh.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Xhosa-Arabic' (1.0M links, 102.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-xh.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -4488,32 +4488,7 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Xhosa-English' (19.0M links, 237.3M tokens)" href="download.php?f=CCMatrix/v1/xml/en-xh.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<th>xh</th>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Xhosa-Hungarian' (0.1M links, 1.4M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-xh.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Xhosa-English' (19.0M links, 2.0G tokens)" href="download.php?f=CCMatrix/v1/xml/en-xh.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -4530,7 +4505,7 @@
 <td></td>
 <td></td>
 <td></td>
-<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Xhosa-Hungarian' (0.1M links, 13.9M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-xh.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -4550,7 +4525,32 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Xhosa-Swahili' (3.5k links, 57.3k tokens)" href="download.php?f=CCMatrix/v1/xml/sw-xh.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<th>xh</th>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Xhosa-Swahili' (3.5k links, 0.1M tokens)" href="download.php?f=CCMatrix/v1/xml/sw-xh.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -4563,7 +4563,7 @@
 <th></th>
 <td></td><td></td><td></td><td></td><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/raw/xh.zip">xh</a></th></tr>
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/yi.zip">yi</a></th>
-<td><a rel="nofollow" title="sentence alignments for 'Yiddish-Afrikaans' (15.7k links, 0.2M tokens)" href="download.php?f=CCMatrix/v1/xml/af-yi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Yiddish-Afrikaans' (15.7k links, 0.3M tokens)" href="download.php?f=CCMatrix/v1/xml/af-yi.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -4576,10 +4576,10 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Yiddish-Danish' (59.4k links, 0.6M tokens)" href="download.php?f=CCMatrix/v1/xml/da-yi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Yiddish-German' (0.1M links, 2.8M tokens)" href="download.php?f=CCMatrix/v1/xml/de-yi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Yiddish-Danish' (59.4k links, 0.8M tokens)" href="download.php?f=CCMatrix/v1/xml/da-yi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Yiddish-German' (0.1M links, 3.8M tokens)" href="download.php?f=CCMatrix/v1/xml/de-yi.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Yiddish-English' (0.3M links, 6.0M tokens)" href="download.php?f=CCMatrix/v1/xml/en-yi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Yiddish-English' (0.3M links, 7.7M tokens)" href="download.php?f=CCMatrix/v1/xml/en-yi.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -4622,8 +4622,8 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Yiddish-Dutch' (58.4k links, 1.4M tokens)" href="download.php?f=CCMatrix/v1/xml/nl-yi.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Yiddish-Norwegian' (63.4k links, 0.7M tokens)" href="download.php?f=CCMatrix/v1/xml/no-yi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Yiddish-Dutch' (58.4k links, 1.9M tokens)" href="download.php?f=CCMatrix/v1/xml/nl-yi.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Yiddish-Norwegian' (63.4k links, 1.0M tokens)" href="download.php?f=CCMatrix/v1/xml/no-yi.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -4656,7 +4656,7 @@
 <td></td><td><a rel="nofollow" title="Yiddish-Chinese (sample file)" href="CCMatrix/v1/yi-zh_sample.html">view</a></td><td></td><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/raw/yi.zip">yi</a></th></tr>
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/yo.zip">yo</a></th>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Yoruba-Amharic' (10.5k links, 0.3M tokens)" href="download.php?f=CCMatrix/v1/xml/am-yo.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Yoruba-Amharic' (10.5k links, 0.4M tokens)" href="download.php?f=CCMatrix/v1/xml/am-yo.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -4669,7 +4669,7 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Yoruba-German' (0.3M links, 4.0M tokens)" href="download.php?f=CCMatrix/v1/xml/de-yo.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Yoruba-German' (0.3M links, 7.5M tokens)" href="download.php?f=CCMatrix/v1/xml/de-yo.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -4684,7 +4684,7 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Yoruba-Hausa' (3.4k links, 88.1k tokens)" href="download.php?f=CCMatrix/v1/xml/ha-yo.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Yoruba-Hausa' (3.4k links, 0.1M tokens)" href="download.php?f=CCMatrix/v1/xml/ha-yo.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -4714,7 +4714,7 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Yoruba-Dutch' (0.1M links, 1.8M tokens)" href="download.php?f=CCMatrix/v1/xml/nl-yo.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Yoruba-Dutch' (0.1M links, 3.1M tokens)" href="download.php?f=CCMatrix/v1/xml/nl-yo.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -4733,7 +4733,7 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Yoruba-Swahili' (17.0k links, 0.4M tokens)" href="download.php?f=CCMatrix/v1/xml/sw-yo.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Yoruba-Swahili' (17.0k links, 0.5M tokens)" href="download.php?f=CCMatrix/v1/xml/sw-yo.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -4750,101 +4750,101 @@
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/zh.zip">zh</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Arabic' (6.6M links, 117.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-zh.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Arabic' (6.6M links, 141.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-zh.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Bulgarian' (5.3M links, 79.1M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-zh.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Bengali' (1.9M links, 30.6M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-zh.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Bulgarian' (5.3M links, 100.6M tokens)" href="download.php?f=CCMatrix/v1/xml/bg-zh.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Bengali' (1.9M links, 39.7M tokens)" href="download.php?f=CCMatrix/v1/xml/bn-zh.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Czech' (6.6M links, 93.6M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-zh.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Czech' (6.6M links, 112.6M tokens)" href="download.php?f=CCMatrix/v1/xml/cs-zh.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Danish' (4.9M links, 70.4M tokens)" href="download.php?f=CCMatrix/v1/xml/da-zh.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-German' (18.6M links, 308.2M tokens)" href="download.php?f=CCMatrix/v1/xml/de-zh.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Greek' (5.0M links, 80.7M tokens)" href="download.php?f=CCMatrix/v1/xml/el-zh.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-English' (71.4M links, 1.4G tokens)" href="download.php?f=CCMatrix/v1/xml/en-zh.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Danish' (4.9M links, 85.1M tokens)" href="download.php?f=CCMatrix/v1/xml/da-zh.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-German' (18.6M links, 369.8M tokens)" href="download.php?f=CCMatrix/v1/xml/de-zh.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Greek' (5.0M links, 98.1M tokens)" href="download.php?f=CCMatrix/v1/xml/el-zh.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-English' (71.4M links, 1.7G tokens)" href="download.php?f=CCMatrix/v1/xml/en-zh.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Spanish' (23.1M links, 467.3M tokens)" href="download.php?f=CCMatrix/v1/xml/es-zh.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Estonian' (3.2M links, 36.8M tokens)" href="download.php?f=CCMatrix/v1/xml/et-zh.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Spanish' (23.1M links, 572.1M tokens)" href="download.php?f=CCMatrix/v1/xml/es-zh.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Estonian' (3.2M links, 46.8M tokens)" href="download.php?f=CCMatrix/v1/xml/et-zh.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Persian' (4.9M links, 63.6M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-zh.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Finnish' (4.6M links, 55.5M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-zh.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Persian' (4.9M links, 79.7M tokens)" href="download.php?f=CCMatrix/v1/xml/fa-zh.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Finnish' (4.6M links, 66.3M tokens)" href="download.php?f=CCMatrix/v1/xml/fi-zh.xml.gz">ces</a></td>
 <th>zh</th>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-French' (20.3M links, 404.1M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-zh.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-French' (20.3M links, 488.0M tokens)" href="download.php?f=CCMatrix/v1/xml/fr-zh.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Hebrew' (5.2M links, 50.8M tokens)" href="download.php?f=CCMatrix/v1/xml/he-zh.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Hindi' (2.3M links, 47.6M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-zh.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Croatian' (2.6M links, 30.0M tokens)" href="download.php?f=CCMatrix/v1/xml/hr-zh.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Hungarian' (4.8M links, 65.9M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-zh.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Hebrew' (5.2M links, 66.1M tokens)" href="download.php?f=CCMatrix/v1/xml/he-zh.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Hindi' (2.3M links, 58.9M tokens)" href="download.php?f=CCMatrix/v1/xml/hi-zh.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Croatian' (2.6M links, 40.5M tokens)" href="download.php?f=CCMatrix/v1/xml/hr-zh.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Hungarian' (4.8M links, 79.0M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-zh.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Indonesian' (6.2M links, 103.9M tokens)" href="download.php?f=CCMatrix/v1/xml/id-zh.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Italian' (10.4M links, 202.9M tokens)" href="download.php?f=CCMatrix/v1/xml/it-zh.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Japanese' (12.4M links, 119.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-zh.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Indonesian' (6.2M links, 125.9M tokens)" href="download.php?f=CCMatrix/v1/xml/id-zh.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Korean' (5.1M links, 71.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ko-zh.xml.gz">ces</a></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Luxembourgish' (0.5M links, 4.3M tokens)" href="download.php?f=CCMatrix/v1/xml/lb-zh.xml.gz">ces</a></td>
-<th>zh</th>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Lithuanian' (3.4M links, 41.6M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-zh.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Latvian' (2.4M links, 39.8M tokens)" href="download.php?f=CCMatrix/v1/xml/lv-zh.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Malagasy' (0.5M links, 5.4M tokens)" href="download.php?f=CCMatrix/v1/xml/mg-zh.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Macedonian' (1.9M links, 23.2M tokens)" href="download.php?f=CCMatrix/v1/xml/mk-zh.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Malayalam' (1.2M links, 16.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ml-zh.xml.gz">ces</a></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Malay' (2.0M links, 22.2M tokens)" href="download.php?f=CCMatrix/v1/xml/ms-zh.xml.gz">ces</a></td>
-<td></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Dutch' (8.2M links, 136.3M tokens)" href="download.php?f=CCMatrix/v1/xml/nl-zh.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Norwegian' (4.7M links, 67.6M tokens)" href="download.php?f=CCMatrix/v1/xml/no-zh.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Italian' (10.4M links, 242.5M tokens)" href="download.php?f=CCMatrix/v1/xml/it-zh.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Japanese' (12.4M links, 143.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ja-zh.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Polish' (7.4M links, 111.9M tokens)" href="download.php?f=CCMatrix/v1/xml/pl-zh.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Portuguese' (12.2M links, 245.7M tokens)" href="download.php?f=CCMatrix/v1/xml/pt-zh.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Romanian' (5.1M links, 85.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ro-zh.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Russian' (14.0M links, 223.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ru-zh.xml.gz">ces</a></td>
 <td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Korean' (5.1M links, 82.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ko-zh.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Slovak' (4.8M links, 63.2M tokens)" href="download.php?f=CCMatrix/v1/xml/sk-zh.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Slovenian' (3.7M links, 45.4M tokens)" href="download.php?f=CCMatrix/v1/xml/sl-zh.xml.gz">ces</a></td>
-<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Luxembourgish' (0.5M links, 8.7M tokens)" href="download.php?f=CCMatrix/v1/xml/lb-zh.xml.gz">ces</a></td>
 <th>zh</th>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Serbian' (3.7M links, 44.1M tokens)" href="download.php?f=CCMatrix/v1/xml/sr-zh.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Lithuanian' (3.4M links, 51.5M tokens)" href="download.php?f=CCMatrix/v1/xml/lt-zh.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Latvian' (2.4M links, 52.0M tokens)" href="download.php?f=CCMatrix/v1/xml/lv-zh.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Malagasy' (0.5M links, 11.3M tokens)" href="download.php?f=CCMatrix/v1/xml/mg-zh.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Macedonian' (1.9M links, 32.9M tokens)" href="download.php?f=CCMatrix/v1/xml/mk-zh.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Malayalam' (1.2M links, 22.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ml-zh.xml.gz">ces</a></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Swedish' (7.4M links, 110.0M tokens)" href="download.php?f=CCMatrix/v1/xml/sv-zh.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Swahili' (1.1M links, 12.2M tokens)" href="download.php?f=CCMatrix/v1/xml/sw-zh.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Tamil' (1.1M links, 20.1M tokens)" href="download.php?f=CCMatrix/v1/xml/ta-zh.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Tagalog' (0.5M links, 6.5M tokens)" href="download.php?f=CCMatrix/v1/xml/tl-zh.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Turkish' (7.2M links, 97.2M tokens)" href="download.php?f=CCMatrix/v1/xml/tr-zh.xml.gz">ces</a></td>
-<td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Ukrainian' (2.3M links, 30.1M tokens)" href="download.php?f=CCMatrix/v1/xml/uk-zh.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Malay' (2.0M links, 30.0M tokens)" href="download.php?f=CCMatrix/v1/xml/ms-zh.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Vietnamese' (8.0M links, 174.6M tokens)" href="download.php?f=CCMatrix/v1/xml/vi-zh.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Dutch' (8.2M links, 160.7M tokens)" href="download.php?f=CCMatrix/v1/xml/nl-zh.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Norwegian' (4.7M links, 82.0M tokens)" href="download.php?f=CCMatrix/v1/xml/no-zh.xml.gz">ces</a></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Yiddish' (0.4M links, 2.3M tokens)" href="download.php?f=CCMatrix/v1/xml/yi-zh.xml.gz">ces</a></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Polish' (7.4M links, 133.5M tokens)" href="download.php?f=CCMatrix/v1/xml/pl-zh.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Portuguese' (12.2M links, 297.0M tokens)" href="download.php?f=CCMatrix/v1/xml/pt-zh.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Romanian' (5.1M links, 104.8M tokens)" href="download.php?f=CCMatrix/v1/xml/ro-zh.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Russian' (14.0M links, 275.7M tokens)" href="download.php?f=CCMatrix/v1/xml/ru-zh.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Slovak' (4.8M links, 77.6M tokens)" href="download.php?f=CCMatrix/v1/xml/sk-zh.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Slovenian' (3.7M links, 57.2M tokens)" href="download.php?f=CCMatrix/v1/xml/sl-zh.xml.gz">ces</a></td>
+<td></td>
+<th>zh</th>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Serbian' (3.7M links, 55.8M tokens)" href="download.php?f=CCMatrix/v1/xml/sr-zh.xml.gz">ces</a></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Swedish' (7.4M links, 130.0M tokens)" href="download.php?f=CCMatrix/v1/xml/sv-zh.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Swahili' (1.1M links, 18.8M tokens)" href="download.php?f=CCMatrix/v1/xml/sw-zh.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Tamil' (1.1M links, 25.5M tokens)" href="download.php?f=CCMatrix/v1/xml/ta-zh.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Tagalog' (0.5M links, 8.4M tokens)" href="download.php?f=CCMatrix/v1/xml/tl-zh.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Turkish' (7.2M links, 113.1M tokens)" href="download.php?f=CCMatrix/v1/xml/tr-zh.xml.gz">ces</a></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Ukrainian' (2.3M links, 36.1M tokens)" href="download.php?f=CCMatrix/v1/xml/uk-zh.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Vietnamese' (8.0M links, 212.8M tokens)" href="download.php?f=CCMatrix/v1/xml/vi-zh.xml.gz">ces</a></td>
+<td></td>
+<td></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Yiddish' (0.4M links, 5.9M tokens)" href="download.php?f=CCMatrix/v1/xml/yi-zh.xml.gz">ces</a></td>
 <td></td>
 <th></th>
 <td></td><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/raw/zh.zip">zh</a></th></tr>
 <tr><th><a rel="nofollow" href="download.php?f=CCMatrix/v1/xml/zu.zip">zu</a></th>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Zulu-Arabic' (43.3k links, 0.6M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-zu.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Zulu-Arabic' (43.3k links, 1.3M tokens)" href="download.php?f=CCMatrix/v1/xml/ar-zu.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -4875,7 +4875,7 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Zulu-Hungarian' (37.5k links, 0.4M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-zu.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Zulu-Hungarian' (37.5k links, 0.7M tokens)" href="download.php?f=CCMatrix/v1/xml/hu-zu.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -4920,7 +4920,7 @@
 <td></td>
 <td></td>
 <td></td>
-<td><a rel="nofollow" title="sentence alignments for 'Zulu-Swahili' (4.7k links, 99.6k tokens)" href="download.php?f=CCMatrix/v1/xml/sw-zu.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Zulu-Swahili' (4.7k links, 0.2M tokens)" href="download.php?f=CCMatrix/v1/xml/sw-zu.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
