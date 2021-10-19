@@ -53,6 +53,7 @@ Edit apache website configuration
 
 # Installing CWB
 
+```
 sudo apt-get install bison flex pkgconf libncurses-dev libglib2.0-dev libpcre2-dev libreadline-dev subversion
 wget -O cwb-3.4.22-source.tar.gz https://sourceforge.net/projects/cwb/files/cwb/cwb-3.4-beta/cwb-3.4.22-source.tar.gz/download
 tar -xzf cwb-3.4.22-source.tar.gz
@@ -73,15 +74,16 @@ for d in CWB  CWB-CL  CWB-CQI  CWB-Web; do \
   cd ..; \
 done
 sudo apache2ctl restart
-
+```
 
 
 # OPUS-API
 
-
+```
 sudo apt-get install python3-flask python3-flask-sqlalchemy
 cd /var/www
 git clone https://github.com/Helsinki-NLP/OPUS-API.git
+```
 
 ## TODO
 
