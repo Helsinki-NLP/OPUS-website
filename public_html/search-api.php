@@ -466,6 +466,7 @@ function get_languages(&$lang){
     $string=implode('',$lines_array);
     $json = json_decode($string, true);
     foreach ($json['languages'] as $l){
+        // if ($l == 'moses' || $l == 'scripts' || $l == 'sentences'){ break; }
         $lang[$l] = locale_get_display_language($l, 'en');
     }
 }
