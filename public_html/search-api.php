@@ -78,7 +78,7 @@ function print_legend(){
     for ($x = 1024*16; $x <= 200000000; $x*=2) {
         echo '<td bgcolor="'.size_color($x).'">&nbsp;&nbsp;&nbsp;</td>';
     }
-    echo '</tr><tr><th>size: </th>';
+    echo '</tr><tr><th>size (src+trg): </th>';
     for ($x = 1024*16; $x <= 200000000; $x*=2) {
         echo '<td>'.pretty_number($x).'</td>';
     }
