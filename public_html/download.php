@@ -106,10 +106,9 @@ function old2new($file) {
     // <corpus>/<ss>-<tt>.txt.zip          --> <corpus>/<version>/moses/<ss>-<tt>.txt.zip
 
    $parts = explode('/',$file);
-   $version = $versions[$parts[0]];
+   $version = array_key_exists($parts[0],$versions) ? $versions[$parts[0]] : '1';
 
    if (count($parts) == 2){
-     $version = $versions[$parts[0]];
      $ext = explode('.',$parts[1]);
      if ($ext[1] == 'tar'){
        $file = implode( '/', array($version,'xml',$ext[0].'.zip') );

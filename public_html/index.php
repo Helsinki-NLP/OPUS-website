@@ -27,6 +27,7 @@
   <div class="news">
     <h3>Latest News</h3>
     <ul>
+      <li>2021-12-08: New: <a href="liv4ever.php">Liv4ever</a> and <a href="ELITR-ECA.php">ELITR-ECA</a></li>
       <li>2021-06-28: New: <a href="CCMatrix.php">CCMatrix</a></li>
       <li>2021-06-11: Updated: <a href="ParaCrawl-v8.php">ParaCrawl</a> and <a href="MultiParaCrawl-v8.php">MultiParaCrawl</a></li>
       <li>2021-04-02: New: <a href="MT560.php">MT560 dataset</a></li>
