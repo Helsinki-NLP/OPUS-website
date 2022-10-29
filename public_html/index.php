@@ -27,7 +27,10 @@
   <div class="news">
     <h3>Latest News</h3>
     <ul>
-      <li>2021-02-10: <a href="CCAligned.php">CCAligned</a> and <a href="MultiCCAligned.php">MultiCCAligned</a></li>
+      <li>2021-06-28: New: <a href="CCMatrix.php">CCMatrix</a></li>
+      <li>2021-06-11: Updated: <a href="ParaCrawl-v8.php">ParaCrawl</a> and <a href="MultiParaCrawl-v8.php">MultiParaCrawl</a></li>
+      <li>2021-04-02: New: <a href="MT560.php">MT560 dataset</a></li>
+      <li>2021-02-10: New: <a href="CCAligned.php">CCAligned</a> and <a href="MultiCCAligned.php">MultiCCAligned</a></li>
       <li>2020-11-27: New: <a href="GoURMET.php">GoURMET</a> and <a href="MIZAN.php">MIZAN</a></li>      
       <li>2020-10-31: New: <a href="EuroPat.php">EuroPat</a> and <a href="tico-19.php">tico-19</a></li>
       <li>2020-06-30: New: <a href="opus-100.php">OPUS-100 corpus</a></li>
@@ -35,7 +38,7 @@
       <li>2019-10-16: New: <a href="MultiParaCrawl-v5.php">MultiParaCrawl</a></li>
       <li>2019-10-14: New: <a href="infopankki-v1.php">Infopankki v1</a></li>
 <!--       <li>2019-09-28: Update: <a href="ParaCrawl-v5.php">ParaCrawl v5</a></li> -->
-      <li>2019-08-28: <a href="JW300.php">JW300 corpus</a> added</li>
+<!--      <li>2019-08-28: <a href="JW300.php">JW300 corpus</a> added</li> -->
 <!-- 
     <li>2019-08-14: Various new and updated corpora</li>
 -->
@@ -70,7 +73,7 @@
   ?>helsinki.fi
   &gt;</p>
 
-  <p><?php include("search.php"); ?></p><a name="download" id="download"></a>
+  <p><?php include("search-api.php"); ?></p><a name="download" id="download"></a>
 
 <!--
   <p>
@@ -142,11 +145,11 @@
           <li>The <a href="http://statmt.org/europarl/">EuroParl corpus</a> and <a href="http://www.statmt.org/wmt13/translation-task.html">WMT data</a></li>
 	  <li><a href="https://pub.cl.uzh.ch/wiki/public/costep/start">CoStEP</a>: A cleaner and structured version of the Europarl corpus</li>
 	  <li><a href="https://conferences.unite.un.org/uncorpus">United Nations Parallel Corpus</a></li>
-          <li><a href="http://ipsc.jrc.ec.europa.eu/?id=198">JRC-Acquis</a> and related resources</li>
-	  <li><a href="http://casmacat.eu/corpus/global-voices.html">Global Voices Parallel Corpus</a> (CASMACAT)</li>
+<!--          <li><a href="http://ipsc.jrc.ec.europa.eu/?id=198">JRC-Acquis</a> and related resources</li>-->
+<!--	  <li><a href="http://casmacat.eu/corpus/global-voices.html">Global Voices Parallel Corpus</a> (CASMACAT)</li>-->
           <li><a href="http://paralela.clarin-pl.eu">Parallel corpora at PELCRA</a> <!-- (<a href="http://pelcra.pl/res/parallel/word-aligned/">word-aligned data</a>) --> </li>
 	  <li><a href="http://nlp2ct.cis.umac.mo/um-corpus/">UM - a domain specific Chinese-English parallel corpus</a></li>
-          <li><a href="https://www.letsmt.eu">Let's MT!</a> and its <a href="/letsmt-trac/">Resource Repository Software</a></li>
+          <li><a href="http://project.letsmt.eu/">Let's MT!</a> and its <a href="/letsmt-trac/">Resource Repository Software</a></li>
 
           <li><a href="/letsmt-trac/wiki/DataProcessingTools">Links</a> to alignment and MT-related tools</li>
 
@@ -166,8 +169,9 @@
           <li><a href="bible-uedin.php">Bible (uedin)</a> - Collection of Bible translations</li>
           <li><a href="Books.php">Books</a> - A collection of translated literature</li>
           <li><a href="CAPES.php">CAPES</a> - Thesis and dissertation abstracts</li>
-	  <li><a href="CCAligned.php">CCAligned</a> - Parallel sentences from Common Crawl</li>
-          <li><a href="DGT.php">DGT</a> - A collection of EU Translation Memories provided by the JRC</li>
+	  <li><a href="CCAligned.php">CCAligned</a> - Parallel documents from Common Crawl</li>
+	  <li><a href="CCMatrix.php">CCMatrix</a> - Parallel sentences from Common Crawl</li>
+          <li><a href="DGT.php">DGT</a> - A collection of EU TMs provided by the JRC</li>
           <li><a href="DOGC.php">DOGC</a> - Documents from the Catalan Goverment</li>
           <li><a href="ECB.php">ECB - European Central Bank corpus</a></li>
           <li><a href="EhuHac.php">EhuHac</a> - Hizkuntzen Arteko Corpusa</li>
@@ -188,7 +192,7 @@
           <li><a href="hrenWaC.php">The Croatian - English WaC corpus</a></li>
 	  <li><a href="infopankki-v1.php">Infopankki</a></li>
           <li><a href="JRC-Acquis.php">JRC-Acquis- legislative EU texts</a></li>
-          <li><a href="JW300.php">JW300 multilingual corpus</a></li>
+<!--          <li><a href="JW300.php">JW300 multilingual corpus</a></li> -->
           <li><a href="KDE4.php">KDE4 - KDE4 localization files (v.2)</a></li>
           <li><a href="KDEdoc.php">KDEdoc - the KDE manual corpus</a></li>
           <li><a href="MBS.php">MBS - Belgisch Staatsblad corpus</a></li>
@@ -202,6 +206,7 @@
           <li><a href="MultiCCAligned.php">MultiCCAligned</a> - Pivot-based Bitexts from CCAligned</li>	
           <li><a href="MultiParaCrawl.php">MultiParaCrawl</a> - Non-English Bitexts from ParaCrawl</li>
           <li><a href="MultiUN.php">MultiUN</a> - Translated UN documents</li>
+          <li><a href="MT560.php">MT560</a> - A large MT dataset for &gt;500 languages</li>
           <li><a href="News-Commentary.php">News Commentary</a> (<a href="News-Commentary-v1.php">v11</a>, <a href="News-Commentary-v1.php">v9.1</a>,<a href="News-Commentary-v9.php">v9</a>)</li>
           <li><a href="OfisPublik.php">OfisPublik</a> - Breton - French parallel texts</li>
           <li><a href="OpenOffice.php">OO - the OpenOffice.org corpus</a> (<a href="OpenOffice-v2.php">v2</a>)</li>

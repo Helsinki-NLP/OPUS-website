@@ -65,7 +65,26 @@ if (isset($src) && isset($trg) && $src != 'unknown' && $trg != 'unknown'){
   echo '<div class="counts">';
   show_resources($src,$trg,$minsize);
   echo '</div>';
+  print_legend();
  }
+
+
+
+
+function print_legend(){
+    //echo "color legend:";
+    echo '<br/><div class="counts">';
+    echo '<table><tr><th>color: </th>';
+    for ($x = 1024*16; $x <= 200000000; $x*=2) {
+        echo '<td bgcolor="'.size_color($x).'">&nbsp;&nbsp;&nbsp;</td>';
+    }
+    echo '</tr><tr><th>size (src+trg): </th>';
+    for ($x = 1024*16; $x <= 200000000; $x*=2) {
+        echo '<td>'.pretty_number($x).'</td>';
+    }
+    echo '</tr></table>';
+    echo '</div>';
+}
 
 
 function show_resources($src,$trg,$minsize='all'){
@@ -466,6 +485,7 @@ function get_languages(&$lang){
     $string=implode('',$lines_array);
     $json = json_decode($string, true);
     foreach ($json['languages'] as $l){
+        // if ($l == 'moses' || $l == 'scripts' || $l == 'sentences'){ break; }
         $lang[$l] = locale_get_display_language($l, 'en');
     }
 }
@@ -555,7 +575,7 @@ function find_opus_resources($src,$trg,&$resources){
   if ( $version != 'all' ){
     $url .= '&version='.$version;
   }
-  echo $url;
+  // echo $url;
   // $lines_array=file($url);
   // $lines_array=file($url);
   $lines_array=explode("\n",getHTML($url,10));
