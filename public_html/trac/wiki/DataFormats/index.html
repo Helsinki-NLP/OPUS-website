@@ -1,0 +1,331 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  <head>
+    <title>
+      DataFormats – OPUS
+    </title>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--[if IE]><script type="text/javascript">
+      if (/^#__msie303:/.test(window.location.hash))
+        window.location.replace(window.location.hash.replace(/^#__msie303:/, '#'));
+    </script><![endif]-->
+        <link rel="search" href="http://opus.nlpl.eu/trac/search" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://opus.nlpl.eu/trac/wiki/DataFormats?format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="start" href="../../wiki.html" />
+        <link rel="stylesheet" href="../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="../../chrome/common/trac.ico" type="image/x-icon" />
+        <link rel="icon" href="../../chrome/common/trac.ico" type="image/x-icon" />
+      <script type="text/javascript" charset="utf-8" src="../../chrome/common/js/jquery.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../../chrome/common/js/babel.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../../chrome/common/js/messages/en_US.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../../chrome/common/js/trac.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../../chrome/common/js/search.js"></script>
+      <script type="text/javascript" charset="utf-8" src="../../chrome/common/js/folding.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="../../../index.php"><img src="../../../img/opus_medium.jpg" alt="opus" height="90" /></a>
+      </div>
+      <form id="search" action="http://opus.nlpl.eu/trac/search" method="get">
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://opus.nlpl.eu/trac/login">Login</a></li><li><a href="../../prefs.html">Preferences</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li class="last"><a href="../../about.html">About Trac</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../../wiki.html">Wiki</a></li><li class="last"><a href="../../roadmap.html">Roadmap</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../../wiki.html">wiki:</a><a class="pathentry" href="DataFormats.html" title="View DataFormats">DataFormats</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <ul>
+          <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://opus.nlpl.eu/trac/wiki/DataFormats?action=history">History</a></li>
+        </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          <div id="wikipage" class="trac-content"><p>
+</p><div class="wiki-toc">
+<ol>
+  <li>
+    <a href="DataFormats.html#DataFormats">Data Formats</a>
+    <ol>
+      <li>
+        <a href="DataFormats.html#NativeXML">Native XML</a>
+      </li>
+      <li>
+        <a href="DataFormats.html#UDParsedXML">UD Parsed XML</a>
+      </li>
+      <li>
+        <a href="DataFormats.html#PlainTextMoses">Plain Text / Moses</a>
+      </li>
+      <li>
+        <a href="DataFormats.html#TMX">TMX</a>
+      </li>
+    </ol>
+  </li>
+</ol>
+</div><p>
+</p>
+<h1 id="DataFormats">Data Formats</h1>
+<p>
+OPUS provides the data in various formats. The native data format is XML and all other formats are derived from those data files. The general file structure is common to all corpora. Corpus files are stored in sub-directories that are named by the corresponding language ID (using 2-letter ISO-639 language codes as much as possible). Aligned documents have usually the same path relative to this language-specific sub-directory (but do not have to have exactly the same name). Tokenized corpus files are stored in a sub-directory <tt>xml</tt> and untokenized files in <tt>raw</tt>. Sentence alignment files are named by the language IDs, for example, <tt>en-fr.xml.gz</tt> for the alignments of English and French documents. Alignments are symmetric and, therefore, only one direction is stored in the corpus using alphabetically sorted language IDs (i.e. <tt>fr-en.xml.gz</tt> does not exist for aligning French and English sentences). Here is an example of the file structure in Europarl:
+</p>
+<pre class="wiki">Europarl
+Europarl/xml
+Europarl/xml/en
+Europarl/xml/en/ep-10-07-05-004.xml.gz
+Europarl/xml/fr
+Europarl/xml/fr/ep-10-07-05-004.xml.gz
+...
+Europarl/xml/en-fr.xml.gz
+...
+Europarl/raw
+Europarl/raw/en
+Europarl/xml/en/ep-10-07-05-004.xml.gz
+Europarl/raw/fr
+Europarl/xml/fr/ep-10-07-05-004.xml.gz
+...
+</pre><h2 id="NativeXML">Native XML</h2>
+<p>
+The native data format in OPUS is a simple standalone XML format. The amount of markup varies for each corpus and each language depending on the pre-processing pipeline that was available at the time of creating the particular corpus. More about pre-processing tools can be found [Tools here]. All data sets are available in a "raw" untokenized format in which only sentence boundaries are added (and possibly some additional basic document markup such as paragraph boundaries etc.).
+</p>
+<p>
+A typical example of raw corpus data (taken from Europarl) looks like this
+</p>
+<div class="code"><pre><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;document&gt;</span>
+  <span class="nt">&lt;CHAPTER</span> <span class="na">ID=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;P</span> <span class="na">id=</span><span class="s">"1"</span><span class="nt">&gt;&lt;/P&gt;</span>
+    <span class="nt">&lt;SPEAKER</span> <span class="na">ID=</span><span class="s">"1"</span> <span class="na">LANGUAGE=</span><span class="s">"DE"</span> <span class="na">NAME=</span><span class="s">"Rübig"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;P</span> <span class="na">id=</span><span class="s">"2"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;s</span> <span class="na">id=</span><span class="s">"1"</span><span class="nt">&gt;</span>Madam President, I saw a few boats landing at Parliament this week and notified the security service.<span class="nt">&lt;/s&gt;</span>
+        <span class="nt">&lt;s</span> <span class="na">id=</span><span class="s">"2"</span><span class="nt">&gt;</span>Not only were there language difficulties; the telephone line was so poor that it was almost impossible to communicate.<span class="nt">&lt;/s&gt;</span>
+        <span class="nt">&lt;s</span> <span class="na">id=</span><span class="s">"3"</span><span class="nt">&gt;</span>I would be most obliged if the number on which the security service can be reached could also be clearly displayed in the House, so that if anyone wants to report an incident, they can do so quickly and efficiently.<span class="nt">&lt;/s&gt;</span>
+      <span class="nt">&lt;/P&gt;</span>
+      <span class="nt">&lt;P</span> <span class="na">id=</span><span class="s">"3"</span><span class="nt">&gt;&lt;/P&gt;</span>
+    <span class="nt">&lt;/SPEAKER&gt;</span>
+    ...
+</pre></div><p>
+Sentences are numbered with unique IDs (unique within the XML file, not unique within the entire corpus). These IDs are used for the sentence alignment (see below).
+</p>
+<p>
+In the tokenized versions, token boundaries are added with <tt>&lt;w&gt;</tt> tags. Additional annotation may be included as well. A typical example for English (again, taken from Europarl) looks like the following:
+</p>
+<div class="code"><pre><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="nt">&lt;document&gt;&lt;CHAPTER</span> <span class="na">ID=</span><span class="s">"0"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;P</span> <span class="na">id=</span><span class="s">"1"</span> <span class="nt">/&gt;&lt;SPEAKER</span> <span class="na">ID=</span><span class="s">"1"</span> <span class="na">LANGUAGE=</span><span class="s">"DE"</span> <span class="na">NAME=</span><span class="s">"Rübig"</span><span class="nt">&gt;&lt;P</span> <span class="na">id=</span><span class="s">"2"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;s</span> <span class="na">id=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;chunk</span> <span class="na">type=</span><span class="s">"NP"</span> <span class="na">id=</span><span class="s">"c-1"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;w</span> <span class="na">hun=</span><span class="s">"NNP"</span> <span class="na">tree=</span><span class="s">"NN"</span> <span class="na">lem=</span><span class="s">"madam"</span> <span class="na">pos=</span><span class="s">"NNP"</span> <span class="na">id=</span><span class="s">"w1.1"</span><span class="nt">&gt;</span>Madam<span class="nt">&lt;/w&gt;</span>
+  <span class="nt">&lt;w</span> <span class="na">hun=</span><span class="s">"NNP"</span> <span class="na">tree=</span><span class="s">"NP"</span> <span class="na">lem=</span><span class="s">"President"</span> <span class="na">pos=</span><span class="s">"NNP"</span> <span class="na">id=</span><span class="s">"w1.2"</span><span class="nt">&gt;</span>President<span class="nt">&lt;/w&gt;</span>
+ <span class="nt">&lt;/chunk&gt;</span>
+ <span class="nt">&lt;w</span> <span class="na">hun=</span><span class="s">","</span> <span class="na">tree=</span><span class="s">","</span> <span class="na">lem=</span><span class="s">","</span> <span class="na">pos=</span><span class="s">","</span> <span class="na">id=</span><span class="s">"w1.3"</span><span class="nt">&gt;</span>,<span class="nt">&lt;/w&gt;</span>
+ <span class="nt">&lt;chunk</span> <span class="na">type=</span><span class="s">"NP"</span> <span class="na">id=</span><span class="s">"c-3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;w</span> <span class="na">hun=</span><span class="s">"PRP"</span> <span class="na">tree=</span><span class="s">"PP"</span> <span class="na">lem=</span><span class="s">"I"</span> <span class="na">pos=</span><span class="s">"PRP"</span> <span class="na">id=</span><span class="s">"w1.4"</span><span class="nt">&gt;</span>I<span class="nt">&lt;/w&gt;</span>
+ <span class="nt">&lt;/chunk&gt;</span>
+ <span class="nt">&lt;chunk</span> <span class="na">type=</span><span class="s">"VP"</span> <span class="na">id=</span><span class="s">"c-4"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;w</span> <span class="na">hun=</span><span class="s">"VBD"</span> <span class="na">tree=</span><span class="s">"VVD"</span> <span class="na">lem=</span><span class="s">"see"</span> <span class="na">pos=</span><span class="s">"VBD"</span> <span class="na">id=</span><span class="s">"w1.5"</span><span class="nt">&gt;</span>saw<span class="nt">&lt;/w&gt;</span>
+ <span class="nt">&lt;/chunk&gt;</span>
+...
+</pre></div><p>
+Sentence alignments are stored in a standoff annotation file using the XCES align format. Here is an example from Europarl:
+</p>
+<div class="code"><pre><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="cp">&lt;!DOCTYPE cesAlign PUBLIC "-//CES//DTD XML cesAlign//EN" ""&gt;</span>
+<span class="nt">&lt;cesAlign</span> <span class="na">version=</span><span class="s">"1.0"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;linkGrp</span> <span class="na">targType=</span><span class="s">"s"</span> <span class="na">fromDoc=</span><span class="s">"en/ep-00-01-17.xml.gz"</span> <span class="na">toDoc=</span><span class="s">"fr/ep-00-01-17.xml.gz"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">xtargets=</span><span class="s">"1;1"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">xtargets=</span><span class="s">"2;2"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">xtargets=</span><span class="s">"3;3 4"</span> <span class="nt">/&gt;</span>
+...
+</pre></div><p>
+Each <tt>linkGrp</tt> includes attributes for specifying the source language file (<tt>fromDoc</tt>) and the target language file (<tt>toDoc</tt>). All file names are relative to the <tt>xml</tt> directory of the current corpus. They can be used with both, the raw and the tokenized versions of the corpus (as sentence boundaries are identical in both variants).
+</p>
+<p>
+The actual links are stored in the <tt>xtargets</tt> attribute of the <tt>&lt;link&gt;</tt> elements. Aligned sentence IDs are separated by <tt>;</tt> and multiple source/target language IDs are separated by whitespaces. For example, in the sample above, sentence 1 from file <tt>en/ep-00-01-17.xml.gz</tt> is aligned to sentence 1 in file <tt>fr/ep-00-01-17.xml.gz</tt> whereas sentence 3 is aligned to sentences 3 and 4 in the French file.
+</p>
+<p>
+There can be any number of sentences in each alignment, even no sentence at all. Sentence alignment files may also contain any number of aligned document pairs. More files are simply added by adding another <tt>&lt;linkGrp&gt;</tt> structure.
+</p>
+<p>
+In some cases there will be additional information about the link likelihood in these sentence alignment files. They are, for example, taken from hunalign which we use as our default alignment tool. Here is an example (from MultiUN) that includes this information:
+</p>
+<div class="code"><pre><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+<span class="cp">&lt;!DOCTYPE cesAlign PUBLIC "-//CES//DTD XML cesAlign//EN" ""&gt;</span>
+<span class="nt">&lt;cesAlign</span> <span class="na">version=</span><span class="s">"1.0"</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;linkGrp</span> <span class="na">targType=</span><span class="s">"s"</span> <span class="na">toDoc=</span><span class="s">"fr/2005/CES_AC71_2005_5SUMMARY.xml.gz"</span> <span class="na">fromDoc=</span><span class="s">"en/2005/CES_AC71_2005_5SUMMARY.xml.gz"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">certainty=</span><span class="s">"0"</span> <span class="na">xtargets=</span><span class="s">";1 2"</span> <span class="na">id=</span><span class="s">"SL1"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">certainty=</span><span class="s">"0.612088"</span> <span class="na">xtargets=</span><span class="s">"1;3"</span> <span class="na">id=</span><span class="s">"SL2"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">certainty=</span><span class="s">"0.173077"</span> <span class="na">xtargets=</span><span class="s">"2;4"</span> <span class="na">id=</span><span class="s">"SL3"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">certainty=</span><span class="s">"1.65065"</span> <span class="na">xtargets=</span><span class="s">"3;5"</span> <span class="na">id=</span><span class="s">"SL4"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">certainty=</span><span class="s">"1.63824"</span> <span class="na">xtargets=</span><span class="s">"4;6"</span> <span class="na">id=</span><span class="s">"SL5"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">certainty=</span><span class="s">"-0.3"</span> <span class="na">xtargets=</span><span class="s">";7"</span> <span class="na">id=</span><span class="s">"SL6"</span> <span class="nt">/&gt;</span>
+</pre></div><p>
+Note that the certainty is not a likelihood in terms of proper probabilities. They are taken verbatim from the output of the underlying alignment tool (hunalign in this case). However, they may still be useful for filtering purposes, for example, for removing unreliable links from the set (e.g. the empty link to sentence number 7 in the example above).
+</p>
+<p>
+Note that it is also easy to extract certain link types from the data. For example, extracting 1-to-1 sentence alignments can easily be done by counting aligned sentence IDs and filtering out the once that are not 1-to-1.
+</p>
+<h2 id="UDParsedXML">UD Parsed XML</h2>
+<p>
+Some corpora have been parsed with universal dependencies using UDPipe. The dependency relations and all other morphosyntactic information has been converted to XML to be compatible with the original data and its sentence alignments. The format looks like this with token attributes added to each token of each sentence based on the parser output in consul format:
+</p>
+<div class="code"><pre><span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+
+<span class="nt">&lt;document&gt;</span>
+  <span class="nt">&lt;CHAPTER</span> <span class="na">ID=</span><span class="s">"002"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;P</span> <span class="na">id=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;s</span> <span class="na">id=</span><span class="s">"1"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;w</span> <span class="na">xpos=</span><span class="s">"NOUN"</span> <span class="na">head=</span><span class="s">"1.2"</span> <span class="na">feats=</span><span class="s">"Number=Plur"</span> <span class="na">upos=</span><span class="s">"NOUN"</span> <span class="na">lemma=</span><span class="s">"document"</span> <span class="na">id=</span><span class="s">"1.1"</span> <span class="na">deprel=</span><span class="s">"nsubj"</span><span class="nt">&gt;</span>Documents<span class="nt">&lt;/w&gt;</span>
+        <span class="nt">&lt;w</span> <span class="na">xpos=</span><span class="s">"VERB"</span> <span class="na">head=</span><span class="s">"0"</span> <span class="na">feats=</span><span class="s">"Mood=Ind|Tense=Past|VerbForm=Fin"</span> <span class="na">upos=</span><span class="s">"VERB"</span> <span class="na">misc=</span><span class="s">"SpaceAfter=No"</span> <span class="na">lemma=</span><span class="s">"receive"</span> <span class="na">id=</span><span class="s">"1.2"</span> <span class="na">deprel=</span><span class="s">"root"</span><span class="nt">&gt;</span>received<span class="nt">&lt;/w&gt;</span>
+        <span class="nt">&lt;w</span> <span class="na">xpos=</span><span class="s">"PUNCT"</span> <span class="na">head=</span><span class="s">"1.2"</span> <span class="na">upos=</span><span class="s">"PUNCT"</span> <span class="na">lemma=</span><span class="s">":"</span> <span class="na">id=</span><span class="s">"1.3"</span> <span class="na">deprel=</span><span class="s">"punct"</span><span class="nt">&gt;</span>:<span class="nt">&lt;/w&gt;</span>
+        <span class="nt">&lt;w</span> <span class="na">xpos=</span><span class="s">"VERB"</span> <span class="na">head=</span><span class="s">"1.2"</span> <span class="na">feats=</span><span class="s">"Mood=Imp|VerbForm=Fin"</span> <span class="na">upos=</span><span class="s">"VERB"</span> <span class="na">lemma=</span><span class="s">"see"</span> <span class="na">id=</span><span class="s">"1.4"</span> <span class="na">deprel=</span><span class="s">"parataxis"</span><span class="nt">&gt;</span>see<span class="nt">&lt;/w&gt;</span>
+        <span class="nt">&lt;w</span> <span class="na">xpos=</span><span class="s">"PROPN"</span> <span class="na">head=</span><span class="s">"1.4"</span> <span class="na">feats=</span><span class="s">"Number=Plur"</span> <span class="na">upos=</span><span class="s">"PROPN"</span> <span class="na">misc=</span><span class="s">"SpaceAfter=No"</span> <span class="na">lemma=</span><span class="s">"Minutes"</span> <span class="na">id=</span><span class="s">"1.5"</span> <span class="na">deprel=</span><span class="s">"obj"</span><span class="nt">&gt;</span>Minutes<span class="nt">&lt;/w&gt;</span>
+      <span class="nt">&lt;/s&gt;</span>
+    <span class="nt">&lt;/P&gt;</span>
+  <span class="nt">&lt;/CHAPTER&gt;</span>
+<span class="nt">&lt;/document&gt;</span>
+</pre></div><p>
+Note that some sentences from the original corpus may be split into several sub-sentences by UDpipe but the original sentence markup needs to stay the same to ensure compatibility with the standoff annotation of sentence alignments.
+</p>
+<h2 id="PlainTextMoses">Plain Text / Moses</h2>
+<p>
+Plain text files are provided for each bitext in OPUS. They can be downloaded as zip archives and contain 2 files in which corresponding lines are aligned with each other. The name follows the typical name conventions used in Moses, i.e. using file extensions that correspond to the language ID. For example, for the <tt>RF</tt> corpus the two files for English and French are called:
+</p>
+<pre class="wiki">RF.en-fr.en
+RF.en-fr.fr
+</pre><p>
+The contents of the English file looks like this:
+</p>
+<pre class="wiki">Statement of Government Policy by the Prime Minister, Mr Ingvar Carlsson, at the Opening of the Swedish Parliament on Tuesday, 4 October, 1988.
+Your Majesties, Your Royal Highnesses, Mr Speaker, Members of the Swedish Parliament.
+Sweden's policy of neutrality is of decisive importance for our peace and independence.
+It also contributes to stability and détente in our part of the world.
+There is wide popular support for this policy.
+It will be pursued with firmness and consistency.
+...
+</pre><p>
+And the corresponding French file looks like this:
+</p>
+<pre class="wiki">Declaration de Politique Générale du Gouvernement présentée mardi 4 octobre 1988 devant le Riksdag par Monsieur Ingvar Carlsson, Premier Ministre.
+Majestés, Altesses Royales, Monsieur le Président, Mesdames et Messieurs les députés!
+La politique suédoise de neutralité revêt une importance capitale pour la paix et l' indépendance de notre pays.
+Elle contribue également à la stabilité et à la détente dans notre secteur du monde.
+Cette politique recueille une large adhésion populaire.
+Elle sera poursuivie avec énergie et cohérence.
+...
+</pre><p>
+Note that the files are untokenized (raw format) and that they may contain multiple sentences per line in case they are aligned together to their corresponding sentence(s) in the other language. Empty alignments are excluded from the plain text files.
+</p>
+<p>
+Monolingual files are also available for all languages. There are raw (untokenized) versions and tokenized versions available. In monolingual files, each sentence is strictly on one line.
+</p>
+<p>
+A tokenized file looks like this:
+</p>
+<pre class="wiki">Statement of Government Policy by the Prime Minister , Mr Ingvar Carlsson , at the Opening of the Swedish Parliament on Tuesday , 4 October , 1988.
+Your Majesties , Your Royal Highnesses , Mr Speaker , Members of the Swedish Parliament .
+Sweden 's policy of neutrality is of decisive importance for our peace and independence .
+It also contributes to stability and détente in our part of the world .
+There is wide popular support for this policy .
+It will be pursued with firmness and consistency .
+Our policy of neutrality is underpinned by a strong defence .
+That safeguards our independence .
+...
+</pre><p>
+The raw file like this:
+</p>
+<pre class="wiki">Statement of Government Policy by the Prime Minister, Mr Ingvar Carlsson, at the Opening of the Swedish Parliament on Tuesday, 4 October, 1988.
+Your Majesties, Your Royal Highnesses, Mr Speaker, Members of the Swedish Parliament.
+Sweden's policy of neutrality is of decisive importance for our peace and independence.
+It also contributes to stability and détente in our part of the world.
+There is wide popular support for this policy.
+It will be pursued with firmness and consistency.
+Our policy of neutrality is underpinned by a strong defence.
+That safeguards our independence.
+</pre><p>
+All plain text files are encoded in Unicode UTF-8.
+</p>
+<h2 id="TMX">TMX</h2>
+<p>
+Bitexts are also available in a simple TMX format. They only us a minimal markup and come in untokenized raw text format. Below you can see an example of such a TMX file from the OPUS collection:
+</p>
+<div class="code"><pre><span class="nt">&lt;tmx</span> <span class="na">version=</span><span class="s">"1.4"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;header</span> <span class="na">creationdate=</span><span class="s">"Fri Aug 23 10:17:33 2013"</span>
+          <span class="na">srclang=</span><span class="s">"en"</span>
+          <span class="na">adminlang=</span><span class="s">"en"</span>
+          <span class="na">o-tmf=</span><span class="s">"unknown"</span>
+          <span class="na">segtype=</span><span class="s">"sentence"</span>
+          <span class="na">creationtool=</span><span class="s">"Uplug"</span>
+          <span class="na">creationtoolversion=</span><span class="s">"unknown"</span>
+          <span class="na">datatype=</span><span class="s">"PlainText"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;tu&gt;</span>
+      <span class="nt">&lt;tuv</span> <span class="na">xml:lang=</span><span class="s">"en"</span><span class="nt">&gt;&lt;seg&gt;</span>Statement of Government Policy by the Prime Minister, Mr Ingvar Carlsson, at the Opening of the Swedish Parliament on Tuesday, 4 October, 1988.<span class="nt">&lt;/seg&gt;&lt;/tuv&gt;</span>
+      <span class="nt">&lt;tuv</span> <span class="na">xml:lang=</span><span class="s">"fr"</span><span class="nt">&gt;&lt;seg&gt;</span>Declaration de Politique Générale du Gouvernement présentée mardi 4 octobre 1988 devant le Riksdag par Monsieur Ingvar Carlsson, Premier Ministre.<span class="nt">&lt;/seg&gt;&lt;/tuv&gt;</span>
+    <span class="nt">&lt;/tu&gt;</span>
+    <span class="nt">&lt;tu&gt;</span>
+      <span class="nt">&lt;tuv</span> <span class="na">xml:lang=</span><span class="s">"en"</span><span class="nt">&gt;&lt;seg&gt;</span>Your Majesties, Your Royal Highnesses, Mr Speaker, Members of the Swedish Parliament.<span class="nt">&lt;/seg&gt;&lt;/tuv&gt;</span>
+      <span class="nt">&lt;tuv</span> <span class="na">xml:lang=</span><span class="s">"fr"</span><span class="nt">&gt;&lt;seg&gt;</span>Majestés, Altesses Royales, Monsieur le Président, Mesdames et Messieurs les députés!<span class="nt">&lt;/seg&gt;&lt;/tuv&gt;</span>
+    <span class="nt">&lt;/tu&gt;</span>
+...
+</pre></div></div>
+          
+          <div class="trac-modifiedby">
+            <span><a href="http://opus.nlpl.eu/trac/wiki/DataFormats?action=diff&amp;version=9" title="Version 9 by tiedeman">Last modified</a> <a class="timeline" href="http://opus.nlpl.eu/trac/timeline?from=2017-11-15T20%3A24%3A54Z&amp;precision=second" title="See timeline at Nov 15, 2017, 8:24:54 PM">3 years ago</a></span>
+            <span class="trac-print">Last modified on Nov 15, 2017, 8:24:54 PM</span>
+          </div>
+        
+        
+      </div>
+      
+
+    </div>
+    <script type="text/javascript">
+        jQuery.loadStyleSheet("/trac/pygments/trac.css", "text/css");
+    </script>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://opus.nlpl.eu/trac/wiki/DataFormats?format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="tracpowered" href="http://trac.edgewall.org/"><img src="../../chrome/common/trac_logo_mini.png" height="30" width="107" alt="Trac Powered" /></a>
+      <p class="left">Powered by <a href="../../about.html"><strong>Trac 1.0.1</strong></a><br />
+        By <a href="http://www.edgewall.org/">Edgewall Software</a>.</p>
+      <p class="right">Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a></p>
+    </div>
+  </body>
+</html>
