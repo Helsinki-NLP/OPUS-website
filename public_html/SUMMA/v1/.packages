@@ -1,0 +1,15 @@
+SUMMA/v1/freq/en.freq.gz
+SUMMA/v1/freq/uk.freq.gz
+SUMMA/v1/mono/en.tok.gz
+SUMMA/v1/mono/en.txt.gz
+SUMMA/v1/mono/uk.tok.gz
+SUMMA/v1/mono/uk.txt.gz
+SUMMA/v1/moses/en-uk.txt.zip
+SUMMA/v1/raw/en.zip
+SUMMA/v1/raw/uk.zip
+SUMMA/v1/tmx/en-uk.tmx.gz
+SUMMA/v1/xml/en.zip
+SUMMA/v1/xml/uk.zip
+tmx/en-uk.tmx.gz
+tmx/en-uk.txt.zip
+xml/en-uk.xml.gz
