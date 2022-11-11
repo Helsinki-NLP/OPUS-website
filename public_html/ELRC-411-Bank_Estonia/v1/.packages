@@ -1,0 +1,15 @@
+ELRC-411-Bank_Estonia/v1/freq/en.freq.gz
+ELRC-411-Bank_Estonia/v1/freq/et.freq.gz
+ELRC-411-Bank_Estonia/v1/mono/en.tok.gz
+ELRC-411-Bank_Estonia/v1/mono/en.txt.gz
+ELRC-411-Bank_Estonia/v1/mono/et.tok.gz
+ELRC-411-Bank_Estonia/v1/mono/et.txt.gz
+ELRC-411-Bank_Estonia/v1/moses/en-et.txt.zip
+ELRC-411-Bank_Estonia/v1/raw/en.zip
+ELRC-411-Bank_Estonia/v1/raw/et.zip
+ELRC-411-Bank_Estonia/v1/tmx/en-et.tmx.gz
+ELRC-411-Bank_Estonia/v1/xml/en.zip
+ELRC-411-Bank_Estonia/v1/xml/et.zip
+tmx/en-et.tmx.gz
+tmx/en-et.txt.zip
+xml/en-et.xml.gz

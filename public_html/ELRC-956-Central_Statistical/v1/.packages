@@ -1,0 +1,15 @@
+ELRC-956-Central_Statistical/v1/freq/en.freq.gz
+ELRC-956-Central_Statistical/v1/freq/pl.freq.gz
+ELRC-956-Central_Statistical/v1/mono/en.tok.gz
+ELRC-956-Central_Statistical/v1/mono/en.txt.gz
+ELRC-956-Central_Statistical/v1/mono/pl.tok.gz
+ELRC-956-Central_Statistical/v1/mono/pl.txt.gz
+ELRC-956-Central_Statistical/v1/moses/en-pl.txt.zip
+ELRC-956-Central_Statistical/v1/raw/en.zip
+ELRC-956-Central_Statistical/v1/raw/pl.zip
+ELRC-956-Central_Statistical/v1/tmx/en-pl.tmx.gz
+ELRC-956-Central_Statistical/v1/xml/en.zip
+ELRC-956-Central_Statistical/v1/xml/pl.zip
+tmx/en-pl.tmx.gz
+tmx/en-pl.txt.zip
+xml/en-pl.xml.gz

@@ -1,0 +1,15 @@
+ELRC-Secretariat_General/v1/freq/en.freq.gz
+ELRC-Secretariat_General/v1/freq/sl.freq.gz
+ELRC-Secretariat_General/v1/mono/en.tok.gz
+ELRC-Secretariat_General/v1/mono/en.txt.gz
+ELRC-Secretariat_General/v1/mono/sl.tok.gz
+ELRC-Secretariat_General/v1/mono/sl.txt.gz
+ELRC-Secretariat_General/v1/moses/en-sl.txt.zip
+ELRC-Secretariat_General/v1/raw/en.zip
+ELRC-Secretariat_General/v1/raw/sl.zip
+ELRC-Secretariat_General/v1/tmx/en-sl.tmx.gz
+ELRC-Secretariat_General/v1/xml/en.zip
+ELRC-Secretariat_General/v1/xml/sl.zip
+tmx/en-sl.tmx.gz
+tmx/en-sl.txt.zip
+xml/en-sl.xml.gz

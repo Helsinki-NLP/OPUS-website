@@ -1,0 +1,15 @@
+ELRC-Czech_Supreme/v1/freq/cs.freq.gz
+ELRC-Czech_Supreme/v1/freq/en.freq.gz
+ELRC-Czech_Supreme/v1/mono/cs.tok.gz
+ELRC-Czech_Supreme/v1/mono/cs.txt.gz
+ELRC-Czech_Supreme/v1/mono/en.tok.gz
+ELRC-Czech_Supreme/v1/mono/en.txt.gz
+ELRC-Czech_Supreme/v1/moses/cs-en.txt.zip
+ELRC-Czech_Supreme/v1/raw/cs.zip
+ELRC-Czech_Supreme/v1/raw/en.zip
+ELRC-Czech_Supreme/v1/tmx/cs-en.tmx.gz
+ELRC-Czech_Supreme/v1/xml/cs.zip
+ELRC-Czech_Supreme/v1/xml/en.zip
+tmx/cs-en.tmx.gz
+tmx/cs-en.txt.zip
+xml/cs-en.xml.gz

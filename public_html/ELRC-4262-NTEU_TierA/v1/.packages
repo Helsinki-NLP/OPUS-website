@@ -1,0 +1,15 @@
+ELRC-4262-NTEU_TierA/v1/freq/lv.freq.gz
+ELRC-4262-NTEU_TierA/v1/freq/sk.freq.gz
+ELRC-4262-NTEU_TierA/v1/mono/lv.tok.gz
+ELRC-4262-NTEU_TierA/v1/mono/lv.txt.gz
+ELRC-4262-NTEU_TierA/v1/mono/sk.tok.gz
+ELRC-4262-NTEU_TierA/v1/mono/sk.txt.gz
+ELRC-4262-NTEU_TierA/v1/moses/lv-sk.txt.zip
+ELRC-4262-NTEU_TierA/v1/raw/lv.zip
+ELRC-4262-NTEU_TierA/v1/raw/sk.zip
+ELRC-4262-NTEU_TierA/v1/tmx/lv-sk.tmx.gz
+ELRC-4262-NTEU_TierA/v1/xml/lv.zip
+ELRC-4262-NTEU_TierA/v1/xml/sk.zip
+tmx/lv-sk.tmx.gz
+tmx/lv-sk.txt.zip
+xml/lv-sk.xml.gz

@@ -1,0 +1,15 @@
+ELRC-Financial_Stability/v1/freq/en.freq.gz
+ELRC-Financial_Stability/v1/freq/pl.freq.gz
+ELRC-Financial_Stability/v1/mono/en.tok.gz
+ELRC-Financial_Stability/v1/mono/en.txt.gz
+ELRC-Financial_Stability/v1/mono/pl.tok.gz
+ELRC-Financial_Stability/v1/mono/pl.txt.gz
+ELRC-Financial_Stability/v1/moses/en-pl.txt.zip
+ELRC-Financial_Stability/v1/raw/en.zip
+ELRC-Financial_Stability/v1/raw/pl.zip
+ELRC-Financial_Stability/v1/tmx/en-pl.tmx.gz
+ELRC-Financial_Stability/v1/xml/en.zip
+ELRC-Financial_Stability/v1/xml/pl.zip
+tmx/en-pl.tmx.gz
+tmx/en-pl.txt.zip
+xml/en-pl.xml.gz

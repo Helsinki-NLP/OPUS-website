@@ -1,0 +1,15 @@
+ELRC-5218-Georgian_Legal_MT/v1/freq/en.freq.gz
+ELRC-5218-Georgian_Legal_MT/v1/freq/ka.freq.gz
+ELRC-5218-Georgian_Legal_MT/v1/mono/en.tok.gz
+ELRC-5218-Georgian_Legal_MT/v1/mono/en.txt.gz
+ELRC-5218-Georgian_Legal_MT/v1/mono/ka.tok.gz
+ELRC-5218-Georgian_Legal_MT/v1/mono/ka.txt.gz
+ELRC-5218-Georgian_Legal_MT/v1/moses/en-ka.txt.zip
+ELRC-5218-Georgian_Legal_MT/v1/raw/en.zip
+ELRC-5218-Georgian_Legal_MT/v1/raw/ka.zip
+ELRC-5218-Georgian_Legal_MT/v1/tmx/en-ka.tmx.gz
+ELRC-5218-Georgian_Legal_MT/v1/xml/en.zip
+ELRC-5218-Georgian_Legal_MT/v1/xml/ka.zip
+tmx/en-ka.tmx.gz
+tmx/en-ka.txt.zip
+xml/en-ka.xml.gz

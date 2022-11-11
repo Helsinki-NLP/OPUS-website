@@ -1,0 +1,17 @@
+ELRC-2707-EMEA/v1/freq/en.freq.gz
+ELRC-2707-EMEA/v1/freq/nl.freq.gz
+ELRC-2707-EMEA/v1/mono/en.tok.gz
+ELRC-2707-EMEA/v1/mono/en.txt.gz
+ELRC-2707-EMEA/v1/mono/nl.tok.gz
+ELRC-2707-EMEA/v1/mono/nl.txt.gz
+ELRC-2707-EMEA/v1/moses/en-nl.txt.zip
+ELRC-2707-EMEA/v1/raw/en.zip
+ELRC-2707-EMEA/v1/raw/nl.zip
+ELRC-2707-EMEA/v1/smt/en-nl.alg.zip
+ELRC-2707-EMEA/v1/smt/en-nl.zip
+ELRC-2707-EMEA/v1/tmx/en-nl.tmx.gz
+ELRC-2707-EMEA/v1/xml/en.zip
+ELRC-2707-EMEA/v1/xml/nl.zip
+tmx/en-nl.tmx.gz
+tmx/en-nl.txt.zip
+xml/en-nl.xml.gz

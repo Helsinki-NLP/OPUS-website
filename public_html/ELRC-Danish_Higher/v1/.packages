@@ -1,0 +1,15 @@
+ELRC-Danish_Higher/v1/freq/da.freq.gz
+ELRC-Danish_Higher/v1/freq/en.freq.gz
+ELRC-Danish_Higher/v1/mono/da.tok.gz
+ELRC-Danish_Higher/v1/mono/da.txt.gz
+ELRC-Danish_Higher/v1/mono/en.tok.gz
+ELRC-Danish_Higher/v1/mono/en.txt.gz
+ELRC-Danish_Higher/v1/moses/da-en.txt.zip
+ELRC-Danish_Higher/v1/raw/da.zip
+ELRC-Danish_Higher/v1/raw/en.zip
+ELRC-Danish_Higher/v1/tmx/da-en.tmx.gz
+ELRC-Danish_Higher/v1/xml/da.zip
+ELRC-Danish_Higher/v1/xml/en.zip
+tmx/da-en.tmx.gz
+tmx/da-en.txt.zip
+xml/da-en.xml.gz

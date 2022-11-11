@@ -1,0 +1,17 @@
+ELRC-3056-wikipedia_health/v1/freq/en.freq.gz
+ELRC-3056-wikipedia_health/v1/freq/zh.freq.gz
+ELRC-3056-wikipedia_health/v1/mono/en.tok.gz
+ELRC-3056-wikipedia_health/v1/mono/en.txt.gz
+ELRC-3056-wikipedia_health/v1/mono/zh.tok.gz
+ELRC-3056-wikipedia_health/v1/mono/zh.txt.gz
+ELRC-3056-wikipedia_health/v1/moses/en-zh.txt.zip
+ELRC-3056-wikipedia_health/v1/raw/en.zip
+ELRC-3056-wikipedia_health/v1/raw/zh.zip
+ELRC-3056-wikipedia_health/v1/smt/en-zh.alg.zip
+ELRC-3056-wikipedia_health/v1/smt/en-zh.zip
+ELRC-3056-wikipedia_health/v1/tmx/en-zh.tmx.gz
+ELRC-3056-wikipedia_health/v1/xml/en.zip
+ELRC-3056-wikipedia_health/v1/xml/zh.zip
+tmx/en-zh.tmx.gz
+tmx/en-zh.txt.zip
+xml/en-zh.xml.gz

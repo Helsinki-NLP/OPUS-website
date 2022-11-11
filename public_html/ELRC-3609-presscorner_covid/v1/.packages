@@ -1,0 +1,15 @@
+ELRC-3609-presscorner_covid/v1/freq/en.freq.gz
+ELRC-3609-presscorner_covid/v1/freq/lt.freq.gz
+ELRC-3609-presscorner_covid/v1/mono/en.tok.gz
+ELRC-3609-presscorner_covid/v1/mono/en.txt.gz
+ELRC-3609-presscorner_covid/v1/mono/lt.tok.gz
+ELRC-3609-presscorner_covid/v1/mono/lt.txt.gz
+ELRC-3609-presscorner_covid/v1/moses/en-lt.txt.zip
+ELRC-3609-presscorner_covid/v1/raw/en.zip
+ELRC-3609-presscorner_covid/v1/raw/lt.zip
+ELRC-3609-presscorner_covid/v1/tmx/en-lt.tmx.gz
+ELRC-3609-presscorner_covid/v1/xml/en.zip
+ELRC-3609-presscorner_covid/v1/xml/lt.zip
+tmx/en-lt.tmx.gz
+tmx/en-lt.txt.zip
+xml/en-lt.xml.gz

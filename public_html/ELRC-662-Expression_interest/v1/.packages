@@ -1,0 +1,15 @@
+ELRC-662-Expression_interest/v1/freq/el.freq.gz
+ELRC-662-Expression_interest/v1/freq/en.freq.gz
+ELRC-662-Expression_interest/v1/mono/el.tok.gz
+ELRC-662-Expression_interest/v1/mono/el.txt.gz
+ELRC-662-Expression_interest/v1/mono/en.tok.gz
+ELRC-662-Expression_interest/v1/mono/en.txt.gz
+ELRC-662-Expression_interest/v1/moses/el-en.txt.zip
+ELRC-662-Expression_interest/v1/raw/el.zip
+ELRC-662-Expression_interest/v1/raw/en.zip
+ELRC-662-Expression_interest/v1/tmx/el-en.tmx.gz
+ELRC-662-Expression_interest/v1/xml/el.zip
+ELRC-662-Expression_interest/v1/xml/en.zip
+tmx/el-en.tmx.gz
+tmx/el-en.txt.zip
+xml/el-en.xml.gz

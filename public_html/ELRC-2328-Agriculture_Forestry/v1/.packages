@@ -1,0 +1,17 @@
+ELRC-2328-Agriculture_Forestry/v1/freq/en.freq.gz
+ELRC-2328-Agriculture_Forestry/v1/freq/sl.freq.gz
+ELRC-2328-Agriculture_Forestry/v1/mono/en.tok.gz
+ELRC-2328-Agriculture_Forestry/v1/mono/en.txt.gz
+ELRC-2328-Agriculture_Forestry/v1/mono/sl.tok.gz
+ELRC-2328-Agriculture_Forestry/v1/mono/sl.txt.gz
+ELRC-2328-Agriculture_Forestry/v1/moses/en-sl.txt.zip
+ELRC-2328-Agriculture_Forestry/v1/raw/en.zip
+ELRC-2328-Agriculture_Forestry/v1/raw/sl.zip
+ELRC-2328-Agriculture_Forestry/v1/smt/en-sl.alg.zip
+ELRC-2328-Agriculture_Forestry/v1/smt/en-sl.zip
+ELRC-2328-Agriculture_Forestry/v1/tmx/en-sl.tmx.gz
+ELRC-2328-Agriculture_Forestry/v1/xml/en.zip
+ELRC-2328-Agriculture_Forestry/v1/xml/sl.zip
+tmx/en-sl.tmx.gz
+tmx/en-sl.txt.zip
+xml/en-sl.xml.gz

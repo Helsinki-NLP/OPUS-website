@@ -1,0 +1,15 @@
+ELRC-5182-Official_Parliament_/v1/freq/en.freq.gz
+ELRC-5182-Official_Parliament_/v1/freq/uk.freq.gz
+ELRC-5182-Official_Parliament_/v1/mono/en.tok.gz
+ELRC-5182-Official_Parliament_/v1/mono/en.txt.gz
+ELRC-5182-Official_Parliament_/v1/mono/uk.tok.gz
+ELRC-5182-Official_Parliament_/v1/mono/uk.txt.gz
+ELRC-5182-Official_Parliament_/v1/moses/en-uk.txt.zip
+ELRC-5182-Official_Parliament_/v1/raw/en.zip
+ELRC-5182-Official_Parliament_/v1/raw/uk.zip
+ELRC-5182-Official_Parliament_/v1/tmx/en-uk.tmx.gz
+ELRC-5182-Official_Parliament_/v1/xml/en.zip
+ELRC-5182-Official_Parliament_/v1/xml/uk.zip
+tmx/en-uk.tmx.gz
+tmx/en-uk.txt.zip
+xml/en-uk.xml.gz

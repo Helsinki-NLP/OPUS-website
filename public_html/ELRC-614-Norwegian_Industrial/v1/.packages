@@ -1,0 +1,15 @@
+ELRC-614-Norwegian_Industrial/v1/freq/en.freq.gz
+ELRC-614-Norwegian_Industrial/v1/freq/nn.freq.gz
+ELRC-614-Norwegian_Industrial/v1/mono/en.tok.gz
+ELRC-614-Norwegian_Industrial/v1/mono/en.txt.gz
+ELRC-614-Norwegian_Industrial/v1/mono/nn.tok.gz
+ELRC-614-Norwegian_Industrial/v1/mono/nn.txt.gz
+ELRC-614-Norwegian_Industrial/v1/moses/en-nn.txt.zip
+ELRC-614-Norwegian_Industrial/v1/raw/en.zip
+ELRC-614-Norwegian_Industrial/v1/raw/nn.zip
+ELRC-614-Norwegian_Industrial/v1/tmx/en-nn.tmx.gz
+ELRC-614-Norwegian_Industrial/v1/xml/en.zip
+ELRC-614-Norwegian_Industrial/v1/xml/nn.zip
+tmx/en-nn.tmx.gz
+tmx/en-nn.txt.zip
+xml/en-nn.xml.gz

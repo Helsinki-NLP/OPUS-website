@@ -1,0 +1,17 @@
+ELRC-2746-vaccination/v1/freq/en.freq.gz
+ELRC-2746-vaccination/v1/freq/mt.freq.gz
+ELRC-2746-vaccination/v1/mono/en.tok.gz
+ELRC-2746-vaccination/v1/mono/en.txt.gz
+ELRC-2746-vaccination/v1/mono/mt.tok.gz
+ELRC-2746-vaccination/v1/mono/mt.txt.gz
+ELRC-2746-vaccination/v1/moses/en-mt.txt.zip
+ELRC-2746-vaccination/v1/raw/en.zip
+ELRC-2746-vaccination/v1/raw/mt.zip
+ELRC-2746-vaccination/v1/smt/en-mt.alg.zip
+ELRC-2746-vaccination/v1/smt/en-mt.zip
+ELRC-2746-vaccination/v1/tmx/en-mt.tmx.gz
+ELRC-2746-vaccination/v1/xml/en.zip
+ELRC-2746-vaccination/v1/xml/mt.zip
+tmx/en-mt.tmx.gz
+tmx/en-mt.txt.zip
+xml/en-mt.xml.gz
