@@ -641,6 +641,16 @@
       <td>publicDomain</td>
     </tr>
     <tr>
+      <td><a href="ELRC-2424-Preasritis_Gaois_Fio.php">ELRC-2424-Preasritis_Gaois_Fio</a></td>
+      <td>Preasráitis Gaois, Fiontar & Scoil na Gaeilge, DCU (1)</td>
+      <td>CC-BY-SA-4.0</td>
+    </tr>
+    <tr>
+      <td><a href="ELRC-2425-Preasritis_Gaois_Fio.php">ELRC-2425-Preasritis_Gaois_Fio</a></td>
+      <td>Preasráitis Gaois, Fiontar & Scoil na Gaeilge, DCU (2)</td>
+      <td>CC-BY-SA-4.0</td>
+    </tr>
+    <tr>
       <td><a href="ELRC-2438-www.citizensinformat.php">ELRC-2438-www.citizensinformat</a></td>
       <td>Citizens Information Bilingual Web-Corpus (Processed)</td>
       <td>CC-BY-4.0</td>
@@ -676,9 +686,24 @@
       <td>publicDomain</td>
     </tr>
     <tr>
+      <td><a href="ELRC-2451-Pleananna_ITBC_le.php">ELRC-2451-Pleananna_ITBC_le</a></td>
+      <td>Pleananna ITBÁC le comóradh a dhéanamh ar 1916</td>
+      <td>CC-BY-4.0</td>
+    </tr>
+    <tr>
+      <td><a href="ELRC-2452-Tuairisc_a_thug.php">ELRC-2452-Tuairisc_a_thug</a></td>
+      <td>Tuairisc a thug Máire Nic Shiubhlaigh, Aisteoir Tionscanta de chuid Amharlann na Mainistreach, ar ghéilleadh gharastún mhonarcha Jacob</td>
+      <td>CC-BY-4.0</td>
+    </tr>
+    <tr>
       <td><a href="ELRC-2457-Estonian_Classificat.php">ELRC-2457-Estonian_Classificat</a></td>
       <td>Estonian-English parallel corpus from the Estonian Classification of Economic Activities (EMTAK).</td>
       <td>CC-BY-SA-3.0</td>
+    </tr>
+    <tr>
+      <td><a href="ELRC-2458-Tarmaocht_agus_aistr.php">ELRC-2458-Tarmaocht_agus_aistr</a></td>
+      <td>Téarmaíocht agus aistriúcháin a bhaineann le fógraí poist, folúntais, ábhair chomórtha 1916 agus eolas ginearálta ar Oifig na Gaeilge.</td>
+      <td>CC-BY-4.0</td>
     </tr>
     <tr>
       <td><a href="ELRC-2459-Pstaer_faoi_scoil.php">ELRC-2459-Pstaer_faoi_scoil</a></td>
@@ -781,6 +806,21 @@
       <td>publicDomain</td>
     </tr>
     <tr>
+      <td><a href="ELRC-2498-Plan_Nacional_e.php">ELRC-2498-Plan_Nacional_e</a></td>
+      <td>Plan Nacional e Integral de Turismo (PNIT)</td>
+      <td>CC0-1.0</td>
+    </tr>
+    <tr>
+      <td><a href="ELRC-2502-TERMITUR.php">ELRC-2502-TERMITUR</a></td>
+      <td>TERMITUR EN-ES</td>
+      <td>CC-BY-NC-4.0</td>
+    </tr>
+    <tr>
+      <td><a href="ELRC-2503-Descripciones_vulner.php">ELRC-2503-Descripciones_vulner</a></td>
+      <td>Descripciones de vulnerabilidades de la BBDD NVD</td>
+      <td>CC-BY-NC-SA-4.0</td>
+    </tr>
+    <tr>
       <td><a href="ELRC-2505-Preasriteas_M_Iil.php">ELRC-2505-Preasriteas_M_Iil</a></td>
       <td>Preasráiteas: Mí Iúil</td>
       <td>openUnder-PSI</td>
@@ -826,6 +866,16 @@
       <td>openUnder-PSI</td>
     </tr>
     <tr>
+      <td><a href="ELRC-2543-Inteliterm.php">ELRC-2543-Inteliterm</a></td>
+      <td>Inteliterm EN-ES</td>
+      <td>CC-BY-NC-4.0</td>
+    </tr>
+    <tr>
+      <td><a href="ELRC-2544-TERMITUR.php">ELRC-2544-TERMITUR</a></td>
+      <td>TERMITUR DE-ES</td>
+      <td>CC-BY-NC-4.0</td>
+    </tr>
+    <tr>
       <td><a href="ELRC-2546-Competition_Economic.php">ELRC-2546-Competition_Economic</a></td>
       <td>Competition Economics for Judges (Processed)</td>
       <td>openUnder-PSI</td>
@@ -859,6 +909,86 @@
       <td><a href="ELRC-2610-Polish_Energy_Conser.php">ELRC-2610-Polish_Energy_Conser</a></td>
       <td>Polish National Energy Conservation Agency dataset (Processed)</td>
       <td>CC-BY-4.0</td>
+    </tr>
+    <tr>
+      <td><a href="ELRC-2611-localidades_alentejo.php">ELRC-2611-localidades_alentejo</a></td>
+      <td>localidades alentejo</td>
+      <td>CC-BY-NC-4.0</td>
+    </tr>
+    <tr>
+      <td><a href="ELRC-2612-Artigos_visitportuga.php">ELRC-2612-Artigos_visitportuga</a></td>
+      <td>Artigos visitportugal 2007</td>
+      <td>CC-BY-NC-4.0</td>
+    </tr>
+    <tr>
+      <td><a href="ELRC-2613-Artigos_visitportuga.php">ELRC-2613-Artigos_visitportuga</a></td>
+      <td>Artigos visitportugal 2007 .</td>
+      <td>CC-BY-NC-4.0</td>
+    </tr>
+    <tr>
+      <td><a href="ELRC-2614-Localidades_2007.php">ELRC-2614-Localidades_2007</a></td>
+      <td>Localidades 2007</td>
+      <td>CC-BY-NC-4.0</td>
+    </tr>
+    <tr>
+      <td><a href="ELRC-2615-Localidades_2007_Par.php">ELRC-2615-Localidades_2007_Par</a></td>
+      <td>Localidades 2007 .</td>
+      <td>CC-BY-NC-4.0</td>
+    </tr>
+    <tr>
+      <td><a href="ELRC-2616-Museus_2007.php">ELRC-2616-Museus_2007</a></td>
+      <td>Museus 2007</td>
+      <td>CC-BY-NC-4.0</td>
+    </tr>
+    <tr>
+      <td><a href="ELRC-2617-Museus_2007_Part2.php">ELRC-2617-Museus_2007_Part2</a></td>
+      <td>Museus 2007 .</td>
+      <td>CC-BY-NC-4.0</td>
+    </tr>
+    <tr>
+      <td><a href="ELRC-2622-Arquitectura_2007.php">ELRC-2622-Arquitectura_2007</a></td>
+      <td>Arquitectura 2007</td>
+      <td>CC-BY-NC-4.0</td>
+    </tr>
+    <tr>
+      <td><a href="ELRC-2623-Patrimnio_Aores_2006.php">ELRC-2623-Patrimnio_Aores_2006</a></td>
+      <td>Património Açores 2006</td>
+      <td>CC-BY-NC-4.0</td>
+    </tr>
+    <tr>
+      <td><a href="ELRC-2624-Arquitectura_2007_Pa.php">ELRC-2624-Arquitectura_2007_Pa</a></td>
+      <td>Arquitectura 2007</td>
+      <td>CC-BY-NC-4.0</td>
+    </tr>
+    <tr>
+      <td><a href="ELRC-2625-Patrimnio_Aores_2006.php">ELRC-2625-Patrimnio_Aores_2006</a></td>
+      <td>Património Açores 2006 .</td>
+      <td>CC-BY-NC-4.0</td>
+    </tr>
+    <tr>
+      <td><a href="ELRC-2638-monumentos_2007.php">ELRC-2638-monumentos_2007</a></td>
+      <td>monumentos 2007</td>
+      <td>CC-BY-NC-4.0</td>
+    </tr>
+    <tr>
+      <td><a href="ELRC-2639-Parques_e_reservas.php">ELRC-2639-Parques_e_reservas</a></td>
+      <td>Parques e reservas 2007</td>
+      <td>CC-BY-NC-4.0</td>
+    </tr>
+    <tr>
+      <td><a href="ELRC-2640-Parques_e_reservas.php">ELRC-2640-Parques_e_reservas</a></td>
+      <td>Parques e reservas 2007 .</td>
+      <td>CC-BY-NC-4.0</td>
+    </tr>
+    <tr>
+      <td><a href="ELRC-2641-Praias_2007.php">ELRC-2641-Praias_2007</a></td>
+      <td>Praias 2007</td>
+      <td>CC-BY-NC-4.0</td>
+    </tr>
+    <tr>
+      <td><a href="ELRC-2642-Praias_2007_Part2.php">ELRC-2642-Praias_2007_Part2</a></td>
+      <td>Praias 2007 .</td>
+      <td>CC-BY-NC-4.0</td>
     </tr>
     <tr>
       <td><a href="ELRC-2706-EMEA.php">ELRC-2706-EMEA</a></td>
@@ -4450,28 +4580,13 @@
       <td><a href="ELRC-Artigos_visitportuga.php">ELRC-Artigos_visitportuga</a></td>
     </tr>
     <tr>
-      <td><a href="ELRC-BMI_Brochures.php">ELRC-BMI_Brochures</a></td>
-    </tr>
-    <tr>
-      <td><a href="ELRC-Bulgarian_strategic.php">ELRC-Bulgarian_strategic</a></td>
-    </tr>
-    <tr>
       <td><a href="ELRC-CORDIS_News.php">ELRC-CORDIS_News</a></td>
     </tr>
     <tr>
       <td><a href="ELRC-CORDIS_Results.php">ELRC-CORDIS_Results</a></td>
     </tr>
     <tr>
-      <td><a href="ELRC-Coimisineir_Teanga.php">ELRC-Coimisineir_Teanga</a></td>
-    </tr>
-    <tr>
       <td><a href="ELRC-Courts_Norway.php">ELRC-Courts_Norway</a></td>
-    </tr>
-    <tr>
-      <td><a href="ELRC-Czech_Supreme.php">ELRC-Czech_Supreme</a></td>
-    </tr>
-    <tr>
-      <td><a href="ELRC-Danish_Higher.php">ELRC-Danish_Higher</a></td>
     </tr>
     <tr>
       <td><a href="ELRC-EC_EUROPA.php">ELRC-EC_EUROPA</a></td>
@@ -4501,9 +4616,6 @@
       <td><a href="ELRC-Federal_Foreign.php">ELRC-Federal_Foreign</a></td>
     </tr>
     <tr>
-      <td><a href="ELRC-Financial_Stability.php">ELRC-Financial_Stability</a></td>
-    </tr>
-    <tr>
       <td><a href="ELRC-Finnish_Information.php">ELRC-Finnish_Information</a></td>
     </tr>
     <tr>
@@ -4513,13 +4625,7 @@
       <td><a href="ELRC-German_Foreign.php">ELRC-German_Foreign</a></td>
     </tr>
     <tr>
-      <td><a href="ELRC-Government_Offices.php">ELRC-Government_Offices</a></td>
-    </tr>
-    <tr>
       <td><a href="ELRC-Information_Portal.php">ELRC-Information_Portal</a></td>
-    </tr>
-    <tr>
-      <td><a href="ELRC-Italian_legal.php">ELRC-Italian_legal</a></td>
     </tr>
     <tr>
       <td><a href="ELRC-Localidades_2007.php">ELRC-Localidades_2007</a></td>
@@ -4528,13 +4634,7 @@
       <td><a href="ELRC-Museus_2007.php">ELRC-Museus_2007</a></td>
     </tr>
     <tr>
-      <td><a href="ELRC-Norwegian_Bokml.php">ELRC-Norwegian_Bokml</a></td>
-    </tr>
-    <tr>
       <td><a href="ELRC-Norwegian_Directorat.php">ELRC-Norwegian_Directorat</a></td>
-    </tr>
-    <tr>
-      <td><a href="ELRC-Official_Parliament.php">ELRC-Official_Parliament</a></td>
     </tr>
     <tr>
       <td><a href="ELRC-PIO_Publication.php">ELRC-PIO_Publication</a></td>
@@ -4546,25 +4646,10 @@
       <td><a href="ELRC-Patrimnio_Aores.php">ELRC-Patrimnio_Aores</a></td>
     </tr>
     <tr>
-      <td><a href="ELRC-Polish_Food.php">ELRC-Polish_Food</a></td>
-    </tr>
-    <tr>
-      <td><a href="ELRC-Polish_Foreign.php">ELRC-Polish_Foreign</a></td>
-    </tr>
-    <tr>
       <td><a href="ELRC-Portuguese_legislati.php">ELRC-Portuguese_legislati</a></td>
     </tr>
     <tr>
       <td><a href="ELRC-Praias_2007.php">ELRC-Praias_2007</a></td>
-    </tr>
-    <tr>
-      <td><a href="ELRC-Preasriteas_faoi.php">ELRC-Preasriteas_faoi</a></td>
-    </tr>
-    <tr>
-      <td><a href="ELRC-Preasritis_.php">ELRC-Preasritis_</a></td>
-    </tr>
-    <tr>
-      <td><a href="ELRC-Preasritis_Gaois.php">ELRC-Preasritis_Gaois</a></td>
     </tr>
     <tr>
       <td><a href="ELRC-Press_Releases.php">ELRC-Press_Releases</a></td>
@@ -4573,13 +4658,7 @@
       <td><a href="ELRC-Regional_Development.php">ELRC-Regional_Development</a></td>
     </tr>
     <tr>
-      <td><a href="ELRC-Ritis_Airgeadais.php">ELRC-Ritis_Airgeadais</a></td>
-    </tr>
-    <tr>
       <td><a href="ELRC-Rural_Development.php">ELRC-Rural_Development</a></td>
-    </tr>
-    <tr>
-      <td><a href="ELRC-Secretariat_General.php">ELRC-Secretariat_General</a></td>
     </tr>
     <tr>
       <td><a href="ELRC-Swedish_Labour.php">ELRC-Swedish_Labour</a></td>
@@ -4591,16 +4670,7 @@
       <td><a href="ELRC-TERMITUR.php">ELRC-TERMITUR</a></td>
     </tr>
     <tr>
-      <td><a href="ELRC-_Chonradh.php">ELRC-_Chonradh</a></td>
-    </tr>
-    <tr>
-      <td><a href="ELRC-annual_reports.php">ELRC-annual_reports</a></td>
-    </tr>
-    <tr>
       <td><a href="ELRC-antibiotic.php">ELRC-antibiotic</a></td>
-    </tr>
-    <tr>
-      <td><a href="ELRC-by_Presidency.php">ELRC-by_Presidency</a></td>
     </tr>
     <tr>
       <td><a href="ELRC-government_websites.php">ELRC-government_websites</a></td>
