@@ -1,0 +1,15 @@
+IITB/v2.0/freq/en.freq.gz
+IITB/v2.0/freq/hi.freq.gz
+IITB/v2.0/mono/en.tok.gz
+IITB/v2.0/mono/en.txt.gz
+IITB/v2.0/mono/hi.tok.gz
+IITB/v2.0/mono/hi.txt.gz
+IITB/v2.0/moses/en-hi.txt.zip
+IITB/v2.0/raw/en.zip
+IITB/v2.0/raw/hi.zip
+IITB/v2.0/tmx/en-hi.tmx.gz
+IITB/v2.0/xml/en.zip
+IITB/v2.0/xml/hi.zip
+tmx/en-hi.tmx.gz
+tmx/en-hi.txt.zip
+xml/en-hi.xml.gz
