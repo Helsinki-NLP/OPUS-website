@@ -4,8 +4,12 @@ ELRC-1177-EUIPO_2017/v1/mono/en.tok.gz
 ELRC-1177-EUIPO_2017/v1/mono/en.txt.gz
 ELRC-1177-EUIPO_2017/v1/mono/ro.tok.gz
 ELRC-1177-EUIPO_2017/v1/mono/ro.txt.gz
+ELRC-1177-EUIPO_2017/v1/moses/en-ro.txt.zip
 ELRC-1177-EUIPO_2017/v1/raw/en.zip
 ELRC-1177-EUIPO_2017/v1/raw/ro.zip
+ELRC-1177-EUIPO_2017/v1/smt/en-ro.alg.zip
+ELRC-1177-EUIPO_2017/v1/smt/en-ro.zip
+ELRC-1177-EUIPO_2017/v1/tmx/en-ro.tmx.gz
 ELRC-1177-EUIPO_2017/v1/xml/en.zip
 ELRC-1177-EUIPO_2017/v1/xml/ro.zip
 tmx/en-ro.tmx.gz

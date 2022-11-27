@@ -4,8 +4,12 @@ ELRC-1253-Portuguese_law_refer/v1/mono/fr.tok.gz
 ELRC-1253-Portuguese_law_refer/v1/mono/fr.txt.gz
 ELRC-1253-Portuguese_law_refer/v1/mono/pt.tok.gz
 ELRC-1253-Portuguese_law_refer/v1/mono/pt.txt.gz
+ELRC-1253-Portuguese_law_refer/v1/moses/fr-pt.txt.zip
 ELRC-1253-Portuguese_law_refer/v1/raw/fr.zip
 ELRC-1253-Portuguese_law_refer/v1/raw/pt.zip
+ELRC-1253-Portuguese_law_refer/v1/smt/fr-pt.alg.zip
+ELRC-1253-Portuguese_law_refer/v1/smt/fr-pt.zip
+ELRC-1253-Portuguese_law_refer/v1/tmx/fr-pt.tmx.gz
 ELRC-1253-Portuguese_law_refer/v1/xml/fr.zip
 ELRC-1253-Portuguese_law_refer/v1/xml/pt.zip
 tmx/fr-pt.tmx.gz

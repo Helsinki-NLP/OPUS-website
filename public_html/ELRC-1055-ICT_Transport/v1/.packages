@@ -4,8 +4,12 @@ ELRC-1055-ICT_Transport/v1/mono/bg.tok.gz
 ELRC-1055-ICT_Transport/v1/mono/bg.txt.gz
 ELRC-1055-ICT_Transport/v1/mono/en.tok.gz
 ELRC-1055-ICT_Transport/v1/mono/en.txt.gz
+ELRC-1055-ICT_Transport/v1/moses/bg-en.txt.zip
 ELRC-1055-ICT_Transport/v1/raw/bg.zip
 ELRC-1055-ICT_Transport/v1/raw/en.zip
+ELRC-1055-ICT_Transport/v1/smt/bg-en.alg.zip
+ELRC-1055-ICT_Transport/v1/smt/bg-en.zip
+ELRC-1055-ICT_Transport/v1/tmx/bg-en.tmx.gz
 ELRC-1055-ICT_Transport/v1/xml/bg.zip
 ELRC-1055-ICT_Transport/v1/xml/en.zip
 tmx/bg-en.tmx.gz

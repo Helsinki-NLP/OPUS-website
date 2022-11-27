@@ -4,8 +4,12 @@ ELRC-1256-government_websites_/v1/mono/es.tok.gz
 ELRC-1256-government_websites_/v1/mono/es.txt.gz
 ELRC-1256-government_websites_/v1/mono/fr.tok.gz
 ELRC-1256-government_websites_/v1/mono/fr.txt.gz
+ELRC-1256-government_websites_/v1/moses/es-fr.txt.zip
 ELRC-1256-government_websites_/v1/raw/es.zip
 ELRC-1256-government_websites_/v1/raw/fr.zip
+ELRC-1256-government_websites_/v1/smt/es-fr.alg.zip
+ELRC-1256-government_websites_/v1/smt/es-fr.zip
+ELRC-1256-government_websites_/v1/tmx/es-fr.tmx.gz
 ELRC-1256-government_websites_/v1/xml/es.zip
 ELRC-1256-government_websites_/v1/xml/fr.zip
 tmx/es-fr.tmx.gz

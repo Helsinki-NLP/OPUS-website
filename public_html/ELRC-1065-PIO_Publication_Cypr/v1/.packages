@@ -4,8 +4,12 @@ ELRC-1065-PIO_Publication_Cypr/v1/mono/el.tok.gz
 ELRC-1065-PIO_Publication_Cypr/v1/mono/el.txt.gz
 ELRC-1065-PIO_Publication_Cypr/v1/mono/en.tok.gz
 ELRC-1065-PIO_Publication_Cypr/v1/mono/en.txt.gz
+ELRC-1065-PIO_Publication_Cypr/v1/moses/el-en.txt.zip
 ELRC-1065-PIO_Publication_Cypr/v1/raw/el.zip
 ELRC-1065-PIO_Publication_Cypr/v1/raw/en.zip
+ELRC-1065-PIO_Publication_Cypr/v1/smt/el-en.alg.zip
+ELRC-1065-PIO_Publication_Cypr/v1/smt/el-en.zip
+ELRC-1065-PIO_Publication_Cypr/v1/tmx/el-en.tmx.gz
 ELRC-1065-PIO_Publication_Cypr/v1/xml/el.zip
 ELRC-1065-PIO_Publication_Cypr/v1/xml/en.zip
 tmx/el-en.tmx.gz

@@ -4,8 +4,12 @@ ELRC-1797-Budget_Belgium/v1/mono/fr.tok.gz
 ELRC-1797-Budget_Belgium/v1/mono/fr.txt.gz
 ELRC-1797-Budget_Belgium/v1/mono/nl.tok.gz
 ELRC-1797-Budget_Belgium/v1/mono/nl.txt.gz
+ELRC-1797-Budget_Belgium/v1/moses/fr-nl.txt.zip
 ELRC-1797-Budget_Belgium/v1/raw/fr.zip
 ELRC-1797-Budget_Belgium/v1/raw/nl.zip
+ELRC-1797-Budget_Belgium/v1/smt/fr-nl.alg.zip
+ELRC-1797-Budget_Belgium/v1/smt/fr-nl.zip
+ELRC-1797-Budget_Belgium/v1/tmx/fr-nl.tmx.gz
 ELRC-1797-Budget_Belgium/v1/xml/fr.zip
 ELRC-1797-Budget_Belgium/v1/xml/nl.zip
 tmx/fr-nl.tmx.gz

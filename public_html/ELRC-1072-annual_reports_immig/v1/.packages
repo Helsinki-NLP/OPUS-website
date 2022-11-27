@@ -4,8 +4,12 @@ ELRC-1072-annual_reports_immig/v1/mono/en.tok.gz
 ELRC-1072-annual_reports_immig/v1/mono/en.txt.gz
 ELRC-1072-annual_reports_immig/v1/mono/sk.tok.gz
 ELRC-1072-annual_reports_immig/v1/mono/sk.txt.gz
+ELRC-1072-annual_reports_immig/v1/moses/en-sk.txt.zip
 ELRC-1072-annual_reports_immig/v1/raw/en.zip
 ELRC-1072-annual_reports_immig/v1/raw/sk.zip
+ELRC-1072-annual_reports_immig/v1/smt/en-sk.alg.zip
+ELRC-1072-annual_reports_immig/v1/smt/en-sk.zip
+ELRC-1072-annual_reports_immig/v1/tmx/en-sk.tmx.gz
 ELRC-1072-annual_reports_immig/v1/xml/en.zip
 ELRC-1072-annual_reports_immig/v1/xml/sk.zip
 tmx/en-sk.tmx.gz
