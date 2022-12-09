@@ -108,6 +108,7 @@
 
         <b>Tools &amp; Info</b>
         <ul>
+	  <li><a href="https://github.com/Helsinki-NLP/OPUS">OPUS@github</a></li>
           <li><a href="/trac/wiki">OPUS Wiki</a></li>
 	  <li><a href="http://opus.nlpl.eu/opusapi">OPUS API</a></li>
 	  <li><a href="https://github.com/Helsinki-NLP/OPUS-MT">OPUS-MT</a></li>

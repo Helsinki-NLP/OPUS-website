@@ -164,6 +164,25 @@ apt install mariadb-server
 
 
 
+
+# GitHub
+
+Pushing updates to github (for example OPUS-website) requires access tokens when using the https interface.
+Here are some links about setting this up:
+
+https://docs.github.com/en/free-pro-team@latest/github/using-git/which-remote-url-should-i-use
+https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/creating-a-personal-access-token
+
+```
+# Set git to use the credential memory cache
+git config --global credential.helper cache
+
+# Set the cache to timeout after 1 hour (setting is in seconds)
+git config --global credential.helper 'cache --timeout=3600'
+```
+
+
+
 # Deprecated
 
 * TRAC (better forget about it)
