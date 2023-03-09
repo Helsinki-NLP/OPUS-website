@@ -1,0 +1,15 @@
+KFTT/v1.0/freq/en.freq.gz
+KFTT/v1.0/freq/ja.freq.gz
+KFTT/v1.0/mono/en.tok.gz
+KFTT/v1.0/mono/en.txt.gz
+KFTT/v1.0/mono/ja.tok.gz
+KFTT/v1.0/mono/ja.txt.gz
+KFTT/v1.0/moses/en-ja.txt.zip
+KFTT/v1.0/raw/en.zip
+KFTT/v1.0/raw/ja.zip
+KFTT/v1.0/tmx/en-ja.tmx.gz
+KFTT/v1.0/xml/en.zip
+KFTT/v1.0/xml/ja.zip
+tmx/en-ja.tmx.gz
+tmx/en-ja.txt.zip
+xml/en-ja.xml.gz

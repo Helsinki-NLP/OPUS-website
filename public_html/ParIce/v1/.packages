@@ -1,0 +1,15 @@
+ParIce/v1/freq/en.freq.gz
+ParIce/v1/freq/is.freq.gz
+ParIce/v1/mono/en.tok.gz
+ParIce/v1/mono/en.txt.gz
+ParIce/v1/mono/is.tok.gz
+ParIce/v1/mono/is.txt.gz
+ParIce/v1/moses/en-is.txt.zip
+ParIce/v1/raw/en.zip
+ParIce/v1/raw/is.zip
+ParIce/v1/tmx/en-is.tmx.gz
+ParIce/v1/xml/en.zip
+ParIce/v1/xml/is.zip
+tmx/en-is.tmx.gz
+tmx/en-is.txt.zip
+xml/en-is.xml.gz
