@@ -1,0 +1,160 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+2.7 Optical Multiplexer and De‐Multiplexer <br/>
+ahasahasdsada đừng để ý đến bài này 2.7 Bộ ghép và phân kênh quang <br/>
+<hr/>
+A multiplexer (MUX) is used to combine several WDM optical channels into a serial spectrum of closely spaced wavelength signals and couple them onto a single fiber. <br/>
+Bộ ghép kênh (MUX) được dùng để kết hợp một số kênh quang WDM thành một phổ liên tục của các tín hiệu mang bước sóng gần nhau, và ghép chúng vào một sợi quang. <br/>
+<hr/>
+A de‐multiplexer (DMUX) performs the complementary function to separate the optical signals into appropriate WDM wavelength channels. <br/>
+Còn bộ phân kênh (DMUX) thực hiện tách tín hiệu quang thành các kênh WDM với bước sóng thích hợp. <br/>
+<hr/>
+The multiplexed optical signals at different wavelengths have no significant optical power outside the designated channel spectral width; one, due to sufficient separation between the channels with the guard bands between them, and two, due to narrow line widths of the DFB/DBR laser used. <br/>
+Các tín hiệu quang được ghép ở các bước sóng khác nhau không mang công suất quang đáng kể tại ngoài độ rộng phổ kênh được chỉ định; một là do có đủ khoảng bảo vệ giữa các kênh và hai là do độ rộng dòng hẹp của laser DFB / DBR được sử dụng. <br/>
+<hr/>
+On the de‐multiplexer end they have very narrow optical filters with sharp wavelength cut‐offs at the input of the detector. <br/>
+Ở đầu bộ ghép kênh là các bộ lọc quang rất hẹp tạo ra bước sóng cắt ở đầu vào của máy dò. <br/>
+<hr/>
+These MUXs/DEMUXs are made with several techniques, i.e. arrayed waveguides and other frequency‐sensitive devices as discussed in the previous sections. <br/>
+Các bộ MUX / DEMUX này được tạo ra bằng một số kỹ thuật như phân mảng ống dẫn sóng và các thiết bị cảm biến tần số khác như đã thảo luận tại các phần trước. <br/>
+<hr/>
+We discuss here one type of optical multiplexer/de‐multiplexer to explain the design and analysis. <br/>
+Phần này chúng ta tìm hiểu về cấu trúc và phân tích bộ ghép kênh/phân kênh quang học. <br/>
+<hr/>
+where Δf is the frequency separation of the two wavelengths. <br/>
+Với Δf là tần số tách của hai bước sóng. <br/>
+<hr/>
+This being a passive device with reciprocity, on sending the multiplexed signal from the reverse direction it will work as a de‐multiplexer separating the two wavelengths. <br/>
+Đây là một thiết bị thụ động có tính tương hỗ, khi gửi tín hiệu được ghép kênh từ hướng ngược lại, nó sẽ hoạt động như một bộ phân tách hai bước sóng. <br/>
+<hr/>
+Higher port count devices can be obtained by adding more stages. <br/>
+Có thể thu được các thiết bị cổng đếm cao hơn bằng cách thêm nhiều lớp hơn. <br/>
+<hr/>
+For example, in the case of an (N × 1) MZI multiplexer, where N = 2n with n ≥⃒ 1, n being the number of multiplexer stages, the number of MZIs in a stage j will be 2(n-j) and the path difference in an interferometer element of stage j is then given as: <br/>
+Ví dụ: trong trường hợp bộ ghép kênh (N × 1) MZI, trong đó N = 2n với n ≥⃒ 1, n là số lớp của bộ ghép, số lượng MZI trong một lớp j sẽ là 2 (n-j) và chênh lệch đường đi trong một phần tử giao thoa kế của lớp j là: <br/>
+<hr/>
+The (N × 1) MZI multiplexer can be used as a (1 × N) de‐multiplexer by reversing the light‐propagation direction. <br/>
+Bộ ghép kênh (N × 1) MZI có thể được sử dụng như một bộ phân kênh (1 × N) bằng cách đảo ngược hướng truyền ánh sáng. <br/>
+<hr/>
+These devices are not scalable as the number of MZI required increases, making it not viable. <br/>
+Các thiết bị này không thể mở rộng vì số lượng MZI cần thiết sẽ tăng lên, khiến nó không khả thi. <br/>
+<hr/>
+When large port count static multiplexer/de‐multiplexers are required, AWG devices are preferred. <br/>
+Khi cần lượng cổng đếm lớn bộ ghép kênh /phân kênh tĩnh, các thiết bị AWG được ưu tiên. <br/>
+<hr/>
+Example 2.3 Design a 8 × 1 multiplexer using 2 × 2 MZI that can handle a channel separation of 50 GHz. <br/>
+Ví dụ 2.3 Thiết kế bộ ghép kênh 8 × 1 sử dụng MZI 2 × 2 có thể xử lý phân tách kênh 50 GHz. <br/>
+<hr/>
+Assuming the shortest λ be 1550 nm, determine the differential length in each stage with (neff = 1.5). <br/>
+Giả sử λ ngắn nhất là 1550 nm, xác định độ dài vi phân trong mỗi giai đoạn với (neff = 1,5). <br/>
+<hr/>
+Solution <br/>
+Giải pháp <br/>
+<hr/>
+For N = 8, n = 3, the number of multiplexer stages are: 3. <br/>
+Với N = 8, n = 3, số lớp của bộ ghép kênh là: 3. <br/>
+<hr/>
+The first stage will have four identical MZI, the second stage will have two identical MZI, and the third stage has one MZI. <br/>
+Lớp đầu tiên sẽ có bốn MZI giống nhau, lớp thứ hai sẽ có hai MZI giống nhau và giai đoạn thứ ba có một MZI. <br/>
+<hr/>
+From Eq. (2.33), in the first stage all MZI have differential length of: <br/>
+Từ (2.33), trong lớp đầu, tất cả MZI có độ dài vi sai là: <br/>
+<hr/>
+2.8 Routers <br/>
+2.8 Bộ định tuyến <br/>
+<hr/>
+Routers are used in optical networks for routing the traffic, be it a lightpath or packet traffic, from the source node to the destination node passing through the intermediate network nodes. <br/>
+Bộ định tuyến được sử dụng trong mạng quang để định tuyến lưu lượng, nó có thể là đường dẫn quang hoặc gói tin, từ nút nguồn đến nút đích đi qua các nút mạng trung gian. <br/>
+<hr/>
+The routers used are of different types in both structure and technology. <br/>
+Các bộ định tuyến hiện nay thuộc nhiều loại khác nhau về cả cấu trúc và công nghệ. <br/>
+<hr/>
+In the following we give the types of routers commonly used in networks. <br/>
+Sau đây là một số loại bộ định tuyến thường được sử dụng trong mạng. <br/>
+<hr/>
+2.7.1 Mach‐Zehnder Interferometer (MZI) Multiplexer <br/>
+2.7.1 Bộ ghép kênh Giao thoa kế Mach‐Zehnder (MZI) <br/>
+<hr/>
+2.8.1 Static Wavelength Router <br/>
+2.8.1 Bộ định tuyến bước sóng tĩnh <br/>
+<hr/>
+In the wavelength switched routing networks the lightpaths have to be routed over the fiber between the source‐destination nodes. <br/>
+Trong các mạng định tuyến chuyển mạch theo bước sóng, các đường ánh sáng phải được định tuyến qua sợi quang, giữa các nút nguồn ‐ đích. <br/>
+<hr/>
+Signals from different input ports of the router are sent to different output ports based on the wavelengths to route the lightpath to their destination. <br/>
+Dựa trên các bước sóng mà tín hiệu từ các cổng đầu vào khác nhau của bộ định tuyến sẽ được gửi đến các cổng đầu ra khác nhau. <br/>
+<hr/>
+The (N × N) wavelength router requires two blocks to build: first, N number of (1 × N) wavelength DMUX, and second, N number of (N × 1) wavelength multiplexer. <br/>
+Bộ định tuyến bước sóng (N × N) yêu cầu hai khối để thiết lập: thứ nhất, N số bước sóng DMUX (1 × N) và thứ hai, N số bước bóng MUX (N × 1). <br/>
+<hr/>
+For a (N × N) static or non‐reconfigurable wavelength router, each of the N input fibers carries a set of {λ1,λ2 …λN} wavelengths and is connected to a (1 × N) DMUX. <br/>
+Đối với bộ định tuyến bước sóng tĩnh (N × N) hoặc không thiết lập, mỗi sợi trong số N sợi đầu vào mang một tập các bước sóng {λ1, λ2… λN} và được kết nối với một DMUX (1 × N). <br/>
+<hr/>
+The DMUX spatially separates the wavelengths and send them on N output ports. <br/>
+DMUX sau đó tách các bước sóng theo không gian và gửi chúng qua N cổng đầu ra. <br/>
+<hr/>
+The output stage has again N number (N × 1) MUXs, each of which is identical to DMUX but used in the opposite direction. <br/>
+Tại đầu ra lại có N số MUX (N × 1), giống với DMUX nhưng được sử dụng theo hướng ngược lại. <br/>
+<hr/>
+Each of the N number MUX combines the different λs connections coming from the N number DMUX and connects them to the output fiber. <br/>
+Mỗi N số MUX kết hợp các kết nối λs khác nhau đến từ DMUX số N và kết nối chúng với sợi quang đầu ra. <br/>
+<hr/>
+A static wavelength router is also known as a static wavelength cross‐connect (WXC) in the wavelength‐routed networks. <br/>
+Bộ định tuyến bước sóng tĩnh còn được gọi là kết nối chéo bước sóng tĩnh (WXC) trong các mạng định tuyến theo bước sóng. <br/>
+<hr/>
+In the static WXC, the cross‐connection pattern is fixed at the time when the device is made and cannot be changed dynamically. <br/>
+Trong WXC tĩnh, mẫu kết nối chéo được cố định tại thời điểm thiết bị được tạo ra và không thể thay đổi. <br/>
+<hr/>
+Figure 2.18 illustrates a 4 × 4 wavelength static router as an example. <br/>
+Hình 2.18 ví dụ minh họa một bộ định tuyến bước sóng tĩnh 4 × 4. <br/>
+<hr/>
+The connection between the two devices is such that different λs from different ports are combined by the MUX. <br/>
+Hai thiết bị được kết nối sao cho các λ khác nhau từ các cổng khác nhau được kết hợp bởi MUX. <br/>
+<hr/>
+The N2 fibers between the input and output stages are connected in a way that prevents identical wavelengths from different input ports from being combined on the same output port, thus avoiding interference among these channels. <br/>
+Các sợi N2 giữa những lớp đầu vào và ra được kết nối bằng cách, ngăn các bước sóng giống nhau từ các cổng vào khác nhau được kết hợp trên cùng một cổng đầu ra, để tránh nhiễu giữa các kênh này. <br/>
+<hr/>
+Hence, the path taken by any signal through the node is determined uniquely by its wavelength and port number. <br/>
+Do đó, đường đi của bất kỳ tín hiệu nào qua nút được xác định duy nhất bởi bước sóng và số cổng của nó. <br/>
+<hr/>
+The particular input port and its wavelength get routed to the particular output port depending on a routing matrix characterizing the router; this matrix is determined by the internal connections between the DMUX and the MUX. <br/>
+Một cổng vào và bước sóng của nó được chuyển đến cổng đầu ra cụ thể, tùy thuộc vào ma trận định tuyến đặc trưng của bộ định tuyến; ma trận này được xác định bởi các kết nối bên trong giữa DMUX và MUX. <br/>
+<hr/>
+An AWG can be made to work as a static wavelength router as PLC (Planar lightwave circuit) with silica on silicon technology. <br/>
+Một AWG có thể được sản xuất để hoạt động như một bộ định tuyến bước sóng tĩnh như PLC (mạch sóng ánh sáng Planar) với silica bằng công nghệ silicon. <br/>
+<hr/>
+2.8.2 Reconfigurable Wavelength Router <br/>
+2.8.2 Bộ định tuyến bước sóng động <br/>
+<hr/>
+In order to have dynamic traffic connectivity in a wavelength routing network it is essential to have reconfigurability. <br/>
+Để có kết nối lưu lượng động trong mạng định tuyến theo bước sóng, cần phải có khả năng tái thiết lập. <br/>
+<hr/>
+As discussed in the last sub‐section, the routing for a static router cannot be changed once it is designed. <br/>
+Như đã thảo luận trong phần trước, không thể thay đổi định tuyến cho bộ định tuyến tĩnh sau khi nó được thiết kế. <br/>
+<hr/>
+We can get reconfigurability in the static wavelength router by adding a space switching stage between the DMUX and MUX columns to form the dynamic wavelength‐routing router. <br/>
+Nhưng ta có thể cấu hình lại trong bộ định tuyến bước sóng tĩnh bằng cách thêm một lớp chuyển mạch không gian giữa cột DMUX và MUX để tạo thành bộ định tuyến bước sóng động. <br/>
+<hr/>
+This is also referred to as a wavelength selective cross‐connect (WSXC). <br/>
+Đây cũng được gọi là kết nối chéo chọn lọc bước sóng (WSXC). <br/>
+<hr/>
+The switching stage can reconfigure the connectivity between the DMUX and MUX by electronically controlling the switching wavelength. <br/>
+Lớp chuyển mạch này giúp tái thiết lập kết nối giữa DMUX và MUX bằng cách điều khiển điện tử bước sóng chuyển mạch. <br/>
+<hr/>
+Figure 2.19 gives the functional block diagram of the N × N reconfigurable router [34]. <br/>
+Hình 2.19 đưa ra sơ đồ khối chức năng của bộ định tuyến có thiết lập N × N [34]. <br/>
+<hr/>
+Each incoming fiber connected to the DMUX carries N number WDM wavelengths. <br/>
+Mỗi sợi vào đều được kết nối với DMUX mang N bước sóng WDM. <br/>
+<hr/>
+The de‐multiplexed N wavelengths are directed to an array of N, N × N optical switch fabric between the DMUX and MUX. <br/>
+Các bước sóng phân kênh N được chuyển tới một mảng N và sợi chuyển mạch quang N × N giữa DMUX và MUX. <br/>
+<hr/>
+</body></html/>

@@ -1,0 +1,112 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+Liens externes <br/>
+出面網頁 <br/>
+<hr/>
+Patrick Leung (梁柏堅) est un réalisateur hongkongais né en 1959 à Hong Kong. <br/>
+梁栢堅（{{lang-en|Patrick Leung Pak Kin}}，{{bd|1959年|||}}）係香港導演。 <br/>
+<hr/>
+Patrick Leung <br/>
+梁栢堅 (導演) <br/>
+<hr/>
+L'échantillonnage préférentiel, en anglais importance sampling, est une méthode de réduction de la variance qui peut être utilisée dans la méthode de Monte-Carlo. L'idée sous-jacente à l'échantillonnage préférentiel, EP dans la suite, est que certaines valeurs prises par une variable aléatoire dans une simulation ont plus d'effet que d'autres sur l'estimateur recherché. Si ces valeurs importantes se réalisent plus souvent, la variance de notre estimateur peut être réduite. <br/>
+重要性抽樣（英文：importance sampling），或者喊做優惠抽樣（法文：échantillonnage préférentiel），係一種方法攞來減少方差嘅，用喺Monte-Carlo方法裏頭。重要性抽樣嘅基本思想係，喺要揾到嘅估計器上高，一場模擬當中啲值憑隨機變量抽出嘅有噻啲嘅影響係大過其他值。如果啲值啲大尐嘅出現得頻繁多尐，就可以降低隻估計器嘅方差。 <br/>
+<hr/>
+L'utilisation d'une distribution biaisée conduira à un estimateur biaisé si nous l'appliquons directement aux simulations. Cependant, les différentes simulations sont pondérées afin de corriger ce biais ; l'estimateur EP est alors sans biais. Le poids qui est donné à chaque simulation est le ratio de vraisemblance, qui est la densité de Radon-Nikodym de la vraie distribution par rapport à la distribution biaisée. <br/>
+所以，重要性抽樣嘅做法就係揀一隻分佈鼓勵啲重要嘅值。如果直接應用佢做模擬，有偏分佈會導致隻估計都有偏。之不過加權畀嘸同嘅模擬之後種偏差就得到找平，所以重要性抽樣估計係無偏嘅。啲權重攞来派畀每個模擬嘅係似然比，係真實分佈相對於有偏分佈嘅Radon-Nikodym 密度。 <br/>
+<hr/>
+où X est une variable aléatoire uniformément distribuée sur [a;b] et f X ( ⋅ ) = 1 b − a {\displaystyle f_{X}(\cdot )={\frac {1}{b-a}}} sa densité. <br/>
+其中X係隨機變量，均勻分佈喺 [ a;b ] 上嘅，而且 f X ( ⋅ ) = 1 b − a {\displaystyle f_{X}(\cdot )={\frac {1}{b-a}}} 係佢隻密度。 <br/>
+<hr/>
+Si on dispose d'un échantillon ( x 1 , x 2 , ⋯ , x N ) {\displaystyle (x_{1},x_{2},\cdots ,x_{N})} , identiquement et indépendamment distribué (i.i.d.) selon U ( [ a ; b ] ) {\displaystyle {\mathcal {U}}([a;b])} , on peut estimer G par : <br/>
+如果有樣本 ( x 1 , x 2 , ⋯ , x N ) {\displaystyle (x_{1},x_{2},\cdots ,x_{N})} , 獨立同分佈 (iid) ，根據 U ( [ a ; b ] ) {\displaystyle {\mathcal {U}}([a;b])} ，憑下式就估計得到G： <br/>
+<hr/>
+Il s'agit d'un estimateur de G non-biaisé (c'est-à-dire que E ( g ^ N ) = G {\displaystyle \mathbb {E} ({\hat {g}}_{N})=G} ) et consistant (d'après la loi des grands nombres). Sa variance est : <br/>
+隻係隻估計量畀G，係無偏（即， E ( g ^ N ) = G {\displaystyle \mathbb {E} ({\hat {g}}_{N})=G} ) 又一致（根據大數定律）嘅。佢方差係： <br/>
+<hr/>
+avec σ g 2 {\displaystyle \sigma _{g}^{2}} la variance de la variable aléatoire g ( X ) {\displaystyle g(X)} <br/>
+其中 σ g 2 {\displaystyle \sigma _{g}^{2}} 係方差畀隨機變量 g ( X ) {\displaystyle g(X)} <br/>
+<hr/>
+Principe de l'échantillonnage préférentiel <br/>
+優惠抽樣原理 <br/>
+<hr/>
+Ainsi, l'échantillonnage est fait suivant l'importance de la fonction g : il est inutile de tirer dans les régions où g prend des valeurs non-signiﬁcatives, pour, au contraire, se concentrer sur les régions de haute importance. On espère ainsi diminuer la variance σ g 2 {\displaystyle \sigma _{g}^{2}} . Autrement dit, si on se fixe un niveau d'erreur donné, l’échantillonnage préférentiel permet de diminuer théoriquement le nombre de simulations N par rapport à une méthode de Monte-Carlo classique. <br/>
+優惠抽樣嘅主要思想係喺模擬入便換走喺 [ a ; b ] {\displaystyle [a;b]} 上嘅均勻密度，變成一隻替代密度（或者講係biaisée密度），隻表示成 f ∗ {\displaystyle f^{\ast }\,} 、嘗試去模仿隻函數g嘅。噉樣就取代得隻均勻抽樣冇偏向到任何埞方嘅，成為「可信」多尐嘅抽樣。因此，抽樣係根據函數g嘅重要性来：喺g嘸顯著嘅區柵抽樣冇乜意義，相反要專注喺啲高重要性嘅區柵。噉樣做來希望到減少得到隻方差 σ g 2 {\displaystyle \sigma _{g}^{2}} 。即係如果畀有誤差水平係固定嘅，相較經典蒙特卡羅方法，理論上來講優惠抽樣減少得模擬次數N。 <br/>
+<hr/>
+L'intégrale à estimer est réécrite comme : <br/>
+改寫隻要估計嘅積分，改成： <br/>
+<hr/>
+Le point fondamental dans l'implémentation d'une simulation utilisant l'EP est le choix de la distribution biaisée. Choisir ou créer une bonne distribution biaisée est l'art des EP. L'avantage peut alors être une énorme économie de temps de calculs alors que l'inconvénient pour une mauvaise distribution peut être des calculs plus longs qu'une simple simulation de Monte-Carlo. <br/>
+基本點畀攞重要性抽樣來實現模擬係揀返有偏分佈。重要性抽樣嘅關鍵揀或者作一個好嘅有偏分佈。噉子嘅優勢係慳得計算時間好多，而一隻勩嘅分佈會有缺點係計算時間仲長過簡單嘅Monte-Carlo模擬。 <br/>
+<hr/>
+ce qui revient à : <br/>
+相當於： <br/>
+<hr/>
+où on a posé w ( x ) = g ( x ) / f ∗ ( x ) {\displaystyle w(x)=g(x)/f^{\ast }(x)} (appelé ratio de vraisemblance) et où X est simulé selon la densité f ∗ {\displaystyle f^{\ast }} . Il est facile de généraliser les résultats précédents : l'estimateur de G est <br/>
+其中 w ( x ) = g ( x ) / f ∗ ( x ) {\displaystyle w(x)=g(x)/f^{\ast }(x)} （喊做似然比），其中X係模擬跟密度 f ∗ {\displaystyle f^{\ast }} 來。好容易推廣上高結果：估計量G係 <br/>
+<hr/>
+où ( x 1 , x 2 , ⋯ , x N ) {\displaystyle (x_{1},x_{2},\cdots ,x_{N})} est un échantillon i.i.d. selon la densité f ∗ {\displaystyle f^{\ast }} . La variance de l'estimateur est donnée par <br/>
+其中 ( x 1 , x 2 , ⋯ , x N ) {\displaystyle (x_{1},x_{2},\cdots ,x_{N})} 係一串獨立同分佈嘅樣本，根據密度 f ∗ {\displaystyle f^{\ast }} 來。方差畀隻估計量攞下式得出 <br/>
+<hr/>
+Dès lors, le problème est de se concentrer sur l'obtention d'une densité biaisée f ∗ {\displaystyle f^{\ast }\,} telle que la variance de l'estimateur EP soit moindre que celle de la méthode de Monte-Carlo classique. La densité minimisant la variance (qui la rend nulle sous certaines conditions) est appelée densité biaisée optimale. Cette dernière est égale à <br/>
+因此，問題係專注喺攞到一隻有偏密度 f ∗ {\displaystyle f^{\ast }\,} 等隻方差畀 EP 估計量細過隻方差畀經典嘅蒙特卡洛方法。隻密度、最細化到隻方差嘅（噻啲條件下最細化到零），喊做最啱嘅偏置密度，後者等於 <br/>
+<hr/>
+mais ce choix est inopérant, car on recherche justement le dénominateur. Toutefois, on peut s'attendre à réduire la variance en choisissant une densité f ∗ {\displaystyle f^{\ast }} reproduisant la fonction g. <br/>
+之不過種揀選係冇效用嘅，因為揾緊嘅係分母。但係，可以期待透過揀選密度 f ∗ {\displaystyle f^{\ast }} 來減少方差，再現函數g 。 <br/>
+<hr/>
+En quasi Monte Carlo <br/>
+Quasi蒙特卡洛 <br/>
+<hr/>
+Pour estimer l'intégrale G = ∫ a b g ( x ) d x {\displaystyle G=\int _{a}^{b}g(x)\,{\mbox{d}}x} on peut également se passer de tout le formalisme probabiliste précédent. Au lieu d'utiliser des variables aléatoires, on se sert de suites à faible discrépance (suites de Sobol par exemple). En dimension 1 l'approche la plus simple est <br/>
+要估計積分 G = ∫ a b g ( x ) d x {\displaystyle G=\int _{a}^{b}g(x)\,{\mbox{d}}x} ，都可以慳丟前面所有啲概率形式。嘸使隨機變量，我哋可以使啲序列係低差異（英文：Low-discrepancy sequence）嘅（譬如 Sobol 序列）。考慮維度 1，最簡單嘅方法係 <br/>
+<hr/>
+De même qu'en Monte Carlo usuel, cette approximation de l'intégrale converge d'autant plus vite que la fonction g est proche d'une constante. Si g est rigoureusement constante il suffit de prendre N = 1 pour avoir l'intégrale exacte. Réduire la variance de g est par conséquent crucial ici aussi ; dans ce but, l'échantillonnage préférentiel s'utilise comme suit : <br/>
+同通常嘅蒙特卡洛一樣，函數g接近常數嘅話，種近似畀積分就收斂得快多尐。如果g係嚴格嘅常數，係噉定 N = 1 就攞得到精確嘅積分。因此，減少方差畀g都好重要；為達成個目標，使用優惠抽樣就要似下式噉： <br/>
+<hr/>
+où l'on a fait le changement de variable y = F(x) avec F ′ ( x ) = f ∗ ( x ) &gt; 0 {\displaystyle F\,'(x)=f^{*}(x)&gt;0} . Il apparaît clairement que si f ∗ ≃ g {\displaystyle f^{*}\simeq g} alors la fonction à intégrer à droite est proche de la constante 1 (de faible variance donc). <br/>
+其中更改到變量y = F ( x ) ，藉由 F ′ ( x ) = f ∗ ( x ) &gt; 0 {\displaystyle F\,'(x)=f^{*}(x)&gt;0} 。好明顯，如果 f ∗ ≃ g {\displaystyle f^{*}\simeq g} ，噉隻函數喺右便等待積分嘅就接近常數1（並因此方差低）。 <br/>
+<hr/>
+Pour faire le lien avec l'interprétation probabiliste de la section précédente, on remarque que f ∗ {\displaystyle f^{*}} est définie à un facteur K près qui disparaît dans le quotient. On peut donc imposer que ∫ a b f ∗ ( x ) d x = 1 {\displaystyle \int _{a}^{b}f^{*}(x)\,{\mbox{d}}x=1} , ce qui en fait une densité de probabilité sur [a, b]. Le changement de variable s'interprète alors naturellement comme un changement de probabilité et on a la simplification : <br/>
+為了建立聯繫畀上節啲概率解釋，我哋留意到 f ∗ {\displaystyle f^{*}} 係着定義成一隻因子K，隻會消失喺隻商附近嘅。因此，可以強行定 ∫ a b f ∗ ( x ) d x = 1 {\displaystyle \int _{a}^{b}f^{*}(x)\,{\mbox{d}}x=1} ，等佢成為 [a, b] 上嘅概率密度。然之後變量嘅變化就得自然解釋成為概率嘅變化，因此有簡化 ： <br/>
+<hr/>
+En Monte-Carlo <br/>
+蒙地卡羅 <br/>
+<hr/>
+Cette technique se généralise immédiatement en dimension quelconque. <br/>
+種技巧都立即推廣得，到任何維度。 <br/>
+<hr/>
+On souhaite estimer une quantité G, qui s'exprime sous la forme d'une intégrale : <br/>
+計便要估計一個量G ，個量攞積分形式表示： <br/>
+<hr/>
+On considère ici une intégration en dimension 1, mais on peut généraliser à une dimension quelconque. <br/>
+本例考慮積分喺一維，不過都推廣得，到任何維度。 <br/>
+<hr/>
+Le principe de base des méthodes de Monte-Carlo est de voir l'intégrale précédente comme <br/>
+蒙地卡羅基本原理係，捉上高隻積分睇成 <br/>
+<hr/>
+Le Fil Lumière est un fil synthétique issu du polyamide (communément appelé nylon). Il est issu d'une innovation technologique déposée par la marque Montagut[1]. Cette matière synthétique dispose de propriétés similaires à la soie : <br/>
+亮絲，綫一種，纖維一種，以聚酰胺尼龍類經加工而成，法文名Fil Lumière。個名話似佢似絲，而光澤好。亮絲源自製衣廠夢特嬌獨門機密技術[1]，一九六二年研究出來，以解決歐洲二次大戰後缺絲。佢有絲長處，好順好滑，兼且纖維反光好好。然而造做勁過絲，一來夠耐用，二來易打理，唔使熨，又快乾。衣衫用咗佢，會吸汗而覺涼爽。 <br/>
+<hr/>
+Gigi Yim (Chinois traditionnel : 炎明熹; cantonais : Yim Ming Hay, mandarin : Yán Míngxī) née le 9 avril 2005 à Hong Kong et précédemment connue sous le nom de Wang Jiaen (王佳恩), est la gagnante de la première saison de l'émission de chant de TVB 《聲夢傳奇》(anglais : Stars Academy). <br/>
+炎明熹（英文：Gigi Yim，2005年4月9號—），原名王佳恩，係香港無綫電視歌唱節目《聲夢傳奇》第一季冠軍。 <br/>
+<hr/>
+Biographie <br/>
+簡歷 <br/>
+<hr/>
+Les parents de Gigi Yim sont tous deux originaires de Chine continentale, mais elle est née à Hong Kong. <br/>
+炎明熹阿爸阿媽都係中國大陸人，而佢喺香港出世，係個雙非人，自細由香港人嘅姑丈湊大。 <br/>
+<hr/>
+Page Instagram de Gigi Yim <br/>
+炎明熹嘅Instagram頁 <br/>
+<hr/>
+<br/>
+<br/>
+<hr/>
+</body></html/>
