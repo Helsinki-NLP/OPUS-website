@@ -176,7 +176,7 @@ function table_tail(){
 
 
 function print_resources($src,$trg,$minsize='all',
-			 $sort_by='xces'){
+			 $sort_by='xces-links'){
 
   $resources = array();
   find_opus_resources($src,$trg,$resources);
