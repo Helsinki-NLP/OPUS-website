@@ -9,7 +9,37 @@
 <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-<div class="header"><?php include("header.php"); ?></div><h1>ELRC-5067-SciPar v1</h1>SciPar: A collection of parallel corpora from scientific abstracts (v. 2021) in TMX format.   <p>25 languages, 31 bitexts<br>total number of files: 62<br>total number of tokens: 457.76M<br>total number of sentence fragments: 17.75M<br><p>Please acknowledge the <a href="https://elrc-share.eu/repository/browse/scipar-a-collection-of-parallel-corpora-from-scientific-abstracts-v-2021-in-tmx-format/aaf503c0739411ec9c1a00155d02670665aacff53a8543938cd99da54fdd66af/">original sources and providers</a> of the data and also <a href="http://opus.lingfil.uu.se/LREC2012.txt">cite the following article</a> if you use the OPUS packages and downloads in your own work:<br/> J. Tiedemann, 2012, <a href="http://www.lrec-conf.org/proceedings/lrec2012/pdf/463_Paper.pdf"><i>Parallel Data, Tools and Interfaces in OPUS.</i></a> In Proceedings of the 8th International Conference on Language Resources and Evaluation (LREC 2012)<h3>Download</h3><p>Below you can download data files for all language pairs in different formats and with different kind of annotation (if available). You can click on the various links as explained below. In addition to the files shown on this webpage, OPUS also provides pre-compiled word alignments and phrase tables, bilingual dictionaries, frequency counts, and these files can be found through the <a href="/index.php">resources search form on the top-level website of OPUS</a>.</p><p><b>License:</b> CC-BY-NC-SA-4.0CC-BY-NC-SA-4.0<br/><b>Copyright:</b> Check details at <a href="https://elrc-share.eu/repository/browse/scipar-a-collection-of-parallel-corpora-from-scientific-abstracts-v-2021-in-tmx-format/aaf503c0739411ec9c1a00155d02670665aacff53a8543938cd99da54fdd66af/">ELRC share</a>Check details at <a href="https://www.elrc-share.eu">ELRC share</a><br/></p>ELRC-5067-SciPar is a public data set distributed by the <a href="https://elrc-share.eu/repository/browse/scipar-a-collection-of-parallel-corpora-from-scientific-abstracts-v-2021-in-tmx-format/aaf503c0739411ec9c1a00155d02670665aacff53a8543938cd99da54fdd66af/">https://www.elrc-share.eu</a><h3>Release history:</h3><p><ul><li><a href="ELRC-5067-SciPar-v1.php">ELRC-5067-SciPar v1</a></li></ul></p><table><tr><td>Bottom-left triangle: download files<ul><li><i>ces</i> = sentence alignments in XCES format</li> <li><i>leftmost column language IDs</i> = tokenized corpus files in XML</li> <li>TMX and plain text files (Moses): see "Statistics" below</li> <li><i>lower row language IDs</i> = parsed corpus files (if they exist)</li></ul></td><td>Upper-right triangle: sample files <ul><li><i>view</i> = bilingual XML file samples</li> <li><i>upper row language IDs</i> = monolingual XML file samples</li> <li><i>rightmost column language IDs</i> = untokenized corpus files</li></ul></td></tr></table><p><div class="sample"><table border="0" cellpadding="0">
+<div class="header"><?php include("header.php"); ?></div><h1>ELRC-5067-SciPar v1</h1>
+
+SciPar: A collection of parallel corpora from scientific abstracts (v. 2021) in TMX format.   
+  SciPar is a collection of parallel corpora constructed from parallel titles and abstracts of theses and dissertations, based on the openly available metadata on institutional repositories, digital libraries of universities, and national archives. The updated version (with Ukrainian repositories) consists of 9.73M sentence pairs in 33 language pairs (covering 26 languages).  <br/>
+  ELRC-5067-SciPar is a public data set distributed by the https://www.elrc-share.eu   <br/>
+
+<p>25 languages, 31 bitexts<br>
+total number of files: 62<br>total number of tokens: 457.76M<br>total number of sentence fragments: 17.75M<br>
+
+Please, cite:
+
+<pre>
+  @InProceedings{roussis-EtAl:2022:LREC2,
+    author = {Roussis, Dimitrios and Papavassiliou, Vassilis and Prokopidis, Prokopis and Piperidis, Stelios and Katsouros, Vassilis},
+    title = {SciPar: A Collection of Parallel Corpora from Scientific Abstracts},
+    booktitle = {Proceedings of the Thirteenth Language Resources and Evaluation Conference},
+    month = {June},
+    year = {2022},
+    address = {Marseille, France},
+    publisher = {European Language Resources Association},
+    pages = {2652--2657},
+    url = {https://aclanthology.org/2022.lrec-1.284}
+  }
+</pre>
+
+<p>Please acknowledge the <a href="https://elrc-share.eu/repository/browse/scipar-a-collection-of-parallel-corpora-from-scientific-abstracts-v-2021-in-tmx-format/aaf503c0739411ec9c1a00155d02670665aacff53a8543938cd99da54fdd66af/">original sources and providers</a> of the data and also <a href="http://opus.lingfil.uu.se/LREC2012.txt">cite the following article</a> if you use the OPUS packages and downloads in your own work:<br/> J. Tiedemann, 2012, <a href="http://www.lrec-conf.org/proceedings/lrec2012/pdf/463_Paper.pdf"><i>Parallel Data, Tools and Interfaces in OPUS.</i></a> In Proceedings of the 8th International Conference on Language Resources and Evaluation (LREC 2012)<h3>Download</h3><p>Below you can download data files for all language pairs in different formats and with different kind of annotation (if available). You can click on the various links as explained below. In addition to the files shown on this webpage, OPUS also provides pre-compiled word alignments and phrase tables, bilingual dictionaries, frequency counts, and these files can be found through the <a href="/index.php">resources search form on the top-level website of OPUS</a>.</p>
+
+<p><b>License:</b> CC-BY-NC-SA-4.0<br/>
+  The vast majority of the texts that were acquired and processed in order to create SciPar are provided under Creative Commons (CC) licenses. It should be noted that although the texts of some theses and dissertations are copyrighted or do not allow derivative works, the titles and abstracts by themselves constitute freely and publicly available metadata.
+
+<b>Copyright:</b> Check details at <a href="https://elrc-share.eu/repository/browse/scipar-a-collection-of-parallel-corpora-from-scientific-abstracts-v-2021-in-tmx-format/aaf503c0739411ec9c1a00155d02670665aacff53a8543938cd99da54fdd66af/">ELRC share</a>Check details at <a href="https://www.elrc-share.eu">ELRC share</a><br/></p>ELRC-5067-SciPar is a public data set distributed by the <a href="https://elrc-share.eu/repository/browse/scipar-a-collection-of-parallel-corpora-from-scientific-abstracts-v-2021-in-tmx-format/aaf503c0739411ec9c1a00155d02670665aacff53a8543938cd99da54fdd66af/">https://www.elrc-share.eu</a><h3>Release history:</h3><p><ul><li><a href="ELRC-5067-SciPar-v1.php">ELRC-5067-SciPar v1</a></li></ul></p><table><tr><td>Bottom-left triangle: download files<ul><li><i>ces</i> = sentence alignments in XCES format</li> <li><i>leftmost column language IDs</i> = tokenized corpus files in XML</li> <li>TMX and plain text files (Moses): see "Statistics" below</li> <li><i>lower row language IDs</i> = parsed corpus files (if they exist)</li></ul></td><td>Upper-right triangle: sample files <ul><li><i>view</i> = bilingual XML file samples</li> <li><i>upper row language IDs</i> = monolingual XML file samples</li> <li><i>rightmost column language IDs</i> = untokenized corpus files</li></ul></td></tr></table><p><div class="sample"><table border="0" cellpadding="0">
 <tr>
 <th></th>
 <th><a rel="nofollow" href="ELRC-5067-SciPar/v1/bg_sample.html">bg</a></th>

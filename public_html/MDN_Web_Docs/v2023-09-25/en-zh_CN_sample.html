@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# en/games/anatomy/index.xml.gz<br>
+# zh_CN/games/anatomy/index.xml.gz
+
+<p><hr>
+(src)="1"> { { GamesSidebar } } <br>
+(trg)="1"> { { GamesSidebar } } <br>
+<hr>
+(src)="10"> Some games drive this cycle by user input . <br>
+(src)="11"> Imagine that you are developing a “ find the differences between these two similar pictures ” -type game . <br>
+(trg)="2"> 本文 从 技术 角度 分析 了 一般 电子 游戏 的 结构 和 工作 流程 ， 就此 介绍 主 循环 是 如何 运行 的 。 <br>
+<hr>
+(src)="13"> The game loop is advanced by the user ’ s input and sleeps until they provide it . <br>
+(src)="14"> This is more of a turn-based approach that doesn ’ t demand a constant update every frame , only when the player reacts . <br>
+(trg)="3"> 它 有助 于 初学者 了解 在 现代 游戏 开发 领域 构 建 游戏 时 需要 什么 ， 以及 如何 将 JavaScript 这样 的 Web 标准 工具 作为 自己 的 工具 使用 。 <br>
+<hr>
+(src)="21"> It might require both input and simulated time . <br>
+(src)="22"> It might even loop based on something else entirely . <br>
+(trg)="4"> 游戏 开发 经验 丰富 但 不 熟悉 Web 开发 的 开发 者 也能 从中 受益 。 <br>
+<hr>
+(src)="24"> Of course , your game will only be as optimized as you make it . <br>
+(trg)="5"> 呈现 、 接收 、 解释 、 计算 、 重复 <br>
+<hr>
+(src)="27"> JavaScript works best with events and callback functions . <br>
+(src)="28"> Modern browsers strive to call methods right as they are needed and idle ( or do their other tasks ) in the gaps . <br>
+(src)="29"> It is an excellent idea to attach your code to the moments that are appropriate for them . <br>
+(trg)="6"> 所有电子游戏的目标都是向用户 呈现 一个场景 ， 接收 他们的输入 ， 将这些输入信号 解释 为动作 ， 并 计算 出 由 这些 动作 产生 的 新 场景 。 <br>
+<hr>
+(src)="35"> A callback function must be passed in to it when it is called . <br>
+(src)="36"> That callback function will be executed at a suitable time before the next repaint . <br>
+(trg)="7"> 游戏 不断地 循环 遍 历 ， 一遍 又 一遍 ， 直到 遇到 某些 终止 条件 （ 比如 赢 、 输 或者 退出 睡觉 ） 。 <br>
+<hr>
+(src)="37"> Here is an example of a simple main loop : <br>
+(src)="38"> window . main = ( ) = &gt; { <br>
+(src)="39"> window . requestAnimationFrame ( main ) ; <br>
+(trg)="8"> 毫不 奇怪 ， 这种 模式 与 游戏 引擎 的 编 程 方式 相 呼应 。 <br>
+<hr>
+(src)="44"> That is not by accident and it is considered best practice . <br>
+(trg)="9"> 具体 情况 取决 于 游戏 本身 。 <br>
+<hr>
+(src)="46"> The above chunk of code has two statements . <br>
+(trg)="10"> 一些游戏通过 用户 输入 来 驱动 这个 循环 。 <br>
+<hr>
+(src)="47"> The first statement creates a function as a global variable called main ( ) . <br>
+(trg)="11"> 想象 一下 ， 你 正在 开发 一种 “ 大家 来 找 茬 ” 类型 的 游戏 。 <br>
+<hr>
+(src)="48"> This function does some work and also tells the browser to call itself next frame with window.requestAnimationFrame ( ) . <br>
+(trg)="12"> 这些游戏向用户 呈现 两张图片 ， 游戏 接收 点击 （ 或触摸 ） ； 将用户输入 解释 为 成功 ， 失败 ， 暂停 ， 菜单 交互 等 。 <br>
+<hr>
+(src)="49"> The second statement calls the main ( ) function , defined in the first statement . <br>
+(trg)="13"> 最后 ， 游戏根据用户的输入 计算 并 更新 游戏 场景 。 <br>
+<hr>
+(src)="53"> Timing the main loop to when the browser paints to the display allows you to run your loop as frequently as the browser wants to paint . <br>
+(src)="54"> You are given control over each frame of animation . <br>
+(src)="55"> It is also very simple because main ( ) is the only function getting looped . <br>
+(trg)="14"> 这种 游戏 是 由 用户 的 输入 驱动 ， 也就是说 ， 它 会 在 用户 进行 输入 之后 冻结 画面 ， 等待 玩家 进行 新的 输入 。 <br>
+<hr>
+(src)="56"> A First-Person Shooter ( or a similar game ) presents a new scene once every frame . <br>
+(src)="57"> You cannot really get more smooth and responsive than that . <br>
+(trg)="15"> 这 是 一种 基于 回 合 的 游戏 类型 ， 它 不需要 每 帧 持续 更新 画面 ， 只有 当 玩家 作出 反应 时 才 会 。 <br>
+<hr>
+(src)="60"> There are a lot of them and they will make your life easier . <br>
+(src)="61"> Building a better main loop in JavaScript <br>
+(trg)="16"> 另 一些 游戏 需要 尽可能 控制 每 一个 细 微 的 时间 片 （ 动画 ） 。 <br>
+<hr>
+(src)="64"> / * <br>
+(src)="65"> * Starting with the semicolon is in case whatever line of code above this example <br>
+(src)="66"> * relied on automatic semicolon insertion ( ASI ) . <br>
+(src)="67"> The browser could accidentally <br>
+(trg)="17"> 与 上述 原理 有点 小 区别 ： 每 个 动画 帧 都 将 循环 遍 历 ， 并 在 之后 第 一个 可用 的 轮 次 捕获 玩家 输入 的 任何 变化 。 <br>
+<hr>
+(src)="68"> * think this whole example continues from the previous line . <br>
+(src)="69"> The leading semicolon <br>
+(trg)="18"> 这种每帧一次的模型是通过一个叫 主 循环 的 东西 实现 的 。 <br>
+<hr>
+(src)="73"> function main ( ) { <br>
+(src)="74"> window . requestAnimationFrame ( main ) ; <br>
+(src)="75"> / / Your main loop contents <br>
+(src)="76"> } <br>
+(src)="77"> main ( ) ; / / Start the cycle <br>
+(src)="78"> } ) ( ) ; <br>
+(trg)="19"> 如果 你的 游戏 循环 是 基于 时间 的 ， 则 必须 保证 对 主 循环 精准 的 模拟 。 <br>
+<hr>
+(src)="85"> Expanding our last example , the main loop would now look like : <br>
+(trg)="20"> 但 它 也 可能 不需要 逐 帧 控制 。 <br>
+<hr>
+(src)="86"> / * <br>
+(src)="87"> * Starting with the semicolon is in case whatever line of code above this example <br>
+(trg)="21"> 你的 游戏 循环 可能 类似 找 不同 的 例子 ， 并 以 输入 事件 作为 基础 。 <br>
+<hr>
+(src)="88"> * relied on automatic semicolon insertion ( ASI ) . <br>
+(trg)="22"> 它 可能 需要 输入 和 模拟 时间 片 。 <br>
+<hr>
+(src)="89"> The browser could accidentally <br>
+(src)="90"> * think this whole example continues from the previous line . <br>
+(trg)="23"> 它 甚至 可以 基于 其他 的 东西 来 循环 。 <br>
+<hr>
+(src)="103"> We now have a variable declared in our MyGame namespace , which we call stopMain , that contains the ID returned from our main loop ’ s most recent call to requestAnimationFrame ( ) . <br>
+(trg)="24"> 现代 JavaScript - 正如 下 一节 中 所 描述 的 - 它 可以 轻松 开发 出 一个 高效 的 ， 逐 帧 执行 的 主 循环 ， 这 很 值得 庆幸 。 <br>
+<hr>
+(src)="105"> window . cancelAnimationFrame ( MyGame . stopMain ) ; <br>
+(trg)="25"> 当然 ， 你的 游戏 只 会 按照 你 所 做的 那样 优 化 。 <br>
+<hr>
+(src)="107"> You may have multiple components driven by multiple different types of events . <br>
+(src)="108"> This feels like unnecessary complexity but it might just be good optimization ( not necessarily , of course ) . <br>
+(src)="109"> The problem is that you are not programming a typical main loop . <br>
+(trg)="26"> 如果 某些 东西 看起来 应该 被 添加 到 一个 更 罕见 的 事件 里 ， 那么 将 它 从 主 循环 中 剥离 出来 通常 是 个 好主意 （ 但 并非 总是 如此 ） 。 <br>
+<hr>
+(src)="111"> Building a more optimized main loop in JavaScript <br>
+(trg)="27"> 在 JavaScript 中 构 建 一个 主 循环 <br>
+<hr>
+(src)="119"> The browser ’ s main thread thus tries to look like the following : <br>
+(trg)="28"> JavaScript 能 很好 的 处理 事件 和 回 调 函数 。 <br>
+<hr>
+(src)="120"> Start a new frame ( while the previous frame is handled by the display ) . <br>
+(trg)="29"> 现代 浏览 器 努力 在 需要 的 时候 调 用 方法 ， 并 在 间隙 中 闲下来 （ 或 做 其他 任务 ） 。 <br>
+<hr>
+(src)="121"> Go through the list of requestAnimationFrame callbacks and invoke them . <br>
+(trg)="30"> 将 你的 代码 附加 到 适合 它们 的 时刻 是 一个 很好 的 主意 。 <br>
+<hr>
+(src)="126"> Browsers invoke your code as early as possible to give it maximum computation time . <br>
+(src)="127"> Your main thread will often start workloads that are not even on the main thread ( such as rasterization or shaders in WebGL ) . <br>
+(trg)="31"> 考虑 一下 你的 函数 是 需要 在 严格 的 时间 周期 内 ， 还是 每一 帧 ， 或者 仅仅 是在 发生 了 其他 情况 之后 执行 。 <br>
+<hr>
+</body>
+</html>

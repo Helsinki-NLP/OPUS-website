@@ -1,0 +1,318 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# en/games/anatomy/index.xml.gz<br>
+# pt_BR/games/anatomy/index.xml.gz
+
+<p><hr>
+(src)="1"> { { GamesSidebar } } <br>
+(trg)="1"> { { GamesSidebar } } <br>
+<hr>
+(src)="2"> This article looks at the anatomy and workflow of the average video game from a technical point of view , in terms of how the main loop should run . <br>
+(trg)="2"> Este artigo analisa a anatomia e o fluxo de trabalho do vídeo game médio de um ponto de vista técnico , em termos de como o loop principal deve ser executado . <br>
+<hr>
+(src)="3"> It helps beginners to modern game development understand what is required when building a game and how web standards like JavaScript lend themselves as tools . <br>
+(trg)="3"> Isso ajuda os iniciantes da arena do desenvolvimento de jogos modernos a entender o que é necessário ao construir um jogo e como os padrões da web como o JavaScript se prestam como ferramentas . <br>
+<hr>
+(src)="4"> Experienced game programmers who are new to web development could also benefit , too . <br>
+(trg)="4"> Os programadores de jogos experientes que são novos no desenvolvimento da web também podem se beneficiar . <br>
+<hr>
+(src)="5"> Present , accept , interpret , calculate , repeat <br>
+(trg)="5"> Apresentar , aceitar , interpretar , calcular , repetir <br>
+<hr>
+(src)="6"> The goal of every video game is to present the user ( s ) with a situation , accept their input , interpret those signals into actions , and calculate a new situation resulting from those acts . <br>
+(trg)="6"> O objetivo de todo vídeo game é apresentar ao usuário uma situação , aceitar sua entrada , interpretar estes sinais em ações , e calcular uma nova situação resultante dessas ações . <br>
+<hr>
+(src)="7"> Games are constantly looping through these stages , over and over , until some end condition occurs ( such as winning , losing , or exiting to go to bed ) . <br>
+(trg)="7"> Jogos estão constantemente repetindo estes estágios , de novo e de novo , até alguma condição final ocorrer ( como vencer , perder , ou sair para ir dormir ) . <br>
+<hr>
+(src)="8"> Not surprisingly , this pattern corresponds to how a game engine is programmed . <br>
+(trg)="8"> Não surpreendentemente , este padrão corresponde a como um mecanismo de jogo está programado . <br>
+<hr>
+(src)="9"> The specifics depend on the game . <br>
+(trg)="9"> As especificidades dependem do jogo . <br>
+<hr>
+(src)="10"> Some games drive this cycle by user input . <br>
+(trg)="10"> Alguns jogos guiam este ciclo pela entrada do usuário . <br>
+<hr>
+(src)="11"> Imagine that you are developing a “ find the differences between these two similar pictures ” -type game . <br>
+(trg)="11"> Imagine que você está desenvolvendo um “ encontre as diferenças entre estas duas imagens similares ” . <br>
+<hr>
+(src)="12"> These games present two images to the user ; they accept their click ( or touch ) ; they interpret the input as a success , failure , pause , menu interaction , etc . ; finally , they calculate an updated scene resulting from that input . <br>
+(trg)="12"> Esses jogos apresentam duas imagens ao usuário , eles aceitam seus cliques ( ou toques ) , eles interpretam as entradas como um sucesso , falha , pausa , interação com o menu , etc . , finalmente , eles calculam uma cena atualizada resultante dessas entradas . <br>
+<hr>
+(src)="13"> The game loop is advanced by the user ’ s input and sleeps until they provide it . <br>
+(trg)="13"> O ciclo do jogo é avançado pelas entradas do usuário e pela esperas até que ele as forneça . <br>
+<hr>
+(src)="14"> This is more of a turn-based approach that doesn ’ t demand a constant update every frame , only when the player reacts . <br>
+(trg)="14"> Isso é mais aproximado de um jogo baseado em turnos onde não há demanda de uma constante atualização a cada frame , somente quando o jogador reaje . <br>
+<hr>
+(src)="15"> Other games demand control over each of the smallest possible individual timeslices . <br>
+(trg)="15"> Outros jogos demandam controle sobre cada um dos menores intervalos de tempo possíveis . <br>
+<hr>
+(src)="16"> The same principles as above apply with a slight twist : each frame of animation progresses the cycle and any change in user input is caught at the first available turn . <br>
+(trg)="16"> Os mesmos princípios acima aplicam - se com uma pequena diferença : cada frame de animação avança o ciclo e cada mudança na entrada do usuário é capturada no primeiro turno disponível . <br>
+<hr>
+(src)="17"> This once-per-frame model is implemented in something called a main loop . <br>
+(src)="18"> If your game loops based on time then this will be its authority that your simulations will adhere to . <br>
+(trg)="17"> Este modelo uma vez por frame é implementado em algo chamado loop principal . Se o seu jogo é baseado em tempo , então essa será a autoridade a qual as suas simulações irão obedecer . <br>
+<hr>
+(src)="19"> But it might not need per-frame control . <br>
+(trg)="18"> Mas o jogo pode não precisar de controle por frame . <br>
+<hr>
+(src)="20"> Your game loop might be similar to the find the differences example and base itself on input events . <br>
+(trg)="19"> Seu game loop pode ser similar ao exemplo encontre as diferenças e basear - se em eventos de entrada . <br>
+<hr>
+(src)="21"> It might require both input and simulated time . <br>
+(trg)="20"> Ele pode requerer ambos , entrada e tempo simulado . <br>
+<hr>
+(src)="22"> It might even loop based on something else entirely . <br>
+(trg)="21"> Ele pode até mesmo ter um ciclo baseado em algo totalmente diferente . <br>
+<hr>
+(src)="23"> Modern JavaScript — as described in the next sections — thankfully makes it easy to develop an efficient , execute-once-per-frame main loop . <br>
+(trg)="22"> JavaScript Moderno — como descrito nas próximas seções — felizmente , facilita o desenvolvimento de um loop principal “ execute uma vez por frame ” . <br>
+<hr>
+(src)="24"> Of course , your game will only be as optimized as you make it . <br>
+(trg)="23"> É claro , seu jogo será somente tão otimizado quando o fizer . <br>
+<hr>
+(src)="25"> If something looks like it should be attached to a more infrequent event then it is often a good idea to break it out of the main loop ( but not always ) . <br>
+(trg)="24"> Se parece que algo deveria estar ligado a um evento menos frequente , seria uma boa ideia implementá - lo fora do loop principal ( mas não sempre ) . <br>
+<hr>
+(src)="26"> Building a main loop in JavaScript <br>
+(trg)="25"> Contruindo um loop principal em JavaScript <br>
+<hr>
+(src)="27"> JavaScript works best with events and callback functions . <br>
+(trg)="26"> JavaScript trabalaha melhor com eventos e chamadas de funções . <br>
+<hr>
+(src)="28"> Modern browsers strive to call methods right as they are needed and idle ( or do their other tasks ) in the gaps . <br>
+(trg)="27"> Navegadores modernos esforçam - se para chamar métodos à medida que são necessários e ociosos ( ou fazem suas outras tarefas ) nos intervalos . <br>
+<hr>
+(src)="29"> It is an excellent idea to attach your code to the moments that are appropriate for them . <br>
+(trg)="28"> É uma excelente ideia ligar seu código aos momentos apropriados a eles . <br>
+<hr>
+(src)="30"> Think about whether your function really needs to be called on a strict interval of time , every frame , or only after something else happens . <br>
+(trg)="29"> Pense se a sua função realmente precisa ser chamada em um estrito intervalo de tempo , a cada frame , ou somente após algo acontecer . <br>
+<hr>
+(src)="31"> Being more specific with the browser about when your function needs to be called allows the browser to optimize when it is called . <br>
+(trg)="30"> Ser mais específico com o navegador sobre quando a sua função precisa ser chamada permite que o navegador otimize essa chamada . <br>
+<hr>
+(src)="32"> Also , it will probably make your job easier . <br>
+(trg)="31"> Também , isso facilitará o seu trabalho . <br>
+<hr>
+(src)="33"> Some code needs to be run frame-by-frame so why attach that function to anything other than the browser ’ s redraw schedule ? <br>
+(trg)="32"> Alguns códigos precisam ser rodados frame por frame , então por quê ligar essas funções a qualquer coisa que não seja a atualização de tela do navegador ? <br>
+<hr>
+(src)="34"> On the Web , { { domxref ( “ window.requestAnimationFrame ( ) ” ) } } will be the foundation of most well-programmed per-frame main loops . <br>
+(trg)="33"> Na web , { { domxref ( “ window.requestAnimationFrame ( ) ” ) } } será a base da maioria dos mais bem programados loops principais do tipo frame por frame . <br>
+<hr>
+(src)="35"> A callback function must be passed in to it when it is called . <br>
+(trg)="34"> Uma chamada de função deve ser passada dentro da função anterior quando a mesma for chamada . <br>
+<hr>
+(src)="36"> That callback function will be executed at a suitable time before the next repaint . <br>
+(trg)="35"> Esta chamdada de função será executada em um tempo adequado antes da próxima atualização de tela . <br>
+<hr>
+(src)="37"> Here is an example of a simple main loop : <br>
+(trg)="36"> Eis um exemplo de um loop principal simples : <br>
+<hr>
+(src)="38"> window . main = ( ) = &gt; { <br>
+(trg)="37"> window.main = function ( ) { <br>
+<hr>
+(src)="39"> window . requestAnimationFrame ( main ) ; <br>
+(trg)="38"> window.requestAnimationFrame ( main ) ; <br>
+<hr>
+(src)="40"> / / Whatever your main loop needs to do <br>
+(trg)="39"> / / Whatever your main loop needs to do . <br>
+<hr>
+(src)="41"> } ; <br>
+(trg)="40"> } ; <br>
+<hr>
+(src)="42"> main ( ) ; / / Start the cycle <br>
+(trg)="41"> main ( ) ; / / Start the cycle . <br>
+<hr>
+(src)="43"> Note : In each of the main ( ) methods discussed here , we schedule a new requestAnimationFrame before performing our loop contents . <br>
+(trg)="42"> Nota : Em cada método do main ( ) discutido aqui , nós agendamos uma nova requisição requestAnimationFrame antes de executar o conteúdo de nosso loop . <br>
+<hr>
+(src)="44"> That is not by accident and it is considered best practice . <br>
+(trg)="43"> Isso não é por acidente , e é considerado boa prática . <br>
+<hr>
+(src)="45"> Calling the next requestAnimationFrame early ensures the browser receives it on time to plan accordingly even if your current frame misses its VSync window . <br>
+(trg)="44"> Chamando o próximo requestAnimationFrame anteriormente garante que o navegador receba a chamada a tempo de planejar adequadamente , mesmo que seu frame atual falhe em sua ( ? <br>
+(trg)="45"> VSync window ? ) . <br>
+<hr>
+(src)="46"> The above chunk of code has two statements . <br>
+(trg)="46"> O trecho de código acima possui duas declarações . <br>
+<hr>
+(src)="47"> The first statement creates a function as a global variable called main ( ) . <br>
+(trg)="47"> A primeira cria uma função como uma variável global chamada main ( ) . <br>
+<hr>
+(src)="48"> This function does some work and also tells the browser to call itself next frame with window.requestAnimationFrame ( ) . <br>
+(trg)="48"> Esta função faz algum trabalho e também diz ao navegador para camá-la na próxima frame com window.requestAnimationFrame ( ) . <br>
+<hr>
+(src)="49"> The second statement calls the main ( ) function , defined in the first statement . <br>
+(trg)="49"> A segunda declaração chama a função main ( ) , definida na primeira declaração . <br>
+<hr>
+(src)="50"> Because main ( ) is called once in the second statement and every call of it places itself in the queue of things to do next frame , main ( ) is synchronized to your frame rate . <br>
+(trg)="50"> Pelo fato do main ( ) ser chamado uma vez na segunda declaração e cada chamada dele colocá-lo na lista de coisas a fazer na próxima frame , main ( ) é sincronizado com a sua taxa de frame . <br>
+<hr>
+(src)="51"> Of course this loop is not perfect . <br>
+(trg)="51"> É claro que esse loop não é perfeito . <br>
+<hr>
+(src)="52"> Before we discuss ways to change it , let us discuss what it already does well . <br>
+(trg)="52"> Antes de discutirmos maneiras de mudá - lo , deixe - nos discutir o que já está bem . <br>
+<hr>
+(src)="53"> Timing the main loop to when the browser paints to the display allows you to run your loop as frequently as the browser wants to paint . <br>
+(trg)="53"> Cronometrando o loop principal para quando o navegador atualiza a tela o permite rodar o seu loop tão frequentemente quanto o navegador queira atualizar . <br>
+<hr>
+(src)="54"> You are given control over each frame of animation . <br>
+(trg)="54"> Você tem controle sobre cada frame de animação . <br>
+<hr>
+(src)="55"> It is also very simple because main ( ) is the only function getting looped . <br>
+(trg)="55"> Isso é muito simples por que main ( ) é a única função em loop . <br>
+<hr>
+(src)="56"> A First-Person Shooter ( or a similar game ) presents a new scene once every frame . <br>
+(trg)="56"> Um jogo de primeira pessoa ( ou um jogo similar ) apresenta uma nova cena a cada frame . <br>
+<hr>
+(src)="57"> You cannot really get more smooth and responsive than that . <br>
+(trg)="57"> Você realmente não pode ser mais suave e receptivo do que isso . <br>
+<hr>
+(src)="58"> But do not immediately assume animations require frame-by-frame control . <br>
+(trg)="58"> Mas não assuma imediatamente que animações requerem controle frame por frame . <br>
+<hr>
+(src)="59"> Simple animations can be easily performed , even GPU-accelerated , with CSS animations and other tools included in the browser . <br>
+(trg)="59"> Animações simples podem ser facilmente desenvolvidas até mesmo com aceleração - GPU , com animações CSS e com outras ferramentas inclusas no navegador . <br>
+<hr>
+(src)="60"> There are a lot of them and they will make your life easier . <br>
+(trg)="60"> Existem muitas delas que farão sua vida mais fácil . <br>
+<hr>
+(src)="61"> Building a better main loop in JavaScript <br>
+(trg)="61"> Construindo um loop principal melhor em Javascript <br>
+<hr>
+(src)="62"> There are two obvious issues with our previous main loop : main ( ) pollutes the { { domxref ( “ window ” ) } } object ( where all global variables are stored ) and the example code did not leave us with a way to stop the loop unless the whole tab is closed or refreshed . <br>
+(trg)="62"> Existem dois problemas óbvios com nosso loop principal anterior : main ( ) polui o objeto { { domxref ( " window " ) } } ( onde todas as variáveis globais são armazenadas ) e o código de exemplo não nos permite parar o loop a menos que toda a aba seja fechada ou atualizada . <br>
+<hr>
+(src)="63"> For the first issue , if you want the main loop to just run and you do not need easy ( direct ) access to it , you could create it as an Immediately-Invoked Function Expression ( IIFE ) . <br>
+(trg)="63"> Para o primeiro problema , se você quer que o loop principal apenas rode sem precisar de fácil acesso ( direto ) a ele , você pode criá - lo como uma Função Diretamente Invocada ( Immediately - Invoked Function Expression - IIFE ) . <br>
+<hr>
+(src)="64"> / * <br>
+(trg)="64"> / * <br>
+<hr>
+(src)="65"> * Starting with the semicolon is in case whatever line of code above this example <br>
+(trg)="65"> * Starting with the semicolon is in case whatever line of code above this example <br>
+<hr>
+(src)="66"> * relied on automatic semicolon insertion ( ASI ) . <br>
+(trg)="66"> * relied on automatic semicolon insertion ( ASI ) . <br>
+<hr>
+(src)="67"> The browser could accidentally <br>
+(trg)="67"> The browser could accidentally <br>
+<hr>
+(src)="68"> * think this whole example continues from the previous line . <br>
+(trg)="68"> * think this whole example continues from the previous line . <br>
+<hr>
+(src)="69"> The leading semicolon <br>
+(trg)="69"> The leading semicolon <br>
+<hr>
+(src)="70"> * marks the beginning of our new line if the previous one was not empty or terminated . <br>
+(trg)="70"> * marks the beginning of our new line if the previous one was not empty or terminated . <br>
+<hr>
+(src)="71"> * / <br>
+(trg)="71"> * / <br>
+<hr>
+(src)="72"> ; ( ( ) = &gt; { <br>
+(trg)="72"> ; ( function ( ) { <br>
+<hr>
+(src)="73"> function main ( ) { <br>
+(trg)="73"> function main ( ) { <br>
+<hr>
+(src)="74"> window . requestAnimationFrame ( main ) ; <br>
+(trg)="74"> window.requestAnimationFrame ( main ) ; <br>
+<hr>
+(src)="75"> / / Your main loop contents <br>
+(trg)="75"> / / Your main loop contents . <br>
+<hr>
+(src)="76"> } <br>
+(trg)="76"> } <br>
+<hr>
+(src)="77"> main ( ) ; / / Start the cycle <br>
+(trg)="77"> main ( ) ; / / Start the cycle <br>
+<hr>
+(src)="78"> } ) ( ) ; <br>
+(trg)="78"> } ) ( ) ; <br>
+<hr>
+(src)="79"> When the browser comes across this IIFE , it will define your main loop and immediately queue it for the next frame . <br>
+(trg)="79"> Quando o browser alcançar este IIFE , ele irá definir o seu próprio loop principal e imediatamente agenda - o para para o próximo frame . <br>
+<hr>
+(src)="80"> It will not be attached to any object and main ( or main ( ) for methods ) will be a valid unused name in the rest of the application , free to be defined as something else . <br>
+(trg)="80"> Ele não será anexado a nenhum objeto e main ( ou main ( ) para métodos ) será um nome válido sem uso no resto da aplicação , livre para ser definido como outra coisa . <br>
+<hr>
+(src)="81"> Note : In practice , it is more common to prevent the next requestAnimationFrame ( ) with an if-statement , rather than calling cancelAnimationFrame ( ) . <br>
+(trg)="81"> Nota : Na prática , é mais comum previnir o próximo requestAnimationFrame ( ) com uma declaração if , no lugar de chamar cancelAnimationFrame ( ) . <br>
+<hr>
+(src)="82"> For the second issue , stopping the main loop , you will need to cancel the call to main ( ) with { { domxref ( “ window.cancelAnimationFrame ( ) ” ) } } . <br>
+(trg)="82"> Para o próximo problema , parando o loop principal , você precisará cancelar a chamada a main ( ) com window.cancelAnimationFrame ( ) . <br>
+<hr>
+(src)="83"> You will need to pass cancelAnimationFrame ( ) the ID token given by requestAnimationFrame ( ) when it was last called . <br>
+(trg)="83"> Você precisará passar para cancelAnimationFrame ( ) o token do ID dado pelo requestAnimationFrame ( ) quando ele foi chamado . <br>
+<hr>
+(src)="84"> Let us assume that your game ’ s functions and variables are built on a namespace that you called MyGame . <br>
+(trg)="84"> Vamos assumir que as funções do seu jogo e variáveis estão construídas em um namespace que você chamou de MyGame . <br>
+<hr>
+(src)="85"> Expanding our last example , the main loop would now look like : <br>
+(trg)="85"> Expandindo o nosso último exemplo , o loop principal ficaria parecido com isto : <br>
+<hr>
+(src)="86"> / * <br>
+(trg)="86"> / * <br>
+<hr>
+(src)="87"> * Starting with the semicolon is in case whatever line of code above this example <br>
+(trg)="87"> * Starting with the semicolon is in case whatever line of code above this example <br>
+<hr>
+(src)="88"> * relied on automatic semicolon insertion ( ASI ) . <br>
+(trg)="88"> * relied on automatic semicolon insertion ( ASI ) . <br>
+<hr>
+(src)="89"> The browser could accidentally <br>
+(trg)="89"> The browser could accidentally <br>
+<hr>
+(src)="90"> * think this whole example continues from the previous line . <br>
+(trg)="90"> * think this whole example continues from the previous line . <br>
+<hr>
+(src)="91"> The leading semicolon <br>
+(trg)="91"> The leading semicolon <br>
+<hr>
+(src)="92"> * marks the beginning of our new line if the previous one was not empty or terminated . <br>
+(trg)="92"> * marks the beginning of our new line if the previous one was not empty or terminated . <br>
+<hr>
+(src)="93"> * <br>
+(trg)="93"> * <br>
+<hr>
+(src)="94"> * Let us also assume that MyGame is previously defined . <br>
+(trg)="94"> * Let us also assume that MyGame is previously defined . <br>
+<hr>
+(src)="95"> * / <br>
+(trg)="95"> * / <br>
+<hr>
+(src)="96"> ; ( ( ) = &gt; { <br>
+(trg)="96"> ; ( function ( ) { <br>
+<hr>
+(src)="97"> function main ( ) { <br>
+(trg)="97"> function main ( ) { <br>
+<hr>
+(src)="98"> MyGame . stopMain = window . requestAnimationFrame ( main ) ; <br>
+(trg)="98"> MyGame.stopMain = window.requestAnimationFrame ( main ) ; <br>
+<hr>
+(src)="99"> / / Your main loop contents <br>
+(trg)="99"> / / Your main loop contents . <br>
+<hr>
+(src)="100"> } <br>
+(trg)="100"> } <br>
+<hr>
+(src)="101"> main ( ) ; / / Start the cycle <br>
+(trg)="101"> main ( ) ; / / Start the cycle <br>
+<hr>
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# es/games/anatomy/index.xml.gz<br>
+# zh_CN/games/anatomy/index.xml.gz
+
+<p><hr>
+(src)="1"> { { GamesSidebar } } <br>
+(trg)="1"> { { GamesSidebar } } <br>
+<hr>
+(src)="2"> Este artículo examina la anatomía y el flujo de trabajo de un videojuego promedio desde un punto de vista técnico , en términos de cómo debe ejecutarse el bucle principal . <br>
+(trg)="2"> 本文 从 技术 角度 分析 了 一般 电子 游戏 的 结构 和 工作 流程 ， 就此 介绍 主 循环 是 如何 运行 的 。 <br>
+<hr>
+(src)="3"> Ayuda a los principiantes en el desarrollo de videojuegos modernos a entender qué se necesita para crear un juego y cómo los estándares web como JavaScript se prestan a ser herramientas . <br>
+(trg)="3"> 它 有助 于 初学者 了解 在 现代 游戏 开发 领域 构 建 游戏 时 需要 什么 ， 以及 如何 将 JavaScript 这样 的 Web 标准 工具 作为 自己 的 工具 使用 。 <br>
+<hr>
+(src)="4"> Los programadores de juegos experimentados que son nuevos en el desarrollo web también podrían beneficiarse . <br>
+(trg)="4"> 游戏 开发 经验 丰富 但 不 熟悉 Web 开发 的 开发 者 也能 从中 受益 。 <br>
+<hr>
+(src)="5"> Presentar , aceptar , interpretar , calcular , repetir <br>
+(trg)="5"> 呈现 、 接收 、 解释 、 计算 、 重复 <br>
+<hr>
+(src)="6"> El objetivo de todo videojuego es presentar al usuario o usuarios una situación , aceptar sus entradas , interpretar esas señales en acciones y calcular una nueva situación resultante de esas acciones . <br>
+(trg)="6"> 所有电子游戏的目标都是向用户 呈现 一个场景 ， 接收 他们的输入 ， 将这些输入信号 解释 为动作 ， 并 计算 出 由 这些 动作 产生 的 新 场景 。 <br>
+<hr>
+(src)="7"> Los juegos pasan constantemente por estas fases , una y otra vez , hasta que se produce alguna condición final ( como ganar , perder o irse a la cama ) . <br>
+(trg)="7"> 游戏 不断地 循环 遍 历 ， 一遍 又 一遍 ， 直到 遇到 某些 终止 条件 （ 比如 赢 、 输 或者 退出 睡觉 ） 。 <br>
+<hr>
+(src)="8"> No es sorprendente que este patrón se corresponda con el modo en que se programa un motor de juego . <br>
+(trg)="8"> 毫不 奇怪 ， 这种 模式 与 游戏 引擎 的 编 程 方式 相 呼应 。 <br>
+<hr>
+(src)="9"> Los detalles dependen del juego . <br>
+(trg)="9"> 具体 情况 取决 于 游戏 本身 。 <br>
+<hr>
+(src)="10"> Algunos juegos controlan este ciclo mediante la entrada de datos del usuario . <br>
+(trg)="10"> 一些游戏通过 用户 输入 来 驱动 这个 循环 。 <br>
+<hr>
+(src)="11"> Imagina que estás desarrollando un juego del tipo “ encuentra las diferencias entre estas dos imágenes similares ” . <br>
+(trg)="11"> 想象 一下 ， 你 正在 开发 一种 “ 大家 来 找 茬 ” 类型 的 游戏 。 <br>
+<hr>
+(src)="12"> Estos juegos presentan dos imágenes al usuario ; aceptan su clic ( o toque ) ; interpretan la entrada como un éxito , fracaso , pausa , interacción de menú , etc. ; finalmente , calculan una escena actualizada resultante de esa entrada . <br>
+(src)="13"> El bucle del juego avanza por la entrada del usuario y duerme hasta que éste la proporciona . <br>
+(trg)="12"> 这些游戏向用户 呈现 两张图片 ， 游戏 接收 点击 （ 或触摸 ） ； 将用户输入 解释 为 成功 ， 失败 ， 暂停 ， 菜单 交互 等 。 <br>
+<hr>
+(src)="15"> Otros juegos exigen el control de cada uno de los menores intervalos de tiempo posibles . <br>
+(trg)="13"> 最后 ， 游戏根据用户的输入 计算 并 更新 游戏 场景 。 <br>
+<hr>
+(src)="19"> Pero puede que no necesite control por fotograma . <br>
+(src)="20"> Tu bucle de juego podría ser similar al ejemplo de encuentra las diferencias y basarse en eventos de entrada . <br>
+(trg)="14"> 这种 游戏 是 由 用户 的 输入 驱动 ， 也就是说 ， 它 会 在 用户 进行 输入 之后 冻结 画面 ， 等待 玩家 进行 新的 输入 。 <br>
+<hr>
+(src)="21"> Podría requerir tanto la entrada como el tiempo simulado . <br>
+(src)="22"> Incluso podría basarse en algo completamente distinto . <br>
+(trg)="15"> 这 是 一种 基于 回 合 的 游戏 类型 ， 它 不需要 每 帧 持续 更新 画面 ， 只有 当 玩家 作出 反应 时 才 会 。 <br>
+<hr>
+(src)="24"> Por supuesto , tu juego sólo estará tan optimizado como tú lo hagas . <br>
+(trg)="16"> 另 一些 游戏 需要 尽可能 控制 每 一个 细 微 的 时间 片 （ 动画 ） 。 <br>
+<hr>
+(src)="25"> Si algo parece que debería estar unido a un evento más infrecuente , entonces a menudo es una buena idea sacarlo del bucle principal ( pero no siempre ) . <br>
+(trg)="17"> 与 上述 原理 有点 小 区别 ： 每 个 动画 帧 都 将 循环 遍 历 ， 并 在 之后 第 一个 可用 的 轮 次 捕获 玩家 输入 的 任何 变化 。 <br>
+<hr>
+(src)="26"> Creación de un bucle principal en JavaScript <br>
+(trg)="18"> 这种每帧一次的模型是通过一个叫 主 循环 的 东西 实现 的 。 <br>
+<hr>
+(src)="31"> Ser más específico con el navegador sobre cuando tu función necesita ser llamada permite al navegador optimizar cuando es llamada . <br>
+(src)="32"> Además , probablemente hará tu trabajo más fácil . <br>
+(trg)="19"> 如果 你的 游戏 循环 是 基于 时间 的 ， 则 必须 保证 对 主 循环 精准 的 模拟 。 <br>
+<hr>
+(src)="35"> Se le debe pasar una función callback cuando es llamada . <br>
+(trg)="20"> 但 它 也 可能 不需要 逐 帧 控制 。 <br>
+<hr>
+(src)="36"> Esa función callback se ejecutará en un momento adecuado antes del siguiente repintado . <br>
+(trg)="21"> 你的 游戏 循环 可能 类似 找 不同 的 例子 ， 并 以 输入 事件 作为 基础 。 <br>
+<hr>
+(src)="37"> He aquí un ejemplo de un bucle principal simple : <br>
+(trg)="22"> 它 可能 需要 输入 和 模拟 时间 片 。 <br>
+<hr>
+(src)="38"> window . main = ( ) = &gt; { <br>
+(src)="39"> window . requestAnimationFrame ( main ) ; <br>
+(trg)="23"> 它 甚至 可以 基于 其他 的 东西 来 循环 。 <br>
+<hr>
+(src)="45"> Llamar al siguiente requestAnimationFrame antes de tiempo asegura que el navegador lo recibe a tiempo para planificar en consecuencia incluso si tu frame actual pierde su ventana VSync . <br>
+(trg)="24"> 现代 JavaScript - 正如 下 一节 中 所 描述 的 - 它 可以 轻松 开发 出 一个 高效 的 ， 逐 帧 执行 的 主 循环 ， 这 很 值得 庆幸 。 <br>
+<hr>
+(src)="47"> La primera crea una función como variable global llamada main ( ) . <br>
+(trg)="25"> 当然 ， 你的 游戏 只 会 按照 你 所 做的 那样 优 化 。 <br>
+<hr>
+(src)="50"> Debido a que main ( ) es llamada una vez en la segunda sentencia y cada llamada se coloca en la cola de cosas a hacer en el siguiente frame , main ( ) está sincronizada con tu tasa de frames . <br>
+(trg)="26"> 如果 某些 东西 看起来 应该 被 添加 到 一个 更 罕见 的 事件 里 ， 那么 将 它 从 主 循环 中 剥离 出来 通常 是 个 好主意 （ 但 并非 总是 如此 ） 。 <br>
+<hr>
+(src)="51"> Por supuesto , este bucle no es perfecto . <br>
+(trg)="27"> 在 JavaScript 中 构 建 一个 主 循环 <br>
+<hr>
+(src)="54"> Tienes el control sobre cada cuadro de la animación . <br>
+(trg)="28"> JavaScript 能 很好 的 处理 事件 和 回 调 函数 。 <br>
+<hr>
+(src)="56"> Un juego de disparos en primera persona ( o un juego similar ) presenta una nueva escena una vez cada fotograma . <br>
+(src)="57"> Realmente no se puede ser más suave y sensible que eso . <br>
+(trg)="29"> 现代 浏览 器 努力 在 需要 的 时候 调 用 方法 ， 并 在 间隙 中 闲下来 （ 或 做 其他 任务 ） 。 <br>
+<hr>
+(src)="60"> Hay muchas y te harán la vida más fácil . <br>
+(src)="61"> Crear un bucle principal mejor en JavaScript <br>
+(trg)="30"> 将 你的 代码 附加 到 适合 它们 的 时刻 是 一个 很好 的 主意 。 <br>
+<hr>
+(src)="65"> * Empezar con el punto y coma es en caso de que cualquier línea de código por encima <br>
+(src)="66"> * de este ejemplo se basó en la inserción automática de punto y coma ( ASI ) . <br>
+(src)="67"> El navegador <br>
+(trg)="31"> 考虑 一下 你的 函数 是 需要 在 严格 的 时间 周期 内 ， 还是 每一 帧 ， 或者 仅仅 是在 发生 了 其他 情况 之后 执行 。 <br>
+<hr>
+(src)="72"> ; ( ( ) = &gt; { <br>
+(src)="73"> function main ( ) { <br>
+(src)="74"> window . requestAnimationFrame ( main ) ; <br>
+(trg)="32"> 当 你的 函数 需要 被 调 用 时 ， 要 更 具体 地 使用 浏览 器 ， 这样 浏览 器 就 可以 在 调 用 时 进行 优 化 。 <br>
+<hr>
+(src)="75"> / / Contenido del bucle principal <br>
+(src)="76"> } <br>
+(src)="77"> main ( ) ; / / Inicio del ciclo <br>
+(src)="78"> } ) ( ) ; <br>
+(trg)="33"> 而且 ， 这 可能 会 让 你的 工作 更 轻松 。 <br>
+<hr>
+(src)="79"> Cuando el navegador se encuentre con este IIFE , definirá tu bucle principal e inmediatamente lo pondrá en cola para el siguiente frame . <br>
+(trg)="34"> 有些 代码 需要 逐 帧 运行 ， 所以 应 将 其 附加 到 浏览 器 的 重 绘 周期 中 ， 没有 比 这 更好 的 了 ！ <br>
+<hr>
+(src)="82"> Para el segundo problema , detener el bucle principal , tendrá que cancelar la llamada a main ( ) con { { domxref ( " window.cancelAnimationFrame ( ) " ) } } . <br>
+(trg)="35"> 在 Web 中 ， 通常 { { domxref ( “ window.requestAnimationFrame ( ) ” ) } } 方法 是 大 多数 良好 的 逐 帧 循环 的 基础 。 <br>
+<hr>
+(src)="86"> / * <br>
+(src)="87"> * Empezar con el punto y coma es en caso de que cualquier línea de código por encima <br>
+(src)="88"> * de este ejemplo se basó en la inserción automática de punto y coma ( ASI ) . <br>
+(src)="89"> El navegador <br>
+(trg)="36"> 在 调 用 该 方法 时 必须 传 入 一个 回 调 函数 ， 这个 回 调 函数 将 在 下 一次 重新 绘制 之前 执行 。 <br>
+<hr>
+(src)="93"> * <br>
+(src)="94"> * Supongamos también que MyGame está previamente definido . <br>
+(trg)="37"> 下面 是 一个 简单 的 主 循环 的 例子 ： <br>
+<hr>
+(src)="95"> * / <br>
+(src)="96"> ; ( ( ) = &gt; { <br>
+(src)="97"> function main ( ) { <br>
+(trg)="38"> window . main = ( ) = &gt; { <br>
+<hr>
+(src)="98"> MyGame . stopMain = window . requestAnimationFrame ( main ) ; <br>
+(trg)="39"> window . requestAnimationFrame ( main ) ; <br>
+<hr>
+(src)="99"> / / Contenido del bucle principal <br>
+(trg)="40"> / / 无论 你的 主 循环 需要 做 什么 <br>
+<hr>
+(src)="100"> } <br>
+(trg)="41"> } ; <br>
+<hr>
+(src)="101"> main ( ) ; / / Inicio del ciclo <br>
+(trg)="42"> main ( ) ; / / 开始 循环 <br>
+<hr>
+(src)="114"> Estos métodos principales se unen a window.requestAnimationFrame ( ) , que pide al navegador el control sobre el siguiente frame . <br>
+(src)="115"> Depende del navegador cómo relacionar estas peticiones con su bucle principal . <br>
+(trg)="43"> 备注 ： 在这里讨论的每个 main ( ) 方法中 ， 在执行循环内容之前 ， 我们会递归调用一个新的 requestAnimationFrame ， 这 不是 随意 的 ， 它 被 认为 是 最佳 实践 。 <br>
+<hr>
+(src)="119"> El hilo principal del navegador intenta parecerse a lo siguiente : <br>
+(src)="120"> Iniciar un nuevo fotograma ( mientras el fotograma anterior es manejado por la pantalla ) . <br>
+(src)="121"> Recorre la lista de callbacks de requestAnimationFrame e invócalos . <br>
+(trg)="44"> 如果你的当前帧错过了它的垂直同步窗口的周期 ， 你也在下一个帧通过 requestAnimationFrame 尽早的调用 main ( ) ， 从而 确保 浏览 器 能够 及时 地 执行 。 <br>
+<hr>
+</body>
+</html>

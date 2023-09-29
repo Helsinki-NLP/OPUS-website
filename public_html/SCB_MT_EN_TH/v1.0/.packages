@@ -1,0 +1,15 @@
+SCB_MT_EN_TH/v1.0/freq/en.freq.gz
+SCB_MT_EN_TH/v1.0/freq/th.freq.gz
+SCB_MT_EN_TH/v1.0/mono/en.tok.gz
+SCB_MT_EN_TH/v1.0/mono/en.txt.gz
+SCB_MT_EN_TH/v1.0/mono/th.tok.gz
+SCB_MT_EN_TH/v1.0/mono/th.txt.gz
+SCB_MT_EN_TH/v1.0/moses/en-th.txt.zip
+SCB_MT_EN_TH/v1.0/raw/en.zip
+SCB_MT_EN_TH/v1.0/raw/th.zip
+SCB_MT_EN_TH/v1.0/tmx/en-th.tmx.gz
+SCB_MT_EN_TH/v1.0/xml/en.zip
+SCB_MT_EN_TH/v1.0/xml/th.zip
+tmx/en-th.tmx.gz
+tmx/en-th.txt.zip
+xml/en-th.xml.gz

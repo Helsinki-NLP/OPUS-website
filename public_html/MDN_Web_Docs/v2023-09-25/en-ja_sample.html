@@ -1,0 +1,310 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# en/games/anatomy/index.xml.gz<br>
+# ja/games/anatomy/index.xml.gz
+
+<p><hr>
+(src)="1"> { { GamesSidebar } } <br>
+(trg)="1"> { { GamesSidebar } } <br>
+<hr>
+(src)="2"> This article looks at the anatomy and workflow of the average video game from a technical point of view , in terms of how the main loop should run . <br>
+(trg)="2"> この 記事 では 平均 的 な ビデオ ゲーム の 中身 と ワーク フロー を 技術 的 な 観点 、 メイン ループ が どう 動く べ き か に関して 見 てい き ます 。 <br>
+<hr>
+(src)="3"> It helps beginners to modern game development understand what is required when building a game and how web standards like JavaScript lend themselves as tools . <br>
+(trg)="3"> 初心者 が 現代 的 な ゲーム 開発 の 海 で 、 ゲーム 制作 に 何 が 必要 な の か 、 JavaScript の よう な ウェブ 標準 が ツール として 寄与 し て いるか を 理解 する の に 役 立ち ます 。 <br>
+<hr>
+(src)="4"> Experienced game programmers who are new to web development could also benefit , too . <br>
+(trg)="4"> ベテラン の ゲーム プログラマー で ウェブ 開発 を 始め た ばかり の 方 に も 役 立ち ます 。 <br>
+<hr>
+(src)="5"> Present , accept , interpret , calculate , repeat <br>
+(trg)="5"> 表示 し 、 受け入れ 、 翻訳 し 、 計算 し 、 繰り返す <br>
+<hr>
+(src)="6"> The goal of every video game is to present the user ( s ) with a situation , accept their input , interpret those signals into actions , and calculate a new situation resulting from those acts . <br>
+(trg)="6"> あらゆるビデオゲームのゴールはユーザーに状況を 表示 して入力を 受け入れ てこの信号を 翻訳 し て 行動し 、 行動から得られる新しい状況を 計算 する こと です 。 <br>
+<hr>
+(src)="7"> Games are constantly looping through these stages , over and over , until some end condition occurs ( such as winning , losing , or exiting to go to bed ) . <br>
+(trg)="7"> ゲーム は こうした 段階 を 常に 何 度 も 何 度 も 繰り返し て 、 何 か の 条件 が ( 例えば 勝利 や 敗退 や 、 あるいは 終了 し て 寝る こと ) 起きる まで 繰り返し ます 。 <br>
+<hr>
+(src)="8"> Not surprisingly , this pattern corresponds to how a game engine is programmed . <br>
+(trg)="8"> 驚く こと で なく 、 この パターン は ゲーム エンジン が プログラム さ れ て いる さま に 対応 し てい ます 。 <br>
+<hr>
+(src)="9"> The specifics depend on the game . <br>
+(trg)="9"> 詳細 な 仕様 は ゲーム に 依存 し ます 。 <br>
+<hr>
+(src)="10"> Some games drive this cycle by user input . <br>
+(trg)="10"> ユーザー 入力 によって 駆動 する ゲーム も あり ます 。 「 <br>
+<hr>
+(src)="11"> Imagine that you are developing a “ find the differences between these two similar pictures ” -type game . <br>
+(trg)="11"> 2 つ の 絵 の 違い を 見つける 」 タイプ の ゲーム を 開発 し て いる と 想像 し て み て くだ さい 。 <br>
+<hr>
+(src)="12"> These games present two images to the user ; they accept their click ( or touch ) ; they interpret the input as a success , failure , pause , menu interaction , etc . ; finally , they calculate an updated scene resulting from that input . <br>
+(trg)="12"> このゲームはユーザーに 2 つの画像を 表示 し ます 。 <br>
+(trg)="13"> ユーザーのクリック ( やタッチ ) を 受け入れ ます 。 <br>
+(trg)="14"> 入力を成功 、 失敗 、 一時停止 、 メニューのやりとりなどに 翻訳 し ます 。 <br>
+<hr>
+(src)="13"> The game loop is advanced by the user ’ s input and sleeps until they provide it . <br>
+(trg)="15"> 最後にその入力から起きて更新されるシーンを 計算 し ます 。 <br>
+<hr>
+(src)="14"> This is more of a turn-based approach that doesn ’ t demand a constant update every frame , only when the player reacts . <br>
+(trg)="16"> ゲーム ループ は ユーザー 入力 まで 進 んで 、 ユーザー が 与える まで スリープ し ます 。 <br>
+<hr>
+(src)="15"> Other games demand control over each of the smallest possible individual timeslices . <br>
+(trg)="19"> 上記 と 同じ 原則 が 少し ひねり を 加 えて 適用 さ れ ます 。 <br>
+<hr>
+(src)="16"> The same principles as above apply with a slight twist : each frame of animation progresses the cycle and any change in user input is caught at the first available turn . <br>
+(trg)="20"> アニメーション の 各 フレーム は サイクル を 勧め 、 利用 できる 最初 の ターン で ユーザー 入力 の 変化 が 捉 え ら れ ます 。 <br>
+<hr>
+(src)="17"> This once-per-frame model is implemented in something called a main loop . <br>
+(trg)="21"> この毎フレームごとの実装モデルは メイン ループ と 言 い ます 。 <br>
+<hr>
+(src)="18"> If your game loops based on time then this will be its authority that your simulations will adhere to . <br>
+(trg)="22"> ゲーム ループ が 時間 ベース ならば 、 これ は シミュレーション が 従う べ き 権威 です 。 <br>
+<hr>
+(src)="19"> But it might not need per-frame control . <br>
+(trg)="23"> しかし 毎 フレーム の 管理 は 不要 かも し れ ま せん 。 <br>
+<hr>
+(src)="20"> Your game loop might be similar to the find the differences example and base itself on input events . <br>
+(trg)="24"> ゲーム ループ は 違い を 見つける 例 と 同じ で 入力 イベント に 依存 し て いるか もし れ ま せん 。 <br>
+<hr>
+(src)="21"> It might require both input and simulated time . <br>
+(trg)="25"> また 入力 と 時間 の シュミレーション の 両方 が 必要 かも し れ ま せん 。 <br>
+<hr>
+(src)="22"> It might even loop based on something else entirely . <br>
+(trg)="26"> その他 の もの に 完全 に 依存 する ループ かも し れ ま せん 。 <br>
+<hr>
+(src)="23"> Modern JavaScript — as described in the next sections — thankfully makes it easy to develop an efficient , execute-once-per-frame main loop . <br>
+(trg)="27"> モダン JavaScript — 詳 しく は 次 の 節 で 述 べ ます が — は 効率 よく 、 毎 フレーム で 実行 さ れる メイン ループ を 簡単 に 開発 でき ます 。 <br>
+<hr>
+(src)="24"> Of course , your game will only be as optimized as you make it . <br>
+(trg)="28"> もちろん 、 あなた の ゲーム では できるだけ 最適 化 でき ます 。 <br>
+<hr>
+(src)="25"> If something looks like it should be attached to a more infrequent event then it is often a good idea to break it out of the main loop ( but not always ) . <br>
+(trg)="29"> あまり 発生 しない イベント に アタッチ すべ きだ と 思う ならば 、 メイン ループ から 外れる の も ( いつも では ない にし ろ ) 良い 考え です 。 <br>
+<hr>
+(src)="26"> Building a main loop in JavaScript <br>
+(trg)="30"> JavaScript で メイン ループ を 作る <br>
+<hr>
+(src)="27"> JavaScript works best with events and callback functions . <br>
+(trg)="31"> JavaScript は イベント と コール バック 関数 に対して 最高 の 働き を し ます 。 <br>
+<hr>
+(src)="28"> Modern browsers strive to call methods right as they are needed and idle ( or do their other tasks ) in the gaps . <br>
+(trg)="32"> モダン な ブラウザー は できるだけ メソッド を ちょうど それら が 必要 に な っ た 時 や アイドル 状態 の ( もしくは ほか の タスク を や って いる ) 時に 呼 び 出 そう と し ます 。 <br>
+<hr>
+(src)="29"> It is an excellent idea to attach your code to the moments that are appropriate for them . <br>
+(trg)="33"> それ が どう 素晴らしい アイデア な の か という と 、 あなた の コード を 的確 な 瞬間 に アタッチ できる から です 。 <br>
+<hr>
+(src)="30"> Think about whether your function really needs to be called on a strict interval of time , every frame , or only after something else happens . <br>
+(trg)="34"> こんな 場合 を 考え て み ま しょう - あなた の 関数 が 毎 フレーム ごと に 厳密 な 間隔 で 絶対に 呼 び 出 さ れ な け れ ば なら ない か 、 もしくは ほか の 何 か が 起 こ って はじめて 絶対に 呼 び 出 さ れ な け れ ば なら ない と し ます 。 <br>
+<hr>
+(src)="31"> Being more specific with the browser about when your function needs to be called allows the browser to optimize when it is called . <br>
+(trg)="35"> ブラウザー に いつ 関数 が 呼 び 出 さ れる か について より はっきり させる という こと は ブラウザー が それ を いつ 呼び出す か を 最適 化 する こと を 許す ことに なり ます 。 <br>
+<hr>
+(src)="32"> Also , it will probably make your job easier . <br>
+(trg)="36"> また 、 それ は ひょっとしたら あなた の 仕事 を より 簡単 に する かも し れ ま せん 。 <br>
+<hr>
+(src)="33"> Some code needs to be run frame-by-frame so why attach that function to anything other than the browser ’ s redraw schedule ? <br>
+(trg)="37"> いくつか の コード は フレーム 毎 に 実行 さ れる 必要 が ある かも し れ ま せん ので 、 なぜ その 関数 を ブラウザー の 再 描画 スケジュール 以外 の もの に アタッチ する 必要 が ある ので しょう か ? <br>
+<hr>
+(src)="34"> On the Web , { { domxref ( “ window.requestAnimationFrame ( ) ” ) } } will be the foundation of most well-programmed per-frame main loops . <br>
+(trg)="38"> ウェブでは 、 { { domxref ( " window.requestAnimationFrame ( ) " ) } } が ほとんど の よく プログラミング さ れ た 毎 フレーム メイン ループ の 基礎 に なる で しょう 。 <br>
+<hr>
+(src)="35"> A callback function must be passed in to it when it is called . <br>
+(trg)="39"> コール バック 関数 は それ 自身 が 呼 び 出 さ れ た とき そこ に 渡 さ れ な け れ ば なり ま せん 。 <br>
+<hr>
+(src)="36"> That callback function will be executed at a suitable time before the next repaint . <br>
+(trg)="40"> その コール バック 関数 は 次 の 再 描画 まで の 適切 な 時間 で 実行 さ れ ます 。 <br>
+<hr>
+(src)="37"> Here is an example of a simple main loop : <br>
+(trg)="41"> 単純 な メイン ループ の 例 を 見 て み ま しょう 。 <br>
+<hr>
+(src)="38"> window . main = ( ) = &gt; { <br>
+(trg)="42"> window.main = function ( ) { <br>
+<hr>
+(src)="39"> window . requestAnimationFrame ( main ) ; <br>
+(trg)="43"> window.requestAnimationFrame ( main ) ; <br>
+<hr>
+(src)="40"> / / Whatever your main loop needs to do <br>
+(trg)="44"> / / あなた の メイン ループ が 必要 な 事 なんでも <br>
+<hr>
+(src)="41"> } ; <br>
+(trg)="45"> } ; <br>
+<hr>
+(src)="42"> main ( ) ; / / Start the cycle <br>
+(trg)="46"> main ( ) ; / / メイン ループ 開始 <br>
+<hr>
+(src)="43"> Note : In each of the main ( ) methods discussed here , we schedule a new requestAnimationFrame before performing our loop contents . <br>
+(trg)="47"> メモ : ここで議論されている main ( ) 関数はそれぞれ 、 ループコンテンツを行う前に新しい requestAnimationFrame を スケジュール し てい ます 。 <br>
+<hr>
+(src)="44"> That is not by accident and it is considered best practice . <br>
+(trg)="48"> これ は 間 違 って いる の では ありま せん し 、 ベスト プ ラ ク テ ィ ス を 考慮 し てい ます 。 <br>
+<hr>
+(src)="45"> Calling the next requestAnimationFrame early ensures the browser receives it on time to plan accordingly even if your current frame misses its VSync window . <br>
+(trg)="49"> 前もって次の requestAnimationFrame を 呼び出す こと は ブラウザー が 適宜 それ を 正しい 時に 受け取る こと を 保証 し ます 。 <br>
+<hr>
+(src)="46"> The above chunk of code has two statements . <br>
+(trg)="51"> 上の コード は 2 つ の 宣言 が あり ます 。 <br>
+<hr>
+(src)="47"> The first statement creates a function as a global variable called main ( ) . <br>
+(trg)="52"> 最初の宣言はある関数をグローバル変数として main ( ) と 呼ばれる 関数 を 作成 し ます 。 <br>
+<hr>
+(src)="48"> This function does some work and also tells the browser to call itself next frame with window.requestAnimationFrame ( ) . <br>
+(trg)="53"> この関数はいくつかの仕事をして同時にブラウザーにそれ自身を window.requestAnimationFrame ( ) を 使 って 呼ぶ よう に 言 い ます 。 <br>
+<hr>
+(src)="49"> The second statement calls the main ( ) function , defined in the first statement . <br>
+(trg)="54"> ふたつ目の宣言は main ( ) 関数 - それ は 最初 の 宣言 で 定義 さ れ た の ですが 、 それ を 呼 び ます 。 <br>
+<hr>
+(src)="50"> Because main ( ) is called once in the second statement and every call of it places itself in the queue of things to do next frame , main ( ) is synchronized to your frame rate . <br>
+(trg)="55"> main ( ) は 2 つ目の宣言で一度だけ呼ばれて毎回それを呼ぶ度に次のフレームでやるべきことのキューに配置していくので 、 main ( ) は あなた の フレーム レート と 同期 し ます 。 <br>
+<hr>
+(src)="51"> Of course this loop is not perfect . <br>
+(trg)="56"> もちろん 、 この ループ は 完全 では ありま せん 。 <br>
+<hr>
+(src)="52"> Before we discuss ways to change it , let us discuss what it already does well . <br>
+(trg)="57"> 変更 すべ き 点 を 議論 する 前 に 、 既に な に を ちゃんと や って いる の か 議論 さ せ て くだ さい ね 。 <br>
+<hr>
+(src)="53"> Timing the main loop to when the browser paints to the display allows you to run your loop as frequently as the browser wants to paint . <br>
+(trg)="58"> メイン ループ を ブラウザー が ディスプレイ を 描画 する タイミング で 実行 する こと で あなた の ループ は ブラウザー が 描画 した いと 思 っ た タイミング と 同じ 頻度 で 実行 さ れる こと が 可能 に なり ます 。 <br>
+<hr>
+(src)="54"> You are given control over each frame of animation . <br>
+(trg)="59"> あなた は 毎 アニメーション フレーム ごと に コントロール できる よう に なり ま した 。 <br>
+<hr>
+(src)="55"> It is also very simple because main ( ) is the only function getting looped . <br>
+(trg)="60"> 同時に 、 どうこれがとても簡単なのかというと 、 main ( ) だけ が ループ さ れる 関数 だから です 。 <br>
+<hr>
+(src)="56"> A First-Person Shooter ( or a similar game ) presents a new scene once every frame . <br>
+(trg)="61"> First Person Shooter ( もしくは それに 類する ゲーム ) だ と 1 フレーム ごと に 1 回 新しい シーン を 表示 し ます 。 <br>
+<hr>
+(src)="57"> You cannot really get more smooth and responsive than that . <br>
+(trg)="62"> これ 以上 に スムーズ で レスポンシブ に しよう が ありま せん 。 <br>
+<hr>
+(src)="58"> But do not immediately assume animations require frame-by-frame control . <br>
+(trg)="63"> だからといって すぐ に アニメーション は 1 フレーム ごと に コントロール が 必要 だ と 考え ない で くだ さい 。 <br>
+<hr>
+(src)="59"> Simple animations can be easily performed , even GPU-accelerated , with CSS animations and other tools included in the browser . <br>
+(trg)="64"> 簡単 な アニメーション は ( たとえ GPU アク セラ レート さ れ てい た として も ) CSS アニメーション や ブラウザー について くる ほか の ツール で 簡単 に 実行 する こと が でき ます 。 <br>
+<hr>
+(src)="60"> There are a lot of them and they will make your life easier . <br>
+(trg)="65"> それら は たくさん あり 、 あなた の 開発 を より 簡単 にし て くれる で しょう 。 <br>
+<hr>
+(src)="61"> Building a better main loop in JavaScript <br>
+(trg)="66"> Javascript で マ シ な メイン ループ を 作る <br>
+<hr>
+(src)="62"> There are two obvious issues with our previous main loop : main ( ) pollutes the { { domxref ( “ window ” ) } } object ( where all global variables are stored ) and the example code did not leave us with a way to stop the loop unless the whole tab is closed or refreshed . <br>
+(trg)="68"> main ( ) が { { domxref ( " window " ) } } オブジェクト を 汚染 し て いる ( そこ に は すべて の グローバル 変数 が 格納 さ れ て いる の ですが ) こと と 、 すべて の タブ が 閉 じ られる か 更新 さ れる か する まで ループ を 止める こと が でき ま せん 。 <br>
+<hr>
+(src)="63"> For the first issue , if you want the main loop to just run and you do not need easy ( direct ) access to it , you could create it as an Immediately-Invoked Function Expression ( IIFE ) . <br>
+(trg)="69"> ひとつ つ 目 の 問題 に関して は 、 もし メイン ループ が ただ 走る だけ で 簡単 に ( 直接 ) それに アクセス する 必要 が ない ので あれ ば 、 それ を Immediately - Invoked Function Expression ( IIFE ) として 作る こと が でき ます 。 <br>
+<hr>
+(src)="64"> / * <br>
+(trg)="70"> / * <br>
+<hr>
+(src)="65"> * Starting with the semicolon is in case whatever line of code above this example <br>
+(trg)="71"> * セミコロン で 始める という の は 以下 の 例 では automatic semicolon insertion ( ASI ) によります 。 <br>
+<hr>
+(src)="66"> * relied on automatic semicolon insertion ( ASI ) . <br>
+(src)="67"> The browser could accidentally <br>
+(trg)="72"> * ブラウザー が 間 違 って この 例 全体 を 前 の 行 から 続 い て いる と 判断 する かも し れ ま せん 。 <br>
+<hr>
+(src)="68"> * think this whole example continues from the previous line . <br>
+(src)="69"> The leading semicolon <br>
+(trg)="73"> * この セミコロン が ある こと で たとえ 前 の 行 が 空 で なか っ たり <br>
+<hr>
+(src)="70"> * marks the beginning of our new line if the previous one was not empty or terminated . <br>
+(trg)="74"> * ちゃんと 終 わ って なか っ た 場合 でも 新しい 行 が 始 ま って いる こと を 示す こと が でき ます <br>
+<hr>
+(src)="71"> * / <br>
+(trg)="75"> * / <br>
+<hr>
+(src)="72"> ; ( ( ) = &gt; { <br>
+(trg)="76"> ; ( function ( ) { <br>
+<hr>
+(src)="73"> function main ( ) { <br>
+(trg)="77"> function main ( ) { <br>
+<hr>
+(src)="74"> window . requestAnimationFrame ( main ) ; <br>
+(trg)="78"> window.requestAnimationFrame ( main ) ; <br>
+<hr>
+(src)="75"> / / Your main loop contents <br>
+(trg)="79"> / / メイン ループ の 中身 <br>
+<hr>
+(src)="76"> } <br>
+(trg)="80"> } <br>
+<hr>
+(src)="77"> main ( ) ; / / Start the cycle <br>
+(trg)="81"> main ( ) ; / / ループ を 開始 する <br>
+<hr>
+(src)="78"> } ) ( ) ; <br>
+(trg)="82"> } ) ( ) ; <br>
+<hr>
+(src)="79"> When the browser comes across this IIFE , it will define your main loop and immediately queue it for the next frame . <br>
+(trg)="83"> ブラウザー が この IIFE に 出くわす と 、 メイン ループ を 定義 し て すぐさま 次 の フレーム に キュー し ます 。 <br>
+<hr>
+(src)="80"> It will not be attached to any object and main ( or main ( ) for methods ) will be a valid unused name in the rest of the application , free to be defined as something else . <br>
+(trg)="84"> これで何のオブジェクトにもアタッチされなくなり 、 main ( ) ( もしくは main ( ) の ため の メソッド ) は 残り の アプリケーション で 使用 可能 な 未 使用 の 名前 に なり 、 何 か 別に 定義 し て も よく なり ま した 。 <br>
+<hr>
+(src)="81"> Note : In practice , it is more common to prevent the next requestAnimationFrame ( ) with an if-statement , rather than calling cancelAnimationFrame ( ) . <br>
+(trg)="85"> メモ : 実際は 、 次の requestAnimationFrame ( ) を if 構文で防ぐほうがより一般的で 、 cancelAnimationFrame ( ) を 呼ぶ こと は それ より も 一般 的 では ありま せん 。 <br>
+<hr>
+(src)="82"> For the second issue , stopping the main loop , you will need to cancel the call to main ( ) with { { domxref ( “ window.cancelAnimationFrame ( ) ” ) } } . <br>
+(trg)="86"> 2 つ目の問題 - つまり 、 メインループを止めるという問題に関しては 、 main ( ) を { { domxref ( " window.cancelAnimationFrame ( ) " ) } } によって 呼び出し を キャンセル する 必要 が ある で しょう 。 <br>
+<hr>
+(src)="83"> You will need to pass cancelAnimationFrame ( ) the ID token given by requestAnimationFrame ( ) when it was last called . <br>
+(trg)="87"> あなたは一番最後に requestAnimationFrame ( ) が呼ばれたときに cancelAnimationFrame ( ) に requestAnimationFrame ( ) で 得 た ID トーク ン を 渡す 必要 が あり ます 。 <br>
+<hr>
+(src)="84"> Let us assume that your game ’ s functions and variables are built on a namespace that you called MyGame . <br>
+(trg)="88"> こんな風な場合を想定してください - あなたのゲームの関数と変数が MyGame と 呼ばれる 名前 空間 に 備え付け ら れ てい ます 。 <br>
+<hr>
+(src)="85"> Expanding our last example , the main loop would now look like : <br>
+(trg)="89"> 先述 の 例 を 拡張 すると 、 メイン ループ は こんな 風 に なり ます 。 <br>
+<hr>
+(src)="86"> / * <br>
+(trg)="90"> / * <br>
+<hr>
+(src)="87"> * Starting with the semicolon is in case whatever line of code above this example <br>
+(trg)="91"> * セミコロン で 始める という の は 以下 の 例 では automatic semicolon insertion ( ASI ) によります 。 <br>
+<hr>
+(src)="88"> * relied on automatic semicolon insertion ( ASI ) . <br>
+(src)="89"> The browser could accidentally <br>
+(trg)="92"> * ブラウザー が 間 違 って この 例 全体 を 前 の 行 から 続 い て いる と 判断 する かも し れ ま せん 。 <br>
+<hr>
+(src)="90"> * think this whole example continues from the previous line . <br>
+(src)="91"> The leading semicolon <br>
+(trg)="93"> * この セミコロン が ある こと で たとえ 前 の 行 が 空 で なか っ たり <br>
+<hr>
+(src)="92"> * marks the beginning of our new line if the previous one was not empty or terminated . <br>
+(trg)="94"> * ちゃんと 終 わ って なか っ た 場合 でも 新しい 行 が 始 ま って いる こと を 示す こと が でき ます <br>
+<hr>
+(src)="93"> * <br>
+(trg)="95"> * <br>
+<hr>
+(src)="94"> * Let us also assume that MyGame is previously defined . <br>
+(trg)="96"> * MyGame は 前もって 定義 さ れ てる と し ます 。 <br>
+<hr>
+(src)="95"> * / <br>
+(trg)="97"> * / <br>
+<hr>
+(src)="96"> ; ( ( ) = &gt; { <br>
+(trg)="98"> ; ( function ( ) { <br>
+<hr>
+(src)="97"> function main ( ) { <br>
+(trg)="99"> function main ( ) { <br>
+<hr>
+(src)="98"> MyGame . stopMain = window . requestAnimationFrame ( main ) ; <br>
+(trg)="100"> MyGame.stopMain = window.requestAnimationFrame ( main ) ; <br>
+<hr>
+(src)="99"> / / Your main loop contents <br>
+(trg)="101"> / / メイン ループ の 中身 . <br>
+<hr>
+(src)="100"> } <br>
+(trg)="102"> } <br>
+<hr>
+</body>
+</html>

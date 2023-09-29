@@ -1,0 +1,317 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# pt_BR/conflicting/learn/javascript/asynchronous/introducing/index.xml.gz<br>
+# ru/conflicting/learn/javascript/asynchronous/introducing/index.xml.gz
+
+<p><hr>
+(src)="1"> { { LearnSidebar } } { { NextMenu ( “ Learn / JavaScript / Asynchronous / Introducing ” , “ Learn / JavaScript / Asynchronous ” ) } } <br>
+(trg)="1"> { { LearnSidebar } } { { NextMenu ( “ Learn / JavaScript / Asynchronous / Introducing ” , “ Learn / JavaScript / Asynchronous ” ) } } <br>
+<hr>
+(src)="2"> Neste artigo , nós vamos ver um número de conceitos importantes relativos à programação assíncrona e como ela se parece em navegadores modernos e em JavaScript . <br>
+(trg)="2"> В этой статье мы бегло познакомимся с основными понятиями , связанными с асинхронным программированием и как они применяются в веб браузерах и JavaScript . <br>
+<hr>
+(src)="3"> Você deve entender estes conceitos antes de trabalhar com outros artigos neste módulo . <br>
+(trg)="3"> Вы должны понять эти концепции , прежде чем приступать к другим статьям этого раздела . <br>
+<hr>
+(src)="4"> Pré - requisitos : <br>
+(trg)="4"> Необходимые знания : <br>
+<hr>
+(src)="5"> Conhecimentos básicos de informática e compreensão dos fundamentos de JavaScript . <br>
+(trg)="5"> Базовая компьютерная грамотность , знакомство с основами JavaScript . <br>
+<hr>
+(src)="6"> Objetivo : <br>
+(trg)="6"> Цель : <br>
+<hr>
+(src)="7"> Entender os conceitos básicos da programação assíncrona e como ela se manifesta em navegadores e JavaScript . <br>
+(trg)="7"> Понять основные идеи асинхронного программирования , и как они проявляются в веб-браузерах и JavaScript . <br>
+<hr>
+(src)="8"> Assíncrono ? <br>
+(trg)="8"> Что же такое Асинхронность ? <br>
+<hr>
+(src)="9"> Normalmente , o código de um programa é executado de forma direta , com uma coisa acontecendo por vez . <br>
+(trg)="9"> Как правило , программный код выполняется последовательно , только одна конкретная операция происходит в данный момент времени . <br>
+<hr>
+(src)="10"> Se uma função depende do resultado de outra função , ela tem que esperar o retorno do resultado , e até que isso aconteça , o programa inteiro praticamente para de funcionar da perspectiva do usuário . <br>
+(trg)="10"> Если функция зависит от результата выполнения другой функции , то она должна дождаться пока нужная ей функция не завершит свою работу и не вернёт результат и до тех пор пока это не произойдёт , выполнение программы , по сути , будет остановлено с точки зрения пользователя . <br>
+<hr>
+(src)="11"> Usuários do Mac , por exemplo , conseguem ver isso como o cursor giratório em arco - íris ( ou “ beachball ” , como normalmente é chamado ) . <br>
+(trg)="11"> Пользователь современного ПК , наверняка , наблюдал , как курсор меняет свой вид и становится “ разноцветным спинером ” ( у пользователей MacOS ) . <br>
+<hr>
+(src)="12"> Este cursor é o jeito do sistema operacional dizer : “ o programa atual que você está usando teve que parar e esperar algo terminar de ser executado , e estava demorando tanto que fiquei preocupado se você estava pensando no que aconteceu . ” <br>
+(trg)="12"> Таким образом операционная система сообщает - “ текущая программа , ожидает завершения какого то длительного процесса в системе и я решила сообщить тебе , что бы ты не волновался ” . <br>
+<hr>
+(src)="13"> Multi - colored macOS beachball busy spinner <br>
+(trg)="13"> Multi-colored macOS beachball busy spinner <br>
+<hr>
+(src)="14"> Essa é uma situação frustrante , e não faz bom uso do poder de processamento do computador — especialmente em uma era em que computadores tem múltiplos núcleos de processamento disponíveis . <br>
+(trg)="14"> Такое поведение удручает и говорит о неправильном использовании процессорного времени , к тому же современные компьютеры имеют процессоры с несколькими ядрами . <br>
+<hr>
+(src)="15"> Não há sentido em ficar esperando por algo quando você pode deixar outra tarefa ser executada em um núcleo de processador diferente e deixar que ele te avise quando terminar . <br>
+(trg)="15"> Не нужно ничего ждать , вы можете передать следующую задачу свободному ядру процессора и когда она завершится , то сообщит вам об этом . <br>
+<hr>
+(src)="16"> Isso te permite fazer mais coisas por enquanto , o que é a base da programação assincrona . <br>
+(trg)="16"> Такой подход позволяет выполнять разные задачи одновременно , в этом и заключается задача асинхронности в программировании . <br>
+<hr>
+(src)="17"> Depende do ambiente de programação que você está usando ( navegadores da Web , no caso de desenvolvimento da Web ) para fornecer APIs que permitem executar essas tarefas de forma assíncrona . <br>
+(trg)="17"> Программная среда , которую вы используете ( браузер в случае веб разработки ) , должна иметь возможность выполнять различного рода задачи асинхронно . <br>
+<hr>
+(src)="18"> Bloqueio de código <br>
+(trg)="18"> Блокировка кода <br>
+<hr>
+(src)="19"> Técnicas async ( assíncronas ) são muito úteis , principalmente na programação web . <br>
+(trg)="19"> Асинхронные техники очень полезны , особенно при веб разработке . <br>
+<hr>
+(src)="20"> Quando um aplicativo web é executado em um navegador e executa um pedaço de código rigoroso sem retornar o controle para o navegador , ele pode parecer que travou . <br>
+(trg)="20"> Когда ваше приложение запущено в браузере и выполняет свои задачи , не возвращая контроль окружению , браузер может подвисать . <br>
+<hr>
+(src)="21"> Isso é chamado de blocking ; o navegador está bloqueado de continuar a manusear a entrada do usuário e de realizar outras tarefas até que o aplicativo web retorne o controle do processador . <br>
+(trg)="21"> Это называется блокировка ; браузер заблокирован и не может реагировать на действия пользователя и выполнять служебные.задачи , до тех пор пока веб приложение не освободит ресурсы процессора . <br>
+<hr>
+(src)="22"> Vamos dar uma olhadinha em alguns exemplos para que você entenda o blocking . <br>
+(trg)="22"> Давайте рассмотрим несколько примеров , которые покажут , что именно значит блокировка . <br>
+<hr>
+(src)="23"> No nosso exemplo simple - sync.html ( veja aqui ) , nós adicionamos um evento de click em um botão para que , quando clicado , ele executa uma tarefa pesada ( calcula 10 milhões de datas e depois imprime a última delas no console ) e depois adiciona um parágrafo no DOM : <br>
+(trg)="23"> В нашем simple-sync.html примере ( see it running live ) , добавим кнопке событие на клик , чтобы при нажатии на неё запускалась трудоёмкая операция ( расчёт 10000000 дат , и вывод последней рассчитанной даты на консоль ) после чего в DOM добавляется ещё один параграф : <br>
+<hr>
+(src)="24"> const btn = document . querySelector ( ' button ' ) ; <br>
+(trg)="24"> const btn = document . querySelector ( ' button ' ) ; <br>
+<hr>
+(src)="25"> btn . addEventListener ( ' click ' , ( ) = &gt; { <br>
+(trg)="25"> btn . addEventListener ( ' click ' , ( ) = &gt; { <br>
+<hr>
+(src)="26"> let myDate ; <br>
+(trg)="26"> let myDate ; <br>
+<hr>
+(src)="27"> for ( let i = 0 ; i &lt; 10000000 ; i + + ) { <br>
+(trg)="27"> for ( let i = 0 ; i &lt; 10000000 ; i + + ) { <br>
+<hr>
+(src)="28"> let date = new Date ( ) ; <br>
+(trg)="28"> let date = new Date ( ) ; <br>
+<hr>
+(src)="29"> myDate = date <br>
+(trg)="29"> myDate = date <br>
+<hr>
+(src)="30"> } <br>
+(trg)="30"> } <br>
+<hr>
+(src)="31"> console . log ( myDate ) ; <br>
+(trg)="31"> console . log ( myDate ) ; <br>
+<hr>
+(src)="32"> let pElem = document . createElement ( ' p ' ) ; <br>
+(trg)="32"> let pElem = document . createElement ( ' p ' ) ; <br>
+<hr>
+(src)="33"> pElem . textContent = ' This is a newly - added paragraph . ' ; <br>
+(trg)="33"> pElem . textContent = ' This is a newly-added paragraph . ' ; <br>
+<hr>
+(src)="34"> document . body . appendChild ( pElem ) ; <br>
+(trg)="34"> document . body . appendChild ( pElem ) ; <br>
+<hr>
+(src)="35"> } ) ; <br>
+(trg)="35"> } ) ; <br>
+<hr>
+(src)="36"> Quando o exemplo for executado , abra seu console JavaScript e depois clique no botão — você verá qua o parágrafo não aparece até que o programa termine de calcular as datas e imprimir a última no console . <br>
+(trg)="36"> Когда запустите этот пример , откройте JavaScript консоль и нажмите на кнопку — вы заметите , что параграф не появится на странице , до тех пор пока все даты не будут рассчитаны и результат последнего вычисления не будет выведен на консоль . <br>
+<hr>
+(src)="37"> O código é executado na ordem em que ele aparece na fonte , e a operação seguinte só é executada depois que a primeira for terminada . <br>
+(trg)="37"> Этот код выполняется в том порядке , в котором он написан в файле и самая последняя операция не будет запущена , пока не завершатся все операции перед ней . <br>
+<hr>
+(src)="38"> Nota : O exemplo anterior não é muito realistico . <br>
+(trg)="38"> Примечание : Предыдущий пример слишком не реальный . <br>
+<hr>
+(src)="39"> Você nunca calcularia 10 milhões de datas em um aplicativo real ! <br>
+(trg)="39"> Вам никогда не понадобится считать столько дат в реальном приложении ! <br>
+<hr>
+(src)="40"> Mas isso serve par te dar um apoio sobre o assunto . <br>
+(trg)="40"> Однако , он помогает вам понять основную идею . <br>
+<hr>
+(src)="41"> No nosso segundo exemplo simple - sync - ui - blocking.html ( veja aqui ) , nós simulamos algo mais realistico que você pode encontrar em uma página real . <br>
+(trg)="41"> В нашем следующем примере , simple-sync-ui-blocking.html ( посмотреть пример ) , мы сделаем что-нибудь более реалистичное , с чем вы сможете столкнуться на реальной странице . <br>
+<hr>
+(src)="42"> Nós bloqueamos a interatividade do usuário na renderização da UI . <br>
+(trg)="42"> Мы заблокируем действия пользователя отрисовкой страницы . <br>
+<hr>
+(src)="43"> Neste exemplo , nós temos dois botões : <br>
+(trg)="43"> В этом примере у нас две кнопки : <br>
+<hr>
+(src)="44"> Um botão “ Fill canvas ” que quando for clicado renderiza 1 milhão de círculos azuis no elemento { { htmlelement ( “ canvas ” ) } } . <br>
+(trg)="44"> Кнопка “ Fill canvas ” , если на неё кликнуть , рисует в элементе { { htmlelement ( “ canvas ” ) } } миллион синих кругов . <br>
+<hr>
+(src)="45"> Um botão “ Clique - me ” que mostra um alerta quando clicado . <br>
+(trg)="45"> Кнопка “ Click me for alert ” , при нажатии показывает предупреждение . <br>
+<hr>
+(src)="46"> function expensiveOperation ( ) { <br>
+(trg)="46"> function expensiveOperation ( ) { <br>
+<hr>
+(src)="47"> for ( let i = 0 ; i &lt; 1000000 ; i + + ) { <br>
+(trg)="47"> for ( let i = 0 ; i &lt; 1000000 ; i + + ) { <br>
+<hr>
+(src)="48"> ctx . fillStyle = ' rgba ( 0,0,255 , 0.2 ) ' ; <br>
+(trg)="48"> ctx . fillStyle = ' rgba ( 0,0,255 , 0.2 ) ' ; <br>
+<hr>
+(src)="49"> ctx . beginPath ( ) ; <br>
+(trg)="49"> ctx . beginPath ( ) ; <br>
+<hr>
+(src)="50"> ctx . arc ( random ( 0 , canvas . width ) , random ( 0 , canvas . height ) , 10 , degToRad ( 0 ) , degToRad ( 360 ) , false ) ; <br>
+(trg)="50"> ctx . arc ( random ( 0 , canvas . width ) , random ( 0 , canvas . height ) , 10 , degToRad ( 0 ) , degToRad ( 360 ) , false ) ; <br>
+<hr>
+(src)="51"> ctx . fill ( ) <br>
+(trg)="51"> ctx . fill ( ) <br>
+<hr>
+(src)="52"> } <br>
+(trg)="52"> } <br>
+<hr>
+(src)="53"> } <br>
+(trg)="53"> } <br>
+<hr>
+(src)="54"> fillBtn . addEventListener ( ' click ' , expensiveOperation ) ; <br>
+(trg)="54"> fillBtn . addEventListener ( ' click ' , expensiveOperation ) ; <br>
+<hr>
+(src)="55"> alertBtn . addEventListener ( ' click ' , ( ) = &gt; <br>
+(trg)="55"> alertBtn . addEventListener ( ' click ' , ( ) = &gt; <br>
+<hr>
+(src)="56"> alert ( ' You clicked me ! ' <br>
+(trg)="56"> alert ( ' You clicked me ! ' <br>
+<hr>
+(src)="57"> ) <br>
+(trg)="57"> ) <br>
+<hr>
+(src)="58"> ) ; <br>
+(trg)="58"> ) ; <br>
+<hr>
+(src)="59"> Se você clicar no primeiro botão e imediatamente no segundo , você verá que a mensagem de alerta não aparece até que os círculos sejam totalmente renderizados . <br>
+(trg)="59"> Если вы быстро нажмёте на первую кнопку и затем быстро кликните на вторую , вы увидите , что предупреждение не появится на странице , пока все круги не будут отрисованы . <br>
+<hr>
+(src)="60"> A primeira operação bloqueia a segunda até a sua finalização . <br>
+(trg)="60"> Первая операция блокирует выполнение следующей до тех пор пока не завершится сама . <br>
+<hr>
+(src)="61"> Nota : OK , no nosso caso , isso é ruim e estamos bloqueando o código de propósito , mas isso é um problema comum que desenvolvedores de aplicativos reais sempre tentam resolver . <br>
+(trg)="61"> Примечание : Хорошо , в приведённом некрасивом примере , мы получили эффект блокировки , который показывает общую проблему при разработке приложений , с которой все время приходится бороться разработчикам . <br>
+<hr>
+(src)="62"> E por quê isso acontece ? <br>
+(trg)="62"> Почему так происходит ? <br>
+<hr>
+(src)="63"> A resposta é que o JavaScript é single threaded . <br>
+(trg)="63"> Потому что JavaScript , в общем случае , выполняет команды в одном потоке . <br>
+<hr>
+(src)="64"> E é neste ponto que precisamos introduzir a você o conceito de threads . <br>
+(trg)="64"> Пришло время познакомиться с понятием потока . <br>
+<hr>
+(src)="65"> Threads <br>
+(trg)="65"> Потоки <br>
+<hr>
+(src)="66"> Uma thread é basicamente um único processo que um programa pode usar para concluir tarefas . <br>
+(trg)="66"> Под потоком , обычно , понимают одиночный процесс , который может использовать программа , для выполнения своих нужд . <br>
+<hr>
+(src)="67"> Cada thread só pode fazer uma tarefa de cada vez : <br>
+(trg)="67"> Каждый поток может выполнять только одну в текущий момент времени : <br>
+<hr>
+(src)="68"> Tarefa A - - &gt; Tarefa B - - &gt; Tarefa C <br>
+(trg)="68"> Task A -- &gt; Task B -- &gt; Task C <br>
+<hr>
+(src)="69"> Cada tarefa será executada sequencialmente ; uma tarefa tem que ser concluída antes que a próxima possa ser iniciada . <br>
+(trg)="69"> Каждая задача будет выполнена последовательно ; только когда текущая задача завершится , следующая сможет начаться . <br>
+<hr>
+(src)="70"> Como foi dito anteriormente , muitos computadores possuem múltiplos núcleos , para que possam fazer múltiplas coisas de uma vez só . <br>
+(trg)="70"> Как мы говорили выше , большинство компьютеров теперь имеют процессор с несколькими ядрами , т.е. могут выполнять несколько задач одновременно . <br>
+<hr>
+(src)="71"> Linguagens de programação que podem suportar múltiplas threads podem usar múltiplos processadores para concluir múltiplas tarefas simultâneamente : <br>
+(trg)="71"> Языки программирования , поддерживающие многопоточность , могут использовать несколько ядер , чтобы выполнять несколько задач одновременно : <br>
+<hr>
+(src)="72"> Thread 1 : Tarefa A - - &gt; Tarefa B <br>
+(trg)="72"> Thread 1 : Task A -- &gt; Task B <br>
+<hr>
+(src)="73"> Thread 2 : Tarefa C - - &gt; Tarefa D <br>
+(trg)="73"> Thread 2 : Task C -- &gt; Task D <br>
+<hr>
+(src)="74"> JavaScript é single threaded <br>
+(trg)="74"> JavaScript однопоточный <br>
+<hr>
+(src)="75"> JavaScript é tradicionalmente single - threaded . <br>
+(trg)="75"> JavaScript , традиционно для скриптовых языков , однопоточный . <br>
+<hr>
+(src)="76"> Mesmo com múltiplos núcleos de processamento , você só pode fazê-lo executar tarefas em uma única thread , chamada de main thread ( thread principal ) . <br>
+(trg)="76"> Даже , если есть несколько ядер , вы можете использовать их только для выполнения задач в одном потоке , называемом основной поток . <br>
+<hr>
+(src)="77"> Nosso exemplo de cima é executado assim : <br>
+(trg)="77"> Наш пример выше , выполняется следующим образом : <br>
+<hr>
+(src)="78"> Main thread : Renderizar circulos no canvas - - &gt; Mostrar alert ( ) <br>
+(trg)="78"> Main thread : Render circles to canvas -- &gt; Display alert ( ) <br>
+<hr>
+(src)="79"> Depois de um tempo , o JavaScript ganhou algumas ferramentas para ajudar em tais problemas . <br>
+(src)="80"> As Web workers te permitem mandar parte do processamento do JavaScript para uma thread separada . <br>
+(trg)="79"> В итоге , JavaScript получил несколько инструментов , которые могут помочь в решении подобных проблем . Web workers позволяют вам обработать некоторый JavaScript-код в отдельном потоке , который называется обработчик , таким образом вы можете запускать отдельные блоки JavaScript-кода одновременно . <br>
+<hr>
+(src)="81"> Você geralmente usaria uma worker para executar um processo pesado para que a UI não seja bloqueada . <br>
+(trg)="80"> В основном , вы будете использовать воркеры , чтобы запустить ресурсоёмкий процесс , отдельно от основного потока , чтобы не блокировать действия пользователя . <br>
+<hr>
+(src)="82"> Main thread : Tarefa A - - &gt; Tarefa C <br>
+(trg)="81"> Main thread : Task A -- &gt; Task C <br>
+<hr>
+(src)="83"> Worker thread : Tarefa pesada B <br>
+(trg)="82"> Worker thread : Expensive task B <br>
+<hr>
+(src)="84"> Com isso em mente , dê uma olhada em simple - sync - worker.html ( veja aqui ) , com o seu console JavaScript aberto . <br>
+(trg)="83"> Помня об этом , выполните наш следующий пример simple-sync-worker.html ( посмотреть пример в действии ) , с открытой консолью . <br>
+<hr>
+(src)="85"> Isso é uma nova versão do nosso exemplo que calcula 10 milhões de datas em uma thread worker separada . <br>
+(trg)="84"> Это переписанный предыдущий пример , который теперь рассчитывает 10 миллионов дат в отдельном потоке обработчика . <br>
+<hr>
+(src)="86"> Agora , quando você clica no botão , o navegador é capaz de mostrar o parágrafo antes que as datas sejam terminadas . <br>
+(trg)="85"> Теперь , когда вы нажимаете на кнопку , браузер может добавить новый элемент на страницу , до того как все даты будут посчитаны . <br>
+<hr>
+(src)="87"> A primeira operação não bloqueia a segunda . <br>
+(trg)="86"> Самая первая операция больше не блокирует выполнение следующей . <br>
+<hr>
+(src)="88"> Código assíncrono <br>
+(trg)="87"> Асинхронный код <br>
+<hr>
+(src)="89"> Web workers podem ser bem úteis , mas elas tem as suas limitações . <br>
+(trg)="88"> Воркеры полезный инструмент , но у них есть свои ограничения . <br>
+<hr>
+(src)="90"> Uma delas é que elas não são capazes de acessar a { { Glossary ( “ DOM ” ) } } — você não pode fazer com que uma worker faça algo diretamente para atualizar a UI . <br>
+(trg)="89"> Самое существенное , заключается в том , что они не имеют доступа к { { Glossary ( “ DOM ” ) } } — вы не можете использовать воркер для обновления UI . <br>
+<hr>
+(src)="91"> Nós não poderíamos renderizar nossos 1 milhão de círculos azuis na nossa worker ; basicamente ela pode apenas fazer cálculos de números . <br>
+(trg)="90"> Мы не можем отрисовать миллион наших точек внутри воркера ; он может только обработать большой объем информации . <br>
+<hr>
+(src)="92"> O segundo problema é que , mesmo que o código executado em uma worker não cause um bloqueio , ele ainda é um código síncrono . <br>
+(trg)="91"> Следующая проблема заключается в том , что даже если код запущенный в воркере ничего не блокирует , он в целом остаётся синхронным . <br>
+<hr>
+(src)="93"> Isso se torna um problema quando uma função depende dos resultados de processos anteriores para funcionar . <br>
+(trg)="92"> Это проблема появляется , когда какой-то функции требуются результаты выполнения нескольких предыдущих функций . <br>
+<hr>
+(src)="94"> Considere os diagramas a seguir : <br>
+(trg)="93"> Рассмотрим следующую диаграмму потоков : <br>
+<hr>
+(src)="95"> Main thread : Tarefa A - - &gt; Tarefa B <br>
+(trg)="94"> Main thread : Task A -- &gt; Task B <br>
+<hr>
+(src)="96"> Nesse caso , digamos que a tarefa A está fazendo algo como pegar uma imagem do servidor e que a tarefa B faz algo com essa imagem , como colocar um filtro nela . <br>
+(trg)="95"> В этом примере , предположим Task A делает что-то вроде получения картинки с сервера а Task B затем делает что-нибудь с полученной картинкой , например , применяет к ней фильтр . <br>
+<hr>
+(src)="97"> Se você iniciar a tarefa A e depois tentar executar a tarefa B imediatamente , você obterá um erro , porque a imagem não estará disponível ainda . <br>
+(trg)="96"> Если запустить выполняться Task A и тут же попытаться выполнить Task B , то вы получите ошибку , поскольку картинка ещё не будет доступна . <br>
+<hr>
+(src)="98"> Main thread : Tarefa A - - &gt; Tarefa B - - &gt; | Tarefa D | <br>
+(trg)="97"> Main thread : Task A -- &gt; Task B -- &gt; | Task D | <br>
+<hr>
+(src)="99"> Worker thread : Tarefa C - - - - - - - - - - - - - - - &gt; | | <br>
+(trg)="98"> Worker thread : Task C ----------- &gt; | | <br>
+<hr>
+(src)="100"> Neste caso , digamos que a tarefa D faz uso dos resultados das tarefas B e C . <br>
+(trg)="99"> Теперь , давайте предположим , что Task D использует результат выполнения обеих задач Task B и Task C. <br>
+<hr>
+(src)="101"> Se nós pudermos garantir que esses resultados estejam disponíveis ao mesmo tempo , então tudo talvez esteja bem , mas isso não é garantido . <br>
+(trg)="100"> Если мы уверенны , что оба результата будут доступны одновременно , тогда не возникнет проблем , однако , часто это не так . <br>
+<hr>
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# fr/games/anatomy/index.xml.gz<br>
+# zh_CN/games/anatomy/index.xml.gz
+
+<p><hr>
+(src)="1"> { { GamesSidebar } } <br>
+(trg)="1"> { { GamesSidebar } } <br>
+<hr>
+(src)="2"> Cet article se concentre sur l ’ anatomie et le flux de la plupart des jeux video à partir d ’ un point de vue technique , concernant la manière dont la boucle principale devrait tourner . <br>
+(trg)="2"> 本文 从 技术 角度 分析 了 一般 电子 游戏 的 结构 和 工作 流程 ， 就此 介绍 主 循环 是 如何 运行 的 。 <br>
+<hr>
+(src)="3"> Cela aide les débutants dans l ’ arène du développement à comprendre ce qui est requis quand il est question de bâtir un jeu et comment les standards du web comme JavaScript leur est offert comme outil . <br>
+(trg)="3"> 它 有助 于 初学者 了解 在 现代 游戏 开发 领域 构 建 游戏 时 需要 什么 ， 以及 如何 将 JavaScript 这样 的 Web 标准 工具 作为 自己 的 工具 使用 。 <br>
+<hr>
+(src)="4"> Les programmeurs de jeux expérimentés et nouveaux dans le développement web pourront aussi en tirer bénéfice . <br>
+(trg)="4"> 游戏 开发 经验 丰富 但 不 熟悉 Web 开发 的 开发 者 也能 从中 受益 。 <br>
+<hr>
+(src)="5"> Présenter , accepter , interpréter , calculer , repéter <br>
+(trg)="5"> 呈现 、 接收 、 解释 、 计算 、 重复 <br>
+<hr>
+(src)="6"> Le but de chaque jeu vidéo est de présenter à ( aux ) utilisateur ( s ) une situation , accepter leur entrée , interpréter ces signaux en actions , et calculer une nouvelle situation résultant de ces actes . <br>
+(trg)="6"> 所有电子游戏的目标都是向用户 呈现 一个场景 ， 接收 他们的输入 ， 将这些输入信号 解释 为动作 ， 并 计算 出 由 这些 动作 产生 的 新 场景 。 <br>
+<hr>
+(src)="7"> Les jeux bouclent continuellement à travers ces niveaux , jusqu ’ à ce qu ’ une condition finale arrive ( comme gagner , perdre , ou quitter le jeu ) . <br>
+(trg)="7"> 游戏 不断地 循环 遍 历 ， 一遍 又 一遍 ， 直到 遇到 某些 终止 条件 （ 比如 赢 、 输 或者 退出 睡觉 ） 。 <br>
+<hr>
+(src)="8"> Sans surprise , ce modèle correspond à la manière dont un moteur de jeu est programmé . <br>
+(trg)="8"> 毫不 奇怪 ， 这种 模式 与 游戏 引擎 的 编 程 方式 相 呼应 。 <br>
+<hr>
+(src)="9"> Ces spécificités dépendent du jeu . <br>
+(trg)="9"> 具体 情况 取决 于 游戏 本身 。 <br>
+<hr>
+(src)="10"> Certains jeu maintiennent ce cycle par les entrées du joueur . <br>
+(trg)="10"> 一些游戏通过 用户 输入 来 驱动 这个 循环 。 <br>
+<hr>
+(src)="11"> Imaginez que vous développez un jeu du type “ trouvez les différences entre ces deux images ” . <br>
+(trg)="11"> 想象 一下 ， 你 正在 开发 一种 “ 大家 来 找 茬 ” 类型 的 游戏 。 <br>
+<hr>
+(src)="12"> Ces jeux présentent deux images à l ’ utilisateur ; ils accèptent leur clics ( ou touchés ) ; ils interprètent l ’ entrée comme un succès , une erreur , une pause , une interaction de menu , etc. ; finalement , ils calculent une scène mise à jour resultant de l ’ entrée de donnée . <br>
+(trg)="12"> 这些游戏向用户 呈现 两张图片 ， 游戏 接收 点击 （ 或触摸 ） ； 将用户输入 解释 为 成功 ， 失败 ， 暂停 ， 菜单 交互 等 。 <br>
+(trg)="13"> 最后 ， 游戏根据用户的输入 计算 并 更新 游戏 场景 。 <br>
+<hr>
+(src)="13"> La boucle du jeu évolue par l ’ entrée de l ’ utilisateur et s ’ arrête jusqu ’ à ce qu ’ il en soumette une nouvelle . <br>
+(trg)="14"> 这种 游戏 是 由 用户 的 输入 驱动 ， 也就是说 ， 它 会 在 用户 进行 输入 之后 冻结 画面 ， 等待 玩家 进行 新的 输入 。 <br>
+<hr>
+(src)="14"> C ’ est plus une approche au coup par coup qui ne demande pas une mise à jour continuelle de chaque image , mais juste quand le joueur réagit . <br>
+(trg)="15"> 这 是 一种 基于 回 合 的 游戏 类型 ， 它 不需要 每 帧 持续 更新 画面 ， 只有 当 玩家 作出 反应 时 才 会 。 <br>
+<hr>
+(src)="15"> D ’ autres jeux demandent un contrôle précis à chaque fraction de seconde . <br>
+(trg)="16"> 另 一些 游戏 需要 尽可能 控制 每 一个 细 微 的 时间 片 （ 动画 ） 。 <br>
+<hr>
+(src)="16"> Les principes sont les mêmes avec une légère différence : chaque animation fait progresser le cycle et tout changement d ’ entrée d ’ un utilisateur est capturé dès que possible . <br>
+(trg)="17"> 与 上述 原理 有点 小 区别 ： 每 个 动画 帧 都 将 循环 遍 历 ， 并 在 之后 第 一个 可用 的 轮 次 捕获 玩家 输入 的 任何 变化 。 <br>
+<hr>
+(src)="17"> Ce modèle au coup par image est implementé dans ce que l ’ on appelle la boucle principale . <br>
+(trg)="18"> 这种每帧一次的模型是通过一个叫 主 循环 的 东西 实现 的 。 <br>
+<hr>
+(src)="18"> Si vos boucles de jeu sont basées sur le temps alors ce sera là-dessus que seront basées vos simulations . <br>
+(trg)="19"> 如果 你的 游戏 循环 是 基于 时间 的 ， 则 必须 保证 对 主 循环 精准 的 模拟 。 <br>
+<hr>
+(src)="19"> Mais parfois ce n ’ est pas un contrôle dans le temps . <br>
+(trg)="21"> 你的 游戏 循环 可能 类似 找 不同 的 例子 ， 并 以 输入 事件 作为 基础 。 <br>
+<hr>
+(src)="20"> Votre boucle de jeu peut être similaire à l ’ exemple cherchez les différences et se baser directement sur les entrées . <br>
+(trg)="22"> 它 可能 需要 输入 和 模拟 时间 片 。 <br>
+(trg)="23"> 它 甚至 可以 基于 其他 的 东西 来 循环 。 <br>
+<hr>
+(src)="21"> Cela peut être nécessaire d ’ avoir à la fois les entrées et un temps simulé . <br>
+(trg)="24"> 现代 JavaScript - 正如 下 一节 中 所 描述 的 - 它 可以 轻松 开发 出 一个 高效 的 ， 逐 帧 执行 的 主 循环 ， 这 很 值得 庆幸 。 <br>
+<hr>
+(src)="22"> Cela peut aussi être basé sur une boucle qui utilise d ’ autre chose . <br>
+(trg)="25"> 当然 ， 你的 游戏 只 会 按照 你 所 做的 那样 优 化 。 <br>
+<hr>
+(src)="23"> Le JavaScript moderne — comme décrit dans les prochaines sections — heureusement , facilite le développement d ’ une boucle efficace éxécutée une fois par seconde . <br>
+(trg)="28"> JavaScript 能 很好 的 处理 事件 和 回 调 函数 。 <br>
+(trg)="29"> 现代 浏览 器 努力 在 需要 的 时候 调 用 方法 ， 并 在 间隙 中 闲下来 （ 或 做 其他 任务 ） 。 <br>
+<hr>
+(src)="24"> Bien sûr , votre jeu sera optimisé au long de sa conception . <br>
+(trg)="30"> 将 你的 代码 附加 到 适合 它们 的 时刻 是 一个 很好 的 主意 。 <br>
+<hr>
+(src)="25"> Si quelque chose doit s ’ apparenter à un évènement peu fréquent alors il sera préférable de briser la boucle principale ( mais pas tout le temps ) . <br>
+(trg)="35"> 在 Web 中 ， 通常 { { domxref ( “ window.requestAnimationFrame ( ) ” ) } } 方法 是 大 多数 良好 的 逐 帧 循环 的 基础 。 <br>
+<hr>
+(src)="26"> Construire une boucle principale en JavaScript <br>
+(trg)="37"> 下面 是 一个 简单 的 主 循环 的 例子 ： <br>
+<hr>
+(src)="27"> JavaScript travaille beaucoup mieux avec des évènements et des fonctions de rappel . <br>
+(trg)="43"> 备注 ： 在这里讨论的每个 main ( ) 方法中 ， 在执行循环内容之前 ， 我们会递归调用一个新的 requestAnimationFrame ， 这 不是 随意 的 ， 它 被 认为 是 最佳 实践 。 <br>
+<hr>
+(src)="28"> Les navigateur modernes s ’ efforcent d ’ appeler des méthodes au moment où elles sont nécessaires et mises en pause ( ou font leur travail ) le reste du temps . <br>
+(trg)="44"> 如果你的当前帧错过了它的垂直同步窗口的周期 ， 你也在下一个帧通过 requestAnimationFrame 尽早的调用 main ( ) ， 从而 确保 浏览 器 能够 及时 地 执行 。 <br>
+<hr>
+(src)="29"> Il est de bonne pratique d ’ attacher votre code au moment le plus approprié . <br>
+(trg)="46"> 第一个语句创建一个名为 main ( ) 中的 全局 变量 的 函数 。 <br>
+<hr>
+(src)="30"> Pensez à quel moment votre fonction à besoin d ’ être appelée sur un interval de temps strict , à chaque image , ou seulement après que quelque chose se soit passé . <br>
+(trg)="49"> 因为 main ( ) 中在第二个语句中被调用一次 ， 而每次调用都将自身又放置到下一个帧的执行队列中 ， 因此 main ( ) 的 调 用 与 你的 帧 率 同步 。 <br>
+<hr>
+(src)="31"> Être plus spécifique avec le navigateur quand votre fonction à besoin d ’ être appelée permet au navigateur d ’ être optimisé une fois votre boucle appelée . <br>
+(trg)="52"> 将 主 循环 的 时机 安排 在 浏览 器 每次 的 绘制 显示 中 ， 允许 你 能 像 浏览 器 想要 绘制 的 那样 频繁 的 运行 你的 循环 。 <br>
+<hr>
+(src)="32"> De plus , cela peut rendre votre tâche plus aisée . <br>
+(trg)="58"> 有 很多 这样 的 东西 ， 它们 会 让 你的 工作 更 轻松 。 <br>
+<hr>
+<p>
+
+# fr/games/index.xml.gz<br>
+# zh_CN/games/index.xml.gz
+
+<p><hr>
+(src)="1"> { { GamesSidebar } } <br>
+(trg)="1"> { { GamesSidebar } } <br>
+<hr>
+(src)="2"> Les jeux vidéo sont parmi les activités numériques les plus populaires . <br>
+(trg)="2"> 游戏 是 最 流行 的 计算 机 活动 之一 。 <br>
+<hr>
+(src)="4"> { { EmbedGHLiveSample ( “ web-tech-games / index.html ” , ‘ 100 % ’ , 820 ) } } <br>
+(trg)="3"> 新 技术 不断 涌现 ， 使得 开发 者 有 可能 开发 出 更好 、 更 强大 、 可以 在 任何 符合 标准 的 web 浏览 器 运行 的 游戏 。 <br>
+<hr>
+(src)="5"> Développement de jeux pour le web <br>
+(trg)="4"> 开发 网页 游戏 <br>
+<hr>
+(src)="6"> Bienvenue dans le centre de développement de jeux MDN ! <br>
+(trg)="5"> 欢迎 来到 MDN 游戏 开发 中心 ！ <br>
+<hr>
+(src)="7"> Dans cette zone du site , nous fournissons des ressources pour les développeurs web désireux de développer des jeux . <br>
+(trg)="6"> 在 网站 的 这 一 模 块 ， 我们 为 想要 开发 游戏 的 web 开发 者 提供 了 资源 。 <br>
+<hr>
+(src)="8"> Vous trouverez de nombreux tutoriels et articles techniques dans le menu principal à gauche , alors n ’ hésitez pas à explorer . <br>
+(trg)="7"> 你 可以 在 左侧 主 菜单 中 找到 很多 有用 的 教程 和 技术 文 档 ， 尽情 去 探索 吧 。 <br>
+<hr>
+(src)="9"> Nous avons également inclus une section de références afin que vous puissiez facilement trouver des informations sur toutes les API les plus courantes utilisées dans le développement de jeux . <br>
+(trg)="8"> 我们 同样 提供 了 参考 部分 ， 因此 你 可以 轻易 地 找到 有关 游戏 开发 所有 常用 的 API 。 <br>
+<hr>
+(src)="10"> Note : La création de jeux sur le Web s ’ appuie sur un certain nombre de technologies Web de base telles que HTML , CSS et JavaScript . <br>
+(trg)="9"> 备注 ： 在 创建 一个 网页 游戏 之前 你 至少 需要 掌握 几 种 核心 的 web 技术 ， 例如 HTML 、 CSS 和 Javascript 。 <br>
+<hr>
+(src)="11"> La Zone “ Apprendre ” est un bon endroit pour commencer avec les bases . <br>
+(trg)="10"> 你可以在 学习 区 开始 这些 基础 知识 的 学习 。 <br>
+<hr>
+(src)="12"> Portez des jeux natifs sur le Web <br>
+(trg)="11"> 将 本地 游戏 移植 到 web <br>
+<hr>
+(src)="13"> Si vous êtes un développeur natif ( par exemple écrivant des jeux en C + + ) , et que vous êtes intéressé par la façon dont vous pouvez porter vos jeux sur le Web , vous devriez en apprendre plus sur notre outil Emscripten - c ’ est un compilateur LLVM vers JavaScript , qui prend le “ bytecode LLVM ” ( par exemple , généré à partir de C / C + + en utilisant Clang ou un autre langage ) et le compile dans asm.js , qui peut être exécuté sur le Web . <br>
+(trg)="12"> 如果你是一个本地游戏开发者 （ 例如使用 C + + 开发游戏 ） ， 并且你对如何将这些游戏移植到 Web 感兴趣 ， 你应该更多地了解 Emscripten 工具 — — 这 是 一个 LLVM 转 JavaScript 编译 器 。 <br>
+(trg)="13"> 它能接受 LLVM 字节码 （ 例如用 Clang 编译 C / C + + 或者其他语言生成的字节码 ） 输入并将它们编译成 asm.js 以 在 Web 上 运行 。 <br>
+<hr>
+(src)="14"> Pour commencer , voir : <br>
+(trg)="14"> 要 入门 相关 知识 ， 请 参阅 ： <br>
+<hr>
+(src)="15"> About Emscripten pour une introduction incluant des détails de haut niveau . <br>
+(trg)="15"> 关于 Emscripten — — 简介 和 高级 特性 。 <br>
+<hr>
+(src)="16"> D / gameswnload and Install pour installer la chaîne d ’ outils . <br>
+(trg)="16"> 下载 和 安装 — — 安装 工具 链 。 <br>
+<hr>
+(src)="17"> Emscripten Tutorial pour un tutoriel qui vous enseigne comment commencer . <br>
+(trg)="17"> Emscripten 教程 — — 指导 你 如何 开始 使用 。 <br>
+<hr>
+(src)="18"> Exemples <br>
+(trg)="18"> 示例 <br>
+<hr>
+(src)="19"> Pour une liste d ’ exemples de jeux , voir notre page exemples . <br>
+(trg)="19"> 有关网页游戏示例的列表 ， 请参阅 教程 页 面 。 <br>
+<hr>
+(src)="20"> Consultez aussi https : / / games.mozilla.org / pour des ressources et des exemples plus utiles ! <br>
+(trg)="20"> 此外 ， 请访问 games.mozilla.org 以 获得 更多 有用 的 资源 ！ <br>
+<hr>
+(src)="21"> Voir aussi <br>
+(trg)="21"> 参见 <br>
+<hr>
+(src)="22"> Build New Games ( en anglais ) <br>
+(trg)="22"> Build New Games <br>
+<hr>
+(src)="23"> : Un site collaboratif avec de nombreux tutoriels concernant le développement de jeux vidéo sur le Web . <br>
+(trg)="23"> : 这 是 一个 以 大量 开放 式 网页 游戏 开发 教程 为 特色 的 协作 网站 。 <br>
+<hr>
+(src)="24"> N ’ a pas été très actif récemment , mais détient toujours de belles ressources . <br>
+(trg)="24"> 最近 还 不是 很 活跃 ， 但 还是 拥有 一些 不错 的 资源 。 <br>
+<hr>
+(src)="25"> Creative JS ( en anglais ) <br>
+(trg)="25"> Creative JS <br>
+<hr>
+(src)="26"> : Un ensemble de techniques et d ’ expérimentations JavaScript , pas nécessairement liées au domaine vidéo-ludique mais qui se révèlent plutôt utiles et impressionnantes . <br>
+(trg)="26"> : 一个 令人 印象 深刻 的 JavaScript 技术 和 实验 的 集合 ， 并不 全是 游戏 技术 ， 但 还是 对 开发 有 帮助 。 <br>
+<hr>
+(src)="27"> N ’ a pas été très actif récemment , mais détient toujours de belles ressources . <br>
+(trg)="27"> 最近 并不 非常 活跃 ， 但 仍然 拥有 一些 不错 的 资源 。 <br>
+<hr>
+(src)="28"> Game programming patterns ( en anglais ) <br>
+(trg)="28"> Game Programming Patterns <br>
+<hr>
+(src)="29"> : Un livre en ligne , écrit par Bob Nystrom , qui traite des modèles de programmation dans le contexte du développement de jeux , dans le but d ’ aider les développeurs de jeux à produire un code plus réussi et plus opérationnel . <br>
+(trg)="29"> : 由 Bob Nystrom 撰写 的 在 线 书籍 ， 其中 讨论 了 游戏 开发 环境 中的 编 程 模式 ， 旨 在 帮助 游戏 开发 人员 生成 更 有效 、 更 高效 的 代码 。 <br>
+<hr>
+(src)="30"> Gamedev.js Weekly ( en anglais ) <br>
+(trg)="30"> Gamedev.js Weekly <br>
+<hr>
+(src)="31"> : Bulletin hebdomadaire sur le développement de jeux HTML5 , envoyé tous les vendredis . <br>
+(trg)="31"> : 关于 HTML 游戏 开发 的 每周 新闻 ， 每 星期五 发布 。 <br>
+<hr>
+(src)="32"> Contient les derniers articles , didacticiels , outils et ressources . <br>
+(trg)="32"> 包含 最新 的 文章 、 教程 、 工具 和 资源 。 <br>
+<hr>
+(src)="33"> HTML5 Game Devs Forum ( en anglais ) <br>
+(trg)="33"> HTML5 游戏 引擎 <br>
+<hr>
+(src)="34"> : Forums pour développeurs , créateurs de “ framework ” et éditeurs . <br>
+(trg)="34"> : 眼下 最 流行 的 HTML5 游戏 框架 列表 ， 包含 评 分 、 特色 和 案例 。 <br>
+<hr>
+(src)="35"> Posez des questions , obtenez des commentaires , aidez les autres . <br>
+(trg)="35"> JSBreakouts <br>
+(trg)="36"> : 比较 不同 的 框架 中的 JavaScript 打 砖块 游戏 ， 以 帮助 你 作出 正确 的 选择 。 <br>
+<hr>
+(src)="36"> HTML5 Game Engine ( en anglais ) <br>
+(trg)="37"> Tuts + 游戏 开发 <br>
+<hr>
+(src)="37"> : Liste des architectures de jeux HTML5 les plus populaires ainsi que leurs classement , fonctionnalités et exemples . <br>
+(trg)="38"> : 关于 游戏 开发 的 教程 和 案例 。 <br>
+<hr>
+(src)="38"> JSBreakouts ( en anglais ) <br>
+(trg)="39"> HTML5 Gamedev Starter <br>
+<hr>
+(src)="39"> : Comparez les clones JavaScript Breakout dans différents systèmes pour vous aider à choisir le bon pour vous . <br>
+(trg)="40"> : 面向 游戏 开发 新手 的 入门 工具 ， 包含 网上 精选 的 各类 有用 资源 的 列表 。 <br>
+<hr>
+(src)="40"> Tuts + Game Development ( en anglais ) <br>
+(trg)="41"> js13kGames <br>
+<hr>
+(src)="41"> : Tutoriels et articles sur le developpement de jeux en général . <br>
+(src)="42"> HTML5 Gamedev Starter ( en anglais ) <br>
+(trg)="42"> : 针对 HTML 游戏 开发 者 的 JavaScript 编码 竞赛 ， 文件 大小 限制 设置 为 13 千 字 节 。 <br>
+<hr>
+(src)="43"> : De quoi démarrer pour les nouveaux développeurs de jeux , une liste organisée de liens vers diverses ressources utiles sur le web . <br>
+(trg)="43"> 所有 提交 的 游戏 都 以 可读 的 形式 在 GitHub 上 提供 。 <br>
+<hr>
+(src)="44"> js13kGames ( en anglais ) <br>
+(trg)="44"> Mozilla Hacks 博 客 <br>
+<hr>
+</body>
+</html>

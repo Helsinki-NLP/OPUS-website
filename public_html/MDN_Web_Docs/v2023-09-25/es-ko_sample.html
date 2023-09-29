@@ -1,0 +1,227 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# es/conflicting/web/guide/ajax_21419c7dfa67c94789f037a33c4e4e3e/index.xml.gz<br>
+# ko/conflicting/web/guide/ajax_21419c7dfa67c94789f037a33c4e4e3e/index.xml.gz
+
+<p><hr>
+(src)="1"> Este artículo es una guía básica sobre AJAX e incluye dos ejemplos . <br>
+(trg)="2"> 원문의 변경이 잦아 내용이 다를 수 있으니 참고하십시오 . <br>
+<hr>
+(src)="2"> ¿ Qué es AJAX ? <br>
+(trg)="4"> AJAX 란 ? <br>
+<hr>
+(src)="3"> AJAX ( JavaScript Asíncrono y XML ) es un término nuevo para describir dos capacidades de los navegadores que han estado presentes por años , pero que habían sido ignoradas por muchos desarrolladores Web , hasta hace poco que surgieron aplicaciones como Gmail , Google suggest y Google Maps . <br>
+(trg)="8"> AJAX 의 강력한 특징은 페이지 전체를 리프레쉬 하지 않고서도 수행 되는 “ 비동기성 ” 입니다 . <br>
+(trg)="9"> 이러한 비동기성을 통해 사용자의 Event 가 있으면 전체 페이지가 아닌 일부분만을 업데이트 할 수 있게 해줍니다 . <br>
+<hr>
+(src)="4"> Las dos capacidades en cuestión son : <br>
+(trg)="10"> AJAX 의 주요 두가지 특징은 아래의 작업을 할 수 있게 해줍니다 . <br>
+<hr>
+(src)="5"> La posibilidad de hacer peticiones al servidor sin tener que volver a cargar la página . <br>
+(trg)="11"> 페이지 새로고침 없이 서버에 요청 <br>
+<hr>
+(src)="6"> La posibilidad de analizar y trabajar con documentos XML . <br>
+(trg)="12"> 서버로부터 데이터를 받고 작업을 수행 <br>
+<hr>
+(src)="7"> Primer Paso – Cómo realizar una petición HTTP al servidor <br>
+(trg)="13"> 1 단계 – HTTP request 만드는 방법 <br>
+<hr>
+(src)="8"> Para realizar una petición HTTP usando JavaScript , es necesario crear una instancia de una clase que provea esta funcionalidad . <br>
+(trg)="14"> JavaScript를 이용하여 서버로 보내는 HTTP request를 만들기 위해서는 그에 맞는 기능을 제공하는 Object의 인스턴스가 필요합니다 . XMLHttpRequest 가 그러한 Object 의 한 예입니다 . <br>
+<hr>
+(src)="9"> Esta clase fue inicialmente introducida en Internet Explorer como un objeto ActiveX , llamado XMLHTTP . <br>
+(trg)="15"> 이러한 로직은 Internet Explorer의 XMLHTTP 라고 불리는 ActiveX 객체로 부터 시작되었습니다 . <br>
+<hr>
+(src)="10"> Después Mozilla , Safari y otros navegadores lo siguieron , implementando una clase XMLHttpRequest que soportaba los métodos y las propiedades del objeto ActiveX original . <br>
+(trg)="16"> 이후 , Mozilla , Safari 등 기타 브라우저들이 Microsoft사의 ActiveX 객체의 매서드와 프로퍼티를 지원하는 XMLHttpRequest 객체를 적용합니다 . <br>
+<hr>
+(src)="11"> Como resultado , para crear una instancia de la clase requerida que funcione en todos los navegadores , es necesario poner : <br>
+(trg)="17"> 그러는 동안 , Microsoft 도 XMLHttpRequest 를 적용합니다 . <br>
+(trg)="18"> / / 구버전을 위한 호환성 코드입니다 . <br>
+<hr>
+(src)="12"> if ( window.XMLHttpRequest ) { / / Mozilla , Safari , ... <br>
+(trg)="21"> if ( window . XMLHttpRequest ) { / / 모질라 , 사파리 , IE7 + . . . <br>
+<hr>
+(src)="13"> http _ request = new XMLHttpRequest ( ) ; <br>
+(trg)="22"> httpRequest = new XMLHttpRequest ( ) ; <br>
+<hr>
+(src)="14"> } else if ( window.ActiveXObject ) { / / IE <br>
+(trg)="23"> } else if ( window . ActiveXObject ) { / / IE 6 이하 <br>
+<hr>
+(src)="15"> http _ request = new ActiveXObject ( " Microsoft.XMLHTTP " ) ; <br>
+(trg)="24"> httpRequest = new ActiveXObject ( " Microsoft.XMLHTTP " ) ; <br>
+<hr>
+(src)="16"> } <br>
+(trg)="25"> } <br>
+<hr>
+(src)="17"> ( El código mostrado es una versión simplificada con fines ilustrativos . <br>
+(trg)="26"> 참고 : 주의 : 위의 코드는 XMLHttp 인스턴스를 만드는데 사용된 간단한 버전의 코드입니다 . <br>
+<hr>
+(src)="18"> Para un ejemplo más realista ver el paso 3 de este artículo . ) <br>
+(trg)="27"> 좀 더 현실적인 사용 예를 보려면 이 글의 3 단계를 보십시오 . <br>
+<hr>
+(src)="20"> En ese caso es posible usar un método extra que sobreescriba la cabecera enviada por el servidor , en caso que no sea text / xml . <br>
+(src)="21"> http _ request = new XMLHttpRequest ( ) ; <br>
+(src)="22"> http _ request.overrideMimeType ( ' text / xml ' ) ; <br>
+(trg)="28"> 서버에 요청 ( Request ) 을 하기에 앞서 , 서버로 보낸 요청에 대한 응답을 받았을 때 어떤 동작을 할 것인지 정해야합니다 . <br>
+<hr>
+(src)="24"> A estas alturas sólo es necesario decirle al objeto HTTPrequest qué función de JavaScript se encargará de procesar la respuesta . <br>
+(src)="25"> Para esto se asigna la propiedad onreadystatechange del objeto al nombre de la función de JavaScript que se va a utilizar : <br>
+(trg)="29"> 위에서 생성한 httpRequest 의 onreadystatechange property에 특정 함수 ( nameOfTheFunction ) 를 할당하면 요청에 대한 상태가 변화할 때 특정 함수 ( nameOfTheFunction ) 가 불리게 됩니다 . <br>
+<hr>
+(src)="26"> http _ request.onreadystatechange = nameOfTheFunction ; <br>
+(trg)="30"> httpRequest . onreadystatechange = nameOfTheFunction ; <br>
+<hr>
+(src)="27"> Es importante notar que no hay paréntesis después del nombre de la función y no se pasa ningún parámetro . <br>
+(trg)="31"> 주목할 사항으로는 위에서는 해당 함수를 수행하는 것이 아니라 단순하게 어떤 함수가 불릴 것인지만 지정한다는 점입니다 . <br>
+<hr>
+(src)="28"> También es posible definir la función en ese momento , y poner en seguida las acciones que procesarán la respuesta : <br>
+(trg)="32"> 단순하게 그 함수를 지정하는 것이므로 그 함수로 어떠한 변수도 전달하지 않습니다 . <br>
+<hr>
+(src)="29"> http _ request.onreadystatechange = function ( ) { <br>
+(trg)="34"> httpRequest . onreadystatechange = function ( ) { <br>
+<hr>
+(src)="30"> / / procesar la respuesta <br>
+(trg)="35"> / / 서버의 응답에 따른 로직을 여기에 작성합니다 . <br>
+<hr>
+(src)="31"> } ; <br>
+(trg)="36"> } ; <br>
+<hr>
+(src)="32"> Después de especificar qué pasará al recibir la respuesta es necesario hacer la petición . <br>
+(trg)="37"> 위와 같이 서버로 부터 응답을 받은 후의 동작을 결정 한 뒤에 , 요청을 합니다 . <br>
+<hr>
+(src)="33"> Para esto se utilizan los métodos open ( ) y send ( ) de la clase HTTP request , como se muestra a continuación : <br>
+(trg)="38"> 아래와 같이 HTTP request 객체의 open ( ) 과 send ( ) 를 사용하면 요청을 할 수 있습니다 . <br>
+<hr>
+(src)="34"> http _ request.open ( ' GET ' , ' http : / / www.example.org / algun.archivo ' , true ) ; <br>
+(trg)="39"> httpRequest . open ( ' GET ' , ' http : / / www.example.org / some.file ' , true ) ; <br>
+<hr>
+(src)="35"> http _ request.send ( ) ; <br>
+(trg)="40"> httpRequest . send ( null ) ; <br>
+<hr>
+(src)="36"> El primer parámetro de la llamada a open ( ) es el método HTTP request – GET , POST , HEAD o cualquier otro método que se quiera usar y sea aceptado por el servidor . <br>
+(trg)="42"> 첫번째 파라미터는 HTTP 요구 방식 ( request method ) ─ GET , POST , HEAD 중의 하나이거나 당신의 서버에서 지원하는 다른 방식 ─ 입니다 . <br>
+<hr>
+(src)="37"> El nombre del método se escribe en mayúsculas , sino algunos navegadores ( como Firefox ) podrían no procesar la petición . <br>
+(trg)="44"> 그렇지 않으면 ( 파이어폭스와 같은 ) 특정 브라우저는 이 요구를 처리하지 않을 수도 있습니다 . <br>
+<hr>
+(src)="38"> Para más información sobre los métodos HTTP request visitar W3C specs <br>
+(trg)="45"> HTTP 요구 방식의 보다 자세한 정보는 W3C 명세 를 참고하기 바랍니다 . <br>
+<hr>
+(src)="39"> El segundo parámetro es el URL de la página que se esta pidiendo . <br>
+(trg)="46"> 두번째 파라미터는 요구하고자하는 URL 입니다 . <br>
+<hr>
+(src)="40"> Por medida de seguridad no es posible llamar páginas en dominios de terceras personas . <br>
+(trg)="48"> 요구하는 모든 페이지에 정확한 도메인 네임을 사용하십시오 . <br>
+<hr>
+(src)="41"> Se debe saber el dominio exacto de todas las páginas o se obtendrá un error de ‘ permiso denegado ’ al llamar open ( ) . <br>
+(trg)="49"> 그렇지 않으면 open ( ) 메소드를 호출할 때 ‘ permission denied ’ 에러가 발생할 수 있습니다 . <br>
+<hr>
+(src)="42"> Una falla común es acceder al sitio por domain.tld e intentar llamar las páginas como www.domain.tld . <br>
+(trg)="51"> 이러한 경우 www.domain.tld 와 같은 형태로 페이지를 요구하기 바랍니다 . <br>
+<hr>
+(src)="43"> El tercer parámetro establece si la petición es asíncrona . <br>
+(trg)="52"> 만약 다른 도메인으로 요청을 보내고 싶다면 HTTP 접근 제어 ( CORS ) 를 참고하기 바랍니다 . <br>
+<hr>
+(src)="44"> Si se define TRUE , la ejecución de la función de JavaScript continuará aún cuando la respuesta del servidor no haya llegado . <br>
+(trg)="53"> 세번째 파라미터 ( 생략 가능 ) 는 요구가 비동기식 ( Asynchronous ) 으로 수행될 지를 결정합니다 . <br>
+<hr>
+(src)="45"> Por esta capacidad es la A en AJAX . <br>
+(trg)="55"> 이것이 AJAX 의 첫번째 A ( Asynchronous : 비동기성 ) 입니다 . <br>
+<hr>
+(src)="46"> El parámetro en el método send ( ) puede ser cualquier información que se quiera enviar al servidor si se usa POST para la petición . <br>
+(trg)="57"> send ( ) 메소드의 파라미터는 POST 방식으로 요구한 경우 서버로 보내고 싶은 어떠한 데이터라도 가능합니다 . <br>
+<hr>
+(src)="47"> La información se debe enviar en forma de cadena , por ejemplo : <br>
+(trg)="59"> 예를 들자면 아래와 같습니다 . <br>
+<hr>
+(src)="48"> name = value &amp; anothername = othervalue &amp; so = on <br>
+(trg)="60"> " name = value &amp; anothername = " + encodeURIComponent ( myVar ) + " &amp; so = on " <br>
+<hr>
+(src)="50"> http _ request.setRequestHeader ( ' Content-Type ' , ' application / x-www-form-urlencoded ' ) ; <br>
+(trg)="61"> multipart / form - data , JSON , XML , SOAP 등과 같은 다른 형식 ( format ) 도 가능합니다 . <br>
+<hr>
+(src)="51"> De otro modo el servidor descartará la información . <br>
+(trg)="63"> 예를 들자면 send ( ) 를 호출 하기 전에 아래와 같은 형태로 send ( ) 로 보낼 쿼리를 이용해야 합니다 . <br>
+<hr>
+(src)="52"> Segundo Paso – Procesando la respuesta del servidor <br>
+(trg)="64"> httpRequest . setRequestHeader ( ' Content - Type ' , ' application / x - www - form - urlencoded ' ) ; <br>
+<hr>
+(src)="53"> Al enviar la petición HTTP es necesario indicar el nombre de la función JavaScript que procesará la respuesta . <br>
+(trg)="66"> 서버로 요청 ( request ) 을 보내기 전에 , 위 ( 1 단계 - HTTP Request 만들기 ) 에서는 서버의 응답을 처리하기 위한 자바스크립트 함수의 이름을 지정했었습니다 . <br>
+<hr>
+(src)="54"> http _ request.onreadystatechange = nameOfTheFunction ; <br>
+(trg)="67"> httpRequest . onreadystatechange = nameOfTheFunction ; <br>
+<hr>
+(src)="55"> A continuación se verá lo que esta función realiza . <br>
+(trg)="68"> 이 함수는 무슨 일을 수행해야 할까요 ? <br>
+<hr>
+(src)="56"> En primer lugar necesita revisar el estado de la petición . <br>
+(trg)="69"> 먼저 , 해당 함수에서는 요구의 상태값을 검사할 필요가 있습니다 . <br>
+<hr>
+(src)="57"> Si el estado tiene el valor 4 , significa que la respuesta completa del servidor ha sido recibida y es posible continuar procesándola . <br>
+(trg)="70"> 만약 상태값이 XMLHttpRequest.DONE ( 상수 4 로 정의되어 있습니다 . ) <br>
+(trg)="71"> 라면 , 서버로부터 모든 응답을 받았으며 이를 처리할 준비가 되었다는 것을 뜻합니다 . <br>
+<hr>
+(src)="58"> if ( http _ request.readyState = = 4 ) { <br>
+(trg)="72"> if ( httpRequest . readyState = = = XMLHttpRequest . DONE ) { <br>
+<hr>
+(src)="59"> / / todo va bien , respuesta recibida <br>
+(trg)="73"> / / 이상 없음 , 응답 받았음 <br>
+<hr>
+(src)="60"> } else { <br>
+(trg)="74"> } else { <br>
+<hr>
+(src)="61"> / / aun no esta listo <br>
+(trg)="75"> / / 아직 준비되지 않음 <br>
+<hr>
+(src)="62"> } <br>
+(trg)="76"> } <br>
+<hr>
+(src)="63"> La lista completa de valores para la propiedad readyState es : <br>
+(trg)="77"> readyState 가 가질 수 있는 모든 값의 목록은 XMLHTTPRequest.readyState 에 작성되어있으며 아래와 같습니다 : <br>
+<hr>
+(src)="64"> 0 ( no inicializada ) <br>
+(trg)="78"> 0 ( uninitialized ) - ( request 가 초기화되지 않음 ) <br>
+<hr>
+(src)="65"> 1 ( leyendo ) <br>
+(trg)="79"> 1 ( loading ) - ( 서버와의 연결이 성사됨 ) <br>
+<hr>
+(src)="66"> 2 ( leido ) <br>
+(trg)="80"> 2 ( loaded ) - ( 서버가 request 를 받음 ) <br>
+<hr>
+(src)="67"> 3 ( interactiva ) <br>
+(trg)="81"> 3 ( interactive ) - ( request ( 요청 ) 을 처리하는 중 ) <br>
+<hr>
+(src)="68"> 4 ( completo ) <br>
+(trg)="82"> 4 ( complete ) - ( request 에 대한 처리가 끝났으며 응답할 준비가 완료됨 ) <br>
+<hr>
+(src)="69"> ( Source ) <br>
+(trg)="83"> ( 원문 참고 ) <br>
+<hr>
+(src)="70"> Ahora es necesario revisar el código de status de la respuesta HTTP . <br>
+(trg)="84"> 그 다음에는 HTTP 응답 상태 코드 를 검사해야 합니다 . <br>
+<hr>
+(src)="71"> La lista completa de códigos aparece en el sitio de la W3C . <br>
+(trg)="85"> 가능한 모든 코드 값의 목록은 W3C 에서 확인할 수 있습니다 . <br>
+<hr>
+(src)="72"> Para el próposito de este artículo sólo es importante el código 200 OK . <br>
+(trg)="86"> 아래 예제에서는 AJAX 요청이 정상적으로 처리되었는지 아닌지만을 검사하기 위해 응답 코드가 200 OK 인지 검사하는 예제입니다 . <br>
+<hr>
+(src)="73"> if ( http _ request.status = = 200 ) { <br>
+(trg)="87"> if ( httpRequest . status = = = 200 ) { <br>
+<hr>
+(src)="74"> / / perfect ! <br>
+(src)="75"> } else { <br>
+(trg)="88"> / / 이상 없음 ! <br>
+<hr>
+</body>
+</html>

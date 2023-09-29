@@ -1,0 +1,313 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# en/games/anatomy/index.xml.gz<br>
+# ru/games/anatomy/index.xml.gz
+
+<p><hr>
+(src)="1"> { { GamesSidebar } } <br>
+(trg)="1"> { { GamesSidebar } } <br>
+<hr>
+(src)="2"> This article looks at the anatomy and workflow of the average video game from a technical point of view , in terms of how the main loop should run . <br>
+(trg)="2"> Эта статья рассматривает анатомию и рабочий процесс создания средней видеоигры с технической точки зрения и определений того , как должен выглядеть главный цикл приложения . <br>
+<hr>
+(src)="3"> It helps beginners to modern game development understand what is required when building a game and how web standards like JavaScript lend themselves as tools . <br>
+(trg)="3"> Она служит для помощи начинающим разработчикам в разработке современных игр , а также для понимания того , что необходимо знать при построении игры и как применять различные web-стандарты и инструменты , такие как JavaScript . <br>
+<hr>
+(src)="4"> Experienced game programmers who are new to web development could also benefit , too . <br>
+(trg)="4"> Опытные разработчики игр , которые только пришли в мир web-разработки тоже могут почерпнуть для себя много интересного . <br>
+<hr>
+(src)="5"> Present , accept , interpret , calculate , repeat <br>
+(trg)="5"> Показать , получить , преобразовать , вычислить , повторить <br>
+<hr>
+(src)="6"> The goal of every video game is to present the user ( s ) with a situation , accept their input , interpret those signals into actions , and calculate a new situation resulting from those acts . <br>
+(trg)="6"> Целью каждой видеоигры является показ пользователю ( пользователям ) игровой ситуации , получение пользовательских сигналов , преобразования их в действия и вычисления новой ситуации как результат этих действий . <br>
+<hr>
+(src)="7"> Games are constantly looping through these stages , over and over , until some end condition occurs ( such as winning , losing , or exiting to go to bed ) . <br>
+(trg)="7"> Игры постоянно повторяют эти стадии , снова и снова , до тех пор пока не наступит завершающее условие ( такое как победа , поражение , или выход из игры с целью поспать ) . <br>
+<hr>
+(src)="8"> Not surprisingly , this pattern corresponds to how a game engine is programmed . <br>
+(trg)="8"> Не удивительно , что данный шаблон соответствует тому как программируется игровая логика ( движок ) . <br>
+<hr>
+(src)="9"> The specifics depend on the game . <br>
+(trg)="9"> Особенности игр . <br>
+<hr>
+(src)="10"> Some games drive this cycle by user input . <br>
+(trg)="10"> Некоторые игры управляют своим циклом при помощи пользовательского ввода . <br>
+<hr>
+(src)="11"> Imagine that you are developing a “ find the differences between these two similar pictures ” -type game . <br>
+(trg)="11"> Представьте , что вы разрабатываете игру типа “ найди разницу между этими двумя похожими картинками ” . <br>
+<hr>
+(src)="12"> These games present two images to the user ; they accept their click ( or touch ) ; they interpret the input as a success , failure , pause , menu interaction , etc . ; finally , they calculate an updated scene resulting from that input . <br>
+(trg)="12"> Такого рода игры показывают пользователю две картинки ; они получают их клики ( или касания ) ; они преобразуют ввод в успешный , не успешный , пауза , работа с меню , и так далее ; в конечном итоге , в зависимости от данных действий , они вычисляют обновлённое состояние сцены . <br>
+<hr>
+(src)="13"> The game loop is advanced by the user ’ s input and sleeps until they provide it . <br>
+(trg)="13"> Игровой цикл продвигается пользовательскими действиями и “ спит ” пока таковые отсутствуют . <br>
+<hr>
+(src)="14"> This is more of a turn-based approach that doesn ’ t demand a constant update every frame , only when the player reacts . <br>
+(trg)="14"> Это пример так называемой пошаговой игры , которая не зависит от постоянного обновления каждого кадра , а только от действий пользователя . <br>
+<hr>
+(src)="15"> Other games demand control over each of the smallest possible individual timeslices . <br>
+(trg)="15"> Другие игры требуют контроля над каждым из минимально возможных индивидуальных временных интервалов . <br>
+<hr>
+(src)="16"> The same principles as above apply with a slight twist : each frame of animation progresses the cycle and any change in user input is caught at the first available turn . <br>
+(trg)="16"> Те же принципы , что и выше , применяются с небольшим изменением : каждый кадр анимации продолжает цикл , и любое изменение пользовательского ввода фиксируется на первом доступном ходе . <br>
+<hr>
+(src)="17"> This once-per-frame model is implemented in something called a main loop . <br>
+(trg)="17"> Эта покадровая модель реализована в так называемом основном цикле . <br>
+<hr>
+(src)="18"> If your game loops based on time then this will be its authority that your simulations will adhere to . <br>
+(trg)="18"> Если ваша игра зацикливается на времени , то это будет её полномочия , которые будут соблюдать ваши симуляции . <br>
+<hr>
+(src)="19"> But it might not need per-frame control . <br>
+(trg)="19"> Но покадровое управление может и не понадобиться . <br>
+<hr>
+(src)="20"> Your game loop might be similar to the find the differences example and base itself on input events . <br>
+(trg)="20"> Ваш игровой цикл может быть похож на пример поиска отличий и основан на входных событиях . <br>
+<hr>
+(src)="21"> It might require both input and simulated time . <br>
+(trg)="21"> Это может потребовать как ввода , так и симуляции времени . <br>
+<hr>
+(src)="22"> It might even loop based on something else entirely . <br>
+(trg)="22"> Он может даже зацикливаться на чем-то совершенно другом . <br>
+<hr>
+(src)="23"> Modern JavaScript — as described in the next sections — thankfully makes it easy to develop an efficient , execute-once-per-frame main loop . <br>
+(trg)="23"> Современный JavaScript , как описано в следующих разделах , к счастью , позволяет легко разработать эффективный основной цикл выполнения один раз в кадр . <br>
+<hr>
+(src)="24"> Of course , your game will only be as optimized as you make it . <br>
+(trg)="24"> Конечно , ваша игра будет оптимизирована настолько , насколько вы её сделаете . <br>
+<hr>
+(src)="25"> If something looks like it should be attached to a more infrequent event then it is often a good idea to break it out of the main loop ( but not always ) . <br>
+(trg)="25"> Если что-то выглядит так , как будто оно должно быть прикреплено к более редкому исходу , то часто бывает хорошей идеей вырвать его из основного цикла ( но не всегда ) . <br>
+<hr>
+(src)="26"> Building a main loop in JavaScript <br>
+(trg)="26"> Построение основного цикла в JavaScript <br>
+<hr>
+(src)="27"> JavaScript works best with events and callback functions . <br>
+(trg)="27"> Лучше всего JavaScript работает с событиями и callback функциями . <br>
+<hr>
+(src)="28"> Modern browsers strive to call methods right as they are needed and idle ( or do their other tasks ) in the gaps . <br>
+(trg)="28"> Современные браузеры стремятся вызывать методы по мере необходимости и бездействовать ( или выполнять другие задачи ) в промежутках . <br>
+<hr>
+(src)="29"> It is an excellent idea to attach your code to the moments that are appropriate for them . <br>
+(trg)="29"> Привязать код к моменту , который для него подходит — это отличная идея . <br>
+<hr>
+(src)="30"> Think about whether your function really needs to be called on a strict interval of time , every frame , or only after something else happens . <br>
+(trg)="31"> Подумайте о том , действительно ли функцию нужно вызывать в определённом интервале времени , на каждый кадр или только после того , как что-то произойдёт . <br>
+<hr>
+(src)="31"> Being more specific with the browser about when your function needs to be called allows the browser to optimize when it is called . <br>
+(trg)="32"> Больше конкретики с браузером в том , когда функция должна быть вызвана , позволяет ему лучше оптимизировать этот процесс . <br>
+<hr>
+(src)="32"> Also , it will probably make your job easier . <br>
+(trg)="33"> Так же , вероятно , это облегчит вам работу . <br>
+<hr>
+(src)="33"> Some code needs to be run frame-by-frame so why attach that function to anything other than the browser ’ s redraw schedule ? <br>
+(trg)="34"> Некоторый код должен выполняться кадр за кадром , так зачем же прикреплять эту функцию к чему-то другому , кроме графика перерисовки браузера ? <br>
+<hr>
+(src)="34"> On the Web , { { domxref ( “ window.requestAnimationFrame ( ) ” ) } } will be the foundation of most well-programmed per-frame main loops . <br>
+(trg)="35"> В Web , { { domxref ( " window.requestAnimationFrame ( ) " ) } } будет основой большинства хорошо запрограммированных покадровых основных циклов . <br>
+<hr>
+(src)="35"> A callback function must be passed in to it when it is called . <br>
+(trg)="36"> Callback функция должна быть передана ему при вызове . <br>
+<hr>
+(src)="36"> That callback function will be executed at a suitable time before the next repaint . <br>
+(trg)="37"> Callback функция будет выполнена в подходящее время перед следующей перерисовкой . <br>
+<hr>
+(src)="37"> Here is an example of a simple main loop : <br>
+(trg)="38"> Вот пример простого основного цикла : <br>
+<hr>
+(src)="38"> window . main = ( ) = &gt; { <br>
+(trg)="39"> window . main = function ( ) { <br>
+<hr>
+(src)="39"> window . requestAnimationFrame ( main ) ; <br>
+(trg)="40"> window . requestAnimationFrame ( main ) ; <br>
+<hr>
+(src)="40"> / / Whatever your main loop needs to do <br>
+(trg)="41"> / / Код , который цикл должен выполнить <br>
+<hr>
+(src)="41"> } ; <br>
+(trg)="42"> } ; <br>
+<hr>
+(src)="42"> main ( ) ; / / Start the cycle <br>
+(trg)="43"> main ( ) ; / / Start the cycle <br>
+<hr>
+(src)="43"> Note : In each of the main ( ) methods discussed here , we schedule a new requestAnimationFrame before performing our loop contents . <br>
+(trg)="44"> Примечание : В каждом из методов main ( ) , обсуждаемых здесь , мы планируем новый requestAnimationFrame перед выполнением нашего содержимого цикла . <br>
+<hr>
+(src)="44"> That is not by accident and it is considered best practice . <br>
+(trg)="45"> Это не случайно и считает лучшей практикой . <br>
+<hr>
+(src)="45"> Calling the next requestAnimationFrame early ensures the browser receives it on time to plan accordingly even if your current frame misses its VSync window . <br>
+(trg)="46"> Ранний вызов следующего requestAnimationFrame гарантирует , что браузер получит его вовремя , чтобы спланировать соответствующим образом , даже если ваш текущий кадр пропустит своё окно VSync . <br>
+<hr>
+(src)="46"> The above chunk of code has two statements . <br>
+(trg)="47"> Приведённый выше фрагмент кода содержит два оператора . <br>
+<hr>
+(src)="47"> The first statement creates a function as a global variable called main ( ) . <br>
+(trg)="48"> Первый оператор создаёт функцию как глобальную переменную с именем main ( ) . <br>
+<hr>
+(src)="48"> This function does some work and also tells the browser to call itself next frame with window.requestAnimationFrame ( ) . <br>
+(trg)="49"> Эта функция выполняет некоторую работу , а также сообщает браузеру , что нужно вызвать следующий кадр с помощью window.requestAnimationFrame ( ) . <br>
+<hr>
+(src)="49"> The second statement calls the main ( ) function , defined in the first statement . <br>
+(trg)="50"> Второй оператор вызывает функцию main ( ) , описанную в первом операторе . <br>
+<hr>
+(src)="50"> Because main ( ) is called once in the second statement and every call of it places itself in the queue of things to do next frame , main ( ) is synchronized to your frame rate . <br>
+(trg)="51"> Поскольку main ( ) вызывается один раз во втором операторе и каждый его вызов помещает себя в очерёдность действий , чтобы отрисовать следующий кадр , main ( ) синхронизируется с вашей частотой кадров . <br>
+<hr>
+(src)="51"> Of course this loop is not perfect . <br>
+(trg)="52"> Конечно , этот цикл не идеален . <br>
+<hr>
+(src)="52"> Before we discuss ways to change it , let us discuss what it already does well . <br>
+(trg)="53"> Прежде чем мы обсудим способы его изменения , давайте обсудим , что он уже делает хорошо . <br>
+<hr>
+(src)="53"> Timing the main loop to when the browser paints to the display allows you to run your loop as frequently as the browser wants to paint . <br>
+(trg)="54"> Синхронизация основного цикла с тем , когда браузер рисует на дисплее , позволяет запускать цикл так часто , как браузер хочет рисовать . <br>
+<hr>
+(src)="54"> You are given control over each frame of animation . <br>
+(trg)="55"> Вам предоставляется контроль над каждым кадром анимации . <br>
+<hr>
+(src)="55"> It is also very simple because main ( ) is the only function getting looped . <br>
+(trg)="56"> Это также очень просто , потому что main ( ) - единственная функция , которая зацикливается . <br>
+<hr>
+(src)="56"> A First-Person Shooter ( or a similar game ) presents a new scene once every frame . <br>
+(trg)="57"> Шутер от первого лица ( или подобная игра ) представляет новую сцену один раз в каждом кадре . <br>
+<hr>
+(src)="57"> You cannot really get more smooth and responsive than that . <br>
+(trg)="58"> Вы не можете добиться большей плавности и быстродействия . <br>
+<hr>
+(src)="58"> But do not immediately assume animations require frame-by-frame control . <br>
+(trg)="59"> Но не стоит сразу предполагать , что анимация требует покадрового управления . <br>
+<hr>
+(src)="59"> Simple animations can be easily performed , even GPU-accelerated , with CSS animations and other tools included in the browser . <br>
+(trg)="60"> Простые анимации можно легко выполнять даже с ускорением на GPU с помощью CSS-анимации и других инструментов , включённых в браузер . <br>
+<hr>
+(src)="60"> There are a lot of them and they will make your life easier . <br>
+(trg)="61"> Их очень много и они сделают вашу жизнь проще . <br>
+<hr>
+(src)="61"> Building a better main loop in JavaScript <br>
+(trg)="62"> Создание улучшенного основного цикла в JavaScript <br>
+<hr>
+(src)="62"> There are two obvious issues with our previous main loop : main ( ) pollutes the { { domxref ( “ window ” ) } } object ( where all global variables are stored ) and the example code did not leave us with a way to stop the loop unless the whole tab is closed or refreshed . <br>
+(trg)="63"> У нашего цикла есть две очевидные проблемы : main ( ) загрязняет { { domxref ( " window " ) } } объект ( в нем хранятся все глобальные переменные ) и код не оставляет нам возможность остановить цикл , если только вся вкладка не будет закрыта или обновлена . <br>
+<hr>
+(src)="63"> For the first issue , if you want the main loop to just run and you do not need easy ( direct ) access to it , you could create it as an Immediately-Invoked Function Expression ( IIFE ) . <br>
+(trg)="64"> Для решения первой проблемы , если нужно , чтобы основной цикл просто выполнялся и вам не нужен лёгкий ( прямой ) доступ к нему , вы можете поместить его внутрь самовызывающейся Function Expression ( IIFE ) . <br>
+<hr>
+(src)="64"> / * <br>
+(trg)="65"> / * <br>
+<hr>
+(src)="65"> * Starting with the semicolon is in case whatever line of code above this example <br>
+(trg)="66"> * Начинаем с точки с запятой в случае , если какая-либо строка кода выше данного примера <br>
+<hr>
+(src)="66"> * relied on automatic semicolon insertion ( ASI ) . <br>
+(trg)="67"> * полагается на автоматическую вставку точки с запятой ( ASI ) . <br>
+<hr>
+(src)="67"> The browser could accidentally <br>
+(trg)="68"> Браузер может случайно решить , <br>
+<hr>
+(src)="68"> * think this whole example continues from the previous line . <br>
+(trg)="69"> * что весь этот код начинается с предыдущей строки . <br>
+<hr>
+(src)="69"> The leading semicolon <br>
+(trg)="70"> Первая точка с запятой отмечает начало <br>
+<hr>
+(src)="70"> * marks the beginning of our new line if the previous one was not empty or terminated . <br>
+(trg)="71"> * новой строки , если предыдущая не была пустой или завершённой . <br>
+<hr>
+(src)="71"> * / <br>
+(trg)="72"> * / <br>
+<hr>
+(src)="72"> ; ( ( ) = &gt; { <br>
+(trg)="73"> ( function ( ) { <br>
+<hr>
+(src)="73"> function main ( ) { <br>
+(trg)="74"> function main ( ) { <br>
+<hr>
+(src)="74"> window . requestAnimationFrame ( main ) ; <br>
+(trg)="75"> window . requestAnimationFrame ( main ) ; <br>
+<hr>
+(src)="75"> / / Your main loop contents <br>
+(trg)="76"> / / Содержание вашего основного цикла <br>
+<hr>
+(src)="76"> } <br>
+(trg)="77"> } <br>
+<hr>
+(src)="77"> main ( ) ; / / Start the cycle <br>
+(trg)="78"> main ( ) ; / / Вызов цикла <br>
+<hr>
+(src)="78"> } ) ( ) ; <br>
+(trg)="79"> } ) ( ) ; <br>
+<hr>
+(src)="79"> When the browser comes across this IIFE , it will define your main loop and immediately queue it for the next frame . <br>
+(trg)="80"> Когда браузер наткнётся на IIFE ( Immediately Invoked Function Expression ) , он определит основной цикл и сразу же поставит его в очередь для следующего кадра . <br>
+<hr>
+(src)="80"> It will not be attached to any object and main ( or main ( ) for methods ) will be a valid unused name in the rest of the application , free to be defined as something else . <br>
+(trg)="81"> Он не будет привязан ни к какому объекту , и main ( или main ( ) для методов ) будет неиспользуемым именем , доступным в остальной части приложения для определения чего-то другого . <br>
+<hr>
+(src)="81"> Note : In practice , it is more common to prevent the next requestAnimationFrame ( ) with an if-statement , rather than calling cancelAnimationFrame ( ) . <br>
+(trg)="82"> Примечание : На практике распространено предотвращать следующий requestAnimationFrame ( ) используя оператор if вместо вызова cancelAnimationFrame ( ) . <br>
+<hr>
+(src)="82"> For the second issue , stopping the main loop , you will need to cancel the call to main ( ) with { { domxref ( “ window.cancelAnimationFrame ( ) ” ) } } . <br>
+(trg)="83"> Чтобы остановить основной цикл , вам понадобиться отменить вызов main ( ) с помощью { { domxref ( " window.cancelAnimationFrame ( ) " ) } } . <br>
+<hr>
+(src)="83"> You will need to pass cancelAnimationFrame ( ) the ID token given by requestAnimationFrame ( ) when it was last called . <br>
+(trg)="84"> Необходимо передать в cancelAnimationFrame ( ) идентификатор последнего вызова requestAnimationFrame ( ) . <br>
+<hr>
+(src)="84"> Let us assume that your game ’ s functions and variables are built on a namespace that you called MyGame . <br>
+(trg)="85"> Давайте предположим , что функции и переменные вашей игры были определены в пространстве имён , которое вы назвали MyGame . <br>
+<hr>
+(src)="85"> Expanding our last example , the main loop would now look like : <br>
+(trg)="86"> В таком случае , основной цикл будет выглядеть следующим образом : <br>
+<hr>
+(src)="86"> / * <br>
+(trg)="87"> / * <br>
+<hr>
+(src)="87"> * Starting with the semicolon is in case whatever line of code above this example <br>
+(trg)="88"> * Начинаем с точки с запятой в случае , если какая-либо строка кода выше данного примера <br>
+<hr>
+(src)="88"> * relied on automatic semicolon insertion ( ASI ) . <br>
+(trg)="89"> * полагается на автоматическую вставку точки с запятой ( ASI ) . <br>
+<hr>
+(src)="89"> The browser could accidentally <br>
+(trg)="90"> Браузер может случайно решить , <br>
+<hr>
+(src)="90"> * think this whole example continues from the previous line . <br>
+(trg)="91"> * что весь этот код начинается с предыдущей строки . <br>
+<hr>
+(src)="91"> The leading semicolon <br>
+(trg)="92"> Первая точка с запятой отмечает начало <br>
+<hr>
+(src)="92"> * marks the beginning of our new line if the previous one was not empty or terminated . <br>
+(trg)="93"> * новой строки , если предыдущая не была пустой или завершённой . <br>
+<hr>
+(src)="93"> * <br>
+(trg)="94"> * <br>
+<hr>
+(src)="94"> * Let us also assume that MyGame is previously defined . <br>
+(trg)="95"> * Давайте также предположим , что MyGame уже определена . <br>
+<hr>
+(src)="95"> * / <br>
+(trg)="96"> * / <br>
+<hr>
+(src)="96"> ; ( ( ) = &gt; { <br>
+(trg)="97"> ( function ( ) { <br>
+<hr>
+(src)="97"> function main ( ) { <br>
+(trg)="98"> function main ( ) { <br>
+<hr>
+(src)="98"> MyGame . stopMain = window . requestAnimationFrame ( main ) ; <br>
+(trg)="99"> MyGame . stopMain = window . requestAnimationFrame ( main ) ; <br>
+<hr>
+(src)="99"> / / Your main loop contents <br>
+(trg)="100"> / / Содержание вашего основного цикла <br>
+<hr>
+</body>
+</html>

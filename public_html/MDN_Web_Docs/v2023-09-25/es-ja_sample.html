@@ -1,0 +1,154 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd"> 
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+
+# es/conflicting/learn/javascript/objects/classes_in_javascript/index.xml.gz<br>
+# ja/conflicting/learn/javascript/objects/classes_in_javascript/index.xml.gz
+
+<p><hr>
+(src)="1"> { { LearnSidebar } } { { PreviousMenuNext ( “ Learn / JavaScript / Objects / Basics ” , “ Learn / JavaScript / Objects / Object _ prototypes ” , “ Learn / JavaScript / Objects ” ) } } <br>
+(trg)="1"> { { LearnSidebar } } { { PreviousMenuNext ( “ Learn / JavaScript / Objects / Basics ” , “ Learn / JavaScript / Objects / Object_prototypes ” , “ Learn / JavaScript / Objects ” ) } } <br>
+<hr>
+(src)="2"> Con lo básico fuera del camino , nos enfocaremos en Javascript Orientado a Objetos ( JSOO ) — este artículo presenta una descripción básica de la teoría de la Programación Orientada a Objetos ( POO ) , luego explora cómo Javascript emula classes de objetos via funciones constructoras , y cómo crea instancias de objetos . <br>
+(trg)="2"> 基礎 が 片 付 い た ところで 、 オブジェクト 指向 JavaScript ( OOJS ) について 取り上げ ます 。 <br>
+<hr>
+(src)="3"> Prerequisitos : <br>
+(src)="4"> Conocimientos básicos de computación , entendimiento básico de HTML y CSS , familiaridad con las bases de Javascript ( ver Primeros pasos con JavaScript y Bloques de construcción JavaScript ) y las bases de JSOO ( ver Introducción a objetos ) . <br>
+(trg)="3"> この 記事 では オブジェクト 指向 プログラミング ( OOP ) の 基本 的 な 視点 を 説明 し 、 JavaScript が どの よう に コンス トラクター 関数 を通じて オブジェクト クラス を エミュレート し て いるか 、 また どの よう に オブジェクト インスタンス を 生成 し て いるか を 紹介 し ます 。 <br>
+<hr>
+(src)="5"> Objetivo : <br>
+(trg)="4"> 前提 知識 : <br>
+<hr>
+(src)="6"> Entender la teoría base de la programación orientada a objetos , como se relaciona esta con JavaScript ( “ todo es un objeto ” ) , y como crear constructores e instacias de objetos . <br>
+(src)="7"> Programacion Orientada a Objetos — lo básico <br>
+(trg)="5"> 基礎的なコンピュータリテラシー 、 基礎的な HTML と CSS の理解 、 JavaScript ( JavaScript の 第一歩 や JavaScript の 構成 要素 を参照 ) および OOJS ( JavaScript オブジェクト の 基本 を 参照 ) の 基礎 知識 。 <br>
+<hr>
+<p>
+
+# es/conflicting/web/accessibility/aria_64707ba1917a56654679cbe273e2f4ea/index.xml.gz<br>
+# ja/conflicting/web/accessibility/aria_64707ba1917a56654679cbe273e2f4ea/index.xml.gz
+
+<p><hr>
+(src)="1"> Cuando se implementan formularios utilizando elementos relacionados con los formularios HTML tradicionales , es importante proveer etiquetas para los controles y explicitamente asociar una etiqueta con su control . <br>
+(trg)="1"> 伝統 的 な HTML の フォーム 関連 要素 を 使用 し て フォーム を 実装 する 際 は 、 コントロール 向け の ラベル を 提供 する こと と 、 ラベル と コントロール と を 明示 的 に 結びつける こと が 重要 です 。 <br>
+<hr>
+(src)="2"> Cuando un usuario de lector de pantalla navega una página , el lector de pantalla describirá los controles del formulario . <br>
+(src)="3"> Sin una asociación directa entre el control y su etiqueta , el lector de pantalla no tiene forma de saber que etiqueta es la correcta para el control . <br>
+(trg)="2"> スクリーン リーダー の ユーザー が ページ を 操作 する とき 、 スクリーン リーダー は フォーム コントロール について 読み 上げ ます が 、 コントロール トラベル と の 間 に 直接 的 な 結び つき が ない と 、 どの ラベル が 適切 か を スクリーン リーダー が 知る 方法 が なく なり ます 。 <br>
+<hr>
+(src)="4"> El ejemplo siguiente muestra un formulario sencillo con etiquetas . <br>
+(trg)="3"> 以下 の 例 では 、 ラベル を 持つ シンプル な フォーム を 示し てい ます 。 <br>
+<hr>
+(src)="5"> Note que cada elemento { { HTMLElement ( “ input ” ) } } tiene un id , y cada elemento { { HTMLElement ( “ label ” ) } } tiene un atributo for , indicando el id asociado al { { HTMLElement ( “ input ” ) } } . <br>
+(trg)="4"> それぞれの { { HTMLElement ( “ input ” ) } } 要素は id を持ち 、 またそれぞれの { { HTMLElement ( “ label ” ) } } 要素は for 属性で関連する { { HTMLElement ( “ input ” ) } } の id を 示す ことに 注意 し て くだ さい 。 <br>
+<hr>
+(src)="6"> &lt; form &gt; <br>
+(trg)="5"> &lt; form &gt; <br>
+<hr>
+(src)="7"> &lt; ul &gt; <br>
+(trg)="6"> &lt; ul &gt; <br>
+<hr>
+(src)="8"> &lt; li &gt; <br>
+(trg)="7"> &lt; li &gt; <br>
+<hr>
+(src)="9"> &lt; input id = " vino-1 " type = " checkbox " value = " riesling " / &gt; <br>
+(trg)="8"> &lt; input id = " wine - 1 " type = " checkbox " value = " riesling " / &gt; <br>
+<hr>
+(src)="10"> &lt; label for = " vino-1 " &gt; Berg Rottland Riesling &lt; / label &gt; <br>
+(trg)="9"> &lt; label for = " wine - 1 " &gt; Berg Rottland Riesling &lt; / label &gt; <br>
+<hr>
+(src)="11"> &lt; / li &gt; <br>
+(trg)="10"> &lt; / li &gt; <br>
+<hr>
+(src)="12"> &lt; li &gt; <br>
+(trg)="11"> &lt; li &gt; <br>
+<hr>
+(src)="13"> &lt; input id = " vino-2 " type = " checkbox " value = " pinot-blanc " / &gt; <br>
+(trg)="12"> &lt; input id = " wine - 2 " type = " checkbox " value = " pinot - blanc " / &gt; <br>
+<hr>
+(src)="14"> &lt; label for = " vino-2 " &gt; Pinot Blanc &lt; / label &gt; <br>
+(trg)="13"> &lt; label for = " wine - 2 " &gt; Pinot Blanc &lt; / label &gt; <br>
+<hr>
+(src)="15"> &lt; / li &gt; <br>
+(trg)="14"> &lt; / li &gt; <br>
+<hr>
+(src)="16"> &lt; li &gt; <br>
+(trg)="15"> &lt; li &gt; <br>
+<hr>
+(src)="17"> &lt; input id = " vino-3 " type = " checkbox " value = " pinot-grigio " / &gt; <br>
+(trg)="16"> &lt; input id = " wine - 3 " type = " checkbox " value = " pinot - grigio " / &gt; <br>
+<hr>
+(src)="18"> &lt; label for = " vino-3 " &gt; Pinot Grigio &lt; / label &gt; <br>
+(trg)="17"> &lt; label for = " wine - 3 " &gt; Pinot Grigio &lt; / label &gt; <br>
+<hr>
+(src)="19"> &lt; / li &gt; <br>
+(trg)="18"> &lt; / li &gt; <br>
+<hr>
+(src)="20"> &lt; li &gt; <br>
+(trg)="19"> &lt; li &gt; <br>
+<hr>
+(src)="21"> &lt; input id = " vino-4 " type = " checkbox " value = " gewurztraminer " / &gt; <br>
+(trg)="20"> &lt; input id = " wine - 4 " type = " checkbox " value = " gewurztraminer " / &gt; <br>
+<hr>
+(src)="22"> &lt; label for = " vino-4 " &gt; Gewürztraminer &lt; / label &gt; <br>
+(trg)="21"> &lt; label for = " wine - 4 " &gt; Gewürztraminer &lt; / label &gt; <br>
+<hr>
+(src)="23"> &lt; / li &gt; <br>
+(trg)="22"> &lt; / li &gt; <br>
+<hr>
+(src)="24"> &lt; / ul &gt; <br>
+(trg)="23"> &lt; / ul &gt; <br>
+<hr>
+(src)="25"> &lt; / form &gt; <br>
+(trg)="24"> &lt; / form &gt; <br>
+<hr>
+<p>
+
+# es/conflicting/web/accessibility/aria/index.xml.gz<br>
+# ja/conflicting/web/accessibility/aria/index.xml.gz
+
+<p><hr>
+(src)="1"> El problema <br>
+(trg)="1"> 問題 点 <br>
+<hr>
+(src)="2"> Tienes un formulario — un formulario de contacto — por ejemplo , en el que deseas poner algún control de error accesible . <br>
+(trg)="2"> アク セ シ ブル な エラー チェック を 組み 入れ たい フォーム 、 例えば 問い合わせ フォーム が ある と し ます 。 <br>
+<hr>
+(src)="3"> Ejemplos de problemas comunes incluyen direcciones de correo electrónico que no son válidas o un campo de nombre que no contiene al menos un nombre o apellido . <br>
+(trg)="3"> よく ある 問題 点 は 電子 メールアドレス が 有効 では ない 、 あるいは 名前 欄 に 姓 も 名 も 含 まれ てい ない こと です 。 <br>
+<hr>
+(src)="4"> El formulario <br>
+(trg)="4"> フォーム <br>
+<hr>
+(src)="5"> Primero , lee acerca de la técnica requerida por aria si no lo has hecho , ya que esta técnica amplía a esa . <br>
+(trg)="5"> 始めに 、 aria - required の 手法 に関する 記事 を 読 んで い ない ので したら 、 まずは そちら を お 読み くだ さい 。 <br>
+<hr>
+(src)="6"> Aquí hay un sencillo formulario : <br>
+(trg)="7"> こちら が シンプル な フォーム です 。 <br>
+<hr>
+(src)="7"> &lt; form method = " post " action = " post.php " &gt; <br>
+(trg)="8"> &lt; form method = " post " action = " post.php " &gt; <br>
+<hr>
+(src)="8"> &lt; fieldset &gt; <br>
+(trg)="9"> &lt; fieldset &gt; <br>
+<hr>
+(src)="9"> &lt; legend &gt; Introduce tus datos de contacto &lt; / legend &gt; <br>
+(trg)="10"> &lt; legend &gt; Please enter your contact details &lt; / legend &gt; <br>
+<hr>
+(src)="10"> &lt; label for = " name " &gt; Tu nombre ( obligatorio ) : &lt; / label &gt; <br>
+(trg)="11"> &lt; label for = " name " &gt; Your name ( required ) : &lt; / label &gt; <br>
+<hr>
+(src)="11"> &lt; input name = " name " id = " name " aria-required = " true " / &gt; <br>
+(trg)="12"> &lt; input name = " name " id = " name " aria - required = " true " / &gt; <br>
+<hr>
+(src)="12"> &lt; br / &gt; <br>
+(trg)="13"> &lt; br / &gt; <br>
+<hr>
+</body>
+</html>
