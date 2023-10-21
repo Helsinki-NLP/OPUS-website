@@ -9,7 +9,7 @@
 <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-<div class="header"><?php include("header.php"); ?></div><h1>MultiHPLT v1</h1>Parallel corpora from Web Crawls collected in the <a href="https://hplt-project.org">HPLT project</a> and further processed for making it a multi-parallel corpus by pivoting via English. Here we only provide the additional language pairs that came out of pivoting. The bitexts for English are available from the <a href="http://opus.nlpl.eu/HPLT-v1.php">HPLT release</a>.<p>19 languages, 171 bitexts<br>total number of files: 19<br>total number of tokens: 2.60G<br>total number of sentence fragments: 152.56M<br><p>Please, acknowledge the HPLT project at <a href="https://hplt-project.org">https://hplt-project.org</a>. This version is derived from the original release at their website adjusted for redistribution via the OPUS corpus collection. Please, acknowledge OPUS as well for this service.<h3>Download</h3><p>Below you can download data files for all language pairs in different formats and with different kind of annotation (if available). You can click on the various links as explained below. In addition to the files shown on this webpage, OPUS also provides pre-compiled word alignments and phrase tables, bilingual dictionaries, frequency counts, and these files can be found through the <a href="/index.php">resources search form on the top-level website of OPUS</a>.</p><p></p>The data is released under the <a href="https://creativecommons.org/share-your-work/public-domain/cc0/">Creative Commons CC0 license</a> ("no rights reserved"), see <a href="https://hplt-project.org">https://hplt-project.org</a> for more details<h3>Release history:</h3><p><ul><li><a href="MultiHPLT-v1.php">MultiHPLT v1</a></li></ul></p><table><tr><td>Bottom-left triangle: download files<ul><li><i>ces</i> = sentence alignments in XCES format</li> <li><i>leftmost column language IDs</i> = tokenized corpus files in XML</li> <li>TMX and plain text files (Moses): see "Statistics" below</li> <li><i>lower row language IDs</i> = parsed corpus files (if they exist)</li></ul></td><td>Upper-right triangle: sample files <ul><li><i>view</i> = bilingual XML file samples</li> <li><i>upper row language IDs</i> = monolingual XML file samples</li> <li><i>rightmost column language IDs</i> = untokenized corpus files</li></ul></td></tr></table><p><div class="sample"><table border="0" cellpadding="0">
+<div class="header"><?php include("header.php"); ?></div><h1>MultiHPLT v1</h1>Parallel corpora from Web Crawls collected in the <a href="https://hplt-project.org">HPLT project</a> and further processed for making it a multi-parallel corpus by pivoting via English. Here we provide the additional language pairs that came out of pivoting. The bitexts for English are the same as the ones in the <a href="http://opus.nlpl.eu/HPLT-v1.php">original HPLT release</a>.<p>19 languages, 171 bitexts<br>total number of files: 19<br>total number of tokens: 2.68G<br>total number of sentence fragments: 157.25M<br><p>Please, acknowledge the HPLT project at <a href="https://hplt-project.org">https://hplt-project.org</a>. This version is derived from the original release at their website adjusted for redistribution via the OPUS corpus collection. Please, acknowledge OPUS as well for this service.<h3>Download</h3><p>Below you can download data files for all language pairs in different formats and with different kind of annotation (if available). You can click on the various links as explained below. In addition to the files shown on this webpage, OPUS also provides pre-compiled word alignments and phrase tables, bilingual dictionaries, frequency counts, and these files can be found through the <a href="/index.php">resources search form on the top-level website of OPUS</a>.</p><p></p>The data is released under the <a href="https://creativecommons.org/share-your-work/public-domain/cc0/">Creative Commons CC0 license</a> ("no rights reserved"), see <a href="https://hplt-project.org">https://hplt-project.org</a> for more details<h3>Release history:</h3><p><ul><li><a href="MultiHPLT-v1.php">MultiHPLT v1</a></li></ul></p><table><tr><td>Bottom-left triangle: download files<ul><li><i>ces</i> = sentence alignments in XCES format</li> <li><i>leftmost column language IDs</i> = tokenized corpus files in XML</li> <li>TMX and plain text files (Moses): see "Statistics" below</li> <li><i>lower row language IDs</i> = parsed corpus files (if they exist)</li></ul></td><td>Upper-right triangle: sample files <ul><li><i>view</i> = bilingual XML file samples</li> <li><i>upper row language IDs</i> = monolingual XML file samples</li> <li><i>rightmost column language IDs</i> = untokenized corpus files</li></ul></td></tr></table><p><div class="sample"><table border="0" cellpadding="0">
 <tr>
 <th></th>
 <th><a rel="nofollow" href="MultiHPLT/v1/ar_sample.html">ar</a></th>
@@ -87,7 +87,7 @@
 <tr><th><a rel="nofollow" href="download.php?f=MultiHPLT/v1/xml/gl.zip">gl</a></th>
 <td><a rel="nofollow" title="sentence alignments for 'Galician-Arabic' (54.7k links, 1.5M tokens)" href="download.php?f=MultiHPLT/v1/xml/ar-gl.xml.gz">ces</a></td>
 <td><a rel="nofollow" title="sentence alignments for 'Galician-Bosnian' (8.4k links, 0.1M tokens)" href="download.php?f=MultiHPLT/v1/xml/bs-gl.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Galician-Catalan' (0.3M links, 10.5M tokens)" href="download.php?f=MultiHPLT/v1/xml/ca-gl.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Galician-Catalan' (0.3M links, 10.6M tokens)" href="download.php?f=MultiHPLT/v1/xml/ca-gl.xml.gz">ces</a></td>
 <td><a rel="nofollow" title="sentence alignments for 'Galician-English' (1.1M links, 33.6M tokens)" href="download.php?f=MultiHPLT/v1/xml/en-gl.xml.gz">ces</a></td>
 <td><a rel="nofollow" title="sentence alignments for 'Galician-Estonian' (71.4k links, 1.8M tokens)" href="download.php?f=MultiHPLT/v1/xml/et-gl.xml.gz">ces</a></td>
 <td><a rel="nofollow" title="sentence alignments for 'Galician-Basque' (0.1M links, 3.4M tokens)" href="download.php?f=MultiHPLT/v1/xml/eu-gl.xml.gz">ces</a></td>
@@ -112,9 +112,9 @@
 <td><a rel="nofollow" title="sentence alignments for 'Croatian-Bosnian' (70.1k links, 1.8M tokens)" href="download.php?f=MultiHPLT/v1/xml/bs-hr.xml.gz">ces</a></td>
 <td><a rel="nofollow" title="sentence alignments for 'Croatian-Catalan' (0.7M links, 22.9M tokens)" href="download.php?f=MultiHPLT/v1/xml/ca-hr.xml.gz">ces</a></td>
 <td><a rel="nofollow" title="sentence alignments for 'Croatian-English' (9.3M links, 316.8M tokens)" href="download.php?f=MultiHPLT/v1/xml/en-hr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Croatian-Estonian' (1.3M links, 45.3M tokens)" href="download.php?f=MultiHPLT/v1/xml/et-hr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Croatian-Estonian' (1.3M links, 45.2M tokens)" href="download.php?f=MultiHPLT/v1/xml/et-hr.xml.gz">ces</a></td>
 <td><a rel="nofollow" title="sentence alignments for 'Croatian-Basque' (58.3k links, 1.6M tokens)" href="download.php?f=MultiHPLT/v1/xml/eu-hr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Croatian-Finnish' (2.2M links, 64.5M tokens)" href="download.php?f=MultiHPLT/v1/xml/fi-hr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Croatian-Finnish' (2.2M links, 64.4M tokens)" href="download.php?f=MultiHPLT/v1/xml/fi-hr.xml.gz">ces</a></td>
 <td><a rel="nofollow" title="sentence alignments for 'Croatian-Irish' (0.2M links, 7.6M tokens)" href="download.php?f=MultiHPLT/v1/xml/ga-hr.xml.gz">ces</a></td>
 <td><a rel="nofollow" title="sentence alignments for 'Croatian-Galician' (92.3k links, 2.6M tokens)" href="download.php?f=MultiHPLT/v1/xml/gl-hr.xml.gz">ces</a></td>
 <td><a rel="nofollow" title="sentence alignments for 'Croatian-Hindi' (0.6M links, 21.8M tokens)" href="download.php?f=MultiHPLT/v1/xml/hi-hr.xml.gz">ces</a></td>
@@ -157,7 +157,7 @@
 <td><a rel="nofollow" title="sentence alignments for 'Maltese-Estonian' (0.3M links, 18.2M tokens)" href="download.php?f=MultiHPLT/v1/xml/et-mt.xml.gz">ces</a></td>
 <td><a rel="nofollow" title="sentence alignments for 'Maltese-Basque' (13.7k links, 0.4M tokens)" href="download.php?f=MultiHPLT/v1/xml/eu-mt.xml.gz">ces</a></td>
 <td><a rel="nofollow" title="sentence alignments for 'Maltese-Finnish' (0.3M links, 19.1M tokens)" href="download.php?f=MultiHPLT/v1/xml/fi-mt.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Maltese-Irish' (94.3k links, 5.7M tokens)" href="download.php?f=MultiHPLT/v1/xml/ga-mt.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Maltese-Irish' (94.2k links, 5.7M tokens)" href="download.php?f=MultiHPLT/v1/xml/ga-mt.xml.gz">ces</a></td>
 <td><a rel="nofollow" title="sentence alignments for 'Maltese-Galician' (25.6k links, 0.8M tokens)" href="download.php?f=MultiHPLT/v1/xml/gl-mt.xml.gz">ces</a></td>
 <td><a rel="nofollow" title="sentence alignments for 'Maltese-Hindi' (55.8k links, 2.6M tokens)" href="download.php?f=MultiHPLT/v1/xml/hi-mt.xml.gz">ces</a></td>
 <td><a rel="nofollow" title="sentence alignments for 'Maltese-Croatian' (0.3M links, 17.5M tokens)" href="download.php?f=MultiHPLT/v1/xml/hr-mt.xml.gz">ces</a></td>
@@ -183,7 +183,7 @@
 <th></th>
 <td><a rel="nofollow" title="Norwegian Nynorsk-Albanian (sample file)" href="MultiHPLT/v1/nn-sq_sample.html">view</a></td><td><a rel="nofollow" title="Norwegian Nynorsk-Serbian (sample file)" href="MultiHPLT/v1/nn-sr_sample.html">view</a></td><td><a rel="nofollow" title="Norwegian Nynorsk-Swahili (sample file)" href="MultiHPLT/v1/nn-sw_sample.html">view</a></td><td><a rel="nofollow" title="Norwegian Nynorsk-Chinese (sample file)" href="MultiHPLT/v1/nn-zh_hant_sample.html">view</a></td><th><a rel="nofollow" href="download.php?f=MultiHPLT/v1/raw/nn.zip">nn</a></th></tr>
 <tr><th><a rel="nofollow" href="download.php?f=MultiHPLT/v1/xml/sq.zip">sq</a></th>
-<td><a rel="nofollow" title="sentence alignments for 'Albanian-Arabic' (85.2k links, 2.4M tokens)" href="download.php?f=MultiHPLT/v1/xml/ar-sq.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Albanian-Arabic' (85.1k links, 2.4M tokens)" href="download.php?f=MultiHPLT/v1/xml/ar-sq.xml.gz">ces</a></td>
 <td><a rel="nofollow" title="sentence alignments for 'Albanian-Bosnian' (17.4k links, 0.5M tokens)" href="download.php?f=MultiHPLT/v1/xml/bs-sq.xml.gz">ces</a></td>
 <td><a rel="nofollow" title="sentence alignments for 'Albanian-Catalan' (0.2M links, 5.8M tokens)" href="download.php?f=MultiHPLT/v1/xml/ca-sq.xml.gz">ces</a></td>
 <td><a rel="nofollow" title="sentence alignments for 'Albanian-English' (1.7M links, 61.5M tokens)" href="download.php?f=MultiHPLT/v1/xml/en-sq.xml.gz">ces</a></td>
@@ -201,22 +201,22 @@
 <th></th>
 <td><a rel="nofollow" title="Albanian-Serbian (sample file)" href="MultiHPLT/v1/sq-sr_sample.html">view</a></td><td><a rel="nofollow" title="Albanian-Swahili (sample file)" href="MultiHPLT/v1/sq-sw_sample.html">view</a></td><td><a rel="nofollow" title="Albanian-Chinese (sample file)" href="MultiHPLT/v1/sq-zh_hant_sample.html">view</a></td><th><a rel="nofollow" href="download.php?f=MultiHPLT/v1/raw/sq.zip">sq</a></th></tr>
 <tr><th><a rel="nofollow" href="download.php?f=MultiHPLT/v1/xml/sr.zip">sr</a></th>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Arabic' (53.2k links, 1.9M tokens)" href="download.php?f=MultiHPLT/v1/xml/ar-sr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Bosnian' (1.5k links, 28.0k tokens)" href="download.php?f=MultiHPLT/v1/xml/bs-sr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Catalan' (68.6k links, 1.5M tokens)" href="download.php?f=MultiHPLT/v1/xml/ca-sr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-English' (0.6M links, 14.5M tokens)" href="download.php?f=MultiHPLT/v1/xml/en-sr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Estonian' (55.9k links, 1.3M tokens)" href="download.php?f=MultiHPLT/v1/xml/et-sr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Basque' (1.7k links, 34.5k tokens)" href="download.php?f=MultiHPLT/v1/xml/eu-sr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Finnish' (0.2M links, 3.3M tokens)" href="download.php?f=MultiHPLT/v1/xml/fi-sr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Irish' (0.9k links, 20.3k tokens)" href="download.php?f=MultiHPLT/v1/xml/ga-sr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Galician' (2.3k links, 52.7k tokens)" href="download.php?f=MultiHPLT/v1/xml/gl-sr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Hindi' (20.3k links, 0.8M tokens)" href="download.php?f=MultiHPLT/v1/xml/hi-sr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Croatian' (0.1M links, 2.6M tokens)" href="download.php?f=MultiHPLT/v1/xml/hr-sr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Icelandic' (43.2k links, 1.1M tokens)" href="download.php?f=MultiHPLT/v1/xml/is-sr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Macedonian' (24.6k links, 0.6M tokens)" href="download.php?f=MultiHPLT/v1/xml/mk-sr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Maltese' (1.4k links, 37.5k tokens)" href="download.php?f=MultiHPLT/v1/xml/mt-sr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Norwegian Nynorsk' (0.3k links, 5.8k tokens)" href="download.php?f=MultiHPLT/v1/xml/nn-sr.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Serbian-Albanian' (9.7k links, 0.2M tokens)" href="download.php?f=MultiHPLT/v1/xml/sq-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Arabic' (0.4M links, 9.8M tokens)" href="download.php?f=MultiHPLT/v1/xml/ar-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Bosnian' (30.4k links, 0.9M tokens)" href="download.php?f=MultiHPLT/v1/xml/bs-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Catalan' (0.3M links, 10.5M tokens)" href="download.php?f=MultiHPLT/v1/xml/ca-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-English' (3.9M links, 125.3M tokens)" href="download.php?f=MultiHPLT/v1/xml/en-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Estonian' (0.4M links, 11.4M tokens)" href="download.php?f=MultiHPLT/v1/xml/et-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Basque' (15.4k links, 0.4M tokens)" href="download.php?f=MultiHPLT/v1/xml/eu-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Finnish' (1.0M links, 24.0M tokens)" href="download.php?f=MultiHPLT/v1/xml/fi-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Irish' (9.3k links, 0.3M tokens)" href="download.php?f=MultiHPLT/v1/xml/ga-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Galician' (17.7k links, 0.5M tokens)" href="download.php?f=MultiHPLT/v1/xml/gl-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Hindi' (86.4k links, 3.2M tokens)" href="download.php?f=MultiHPLT/v1/xml/hi-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Croatian' (0.9M links, 27.7M tokens)" href="download.php?f=MultiHPLT/v1/xml/hr-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Icelandic' (0.3M links, 10.2M tokens)" href="download.php?f=MultiHPLT/v1/xml/is-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Macedonian' (0.1M links, 3.6M tokens)" href="download.php?f=MultiHPLT/v1/xml/mk-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Maltese' (11.5k links, 0.4M tokens)" href="download.php?f=MultiHPLT/v1/xml/mt-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Norwegian Nynorsk' (1.8k links, 39.4k tokens)" href="download.php?f=MultiHPLT/v1/xml/nn-sr.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Serbian-Albanian' (88.7k links, 3.5M tokens)" href="download.php?f=MultiHPLT/v1/xml/sq-sr.xml.gz">ces</a></td>
 <th></th>
 <td><a rel="nofollow" title="Serbian-Swahili (sample file)" href="MultiHPLT/v1/sr-sw_sample.html">view</a></td><td><a rel="nofollow" title="Serbian-Chinese (sample file)" href="MultiHPLT/v1/sr-zh_hant_sample.html">view</a></td><th><a rel="nofollow" href="download.php?f=MultiHPLT/v1/raw/sr.zip">sr</a></th></tr>
 <tr><th><a rel="nofollow" href="download.php?f=MultiHPLT/v1/xml/sw.zip">sw</a></th>
@@ -235,8 +235,8 @@
 <td><a rel="nofollow" title="sentence alignments for 'Swahili-Macedonian' (69.1k links, 2.2M tokens)" href="download.php?f=MultiHPLT/v1/xml/mk-sw.xml.gz">ces</a></td>
 <td><a rel="nofollow" title="sentence alignments for 'Swahili-Maltese' (32.5k links, 1.1M tokens)" href="download.php?f=MultiHPLT/v1/xml/mt-sw.xml.gz">ces</a></td>
 <td><a rel="nofollow" title="sentence alignments for 'Swahili-Norwegian Nynorsk' (0.5k links, 13.0k tokens)" href="download.php?f=MultiHPLT/v1/xml/nn-sw.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-Albanian' (86.4k links, 3.1M tokens)" href="download.php?f=MultiHPLT/v1/xml/sq-sw.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Swahili-Serbian' (1.7k links, 44.0k tokens)" href="download.php?f=MultiHPLT/v1/xml/sr-sw.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-Albanian' (86.5k links, 3.1M tokens)" href="download.php?f=MultiHPLT/v1/xml/sq-sw.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Swahili-Serbian' (19.1k links, 0.6M tokens)" href="download.php?f=MultiHPLT/v1/xml/sr-sw.xml.gz">ces</a></td>
 <th></th>
 <td><a rel="nofollow" title="Swahili-Chinese (sample file)" href="MultiHPLT/v1/sw-zh_hant_sample.html">view</a></td><th><a rel="nofollow" href="download.php?f=MultiHPLT/v1/raw/sw.zip">sw</a></th></tr>
 <tr><th><a rel="nofollow" href="download.php?f=MultiHPLT/v1/xml/zh_hant.zip">zh_hant</a></th>
@@ -256,7 +256,7 @@
 <td><a rel="nofollow" title="sentence alignments for 'Chinese-Maltese' (11.2k links, 0.4M tokens)" href="download.php?f=MultiHPLT/v1/xml/mt-zh_hant.xml.gz">ces</a></td>
 <td><a rel="nofollow" title="sentence alignments for 'Chinese-Norwegian Nynorsk' (1.3k links, 24.0k tokens)" href="download.php?f=MultiHPLT/v1/xml/nn-zh_hant.xml.gz">ces</a></td>
 <td><a rel="nofollow" title="sentence alignments for 'Chinese-Albanian' (25.4k links, 0.7M tokens)" href="download.php?f=MultiHPLT/v1/xml/sq-zh_hant.xml.gz">ces</a></td>
-<td><a rel="nofollow" title="sentence alignments for 'Chinese-Serbian' (10.6k links, 0.3M tokens)" href="download.php?f=MultiHPLT/v1/xml/sr-zh_hant.xml.gz">ces</a></td>
+<td><a rel="nofollow" title="sentence alignments for 'Chinese-Serbian' (88.9k links, 2.5M tokens)" href="download.php?f=MultiHPLT/v1/xml/sr-zh_hant.xml.gz">ces</a></td>
 <td><a rel="nofollow" title="sentence alignments for 'Chinese-Swahili' (0.3M links, 7.9M tokens)" href="download.php?f=MultiHPLT/v1/xml/sw-zh_hant.xml.gz">ces</a></td>
 <th></th>
 <th><a rel="nofollow" href="download.php?f=MultiHPLT/v1/raw/zh_hant.zip">zh_hant</a></th></tr>
@@ -302,279 +302,273 @@
 </th><th><a rel="nofollow" title='monolingual tokenized sw plain text' href="download.php?f=MultiHPLT/v1/mono/sw.tok.gz">sw</a>
 </th><th><a rel="nofollow" title='monolingual tokenized zh_hant plain text' href="download.php?f=MultiHPLT/v1/mono/zh_hant.tok.gz">zh_hant</a>
 </th></tr> <tr><th><a rel="nofollow" title='monolingual untokenized ar plain text' href="download.php?f=MultiHPLT/v1/mono/ar.txt.gz">ar</a>
-</th><td>1</td> <td>226.7M</td> <td>12.2M</td><td></td><td bgcolor="#ffebe7"><a rel="nofollow" title='Arabic-Bosnian (15,741 sentence pairs, 0.26M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ar-bs.tmx.gz">15.7k</a>
-</td><td bgcolor="#e1ffc7"><a rel="nofollow" title='Arabic-Catalan (375,327 sentence pairs, 8.90M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ar-ca.tmx.gz">0.4M</a>
-</td><td bgcolor="#bfffbf"><a rel="nofollow" title='Arabic-English (14,645,129 sentence pairs, 473.43M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ar-en.tmx.gz">14.6M</a>
-</td><td bgcolor="#d9ffc6"><a rel="nofollow" title='Arabic-Estonian (546,845 sentence pairs, 18.06M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ar-et.tmx.gz">0.5M</a>
-</td><td bgcolor="#fffbf1"><a rel="nofollow" title='Arabic-Basque (31,388 sentence pairs, 0.65M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ar-eu.tmx.gz">31.4k</a>
-</td><td bgcolor="#d5ffc8"><a rel="nofollow" title='Arabic-Finnish (1,434,090 sentence pairs, 25.49M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ar-fi.tmx.gz">1.4M</a>
-</td><td bgcolor="#ffffec"><a rel="nofollow" title='Arabic-Irish (44,362 sentence pairs, 1.23M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ar-ga.tmx.gz">44.4k</a>
-</td><td bgcolor="#ffffeb"><a rel="nofollow" title='Arabic-Galician (54,690 sentence pairs, 1.31M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ar-gl.tmx.gz">54.7k</a>
-</td><td bgcolor="#caffca"><a rel="nofollow" title='Arabic-Hindi (1,472,192 sentence pairs, 61.72M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ar-hi.tmx.gz">1.5M</a>
-</td><td bgcolor="#dcffc6"><a rel="nofollow" title='Arabic-Croatian (550,522 sentence pairs, 13.55M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ar-hr.tmx.gz">0.6M</a>
-</td><td bgcolor="#eaffcc"><a rel="nofollow" title='Arabic-Icelandic (149,211 sentence pairs, 3.50M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ar-is.tmx.gz">0.1M</a>
+</th><td>1</td> <td>226.7M</td> <td>12.2M</td><td></td><td bgcolor="#ffebe7"><a rel="nofollow" title='Arabic-Bosnian (15,739 sentence pairs, 0.26M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ar-bs.tmx.gz">15.7k</a>
+</td><td bgcolor="#e1ffc7"><a rel="nofollow" title='Arabic-Catalan (375,342 sentence pairs, 8.89M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ar-ca.tmx.gz">0.4M</a>
+</td><td></td><td bgcolor="#d9ffc6"><a rel="nofollow" title='Arabic-Estonian (546,811 sentence pairs, 18.06M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ar-et.tmx.gz">0.5M</a>
+</td><td bgcolor="#fffbf1"><a rel="nofollow" title='Arabic-Basque (31,384 sentence pairs, 0.65M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ar-eu.tmx.gz">31.4k</a>
+</td><td bgcolor="#d5ffc8"><a rel="nofollow" title='Arabic-Finnish (1,434,078 sentence pairs, 25.49M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ar-fi.tmx.gz">1.4M</a>
+</td><td bgcolor="#ffffec"><a rel="nofollow" title='Arabic-Irish (44,361 sentence pairs, 1.23M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ar-ga.tmx.gz">44.4k</a>
+</td><td bgcolor="#ffffeb"><a rel="nofollow" title='Arabic-Galician (54,669 sentence pairs, 1.31M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ar-gl.tmx.gz">54.7k</a>
+</td><td bgcolor="#caffca"><a rel="nofollow" title='Arabic-Hindi (1,472,027 sentence pairs, 61.71M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ar-hi.tmx.gz">1.5M</a>
+</td><td bgcolor="#dcffc6"><a rel="nofollow" title='Arabic-Croatian (550,405 sentence pairs, 13.54M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ar-hr.tmx.gz">0.6M</a>
+</td><td bgcolor="#eaffcc"><a rel="nofollow" title='Arabic-Icelandic (149,197 sentence pairs, 3.50M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ar-is.tmx.gz">0.1M</a>
 </td><td bgcolor="#ffffe3"><a rel="nofollow" title='Arabic-Macedonian (73,385 sentence pairs, 1.77M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ar-mk.tmx.gz">73.4k</a>
 </td><td bgcolor="#fffff0"><a rel="nofollow" title='Arabic-Maltese (41,574 sentence pairs, 0.99M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ar-mt.tmx.gz">41.6k</a>
-</td><td bgcolor="#ffe3e1"><a rel="nofollow" title='Arabic-Norwegian Nynorsk (11,548 sentence pairs, 0.16M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ar-nn.tmx.gz">11.5k</a>
-</td><td bgcolor="#f4ffd5"><a rel="nofollow" title='Arabic-Albanian (85,168 sentence pairs, 2.11M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ar-sq.tmx.gz">85.2k</a>
-</td><td bgcolor="#ffffe7"><a rel="nofollow" title='Arabic-Serbian (53,172 sentence pairs, 1.55M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ar-sr.tmx.gz">53.2k</a>
-</td><td bgcolor="#e0ffc6"><a rel="nofollow" title='Arabic-Swahili (261,573 sentence pairs, 9.21M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ar-sw.tmx.gz">0.3M</a>
-</td><td bgcolor="#daffc6"><a rel="nofollow" title='Arabic-Chinese (757,850 sentence pairs, 16.54M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ar-zh_hant.tmx.gz">0.8M</a>
+</td><td bgcolor="#ffe3e1"><a rel="nofollow" title='Arabic-Norwegian Nynorsk (11,545 sentence pairs, 0.16M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ar-nn.tmx.gz">11.5k</a>
+</td><td bgcolor="#f5ffd6"><a rel="nofollow" title='Arabic-Albanian (85,141 sentence pairs, 2.11M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ar-sq.tmx.gz">85.1k</a>
+</td><td bgcolor="#e1ffc7"><a rel="nofollow" title='Arabic-Serbian (388,428 sentence pairs, 8.58M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ar-sr.tmx.gz">0.4M</a>
+</td><td bgcolor="#e0ffc6"><a rel="nofollow" title='Arabic-Swahili (261,560 sentence pairs, 9.21M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ar-sw.tmx.gz">0.3M</a>
+</td><td bgcolor="#daffc6"><a rel="nofollow" title='Arabic-Chinese (757,820 sentence pairs, 16.53M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ar-zh_hant.tmx.gz">0.8M</a>
 </td></tr> <tr><th><a rel="nofollow" title='monolingual untokenized bs plain text' href="download.php?f=MultiHPLT/v1/mono/bs.txt.gz">bs</a>
-</th><td>1</td> <td>2.6M</td> <td>0.2M</td><td bgcolor="#ffebe7"><a rel="nofollow" title='Bosnian-Arabic (15,741 sentence pairs, 0.26M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ar-bs.txt.zip">15.7k</a>
-</td><td></td><td bgcolor="#fff1ec"><a rel="nofollow" title='Bosnian-Catalan (17,017 sentence pairs, 0.36M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/bs-ca.tmx.gz">17.0k</a>
+</th><td>1</td> <td>2.6M</td> <td>0.2M</td><td bgcolor="#ffebe7"><a rel="nofollow" title='Bosnian-Arabic (15,739 sentence pairs, 0.26M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ar-bs.txt.zip">15.7k</a>
+</td><td></td><td bgcolor="#fff1ec"><a rel="nofollow" title='Bosnian-Catalan (16,992 sentence pairs, 0.36M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/bs-ca.tmx.gz">17.0k</a>
 </td><td bgcolor="#e6ffc9"><a rel="nofollow" title='Bosnian-English (240,013 sentence pairs, 5.35M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/bs-en.tmx.gz">0.2M</a>
 </td><td bgcolor="#fff3ed"><a rel="nofollow" title='Bosnian-Estonian (21,172 sentence pairs, 0.40M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/bs-et.tmx.gz">21.2k</a>
 </td><td bgcolor="#ffd8d8"><a rel="nofollow" title='Bosnian-Basque (4,251 sentence pairs, 61.14k words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/bs-eu.tmx.gz">4.3k</a>
-</td><td bgcolor="#fffef0"><a rel="nofollow" title='Bosnian-Finnish (52,895 sentence pairs, 0.93M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/bs-fi.tmx.gz">52.9k</a>
+</td><td bgcolor="#fffef0"><a rel="nofollow" title='Bosnian-Finnish (52,891 sentence pairs, 0.93M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/bs-fi.tmx.gz">52.9k</a>
 </td><td bgcolor="#ffdad9"><a rel="nofollow" title='Bosnian-Irish (5,209 sentence pairs, 81.10k words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/bs-ga.tmx.gz">5.2k</a>
 </td><td bgcolor="#ffdedd"><a rel="nofollow" title='Bosnian-Galician (8,421 sentence pairs, 0.12M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/bs-gl.tmx.gz">8.4k</a>
-</td><td bgcolor="#fff4ee"><a rel="nofollow" title='Bosnian-Hindi (17,713 sentence pairs, 0.43M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/bs-hi.tmx.gz">17.7k</a>
-</td><td bgcolor="#ffffe8"><a rel="nofollow" title='Bosnian-Croatian (70,123 sentence pairs, 1.47M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/bs-hr.tmx.gz">70.1k</a>
-</td><td bgcolor="#ffebe7"><a rel="nofollow" title='Bosnian-Icelandic (12,672 sentence pairs, 0.26M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/bs-is.tmx.gz">12.7k</a>
-</td><td bgcolor="#fff7f0"><a rel="nofollow" title='Bosnian-Macedonian (21,596 sentence pairs, 0.50M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/bs-mk.tmx.gz">21.6k</a>
-</td><td bgcolor="#ffd9d8"><a rel="nofollow" title='Bosnian-Maltese (2,744 sentence pairs, 74.88k words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/bs-mt.tmx.gz">2.7k</a>
+</td><td bgcolor="#fff4ee"><a rel="nofollow" title='Bosnian-Hindi (17,706 sentence pairs, 0.43M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/bs-hi.tmx.gz">17.7k</a>
+</td><td bgcolor="#ffffe8"><a rel="nofollow" title='Bosnian-Croatian (70,110 sentence pairs, 1.47M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/bs-hr.tmx.gz">70.1k</a>
+</td><td bgcolor="#ffebe7"><a rel="nofollow" title='Bosnian-Icelandic (12,670 sentence pairs, 0.26M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/bs-is.tmx.gz">12.7k</a>
+</td><td bgcolor="#fff7f0"><a rel="nofollow" title='Bosnian-Macedonian (21,595 sentence pairs, 0.50M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/bs-mk.tmx.gz">21.6k</a>
+</td><td bgcolor="#ffd9d8"><a rel="nofollow" title='Bosnian-Maltese (2,743 sentence pairs, 74.86k words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/bs-mt.tmx.gz">2.7k</a>
 </td><td bgcolor="#ffd3d3"><a rel="nofollow" title='Bosnian-Norwegian Nynorsk (2,063 sentence pairs, 28.59k words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/bs-nn.tmx.gz">2.1k</a>
-</td><td bgcolor="#fff4ee"><a rel="nofollow" title='Bosnian-Albanian (17,376 sentence pairs, 0.43M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/bs-sq.tmx.gz">17.4k</a>
-</td><td bgcolor="#ffd3d3"><a rel="nofollow" title='Bosnian-Serbian (1,453 sentence pairs, 23.84k words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/bs-sr.tmx.gz">1.5k</a>
-</td><td bgcolor="#ffefea"><a rel="nofollow" title='Bosnian-Swahili (13,422 sentence pairs, 0.33M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/bs-sw.tmx.gz">13.4k</a>
-</td><td bgcolor="#ffdbda"><a rel="nofollow" title='Bosnian-Chinese (6,212 sentence pairs, 88.53k words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/bs-zh_hant.tmx.gz">6.2k</a>
+</td><td bgcolor="#fff4ee"><a rel="nofollow" title='Bosnian-Albanian (17,374 sentence pairs, 0.43M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/bs-sq.tmx.gz">17.4k</a>
+</td><td bgcolor="#fffcf1"><a rel="nofollow" title='Bosnian-Serbian (30,408 sentence pairs, 0.73M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/bs-sr.tmx.gz">30.4k</a>
+</td><td bgcolor="#ffefea"><a rel="nofollow" title='Bosnian-Swahili (13,421 sentence pairs, 0.33M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/bs-sw.tmx.gz">13.4k</a>
+</td><td bgcolor="#ffdbda"><a rel="nofollow" title='Bosnian-Chinese (6,211 sentence pairs, 88.52k words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/bs-zh_hant.tmx.gz">6.2k</a>
 </td></tr> <tr><th><a rel="nofollow" title='monolingual untokenized ca plain text' href="download.php?f=MultiHPLT/v1/mono/ca.txt.gz">ca</a>
-</th><td>1</td> <td>156.2M</td> <td>7.9M</td><td bgcolor="#e1ffc7"><a rel="nofollow" title='Catalan-Arabic (375,327 sentence pairs, 8.90M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ar-ca.txt.zip">0.4M</a>
-</td><td bgcolor="#fff1ec"><a rel="nofollow" title='Catalan-Bosnian (17,017 sentence pairs, 0.36M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/bs-ca.txt.zip">17.0k</a>
+</th><td>1</td> <td>156.2M</td> <td>7.9M</td><td bgcolor="#e1ffc7"><a rel="nofollow" title='Catalan-Arabic (375,342 sentence pairs, 8.89M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ar-ca.txt.zip">0.4M</a>
+</td><td bgcolor="#fff1ec"><a rel="nofollow" title='Catalan-Bosnian (16,992 sentence pairs, 0.36M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/bs-ca.txt.zip">17.0k</a>
 </td><td></td><td bgcolor="#bfffbf"><a rel="nofollow" title='Catalan-English (8,905,890 sentence pairs, 291.72M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ca-en.tmx.gz">8.9M</a>
-</td><td bgcolor="#d7ffc7"><a rel="nofollow" title='Catalan-Estonian (776,682 sentence pairs, 21.68M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ca-et.tmx.gz">0.8M</a>
-</td><td bgcolor="#e8ffca"><a rel="nofollow" title='Catalan-Basque (152,550 sentence pairs, 4.45M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ca-eu.tmx.gz">0.2M</a>
-</td><td bgcolor="#d2ffcc"><a rel="nofollow" title='Catalan-Finnish (1,393,442 sentence pairs, 33.97M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ca-fi.tmx.gz">1.4M</a>
-</td><td bgcolor="#edffce"><a rel="nofollow" title='Catalan-Irish (90,007 sentence pairs, 2.95M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ca-ga.tmx.gz">90.0k</a>
-</td><td bgcolor="#e0ffc6"><a rel="nofollow" title='Catalan-Galician (277,668 sentence pairs, 8.97M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ca-gl.tmx.gz">0.3M</a>
-</td><td bgcolor="#e0ffc7"><a rel="nofollow" title='Catalan-Hindi (321,994 sentence pairs, 9.73M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ca-hi.tmx.gz">0.3M</a>
-</td><td bgcolor="#d8ffc7"><a rel="nofollow" title='Catalan-Croatian (746,291 sentence pairs, 19.63M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ca-hr.tmx.gz">0.7M</a>
-</td><td bgcolor="#d7ffc7"><a rel="nofollow" title='Catalan-Icelandic (696,758 sentence pairs, 21.60M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ca-is.tmx.gz">0.7M</a>
-</td><td bgcolor="#eaffcc"><a rel="nofollow" title='Catalan-Macedonian (130,686 sentence pairs, 3.72M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ca-mk.tmx.gz">0.1M</a>
-</td><td bgcolor="#f3ffd4"><a rel="nofollow" title='Catalan-Maltese (66,902 sentence pairs, 2.18M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ca-mt.tmx.gz">66.9k</a>
-</td><td bgcolor="#fff0eb"><a rel="nofollow" title='Catalan-Norwegian Nynorsk (13,011 sentence pairs, 0.34M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ca-nn.tmx.gz">13.0k</a>
-</td><td bgcolor="#e6ffc9"><a rel="nofollow" title='Catalan-Albanian (173,760 sentence pairs, 4.99M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ca-sq.tmx.gz">0.2M</a>
-</td><td bgcolor="#ffffeb"><a rel="nofollow" title='Catalan-Serbian (68,594 sentence pairs, 1.27M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ca-sr.tmx.gz">68.6k</a>
-</td><td bgcolor="#ebffcd"><a rel="nofollow" title='Catalan-Swahili (127,011 sentence pairs, 3.39M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ca-sw.tmx.gz">0.1M</a>
-</td><td bgcolor="#ecffcd"><a rel="nofollow" title='Catalan-Chinese (192,935 sentence pairs, 3.14M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ca-zh_hant.tmx.gz">0.2M</a>
+</td><td bgcolor="#d7ffc7"><a rel="nofollow" title='Catalan-Estonian (777,017 sentence pairs, 21.69M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ca-et.tmx.gz">0.8M</a>
+</td><td bgcolor="#e8ffca"><a rel="nofollow" title='Catalan-Basque (152,572 sentence pairs, 4.45M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ca-eu.tmx.gz">0.2M</a>
+</td><td bgcolor="#d2ffcc"><a rel="nofollow" title='Catalan-Finnish (1,393,596 sentence pairs, 33.98M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ca-fi.tmx.gz">1.4M</a>
+</td><td bgcolor="#edffce"><a rel="nofollow" title='Catalan-Irish (90,023 sentence pairs, 2.95M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ca-ga.tmx.gz">90.0k</a>
+</td><td bgcolor="#e0ffc6"><a rel="nofollow" title='Catalan-Galician (277,718 sentence pairs, 8.97M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ca-gl.tmx.gz">0.3M</a>
+</td><td bgcolor="#e0ffc7"><a rel="nofollow" title='Catalan-Hindi (321,724 sentence pairs, 9.72M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ca-hi.tmx.gz">0.3M</a>
+</td><td bgcolor="#d8ffc7"><a rel="nofollow" title='Catalan-Croatian (746,604 sentence pairs, 19.64M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ca-hr.tmx.gz">0.7M</a>
+</td><td bgcolor="#d7ffc7"><a rel="nofollow" title='Catalan-Icelandic (697,130 sentence pairs, 21.62M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ca-is.tmx.gz">0.7M</a>
+</td><td bgcolor="#eaffcc"><a rel="nofollow" title='Catalan-Macedonian (130,711 sentence pairs, 3.72M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ca-mk.tmx.gz">0.1M</a>
+</td><td bgcolor="#f3ffd4"><a rel="nofollow" title='Catalan-Maltese (66,916 sentence pairs, 2.18M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ca-mt.tmx.gz">66.9k</a>
+</td><td bgcolor="#fff0eb"><a rel="nofollow" title='Catalan-Norwegian Nynorsk (13,010 sentence pairs, 0.34M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ca-nn.tmx.gz">13.0k</a>
+</td><td bgcolor="#e6ffc9"><a rel="nofollow" title='Catalan-Albanian (173,767 sentence pairs, 4.99M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ca-sq.tmx.gz">0.2M</a>
+</td><td bgcolor="#e0ffc6"><a rel="nofollow" title='Catalan-Serbian (333,107 sentence pairs, 9.10M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ca-sr.tmx.gz">0.3M</a>
+</td><td bgcolor="#ebffcd"><a rel="nofollow" title='Catalan-Swahili (127,015 sentence pairs, 3.39M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ca-sw.tmx.gz">0.1M</a>
+</td><td bgcolor="#ecffcd"><a rel="nofollow" title='Catalan-Chinese (192,929 sentence pairs, 3.14M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ca-zh_hant.tmx.gz">0.2M</a>
 </td></tr> <tr><th><a rel="nofollow" title='monolingual untokenized en plain text' href="download.php?f=MultiHPLT/v1/mono/en.txt.gz">en</a>
-</th><td>1</td> <td>1.2G</td> <td>71.4M</td><td bgcolor="#bfffbf"><a rel="nofollow" title='English-Arabic (14,645,129 sentence pairs, 473.43M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ar-en.txt.zip">14.6M</a>
-</td><td bgcolor="#e6ffc9"><a rel="nofollow" title='English-Bosnian (240,013 sentence pairs, 5.35M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/bs-en.txt.zip">0.2M</a>
+</th><td>1</td> <td>1.2G</td> <td>73.1M</td><td></td><td bgcolor="#e6ffc9"><a rel="nofollow" title='English-Bosnian (240,013 sentence pairs, 5.35M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/bs-en.txt.zip">0.2M</a>
 </td><td bgcolor="#bfffbf"><a rel="nofollow" title='English-Catalan (8,905,890 sentence pairs, 291.72M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ca-en.txt.zip">8.9M</a>
 </td><td></td><td bgcolor="#bfffbf"><a rel="nofollow" title='English-Estonian (6,089,792 sentence pairs, 172.39M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/en-et.tmx.gz">6.1M</a>
 </td><td bgcolor="#d9ffc6"><a rel="nofollow" title='English-Basque (610,688 sentence pairs, 17.97M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/en-eu.tmx.gz">0.6M</a>
-</td><td bgcolor="#bfffbf"><a rel="nofollow" title='English-Finnish (25,176,463 sentence pairs, 603.39M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/en-fi.tmx.gz">25.2M</a>
-</td><td bgcolor="#d2ffcd"><a rel="nofollow" title='English-Irish (994,747 sentence pairs, 34.70M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/en-ga.tmx.gz">1.0M</a>
+</td><td></td><td bgcolor="#d2ffcd"><a rel="nofollow" title='English-Irish (994,747 sentence pairs, 34.70M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/en-ga.tmx.gz">1.0M</a>
 </td><td bgcolor="#d4ffca"><a rel="nofollow" title='English-Galician (1,063,104 sentence pairs, 28.41M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/en-gl.tmx.gz">1.1M</a>
-</td><td bgcolor="#bfffbf"><a rel="nofollow" title='English-Hindi (12,043,070 sentence pairs, 351.29M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/en-hi.tmx.gz">12.0M</a>
-</td><td bgcolor="#bfffbf"><a rel="nofollow" title='English-Croatian (9,310,276 sentence pairs, 267.94M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/en-hr.tmx.gz">9.3M</a>
+</td><td></td><td bgcolor="#bfffbf"><a rel="nofollow" title='English-Croatian (9,310,276 sentence pairs, 267.94M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/en-hr.tmx.gz">9.3M</a>
 </td><td bgcolor="#cbffcb"><a rel="nofollow" title='English-Icelandic (2,148,855 sentence pairs, 59.14M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/en-is.tmx.gz">2.1M</a>
 </td><td bgcolor="#d1ffcd"><a rel="nofollow" title='English-Macedonian (1,139,052 sentence pairs, 36.97M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/en-mk.tmx.gz">1.1M</a>
 </td><td bgcolor="#d2ffcd"><a rel="nofollow" title='English-Maltese (854,821 sentence pairs, 35.23M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/en-mt.tmx.gz">0.9M</a>
 </td><td bgcolor="#e9ffcb"><a rel="nofollow" title='English-Norwegian Nynorsk (132,539 sentence pairs, 4.02M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/en-nn.tmx.gz">0.1M</a>
 </td><td bgcolor="#ccffcc"><a rel="nofollow" title='English-Albanian (1,655,959 sentence pairs, 53.67M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/en-sq.tmx.gz">1.7M</a>
-</td><td bgcolor="#ddffc6"><a rel="nofollow" title='English-Serbian (555,004 sentence pairs, 12.08M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/en-sr.tmx.gz">0.6M</a>
+</td><td bgcolor="#c2ffc2"><a rel="nofollow" title='English-Serbian (3,904,384 sentence pairs, 108.77M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/en-sr.tmx.gz">3.9M</a>
 </td><td bgcolor="#d0ffd0"><a rel="nofollow" title='English-Swahili (1,710,206 sentence pairs, 41.04M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/en-sw.tmx.gz">1.7M</a>
 </td><td bgcolor="#c2ffc2"><a rel="nofollow" title='English-Chinese (5,306,571 sentence pairs, 111.27M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/en-zh_hant.tmx.gz">5.3M</a>
 </td></tr> <tr><th><a rel="nofollow" title='monolingual untokenized et plain text' href="download.php?f=MultiHPLT/v1/mono/et.txt.gz">et</a>
-</th><td>1</td> <td>79.6M</td> <td>5.5M</td><td bgcolor="#d9ffc6"><a rel="nofollow" title='Estonian-Arabic (546,845 sentence pairs, 18.06M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ar-et.txt.zip">0.5M</a>
+</th><td>1</td> <td>79.6M</td> <td>5.5M</td><td bgcolor="#d9ffc6"><a rel="nofollow" title='Estonian-Arabic (546,811 sentence pairs, 18.06M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ar-et.txt.zip">0.5M</a>
 </td><td bgcolor="#fff3ed"><a rel="nofollow" title='Estonian-Bosnian (21,172 sentence pairs, 0.40M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/bs-et.txt.zip">21.2k</a>
-</td><td bgcolor="#d7ffc7"><a rel="nofollow" title='Estonian-Catalan (776,682 sentence pairs, 21.68M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ca-et.txt.zip">0.8M</a>
+</td><td bgcolor="#d7ffc7"><a rel="nofollow" title='Estonian-Catalan (777,017 sentence pairs, 21.69M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ca-et.txt.zip">0.8M</a>
 </td><td bgcolor="#bfffbf"><a rel="nofollow" title='Estonian-English (6,089,792 sentence pairs, 172.39M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/en-et.txt.zip">6.1M</a>
-</td><td></td><td bgcolor="#fffef0"><a rel="nofollow" title='Estonian-Basque (46,025 sentence pairs, 0.93M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/et-eu.tmx.gz">46.0k</a>
-</td><td bgcolor="#cdffcd"><a rel="nofollow" title='Estonian-Finnish (2,064,863 sentence pairs, 51.33M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/et-fi.tmx.gz">2.1M</a>
-</td><td bgcolor="#e7ffca"><a rel="nofollow" title='Estonian-Irish (137,808 sentence pairs, 4.92M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/et-ga.tmx.gz">0.1M</a>
+</td><td></td><td bgcolor="#fffef0"><a rel="nofollow" title='Estonian-Basque (46,026 sentence pairs, 0.93M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/et-eu.tmx.gz">46.0k</a>
+</td><td bgcolor="#cdffcd"><a rel="nofollow" title='Estonian-Finnish (2,064,592 sentence pairs, 51.31M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/et-fi.tmx.gz">2.1M</a>
+</td><td bgcolor="#e7ffca"><a rel="nofollow" title='Estonian-Irish (137,782 sentence pairs, 4.91M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/et-ga.tmx.gz">0.1M</a>
 </td><td bgcolor="#ffffe6"><a rel="nofollow" title='Estonian-Galician (71,398 sentence pairs, 1.57M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/et-gl.tmx.gz">71.4k</a>
-</td><td bgcolor="#ddffc6"><a rel="nofollow" title='Estonian-Hindi (473,397 sentence pairs, 13.04M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/et-hi.tmx.gz">0.5M</a>
-</td><td bgcolor="#d1ffce"><a rel="nofollow" title='Estonian-Croatian (1,315,653 sentence pairs, 37.21M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/et-hr.tmx.gz">1.3M</a>
-</td><td bgcolor="#daffc7"><a rel="nofollow" title='Estonian-Icelandic (595,714 sentence pairs, 17.27M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/et-is.tmx.gz">0.6M</a>
-</td><td bgcolor="#ecffcd"><a rel="nofollow" title='Estonian-Macedonian (122,911 sentence pairs, 3.00M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/et-mk.tmx.gz">0.1M</a>
-</td><td bgcolor="#ddffc6"><a rel="nofollow" title='Estonian-Maltese (307,471 sentence pairs, 12.30M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/et-mt.tmx.gz">0.3M</a>
+</td><td bgcolor="#ddffc6"><a rel="nofollow" title='Estonian-Hindi (473,288 sentence pairs, 13.04M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/et-hi.tmx.gz">0.5M</a>
+</td><td bgcolor="#d1ffce"><a rel="nofollow" title='Estonian-Croatian (1,315,296 sentence pairs, 37.19M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/et-hr.tmx.gz">1.3M</a>
+</td><td bgcolor="#daffc7"><a rel="nofollow" title='Estonian-Icelandic (595,728 sentence pairs, 17.27M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/et-is.tmx.gz">0.6M</a>
+</td><td bgcolor="#ecffcd"><a rel="nofollow" title='Estonian-Macedonian (122,918 sentence pairs, 3.00M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/et-mk.tmx.gz">0.1M</a>
+</td><td bgcolor="#ddffc6"><a rel="nofollow" title='Estonian-Maltese (307,299 sentence pairs, 12.29M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/et-mt.tmx.gz">0.3M</a>
 </td><td bgcolor="#ffdedd"><a rel="nofollow" title='Estonian-Norwegian Nynorsk (6,863 sentence pairs, 0.12M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/et-nn.tmx.gz">6.9k</a>
-</td><td bgcolor="#e9ffcb"><a rel="nofollow" title='Estonian-Albanian (158,344 sentence pairs, 3.82M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/et-sq.tmx.gz">0.2M</a>
-</td><td bgcolor="#ffffed"><a rel="nofollow" title='Estonian-Serbian (55,935 sentence pairs, 1.16M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/et-sr.tmx.gz">55.9k</a>
-</td><td bgcolor="#eaffcc"><a rel="nofollow" title='Estonian-Swahili (162,720 sentence pairs, 3.74M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/et-sw.tmx.gz">0.2M</a>
-</td><td bgcolor="#edffce"><a rel="nofollow" title='Estonian-Chinese (185,784 sentence pairs, 2.93M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/et-zh_hant.tmx.gz">0.2M</a>
+</td><td bgcolor="#e9ffcb"><a rel="nofollow" title='Estonian-Albanian (158,352 sentence pairs, 3.82M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/et-sq.tmx.gz">0.2M</a>
+</td><td bgcolor="#dfffc6"><a rel="nofollow" title='Estonian-Serbian (393,816 sentence pairs, 9.97M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/et-sr.tmx.gz">0.4M</a>
+</td><td bgcolor="#eaffcc"><a rel="nofollow" title='Estonian-Swahili (162,706 sentence pairs, 3.74M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/et-sw.tmx.gz">0.2M</a>
+</td><td bgcolor="#edffce"><a rel="nofollow" title='Estonian-Chinese (185,804 sentence pairs, 2.93M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/et-zh_hant.tmx.gz">0.2M</a>
 </td></tr> <tr><th><a rel="nofollow" title='monolingual untokenized eu plain text' href="download.php?f=MultiHPLT/v1/mono/eu.txt.gz">eu</a>
-</th><td>1</td> <td>9.5M</td> <td>0.6M</td><td bgcolor="#fffbf1"><a rel="nofollow" title='Basque-Arabic (31,388 sentence pairs, 0.65M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ar-eu.txt.zip">31.4k</a>
+</th><td>1</td> <td>9.5M</td> <td>0.6M</td><td bgcolor="#fffbf1"><a rel="nofollow" title='Basque-Arabic (31,384 sentence pairs, 0.65M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ar-eu.txt.zip">31.4k</a>
 </td><td bgcolor="#ffd8d8"><a rel="nofollow" title='Basque-Bosnian (4,251 sentence pairs, 61.14k words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/bs-eu.txt.zip">4.3k</a>
-</td><td bgcolor="#e8ffca"><a rel="nofollow" title='Basque-Catalan (152,550 sentence pairs, 4.45M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ca-eu.txt.zip">0.2M</a>
+</td><td bgcolor="#e8ffca"><a rel="nofollow" title='Basque-Catalan (152,572 sentence pairs, 4.45M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ca-eu.txt.zip">0.2M</a>
 </td><td bgcolor="#d9ffc6"><a rel="nofollow" title='Basque-English (610,688 sentence pairs, 17.97M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/en-eu.txt.zip">0.6M</a>
-</td><td bgcolor="#fffef0"><a rel="nofollow" title='Basque-Estonian (46,025 sentence pairs, 0.93M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/et-eu.txt.zip">46.0k</a>
-</td><td></td><td bgcolor="#ffffe6"><a rel="nofollow" title='Basque-Finnish (75,867 sentence pairs, 1.58M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/eu-fi.tmx.gz">75.9k</a>
-</td><td bgcolor="#fffef0"><a rel="nofollow" title='Basque-Irish (36,421 sentence pairs, 0.92M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/eu-ga.tmx.gz">36.4k</a>
+</td><td bgcolor="#fffef0"><a rel="nofollow" title='Basque-Estonian (46,026 sentence pairs, 0.93M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/et-eu.txt.zip">46.0k</a>
+</td><td></td><td bgcolor="#ffffe6"><a rel="nofollow" title='Basque-Finnish (75,864 sentence pairs, 1.58M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/eu-fi.tmx.gz">75.9k</a>
+</td><td bgcolor="#fffef0"><a rel="nofollow" title='Basque-Irish (36,419 sentence pairs, 0.92M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/eu-ga.tmx.gz">36.4k</a>
 </td><td bgcolor="#edffce"><a rel="nofollow" title='Basque-Galician (107,005 sentence pairs, 2.81M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/eu-gl.tmx.gz">0.1M</a>
-</td><td bgcolor="#ffffe9"><a rel="nofollow" title='Basque-Hindi (54,790 sentence pairs, 1.38M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/eu-hi.tmx.gz">54.8k</a>
-</td><td bgcolor="#ffffeb"><a rel="nofollow" title='Basque-Croatian (58,344 sentence pairs, 1.28M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/eu-hr.tmx.gz">58.3k</a>
-</td><td bgcolor="#fffef0"><a rel="nofollow" title='Basque-Icelandic (42,257 sentence pairs, 0.93M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/eu-is.tmx.gz">42.3k</a>
-</td><td bgcolor="#ffffef"><a rel="nofollow" title='Basque-Macedonian (41,975 sentence pairs, 1.00M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/eu-mk.tmx.gz">42.0k</a>
-</td><td bgcolor="#ffede9"><a rel="nofollow" title='Basque-Maltese (13,681 sentence pairs, 0.29M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/eu-mt.tmx.gz">13.7k</a>
+</td><td bgcolor="#ffffe9"><a rel="nofollow" title='Basque-Hindi (54,787 sentence pairs, 1.38M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/eu-hi.tmx.gz">54.8k</a>
+</td><td bgcolor="#ffffeb"><a rel="nofollow" title='Basque-Croatian (58,339 sentence pairs, 1.28M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/eu-hr.tmx.gz">58.3k</a>
+</td><td bgcolor="#fffef0"><a rel="nofollow" title='Basque-Icelandic (42,258 sentence pairs, 0.93M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/eu-is.tmx.gz">42.3k</a>
+</td><td bgcolor="#ffffef"><a rel="nofollow" title='Basque-Macedonian (41,976 sentence pairs, 1.00M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/eu-mk.tmx.gz">42.0k</a>
+</td><td bgcolor="#ffede9"><a rel="nofollow" title='Basque-Maltese (13,682 sentence pairs, 0.29M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/eu-mt.tmx.gz">13.7k</a>
 </td><td bgcolor="#ffdad9"><a rel="nofollow" title='Basque-Norwegian Nynorsk (3,019 sentence pairs, 81.13k words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/eu-nn.tmx.gz">3.0k</a>
-</td><td bgcolor="#ffffeb"><a rel="nofollow" title='Basque-Albanian (52,208 sentence pairs, 1.29M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/eu-sq.tmx.gz">52.2k</a>
-</td><td bgcolor="#ffd3d3"><a rel="nofollow" title='Basque-Serbian (1,679 sentence pairs, 27.94k words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/eu-sr.tmx.gz">1.7k</a>
-</td><td bgcolor="#fffcf1"><a rel="nofollow" title='Basque-Swahili (27,893 sentence pairs, 0.71M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/eu-sw.tmx.gz">27.9k</a>
+</td><td bgcolor="#ffffeb"><a rel="nofollow" title='Basque-Albanian (52,207 sentence pairs, 1.29M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/eu-sq.tmx.gz">52.2k</a>
+</td><td bgcolor="#fff1ec"><a rel="nofollow" title='Basque-Serbian (15,434 sentence pairs, 0.36M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/eu-sr.tmx.gz">15.4k</a>
+</td><td bgcolor="#fffcf1"><a rel="nofollow" title='Basque-Swahili (27,894 sentence pairs, 0.71M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/eu-sw.tmx.gz">27.9k</a>
 </td><td bgcolor="#ffdcdb"><a rel="nofollow" title='Basque-Chinese (9,358 sentence pairs, 0.10M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/eu-zh_hant.tmx.gz">9.4k</a>
 </td></tr> <tr><th><a rel="nofollow" title='monolingual untokenized fi plain text' href="download.php?f=MultiHPLT/v1/mono/fi.txt.gz">fi</a>
-</th><td>1</td> <td>265.3M</td> <td>21.5M</td><td bgcolor="#d5ffc8"><a rel="nofollow" title='Finnish-Arabic (1,434,090 sentence pairs, 25.49M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ar-fi.txt.zip">1.4M</a>
-</td><td bgcolor="#fffef0"><a rel="nofollow" title='Finnish-Bosnian (52,895 sentence pairs, 0.93M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/bs-fi.txt.zip">52.9k</a>
-</td><td bgcolor="#d2ffcc"><a rel="nofollow" title='Finnish-Catalan (1,393,442 sentence pairs, 33.97M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ca-fi.txt.zip">1.4M</a>
-</td><td bgcolor="#bfffbf"><a rel="nofollow" title='Finnish-English (25,176,463 sentence pairs, 603.39M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/en-fi.txt.zip">25.2M</a>
-</td><td bgcolor="#cdffcd"><a rel="nofollow" title='Finnish-Estonian (2,064,863 sentence pairs, 51.33M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/et-fi.txt.zip">2.1M</a>
-</td><td bgcolor="#ffffe6"><a rel="nofollow" title='Finnish-Basque (75,867 sentence pairs, 1.58M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/eu-fi.txt.zip">75.9k</a>
-</td><td></td><td bgcolor="#e3ffc7"><a rel="nofollow" title='Finnish-Irish (241,776 sentence pairs, 6.92M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/fi-ga.tmx.gz">0.2M</a>
-</td><td bgcolor="#f2ffd3"><a rel="nofollow" title='Finnish-Galician (106,578 sentence pairs, 2.26M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/fi-gl.tmx.gz">0.1M</a>
-</td><td bgcolor="#daffc7"><a rel="nofollow" title='Finnish-Hindi (752,751 sentence pairs, 17.30M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/fi-hi.tmx.gz">0.8M</a>
-</td><td bgcolor="#ccffcc"><a rel="nofollow" title='Finnish-Croatian (2,150,416 sentence pairs, 53.34M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/fi-hr.tmx.gz">2.2M</a>
-</td><td bgcolor="#d7ffc8"><a rel="nofollow" title='Finnish-Icelandic (917,936 sentence pairs, 23.07M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/fi-is.tmx.gz">0.9M</a>
-</td><td bgcolor="#e9ffcb"><a rel="nofollow" title='Finnish-Macedonian (182,719 sentence pairs, 3.97M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/fi-mk.tmx.gz">0.2M</a>
-</td><td bgcolor="#ddffc6"><a rel="nofollow" title='Finnish-Maltese (336,024 sentence pairs, 12.89M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/fi-mt.tmx.gz">0.3M</a>
-</td><td bgcolor="#ffe9e6"><a rel="nofollow" title='Finnish-Norwegian Nynorsk (13,570 sentence pairs, 0.23M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/fi-nn.tmx.gz">13.6k</a>
-</td><td bgcolor="#e4ffc8"><a rel="nofollow" title='Finnish-Albanian (282,402 sentence pairs, 6.34M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/fi-sq.tmx.gz">0.3M</a>
-</td><td bgcolor="#eeffcf"><a rel="nofollow" title='Finnish-Serbian (151,166 sentence pairs, 2.79M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/fi-sr.tmx.gz">0.2M</a>
-</td><td bgcolor="#eaffcc"><a rel="nofollow" title='Finnish-Swahili (162,865 sentence pairs, 3.49M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/fi-sw.tmx.gz">0.2M</a>
-</td><td bgcolor="#e0ffc6"><a rel="nofollow" title='Finnish-Chinese (741,681 sentence pairs, 9.28M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/fi-zh_hant.tmx.gz">0.7M</a>
+</th><td>1</td> <td>265.3M</td> <td>21.5M</td><td bgcolor="#d5ffc8"><a rel="nofollow" title='Finnish-Arabic (1,434,078 sentence pairs, 25.49M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ar-fi.txt.zip">1.4M</a>
+</td><td bgcolor="#fffef0"><a rel="nofollow" title='Finnish-Bosnian (52,891 sentence pairs, 0.93M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/bs-fi.txt.zip">52.9k</a>
+</td><td bgcolor="#d2ffcc"><a rel="nofollow" title='Finnish-Catalan (1,393,596 sentence pairs, 33.98M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ca-fi.txt.zip">1.4M</a>
+</td><td></td><td bgcolor="#cdffcd"><a rel="nofollow" title='Finnish-Estonian (2,064,592 sentence pairs, 51.31M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/et-fi.txt.zip">2.1M</a>
+</td><td bgcolor="#ffffe6"><a rel="nofollow" title='Finnish-Basque (75,864 sentence pairs, 1.58M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/eu-fi.txt.zip">75.9k</a>
+</td><td></td><td bgcolor="#e3ffc7"><a rel="nofollow" title='Finnish-Irish (241,757 sentence pairs, 6.92M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/fi-ga.tmx.gz">0.2M</a>
+</td><td bgcolor="#f2ffd3"><a rel="nofollow" title='Finnish-Galician (106,582 sentence pairs, 2.26M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/fi-gl.tmx.gz">0.1M</a>
+</td><td bgcolor="#daffc7"><a rel="nofollow" title='Finnish-Hindi (752,692 sentence pairs, 17.29M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/fi-hi.tmx.gz">0.8M</a>
+</td><td bgcolor="#ccffcc"><a rel="nofollow" title='Finnish-Croatian (2,150,057 sentence pairs, 53.32M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/fi-hr.tmx.gz">2.2M</a>
+</td><td bgcolor="#d7ffc8"><a rel="nofollow" title='Finnish-Icelandic (917,947 sentence pairs, 23.07M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/fi-is.tmx.gz">0.9M</a>
+</td><td bgcolor="#e9ffcb"><a rel="nofollow" title='Finnish-Macedonian (182,706 sentence pairs, 3.97M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/fi-mk.tmx.gz">0.2M</a>
+</td><td bgcolor="#ddffc6"><a rel="nofollow" title='Finnish-Maltese (335,871 sentence pairs, 12.89M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/fi-mt.tmx.gz">0.3M</a>
+</td><td bgcolor="#ffe9e6"><a rel="nofollow" title='Finnish-Norwegian Nynorsk (13,568 sentence pairs, 0.23M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/fi-nn.tmx.gz">13.6k</a>
+</td><td bgcolor="#e4ffc8"><a rel="nofollow" title='Finnish-Albanian (282,395 sentence pairs, 6.34M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/fi-sq.tmx.gz">0.3M</a>
+</td><td bgcolor="#d8ffc8"><a rel="nofollow" title='Finnish-Serbian (980,417 sentence pairs, 20.83M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/fi-sr.tmx.gz">1.0M</a>
+</td><td bgcolor="#eaffcc"><a rel="nofollow" title='Finnish-Swahili (162,853 sentence pairs, 3.49M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/fi-sw.tmx.gz">0.2M</a>
+</td><td bgcolor="#e0ffc6"><a rel="nofollow" title='Finnish-Chinese (741,676 sentence pairs, 9.28M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/fi-zh_hant.tmx.gz">0.7M</a>
 </td></tr> <tr><th><a rel="nofollow" title='monolingual untokenized ga plain text' href="download.php?f=MultiHPLT/v1/mono/ga.txt.gz">ga</a>
-</th><td>1</td> <td>19.1M</td> <td>0.9M</td><td bgcolor="#ffffec"><a rel="nofollow" title='Irish-Arabic (44,362 sentence pairs, 1.23M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ar-ga.txt.zip">44.4k</a>
+</th><td>1</td> <td>19.1M</td> <td>0.9M</td><td bgcolor="#ffffec"><a rel="nofollow" title='Irish-Arabic (44,361 sentence pairs, 1.23M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ar-ga.txt.zip">44.4k</a>
 </td><td bgcolor="#ffdad9"><a rel="nofollow" title='Irish-Bosnian (5,209 sentence pairs, 81.10k words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/bs-ga.txt.zip">5.2k</a>
-</td><td bgcolor="#edffce"><a rel="nofollow" title='Irish-Catalan (90,007 sentence pairs, 2.95M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ca-ga.txt.zip">90.0k</a>
+</td><td bgcolor="#edffce"><a rel="nofollow" title='Irish-Catalan (90,023 sentence pairs, 2.95M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ca-ga.txt.zip">90.0k</a>
 </td><td bgcolor="#d2ffcd"><a rel="nofollow" title='Irish-English (994,747 sentence pairs, 34.70M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/en-ga.txt.zip">1.0M</a>
-</td><td bgcolor="#e7ffca"><a rel="nofollow" title='Irish-Estonian (137,808 sentence pairs, 4.92M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/et-ga.txt.zip">0.1M</a>
-</td><td bgcolor="#fffef0"><a rel="nofollow" title='Irish-Basque (36,421 sentence pairs, 0.92M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/eu-ga.txt.zip">36.4k</a>
-</td><td bgcolor="#e3ffc7"><a rel="nofollow" title='Irish-Finnish (241,776 sentence pairs, 6.92M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/fi-ga.txt.zip">0.2M</a>
-</td><td></td><td bgcolor="#f6ffd7"><a rel="nofollow" title='Irish-Galician (70,797 sentence pairs, 2.06M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ga-gl.tmx.gz">70.8k</a>
-</td><td bgcolor="#ebffcd"><a rel="nofollow" title='Irish-Hindi (101,522 sentence pairs, 3.31M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ga-hi.tmx.gz">0.1M</a>
-</td><td bgcolor="#e3ffc7"><a rel="nofollow" title='Irish-Croatian (190,517 sentence pairs, 6.68M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ga-hr.tmx.gz">0.2M</a>
-</td><td bgcolor="#fbffdc"><a rel="nofollow" title='Irish-Icelandic (72,635 sentence pairs, 2.00M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ga-is.tmx.gz">72.6k</a>
-</td><td bgcolor="#f1ffd2"><a rel="nofollow" title='Irish-Macedonian (74,991 sentence pairs, 2.32M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ga-mk.tmx.gz">75.0k</a>
-</td><td bgcolor="#e8ffca"><a rel="nofollow" title='Irish-Maltese (94,307 sentence pairs, 4.15M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ga-mt.tmx.gz">94.3k</a>
+</td><td bgcolor="#e7ffca"><a rel="nofollow" title='Irish-Estonian (137,782 sentence pairs, 4.91M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/et-ga.txt.zip">0.1M</a>
+</td><td bgcolor="#fffef0"><a rel="nofollow" title='Irish-Basque (36,419 sentence pairs, 0.92M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/eu-ga.txt.zip">36.4k</a>
+</td><td bgcolor="#e3ffc7"><a rel="nofollow" title='Irish-Finnish (241,757 sentence pairs, 6.92M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/fi-ga.txt.zip">0.2M</a>
+</td><td></td><td bgcolor="#f6ffd7"><a rel="nofollow" title='Irish-Galician (70,795 sentence pairs, 2.06M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ga-gl.tmx.gz">70.8k</a>
+</td><td bgcolor="#ebffcd"><a rel="nofollow" title='Irish-Hindi (101,507 sentence pairs, 3.31M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ga-hi.tmx.gz">0.1M</a>
+</td><td bgcolor="#e3ffc7"><a rel="nofollow" title='Irish-Croatian (190,490 sentence pairs, 6.68M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ga-hr.tmx.gz">0.2M</a>
+</td><td bgcolor="#fbffdc"><a rel="nofollow" title='Irish-Icelandic (72,631 sentence pairs, 2.00M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ga-is.tmx.gz">72.6k</a>
+</td><td bgcolor="#f1ffd2"><a rel="nofollow" title='Irish-Macedonian (74,987 sentence pairs, 2.32M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ga-mk.tmx.gz">75.0k</a>
+</td><td bgcolor="#e8ffca"><a rel="nofollow" title='Irish-Maltese (94,244 sentence pairs, 4.15M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ga-mt.tmx.gz">94.2k</a>
 </td><td bgcolor="#ffd3d3"><a rel="nofollow" title='Irish-Norwegian Nynorsk (753 sentence pairs, 24.85k words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ga-nn.tmx.gz">0.8k</a>
-</td><td bgcolor="#e9ffcb"><a rel="nofollow" title='Irish-Albanian (132,504 sentence pairs, 3.91M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ga-sq.tmx.gz">0.1M</a>
-</td><td bgcolor="#ffd2d2"><a rel="nofollow" title='Irish-Serbian (878 sentence pairs, 17.23k words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ga-sr.tmx.gz">0.9k</a>
-</td><td bgcolor="#ffffe9"><a rel="nofollow" title='Irish-Swahili (45,197 sentence pairs, 1.38M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ga-sw.tmx.gz">45.2k</a>
-</td><td bgcolor="#ffdfde"><a rel="nofollow" title='Irish-Chinese (8,492 sentence pairs, 0.12M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ga-zh_hant.tmx.gz">8.5k</a>
+</td><td bgcolor="#e9ffcb"><a rel="nofollow" title='Irish-Albanian (132,503 sentence pairs, 3.91M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ga-sq.tmx.gz">0.1M</a>
+</td><td bgcolor="#ffe9e6"><a rel="nofollow" title='Irish-Serbian (9,340 sentence pairs, 0.24M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ga-sr.tmx.gz">9.3k</a>
+</td><td bgcolor="#ffffe9"><a rel="nofollow" title='Irish-Swahili (45,195 sentence pairs, 1.38M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ga-sw.tmx.gz">45.2k</a>
+</td><td bgcolor="#ffdfde"><a rel="nofollow" title='Irish-Chinese (8,491 sentence pairs, 0.12M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/ga-zh_hant.tmx.gz">8.5k</a>
 </td></tr> <tr><th><a rel="nofollow" title='monolingual untokenized gl plain text' href="download.php?f=MultiHPLT/v1/mono/gl.txt.gz">gl</a>
-</th><td>1</td> <td>15.1M</td> <td>0.9M</td><td bgcolor="#ffffeb"><a rel="nofollow" title='Galician-Arabic (54,690 sentence pairs, 1.31M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ar-gl.txt.zip">54.7k</a>
+</th><td>1</td> <td>15.1M</td> <td>0.9M</td><td bgcolor="#ffffeb"><a rel="nofollow" title='Galician-Arabic (54,669 sentence pairs, 1.31M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ar-gl.txt.zip">54.7k</a>
 </td><td bgcolor="#ffdedd"><a rel="nofollow" title='Galician-Bosnian (8,421 sentence pairs, 0.12M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/bs-gl.txt.zip">8.4k</a>
-</td><td bgcolor="#e0ffc6"><a rel="nofollow" title='Galician-Catalan (277,668 sentence pairs, 8.97M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ca-gl.txt.zip">0.3M</a>
+</td><td bgcolor="#e0ffc6"><a rel="nofollow" title='Galician-Catalan (277,718 sentence pairs, 8.97M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ca-gl.txt.zip">0.3M</a>
 </td><td bgcolor="#d4ffca"><a rel="nofollow" title='Galician-English (1,063,104 sentence pairs, 28.41M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/en-gl.txt.zip">1.1M</a>
 </td><td bgcolor="#ffffe6"><a rel="nofollow" title='Galician-Estonian (71,398 sentence pairs, 1.57M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/et-gl.txt.zip">71.4k</a>
 </td><td bgcolor="#edffce"><a rel="nofollow" title='Galician-Basque (107,005 sentence pairs, 2.81M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/eu-gl.txt.zip">0.1M</a>
-</td><td bgcolor="#f2ffd3"><a rel="nofollow" title='Galician-Finnish (106,578 sentence pairs, 2.26M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/fi-gl.txt.zip">0.1M</a>
-</td><td bgcolor="#f6ffd7"><a rel="nofollow" title='Galician-Irish (70,797 sentence pairs, 2.06M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ga-gl.txt.zip">70.8k</a>
+</td><td bgcolor="#f2ffd3"><a rel="nofollow" title='Galician-Finnish (106,582 sentence pairs, 2.26M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/fi-gl.txt.zip">0.1M</a>
+</td><td bgcolor="#f6ffd7"><a rel="nofollow" title='Galician-Irish (70,795 sentence pairs, 2.06M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ga-gl.txt.zip">70.8k</a>
 </td><td></td><td bgcolor="#f0ffd1"><a rel="nofollow" title='Galician-Hindi (86,171 sentence pairs, 2.41M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/gl-hi.tmx.gz">86.2k</a>
-</td><td bgcolor="#f3ffd4"><a rel="nofollow" title='Galician-Croatian (92,267 sentence pairs, 2.21M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/gl-hr.tmx.gz">92.3k</a>
-</td><td bgcolor="#ffffe2"><a rel="nofollow" title='Galician-Icelandic (89,522 sentence pairs, 1.84M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/gl-is.tmx.gz">89.5k</a>
+</td><td bgcolor="#f3ffd4"><a rel="nofollow" title='Galician-Croatian (92,272 sentence pairs, 2.21M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/gl-hr.tmx.gz">92.3k</a>
+</td><td bgcolor="#ffffe2"><a rel="nofollow" title='Galician-Icelandic (89,521 sentence pairs, 1.84M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/gl-is.tmx.gz">89.5k</a>
 </td><td bgcolor="#f4ffd5"><a rel="nofollow" title='Galician-Macedonian (80,315 sentence pairs, 2.14M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/gl-mk.tmx.gz">80.3k</a>
-</td><td bgcolor="#fffbf1"><a rel="nofollow" title='Galician-Maltese (25,575 sentence pairs, 0.64M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/gl-mt.tmx.gz">25.6k</a>
+</td><td bgcolor="#fffbf1"><a rel="nofollow" title='Galician-Maltese (25,576 sentence pairs, 0.64M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/gl-mt.tmx.gz">25.6k</a>
 </td><td bgcolor="#ffe3e1"><a rel="nofollow" title='Galician-Norwegian Nynorsk (4,801 sentence pairs, 0.17M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/gl-nn.tmx.gz">4.8k</a>
-</td><td bgcolor="#efffd0"><a rel="nofollow" title='Galician-Albanian (91,803 sentence pairs, 2.49M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/gl-sq.tmx.gz">91.8k</a>
-</td><td bgcolor="#ffd5d5"><a rel="nofollow" title='Galician-Serbian (2,302 sentence pairs, 43.41k words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/gl-sr.tmx.gz">2.3k</a>
+</td><td bgcolor="#efffd0"><a rel="nofollow" title='Galician-Albanian (91,801 sentence pairs, 2.49M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/gl-sq.tmx.gz">91.8k</a>
+</td><td bgcolor="#fff4ee"><a rel="nofollow" title='Galician-Serbian (17,678 sentence pairs, 0.42M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/gl-sr.tmx.gz">17.7k</a>
 </td><td bgcolor="#ffffec"><a rel="nofollow" title='Galician-Swahili (46,707 sentence pairs, 1.23M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/gl-sw.tmx.gz">46.7k</a>
 </td><td bgcolor="#ffe5e3"><a rel="nofollow" title='Galician-Chinese (14,720 sentence pairs, 0.18M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/gl-zh_hant.tmx.gz">14.7k</a>
 </td></tr> <tr><th><a rel="nofollow" title='monolingual untokenized hi plain text' href="download.php?f=MultiHPLT/v1/mono/hi.txt.gz">hi</a>
-</th><td>1</td> <td>276.8M</td> <td>11.3M</td><td bgcolor="#caffca"><a rel="nofollow" title='Hindi-Arabic (1,472,192 sentence pairs, 61.72M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ar-hi.txt.zip">1.5M</a>
-</td><td bgcolor="#fff4ee"><a rel="nofollow" title='Hindi-Bosnian (17,713 sentence pairs, 0.43M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/bs-hi.txt.zip">17.7k</a>
-</td><td bgcolor="#e0ffc7"><a rel="nofollow" title='Hindi-Catalan (321,994 sentence pairs, 9.73M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ca-hi.txt.zip">0.3M</a>
-</td><td bgcolor="#bfffbf"><a rel="nofollow" title='Hindi-English (12,043,070 sentence pairs, 351.29M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/en-hi.txt.zip">12.0M</a>
-</td><td bgcolor="#ddffc6"><a rel="nofollow" title='Hindi-Estonian (473,397 sentence pairs, 13.04M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/et-hi.txt.zip">0.5M</a>
-</td><td bgcolor="#ffffe9"><a rel="nofollow" title='Hindi-Basque (54,790 sentence pairs, 1.38M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/eu-hi.txt.zip">54.8k</a>
-</td><td bgcolor="#daffc7"><a rel="nofollow" title='Hindi-Finnish (752,751 sentence pairs, 17.30M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/fi-hi.txt.zip">0.8M</a>
-</td><td bgcolor="#ebffcd"><a rel="nofollow" title='Hindi-Irish (101,522 sentence pairs, 3.31M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ga-hi.txt.zip">0.1M</a>
+</th><td>1</td> <td>276.8M</td> <td>11.3M</td><td bgcolor="#caffca"><a rel="nofollow" title='Hindi-Arabic (1,472,027 sentence pairs, 61.71M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ar-hi.txt.zip">1.5M</a>
+</td><td bgcolor="#fff4ee"><a rel="nofollow" title='Hindi-Bosnian (17,706 sentence pairs, 0.43M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/bs-hi.txt.zip">17.7k</a>
+</td><td bgcolor="#e0ffc7"><a rel="nofollow" title='Hindi-Catalan (321,724 sentence pairs, 9.72M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ca-hi.txt.zip">0.3M</a>
+</td><td></td><td bgcolor="#ddffc6"><a rel="nofollow" title='Hindi-Estonian (473,288 sentence pairs, 13.04M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/et-hi.txt.zip">0.5M</a>
+</td><td bgcolor="#ffffe9"><a rel="nofollow" title='Hindi-Basque (54,787 sentence pairs, 1.38M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/eu-hi.txt.zip">54.8k</a>
+</td><td bgcolor="#daffc7"><a rel="nofollow" title='Hindi-Finnish (752,692 sentence pairs, 17.29M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/fi-hi.txt.zip">0.8M</a>
+</td><td bgcolor="#ebffcd"><a rel="nofollow" title='Hindi-Irish (101,507 sentence pairs, 3.31M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ga-hi.txt.zip">0.1M</a>
 </td><td bgcolor="#f0ffd1"><a rel="nofollow" title='Hindi-Galician (86,171 sentence pairs, 2.41M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/gl-hi.txt.zip">86.2k</a>
-</td><td></td><td bgcolor="#dbffc6"><a rel="nofollow" title='Hindi-Croatian (591,982 sentence pairs, 15.59M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/hi-hr.tmx.gz">0.6M</a>
-</td><td bgcolor="#ecffcd"><a rel="nofollow" title='Hindi-Icelandic (107,001 sentence pairs, 3.05M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/hi-is.tmx.gz">0.1M</a>
-</td><td bgcolor="#e9ffcb"><a rel="nofollow" title='Hindi-Macedonian (137,154 sentence pairs, 3.90M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/hi-mk.tmx.gz">0.1M</a>
-</td><td bgcolor="#ffffe5"><a rel="nofollow" title='Hindi-Maltese (55,778 sentence pairs, 1.64M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/hi-mt.tmx.gz">55.8k</a>
+</td><td></td><td bgcolor="#dbffc6"><a rel="nofollow" title='Hindi-Croatian (591,792 sentence pairs, 15.58M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/hi-hr.tmx.gz">0.6M</a>
+</td><td bgcolor="#ecffcd"><a rel="nofollow" title='Hindi-Icelandic (107,007 sentence pairs, 3.05M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/hi-is.tmx.gz">0.1M</a>
+</td><td bgcolor="#e9ffcb"><a rel="nofollow" title='Hindi-Macedonian (137,157 sentence pairs, 3.90M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/hi-mk.tmx.gz">0.1M</a>
+</td><td bgcolor="#ffffe5"><a rel="nofollow" title='Hindi-Maltese (55,787 sentence pairs, 1.64M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/hi-mt.tmx.gz">55.8k</a>
 </td><td bgcolor="#ffdedd"><a rel="nofollow" title='Hindi-Norwegian Nynorsk (6,330 sentence pairs, 0.12M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/hi-nn.tmx.gz">6.3k</a>
-</td><td bgcolor="#e8ffca"><a rel="nofollow" title='Hindi-Albanian (149,070 sentence pairs, 4.45M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/hi-sq.tmx.gz">0.1M</a>
-</td><td bgcolor="#fff9f0"><a rel="nofollow" title='Hindi-Serbian (20,276 sentence pairs, 0.57M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/hi-sr.tmx.gz">20.3k</a>
-</td><td bgcolor="#deffc6"><a rel="nofollow" title='Hindi-Swahili (411,956 sentence pairs, 11.99M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/hi-sw.tmx.gz">0.4M</a>
-</td><td bgcolor="#e3ffc8"><a rel="nofollow" title='Hindi-Chinese (291,721 sentence pairs, 7.30M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/hi-zh_hant.tmx.gz">0.3M</a>
+</td><td bgcolor="#e8ffca"><a rel="nofollow" title='Hindi-Albanian (149,077 sentence pairs, 4.45M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/hi-sq.tmx.gz">0.1M</a>
+</td><td bgcolor="#f0ffd1"><a rel="nofollow" title='Hindi-Serbian (86,392 sentence pairs, 2.40M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/hi-sr.tmx.gz">86.4k</a>
+</td><td bgcolor="#deffc6"><a rel="nofollow" title='Hindi-Swahili (411,916 sentence pairs, 11.99M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/hi-sw.tmx.gz">0.4M</a>
+</td><td bgcolor="#e3ffc8"><a rel="nofollow" title='Hindi-Chinese (291,723 sentence pairs, 7.30M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/hi-zh_hant.tmx.gz">0.3M</a>
 </td></tr> <tr><th><a rel="nofollow" title='monolingual untokenized hr plain text' href="download.php?f=MultiHPLT/v1/mono/hr.txt.gz">hr</a>
-</th><td>1</td> <td>133.8M</td> <td>8.3M</td><td bgcolor="#dcffc6"><a rel="nofollow" title='Croatian-Arabic (550,522 sentence pairs, 13.55M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ar-hr.txt.zip">0.6M</a>
-</td><td bgcolor="#ffffe8"><a rel="nofollow" title='Croatian-Bosnian (70,123 sentence pairs, 1.47M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/bs-hr.txt.zip">70.1k</a>
-</td><td bgcolor="#d8ffc7"><a rel="nofollow" title='Croatian-Catalan (746,291 sentence pairs, 19.63M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ca-hr.txt.zip">0.7M</a>
+</th><td>1</td> <td>133.8M</td> <td>8.3M</td><td bgcolor="#dcffc6"><a rel="nofollow" title='Croatian-Arabic (550,405 sentence pairs, 13.54M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ar-hr.txt.zip">0.6M</a>
+</td><td bgcolor="#ffffe8"><a rel="nofollow" title='Croatian-Bosnian (70,110 sentence pairs, 1.47M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/bs-hr.txt.zip">70.1k</a>
+</td><td bgcolor="#d8ffc7"><a rel="nofollow" title='Croatian-Catalan (746,604 sentence pairs, 19.64M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ca-hr.txt.zip">0.7M</a>
 </td><td bgcolor="#bfffbf"><a rel="nofollow" title='Croatian-English (9,310,276 sentence pairs, 267.94M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/en-hr.txt.zip">9.3M</a>
-</td><td bgcolor="#d1ffce"><a rel="nofollow" title='Croatian-Estonian (1,315,653 sentence pairs, 37.21M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/et-hr.txt.zip">1.3M</a>
-</td><td bgcolor="#ffffeb"><a rel="nofollow" title='Croatian-Basque (58,344 sentence pairs, 1.28M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/eu-hr.txt.zip">58.3k</a>
-</td><td bgcolor="#ccffcc"><a rel="nofollow" title='Croatian-Finnish (2,150,416 sentence pairs, 53.34M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/fi-hr.txt.zip">2.2M</a>
-</td><td bgcolor="#e3ffc7"><a rel="nofollow" title='Croatian-Irish (190,517 sentence pairs, 6.68M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ga-hr.txt.zip">0.2M</a>
-</td><td bgcolor="#f3ffd4"><a rel="nofollow" title='Croatian-Galician (92,267 sentence pairs, 2.21M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/gl-hr.txt.zip">92.3k</a>
-</td><td bgcolor="#dbffc6"><a rel="nofollow" title='Croatian-Hindi (591,982 sentence pairs, 15.59M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/hi-hr.txt.zip">0.6M</a>
-</td><td></td><td bgcolor="#dbffc6"><a rel="nofollow" title='Croatian-Icelandic (557,103 sentence pairs, 14.83M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/hr-is.tmx.gz">0.6M</a>
-</td><td bgcolor="#e3ffc8"><a rel="nofollow" title='Croatian-Macedonian (281,513 sentence pairs, 7.23M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/hr-mk.tmx.gz">0.3M</a>
-</td><td bgcolor="#ddffc6"><a rel="nofollow" title='Croatian-Maltese (297,165 sentence pairs, 12.23M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/hr-mt.tmx.gz">0.3M</a>
+</td><td bgcolor="#d1ffce"><a rel="nofollow" title='Croatian-Estonian (1,315,296 sentence pairs, 37.19M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/et-hr.txt.zip">1.3M</a>
+</td><td bgcolor="#ffffeb"><a rel="nofollow" title='Croatian-Basque (58,339 sentence pairs, 1.28M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/eu-hr.txt.zip">58.3k</a>
+</td><td bgcolor="#ccffcc"><a rel="nofollow" title='Croatian-Finnish (2,150,057 sentence pairs, 53.32M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/fi-hr.txt.zip">2.2M</a>
+</td><td bgcolor="#e3ffc7"><a rel="nofollow" title='Croatian-Irish (190,490 sentence pairs, 6.68M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ga-hr.txt.zip">0.2M</a>
+</td><td bgcolor="#f3ffd4"><a rel="nofollow" title='Croatian-Galician (92,272 sentence pairs, 2.21M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/gl-hr.txt.zip">92.3k</a>
+</td><td bgcolor="#dbffc6"><a rel="nofollow" title='Croatian-Hindi (591,792 sentence pairs, 15.58M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/hi-hr.txt.zip">0.6M</a>
+</td><td></td><td bgcolor="#dbffc6"><a rel="nofollow" title='Croatian-Icelandic (557,079 sentence pairs, 14.83M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/hr-is.tmx.gz">0.6M</a>
+</td><td bgcolor="#e3ffc8"><a rel="nofollow" title='Croatian-Macedonian (281,523 sentence pairs, 7.23M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/hr-mk.tmx.gz">0.3M</a>
+</td><td bgcolor="#ddffc6"><a rel="nofollow" title='Croatian-Maltese (297,022 sentence pairs, 12.22M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/hr-mt.tmx.gz">0.3M</a>
 </td><td bgcolor="#ffe9e6"><a rel="nofollow" title='Croatian-Norwegian Nynorsk (13,091 sentence pairs, 0.23M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/hr-nn.tmx.gz">13.1k</a>
-</td><td bgcolor="#e4ffc8"><a rel="nofollow" title='Croatian-Albanian (229,161 sentence pairs, 6.44M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/hr-sq.tmx.gz">0.2M</a>
-</td><td bgcolor="#f2ffd3"><a rel="nofollow" title='Croatian-Serbian (111,602 sentence pairs, 2.25M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/hr-sr.tmx.gz">0.1M</a>
-</td><td bgcolor="#e7ffca"><a rel="nofollow" title='Croatian-Swahili (193,496 sentence pairs, 4.71M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/hr-sw.tmx.gz">0.2M</a>
-</td><td bgcolor="#edffce"><a rel="nofollow" title='Croatian-Chinese (189,032 sentence pairs, 2.95M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/hr-zh_hant.tmx.gz">0.2M</a>
+</td><td bgcolor="#e4ffc8"><a rel="nofollow" title='Croatian-Albanian (229,146 sentence pairs, 6.44M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/hr-sq.tmx.gz">0.2M</a>
+</td><td bgcolor="#d6ffc8"><a rel="nofollow" title='Croatian-Serbian (936,403 sentence pairs, 24.05M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/hr-sr.tmx.gz">0.9M</a>
+</td><td bgcolor="#e7ffca"><a rel="nofollow" title='Croatian-Swahili (193,472 sentence pairs, 4.70M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/hr-sw.tmx.gz">0.2M</a>
+</td><td bgcolor="#edffce"><a rel="nofollow" title='Croatian-Chinese (189,064 sentence pairs, 2.95M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/hr-zh_hant.tmx.gz">0.2M</a>
 </td></tr> <tr><th><a rel="nofollow" title='monolingual untokenized is plain text' href="download.php?f=MultiHPLT/v1/mono/is.txt.gz">is</a>
-</th><td>1</td> <td>26.4M</td> <td>1.8M</td><td bgcolor="#eaffcc"><a rel="nofollow" title='Icelandic-Arabic (149,211 sentence pairs, 3.50M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ar-is.txt.zip">0.1M</a>
-</td><td bgcolor="#ffebe7"><a rel="nofollow" title='Icelandic-Bosnian (12,672 sentence pairs, 0.26M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/bs-is.txt.zip">12.7k</a>
-</td><td bgcolor="#d7ffc7"><a rel="nofollow" title='Icelandic-Catalan (696,758 sentence pairs, 21.60M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ca-is.txt.zip">0.7M</a>
+</th><td>1</td> <td>26.4M</td> <td>1.8M</td><td bgcolor="#eaffcc"><a rel="nofollow" title='Icelandic-Arabic (149,197 sentence pairs, 3.50M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ar-is.txt.zip">0.1M</a>
+</td><td bgcolor="#ffebe7"><a rel="nofollow" title='Icelandic-Bosnian (12,670 sentence pairs, 0.26M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/bs-is.txt.zip">12.7k</a>
+</td><td bgcolor="#d7ffc7"><a rel="nofollow" title='Icelandic-Catalan (697,130 sentence pairs, 21.62M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ca-is.txt.zip">0.7M</a>
 </td><td bgcolor="#cbffcb"><a rel="nofollow" title='Icelandic-English (2,148,855 sentence pairs, 59.14M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/en-is.txt.zip">2.1M</a>
-</td><td bgcolor="#daffc7"><a rel="nofollow" title='Icelandic-Estonian (595,714 sentence pairs, 17.27M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/et-is.txt.zip">0.6M</a>
-</td><td bgcolor="#fffef0"><a rel="nofollow" title='Icelandic-Basque (42,257 sentence pairs, 0.93M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/eu-is.txt.zip">42.3k</a>
-</td><td bgcolor="#d7ffc8"><a rel="nofollow" title='Icelandic-Finnish (917,936 sentence pairs, 23.07M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/fi-is.txt.zip">0.9M</a>
-</td><td bgcolor="#fbffdc"><a rel="nofollow" title='Icelandic-Irish (72,635 sentence pairs, 2.00M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ga-is.txt.zip">72.6k</a>
-</td><td bgcolor="#ffffe2"><a rel="nofollow" title='Icelandic-Galician (89,522 sentence pairs, 1.84M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/gl-is.txt.zip">89.5k</a>
-</td><td bgcolor="#ecffcd"><a rel="nofollow" title='Icelandic-Hindi (107,001 sentence pairs, 3.05M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/hi-is.txt.zip">0.1M</a>
-</td><td bgcolor="#dbffc6"><a rel="nofollow" title='Icelandic-Croatian (557,103 sentence pairs, 14.83M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/hr-is.txt.zip">0.6M</a>
-</td><td></td><td bgcolor="#f1ffd2"><a rel="nofollow" title='Icelandic-Macedonian (98,388 sentence pairs, 2.34M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/is-mk.tmx.gz">98.4k</a>
-</td><td bgcolor="#ffffeb"><a rel="nofollow" title='Icelandic-Maltese (49,696 sentence pairs, 1.26M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/is-mt.tmx.gz">49.7k</a>
+</td><td bgcolor="#daffc7"><a rel="nofollow" title='Icelandic-Estonian (595,728 sentence pairs, 17.27M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/et-is.txt.zip">0.6M</a>
+</td><td bgcolor="#fffef0"><a rel="nofollow" title='Icelandic-Basque (42,258 sentence pairs, 0.93M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/eu-is.txt.zip">42.3k</a>
+</td><td bgcolor="#d7ffc8"><a rel="nofollow" title='Icelandic-Finnish (917,947 sentence pairs, 23.07M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/fi-is.txt.zip">0.9M</a>
+</td><td bgcolor="#fbffdc"><a rel="nofollow" title='Icelandic-Irish (72,631 sentence pairs, 2.00M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ga-is.txt.zip">72.6k</a>
+</td><td bgcolor="#ffffe2"><a rel="nofollow" title='Icelandic-Galician (89,521 sentence pairs, 1.84M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/gl-is.txt.zip">89.5k</a>
+</td><td bgcolor="#ecffcd"><a rel="nofollow" title='Icelandic-Hindi (107,007 sentence pairs, 3.05M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/hi-is.txt.zip">0.1M</a>
+</td><td bgcolor="#dbffc6"><a rel="nofollow" title='Icelandic-Croatian (557,079 sentence pairs, 14.83M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/hr-is.txt.zip">0.6M</a>
+</td><td></td><td bgcolor="#f1ffd2"><a rel="nofollow" title='Icelandic-Macedonian (98,380 sentence pairs, 2.34M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/is-mk.tmx.gz">98.4k</a>
+</td><td bgcolor="#ffffeb"><a rel="nofollow" title='Icelandic-Maltese (49,690 sentence pairs, 1.26M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/is-mt.tmx.gz">49.7k</a>
 </td><td bgcolor="#ffd8d7"><a rel="nofollow" title='Icelandic-Norwegian Nynorsk (3,228 sentence pairs, 66.30k words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/is-nn.tmx.gz">3.2k</a>
-</td><td bgcolor="#e9ffcb"><a rel="nofollow" title='Icelandic-Albanian (148,450 sentence pairs, 3.79M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/is-sq.tmx.gz">0.1M</a>
-</td><td bgcolor="#fffeef"><a rel="nofollow" title='Icelandic-Serbian (43,158 sentence pairs, 0.95M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/is-sr.tmx.gz">43.2k</a>
-</td><td bgcolor="#f5ffd6"><a rel="nofollow" title='Icelandic-Swahili (74,751 sentence pairs, 2.10M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/is-sw.tmx.gz">74.8k</a>
-</td><td bgcolor="#ffffec"><a rel="nofollow" title='Icelandic-Chinese (70,139 sentence pairs, 1.20M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/is-zh_hant.tmx.gz">70.1k</a>
+</td><td bgcolor="#e9ffcb"><a rel="nofollow" title='Icelandic-Albanian (148,446 sentence pairs, 3.79M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/is-sq.tmx.gz">0.1M</a>
+</td><td bgcolor="#e0ffc6"><a rel="nofollow" title='Icelandic-Serbian (328,016 sentence pairs, 9.08M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/is-sr.tmx.gz">0.3M</a>
+</td><td bgcolor="#f5ffd6"><a rel="nofollow" title='Icelandic-Swahili (74,755 sentence pairs, 2.10M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/is-sw.tmx.gz">74.8k</a>
+</td><td bgcolor="#ffffec"><a rel="nofollow" title='Icelandic-Chinese (70,130 sentence pairs, 1.20M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/is-zh_hant.tmx.gz">70.1k</a>
 </td></tr> <tr><th><a rel="nofollow" title='monolingual untokenized mk plain text' href="download.php?f=MultiHPLT/v1/mono/mk.txt.gz">mk</a>
 </th><td>1</td> <td>19.7M</td> <td>1.1M</td><td bgcolor="#ffffe3"><a rel="nofollow" title='Macedonian-Arabic (73,385 sentence pairs, 1.77M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ar-mk.txt.zip">73.4k</a>
-</td><td bgcolor="#fff7f0"><a rel="nofollow" title='Macedonian-Bosnian (21,596 sentence pairs, 0.50M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/bs-mk.txt.zip">21.6k</a>
-</td><td bgcolor="#eaffcc"><a rel="nofollow" title='Macedonian-Catalan (130,686 sentence pairs, 3.72M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ca-mk.txt.zip">0.1M</a>
+</td><td bgcolor="#fff7f0"><a rel="nofollow" title='Macedonian-Bosnian (21,595 sentence pairs, 0.50M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/bs-mk.txt.zip">21.6k</a>
+</td><td bgcolor="#eaffcc"><a rel="nofollow" title='Macedonian-Catalan (130,711 sentence pairs, 3.72M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ca-mk.txt.zip">0.1M</a>
 </td><td bgcolor="#d1ffcd"><a rel="nofollow" title='Macedonian-English (1,139,052 sentence pairs, 36.97M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/en-mk.txt.zip">1.1M</a>
-</td><td bgcolor="#ecffcd"><a rel="nofollow" title='Macedonian-Estonian (122,911 sentence pairs, 3.00M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/et-mk.txt.zip">0.1M</a>
-</td><td bgcolor="#ffffef"><a rel="nofollow" title='Macedonian-Basque (41,975 sentence pairs, 1.00M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/eu-mk.txt.zip">42.0k</a>
-</td><td bgcolor="#e9ffcb"><a rel="nofollow" title='Macedonian-Finnish (182,719 sentence pairs, 3.97M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/fi-mk.txt.zip">0.2M</a>
-</td><td bgcolor="#f1ffd2"><a rel="nofollow" title='Macedonian-Irish (74,991 sentence pairs, 2.32M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ga-mk.txt.zip">75.0k</a>
+</td><td bgcolor="#ecffcd"><a rel="nofollow" title='Macedonian-Estonian (122,918 sentence pairs, 3.00M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/et-mk.txt.zip">0.1M</a>
+</td><td bgcolor="#ffffef"><a rel="nofollow" title='Macedonian-Basque (41,976 sentence pairs, 1.00M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/eu-mk.txt.zip">42.0k</a>
+</td><td bgcolor="#e9ffcb"><a rel="nofollow" title='Macedonian-Finnish (182,706 sentence pairs, 3.97M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/fi-mk.txt.zip">0.2M</a>
+</td><td bgcolor="#f1ffd2"><a rel="nofollow" title='Macedonian-Irish (74,987 sentence pairs, 2.32M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ga-mk.txt.zip">75.0k</a>
 </td><td bgcolor="#f4ffd5"><a rel="nofollow" title='Macedonian-Galician (80,315 sentence pairs, 2.14M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/gl-mk.txt.zip">80.3k</a>
-</td><td bgcolor="#e9ffcb"><a rel="nofollow" title='Macedonian-Hindi (137,154 sentence pairs, 3.90M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/hi-mk.txt.zip">0.1M</a>
-</td><td bgcolor="#e3ffc8"><a rel="nofollow" title='Macedonian-Croatian (281,513 sentence pairs, 7.23M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/hr-mk.txt.zip">0.3M</a>
-</td><td bgcolor="#f1ffd2"><a rel="nofollow" title='Macedonian-Icelandic (98,388 sentence pairs, 2.34M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/is-mk.txt.zip">98.4k</a>
-</td><td></td><td bgcolor="#fffef1"><a rel="nofollow" title='Macedonian-Maltese (31,921 sentence pairs, 0.87M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/mk-mt.tmx.gz">31.9k</a>
+</td><td bgcolor="#e9ffcb"><a rel="nofollow" title='Macedonian-Hindi (137,157 sentence pairs, 3.90M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/hi-mk.txt.zip">0.1M</a>
+</td><td bgcolor="#e3ffc8"><a rel="nofollow" title='Macedonian-Croatian (281,523 sentence pairs, 7.23M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/hr-mk.txt.zip">0.3M</a>
+</td><td bgcolor="#f1ffd2"><a rel="nofollow" title='Macedonian-Icelandic (98,380 sentence pairs, 2.34M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/is-mk.txt.zip">98.4k</a>
+</td><td></td><td bgcolor="#fffef1"><a rel="nofollow" title='Macedonian-Maltese (31,922 sentence pairs, 0.87M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/mk-mt.tmx.gz">31.9k</a>
 </td><td bgcolor="#ffdedd"><a rel="nofollow" title='Macedonian-Norwegian Nynorsk (4,197 sentence pairs, 0.12M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/mk-nn.tmx.gz">4.2k</a>
-</td><td bgcolor="#e5ffc8"><a rel="nofollow" title='Macedonian-Albanian (175,109 sentence pairs, 5.68M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/mk-sq.tmx.gz">0.2M</a>
-</td><td bgcolor="#fff8f0"><a rel="nofollow" title='Macedonian-Serbian (24,574 sentence pairs, 0.53M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/mk-sr.tmx.gz">24.6k</a>
-</td><td bgcolor="#ffffe1"><a rel="nofollow" title='Macedonian-Swahili (69,079 sentence pairs, 1.91M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/mk-sw.tmx.gz">69.1k</a>
-</td><td bgcolor="#fff0eb"><a rel="nofollow" title='Macedonian-Chinese (24,259 sentence pairs, 0.35M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/mk-zh_hant.tmx.gz">24.3k</a>
+</td><td bgcolor="#e5ffc8"><a rel="nofollow" title='Macedonian-Albanian (175,115 sentence pairs, 5.68M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/mk-sq.tmx.gz">0.2M</a>
+</td><td bgcolor="#ecffcd"><a rel="nofollow" title='Macedonian-Serbian (117,021 sentence pairs, 3.10M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/mk-sr.tmx.gz">0.1M</a>
+</td><td bgcolor="#ffffe1"><a rel="nofollow" title='Macedonian-Swahili (69,081 sentence pairs, 1.91M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/mk-sw.tmx.gz">69.1k</a>
+</td><td bgcolor="#fff0eb"><a rel="nofollow" title='Macedonian-Chinese (24,258 sentence pairs, 0.35M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/mk-zh_hant.tmx.gz">24.3k</a>
 </td></tr> <tr><th><a rel="nofollow" title='monolingual untokenized mt plain text' href="download.php?f=MultiHPLT/v1/mono/mt.txt.gz">mt</a>
 </th><td>1</td> <td>25.8M</td> <td>0.8M</td><td bgcolor="#fffff0"><a rel="nofollow" title='Maltese-Arabic (41,574 sentence pairs, 0.99M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ar-mt.txt.zip">41.6k</a>
-</td><td bgcolor="#ffd9d8"><a rel="nofollow" title='Maltese-Bosnian (2,744 sentence pairs, 74.88k words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/bs-mt.txt.zip">2.7k</a>
-</td><td bgcolor="#f3ffd4"><a rel="nofollow" title='Maltese-Catalan (66,902 sentence pairs, 2.18M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ca-mt.txt.zip">66.9k</a>
+</td><td bgcolor="#ffd9d8"><a rel="nofollow" title='Maltese-Bosnian (2,743 sentence pairs, 74.86k words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/bs-mt.txt.zip">2.7k</a>
+</td><td bgcolor="#f3ffd4"><a rel="nofollow" title='Maltese-Catalan (66,916 sentence pairs, 2.18M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ca-mt.txt.zip">66.9k</a>
 </td><td bgcolor="#d2ffcd"><a rel="nofollow" title='Maltese-English (854,821 sentence pairs, 35.23M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/en-mt.txt.zip">0.9M</a>
-</td><td bgcolor="#ddffc6"><a rel="nofollow" title='Maltese-Estonian (307,471 sentence pairs, 12.30M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/et-mt.txt.zip">0.3M</a>
-</td><td bgcolor="#ffede9"><a rel="nofollow" title='Maltese-Basque (13,681 sentence pairs, 0.29M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/eu-mt.txt.zip">13.7k</a>
-</td><td bgcolor="#ddffc6"><a rel="nofollow" title='Maltese-Finnish (336,024 sentence pairs, 12.89M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/fi-mt.txt.zip">0.3M</a>
-</td><td bgcolor="#e8ffca"><a rel="nofollow" title='Maltese-Irish (94,307 sentence pairs, 4.15M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ga-mt.txt.zip">94.3k</a>
-</td><td bgcolor="#fffbf1"><a rel="nofollow" title='Maltese-Galician (25,575 sentence pairs, 0.64M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/gl-mt.txt.zip">25.6k</a>
-</td><td bgcolor="#ffffe5"><a rel="nofollow" title='Maltese-Hindi (55,778 sentence pairs, 1.64M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/hi-mt.txt.zip">55.8k</a>
-</td><td bgcolor="#ddffc6"><a rel="nofollow" title='Maltese-Croatian (297,165 sentence pairs, 12.23M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/hr-mt.txt.zip">0.3M</a>
-</td><td bgcolor="#ffffeb"><a rel="nofollow" title='Maltese-Icelandic (49,696 sentence pairs, 1.26M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/is-mt.txt.zip">49.7k</a>
-</td><td bgcolor="#fffef1"><a rel="nofollow" title='Maltese-Macedonian (31,921 sentence pairs, 0.87M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/mk-mt.txt.zip">31.9k</a>
+</td><td bgcolor="#ddffc6"><a rel="nofollow" title='Maltese-Estonian (307,299 sentence pairs, 12.29M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/et-mt.txt.zip">0.3M</a>
+</td><td bgcolor="#ffede9"><a rel="nofollow" title='Maltese-Basque (13,682 sentence pairs, 0.29M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/eu-mt.txt.zip">13.7k</a>
+</td><td bgcolor="#ddffc6"><a rel="nofollow" title='Maltese-Finnish (335,871 sentence pairs, 12.89M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/fi-mt.txt.zip">0.3M</a>
+</td><td bgcolor="#e8ffca"><a rel="nofollow" title='Maltese-Irish (94,244 sentence pairs, 4.15M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ga-mt.txt.zip">94.2k</a>
+</td><td bgcolor="#fffbf1"><a rel="nofollow" title='Maltese-Galician (25,576 sentence pairs, 0.64M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/gl-mt.txt.zip">25.6k</a>
+</td><td bgcolor="#ffffe5"><a rel="nofollow" title='Maltese-Hindi (55,787 sentence pairs, 1.64M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/hi-mt.txt.zip">55.8k</a>
+</td><td bgcolor="#ddffc6"><a rel="nofollow" title='Maltese-Croatian (297,022 sentence pairs, 12.22M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/hr-mt.txt.zip">0.3M</a>
+</td><td bgcolor="#ffffeb"><a rel="nofollow" title='Maltese-Icelandic (49,690 sentence pairs, 1.26M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/is-mt.txt.zip">49.7k</a>
+</td><td bgcolor="#fffef1"><a rel="nofollow" title='Maltese-Macedonian (31,922 sentence pairs, 0.87M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/mk-mt.txt.zip">31.9k</a>
 </td><td></td><td bgcolor="#ffd1d1"><a rel="nofollow" title='Maltese-Norwegian Nynorsk (551 sentence pairs, 8.71k words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/mt-nn.tmx.gz">0.6k</a>
-</td><td bgcolor="#ffffe4"><a rel="nofollow" title='Maltese-Albanian (61,360 sentence pairs, 1.70M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/mt-sq.tmx.gz">61.4k</a>
-</td><td bgcolor="#ffd3d3"><a rel="nofollow" title='Maltese-Serbian (1,386 sentence pairs, 26.66k words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/mt-sr.tmx.gz">1.4k</a>
-</td><td bgcolor="#fffdf1"><a rel="nofollow" title='Maltese-Swahili (32,510 sentence pairs, 0.78M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/mt-sw.tmx.gz">32.5k</a>
+</td><td bgcolor="#ffffe4"><a rel="nofollow" title='Maltese-Albanian (61,358 sentence pairs, 1.70M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/mt-sq.tmx.gz">61.4k</a>
+</td><td bgcolor="#ffebe7"><a rel="nofollow" title='Maltese-Serbian (11,525 sentence pairs, 0.26M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/mt-sr.tmx.gz">11.5k</a>
+</td><td bgcolor="#fffdf1"><a rel="nofollow" title='Maltese-Swahili (32,508 sentence pairs, 0.78M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/mt-sw.tmx.gz">32.5k</a>
 </td><td bgcolor="#ffe5e3"><a rel="nofollow" title='Maltese-Chinese (11,182 sentence pairs, 0.19M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/mt-zh_hant.tmx.gz">11.2k</a>
 </td></tr> <tr><th><a rel="nofollow" title='monolingual untokenized nn plain text' href="download.php?f=MultiHPLT/v1/mono/nn.txt.gz">nn</a>
-</th><td>1</td> <td>2.1M</td> <td>0.1M</td><td bgcolor="#ffe3e1"><a rel="nofollow" title='Norwegian Nynorsk-Arabic (11,548 sentence pairs, 0.16M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ar-nn.txt.zip">11.5k</a>
+</th><td>1</td> <td>2.1M</td> <td>0.1M</td><td bgcolor="#ffe3e1"><a rel="nofollow" title='Norwegian Nynorsk-Arabic (11,545 sentence pairs, 0.16M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ar-nn.txt.zip">11.5k</a>
 </td><td bgcolor="#ffd3d3"><a rel="nofollow" title='Norwegian Nynorsk-Bosnian (2,063 sentence pairs, 28.59k words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/bs-nn.txt.zip">2.1k</a>
-</td><td bgcolor="#fff0eb"><a rel="nofollow" title='Norwegian Nynorsk-Catalan (13,011 sentence pairs, 0.34M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ca-nn.txt.zip">13.0k</a>
+</td><td bgcolor="#fff0eb"><a rel="nofollow" title='Norwegian Nynorsk-Catalan (13,010 sentence pairs, 0.34M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ca-nn.txt.zip">13.0k</a>
 </td><td bgcolor="#e9ffcb"><a rel="nofollow" title='Norwegian Nynorsk-English (132,539 sentence pairs, 4.02M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/en-nn.txt.zip">0.1M</a>
 </td><td bgcolor="#ffdedd"><a rel="nofollow" title='Norwegian Nynorsk-Estonian (6,863 sentence pairs, 0.12M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/et-nn.txt.zip">6.9k</a>
 </td><td bgcolor="#ffdad9"><a rel="nofollow" title='Norwegian Nynorsk-Basque (3,019 sentence pairs, 81.13k words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/eu-nn.txt.zip">3.0k</a>
-</td><td bgcolor="#ffe9e6"><a rel="nofollow" title='Norwegian Nynorsk-Finnish (13,570 sentence pairs, 0.23M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/fi-nn.txt.zip">13.6k</a>
+</td><td bgcolor="#ffe9e6"><a rel="nofollow" title='Norwegian Nynorsk-Finnish (13,568 sentence pairs, 0.23M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/fi-nn.txt.zip">13.6k</a>
 </td><td bgcolor="#ffd3d3"><a rel="nofollow" title='Norwegian Nynorsk-Irish (753 sentence pairs, 24.85k words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ga-nn.txt.zip">0.8k</a>
 </td><td bgcolor="#ffe3e1"><a rel="nofollow" title='Norwegian Nynorsk-Galician (4,801 sentence pairs, 0.17M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/gl-nn.txt.zip">4.8k</a>
 </td><td bgcolor="#ffdedd"><a rel="nofollow" title='Norwegian Nynorsk-Hindi (6,330 sentence pairs, 0.12M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/hi-nn.txt.zip">6.3k</a>
@@ -582,86 +576,86 @@
 </td><td bgcolor="#ffd8d7"><a rel="nofollow" title='Norwegian Nynorsk-Icelandic (3,228 sentence pairs, 66.30k words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/is-nn.txt.zip">3.2k</a>
 </td><td bgcolor="#ffdedd"><a rel="nofollow" title='Norwegian Nynorsk-Macedonian (4,197 sentence pairs, 0.12M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/mk-nn.txt.zip">4.2k</a>
 </td><td bgcolor="#ffd1d1"><a rel="nofollow" title='Norwegian Nynorsk-Maltese (551 sentence pairs, 8.71k words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/mt-nn.txt.zip">0.6k</a>
-</td><td></td><td bgcolor="#ffe1df"><a rel="nofollow" title='Norwegian Nynorsk-Albanian (8,703 sentence pairs, 0.15M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/nn-sq.tmx.gz">8.7k</a>
-</td><td bgcolor="#ffd0d0"><a rel="nofollow" title='Norwegian Nynorsk-Serbian (260 sentence pairs, 4.75k words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/nn-sr.tmx.gz">0.3k</a>
+</td><td></td><td bgcolor="#ffe1df"><a rel="nofollow" title='Norwegian Nynorsk-Albanian (8,702 sentence pairs, 0.15M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/nn-sq.tmx.gz">8.7k</a>
+</td><td bgcolor="#ffd4d4"><a rel="nofollow" title='Norwegian Nynorsk-Serbian (1,817 sentence pairs, 33.13k words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/nn-sr.tmx.gz">1.8k</a>
 </td><td bgcolor="#ffd1d1"><a rel="nofollow" title='Norwegian Nynorsk-Swahili (472 sentence pairs, 10.67k words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/nn-sw.tmx.gz">0.5k</a>
 </td><td bgcolor="#ffd1d1"><a rel="nofollow" title='Norwegian Nynorsk-Chinese (1,261 sentence pairs, 12.98k words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/nn-zh_hant.tmx.gz">1.3k</a>
 </td></tr> <tr><th><a rel="nofollow" title='monolingual untokenized sq plain text' href="download.php?f=MultiHPLT/v1/mono/sq.txt.gz">sq</a>
-</th><td>1</td> <td>29.5M</td> <td>1.6M</td><td bgcolor="#f4ffd5"><a rel="nofollow" title='Albanian-Arabic (85,168 sentence pairs, 2.11M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ar-sq.txt.zip">85.2k</a>
-</td><td bgcolor="#fff4ee"><a rel="nofollow" title='Albanian-Bosnian (17,376 sentence pairs, 0.43M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/bs-sq.txt.zip">17.4k</a>
-</td><td bgcolor="#e6ffc9"><a rel="nofollow" title='Albanian-Catalan (173,760 sentence pairs, 4.99M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ca-sq.txt.zip">0.2M</a>
+</th><td>1</td> <td>29.5M</td> <td>1.6M</td><td bgcolor="#f5ffd6"><a rel="nofollow" title='Albanian-Arabic (85,141 sentence pairs, 2.11M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ar-sq.txt.zip">85.1k</a>
+</td><td bgcolor="#fff4ee"><a rel="nofollow" title='Albanian-Bosnian (17,374 sentence pairs, 0.43M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/bs-sq.txt.zip">17.4k</a>
+</td><td bgcolor="#e6ffc9"><a rel="nofollow" title='Albanian-Catalan (173,767 sentence pairs, 4.99M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ca-sq.txt.zip">0.2M</a>
 </td><td bgcolor="#ccffcc"><a rel="nofollow" title='Albanian-English (1,655,959 sentence pairs, 53.67M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/en-sq.txt.zip">1.7M</a>
-</td><td bgcolor="#e9ffcb"><a rel="nofollow" title='Albanian-Estonian (158,344 sentence pairs, 3.82M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/et-sq.txt.zip">0.2M</a>
-</td><td bgcolor="#ffffeb"><a rel="nofollow" title='Albanian-Basque (52,208 sentence pairs, 1.29M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/eu-sq.txt.zip">52.2k</a>
-</td><td bgcolor="#e4ffc8"><a rel="nofollow" title='Albanian-Finnish (282,402 sentence pairs, 6.34M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/fi-sq.txt.zip">0.3M</a>
-</td><td bgcolor="#e9ffcb"><a rel="nofollow" title='Albanian-Irish (132,504 sentence pairs, 3.91M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ga-sq.txt.zip">0.1M</a>
-</td><td bgcolor="#efffd0"><a rel="nofollow" title='Albanian-Galician (91,803 sentence pairs, 2.49M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/gl-sq.txt.zip">91.8k</a>
-</td><td bgcolor="#e8ffca"><a rel="nofollow" title='Albanian-Hindi (149,070 sentence pairs, 4.45M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/hi-sq.txt.zip">0.1M</a>
-</td><td bgcolor="#e4ffc8"><a rel="nofollow" title='Albanian-Croatian (229,161 sentence pairs, 6.44M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/hr-sq.txt.zip">0.2M</a>
-</td><td bgcolor="#e9ffcb"><a rel="nofollow" title='Albanian-Icelandic (148,450 sentence pairs, 3.79M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/is-sq.txt.zip">0.1M</a>
-</td><td bgcolor="#e5ffc8"><a rel="nofollow" title='Albanian-Macedonian (175,109 sentence pairs, 5.68M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/mk-sq.txt.zip">0.2M</a>
-</td><td bgcolor="#ffffe4"><a rel="nofollow" title='Albanian-Maltese (61,360 sentence pairs, 1.70M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/mt-sq.txt.zip">61.4k</a>
-</td><td bgcolor="#ffe1df"><a rel="nofollow" title='Albanian-Norwegian Nynorsk (8,703 sentence pairs, 0.15M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/nn-sq.txt.zip">8.7k</a>
-</td><td></td><td bgcolor="#ffe7e4"><a rel="nofollow" title='Albanian-Serbian (9,665 sentence pairs, 0.21M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/sq-sr.tmx.gz">9.7k</a>
-</td><td bgcolor="#eeffcf"><a rel="nofollow" title='Albanian-Swahili (86,435 sentence pairs, 2.68M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/sq-sw.tmx.gz">86.4k</a>
+</td><td bgcolor="#e9ffcb"><a rel="nofollow" title='Albanian-Estonian (158,352 sentence pairs, 3.82M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/et-sq.txt.zip">0.2M</a>
+</td><td bgcolor="#ffffeb"><a rel="nofollow" title='Albanian-Basque (52,207 sentence pairs, 1.29M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/eu-sq.txt.zip">52.2k</a>
+</td><td bgcolor="#e4ffc8"><a rel="nofollow" title='Albanian-Finnish (282,395 sentence pairs, 6.34M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/fi-sq.txt.zip">0.3M</a>
+</td><td bgcolor="#e9ffcb"><a rel="nofollow" title='Albanian-Irish (132,503 sentence pairs, 3.91M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ga-sq.txt.zip">0.1M</a>
+</td><td bgcolor="#efffd0"><a rel="nofollow" title='Albanian-Galician (91,801 sentence pairs, 2.49M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/gl-sq.txt.zip">91.8k</a>
+</td><td bgcolor="#e8ffca"><a rel="nofollow" title='Albanian-Hindi (149,077 sentence pairs, 4.45M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/hi-sq.txt.zip">0.1M</a>
+</td><td bgcolor="#e4ffc8"><a rel="nofollow" title='Albanian-Croatian (229,146 sentence pairs, 6.44M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/hr-sq.txt.zip">0.2M</a>
+</td><td bgcolor="#e9ffcb"><a rel="nofollow" title='Albanian-Icelandic (148,446 sentence pairs, 3.79M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/is-sq.txt.zip">0.1M</a>
+</td><td bgcolor="#e5ffc8"><a rel="nofollow" title='Albanian-Macedonian (175,115 sentence pairs, 5.68M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/mk-sq.txt.zip">0.2M</a>
+</td><td bgcolor="#ffffe4"><a rel="nofollow" title='Albanian-Maltese (61,358 sentence pairs, 1.70M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/mt-sq.txt.zip">61.4k</a>
+</td><td bgcolor="#ffe1df"><a rel="nofollow" title='Albanian-Norwegian Nynorsk (8,702 sentence pairs, 0.15M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/nn-sq.txt.zip">8.7k</a>
+</td><td></td><td bgcolor="#edffce"><a rel="nofollow" title='Albanian-Serbian (88,725 sentence pairs, 2.97M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/sq-sr.tmx.gz">88.7k</a>
+</td><td bgcolor="#eeffcf"><a rel="nofollow" title='Albanian-Swahili (86,451 sentence pairs, 2.68M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/sq-sw.tmx.gz">86.5k</a>
 </td><td bgcolor="#fff4ee"><a rel="nofollow" title='Albanian-Chinese (25,383 sentence pairs, 0.41M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/sq-zh_hant.tmx.gz">25.4k</a>
 </td></tr> <tr><th><a rel="nofollow" title='monolingual untokenized sr plain text' href="download.php?f=MultiHPLT/v1/mono/sr.txt.gz">sr</a>
-</th><td>1</td> <td>5.9M</td> <td>0.5M</td><td bgcolor="#ffffe7"><a rel="nofollow" title='Serbian-Arabic (53,172 sentence pairs, 1.55M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ar-sr.txt.zip">53.2k</a>
-</td><td bgcolor="#ffd3d3"><a rel="nofollow" title='Serbian-Bosnian (1,453 sentence pairs, 23.84k words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/bs-sr.txt.zip">1.5k</a>
-</td><td bgcolor="#ffffeb"><a rel="nofollow" title='Serbian-Catalan (68,594 sentence pairs, 1.27M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ca-sr.txt.zip">68.6k</a>
-</td><td bgcolor="#ddffc6"><a rel="nofollow" title='Serbian-English (555,004 sentence pairs, 12.08M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/en-sr.txt.zip">0.6M</a>
-</td><td bgcolor="#ffffed"><a rel="nofollow" title='Serbian-Estonian (55,935 sentence pairs, 1.16M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/et-sr.txt.zip">55.9k</a>
-</td><td bgcolor="#ffd3d3"><a rel="nofollow" title='Serbian-Basque (1,679 sentence pairs, 27.94k words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/eu-sr.txt.zip">1.7k</a>
-</td><td bgcolor="#eeffcf"><a rel="nofollow" title='Serbian-Finnish (151,166 sentence pairs, 2.79M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/fi-sr.txt.zip">0.2M</a>
-</td><td bgcolor="#ffd2d2"><a rel="nofollow" title='Serbian-Irish (878 sentence pairs, 17.23k words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ga-sr.txt.zip">0.9k</a>
-</td><td bgcolor="#ffd5d5"><a rel="nofollow" title='Serbian-Galician (2,302 sentence pairs, 43.41k words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/gl-sr.txt.zip">2.3k</a>
-</td><td bgcolor="#fff9f0"><a rel="nofollow" title='Serbian-Hindi (20,276 sentence pairs, 0.57M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/hi-sr.txt.zip">20.3k</a>
-</td><td bgcolor="#f2ffd3"><a rel="nofollow" title='Serbian-Croatian (111,602 sentence pairs, 2.25M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/hr-sr.txt.zip">0.1M</a>
-</td><td bgcolor="#fffeef"><a rel="nofollow" title='Serbian-Icelandic (43,158 sentence pairs, 0.95M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/is-sr.txt.zip">43.2k</a>
-</td><td bgcolor="#fff8f0"><a rel="nofollow" title='Serbian-Macedonian (24,574 sentence pairs, 0.53M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/mk-sr.txt.zip">24.6k</a>
-</td><td bgcolor="#ffd3d3"><a rel="nofollow" title='Serbian-Maltese (1,386 sentence pairs, 26.66k words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/mt-sr.txt.zip">1.4k</a>
-</td><td bgcolor="#ffd0d0"><a rel="nofollow" title='Serbian-Norwegian Nynorsk (260 sentence pairs, 4.75k words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/nn-sr.txt.zip">0.3k</a>
-</td><td bgcolor="#ffe7e4"><a rel="nofollow" title='Serbian-Albanian (9,665 sentence pairs, 0.21M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/sq-sr.txt.zip">9.7k</a>
-</td><td></td><td bgcolor="#ffd4d4"><a rel="nofollow" title='Serbian-Swahili (1,713 sentence pairs, 35.94k words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/sr-sw.tmx.gz">1.7k</a>
-</td><td bgcolor="#ffe2e0"><a rel="nofollow" title='Serbian-Chinese (10,639 sentence pairs, 0.15M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/sr-zh_hant.tmx.gz">10.6k</a>
+</th><td>1</td> <td>53.6M</td> <td>3.4M</td><td bgcolor="#e1ffc7"><a rel="nofollow" title='Serbian-Arabic (388,428 sentence pairs, 8.58M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ar-sr.txt.zip">0.4M</a>
+</td><td bgcolor="#fffcf1"><a rel="nofollow" title='Serbian-Bosnian (30,408 sentence pairs, 0.73M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/bs-sr.txt.zip">30.4k</a>
+</td><td bgcolor="#e0ffc6"><a rel="nofollow" title='Serbian-Catalan (333,107 sentence pairs, 9.10M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ca-sr.txt.zip">0.3M</a>
+</td><td bgcolor="#c2ffc2"><a rel="nofollow" title='Serbian-English (3,904,384 sentence pairs, 108.77M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/en-sr.txt.zip">3.9M</a>
+</td><td bgcolor="#dfffc6"><a rel="nofollow" title='Serbian-Estonian (393,816 sentence pairs, 9.97M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/et-sr.txt.zip">0.4M</a>
+</td><td bgcolor="#fff1ec"><a rel="nofollow" title='Serbian-Basque (15,434 sentence pairs, 0.36M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/eu-sr.txt.zip">15.4k</a>
+</td><td bgcolor="#d8ffc8"><a rel="nofollow" title='Serbian-Finnish (980,417 sentence pairs, 20.83M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/fi-sr.txt.zip">1.0M</a>
+</td><td bgcolor="#ffe9e6"><a rel="nofollow" title='Serbian-Irish (9,340 sentence pairs, 0.24M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ga-sr.txt.zip">9.3k</a>
+</td><td bgcolor="#fff4ee"><a rel="nofollow" title='Serbian-Galician (17,678 sentence pairs, 0.42M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/gl-sr.txt.zip">17.7k</a>
+</td><td bgcolor="#f0ffd1"><a rel="nofollow" title='Serbian-Hindi (86,392 sentence pairs, 2.40M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/hi-sr.txt.zip">86.4k</a>
+</td><td bgcolor="#d6ffc8"><a rel="nofollow" title='Serbian-Croatian (936,403 sentence pairs, 24.05M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/hr-sr.txt.zip">0.9M</a>
+</td><td bgcolor="#e0ffc6"><a rel="nofollow" title='Serbian-Icelandic (328,016 sentence pairs, 9.08M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/is-sr.txt.zip">0.3M</a>
+</td><td bgcolor="#ecffcd"><a rel="nofollow" title='Serbian-Macedonian (117,021 sentence pairs, 3.10M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/mk-sr.txt.zip">0.1M</a>
+</td><td bgcolor="#ffebe7"><a rel="nofollow" title='Serbian-Maltese (11,525 sentence pairs, 0.26M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/mt-sr.txt.zip">11.5k</a>
+</td><td bgcolor="#ffd4d4"><a rel="nofollow" title='Serbian-Norwegian Nynorsk (1,817 sentence pairs, 33.13k words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/nn-sr.txt.zip">1.8k</a>
+</td><td bgcolor="#edffce"><a rel="nofollow" title='Serbian-Albanian (88,725 sentence pairs, 2.97M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/sq-sr.txt.zip">88.7k</a>
+</td><td></td><td bgcolor="#fff8f0"><a rel="nofollow" title='Serbian-Swahili (19,095 sentence pairs, 0.54M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/sr-sw.tmx.gz">19.1k</a>
+</td><td bgcolor="#ffffea"><a rel="nofollow" title='Serbian-Chinese (88,900 sentence pairs, 1.33M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/sr-zh_hant.tmx.gz">88.9k</a>
 </td></tr> <tr><th><a rel="nofollow" title='monolingual untokenized sw plain text' href="download.php?f=MultiHPLT/v1/mono/sw.txt.gz">sw</a>
-</th><td>1</td> <td>18.6M</td> <td>1.2M</td><td bgcolor="#e0ffc6"><a rel="nofollow" title='Swahili-Arabic (261,573 sentence pairs, 9.21M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ar-sw.txt.zip">0.3M</a>
-</td><td bgcolor="#ffefea"><a rel="nofollow" title='Swahili-Bosnian (13,422 sentence pairs, 0.33M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/bs-sw.txt.zip">13.4k</a>
-</td><td bgcolor="#ebffcd"><a rel="nofollow" title='Swahili-Catalan (127,011 sentence pairs, 3.39M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ca-sw.txt.zip">0.1M</a>
+</th><td>1</td> <td>18.6M</td> <td>1.2M</td><td bgcolor="#e0ffc6"><a rel="nofollow" title='Swahili-Arabic (261,560 sentence pairs, 9.21M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ar-sw.txt.zip">0.3M</a>
+</td><td bgcolor="#ffefea"><a rel="nofollow" title='Swahili-Bosnian (13,421 sentence pairs, 0.33M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/bs-sw.txt.zip">13.4k</a>
+</td><td bgcolor="#ebffcd"><a rel="nofollow" title='Swahili-Catalan (127,015 sentence pairs, 3.39M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ca-sw.txt.zip">0.1M</a>
 </td><td bgcolor="#d0ffd0"><a rel="nofollow" title='Swahili-English (1,710,206 sentence pairs, 41.04M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/en-sw.txt.zip">1.7M</a>
-</td><td bgcolor="#eaffcc"><a rel="nofollow" title='Swahili-Estonian (162,720 sentence pairs, 3.74M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/et-sw.txt.zip">0.2M</a>
-</td><td bgcolor="#fffcf1"><a rel="nofollow" title='Swahili-Basque (27,893 sentence pairs, 0.71M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/eu-sw.txt.zip">27.9k</a>
-</td><td bgcolor="#eaffcc"><a rel="nofollow" title='Swahili-Finnish (162,865 sentence pairs, 3.49M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/fi-sw.txt.zip">0.2M</a>
-</td><td bgcolor="#ffffe9"><a rel="nofollow" title='Swahili-Irish (45,197 sentence pairs, 1.38M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ga-sw.txt.zip">45.2k</a>
+</td><td bgcolor="#eaffcc"><a rel="nofollow" title='Swahili-Estonian (162,706 sentence pairs, 3.74M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/et-sw.txt.zip">0.2M</a>
+</td><td bgcolor="#fffcf1"><a rel="nofollow" title='Swahili-Basque (27,894 sentence pairs, 0.71M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/eu-sw.txt.zip">27.9k</a>
+</td><td bgcolor="#eaffcc"><a rel="nofollow" title='Swahili-Finnish (162,853 sentence pairs, 3.49M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/fi-sw.txt.zip">0.2M</a>
+</td><td bgcolor="#ffffe9"><a rel="nofollow" title='Swahili-Irish (45,195 sentence pairs, 1.38M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ga-sw.txt.zip">45.2k</a>
 </td><td bgcolor="#ffffec"><a rel="nofollow" title='Swahili-Galician (46,707 sentence pairs, 1.23M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/gl-sw.txt.zip">46.7k</a>
-</td><td bgcolor="#deffc6"><a rel="nofollow" title='Swahili-Hindi (411,956 sentence pairs, 11.99M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/hi-sw.txt.zip">0.4M</a>
-</td><td bgcolor="#e7ffca"><a rel="nofollow" title='Swahili-Croatian (193,496 sentence pairs, 4.71M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/hr-sw.txt.zip">0.2M</a>
-</td><td bgcolor="#f5ffd6"><a rel="nofollow" title='Swahili-Icelandic (74,751 sentence pairs, 2.10M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/is-sw.txt.zip">74.8k</a>
-</td><td bgcolor="#ffffe1"><a rel="nofollow" title='Swahili-Macedonian (69,079 sentence pairs, 1.91M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/mk-sw.txt.zip">69.1k</a>
-</td><td bgcolor="#fffdf1"><a rel="nofollow" title='Swahili-Maltese (32,510 sentence pairs, 0.78M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/mt-sw.txt.zip">32.5k</a>
+</td><td bgcolor="#deffc6"><a rel="nofollow" title='Swahili-Hindi (411,916 sentence pairs, 11.99M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/hi-sw.txt.zip">0.4M</a>
+</td><td bgcolor="#e7ffca"><a rel="nofollow" title='Swahili-Croatian (193,472 sentence pairs, 4.70M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/hr-sw.txt.zip">0.2M</a>
+</td><td bgcolor="#f5ffd6"><a rel="nofollow" title='Swahili-Icelandic (74,755 sentence pairs, 2.10M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/is-sw.txt.zip">74.8k</a>
+</td><td bgcolor="#ffffe1"><a rel="nofollow" title='Swahili-Macedonian (69,081 sentence pairs, 1.91M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/mk-sw.txt.zip">69.1k</a>
+</td><td bgcolor="#fffdf1"><a rel="nofollow" title='Swahili-Maltese (32,508 sentence pairs, 0.78M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/mt-sw.txt.zip">32.5k</a>
 </td><td bgcolor="#ffd1d1"><a rel="nofollow" title='Swahili-Norwegian Nynorsk (472 sentence pairs, 10.67k words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/nn-sw.txt.zip">0.5k</a>
-</td><td bgcolor="#eeffcf"><a rel="nofollow" title='Swahili-Albanian (86,435 sentence pairs, 2.68M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/sq-sw.txt.zip">86.4k</a>
-</td><td bgcolor="#ffd4d4"><a rel="nofollow" title='Swahili-Serbian (1,713 sentence pairs, 35.94k words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/sr-sw.txt.zip">1.7k</a>
-</td><td></td><td bgcolor="#e6ffc9"><a rel="nofollow" title='Swahili-Chinese (271,030 sentence pairs, 4.95M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/sw-zh_hant.tmx.gz">0.3M</a>
+</td><td bgcolor="#eeffcf"><a rel="nofollow" title='Swahili-Albanian (86,451 sentence pairs, 2.68M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/sq-sw.txt.zip">86.5k</a>
+</td><td bgcolor="#fff8f0"><a rel="nofollow" title='Swahili-Serbian (19,095 sentence pairs, 0.54M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/sr-sw.txt.zip">19.1k</a>
+</td><td></td><td bgcolor="#e6ffc9"><a rel="nofollow" title='Swahili-Chinese (271,039 sentence pairs, 4.95M words) - TMX format' href="download.php?f=MultiHPLT/v1/tmx/sw-zh_hant.tmx.gz">0.3M</a>
 </td></tr> <tr><th><a rel="nofollow" title='monolingual untokenized zh_hant plain text' href="download.php?f=MultiHPLT/v1/mono/zh_hant.txt.gz">zh_hant</a>
-</th><td>1</td> <td>97.1M</td> <td>4.8M</td><td bgcolor="#daffc6"><a rel="nofollow" title='Chinese-Arabic (757,850 sentence pairs, 16.54M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ar-zh_hant.txt.zip">0.8M</a>
-</td><td bgcolor="#ffdbda"><a rel="nofollow" title='Chinese-Bosnian (6,212 sentence pairs, 88.53k words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/bs-zh_hant.txt.zip">6.2k</a>
-</td><td bgcolor="#ecffcd"><a rel="nofollow" title='Chinese-Catalan (192,935 sentence pairs, 3.14M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ca-zh_hant.txt.zip">0.2M</a>
+</th><td>1</td> <td>97.1M</td> <td>4.8M</td><td bgcolor="#daffc6"><a rel="nofollow" title='Chinese-Arabic (757,820 sentence pairs, 16.53M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ar-zh_hant.txt.zip">0.8M</a>
+</td><td bgcolor="#ffdbda"><a rel="nofollow" title='Chinese-Bosnian (6,211 sentence pairs, 88.52k words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/bs-zh_hant.txt.zip">6.2k</a>
+</td><td bgcolor="#ecffcd"><a rel="nofollow" title='Chinese-Catalan (192,929 sentence pairs, 3.14M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ca-zh_hant.txt.zip">0.2M</a>
 </td><td bgcolor="#c2ffc2"><a rel="nofollow" title='Chinese-English (5,306,571 sentence pairs, 111.27M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/en-zh_hant.txt.zip">5.3M</a>
-</td><td bgcolor="#edffce"><a rel="nofollow" title='Chinese-Estonian (185,784 sentence pairs, 2.93M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/et-zh_hant.txt.zip">0.2M</a>
+</td><td bgcolor="#edffce"><a rel="nofollow" title='Chinese-Estonian (185,804 sentence pairs, 2.93M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/et-zh_hant.txt.zip">0.2M</a>
 </td><td bgcolor="#ffdcdb"><a rel="nofollow" title='Chinese-Basque (9,358 sentence pairs, 0.10M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/eu-zh_hant.txt.zip">9.4k</a>
-</td><td bgcolor="#e0ffc6"><a rel="nofollow" title='Chinese-Finnish (741,681 sentence pairs, 9.28M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/fi-zh_hant.txt.zip">0.7M</a>
-</td><td bgcolor="#ffdfde"><a rel="nofollow" title='Chinese-Irish (8,492 sentence pairs, 0.12M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ga-zh_hant.txt.zip">8.5k</a>
+</td><td bgcolor="#e0ffc6"><a rel="nofollow" title='Chinese-Finnish (741,676 sentence pairs, 9.28M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/fi-zh_hant.txt.zip">0.7M</a>
+</td><td bgcolor="#ffdfde"><a rel="nofollow" title='Chinese-Irish (8,491 sentence pairs, 0.12M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/ga-zh_hant.txt.zip">8.5k</a>
 </td><td bgcolor="#ffe5e3"><a rel="nofollow" title='Chinese-Galician (14,720 sentence pairs, 0.18M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/gl-zh_hant.txt.zip">14.7k</a>
-</td><td bgcolor="#e3ffc8"><a rel="nofollow" title='Chinese-Hindi (291,721 sentence pairs, 7.30M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/hi-zh_hant.txt.zip">0.3M</a>
-</td><td bgcolor="#edffce"><a rel="nofollow" title='Chinese-Croatian (189,032 sentence pairs, 2.95M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/hr-zh_hant.txt.zip">0.2M</a>
-</td><td bgcolor="#ffffec"><a rel="nofollow" title='Chinese-Icelandic (70,139 sentence pairs, 1.20M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/is-zh_hant.txt.zip">70.1k</a>
-</td><td bgcolor="#fff0eb"><a rel="nofollow" title='Chinese-Macedonian (24,259 sentence pairs, 0.35M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/mk-zh_hant.txt.zip">24.3k</a>
+</td><td bgcolor="#e3ffc8"><a rel="nofollow" title='Chinese-Hindi (291,723 sentence pairs, 7.30M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/hi-zh_hant.txt.zip">0.3M</a>
+</td><td bgcolor="#edffce"><a rel="nofollow" title='Chinese-Croatian (189,064 sentence pairs, 2.95M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/hr-zh_hant.txt.zip">0.2M</a>
+</td><td bgcolor="#ffffec"><a rel="nofollow" title='Chinese-Icelandic (70,130 sentence pairs, 1.20M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/is-zh_hant.txt.zip">70.1k</a>
+</td><td bgcolor="#fff0eb"><a rel="nofollow" title='Chinese-Macedonian (24,258 sentence pairs, 0.35M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/mk-zh_hant.txt.zip">24.3k</a>
 </td><td bgcolor="#ffe5e3"><a rel="nofollow" title='Chinese-Maltese (11,182 sentence pairs, 0.19M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/mt-zh_hant.txt.zip">11.2k</a>
 </td><td bgcolor="#ffd1d1"><a rel="nofollow" title='Chinese-Norwegian Nynorsk (1,261 sentence pairs, 12.98k words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/nn-zh_hant.txt.zip">1.3k</a>
 </td><td bgcolor="#fff4ee"><a rel="nofollow" title='Chinese-Albanian (25,383 sentence pairs, 0.41M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/sq-zh_hant.txt.zip">25.4k</a>
-</td><td bgcolor="#ffe2e0"><a rel="nofollow" title='Chinese-Serbian (10,639 sentence pairs, 0.15M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/sr-zh_hant.txt.zip">10.6k</a>
-</td><td bgcolor="#e6ffc9"><a rel="nofollow" title='Chinese-Swahili (271,030 sentence pairs, 4.95M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/sw-zh_hant.txt.zip">0.3M</a>
+</td><td bgcolor="#ffffea"><a rel="nofollow" title='Chinese-Serbian (88,900 sentence pairs, 1.33M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/sr-zh_hant.txt.zip">88.9k</a>
+</td><td bgcolor="#e6ffc9"><a rel="nofollow" title='Chinese-Swahili (271,039 sentence pairs, 4.95M words) - Moses format' href="download.php?f=MultiHPLT/v1/moses/sw-zh_hant.txt.zip">0.3M</a>
 </td><td></td></tr></table></div><p>Note that TMX files only contain unique translation units and, therefore, the number of aligned units is smaller than for the distributions in Moses and XML format. Moses downloads include all non-empty alignment units including duplicates. Token counts for each language also include duplicate sentences and documents.<p><hr><h3>Disclaimer</h3> <ul> <li>We do not own any of the text from which the data has been extracted.</li> <li>We only offer files that we believe we are free to redistribute. If any doubt occurs about the legality of any of our file downloads we will take them off right away after contacting us.</li> </ul> <h3>Notice and take down policy</h3> Notice: Should you consider that our data contains material that is owned by you and should therefore not be reproduced here, please: <ul> <li>Clearly identify yourself, with detailed contact data such as an address, telephone number or email address at which you can be contacted.</li> <li>Clearly identify the copyrighted work claimed to be infringed.</li> <li>Clearly identify the material that is claimed to be infringing and information reasonably sufficient to allow us to locate the material.</li> <li>And contact Joerg Tiedemann at the following email address: jorg.tiedemann at helsinki.fi.</li> </ul> Take down: We will comply to legitimate requests by removing the affected sources from the next release of the corpus.<div class="footer"></div>
 </body>
 </html>
