@@ -573,7 +573,7 @@ function find_opus_resources($src,$trg,&$resources){
 
   $url = $OPUSAPI.'/?source='.$src.'&target='.$trg;
   if ( $version != 'all' ){
-    $url .= '&version='.$version;
+      $url .= '&version='.$version;
   }
   // echo $url;
   // $lines_array=file($url);

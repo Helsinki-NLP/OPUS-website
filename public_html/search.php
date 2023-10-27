@@ -154,40 +154,40 @@ function table_tail(){
 
 
 function print_resources($src,$trg,$minsize='all',
-			 $sort_by='xces'){
+                         $sort_by='xces-links'){
 
-  $resources = array();
-  find_opus_resources($src,$trg,$resources);
+    $resources = array();
+    find_opus_resources($src,$trg,$resources);
 
-  $sorted = array();
-  foreach ($resources as $corpus => $versions){
-    foreach ($versions as $version => $types){
-      // echo var_dump($types);
-      if ($sort_by == 'xces-links' || $sort_by == 'xces'){
-	$type = $types['xces'];
-      }
-      else{
-	$type = $types['moses'];
-      }
-      foreach ($type as $lang => $res){
-	if ($sort_by == 'xces-links'){
-	  $sorted["$corpus:$version:$lang"] = $res['alignment_pairs'];
-	}
-	else{
-	  $sorted["$corpus:$version:$lang"] = $res['source_tokens'] + $res['target_tokens'];
-	}
-      }
+    $sorted = array();
+    foreach ($resources as $corpus => $versions){
+        foreach ($versions as $version => $types){
+            // echo var_dump($types);
+            if ($sort_by == 'xces-links' || $sort_by == 'xces'){
+                $type = $types['xces'];
+            }
+            else{
+                $type = $types['moses'];
+            }
+            foreach ($type as $lang => $res){
+                if ($sort_by == 'xces-links'){
+                    $sorted["$corpus:$version:$lang"] = $res['alignment_pairs'];
+                }
+                else{
+                    $sorted["$corpus:$version:$lang"] = $res['source_tokens'] + $res['target_tokens'];
+                }
+            }
+        }
     }
-  }
-  arsort($sorted,SORT_NUMERIC);
-  // echo var_dump($sorted);
+    arsort($sorted,SORT_NUMERIC);
+    // echo var_dump($sorted);
 
-  foreach ($sorted as $bitext => $size){
-    if ($size < $minsize){ break; }
-    list($corpus,$version,$src,$trg) = explode(':',$bitext);
-    // echo "$corpus $src $trg $version";
-    print_resource($corpus,$version,$src,$trg,$resources[$corpus][$version]);
-  }
+    foreach ($sorted as $bitext => $size){
+        if ($size < $minsize){ break; }
+        list($corpus,$version,$src,$trg) = explode(':',$bitext);
+        // echo "$corpus $src $trg $version";
+        print_resource($corpus,$version,$src,$trg,$resources[$corpus][$version]);
+    }
 }
 
 
@@ -514,7 +514,7 @@ function find_opus_resources($src,$trg,&$resources){
 
   $url = $OPUSAPI.'/?source='.$src.'&target='.$trg;
   if ( $version != 'all' ){
-    $url .= '&version='.$version;
+      $url .= '&version='.$version;
   }
   // $lines_array=file($url);
   // $lines_array=file($url);

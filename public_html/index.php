@@ -27,6 +27,7 @@
   <div class="news">
     <h3>Latest News</h3>
     <ul>
+         <li><a href="https://github.com/Helsinki-NLP/OPUS">OPUS on GitHub</a></li>
       <li>2021-12-08: New: <a href="liv4ever.php">Liv4ever</a> and <a href="ELITR-ECA.php">ELITR-ECA</a></li>
       <li>2021-06-28: New: <a href="CCMatrix.php">CCMatrix</a></li>
       <li>2021-06-11: Updated: <a href="ParaCrawl-v8.php">ParaCrawl</a> and <a href="MultiParaCrawl-v8.php">MultiParaCrawl</a></li>
@@ -69,7 +70,7 @@
   <p>OPUS is a growing collection of translated texts from the web. In the OPUS project we try to convert and align free online data, to add linguistic annotation, and to provide the community with a publicly available parallel corpus. OPUS is based on open source products and the corpus is also delivered as an open content package. We used several tools to compile the current collection. All pre-processing is done automatically. No manual corrections have been carried out.</p>
 
   <p>The OPUS collection is growing! Check this page from time to time to see new data arriving ...<br>
-  Contributions are very welcome! Please contact &lt;jorg.tiedemann<?php
+  Contributions are very welcome! Please contact &lt;opus-project<?php
      echo '&#64;'; 
   ?>helsinki.fi
   &gt;</p>
@@ -108,7 +109,6 @@
 
         <b>Tools &amp; Info</b>
         <ul>
-	  <li><a href="https://github.com/Helsinki-NLP/OPUS">OPUS@github</a></li>
           <li><a href="/trac/wiki">OPUS Wiki</a></li>
 	  <li><a href="http://opus.nlpl.eu/opusapi">OPUS API</a></li>
 	  <li><a href="https://github.com/Helsinki-NLP/OPUS-MT">OPUS-MT</a></li>
