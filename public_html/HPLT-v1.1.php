@@ -325,7 +325,7 @@
 </td><td bgcolor="#e4ffc8"><a rel="nofollow" title='English-Albanian (1,655,958 sentence pairs, 6.62M words) - TMX format' href="download.php?f=HPLT/v1.1/tmx/en-sq.tmx.gz">1.7M</a>
 </td><td bgcolor="#dbffc6"><a rel="nofollow" title='English-Serbian (3,904,383 sentence pairs, 15.62M words) - TMX format' href="download.php?f=HPLT/v1.1/tmx/en-sr.tmx.gz">3.9M</a>
 </td><td bgcolor="#e3ffc7"><a rel="nofollow" title='English-Swahili (1,710,205 sentence pairs, 6.84M words) - TMX format' href="download.php?f=HPLT/v1.1/tmx/en-sw.tmx.gz">1.7M</a>
-</td><td bgcolor="#c2ffc2"><a rel="nofollow" title='English-Chinese (5,306,560 sentence pairs, 111.27M words) - TMX format' href="download.php?f=HPLT/v1.1/tmx/en-zh_hant.tmx.gz">5.3M</a>
+</td><td bgcolor="#dfffc6"><a rel="nofollow" title='English-Chinese (5,306,570 sentence pairs, 10.61M words) - TMX format' href="download.php?f=HPLT/v1.1/tmx/en-zh_hant.tmx.gz">5.3M</a>
 </td></tr> <tr><th><a rel="nofollow" title='monolingual untokenized et plain text' href="download.php?f=HPLT/v1.1/mono/et.txt.gz">et</a>
 </th><td>61</td> <td>91.8M</td> <td>6.3M</td><td></td><td></td><td></td><td bgcolor="#bfffbf"><a rel="nofollow" title='Estonian-English (6,089,852 sentence pairs, 172.39M words) - Moses format' href="download.php?f=HPLT/v1.1/moses/en-et.txt.zip">6.1M</a>
 </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr> <tr><th><a rel="nofollow" title='monolingual untokenized eu plain text' href="download.php?f=HPLT/v1.1/mono/eu.txt.gz">eu</a>

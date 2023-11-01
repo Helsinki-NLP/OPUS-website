@@ -3,7 +3,7 @@
 	PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 	 "http://www.w3.org/TR/html4/loose.dtd">
 <html><head><title>MaCoCu</title>
-<link rev="made" href="mailto:Joerg%20Tiedemann">
+<link rev="made" href="mailto:opus-project">
 
 <meta name="robots" content="NOFOLLOW">
 <link rel="stylesheet" type="text/css" href="index.css">
@@ -278,33 +278,33 @@
 </th><th><a rel="nofollow" title='monolingual tokenized tr plain text' href="download.php?f=MaCoCu/v2/mono/tr.tok.gz">tr</a>
 </th><th><a rel="nofollow" title='monolingual tokenized uk plain text' href="download.php?f=MaCoCu/v2/mono/uk.tok.gz">uk</a>
 </th></tr> <tr><th><a rel="nofollow" title='monolingual untokenized bg plain text' href="download.php?f=MaCoCu/v2/mono/bg.txt.gz">bg</a>
-</th><td>2</td> <td>41.7M</td> <td>1.9M</td><td></td><td></td><td></td><td></td><td></td><td bgcolor="#c8ffc8"><a rel="nofollow" title='Bulgarian-English (1,760,778 sentence pairs, 72.13M words) - TMX format' href="download.php?f=MaCoCu/v2/tmx/bg-en.tmx.gz">1.8M</a>
+</th><td>2</td> <td>41.7M</td> <td>1.9M</td><td></td><td></td><td></td><td></td><td></td><td bgcolor="#e3ffc8"><a rel="nofollow" title='Bulgarian-English (1,760,777 sentence pairs, 7.04M words) - TMX format' href="download.php?f=MaCoCu/v2/tmx/bg-en.tmx.gz">1.8M</a>
 </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr> <tr><th><a rel="nofollow" title='monolingual untokenized bs_Cyrl plain text' href="download.php?f=MaCoCu/v2/mono/bs_Cyrl.txt.gz">bs_Cyrl</a>
-</th><td>1</td> <td>2.2M</td> <td>0.1M</td><td></td><td></td><td></td><td></td><td></td><td bgcolor="#e9ffcb"><a rel="nofollow" title='Bosnian-English (110,872 sentence pairs, 4.10M words) - TMX format' href="download.php?f=MaCoCu/v2/tmx/bs_Cyrl-en.tmx.gz">0.1M</a>
+</th><td>1</td> <td>2.2M</td> <td>0.1M</td><td></td><td></td><td></td><td></td><td></td><td bgcolor="#ffe8e5"><a rel="nofollow" title='Bosnian-English (110,871 sentence pairs, 0.22M words) - TMX format' href="download.php?f=MaCoCu/v2/tmx/bs_Cyrl-en.tmx.gz">0.1M</a>
 </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr> <tr><th><a rel="nofollow" title='monolingual untokenized bs_Latn plain text' href="download.php?f=MaCoCu/v2/mono/bs_Latn.txt.gz">bs_Latn</a>
-</th><td>1</td> <td>9.9M</td> <td>0.4M</td><td></td><td></td><td></td><td></td><td></td><td bgcolor="#d9ffc6"><a rel="nofollow" title='Bosnian-English (390,369 sentence pairs, 18.10M words) - TMX format' href="download.php?f=MaCoCu/v2/tmx/bs_Latn-en.tmx.gz">0.4M</a>
+</th><td>1</td> <td>9.9M</td> <td>0.4M</td><td></td><td></td><td></td><td></td><td></td><td bgcolor="#fffdf1"><a rel="nofollow" title='Bosnian-English (390,368 sentence pairs, 0.78M words) - TMX format' href="download.php?f=MaCoCu/v2/tmx/bs_Latn-en.tmx.gz">0.4M</a>
 </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr> <tr><th><a rel="nofollow" title='monolingual untokenized ca plain text' href="download.php?f=MaCoCu/v2/mono/ca.txt.gz">ca</a>
-</th><td>4</td> <td>86.2M</td> <td>3.3M</td><td></td><td></td><td></td><td></td><td></td><td bgcolor="#bfffbf"><a rel="nofollow" title='Catalan-English (3,130,520 sentence pairs, 142.86M words) - TMX format' href="download.php?f=MaCoCu/v2/tmx/ca-en.tmx.gz">3.1M</a>
+</th><td>4</td> <td>86.2M</td> <td>3.3M</td><td></td><td></td><td></td><td></td><td></td><td bgcolor="#ddffc6"><a rel="nofollow" title='Catalan-English (3,130,519 sentence pairs, 12.52M words) - TMX format' href="download.php?f=MaCoCu/v2/tmx/ca-en.tmx.gz">3.1M</a>
 </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr> <tr><th><a rel="nofollow" title='monolingual untokenized el plain text' href="download.php?f=MaCoCu/v2/mono/el.txt.gz">el</a>
-</th><td>4</td> <td>87.0M</td> <td>3.8M</td><td></td><td></td><td></td><td></td><td></td><td bgcolor="#bfffbf"><a rel="nofollow" title='Greek-English (3,583,973 sentence pairs, 151.08M words) - TMX format' href="download.php?f=MaCoCu/v2/tmx/el-en.tmx.gz">3.6M</a>
+</th><td>4</td> <td>87.0M</td> <td>3.8M</td><td></td><td></td><td></td><td></td><td></td><td bgcolor="#dcffc6"><a rel="nofollow" title='Greek-English (3,583,974 sentence pairs, 14.34M words) - TMX format' href="download.php?f=MaCoCu/v2/tmx/el-en.tmx.gz">3.6M</a>
 </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr> <tr><th><a rel="nofollow" title='monolingual untokenized en plain text' href="download.php?f=MaCoCu/v2/mono/en.txt.gz">en</a>
 </th><td>35</td> <td>664.3M</td> <td>27.7M</td><td bgcolor="#c8ffc8"><a rel="nofollow" title='English-Bulgarian (1,760,779 sentence pairs, 72.13M words) - Moses format' href="download.php?f=MaCoCu/v2/moses/bg-en.txt.zip">1.8M</a>
 </td><td bgcolor="#e9ffcb"><a rel="nofollow" title='English-Bosnian (110,872 sentence pairs, 4.10M words) - Moses format' href="download.php?f=MaCoCu/v2/moses/bs_Cyrl-en.txt.zip">0.1M</a>
 </td><td bgcolor="#d9ffc6"><a rel="nofollow" title='English-Bosnian (390,369 sentence pairs, 18.10M words) - Moses format' href="download.php?f=MaCoCu/v2/moses/bs_Latn-en.txt.zip">0.4M</a>
 </td><td bgcolor="#bfffbf"><a rel="nofollow" title='English-Catalan (3,130,523 sentence pairs, 142.86M words) - Moses format' href="download.php?f=MaCoCu/v2/moses/ca-en.txt.zip">3.1M</a>
 </td><td bgcolor="#bfffbf"><a rel="nofollow" title='English-Greek (3,583,978 sentence pairs, 151.08M words) - Moses format' href="download.php?f=MaCoCu/v2/moses/el-en.txt.zip">3.6M</a>
-</td><td></td><td bgcolor="#c4ffc4"><a rel="nofollow" title='English-Croatian (2,266,004 sentence pairs, 99.50M words) - TMX format' href="download.php?f=MaCoCu/v2/tmx/en-hr.tmx.gz">2.3M</a>
-</td><td bgcolor="#dfffc6"><a rel="nofollow" title='English-Icelandic (267,366 sentence pairs, 10.62M words) - TMX format' href="download.php?f=MaCoCu/v2/tmx/en-is.tmx.gz">0.3M</a>
-</td><td bgcolor="#fff7f0"><a rel="nofollow" title='English-me (9,493 sentence pairs, 0.49M words) - TMX format' href="download.php?f=MaCoCu/v2/tmx/en-me_Cyrl.tmx.gz">9.5k</a>
-</td><td bgcolor="#dfffc6"><a rel="nofollow" title='English-me (209,180 sentence pairs, 10.74M words) - TMX format' href="download.php?f=MaCoCu/v2/tmx/en-me_Latn.tmx.gz">0.2M</a>
-</td><td bgcolor="#d9ffc7"><a rel="nofollow" title='English-Macedonian (376,748 sentence pairs, 18.33M words) - TMX format' href="download.php?f=MaCoCu/v2/tmx/en-mk.tmx.gz">0.4M</a>
-</td><td bgcolor="#ccffcc"><a rel="nofollow" title='English-Maltese (925,322 sentence pairs, 53.86M words) - TMX format' href="download.php?f=MaCoCu/v2/tmx/en-mt.tmx.gz">0.9M</a>
-</td><td bgcolor="#c6ffc6"><a rel="nofollow" title='English-Slovenian (1,875,516 sentence pairs, 84.96M words) - TMX format' href="download.php?f=MaCoCu/v2/tmx/en-sl.tmx.gz">1.9M</a>
-</td><td bgcolor="#d6ffc8"><a rel="nofollow" title='English-Albanian (507,538 sentence pairs, 24.30M words) - TMX format' href="download.php?f=MaCoCu/v2/tmx/en-sq.tmx.gz">0.5M</a>
-</td><td bgcolor="#d6ffc8"><a rel="nofollow" title='English-Serbian (479,259 sentence pairs, 24.35M words) - TMX format' href="download.php?f=MaCoCu/v2/tmx/en-sr_Cyrl.tmx.gz">0.5M</a>
-</td><td bgcolor="#c8ffc8"><a rel="nofollow" title='English-Serbian (1,589,659 sentence pairs, 71.51M words) - TMX format' href="download.php?f=MaCoCu/v2/tmx/en-sr_Latn.tmx.gz">1.6M</a>
-</td><td bgcolor="#c5ffc5"><a rel="nofollow" title='English-Turkish (1,646,740 sentence pairs, 89.23M words) - TMX format' href="download.php?f=MaCoCu/v2/tmx/en-tr.tmx.gz">1.6M</a>
-</td><td bgcolor="#bfffbf"><a rel="nofollow" title='English-Ukrainian (6,406,277 sentence pairs, 238.84M words) - TMX format' href="download.php?f=MaCoCu/v2/tmx/en-uk.tmx.gz">6.4M</a>
+</td><td></td><td bgcolor="#e0ffc6"><a rel="nofollow" title='English-Croatian (2,266,004 sentence pairs, 9.06M words) - TMX format' href="download.php?f=MaCoCu/v2/tmx/en-hr.tmx.gz">2.3M</a>
+</td><td bgcolor="#ffffee"><a rel="nofollow" title='English-Icelandic (267,365 sentence pairs, 1.07M words) - TMX format' href="download.php?f=MaCoCu/v2/tmx/en-is.tmx.gz">0.3M</a>
+</td><td bgcolor="#ffd2d2"><a rel="nofollow" title='English-me (9,492 sentence pairs, 18.98k words) - TMX format' href="download.php?f=MaCoCu/v2/tmx/en-me_Cyrl.tmx.gz">9.5k</a>
+</td><td bgcolor="#fff4ee"><a rel="nofollow" title='English-me (209,179 sentence pairs, 0.42M words) - TMX format' href="download.php?f=MaCoCu/v2/tmx/en-me_Latn.tmx.gz">0.2M</a>
+</td><td bgcolor="#ffffe7"><a rel="nofollow" title='English-Macedonian (376,747 sentence pairs, 1.51M words) - TMX format' href="download.php?f=MaCoCu/v2/tmx/en-mk.tmx.gz">0.4M</a>
+</td><td bgcolor="#eaffcc"><a rel="nofollow" title='English-Maltese (925,326 sentence pairs, 3.70M words) - TMX format' href="download.php?f=MaCoCu/v2/tmx/en-mt.tmx.gz">0.9M</a>
+</td><td bgcolor="#e2ffc7"><a rel="nofollow" title='English-Slovenian (1,875,516 sentence pairs, 7.50M words) - TMX format' href="download.php?f=MaCoCu/v2/tmx/en-sl.tmx.gz">1.9M</a>
+</td><td bgcolor="#f8ffd9"><a rel="nofollow" title='English-Albanian (507,537 sentence pairs, 2.03M words) - TMX format' href="download.php?f=MaCoCu/v2/tmx/en-sq.tmx.gz">0.5M</a>
+</td><td bgcolor="#fffff0"><a rel="nofollow" title='English-Serbian (479,258 sentence pairs, 0.96M words) - TMX format' href="download.php?f=MaCoCu/v2/tmx/en-sr_Cyrl.tmx.gz">0.5M</a>
+</td><td bgcolor="#ecffcd"><a rel="nofollow" title='English-Serbian (1,589,658 sentence pairs, 3.18M words) - TMX format' href="download.php?f=MaCoCu/v2/tmx/en-sr_Latn.tmx.gz">1.6M</a>
+</td><td bgcolor="#e4ffc8"><a rel="nofollow" title='English-Turkish (1,646,739 sentence pairs, 6.59M words) - TMX format' href="download.php?f=MaCoCu/v2/tmx/en-tr.tmx.gz">1.6M</a>
+</td><td bgcolor="#d5ffc8"><a rel="nofollow" title='English-Ukrainian (6,406,287 sentence pairs, 25.63M words) - TMX format' href="download.php?f=MaCoCu/v2/tmx/en-uk.tmx.gz">6.4M</a>
 </td></tr> <tr><th><a rel="nofollow" title='monolingual untokenized hr plain text' href="download.php?f=MaCoCu/v2/mono/hr.txt.gz">hr</a>
 </th><td>3</td> <td>54.7M</td> <td>2.4M</td><td></td><td></td><td></td><td></td><td></td><td bgcolor="#c4ffc4"><a rel="nofollow" title='Croatian-English (2,266,007 sentence pairs, 99.50M words) - Moses format' href="download.php?f=MaCoCu/v2/moses/en-hr.txt.zip">2.3M</a>
 </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr> <tr><th><a rel="nofollow" title='monolingual untokenized is plain text' href="download.php?f=MaCoCu/v2/mono/is.txt.gz">is</a>
