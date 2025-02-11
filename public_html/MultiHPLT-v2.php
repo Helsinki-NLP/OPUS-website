@@ -2273,8 +2273,16 @@
 </td><td bgcolor="#d7ffc8"><a rel="nofollow" title='Welsh-Vietnamese (507,274 sentence pairs, 23.06M words) - TMX format' href="download.php?f=MultiHPLT/v2/tmx/cy-vi.tmx.gz">0.5M</a>
 </td><td bgcolor="#f6ffd7"><a rel="nofollow" title='Welsh-Xhosa (62,168 sentence pairs, 2.07M words) - TMX format' href="download.php?f=MultiHPLT/v2/tmx/cy-xh.tmx.gz">62.2k</a>
 </td></tr> <tr><th><a rel="nofollow" title='monolingual untokenized en plain text' href="download.php?f=MultiHPLT/v2/mono/en.txt.gz">en</a>
-</th><td>1</td> <td>5.0G</td> <td>239.4M</td><td></td><td></td><td bgcolor="#c1ffc1"><a rel="nofollow" title='English-Azerbaijani (3,188,231 sentence pairs, 114.96M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/az-en.txt.zip">3.2M</a>
-</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td bgcolor="#caffca"><a rel="nofollow" title='English-Esperanto (1,521,821 sentence pairs, 64.06M words) - TMX format' href="download.php?f=MultiHPLT/v2/tmx/en-eo.tmx.gz">1.5M</a>
+</th><td>1</td> <td>5.0G</td> <td>239.4M</td><td bgcolor="#bfffbf"><a rel="nofollow" title='English-Afrikaans (3,987,340 sentence pairs, 158.98M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/af-en.txt.zip">4.0M</a>
+</td><td bgcolor="#bfffbf"><a rel="nofollow" title='English-Arabic (17,505,366 sentence pairs, 867.16M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/ar-en.txt.zip">17.5M</a>
+</td><td bgcolor="#c1ffc1"><a rel="nofollow" title='English-Azerbaijani (3,188,231 sentence pairs, 114.96M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/az-en.txt.zip">3.2M</a>
+</td><td bgcolor="#c2ffc2"><a rel="nofollow" title='English-Belarusian (3,140,958 sentence pairs, 108.72M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/be-en.txt.zip">3.1M</a>
+</td><td bgcolor="#bfffbf"><a rel="nofollow" title='English-Bulgarian (22,725,326 sentence pairs, 857.95M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/bg-en.txt.zip">22.7M</a>
+</td><td bgcolor="#c3ffc3"><a rel="nofollow" title='English-Bengali (2,328,136 sentence pairs, 101.20M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/bn-en.txt.zip">2.3M</a>
+</td><td bgcolor="#bfffbf"><a rel="nofollow" title='English-Bosnian (4,559,328 sentence pairs, 196.19M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/bs-en.txt.zip">4.6M</a>
+</td><td bgcolor="#bfffbf"><a rel="nofollow" title='English-Catalan (13,080,859 sentence pairs, 569.68M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/ca-en.txt.zip">13.1M</a>
+</td><td bgcolor="#bfffbf"><a rel="nofollow" title='English-Welsh (3,867,402 sentence pairs, 160.34M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/cy-en.txt.zip">3.9M</a>
+</td><td></td><td bgcolor="#caffca"><a rel="nofollow" title='English-Esperanto (1,521,821 sentence pairs, 64.06M words) - TMX format' href="download.php?f=MultiHPLT/v2/tmx/en-eo.tmx.gz">1.5M</a>
 </td><td bgcolor="#bfffbf"><a rel="nofollow" title='English-Estonian (8,797,574 sentence pairs, 314.51M words) - TMX format' href="download.php?f=MultiHPLT/v2/tmx/en-et.tmx.gz">8.8M</a>
 </td><td bgcolor="#ccffcc"><a rel="nofollow" title='English-Basque (1,491,873 sentence pairs, 55.28M words) - TMX format' href="download.php?f=MultiHPLT/v2/tmx/en-eu.tmx.gz">1.5M</a>
 </td><td bgcolor="#bfffbf"><a rel="nofollow" title='English-Persian (3,448,296 sentence pairs, 176.24M words) - TMX format' href="download.php?f=MultiHPLT/v2/tmx/en-fa.tmx.gz">3.4M</a>
@@ -2376,7 +2384,8 @@
 </td><td bgcolor="#e6ffc9"><a rel="nofollow" title='Estonian-Bosnian (172,717 sentence pairs, 5.14M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/bs-et.txt.zip">0.2M</a>
 </td><td bgcolor="#d4ffca"><a rel="nofollow" title='Estonian-Catalan (866,328 sentence pairs, 28.65M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/ca-et.txt.zip">0.9M</a>
 </td><td bgcolor="#deffc6"><a rel="nofollow" title='Estonian-Welsh (337,128 sentence pairs, 11.18M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/cy-et.txt.zip">0.3M</a>
-</td><td></td><td bgcolor="#e6ffc9"><a rel="nofollow" title='Estonian-Esperanto (169,394 sentence pairs, 5.39M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-et.txt.zip">0.2M</a>
+</td><td bgcolor="#bfffbf"><a rel="nofollow" title='Estonian-English (8,797,574 sentence pairs, 314.51M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/en-et.txt.zip">8.8M</a>
+</td><td bgcolor="#e6ffc9"><a rel="nofollow" title='Estonian-Esperanto (169,394 sentence pairs, 5.39M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-et.txt.zip">0.2M</a>
 </td><td></td><td bgcolor="#e6ffc9"><a rel="nofollow" title='Estonian-Basque (206,109 sentence pairs, 5.24M words) - TMX format' href="download.php?f=MultiHPLT/v2/tmx/et-eu.tmx.gz">0.2M</a>
 </td><td bgcolor="#e8ffca"><a rel="nofollow" title='Estonian-Persian (133,281 sentence pairs, 4.13M words) - TMX format' href="download.php?f=MultiHPLT/v2/tmx/et-fa.tmx.gz">0.1M</a>
 </td><td bgcolor="#c7ffc7"><a rel="nofollow" title='Estonian-Finnish (2,696,040 sentence pairs, 77.93M words) - TMX format' href="download.php?f=MultiHPLT/v2/tmx/et-fi.tmx.gz">2.7M</a>
@@ -2426,7 +2435,8 @@
 </td><td bgcolor="#ffffed"><a rel="nofollow" title='Basque-Bosnian (44,347 sentence pairs, 1.14M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/bs-eu.txt.zip">44.3k</a>
 </td><td bgcolor="#dbffc6"><a rel="nofollow" title='Basque-Catalan (444,291 sentence pairs, 15.35M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/ca-eu.txt.zip">0.4M</a>
 </td><td bgcolor="#e7ffca"><a rel="nofollow" title='Basque-Welsh (160,771 sentence pairs, 4.91M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/cy-eu.txt.zip">0.2M</a>
-</td><td></td><td bgcolor="#e8ffca"><a rel="nofollow" title='Basque-Esperanto (139,466 sentence pairs, 4.22M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-eu.txt.zip">0.1M</a>
+</td><td bgcolor="#ccffcc"><a rel="nofollow" title='Basque-English (1,491,873 sentence pairs, 55.28M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/en-eu.txt.zip">1.5M</a>
+</td><td bgcolor="#e8ffca"><a rel="nofollow" title='Basque-Esperanto (139,466 sentence pairs, 4.22M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-eu.txt.zip">0.1M</a>
 </td><td bgcolor="#e6ffc9"><a rel="nofollow" title='Basque-Estonian (206,109 sentence pairs, 5.24M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/et-eu.txt.zip">0.2M</a>
 </td><td></td><td bgcolor="#ffffe8"><a rel="nofollow" title='Basque-Persian (49,913 sentence pairs, 1.46M words) - TMX format' href="download.php?f=MultiHPLT/v2/tmx/eu-fa.tmx.gz">49.9k</a>
 </td><td bgcolor="#e4ffc8"><a rel="nofollow" title='Basque-Finnish (264,938 sentence pairs, 6.59M words) - TMX format' href="download.php?f=MultiHPLT/v2/tmx/eu-fi.tmx.gz">0.3M</a>
@@ -2476,7 +2486,8 @@
 </td><td bgcolor="#ffffe6"><a rel="nofollow" title='Persian-Bosnian (51,756 sentence pairs, 1.61M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/bs-fa.txt.zip">51.8k</a>
 </td><td bgcolor="#e3ffc7"><a rel="nofollow" title='Persian-Catalan (181,769 sentence pairs, 6.67M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/ca-fa.txt.zip">0.2M</a>
 </td><td bgcolor="#e9ffcb"><a rel="nofollow" title='Persian-Welsh (97,877 sentence pairs, 3.86M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/cy-fa.txt.zip">97.9k</a>
-</td><td></td><td bgcolor="#ffffe1"><a rel="nofollow" title='Persian-Esperanto (56,444 sentence pairs, 1.93M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-fa.txt.zip">56.4k</a>
+</td><td bgcolor="#bfffbf"><a rel="nofollow" title='Persian-English (3,448,296 sentence pairs, 176.24M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/en-fa.txt.zip">3.4M</a>
+</td><td bgcolor="#ffffe1"><a rel="nofollow" title='Persian-Esperanto (56,444 sentence pairs, 1.93M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-fa.txt.zip">56.4k</a>
 </td><td bgcolor="#e8ffca"><a rel="nofollow" title='Persian-Estonian (133,281 sentence pairs, 4.13M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/et-fa.txt.zip">0.1M</a>
 </td><td bgcolor="#ffffe8"><a rel="nofollow" title='Persian-Basque (49,913 sentence pairs, 1.46M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eu-fa.txt.zip">49.9k</a>
 </td><td></td><td bgcolor="#e3ffc7"><a rel="nofollow" title='Persian-Finnish (248,341 sentence pairs, 6.87M words) - TMX format' href="download.php?f=MultiHPLT/v2/tmx/fa-fi.tmx.gz">0.2M</a>
@@ -2526,7 +2537,8 @@
 </td><td bgcolor="#e1ffc7"><a rel="nofollow" title='Finnish-Bosnian (295,269 sentence pairs, 8.29M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/bs-fi.txt.zip">0.3M</a>
 </td><td bgcolor="#cfffcf"><a rel="nofollow" title='Finnish-Catalan (1,382,878 sentence pairs, 43.02M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/ca-fi.txt.zip">1.4M</a>
 </td><td bgcolor="#dcffc6"><a rel="nofollow" title='Finnish-Welsh (423,264 sentence pairs, 13.50M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/cy-fi.txt.zip">0.4M</a>
-</td><td></td><td bgcolor="#ddffc6"><a rel="nofollow" title='Finnish-Esperanto (361,730 sentence pairs, 12.38M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-fi.txt.zip">0.4M</a>
+</td><td bgcolor="#bfffbf"><a rel="nofollow" title='Finnish-English (29,067,875 sentence pairs, 919.47M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/en-fi.txt.zip">29.1M</a>
+</td><td bgcolor="#ddffc6"><a rel="nofollow" title='Finnish-Esperanto (361,730 sentence pairs, 12.38M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-fi.txt.zip">0.4M</a>
 </td><td bgcolor="#c7ffc7"><a rel="nofollow" title='Finnish-Estonian (2,696,040 sentence pairs, 77.93M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/et-fi.txt.zip">2.7M</a>
 </td><td bgcolor="#e4ffc8"><a rel="nofollow" title='Finnish-Basque (264,938 sentence pairs, 6.59M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eu-fi.txt.zip">0.3M</a>
 </td><td bgcolor="#e3ffc7"><a rel="nofollow" title='Finnish-Persian (248,341 sentence pairs, 6.87M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/fa-fi.txt.zip">0.2M</a>
@@ -2576,7 +2588,8 @@
 </td><td bgcolor="#f0ffd1"><a rel="nofollow" title='Irish-Bosnian (67,929 sentence pairs, 2.41M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/bs-ga.txt.zip">67.9k</a>
 </td><td bgcolor="#d6ffc8"><a rel="nofollow" title='Irish-Catalan (589,370 sentence pairs, 24.30M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/ca-ga.txt.zip">0.6M</a>
 </td><td bgcolor="#d9ffc7"><a rel="nofollow" title='Irish-Welsh (459,499 sentence pairs, 19.13M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/cy-ga.txt.zip">0.5M</a>
-</td><td></td><td bgcolor="#e4ffc8"><a rel="nofollow" title='Irish-Esperanto (172,371 sentence pairs, 6.36M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-ga.txt.zip">0.2M</a>
+</td><td bgcolor="#c2ffc2"><a rel="nofollow" title='Irish-English (2,697,582 sentence pairs, 111.41M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/en-ga.txt.zip">2.7M</a>
+</td><td bgcolor="#e4ffc8"><a rel="nofollow" title='Irish-Esperanto (172,371 sentence pairs, 6.36M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-ga.txt.zip">0.2M</a>
 </td><td bgcolor="#d8ffc7"><a rel="nofollow" title='Irish-Estonian (546,074 sentence pairs, 19.66M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/et-ga.txt.zip">0.5M</a>
 </td><td bgcolor="#e6ffc9"><a rel="nofollow" title='Irish-Basque (175,662 sentence pairs, 5.42M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eu-ga.txt.zip">0.2M</a>
 </td><td bgcolor="#e8ffca"><a rel="nofollow" title='Irish-Persian (108,532 sentence pairs, 4.31M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/fa-ga.txt.zip">0.1M</a>
@@ -2626,7 +2639,8 @@
 </td><td bgcolor="#efffd0"><a rel="nofollow" title='Galician-Bosnian (81,760 sentence pairs, 2.61M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/bs-gl.txt.zip">81.8k</a>
 </td><td bgcolor="#d0ffcf"><a rel="nofollow" title='Galician-Catalan (974,793 sentence pairs, 39.76M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/ca-gl.txt.zip">1.0M</a>
 </td><td bgcolor="#dbffc6"><a rel="nofollow" title='Galician-Welsh (393,349 sentence pairs, 14.87M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/cy-gl.txt.zip">0.4M</a>
-</td><td></td><td bgcolor="#e3ffc8"><a rel="nofollow" title='Galician-Esperanto (205,338 sentence pairs, 7.03M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-gl.txt.zip">0.2M</a>
+</td><td bgcolor="#c1ffc1"><a rel="nofollow" title='Galician-English (2,783,727 sentence pairs, 115.15M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/en-gl.txt.zip">2.8M</a>
+</td><td bgcolor="#e3ffc8"><a rel="nofollow" title='Galician-Esperanto (205,338 sentence pairs, 7.03M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-gl.txt.zip">0.2M</a>
 </td><td bgcolor="#ddffc6"><a rel="nofollow" title='Galician-Estonian (417,017 sentence pairs, 12.79M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/et-gl.txt.zip">0.4M</a>
 </td><td bgcolor="#dfffc7"><a rel="nofollow" title='Galician-Basque (339,641 sentence pairs, 10.92M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eu-gl.txt.zip">0.3M</a>
 </td><td bgcolor="#e9ffcb"><a rel="nofollow" title='Galician-Persian (118,382 sentence pairs, 4.01M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/fa-gl.txt.zip">0.1M</a>
@@ -2676,7 +2690,8 @@
 </td><td bgcolor="#fff5ee"><a rel="nofollow" title='Gujarati-Bosnian (18,811 sentence pairs, 0.44M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/bs-gu.txt.zip">18.8k</a>
 </td><td bgcolor="#ebffcd"><a rel="nofollow" title='Gujarati-Catalan (110,508 sentence pairs, 3.44M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/ca-gu.txt.zip">0.1M</a>
 </td><td bgcolor="#efffd0"><a rel="nofollow" title='Gujarati-Welsh (79,154 sentence pairs, 2.58M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/cy-gu.txt.zip">79.2k</a>
-</td><td></td><td bgcolor="#ffffe0"><a rel="nofollow" title='Gujarati-Esperanto (65,174 sentence pairs, 1.99M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-gu.txt.zip">65.2k</a>
+</td><td bgcolor="#d3ffcc"><a rel="nofollow" title='Gujarati-English (716,777 sentence pairs, 32.54M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/en-gu.txt.zip">0.7M</a>
+</td><td bgcolor="#ffffe0"><a rel="nofollow" title='Gujarati-Esperanto (65,174 sentence pairs, 1.99M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-gu.txt.zip">65.2k</a>
 </td><td bgcolor="#f8ffd9"><a rel="nofollow" title='Gujarati-Estonian (79,048 sentence pairs, 2.02M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/et-gu.txt.zip">79.0k</a>
 </td><td bgcolor="#ffffec"><a rel="nofollow" title='Gujarati-Basque (47,178 sentence pairs, 1.21M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eu-gu.txt.zip">47.2k</a>
 </td><td bgcolor="#eaffcc"><a rel="nofollow" title='Gujarati-Persian (90,190 sentence pairs, 3.52M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/fa-gu.txt.zip">90.2k</a>
@@ -2726,7 +2741,8 @@
 </td><td bgcolor="#f2ffd3"><a rel="nofollow" title='Hebrew-Bosnian (93,242 sentence pairs, 2.27M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/bs-he.txt.zip">93.2k</a>
 </td><td bgcolor="#ddffc6"><a rel="nofollow" title='Hebrew-Catalan (431,054 sentence pairs, 12.92M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/ca-he.txt.zip">0.4M</a>
 </td><td bgcolor="#e8ffca"><a rel="nofollow" title='Hebrew-Welsh (146,490 sentence pairs, 4.45M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/cy-he.txt.zip">0.1M</a>
-</td><td></td><td bgcolor="#e6ffc9"><a rel="nofollow" title='Hebrew-Esperanto (152,616 sentence pairs, 5.04M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-he.txt.zip">0.2M</a>
+</td><td bgcolor="#bfffbf"><a rel="nofollow" title='Hebrew-English (8,686,089 sentence pairs, 349.22M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/en-he.txt.zip">8.7M</a>
+</td><td bgcolor="#e6ffc9"><a rel="nofollow" title='Hebrew-Esperanto (152,616 sentence pairs, 5.04M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-he.txt.zip">0.2M</a>
 </td><td bgcolor="#ddffc6"><a rel="nofollow" title='Hebrew-Estonian (473,428 sentence pairs, 12.30M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/et-he.txt.zip">0.5M</a>
 </td><td bgcolor="#f1ffd2"><a rel="nofollow" title='Hebrew-Basque (95,811 sentence pairs, 2.37M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eu-he.txt.zip">95.8k</a>
 </td><td bgcolor="#e0ffc7"><a rel="nofollow" title='Hebrew-Persian (274,632 sentence pairs, 9.76M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/fa-he.txt.zip">0.3M</a>
@@ -2776,7 +2792,8 @@
 </td><td bgcolor="#ffffe7"><a rel="nofollow" title='Hindi-Bosnian (54,433 sentence pairs, 1.56M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/bs-hi.txt.zip">54.4k</a>
 </td><td bgcolor="#ddffc6"><a rel="nofollow" title='Hindi-Catalan (366,546 sentence pairs, 13.21M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/ca-hi.txt.zip">0.4M</a>
 </td><td bgcolor="#e4ffc8"><a rel="nofollow" title='Hindi-Welsh (161,323 sentence pairs, 6.10M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/cy-hi.txt.zip">0.2M</a>
-</td><td></td><td bgcolor="#ecffcd"><a rel="nofollow" title='Hindi-Esperanto (92,282 sentence pairs, 3.19M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-hi.txt.zip">92.3k</a>
+</td><td bgcolor="#bfffbf"><a rel="nofollow" title='Hindi-English (9,926,620 sentence pairs, 480.27M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/en-hi.txt.zip">9.9M</a>
+</td><td bgcolor="#ecffcd"><a rel="nofollow" title='Hindi-Esperanto (92,282 sentence pairs, 3.19M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-hi.txt.zip">92.3k</a>
 </td><td bgcolor="#e0ffc7"><a rel="nofollow" title='Hindi-Estonian (314,461 sentence pairs, 9.52M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/et-hi.txt.zip">0.3M</a>
 </td><td bgcolor="#f2ffd3"><a rel="nofollow" title='Hindi-Basque (78,496 sentence pairs, 2.24M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eu-hi.txt.zip">78.5k</a>
 </td><td bgcolor="#dcffc6"><a rel="nofollow" title='Hindi-Persian (317,154 sentence pairs, 14.38M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/fa-hi.txt.zip">0.3M</a>
@@ -2928,7 +2945,8 @@
 </td><td bgcolor="#ffffee"><a rel="nofollow" title='Japanese-Bosnian (67,899 sentence pairs, 1.10M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/bs-ja.txt.zip">67.9k</a>
 </td><td bgcolor="#e2ffc7"><a rel="nofollow" title='Japanese-Catalan (413,414 sentence pairs, 7.99M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/ca-ja.txt.zip">0.4M</a>
 </td><td bgcolor="#efffd0"><a rel="nofollow" title='Japanese-Welsh (133,958 sentence pairs, 2.60M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/cy-ja.txt.zip">0.1M</a>
-</td><td></td><td bgcolor="#ffffec"><a rel="nofollow" title='Japanese-Esperanto (70,921 sentence pairs, 1.20M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-ja.txt.zip">70.9k</a>
+</td><td bgcolor="#bfffbf"><a rel="nofollow" title='Japanese-English (18,894,019 sentence pairs, 360.95M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/en-ja.txt.zip">18.9M</a>
+</td><td bgcolor="#ffffec"><a rel="nofollow" title='Japanese-Esperanto (70,921 sentence pairs, 1.20M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-ja.txt.zip">70.9k</a>
 </td><td bgcolor="#e5ffc8"><a rel="nofollow" title='Japanese-Estonian (377,771 sentence pairs, 5.70M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/et-ja.txt.zip">0.4M</a>
 </td><td bgcolor="#fffff0"><a rel="nofollow" title='Japanese-Basque (71,851 sentence pairs, 0.97M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eu-ja.txt.zip">71.9k</a>
 </td><td bgcolor="#e9ffcb"><a rel="nofollow" title='Japanese-Persian (212,995 sentence pairs, 3.92M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/fa-ja.txt.zip">0.2M</a>
@@ -2978,7 +2996,8 @@
 </td><td bgcolor="#ffffe6"><a rel="nofollow" title='Kazakh-Bosnian (58,181 sentence pairs, 1.62M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/bs-kk.txt.zip">58.2k</a>
 </td><td bgcolor="#e3ffc7"><a rel="nofollow" title='Kazakh-Catalan (214,323 sentence pairs, 6.79M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/ca-kk.txt.zip">0.2M</a>
 </td><td bgcolor="#e9ffcb"><a rel="nofollow" title='Kazakh-Welsh (116,164 sentence pairs, 3.80M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/cy-kk.txt.zip">0.1M</a>
-</td><td></td><td bgcolor="#eeffcf"><a rel="nofollow" title='Kazakh-Esperanto (92,828 sentence pairs, 2.71M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-kk.txt.zip">92.8k</a>
+</td><td bgcolor="#c9ffc9"><a rel="nofollow" title='Kazakh-English (1,943,935 sentence pairs, 69.90M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/en-kk.txt.zip">1.9M</a>
+</td><td bgcolor="#eeffcf"><a rel="nofollow" title='Kazakh-Esperanto (92,828 sentence pairs, 2.71M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-kk.txt.zip">92.8k</a>
 </td><td bgcolor="#e3ffc8"><a rel="nofollow" title='Kazakh-Estonian (273,657 sentence pairs, 7.14M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/et-kk.txt.zip">0.3M</a>
 </td><td bgcolor="#ecffcd"><a rel="nofollow" title='Kazakh-Basque (117,856 sentence pairs, 3.05M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eu-kk.txt.zip">0.1M</a>
 </td><td bgcolor="#ffffe0"><a rel="nofollow" title='Kazakh-Persian (67,234 sentence pairs, 1.95M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/fa-kk.txt.zip">67.2k</a>
@@ -3028,7 +3047,8 @@
 </td><td bgcolor="#fff1ec"><a rel="nofollow" title='Kannada-Bosnian (16,869 sentence pairs, 0.36M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/bs-kn.txt.zip">16.9k</a>
 </td><td bgcolor="#edffce"><a rel="nofollow" title='Kannada-Catalan (101,480 sentence pairs, 2.91M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/ca-kn.txt.zip">0.1M</a>
 </td><td bgcolor="#f6ffd7"><a rel="nofollow" title='Kannada-Welsh (69,197 sentence pairs, 2.05M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/cy-kn.txt.zip">69.2k</a>
-</td><td></td><td bgcolor="#ffffe6"><a rel="nofollow" title='Kannada-Esperanto (56,960 sentence pairs, 1.59M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-kn.txt.zip">57.0k</a>
+</td><td bgcolor="#d3ffca"><a rel="nofollow" title='Kannada-English (720,157 sentence pairs, 30.59M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/en-kn.txt.zip">0.7M</a>
+</td><td bgcolor="#ffffe6"><a rel="nofollow" title='Kannada-Esperanto (56,960 sentence pairs, 1.59M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-kn.txt.zip">57.0k</a>
 </td><td bgcolor="#ffffe6"><a rel="nofollow" title='Kannada-Estonian (68,707 sentence pairs, 1.58M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/et-kn.txt.zip">68.7k</a>
 </td><td bgcolor="#ffffee"><a rel="nofollow" title='Kannada-Basque (47,445 sentence pairs, 1.10M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eu-kn.txt.zip">47.4k</a>
 </td><td bgcolor="#efffd0"><a rel="nofollow" title='Kannada-Persian (73,811 sentence pairs, 2.56M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/fa-kn.txt.zip">73.8k</a>
@@ -3078,7 +3098,8 @@
 </td><td bgcolor="#ffffe0"><a rel="nofollow" title='Korean-Bosnian (83,054 sentence pairs, 1.96M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/bs-ko.txt.zip">83.1k</a>
 </td><td bgcolor="#dcffc7"><a rel="nofollow" title='Korean-Catalan (506,045 sentence pairs, 14.56M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/ca-ko.txt.zip">0.5M</a>
 </td><td bgcolor="#e6ffc9"><a rel="nofollow" title='Korean-Welsh (170,548 sentence pairs, 5.10M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/cy-ko.txt.zip">0.2M</a>
-</td><td></td><td bgcolor="#e4ffc8"><a rel="nofollow" title='Korean-Esperanto (188,164 sentence pairs, 6.22M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-ko.txt.zip">0.2M</a>
+</td><td bgcolor="#bfffbf"><a rel="nofollow" title='Korean-English (18,393,859 sentence pairs, 652.27M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/en-ko.txt.zip">18.4M</a>
+</td><td bgcolor="#e4ffc8"><a rel="nofollow" title='Korean-Esperanto (188,164 sentence pairs, 6.22M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-ko.txt.zip">0.2M</a>
 </td><td bgcolor="#ddffc6"><a rel="nofollow" title='Korean-Estonian (521,582 sentence pairs, 13.22M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/et-ko.txt.zip">0.5M</a>
 </td><td bgcolor="#efffd0"><a rel="nofollow" title='Korean-Basque (106,191 sentence pairs, 2.58M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eu-ko.txt.zip">0.1M</a>
 </td><td bgcolor="#dfffc6"><a rel="nofollow" title='Korean-Persian (327,776 sentence pairs, 10.37M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/fa-ko.txt.zip">0.3M</a>
@@ -3128,7 +3149,8 @@
 </td><td bgcolor="#e3ffc8"><a rel="nofollow" title='Lithuanian-Bosnian (243,852 sentence pairs, 7.24M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/bs-lt.txt.zip">0.2M</a>
 </td><td bgcolor="#d1ffce"><a rel="nofollow" title='Lithuanian-Catalan (1,144,701 sentence pairs, 38.20M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/ca-lt.txt.zip">1.1M</a>
 </td><td bgcolor="#dcffc6"><a rel="nofollow" title='Lithuanian-Welsh (422,266 sentence pairs, 14.14M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/cy-lt.txt.zip">0.4M</a>
-</td><td></td><td bgcolor="#e2ffc7"><a rel="nofollow" title='Lithuanian-Esperanto (241,606 sentence pairs, 7.67M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-lt.txt.zip">0.2M</a>
+</td><td bgcolor="#bfffbf"><a rel="nofollow" title='Lithuanian-English (12,881,354 sentence pairs, 458.92M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/en-lt.txt.zip">12.9M</a>
+</td><td bgcolor="#e2ffc7"><a rel="nofollow" title='Lithuanian-Esperanto (241,606 sentence pairs, 7.67M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-lt.txt.zip">0.2M</a>
 </td><td bgcolor="#c7ffc7"><a rel="nofollow" title='Lithuanian-Estonian (2,526,208 sentence pairs, 79.20M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/et-lt.txt.zip">2.5M</a>
 </td><td bgcolor="#e5ffc9"><a rel="nofollow" title='Lithuanian-Basque (229,302 sentence pairs, 5.86M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eu-lt.txt.zip">0.2M</a>
 </td><td bgcolor="#e5ffc8"><a rel="nofollow" title='Lithuanian-Persian (197,620 sentence pairs, 5.74M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/fa-lt.txt.zip">0.2M</a>
@@ -3178,7 +3200,8 @@
 </td><td bgcolor="#e3ffc7"><a rel="nofollow" title='Latvian-Bosnian (226,928 sentence pairs, 6.79M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/bs-lv.txt.zip">0.2M</a>
 </td><td bgcolor="#d0ffcf"><a rel="nofollow" title='Latvian-Catalan (1,181,748 sentence pairs, 39.91M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/ca-lv.txt.zip">1.2M</a>
 </td><td bgcolor="#dbffc6"><a rel="nofollow" title='Latvian-Welsh (456,402 sentence pairs, 15.67M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/cy-lv.txt.zip">0.5M</a>
-</td><td></td><td bgcolor="#e2ffc7"><a rel="nofollow" title='Latvian-Esperanto (231,556 sentence pairs, 7.36M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-lv.txt.zip">0.2M</a>
+</td><td bgcolor="#bfffbf"><a rel="nofollow" title='Latvian-English (11,294,618 sentence pairs, 405.35M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/en-lv.txt.zip">11.3M</a>
+</td><td bgcolor="#e2ffc7"><a rel="nofollow" title='Latvian-Esperanto (231,556 sentence pairs, 7.36M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-lv.txt.zip">0.2M</a>
 </td><td bgcolor="#c6ffc6"><a rel="nofollow" title='Latvian-Estonian (2,603,706 sentence pairs, 82.20M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/et-lv.txt.zip">2.6M</a>
 </td><td bgcolor="#e4ffc8"><a rel="nofollow" title='Latvian-Basque (246,177 sentence pairs, 6.46M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eu-lv.txt.zip">0.2M</a>
 </td><td bgcolor="#e6ffc9"><a rel="nofollow" title='Latvian-Persian (171,744 sentence pairs, 5.27M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/fa-lv.txt.zip">0.2M</a>
@@ -3228,7 +3251,8 @@
 </td><td bgcolor="#e2ffc7"><a rel="nofollow" title='Macedonian-Bosnian (214,541 sentence pairs, 7.83M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/bs-mk.txt.zip">0.2M</a>
 </td><td bgcolor="#d6ffc9"><a rel="nofollow" title='Macedonian-Catalan (676,990 sentence pairs, 25.00M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/ca-mk.txt.zip">0.7M</a>
 </td><td bgcolor="#daffc7"><a rel="nofollow" title='Macedonian-Welsh (453,048 sentence pairs, 17.08M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/cy-mk.txt.zip">0.5M</a>
-</td><td></td><td bgcolor="#e4ffc8"><a rel="nofollow" title='Macedonian-Esperanto (193,126 sentence pairs, 6.45M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-mk.txt.zip">0.2M</a>
+</td><td bgcolor="#bfffbf"><a rel="nofollow" title='Macedonian-English (3,991,617 sentence pairs, 158.29M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/en-mk.txt.zip">4.0M</a>
+</td><td bgcolor="#e4ffc8"><a rel="nofollow" title='Macedonian-Esperanto (193,126 sentence pairs, 6.45M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-mk.txt.zip">0.2M</a>
 </td><td bgcolor="#d9ffc6"><a rel="nofollow" title='Macedonian-Estonian (586,781 sentence pairs, 17.91M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/et-mk.txt.zip">0.6M</a>
 </td><td bgcolor="#e5ffc8"><a rel="nofollow" title='Macedonian-Basque (200,681 sentence pairs, 5.64M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eu-mk.txt.zip">0.2M</a>
 </td><td bgcolor="#e6ffc9"><a rel="nofollow" title='Macedonian-Persian (151,254 sentence pairs, 5.00M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/fa-mk.txt.zip">0.2M</a>
@@ -3278,7 +3302,8 @@
 </td><td bgcolor="#fff1ec"><a rel="nofollow" title='Malayalam-Bosnian (15,233 sentence pairs, 0.36M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/bs-ml.txt.zip">15.2k</a>
 </td><td bgcolor="#ffffe2"><a rel="nofollow" title='Malayalam-Catalan (66,182 sentence pairs, 1.82M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/ca-ml.txt.zip">66.2k</a>
 </td><td bgcolor="#ffffec"><a rel="nofollow" title='Malayalam-Welsh (42,959 sentence pairs, 1.25M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/cy-ml.txt.zip">43.0k</a>
-</td><td></td><td bgcolor="#ffffee"><a rel="nofollow" title='Malayalam-Esperanto (39,689 sentence pairs, 1.09M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-ml.txt.zip">39.7k</a>
+</td><td bgcolor="#d7ffc8"><a rel="nofollow" title='Malayalam-English (547,168 sentence pairs, 22.33M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/en-ml.txt.zip">0.5M</a>
+</td><td bgcolor="#ffffee"><a rel="nofollow" title='Malayalam-Esperanto (39,689 sentence pairs, 1.09M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-ml.txt.zip">39.7k</a>
 </td><td bgcolor="#ffffed"><a rel="nofollow" title='Malayalam-Estonian (51,125 sentence pairs, 1.13M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/et-ml.txt.zip">51.1k</a>
 </td><td bgcolor="#fffdf1"><a rel="nofollow" title='Malayalam-Basque (34,198 sentence pairs, 0.80M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eu-ml.txt.zip">34.2k</a>
 </td><td bgcolor="#ffffe3"><a rel="nofollow" title='Malayalam-Persian (54,241 sentence pairs, 1.81M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/fa-ml.txt.zip">54.2k</a>
@@ -3328,7 +3353,8 @@
 </td><td bgcolor="#fff0eb"><a rel="nofollow" title='Marathi-Bosnian (14,005 sentence pairs, 0.35M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/bs-mr.txt.zip">14.0k</a>
 </td><td bgcolor="#f2ffd3"><a rel="nofollow" title='Marathi-Catalan (67,579 sentence pairs, 2.28M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/ca-mr.txt.zip">67.6k</a>
 </td><td bgcolor="#ffffe3"><a rel="nofollow" title='Marathi-Welsh (50,484 sentence pairs, 1.75M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/cy-mr.txt.zip">50.5k</a>
-</td><td></td><td bgcolor="#ffffe9"><a rel="nofollow" title='Marathi-Esperanto (42,844 sentence pairs, 1.39M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-mr.txt.zip">42.8k</a>
+</td><td bgcolor="#d3ffcb"><a rel="nofollow" title='Marathi-English (656,962 sentence pairs, 31.02M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/en-mr.txt.zip">0.7M</a>
+</td><td bgcolor="#ffffe9"><a rel="nofollow" title='Marathi-Esperanto (42,844 sentence pairs, 1.39M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-mr.txt.zip">42.8k</a>
 </td><td bgcolor="#ffffe8"><a rel="nofollow" title='Marathi-Estonian (54,402 sentence pairs, 1.47M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/et-mr.txt.zip">54.4k</a>
 </td><td bgcolor="#fffef0"><a rel="nofollow" title='Marathi-Basque (33,655 sentence pairs, 0.93M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eu-mr.txt.zip">33.7k</a>
 </td><td bgcolor="#f0ffd1"><a rel="nofollow" title='Marathi-Persian (60,158 sentence pairs, 2.39M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/fa-mr.txt.zip">60.2k</a>
@@ -3378,7 +3404,8 @@
 </td><td bgcolor="#e6ffc9"><a rel="nofollow" title='Malay-Bosnian (169,127 sentence pairs, 5.36M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/bs-ms.txt.zip">0.2M</a>
 </td><td bgcolor="#d0ffcf"><a rel="nofollow" title='Malay-Catalan (1,094,617 sentence pairs, 39.53M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/ca-ms.txt.zip">1.1M</a>
 </td><td bgcolor="#d9ffc7"><a rel="nofollow" title='Malay-Welsh (507,253 sentence pairs, 18.48M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/cy-ms.txt.zip">0.5M</a>
-</td><td></td><td bgcolor="#e3ffc7"><a rel="nofollow" title='Malay-Esperanto (202,070 sentence pairs, 6.71M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-ms.txt.zip">0.2M</a>
+</td><td bgcolor="#bfffbf"><a rel="nofollow" title='Malay-English (8,432,285 sentence pairs, 302.93M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/en-ms.txt.zip">8.4M</a>
+</td><td bgcolor="#e3ffc7"><a rel="nofollow" title='Malay-Esperanto (202,070 sentence pairs, 6.71M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-ms.txt.zip">0.2M</a>
 </td><td bgcolor="#d4ffc9"><a rel="nofollow" title='Malay-Estonian (952,317 sentence pairs, 27.84M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/et-ms.txt.zip">1.0M</a>
 </td><td bgcolor="#e6ffc9"><a rel="nofollow" title='Malay-Basque (187,121 sentence pairs, 5.07M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eu-ms.txt.zip">0.2M</a>
 </td><td bgcolor="#e3ffc7"><a rel="nofollow" title='Malay-Persian (209,062 sentence pairs, 6.71M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/fa-ms.txt.zip">0.2M</a>
@@ -3428,7 +3455,8 @@
 </td><td bgcolor="#ffffef"><a rel="nofollow" title='Maltese-Bosnian (32,505 sentence pairs, 1.05M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/bs-mt.txt.zip">32.5k</a>
 </td><td bgcolor="#e0ffc7"><a rel="nofollow" title='Maltese-Catalan (265,608 sentence pairs, 9.74M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/ca-mt.txt.zip">0.3M</a>
 </td><td bgcolor="#e3ffc7"><a rel="nofollow" title='Maltese-Welsh (182,572 sentence pairs, 6.70M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/cy-mt.txt.zip">0.2M</a>
-</td><td></td><td bgcolor="#f2ffd3"><a rel="nofollow" title='Maltese-Esperanto (67,670 sentence pairs, 2.22M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-mt.txt.zip">67.7k</a>
+</td><td bgcolor="#c9ffc9"><a rel="nofollow" title='Maltese-English (1,529,471 sentence pairs, 70.37M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/en-mt.txt.zip">1.5M</a>
+</td><td bgcolor="#f2ffd3"><a rel="nofollow" title='Maltese-Esperanto (67,670 sentence pairs, 2.22M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-mt.txt.zip">67.7k</a>
 </td><td bgcolor="#d6ffc8"><a rel="nofollow" title='Maltese-Estonian (591,693 sentence pairs, 24.43M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/et-mt.txt.zip">0.6M</a>
 </td><td bgcolor="#ffffe1"><a rel="nofollow" title='Maltese-Basque (69,065 sentence pairs, 1.91M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eu-mt.txt.zip">69.1k</a>
 </td><td bgcolor="#ffffe5"><a rel="nofollow" title='Maltese-Persian (46,866 sentence pairs, 1.66M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/fa-mt.txt.zip">46.9k</a>
@@ -3580,7 +3608,8 @@
 </td><td bgcolor="#fff5ee"><a rel="nofollow" title='Norwegian Nynorsk-Bosnian (14,312 sentence pairs, 0.44M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/bs-nn.txt.zip">14.3k</a>
 </td><td bgcolor="#ffffe2"><a rel="nofollow" title='Norwegian Nynorsk-Catalan (49,583 sentence pairs, 1.82M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/ca-nn.txt.zip">49.6k</a>
 </td><td bgcolor="#ffebe7"><a rel="nofollow" title='Norwegian Nynorsk-Welsh (8,428 sentence pairs, 0.27M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/cy-nn.txt.zip">8.4k</a>
-</td><td></td><td bgcolor="#fff6ef"><a rel="nofollow" title='Norwegian Nynorsk-Esperanto (14,418 sentence pairs, 0.47M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-nn.txt.zip">14.4k</a>
+</td><td bgcolor="#d7ffc8"><a rel="nofollow" title='Norwegian Nynorsk-English (563,791 sentence pairs, 22.14M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/en-nn.txt.zip">0.6M</a>
+</td><td bgcolor="#fff6ef"><a rel="nofollow" title='Norwegian Nynorsk-Esperanto (14,418 sentence pairs, 0.47M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-nn.txt.zip">14.4k</a>
 </td><td bgcolor="#fff6ef"><a rel="nofollow" title='Norwegian Nynorsk-Estonian (17,351 sentence pairs, 0.48M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/et-nn.txt.zip">17.4k</a>
 </td><td bgcolor="#fff3ed"><a rel="nofollow" title='Norwegian Nynorsk-Basque (13,832 sentence pairs, 0.39M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eu-nn.txt.zip">13.8k</a>
 </td><td bgcolor="#ffe5e3"><a rel="nofollow" title='Norwegian Nynorsk-Persian (7,822 sentence pairs, 0.18M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/fa-nn.txt.zip">7.8k</a>
@@ -3630,7 +3659,8 @@
 </td><td bgcolor="#ffe9e6"><a rel="nofollow" title='Sinhala-Bosnian (10,317 sentence pairs, 0.23M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/bs-si.txt.zip">10.3k</a>
 </td><td bgcolor="#ffffe8"><a rel="nofollow" title='Sinhala-Catalan (50,004 sentence pairs, 1.49M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/ca-si.txt.zip">50.0k</a>
 </td><td bgcolor="#ffffed"><a rel="nofollow" title='Sinhala-Welsh (37,422 sentence pairs, 1.17M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/cy-si.txt.zip">37.4k</a>
-</td><td></td><td bgcolor="#fffef1"><a rel="nofollow" title='Sinhala-Esperanto (30,240 sentence pairs, 0.87M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-si.txt.zip">30.2k</a>
+</td><td bgcolor="#ddffc6"><a rel="nofollow" title='Sinhala-English (273,430 sentence pairs, 12.13M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/en-si.txt.zip">0.3M</a>
+</td><td bgcolor="#fffef1"><a rel="nofollow" title='Sinhala-Esperanto (30,240 sentence pairs, 0.87M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-si.txt.zip">30.2k</a>
 </td><td bgcolor="#fffff0"><a rel="nofollow" title='Sinhala-Estonian (39,099 sentence pairs, 0.99M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/et-si.txt.zip">39.1k</a>
 </td><td bgcolor="#fffcf2"><a rel="nofollow" title='Sinhala-Basque (26,738 sentence pairs, 0.68M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eu-si.txt.zip">26.7k</a>
 </td><td bgcolor="#ffffeb"><a rel="nofollow" title='Sinhala-Persian (36,832 sentence pairs, 1.30M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/fa-si.txt.zip">36.8k</a>
@@ -3680,7 +3710,8 @@
 </td><td bgcolor="#e0ffc7"><a rel="nofollow" title='Slovak-Bosnian (316,048 sentence pairs, 9.77M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/bs-sk.txt.zip">0.3M</a>
 </td><td bgcolor="#cfffcf"><a rel="nofollow" title='Slovak-Catalan (1,284,858 sentence pairs, 43.26M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/ca-sk.txt.zip">1.3M</a>
 </td><td bgcolor="#daffc7"><a rel="nofollow" title='Slovak-Welsh (504,361 sentence pairs, 17.21M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/cy-sk.txt.zip">0.5M</a>
-</td><td></td><td bgcolor="#e3ffc8"><a rel="nofollow" title='Slovak-Esperanto (230,381 sentence pairs, 7.19M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-sk.txt.zip">0.2M</a>
+</td><td bgcolor="#bfffbf"><a rel="nofollow" title='Slovak-English (20,056,339 sentence pairs, 711.82M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/en-sk.txt.zip">20.1M</a>
+</td><td bgcolor="#e3ffc8"><a rel="nofollow" title='Slovak-Esperanto (230,381 sentence pairs, 7.19M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-sk.txt.zip">0.2M</a>
 </td><td bgcolor="#c8ffc8"><a rel="nofollow" title='Slovak-Estonian (2,333,410 sentence pairs, 74.35M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/et-sk.txt.zip">2.3M</a>
 </td><td bgcolor="#e4ffc8"><a rel="nofollow" title='Slovak-Basque (254,844 sentence pairs, 6.62M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eu-sk.txt.zip">0.3M</a>
 </td><td bgcolor="#e3ffc8"><a rel="nofollow" title='Slovak-Persian (239,408 sentence pairs, 7.19M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/fa-sk.txt.zip">0.2M</a>
@@ -3730,7 +3761,8 @@
 </td><td bgcolor="#e1ffc7"><a rel="nofollow" title='Slovenian-Bosnian (259,695 sentence pairs, 8.39M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/bs-sl.txt.zip">0.3M</a>
 </td><td bgcolor="#d1ffcf"><a rel="nofollow" title='Slovenian-Catalan (1,077,438 sentence pairs, 38.31M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/ca-sl.txt.zip">1.1M</a>
 </td><td bgcolor="#dbffc6"><a rel="nofollow" title='Slovenian-Welsh (412,519 sentence pairs, 14.78M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/cy-sl.txt.zip">0.4M</a>
-</td><td></td><td bgcolor="#e5ffc8"><a rel="nofollow" title='Slovenian-Esperanto (171,146 sentence pairs, 5.55M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-sl.txt.zip">0.2M</a>
+</td><td bgcolor="#bfffbf"><a rel="nofollow" title='Slovenian-English (10,336,528 sentence pairs, 401.09M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/en-sl.txt.zip">10.3M</a>
+</td><td bgcolor="#e5ffc8"><a rel="nofollow" title='Slovenian-Esperanto (171,146 sentence pairs, 5.55M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-sl.txt.zip">0.2M</a>
 </td><td bgcolor="#c9ffc9"><a rel="nofollow" title='Slovenian-Estonian (2,002,442 sentence pairs, 67.63M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/et-sl.txt.zip">2.0M</a>
 </td><td bgcolor="#e5ffc8"><a rel="nofollow" title='Slovenian-Basque (206,251 sentence pairs, 5.61M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eu-sl.txt.zip">0.2M</a>
 </td><td bgcolor="#e6ffc9"><a rel="nofollow" title='Slovenian-Persian (158,161 sentence pairs, 5.02M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/fa-sl.txt.zip">0.2M</a>
@@ -3780,7 +3812,8 @@
 </td><td bgcolor="#ddffc6"><a rel="nofollow" title='Albanian-Bosnian (288,297 sentence pairs, 12.21M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/bs-sq.txt.zip">0.3M</a>
 </td><td bgcolor="#d5ffc9"><a rel="nofollow" title='Albanian-Catalan (659,120 sentence pairs, 26.20M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/ca-sq.txt.zip">0.7M</a>
 </td><td bgcolor="#daffc7"><a rel="nofollow" title='Albanian-Welsh (429,672 sentence pairs, 17.23M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/cy-sq.txt.zip">0.4M</a>
-</td><td></td><td bgcolor="#ddffc6"><a rel="nofollow" title='Albanian-Esperanto (305,200 sentence pairs, 12.30M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-sq.txt.zip">0.3M</a>
+</td><td bgcolor="#bfffbf"><a rel="nofollow" title='Albanian-English (4,166,536 sentence pairs, 182.55M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/en-sq.txt.zip">4.2M</a>
+</td><td bgcolor="#ddffc6"><a rel="nofollow" title='Albanian-Esperanto (305,200 sentence pairs, 12.30M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-sq.txt.zip">0.3M</a>
 </td><td bgcolor="#d8ffc7"><a rel="nofollow" title='Albanian-Estonian (597,574 sentence pairs, 20.11M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/et-sq.txt.zip">0.6M</a>
 </td><td bgcolor="#e5ffc9"><a rel="nofollow" title='Albanian-Basque (182,657 sentence pairs, 5.76M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eu-sq.txt.zip">0.2M</a>
 </td><td bgcolor="#e5ffc9"><a rel="nofollow" title='Albanian-Persian (157,171 sentence pairs, 5.87M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/fa-sq.txt.zip">0.2M</a>
@@ -3830,7 +3863,8 @@
 </td><td bgcolor="#d9ffc7"><a rel="nofollow" title='Serbian-Bosnian (453,381 sentence pairs, 18.26M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/bs-sr.txt.zip">0.5M</a>
 </td><td bgcolor="#d4ffca"><a rel="nofollow" title='Serbian-Catalan (837,250 sentence pairs, 29.30M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/ca-sr.txt.zip">0.8M</a>
 </td><td bgcolor="#dbffc6"><a rel="nofollow" title='Serbian-Welsh (424,258 sentence pairs, 15.10M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/cy-sr.txt.zip">0.4M</a>
-</td><td></td><td bgcolor="#e4ffc8"><a rel="nofollow" title='Serbian-Esperanto (197,030 sentence pairs, 6.32M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-sr.txt.zip">0.2M</a>
+</td><td bgcolor="#bfffbf"><a rel="nofollow" title='Serbian-English (5,291,686 sentence pairs, 192.78M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/en-sr.txt.zip">5.3M</a>
+</td><td bgcolor="#e4ffc8"><a rel="nofollow" title='Serbian-Esperanto (197,030 sentence pairs, 6.32M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-sr.txt.zip">0.2M</a>
 </td><td bgcolor="#d8ffc7"><a rel="nofollow" title='Serbian-Estonian (717,484 sentence pairs, 20.50M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/et-sr.txt.zip">0.7M</a>
 </td><td bgcolor="#e6ffc9"><a rel="nofollow" title='Serbian-Basque (199,185 sentence pairs, 5.38M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eu-sr.txt.zip">0.2M</a>
 </td><td bgcolor="#e6ffc9"><a rel="nofollow" title='Serbian-Persian (160,931 sentence pairs, 5.19M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/fa-sr.txt.zip">0.2M</a>
@@ -3880,7 +3914,8 @@
 </td><td bgcolor="#eeffcf"><a rel="nofollow" title='Swahili-Bosnian (76,948 sentence pairs, 2.73M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/bs-sw.txt.zip">76.9k</a>
 </td><td bgcolor="#dbffc6"><a rel="nofollow" title='Swahili-Catalan (393,393 sentence pairs, 14.94M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/ca-sw.txt.zip">0.4M</a>
 </td><td bgcolor="#deffc6"><a rel="nofollow" title='Swahili-Welsh (287,684 sentence pairs, 11.15M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/cy-sw.txt.zip">0.3M</a>
-</td><td></td><td bgcolor="#e5ffc9"><a rel="nofollow" title='Swahili-Esperanto (161,361 sentence pairs, 5.80M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-sw.txt.zip">0.2M</a>
+</td><td bgcolor="#c6ffc6"><a rel="nofollow" title='Swahili-English (1,985,899 sentence pairs, 82.49M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/en-sw.txt.zip">2.0M</a>
+</td><td bgcolor="#e5ffc9"><a rel="nofollow" title='Swahili-Esperanto (161,361 sentence pairs, 5.80M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-sw.txt.zip">0.2M</a>
 </td><td bgcolor="#e0ffc6"><a rel="nofollow" title='Swahili-Estonian (292,976 sentence pairs, 9.38M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/et-sw.txt.zip">0.3M</a>
 </td><td bgcolor="#eaffcc"><a rel="nofollow" title='Swahili-Basque (117,916 sentence pairs, 3.64M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eu-sw.txt.zip">0.1M</a>
 </td><td bgcolor="#eaffcc"><a rel="nofollow" title='Swahili-Persian (92,885 sentence pairs, 3.65M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/fa-sw.txt.zip">92.9k</a>
@@ -3930,7 +3965,8 @@
 </td><td bgcolor="#fff8f0"><a rel="nofollow" title='Tamil-Bosnian (21,502 sentence pairs, 0.52M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/bs-ta.txt.zip">21.5k</a>
 </td><td bgcolor="#ecffcd"><a rel="nofollow" title='Tamil-Catalan (107,872 sentence pairs, 3.09M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/ca-ta.txt.zip">0.1M</a>
 </td><td bgcolor="#f5ffd6"><a rel="nofollow" title='Tamil-Welsh (69,866 sentence pairs, 2.09M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/cy-ta.txt.zip">69.9k</a>
-</td><td></td><td bgcolor="#ffffe5"><a rel="nofollow" title='Tamil-Esperanto (56,943 sentence pairs, 1.63M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-ta.txt.zip">56.9k</a>
+</td><td bgcolor="#ceffce"><a rel="nofollow" title='Tamil-English (1,111,471 sentence pairs, 46.55M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/en-ta.txt.zip">1.1M</a>
+</td><td bgcolor="#ffffe5"><a rel="nofollow" title='Tamil-Esperanto (56,943 sentence pairs, 1.63M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-ta.txt.zip">56.9k</a>
 </td><td bgcolor="#ffffe2"><a rel="nofollow" title='Tamil-Estonian (80,334 sentence pairs, 1.86M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/et-ta.txt.zip">80.3k</a>
 </td><td bgcolor="#ffffee"><a rel="nofollow" title='Tamil-Basque (47,056 sentence pairs, 1.12M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eu-ta.txt.zip">47.1k</a>
 </td><td bgcolor="#ebffcd"><a rel="nofollow" title='Tamil-Persian (93,090 sentence pairs, 3.26M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/fa-ta.txt.zip">93.1k</a>
@@ -3980,7 +4016,8 @@
 </td><td bgcolor="#fff5ef"><a rel="nofollow" title='Telugu-Bosnian (20,115 sentence pairs, 0.44M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/bs-te.txt.zip">20.1k</a>
 </td><td bgcolor="#ecffcd"><a rel="nofollow" title='Telugu-Catalan (110,391 sentence pairs, 3.16M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/ca-te.txt.zip">0.1M</a>
 </td><td bgcolor="#f1ffd2"><a rel="nofollow" title='Telugu-Welsh (77,006 sentence pairs, 2.30M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/cy-te.txt.zip">77.0k</a>
-</td><td></td><td bgcolor="#ffffe3"><a rel="nofollow" title='Telugu-Esperanto (62,791 sentence pairs, 1.80M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-te.txt.zip">62.8k</a>
+</td><td bgcolor="#d1ffce"><a rel="nofollow" title='Telugu-English (902,962 sentence pairs, 37.74M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/en-te.txt.zip">0.9M</a>
+</td><td bgcolor="#ffffe3"><a rel="nofollow" title='Telugu-Esperanto (62,791 sentence pairs, 1.80M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-te.txt.zip">62.8k</a>
 </td><td bgcolor="#ffffe2"><a rel="nofollow" title='Telugu-Estonian (79,281 sentence pairs, 1.87M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/et-te.txt.zip">79.3k</a>
 </td><td bgcolor="#ffffed"><a rel="nofollow" title='Telugu-Basque (49,358 sentence pairs, 1.17M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eu-te.txt.zip">49.4k</a>
 </td><td bgcolor="#ebffcc"><a rel="nofollow" title='Telugu-Persian (90,573 sentence pairs, 3.22M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/fa-te.txt.zip">90.6k</a>
@@ -4030,7 +4067,8 @@
 </td><td bgcolor="#fffef1"><a rel="nofollow" title='Thai-Bosnian (43,773 sentence pairs, 0.82M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/bs-th.txt.zip">43.8k</a>
 </td><td bgcolor="#e7ffca"><a rel="nofollow" title='Thai-Catalan (197,939 sentence pairs, 4.61M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/ca-th.txt.zip">0.2M</a>
 </td><td bgcolor="#ffffe0"><a rel="nofollow" title='Thai-Welsh (82,121 sentence pairs, 1.97M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/cy-th.txt.zip">82.1k</a>
-</td><td></td><td bgcolor="#fffef0"><a rel="nofollow" title='Thai-Esperanto (41,158 sentence pairs, 0.90M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-th.txt.zip">41.2k</a>
+</td><td bgcolor="#bfffbf"><a rel="nofollow" title='Thai-English (4,088,354 sentence pairs, 134.63M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/en-th.txt.zip">4.1M</a>
+</td><td bgcolor="#fffef0"><a rel="nofollow" title='Thai-Esperanto (41,158 sentence pairs, 0.90M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-th.txt.zip">41.2k</a>
 </td><td bgcolor="#e9ffcb"><a rel="nofollow" title='Thai-Estonian (211,500 sentence pairs, 3.80M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/et-th.txt.zip">0.2M</a>
 </td><td bgcolor="#fffbf1"><a rel="nofollow" title='Thai-Basque (37,366 sentence pairs, 0.64M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eu-th.txt.zip">37.4k</a>
 </td><td bgcolor="#e7ffca"><a rel="nofollow" title='Thai-Persian (166,813 sentence pairs, 4.73M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/fa-th.txt.zip">0.2M</a>
@@ -4131,7 +4169,8 @@
 </td><td bgcolor="#e0ffc6"><a rel="nofollow" title='Ukrainian-Bosnian (300,751 sentence pairs, 9.33M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/bs-uk.txt.zip">0.3M</a>
 </td><td bgcolor="#ceffce"><a rel="nofollow" title='Ukrainian-Catalan (1,425,247 sentence pairs, 48.67M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/ca-uk.txt.zip">1.4M</a>
 </td><td bgcolor="#d9ffc7"><a rel="nofollow" title='Ukrainian-Welsh (552,311 sentence pairs, 18.96M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/cy-uk.txt.zip">0.6M</a>
-</td><td></td><td bgcolor="#dfffc7"><a rel="nofollow" title='Ukrainian-Esperanto (325,183 sentence pairs, 10.82M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-uk.txt.zip">0.3M</a>
+</td><td bgcolor="#bfffbf"><a rel="nofollow" title='Ukrainian-English (25,125,019 sentence pairs, 872.50M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/en-uk.txt.zip">25.1M</a>
+</td><td bgcolor="#dfffc7"><a rel="nofollow" title='Ukrainian-Esperanto (325,183 sentence pairs, 10.82M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-uk.txt.zip">0.3M</a>
 </td><td bgcolor="#cfffcf"><a rel="nofollow" title='Ukrainian-Estonian (1,506,883 sentence pairs, 43.03M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/et-uk.txt.zip">1.5M</a>
 </td><td bgcolor="#e2ffc7"><a rel="nofollow" title='Ukrainian-Basque (272,639 sentence pairs, 7.34M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eu-uk.txt.zip">0.3M</a>
 </td><td bgcolor="#e0ffc6"><a rel="nofollow" title='Ukrainian-Persian (293,310 sentence pairs, 9.11M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/fa-uk.txt.zip">0.3M</a>
@@ -4181,7 +4220,8 @@
 </td><td bgcolor="#fffeef"><a rel="nofollow" title='Urdu-Bosnian (26,666 sentence pairs, 0.94M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/bs-ur.txt.zip">26.7k</a>
 </td><td bgcolor="#e5ffc9"><a rel="nofollow" title='Urdu-Catalan (154,800 sentence pairs, 5.96M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/ca-ur.txt.zip">0.2M</a>
 </td><td bgcolor="#e7ffca"><a rel="nofollow" title='Urdu-Welsh (118,906 sentence pairs, 4.76M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/cy-ur.txt.zip">0.1M</a>
-</td><td></td><td bgcolor="#efffd0"><a rel="nofollow" title='Urdu-Esperanto (68,730 sentence pairs, 2.51M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-ur.txt.zip">68.7k</a>
+</td><td bgcolor="#c6ffc6"><a rel="nofollow" title='Urdu-English (1,399,893 sentence pairs, 82.36M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/en-ur.txt.zip">1.4M</a>
+</td><td bgcolor="#efffd0"><a rel="nofollow" title='Urdu-Esperanto (68,730 sentence pairs, 2.51M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-ur.txt.zip">68.7k</a>
 </td><td bgcolor="#eaffcc"><a rel="nofollow" title='Urdu-Estonian (111,341 sentence pairs, 3.64M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/et-ur.txt.zip">0.1M</a>
 </td><td bgcolor="#ffffe2"><a rel="nofollow" title='Urdu-Basque (58,322 sentence pairs, 1.83M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eu-ur.txt.zip">58.3k</a>
 </td><td bgcolor="#e1ffc7"><a rel="nofollow" title='Urdu-Persian (170,475 sentence pairs, 8.71M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/fa-ur.txt.zip">0.2M</a>
@@ -4231,7 +4271,8 @@
 </td><td bgcolor="#ffffe3"><a rel="nofollow" title='Uzbek-Bosnian (53,974 sentence pairs, 1.78M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/bs-uz.txt.zip">54.0k</a>
 </td><td bgcolor="#e3ffc7"><a rel="nofollow" title='Uzbek-Catalan (179,255 sentence pairs, 6.68M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/ca-uz.txt.zip">0.2M</a>
 </td><td bgcolor="#e7ffca"><a rel="nofollow" title='Uzbek-Welsh (130,903 sentence pairs, 4.93M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/cy-uz.txt.zip">0.1M</a>
-</td><td></td><td bgcolor="#ecffcd"><a rel="nofollow" title='Uzbek-Esperanto (92,691 sentence pairs, 3.15M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-uz.txt.zip">92.7k</a>
+</td><td bgcolor="#cfffcf"><a rel="nofollow" title='Uzbek-English (1,159,869 sentence pairs, 43.93M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/en-uz.txt.zip">1.2M</a>
+</td><td bgcolor="#ecffcd"><a rel="nofollow" title='Uzbek-Esperanto (92,691 sentence pairs, 3.15M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-uz.txt.zip">92.7k</a>
 </td><td bgcolor="#e5ffc9"><a rel="nofollow" title='Uzbek-Estonian (195,786 sentence pairs, 5.78M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/et-uz.txt.zip">0.2M</a>
 </td><td bgcolor="#f0ffd1"><a rel="nofollow" title='Uzbek-Basque (83,481 sentence pairs, 2.45M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eu-uz.txt.zip">83.5k</a>
 </td><td bgcolor="#ffffe4"><a rel="nofollow" title='Uzbek-Persian (44,710 sentence pairs, 1.73M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/fa-uz.txt.zip">44.7k</a>
@@ -4281,7 +4322,8 @@
 </td><td bgcolor="#e0ffc6"><a rel="nofollow" title='Vietnamese-Bosnian (225,238 sentence pairs, 9.16M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/bs-vi.txt.zip">0.2M</a>
 </td><td bgcolor="#ccffcc"><a rel="nofollow" title='Vietnamese-Catalan (1,233,926 sentence pairs, 55.30M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/ca-vi.txt.zip">1.2M</a>
 </td><td bgcolor="#d7ffc8"><a rel="nofollow" title='Vietnamese-Welsh (507,274 sentence pairs, 23.06M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/cy-vi.txt.zip">0.5M</a>
-</td><td></td><td bgcolor="#deffc7"><a rel="nofollow" title='Vietnamese-Esperanto (276,715 sentence pairs, 12.05M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-vi.txt.zip">0.3M</a>
+</td><td bgcolor="#bfffbf"><a rel="nofollow" title='Vietnamese-English (19,231,770 sentence pairs, 864.65M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/en-vi.txt.zip">19.2M</a>
+</td><td bgcolor="#deffc7"><a rel="nofollow" title='Vietnamese-Esperanto (276,715 sentence pairs, 12.05M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-vi.txt.zip">0.3M</a>
 </td><td bgcolor="#d0ffd0"><a rel="nofollow" title='Vietnamese-Estonian (1,103,852 sentence pairs, 41.90M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/et-vi.txt.zip">1.1M</a>
 </td><td bgcolor="#e3ffc7"><a rel="nofollow" title='Vietnamese-Basque (194,575 sentence pairs, 6.93M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eu-vi.txt.zip">0.2M</a>
 </td><td bgcolor="#ddffc6"><a rel="nofollow" title='Vietnamese-Persian (302,237 sentence pairs, 12.49M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/fa-vi.txt.zip">0.3M</a>
@@ -4331,7 +4373,8 @@
 </td><td bgcolor="#fff9f0"><a rel="nofollow" title='Xhosa-Bosnian (19,507 sentence pairs, 0.58M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/bs-xh.txt.zip">19.5k</a>
 </td><td bgcolor="#f0ffd1"><a rel="nofollow" title='Xhosa-Catalan (74,710 sentence pairs, 2.47M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/ca-xh.txt.zip">74.7k</a>
 </td><td bgcolor="#f6ffd7"><a rel="nofollow" title='Xhosa-Welsh (62,168 sentence pairs, 2.07M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/cy-xh.txt.zip">62.2k</a>
-</td><td></td><td bgcolor="#e6ffc9"><a rel="nofollow" title='Xhosa-Esperanto (148,757 sentence pairs, 5.28M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-xh.txt.zip">0.1M</a>
+</td><td bgcolor="#dbffc6"><a rel="nofollow" title='Xhosa-English (405,605 sentence pairs, 14.92M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/en-xh.txt.zip">0.4M</a>
+</td><td bgcolor="#e6ffc9"><a rel="nofollow" title='Xhosa-Esperanto (148,757 sentence pairs, 5.28M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eo-xh.txt.zip">0.1M</a>
 </td><td bgcolor="#efffd0"><a rel="nofollow" title='Xhosa-Estonian (88,129 sentence pairs, 2.50M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/et-xh.txt.zip">88.1k</a>
 </td><td bgcolor="#ffffe4"><a rel="nofollow" title='Xhosa-Basque (60,496 sentence pairs, 1.74M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/eu-xh.txt.zip">60.5k</a>
 </td><td bgcolor="#fffcf1"><a rel="nofollow" title='Xhosa-Persian (21,062 sentence pairs, 0.70M words) - Moses format' href="download.php?f=MultiHPLT/v2/moses/fa-xh.txt.zip">21.1k</a>
