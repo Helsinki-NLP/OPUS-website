@@ -325,10 +325,9 @@
             Amsterdam/Philadelphia</dd>
 
             <dt>J&ouml;rg Tiedemann, 2011,</dt>
-            <dd><a href="http://dx.doi.org/10.2200/S00367ED1V01Y201106HLT014">Bitext
+            <dd><a href="https://link.springer.com/book/10.1007/978-3-031-02142-8">Bitext
             Alignment</a>, Synthesis Lecture on HLT, Morgan &amp;
-            Claypool Publishers
-            (at <a href="http://www.amazon.com/Alignment-Synthesis-Lectures-Language-Technologies/dp/1608455106">Amazon</a>)</dd>
+            Claypool Publishers, now published by Springer Nature</dd>
 
             <dt>J&ouml;rg Tiedemann, 2008,</dt>
             <dd>Synchronizing Translated Movie
@@ -367,7 +366,7 @@
 
         <td valign="top">A text book on alignment:<br>
         <br>
-        <a href="http://www.morganclaypool.com/doi/abs/10.2200/S00367ED1V01Y201106HLT014"><img border="0" src="/img/bitextalign.jpg" height="200"></a></td>
+        <a href="https://link.springer.com/book/10.1007/978-3-031-02142-8"><img border="0" src="/img/bitextalign.jpg" height="200"></a></td>
       </tr>
     </table>
   </div>
