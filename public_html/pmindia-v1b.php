@@ -36,27 +36,27 @@
 <th></th>
 <td><a rel="nofollow" title="Bengali-English (sample file)" href="pmindia/v1b/bn-en_sample.html">view</a></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><th><a rel="nofollow" href="download.php?f=pmindia/v1b/xml/bn.zip">bn</a></th></tr>
 <tr><th><a rel="nofollow" href="download.php?f=pmindia/v1b/raw/en.zip">en</a></th>
-<td>1</td><td>0</td><td>11.5k</td><td bgcolor='#ffdcdb'><a rel="nofollow" title="sentence alignments for 'English-Assamese' (9.7k links)" href="download.php?f=pmindia/v1b/xml/as-en.xml.gz">ces</a></td>
-<td bgcolor='#ffede9'><a rel="nofollow" title="sentence alignments for 'English-Bengali' (29.6k links)" href="download.php?f=pmindia/v1b/xml/bn-en.xml.gz">ces</a></td>
+<td>1</td><td>0</td><td>11.5k</td><td bgcolor='#ffdcdb'><a rel="nofollow" title="sentence alignments for 'English-Assamese' (9.7k links0.5M tokens)" href="download.php?f=pmindia/v1b/xml/as-en.xml.gz">ces</a></td>
+<td bgcolor='#ffede9'><a rel="nofollow" title="sentence alignments for 'English-Bengali' (29.6k links1.2M tokens)" href="download.php?f=pmindia/v1b/xml/bn-en.xml.gz">ces</a></td>
 <th></th>
 <td><a rel="nofollow" title="English-Gujarati (sample file)" href="pmindia/v1b/en-gu_sample.html">view</a></td><td><a rel="nofollow" title="English-Hindi (sample file)" href="pmindia/v1b/en-hi_sample.html">view</a></td><td><a rel="nofollow" title="English-Kannada (sample file)" href="pmindia/v1b/en-kn_sample.html">view</a></td><td><a rel="nofollow" title="English-Malayalam (sample file)" href="pmindia/v1b/en-ml_sample.html">view</a></td><td><a rel="nofollow" title="English-Manipuri (sample file)" href="pmindia/v1b/en-mni_sample.html">view</a></td><td><a rel="nofollow" title="English-Marathi (sample file)" href="pmindia/v1b/en-mr_sample.html">view</a></td><td><a rel="nofollow" title="English-Oriya (sample file)" href="pmindia/v1b/en-or_sample.html">view</a></td><td><a rel="nofollow" title="English-Panjabi (sample file)" href="pmindia/v1b/en-pa_sample.html">view</a></td><td><a rel="nofollow" title="English-Tamil (sample file)" href="pmindia/v1b/en-ta_sample.html">view</a></td><td><a rel="nofollow" title="English-Telugu (sample file)" href="pmindia/v1b/en-te_sample.html">view</a></td><td><a rel="nofollow" title="English-Urdu (sample file)" href="pmindia/v1b/en-ur_sample.html">view</a></td><th><a rel="nofollow" href="download.php?f=pmindia/v1b/xml/en.zip">en</a></th></tr>
 <tr><th><a rel="nofollow" href="download.php?f=pmindia/v1b/raw/gu.zip">gu</a></th>
 <td>1</td><td>0</td><td>50.5k</td><td></td>
 <td></td>
-<td bgcolor='#fff7f0'><a rel="nofollow" title="sentence alignments for 'Gujarati-English' (49.8k links)" href="download.php?f=pmindia/v1b/xml/en-gu.xml.gz">ces</a></td>
+<td bgcolor='#fff7f0'><a rel="nofollow" title="sentence alignments for 'Gujarati-English' (49.8k links1.8M tokens)" href="download.php?f=pmindia/v1b/xml/en-gu.xml.gz">ces</a></td>
 <th></th>
 <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><th><a rel="nofollow" href="download.php?f=pmindia/v1b/xml/gu.zip">gu</a></th></tr>
 <tr><th><a rel="nofollow" href="download.php?f=pmindia/v1b/raw/hi.zip">hi</a></th>
 <td>1</td><td>0</td><td>56.8k</td><td></td>
 <td></td>
-<td bgcolor='#fff9f0'><a rel="nofollow" title="sentence alignments for 'Hindi-English' (56.8k links)" href="download.php?f=pmindia/v1b/xml/en-hi.xml.gz">ces</a></td>
+<td bgcolor='#fff9f0'><a rel="nofollow" title="sentence alignments for 'Hindi-English' (56.8k links2.1M tokens)" href="download.php?f=pmindia/v1b/xml/en-hi.xml.gz">ces</a></td>
 <td></td>
 <th></th>
 <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><th><a rel="nofollow" href="download.php?f=pmindia/v1b/xml/hi.zip">hi</a></th></tr>
 <tr><th><a rel="nofollow" href="download.php?f=pmindia/v1b/raw/kn.zip">kn</a></th>
 <td>1</td><td>0</td><td>35.3k</td><td></td>
 <td></td>
-<td bgcolor='#fff0eb'><a rel="nofollow" title="sentence alignments for 'Kannada-English' (35.2k links)" href="download.php?f=pmindia/v1b/xml/en-kn.xml.gz">ces</a></td>
+<td bgcolor='#fff0eb'><a rel="nofollow" title="sentence alignments for 'Kannada-English' (35.2k links1.2M tokens)" href="download.php?f=pmindia/v1b/xml/en-kn.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <th></th>
@@ -64,7 +64,7 @@
 <tr><th><a rel="nofollow" href="download.php?f=pmindia/v1b/raw/ml.zip">ml</a></th>
 <td>1</td><td>0</td><td>33.7k</td><td></td>
 <td></td>
-<td bgcolor='#fff0eb'><a rel="nofollow" title="sentence alignments for 'Malayalam-English' (33.7k links)" href="download.php?f=pmindia/v1b/xml/en-ml.xml.gz">ces</a></td>
+<td bgcolor='#fff0eb'><a rel="nofollow" title="sentence alignments for 'Malayalam-English' (33.7k links1.1M tokens)" href="download.php?f=pmindia/v1b/xml/en-ml.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -73,7 +73,7 @@
 <tr><th><a rel="nofollow" href="download.php?f=pmindia/v1b/raw/mni.zip">mni</a></th>
 <td>1</td><td>0</td><td>7.4k</td><td></td>
 <td></td>
-<td bgcolor='#ffd9d8'><a rel="nofollow" title="sentence alignments for 'Manipuri-English' (7.4k links)" href="download.php?f=pmindia/v1b/xml/en-mni.xml.gz">ces</a></td>
+<td bgcolor='#ffd9d8'><a rel="nofollow" title="sentence alignments for 'Manipuri-English' (7.4k links0.3M tokens)" href="download.php?f=pmindia/v1b/xml/en-mni.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -83,7 +83,7 @@
 <tr><th><a rel="nofollow" href="download.php?f=pmindia/v1b/raw/mr.zip">mr</a></th>
 <td>1</td><td>0</td><td>36.1k</td><td></td>
 <td></td>
-<td bgcolor='#fff1ec'><a rel="nofollow" title="sentence alignments for 'Marathi-English' (36.1k links)" href="download.php?f=pmindia/v1b/xml/en-mr.xml.gz">ces</a></td>
+<td bgcolor='#fff1ec'><a rel="nofollow" title="sentence alignments for 'Marathi-English' (36.1k links1.2M tokens)" href="download.php?f=pmindia/v1b/xml/en-mr.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -94,7 +94,7 @@
 <tr><th><a rel="nofollow" href="download.php?f=pmindia/v1b/raw/or.zip">or</a></th>
 <td>1</td><td>0</td><td>38.4k</td><td></td>
 <td></td>
-<td bgcolor='#fff2ec'><a rel="nofollow" title="sentence alignments for 'Oriya-English' (38.4k links)" href="download.php?f=pmindia/v1b/xml/en-or.xml.gz">ces</a></td>
+<td bgcolor='#fff2ec'><a rel="nofollow" title="sentence alignments for 'Oriya-English' (38.4k links1.2M tokens)" href="download.php?f=pmindia/v1b/xml/en-or.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -106,7 +106,7 @@
 <tr><th><a rel="nofollow" href="download.php?f=pmindia/v1b/raw/pa.zip">pa</a></th>
 <td>1</td><td>0</td><td>34.4k</td><td></td>
 <td></td>
-<td bgcolor='#fff0eb'><a rel="nofollow" title="sentence alignments for 'Panjabi-English' (34.4k links)" href="download.php?f=pmindia/v1b/xml/en-pa.xml.gz">ces</a></td>
+<td bgcolor='#fff0eb'><a rel="nofollow" title="sentence alignments for 'Panjabi-English' (34.4k links1.4M tokens)" href="download.php?f=pmindia/v1b/xml/en-pa.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -119,7 +119,7 @@
 <tr><th><a rel="nofollow" href="download.php?f=pmindia/v1b/raw/ta.zip">ta</a></th>
 <td>1</td><td>0</td><td>39.5k</td><td></td>
 <td></td>
-<td bgcolor='#fff3ed'><a rel="nofollow" title="sentence alignments for 'Tamil-English' (39.5k links)" href="download.php?f=pmindia/v1b/xml/en-ta.xml.gz">ces</a></td>
+<td bgcolor='#fff3ed'><a rel="nofollow" title="sentence alignments for 'Tamil-English' (39.5k links1.7M tokens)" href="download.php?f=pmindia/v1b/xml/en-ta.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -133,7 +133,7 @@
 <tr><th><a rel="nofollow" href="download.php?f=pmindia/v1b/raw/te.zip">te</a></th>
 <td>1</td><td>0</td><td>40.3k</td><td></td>
 <td></td>
-<td bgcolor='#fff3ed'><a rel="nofollow" title="sentence alignments for 'Telugu-English' (40.3k links)" href="download.php?f=pmindia/v1b/xml/en-te.xml.gz">ces</a></td>
+<td bgcolor='#fff3ed'><a rel="nofollow" title="sentence alignments for 'Telugu-English' (40.3k links1.2M tokens)" href="download.php?f=pmindia/v1b/xml/en-te.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -148,7 +148,7 @@
 <tr><th><a rel="nofollow" href="download.php?f=pmindia/v1b/raw/ur.zip">ur</a></th>
 <td>1</td><td>0</td><td>11.2k</td><td></td>
 <td></td>
-<td bgcolor='#ffdddc'><a rel="nofollow" title="sentence alignments for 'Urdu-English' (11.2k links)" href="download.php?f=pmindia/v1b/xml/en-ur.xml.gz">ces</a></td>
+<td bgcolor='#ffdddc'><a rel="nofollow" title="sentence alignments for 'Urdu-English' (11.2k links0.5M tokens)" href="download.php?f=pmindia/v1b/xml/en-ur.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
