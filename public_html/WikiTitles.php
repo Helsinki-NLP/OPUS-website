@@ -1,1 +1,1 @@
-WikiTitles-v3.php
+WikiTitles-v3.1.php
