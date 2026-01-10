@@ -35,7 +35,7 @@
 <th><a rel="nofollow" href="HPLT/v3/mk_sample.html">mk</a></th>
 <th><a rel="nofollow" href="HPLT/v3/mt_sample.html">mt</a></th>
 <th><a rel="nofollow" href="HPLT/v3/nb_sample.html">nb</a></th>
-<th><a rel="nofollow" href="HPLT/v3/no_sample.html">no</a></th>
+<th><a rel="nofollow" href="HPLT/v3/nn_sample.html">nn</a></th>
 <th><a rel="nofollow" href="HPLT/v3/ro_sample.html">ro</a></th>
 <th><a rel="nofollow" href="HPLT/v3/sk_sample.html">sk</a></th>
 <th><a rel="nofollow" href="HPLT/v3/sl_sample.html">sl</a></th>
@@ -92,7 +92,7 @@
 <td bgcolor='#bfffbf'><a rel="nofollow" title="sentence alignments for 'English-Greek' (56 aligned documents55.6M links2.5G tokens)" href="download.php?f=HPLT/v3/xml/el-en.xml.gz">ces</a></td>
 <th></th>
 <td><a rel="nofollow" title="English-Estonian (sample file)" href="HPLT/v3/en-et_sample.html">view</a></td><td><a rel="nofollow" title="English-Basque (sample file)" href="HPLT/v3/en-eu_sample.html">view</a></td><td><a rel="nofollow" title="English-Finnish (sample file)" href="HPLT/v3/en-fi_sample.html">view</a></td><td><a rel="nofollow" title="English-Irish (sample file)" href="HPLT/v3/en-ga_sample.html">view</a></td><td><a rel="nofollow" title="English-Galician (sample file)" href="HPLT/v3/en-gl_sample.html">view</a></td><td><a rel="nofollow" title="English-Croatian (sample file)" href="HPLT/v3/en-hr_sample.html">view</a></td><td><a rel="nofollow" title="English-Hungarian (sample file)" href="HPLT/v3/en-hu_sample.html">view</a></td><td><a rel="nofollow" title="English-Icelandic (sample file)" href="HPLT/v3/en-is_sample.html">view</a></td><th>en</th>
-<td><a rel="nofollow" title="English-Georgian (sample file)" href="HPLT/v3/en-ka_sample.html">view</a></td><td><a rel="nofollow" title="English-Lithuanian (sample file)" href="HPLT/v3/en-lt_sample.html">view</a></td><td><a rel="nofollow" title="English-Latvian (sample file)" href="HPLT/v3/en-lv_sample.html">view</a></td><td><a rel="nofollow" title="English-Macedonian (sample file)" href="HPLT/v3/en-mk_sample.html">view</a></td><td><a rel="nofollow" title="English-Maltese (sample file)" href="HPLT/v3/en-mt_sample.html">view</a></td><td><a rel="nofollow" title="English-BokmÃ¥l, Norwegian (sample file)" href="HPLT/v3/en-nb_sample.html">view</a></td><td><a rel="nofollow" title="English-Norwegian (sample file)" href="HPLT/v3/en-no_sample.html">view</a></td><td><a rel="nofollow" title="English-Romanian (sample file)" href="HPLT/v3/en-ro_sample.html">view</a></td><td><a rel="nofollow" title="English-Slovak (sample file)" href="HPLT/v3/en-sk_sample.html">view</a></td><td><a rel="nofollow" title="English-Slovenian (sample file)" href="HPLT/v3/en-sl_sample.html">view</a></td><td><a rel="nofollow" title="English-Albanian (sample file)" href="HPLT/v3/en-sq_sample.html">view</a></td><td><a rel="nofollow" title="English-Serbian (sample file)" href="HPLT/v3/en-sr_sample.html">view</a></td><td><a rel="nofollow" title="English-Turkish (sample file)" href="HPLT/v3/en-tr_sample.html">view</a></td><td><a rel="nofollow" title="English-Ukrainian (sample file)" href="HPLT/v3/en-uk_sample.html">view</a></td><th><a rel="nofollow" href="download.php?f=HPLT/v3/xml/en.zip">en</a></th></tr>
+<td><a rel="nofollow" title="English-Georgian (sample file)" href="HPLT/v3/en-ka_sample.html">view</a></td><td><a rel="nofollow" title="English-Lithuanian (sample file)" href="HPLT/v3/en-lt_sample.html">view</a></td><td><a rel="nofollow" title="English-Latvian (sample file)" href="HPLT/v3/en-lv_sample.html">view</a></td><td><a rel="nofollow" title="English-Macedonian (sample file)" href="HPLT/v3/en-mk_sample.html">view</a></td><td><a rel="nofollow" title="English-Maltese (sample file)" href="HPLT/v3/en-mt_sample.html">view</a></td><td><a rel="nofollow" title="English-BokmÃ¥l, Norwegian (sample file)" href="HPLT/v3/en-nb_sample.html">view</a></td><td><a rel="nofollow" title="English-Norwegian Nynorsk (sample file)" href="HPLT/v3/en-nn_sample.html">view</a></td><td><a rel="nofollow" title="English-Romanian (sample file)" href="HPLT/v3/en-ro_sample.html">view</a></td><td><a rel="nofollow" title="English-Slovak (sample file)" href="HPLT/v3/en-sk_sample.html">view</a></td><td><a rel="nofollow" title="English-Slovenian (sample file)" href="HPLT/v3/en-sl_sample.html">view</a></td><td><a rel="nofollow" title="English-Albanian (sample file)" href="HPLT/v3/en-sq_sample.html">view</a></td><td><a rel="nofollow" title="English-Serbian (sample file)" href="HPLT/v3/en-sr_sample.html">view</a></td><td><a rel="nofollow" title="English-Turkish (sample file)" href="HPLT/v3/en-tr_sample.html">view</a></td><td><a rel="nofollow" title="English-Ukrainian (sample file)" href="HPLT/v3/en-uk_sample.html">view</a></td><th><a rel="nofollow" href="download.php?f=HPLT/v3/xml/en.zip">en</a></th></tr>
 <tr><th><a rel="nofollow" href="download.php?f=HPLT/v3/raw/et.zip">et</a></th>
 <td>16</td><td>280.9M</td><td>16.5M</td><td></td>
 <td></td>
@@ -232,7 +232,7 @@
 <th>mk</th>
 <th>mt</th>
 <th>nb</th>
-<th>no</th>
+<th>nn</th>
 <th>ro</th>
 <th>sk</th>
 <th>sl</th>
@@ -370,14 +370,14 @@
 <td></td>
 <th></th>
 <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><th><a rel="nofollow" href="download.php?f=HPLT/v3/xml/nb.zip">nb</a></th></tr>
-<tr><th><a rel="nofollow" href="download.php?f=HPLT/v3/raw/no.zip">no</a></th>
+<tr><th><a rel="nofollow" href="download.php?f=HPLT/v3/raw/nn.zip">nn</a></th>
 <td>1</td><td>3.3M</td><td>0.2M</td><td></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
-<td bgcolor='#ffffe0'><a rel="nofollow" title="sentence alignments for 'Norwegian-English' (0.2M links6.7M tokens)" href="download.php?f=HPLT/v3/xml/en-no.xml.gz">ces</a></td>
+<td bgcolor='#ffffe0'><a rel="nofollow" title="sentence alignments for 'Norwegian Nynorsk-English' (0.2M links3.3M tokens)" href="download.php?f=HPLT/v3/xml/en-nn.xml.gz">ces</a></td>
 <td></td>
 <td></td>
 <td></td>
@@ -386,7 +386,7 @@
 <td></td>
 <td></td>
 <td></td>
-<th>no</th>
+<th>nn</th>
 <td></td>
 <td></td>
 <td></td>
@@ -394,7 +394,7 @@
 <td></td>
 <td></td>
 <th></th>
-<td></td><td></td><td></td><td></td><td></td><td></td><td></td><th><a rel="nofollow" href="download.php?f=HPLT/v3/xml/no.zip">no</a></th></tr>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><th><a rel="nofollow" href="download.php?f=HPLT/v3/xml/nn.zip">nn</a></th></tr>
 <tr><th><a rel="nofollow" href="download.php?f=HPLT/v3/raw/ro.zip">ro</a></th>
 <td>55</td><td>1.3G</td><td>58.4M</td><td></td>
 <td></td>
@@ -621,7 +621,7 @@
 <th>mk</th>
 <th>mt</th>
 <th>nb</th>
-<th>no</th>
+<th>nn</th>
 <th>ro</th>
 <th>sk</th>
 <th>sl</th>
@@ -652,7 +652,7 @@
 </th><th><a rel="nofollow" title='monolingual tokenized mk plain text' href="download.php?f=HPLT/v3/mono/mk.tok.gz">mk</a>
 </th><th><a rel="nofollow" title='monolingual tokenized mt plain text' href="download.php?f=HPLT/v3/mono/mt.tok.gz">mt</a>
 </th><th><a rel="nofollow" title='monolingual tokenized nb plain text' href="download.php?f=HPLT/v3/mono/nb.tok.gz">nb</a>
-</th><th><a rel="nofollow" title='monolingual tokenized no plain text' href="download.php?f=HPLT/v3/mono/no.tok.gz">no</a>
+</th><th><a rel="nofollow" title='monolingual tokenized nn plain text' href="download.php?f=HPLT/v3/mono/nn.tok.gz">nn</a>
 </th><th><a rel="nofollow" title='monolingual tokenized ro plain text' href="download.php?f=HPLT/v3/mono/ro.tok.gz">ro</a>
 </th><th><a rel="nofollow" title='monolingual tokenized sk plain text' href="download.php?f=HPLT/v3/mono/sk.tok.gz">sk</a>
 </th><th><a rel="nofollow" title='monolingual tokenized sl plain text' href="download.php?f=HPLT/v3/mono/sl.tok.gz">sl</a>
@@ -693,7 +693,7 @@
 </td><td bgcolor="#bfffbf"><a rel="nofollow" title='English-Macedonian (5,818,642 sentence pairs, 221.65M words) - TMX format' href="download.php?f=HPLT/v3/tmx/en-mk.tmx.gz">5.8M</a>
 </td><td bgcolor="#c2ffc2"><a rel="nofollow" title='English-Maltese (2,434,798 sentence pairs, 110.46M words) - TMX format' href="download.php?f=HPLT/v3/tmx/en-mt.tmx.gz">2.4M</a>
 </td><td bgcolor="#bfffbf"><a rel="nofollow" title='English-BokmÃ¥l, Norwegian (34,528,565 sentence pairs, 1.21G words) - TMX format' href="download.php?f=HPLT/v3/tmx/en-nb.tmx.gz">34.5M</a>
-</td><td bgcolor="#e5ffc8"><a rel="nofollow" title='English-Norwegian (199,114 sentence pairs, 5.61M words) - TMX format' href="download.php?f=HPLT/v3/tmx/en-no.tmx.gz">0.2M</a>
+</td><td bgcolor="#e5ffc8"><a rel="nofollow" title='English-Norwegian Nynorsk (199,114 sentence pairs, 5.61M words) - TMX format' href="download.php?f=HPLT/v3/tmx/en-nn.tmx.gz">0.2M</a>
 </td><td bgcolor="#bfffbf"><a rel="nofollow" title='English-Romanian (54,481,584 sentence pairs, 2.17G words) - TMX format' href="download.php?f=HPLT/v3/tmx/en-ro.tmx.gz">54.5M</a>
 </td><td bgcolor="#bfffbf"><a rel="nofollow" title='English-Slovak (32,237,055 sentence pairs, 1.15G words) - TMX format' href="download.php?f=HPLT/v3/tmx/en-sk.tmx.gz">32.2M</a>
 </td><td bgcolor="#bfffbf"><a rel="nofollow" title='English-Slovenian (16,845,959 sentence pairs, 655.85M words) - TMX format' href="download.php?f=HPLT/v3/tmx/en-sl.tmx.gz">16.8M</a>
@@ -729,8 +729,8 @@
 </th><td>3</td> <td>85.4M</td> <td>2.6M</td><td></td><td></td><td></td><td></td><td></td><td></td><td bgcolor="#c2ffc2"><a rel="nofollow" title='Maltese-English (2,434,798 sentence pairs, 110.46M words) - Moses format' href="download.php?f=HPLT/v3/moses/en-mt.txt.zip">2.4M</a>
 </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr> <tr><th><a rel="nofollow" title='monolingual untokenized nb plain text' href="download.php?f=HPLT/v3/mono/nb.txt.gz">nb</a>
 </th><td>35</td> <td>678.6M</td> <td>36.4M</td><td></td><td></td><td></td><td></td><td></td><td></td><td bgcolor="#bfffbf"><a rel="nofollow" title='BokmÃ¥l, Norwegian-English (34,528,565 sentence pairs, 1.21G words) - Moses format' href="download.php?f=HPLT/v3/moses/en-nb.txt.zip">34.5M</a>
-</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr> <tr><th><a rel="nofollow" title='monolingual untokenized no plain text' href="download.php?f=HPLT/v3/mono/no.txt.gz">no</a>
-</th><td>1</td> <td>3.3M</td> <td>0.2M</td><td></td><td></td><td></td><td></td><td></td><td></td><td bgcolor="#e5ffc8"><a rel="nofollow" title='Norwegian-English (199,114 sentence pairs, 5.61M words) - Moses format' href="download.php?f=HPLT/v3/moses/en-no.txt.zip">0.2M</a>
+</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr> <tr><th><a rel="nofollow" title='monolingual untokenized nn plain text' href="download.php?f=HPLT/v3/mono/nn.txt.gz">nn</a>
+</th><td>1</td> <td>3.3M</td> <td>0.2M</td><td></td><td></td><td></td><td></td><td></td><td></td><td bgcolor="#e5ffc8"><a rel="nofollow" title='Norwegian Nynorsk-English (199,114 sentence pairs, 5.61M words) - Moses format' href="download.php?f=HPLT/v3/moses/en-nn.txt.zip">0.2M</a>
 </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr> <tr><th><a rel="nofollow" title='monolingual untokenized ro plain text' href="download.php?f=HPLT/v3/mono/ro.txt.gz">ro</a>
 </th><td>55</td> <td>1.3G</td> <td>58.4M</td><td></td><td></td><td></td><td></td><td></td><td></td><td bgcolor="#bfffbf"><a rel="nofollow" title='Romanian-English (54,481,584 sentence pairs, 2.17G words) - Moses format' href="download.php?f=HPLT/v3/moses/en-ro.txt.zip">54.5M</a>
 </td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr> <tr><th><a rel="nofollow" title='monolingual untokenized sk plain text' href="download.php?f=HPLT/v3/mono/sk.txt.gz">sk</a>
