@@ -1,0 +1,310 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+</head>
+<body>
+<p>
+Užsisakykite šį viešbutį ir rinkite naktis už viešnagę Įsikūręs mieste Mančesteris, viešbutis Microtel Inn & Suites by Wyndham Manchester yra netoli šių objektų: Great Stage parkas.<br/>
+Готель Microtel Inn & Suites by Wyndham York розташований у місті Йорк; неподалік від нього — Jefferds Tavern, Old School House і Elizabeth Perkins House.
+<hr/>
+Svečių kambariuose Microtel Inn & Suites by Wyndham Manchester yra šie patogumai: seifai (telpa nešiojamieji kompiuteriai) ir kavos / arbatos virimo aparatai.<br/>
+У 57 номерах готелю Microtel Inn & Suites by Wyndham York є фен і праска/прасувальна дошка.
+<hr/>
+Patvarūs Color Picker suteikia nutylėjimą OS X "Color Picker savo langą.<br/>
+стійких Color Picker дає замовчуванням OS X Color Picker своєму власному вікні.
+<hr/>
+Nukopijuokite ir įklijuokite spalvų reikšmes iš HTML, CSS, Objective-C, arba MacRuby kodą.<br/>
+Скопіюйте і вставте колірні значення з HTML, CSS, Objective-C, або MacRuby коду.
+<hr/>
+- Pridėti UICOLOR paramą Objective-C ir Rubymotion.<br/>
+- Додана підтримка UIColor для Objective-C і Rubymotion.
+<hr/>
+Koks bebūtų Jūsų kelionės į Khao Yai / Nakhonratchasima miestą tikslas, Khao Yai Tana Lagoon Hotel viešbutis yra puiki vieta maloniam apsistojimui toli nuo namų.<br/>
+Khao Yai Tana Lagoon Hotel є розумним вибором дл туристів до Кхао Яй / Накхонратчасіма, пропонуючи спокійно перебувати тут в будь-який час.
+<hr/>
+SET TRANSACTION ISOLATION LEVEL<br/>
+SET TRANSACTION ISOLATION LEVEL
+<hr/>
+{ READ UNCOMMITTED<br/>
+{ READ UNCOMMITTED
+<hr/>
+| READ COMMITTED<br/>
+| READ COMMITTED
+<hr/>
+Daugiau informacijos žr.<br/>
+Додаткові відомості див. в публікації Швидке виконання запитів із SQL Server (електронна книга).
+<hr/>
+Keitimai, atlikti su lentele arba rodiniu, nurodomu užklausoje (ALTER TABLE ir ALTER VIEW).<br/>
+зміни, внесені до таблиці або подання, на які посилається запит (інструкції ALTER TABLE і ALTER VIEW);
+<hr/>
+ALTER DATABASE AdventureWorks2012 SET QUERY_STORE = ON;<br/>
+ALTER DATABASE AdventureWorks2012 SET QUERY_STORE = ON;
+<hr/>
+Taip pat galite greičiau gauti užklausas naujindami į „SQL Server 2017“, kurioje yra nauja funkcija, vadinama Adaptyvusis užklausų apdorojimas. SQL Server pritaiko užklausų plano pasirinkimus pagal vykdyklės ypatybes.<br/>
+Крім того, можна швидше виконувати запити з оновленням до SQL Server 2017, що має нову функцію настроювання обробки запитів. SQL Server підбирає варіанти плану запитів залежно від характеристик середовища виконання.
+<hr/>
+„SQL Server“ sauga<br/>
+Безпека SQL Server
+<hr/>
+ALTER DATABASE [YourDatabaseName] SET COMPATIBILITY_LEVEL = 140;<br/>
+ALTER DATABASE [YourDatabaseName] SET COMPATIBILITY_LEVEL = 140;
+<hr/>
+Apžvelkime tris „Access“ vartotojo galimybes. Daugiau informacijos žr. „SQLServer“ apsauga.<br/>
+Докладні відомості див. в статті Безпека SQL Server.
+<hr/>
+CREATE VIEW HumanResources.EmployeeHireDate AS<br/>
+CREATE VIEW HumanResources.
+<hr/>
+FROM HumanResources.Employee AS e JOIN Person.Person AS p<br/>
+FROM HumanResources. Employee AS e JOIN Person.
+<hr/>
+ON e.BusinessEntityID = p.BusinessEntityID;<br/>
+ON e. BusinessEntityID = p.
+<hr/>
+Kad būtų optimaliai veikia ir redaguotumėte rodinio rezultatus, sukurkite indeksavimo rodinį, kuris išlieka duomenų bazėje, pvz., lentelėje, jam priskirtą saugyklą ir gali būti suabejojo, pvz., į bet kurią lentelę.<br/>
+BusinessEntityID;
+<hr/>
+CREATE VIEW Sales.vOrders<br/>
+CREATE VIEW Sales.vOrders
+<hr/>
+WITH SCHEMABINDING<br/>
+WITH SCHEMABINDING
+<hr/>
+AS SELECT SUM(UnitPrice*OrderQty*(1.00-UnitPriceDiscount)) AS Revenue,<br/>
+AS SELECT SUM(UnitPrice*OrderQty*(1.00-UnitPriceDiscount)) AS Revenue,
+<hr/>
+OrderDate, ProductID, COUNT_BIG(*) AS COUNT<br/>
+OrderDate, ProductID, COUNT_BIG(*) AS COUNT
+<hr/>
+FROM Sales.SalesOrderDetail AS od, Sales.SalesOrderHeader AS o<br/>
+FROM Sales. SalesOrderDetail AS od, Sales.
+<hr/>
+WHERE od.SalesOrderID = o.SalesOrderID<br/>
+WHERE od. SalesOrderID = o. SalesOrderID
+<hr/>
+GROUP BY OrderDate, ProductID;<br/>
+GROUP BY OrderDate, ProductID;
+<hr/>
+CREATE UNIQUE CLUSTERED INDEX IDX_V1<br/>
+CREATE UNIQUE CLUSTERED INDEX IDX_V1
+<hr/>
+ON Sales.vOrders (OrderDate, ProductID);<br/>
+ON Sales.vOrders (OrderDate, ProductID);
+<hr/>
+CREATE PROCEDURE HumanResources.uspGetEmployees<br/>
+CREATE PROCEDURE HumanResources.uspGetEmployees
+<hr/>
+@LastName nvarchar(50),<br/>
+@LastName nvarchar(50), @FirstName nvarchar(50)
+<hr/>
+SET NOCOUNT ON;<br/>
+SET NOCOUNT ON;
+<hr/>
+SELECT FirstName, LastName, Department<br/>
+SELECT FirstName, LastName, Department
+<hr/>
+FROM HumanResources.vEmployeeDepartmentHistory<br/>
+FROM HumanResources.vEmployeeDepartmentHistory
+<hr/>
+AND EndDate IS NULL;<br/>
+AND EndDate IS NULL;
+<hr/>
+Pavyzdys: -- Define the CTE expression name and column list.<br/>
+-- Define the CTE expression name and column list.
+<hr/>
+WITH Sales_CTE (SalesPersonID, SalesOrderID, SalesYear) AS<br/>
+WITH Sales_CTE (SalesPersonID, SalesOrderID, SalesYear)
+<hr/>
+-- Define the CTE query.<br/>
+-- Define the CTE query.
+<hr/>
+SELECT SalesPersonID, SalesOrderID, YEAR(OrderDate) AS SalesYear<br/>
+SELECT SalesPersonID, SalesOrderID, YEAR(OrderDate) AS SalesYear
+<hr/>
+FROM Sales.SalesOrderHeader<br/>
+FROM Sales.
+<hr/>
+WHERE SalesPersonID IS NOT NULL<br/>
+WHERE SalesPersonID IS NOT NULL
+<hr/>
+-- Define the outer query referencing the CTE name.<br/>
+-- Define the outer query referencing the CTE name.
+<hr/>
+SELECT SalesPersonID, COUNT(SalesOrderID) AS TotalSales, SalesYear<br/>
+SELECT SalesPersonID, COUNT(SalesOrderID) AS TotalSales, SalesYear
+<hr/>
+FROM Sales_CTE<br/>
+FROM Sales_CTE
+<hr/>
+GROUP BY SalesYear, SalesPersonID<br/>
+GROUP BY SalesYear, SalesPersonID
+<hr/>
+ORDER BY SalesPersonID, SalesYear;<br/>
+ORDER BY SalesPersonID, SalesYear;
+<hr/>
+„Azure Active Directory“ integruotas autentifikavimas Prisijunkite prie „Azure SQL Server“ duomenų bazės naudodami „Azure Active Directory“.<br/>
+Інтегрована аутентифікація Azure Active Directory Підключайтеся до бази даних SQL Server Azure за допомогою Azure Active Directory.
+<hr/>
+Daugiau informacijos žr.<br/>
+Докладні відомості дивіться вWITH common_table_expression. Користувацькі функції
+<hr/>
+CREATE FUNCTION dbo.ISOweek (@DATE datetime)<br/>
+CREATE FUNCTION dbo.ISOweek (@DATE datetime)
+<hr/>
+RETURNS int WITH SCHEMABINDING -- Helps improve performance<br/>
+RETURNS int WITH SCHEMABINDING -- Helps improve performance
+<hr/>
+WITH EXECUTE AS CALLER<br/>
+WITH EXECUTE AS CALLER
+<hr/>
+DECLARE @ISOweek int;<br/>
+AS BEGIN DECLARE @ISOweek int;
+<hr/>
+SET @ISOweek= DATEPART(wk,@DATE)+1<br/>
+SET @ISOweek= DATEPART(wk,@DATE)+1
+<hr/>
+-DATEPART(wk,CAST(DATEPART(yy,@DATE) as CHAR(4))+'0104');<br/>
+-DATEPART(wk,CAST(DATEPART(yy,@DATE) as CHAR(4))+'0104');
+<hr/>
+-- Special cases: Jan 1-3 may belong to the previous year<br/>
+-- Special cases: Jan 1-3 may belong to the previous year
+<hr/>
+IF (@ISOweek=0)<br/>
+IF (@ISOweek=0)
+<hr/>
+SET @ISOweek=dbo.ISOweek(CAST(DATEPART(yy,@DATE)-1<br/>
+SET @ISOweek=dbo.ISOweek(CAST(DATEPART(yy,@DATE)-1
+<hr/>
+AS CHAR(4))+'12'+ CAST(24+DATEPART(DAY,@DATE) AS CHAR(2)))+1;<br/>
+AS CHAR(4))+'12'+ CAST(24+DATEPART(DAY,@DATE) AS CHAR(2)))+1;
+<hr/>
+-- Special case: Dec 29-31 may belong to the next year<br/>
+-- Special case: Dec 29-31 may belong to the next year
+<hr/>
+IF ((DATEPART(mm,@DATE)=12) AND<br/>
+IF ((DATEPART(mm,@DATE)=12) AND
+<hr/>
+((DATEPART(dd,@DATE)-DATEPART(dw,@DATE))>= 28))<br/>
+((DATEPART(dd,@DATE)-DATEPART(dw,@DATE))>= 28))
+<hr/>
+SET @ISOweek=1;<br/>
+SET @ISOweek=1;
+<hr/>
+RETURN(@ISOweek);<br/>
+RETURN(@ISOweek);
+<hr/>
+END;<br/>
+END;
+<hr/>
+GO SET DATEFIRST 1;<br/>
+SET DATEFIRST 1;
+<hr/>
+SELECT dbo.ISOweek(CONVERT(DATETIME,'12/26/2004',101)) AS 'ISO Week';<br/>
+SELECT dbo.ISOweek(CONVERT(DATETIME,'12/26/2004',101)) AS 'ISO Week';
+<hr/>
+Daugiau informacijos žr.<br/>
+Додаткові відомості див. в статті Властивість CREATE TABLE, IDENTITY.
+<hr/>
+Kai naudojate „Access“, atlikti operacijas internetu (OLTP) gana sunku, tačiau sąlyginai lengva jas atlikti naudojant „SQL Server“.<br/>
+Транзакції Виконувати онлайнову обробку транзакцій (OLTP) складно з програмою Access, але порівняно легко із SQL Server.
+<hr/>
+-- Using an explicit transaction<br/>
+-- Using an explicit transaction
+<hr/>
+BEGIN TRANSACTION;<br/>
+BEGIN TRANSACTION;
+<hr/>
+DELETE FROM HumanResources.JobCandidate<br/>
+DELETE FROM HumanResources. JobCandidate
+<hr/>
+WHERE JobCandidateID = 13;<br/>
+WHERE JobCandidateID = 13;
+<hr/>
+COMMIT;<br/>
+COMMIT;
+<hr/>
+-- the ROLLBACK statement rolls back the INSERT statement, but the created table still exists.<br/>
+-- the ROLLBACK statement rolls back the INSERT statement, but the created table still exists.
+<hr/>
+CREATE TABLE ValueTable (id int);<br/>
+CREATE TABLE ValueTable (id int);
+<hr/>
+BEGIN TRANSACTION;<br/>
+BEGIN TRANSACTION;
+<hr/>
+INSERT INTO ValueTable VALUES(1);<br/>
+INSERT INTO ValueTable VALUES(1);
+<hr/>
+INSERT INTO ValueTable VALUES(2);<br/>
+INSERT INTO ValueTable VALUES(2);
+<hr/>
+ROLLBACK;<br/>
+ROLLBACK;
+<hr/>
+Extended Price: [Quantity] * [Unit Price]<br/>
+Extended Price: [Quantity] * [Unit Price]
+<hr/>
+CREATE TABLE dbo.Products<br/>
+CREATE TABLE dbo.
+<hr/>
+ProductID int IDENTITY (1,1) NOT NULL<br/>
+ProductID int IDENTITY (1,1) NOT NULL
+<hr/>
+, QtyAvailable smallint<br/>
+, QtyAvailable smallint
+<hr/>
+, UnitPrice money<br/>
+, UnitPrice money
+<hr/>
+, InventoryValue AS QtyAvailable * UnitPrice<br/>
+, InventoryValue AS QtyAvailable * UnitPrice
+<hr/>
+Jei norite įrašyti datą ar laiką „SQL Server“, naudokite duomenų tipą datetime2, kurio numatytoji reikšmė yra SYSDATETIME().<br/>
+Щоб записати дату або час у SQL Server, використовуйте тип даних datetime2 із стандартним значенням SYSDATETIME().
+<hr/>
+FileTable reikia naudoti FILESTREAM.<br/>
+Для таблиць FileTable потрібно використовувати функцію FILESTREAM.
+<hr/>
+"firstName": "Mary",<br/>
+"firstName": "Mary",
+<hr/>
+"lastName": "Contrary",<br/>
+"lastName": "Contrary",
+<hr/>
+"spouse": null,<br/>
+"spouse": null,
+<hr/>
+Daugiau informacijos žr.<br/>
+Докладні відомості див. в статті Дані JSON у SQL Server.
+<hr/>
+Dabar yra puikus metas daugiau sužinoti apie „SQL Server“ ir „Transact SQL“ (TSQL).<br/>
+Ресурси Тепер саме час дізнатися більше про SQL Server і Transact SQL (TSQL).
+<hr/>
+Naujas įrankis SQL duomenų aptikimas ir klasifikavimas, integruotas į „SQL Server Management Studio“, padeda atrasti, klasifikuoti, žymėti ir pranešti apie slaptus duomenis stulpeliams pritaikant du metaduomenų atributus:<br/>
+Новий інструмент SQL Data Discovery and Classification, вбудований у SQL Server Management Studio, дає можливість виявити, класифікувати, підписати конфіденційні дані та повідомити про них, застосовуючи два атрибути метаданих до стовпців.
+<hr/>
+Be to, „SQL Server“ taip pat siūlo didelį pasiekiamumą (HA) ir avarinio atkūrimo (DR) strategijas.<br/>
+Крім того, SQL Server має високу доступність (HA) і стратегію аварійного відновлення (DR).
+<hr/>
+„SQL Server 2017“ padeda jums atlikti ataskaitų užduotis keliais būdais:<br/>
+SQL Server 2017 допомагає із звітуванням кількома способами.
+<hr/>
+Pvz., jei norite, kad būtų sukurta momentinė „AdventureWorks“ duomenų bazės nuotrauka tris kartus per dieną 6 valandų intervalais nuo 6:00 iki 18:00, atsižvelgiant į 24 valandų laikrodį, pavadinkite jas AdventureWorks_snapshot_0600, AdventureWorks_snapshot_1200 ir AdventureWorks_snapshot_1800.<br/>
+Наприклад, зробіть три знімки бази даних AdventureWorks за день з 06:00 до 18:00 (24-годинний формат часу) з інтервалом 6 годин і дайте їм такі імена: AdventureWorks_snapshot_0600, AdventureWorks_snapshot_1200 і AdventureWorks_snapshot_1800.
+<hr/>
+CREATE DATABASE AdventureWorks_dbss1800 ON<br/>
+CREATE DATABASE AdventureWorks_dbss1800 ON
+<hr/>
+( NAME = AdventureWorks_Data, FILENAME =<br/>
+( NAME = AdventureWorks_Data, FILENAME =
+<hr/>
+AS SNAPSHOT OF AdventureWorks;<br/>
+AS SNAPSHOT OF AdventureWorks;
+<hr/>
+Daugiau informacijos žr. Kai dauguma žmonių bando modifikuoti duomenis duomenų bazėje tuo pačiu metu, reikia turėti kontrolės sistemą, kad vieno asmens atlikti keitimai nepakenktų kito asmens keitimams.<br/>
+Докладні відомості див. в статті Знімки бази даних (SQL Server).
+<hr/>
+</p></body></html/>
