@@ -7,4 +7,304 @@
 </head>
 <body>
 <p>
+Merk trendlinja og vel<br/>
+sekme sayfasını seçin.Eğilim Çizgisi Denklemi ve Belirleme Katsayısı
+<hr/>
+Viss du vil vise likninga for trendlinja, merk trendlinja i diagrammet, opna sprettoppmenyen med høgre museknapp og vel .<br/>
+Eğilim çizgisi denklemini görüntülemek için, çizelgedeki eğilim çizgisini seçin, sağ tıklayarak kısa yol menüsünü açın ve komutunu seçin.
+<hr/>
+For å formatere verdiar (bruka færre gjeldande siffer eller vitskapleg notasjon), merk likninga i diagrammet, høgreklikk forå opna sprettoppmenyen og vel<br/>
+Değerlerin biçimini değiştirmek için (daha az anlamlı basamak veya bilimsel gösterim kullanın), grafikteki denklemi seçin, sağ tıklayıp içerik menüsünü açın ve
+<hr/>
+.Standardlikningar brukar x til x-akse/absissaksevariable og f(x) til y-akse/ordinataksevariable. For å endra desse merk trendlinja, vel og skriv inn namna i innskrivingsboksane X variabel namn og Y variabel namn.<br/>
+komutunu seçin.Varsayılan denklem, yatay değişkeni için x, ve ordinat değişkeni için f(x) kullanır. Bu isimleri değiştirmek için, trend çizgisini seçin, ve X Değişken Adı ve Y Değişken Adı düzenleme kutularına isimler girin.
+<hr/>
+For å visa koeffisienten til forklaringsgraden R2, merk likninga i diagrammet, høgreklikk for å få opp sprettoppmenyen og vel<br/>
+R2 belirleme katsayısını göstermek için, grafikteki denklemi seçin, bağlam menüsünü açmak için sağ tıklayın ve
+<hr/>
+Viss skjeringspunktet er tvunge, vert koeffisienten R2 ikkje rekna ut på same måten som med fritt skjeringspunkt. R2-verdiar kan ikkje samanliknast mellom tvungne og frie skjeringspunkt.<br/>
+'yi seçin.Eğer kesişme zorlanırsa, belirleme katsayısı R2, serbest kesişme ile aynı şekilde hesaplanmaz. R2 değerleri zorlanmış veya serbest girişim ile karşılaştırılamaz.
+<hr/>
+Kurvetypar for trendlinjer<br/>
+Eğilim Çizgileri Eğri Tipleri
+<hr/>
+Desse regresjonstypane er tilgjengelege:<br/>
+Aşağıdaki regresyon türleri mevcuttur:
+<hr/>
+Lineær trendlinje: regresjon via likninga y=a∙x+b. Skjeringspunktet b kan vera tvunge.<br/>
+Doğrusal eğim çizgisi: y=a∙x+b denklemi boyunca regresyon. b kesişimi zorlanamaz.
+<hr/>
+Skjeringspunkt a0 kan tvingast.Gradane for polynomien må gjevast (minst 2). Logaritmisk trendlinje: regresjon ved hjelp av likninga y=a∙ln(x)+b. Eksponentiell trendlinje: regresjon ved hjelp av likninga y=b∙exp(a∙x).<br/>
+Polinom eğim çizgisi: y=Ei(ai∙xi) denklemi boyunca regresyon. a0 kesişimi zorlanmaz. Polinomun derecesi belirtilmelidir (en az 2 olmalıdır). Logaritmik eğim çizgisi: y=a∙ln(x)+b denklemi boyunca regresyon.
+<hr/>
+Skjeringspunktet b kan vera tvunge. Potens trendlinje: regresjon ved hjelp av likninga y=b∙xa. Trendlinja glidande gjennomsnitt: ei enkel glidande gjennomsnittstrendlinje vert rekna ut frå n tidlegare y-verdiar. n er periodelengda.<br/>
+Kuvvet eğim çizgisi: y=b∙xa denklemi boyunca regresyon. Hareketli ortalama eğim çizgisi: nperiyot olmak üzere y değerlerinin n önceki hareketli ortalamasıdır. Bu eğim çizgisi için denklem kullanılmaz.
+<hr/>
+Logaritmisk trendlinje: berre positive x-verdiar vert brukte,<br/>
+Logaritmik eğilim çizgisi: yalnızca pozitif x-değerleri dikkate alınır.
+<hr/>
+Eksponential trendlinje: berre positive y-verdiar vert brukte, utanom viss alle y-verdiane er negative: regresjonen vil då følje likninga y=-b∙exp(a∙x).<br/>
+Üstel eğilim çizgisi: yalnızca pozitif y-değerleri dikkate alınır, eğer tüm y-değerleri negatif ise: o zaman regresyon şu denkleme göre olacaktır:y=-b∙exp(a∙x).
+<hr/>
+Potenstrendlinje: berre positive x-verdiar vert brukte; berre positive y-verdiar vert brukte, unnateke når alle y-verdiane er negative: regresjonen vil då følja likninga y=-b∙xa.<br/>
+Kuvvet eğim çizgisi: sadece pozitif x-değerleri dikkate alınır; tüm y değerleri negatif ise, sadece pozitif y değerleri dikkate alınır: regresyon denklemi y=-b∙xa şeklindedir.
+<hr/>
+Viss du vil setja inn ei trendlinje for ein dataserie, merk dataserien og vel<br/>
+Veri serileri için bir eğilim çizgisi eklemek için, komutunu seçin ya da sağ tıklayarak açılan içerik menüsünden seçeneğini seçin. -
+<hr/>
+Ved sida av m, b og r2 leverer tabellfunksjonen RETTLINJE fleire statistikkar for ein regresjonsanalyse.<br/>
+m, b ve r2 yanında DOT dizi fonksiyonu, bir regresyon analizi için ek istatistik desteği sağlar.
+<hr/>
+Den logaritmiske regresjonslikninga<br/>
+Logaritmik regresyon denklemi
+<hr/>
+Logaritmisk regresjon føljer likninga y=a*ln(x)+b.<br/>
+logaritmik regresyon y=a*ln(x)+b denklemi kullanılarak hesaplanır.
+<hr/>
+a = STIGINGSTAL(Data_Y;LN(Data_X)) b = SKJERINGSPUNKT(Data_Y ;LN(Data_X))<br/>
+a = EĞİM(Veri_Y;LN(Veri_X))
+<hr/>
+r2 = RKVADRAT(Data_Y;LN(Data_X)) Den eksponentielle regresjonslikninga<br/>
+r2 = RSQ(Data_Y;LN(Data_X))
+<hr/>
+Eksponentialregresjonen føljer ei av likningane y=b*exp(a*x) eller y=b*mx, som kvar for seg vert gjort om til ln(y)=ln(b)+a*x eller ln(y)=ln(b)+ln(m)*x. a = STIGINGSTAL(LN(Data_Y);Data_X)<br/>
+Üstel regresyon aşağıdaki denklemlerle devam eder y=b*exp(a*x) or y=b*mx, denklemleri sırasıylaln(y)=ln(b)+a*x veya ln(y)=ln(b)+ln(m)*x denklemlerine dönüştürülür. a = EĞİM(Veri_Y;LN(Veri_X))
+<hr/>
+Snittverdilinjer er spesielle trendlinjer som viser gjennomsnittsverdien.<br/>
+Ortalama Değer Çizgileri ortalama değeri gösteren özel eğilim çizgileridir. Veri serileri için ortalama değer çizgileri eklemek amacıyla
+<hr/>
+r2 = RKVADRAT(LN(Data_Y);Data_X)<br/>
+r2 = RSQ(LN(Data_Y);Data_X)
+<hr/>
+Ved sida av m, b og r2 leverer tabellfunksjonen KURVE fleire statistikkar for ein regresjonsanalyse.<br/>
+m, b ve r2 yanında LOT dizi fonksiyonu, bir regresyon analizi için ek istatistik desteği sağlar.
+<hr/>
+Potensregresjonslikninga Potensregresjonskurver vert omgjorde til ein lineær modell. Potensregresjon føljer likninga y=b*xa, som vert gjort om til ln(y)=ln(b)+a*ln(x). a = STIGINGSTAL(LN(Data_Y);LN(Data_X))<br/>
+üstel regresyon dönüştürme eğrileri, bir doğrusal modelde yer alır. y=b*xa üstel regresyon denklemi ile hesaplanır, denklem ln(y)=ln(b)+a*ln(x) şekline dönüştürülür.
+<hr/>
+b = EKSP(SKJERINGSPUNKT(LN(Data_Y);LN(Data_X)) r2 = RKVADRAT(LN(Data_Y);LN(Data_X))<br/>
+r2 = RSQ(LN(Data_Y);LN(Data_X))
+<hr/>
+For polynomiske regresjonskurver skjer det ei transformering til ein lineær modell.<br/>
+Polinom regresyon eğrileri için doğrusal bir modele dönüşüm gerçekleşir.
+<hr/>
+Lag ein tabell med kolonnane x, x2, x3, … , xn, y opp til den ønskte graden n.<br/>
+x sütunlu bir tablo oluştur, x2, x3, … , xn, y n'in istenen kuvvetine kadar.
+<hr/>
+Bruk formelen =RETTLINJE(Data_Y,Data_X) med heile rekkja x til xn (utan overskrifter) som Data_X.<br/>
+=DOT(Veri_Y,Veri_X) formülü ile x den xn'e kadar (başlıklar hariç) tüm Veri_X alanını kullanın.
+<hr/>
+Den første rada av resultatet til RETTLINJE inneheld koeffisientane til regresjonspolynomen med koeffisienten til xn i posisjonen lengst til venstre.<br/>
+DOT çıktısının ilk satırı çok terimli regresyon katsayılarını içerir, xn katsayısı en solda yerleşmiş olmalıdır.
+<hr/>
+Det første elementet i den tredje rada av resultatet til RETTLINJE er verdien til r2. Sjå RETTLINJE-funksjonen for informasjon om rett bruk og ei forklåring av dei andre parameterane i resultatet.<br/>
+DOT fonksiyonunun çıktısındaki üçüncü satırdaki ilk eleman r2 değeridir. Fonksiyon kullanımı, çıktı parametreleri ve diğer detaylar için DOT kısmına bakın.
+<hr/>
+Viss du vil fjerna ei trendlinje eller snittverdilinje, merk linja og trykk på Delete-tasten.<br/>
+Bir eğilim çizgisini veya ortalama değer çizgisini silmek için, çizgiye tıklayın, ve sonra Del tuşuna basın.
+<hr/>
+Ei trendlinje vert vist i forklaringa automatisk. Namnet kan definerast i innstillingane for trendlinja.<br/>
+Çizelge açıklamasında bir eğilim çizgisi otomatik olarak ifade edilir. İsmi eğilim çizgisinin seçeneklerinden ayarlanabilir.
+<hr/>
+- Aktivere 3D-innhold i PDF-filer<br/>
+- PDF'de 3D içeriği etkinleştirme
+<hr/>
+- Legge til multimedia i PDF-filer<br/>
+- PDF'lere multimedya ekleme
+<hr/>
+- Legge til kommentarer om 3D-utforminger i PDF-filer<br/>
+- PDF'lerde 3D tasarımlara yorum ekleme
+<hr/>
+- Spille av video, lyd og multimedieformater i PDF-filer<br/>
+- PDF'lerde video, ses ve multimedya formatlarını yürütme
+<hr/>
+- Trykkeriproduksjonsverktøy (Acrobat Pro)<br/>
+- Baskı üretimi araçları (Acrobat Pro)
+<hr/>
+- Preflight (Acrobat Pro)<br/>
+- Ön kontrol (Acrobat Pro)
+<hr/>
+- PDF/X-, PDF/A- og PDF/E-kompatible filer<br/>
+- PDF/X, PDF/A ve PDF/E uyumlu dosyalar
+<hr/>
+- Preflight-profiler - Avanserte preflight-inspeksjoner<br/>
+- Ön kontrol profilleri - Gelişmiş ön kontrol denetimleri
+<hr/>
+- Vise Preflight-resultater, objekter og ressurser<br/>
+- Ön kontrol sonuçlarını, nesneleri ve kaynakları görüntüleme
+<hr/>
+- Utskriftsgjengivelser i PDF-er<br/>
+- PDF'lerde çıktı hedefleri
+<hr/>
+- Korrigere problemområder med Preflight-verktøyet<br/>
+- Ön Kontrol aracıyla sorunlu alanları düzeltme
+<hr/>
+- Automatisk dokumentanalyse med slippverktøy eller preflight-handlinger<br/>
+- Damlacıklar ve ön kontrol eylemleriyle belge analizini otomatikleştirme
+<hr/>
+- Analysere dokumenter med Preflight-verktøyet<br/>
+- Belgeleri Ön Kontrol aracıyla analiz etme
+<hr/>
+- Tilleggskontroller i Preflight-verktøyet<br/>
+- Ön Kontrol aracındaki ek denetimler
+<hr/>
+- Fargehåndtering<br/>
+- Renk yönetimi
+<hr/>
+- Redigere bilder eller objekter i en PDF-fil<br/>
+- PDF'deki görüntüleri veya nesneleri düzenleme
+<hr/>
+- Rotere, flytte, slette og nummerere PDF-sider<br/>
+- PDF sayfalarını döndürme, taşıma, silme ve yeniden numaralandırma
+<hr/>
+- PDF-egenskaper og metadata<br/>
+- PDF özellikleri ve meta veriler
+<hr/>
+- PDF-lag<br/>
+- PDF katmanları
+<hr/>
+- Sideminiatyrer og bokmerker i PDF-filer<br/>
+- PDF'lerde sayfa küçük resimleri ve yer imleri
+<hr/>
+- PDF-filer konvertert til nettsider<br/>
+- Web sayfalarına dönüştürülmüş PDF'ler
+<hr/>
+- PDF-artikler<br/>
+- PDF makaleleri
+<hr/>
+- Endre standard skrift for å legge til tekst<br/>
+- Metin eklemek için varsayılan yazı tipini değiştirme
+<hr/>
+- Slette sider fra en PDF<br/>
+- PDF'den sayfa silme
+<hr/>
+- Skann og OCR<br/>
+- Tarama ve OCR
+<hr/>
+- Grunnleggende om PDF-skjemaer<br/>
+- PDF formları oluşturma ve dağıtma
+<hr/>
+- Fyll ut PDF-skjemaer<br/>
+- PDF formları doldurma
+<hr/>
+- Fylle ut og signere PDF-skjemaer<br/>
+- PDF formlarını doldurma ve imzalama
+<hr/>
+- Angi handlingsknapper i PDF-skjemaer<br/>
+- PDF formlarında eylem düğmeleri ayarlama
+<hr/>
+- Publisere interaktive PDF-webskjemaer<br/>
+- Etkileşimli PDF web formları yayınlama
+<hr/>
+- Hjelp for PDF-skjemaer<br/>
+- PDF formları yardımı
+<hr/>
+- Sende PDF-skjemaer til mottakere ved å bruke e-post eller en intern server<br/>
+- E-posta veya dahili sunucu kullanarak alıcılara PDF formları gönderme
+<hr/>
+- Kombinere eller slå sammen filer til én enkelt PDF-fil<br/>
+- Dosyaları tek bir PDF halinde birleştirme
+<hr/>
+- Rotere, flytte, slette og nummerere PDF-sider<br/>
+- PDF sayfalarını döndürme, taşıma, silme ve yeniden numaralandırma
+<hr/>
+- Legge til topptekst, bunntekst og bates-nummerering i PDF-filer<br/>
+- PDF'lere üstbilgi, altbilgi ve Bates numaralandırması ekleme
+<hr/>
+- Beskjær PDF-sider<br/>
+- PDF sayfalarını kırpma
+<hr/>
+- Arbeide med komponentfiler i en PDF-portefølje<br/>
+- PDF Portföyünde bileşen dosyalarıyla çalışma
+<hr/>
+- Oversikt over PDF-porteføljer<br/>
+- PDF Portföylerine genel bakış
+<hr/>
+- Deling, gjennomganger og kommentering<br/>
+- Paylaşma, incelemeler ve yorumlar
+<hr/>
+- Arbeide med lagringskontoer på nett<br/>
+- Çevrimiçi depolama hesaplarıyla çalışma
+<hr/>
+- Markere tekst med redigeringer<br/>
+- Metni düzenlemelerle işaretleme
+<hr/>
+- Klargjøre for en PDF-gjennomgang<br/>
+- PDF incelemesi için hazırlık
+<hr/>
+- Starte en PDF-gjennomgang<br/>
+- PDF incelemesi başlatma
+<hr/>
+- Være vert for delte gjennomganger på SharePoint- eller Office 365-nettsteder<br/>
+- SharePoint veya Office 365 sitelerinde paylaşılan incelemeleri barındırma
+<hr/>
+- Delta i en PDF-gjennomgang<br/>
+- PDF incelemesine katılma
+<hr/>
+- Legg til kommentarer til PDF-filer<br/>
+- PDF'lere yorum ekleme
+<hr/>
+- Legge til stempel i en PDF-fil<br/>
+- PDF'ye damga ekleme
+<hr/>
+- Acrobat og macOS<br/>
+- Acrobat ve macOS
+<hr/>
+- Sporing og behandling av PDF-gjennomganger<br/>
+- PDF incelemelerini izleme ve yönetme
+<hr/>
+- Sikre PDF-filer med passord - Behandle digitale ID-er<br/>
+- PDF'lerin güvenliğini parolalarla sağlama - Dijital Kimlikleri Yönetme
+<hr/>
+- Sikre PDF-filer med sertifikater<br/>
+- PDF güvenliğini sertifikalarla sağlama
+<hr/>
+- Fjerne sensitivt innhold fra PDF-filer<br/>
+- PDF'lerdeki hassas içeriği kaldırma - PDF'ler için güvenlik ilkeleri belirleme
+<hr/>
+- Acrobat-varsler<br/>
+- Acrobat bildirimleri
+<hr/>
+- Velge en sikkerhetsmetode for PDF-filer<br/>
+- PDF'ler için güvenlik yöntemi seçme
+<hr/>
+- Sikkerhetsadvarsler når en PDF-fil åpnes<br/>
+- PDF açıldığında gösterilen güvenlik uyarıları
+<hr/>
+- Sikre PDF-filer med Adobe Experience Manager<br/>
+- Adobe Experience Manager ile PDF'lerin güvenliğini sağlama
+<hr/>
+- Oversikt over i Acrobat og PDF-filer<br/>
+- Acrobat ve PDF'lerde güvenliğe genel bakış
+<hr/>
+- JavaScripts i PDF-filer som en sikkerhetsrisiko<br/>
+- PDF'lerde güvenlik riski olarak JavaScript'ler
+<hr/>
+- Tillat eller blokker koblinger i PDF-er<br/>
+- PDF'lerde bağlantılara izin verme veya bağlantıları engelleme
+<hr/>
+- Elektroniske signaturer<br/>
+- Elektronik imzalar
+<hr/>
+- Multimedier og 3D-modeller<br/>
+- Multimedya ve 3D modeller
+<hr/>
+- Legge til lyd, video og interaktive objekter i PDF-filer<br/>
+- PDF'lere ses, video ve etkileşimli nesneler ekleme
+<hr/>
+- Legge til 3D-modeller i PDF-filer (Acrobat Pro)<br/>
+- PDF'lere 3D modeller ekleme (Acrobat Pro)
+<hr/>
+- Vise 3D-modeller i PDF-filer<br/>
+- PDF'lerde 3D modelleri görüntüleme
+<hr/>
+- Arbeide interaktivt med 3D-modeller<br/>
+- 3D modellerle etkileşim kurma
+<hr/>
+- Måle 3D-objekter i PDF-filer<br/>
+- PDF'lerde 3D nesneleri ölçme
+<hr/>
+- Finans<br/>
+- Maliye
+<hr/>
 </p></body></html/>
